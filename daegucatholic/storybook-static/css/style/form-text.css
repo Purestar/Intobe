@@ -1,0 +1,16 @@
+/* Text Type */
+[class*="form-txt"],
+[class*="form-txt"][divide] input {background:var(--fom-bg); border:1px solid var(--fom-bdr-c); border-radius:var(--fom-br); width:100%; height:var(--fom-h); padding:0 var(--fom-pad); font-size:var(--fom-fs); color:var(--fom-fc); transition:border-color var(--trans-dft);}
+[class*="form-txt"] input {flex:1 0 var(--fom-h);}
+[class*="form-txt"].focused,
+[class*="form-txt"]:hover,
+[class*="form-txt"][divide] input:focus,
+[class*="form-txt"][divide] input:hover {border-color:var(--fom-fcs-brd-c); transition:border-color var(--trans-dft);}
+[class*="form-txt"] .txt-label {transition:all .1s ease; position:absolute; left:var(--fom-pad); top:50%; transform:translate(0, -50%)}
+[class*="form-txt"].focused .txt-label,
+[class*="form-txt"].active .txt-label {transition:all .1s ease; top:25%; font-size:60%; transform:translate(0, -75%)}
+[class*="form-txt"][disabled],
+[class*="form-txt"][disabled][divide] input {background-color:var(--dis-bg); border-color:var(--dis-bdr); color:var(--fom-ph); pointer-events:none; cursor:auto;}
+[class*="form-txt"][disabled] {color:inherit;}
+[class*="form-txt"][disabled][divide] {background:none; color:inherit;}
+

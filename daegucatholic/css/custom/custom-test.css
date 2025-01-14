@@ -1,0 +1,123 @@
+/* Accordion */
+	.aco-type-test,
+	.aco-type-qna-test {border:1px solid red;}
+	.aco-type-test > .aco-wrap,
+	.aco-type-test > .aco-wrap > .aco-cont,
+	.aco-type-qna-test > .aco-wrap,
+	.aco-type-qna-test > .aco-wrap > .aco-cont {border-top:1px solid red;}
+
+/* Bar */
+	.bar-h-test > * + *:before,
+	.bar-v-test > * + *:before {background:red;}
+
+/* Bullet */
+	/* Bullet Circle */
+		.bul-circle-test > *:before {background:red;}
+
+	/* Bullet Square */
+		.bul-square-test > *:before {background:red;}
+
+	/* Hyphen */
+		.bul-hyphen-test > *:before {color:red;}
+
+	/* Numbering */
+		.bul-number-test > *:before {color:red;}
+
+/* Button */
+	.btn-type-test {background:red; border:1px solid red;}
+	.btn-type-b-test {border:1px solid red;}
+	.btn-type-tran-test {color:red;}
+	.btn-grp-type-test {border:1px solid red;}
+
+/* Chip */
+	.chip-type-test {background:red; border:1px solid red; color:white;}
+
+/* Count */
+	.count-type-test {color:red;}
+
+/* Date Time */
+	.datetime-type-test {border:1px solid red;}
+	.datetime-type-test .datetime-table tbody td:first-child {color:red;}
+	.datetime-type-test .datetime-table tbody td:last-child {color:blue;}
+
+/* Form */
+	/* Button */
+		.form-btn-test input {background:red;}
+
+	/* Combobox */
+		.form-combo-test select,
+		.form-dropdown-test .dropdown-top {border-color:red;}
+
+	/* File */
+		.form-file-test {border-color:red;}
+
+	/* Input */
+		.form-txt-test {border-color:red;}
+
+	/* Range */
+		.form-range-test input[type="range"]::-webkit-slider-runnable-track {background-color:red;}
+
+	/* Selection - Button */
+		.form-opt-btn-test .opt-txt {border-color:red;}
+
+	/* Selection - Checkbox */
+		.form-opt-chk-test .opt-txt:before {border-color:red;}
+
+	/* Selection - Radio */
+		.form-opt-rdo-test .opt-txt:before {border-color:red;}
+
+	/* Selection - Switch */
+		.form-opt-swh-test .opt-txt:before {border-color:red;}
+
+	/* Selection - Rating */
+		.form-opt-rt-test {border:1px solid red;}
+
+	/* Textarea */
+		.form-tarea-test {border:1px solid red;}
+
+/* Icon */
+	.ic-test:before {width:24px; height:24px;}
+	.ic-test02:before {background-position:var(--50) 0; width:24px; height:24px;}
+
+/* Layout */
+	.layout-full-test,
+	.layout-inner-test,
+	.layout-center-test,
+	.layout-flex-test,
+	.layout-grid-test,
+	.layout-ellipsis-test,
+	.layout-auto-test {border:1px solid red;}
+
+/* Popover */
+	.popover-type-test .popover-cont {border:1px solid red;}
+
+/* Popup */
+	.pop-type-test .pop-wrap {border:1px solid red;}
+
+/* Swiper */
+	/* Custom */
+	.swi-type-test {border:1px solid red;}
+	.swi-type-test-02 {width:500px; height:100px;}
+
+	/* Navigation */
+	.swi-arrow-test:after {background-position:var(--bp-150) var(--bp-450); width:8px; height:14px;}
+
+	/* Pagenation */
+	.swi-page-test .swiper-pagination-bullet {border:1px solid red;}
+
+	/* Scroll Bar */
+	.swi-scr-test {background:red;}
+
+/* Tab Menu */
+	.tab-wrap-test {border:1px solid red;}
+	.tab-wrap-test.tab-vertical .tab-menu-test {width:200px;}
+
+	.tab-menu-test {border:1px solid red;}
+
+	.tab-cont-test {background:var(--mc); padding:30px;}
+
+/* Thumb */
+	.thumb-type-test {background-color:#fde3e3; background-image:url("/images/img/thumb_01.png"); border-radius:8px; width:200px; height:150px;}
+
+/* Tree Menu */
+	.tree-type-test {border:1px solid red;}

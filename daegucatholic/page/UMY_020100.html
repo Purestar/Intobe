@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="대구가톨릭">
+		<meta name="description" content="대구가톨릭">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+		<title>Index</title>
+		<script type="module" src="../js/igWebComponent.js" defer></script>
+		<script src="../js/pub.js"></script>
+		<link rel="stylesheet" href="../css/global.css">
+		<link rel="stylesheet" href="../css/workspace.css">
+	</head>
+	<body>
+		<div data-include="../include/header.html"></div>
+		<ig-layout id="container">
+			<ig-layout type="inner">
+				<ig-layout type="flex">
+					<div data-include="../include/mypageSide.html"></div>
+					<div>
+						<h2>희망진로설정</h2>
+						<div>
+							<h3>관심 직무</h3>
+							<div>
+								<ig-layout type="flex" element="ul">
+									<li>
+										<ig-bar>
+											<ig-item>사업관리</ig-item>
+											<ig-item>기획사무</ig-item>
+											<ig-item>마케팅</ig-item>
+										</ig-bar>
+									</li>
+									<li>
+										<ig-bar>
+											<ig-item>사업관리</ig-item>
+											<ig-item>기획사무</ig-item>
+											<ig-item>경영기획</ig-item>
+										</ig-bar>
+									</li>
+								</ig-layout>
+							</div>
+						</div>
+						<div>
+							<h3>희망 기업형태</h3>
+							<div>
+								<ig-layout type="flex" element="ul">
+									<li><ig-form type="select-button" label="대기업" checked></ig-form></li>
+									<li><ig-form type="select-button" label="중견기업" checked></ig-form></li>
+									<li><ig-form type="select-button" label="중소기업" checked></ig-form></li>
+									<li><ig-form type="select-button" label="스타트업"></ig-form></li>
+									<li><ig-form type="select-button" label="벤처기업" checked></ig-form></li>
+									<li><ig-form type="select-button" label="공공기관"></ig-form></li>
+									<li><ig-form type="select-button" label="공기업"></ig-form></li>
+								</ig-layout>
+							</div>
+						</div>
+						<div>
+							<ig-layout type="flex" custom-style="gap:4px;">
+								<h3>희망 기업체</h3>
+								<a href="UMY_040100.html"><ig-icon type="test"></ig-icon></a>
+							</ig-layout>
+							<ig-list repeat="2">
+								<ig-item>
+									<ig-layout type="flex" justify="between">
+										<p>기업체명이 노출됩니다.</p>
+										<div>
+											<ig-icon type="test"></ig-icon>
+											<ig-icon type="test"></ig-icon>
+										</div>
+									</ig-layout>
+								</ig-item>
+							</ig-list>
+						</div>
+					</div>
+				</ig-layout>
+			</ig-layout>
+		</ig-layout>
+		<div data-include="../include/footer.html"></div>
+	</body>
+</html>

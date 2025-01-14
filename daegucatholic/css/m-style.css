@@ -1,0 +1,33 @@
+@media all and (max-width:720px) {
+	/* Accordion */
+		/* Default */
+			/*[class*="aco-type"] > .aco-item > .aco-head .aco-toggle::after {flex:0 0 3.33vw; width:3.33vw; height:2.08vw;}*/
+			[class*="aco-type"] .n-base-icon:before {flex:0 0 3.33vw; width:3.33vw; height:2.08vw;}
+
+	/* Form */
+		/* Combobox Default */
+			[class*="form-dropdown"] .form-icon:after {width:3.47vw; height:1.94vw;}
+
+		/* Checkbox & Radio Type */
+			/* Check Box */
+				[class*="form-opt-chk"] .opt-txt:before {border-radius:1.11vw;}
+
+	/* Popover */
+		[class*="popover-type"] .popover-msg {position:fixed; top:auto; width:calc(100dvw - 10vw); transform:translate(-50%, 0) !important;}
+		[class*="popover-type"].active {z-index:10;}
+
+	/* Popup */
+		/* Popup Wrap */
+			[class*="pop-type"] .pop-wrap {justify-content:space-between; width:100dvw; height:100dvh; max-width:100dvw;}
+
+		/* Popup Header */
+			[class*="pop-type"] .pop-head {border-bottom:1px solid #e2e2e2;}
+			[class*="pop-type"] .pop-head .pop-title {font-size:5vw;}
+
+		/* Popup Content */
+			[class*="pop-type"] .pop-cont {display:inline-flex; flex-direction:column; flex:1;}
+			[class*="pop-type"] .pop-cont-in {margin:auto; width:100%;}
+
+		/* Popup Close */
+			[class*="pop-type"] [class*="pop-close"]:before {width:4.17vw; height:4.17vw;}
+}

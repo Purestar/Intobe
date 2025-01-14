@@ -1,0 +1,32 @@
+/* Popup */
+	/* Popup Wrap */
+		[class*="pop-type"] .pop-wrap {overflow:hidden; border-radius:var(--pop-br); left:50%; top:50%; width:var(--pop-w); max-height:var(--pop-max-h); transform:translate(-50%, -50%);}
+
+	/* Popup Header */
+		[class*="pop-type"] .pop-head {position:sticky; left:0; top:0; min-height:var(--pop-hh); padding:10px var(--pop-hh) 10px 30px;}
+		[class*="pop-type"] .pop-head-inner {gap:10px;}
+		[class*="pop-type"] .pop-head .pop-title {flex:1; text-wrap:wrap; font-size:24px; font-weight:700;}
+
+	/* Popup Footer */
+		[class*="pop-type"] .pop-foot {gap:10px; height:var(--pop-fh); padding:0 var(--pop-pad) var(--pop-cont-bot-pad);}
+		[class*="pop-type"] .pop-foot ig-btn {flex:1;}
+		[class*="pop-type"] .pop-foot ig-btn > * {width:100%;}
+		[class*="pop-type"] .pop-foot ig-form {flex:1; max-width:none;}
+		[class*="pop-type"] .pop-foot ig-form > * {width:100%;}
+
+	/* Popup Content */
+		[class*="pop-type"] .pop-cont {overflow-y:auto; max-height:var(--pop-max-h); padding:var(--pop-cont-top-pad) 0 var(--pop-cont-bot-pad);}
+		[class*="pop-type"] .pop-cont:first-child {padding:var(--pop-hh) 0 var(--pop-cont-bot-pad);}
+		[class*="pop-type"] .pop-cont-in {padding:1px var(--pop-pad);}
+		[class*="pop-type"] .pop-cont-in > *:first-child {margin-top:0;}
+
+	/* Popup Backdrop */
+		[class*="pop-type"].modal::backdrop {background:rgba(0, 0, 0, .5);}
+
+	/* Popup Active */
+		[class*="pop-type"] .pop-wrap[open] {display:flex; flex-wrap:nowrap; flex-direction:column;}
+
+	/* Popup Close */
+		[class*="pop-type"] [class*="pop-close"] {display:flex; align-items:center; justify-content:center; flex:0 0 var(--pop-hh); position:absolute; right:0; top:0; width:var(--pop-hh); height:var(--pop-hh); text-indent:-1000em; z-index:20;}
+		[class*="pop-type"] [class*="pop-close"]:before {content:""; background-image:var(--ic-c); background-position:var(--bp-150) var(--bp-250); background-size:var(--bg-sz); width:21px; height:22px;}
+		[class*="pop-type"] .pop-close-no-header:before {background-position:var(--bp-200) var(--bp-250);}

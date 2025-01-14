@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="대구가톨릭">
+		<meta name="description" content="대구가톨릭">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://unpkg.com/naive-ui"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts-wordcloud@2.1.0/dist/echarts-wordcloud.min.js"></script>
+		<script src="../js/pub.js"></script>
+		<link rel="stylesheet" href="../css/global.css">
+		<link rel="stylesheet" href="../css/workspace.css">
+	</head>
+	<body>
+		<div data-include="../include/header.html"></div>
+		<div id="container">
+			<div class="layout-inner contents">
+				<div class="layout-flex gap-60 m-flex-col">
+					<div data-include="../include/mypageSide.html"></div>
+					<div class="m-divider"></div>
+					<div class="mypage-contents">
+						<h3 class="tit-03">HOME</h3>
+						<div class="box-type-02 mt-40">
+							<h3 class="tit-01"><span class="fw-n">학년별</span> <strong>성적변화추이</strong></h3>
+							<div id="gradePerTre" class="e-chart-h-line mt-36"></div>
+						</div>
+						<div class="layout-flex mt-40 gap-40 m-flex-col">
+							<div class="box-type-02">
+								<h3 class="tit-01"><span class="fw-n">직전학기대비</span> <strong>증감현황</strong></h3>
+								<div class="grp-hor-bar-01 mt-40">
+									<div class="grp-cont">
+										<div class="layout-flex align-end justify-between">
+											<h3 class="tit-02">수강신청 학점</h3>
+											<p><i class="ic-arrow-u-02"></i> <strong class="grp-tot">1</strong>건</p>
+										</div>
+									</div>
+									<div class="grp-inner-wrap">
+										<div class="grp-inner">
+											<span class="grp-bar-blu" style="width:45%;"></span>
+										</div>
+										<div class="grp-inner">
+											<span class="grp-bar-gry" style="width:100%;"></span>
+										</div>
+									</div>
+								</div>
+								<div class="grp-hor-bar-01 mt-40">
+									<div class="grp-cont">
+										<div class="layout-flex align-end justify-between">
+											<h3 class="tit-02">비교과 신청</h3>
+											<p><i class="ic-arrow-u-02"></i> <strong class="grp-tot">1</strong>건</p>
+										</div>
+									</div>
+									<div class="grp-inner-wrap">
+										<div class="grp-inner">
+											<span class="grp-bar-blu" style="width:45%;"></span>
+										</div>
+										<div class="grp-inner">
+											<span class="grp-bar-gry" style="width:100%;"></span>
+										</div>
+									</div>
+								</div>
+								<div class="layout-flex justify-end mt-20">
+									<ul class="grp-label-01">
+										<li class="grp-label-blu">이번학기</li>
+										<li class="grp-label-lgry">이번학기</li>
+									</ul>
+								</div>
+							</div>
+							<div class="box-type-02 flex-1">
+								<div class="layout-flex justify-between align-center">
+									<h3 class="tit-01"><span class="fw-n">이번 학기</span> <strong>교과분포</strong></h3>
+									<p>총 <b>15</b>학점</p>
+								</div>
+								<div id="semSubjDist" class="e-chart-treemap mt-48">그래프</div>
+							</div>
+						</div>
+						<div class="box-type-02 mt-40">
+							<div class="layout-flex justify-between">
+								<h3 class="tit-01 fw-n">스펙 현황</h3>
+								<p>총 <b>00</b>개</p>
+							</div>
+							<ul class="layout-grid txt-c lst-item-01-01 gap-8 grid-col-6 justify-between mt-20 m-grid-col-2 m-gap-28">
+								<li>자격증<br><p><strong>2</strong>개</p></li>
+								<li>어학성적<br><p><strong>2</strong>개</p></li>
+								<li>교육이수<br><p><strong>2</strong>개</p></li>
+								<li>대외활동<br><p><strong>2</strong>개</p></li>
+								<li>대외활동<br><p><strong>2</strong>개</p></li>
+								<li>수상<br><p><strong>2</strong>개</p></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div data-include="../include/footer.html"></div>
+
+		<script>
+			// 학년별 성적변화추이
+			const gradePerTreDom = document.getElementById('gradePerTre');
+			const gradePerTreScore = echarts.init(gradePerTreDom);
+
+			const gradePerTreOpt = {
+				xAxis: {
+					type: 'category',
+					data: ['1학기', '2학기', '3학기', '4학기', '5학기', '6학기', '7학기', '8학기'],
+					axisLine: {
+						show: false // y축 라인 숨기기
+					},
+					axisTick: {
+						show: false // x축 눈금 숨기기
+					},
+				},
+				yAxis: {
+					type: 'value',
+					splitLine: {
+						show: true, // 가로 그리드 표시
+						lineStyle: {
+							color: '#e0e0e0', // 가로 그리드 선 색상
+							type: 'solid' // 점선 스타일
+						}
+					}
+				},
+				grid: {
+					left: 0,
+					right: 0,
+					top: 0, // 필요에 따라 조정
+					bottom: '10%', // 필요에 따라 조정
+					containLabel: false // 축 레이블이 없는 경우 true를 false로 설정
+				},
+				tooltip: {
+					trigger: 'axis', // 축을 기준으로 툴팁 표시
+					formatter: '{b} : {c}' // x축 데이터(b)와 y축 값(c)를 표시
+				},
+				series: [
+					{
+						data: [820, 932, 901, 934],
+						type: 'line',
+						smooth: true,
+						lineStyle: {
+							color: '#1c3092' // 라인 색상 설정
+						},
+						areaStyle: {
+							color: {
+								type: 'linear',
+								x: 0, // 시작 점 (x축)
+								y: 0, // 시작 점 (y축)
+								x2: 0, // 끝 점 (x축)
+								y2: 1, // 끝 점 (y축)
+								colorStops: [
+									{ offset: 0, color: 'rgba(191, 196, 239, 1)' }, // 상단 색상 (50% 불투명 빨강)
+									{ offset: 1, color: 'rgba(255, 255, 255, 0)' }  // 하단 색상 (투명 노랑)
+								],
+								global: false // 그라데이션을 로컬 좌표계 기준으로 설정
+							}
+						}
+					}
+				]
+			};
+
+			gradePerTreScore.setOption(gradePerTreOpt);
+
+			// 이번 학기 교과분포
+			const semSubjDistDom = document.getElementById('semSubjDist');
+			const semSubjDistScore = echarts.init(semSubjDistDom);
+
+			const semSubjDistOpt = {
+				tooltip: {
+					formatter: '{b}: {c}'
+				},
+				series: [
+					{
+						type: 'treemap',
+						nodeClick: 'none',
+						breadcrumb: {
+							show: false // 상단의 breadcrumb도 숨김
+						},
+						left: 0, // 왼쪽 여백 제거
+						right: 0, // 오른쪽 여백 제거
+						top: 0, // 위쪽 여백 제거
+						bottom: 0, // 아래쪽 여백 제거
+						borderWidth: 10, // 항목 간 간격 설정
+						itemStyle: {
+							gapWidth: 2 // 하위 항목 간 간격
+						},
+						data: [
+							{
+								name: 'Category A',
+								value: 40,
+								itemStyle: {
+									color: '#276ef0'
+								},
+								children: [
+									{ name: '부전공', value: 10 },
+									{ name: '주전공', value: 20 },
+									{ name: '복수전공', value: 10 }
+								]
+							},
+							{
+								name: 'Category B',
+								value: 40,
+								itemStyle: {
+									color: '#34e5d4'
+								},
+								children: [
+									{ name: '건축이념및인성', value: 10 },
+									{ name: '기초교양', value: 10 },
+									{ name: '일반교양', value: 10 },
+									{ name: '균형교양', value: 10 }
+								]
+							},
+							{
+								name: 'Category C',
+								value: 15,
+								itemStyle: {
+									color: '#fe9ab3'
+								},
+								children: [
+									{ name: '학문기초', value: 15 },
+								]
+							},
+							{
+								name: 'Category D',
+								value: 15,
+								itemStyle: {
+									color: '#ffc65b'
+								},
+								children: [
+									{ name: '교직과목', value: 15 },
+								]
+							},
+							{
+								name: 'Category D',
+								value: 15,
+								itemStyle: {
+									color: '#a052ee'
+								},
+								children: [
+									{ name: '일반선택', value: 15 },
+								]
+							}
+						]
+					}
+				]
+			};
+
+			semSubjDistScore.setOption(semSubjDistOpt);
+		</script>
+	</body>
+</html>

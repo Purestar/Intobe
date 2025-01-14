@@ -1,0 +1,46 @@
+{
+	"Setting": {
+		"breakPoint": [1200, 1024],
+		"breakPointUnit": ["px", "vw"],
+		"device": ["360px", "768px", "1024px", "1200px", "100%"],
+		"project": "Intobe Project"
+	},
+
+	"MenuList": [
+		{ "id": "공통", "submenu": [
+			{ "menu": "로그인", "src": "./page/ULO_010000.html", "state": "comp" },
+			{ "menu": "레이아웃", "src": "./page/layout.html", "state": "comp" },
+			{ "menu": "메인", "src": "./page/UMA_010000.html", "state": "comp" },
+			{ "menu": "학과기반 진로설정", "src": "./page/UEN_010000.html", "state": "comp" },
+			{ "menu": "관심직무설정", "src": "./page/UEN_020000.html", "state": "comp" },
+			{ "menu": "팝업", "src": "./page/popup.html", "state": "work" },
+			{ "menu": "챗봇", "src": "./page/UCH_010000.html", "state": "comp" }
+		], "state": "work" },
+		{ "id": "직업정보", "submenu": [
+			{ "menu": "목록", "src": "./page/UCE_010000.html", "state": "comp" },
+			{ "menu": "상세", "src": "./page/UCE_020100.html", "state": "comp" }
+		], "state": "comp" },
+		{ "id": "진로가이드", "submenu": [
+			{ "menu": "목록", "src": "./page/UCG_010000.html", "state": "work" },
+			{ "menu": "상세", "src": "./page/UCG_020100.html", "state": "work" }
+		], "state": "work" },
+		{ "id": "진로 맵", "submenu": [
+		], "state": "work" },
+		{ "id": "마이페이지", "submenu": [
+			{ "menu": "Home", "src": "./page/UMY_010000.html", "state": "work" },
+			{ "menu": "희망진로설정", "src": "./page/UMY_020100.html", "state": "work" },
+			{ "menu": "스팩관리", "src": "./page/UMY_030000.html", "state": "work" },
+			{ "id": "보관함", "submenu": [
+				{ "menu": "진로탐색", "src": "./page/UMY_040100.html", "state": "work"},
+				{ "menu": "진로가이드", "src": "./page/UMY_040200.html", "state": "work"},
+				{ "menu": "교과", "src": "./page/UMY_040300.html", "state": "work"},
+				{ "menu": "비교과", "src": "./page/UMY_040400.html", "state": "work"},
+				{ "menu": "자격증", "src": "./page/UMY_040500.html", "state": "work"}
+			], "state": "work" }
+		], "state": "work" },
+		{ "id": "e-Notice", "submenu": [
+			{ "menu": "목록", "src": "./page/UNO_010000.html", "state": "comp" },
+			{ "menu": "상세", "src": "./page/UNO_020000.html", "state": "comp" }
+		], "state": "comp" }
+	]
+}
