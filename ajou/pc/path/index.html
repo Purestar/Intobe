@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ko" class="path">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta charset="utf-8">
+		<meta name="description" content="설명">
+		<meta name="viewport" content="width=device-width">
+		<title>아주대학교</title>
+
+		<!-- 실제 프로젝트 시 사용될 Resource -->
+		<link rel="stylesheet" href="../css/common.css" type="text/css" />
+		<link rel="stylesheet" href="../css/plugin.css" type="text/css" />
+		<link rel="stylesheet" href="../css/layout.css" type="text/css" />
+		<link rel="stylesheet" href="../css/style.css" type="text/css" />
+		<link rel="stylesheet" href="../css/custom.css" type="text/css" />
+		<script src="../js/common.js"></script>
+
+		<!-- Path에서만 사용되는 Resource -->
+		<link rel="stylesheet" href="path.css" type="text/css" media="screen" />
+		<script src="path.js"></script>
+	</head>
+	<body class="fixed bg">
+		<header>
+			<h1><a href="index.html"></a></h1>
+			<button type="button" class="btn-panel">☰</button>
+			<!-- <p class="prj-proc">진행률 (<span class="prj-proc-num">0</span>%)</p> -->
+		</header>
+		<nav id="menu">
+			<!-- 학습자 국문 -->
+			<ul>
+				<li class="com"><button data-src="../page/popup.jsp">팝업</button></li>
+				<li class="com"><button data-src="../page/login.jsp">로그인</button></li>
+				<li class="com"><button data-src="../page/main.jsp">메인</button></li>
+				<li class="com"><button data-src="../page/prime.jsp">프라임</button></li>
+				<li class="com">
+					<button data-src="../page/contents.jsp">콘텐츠</button>
+					<ul>
+						<li class="com"><button data-src="../page/moduleL.jsp">콘텐츠 목록</button></li>
+						<li class="com"><button data-src="../page/modulecustomL.jsp">콘텐츠 맞춤추천</button></li>
+						<li class="com"><button data-src="../page/moduleLmenu.jsp">콘텐츠-주제별콘텐츠</button></li>
+						<li class="com"><button data-src="../page/moduleLmenuA.jsp">콘텐츠-전체콘텐츠</button></li>
+					</ul>
+				</li>
+				<li class="com">
+					<button data-src="../page/.jsp">모듈</button>
+					<ul>
+						<li class="com"><button data-src="../page/moduleL.jsp">모듈 목록</button></li>
+						<!--<li class=""><button data-src="../page/.jsp">시청중</button></li>
+						<li class=""><button data-src="../page/.jsp">맞춤 추천</button></li>-->
+						<li class="com"><button data-src="../page/moduleW.jsp">모듈 만들기</button></li>
+						<li class="com"><button data-src="../page/modulecustomL.jsp">모듈 맞춤추천</button></li>
+						<li class="com"><button data-src="../page/moduleLmenu.jsp">모듈-주제별모듈</button></li>
+						<li class="com"><button data-src="../page/moduleLmenuA.jsp">모듈-전체모듈</button></li>
+						<li class="com"><button data-src="../page/moduleV.jsp">모듈상세</button></li>
+					</ul>
+				</li>
+				<li class="com">
+					<button data-src="../page/.jsp">MOOC</button>
+					<ul>
+						<li class="com"><button data-src="../page/moocL.jsp">목록</button></li>
+						<li class="com">
+							<button data-src="../page/.jsp">강좌입장</button>
+							<ul>
+								<li class="com"><button data-src="../page/communotice.jsp">공지사항</button></li>
+								<li class="com"><button data-src="../page/lectview.jsp">강의시청</button></li>
+								<li class="com"><button data-src="../page/lectdata.jsp">강의자료(목록)</button></li>
+								<li class="com"><button data-src="../page/lectdataV.jsp">강의자료(상세)</button></li>
+								<li class="com"><button data-src="../page/lectdataW.jsp">강의자료(등록)</button></li>
+								<li class="com"><button data-src="../page/task.jsp">과제(목록)</button></li>
+								<li class="com"><button data-src="../page/taskV.jsp">과제(상세)</button></li>
+								<li class="com"><button data-src="../page/taskW.jsp">과제(제출)</button></li>
+								<li class="com"><button data-src="../page/taskW02.jsp">과제(피드백)</button></li>
+								<li class="com"><button data-src="../page/exam.jsp">시험</button></li>
+								<li class="com"><button data-src="../page/examV.jsp">시험(상세)</button></li>
+								<!--<li class=""><button data-src="../page/.jsp">설문</button></li>
+								<li class=""><button data-src="../page/.jsp">Q&amp;A</button></li>-->
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="com">
+					<button data-src="../page/.jsp">커뮤니티</button>
+					<ul>
+						<li class="com"><button data-src="../page/community01.jsp">커뮤니티 목록</button></li>
+						<li class="com">
+							<button data-src="../page/.jsp">커뮤니티 상세</button>
+							<ul>
+								<li class="com"><button data-src="../page/communotice.jsp">공지사항</button></li>
+								<!--<li class=""><button data-src="../page/.jsp">자유게시판</button></li>
+								<li class=""><button data-src="../page/.jsp">콘텐츠/모듈 공유게시판</button></li>
+								<li class=""><button data-src="../page/.jsp">탈퇴하기</button></li>-->
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="com">
+					<button data-src="../page/.jsp">게시판</button>
+					<ul>
+						<li class="com"><button data-src="../page/intro.jsp">사이트소개</button></li>
+						<li class="com"><button data-src="../page/pickL.jsp">아주인의 Pick</button></li>
+						<li class="com"><button data-src="../page/pickW.jsp">아주인의 Pick 등록</button></li>
+						<li class="com"><button data-src="../page/boardL.jsp">1:1문의</button></li>
+						<li class="com"><button data-src="../page/boardV.jsp">문의 보기</button></li>
+						<!--<li class="com"><button data-src="../page/qnaL.jsp">qna 리스트(1:1문의)</button></li>-->
+						<li class="com"><button data-src="../page/noticeL.jsp">공지사항</button></li>
+						<li class="com"><button data-src="../page/noticeL_ver02.jsp">K-MOOC 안내</button></li>
+					</ul>
+				</li>
+				<li class="com">
+					<button data-src="../page/.jsp">마이페이지</button>
+					<ul>
+						<li class="com"><button data-src="../page/mypage_info.jsp">나의 활동정보</button></li>
+						<li class="com">
+							<button data-src="../page/.jsp">나의 학습 이력</button>
+							<ul>
+								<li class="com"><button data-src="../page/activities01.jsp">학습 중 콘텐츠</button></li>
+								<li class="com"><button data-src="../page/activities02.jsp">학습 완료 콘텐츠</button></li>
+								<li class="com"><button data-src="../page/activities01.jsp">학습 중 모듈</button></li>
+								<li class="com"><button data-src="../page/activities02.jsp">학습 완료 모듈</button></li>
+								<li class="com"><button data-src="../page/activities01.jsp">학습 중 MOCC</button></li>
+								<li class="com"><button data-src="../page/activities03.jsp">학습완료 MOCC</button></li>
+							</ul>
+						</li>
+						<li class="com"><button data-src="../page/modulecustomL.jsp">나의 모듈</button></li>
+						<li class="com"><button data-src="../page/modulecustomL.jsp">관심 콘텐츠</button></li>
+						<li class="com"><button data-src="../page/modulecustomL.jsp">관심 모듈</button></li>
+
+						<li class="com"><button data-src="../page/notebox_01.jsp">받은쪽지함</button></li>
+						<li class="com"><button data-src="../page/notebox_02.jsp">보낸쪽지함</button></li>
+					</ul>
+				</li>
+			</ul>
+
+			<!-- 학습자 영문 -->
+			<ul>
+				<li class="com"><button data-src="../page/popup_e.jsp">팝업</button></li>
+				<li class=""><button data-src="../page/.jsp">로그인</button></li>
+				<li class=""><button data-src="../page/main_e.jsp">메인</button></li>
+				<li class="">
+					<button data-src="../page/.jsp">콘텐츠</button>
+					<ul>
+						<li class=""><button data-src="../page/.jsp">주제별</button></li>
+						<li class=""><button data-src="../page/.jsp">시청중</button></li>
+						<li class=""><button data-src="../page/.jsp">맛춤</button></li>
+					</ul>
+				</li>
+				<li class="com">
+					<button data-src="../page/.jsp">모듈</button>
+					<ul>
+						<li class=""><button data-src="../page/.jsp">주제별</button></li>
+						<li class=""><button data-src="../page/.jsp">시청중</button></li>
+						<li class=""><button data-src="../page/.jsp">맞춤 추천</button></li>
+						<li class=""><button data-src="../page/.jsp">모듈 만들기</button></li>
+					</ul>
+				</li>
+				<li class="">
+					<button data-src="../page/.jsp">MOOC</button>
+					<ul>
+						<li class="">
+							<button data-src="../page/.jsp">수강신청</button>
+							<ul>
+								<li class=""><button data-src="../page/.jsp">목록</button></li>
+								<li class=""><button data-src="../page/.jsp">상세</button></li>
+							</ul>
+						</li>
+						<li class="">
+							<button data-src="../page/.jsp">수강중 강좌</button>
+							<ul>
+								<li class=""><button data-src="../page/.jsp">공지사항</button></li>
+								<li class=""><button data-src="../page/.jsp">강의시청</button></li>
+								<li class=""><button data-src="../page/.jsp">강의자료</button></li>
+								<li class=""><button data-src="../page/.jsp">과제</button></li>
+								<li class=""><button data-src="../page/.jsp">시험</button></li>
+								<li class=""><button data-src="../page/.jsp">설문</button></li>
+								<li class=""><button data-src="../page/.jsp">Q&amp;A</button></li>
+							</ul>
+						</li>
+						<li class=""><button data-src="../page/.jsp">승인대기 강좌</button></li>
+						<li class=""><button data-src="../page/.jsp">수강완료 강좌</button></li>
+					</ul>
+				</li>
+				<li class="">
+					<button data-src="../page/.jsp">커뮤니티</button>
+					<ul>
+						<li class=""><button data-src="../page/.jsp">전체 커뮤니티</button></li>
+						<li class=""><button data-src="../page/.jsp">내가 개설한 커뮤니티</button></li>
+						<li class=""><button data-src="../page/.jsp">가입 커뮤니티</button></li>
+						<li class=""><button data-src="../page/.jsp">승인대기 커뮤니티</button></li>
+						<li class=""><button data-src="../page/.jsp"></button></li>
+						<li class="">
+							<button data-src="../page/.jsp">커뮤니티 상세</button>
+							<ul>
+								<li class=""><button data-src="../page/.jsp">공지사항</button></li>
+								<!--<li class=""><button data-src="../page/.jsp">자유게시판</button></li>
+								<li class=""><button data-src="../page/.jsp">콘텐츠/모듈 공유게시판</button></li>
+								<li class=""><button data-src="../page/.jsp">탈퇴하기</button></li>-->
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="">
+					<button data-src="../page/.jsp">게시판</button>
+					<ul>
+						<li class=""><button data-src="../page/.jsp">사이트소개</button></li>
+						<li class=""><button data-src="../page/.jsp">아주인의 Pick</button></li>
+						<li class=""><button data-src="../page/.jsp">공지사항</button></li>
+						<li class=""><button data-src="../page/.jsp">1:1 문의</button></li>
+					</ul>
+				</li>
+				<li class="">
+					<button data-src="../page/.jsp">마이페이지</button>
+					<ul>
+						<li class=""><button data-src="../page/.jsp">나의 활동정보</button></li>
+						<li class="">
+							<button data-src="../page/.jsp">나의 학습 이력</button>
+							<ul>
+								<li class=""><button data-src="../page/.jsp">학습 중 콘텐츠</button></li>
+								<li class=""><button data-src="../page/.jsp">학습 완료 콘텐츠</button></li>
+								<li class=""><button data-src="../page/.jsp">학습 중 모듈</button></li>
+								<li class=""><button data-src="../page/.jsp">학습 완료 모듈</button></li>
+								<li class=""><button data-src="../page/.jsp">학습 중 MOCC</button></li>
+								<li class=""><button data-src="../page/.jsp">학습완료 MOCC</button></li>
+							</ul>
+						</li>
+						<li class=""><button data-src="../page/.jsp">나의 모듈</button></li>
+						<li class=""><button data-src="../page/.jsp">관심 콘텐츠</button></li>
+						<li class=""><button data-src="../page/.jsp">관심 모듈</button></li>
+						<li class=""><button data-src="../page/.jsp">관심 주제 설정</button></li>
+					</ul>
+				</li>
+			</ul>
+
+			<!-- 교수자 -->
+			<ul>
+				<li class=""><button data-src="../page/.jsp">대시보드</button></li>
+				<li class=""><button data-src="../page/.jsp">MOOC 관리</button></li>
+				<li class=""><button data-src="../page/.jsp">콘텐츠 관리</button></li>
+				<li class=""><button data-src="../page/.jsp">문제은행</button></li>
+			</ul>
+
+			<ul>
+				<li class="com">
+					<button data-src="">Layout</button>
+					<ul>
+						<li class="com"><button data-src="../page/layout.jsp">Layout</button></li>
+						<li class="com"><button data-src="../page/layout_e.jsp">Layout(영문)</button></li>
+						<li class="com"><button data-src="../page/layout_sub.jsp">Layout(서브)</button></li>
+						<li class="com"><button data-src="../page/layout_lnb.jsp">Layout(서브+LNB)</button></li>
+						<li class="com"><button data-src="../page/layout_lnb02.jsp">Layout(서브+LNB02)</button></li>
+					</ul>
+				</li>
+				<li class="com"><button data-src="./guide/badge.html">Badge</button></li>
+				<li class="com"><button type="button" data-src="./guide/button.html">Button</button></li>
+				<li class="com"><button data-src="./guide/board.html">Board List</button></li>
+				<li class="com"><button data-src="./guide/view.html">Board View</button></li>
+				<li class="com"><button type="button" data-src="./guide/form.html">Form / Table</button></li>
+				<li class="com"><button type="button" data-src="./guide/form_set.html">Form Set</button></li>
+				<li class="com"><button type="button" data-src="./guide/popup.jsp">Popup</button></li>
+				<li class="com"><button data-src="./guide/tab-menu.html">Tab Menu</button></li>
+				<li class="com"><button type="button" data-src="./guide/text.html">Title / Paragraph / Bullet</button></li>
+				<!--<li class="com"><button type="button" data-src="./guide/align.html">Align</button></li>
+				<li class="com"><button type="button" data-src="./guide/icon.html">Icon</button></li>
+				<li class="com"><button type="button" data-src="./guide/thumb.html">Thumbnail</button></li>-->
+				<li class="com"><button type="button" data-src="./guide/list.html">List</button></li>
+				<li class="com"><button type="button" data-src="./guide/etc.html">기타</button></li>
+			</ul>
+		</nav>
+		<section id="container">
+			<p class="this-address"><a href="#" target="blank"></a></p>
+			<iframe src="" title="작업 화면">화면 (Ajax처리)</iframe>
+		</section>
+		<footer>
+			<div class="footer-in">
+				<span class="footer-btn-group">
+					<button type="button" data-btn="menu">학습자(국문)</button>
+					<button type="button" data-btn="menu">학습자(영문)</button>
+					<button type="button" data-btn="menu">교수자</button>
+					<button type="button" data-btn="menu">Guide</button>
+				</span>
+				<span class="footer-btn-group">
+					<button type="button" data-btn="size">320</button>
+					<button type="button" data-btn="size">768</button>
+					<button type="button" data-btn="size">1280</button>
+					<button type="button" data-btn="size">100%</button>
+				</span>
+				<span class="footer-btn-group">
+					<button type="button" data-btn="chk" class="active">레이아웃 고정</button>
+				</span>
+			</div>
+		</footer>
+	</body>
+</html>

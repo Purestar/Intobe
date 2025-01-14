@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ko" class="path">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta charset="utf-8">
+		<meta name="description" content="설명">
+		<meta name="viewport" content="width=device-width">
+		<title>프로젝트 명</title>
+
+		<!-- 실제 프로젝트 시 사용될 Resource -->
+		<link rel="stylesheet" href="../../css/common.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="../../css/plugin.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="../../css/layout.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="../../css/style.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="../../css/custom.css" type="text/css" media="screen" />
+		<script src="../../js/common.js"></script>
+		<script src="../../js/front.js"></script>
+
+		<!-- Path에서만 사용되는 Resource -->
+		<link rel="stylesheet" href="../common.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="../path.css" type="text/css" media="screen" />
+		<script src="../common.js"></script>
+		<script src="../path.js"></script>
+	</head>
+	<body class="bg sg-code-wrap">
+		<!--<div class="sg-code">
+			<div class="sg-html">
+				<h1>Markup</h1>
+				<code>
+					<script type="text/plain" class="language-markup">
+						<h1 class="tit01">제목</h1>
+						<h1 class="para01">문단</h1>
+					</script>
+				</code>
+			</div>
+			<div class="sg-css">
+				<h1>custom.css</h1>
+				<pre><code class="language-css">
+					/* Paragraph */
+						.para01 {font-family:"Roboto", sans-serif; font-size:14px; color:#b9b9b9;}
+
+					/* Title */
+						.tit01 {line-height:20px; font-weight:700; color:#222;}
+						.tit02 {font-size:22px; font-weight:700; color:#222;}
+						.tit03 {font-size:20px; font-weight:700; color:#333;}
+				</code></pre>
+			</div>
+		</div>-->
+		<hr>
+
+		<!--<h1>Form Box</h1>
+		<code>
+			<script type="text/plain" class="language-markup">
+				<div class="form-box"></div>
+			</script>
+		</code>
+		<div class="sg-code-block bg-w">
+			<div class="form-box">
+				<div class="tbl-col02">
+					<div>
+						<div class="sel-type01">
+							<select>
+								<option>교육유형</option>
+							</select>
+						</div>
+					</div>
+					<div>
+						<input type="text" placeholder="텍스트">
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>-->
+
+		<h1>Check Box / Radio</h1>
+		<code>
+			<script type="text/plain" class="language-markup">
+				<label class="chk-rdo01">
+					<input type="checkbox" name=""><span>Checkbox / 체크박스</span>
+				</label>
+
+				<label class="chk-rdo02">
+					<input type="radio" name="a"><span>Radio / 라디오</span>
+				</label>
+			</script>
+		</code>
+		<div class="sg-code-block bg-w">
+			<div class="tbl-col">
+				<label class="chk-rdo01">
+					<input type="checkbox" name=""><span>Checkbox / 체크박스</span>
+				</label>
+				<label class="chk-rdo01">
+					<input type="checkbox" checked name=""><span>Checkbox / 체크박스 / Checked</span>
+				</label>
+				<br>
+				<label class="chk-rdo01">
+					<input type="checkbox" disabled name=""><span>Checkbox / 체크박스 / Disabled</span>
+				</label>
+				<label class="chk-rdo01">
+					<input type="checkbox" checked disabled name=""><span>Checkbox / 체크박스 / Checked + Disabled</span>
+				</label>
+				<br>
+				<label class="chk-rdo02">
+					<input type="radio" name="a"><span>Radio / 라디오</span>
+				</label>
+				<label class="chk-rdo02">
+					<input type="radio" checked name="a"><span>Radio / 라디오 / Checked</span>
+				</label>
+				<br>
+				<label class="chk-rdo02">
+					<input type="radio" disabled name=""><span>Radio / 라디오 / Disabled</span>
+				</label>
+				<label class="chk-rdo02">
+					<input type="radio" checked disabled name=""><span>Radio / 라디오 / Checked + Disabled</span>
+				</label>
+				<br>
+				<label class="chk-rdo01-01">
+					<input type="checkbox" name=""><span>Checkbox / 체크박스</span>
+				</label>
+				<br>
+				<label class="chk-rdo01">
+					<input type="checkbox" name=""><span>Checkbox / 체크박스<em>[필수]</em></span>
+				</label>
+				<label class="chk-rdo01">
+					<input type="checkbox" name=""><span>Checkbox / 체크박스 [선택]</span>
+				</label>
+				<label class="chk-rdo01">
+					<input type="checkbox" name=""><span>Checkbox / 체크박스<br>Checkbox / 체크박스<br>Checkbox / 체크박스</span>
+				</label>
+				<br><br>
+				<label class="chk-rdo01 chk-rdo-sg">
+					<input type="checkbox" name=""><span></span>
+				</label>
+				<label class="chk-rdo02 chk-rdo-sg">
+					<input type="radio" name=""><span></span>
+				</label>
+			</div>
+		</div>
+		<hr>
+
+		<h1>Input</h1>
+		<code>
+			<script type="text/plain" class="language-markup">
+				<!-- 일반 -->
+				<input type="text" placeholder="Default">
+			</script>
+		</code>
+		<div class="sg-code-block bg-w">
+			<div class="fo rm-box">
+				<input type="text" placeholder="Default">
+			</div>
+		</div>
+
+		<h1>Input + Button</h1>
+		<code>
+			<script type="text/plain" class="language-markup">
+				<input type="text" placeholder="Default">
+			</script>
+		</code>
+		<div class="sg-code-block bg-w">
+			<div class="fx-gap-01">
+				<div class="fx-1"><input type="text" placeholder="Default"></div>
+				<div><button type="button" class="btn-">버튼</button></div>
+			</div>
+			<div class="fx-gap-01">
+				<div class="fx-1"><input type="text" placeholder="Default"></div>
+				<div><input type="text" placeholder="Default"></div>
+				<div><button type="button" class="btn-lgry">버튼</button></div>
+			</div>
+		</div>
+
+		<code>
+			<script type="text/plain" class="language-markup">
+				<!-- 비밀번호 -->
+				<input type="password" placeholder="Password">
+			</script>
+		</code>
+		<div class="sg-code-block bg-w">
+			<div class="inp-pswd">
+				<input type="password" placeholder="Password">
+				<button type="button" class="ic-ct-eye">검색</button>
+			</div>
+		</div>
+
+		<code>
+			<script type="text/plain" class="language-markup">
+				<!--
+					값 체크 (클래스 추가)
+					에러: inp-vld-err
+					성공: inp-vld-suc
+				-->
+				<div class="inp-vld">
+					<input type="text" placeholder="Default">
+					<p class="inp-vld-txt">에러, 성공 문구</p>
+					<i class="ic-ct-vld"></i>
+				</div>
+			</script>
+		</code>
+		<div class="sg-code-block bg-w">
+			<div class="fo rm-box">
+				<div class="inp-vld inp-vld-err">
+					<input type="text" placeholder="Default">
+					<p class="inp-vld-txt">에러</p>
+					<i class="ic-ct-vld"></i>
+				</div>
+
+				<div class="inp-vld inp-vld-suc">
+					<input type="text" placeholder="Default">
+					<p class="inp-vld-txt">성공</p>
+					<i class="ic-ct-vld"></i>
+				</div>
+			</div>
+		</div>
+
+		<code>
+			<script type="text/plain" class="language-markup">
+				<!-- 검색 -->
+				<div class="inp-sch">
+					<input type="text" placeholder="Default">
+					<a href="#" class="ic-ct-sch">검색</a>
+				</div>
+			</script>
+		</code>
+		<div class="sg-code-block bg-w">
+			<div class="fo rm-box">
+				<div class="inp-sch">
+					<input type="text" placeholder="Default">
+					<a href="#" class="ic-ct-sch">검색</a>
+				</div>
+			</div>
+		</div>
+
+		<code>
+			<script type="text/plain" class="language-markup">
+				<!-- 데이트피커 -->
+				<div class="inp-date">
+					<input type="text" placeholder="Default">
+				</div>
+			</script>
+		</code>
+		<div class="sg-code-block bg-w">
+			<div class="inp-date">
+				<input type="text" placeholder="Default">
+			</div>
+		</div>
+
+		<h1>Select</h1>
+		<code>
+			<script type="text/plain" class="language-markup">
+				<div class="sel-type">
+					<select>
+						<option>Option / 옵션</option>
+					</select>
+				</div>
+			</script>
+		</code>
+		<div class="sg-code-block bg-w">
+			<div class="sel-type">
+				<select>
+					<option value="a">Option / 옵션Option / 옵션Option / 옵션Option / 옵션Option / 옵션Option / 옵션Option / 옵션Option / 옵션</option>
+					<option>Option / 옵션</option>
+				</select>
+			</div>
+
+			<div class="sel-type">
+				<select disabled>
+					<option>Option / 옵션</option>
+				</select>
+			</div>
+
+			<div class="sel-type01">
+				<select>
+					<option>Option / 옵션</option>
+				</select>
+			</div>
+		</div>
+
+		<h1>Textarea</h1>
+		<code>
+			<script type="text/plain" class="language-markup">
+				<div class="ta-type"><textarea></textarea></div>
+			</script>
+		</code>
+		<div class="sg-code-block bg-w">
+			<div class="form-box">
+				<div class="ta-type">
+					<textarea></textarea>
+					<div class="ta-util">
+						<p><span class="fc-mn">0</span> / 200byte</p>
+						<a href="#" class="btn-">ㅁㄴㅇㅁㄴㅇ</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<h1>Table</h1>
+		<div class="sg-code-block bg-w">
+			<table class="tbl-type01">
+				<colgroup>
+					<col style="width:120px;">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>인풋</th>
+						<td>
+							<input type="text" class="wa" placeholder="제목을 입력하세요.">
+						</td>
+					</tr>
+					<tr>
+						<th>셀렉트박스</th>
+						<td>
+							<div class="sel-type">
+								<select>
+									<option>셀렉트박스</option>
+								</select>
+							</div>
+							<span class="sel-type">
+								<select>
+									<option>셀렉트박스</option>
+								</select>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<th>내용</th>
+						<td><span class="fc-blk">내용</span></td>
+					</tr>
+					<tr>
+						<th>내용</th>
+						<td>내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용</td>
+					</tr>
+					<tr>
+						<th>Textarea</th>
+						<td>
+							<div class="ta-type">
+								<textarea></textarea>
+								<div class="ta-util">
+									<p><span class="fc-mn">0</span> / 200byte</p>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th class="vt">Textarea</th>
+						<td>
+							<p class="mt12">asdasdasdasd</p>
+							<div class="ta-type">
+								<textarea></textarea>
+								<div class="ta-util">
+									<p><span class="fc-mn">0</span> / 200byte</p>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th class="vt">대표이미지</th>
+						<td>
+							<div class="inp-img">
+								<label>
+									<input type="file">
+									<span class="ic-">이미지등록</span>
+								</label>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th>asdasd</th>
+						<td>
+							<div class="fx-gap-02 fx-aic">
+								<div>
+									<button type="button" class="btn-b-">asdasd</button>
+								</div>
+								<div class="bul-sqa">
+									<p>asdasd</p>
+								</div>
+							</div>
+							<!--
+							<ul id="notiLst" class="brd-lst02"></ul>
+
+							<script>
+
+								var notiLst = '';
+
+									notiLst += '<li>';
+									notiLst += '	<div class="brd-cont">';
+									notiLst += '		<h3 class="brd-tit"><a href="#">MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내</a></h3>';
+									notiLst += '		<p class="brd-desc elps-02">교내 정전 작업으로 인해 전산 서비스를  중지합니다.  중지 기간 : 2021.05.23.(일) 06:00 ~ 23:59 (대략 18시간)  중지 서비스 : OSE, AIMS2, 홈페이지, 포탈, 학생웹, 전자결재, 통합모바일, 아주Bb, 자동녹화, 로그인 등  ※ 작업상황에 따라 중지 시간은 변동될 수 있습니다.교내 정전 작업으로 인해 전산 서비스를  중지합니다.  중지 기간 : 2021.05.23.(일) 06:00 ~ 23:59 (대략 18시간)  중지 서비스 : OSE, AIMS2, 홈페이지, 포탈, 학생웹, 전자결재, 통합모바일, 아주Bb, 자동녹화, 로그인 등  ※ 작업상황에 따라 중지 시간은 변동될 수 있습니다.</p>';
+									notiLst += '		<div class="brd-info">';
+									notiLst += '			<p class="vbar-01-01">';
+									notiLst += '				<span class="fx-aic"><span class="bage-03-5-5"></span>intobetutor</span>';
+									notiLst += '				<span><b>조회수</b> 40</span>';
+									notiLst += '				<span><b>등록일</b> 2022-03-04</span>';
+									notiLst += '			</p>';
+									notiLst += '		</div>';
+									notiLst += '	</div>';
+									notiLst += '</li>';
+
+								$("[id*='notiLst']").contRpt(notiLst, 1);
+
+							</script>-->
+						</td>
+					</tr>
+					<tr>
+						<th>Check</th>
+						<td>
+							<div class="fx-gap-02">
+								<label class="chk-rdo01">
+									<input type="checkbox" name=""><span>Checkbox / 체크박스</span>
+								</label>
+								<label class="chk-rdo02">
+									<input type="radio" name=""><span>Checkbox / 체크박스</span>
+								</label>
+							</div>
+						</td>
+					<tr>
+						<th>첨부파일</th>
+						<td>
+							<div class="inp-file">
+								<label>
+									<input type="file">
+									<span class="btn-b-">파일추가</span>
+								</label>
+								<ul class="inp-file-lst">
+									<li><a href="#">1차시 참고자료1차시 참고자료1차시 참고자료1차시 참고자료1차시 참고자료.pdf</a><button type="button" class="inp-ic-del"></button></li>
+									<li><a href="#">1차시 참고자료.pdf</a><button type="button" class="inp-ic-del"></button></li>
+									<li><a href="#">1차시 참고자료.pdf</a><button type="button" class="inp-ic-del"></button></li>
+									<li><a href="#">1차시 참고자료.pdf</a><button type="button" class="inp-ic-del"></button></li>
+									<li><a href="#">1차시 참고자료.pdf</a><button type="button" class="inp-ic-del"></button></li>
+									<li><a href="#">1차시 참고자료.pdf</a><button type="button" class="inp-ic-del"></button></li>
+									<li><a href="#">1차시 참고자료.pdf</a><button type="button" class="inp-ic-del"></button></li>
+									<li><a href="#">1차시 참고자료.pdf</a><button type="button" class="inp-ic-del"></button></li>
+									<li><a href="#">1차시 참고자료.pdf</a><button type="button" class="inp-ic-del"></button></li>
+								</ul>
+							</div>
+							<ul class="bul-sqa">
+								<li>첨부파일 1개 용량은 10MB 이내로 등록해 주세요. 초과할 경우 등록이 되지 않습니다.</li>
+								<li>첨부 가능한 파일이 아닐경우, 압축 프로그램을 이용하여 zip으로 묶어서 등록하기시 바랍니다.</li>
+							</ul>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="wrap-btn">
+				<button type="button" class="btn-lgry btn-sz01">asdasd</button>
+				<a href="#" class="btn-sz01">asdasdasd</a>
+			</div>
+		</div>
+	</body>
+</html>

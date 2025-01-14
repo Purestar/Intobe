@@ -1,0 +1,293 @@
+/* Reset */
+	/* http://meyerweb.com/eric/tools/css/reset/v2.0 | 20110126License:none (public domain) */
+		html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed,figure, figcaption, footer, header, hgroup,menu, nav, output, ruby, section, summary,time, mark, audio, video {margin:0; padding:0; border:0; font-size:100%; font:inherit; vertical-align:baseline;}
+
+	/* HTML5 display-role reset for older browsers */
+		article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display:block;}
+		body {line-height:1;}
+		ol, ul {list-style:none;}
+		blockquote, q {quotes:none;}
+		blockquote:before, blockquote:after,q:before, q:after {content:''; content:none;}
+		table {border-collapse:collapse; border-spacing:0;}
+
+/* Font */
+	@font-face {
+	  font-family: "Noto Sans KR";
+	  font-style: normal;
+	  font-weight: 300;
+	  src: url("../fonts/NotoSansKR-DemiLight.eot");
+	  src: url("../fonts/NotoSansKR-DemiLight.eot?#iefix") format("embedded-opentype"), url("../fonts/NotoSansKR-DemiLight.woff2") format("woff2"), url("../fonts/NotoSansKR-DemiLight.woff") format("woff");
+	}
+	@font-face {
+	  font-family: "Noto Sans KR";
+	  font-style: normal;
+	  font-weight: 400;
+	  src: url("../fonts/NotoSansKR-Regular.eot");
+	  src: url("../fonts/NotoSansKR-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/NotoSansKR-Regular.woff2") format("woff2"), url("../fonts/NotoSansKR-Regular.woff") format("woff");
+	}
+	@font-face {
+	  font-family: "Noto Sans KR";
+	  font-style: normal;
+	  font-weight: 500;
+	  src: url("../fonts/NotoSansKR-Medium.eot");
+	  src: url("../fonts/NotoSansKR-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/NotoSansKR-Medium.woff2") format("woff2"), url("../fonts/NotoSansKR-Medium.woff") format("woff");
+	}
+	@font-face {
+	  font-family: "Noto Sans KR";
+	  font-style: normal;
+	  font-weight: 700;
+	  src: url("../fonts/NotoSansKR-Bold.eot");
+	  src: url("../fonts/NotoSansKR-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/NotoSansKR-Bold.woff2") format("woff2"), url("../fonts/NotoSansKR-Bold.woff") format("woff");
+	}
+
+	/* poppins-300 - latin */
+	@font-face {
+	  font-family: 'Poppins';
+	  font-style: normal;
+	  font-weight: 300;
+	  src: url('../fonts/poppins-v20-latin-300.eot'); /* IE9 Compat Modes */
+	  src: local(''),
+		   url('../fonts/poppins-v20-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		   url('../fonts/poppins-v20-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+		   url('../fonts/poppins-v20-latin-300.woff') format('woff'), /* Modern Browsers */
+		   url('../fonts/poppins-v20-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+		   url('../fonts/poppins-v20-latin-300.svg#Poppins') format('svg'); /* Legacy iOS */
+	}
+	/* poppins-regular - latin */
+	@font-face {
+	  font-family: 'Poppins';
+	  font-style: normal;
+	  font-weight: 400;
+	  src: url('../fonts/poppins-v20-latin-regular.eot'); /* IE9 Compat Modes */
+	  src: local(''),
+		   url('../fonts/poppins-v20-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		   url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+		   url('../fonts/poppins-v20-latin-regular.woff') format('woff'), /* Modern Browsers */
+		   url('../fonts/poppins-v20-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		   url('../fonts/poppins-v20-latin-regular.svg#Poppins') format('svg'); /* Legacy iOS */
+	}
+
+	/* poppins-500 - latin */
+	@font-face {
+	  font-family: 'Poppins';
+	  font-style: normal;
+	  font-weight: 500;
+	  src: url('../fonts/poppins-v20-latin-500.eot'); /* IE9 Compat Modes */
+	  src: local(''),
+		   url('../fonts/poppins-v20-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		   url('../fonts/poppins-v20-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+		   url('../fonts/poppins-v20-latin-500.woff') format('woff'), /* Modern Browsers */
+		   url('../fonts/poppins-v20-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+		   url('../fonts/poppins-v20-latin-500.svg#Poppins') format('svg'); /* Legacy iOS */
+	}
+
+	/* poppins-700 - latin */
+	@font-face {
+	  font-family: 'Poppins';
+	  font-style: normal;
+	  font-weight: 700;
+	  src: url('../fonts/poppins-v20-latin-700.eot'); /* IE9 Compat Modes */
+	  src: local(''),
+		   url('../fonts/poppins-v20-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		   url('../fonts/poppins-v20-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+		   url('../fonts/poppins-v20-latin-700.woff') format('woff'), /* Modern Browsers */
+		   url('../fonts/poppins-v20-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+		   url('../fonts/poppins-v20-latin-700.svg#Poppins') format('svg'); /* Legacy iOS */
+	}
+
+/* Global Style */
+	/* Root */
+	:root {
+		/* 주요 컬러 */
+		--main-color:#5358ce; /* 메인 컬러 */
+		--main-over-color:#363982; /* 메인 오버 컬러 */
+		--main-light-color:#ebedfe; /* 밝은 메인 컬러 */
+		--main-color-pur: #7516ab; /* 메인 보라색 */
+
+		/* 폼 요소 */
+		--frm-h:48px; /* 폼 요소 기본 높이 */
+		--frm-lh:46px; /* 폼 요소 기본 문단 간격 */
+		--frm-pad:14px; /* 폼 요소 기본 좌우 패딩 */
+		--frm-fs:16px; /* 폼 요소 기본 폰트 크기 */
+		--frm-br:10px; /* 폼 요소 기본 보더 라디우스 */
+		--vdo-h:56px; /* 비디오 요소 기본 높이 */
+
+		/* 무채색 계열 색상 */
+		--fc-c01:#000;
+		--fc-c02:#666; /* 기본 글자 색 */
+		--fc-c03:#999;
+		--fc-c04:#aaa;
+		--fc-c05:#f8f8f8;
+		--fc-c06:#fff;
+
+		/* 기본 */
+		--init-ls:-0.020em; /* 기본 레터 스페이싱 */
+		--init-fs:16px; /* 기본 글자 크기 */
+		--init-lh:24px; /* 기본 문단 간격 */
+		--init-ff:"Poppins", "Noto Sans KR", sans-serif; /* 기본 폰트 */
+		--init-cont-w:1200px; /* 기본 컨텐츠 넓이 */
+		--init-fh:192px; /* 푸터 높이 */
+
+		 /* 배경 스타일 */
+		--bg-type01:linear-gradient(90deg, rgba(80,87,208,1) 0%, rgba(115,91,187,1) 100%); /* 파/보 그라데이션 */
+		--bg-type02:linear-gradient(90deg, rgba(80,87,208,0.67) 0%, rgba(115,91,187,0.67) 100%); /* 파/보 그라데이션 */
+		--bg-type03:rgba(0, 0, 0, 0.5);
+
+		/* 그림자 스타일 */
+		--bs-type01:0 10px 9px rgba(0, 0, 0, 0.07);
+		--bs-type02:0 10px 20px rgba(0, 0, 0, 0.06);
+		--bs-type03:0 6px 29px rgba(0, 0, 0, 0.06);
+
+		/* 아이콘 관련 */
+		--icon:url("../images/icon.png") no-repeat;
+
+		/* 테두리 */
+		--bdr-01:1px solid #e2e2e2;
+
+		/* 팝업 */
+		--pop-pad:40px; /* 팝업 좌우 여백 */
+		--pop-pad2:30px; /* 팝업 상하 여백 */
+		--pop-br:12px; /* 팝업 보더 라디우스 */
+		--pop-hh:91px; /* 팝업 헤더 높이 */
+		--pop-fh:96px; /* 팝업 푸터 높이 */
+		--pop-maxh:90vh; /* 팝업 최대 높이 */
+		--pop-contmaxh:calc(var(--pop-maxh) - var(--pop-hh) - var(--pop-fh) - var(--pop-pad2)); /* 팝업 내용 최대 높이 */
+
+		/* 스크롤 */
+		--scr-w:6px; /* 스크롤 넓이 / 보더 라디우스 기타 등등 */
+		--scr-bg1:#e6e6e6; /* 스크롤 배경색 */
+		--scr-bg2:#dfdfdf; /* 스크롤 색상 */
+	}
+
+	* {box-sizing:border-box;}
+	html {scroll-behavior: smooth;}
+	body {background:white; width:100vw; min-width:var(--init-cont-w); font-family:var(--init-ff); font-size:var(--init-fs); line-height:var(--init-lh); letter-spacing:var(--init-ls); color:var(--fc-c02);}
+	::selection {background-color:var(--main-color); color:white;}
+
+	/* Contents */
+	a {text-decoration:none; color:inherit;}
+	img {vertical-align:top;}
+	strong {font-weight:700;}
+	b {font-weight:500;}
+	em {color:#e04b4b;}
+	small {font-size:80%;}
+
+	/* Form */
+	select,
+	button,
+	textarea,
+	input[type="text"],
+	input[type="password"] {-webkit-appearance:none; -ms-appearance:none; appearance:none; background:none; border:none; padding:0; font-family:var(--init-ff); font-size:inherit; font-weight:inherit; letter-spacing:var(--init-ls); color:inherit; outline:0;}
+
+	input[type="text"],
+	input[type="password"],
+	select,
+	textarea {width:100%; caret-color:var(--main-color);}
+
+	input[type="text"],
+	input[type="password"],
+	*::placeholder {color:inherit;}
+
+	button, label {cursor:pointer;}
+	label {display:inline-block;}
+
+	legend, caption {position:fixed; left:-100vw;}
+
+	table {table-layout:fixed; width:100%;}
+
+	/* Align */
+	.ac {text-align:center !important;}
+	.ar {text-align:right !important;}
+	.al {text-align:left !important;}
+	.fl {float:left;}
+	.fr {float:right;}
+	.of {overflow:hidden;}
+	.vt,
+	.vt > * {vertical-align:top !important;}
+	.vm,
+	.vm > * {vertical-align:middle !important;}
+	.vb,
+	.vb > * {vertical-align:bottom !important;}
+	.pr {position:relative;}
+	.ec {position:absolute; left:50%; top:50%; transform:translate(-50%, -50%);}
+	.tal,
+	.tal th,
+	.tal td {padding-left:0 !important; text-align:left !important;}
+	.tac th,
+	.tac td {text-align:center;}
+	.lh1 {line-height:1 !important;}
+
+	.clfix:after{clear:both; content: ""; display: block;}
+	.ma {margin:0 auto !important;}
+
+/* Ellipsis */
+	.elps {overflow:hidden; display:inline-block; text-overflow:ellipsis; white-space:nowrap; word-break:break-all; width:100%;}
+	td.elps {display:table-cell;}
+	[class*="elps-"] {overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-box-orient:vertical;}
+	.elps-01 {-webkit-line-clamp:1;}
+	.elps-02 {-webkit-line-clamp:2;}
+
+/* Interval */
+	.m0 {margin:0 !important;}
+	.mt0 {margin-top:0 !important;}
+	.mt5 {margin-top:5px !important;}
+	.mt8 {margin-top:8px;}
+	.mt10 {margin-top:10px !important;}
+	.mt12 {margin-top:12px !important;}
+	.mt15 {margin-top:15px;}
+	.mt16 {margin-top:16px;}
+	.mt20 {margin-top:20px !important;}
+	.mt22 {margin-top:22px;}
+	.mt24 {margin-top:24px;}
+	.mt25 {margin-top:25px;}
+	.mt28 {margin-top:28px;}
+	.mt30 {margin-top:30px !important;}
+	.mt32 {margin-top:32px;}
+	.mt35 {margin-top:35px;}
+	.mt40 {margin-top:40px;}
+	.mt45 {margin-top:45px !important;}
+	.mt48 {margin-top:48px !important;}
+	.mt50 {margin-top:50px !important;}
+	.mt55 {margin-top:55px;}
+	.mt60 {margin-top:60px !important;}
+	.mt70 {margin-top:70px;}
+	.mt80 {margin-top:80px !important;}
+	.mt90 {margin-top:90px;}
+	.mt100 {margin-top:100px;}
+
+	.ml5 {margin-left:5px;}
+	.ml10 {margin-left:10px;}
+	.ml16 {margin-left:16px;}
+	.ml20 {margin-left:20px;}
+	.ml30 {margin-left:30px;}
+
+	.mr5 {margin-right:5px;}
+	.mr10 {margin-right:10px;}
+	.mr30 {margin-right:30px;}
+
+	.mb5 {margin-bottom:5px;}
+	.mb10 {margin-bottom:10px;}
+	.mb20 {margin-bottom:20px;}
+
+	.p0 {padding:0 !important;}
+	.pr0{padding-right: 0 !important;}
+	.pt10{padding-top: 10px !important;}
+	.pt20{padding-top: 20px !important;}
+
+/* Skip Navigation */
+	.skip-nav a {position:fixed; left:-100%; top:0; width:100%; background:black; line-height:40px; text-align:center; color:white; z-index:100;}
+	.skip-nav a:hover,
+	.skip-nav a:focus {left:0;}
+
+/* Text */
+	.tdu {text-decoration:underline;}
+	.ttu {text-transform:uppercase;}
+
+/* Width */
+	.wa {width:auto !important;}
+	.w100 {width:100%;}
+
+/* ETC */
+	.no-bdr {border:none !important;}
+	.no-bg {background:none !important;}
+	.sr-only {overflow: hidden;position: absolute;width: 1px;height: 1px;margin: -1px;padding: 0;border: 0;clip: rect(0 0 0 0);text-indent: -9999px;}

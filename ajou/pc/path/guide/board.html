@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="ko" class="path">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta charset="utf-8">
+		<meta name="description" content="설명">
+		<meta name="viewport" content="width=device-width">
+		<title>프로젝트 명</title>
+
+		<!-- 실제 프로젝트 시 사용될 Resource -->
+		<link rel="stylesheet" href="../../css/common.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="../../css/plugin.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="../../css/layout.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="../../css/style.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="../../css/custom.css" type="text/css" media="screen" />
+		<script src="../../js/common.js"></script>
+		<script src="../../js/front.js"></script>
+
+		<!-- Path에서만 사용되는 Resource -->
+		<link rel="stylesheet" href="../common.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="../path.css" type="text/css" media="screen" />
+		<script src="../common.js"></script>
+		<script src="../path.js"></script>
+	</head>
+	<body class="bg sg-code-wrap">
+		<h1>List Search</h1>
+		<div class="sg-code-block bg-w">
+			<div class="brd-wrap">
+				<div class="brd-form">
+					<div>
+						<div class="sel-type">
+							<select>
+								<option>콘텐츠명</option>
+							</select>
+						</div>
+					</div>
+					<div class="fx-1">
+						<div class="inp-sch">
+							<input type="text">
+							<a href="#"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<h1>List Top</h1>
+		<div class="sg-code-block bg-w">
+			<div class="brd-wrap">
+				<div class="brd-top">
+					<div>
+						<p class="brd-tot">총 <strong class="fc-mn">24</strong>건</p>
+					</div>
+					<div>
+						<ul class="brd-ft">
+							<li class="active"><a href="#" class="brd-ft-ic-img">이미지</a></li>
+							<li><a href="#" class="brd-ft-ic-lst">리스트</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<h1>List Type 01</h1>
+		<div class="sg-code-block bg-w">
+			<div class="brd-wrap">
+				<ul class="brd-lst01" data-repeat="list"></ul>
+				<ul class="brd-lst01-01" data-repeat="list"></ul>
+				<script>
+
+					var procLst = "";
+
+						procLst += '<li>';
+						procLst += '	<div class="thumb-01">';
+						procLst += '		<img src="http://via.placeholder.com/270x152">';
+						procLst += '		<input type="checkbox" class="btn-df-ic-favor">';
+						procLst += '		<span class="bage-01-pur">asdasdasd</span>';
+						procLst += '		<span class="bage-02-gry">asdasdasd</span>';
+						procLst += '	</div>';
+						procLst += '	<div class="brd-cont">';
+						procLst += '		<p class="brd-ctgr">영어</p>';
+						procLst += '		<h3 class="brd-tit"><a href="#">[Python Basic] 14.while statementwhile statementwhile statementwhile statementwhile</a></h3>';
+						procLst += '		<span class="vbar-01">';
+						procLst += '			<span><span class="brd-ic-play">20</span></span>';
+						procLst += '			<span><span class="brd-ic-date">2022-03-01</span></span>';
+						procLst += '		</span>';
+						procLst += '	</div>';
+						procLst += '	<div class="brd-hover">';
+						procLst += '		<a href="#">자세히보기</a>';
+						procLst += '	</div>';
+						procLst += '</li>';
+
+						$("[data-repeat='list']").contRpt(procLst, 4);
+				</script>
+			</div>
+		</div>
+
+		<h1>List Type 02</h1>
+		<div class="sg-code-block bg-w">
+			<div class="brd-wrap">
+				<div class="brd-form fx-jcsb">
+					<div>
+						<div class="inp-sch">
+							<input type="text">
+							<a href="#"></a>
+						</div>
+					</div>
+					<div class="brd-ft">
+						<a href="#" class="active">최신순</a>
+						<a href="#">가입자순</a>
+					</div>
+				</div>
+
+				<ul class="brd-lst02">
+					<li>
+						<div class="brd-cont">
+							<div>
+								<h3 class="brd-tit"><a href="#">MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내</a></h3>
+								<p class="brd-desc elps-02">교내 정전 작업으로 인해 전산 서비스를  중지합니다.  중지 기간 : 2021.05.23.(일) 06:00 ~ 23:59 (대략 18시간)  중지 서비스 : OSE, AIMS2, 홈페이지, 포탈, 학생웹, 전자결재, 통합모바일, 아주Bb, 자동녹화, 로그인 등  ※ 작업상황에 따라 중지 시간은 변동될 수 있습니다.교내 정전 작업으로 인해 전산 서비스를  중지합니다.  중지 기간 : 2021.05.23.(일) 06:00 ~ 23:59 (대략 18시간)  중지 서비스 : OSE, AIMS2, 홈페이지, 포탈, 학생웹, 전자결재, 통합모바일, 아주Bb, 자동녹화, 로그인 등  ※ 작업상황에 따라 중지 시간은 변동될 수 있습니다.</p>
+								<div class="brd-info">
+									<p class="vbar-01-01">
+										<span class="fx-aic"><span class="bage-03-5-5"></span>intobetutor</span>
+										<span><b>조회수</b> 40</span>
+										<span><b>등록일</b> 2022-03-04</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="brd-cont">
+							<div class="thumb-01">
+								<img src="http://via.placeholder.com/270x152">
+							</div>
+							<div>
+								<h3 class="brd-tit"><a href="#">MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내</a></h3>
+								<p class="brd-desc elps-02">교내 정전 작업으로 인해 전산 서비스를  중지합니다.  중지 기간 : 2021.05.23.(일) 06:00 ~ 23:59 (대략 18시간)  중지 서비스 : OSE, AIMS2, 홈페이지, 포탈, 학생웹, 전자결재, 통합모바일, 아주Bb, 자동녹화, 로그인 등  ※ 작업상황에 따라 중지 시간은 변동될 수 있습니다.교내 정전 작업으로 인해 전산 서비스를  중지합니다.  중지 기간 : 2021.05.23.(일) 06:00 ~ 23:59 (대략 18시간)  중지 서비스 : OSE, AIMS2, 홈페이지, 포탈, 학생웹, 전자결재, 통합모바일, 아주Bb, 자동녹화, 로그인 등  ※ 작업상황에 따라 중지 시간은 변동될 수 있습니다.</p>
+								<div class="brd-info">
+									<p class="vbar-01-01">
+										<span class="fx-aic"><span class="bage-03-5-5"></span>intobetutor</span>
+										<span><b>조회수</b> 40</span>
+										<span><b>등록일</b> 2022-03-04</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="brd-cont">
+							<a href="#" class="thumb-01 thumb-play">
+								<img src="http://via.placeholder.com/270x152">
+							</a>
+							<div>
+								<h3 class="brd-tit"><a href="#">MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내</a></h3>
+								<p class="brd-desc">Python Basic - 30.Python Style Coding more in str class</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="brd-cont">
+							<div class="thumb-01">
+								<img src="http://via.placeholder.com/270x152">
+							</div>
+							<div>
+								<p class="brd-ctgr">인문, 철학, 에세이</p>
+								<h3 class="brd-tit"><a href="#">MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내</a></h3>
+								<p class="brd-desc vbar-01">
+									<span><b>운영자</b>운영자</span>
+									<span><b>회원수</b>12312</span>
+								</p>
+							</div>
+						</div>
+						<div class="brd-btn fx-aic">
+							<button type="button" class="btn-b-lgry">승인대기</button>
+						</div>
+					</li>
+					<li>
+						<div class="brd-cont fx-aic">
+							<div class="thumb-01">
+								<img src="http://via.placeholder.com/270x152">
+								<input type="checkbox" class="btn-df-ic-favor">
+							</div>
+							<div>
+								<p class="brd-ctgr">인문, 철학, 에세이</p>
+								<h3 class="brd-tit"><a href="#">MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내</a></h3>
+								<div class="brd-desc fx-row">
+									<p class="vbar-01">
+										<span><b>유형</b>운영자</span>
+										<span><b>회원수</b>12312</span>
+										<span><b>회원수</b>12312</span>
+									</p>
+									<p class="vbar-01">
+										<span><b>유형</b>운영자</span>
+										<span><b>회원수</b>12312</span>
+										<span><b>회원수</b>12312</span>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="brd-stat fx-jcc fx-aic">
+							<b class="fc-pnk">미처리</b>
+							<b class="fc-blu">수료</b>
+							<b>미수료</b>
+						</div>
+					</li>
+					<li>
+						<div class="brd-cont fx-aic">
+							<div class="thumb-01">
+								<img src="http://via.placeholder.com/270x152">
+							</div>
+							<div>
+								<p class="brd-ctgr">인문, 철학, 에세이</p>
+								<h3 class="brd-tit"><a href="#">MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내</a></h3>
+								<div class="brd-desc fx-row">
+									<p class="vbar-01">
+										<span><b>유형</b>운영자</span>
+										<span><b>회원수</b>12312</span>
+										<span><b>회원수</b>12312</span>
+									</p>
+									<div class="mt35">
+										<b>진도율</b>
+										<span class="grp-horbar-type">
+											<span class="grp-horbar" style="width:30%;">
+												<span class="grp-horbar-num"><b>30</b>%</span>
+											</span>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="brd-cont">
+							<div>
+								<h3 class="brd-tit"><a href="#" class="fx-gap-03 fx-aic"><span class="elps">[물리 2]웹과제 8-2 : 전자기유도1</span><i class="ic-file"></i><span class="bage-06-ylw">진행중</span></a></h3>
+								<div class="brd-info">
+									<p class="vbar-01">
+										<span><b>등록자</b> 김현수</span>
+										<span><b>등록일</b> 2022-03-04</span>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="brd-btn fx-aic">
+							<button type="button" class="btn-b-lgry">승인대기</button>
+						</div>
+					</li>
+					<li>
+						<div class="brd-cont">
+							<div class="fx-gap-02">
+								<div class="bage-05-lpur02">1일차</div>
+								<div class="fx-row fx-gap-04">
+									<h3 class="brd-tit"><a href="#" class="fx-gap-03"><span class="elps">[물리 2]웹과제 8-2 : 전자기유도1</span></a></h3>
+									<p class="vbar-01">
+										<span><b>등록자</b> 김현수</span>
+										<span><b>등록일</b> 2022-03-04</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<h1>List Type 03</h1>
+		<div class="sg-code-block bg-w">
+			<div class="brd-wrap">
+				<ul class="brd-lst03">
+					<li>
+						<div class="brd-cont">
+							<label class="thumb-01 thumb-slt">
+								<input type="radio" name="a">
+								<div class="thumb-slt-bg"></div>
+								<div class="thumb-slt-pos">
+									<span class="thumb-slt-repre">대표</span>
+									<span class="thumb-ic-chk"></span>
+								</div>
+								<img src="http://via.placeholder.com/270x152">
+								<span class="bage-0101-lpur"></span>
+							</label>
+							<div>
+								<h3 class="brd-tit">asdasdasd</h3>
+								<p class="brd-desc">Python Basic - 30.Python Style Coding more in str class</p>
+								<p class="brd-time">총 12분 56초</p>
+							</div>
+						</div>
+
+						<div class="brd-btn fx-row fx-jcsb">
+							<div>
+								<button type="button" class="btn-df-ic-ct-del"></button>
+							</div>
+							<div>
+								<div class="fx-row fx-gap-01">
+									<div><button type="button" class="btn-df-ic-up"></button></div>
+									<div><button type="button" class="btn-df-ic-down"></button></div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="brd-cont">
+							<label class="thumb-01 thumb-slt">
+								<input type="radio" name="a">
+								<div class="thumb-slt-bg"></div>
+								<div class="thumb-slt-pos">
+									<span class="thumb-slt-repre">대표</span>
+									<span class="thumb-ic-chk"></span>
+								</div>
+								<img src="http://via.placeholder.com/270x152">
+								<span class="bage-0101-lpur"></span>
+							</label>
+							<div>
+								<h3 class="brd-tit">asdasdasd</h3>
+								<p class="brd-desc">Python Basic - 30.Python Style Coding more in str class</p>
+								<p class="brd-time">총 12분 56초</p>
+							</div>
+						</div>
+
+						<div class="brd-btn fx-row fx-jcsb">
+							<div>
+								<button type="button" class="btn-df-ic-ct-del"></button>
+							</div>
+							<div>
+								<div class="fx-row fx-gap-01">
+									<div><button type="button" class="btn-df-ic-up"></button></div>
+									<div><button type="button" class="btn-df-ic-down"></button></div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="brd-cont">
+							<div class="thumb-01">
+								<img src="http://via.placeholder.com/270x152">
+								<span class="bage-0101-lpur"></span>
+							</div>
+							<div>
+								<h3 class="brd-tit">asdasdasd</h3>
+								<p class="brd-desc">Python Basic - 30.Python Style Coding more in str class</p>
+								<div class="vbar-01">
+									<span><span class="brd-ic-play">20</span></span>
+									<span><span class="brd-ic-date">2022-03-01</span></span>
+								</div>
+							</div>
+						</div>
+
+						<div class="brd-btn fx-row fx-jcsb">
+							<div>
+								<button type="button" class="btn-df-ic-ct-del"></button>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="brd-cont">
+							<div class="thumb-01">
+								<img src="http://via.placeholder.com/270x152">
+								<span class="bage-0101-lpur"></span>
+							</div>
+							<div>
+								<p class="brd-ctgr">영어</p>
+								<h3 class="brd-tit"><a href="#">[Python Basic] 14.while statementwhile statementwhile statementwhile statementwhileatementwhile statementwhile statementwhile statementwhile</a></h3>
+								<div class="vbar-01">
+									<span><span class="brd-ic-play">20</span></span>
+									<span><span class="brd-ic-date">2022-03-01</span></span>
+								</div>
+							</div>
+						</div>
+						<div class="brd-btn fx-aic">
+							<button type="button" class="btn-df-ic-ct-del03"></button>
+						</div>
+					</li>
+					<li>
+						<div class="brd-cont">
+							<div class="fx-gap-02">
+								<div class="bage-05-lpur02">1일차</div>
+								<div class="fx-row fx-gap-04">
+									<h3 class="brd-tit"><a href="#" class="fx-gap-03"><span class="elps">[물리 2]웹과제 8-2 : 전자기유도1</span></a></h3>
+									<p class="vbar-01">
+										<span><b>등록자</b> 김현수</span>
+										<span><b>등록일</b> 2022-03-04</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="mt50"></div>
+				<ul class="brd-lst03-01">
+					<li>
+						<div class="brd-cont">
+							<a href="#" class="thumb-01 thumb-play">
+								<img src="http://via.placeholder.com/270x152">
+							</a>
+							<div>
+								<p class="brd-ctgr">영어</p>
+								<h3 class="brd-tit"><a href="#">[Python Basic] 14.while statementwhile statementwhile statementwhile statementwhileatementwhile statementwhile statementwhile statementwhile</a></h3>
+								<div class="vbar-01">
+									<span><span class="brd-ic-play">20</span></span>
+									<span><span class="brd-ic-date">2022-03-01</span></span>
+								</div>
+							</div>
+						</div>
+						<div class="brd-btn fx-aic">
+							<label class="btn-df-ic-chk">
+								<input type="checkbox">
+								<span class="ic-ct-"></span>
+							</label>
+						</div>
+					</li>
+					<li>
+						<div class="brd-cont">
+							<a href="#" class="thumb-01 thumb-play">
+								<img src="http://via.placeholder.com/270x152">
+							</a>
+							<div>
+								<p class="brd-ctgr">영어</p>
+								<h3 class="brd-tit"><a href="#">[Python Basic] 14.while statementwhile statementwhile statementwhile statementwhileatementwhile statementwhile statementwhile statementwhile</a></h3>
+								<div class="vbar-01">
+									<span><span class="brd-ic-play">20</span></span>
+									<span><span class="brd-ic-date">2022-03-01</span></span>
+								</div>
+							</div>
+						</div>
+						<div class="brd-btn fx-aic">
+							<label class="btn-df-ic-chk">
+								<input type="checkbox">
+								<span class="ic-ct-"></span>
+							</label>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+<!--
+		<h1>List Type 04</h1>
+		<div class="sg-code-block bg-w">
+			<div class="brd-wrap">
+				<ul class="brd-lst04">
+					<li>
+						<div class="brd-cont">
+							<label class="thumb-01 thumb-slt">
+								<input type="radio" name="a">
+								<div class="thumb-slt-bg"></div>
+								<img src="http://via.placeholder.com/270x152">
+								<span class="bage-0101-lpur"></span>
+							</label>
+							<div>
+
+							</div>
+						</div>
+						<div class="brd-btn fx-aic">
+							asdaasd
+						</div>
+					</li>
+				</ul>
+				<div class="brd-paging">
+					<a href="#" class="brd-paging-first"></a>
+					<a href="#" class="brd-paging-next"></a>
+					<a href="#" class="active">1</a>
+					<a href="#">2</a>
+					<a href="#">3</a>
+					<a href="#">4</a>
+					<a href="#" class="brd-paging-prev"></a>
+					<a href="#" class="brd-paging-last"></a>
+				</div>
+			</div>
+		</div>-->
+
+		<h1>Table List</h1>
+		<div class="sg-code-block bg-w">
+			<div class="brd-wrap">
+				<table class="tbl-type01">
+					<colgroup>
+						<col>
+						<col>
+						<col>
+						<col>
+						<col>
+					</colgroup>
+					<thead>
+						<tr>
+							<th>유형</th>
+							<th>제목</th>
+							<th>유형</th>
+							<th>유형</th>
+							<th>유형</th>
+						</tr>
+					</thead>
+					<tbody class="ac">
+						<tr>
+							<td>1</td>
+							<td class="al"><a href="#" class="brd-lnk"><span class="elps">링크링크링크링크링크링크링크링크링크링크링크링크링크링크링크링크링크링크링크링크링크링크링크링크링크링크링크</span><i class="ic-file"></i></a></td>
+							<td>3</td>
+							<td>0000-00-00</td>
+							<td><span class="fc-mn">asdasdasd</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<h1>Latest</h1>
+		<div class="sg-code-block bg-w">
+			<div class="brd-wrap">
+				<ul id="noticeLst" class="brd-latest">
+					<li>
+						<a href="#">
+							<span class="elps">삼일아카데미 COVID-19 대응조치방안 안내삼일아카데미 COVID-19 대응조치방안 안내삼일아카데미 COVID-19 대응조치방안 안내삼일아카데미 안내</span>
+							<span class="brd-date">2021.09.02</span>
+						</a>
+					</li>
+				</ul>
+				<script>
+					var noticeLst = '';
+
+						noticeLst += '<li>';
+						noticeLst += '	<a href="#">';
+						noticeLst += '		<span class="elps">삼일아카데미 COVID-19 대응조치방안 안내삼일아카데미 COVID-19 대응조치방안 안내삼일아카데미 COVID-19 대응조치방안 안내삼일아카데미 안내</span>';
+						noticeLst += '		<span class="brd-date">2021.09.02</span>';
+						noticeLst += '	</a>';
+						noticeLst += '</li>';
+
+					$("[id='noticeLst']").contRpt(noticeLst, 5);
+				</script>
+			</div>
+		</div>
+
+		<h1>Paging</h1>
+		<div class="sg-code-block bg-w">
+			<div class="brd-wrap">
+				<div class="brd-paging">
+					<a href="#" class="brd-paging-first"></a>
+					<a href="#" class="brd-paging-next"></a>
+					<a href="#" class="active">1</a>
+					<a href="#">2</a>
+					<a href="#">3</a>
+					<a href="#">4</a>
+					<a href="#" class="brd-paging-prev"></a>
+					<a href="#" class="brd-paging-last"></a>
+				</div>
+
+				<div class="wrap-paging">
+					<div class="brd-paging">
+						<a href="#" class="brd-paging-first"></a>
+						<a href="#" class="brd-paging-next"></a>
+						<a href="#" class="active">1</a>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#" class="brd-paging-prev"></a>
+						<a href="#" class="brd-paging-last"></a>
+					</div>
+					<div class="wrap-btn">
+						<button type="button" class="btn-b-">등록</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
