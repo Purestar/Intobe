@@ -45,8 +45,12 @@
 		.brd-list-general .bar-v {gap:0;}
 		.brd-list-general .bar-v > * + * {gap:30px;}
 
-		.brd-lst-gallery .brd-cont-wrap {gap:8px; margin-top:20px; line-height:1; color:#666;}
-		.brd-lst-gallery .brd-lst-desc {line-height:22px;}
+		[class*="brd-lst-gallery"] .brd-cont-wrap {gap:8px; margin-top:20px; line-height:1; color:#666;}
+		[class*="brd-lst-gallery"] .brd-lst-desc {line-height:22px;}
+
+		.brd-lst-gallery-02 {gap:32px;}
+		.brd-lst-gallery-02 [class*="thumb-type-01"] .thumb-inner {width:285px; height:162px;}
+		.brd-lst-gallery-02 .bar-v-01 {flex-wrap:wrap;}
 
 	/* View */
 		.brd-view-general {margin-top:60px;}
@@ -59,7 +63,8 @@
 /* Box */
 	[class*="box-type"] > *:first-child {margin-top:0 !important;}
 
-	.box-type-01 {background:#f8f8f8; border-radius:10px; padding:14px; line-height:1; color:#666;}
+	[class*="box-type-01"] {background:#f8f8f8; border-radius:10px; padding:14px; line-height:1; color:#666;}
+	.box-type-01-01 {padding:40px;}
 	.box-type-02 {border:1px solid #ebebeb; border-radius:28px; padding:40px;}
 	.box-type-03 {background:white; border-radius:30px; box-shadow:0px 0px 33px rgba(0, 0, 0, 0.06); padding:40px 40px;}
 	.box-type-04 {background:#eceeff; border-radius:20px; padding:26.215px 60px;}
@@ -110,6 +115,11 @@
 		/* Button */
 			.form-opt-btn-01 .opt-txt {width:100%; height:80px; font-size:20px;}
 			.form-opt-btn-01 input:checked + .opt-txt {background:#f1f3ff; font-size:20px; color:var(--mc);}
+
+			.form-opt-btn-02 .opt-txt,
+			.form-opt-btn-02 input:checked + .opt-txt {border-color:#e2e2e2; border-radius:34px; height:34px; min-height:auto; font-size:14px; color:#666; white-space:nowrap;}
+			.form-opt-btn-02 input:checked + .opt-txt {background:white; border-color:var(--mc); color:var(--mc);}
+			.form-opt-btn-02 input:disabled + .opt-txt {background:#e4e6f3; border-color:#e4e6f3;}
 
 		/* Check Box */
 			.form-opt-chk-01 .opt-txt {display:flex; align-items:center; justify-content:center; background:white; border:1px solid #f1f3ff; border-radius:50%; width:32px; height:32px;}
@@ -168,6 +178,7 @@
 		.ic-arrow-u:before {background-position:var(--bp-400) 0; width:14px; height:8px;}
 		.ic-arrow-u-02:before {background-position:var(--bp-300) var(--bp-50); width:16px; height:14px;}
 		.ic-arrow-b:before {background-position:var(--bp-600) 0; width:10px; height:9px;}
+		.ic-arrow-d:before {background-position:var(--bp-400) var(--bp-50); width:12px; height:7px;}
 		.ic-clip:before {background-position:var(--bp-350) 0; width:18px; height:18px;}
 		.ic-delete:before {background-position:var(--bp-100) 0; width:12px; height:12px;}
 		.ic-info:before {background-position:var(--bp-650) 0; width:18px; height:18px;}
@@ -304,14 +315,17 @@
 
 	[class*="tabs-type"].tabs-equal {flex:1; justify-content:center; cursor:pointer;}
 
-	.tabs-type-01 {margin-top:40px;}
-	.tabs-type-01 .n-tabs-wrapper {gap:8px;}
-	.tabs-type-01 .n-tabs-nav-scroll-wrapper {border-bottom:1px solid black; height:50px;}
-	.tabs-type-01 .n-tabs-tab__label {font-size:16px;}
-	.tabs-type-01 .n-tabs-tab {background:#efefef; border-radius:16px 16px 0 0; width:100% !important; padding:0 40px; word-break:keep-all;}
-	.tabs-type-01 .n-tabs-tab:hover {color:#666 !important;}
-	.tabs-type-01 .n-tabs-tab.n-tabs-tab--active {background:black; border-radius:16px 16px 0 0; padding:0 40px;}
-	.tabs-type-01 .n-tabs-tab.n-tabs-tab--active .n-tabs-tab__label {color:white;}
+	[class*="tabs-type-01"] {margin-top:40px;}
+	[class*="tabs-type-01"] .n-tabs-wrapper {gap:8px;}
+	[class*="tabs-type-01"] .n-tabs-nav-scroll-wrapper {border-bottom:1px solid black; height:50px;}
+	[class*="tabs-type-01"] .n-tabs-tab__label {font-size:16px;}
+	[class*="tabs-type-01"] .n-tabs-tab {background:#efefef; border-radius:16px 16px 0 0; width:100% !important; padding:0 40px; word-break:keep-all;}
+	[class*="tabs-type-01"] .n-tabs-tab:hover {color:#666 !important;}
+	[class*="tabs-type-01"] .n-tabs-tab.n-tabs-tab--active {background:black; border-radius:16px 16px 0 0; padding:0 40px;}
+	[class*="tabs-type-01"] .n-tabs-tab.n-tabs-tab--active .n-tabs-tab__label {color:white;}
+
+	.tabs-type-01-01 .n-tabs-nav-scroll-wrapper {border-bottom:1px solid #1976c0;}
+	.tabs-type-01-01 .n-tabs-tab.n-tabs-tab--active {background:#1976c0; color:white;}
 
 /* Text */
 	.txt-01 {font-size:22px; color:black;}

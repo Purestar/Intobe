@@ -24,8 +24,11 @@
 		.brd-list-general .bar-v > * + * {gap:30px;}
 		.brd-list-general .bar-v > * + *:before {display:none;}
 
-		.brd-lst-gallery .brd-cont-wrap {gap:1.11vw; margin-top:2.78vw; line-height:1; color:#666;}
-		.brd-lst-gallery .brd-lst-desc {line-height:4.72vw;}
+		[class*="brd-lst-gallery"] .brd-cont-wrap {gap:1.11vw; margin-top:2.78vw; line-height:1; color:#666;}
+		[class*="brd-lst-gallery"] .brd-lst-desc {line-height:4.72vw;}
+
+		.brd-lst-gallery-02 {gap:4.44vw;}
+		.brd-lst-gallery-02 [class*="thumb-type-01"] .thumb-inner {width:42.64vw; height:24.03vw;}
 
 		.brd-view-general {margin-top:5.83vw;}
 		.brd-view-general .brd-view-top {gap:3.47vw;}
@@ -35,7 +38,8 @@
 		.brd-view-general .brd-list-general {margin-top:5.56vw;}
 
 	/* Box */
-		.box-type-01 {border-radius:1.39vw; padding:4.17vw;}
+		[class*="box-type-01"] {border-radius:1.39vw; padding:4.17vw;}
+		.box-type-01-01 {border:1px solid #e2e2e2; padding:5.56vw;}
 		.box-type-02 {border-radius:3.89vw; padding:5.56vw;}
 		.box-type-03 {border-radius:4.17vw; box-shadow:0.00vw 0.00vw 4.58vw rgba(0, 0, 0, 0.06); padding:5.56vw 5.56vw;}
 		.box-type-04 {border-radius:2.78vw; padding:5.00vw;}
@@ -99,6 +103,9 @@
 			/* Button */
 				.form-opt-btn-01 .opt-txt {height:15.28vw; font-size:4.17vw;}
 				.form-opt-btn-01 input:checked + .opt-txt {font-size:4.17vw;}
+
+				.form-opt-btn-02 .opt-txt,
+				.form-opt-btn-02 input:checked + .opt-txt {border-radius:8.89vw; height:8.89vw; font-size:3.33vw;}
 
 			/* Check Box */
 				.form-opt-chk-01 .opt-txt {width:5.56vw; height:5.56vw;}
@@ -202,12 +209,12 @@
 			/*.tab-menu-01 {gap:1.67vw; height:9.72vw; font-size:3.33vw;}
 			.tab-menu-01 > * > * {border-radius:2.50vw 2.50vw 0 0; padding:0 6.67vw;}*/
 
-		.tabs-type-01 {margin-top:5.56vw;}
-		.tabs-type-01 .n-tabs-wrapper {gap:1.67vw;}
-		.tabs-type-01 .n-tabs-nav-scroll-wrapper {height:9.72vw;}
-		.tabs-type-01 .n-tabs-tab__label {font-size:3.33vw;}
-		.tabs-type-01 .n-tabs-tab {border-radius:2.50vw 2.50vw 0 0; padding:0 6.67vw;}
-		.tabs-type-01 .n-tabs-tab.n-tabs-tab--active {border-radius:2.50vw 2.50vw 0 0; padding:0 6.67vw;}
+		[class*="tabs-type-01"] {margin-top:5.56vw;}
+		[class*="tabs-type-01"] .n-tabs-wrapper {gap:1.67vw;}
+		[class*="tabs-type-01"] .n-tabs-nav-scroll-wrapper {height:9.72vw;}
+		[class*="tabs-type-01"] .n-tabs-tab__label {font-size:3.33vw;}
+		[class*="tabs-type-01"] .n-tabs-tab {border-radius:2.50vw 2.50vw 0 0; padding:0 6.67vw;}
+		[class*="tabs-type-01"] .n-tabs-tab.n-tabs-tab--active {border-radius:2.50vw 2.50vw 0 0; padding:0 6.67vw;}
 
 	/* Text */
 		.txt-01 {font-size:4.17vw;}

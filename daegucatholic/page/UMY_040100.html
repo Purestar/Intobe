@@ -6,81 +6,663 @@
 		<meta name="description" content="대구가톨릭">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
 		<title>Index</title>
-		<script type="module" src="../js/igWebComponent.js" defer></script>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://unpkg.com/naive-ui"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts-wordcloud@2.1.0/dist/echarts-wordcloud.min.js"></script>
 		<script src="../js/pub.js"></script>
 		<link rel="stylesheet" href="../css/global.css">
 		<link rel="stylesheet" href="../css/workspace.css">
 	</head>
 	<body>
 		<div data-include="../include/header.html"></div>
-		<ig-layout id="container">
-			<ig-layout type="inner">
-				<ig-layout type="flex">
+		<div id="container">
+			<div class="layout-inner contents">
+				<div class="layout-flex gap-60 m-flex-col">
 					<div data-include="../include/mypageSide.html"></div>
-					<div>
-						<h2>보관함</h2>
-						<ig-tab-menu active="0">
-							<ig-item href="UMY_040100.html">진로탐색</ig-item>
-							<ig-item href="UMY_040200.html">진로가이드</ig-item>
-							<ig-item href="UMY_040300.html">교과</ig-item>
-							<ig-item href="UMY_040400.html">비교과</ig-item>
-							<ig-item href="UMY_040500.html">자격증</ig-item>
-						</ig-tab-menu>
-						<ig-layout type="flex" custom-style="gap:10px;">
-							<div>
-								<h3>보관일</h3>
-								<ig-layout type="flex" items="center" custom-style="gap:10px;">
-									<ig-form type="date-picker" placeholder="YYYY-MM-DD"></ig-form>
-									~
-									<ig-form type="date-picker" placeholder="YYYY-MM-DD"></ig-form>
-								</ig-layout>
-							</div>
-							<div>
-								<h3>직업명</h3>
-								<ig-layout type="flex" items="center">
-									<ig-form placeholder="직업명"></ig-form>
-									<ig-btn>검색</ig-btn>
-								</ig-layout>
-							</div>
-						</ig-layout>
-						<ig-layout type="flex" justify="end">
-							<ig-form type="dropdown">
-								<ig-item>최신순</ig-item>
-								<ig-item>최신순</ig-item>
-								<ig-item>최신순</ig-item>
-								<ig-item>최신순</ig-item>
-							</ig-form>
-						</ig-layout>
-						<p>YYYY-MM-DD</p>
-						<ig-layout type="grid" column="2" element="ul">
-							<li>
-								컴퓨터시스템설계 및 분석가
-								<ig-form type="checkbox"></ig-form>
-							</li>
-							<li>
-								컴퓨터시스템설계 및 분석가
-								<ig-form type="checkbox"></ig-form>
-							</li>
-							<li>
-								컴퓨터시스템설계 및 분석가
-								<ig-form type="checkbox"></ig-form>
-							</li>
-						</ig-layout>
-						<p>YYYY-MM-DD</p>
-						<ig-layout type="grid" column="2" element="ul">
-							<li>
-								컴퓨터시스템설계 및 분석가
-								<ig-form type="checkbox"></ig-form>
-							</li>
-							<li>
-								컴퓨터시스템설계 및 분석가
-								<ig-form type="checkbox"></ig-form>
-							</li>
-						</ig-layout>
+					<div class="m-divider"></div>
+					<div class="mypage-contents">
+						<h3 class="tit-03">보관함</h3>
+						<n-tabs type="line" class="tabs-type-01-01" v-model:value="activeTab">
+							<n-tab-pane name="arch-tab1" tab="직업정보">
+								<div class="box-type-01-01 mt-30">
+									<div class="layout-flex gap-20 m-flex-col m-gap-40">
+										<div class="layout-flex flex-col gap-12 m-gap-20">
+											<b class="cr-blk">보관일</b>
+											<div class="layout-flex align-center gap-12">
+												<n-date-picker v-model:value="timestamp" type="date"></n-date-picker>
+												~
+												<n-date-picker v-model:value="timestamp" type="date"></n-date-picker>
+											</div>
+										</div>
+										<div class="layout-flex flex-col gap-12 m-gap-20">
+											<b class="cr-blk">직업명</b>
+											<div class="layout-flex gap-10">
+												<n-input v-model:value="value" type="text" placeholder="직업명"></n-input>
+												<button type="button" class="btn-type ws-nw">검색</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="layout-flex justify-between mt-40 m-mt-60">
+									<b class="cr-blk">2024-12-17</b>
+									<button type="button" class="btn-icon">최신순<i class="ic-arrow-d"></i></button>
+								</div>
+								<ul class="layout-full lst-item-02 grid-col-2 m-grid-col-1 mt-20 m-mt-24">
+									<li>
+										<strong class="fs-20 m-fs-28">전자계산조직응용기사</strong>
+										<div class="form-opt-chk-01">
+											<label>
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</div>
+									</li>
+									<li>
+										<strong class="fs-20 m-fs-28">정보시스템감리사</strong>
+										<div class="form-opt-chk-01">
+											<label>
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</div>
+									</li>
+									<li>
+										<strong class="fs-20 m-fs-28">정보처리기사</strong>
+										<div class="form-opt-chk-01">
+											<label>
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</div>
+									</li>
+								</ul>
+								<div class="layout-flex justify-between mt-40 m-mt-60">
+									<b class="cr-blk">2024-12-17</b>
+								</div>
+								<ul class="layout-full lst-item-02 grid-col-2 m-grid-col-1 mt-20 m-mt-24">
+									<li>
+										<strong class="fs-20 m-fs-28">토목제도기능사</strong>
+										<div class="form-opt-chk-01">
+											<label>
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</div>
+									</li>
+									<li>
+										<strong class="fs-20 m-fs-28">항공정비기능사1급</strong>
+										<div class="form-opt-chk-01">
+											<label>
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</div>
+									</li>
+								</ul>
+								<div data-include="../include/paging.html"></div>
+							</n-tab-pane>
+							<n-tab-pane name="arch-tab2" tab="진로가이드">
+								<div class="box-type-01-01 mt-30">
+									<div class="layout-flex gap-20 m-flex-col m-gap-40">
+										<div class="layout-flex flex-col gap-12 m-gap-20">
+											<b class="cr-blk">보관일</b>
+											<div class="layout-flex align-center gap-12">
+												<n-date-picker v-model:value="timestamp" type="date"></n-date-picker>
+												~
+												<n-date-picker v-model:value="timestamp" type="date"></n-date-picker>
+											</div>
+										</div>
+										<div class="layout-flex flex-col gap-12 m-gap-20">
+											<b class="cr-blk">직업명</b>
+											<div class="layout-flex gap-10">
+												<n-input v-model:value="value" type="text" placeholder="직업명"></n-input>
+												<button type="button" class="btn-type ws-nw">검색</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="layout-flex justify-between mt-40 m-mt-60">
+									<b class="cr-blk">2024-12-17</b>
+									<button type="button" class="btn-icon">최신순<i class="ic-arrow-d"></i></button>
+								</div>
+								<ul class="layout-full lst-item-02 grid-col-2 m-grid-col-1 mt-20 m-mt-24">
+									<li>
+										<strong class="fs-20 m-fs-28">SW제품기획</strong>
+										<div class="form-opt-chk-01">
+											<label>
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</div>
+									</li>
+									<li>
+										<strong class="fs-20 m-fs-28">빅데이터기획</strong>
+										<div class="form-opt-chk-01">
+											<label>
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</div>
+									</li>
+									<li>
+										<strong class="fs-20 m-fs-28">영상정보처리</strong>
+										<div class="form-opt-chk-01">
+											<label>
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</div>
+									</li>
+								</ul>
+								<div class="layout-flex justify-between mt-40 m-mt-60">
+									<b class="cr-blk">2024-12-17</b>
+								</div>
+								<ul class="layout-full lst-item-02 grid-col-2 m-grid-col-1 mt-20 m-mt-24">
+									<li>
+										<strong class="fs-20 m-fs-28">펀드운용</strong>
+										<div class="form-opt-chk-01">
+											<label>
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</div>
+									</li>
+									<li>
+										<strong class="fs-20 m-fs-28">증권거래업무</strong>
+										<div class="form-opt-chk-01">
+											<label>
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</div>
+									</li>
+								</ul>
+								<div data-include="../include/paging.html"></div>
+							</n-tab-pane>
+							<n-tab-pane name="arch-tab3" tab="교과">
+								<div class="box-type-01-01 mt-30">
+									<div class="layout-flex gap-20 m-flex-col m-gap-40">
+										<div class="layout-flex flex-col gap-12 m-gap-20">
+											<b class="cr-blk">보관일</b>
+											<div class="layout-flex align-center gap-12">
+												<n-date-picker v-model:value="timestamp" type="date"></n-date-picker>
+												~
+												<n-date-picker v-model:value="timestamp" type="date"></n-date-picker>
+											</div>
+										</div>
+										<div class="layout-flex flex-col gap-12 m-gap-20">
+											<b class="cr-blk">교과명</b>
+											<div class="layout-flex gap-10">
+												<n-input v-model:value="value" type="text" placeholder="교과명"></n-input>
+												<button type="button" class="btn-type ws-nw">검색</button>
+											</div>
+										</div>
+									</div>
+									<div class="layout-flex flex-col mt-30 gap-16 m-gap-40 m-mt-40">
+										<div class="layout-flex gap-20 align-center m-flex-col m-align-start">
+											<b class="cr-blk ws-nw">이수구분</b>
+											<div class="layout-flex gap-12" data-scroll="hide">
+												<label class="form-opt-btn-02">
+													<input type="checkbox" checked>
+													<span class="opt-txt">전체</span>
+												</label>
+												<label class="form-opt-btn-02">
+													<input type="checkbox" disabled>
+													<span class="opt-txt">이수구분1</span>
+												</label>
+												<label class="form-opt-btn-02">
+													<input type="checkbox">
+													<span class="opt-txt">이수구분2</span>
+												</label>
+												<label class="form-opt-btn-02">
+													<input type="checkbox">
+													<span class="opt-txt">이수구분3</span>
+												</label>
+												<label class="form-opt-btn-02">
+													<input type="checkbox">
+													<span class="opt-txt">이수구분4</span>
+												</label>
+											</div>
+										</div>
+										<div class="layout-flex gap-20 align-center m-flex-col m-align-start">
+											<b class="cr-blk ws-nw">개설학년</b>
+											<div class="layout-flex gap-12" data-scroll="hide">
+												<label class="form-opt-btn-02">
+													<input type="checkbox" checked>
+													<span class="opt-txt">전체</span>
+												</label>
+												<label class="form-opt-btn-02">
+													<input type="checkbox">
+													<span class="opt-txt">1학년</span>
+												</label>
+												<label class="form-opt-btn-02">
+													<input type="checkbox">
+													<span class="opt-txt">2학년</span>
+												</label>
+												<label class="form-opt-btn-02">
+													<input type="checkbox">
+													<span class="opt-txt">3학년</span>
+												</label>
+												<label class="form-opt-btn-02">
+													<input type="checkbox">
+													<span class="opt-txt">4학년</span>
+												</label>
+											</div>
+										</div>
+										<div class="layout-flex gap-20 align-center m-flex-col m-align-start">
+											<b class="cr-blk ws-nw">개설학기</b>
+											<div class="layout-flex gap-12" data-scroll="hide">
+												<label class="form-opt-btn-02">
+													<input type="checkbox" checked>
+													<span class="opt-txt">전체</span>
+												</label>
+												<label class="form-opt-btn-02">
+													<input type="checkbox">
+													<span class="opt-txt">1학기</span>
+												</label>
+												<label class="form-opt-btn-02">
+													<input type="checkbox">
+													<span class="opt-txt">2학기</span>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="layout-flex justify-between mt-40 m-mt-60">
+									<b class="cr-blk">2024-12-17</b>
+									<button type="button" class="btn-icon">최신순<i class="ic-arrow-d"></i></button>
+								</div>
+								<ul class="brd-lst-gallery-02 layout-grid grid-col-3 mt-20 m-grid-col-2">
+									<li>
+										<div class="thumb-type-01-blu">
+											<div class="thumb-inner">
+												<div class="thumb-lt">
+													<span class="chip-type-01-blu">전공핵심</span>
+												</div>
+												<div class="thumb-rt">
+													<div class="form-opt-chk-01">
+														<label>
+															<input type="checkbox">
+															<span class="opt-txt"></span>
+														</label>
+													</div>
+												</div>
+												<div class="thumb-c">이산수학</div>
+											</div>
+										</div>
+										<div class="brd-cont-wrap">
+											<div class="layout-grid gap-8 lh-1">
+												<div class="bar-v-01 fs-14 m-fs-24">
+													<span><b>소프트웨어융합전공</b></span>
+													<span><b>2-2</b></span>
+													<span><b>2학점 (2시간)</b></span>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="thumb-type-01-pnk">
+											<div class="thumb-inner">
+												<div class="thumb-lt">
+													<span class="chip-type-01-pnk">교양선택</span>
+												</div>
+												<div class="thumb-rt">
+													<div class="form-opt-chk-01">
+														<label>
+															<input type="checkbox">
+															<span class="opt-txt"></span>
+														</label>
+													</div>
+												</div>
+												<div class="thumb-c">소프트웨어 실무영어</div>
+											</div>
+										</div>
+										<div class="brd-cont-wrap">
+											<div class="layout-grid gap-8 lh-1">
+												<div class="bar-v-01 fs-14 m-fs-24">
+													<span><b>소프트웨어융합전공</b></span>
+													<span><b>2-2</b></span>
+													<span><b>2학점 (2시간)</b></span>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="thumb-type-01-red">
+											<div class="thumb-inner">
+												<div class="thumb-lt">
+													<span class="chip-type-01-red">교양필수</span>
+												</div>
+												<div class="thumb-rt">
+													<div class="form-opt-chk-01">
+														<label>
+															<input type="checkbox">
+															<span class="opt-txt"></span>
+														</label>
+													</div>
+												</div>
+												<div class="thumb-c">C프로그래밍</div>
+											</div>
+										</div>
+										<div class="brd-cont-wrap">
+											<div class="layout-grid gap-8 lh-1">
+												<div class="bar-v-01 fs-14 m-fs-24">
+													<span><b>소프트웨어융합전공</b></span>
+													<span><b>2-2</b></span>
+													<span><b>2학점 (2시간)</b></span>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+
+								<div class="layout-flex justify-between mt-40 m-mt-60">
+									<b class="cr-blk">2024-12-17</b>
+								</div>
+								<ul class="brd-lst-gallery-02 layout-grid grid-col-3 mt-20 m-grid-col-2">
+									<li>
+										<div class="thumb-type-01-ylw">
+											<div class="thumb-inner">
+												<div class="thumb-lt">
+													<span class="chip-type-01-ylw">교양</span>
+												</div>
+												<div class="thumb-rt">
+													<div class="form-opt-chk-01">
+														<label>
+															<input type="checkbox">
+															<span class="opt-txt"></span>
+														</label>
+													</div>
+												</div>
+												<div class="thumb-c">확률과 통계</div>
+											</div>
+										</div>
+										<div class="brd-cont-wrap">
+											<div class="layout-grid gap-8 lh-1">
+												<div class="bar-v-01 fs-14 m-fs-24">
+													<span><b>소프트웨어융합전공</b></span>
+													<span><b>2-2</b></span>
+													<span><b>2학점 (2시간)</b></span>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+								<div data-include="../include/paging.html"></div>
+							</n-tab-pane>
+							<n-tab-pane name="arch-tab4" tab="비교과">
+								<div class="box-type-01-01 mt-30">
+									<div class="layout-flex gap-20 m-flex-col m-gap-40">
+										<div class="layout-flex flex-col gap-12 m-gap-20">
+											<b class="cr-blk">보관일</b>
+											<div class="layout-flex align-center gap-12">
+												<n-date-picker v-model:value="timestamp" type="date"></n-date-picker>
+												~
+												<n-date-picker v-model:value="timestamp" type="date"></n-date-picker>
+											</div>
+										</div>
+										<div class="layout-flex flex-col gap-12 m-gap-20">
+											<b class="cr-blk">비교과 프로그램명</b>
+											<div class="layout-flex gap-10">
+												<n-input v-model:value="value" type="text" placeholder="비교과 프로그램명"></n-input>
+												<button type="button" class="btn-type ws-nw">검색</button>
+											</div>
+										</div>
+									</div>
+									<div class="layout-flex flex-col mt-30 gap-16 m-gap-40 m-mt-40">
+										<div class="layout-flex gap-20 align-center m-flex-col m-align-start">
+											<b class="cr-blk ws-nw">상태</b>
+											<div class="layout-flex gap-12" data-scroll="hide">
+												<label class="form-opt-btn-02">
+													<input type="checkbox" checked>
+													<span class="opt-txt">전체</span>
+												</label>
+												<label class="form-opt-btn-02">
+													<input type="checkbox">
+													<span class="opt-txt">오픈예정</span>
+												</label>
+												<label class="form-opt-btn-02">
+													<input type="checkbox">
+													<span class="opt-txt">신청중</span>
+												</label>
+												<label class="form-opt-btn-02">
+													<input type="checkbox">
+													<span class="opt-txt">신청마감</span>
+												</label>
+												<label class="form-opt-btn-02">
+													<input type="checkbox">
+													<span class="opt-txt">종료</span>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="layout-flex justify-between mt-40 m-mt-60">
+									<b class="cr-blk">2024-12-17</b>
+									<button type="button" class="btn-icon">최신순<i class="ic-arrow-d"></i></button>
+								</div>
+								<ul class="brd-lst-gallery-02 layout-grid grid-col-3 mt-20 m-grid-col-2">
+									<li>
+										<div class="thumb-type-01-pur">
+											<div class="thumb-inner">
+												<div class="thumb-lt">
+													<span class="chip-type-01-pur">임박</span>
+												</div>
+												<div class="thumb-rt">
+													<div class="form-opt-chk-01">
+														<label>
+															<input type="checkbox">
+															<span class="opt-txt"></span>
+														</label>
+													</div>
+												</div>
+												<div class="thumb-c">자바 프로그래밍 및 실습</div>
+											</div>
+										</div>
+										<div class="layout-grid brd-cont-wrap">
+											<b class="fs-14 m-fs-24">교육혁신처</b>
+											<p>신청<span class="cr-blk ml-10">2024.08.19(수) ~ 2024.08.23(금)</span></p>
+											<p>운영<span class="cr-blk ml-10">2024.08.19(수) ~ 2024.08.23(금)</span></p>
+										</div>
+									</li>
+									<li>
+										<div class="thumb-type-01-pur">
+											<div class="thumb-inner">
+												<div class="thumb-lt">
+													<span class="chip-type-01-grn">진행중</span>
+												</div>
+												<div class="thumb-rt">
+													<div class="form-opt-chk-01">
+														<label>
+															<input type="checkbox">
+															<span class="opt-txt"></span>
+														</label>
+													</div>
+												</div>
+												<div class="thumb-c">파이썬 프로그래밍</div>
+											</div>
+										</div>
+										<div class="layout-grid brd-cont-wrap">
+											<b class="fs-14 m-fs-24">교육혁신처</b>
+											<p>신청<span class="cr-blk ml-10">2024.08.19(수) ~ 2024.08.23(금)</span></p>
+											<p>운영<span class="cr-blk ml-10">2024.08.19(수) ~ 2024.08.23(금)</span></p>
+										</div>
+									</li>
+									<li>
+										<div class="thumb-type-01-pur">
+											<div class="thumb-inner">
+												<div class="thumb-lt">
+													<span class="chip-type-01-ylw">예정</span>
+												</div>
+												<div class="thumb-rt">
+													<div class="form-opt-chk-01">
+														<label>
+															<input type="checkbox">
+															<span class="opt-txt"></span>
+														</label>
+													</div>
+												</div>
+												<div class="thumb-c">소프트웨어와 인공지능</div>
+											</div>
+										</div>
+										<div class="layout-grid brd-cont-wrap">
+											<b class="fs-14 m-fs-24">교육혁신처</b>
+											<p>신청<span class="cr-blk ml-10">2024.08.19(수) ~ 2024.08.23(금)</span></p>
+											<p>운영<span class="cr-blk ml-10">2024.08.19(수) ~ 2024.08.23(금)</span></p>
+										</div>
+									</li>
+								</ul>
+
+								<div class="layout-flex justify-between mt-40 m-mt-60">
+									<b class="cr-blk">2024-12-17</b>
+								</div>
+								<ul class="brd-lst-gallery-02 layout-grid grid-col-3 mt-20 m-grid-col-2">
+									<li>
+										<div class="thumb-type-01-pur">
+											<div class="thumb-inner">
+												<div class="thumb-lt">
+													<span class="chip-type-01-ylw">예정</span>
+												</div>
+												<div class="thumb-rt">
+													<div class="form-opt-chk-01">
+														<label>
+															<input type="checkbox">
+															<span class="opt-txt"></span>
+														</label>
+													</div>
+												</div>
+												<div class="thumb-c">비교과명이 노출됩니다</div>
+											</div>
+										</div>
+										<div class="layout-grid brd-cont-wrap">
+											<b class="fs-14 m-fs-24">교육혁신처</b>
+											<p>신청<span class="cr-blk ml-10">2024.08.19(수) ~ 2024.08.23(금)</span></p>
+											<p>운영<span class="cr-blk ml-10">2024.08.19(수) ~ 2024.08.23(금)</span></p>
+										</div>
+									</li>
+								</ul>
+								<div data-include="../include/paging.html"></div>
+							</n-tab-pane>
+							<n-tab-pane name="arch-tab5" tab="자격증">
+								<div class="box-type-01-01 mt-30">
+									<div class="layout-flex gap-20 m-flex-col m-gap-40">
+										<div class="layout-flex flex-col gap-12 m-gap-20">
+											<b class="cr-blk">보관일</b>
+											<div class="layout-flex align-center gap-12">
+												<n-date-picker v-model:value="timestamp" type="date"></n-date-picker>
+												~
+												<n-date-picker v-model:value="timestamp" type="date"></n-date-picker>
+											</div>
+										</div>
+										<div class="layout-flex flex-col gap-12 m-gap-20">
+											<b class="cr-blk">자격명/발급기관</b>
+											<div class="layout-flex gap-10">
+												<n-input v-model:value="value" type="text" placeholder="자격명/발급기관"></n-input>
+												<button type="button" class="btn-type ws-nw">검색</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="layout-flex justify-between mt-40 m-mt-60">
+									<b class="cr-blk">2024-12-17</b>
+									<button type="button" class="btn-icon">최신순<i class="ic-arrow-d"></i></button>
+								</div>
+								<ul class="layout-full lst-item-02 grid-col-2 m-grid-col-1 mt-20 m-mt-24">
+									<li>
+										<div class="layout-flex flex-col gap-12">
+											<strong class="fs-20 m-fs-28">전자계산조직응용기사</strong>
+											<p>과학기술정보통신부</p>
+										</div>
+										<div class="form-opt-chk-01">
+											<label>
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</div>
+									</li>
+									<li>
+										<div class="layout-flex flex-col gap-12">
+											<strong class="fs-20 m-fs-28">정보시스템감리사</strong>
+											<p>한국지능정보사회진흥원</p>
+										</div>
+										<div class="form-opt-chk-01">
+											<label>
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</div>
+									</li>
+									<li>
+										<div class="layout-flex flex-col gap-12">
+											<strong class="fs-20 m-fs-28">정보처리기사</strong>
+											<p>과학기술정보통신부</p>
+										</div>
+										<div class="form-opt-chk-01">
+											<label>
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</div>
+									</li>
+								</ul>
+								<div class="layout-flex justify-between mt-40 m-mt-60">
+									<b class="cr-blk">2024-12-17</b>
+								</div>
+								<ul class="layout-full lst-item-02 grid-col-2 m-grid-col-1 mt-20 m-mt-24">
+									<li>
+										<div class="layout-flex flex-col gap-12">
+											<strong class="fs-20 m-fs-28">토목제도기능사</strong>
+											<p>국토해양부</p>
+										</div>
+										<div class="form-opt-chk-01">
+											<label>
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</div>
+									</li>
+									<li>
+										<div class="layout-flex flex-col gap-12">
+											<strong class="fs-20 m-fs-28">항공정비기능사1급</strong>
+											<p>전설교통부</p>
+										</div>
+										<div class="form-opt-chk-01">
+											<label>
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</div>
+									</li>
+								</ul>
+							</n-tab-pane>
+						</n-tabs>
 					</div>
-				</ig-layout>
-			</ig-layout>
-		</ig-layout>
+				</div>
+			</div>
+		</div>
 		<div data-include="../include/footer.html"></div>
+		<script>
+			const { createApp, ref, reactive, computed, defineComponent } = Vue;
+			const { NTabs, NTabPane, NButton, NModal, NCard, NSelect, NCollapse, NCollapseItem, create } = naive;
+
+			const app = createApp({
+				components: {
+					NTabs,
+					NTabPane,
+					NButton,
+					NModal,
+					NCard,
+					NSelect,
+					NCollapse,
+					NCollapseItem,
+				},
+			})
+
+			app.use(naive);
+			app.mount('#container');
+
+		</script>
 	</body>
 </html>
