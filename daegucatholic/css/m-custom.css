@@ -19,6 +19,10 @@
 		.brd-list-general > * {border-radius:2.50vw; padding:3.81vw 5.56vw;}
 		.brd-list-general .brd-list-number {margin-right:2.50vw;}
 		.brd-list-general .brd-cont {align-items:flex-start; flex-direction:column; gap:2.22vw;}
+		.brd-list-general .brd-ctgy {flex:0 0 auto; width:auto; margin-left:0;}
+		.brd-list-general .bar-v {flex-direction:column; align-items:flex-start; gap:1.67vw;}
+		.brd-list-general .bar-v > * + * {gap:30px;}
+		.brd-list-general .bar-v > * + *:before {display:none;}
 
 		.brd-lst-gallery .brd-cont-wrap {gap:1.11vw; margin-top:2.78vw; line-height:1; color:#666;}
 		.brd-lst-gallery .brd-lst-desc {line-height:4.72vw;}
@@ -44,6 +48,7 @@
 			.btn-icon {gap:10px;}
 			.btn-search {width:23.19vw;}
 			.btn-circle {width:6.94vw; height:6.94vw;}
+			.btn-circle-gry {width:6.11vw; height:6.11vw;}
 
 	/* Chip */
 		[class*="chip-type-01"] {border-radius:0.56vw; height:4.72vw; padding:0 2.22vw; font-size:2.78vw;}
@@ -63,6 +68,7 @@
 			.ic-info:before {width:3.33vw; height:3.33vw;}
 			.ic-notice:before {width:3.47vw; height:3.06vw;}
 			.ic-pencle:before {width:2.08vw; height:2.08vw;}
+			.ic-plus:before {width:3.06vw; height:3.06vw;}
 			.ic-refrash:before {width:3.06vw; height:3.47vw;}
 			.ic-search:before {width:4.44vw; height:4.44vw;}
 			.ic-setting:before {width:2.50vw; height:2.22vw;}

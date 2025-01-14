@@ -29,7 +29,7 @@
 		{ "id": "마이페이지", "submenu": [
 			{ "menu": "Home", "src": "./page/UMY_010000.html", "state": "comp" },
 			{ "menu": "희망진로설정", "src": "./page/UMY_020100.html", "state": "work" },
-			{ "menu": "스팩관리", "src": "./page/UMY_030000.html", "state": "work" },
+			{ "menu": "스팩관리", "src": "./page/UMY_030000.html", "state": "comp" },
 			{ "id": "보관함", "submenu": [
 				{ "menu": "진로탐색", "src": "./page/UMY_040100.html", "state": "work"},
 				{ "menu": "진로가이드", "src": "./page/UMY_040200.html", "state": "work"},

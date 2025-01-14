@@ -18,9 +18,9 @@
 
 /* Bar */
 	.bar-v-01, .bar-v-01 > * {gap:8px;}
+
 	[class*="bar-v-02"], [class*="bar-v-02"] > * {gap:13px;}
 	[class*="bar-v-02"] > * + *:before {align-self:center; background:#e2e2e2; height:10px;}
-
 	.bar-v-02-01 > *:before {background:#c6c6c6;}
 
 	.bar-v-03 {display:grid; gap:0; text-align:center;}
@@ -35,11 +35,15 @@
 	.brd-wrap .brd-txt {color:#666;}
 	.brd-wrap .brd-list-number {flex:0 0 22px; width:22px; text-align:center;}
 	.brd-wrap .brd-file > * {display:flex; align-items:center; gap:14px;}
+	.brd-wrap .brd-ctgy {color:#014099;}
 
 	/* List */
 		.brd-list-general {gap:21px; margin-top:15px;}
 		.brd-list-general > * {border:1px solid #e2e2e2; border-radius:10px; padding:33.5px 40px;}
 		.brd-list-general .brd-list-number {margin-right:37px;}
+		.brd-list-general .brd-ctgy {flex:0 0 117px; width:117px; margin-left:-40px; text-align:center; color:#014099;}
+		.brd-list-general .bar-v {gap:0;}
+		.brd-list-general .bar-v > * + * {gap:30px;}
 
 		.brd-lst-gallery .brd-cont-wrap {gap:8px; margin-top:20px; line-height:1; color:#666;}
 		.brd-lst-gallery .brd-lst-desc {line-height:22px;}
@@ -79,7 +83,8 @@
 	/* Other */
 		.btn-icon {display:inline-flex; align-items:center; gap:10px;}
 		.btn-search {width:112px;}
-		.btn-circle {border:1px solid #e3e3e3; border-radius:50%; width:50px; height:50px;}
+		.btn-circle {display:flex; align-items:center; justify-content:center; border:1px solid #e3e3e3; border-radius:50%; width:50px; height:50px;}
+		.btn-circle-gry {display:flex; align-items:center; justify-content:center; background:#eaeaea; border:1px solid #e4e4e4; border-radius:50%; width:34px; height:34px;}
 
 /* Chip */
 	[class*="chip-type-01"] {background:black; border:none; border-radius:3px; height:20px; padding:0 10px; font-size:12px; color:white;}
@@ -168,6 +173,7 @@
 		.ic-info:before {background-position:var(--bp-650) 0; width:18px; height:18px;}
 		.ic-notice:before {background-position:var(--bp-250) 0; width:22px; height:20px;}
 		.ic-pencle:before {background-position:var(--bp-450) 0; width:13px; height:13px;}
+		.ic-plus:before {background-position:var(--bp-350) var(--bp-50); width:16px; height:16px;}
 		.ic-refrash:before {background-position:var(--bp-50) 0; width:14px; height:15px;}
 		.ic-search:before {background-position:var(--bp-150) 0; width:19px; height:19px;}
 		.ic-setting:before {background-position:var(--bp-500) 0; width:15px; height:15px;}

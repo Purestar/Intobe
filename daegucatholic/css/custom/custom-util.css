@@ -225,7 +225,8 @@
 		.ml-80 {margin-left:var(--n80);}
 
 /* Mobile & PC */
-	.mobile {display:none;}
+	.mobile,
+	.mobile-flex {display:none;}
 
 /* Position */
 	.pos-r {position:relative;}
@@ -395,5 +396,6 @@ ig-boxholder {display:block;}
 
 	/* Mobile & PC */
 		.mobile {display:block;}
+		.mobile-flex {display:flex;}
 		.pc {display:none;}
 }
