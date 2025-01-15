@@ -91,6 +91,7 @@
 		/* Mobile */
 			.ic-hamburger:before {background-position:0 var(--bp-500); width:5.56vw; height:4.31vw;}
 			.ic-m-arrow-b:before {background-position:var(--bp-50) var(--bp-500); width:2.50vw; height:1.53vw;}
+			.ic-m-arrow-b.active {transform:rotate(180deg);}
 
 		/* ETC */
 			.ic-dog:before {background-position:var(--bp-150) var(--bp-950); width:14.44vw; height:5.97vw;}
@@ -234,6 +235,21 @@
 		[class*="thumb-type-01"] .thumb-inner > * {padding:3.33vw;}
 		[class*="thumb-type-01"] .thumb-c {font-size:4.44vw;}
 
+	/* Tree Menu */
+		.tree-type-01 {position:relative; display:flex; border:0; padding:0; height:18vw; font-size:4.17vw;}
+		.tree-type-01 .tree-inner {flex:1;}
+		.tree-type-01 > .tree-inner > summary {border-bottom:1px solid #e2e2e2; height:10.56vw;}
+		.tree-type-01 .tree-menu {position:relative; justify-content:center; border-radius:0; padding:0;}
+		.tree-type-01 .tree-menu:hover,
+		.tree-type-01 .tree-inner.active > summary .tree-menu {background:none; color:black;}
+		.tree-type-01 .tree-inner.active > summary .tree-menu:after {content:""; position:absolute; left:0; bottom:0; background:black; width:100%; height:0.56vw;}
+		.tree-type-01 .tree-arrow {display:none;}
+		.tree-type-01 .tree-menu-sub {display:flex; align-items:center; border-radius:10vw; height:10vw; padding:0 5.56vw; font-size:3.89vw; white-space:nowrap;}
+		.tree-type-01 .tree-menu-sub:hover,
+		.tree-type-01 .tree-sub-item-group > .tree-inner.active .tree-menu-sub {background:#def2ff; color:black;}
+		.tree-type-01 .tree-sub-item-group {display:flex; align-items:center; position:absolute; left:0; top:13.61vw; height:10vw; padding:0;}
+		.tree-type-01 .tree-sub-item-group .tree-inner {padding:0;}
+
 	/* 페이지 */
 		/* 전공학과 선택 */
 			.major-wrap {width:100dvw; padding:0 5vw;}
@@ -338,4 +354,6 @@
 		/* 마이페이지 */
 			.mypage-side {width:100%;}
 			.mypage-side .thumb-type-badge {flex:0 0 19.58vw; width:19.58vw; height:19.58vw;}
+			.mypage-side .tree-type-01 {display:none;}
+			.mypage-side .tree-type-01.active {display:flex;}
 }

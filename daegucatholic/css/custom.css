@@ -309,7 +309,7 @@
 	[class*="tabs-type"] .n-tabs-tab,
 	[class*="tabs-type"] .n-tabs-tab.n-tabs-tab--active,
 	[class*="tabs-type"] .n-tabs-tab__label,
-	[class*="tabs-type"] .n-tabs-tab-pad {all:unset; cursor:pointer;}
+	[class*="tabs-type"] .n-tabs-tab-pad {width:0; cursor:pointer;}
 	[class*="tabs-type"] .n-tabs-tab__label {justify-content:center; width:100%; height:100%;}
 	[class*="tabs-type"] .n-tabs-bar {display:none;}
 
@@ -363,6 +363,8 @@
 	.tree-type-01 .tree-inner.active > summary .tree-menu {background:#f5f5f5; color:black;}
 	.tree-type-01 .tree-arrow:before {flex:0 0 14px; width:14px; height:9px;}
 	.tree-type-01 .tree-inner[open] > summary .tree-arrow:before {transform:rotate(180deg);}
+	.tree-type-01 .tree-menu-sub {padding:0 20px; font-size:18px; color:#999;}
+	.tree-type-01 .tree-menu-sub:hover {color:var(--mc);}
 
 /* Naive */
 	.n-button:not(.n-button--disabled):hover {color:var(--moc);}

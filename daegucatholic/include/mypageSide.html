@@ -16,6 +16,7 @@
 			</div>
 		</div>
 	</div>
+	<!-- 모바일에서 btn-circle 클릭 시 ic-m-arrow-b, tree-type-01에 active클래스 토글-->
 	<div class="tree-type-01 mt-32">
 		<details class="tree-inner active">
 			<summary><a href="#" class="tree-menu">HOME</a></summary>
@@ -28,21 +29,23 @@
 		</details>
 		<details class="tree-inner tree-sub-item">
 			<summary><span class="tree-menu">보관함<span class="tree-arrow"></span></span></summary>
-			<details class="tree-inner">
-				<summary><a href="#" class="tree-menu">진로탐색</a></summary>
-			</details>
-			<details class="tree-inner">
-				<summary><a href="#" class="tree-menu">진로가이드</a></summary>
-			</details>
-			<details class="tree-inner">
-				<summary><a href="#" class="tree-menu">교과</a></summary>
-			</details>
-			<details class="tree-inner">
-				<summary><a href="#" class="tree-menu">비교과</a></summary>
-			</details>
-			<details class="tree-inner">
-				<summary><a href="#" class="tree-menu">자격증</a></summary>
-			</details>
+			<div class="tree-sub-item-group" data-scroll="hide">
+				<details class="tree-inner active">
+					<summary><a href="#" class="tree-menu-sub">진로탐색</a></summary>
+				</details>
+				<details class="tree-inner">
+					<summary><a href="#" class="tree-menu-sub">진로가이드</a></summary>
+				</details>
+				<details class="tree-inner">
+					<summary><a href="#" class="tree-menu-sub">교과</a></summary>
+				</details>
+				<details class="tree-inner">
+					<summary><a href="#" class="tree-menu-sub">비교과</a></summary>
+				</details>
+				<details class="tree-inner">
+					<summary><a href="#" class="tree-menu-sub">자격증</a></summary>
+				</details>
+			</div>
 		</details>
 	</div>
 </div>
