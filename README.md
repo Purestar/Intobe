@@ -10,3 +10,4 @@ Checkout 후 터미널에서 npm i로 모듈 설치 후 npm run dev로 서버를
 
 daegucatholic - 대구카톨릭
 andong - 안동대학교
+youngnam - 영남대학교
