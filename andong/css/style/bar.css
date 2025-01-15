@@ -1,0 +1,18 @@
+/* Bar */
+	/* Default */
+		[class*="bar-"] {display:flex; gap:4px; line-height:1;}
+		[class*="bar-"] > * {display:flex; gap:4px;}
+		[class*="bar-"] > * + *:before {content:""; background:#ccc;}
+
+	/* Horizontal Bar */
+		[class*="bar-h"] {flex-direction:column;}
+		[class*="bar-h"] > * {flex-direction:column;}
+		[class*="bar-h"] > * + *:before {width:100%; height:1px;}
+
+	/* Vertical Bar */
+		[class*="bar-v"] {align-items:center;}
+		[class*="bar-v"] > * {align-items:center;}
+		[class*="bar-v"] > * + *:before {align-self:normal; width:1px;}
+
+	/* Vertical Arrow */
+		[class*="bar-v-arrow"] > * + *:before {align-self:auto; background:none; border-left:1px solid var(--mc); border-top:1px solid var(--mc); width:4px; height:4px; transform:rotate(135deg);}

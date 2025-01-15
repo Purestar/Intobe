@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="대구가톨릭">
+		<meta name="description" content="대구가톨릭">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://unpkg.com/naive-ui"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script src="../js/pub.js"></script>
+		<link rel="stylesheet" href="../css/global.css">
+		<link rel="stylesheet" href="../css/workspace.css">
+	</head>
+	<body>
+		<div id="container">
+			<div class="layout-center">
+				<div class="favor-job-wrap">
+					<div class="txt-c">
+						<h1 class="fs-32 m-fs-36"><strong>정재원님</strong>이 관심있는직무를 알려주세요!</h1>
+						<div class="box-type-01 mt-24">
+							<p class="m-fs-24">국가직무능력표준을 기반으로 관심 직무를<br class="mobile">최대 2개까지 설정할 수 있습니다.</p>
+						</div>
+					</div>
+
+					<!-- 관심 직무 설정 -->
+					<!--<div data-include="../include/favor-job-list.html"></div>-->
+
+					<div class="favor-job-list-wrap">
+						<div class="favor-job-list-top">
+							<ul data-scroll="v" class="favor-job-list">
+								<li class="active"><button type="button">사업관리</button></li>
+								<li><button type="button">경영 · 회계 · 사무</button></li>
+								<li><button type="button">금융 · 보험</button></li>
+								<li><button type="button">교육 · 자연 · 사회과학</button></li>
+								<li><button type="button">법률 · 경찰 · 소방 · 교도 · 국방</button></li>
+								<li><button type="button">보건 · 의료</button></li>
+								<li><button type="button">사회복지 · 종교</button></li>
+								<li><button type="button">문화 · 예술 · 디자인 · 방송</button></li>
+								<li><button type="button">운전 · 운송</button></li>
+								<li><button type="button">영업</button></li>
+							</ul>
+							<div class="w100" data-scroll="v">
+								<n-collapse class="aco-type-01" arrow-placement="right">
+									<n-collapse-item title="기획사무" name="1">
+										<div class="layout-flex flex-col gap-12">
+											<div class="form-opt-chk">
+												<label>
+													<input type="checkbox">
+													<span class="opt-txt">경영기획</span>
+												</label>
+											</div>
+											<div class="form-opt-chk">
+												<label>
+													<input type="checkbox">
+													<span class="opt-txt">홍보광고</span>
+												</label>
+											</div>
+											<div class="form-opt-chk">
+												<label>
+													<input type="checkbox">
+													<span class="opt-txt">마케팅</span>
+												</label>
+											</div>
+										</div>
+									</n-collapse-item>
+									<n-collapse-item title="총무 &middot; 인사" name="2"></n-collapse-item>
+									<n-collapse-item title="재무 &middot; 회계" name="3"></n-collapse-item>
+									<n-collapse-item title="생산 &middot; 품질관리" name="4"></n-collapse-item>
+								</n-collapse>
+							</div>
+						</div>
+						<div class="favor-job-list-bot">
+							<div class="layout-flex align-center justify-between">
+								<div class="cr-lgry"><span class="cr-mc">1</span> / 2</div>
+								<button type="button" class="btn-icon">다시 선택하기<i class="ic-refrash"></i></button>
+							</div>
+							<ul class="layout-flex lst-tag">
+								<li>
+									<div class="bar-v-arrow-01">
+										<span>사업관리</span>
+										<span>기획사무</span>
+										<span>마케팅</span>
+									</div>
+									<button type="button"><i class="ic-delete"></i></button>
+								</li>
+								<li>
+									<div class="bar-v-arrow-01">
+										<span>사업관리</span>
+										<span>기획사무</span>
+										<span>마케팅</span>
+									</div>
+									<button type="button"><i class="ic-delete"></i></button>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="layout-grid gap-12 grid-col-2">
+						<button class="btn-type-b w100 mt-20 m-mt-80" type="button">이전</button>
+						<button class="btn-type w100 mt-20 m-mt-80" type="button" disabled>완료</button>
+					</div>
+					<div class="mt-30 pc">
+						<a href="#" class="layout-flex justify-center gap-12 cr-gry">다음에 설정하기 <i class="ic-arrow-r"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			const { createApp } = Vue
+			const { NCollapse, NCollapseItem, create } = naive;
+			const app = createApp({
+				components: {
+					NCollapse,
+					NCollapseItem,
+				}
+			})
+
+			app.use(create());
+			app.mount('#container');
+		</script>
+	</body>
+</html>

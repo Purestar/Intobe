@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="대구가톨릭">
+		<meta name="description" content="대구가톨릭">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://unpkg.com/naive-ui"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script src="../js/pub.js"></script>
+		<link rel="stylesheet" href="../css/global.css">
+		<link rel="stylesheet" href="../css/workspace.css">
+	</head>
+	<body>
+		<div data-include="../include/header.html"></div>
+		<div id="container">
+			<div class="layout-full pos-r">
+				<div class="section-top-bg"></div>
+				<div class="main-section section-top">
+					<div class="layout-inner gap-40 m-gap-60 pos-r">
+						<div class="box-type-03 main-stat-top">
+							<div class="layout-flex align-center gap-28">
+								<div class="thumb-type-badge">
+									<div class="thumb-inner"><img src="../images/dummy/badge.png"></div>
+								</div>
+								<div class="layout-grid gap-20 flex-1 w100">
+									<div class="layout-flex align-center gap-36">
+										<h2 class="fs-46 wb-keep"><strong>정재원</strong></h2>
+										<div class="grp-hor-bar-01-02">
+											<div class="grp-inner-wrap">
+												<div class="grp-inner">
+													<span class="grp-bar-blu" style="width:45%;">
+														<span class="grp-txt">재학</span>
+														<div class="grp-deco-wrap">
+															<i class="ic-duck-02"></i>
+															<span class="grp-txt-period ws-nw">학기종료<strong>D-20</strong></span>
+														</div>
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="bar-v-02 m-fs-20">
+										<span>컴퓨터공학전공</span>
+										<span>202400-000000</span>
+									</div>
+								</div>
+							</div>
+							<div class="layout-flex mt-12 m-mt-20 gap-20 main-stat-top-util">
+								<div class="layout-flex gap-20">
+									<button class="btn-type-b-lgry btn-sz-32 btn-icon" type="button">
+										<span><span class="pc">활동</span>배지변경</span>
+										<i class="ic-pencle"></i>
+									</button>
+									<button class="btn-type-b-lgry btn-sz-32 btn-icon" type="button">관심직무<i class="ic-setting"></i></button>
+								</div>
+								<ul class="layout-flex lst-tag mt-0">
+									<li>
+										<div class="bar-v-arrow-01">
+											<span>사업관리</span>
+											<span>기획사무</span>
+											<span>마케팅</span>
+										</div>
+									</li>
+									<li>
+										<div class="bar-v-arrow-01">
+											<span>사업관리</span>
+											<span>기획사무</span>
+											<span>마케팅</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div id="mainStat" class="mt-40 m-mt-60 main-stat-bot">
+							<div class="swi-type">
+								<div class="swiper">
+									<div class="swiper-wrapper">
+										<!-- 성취현황 -->
+										<div class="swiper-slide">
+											<div class="box-type-02">
+												<h2 class="tit-01">성취현황</h2>
+												<div class="grp-hor-bar-01 mt-40">
+													<div class="grp-cont">
+														<div class="layout-flex align-end justify-between">
+															<h3 class="tit-02">총 이수학점</h3>
+															<p><strong class="grp-tot">45</strong>학점</p>
+														</div>
+													</div>
+													<div class="grp-inner-wrap">
+														<div class="grp-inner">
+															<span class="grp-bar-blu" style="width:45%;"></span>
+														</div>
+														<div class="grp-inner">
+															<span class="grp-bar-gry" style="width:100%;"></span>
+														</div>
+													</div>
+												</div>
+
+												<div class="grp-hor-bar-01 mt-40">
+													<div class="layout-flex align-end justify-between">
+														<h3 class="tit-02">총 평균평점</h3>
+														<p><strong class="grp-tot">4.05</strong>점</p>
+													</div>
+													<div class="grp-inner-wrap">
+														<div class="grp-inner">
+															<span class="grp-bar-blu" style="width:45%;"></span>
+														</div>
+														<div class="grp-inner">
+															<span class="grp-bar-gry" style="width:100%;"></span>
+														</div>
+													</div>
+												</div>
+												<h3 class="tit-02 mt-40">최근 획득 DCU배지</h3>
+												<p class="layout-flex justify-center cr-gry mt-30 m-fs-28">획득한 배지명이 노출됩니다.</p>
+											</div>
+										</div>
+
+										<!-- 스팩현황 -->
+										<div class="swiper-slide">
+											<div class="box-type-02">
+												<div class="layout-flex align-center justify-between">
+													<h2 class="tit-01">스팩현황</h2>
+													<p class="cr-gry">총 <b class="cr-blk">00</b>개</p>
+												</div>
+												<ul class="layout-grid txt-c lst-item-01 mt-40 m-mt-50 grid-col-2">
+													<li>
+														<h3>자격증</h3>
+														<p><strong>2</strong>개</p>
+													</li>
+													<li>
+														<h3>어학성적</h3>
+														<p><strong>6</strong>개</p>
+													</li>
+													<li>
+														<h3>교육이수</h3>
+														<p><strong>4</strong>개</p>
+													</li>
+													<li>
+														<h3>대외활동</h3>
+														<p><strong>18</strong>개</p>
+													</li>
+													<li>
+														<h3>해외경험</h3>
+														<p><strong>10</strong>개</p>
+													</li>
+													<li>
+														<h3>수상이력</h3>
+														<p><strong>5</strong>개</p>
+													</li>
+												</ul>
+											</div>
+										</div>
+
+										<!-- 졸업생 취업 우수사례 -->
+										<div class="swiper-slide">
+											<div class="box-type-02">
+												<div class="layout-flex align-center justify-between">
+													<h2 class="tit-01">졸업생 취업 우수사례</h2>
+													<a href="#" class="cr-gry">더보기</a>
+												</div>
+												<ul class="layout-auto lst-latest mt-40 m-mt-50">
+													<li>
+														<a href="#" class="lst-tit"><b>취업처취업처명</b></a>
+														<p class="lst-desc">경찰행정학과 20학번 최영재</p>
+													</li>
+													<li>
+														<a href="#" class="lst-tit"><b>취업처취업처명</b></a>
+														<p class="lst-desc">경찰행정학과 20학번 최영재</p>
+													</li>
+													<li>
+														<a href="#" class="lst-tit"><b>취업처취업처명</b></a>
+														<p class="lst-desc">경찰행정학과 20학번 최영재</p>
+													</li>
+													<li>
+														<a href="#" class="lst-tit"><b>취업처취업처명</b></a>
+														<p class="lst-desc">경찰행정학과 20학번 최영재</p>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-pagination swi-page-01"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 스팩 + DCU배지 -->
+			<div class="bg-lgry main-section">
+				<div class="layout-full">
+					<div class="layout-inner">
+						<!-- 스팩 -->
+						<div class="layout-flex align-end justify-between main-spec-top">
+							<div class="layout-flex align-center gap-20">
+								<i class="ic-duck"></i>
+								<div class="layout-flex align-center gap-20 main-spec-txt">
+									<p class="fs-28 m-fs-36"><strong>스펙을 등록해보세요!</strong></p>
+									<p class="fs-18 m-fs-24">AI Advisor가 스펙을 분석해드려요.</p>
+								</div>
+							</div>
+							<i class="ic-dog"></i>
+						</div>
+						<div class="main-quick-menu-wrap" data-scroll="hide">
+							<ul class="layout-flex main-quick-menu">
+								<li><a href="#">자격증</a></li>
+								<li><a href="#">어학성적</a></li>
+								<li><a href="#">교내외활동</a></li>
+								<li><a href="#">교육이수</a></li>
+								<li><a href="#">해외경험</a></li>
+								<li><a href="#">수상</a></li>
+							</ul>
+						</div>
+
+						<!-- DCU배지 -->
+						<p class="fs-28 m-fs-36 mt-80"><strong>DCU배지</strong>를 획득해보세요!</p>
+						<div id="dcuBadge" class="mt-40 m-mt-50 m-mside--inner">
+							<div class="swi-type">
+							<div class="swiper m-pside--inner">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="layout-flex align-center flex-col gap-12">
+											<div class="thumb-type-badge">
+												<div class="thumb-inner">
+													<img src="../images/dummy/badge.png">
+												</div>
+											</div>
+											<span class="chip-type-02-blu">배지카테고리</span>
+											<p class="m-fs-24">welcome</p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="layout-flex align-center flex-col gap-12">
+											<div class="thumb-type-badge">
+												<div class="thumb-inner">
+													<img src="../images/dummy/badge_02.png">
+												</div>
+											</div>
+											<span class="chip-type-02-blu">배지카테고리</span>
+											<p class="m-fs-24">welcome</p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="layout-flex align-center flex-col gap-12">
+											<div class="thumb-type-badge">
+												<div class="thumb-inner">
+													<img src="../images/dummy/badge_03.png">
+												</div>
+											</div>
+											<span class="chip-type-02-blu">배지카테고리</span>
+											<p class="m-fs-24">welcome</p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="layout-flex align-center flex-col gap-12">
+											<div class="thumb-type-badge">
+												<div class="thumb-inner">
+													<img src="../images/dummy/badge.png">
+												</div>
+											</div>
+											<span class="chip-type-02-blu">배지카테고리</span>
+											<p class="m-fs-24">welcome</p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="layout-flex align-center flex-col gap-12">
+											<div class="thumb-type-badge">
+												<div class="thumb-inner">
+													<img src="../images/dummy/badge_02.png">
+												</div>
+											</div>
+											<span class="chip-type-02-blu">배지카테고리</span>
+											<p class="m-fs-24">welcome</p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="layout-flex align-center flex-col gap-12">
+											<div class="thumb-type-badge">
+												<div class="thumb-inner">
+													<img src="../images/dummy/badge_03.png">
+												</div>
+											</div>
+											<span class="chip-type-02-blu">배지카테고리</span>
+											<p class="m-fs-24">welcome</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- AI Advisor 추천 -->
+			<div class="layout-full main-section">
+				<div class="layout-inner">
+					<p class="fs-28 m-fs-36"><strong>AI Advisor</strong>의 진로 맞춤형 추천 교과를 확인해보세요!</p>
+					<div id="aiAdvisor" class="brd-lst-gallery mt-24 m-mt-30 m-mside--inner">
+						<div class="swi-type">
+							<div class="swiper m-pside--inner">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="thumb-type-01-blu">
+											<div class="thumb-inner">
+												<div class="thumb-lt">
+													<span class="chip-type-01-blu">전공핵심</span>
+												</div>
+												<div class="thumb-rt">
+													<div class="form-opt-chk-01">
+														<label>
+															<input type="checkbox">
+															<span class="opt-txt"></span>
+														</label>
+													</div>
+												</div>
+												<div class="thumb-c">이산수학</div>
+											</div>
+										</div>
+										<div class="brd-cont-wrap">
+											<div class="layout-grid gap-8 lh-1">
+												<div class="bar-v-01 fs-14 m-fs-24">
+													<span><b>소프트웨어융합전공</b></span>
+													<span><b>2-2</b></span>
+													<span><b>2학점 (2시간)</b></span>
+												</div>
+												<div class="brd-lst-desc">
+													<div class="layout-ellipsis" style="-webkit-line-clamp: 2;">표준자바(J2SE)를 중심으로 자바의 기본 기능들과 라이브러리, 네트워크, 애플릿</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="thumb-type-01-pnk">
+											<div class="thumb-inner">
+												<div class="thumb-lt">
+													<span class="chip-type-01-pnk">교양선택</span>
+												</div>
+												<div class="thumb-rt">
+													<div class="form-opt-chk-01">
+														<label>
+															<input type="checkbox">
+															<span class="opt-txt"></span>
+														</label>
+													</div>
+												</div>
+												<div class="thumb-c">소프트웨어 실무영어</div>
+											</div>
+										</div>
+										<div class="brd-cont-wrap">
+											<div class="layout-grid gap-8 lh-1">
+												<div class="bar-v-01 fs-14 m-fs-24">
+													<span><b>소프트웨어융합전공</b></span>
+													<span><b>2-2</b></span>
+													<span><b>2학점 (2시간)</b></span>
+												</div>
+												<div class="brd-lst-desc">
+													<div class="layout-ellipsis" style="-webkit-line-clamp: 2;">파이썬 기초 문법을 배우고 파이썬을 활용 해 다양한 지역 재생과 관련된 실생활 문</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="thumb-type-01-red">
+											<div class="thumb-inner">
+												<div class="thumb-lt">
+													<span class="chip-type-01-red">교양필수</span>
+												</div>
+												<div class="thumb-rt">
+													<div class="form-opt-chk-01">
+														<label>
+															<input type="checkbox">
+															<span class="opt-txt"></span>
+														</label>
+													</div>
+												</div>
+												<div class="thumb-c">C프로그래밍</div>
+											</div>
+										</div>
+										<div class="brd-cont-wrap">
+											<div class="layout-grid gap-8 lh-1">
+												<div class="bar-v-01 fs-14 m-fs-24">
+													<span><b>소프트웨어융합전공</b></span>
+													<span><b>2-2</b></span>
+													<span><b>2학점 (2시간)</b></span>
+												</div>
+												<div class="brd-lst-desc">
+													<div class="layout-ellipsis" style="-webkit-line-clamp: 2;">기초이론 분야인 탐색, 지식 표현, 문제 풀이, 정리 증명 기법들을 공부하고, 이를</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="thumb-type-01-ylw">
+											<div class="thumb-inner">
+												<div class="thumb-lt">
+													<span class="chip-type-01-ylw">교양</span>
+												</div>
+												<div class="thumb-rt">
+													<div class="form-opt-chk-01">
+														<label>
+															<input type="checkbox">
+															<span class="opt-txt"></span>
+														</label>
+													</div>
+												</div>
+												<div class="thumb-c">확률과 통계</div>
+											</div>
+										</div>
+										<div class="brd-cont-wrap">
+											<div class="layout-grid gap-8 lh-1">
+												<div class="bar-v-01 fs-14 m-fs-24">
+													<span><b>소프트웨어융합전공</b></span>
+													<span><b>2-2</b></span>
+													<span><b>2학점 (2시간)</b></span>
+												</div>
+												<div class="brd-lst-desc">
+													<div class="layout-ellipsis" style="-webkit-line-clamp: 2;">데이터 베이스 시스템의 설계, 사용 방법 및 구현에 필요한 기본 개념을 소개한다.</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="thumb-type-01-ylw">
+											<div class="thumb-inner">
+												<div class="thumb-lt">
+													<span class="chip-type-01-ylw">교양</span>
+												</div>
+												<div class="thumb-rt">
+													<div class="form-opt-chk-01">
+														<label>
+															<input type="checkbox">
+															<span class="opt-txt"></span>
+														</label>
+													</div>
+												</div>
+												<div class="thumb-c">확률과 통계</div>
+											</div>
+										</div>
+										<div class="brd-cont-wrap">
+											<div class="layout-grid gap-8 lh-1">
+												<div class="bar-v-01 fs-14 m-fs-24">
+													<span><b>소프트웨어융합전공</b></span>
+													<span><b>2-2</b></span>
+													<span><b>2학점 (2시간)</b></span>
+												</div>
+												<div class="brd-lst-desc">
+													<div class="layout-ellipsis" style="-webkit-line-clamp: 2;">데이터 베이스 시스템의 설계, 사용 방법 및 구현에 필요한 기본 개념을 소개한다.</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-navigation">
+								<div class="swiper-button-prev swi-arrow-01"></div>
+								<div class="swiper-button-next swi-arrow-01"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 비교과 프로그램 추천 -->
+			<div class="bg-lgry layout-full main-section">
+				<div class="layout-inner">
+					<p class="fs-28 m-fs-36"><strong>정재원님</strong>을 위한<br class="mobile"> 비교과 프로그램을 추천드려요!</p>
+					<div id="coCurricular" class="brd-lst-gallery mt-24 m-mt-30 m-mside--inner">
+						<div class="swi-type">
+							<div class="swiper m-pside--inner">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="thumb-type-01-pur">
+											<div class="thumb-inner">
+												<div class="thumb-lt">
+													<span class="chip-type-01-pur">임박</span>
+												</div>
+												<div class="thumb-rt">
+													<div class="form-opt-chk-01">
+														<label>
+															<input type="checkbox">
+															<span class="opt-txt"></span>
+														</label>
+													</div>
+												</div>
+												<div class="thumb-c">자바 프로그래밍 및 실습</div>
+											</div>
+										</div>
+										<div class="layout-grid brd-cont-wrap">
+											<b class="fs-14 m-fs-24">교육혁신처</b>
+											<p>신청<span class="cr-blk ml-10">2024.08.19(수) ~ 2024.08.23(금)</span></p>
+											<p>운영<span class="cr-blk ml-10">2024.08.19(수) ~ 2024.08.23(금)</span></p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="thumb-type-01-pur">
+											<div class="thumb-inner">
+												<div class="thumb-lt">
+													<span class="chip-type-01-grn">진행중</span>
+												</div>
+												<div class="thumb-rt">
+													<div class="form-opt-chk-01">
+														<label>
+															<input type="checkbox">
+															<span class="opt-txt"></span>
+														</label>
+													</div>
+												</div>
+												<div class="thumb-c">파이썬 프로그래밍</div>
+											</div>
+										</div>
+										<div class="layout-grid brd-cont-wrap">
+											<b class="fs-14 m-fs-24">교육혁신처</b>
+											<p>신청<span class="cr-blk ml-10">2024.08.19(수) ~ 2024.08.23(금)</span></p>
+											<p>운영<span class="cr-blk ml-10">2024.08.19(수) ~ 2024.08.23(금)</span></p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="thumb-type-01-pur">
+											<div class="thumb-inner">
+												<div class="thumb-lt">
+													<span class="chip-type-01-ylw">예정</span>
+												</div>
+												<div class="thumb-rt">
+													<div class="form-opt-chk-01">
+														<label>
+															<input type="checkbox">
+															<span class="opt-txt"></span>
+														</label>
+													</div>
+												</div>
+												<div class="thumb-c">소프트웨어와 인공지능</div>
+											</div>
+										</div>
+										<div class="layout-grid brd-cont-wrap">
+											<b class="fs-14 m-fs-24">교육혁신처</b>
+											<p>신청<span class="cr-blk ml-10">2024.08.19(수) ~ 2024.08.23(금)</span></p>
+											<p>운영<span class="cr-blk ml-10">2024.08.19(수) ~ 2024.08.23(금)</span></p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="thumb-type-01-pur">
+											<div class="thumb-inner">
+												<div class="thumb-lt">
+													<span class="chip-type-01-ylw">예정</span>
+												</div>
+												<div class="thumb-rt">
+													<div class="form-opt-chk-01">
+														<label>
+															<input type="checkbox">
+															<span class="opt-txt"></span>
+														</label>
+													</div>
+												</div>
+												<div class="thumb-c">비교과명이 노출됩니다</div>
+											</div>
+										</div>
+										<div class="layout-grid brd-cont-wrap">
+											<b class="fs-14 m-fs-24">교육혁신처</b>
+											<p>신청<span class="cr-blk ml-10">2024.08.19(수) ~ 2024.08.23(금)</span></p>
+											<p>운영<span class="cr-blk ml-10">2024.08.19(수) ~ 2024.08.23(금)</span></p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-navigation">
+								<div class="swiper-button-prev swi-arrow-01"></div>
+								<div class="swiper-button-next swi-arrow-01"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			// 메인 상단 스테이터스 슬라이드
+			const mainStatSlide = new Swiper('#mainStat .swiper', {
+				slidesPerView: 1,
+				spaceBetween: calculatePercentage(36),
+				pagination: { el: '#mainStat .swiper-pagination' },
+				breakpoints: {
+					720: {
+						slidesPerView: 3,
+						spaceBetween: 28
+					},
+				},
+			});
+
+			// DCU 배지 슬라이드
+			const dcuBadgeSlide = new Swiper('#dcuBadge .swiper', {
+				slidesPerView: 3.5,
+				spaceBetween: calculatePercentage(36),
+				navigation: {
+					nextEl: '#dcuBadge .swiper-button-next',
+					prevEl: '#dcuBadge .swiper-button-prev',
+				},
+				breakpoints: {
+					720: {
+						slidesPerView: 6,
+					},
+				},
+			});
+
+			// AI Advisor 추천 슬라이드
+			const aiAdvisorSlide = new Swiper('#aiAdvisor .swiper', {
+				slidesPerView: 1.3,
+				spaceBetween: calculatePercentage(36),
+				navigation: {
+					nextEl: '#aiAdvisor .swiper-button-next',
+					prevEl: '#aiAdvisor .swiper-button-prev',
+				},
+				breakpoints: {
+					720: {
+						slidesPerView: 4,
+						spaceBetween: 38,
+					},
+				},
+			});
+
+			// 비교과 프로그램 추천 슬라이드
+			const coCurricularSlide = new Swiper('#coCurricular .swiper', {
+				slidesPerView: 1.3,
+				spaceBetween: calculatePercentage(36),
+				navigation: {
+					nextEl: '#coCurricular .swiper-button-next',
+					prevEl: '#coCurricular .swiper-button-prev',
+				},
+				breakpoints: {
+					720: {
+						slidesPerView: 4,
+						spaceBetween: 38,
+					},
+				},
+			});
+		</script>
+		<div data-include="../include/footer.html"></div>
+	</body>
+</html>

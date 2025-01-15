@@ -1,0 +1,38 @@
+/* Form */
+	/* Default */
+		ig-form {position:relative; display:inline-block; max-width:fit-content;}
+		ig-form[type="checkbox"], ig-form[type="radio"], ig-form[type="switch"], ig-form[type="selectbutton"], ig-form[type="rating"],
+		ig-form[type="color"] {line-height:0;}
+		ig-form[type="textarea"] {max-width:100%;}
+
+		[class*="form-"] {display:inline-flex; align-items:center; gap:4px; position:relative;}
+		[class*="form-"] input {background:none;}
+		[class*="form-"] .form-icon {display:flex; align-items:center; justify-content:center; position:absolute; right:0; top:0; background-color:white; border-radius:0 var(--fom-br) var(--fom-br) 0; width:calc(var(--fom-h) - 2px); height:calc(var(--fom-h) - 2px);}
+		[class*="form-"] .form-icon:after,
+		[class*="form-"] .form-icon:after {content:""; background-image:var(--ic-c); background-size:var(--bg-sz); z-index:0; cursor:pointer;}
+
+	/* Divide */
+		[class*="form-"][divide] {background:none; border:0; padding:0; gap:4px;}
+		[class*="form-"][divide] .form-icon {right:1px; top:1px;}
+
+	/* Text */
+		[class*="form-"] .txt-limit,
+		[class*="form-"] .txt-prefix,
+		[class*="form-"] .txt-suffix {word-break:keep-all; white-space:nowrap;}
+
+	/* Validation */
+		[class*="form-"]:not([divide]).valid,
+		[class*="form-"][divide].valid input {background:var(--valid-bg); border-color:var(--valid-bdr) !important;}
+		[class*="form-"]:not([divide]).invalid,
+		[class*="form-"][divide].invalid input,
+		.form-inner.invalid .form-top {background:var(--invalid-bg); border-color:var(--invalid-bdr) !important;}
+		.form-pass-txt, .form-err-txt {display:none;}
+		[class*="form-"].focused + .form-pass-txt,
+		[class*="form-"].focused + .form-err-txt {display:block;}
+		.form-pass-txt {color:var(--valid-bdr);}
+		.form-err-txt {color:var(--invalid-bdr);}
+
+	/* Disabled & Readonly */
+		[class*="form-"][disabled],
+		[class*="form-"][readonly] {pointer-events:none;}
+		[class*="form-"][disabled] .form-icon {background:none;}

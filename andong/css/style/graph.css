@@ -1,0 +1,8 @@
+/* Graph */
+	/* Horizontal Bar */
+		[class*="grp-hor-bar"] {display:block;}
+		[class*="grp-hor-bar"] .grp-inner-wrap {display:flex; flex-direction:column; gap:8px;}
+		[class*="grp-hor-bar"] .grp-inner {overflow:hidden; display:flex; background:var(--mc); height:1px;}
+		[class*="grp-hor-bar"] [class*="grp-bar"] {background:var(--moc); width:10px; height:100%;}
+		[class*="grp-hor-bar"] .grp-cont {line-height:1;}
+		[class*="grp-hor-bar"] .grp-tot {font-size:34px;}

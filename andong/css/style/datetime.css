@@ -1,0 +1,19 @@
+/* Date Time */
+	[class*="datetime-type"] {position:relative; background:white;}
+	[class*="datetime-type"] .datetime-header,
+	[class*="datetime-type"] .datetime-footer {display:flex; justify-content:space-between; min-width:100%; width:max-content;}
+	[class*="datetime-type"] .datetime-prev-month,
+	[class*="datetime-type"] .datetime-next-month {opacity:0.5;}
+	[class*="datetime-type"] .datetime-table {table-layout:fixed; width:100%;}
+	[class*="datetime-type"] .datetime-table td {text-align:center;}
+	[class*="datetime-type"] .datetime-selected .datetime-day {display:flex; align-items:center; justify-content:center; background:var(--mc); border-radius:50%; width:24px; height:24px; margin:0 auto;}
+	[class*="datetime-type"] .datetime-year-control,
+	[class*="datetime-type"] .datetime-month-control {display:flex; flex-direction:column; position:absolute; left:0; top:0; width:100%; height:100%; background:white; z-index:1;}
+	[class*="datetime-type"] .datetime-year-control-head {display:flex; justify-content:space-between;}
+	[class*="datetime-type"] .datetime-year-list,
+	[class*="datetime-type"] .datetime-month-list {flex:1; display:grid; grid-template-columns:repeat(5, 1fr); border:1px solid var(--mc);}
+	[class*="datetime-type"] .datetime-month-list {grid-template-columns:repeat(6, 1fr);}
+	[class*="datetime-type"] .datetime-year-control-btn,
+	[class*="datetime-type"] .datetime-month-control-btn {display:flex; align-items:center; justify-content:center; width:100%;}
+	[class*="datetime-type"] .datetime-year-control-btn:hover,
+	[class*="datetime-type"] .datetime-month-control-btn:hover {background:var(--mc);}

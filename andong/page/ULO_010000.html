@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="대구가톨릭">
+		<meta name="description" content="대구가톨릭">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://unpkg.com/naive-ui"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script src="../js/pub.js"></script>
+		<link rel="stylesheet" href="../css/global.css">
+		<link rel="stylesheet" href="../css/workspace.css">
+	</head>
+	<body>
+		<div id="container" class="layout-center">
+			<div class="login-wrap">
+				<div class="mobile"></div>
+				<div class="login">
+					<img class="pc" src="../images/img/img_login.png">
+					<div class="layout-flex justify-center align-center">
+						<div class="layout-flex flex-col login-form">
+							<img src="../images/img/img_login_logo.png">
+							<n-input v-model:value="value" class="mt-20 m-mt-72" type="text" placeholder="아이디를 입력해주세요"></n-input>
+							<n-input v-model:value="value" type="password" placeholder="비밀번호를 입력해주세요"></n-input>
+							<button type="button" class="btn-type-blu-gra btn-sz-56 w100">로그인</button>
+							<ul class="layout-flex justify-center bar-v-02-01 mt-24 m-mt-48 fs-14 m-fs-28 cr-gry">
+								<li><a href="#">사용자 인증</a></li>
+								<li><a href="#">아이디 찾기</a></li>
+								<li><a href="#">비밀번호 찾기</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="layout-flex justify-center align-center flex-col mt-70 gap-16 m-gap-28 fs-14 m-fs-28">
+					<ul class="layout-flex w-auto bar-v-02-01 cr-gry">
+						<li><a href="#">대학홈페이지</a></li>
+						<li><a href="#">학생지원포털</a></li>
+						<li><a href="#">개인정보처리방침</a></li>
+					</ul>
+					<p class="fs-14 m-fs-20 cr-gry">ⓒ 2024 DAEGU CATHOLIC University All Rights Reserved.</p>
+				</div>
+			</div>
+		</div>
+		<script>
+			const { createApp, ref, reactive, computed, defineComponent } = Vue;
+			const { NTabs, NTabPane, NButton, NModal, NCard, NSelect, NCollapse, NCollapseItem, create } = naive;
+
+			const app = createApp({
+				components: {
+					NTabs,
+					NTabPane,
+					NButton,
+					NModal,
+					NCard,
+					NSelect,
+					NCollapse,
+					NCollapseItem,
+				}
+			});
+
+			app.use(naive);
+			app.mount('#container');
+		</script>
+	</body>
+</html>

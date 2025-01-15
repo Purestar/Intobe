@@ -1,0 +1,30 @@
+/* Debug */
+	[debug] {position:relative;}
+	[debug]::before {content:""; position:absolute; left:0; top:0; width:100%; height:100%; background:rgba(0, 255, 0, 0.2); pointer-events:none; z-index:99;}
+
+/* Ellipsis */
+	[ellipsis][disabled] .layout-ellipsis {display:block;}
+
+/* Hide */
+	[hide] {display:none;}
+
+/* Position */
+	[sticky] {position:sticky; left:0; top:0;}
+	[sticky][bottom] {position:sticky; left:0; top:auto; bottom:0;}
+
+/* Scroll */
+	*::-webkit-scrollbar {background:var(--scr-bg1); width:var(--scr-w); height:var(--scr-w); border-radius:var(--scr-br);}
+	*::-webkit-scrollbar-thumb {background:var(--scr-bg2); width:var(--scr-w); border-radius:var(--scr-br);}
+	*::-webkit-scrollbar-track {border-radius:var(--scr-br);}
+
+	[data-scroll] {overflow:auto; display:block;}
+	[data-scroll="vertical"],
+	[data-scroll="v"],
+	.scr-ver {overflow-x:hidden; overflow-y:auto; height:100%;}
+	[data-scroll="horizontal"],
+	[data-scroll="h"],
+	.scr-hor {overflow-x:auto; overflow-y:hidden; width:100%;}
+	[data-scroll="hide"] {width:100%;}
+	[data-scroll="hide"]::-webkit-scrollbar {width:0; height:0; border-radius:0;}
+	[data-scroll="hide"]::-webkit-scrollbar-thumb {width:0; border-radius:0;}
+	[data-scroll="hide"]::-webkit-scrollbar-track {border-radius:0;}

@@ -1,0 +1,33 @@
+{
+	"Setting": {
+		"breakPoint": [1200, 1024],
+		"breakPointUnit": ["px", "vw"],
+		"device": ["360px", "768px", "1024px", "1200px", "100%"],
+		"project": "Intobe Project"
+	},
+
+	"MenuList": [
+		{
+			"id": "Path",
+			"submenu": [
+				{ "id": "공통", "submenu": [
+					{ "menu": "로그인", "src": "./page/login.html", "state": "comp" },
+					{ "menu": "메인", "src": "./page/main.html", "state": "comp" },
+					{ "menu": "팝업", "src": "./page/popup.html", "state": "comp" }
+				]},
+				{ "id": "대메뉴 1", "submenu": [
+					{ "menu": "페이지 1", "src": "./page/.html", "state": "" },
+					{ "menu": "페이지 1", "src": "./page/.html", "state": "" },
+					{ "menu": "페이지 1", "src": "./page/.html", "state": "" },
+					{ "menu": "페이지 1", "src": "./page/.html", "state": "" }
+				]}
+			]
+		},
+		{
+			"id": "Guide",
+			"submenu": [
+				{ "menu": "Storybook", "src": "./storybook-static/?path=/docs/", "state": "comp" }
+			]
+		}
+	]
+}

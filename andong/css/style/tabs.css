@@ -1,0 +1,16 @@
+/* Tabs */
+	[class*="tab-wrap"] > [class*="tab-cont"] > * {display:none;}
+	[class*="tab-wrap"] > [class*="tab-cont"] > *.active {display:block;}
+	[class*="tab-wrap"] > [class*="tab-cont"] > * > *:first-child {margin-top:0;}
+
+	[class*="tab-menu"] {display:flex; width:100%; max-width:100dvw; text-align:center;}
+	[class*="tab-menu"] > * {flex:1;}
+	[class*="tab-menu"] > * > * {display:flex; justify-content:center; align-items:center; width:100%; height:100%; min-width:max-content;}
+	[class*="tab-menu"] > *.active > *,
+	[class*="tab-menu"] > * > *:hover {background:var(--moc); color:white;}
+
+	[class*="tab-wrap"].tab-vertical {display:flex;}
+	[class*="tab-wrap"].tab-vertical > [class*="tab-menu"] > * {flex:none;}
+	[class*="tab-wrap"].tab-vertical > [class*="tab-cont"] {flex:1;}
+
+	.tab-not-equal [class*="tab-menu"] > * {flex:0;}
