@@ -1,0 +1,27 @@
+@media print {
+	* {-webkit-print-color-adjust:exact; print-color-adjust:exact;}
+
+	html, body {height:fit-content; padding: 0;}
+
+	header, footer,
+	.lst-type-02-02 [class*="ic-"],
+	.lst-type-02-02 [class*="ic-"],
+	.brd-write-ctrl {display:none !important;}
+
+	.lst-type-02-02 > * {flex-direction:column; align-items:flex-start;}
+	/*.lst-type-02-02 .gap-40 {flex:0;}*/
+
+	#sub-container {padding:30px;}
+
+
+
+	:root {
+		--init-pc-w: 100%;
+	}
+}
+
+@page {
+    size: A4;
+    margin:0;
+	padding:0;
+}

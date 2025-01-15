@@ -1,0 +1,69 @@
+{
+	"Setting": {
+		"breakPoint": [1200, 1024],
+		"breakPointUnit": ["px", "vw"],
+		"device": ["360px", "768px", "1024px", "1200px", "100%"],
+		"project": "Intobe Project"
+	},
+
+	"MenuList": [
+		{
+			"id": "Path",
+			"submenu": [
+				{ "id": "공통", "submenu": [
+					{ "menu": "첫진입 ✔", "src": "./src/page/UFE_010000.html", "state": "comp" },
+					{ "menu": "헤더/푸터 ✔", "src": "./src/page/layout.html", "state": "comp" },
+					{ "menu": "팝업", "src": "./src/page/popup.html", "state": "comp" }
+				], "state": "comp"},
+				{ "menu": "메인 ✔", "src": "./src/page/UMA_010000.html", "state": "comp" },
+				{ "id": "진로탐색 ✔", "submenu": [
+					{ "id": "직업 ✔", "submenu": [
+						{ "menu": "홈 ✔", "src": "./src/page/UCE_010100.html", "state": "comp" },
+						{ "menu": "목록 ✔", "src": "./src/page/UCE_010200.html", "state": "comp" },
+						{ "menu": "상세 ✔", "src": "./src/page/UCE_010300.html", "state": "comp" }
+					], "state": "comp" },
+					{ "id": "롤 모델 ✔", "submenu": [
+						{ "menu": "홈 ✔", "src": "./src/page/UCE_020100.html", "state": "comp" },
+						{ "menu": "목록 ✔", "src": "./src/page/UCE_020200.html", "state": "comp" },
+						{ "menu": "상세 ✔", "src": "./src/page/UCE_020300.html", "state": "comp" }
+					], "state": "comp" }
+				], "state": "comp"},
+				{ "id": "My Major Map", "submenu": [
+					{ "menu": "목록 ✔", "src": "./src/page/UMM_010000.html", "state": "comp" },
+					{ "menu": "등록/수정 ✔", "src": "./src/page/UMM_020100.html", "state": "comp" },
+					{ "menu": "상세 ✔", "src": "./src/page/UMM_030000.html", "state": "comp" }
+				], "state": "comp" },
+				{ "id": "My Career ✔", "submenu": [
+					{ "menu": "대시보드 ✔", "src": "./src/page/UCA_010000.html", "state": "comp" },
+					{ "menu": "스팩 ✔", "src": "./src/page/UCA_020000.html", "state": "comp" },
+					{ "id": "자기소개서 ✔", "submenu": [
+						{ "menu": "목록 ✔", "src": "./src/page/UCA_030100.html", "state": "comp" },
+						{ "menu": "등록/수정 ✔", "src": "./src/page/UCA_030200.html", "state": "comp" },
+						{ "menu": "상세 ✔", "src": "./src/page/UCA_030400.html", "state": "comp" }
+					], "state": "comp" },
+					{ "menu": "포트폴리오 ✔", "src": "./src/page/UCA_040100.html", "state": "comp" },
+					{ "id": "이력서 ✔", "submenu": [
+						{ "menu": "목록 ✔", "src": "./src/page/UCA_050100.html", "state": "comp" },
+						{ "menu": "등록/수정 ✔", "src": "./src/page/UCA_050200.html", "state": "comp" },
+						{ "menu": "상세 ✔", "src": "./src/page/UCA_050300.html", "state": "comp" }
+					], "state": "comp" }
+				], "state": "comp"},
+				{ "id": "e-Notice ✔", "submenu": [
+					{ "id": "공지사항 ✔", "submenu": [
+						{ "menu": "목록 ✔", "src": "./src/page/UEN_010100.html", "state": "comp" },
+						{ "menu": "상세 ✔", "src": "./src/page/UEN_010200.html", "state": "comp" }
+					], "state": "comp" },
+					{ "menu": "FAQ ✔", "src": "./src/page/UEN_020000.html", "state": "comp" }
+				], "state": "comp"}
+			],
+			"state": "comp"
+		},
+		{
+			"id": "Guide",
+			"submenu": [
+				{ "menu": "Naive UI", "src": "https://www.naiveui.com/en-US/os-theme/components/", "state": "comp" }
+			],
+			"state": "comp"
+		}
+	]
+}

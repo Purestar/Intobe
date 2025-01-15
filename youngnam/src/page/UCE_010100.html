@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="Management">
+		<meta name="description" content="Management">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script type="module" src="../assets/js/index.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://unpkg.com/naive-ui"></script>
+		<link rel="icon" href="../favicon.ico" sizes="any">
+		<link rel="stylesheet" href="../assets/css/global.css">
+	</head>
+	<body>
+
+		<div id="container">
+			<div id="sub-container" class="wrap-inner">
+				<div id="contents">
+					<h2 class="tit-03">AI Advisor의 맞춤 직업 추천!</h2>
+					<p>김영남님의 적성과 관심분야를 분석해서 Ai Adviosr가 추천하는 직업을 확인해보세요!</p>
+					<div class="job-slide-wrap">
+						<div class="swi-type swi-navigation-01">
+							<div class="swiper brd-wrap">
+								<ul class="swiper-wrapper">
+									<li class="swiper-slide">
+										<div>
+											<h3 class="tit-02">시스템소프트웨어엔지니어</h3>
+											<p class="job-desc">컴퓨터시스템의동작, 제어 및 관리와 관련된 시스템소프트웨어를 개발한다. </p>
+										</div>
+										<p class="fs-14 m-fs-24"><span class="cr-mc">16명</span> 학생이 관심있는 직업이에요!</p>
+										<p class="job-recom"><strong class="cr-mc">98%</strong>추천도</p>
+									</li>
+									<li class="swiper-slide">
+										<div>
+											<h3 class="tit-02">시스템소프트웨어엔지니어</h3>
+											<p class="job-desc">컴퓨터시스템의동작, 제어 및 관리와 관련된 시스템소프트웨어를 개발한다. </p>
+										</div>
+										<p class="fs-14 m-fs-24"><span class="cr-mc">22명</span> 학생이 관심있는 직업이에요!</p>
+										<p class="job-recom"><strong class="cr-mc">90%</strong>추천도</p>
+									</li>
+									<li class="swiper-slide">
+										<div>
+											<h3 class="tit-02">시스템소프트웨어엔지니어</h3>
+											<p class="job-desc">컴퓨터시스템의동작, 제어 및 관리와 관련된 시스템소프트웨어를 개발한다. </p>
+										</div>
+										<p class="fs-14 m-fs-24"><span class="cr-mc">16명</span> 학생이 관심있는 직업이에요!</p>
+										<p class="job-recom"><strong class="cr-mc">90%</strong>추천도</p>
+									</li>
+								</ul>
+							</div>
+							<div class="swiper-button-prev swi-arrow"></div>
+							<div class="swiper-button-next swi-arrow"></div>
+						</div>
+					</div>
+
+					<h2 class="tit-03 mt-60">알아보고 싶은 직업을 직접 검색해보세요!</h2>
+					<p>한국표준직업분류를 선택하거나 궁금한 직업을 직접 입력해서 알아볼 수 있어요.</p>
+					<div class="wrap-flex flex-j-end mt-20">
+						<button type="button" class="btn-refresh"><i class="ic-refresh"></i>선택 초기화</button>
+					</div>
+					<div class="job-type-wrap">
+						<div class="job-type-ctrl">
+							<div class="wrap-flex gap-12">
+								<div class="form-type-txt">
+									<input type="text" value="소프트웨어 엔지니어">
+								</div>
+								<button type="button" class="btn-type job-btn-search">검색</button>
+							</div>
+							<div class="wrap-flex flex-center mt-24 gap-20 m-flex-col m-flex-start">
+								<b class="cr-blk">최근검색어</b>
+								<ul class="lst-tag">
+									<li>엔지니어<button type="button" class="lst-tag-delete"></button></li>
+									<li>게임기획자<button type="button" class="lst-tag-delete"></button></li>
+									<li>인공지능 엔지니어<button type="button" class="lst-tag-delete"></button></li>
+									<li>3D개발자<button type="button" class="lst-tag-delete"></button></li>
+									<li>빅데이커아키텍쳐<button type="button" class="lst-tag-delete"></button></li>
+								</ul>
+							</div>
+						</div>
+						<ul class="job-type-lst grid-col-3 m-grid-col-1">
+							<li><button type="button">관리자</button></li>
+							<li><button type="button">전문가 및 관련 종사자</button></li>
+							<li><button type="button">사무종사자</button></li>
+							<li><button type="button">서비스종사자</button></li>
+							<li><button type="button">판매종사자</button></li>
+							<li><button type="button">농림 . 어업 숙련 종사자</button></li>
+							<li><button type="button">기능원 및 관련 기능 종사자</button></li>
+							<li><button type="button">장치. 기계 조작 및 조립종사자 </button></li>
+							<li><button type="button">단순노무 종사자</button></li>
+							<li><button type="button">군인</button></li>
+						</ul>
+					</div>
+
+					<div class="brd-paging">
+						<div class="brd-paging-ctrl">
+							<a href="#" class="brd-paging-prev"></a>
+							<a href="#" class="brd-paging-first"></a>
+						</div>
+						<ul class="brd-paging-num">
+							<li class="active"><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+						</ul>
+						<div class="brd-paging-ctrl">
+							<a href="#" class="brd-paging-next"></a>
+							<a href="#" class="brd-paging-last"></a>
+						</div>
+					</div>
+
+					<div class="wrap-grid grid-col-2 mt-60 gap-36 m-grid-col-1">
+						<div>
+							<h2 class="tit-03">AI 가 주목하는, 자주 추천한 직업순위!</h2>
+							<p>개인의 관심과 적성까지 고려한 직업추천 ! AI는 어떤 직업을 추천하고 있을까요?</p>
+							<ul class="lst-type-02 bp-number-01 mt-24">
+								<li>
+									<span class="lst-tit">아키텍쳐전문가</span>
+									<a href="#"><span class="txt-more">자세히</span><i class="ic-r-arrow-03"></i></a>
+								</li>
+								<li>
+									<span class="lst-tit">시스템개발자</span>
+									<a href="#"><span class="txt-more">자세히</span><i class="ic-r-arrow-03"></i></a>
+								</li>
+								<li>
+									<span class="lst-tit">보안 SW엔지니어</span>
+									<a href="#"><span class="txt-more">자세히</span><i class="ic-r-arrow-03"></i></a>
+								</li>
+								<li>
+									<span class="lst-tit">AI 기술 개발자</span>
+									<a href="#"><span class="txt-more">자세히</span><i class="ic-r-arrow-03"></i></a>
+								</li>
+								<li>
+									<span class="lst-tit">소프트웨어엔지니어</span>
+									<a href="#"><span class="txt-more">자세히</span><i class="ic-r-arrow-03"></i></a>
+								</li>
+							</ul>
+						</div>
+						<div>
+							<h2 class="tit-03">재학생의 뜨거운 관심을 받고 있는 직업!</h2>
+							<p>가장많은 컴퓨터학부의 학생이 관심있는 TOP5 직업을 알아보세요.</p>
+							<ul class="lst-type-02 bp-number-01 mt-24">
+								<li>
+									<span class="lst-tit">아키텍쳐전문가</span>
+									<a href="#"><span class="txt-more">자세히</span><i class="ic-r-arrow-03"></i></a>
+								</li>
+								<li>
+									<span class="lst-tit">시스템개발자</span>
+									<a href="#"><span class="txt-more">자세히</span><i class="ic-r-arrow-03"></i></a>
+								</li>
+								<li>
+									<span class="lst-tit">보안 SW엔지니어</span>
+									<a href="#"><span class="txt-more">자세히</span><i class="ic-r-arrow-03"></i></a>
+								</li>
+								<li>
+									<span class="lst-tit">AI 기술 개발자</span>
+									<a href="#"><span class="txt-more">자세히</span><i class="ic-r-arrow-03"></i></a>
+								</li>
+								<li>
+									<span class="lst-tit">소프트웨어엔지니어</span>
+									<a href="#"><span class="txt-more">자세히</span><i class="ic-r-arrow-03"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			const { createApp, ref } = Vue
+			const { NCard, NTabs, NTabPane, NSpace, NSelect, NOption, create } = naive;
+
+			const app = createApp({
+				components: {
+					NCard,
+					NTabs,
+					NTabPane,
+					NSpace,
+					NSelect,
+					NOption
+				}
+			})
+
+			app.use(create());
+			app.mount('#container');
+
+			const swiper = new Swiper('.job-slide-wrap .swiper', {
+				spaceBetween: 19,
+				slidesPerView: 1.02,
+				navigation: {
+					nextEl: '.job-slide-wrap .swiper-button-next',
+					prevEl: '.job-slide-wrap .swiper-button-prev',
+				},
+				breakpoints: {
+					1024: {
+						slidesPerView: 2.5,
+						spaceBetween: 42,
+					}
+				},
+			});
+		</script>
+	</body>
+</html>

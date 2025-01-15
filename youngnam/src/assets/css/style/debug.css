@@ -1,0 +1,4 @@
+/* Debug */
+[debug] {position:relative;}
+[debug]:before {content:""; position:absolute; left:0; top:0; width:100%; height:100%; background:rgba(0, 255, 0, 0.2); pointer-events:none; z-index:99;}
+[class*="null"] {background:rgba(255, 255, 0, 0.2)}

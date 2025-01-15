@@ -1,0 +1,15 @@
+/* wrap */
+ig-wrap {display:block; max-width:100%;}
+[class*="wrap-"] {max-width:100%;}
+[class*="wrap-full"] {width:100dvw;}
+[class*="wrap-inner"] {width:var(--init-pc-w); min-width:var(--init-pc-w); margin:0 auto; height:auto;}
+[class*="wrap-center"] {overflow-y:auto; display:inline-flex; place-content:center; flex-wrap:wrap; width:100dvw; min-height:100dvh; padding:60px 0;}
+[class*="wrap-flex"] {display:flex;}
+[class*="wrap-grid"] {display:grid; width:100%;}
+[class*="wrap-auto"] {width:100%;}
+[class*="wrap-ellipsis"] {overflow:hidden; text-overflow:ellipsis; display:-webkit-box !important; -webkit-box-orient:vertical; -webkit-line-clamp:1; text-align:left; word-break:break-all;}
+[class*="wrap-ellipsis"][data-disabled] {white-space:normal; -webkit-box-orient:unset;}
+
+[class*="m-wrap-flex"] {display:block;}
+[class*="wrap-flex"][class*="m-wrap-grid"] {display:flex;}
+[class*="wrap-grid"][class*="m-wrap-flex"] {display:grid;}

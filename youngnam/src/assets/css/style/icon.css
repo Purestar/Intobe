@@ -1,0 +1,4 @@
+/* Icon */
+	[class*="ic-"] {position:relative; display:flex; justify-content:center; align-items:center; font-size:0; cursor:inherit;}
+	[class*="ic-"]:before,
+	[class*="ic-"]:after {content:""; display:inline-block; background-image:var(--ico); background-size:var(--ico-sz); font-size:0;}

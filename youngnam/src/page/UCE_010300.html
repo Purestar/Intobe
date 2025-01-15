@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="Management">
+		<meta name="description" content="Management">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script type="module" src="../assets/js/index.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://unpkg.com/naive-ui"></script>
+		<link rel="icon" href="../favicon.ico" sizes="any">
+		<link rel="stylesheet" href="../assets/css/global.css">
+	</head>
+	<body>
+		<script>
+			const { createApp, ref } = Vue
+			const { NCard, NTabs, NTabPane, NSpace, NSelect, NOption, create } = naive;
+
+			const app = createApp({
+				components: {
+					NCard,
+					NTabs,
+					NTabPane,
+					NSpace,
+					NSelect,
+					NOption
+				}
+			})
+
+			app.use(create());
+			app.mount('#container');
+		</script>
+		<div id="container">
+			<div id="sub-container" class="wrap-inner">
+				<div id="contents">
+					<div class="sub-title">
+						<a href="#"><i class="ic-l-arrow"></i></a><h2 class="tit-03">직업 상세정보</h2>
+					</div>
+					<div class="brd-wrap">
+						<div class="brd-view-01">
+							<h3 class="form-type-opt-chk-01-01">
+								<label>
+									<input type="checkbox">
+									<span class="opt-txt tit-02 mt-0">시스템소프트웨어엔지니어</span>
+								</label>
+							</h3>
+							<div id="board-detail-tabs">
+								<n-tabs type="line" class="tabs-type-01-01" v-model:value="activeTab">
+									<n-tab-pane name="bd-tab1" tab="기본정보">
+										<h4 class="tit-02">직무개요</h4>
+										<p class="brd-para">최근 빅데이터와 인공지능은 학계, 산업계에서 가장 관심의 대상이 되는 연구</p>
+										<h4 class="tit-02">수행직무</h4>
+										<p class="brd-para">유닉스(Unix), 리눅스(Linux), 윈도우(Windows) 등과 같은 컴퓨터시스템의 운영체계를 설계하고 개발한다. FORTRAN, C, C++, JAVA 등과 같은 컴퓨터프로그램 언어의 컴파일러 (Compiler:고급언어로 쓰인 프로그램을 그와 의미적으로 동등하며 컴퓨터에서 즉시 실행될 수 있는 형태의 목적프로그램으로 바꾸어주는 번역프로그램)를 설계하고 개발한다. 응용소프트웨어를 개발하기 위한 델파이(Delphi), 파워빌더(PowerBuilder) 등과 같은 개발용도구(TOOL)를 설계하고 개발한다. 네트워크시스템에서 운영되는 네트워크프로토콜 처리에 관련된 소프트웨어를 설계하고 개발한다. 정보보호에 필요한 방화벽, 인증, 인가 관련 소프트웨어를 설계하고 개발한다. 각종 산업용 제어시스템에서 운영되는 산업설비의 제어, 모니터링 및 관리용 유틸리티소프트웨어를 설계하고 개발한다.</p>
+										<h4 class="tit-02">관련직업</h4>
+										<ul class="lst-type-02">
+											<li>
+												<div class="wrap-flex gap-12">
+													<div class="form-type-opt-chk-02">
+														<label>
+															<input type="checkbox">
+															<span class="opt-txt"></span>
+														</label>
+													</div>
+													<span class="cr-blk">시스템소프트웨어 개발자</span>
+												</div>
+												<a href="#"><span class="txt-more">자세히</span><i class="ic-r-arrow-03"></i></a>
+											</li>
+											<li>
+												<div class="wrap-flex gap-12">
+													<div class="form-type-opt-chk-02">
+														<label>
+															<input type="checkbox" checked>
+															<span class="opt-txt"></span>
+														</label>
+													</div>
+													<span class="cr-blk">시스템프로그래머</span>
+												</div>
+												<a href="#"><span class="txt-more">자세히</span><i class="ic-r-arrow-03"></i></a>
+											</li>
+										</ul>
+										<h4 class="tit-02">유사직업</h4>
+										<ul class="lst-type-02">
+											<li>
+												<div class="wrap-flex gap-12">
+													<div class="form-type-opt-chk-02">
+														<label>
+															<input type="checkbox">
+															<span class="opt-txt"></span>
+														</label>
+													</div>
+													<span class="cr-blk">펌웨어프로그래머</span>
+												</div>
+												<a href="#"><span class="txt-more">자세히</span><i class="ic-r-arrow-03"></i></a>
+											</li>
+											<li>
+												<div class="wrap-flex gap-12">
+													<div class="form-type-opt-chk-02">
+														<label>
+															<input type="checkbox" checked>
+															<span class="opt-txt"></span>
+														</label>
+													</div>
+													<span class="cr-blk">임베디드프로그래머</span>
+												</div>
+												<a href="#"><span class="txt-more">자세히</span><i class="ic-r-arrow-03"></i></a>
+											</li>
+										</ul>
+										<h4 class="tit-02">유사명칭</h4>
+										<p class="brd-para">펌웨어프로그래머, 임베디드프로그래머</p>
+									</n-tab-pane>
+									<n-tab-pane name="bd-tab2" tab="교육/자격/훈련">
+										<h4 class="tit-02">필요기술 및 지식</h4>
+										<p class="brd-para">시스템소프트웨어개발자가 되기 위해서는 전문대학 및 대학교의 컴퓨터공학과, 전산(공학)과, 전자공학과, 전기공학과, 통신공학과 등의 학과에서 소프트웨어를 비롯해 컴퓨터하드웨어에 대한 공부를 하고 진출할 수 있다. 요즘은 소프트웨어를 집중적으로 공부하는 학과들이 별도로 개설되기도 한다. 이들 학과에서는 시스템소프트웨어 설계에 필요한 C언어, JAVA와 같은 프로그래밍 언어, 데이터베이스, 소프트웨어공학이론 등을 공부하고 실제소프트웨어 개발 실습을 하기도 한다. 또한, 비전공자들은 정보통신 관련 사설 교육기관이나 직업훈련학교 등에서 임베디드전문가 양성과정 등을 통해 관련 교육을 받을 수 있다. 시스템소프트웨어개발자는 개발·설계에 필요한 프로그래밍언어뿐만 아니라 각종 OS, 장비의 전자신호 등에 대한 충분한 이해가 필요하다. - 관련 자격증으로는 국가기술자격으로 컴퓨터시스템응용기술사(기사, 산업기사), 정보처리기술사(기사, 산업기사) 등이 있다. 해외 민간 기업에서 수행하는 자격증으로는 OCP, SCJP, CCNA같은 자격증이 있으며, 이러한 자격증은 민간 자격증이지만 국제적으로 권위가 인정되고 업계에서 통용되므로 국내 및 해외 취업에 도움이 된다.</p>
+										<h4 class="tit-02">국가기술 관련자격</h4>
+										<ul class="lst-type-02">
+											<li>
+												<div class="wrap-flex gap-12">
+													<div class="form-type-opt-chk-02">
+														<label>
+															<input type="checkbox">
+															<span class="opt-txt"></span>
+														</label>
+													</div>
+													<span class="cr-blk">전자계산조직응용기사</span>
+													<span>한국산업인력공단</span>
+												</div>
+											</li>
+											<li>
+												<div class="wrap-flex gap-12">
+													<div class="form-type-opt-chk-02">
+														<label>
+															<input type="checkbox">
+															<span class="opt-txt"></span>
+														</label>
+													</div>
+													<span class="cr-blk">전자계산조직응용기술사</span>
+													<span>한국산업인력공단</span>
+												</div>
+											</li>
+											<li>
+												<div class="wrap-flex gap-12">
+													<div class="form-type-opt-chk-02">
+														<label>
+															<input type="checkbox">
+															<span class="opt-txt"></span>
+														</label>
+													</div>
+													<span class="cr-blk">정보처리기능사</span>
+													<span>한국산업인력공단</span>
+												</div>
+											</li>
+											<li>
+												<div class="wrap-flex gap-12">
+													<div class="form-type-opt-chk-02">
+														<label>
+															<input type="checkbox" checked>
+															<span class="opt-txt"></span>
+														</label>
+													</div>
+													<span class="cr-blk">정보처리산업기사</span>
+													<span>한국산업인력공단</span>
+												</div>
+											</li>
+											<li>
+												<div class="wrap-flex gap-12">
+													<div class="form-type-opt-chk-02">
+														<label>
+															<input type="checkbox" checked>
+															<span class="opt-txt"></span>
+														</label>
+													</div>
+													<span class="cr-blk">정보처리기사</span>
+													<span>한국산업인력공단</span>
+												</div>
+											</li>
+											<li>
+												<div class="wrap-flex gap-12">
+													<div class="form-type-opt-chk-02">
+														<label>
+															<input type="checkbox" checked>
+															<span class="opt-txt"></span>
+														</label>
+													</div>
+													<span class="cr-blk">전자계산기조직응용기사</span>
+													<span>한국산업인력공단</span>
+												</div>
+											</li>
+										</ul>
+										<h4 class="tit-02">외국 관련 자격</h4>
+										<ul class="lst-type-02">
+											<li>
+												<div class="wrap-flex gap-12">
+													<div class="form-type-opt-chk-02">
+														<label>
+															<input type="checkbox">
+															<span class="opt-txt"></span>
+														</label>
+													</div>
+													<span class="cr-blk">MCSD</span>
+												</div>
+											</li>
+											<li>
+												<div class="wrap-flex gap-12">
+													<div class="form-type-opt-chk-02">
+														<label>
+															<input type="checkbox" checked>
+															<span class="opt-txt"></span>
+														</label>
+													</div>
+													<span class="cr-blk">MCSE</span>
+												</div>
+											</li>
+											<li>
+												<div class="wrap-flex gap-12">
+													<div class="form-type-opt-chk-02">
+														<label>
+															<input type="checkbox">
+															<span class="opt-txt"></span>
+														</label>
+													</div>
+													<span class="cr-blk">SCJP</span>
+												</div>
+											</li>
+											<li>
+												<div class="wrap-flex gap-12">
+													<div class="form-type-opt-chk-02">
+														<label>
+															<input type="checkbox" checked>
+															<span class="opt-txt"></span>
+														</label>
+													</div>
+													<span class="cr-blk">CCNA</span>
+												</div>
+											</li>
+										</ul>
+									</n-tab-pane>
+									<n-tab-pane name="bd-tab3" tab="능력/지식/환경">
+										<p class="box-type-02 txt-c">500여개 직업 종사자들의 자신의 직업에 대해 평가한 업무수행능력, 지식, 업무환경 관련 항목별 중요성을<br>직업내에 비교해 본 직업에서 수준이 높게 나타난 상위 5개 항목입니다.</p>
+										<h4 class="tit-02">업무수행능력 중요도</h4>
+										<ul class="lst-type-02-01 bp-number-01 mt-20">
+											<li>
+												<strong class="lst-tit">전산</strong>
+												<p>다양한 목적을 위해 소프트웨어나 인터넷을 활용하거나 프로그램을 작성한다</p>
+											</li>
+											<li>
+												<strong class="lst-tit">기술설계</strong>
+												<p>사용자의 요구에 맞도록 장비와 기술을 개발하여 적용한다</p>
+											</li>
+											<li>
+												<strong class="lst-tit">논리분석</strong>
+												<p>문제를 해결하기 위해(혹은 의사결정을 하기 위해) 체계적으로 이치에 맞는 생각을 해낸다</p>
+											</li>
+											<li>
+												<strong class="lst-tit">기술분석</strong>
+												<p>새로운 방법을 고안하고 기존의 방법을 개선하기 위해서 현재 사용되는 도구와 기술을 분석한다</p>
+											</li>
+											<li>
+												<strong class="lst-tit">문제해결</strong>
+												<p>문제의 본질을 파악하여 해결 방법을 찾고 이를 실행한다</p>
+											</li>
+										</ul>
+										<h4 class="tit-02">지식 중요도</h4>
+										<ul class="lst-type-02-01 bp-number-01 mt-20">
+											<li>
+												<strong class="lst-tit">컴퓨터 전자공학</strong>
+												<p>컴퓨터의 하드웨어, 회로판, 처리장치, 반도체, 전자장비에 관한 지식</p>
+											</li>
+											<li>
+												<strong class="lst-tit">통신</strong>
+												<p>전화기, 네트워크, 방송 등의 통신기기를 조작하고 통제하는데 필요한 지식</p>
+											</li>
+											<li>
+												<strong class="lst-tit">산수와 수학</strong>
+												<p>연산, 대수학, 통계, 기하학의 계산 및 응용에 관한 지식</p>
+											</li>
+											<li>
+												<strong class="lst-tit">영어</strong>
+												<p>영어를 읽고, 쓰고, 듣고 말하는데 필요한 지식</p>
+											</li>
+											<li>
+												<strong class="lst-tit">고객서비스</strong>
+												<p>고객에게 서비스를 제공하는데 필요한 지식(고객의 욕구평가, 고객의 만족도 평가, 서비스 기준 설정 등)</p>
+											</li>
+										</ul>
+										<h4 class="tit-02">업무환경 중요도</h4>
+										<ul class="lst-type-02-01 bp-number-01 mt-20">
+											<li>
+												<strong class="lst-tit">실내근무</strong>
+												<p>실내에서 근무하는 빈도</p>
+											</li>
+											<li>
+												<strong class="lst-tit">앉아서 근무</strong>
+												<p>앉아서 근무하는 빈도</p>
+											</li>
+											<li>
+												<strong class="lst-tit">이메일이용하기</strong>
+												<p>업무 수행하면서 이메일 사용하는 정도</p>
+											</li>
+											<li>
+												<strong class="lst-tit">사람들과 직접접촉</strong>
+												<p>다른사람과 전화, 대면, 전자메일 등으로 접촉하는 빈도</p>
+											</li>
+											<li>
+												<strong class="lst-tit">다른사람과의 접촉</strong>
+												<p>업무 수행하면서 사람들과 접촉(전화, 대면, 메신저 등) 정도</p>
+											</li>
+										</ul>
+									</n-tab-pane>
+									<n-tab-pane name="bd-tab4" tab="성격/흥미/가치관">
+										<p class="box-type-02 txt-c">500여개 직업 종사자들의 자신의 직업에 대해 평가한 업무수행능력, 지식, 업무환경 관련 항목별 중요성을<br>직업내에 비교해 본 직업에서 수준이 높게 나타난 상위 5개 항목입니다.</p>
+										<h4 class="tit-02">성격 중요도</h4>
+										<ul class="lst-type-02-01 bp-number-01 mt-20">
+											<li>
+												<strong class="lst-tit">꼼꼼함</strong>
+												<p>사소한 부분까지도 주의 깊고 업무를 철저히 완수한다.</p>
+											</li>
+											<li>
+												<strong class="lst-tit">신뢰성</strong>
+												<p>믿을수 있고, 자신이 맡은 책무를 완수한다.</p>
+											</li>
+											<li>
+												<strong class="lst-tit">분석적 사고</strong>
+												<p>문제에 대한 답을 구하기 위해 정보를 분석하거나 논리를 사용한다.</p>
+											</li>
+											<li>
+												<strong class="lst-tit">책임과 진취성</strong>
+												<p>책임을 기꺼이 받아들이고 도전하려한다.</p>
+											</li>
+											<li>
+												<strong class="lst-tit">협조</strong>
+												<p>다른 사람들과 즐거운 관계를 유지하며 협조적 태도를 보인다.</p>
+											</li>
+										</ul>
+										<h4 class="tit-02">흥미 중요도</h4>
+										<ul class="lst-type-02-01 bp-number-01 mt-20">
+											<li>
+												<strong class="lst-tit">현실형</strong>
+												<p>사물, 도구, 기계 및 동물들에 대한 명확하고 질서정연하며 체계적인 조작을 필요로 하는 활동들을 선호하고, 교육적이거나 치료적 활동을 싫어하는 경향이 있다.<br>이러한 경향성은 조작, 기계, 농경, 전기 및 기술적인 능력들을 획득하게 하는 반면에 사회적 능력 및 교육적 능력에서는 결함을 보여주게 된다 </p>
+											</li>
+											<li>
+												<strong class="lst-tit">관습</strong>
+												<p>자료에 대한 명확하고, 질서정연하며 체계적인 조작을 필요로 하는 활동들을 선호하고, 모호하고, 자유스러우며, 탐색적이고, 체계적이지 않은 활동들을 싫어하는 경향이 있다.<br>이러한 경향성은 사무적이고 계산적인 능력을 획득하게 하는 반면에 예술적인 능력에서는 결함을 보여준다.</p>
+											</li>
+											<li>
+												<strong class="lst-tit">탐구형</strong>
+												<p>물리적, 생물학적 혹은 문화적 현상들에 대해 호기심을 가지고 관찰하는 것을 즐기며, 상징적이고 체계적이고 창조적인 활동을 요하는 조사나 연구 활동을 선호하고 설득적이고 사회적이며 반복적인 활동을 혐오하게 한다. 이러한 행동경향성은 과학적이고 수학적인 능력을 갖게 하는 반면에 설득적 능력에서는 결함이 나타난다.</p>
+											</li>
+											<li>
+												<strong class="lst-tit">진취형</strong>
+												<p>조직적인 목표나 경제적인 이익을 얻기 위한 다른 사람과의 상호작용 활동을 선호하고, 관찰적이고, 상징적이며, 체계적인 활동을 싫어하는 경향이 있다.<br>이러한 경향성은 리더십, 대인관계 능력 및 설득적인 능력을 획득하게 하는 반면에 과학적인 능력에서 결함을 보여준다.</p>
+											</li>
+											<li>
+												<strong class="lst-tit">사회형</strong>
+												<p>다른 사람들을 훈련시키고, 발달시키고, 치료해주기 위한 활동들을 선호하고, 자료나 도구 혹은 기계를 포함하는 명확하고 체계적인 활동을 싫어하는 경향이 있다.<br>이러한 경향성은 사회적 및 교육적 능력에서의 능력을 획득하게 하는 반면에 조작, 기계, 농경, 전기 및 기술적인 능력들에서는 결함을 보여준다</p>
+											</li>
+										</ul>
+										<h4 class="tit-02">가치 중요도</h4>
+										<ul class="lst-type-02-01 bp-number-01 mt-20">
+											<li>
+												<strong class="lst-tit">타인에 대한 영향</strong>
+												<p>타인에 대해 영향력을 발휘할 수 있다.</p>
+											</li>
+											<li>
+												<strong class="lst-tit">신체활동</strong>
+												<p>업무시 신체활동을 많이 하지않아도된다. </p>
+											</li>
+											<li>
+												<strong class="lst-tit">이타</strong>
+												<p>남을 위해 봉사할 수 있다.</p>
+											</li>
+											<li>
+												<strong class="lst-tit">성취</strong>
+												<p>자신이 스스로 목표를 세우고 달성할 수 있다.</p>
+											</li>
+											<li>
+												<strong class="lst-tit">인정</strong>
+												<p>타인에게 인정 받을수 있다.</p>
+											</li>
+										</ul>
+									</n-tab-pane>
+									<n-tab-pane name="bd-tab5" tab="우리학교 관련교과">
+										<div class="wrap-flex gap-12 m-wrap-grid m-grid-col-2">
+											<n-select class="form-type-dropdown-01" placeholder=""></n-select>
+											<n-select class="form-type-dropdown-01" placeholder=""></n-select>
+											<n-select class="form-type-dropdown-01" placeholder=""></n-select>
+											<n-select class="form-type-dropdown-01" placeholder="이수구분 전체"></n-select>
+											<n-select class="form-type-dropdown-01" placeholder="학년전체"></n-select>
+											<n-select class="form-type-dropdown-01" placeholder="학기전체"></n-select>
+										</div>
+										<ul class="lst-type-02-02 mt-20">
+											<li class="m-flex-row m-flex-center">
+												<div class="m-wrap-flex m-flex-col-r">
+													<ul class="vbar-01">
+														<li>컴퓨터공학전공</li>
+														<li>1 - 1</li>
+														<li>교양필수</li>
+													</ul>
+													<div class="wrap-flex flex-center gap-12">
+														<div class="form-type-opt-chk-02">
+															<label>
+																<input type="checkbox">
+																<span class="opt-txt"></span>
+															</label>
+														</div>
+														<strong class="fs-18 m-fs-28">소프트웨어와 인공지능</strong>
+														2학점
+													</div>
+												</div>
+												<button type="button" class="btn-type-b btn-r-32-02 btn-b-lgry">교과정보</button>
+											</li>
+											<li class="m-flex-row m-flex-center">
+												<div class="m-wrap-flex m-flex-col-r">
+													<ul class="vbar-01">
+														<li>소프트웨어공학전공</li>
+														<li>1 - 1</li>
+														<li>교양필수</li>
+													</ul>
+													<div class="wrap-flex flex-center gap-12">
+														<div class="form-type-opt-chk-02">
+															<label>
+																<input type="checkbox">
+																<span class="opt-txt"></span>
+															</label>
+														</div>
+														<strong class="fs-18 m-fs-28">소프트웨어와 인공지능</strong>
+														2학점
+													</div>
+												</div>
+												<button type="button" class="btn-type-b btn-r-32-02 btn-b-lgry">교과정보</button>
+											</li>
+										</ul>
+										<div class="brd-paging">
+											<a href="#" class="brd-paging-first"></a>
+											<a href="#" class="brd-paging-prev"></a>
+											<ul class="brd-paging-num">
+												<li class="active"><a href="#">1</a></li>
+												<li><a href="#">2</a></li>
+												<li><a href="#">3</a></li>
+												<li><a href="#">4</a></li>
+												<li><a href="#">5</a></li>
+											</ul>
+											<a href="#" class="brd-paging-next"></a>
+											<a href="#" class="brd-paging-last"></a>
+										</div>
+									</n-tab-pane>
+								</n-tabs>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			app.use(naive);
+			app.mount('#container');
+		</script>
+	</body>
+</html>

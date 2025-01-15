@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="Management">
+		<meta name="description" content="Management">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script type="module" src="../assets/js/index.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://unpkg.com/naive-ui"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<link rel="icon" href="../favicon.ico" sizes="any">
+		<link rel="stylesheet" href="../assets/css/global.css">
+	</head>
+	<body>
+		<div id="container">
+			<div id="sub-container" class="wrap-inner">
+				<div id="contents">
+					<div class="wrap-flex flex-between flex-center m-flex-col m-flex-start gap-20">
+						<div class="wrap-flex gap-20">
+							<h2 class="tit-03">자기소개서</h2>
+							<button type="button"><i class="ic-plus"></i></button>
+						</div>
+						<p class="txt-info"><i class="ic-info"></i>작성완료 된 자기소개서는 이력서 작성시 불러올 수 있어요!</p>
+					</div>
+					<ul class="wrap-flex gap-36 mt-40">
+						<li>
+							<div class="form-type-opt-rdo-01">
+								<label>
+									<input type="radio" name="resume" checked>
+									<span class="opt-txt">전체</span>
+								</label>
+							</div>
+						</li>
+						<li>
+							<div class="form-type-opt-rdo-01">
+								<label>
+									<input type="radio" name="resume">
+									<span class="opt-txt"><i class="ic-comp"></i>작성완료</span>
+								</label>
+							</div>
+						</li>
+						<li>
+							<div class="form-type-opt-rdo-01">
+								<label>
+									<input type="radio" name="resume">
+									<span class="opt-txt"><i class="ic-wait"></i>임시저장</span>
+								</label>
+							</div>
+						</li>
+					</ul>
+					<div class="brd-wrap mt-40">
+						<div class="wrap-flex flex-between">
+							<div class="wrap-flex gap-24">
+								<p class="brd-tot">총 <span class="cr-mc">1</span>건</p>
+							</div>
+							<ul class="wrap-flex gap-16">
+								<li>
+									<div class="form-type-opt-rdo-01">
+										<label>
+											<input type="radio" name="filter" checked>
+											<span class="opt-txt">최근 등록 순</span>
+										</label>
+									</div>
+								</li>
+								<li>
+									<div class="form-type-opt-rdo-01">
+										<label>
+											<input type="radio" name="filter" checked>
+											<span class="opt-txt">최근 수정 순</span>
+										</label>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<ul class="lst-type-02-02 mt-16">
+							<li>
+								<div class="wrap-flex flex-col lh-1 gap-12">
+									<div class="wrap-flex flex-center gap-12">
+										<i class="ic-comp"></i><strong class="lst-tit fs-18">00기업 지원 자기소개서</strong>(항목 3개)
+									</div>
+									<ul class="wrap-flex gap-4">
+										<li>#초안</li>
+										<li>#취업특강</li>
+										<li>#과제</li>
+									</ul>
+								</div>
+								<div class="wrap-flex gap-40 m-flex-between m-w100">
+									<p class="wrap-flex gap-12">최종수정일<span class="cr-blk">2024.06.19</span></p>
+									<div class="wrap-flex flex-center gap-20">
+										<a href="#"><i class="ic-pencle-02"></i></a>
+										<button type="button"><i class="ic-copy"></i></button>
+										<button type="button"><i class="ic-trash"></i></button>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="wrap-flex flex-col lh-1 gap-12">
+									<div class="wrap-flex flex-center gap-12">
+										<i class="ic-wait"></i><strong class="lst-tit fs-18">00기업 지원 자기소개서</strong>(항목 3개)
+									</div>
+								</div>
+								<div class="wrap-flex gap-40 m-flex-between m-w100">
+									<p class="wrap-flex gap-12">최종수정일<span class="cr-blk">2024.06.19</span></p>
+									<div class="wrap-flex flex-center gap-20">
+										<a href="#"><i class="ic-pencle-02"></i></a>
+										<button type="button"><i class="ic-copy"></i></button>
+										<button type="button"><i class="ic-trash"></i></button>
+									</div>
+								</div>
+							</li>
+							<li class="no-data flex-j-center m-flex-center">자기소개서를 등록해주세요</li>
+						</ul>
+						<div class="brd-paging">
+							<div class="brd-paging-ctrl">
+								<a href="#" class="brd-paging-prev"></a>
+								<a href="#" class="brd-paging-first"></a>
+							</div>
+							<ul class="brd-paging-num">
+								<li class="active"><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+							</ul>
+							<div class="brd-paging-ctrl">
+								<a href="#" class="brd-paging-next"></a>
+								<a href="#" class="brd-paging-last"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			const { createApp } = Vue
+			const { NTabs, NTabPane, NSpace, NSelect, NOption, create } = naive;
+			const app = createApp({
+				components: {
+					NTabs,
+					NTabPane,
+				}
+			})
+
+			app.use(create());
+			app.mount('#container');
+
+			const aveAcqScoreDom = document.getElementById('ave-acq-score');
+			const aveAcqScore = echarts.init(aveAcqScoreDom);
+			const avePosSpecDom = document.getElementById('ave-pos-spec');
+			const avePosSpec = echarts.init(avePosSpecDom);
+
+			const aveDftOpt = {
+				tooltip: {},
+				legend: {
+					data: ['나', '전체평균'],
+					right: 0,
+					top: 0,
+					itemWidth: 12,
+        			itemHeight: 12,
+					icon: 'circle',
+					textStyle: { fontSize: 14, color: '#000' },
+				}
+			}
+			const aveAcqScoreOpt = {
+				radar: {
+					indicator: [
+						{ name: '평점', max: 100 },
+						{ name: '취득학점', max: 100 },
+						{ name: 'TOELC', max: 100 },
+						{ name: '토익스피킹', max: 100 },
+						{ name: 'OPIC', max: 100 },
+						{ name: 'G-TELP', max: 100 }
+					],
+					center: ['50%', '50%'],
+					radius: '70%',
+					axisName: { color: '#666', fontWeight: 600, fontSize: 14 },
+					axisLine: { show: false },
+    				splitLine: { show: false },
+					splitArea: { areaStyle: { color: ['#f8f8f8', '#ffffff'] }},
+				},
+				series: [{
+					type: 'radar',
+					symbol: 'none',
+					data: [
+						{
+							value: [80, 90, 70, 85, 90, 75],
+							name: '나',
+							itemStyle: { color: '#2fc1bc' },
+							areaStyle: { color: 'rgba(207, 239, 241, 0.28)' }
+						},
+						{
+							value: [70, 80, 95, 85, 88, 93],
+							name: '전체평균',
+							itemStyle: { color: '#1159b5' },
+							areaStyle: { color: 'rgba(232, 242, 255, 0.28)' }
+						}
+					]
+				}],
+				...aveDftOpt
+			};
+
+			const avePosSpecOpt = {
+				radar: {
+					indicator: [
+						{ name: '자격증', max: 100 },
+						{ name: '해외경험', max: 100 },
+						{ name: '수상이력', max: 100 },
+						{ name: '어학성적', max: 100 },
+						{ name: '교육이수', max: 100 },
+						{ name: '인턴/대외\n활동', max: 100 }
+					],
+					center: ['50%', '50%'],
+					radius: '70%',
+					axisName: { color: '#666', fontWeight: 600, fontSize: 14 },
+					axisLine: { show: false },
+    				splitLine: { show: false },
+					splitArea: { areaStyle: { color: ['#f8f8f8', '#ffffff'] }},
+				},
+				series: [{
+					type: 'radar',
+					symbol: 'none',
+					data: [
+						{
+							value: [80, 90, 70, 85, 90, 75],
+							name: '나',
+							itemStyle: { color: '#2fc1bc' },
+							areaStyle: { color: 'rgba(207, 239, 241, 0.28)' }
+						},
+						{
+							value: [70, 80, 95, 85, 88, 93],
+							name: '전체평균',
+							itemStyle: { color: '#1159b5' },
+							areaStyle: { color: 'rgba(232, 242, 255, 0.28)' }
+						}
+					]
+				}],
+				...aveDftOpt
+			};
+
+
+			aveAcqScore.setOption(aveAcqScoreOpt);
+			avePosSpec.setOption(avePosSpecOpt);
+		</script>
+	</body>
+</html>

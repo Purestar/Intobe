@@ -1,0 +1,30 @@
+/* Form */
+	/* Default */
+		ig-form {display:block;}
+		ig-form[type="checkbox"], ig-form[type="radio"], ig-form[type="switch"], ig-form[type="selectbutton"], ig-form[type="rating"],
+		ig-form[type="color"] {line-height:0;}
+		ig-form[type="textarea"] {max-width:100%;}
+
+		[class*="form-type"] {flex:1; position:relative;}
+		[class*="form-type"] input {background:none;}
+		[class*="form-type"] .form-icon {display:flex; flex-wrap:wrap; place-content:center; position:absolute; right:0; top:0; background:white; border-radius:0 var(--fom-br) var(--fom-br) 0; width:calc(var(--fom-h) - 2px); height:calc(var(--fom-h) - 2px);}
+
+	/* Divide */
+		[class*="form-type"][divide] {background:none; border:0; padding:0; gap:12px;}
+
+	/* Text */
+		[class*="form-type"] .txt-limit,
+		[class*="form-type"] .txt-prefix,
+		[class*="form-type"] .txt-suffix {word-break:keep-all; white-space:nowrap;}
+
+	/* Validation */
+		[class*="form-type"]:not([divide]).valid,
+		[class*="form-type"][divide].valid input {background:var(--fom-valid-bg); border-color:var(--fom-valid-bdr) !important;}
+		[class*="form-type"]:not([divide]).invalid,
+		[class*="form-type"][divide].invalid input {background:var(--fom-invalid-bg); border-color:var(--fom-invalid-bdr) !important;}
+		[class*="form-type"].invalid input::placeholder {color:var(--fom-invalid-bdr);}
+
+	/* Disabled & Readonly */
+		[class*="form-type"][disabled],
+		[class*="form-type"][readonly] {pointer-events:none;}
+		[class*="form-type"][disabled] .form-icon {background:none;}

@@ -1,0 +1,33 @@
+/* Popup */
+	/* Popup Wrap */
+		[class*="pop-type"] {overflow:hidden; border-radius:var(--pop-br); left:50%; top:50%; width:var(--pop-w); max-height:var(--pop-max-h); transform:translate(-50%, -50%); color:var(--init-c);}
+		.n-modal-body-wrapper .n-modal {overflow:hidden; max-height:95vh;}
+		.n-modal-body-wrapper .n-card__content {flex:1; overflow-y:auto;}
+
+	/* Popup Header */
+		[class*="pop-type"] .pop-head {position:sticky; left:0; top:0; background:var(--mc); min-height:var(--pop-hh); padding:10px var(--pop-hh) 10px 30px;}
+		[class*="pop-type"] .pop-head-inner {gap:10px;}
+		[class*="pop-type"] .pop-head .pop-title {flex:1; text-wrap:wrap;}
+
+	/* Popup Footer */
+		[class*="pop-type"] .pop-foot {gap:10px; height:var(--pop-fh); padding-bottom:var(--pop-cont-fpad);}
+		[class*="pop-type"] .pop-foot > * {flex:1; padding:0 var(--pop-pad);}
+
+	/* Popup Content */
+		[class*="pop-type"] .pop-cont {overflow-y:auto; max-height:var(--pop-max-h); padding:var(--pop-cont-top-pad) 0 var(--pop-cont-bot-pad);}
+		[class*="pop-type"] .pop-cont-in {padding:1px var(--pop-pad);}
+		[class*="pop-type"] .pop-cont-in > *:first-child {margin-top:0;}
+
+	/* Popup Backdrop */
+		[class*="pop-type"].modal::backdrop {background:rgba(0, 0, 0, .5);}
+
+	/* Popup Active */
+		[class*="pop-type"][open] {display:flex; flex-wrap:nowrap; flex-direction:column;}
+
+	/* Popup Close */
+		[class*="pop-type"] [class*="pop-close"],
+		.n-modal-container [class*="pop-close"] {display:flex; align-items:center; justify-content:center; flex:0 0 var(--pop-hh); position:absolute; right:0; top:0; width:90px; height:90px; text-indent:-1000em; z-index:20;}
+		[class*="pop-type"] [class*="pop-close"]:before,
+		.n-modal-container [class*="pop-close"]:before {content:""; background-image:var(--ico-c); background-position:var(--150) var(--250); background-size:var(--ico-sz); width:21px; height:20px;}
+		[class*="pop-type"] .pop-close-no-header:before,
+		.n-modal-container .pop-close-no-header:before {background-position:var(--200) var(--250);}
