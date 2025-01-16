@@ -1,8 +1,0 @@
-/* Button */
-	[class*="form-btn"] input{display:inline-flex; justify-content:center; align-items:center; background:var(--mc); border:1px solid var(--mc); border-radius:var(--fom-br); width:inherit; height:var(--fom-h); padding:0 var(--fom-pad); font-size:var(--fom-fs); word-break:break-all; color:white;}
-
-/* Button MouseOver */
-	[class*="form-btn"]:hover input {background:var(--moc); border-color:var(--moc); transition:background .3s, border-color var(--trans-dft), color var(--trans-dft); color:white;}
-
-/* Button Disable */
-	[class*="form-btn"][disabled] input {background:var(--dis-bg); border-color:var(--dis-bg); color:var(--fom-ph);}

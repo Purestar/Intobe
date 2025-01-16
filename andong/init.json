@@ -35,6 +35,9 @@
 		{ "id": "e-Notice", "submenu": [
 			{ "menu": "목록", "src": "./page/UNO_010000.html", "state": "comp" },
 			{ "menu": "상세", "src": "./page/UNO_020000.html", "state": "comp" }
+		], "state": "comp" },
+		{ "id": "가이드", "submenu": [
+			{ "menu": "primeVue", "src": "https://primevue.org/", "state": "comp" }
 		], "state": "comp" }
 	]
 }

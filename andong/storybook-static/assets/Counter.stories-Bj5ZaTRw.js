@@ -1,5 +1,0 @@
-import{C as d}from"./Counter-kSGp_y0z.js";import{h as l,c as C}from"./commonStories-DdCXT5s3.js";import"./lit-element-BqeyJ_85.js";import"./if-defined-CzZC-owy.js";import"./unsafe-html-C3TPMuA5.js";const x={title:"Counter",tags:["autodocs"],render:g=>d(g),argTypes:{...l}},r={},e={args:{customClass:"test"}},s=C.Debug(d,{});var o,t,a;r.parameters={...r.parameters,docs:{...(o=r.parameters)==null?void 0:o.docs,source:{originalSource:"{}",...(a=(t=r.parameters)==null?void 0:t.docs)==null?void 0:a.source}}};var c,m,u;e.parameters={...e.parameters,docs:{...(c=e.parameters)==null?void 0:c.docs,source:{originalSource:`{
-  args: {
-    customClass: "test"
-  }
-}`,...(u=(m=e.parameters)==null?void 0:m.docs)==null?void 0:u.source}}};var n,p,i;s.parameters={...s.parameters,docs:{...(n=s.parameters)==null?void 0:n.docs,source:{originalSource:"commonStories.Debug(Counter, {})",...(i=(p=s.parameters)==null?void 0:p.docs)==null?void 0:i.source}}};const y=["Default","Custom","Debug"];export{e as Custom,s as Debug,r as Default,y as __namedExportsOrder,x as default};
