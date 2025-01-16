@@ -1,3 +1,5 @@
+const log = (...args) => { console.log(...args); };
+
 // primeVue Component
 document.addEventListener('DOMContentLoaded', function() {
 	const { createApp, ref } = Vue;
@@ -11,11 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
 			};
 		},
 	});
-	app.use(PrimeVue.Config, {
-		//theme: { preset: PrimeVue.Themes.Aura }
-	});
-
-	app.use(PrimeVue, { unstyled: true });
 
 	// Accordion
 	app.component('ig-aco', PrimeVue.Accordion);
@@ -33,6 +30,9 @@ document.addEventListener('DOMContentLoaded', function() {
 	app.component('p-tab', PrimeVue.Tab);
 	app.component('p-tabpanels', PrimeVue.TabPanels);
 	app.component('p-tabpanel', PrimeVue.TabPanel);
+
+	// PrimeVue Config
+	app.use(PrimeVue.Config, { unstyled: true });
 
 	app.mount('#container');
 });
