@@ -12,11 +12,22 @@ document.addEventListener('DOMContentLoaded', function() {
 		},
 	});
 	app.use(PrimeVue.Config, {
-		theme: { preset: PrimeVue.Themes.Aura }
+		//theme: { preset: PrimeVue.Themes.Aura }
 	});
 
+	app.use(PrimeVue, { unstyled: true });
+
+	// Accordion
+	app.component('ig-aco', PrimeVue.Accordion);
+	app.component('ig-aco-item', PrimeVue.AccordionPanel);
+	app.component('ig-aco-head', PrimeVue.AccordionHeader);
+	app.component('ig-aco-cont', PrimeVue.AccordionContent);
+
+	// Form
 	app.component('p-autocomplete', PrimeVue.AutoComplete);
 	app.component('p-datepicker', PrimeVue.DatePicker);
+
+	// Tabs
 	app.component('p-tabs', PrimeVue.Tabs);
 	app.component('p-tablist', PrimeVue.TabList);
 	app.component('p-tab', PrimeVue.Tab);
