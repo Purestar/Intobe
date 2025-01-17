@@ -356,4 +356,5 @@
 			.mypage-side .thumb-type-badge {flex:0 0 19.58vw; width:19.58vw; height:19.58vw;}
 			.mypage-side .tree-type-01 {display:none;}
 			.mypage-side .tree-type-01.active {display:flex;}
+			.mypage-contents .box-prev-semester {flex:1; width:100%;}
 }

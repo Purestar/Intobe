@@ -506,3 +506,4 @@
 	/* 마이페이지 */
 		.mypage-side {width:220px;}
 		.mypage-side .thumb-type-badge {width:106px; height:106px;}
+		.mypage-contents .box-prev-semester {flex:0 0 380px; width:380px;}
