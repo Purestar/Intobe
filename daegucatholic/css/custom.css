@@ -460,6 +460,16 @@
 		.job-info-top {position:relative;}
 		.job-info-top .job-info-icon {position:absolute; right:60px; top:-24px;}
 
+	/* 진로가이드 */
+		.job-search-wrap .favor-job-list-wrap {border:0; border-bottom:1px solid #e7e7e7; border-radius:0; margin:0;}
+		.job-search-wrap .favor-job-list-top {height:364px;}
+		.job-search-wrap .favor-job-list-top > * {flex:1;}
+		.job-search-wrap .favor-job-list-top > * + * {border-left:1px solid #e7e7e7;}
+		.job-search-wrap .favor-job-list-top .no-data {height:calc(100% - 60px);}
+		.job-search-wrap .favor-job-list-tit {border-bottom:1px solid #e7e7e7; font-size:18px; font-weight:500; line-height:60px; text-align:center; color:black;}
+		.job-search-wrap .favor-job-list {width:100%; height:calc(100% - 60px);}
+		.job-search-wrap .favor-job-list > * > *:after {display:none;}
+
 	/* 챗봇 */
 		.chatbot-wrap {position:fixed; right:20px; bottom:20px;}
 		.chatbot-wrap .chatobt-chat-wrap {display:none; overflow:hidden; flex-direction:column; position:absolute; right:132px; bottom:48px; background:white; border-radius:16px; box-shadow:0 0 50px rgba(0, 0, 0, 0.1); width:455px; height:863px; max-height:85dvh;}

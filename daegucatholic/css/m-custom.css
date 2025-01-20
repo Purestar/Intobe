@@ -104,6 +104,7 @@
 			.ic-duck:before {width:17.50vw; height:20.28vw;}
 			.ic-duck-02:before {background-position:var(--bp-600) var(--bp-900); width:8.19vw; height:12.50vw;}
 			.ic-duck-03:before {background-position:var(--bp-700) var(--bp-850); width:19.72vw; height:16.94vw;}
+			.ic-duck-04:before {background-position:var(--bp-850) var(--bp-850); width:16.81vw; height:16.81vw;}
 
 	/* Form */
 		/* Checkbox & Radio Type */
@@ -324,6 +325,12 @@
 			.job-search-wrap .job-search-list {padding:5.56vw;}
 			.job-info-top {padding-right:26.11vw;}
 			.job-info-top .job-info-icon {right:3.33vw; top:auto; bottom:5.56vw;}
+
+		/* 진로가이드 */
+			.job-search-wrap .favor-job-list-top {height:83.33vw;}
+			.job-search-wrap .favor-job-list-top .no-data {height:calc(100% - 10.00vw);}
+			.job-search-wrap .favor-job-list-tit {font-size:3.33vw; line-height:10.00vw;}
+			.job-search-wrap .favor-job-list {height:calc(100% - 10.00vw);}
 
 		/* 챗봇 */
 			.chatbot-wrap {right:2.50vw; bottom:4.17vw;}
