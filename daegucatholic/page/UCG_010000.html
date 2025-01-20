@@ -6,103 +6,391 @@
 		<meta name="description" content="대구가톨릭">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
 		<title>Index</title>
-		<script type="module" src="../js/igWebComponent.js" defer></script>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://unpkg.com/naive-ui"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
 		<script src="../js/pub.js"></script>
 		<link rel="stylesheet" href="../css/global.css">
 		<link rel="stylesheet" href="../css/workspace.css">
 	</head>
 	<body>
 		<div data-include="../include/header.html"></div>
-		<ig-layout id="container">
-			<ig-layout type="inner">
-				<p><strong>희망하는 직업을 갖기 위해 어떤 준비를 해야 할까요?</strong></p>
-				<p>직업별 진로 가이드를 확인해보세요!</p>
-				<h2>재학생이 가장 많이 확인한 진로 가이드!</h2>
-				<ig-swiper navigation slidesPerView="3">
-					<ig-item>
-						AI 기술개발자
-						<ig-form type="checkbox"></ig-form>
-					</ig-item>
-					<ig-item>
-						응용소프트웨어엔지니어
-						<ig-form type="checkbox"></ig-form>
-					</ig-item>
-					<ig-item>
-						애플리케이션엔지니어
-						<ig-form type="checkbox"></ig-form>
-					</ig-item>
-					<ig-item>
-						애플리케이션엔지니어
-						<ig-form type="checkbox"></ig-form>
-					</ig-item>
-				</ig-swiper>
-				<ig-tab>
-					<ig-item>
-						<ig-menu>분류체계로 찾기</ig-menu>
-						<ig-cont>
-							<ig-layout type="grid" column="2">
-								<div>
-									<h3>대분류</h3>
-									<ig-form type="select" size="7">
-										<ig-item>경영·사무·금융·보험직</ig-item>
-										<ig-item>연구직 및 공학 기술직</ig-item>
-										<ig-item>교육·법률·사회복지·경찰·소방직 및 군인</ig-item>
-										<ig-item>보건·의료직</ig-item>
-										<ig-item>예술·디자인·방송·스포츠직</ig-item>
-										<ig-item>미용·여행·숙박·음식·경비·청소직</ig-item>
-										<ig-item>영업·판매·운전·운송직</ig-item>
-									</ig-form>
+		<div id="container">
+			<div class="layout-inner contents">
+				<div class="layout-flex flex-col box-type-04 gap-12 job-info-top">
+					<p class="txt-01"><strong>희망하는 직업을 갖기 위해 어떤 준비를 해야할까요?</strong></p>
+					<p class="cr-blk m-fs-24">직업별 진로가이드를 확인해보세요!</p>
+					<i class="job-info-icon ic-duck-04"></i>
+				</div>
+				<h2 class="tit-03 mt-60">재학생이 가장 많이 확인한 진로가이드!</h2>
+
+				<!-- 진로가이드 슬라이드 -->
+				<div id="careerGuide" class="mt-24 m-mside--inner">
+					<div class="swi-type-01">
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="layout-full lst-item-02">
+										<div>
+											<strong class="fs-20 m-fs-28">AI 기술개발자</strong>
+											<div class="form-opt-chk-01">
+												<label>
+													<input type="checkbox">
+													<span class="opt-txt"></span>
+												</label>
+											</div>
+										</div>
+									</div>
 								</div>
-								<div>
-									<h3>소분류</h3>
-									<ig-no-data>중분류를 선택해주세요</ig-no-data>
+								<div class="swiper-slide">
+									<div class="layout-full lst-item-02">
+										<div>
+											<strong class="fs-20 m-fs-28">응용소프트엔지니어</strong>
+											<div class="form-opt-chk-01">
+												<label>
+													<input type="checkbox">
+													<span class="opt-txt"></span>
+												</label>
+											</div>
+										</div>
+									</div>
 								</div>
-							</ig-layout>
-						</ig-cont>
-					</ig-item>
-					<ig-item>
-						<ig-menu>키워드로 찾기</ig-menu>
-						<ig-cont>
-							<ig-layout type="flex" custom-style="gap:4px;">
-								<ig-form></ig-form>
-								<ig-btn>검색</ig-btn>
-							</ig-layout>
-							<ig-layout type="flex">
-								<h2>최근검색어</h2>
-								<ig-layout type="flex" custom-style="gap:4px;" element="ul">
-									<li>엔지니어<button type="button"><ig-icon type="test"></ig-icon></button></li>
-									<li>게임 기획자<button type="button"><ig-icon type="test"></ig-icon></button></li>
-									<li>인공지능엔지니어<button type="button"><ig-icon type="test"></ig-icon></button></li>
-									<li>3D 개발자<button type="button"><ig-icon type="test"></ig-icon></button></li>
-									<li>빅테이터아키텍처<button type="button"><ig-icon type="test"></ig-icon></button></li>
-									<li>데이터사이언티스트<button type="button"><ig-icon type="test"></ig-icon></button></li>
-								</ig-layout>
-							</ig-layout>
-							<ig-layout type="flex">
-								<h2>인기검색어</h2>
-								<ig-layout type="flex" custom-style="gap:4px;" element="ul">
-									<li>게임개발자</li>
-									<li>인공지능</li>
-									<li>빅데이터</li>
-									<li>3D 개발자</li>
-								</ig-layout>
-							</ig-layout>
-						</ig-cont>
-					</ig-item>
-				</ig-tab>
-				<ig-layout type="grid" column="3" custom-style="gap:12px;" element="ul">
-					<li>물리학연구원<ig-form type="checkbox"></ig-form></li>
-					<li>화학연구원<ig-form type="checkbox"></ig-form></li>
-					<li>수학 및 통계연구원<ig-form type="checkbox"></ig-form></li>
-					<li>생물학연구원<ig-form type="checkbox"></ig-form></li>
-					<li>지질학연구원<ig-form type="checkbox"></ig-form></li>
-					<li>천문 및 기상학연구원<ig-form type="checkbox"></ig-form></li>
-					<li>자연과학시험원<ig-form type="checkbox"></ig-form></li>
-					<li>의학연구원<ig-form type="checkbox"></ig-form></li>
-					<li>약학연구원<ig-form type="checkbox"></ig-form></li>
-				</ig-layout>
-			</ig-layout>
-		</ig-layout>
+								<div class="swiper-slide">
+									<div class="layout-full lst-item-02">
+										<div>
+											<strong class="fs-20 m-fs-28">애플리케이션엔지니어</strong>
+											<div class="form-opt-chk-01">
+												<label>
+													<input type="checkbox">
+													<span class="opt-txt"></span>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="layout-full lst-item-02">
+										<div>
+											<strong class="fs-20 m-fs-28">애플리케이션엔지니어</strong>
+											<div class="form-opt-chk-01">
+												<label>
+													<input type="checkbox">
+													<span class="opt-txt"></span>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-navigation">
+							<div class="swiper-button-prev swi-arrow-01"></div>
+							<div class="swiper-button-next swi-arrow-01"></div>
+						</div>
+					</div>
+				</div>
+
+				<n-tabs type="line" class="tabs-type-01-01">
+					<n-tab-pane name="Classification" tab="분류체계로 찾기">
+						<div class="job-search-wrap">
+							<div class="favor-job-list-wrap mt-0">
+								<div class="favor-job-list-top">
+									<ul data-scroll="v" class="favor-job-list">
+										<li class="active"><button type="button">사업관리</button></li>
+										<li><button type="button">경영 · 회계 · 사무</button></li>
+										<li><button type="button">금융 · 보험</button></li>
+										<li><button type="button">교육 · 자연 · 사회과학</button></li>
+										<li><button type="button">법률 · 경찰 · 소방 · 교도 · 국방</button></li>
+										<li><button type="button">보건 · 의료</button></li>
+										<li><button type="button">사회복지 · 종교</button></li>
+										<li><button type="button">문화 · 예술 · 디자인 · 방송</button></li>
+										<li><button type="button">운전 · 운송</button></li>
+										<li><button type="button">영업</button></li>
+									</ul>
+									<div class="w100" data-scroll="v">
+										<n-collapse class="aco-type-01" arrow-placement="right">
+											<n-collapse-item title="기획사무" name="1">
+												<div class="layout-flex flex-col gap-12">
+													<div class="form-opt-chk">
+														<label>
+															<input type="checkbox">
+															<span class="opt-txt">경영기획</span>
+														</label>
+													</div>
+													<div class="form-opt-chk">
+														<label>
+															<input type="checkbox">
+															<span class="opt-txt">홍보광고</span>
+														</label>
+													</div>
+													<div class="form-opt-chk">
+														<label>
+															<input type="checkbox">
+															<span class="opt-txt">마케팅</span>
+														</label>
+													</div>
+												</div>
+											</n-collapse-item>
+											<n-collapse-item title="총무 &middot; 인사" name="2"></n-collapse-item>
+											<n-collapse-item title="재무 &middot; 회계" name="3"></n-collapse-item>
+											<n-collapse-item title="생산 &middot; 품질관리" name="4"></n-collapse-item>
+										</n-collapse>
+									</div>
+								</div>
+							</div>
+							<div class="job-search-list">
+								<ul class="layout-full lst-item-02 grid-col-3 m-grid-col-1">
+									<li>
+										<strong class="fs-20 m-fs-28">물리학연구원</strong>
+										<div class="form-opt-chk-01">
+											<label>
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</div>
+									</li>
+									<li>
+										<strong class="fs-20 m-fs-28">화학연구원</strong>
+										<div class="form-opt-chk-01">
+											<label>
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</div>
+									</li>
+									<li>
+										<strong class="fs-20 m-fs-28">수학 및 통계연구원</strong>
+										<div class="form-opt-chk-01">
+											<label>
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</div>
+									</li>
+									<li>
+										<strong class="fs-20 m-fs-28">생물학연구원</strong>
+										<div class="form-opt-chk-01">
+											<label>
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</div>
+									</li>
+									<li>
+										<strong class="fs-20 m-fs-28">지질학연구원</strong>
+										<div class="form-opt-chk-01">
+											<label>
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</div>
+									</li>
+									<li>
+										<strong class="fs-20 m-fs-28">천문 및 기상학연구원</strong>
+										<div class="form-opt-chk-01">
+											<label>
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</div>
+									</li>
+									<li>
+										<strong class="fs-20 m-fs-28">자연과학시험원</strong>
+										<div class="form-opt-chk-01">
+											<label>
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</div>
+									</li>
+									<li>
+										<strong class="fs-20 m-fs-28">의학연구원</strong>
+										<div class="form-opt-chk-01">
+											<label>
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</div>
+									</li>
+									<li>
+										<strong class="fs-20 m-fs-28">약학연구원</strong>
+										<div class="form-opt-chk-01">
+											<label>
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</n-tab-pane>
+					<n-tab-pane name="Keyword" tab="키워드로 찾기">
+						<div class="job-search-wrap">
+							<div class="job-search">
+								<div class="layout-flex gap-20">
+									<div class="mx-w100 flex-1">
+										<div class="form-txt">
+											<input type="text" placeholder="찾으시는 직업명을 입력하세요.">
+										</div>
+									</div>
+									<button class="btn-type btn-search" type="button">검색</button>
+								</div>
+								<div class="layout-flex flex-col gap-24 m-gap-40 mt-40">
+									<div class="layout-flex align-center gap-40 m-gap-24 m-flex-col m-flex-start">
+										<h2 class="tit-02 wb-keep"><strong>최근검색어</strong></h2>
+										<div data-scroll="hide">
+											<ul class="layout-flex lst-tag-01">
+												<li>엔지니어<button type="button"><i class="ic-delete"></i></button></li>
+												<li>게임 기획자<button type="button"><i class="ic-delete"></i></button></li>
+												<li>인공지능엔지니어<button type="button"><i class="ic-delete"></i></button></li>
+												<li>3D 개발자<button type="button"><i class="ic-delete"></i></button></li>
+												<li>빅테이터아키텍처<button type="button"><i class="ic-delete"></i></button></li>
+												<li>데이터사이언티스트<button type="button"><i class="ic-delete"></i></button></li>
+											</ul>
+										</div>
+									</div>
+									<div class="layout-flex align-center gap-40 m-gap-24 m-flex-col m-flex-start">
+										<h2 class="tit-02 wb-keep"><strong>인기검색어</strong></h2>
+										<div data-scroll="hide">
+											<ul class="layout-flex lst-tag-01">
+												<li>게임개발자</li>
+												<li>인공지능</li>
+												<li>빅데이터</li>
+												<li>3D 개발자</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="job-search-list">
+								<ul class="layout-full lst-item-02 grid-col-3 m-grid-col-1">
+									<li>
+										<strong class="fs-20 m-fs-28">물리학연구원</strong>
+										<div class="form-opt-chk-01">
+											<label>
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</div>
+									</li>
+									<li>
+										<strong class="fs-20 m-fs-28">화학연구원</strong>
+										<div class="form-opt-chk-01">
+											<label>
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</div>
+									</li>
+									<li>
+										<strong class="fs-20 m-fs-28">수학 및 통계연구원</strong>
+										<div class="form-opt-chk-01">
+											<label>
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</div>
+									</li>
+									<li>
+										<strong class="fs-20 m-fs-28">생물학연구원</strong>
+										<div class="form-opt-chk-01">
+											<label>
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</div>
+									</li>
+									<li>
+										<strong class="fs-20 m-fs-28">지질학연구원</strong>
+										<div class="form-opt-chk-01">
+											<label>
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</div>
+									</li>
+									<li>
+										<strong class="fs-20 m-fs-28">천문 및 기상학연구원</strong>
+										<div class="form-opt-chk-01">
+											<label>
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</div>
+									</li>
+									<li>
+										<strong class="fs-20 m-fs-28">자연과학시험원</strong>
+										<div class="form-opt-chk-01">
+											<label>
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</div>
+									</li>
+									<li>
+										<strong class="fs-20 m-fs-28">의학연구원</strong>
+										<div class="form-opt-chk-01">
+											<label>
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</div>
+									</li>
+									<li>
+										<strong class="fs-20 m-fs-28">약학연구원</strong>
+										<div class="form-opt-chk-01">
+											<label>
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</n-tab-pane>
+				</n-tabs>
+			</div>
+		</div>
+
+		<script>
+			const { createApp, ref, reactive, computed, defineComponent } = Vue;
+			const { NTabs, NTabPane, NButton, NModal, NCard, NSelect, NCollapse, NCollapseItem, create } = naive;
+
+			const app = createApp({
+				components: {
+					NTabs,
+					NTabPane,
+					NButton,
+					NModal,
+					NCard,
+					NSelect,
+					NCollapse,
+					NCollapseItem,
+				},
+			})
+
+			app.use(naive);
+			app.mount('#container');
+
+			// 진로가이드 슬라이드
+			const careerGuideSlide = new Swiper('#careerGuide .swiper', {
+				slidesPerView: 1.3,
+				spaceBetween: calculatePercentage(30),
+				navigation: {
+					nextEl: '#careerGuide .swiper-button-next',
+					prevEl: '#careerGuide .swiper-button-prev',
+				},
+				breakpoints: {
+					720: {
+						slidesPerView: 3,
+						spaceBetween: 20
+					},
+				},
+			});
+		</script>
 		<div data-include="../include/footer.html"></div>
 	</body>
 </html>

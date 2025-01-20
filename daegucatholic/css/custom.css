@@ -30,6 +30,10 @@
 
 	.bar-v-arrow-01 {color:var(--mc);}
 
+/* Bullet */
+	.bul-circle-01 {line-height:24px; color:#666;}
+	.bul-circle-01  > *:before {flex:0 0 4px; background:#999; width:4px; height:4px; transform:translate(0, 9px);}
+
 /* Board */
 	.brd-wrap .brd-tit {font-size:20px; font-weight:500;}
 	.brd-wrap .brd-txt {color:#666;}
@@ -52,6 +56,8 @@
 		.brd-lst-gallery-02 [class*="thumb-type-01"] .thumb-inner {width:285px; height:162px;}
 		.brd-lst-gallery-02 .bar-v-01 {flex-wrap:wrap;}
 
+		.brd-lst-gallery-03 {gap:32px;}
+
 	/* View */
 		.brd-view-general {margin-top:60px;}
 		.brd-view-general .brd-view-top {gap:22px;}
@@ -65,6 +71,7 @@
 
 	[class*="box-type-01"] {background:#f8f8f8; border-radius:10px; padding:14px; line-height:1; color:#666;}
 	.box-type-01-01 {padding:40px;}
+	.box-type-01-02 {padding:30px;}
 	.box-type-02 {border:1px solid #ebebeb; border-radius:28px; padding:40px;}
 	.box-type-03 {background:white; border-radius:30px; box-shadow:0px 0px 33px rgba(0, 0, 0, 0.06); padding:40px 40px;}
 	.box-type-04 {background:#eceeff; border-radius:20px; padding:26.215px 60px;}
@@ -90,6 +97,7 @@
 		.btn-search {width:112px;}
 		.btn-circle {display:flex; align-items:center; justify-content:center; border:1px solid #e3e3e3; border-radius:50%; width:50px; height:50px;}
 		.btn-circle-gry {display:flex; align-items:center; justify-content:center; background:#eaeaea; border:1px solid #e4e4e4; border-radius:50%; width:34px; height:34px;}
+		.btn-link {display:flex; align-items:center; gap:8px; font-size:14px; color:#666;}
 
 /* Chip */
 	[class*="chip-type-01"] {background:black; border:none; border-radius:3px; height:20px; padding:0 10px; font-size:12px; color:white;}
@@ -109,6 +117,9 @@
 	[class*="chip-type-03"] {background:black; border:none; border-radius:20px; height:20px; padding:0 9px; font-size:12px; color:white;}
 
 	.chip-type-03-blu {background:#014099;}
+
+/* Divider */
+	.dvd-type-01 {height:1px; background:#efefef;}
 
 /* Form */
 	/* Checkbox & Radio Type */
@@ -182,6 +193,7 @@
 		.ic-clip:before {background-position:var(--bp-350) 0; width:18px; height:18px;}
 		.ic-delete:before {background-position:var(--bp-100) 0; width:12px; height:12px;}
 		.ic-info:before {background-position:var(--bp-650) 0; width:18px; height:18px;}
+		.ic-link:before {background-position:var(--bp-450) var(--bp-50); width:14px; height:14px;}
 		.ic-notice:before {background-position:var(--bp-250) 0; width:22px; height:20px;}
 		.ic-pencle:before {background-position:var(--bp-450) 0; width:13px; height:13px;}
 		.ic-plus:before {background-position:var(--bp-350) var(--bp-50); width:16px; height:16px;}
@@ -211,6 +223,7 @@
 		.ic-duck:before {background-position:0 var(--bp-850); width:93px; height:107px;}
 		.ic-duck-02:before {background-position:var(--bp-550) var(--bp-850); width:99px; height:148px;}
 		.ic-duck-03:before {background-position:var(--bp-650) var(--bp-850); width:142px; height:123px;}
+		.ic-duck-04:before {background-position:var(--bp-800) var(--bp-850); width:121px; height:121px;}
 
 /* List */
 	[class*="lst-tag"] {flex-wrap:wrap; gap:12px; margin-top:24px; font-size:14px;}
@@ -337,6 +350,7 @@
 	.tit-03 {font-size:28px; font-weight:500;}
 	.tit-04 {margin-top:40px; font-size:20px; font-weight:500;}
 	.tit-05 {font-size:32px; font-weight:700;}
+	.tit-06 {font-size:20px; font-weight:500;}
 
 /* Thumb */
 	.thumb-type-character {width:260px; height:260px;}

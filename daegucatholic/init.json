@@ -22,7 +22,7 @@
 		], "state": "comp" },
 		{ "id": "진로가이드", "submenu": [
 			{ "menu": "목록", "src": "./page/UCG_010000.html", "state": "work" },
-			{ "menu": "상세", "src": "./page/UCG_020100.html", "state": "work" }
+			{ "menu": "상세", "src": "./page/UCG_020100.html", "state": "comp" }
 		], "state": "work" },
 		{ "id": "진로 맵", "submenu": [
 		], "state": "work" },

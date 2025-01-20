@@ -24,11 +24,15 @@
 		.brd-list-general .bar-v > * + * {gap:30px;}
 		.brd-list-general .bar-v > * + *:before {display:none;}
 
-		[class*="brd-lst-gallery"] .brd-cont-wrap {gap:1.11vw; margin-top:2.78vw; line-height:1; color:#666;}
+		[class*="brd-lst-gallery"] .brd-cont-wrap {gap:1.11vw; margin-top:2.78vw; line-height:1; font-size:3.33vw; color:#666;}
 		[class*="brd-lst-gallery"] .brd-lst-desc {line-height:4.72vw;}
+		[class*="brd-lst-gallery"] .bar-v-01 {flex-wrap:wrap;}
 
 		.brd-lst-gallery-02 {gap:4.44vw;}
 		.brd-lst-gallery-02 [class*="thumb-type-01"] .thumb-inner {width:42.64vw; height:24.03vw;}
+
+		.brd-lst-gallery-03 {gap:4.44vw;}
+		.brd-lst-gallery-03 [class*="thumb-type-01"] .thumb-inner {width:42.64vw; height:24.03vw;}
 
 		.brd-view-general {margin-top:5.83vw;}
 		.brd-view-general .brd-view-top {gap:3.47vw;}
@@ -53,6 +57,7 @@
 			.btn-search {width:23.19vw;}
 			.btn-circle {width:6.94vw; height:6.94vw;}
 			.btn-circle-gry {width:6.11vw; height:6.11vw;}
+			.btn-link {gap:2.22vw; font-size:3.33vw;}
 
 	/* Chip */
 		[class*="chip-type-01"] {border-radius:0.56vw; height:4.72vw; padding:0 2.22vw; font-size:2.78vw;}
@@ -70,12 +75,13 @@
 			.ic-clip:before {width:3.33vw; height:3.06vw;}
 			.ic-delete:before {width:2.22vw; height:2.22vw;}
 			.ic-info:before {width:3.33vw; height:3.33vw;}
+			.ic-link:before {width:2.5vw; height:2.5vw;}
 			.ic-notice:before {width:3.47vw; height:3.06vw;}
 			.ic-pencle:before {width:2.08vw; height:2.08vw;}
 			.ic-plus:before {width:3.06vw; height:3.06vw;}
 			.ic-refrash:before {width:3.06vw; height:3.47vw;}
 			.ic-search:before {width:4.44vw; height:4.44vw;}
-			.ic-setting:before {width:2.50vw; height:2.22vw;}
+			.ic-setting:before {width:2.5vw; height:2.22vw;}
 
 		/* Chatbot */
 			.ic-chat-history:before {width:6.67vw; height:5.00vw;}
@@ -227,13 +233,14 @@
 		.tit-03 {font-size:4.44vw;}
 		.tit-04 {margin-top:11.11vw; font-size:4.44vw;}
 		.tit-05 {font-size:5.83vw;}
+		.tit-06 {font-size:4.44vw;}
 
 	/* Thumb */
 		.thumb-type-character {width:50.00vw; height:50.00vw;}
 
 		[class*="thumb-type-01"] .thumb-inner {border-radius:2.50vw; width:68.06vw; height:38.19vw;}
 		[class*="thumb-type-01"] .thumb-inner > * {padding:3.33vw;}
-		[class*="thumb-type-01"] .thumb-c {font-size:4.44vw;}
+		[class*="thumb-type-01"] .thumb-c {font-size:3.33vw;}
 
 	/* Tree Menu */
 		.tree-type-01 {position:relative; display:flex; border:0; padding:0; height:18vw; font-size:4.17vw;}

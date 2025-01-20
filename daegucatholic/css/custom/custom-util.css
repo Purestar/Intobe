@@ -111,6 +111,7 @@
 	/* Weight */
 		.fw-n {font-weight:400;}
 		.fw-m {font-weight:500;}
+		.fw-b {font-weight:700;}
 
 	/* ETC */
 		.wb-keep {word-break:keep-all;}
@@ -166,6 +167,9 @@
 	/* Psuedo */
 		.hdn-before::before {display:none;}
 		.hdn-after::after {display:none;}
+
+/* Line Height */
+	.lh-24 {line-height:var(--n24);}
 
 /* Margin & Padding */
 	/* Top */
