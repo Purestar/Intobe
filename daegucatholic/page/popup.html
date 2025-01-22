@@ -15,7 +15,7 @@
 		<link rel="stylesheet" href="../css/workspace.css">
 	</head>
 	<body>
-		<div id="app">
+		<div id="app" style="padding:30px;">
 			<!-- 공통 -->
 			<h1 style="font-size:30px; font-weight:bold;">공통</h1>
 			<div class="layout-grid mt-20" style="gap: 20px; grid-template-columns: repeat(7, minmax(0px, 1fr));">
@@ -500,8 +500,473 @@
 				</n-modal>
 			</div>
 
+			<!-- 진로 맵 -->
+			<h1 style="font-size:30px; margin-top:20px; font-weight:bold;">진로 맵</h1>
+			<div class="layout-grid mt-20" style="gap: 20px; grid-template-columns: repeat(7, minmax(0px, 1fr));">
+				<button class="btn-type" @click="toggleModal('modal11')">어학 계획 결과 등록</button>
+				<n-modal v-model:show="modals.modal11" class="pop-type">
+					<n-card style="width: 580px" :bordered="false" size="huge" role="dialog" aria-modal="true">
+						<template #header>
+							어학 계획 결과 등록
+							<button type="button" class="pop-close-no-header" @click="toggleModal('modal4')"></button>
+						</template>
+
+						<table class="tbl-form">
+							<colgroup>
+								<col style="width:25%;">
+								<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>외국어</th>
+									<td><n-input v-model:value="value" type="text" disabled /></td>
+								</tr>
+								<tr>
+									<th>시험명</th>
+									<td><n-input v-model:value="value" type="text" disabled /></td>
+								</tr>
+								<tr>
+									<th>목표점수</th>
+									<td><n-input v-model:value="value" type="text" disabled /></td>
+								</tr>
+								<tr>
+									<th>계획시기</th>
+									<td><n-input v-model:value="value" type="text" disabled /></td>
+								</tr>
+								<tr>
+									<th>취득여부<em>*</em></th>
+									<td>
+										<div class="layout-flex gap-40">
+											<label class="form-opt-rdo">
+												<input type="radio">
+												<span class="opt-txt">취득</span>
+											</label>
+											<label class="form-opt-rdo">
+												<input type="radio">
+												<span class="opt-txt">미취득</span>
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>취득점수<em>*</em></th>
+									<td>
+										<div class="layout-flex gap-12">
+											<div><n-input v-model:value="value" type="text" /></div>
+											<div><n-input v-model:value="value" type="text" disabled /></div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>취득일<em>*</em></th>
+									<td><n-date-picker v-model:value="timestamp" type="date" /></td>
+								</tr>
+							</tbody>
+						</table>
+
+						<template #footer>
+							<button type="button" class="btn-type-b w100">취소</button>
+							<button type="button" class="btn-type w100">등록</button>
+						</template>
+					</n-card>
+				</n-modal>
+
+				<button class="btn-type" @click="toggleModal('modal12')">어학 계획 추가</button>
+				<n-modal v-model:show="modals.modal12" class="pop-type">
+					<n-card style="width: 580px" :bordered="false" size="huge" role="dialog" aria-modal="true">
+						<template #header>
+							어학 계획 추가
+							<button type="button" class="pop-close-no-header" @click="toggleModal('modal4')"></button>
+						</template>
+
+						<table class="tbl-form">
+							<colgroup>
+								<col style="width:25%;">
+								<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>외국어<em>*</em></th>
+									<td><n-input v-model:value="value" type="text" /></td>
+								</tr>
+								<tr>
+									<th>시험명<em>*</em></th>
+									<td><n-input v-model:value="value" type="text" disabled /></td>
+								</tr>
+								<tr>
+									<th>목표 점수<em>*</em></th>
+									<td>
+										<div class="layout-flex gap-12">
+											<div><n-input v-model:value="value" type="text" /></div>
+											<div><n-input v-model:value="value" type="text" disabled /></div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<template #footer>
+							<button type="button" class="btn-type-b w100">취소</button>
+							<button type="button" class="btn-type w100">등록</button>
+						</template>
+					</n-card>
+				</n-modal>
+
+				<button class="btn-type" @click="toggleModal('modal13')">어학 계획 변경</button>
+				<n-modal v-model:show="modals.modal13" class="pop-type">
+					<n-card style="width: 580px" :bordered="false" size="huge" role="dialog" aria-modal="true">
+						<template #header>
+							어학 계획 변경
+							<button type="button" class="pop-close-no-header" @click="toggleModal('modal4')"></button>
+						</template>
+
+						<table class="tbl-form">
+							<colgroup>
+								<col style="width:25%;">
+								<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>외국어</th>
+									<td><n-input v-model:value="value" type="text" /></td>
+								</tr>
+								<tr>
+									<th>시험명</th>
+									<td><n-input v-model:value="value" type="text" disabled /></td>
+								</tr>
+								<tr>
+									<th>목표점수</th>
+									<td>
+										<div class="layout-flex gap-12">
+											<div><n-input v-model:value="value" type="text" /></div>
+											<div><n-input v-model:value="value" type="text" disabled /></div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<h2 class="tit-02 cr-blk m-fs-28"><strong>계획시기</strong></h2>
+						<div class="box-type-01-02 mt-20">
+							<h3 class="cr-blk m-fs-24"><strong>정규학기</strong></h3>
+							<div class="layout-grid grid-col-4 m-grid-col-3 gap-12 mt-16">
+								<label class="form-opt-btn-02">
+									<input type="checkbox" disabled>
+									<span class="opt-txt w100">1학년 1학기</span>
+								</label>
+								<label class="form-opt-btn-02">
+									<input type="checkbox" disabled>
+									<span class="opt-txt w100">1학년 2학기</span>
+								</label>
+								<label class="form-opt-btn-02">
+									<input type="checkbox" disabled>
+									<span class="opt-txt w100">2학년 1학기</span>
+								</label>
+								<label class="form-opt-btn-02">
+									<input type="checkbox" checked>
+									<span class="opt-txt w100">2학년 2학기</span>
+								</label>
+								<label class="form-opt-btn-02">
+									<input type="checkbox">
+									<span class="opt-txt w100">3학년 1학기</span>
+								</label>
+								<label class="form-opt-btn-02">
+									<input type="checkbox">
+									<span class="opt-txt w100">3학년 2학기</span>
+								</label>
+								<label class="form-opt-btn-02">
+									<input type="checkbox">
+									<span class="opt-txt w100">4학년 1학기</span>
+								</label>
+								<label class="form-opt-btn-02">
+									<input type="checkbox">
+									<span class="opt-txt w100">4학년 2학기</span>
+								</label>
+							</div>
+
+							<h3 class="cr-blk mt-40 m-fs-24"><strong>계절학기</strong></h3>
+							<div class="layout-grid grid-col-4 m-grid-col-3 gap-12 mt-16">
+								<label class="form-opt-btn-02">
+									<input type="checkbox" disabled>
+									<span class="opt-txt w100">1학년 여름</span>
+								</label>
+								<label class="form-opt-btn-02">
+									<input type="checkbox" disabled>
+									<span class="opt-txt w100">1학년 겨울</span>
+								</label>
+								<label class="form-opt-btn-02">
+									<input type="checkbox" disabled>
+									<span class="opt-txt w100">2학년 여름</span>
+								</label>
+								<label class="form-opt-btn-02">
+									<input type="checkbox" checked>
+									<span class="opt-txt w100">2학년 겨울</span>
+								</label>
+								<label class="form-opt-btn-02">
+									<input type="checkbox">
+									<span class="opt-txt w100">3학년 여름</span>
+								</label>
+								<label class="form-opt-btn-02">
+									<input type="checkbox">
+									<span class="opt-txt w100">3학년 겨울</span>
+								</label>
+								<label class="form-opt-btn-02">
+									<input type="checkbox">
+									<span class="opt-txt w100">4학년 여름</span>
+								</label>
+								<label class="form-opt-btn-02">
+									<input type="checkbox">
+									<span class="opt-txt w100">4학년 겨울</span>
+								</label>
+							</div>
+						</div>
+
+						<template #footer>
+							<button type="button" class="btn-type-b w100">취소</button>
+							<button type="button" class="btn-type w100">확인</button>
+						</template>
+					</n-card>
+				</n-modal>
+
+				<button class="btn-type" @click="toggleModal('modal14')">자격 계획 결과 등록</button>
+				<n-modal v-model:show="modals.modal14" class="pop-type">
+					<n-card style="width: 580px" :bordered="false" size="huge" role="dialog" aria-modal="true">
+						<template #header>
+							자격 계획 결과 등록
+							<button type="button" class="pop-close-no-header" @click="toggleModal('modal4')"></button>
+						</template>
+
+						<table class="tbl-form">
+							<colgroup>
+								<col style="width:25%;">
+								<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>자격명</th>
+									<td><n-input v-model:value="value" type="text" disabled /></td>
+								</tr>
+								<tr>
+									<th>발급기관관</th>
+									<td><n-input v-model:value="value" type="text" disabled /></td>
+								</tr>
+								<tr>
+									<th>계획시기</th>
+									<td><n-input v-model:value="value" type="text" disabled /></td>
+								</tr>
+								<tr>
+									<th>취득여부<em>*</em></th>
+									<td>
+										<div class="layout-flex gap-40">
+											<label class="form-opt-rdo">
+												<input type="radio">
+												<span class="opt-txt">취득</span>
+											</label>
+											<label class="form-opt-rdo">
+												<input type="radio">
+												<span class="opt-txt">미취득</span>
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>취득일<em>*</em></th>
+									<td><n-date-picker v-model:value="timestamp" type="date" /></td>
+								</tr>
+							</tbody>
+						</table>
+
+						<template #footer>
+							<button type="button" class="btn-type-b w100">취소</button>
+							<button type="button" class="btn-type w100">확인</button>
+						</template>
+					</n-card>
+				</n-modal>
+
+				<button class="btn-type" @click="toggleModal('modal17')">자격 계획 추가</button>
+				<n-modal v-model:show="modals.modal17" class="pop-type">
+					<n-card style="width: 580px" :bordered="false" size="huge" role="dialog" aria-modal="true">
+						<template #header>
+							자격 계획 추가
+							<button type="button" class="pop-close-no-header" @click="toggleModal('modal17')"></button>
+						</template>
+
+						<div class="layout-flex gap-12">
+							<label class="form-opt-btn w100">
+								<input type="radio" name="a" checked>
+								<span class="opt-txt">내 보관함</span>
+							</label>
+							<label class="form-opt-btn w100">
+								<input type="radio" name="a">
+								<span class="opt-txt">직접입력</span>
+							</label>
+						</div>
+
+						<!-- 내 보관함 -->
+						<div class="box-type-01 layout-flex gap-20 mt-20">
+							<n-input v-model:value="value" type="text"></n-input>
+							<button type="button" class="btn-type ws-nw">검색</button>
+						</div>
+
+						<ul class="layout-full lst-item-02 mt-20 m-mt-24">
+							<li>
+								<div class="layout-flex flex-col gap-12">
+									<strong class="fs-20 m-fs-28">전자계산조직응용기사</strong>
+									<p class="fs-16 m-fs-24">과학기술정보통신부</p>
+								</div>
+								<button type="button"><i class="ic-plus-02"></i></button>
+							</li>
+							<li>
+								<div class="layout-flex flex-col gap-12">
+									<strong class="fs-20 m-fs-28">전자계산조직응용기사</strong>
+									<p class="fs-16 m-fs-24">과학기술정보통신부</p>
+								</div>
+								<button type="button"><i class="ic-plus-02"></i></button>
+							</li>
+							<li>
+								<div class="layout-flex flex-col gap-12">
+									<strong class="fs-20 m-fs-28">전자계산조직응용기사</strong>
+									<p class="fs-16 m-fs-24">과학기술정보통신부</p>
+								</div>
+								<button type="button"><i class="ic-plus-02"></i></button>
+							</li>
+						</ul>
+
+						<!-- 직접입력 -->
+						<table class="tbl-form">
+							<colgroup>
+								<col style="width:25%;">
+								<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>자격명<em>*</em></th>
+									<td><n-input v-model:value="value" type="text" /></td>
+								</tr>
+								<tr>
+									<th>발급기관<em>*</em></th>
+									<td><n-input v-model:value="value" type="text" disabled /></td>
+								</tr>
+							</tbody>
+						</table>
+
+						<template #footer>
+							<button type="button" class="btn-type-b w100">취소</button>
+							<button type="button" class="btn-type w100">등록</button>
+						</template>
+					</n-card>
+				</n-modal>
+
+				<button class="btn-type" @click="toggleModal('modal16')">자격 계획 변경</button>
+				<n-modal v-model:show="modals.modal16" class="pop-type">
+					<n-card style="width: 580px" :bordered="false" size="huge" role="dialog" aria-modal="true">
+						<template #header>
+							자격 계획 변경
+							<button type="button" class="pop-close-no-header" @click="toggleModal('modal16')"></button>
+						</template>
+
+						<table class="tbl-form">
+							<colgroup>
+								<col style="width:25%;">
+								<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>자격명</th>
+									<td><n-input v-model:value="value" type="text" disabled /></td>
+								</tr>
+								<tr>
+									<th>발급기관</th>
+									<td><n-input v-model:value="value" type="text" disabled /></td>
+								</tr>
+							</tbody>
+						</table>
+
+						<h2 class="tit-02 cr-blk m-fs-28"><strong>계획시기</strong></h2>
+						<div class="box-type-01-02 mt-20">
+							<h3 class="cr-blk m-fs-24"><strong>정규학기</strong></h3>
+							<div class="layout-grid grid-col-4 m-grid-col-3 gap-12 mt-16">
+								<label class="form-opt-btn-02">
+									<input type="checkbox" disabled>
+									<span class="opt-txt w100">1학년 1학기</span>
+								</label>
+								<label class="form-opt-btn-02">
+									<input type="checkbox" disabled>
+									<span class="opt-txt w100">1학년 2학기</span>
+								</label>
+								<label class="form-opt-btn-02">
+									<input type="checkbox" disabled>
+									<span class="opt-txt w100">2학년 1학기</span>
+								</label>
+								<label class="form-opt-btn-02">
+									<input type="checkbox" checked>
+									<span class="opt-txt w100">2학년 2학기</span>
+								</label>
+								<label class="form-opt-btn-02">
+									<input type="checkbox">
+									<span class="opt-txt w100">3학년 1학기</span>
+								</label>
+								<label class="form-opt-btn-02">
+									<input type="checkbox">
+									<span class="opt-txt w100">3학년 2학기</span>
+								</label>
+								<label class="form-opt-btn-02">
+									<input type="checkbox">
+									<span class="opt-txt w100">4학년 1학기</span>
+								</label>
+								<label class="form-opt-btn-02">
+									<input type="checkbox">
+									<span class="opt-txt w100">4학년 2학기</span>
+								</label>
+							</div>
+
+							<h3 class="cr-blk mt-40 m-fs-24"><strong>계절학기</strong></h3>
+							<div class="layout-grid grid-col-4 m-grid-col-3 gap-12 mt-16">
+								<label class="form-opt-btn-02">
+									<input type="checkbox" disabled>
+									<span class="opt-txt w100">1학년 여름</span>
+								</label>
+								<label class="form-opt-btn-02">
+									<input type="checkbox" disabled>
+									<span class="opt-txt w100">1학년 겨울</span>
+								</label>
+								<label class="form-opt-btn-02">
+									<input type="checkbox" disabled>
+									<span class="opt-txt w100">2학년 여름</span>
+								</label>
+								<label class="form-opt-btn-02">
+									<input type="checkbox" checked>
+									<span class="opt-txt w100">2학년 겨울</span>
+								</label>
+								<label class="form-opt-btn-02">
+									<input type="checkbox">
+									<span class="opt-txt w100">3학년 여름</span>
+								</label>
+								<label class="form-opt-btn-02">
+									<input type="checkbox">
+									<span class="opt-txt w100">3학년 겨울</span>
+								</label>
+								<label class="form-opt-btn-02">
+									<input type="checkbox">
+									<span class="opt-txt w100">4학년 여름</span>
+								</label>
+								<label class="form-opt-btn-02">
+									<input type="checkbox">
+									<span class="opt-txt w100">4학년 겨울</span>
+								</label>
+							</div>
+						</div>
+
+						<template #footer>
+							<button type="button" class="btn-type-b w100">취소</button>
+							<button type="button" class="btn-type w100">확인</button>
+						</template>
+					</n-card>
+				</n-modal>
+			</div>
+
 			<!-- 마이페이지 -->
-			<h1 style="font-size:30px; margin-top:20px; font-weight:bold;">마이페이지</h1>
+			<!--<h1 style="font-size:30px; margin-top:20px; font-weight:bold;">마이페이지</h1>
 			<div class="layout-grid mt-20" style="gap: 20px; grid-template-columns: repeat(7, minmax(0px, 1fr));">
 				<button class="btn-type" @click="toggleModal('modal11')" disabled>마이페이지</button>
 				<n-modal v-model:show="modals.modal11" class="pop-type">
@@ -515,7 +980,7 @@
 						</template>
 					</n-card>
 				</n-modal>
-			</div>
+			</div>-->
 		</div>
 
 		<script>

@@ -216,6 +216,8 @@
 		.ic-notice:before {background-position:var(--bp-250) 0; width:22px; height:20px;}
 		.ic-pencle:before {background-position:var(--bp-450) 0; width:13px; height:13px;}
 		.ic-plus:before {background-position:var(--bp-350) var(--bp-50); width:16px; height:16px;}
+		.ic-plus-02 {background:var(--mc); border-radius:50%; width:34px; height:34px;}
+		.ic-plus-02:before {background-position:var(--bp-800) var(--bp-50); width:16px; height:16px;}
 		.ic-refrash:before {background-position:var(--bp-50) 0; width:14px; height:15px;}
 		.ic-sandwatch:before {background-position:var(--bp-600) var(--bp-50); width:15px; height:18px;}
 		.ic-schedule:before {background-position:var(--bp-750) var(--bp-50); width:14px; height:13px;}

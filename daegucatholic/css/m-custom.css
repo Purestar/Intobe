@@ -89,6 +89,8 @@
 			.ic-notice:before {width:3.47vw; height:3.06vw;}
 			.ic-pencle:before {width:2.08vw; height:2.08vw;}
 			.ic-plus:before {width:3.06vw; height:3.06vw;}
+			.ic-plus-02 {width:6.11vw; height:6.11vw;}
+			.ic-plus-02:before {width:3.06vw; height:3.06vw;}
 			.ic-refrash:before {width:3.06vw; height:3.47vw;}
 			.ic-schedule:before {width:3.47vw; height:3.33vw;}
 			.ic-search:before {width:4.44vw; height:4.44vw;}
@@ -200,6 +202,7 @@
 		.popover-type-01 .popover-action:before {width:2.22vw; height:1.81vw;}
 
 	/* Popup */
+		[class*="pop-type"] {width:100% !important;}
 		[class*="pop-type"].n-card.n-modal {border-radius:0;}
 		[class*="pop-type"].pop-close-no-header {width:15.28vw; height:15.28vw;}
 		.n-card-header__main {font-size:5vw;}
@@ -224,6 +227,9 @@
 			.swi-type-01 .swiper {padding:0 5vw;}
 			.swi-type-01 .swiper-button-prev {left:5vw;}
 			.swi-type-01 .swiper-button-next {right:5vw;}
+
+	/* Table */
+		.tbl-form {border-spacing:0 4.17vw; font-size:3.89vw;}
 
 	/* Tabs */
 		/* Cont */
