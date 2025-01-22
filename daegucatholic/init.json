@@ -25,7 +25,8 @@
 			{ "menu": "상세", "src": "./page/UCG_020100.html", "state": "comp" }
 		], "state": "comp" },
 		{ "id": "진로 맵", "submenu": [
-		], "state": "work" },
+			{ "menu": "진로 맵", "src": "./page/UMM_020100.html", "state": "comp" }
+		], "state": "comp" },
 		{ "id": "마이페이지", "submenu": [
 			{ "menu": "Home", "src": "./page/UMY_010000.html", "state": "comp" },
 			{ "menu": "배지관리", "src": "./page/UMY_020100.html", "state": "work" },
@@ -35,6 +36,9 @@
 		{ "id": "e-Notice", "submenu": [
 			{ "menu": "목록", "src": "./page/UNO_010000.html", "state": "comp" },
 			{ "menu": "상세", "src": "./page/UNO_020000.html", "state": "comp" }
+		], "state": "comp" },
+		{ "id": "가이드", "submenu": [
+			{ "menu": "Naive", "src": "https://www.naiveui.com/en-US/os-theme/components/button", "state": "comp" }
 		], "state": "comp" }
 	]
 }

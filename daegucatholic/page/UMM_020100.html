@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="대구가톨릭">
+		<meta name="description" content="대구가톨릭">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://unpkg.com/naive-ui"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script src="../js/pub.js"></script>
+		<link rel="stylesheet" href="../css/global.css">
+		<link rel="stylesheet" href="../css/workspace.css">
+	</head>
+	<body>
+		<div data-include="../include/header.html"></div>
+		<div id="container">
+			<div class="layout-inner contents">
+				<div class="layout-full txt-c">
+					<h2 class="sub-title"><strong>진로 맵</strong></h2>
+				</div>
+				<div class="layout-flex justify-center gap-20 mt-40 m-mt-48">
+					<button type="button" class="btn-type-b-blk btn-sz-56 btn-icon">
+						<i class="ic-book"></i>
+						어학성적 등록
+					</button>
+					<button type="button" class="btn-type-b-blk btn-sz-56 btn-icon">
+						<i class="ic-cert"></i>
+						자격증 등록
+					</button>
+				</div>
+				<div class="layout-flex gap-12 mt-60" data-scroll="hide">
+					<label class="form-opt-btn-03">
+						<input type="radio" checked>
+						<span class="opt-txt">방사선사</span>
+					</label>
+					<label class="form-opt-btn-03">
+						<input type="radio">
+						<span class="opt-txt">방사선산업 안전 원 및 위험관리원</span>
+					</label>
+					<label class="form-opt-btn-03">
+						<input type="radio">
+						<span class="opt-txt">진로(직업)1</span>
+					</label>
+					<label class="form-opt-btn-03">
+						<input type="radio">
+						<span class="opt-txt">진로(직업)2</span>
+					</label>
+					<label class="form-opt-btn-03">
+						<input type="radio">
+						<span class="opt-txt">진로(직업)3</span>
+					</label>
+					<label class="form-opt-btn-03">
+						<input type="radio">
+						<span class="opt-txt">진로(직업)4</span>
+					</label>
+				</div>
+				<div class="layout-flex justify-end mt-40 m-mt-60">
+					<button type="button" class="btn-icon">이전진로<i class="ic-arrow-d"></i></button>
+				</div>
+
+				<div class="layout-flex align-center gap-20 mt-16">
+					<h3 class="tit-01 ws-nw">교과</h3>
+					<hr class="dvd-type-01">
+				</div>
+				<div class="layout-flex gap-12 mt-16 m-mt-20" data-scroll="hide">
+					<label class="form-opt-btn-02">
+						<input type="radio" checked>
+						<span class="opt-txt">전체</span>
+					</label>
+					<label class="form-opt-btn-02">
+						<input type="radio">
+						<span class="opt-txt">이수</span>
+					</label>
+					<label class="form-opt-btn-02">
+						<input type="radio">
+						<span class="opt-txt">미이수</span>
+					</label>
+				</div>
+
+				<h4 class="mt-40 m-mt-60 cr-blk fw-m">1학년</h4>
+				<div class="mt-16 m-mt-20 m-mside--inner">
+					<div id="curriculum01" class="swi-type brd-wrap">
+						<div class="swiper m-pside--inner">
+							<div class="swiper-wrapper brd-lst-curr">
+								<div class="swiper-slide">
+									<div class="brd-lst-item">
+										<p class="brd-lst-curr-stat"><i class="ic-sandwatch"></i>미이수</p>
+										<h5 class="brd-tit">대학생프로그래밍경진대회</h5>
+										<div class="bar-v-01">
+											<span>컴퓨터공학전공</span>
+											<span>1-1</span>
+											<span>3학점 (3시간)</span>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="brd-lst-item completed">
+										<p class="brd-lst-curr-stat"><i class="ic-chk"></i>이수</p>
+										<h5 class="brd-tit">대학생프로그래밍경진대회</h5>
+										<div class="bar-v-01">
+											<span>컴퓨터공학전공</span>
+											<span>1-1</span>
+											<span>3학점 (3시간)</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<h4 class="mt-40 m-mt-60 cr-blk fw-m">2학년</h4>
+				<div class="mt-16 m-mt-20 m-mside--inner">
+					<div id="curriculum02" class="swi-type brd-wrap">
+						<div class="swiper m-pside--inner">
+							<div class="swiper-wrapper brd-lst-curr">
+								<div class="swiper-slide">
+									<div class="brd-lst-item completed">
+										<p class="brd-lst-curr-stat"><i class="ic-chk"></i>이수</p>
+										<h5 class="brd-tit">대학생프로그래밍경진대회</h5>
+										<div class="bar-v-01">
+											<span>컴퓨터공학전공</span>
+											<span>1-1</span>
+											<span>3학점 (3시간)</span>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="brd-lst-item completed">
+										<p class="brd-lst-curr-stat"><i class="ic-chk"></i>이수</p>
+										<h5 class="brd-tit">대학생프로그래밍경진대회</h5>
+										<div class="bar-v-01">
+											<span>컴퓨터공학전공</span>
+											<span>1-1</span>
+											<span>3학점 (3시간)</span>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="brd-lst-item completed">
+										<p class="brd-lst-curr-stat"><i class="ic-chk"></i>이수</p>
+										<h5 class="brd-tit">대학생프로그래밍경진대회</h5>
+										<div class="bar-v-01">
+											<span>컴퓨터공학전공</span>
+											<span>1-1</span>
+											<span>3학점 (3시간)</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<h4 class="mt-40 m-mt-60 cr-blk fw-m">3학년</h4>
+				<div class="mt-16 m-mt-20 m-mside--inner">
+					<div id="curriculum03" class="swi-type brd-wrap">
+						<div class="swiper m-pside--inner">
+							<div class="swiper-wrapper brd-lst-curr">
+								<div class="swiper-slide">
+									<div class="brd-lst-item completed">
+										<p class="brd-lst-curr-stat"><i class="ic-chk"></i>이수</p>
+										<h5 class="brd-tit">대학생프로그래밍경진대회</h5>
+										<div class="bar-v-01">
+											<span>컴퓨터공학전공</span>
+											<span>1-1</span>
+											<span>3학점 (3시간)</span>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="brd-lst-item completed">
+										<p class="brd-lst-curr-stat"><i class="ic-chk"></i>이수</p>
+										<h5 class="brd-tit">대학생프로그래밍경진대회</h5>
+										<div class="bar-v-01">
+											<span>컴퓨터공학전공</span>
+											<span>1-1</span>
+											<span>3학점 (3시간)</span>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="brd-lst-item">
+										<p class="brd-lst-curr-stat"><i class="ic-sandwatch"></i>미이수</p>
+										<h5 class="brd-tit">대학생프로그래밍경진대회</h5>
+										<div class="bar-v-01">
+											<span>컴퓨터공학전공</span>
+											<span>1-1</span>
+											<span>3학점 (3시간)</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<h4 class="mt-40 m-mt-60 cr-blk fw-m">4학년</h4>
+				<div class="mt-16 m-mt-20 m-mside--inner">
+					<div id="curriculum04" class="swi-type brd-wrap">
+						<div class="swiper m-pside--inner">
+							<div class="swiper-wrapper brd-lst-curr">
+								<div class="swiper-slide">
+									<div class="brd-lst-item completed">
+										<p class="brd-lst-curr-stat"><i class="ic-chk"></i>이수</p>
+										<h5 class="brd-tit">대학생프로그래밍경진대회</h5>
+										<div class="bar-v-01">
+											<span>컴퓨터공학전공</span>
+											<span>1-1</span>
+											<span>3학점 (3시간)</span>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="brd-lst-item">
+										<p class="brd-lst-curr-stat"><i class="ic-sandwatch"></i>미이수</p>
+										<h5 class="brd-tit">대학생프로그래밍경진대회</h5>
+										<div class="bar-v-01">
+											<span>컴퓨터공학전공</span>
+											<span>1-1</span>
+											<span>3학점 (3시간)</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="layout-flex align-center gap-20 mt-80">
+					<h3 class="tit-01 ws-nw">어학/자격</h3>
+					<hr class="dvd-type-01">
+				</div>
+
+				<ul class="qualification-wrap">
+					<li class="end">
+						<div class="qualification-top">
+							<i class="ic-chk-02"></i>
+							<div class="qualification-period layout-flex justify-between flex-1 m-flex-col m-gap-16 qualification-period">
+								<div class="layout-flex align-center">
+									<h4 class="qualification-tit">1학년 1학기</h4>종료
+								</div>
+							</div>
+						</div>
+						<div class="qualification-lst-wrap">
+							<ul class="qualification-lst">
+								<li class="cert">
+									<div class="layout-flex justify-between align-center">
+										<div class="layout-flex gap-16 align-center fs-14">
+											<span class="chip-type-02-ylw ws-nw">자격</span>
+											<span class="layout-flex align-center gap-4 m-fs-24"><i class="ic-schedule"></i>계획</span>
+										</div>
+										<div class="flex gap-20">
+											<button type="button"><i class="ic-pencle"></i></button>
+											<button type="button"><i class="ic-delete"></i></button>
+										</div>
+									</div>
+									<h4 class="qualification-tit-02">정보처리기사</h4>
+									<p class="qualification-desc">과학기술정보통신부</p>
+									<button type="button" class="qualification-btn">결과등록</button>
+								</li>
+								<li class="lang">
+									<div class="layout-flex justify-between align-center">
+										<div class="layout-flex gap-16 align-center fs-14">
+											<span class="chip-type-02-sky ws-nw">어학</span>
+											<span class="layout-flex align-center gap-4 m-fs-24"><i class="ic-schedule"></i>계획</span>
+										</div>
+										<div class="flex gap-20">
+											<button type="button"><i class="ic-pencle"></i></button>
+											<button type="button"><i class="ic-delete"></i></button>
+										</div>
+									</div>
+									<h4 class="qualification-tit-02">TOEIC <span class="cr-gry fw-n fs-16">(영어)</span></h4>
+									<p class="qualification-desc">목표점수 : 800</p>
+									<button type="button" class="qualification-btn">결과등록</button>
+								</li>
+								<li class="not">
+									<div class="layout-flex justify-between align-center">
+										<div class="layout-flex gap-16 align-center fs-14">
+											<span class="chip-type-02-ylw ws-nw">자격</span>
+											<span class="layout-flex align-center gap-4 m-fs-24"><i class="ic-schedule"></i>계획</span>
+										</div>
+										<div class="flex gap-20">
+											<button type="button"><i class="ic-pencle"></i></button>
+											<button type="button"><i class="ic-delete"></i></button>
+										</div>
+									</div>
+									<h4 class="qualification-tit-02">정보처리기사</h4>
+									<p class="qualification-desc">과학기술정보통신부</p>
+									<p class="qualification-txt cr-lgry">미취득</p>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="end">
+						<div class="qualification-top">
+							<i class="ic-chk-02"></i>
+							<div class="qualification-period layout-flex justify-between flex-1 m-flex-col m-gap-16 qualification-period">
+								<div class="layout-flex align-center">
+									<h4 class="qualification-tit">1학년 여름학기</h4>종료
+								</div>
+							</div>
+						</div>
+						<div class="qualification-lst-wrap">
+							<ul class="qualification-lst">
+								<li class="cert">
+									<div class="layout-flex justify-between align-center">
+										<div class="layout-flex gap-16 align-center fs-14">
+											<span class="chip-type-02-ylw ws-nw">자격</span>
+											<span class="layout-flex align-center gap-4 m-fs-24"><i class="ic-schedule"></i>계획</span>
+										</div>
+										<div class="flex gap-20">
+											<button type="button"><i class="ic-pencle"></i></button>
+											<button type="button"><i class="ic-delete"></i></button>
+										</div>
+									</div>
+									<h4 class="qualification-tit-02">정보처리기사</h4>
+									<p class="qualification-desc">과학기술정보통신부</p>
+									<button type="button" class="qualification-btn">결과등록</button>
+								</li>
+								<li class="not">
+									<div class="layout-flex justify-between align-center">
+										<div class="layout-flex gap-16 align-center fs-14">
+											<span class="chip-type-02-sky ws-nw">어학</span>
+											<span class="layout-flex align-center gap-4 m-fs-24"><i class="ic-schedule"></i>계획</span>
+										</div>
+										<div class="flex gap-20">
+											<button type="button"><i class="ic-pencle"></i></button>
+											<button type="button"><i class="ic-delete"></i></button>
+										</div>
+									</div>
+									<h4 class="qualification-tit-02">TOEIC <span class="cr-gry fw-n fs-16">(영어)</span></h4>
+									<p class="qualification-desc">목표점수 : 800</p>
+									<p class="qualification-txt cr-lgry">미취득</p>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="current">
+						<div class="qualification-top">
+							<i class="ic-duck-05"></i>
+							<div class="qualification-period layout-flex justify-between flex-1 m-flex-col m-gap-16 qualification-period">
+								<div class="layout-flex align-center">
+									<h4 class="qualification-tit">1학년 2학기</h4>진행
+								</div>
+								<div class="layout-flex justify-end gap-12 m-justify-start">
+									<button type="button" class="btn-type-b-lgry btn-sz-32">자격 계획 추가</button>
+									<button type="button" class="btn-type-b-lgry btn-sz-32">어학 계획 추가</button>
+								</div>
+							</div>
+						</div>
+						<div class="qualification-lst-wrap">
+							<ul class="qualification-lst">
+								<li class="cert">
+									<div class="layout-flex justify-between align-center">
+										<div class="layout-flex gap-16 align-center fs-14">
+											<span class="chip-type-02-ylw ws-nw">자격</span>
+											<span class="layout-flex align-center gap-4 m-fs-24"><i class="ic-schedule"></i>계획</span>
+										</div>
+										<div class="flex gap-20">
+											<button type="button"><i class="ic-pencle"></i></button>
+											<button type="button"><i class="ic-delete"></i></button>
+										</div>
+									</div>
+									<h4 class="qualification-tit-02">정보처리기사</h4>
+									<p class="qualification-desc">과학기술정보통신부</p>
+									<button type="button" class="qualification-btn">결과등록</button>
+								</li>
+								<li class="lang">
+									<div class="layout-flex justify-between align-center">
+										<div class="layout-flex gap-16 align-center fs-14">
+											<span class="chip-type-02-sky ws-nw">어학</span>
+											<span class="layout-flex align-center gap-4 m-fs-24"><i class="ic-schedule"></i>계획</span>
+										</div>
+										<div class="flex gap-20">
+											<button type="button"><i class="ic-pencle"></i></button>
+											<button type="button"><i class="ic-delete"></i></button>
+										</div>
+									</div>
+									<h4 class="qualification-tit-02">TOEIC <span class="cr-gry fw-n fs-16">(영어)</span></h4>
+									<p class="qualification-desc">목표점수 : 800</p>
+									<button type="button" class="qualification-btn">결과등록</button>
+								</li>
+								<li class="lang">
+									<div class="layout-flex justify-between align-center">
+										<div class="layout-flex gap-16 align-center fs-14">
+											<span class="chip-type-02-sky ws-nw">어학</span>
+											<span class="layout-flex align-center gap-4 m-fs-24"><i class="ic-schedule"></i>계획</span>
+										</div>
+										<div class="flex gap-20">
+											<button type="button"><i class="ic-pencle"></i></button>
+											<button type="button"><i class="ic-delete"></i></button>
+										</div>
+									</div>
+									<h4 class="qualification-tit-02">TOEIC <span class="cr-gry fw-n fs-16">(영어)</span></h4>
+									<p class="qualification-desc">목표점수 : 800</p>
+									<p class="qualification-txt">취득일 <span class="cr-blk">2024.08.19</span></p>
+								</li>
+								<li class="cert">
+									<div class="layout-flex justify-between align-center">
+										<div class="layout-flex gap-16 align-center fs-14">
+											<span class="chip-type-02-ylw ws-nw">자격</span>
+											<span class="layout-flex align-center gap-4 m-fs-24"><i class="ic-schedule"></i>계획</span>
+										</div>
+										<div class="flex gap-20">
+											<button type="button"><i class="ic-pencle"></i></button>
+											<button type="button"><i class="ic-delete"></i></button>
+										</div>
+									</div>
+									<h4 class="qualification-tit-02">정보처리기사</h4>
+									<p class="qualification-desc">과학기술정보통신부</p>
+									<p class="qualification-txt">취득일 <span class="cr-blk">2024.08.19</span></p>
+								</li>
+								<li class="cert">
+									<div class="layout-flex justify-between align-center">
+										<div class="layout-flex gap-16 align-center fs-14">
+											<span class="chip-type-02-ylw ws-nw">자격</span>
+											<span class="layout-flex align-center gap-4 m-fs-24"><i class="ic-schedule"></i>계획</span>
+										</div>
+										<div class="flex gap-20">
+											<button type="button"><i class="ic-pencle"></i></button>
+											<button type="button"><i class="ic-delete"></i></button>
+										</div>
+									</div>
+									<h4 class="qualification-tit-02">정보처리기사</h4>
+									<p class="qualification-desc">과학기술정보통신부</p>
+									<p class="qualification-txt">취득일 <span class="cr-blk">2024.08.19</span></p>
+								</li>
+								<li class="not">
+									<div class="layout-flex justify-between align-center">
+										<div class="layout-flex gap-16 align-center fs-14">
+											<span class="chip-type-02-ylw ws-nw">자격</span>
+											<span class="layout-flex align-center gap-4 m-fs-24"><i class="ic-schedule"></i>계획</span>
+										</div>
+										<div class="flex gap-20">
+											<button type="button"><i class="ic-pencle"></i></button>
+											<button type="button"><i class="ic-delete"></i></button>
+										</div>
+									</div>
+									<h4 class="qualification-tit-02">정보처리기사</h4>
+									<p class="qualification-desc">과학기술정보통신부</p>
+									<p class="qualification-txt cr-lgry">미취득</p>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="qualification-top">
+							<div class="qualification-period layout-flex justify-between flex-1 m-flex-col m-gap-16 qualification-period">
+								<div class="layout-flex align-center">
+									<h4 class="qualification-tit">1학년 겨울학기</h4>예정
+								</div>
+								<div class="layout-flex justify-end gap-12 m-justify-start">
+									<button type="button" class="btn-type-b-lgry btn-sz-32">자격 계획 추가</button>
+									<button type="button" class="btn-type-b-lgry btn-sz-32">어학 계획 추가</button>
+								</div>
+							</div>
+						</div>
+						<div class="qualification-lst-wrap">
+							<ul class="qualification-lst"></ul>
+						</div>
+					</li>
+					<li>
+						<div class="qualification-top">
+							<div class="qualification-period layout-flex justify-between flex-1 m-flex-col m-gap-16 qualification-period">
+								<div class="layout-flex align-center">
+									<h4 class="qualification-tit">4학년 2학기</h4>예정
+								</div>
+								<div class="layout-flex justify-end gap-12 m-justify-start">
+									<button type="button" class="btn-type-b-lgry btn-sz-32">자격 계획 추가</button>
+									<button type="button" class="btn-type-b-lgry btn-sz-32">어학 계획 추가</button>
+								</div>
+							</div>
+						</div>
+						<div class="qualification-lst-wrap">
+							<ul class="qualification-lst"></ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div data-include="../include/footer.html"></div>
+		<style>
+
+		</style>
+		<script>
+			// 교과 1학년
+			const curriculum01Slide = new Swiper('#curriculum01 .swiper', {
+				slidesPerView: 1.3,
+				spaceBetween: calculatePercentage(36),
+				breakpoints: {
+					720: {
+						slidesPerView: 3,
+						spaceBetween: 30
+					},
+				},
+			});
+
+			// 교과 2학년
+			const curriculum02Slide = new Swiper('#curriculum02 .swiper', {
+				slidesPerView: 1.3,
+				spaceBetween: calculatePercentage(36),
+				breakpoints: {
+					720: {
+						slidesPerView: 3,
+						spaceBetween: 30
+					},
+				},
+			});
+
+			// 교과 3학년
+			const curriculum03Slide = new Swiper('#curriculum03 .swiper', {
+				slidesPerView: 1.3,
+				spaceBetween: calculatePercentage(36),
+				breakpoints: {
+					720: {
+						slidesPerView: 3,
+						spaceBetween: 30
+					},
+				},
+			});
+
+			// 교과 4학년
+			const curriculum04Slide = new Swiper('#curriculum04 .swiper', {
+				slidesPerView: 1.3,
+				spaceBetween: calculatePercentage(36),
+				breakpoints: {
+					720: {
+						slidesPerView: 3,
+						spaceBetween: 30
+					},
+				},
+			});
+		</script>
+	</body>
+</html>

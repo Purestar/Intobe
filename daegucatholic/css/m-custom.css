@@ -15,6 +15,9 @@
 		.brd-wrap .brd-list-number {flex:0 0 3.47vw; width:3.47vw;}
 		.brd-wrap .brd-file > * {gap:1.67vw;}
 
+		.brd-lst-curr .brd-lst-item {gap:1.67vw; border-radius:2.78vw; padding:5.56vw; font-size:3.33vw;}
+		.brd-lst-curr .brd-lst-curr-stat {gap:1.67vw;}
+
 		.brd-list-general {gap:2.22vw; margin-top:3.19vw;}
 		.brd-list-general > * {border-radius:2.50vw; padding:3.81vw 5.56vw;}
 		.brd-list-general .brd-list-number {margin-right:2.50vw;}
@@ -51,6 +54,7 @@
 	/* Button */
 		/* Size */
 			.btn-sz-32 {border-radius:6.67vw; height:6.67vw; font-size:2.78vw;}
+			.btn-sz-56 {border-radius:2.22vw; height:12.50vw; font-size:3.33vw;}
 
 		/* Other */
 			.btn-icon {gap:10px;}
@@ -72,6 +76,12 @@
 			.ic-arrow-u:before {width:3.33vw; height:1.94vw;}
 			.ic-arrow-b:before {width:1.94vw; height:1.53vw;}
 			.ic-arrow-u-02:before {width:3.19vw; height:2.78vw;}
+			.ic-book {width:9.44vw; height:9.44vw;}
+			.ic-book:before {width:4.72vw; height:4.58vw;}
+			.ic-cert {width:9.44vw; height:9.44vw;}
+			.ic-cert:before {width:5.97vw; height:5.00vw;}
+			.ic-chk:before {width:3.89vw; height:3.61vw;}
+			.ic-chk-02:before {width:3.33vw; height:2.50vw;}
 			.ic-clip:before {width:3.33vw; height:3.06vw;}
 			.ic-delete:before {width:2.22vw; height:2.22vw;}
 			.ic-info:before {width:3.33vw; height:3.33vw;}
@@ -80,7 +90,9 @@
 			.ic-pencle:before {width:2.08vw; height:2.08vw;}
 			.ic-plus:before {width:3.06vw; height:3.06vw;}
 			.ic-refrash:before {width:3.06vw; height:3.47vw;}
+			.ic-schedule:before {width:3.47vw; height:3.33vw;}
 			.ic-search:before {width:4.44vw; height:4.44vw;}
+			.ic-sandwatch:before {width:2.50vw; height:3.33vw;}
 			.ic-setting:before {width:2.5vw; height:2.22vw;}
 
 		/* Chatbot */
@@ -105,6 +117,7 @@
 			.ic-duck-02:before {background-position:var(--bp-600) var(--bp-900); width:8.19vw; height:12.50vw;}
 			.ic-duck-03:before {background-position:var(--bp-700) var(--bp-850); width:19.72vw; height:16.94vw;}
 			.ic-duck-04:before {background-position:var(--bp-850) var(--bp-850); width:16.81vw; height:16.81vw;}
+			.ic-duck-05:before {background-position:var(--bp-150) var(--bp-800); width:12.50vw; height:20.83vw;}
 
 	/* Form */
 		/* Checkbox & Radio Type */
@@ -114,6 +127,9 @@
 
 				.form-opt-btn-02 .opt-txt,
 				.form-opt-btn-02 input:checked + .opt-txt {border-radius:8.89vw; height:8.89vw; font-size:3.33vw;}
+
+				.form-opt-btn-03 .opt-txt,
+				.form-opt-btn-03 input:checked + .opt-txt {border-radius:8.89vw; height:8.89vw; font-size:3.33vw;}
 
 			/* Check Box */
 				.form-opt-chk-01 .opt-txt {width:5.56vw; height:5.56vw;}
@@ -371,4 +387,26 @@
 			.mypage-side .tree-type-01 {display:none;}
 			.mypage-side .tree-type-01.active {display:flex;}
 			.mypage-contents .box-prev-semester {flex:1; width:100%;}
+
+		/* 진로 맵 */
+			.qualification-wrap {margin-top:5.56vw; padding-left:2.78vw;}
+			.qualification-wrap > * + * {margin-top:2.78vw;}
+			.qualification-wrap .qualification-top:before {border:0.56vw solid #acc3dd; width:7.78vw; height:7.78vw;}
+			.qualification-wrap .qualification-period {position:relative; top:4.5vw; padding:0 0 0 4.86vw;}
+			.qualification-wrap > *.current .qualification-period,
+			.qualification-wrap > *.end .qualification-period {top:0;}
+			.qualification-wrap .qualification-tit {margin-right:2.78vw; font-size:3.89vw;}
+			.qualification-wrap .qualification-lst-wrap {min-height:12.50vw; margin-top:2.50vw; padding-left:3.7vw;}
+			.qualification-wrap .qualification-lst-wrap:before {border-left:0.56vw solid #acc3dd; border-radius:0.56vw; width:0.56vw; min-height:12.50vw;}
+			.qualification-wrap .qualification-lst {grid-template-columns:repeat(1, 1fr); gap:2.78vw; margin-left:8.33vw;}
+			.qualification-wrap .qualification-lst > * {gap:1.39vw; border-radius:2.22vw; height:34.72vw; padding:4.17vw 5.56vw 0;}
+			.qualification-wrap .qualification-lst .qualification-tit-02 {font-size:3.89vw;}
+			.qualification-wrap .qualification-lst .qualification-btn {width:calc(100% + 11.11vw); height:10.56vw; margin:0 -5.56vw; font-size:3.33vw;}
+			.qualification-wrap .qualification-lst .qualification-txt {margin-top:1.11vw;}
+			.qualification-wrap .ic-chk-02 {left:2.2vw; top:2.5vw;}
+			.qualification-wrap .ic-duck-05 {left:-2.50vw; top:-3.75vw;}
+
+			/* 진행 */
+			.qualification-wrap > *.current {margin-top:6.67vw;}
+			.qualification-wrap > *.current .qualification-lst-wrap:before {margin-top:6.94vw;}
 }

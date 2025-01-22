@@ -42,6 +42,12 @@
 	.brd-wrap .brd-ctgy {color:#014099;}
 
 	/* List */
+		.brd-lst-curr .brd-lst-item {display:flex; flex-direction:column; gap:12px; background:#f1f1f1; border-radius:16px; padding:28px; font-size:14px; font-weight:500; color:#666;}
+		.brd-lst-curr .brd-lst-curr-stat {display:flex; align-items:center; gap:12px;}
+		.brd-lst-curr .brd-tit {color:black;}
+		.brd-lst-curr .brd-lst-item.completed {background:#e8f1ff;}
+		.brd-lst-curr .brd-lst-item.completed .brd-lst-curr-stat {color:var(--mc);}
+
 		.brd-list-general {gap:21px; margin-top:15px;}
 		.brd-list-general > * {border:1px solid #e2e2e2; border-radius:10px; padding:33.5px 40px;}
 		.brd-list-general .brd-list-number {margin-right:37px;}
@@ -84,6 +90,7 @@
 		.btn-type-blu-gra {background:rgb(41,182,228); background:linear-gradient(90deg, rgba(41,182,228,1) 0%, rgba(29,35,138,1) 100%); border:none; color:white;}
 
 		.btn-type-b-lgry {border-color:#dbdbdb; color:#666;}
+		.btn-type-b-blk {border-color:black; color:black;}
 
 		.btn-type-tran-wht,
 		.btn-type-tran-wht:hover {border-color:white; color:white;}
@@ -113,13 +120,15 @@
 	[class*="chip-type-02"] {background:black; border:none; border-radius:23px; height:23px; padding:0 11px; font-size:12px; color:white;}
 
 	.chip-type-02-blu {background:#187fc5;}
+	.chip-type-02-ylw {background:#ffc96e; color:black;}
+	.chip-type-02-sky {background:#9be1f8; color:black;}
 
 	[class*="chip-type-03"] {background:black; border:none; border-radius:20px; height:20px; padding:0 9px; font-size:12px; color:white;}
 
 	.chip-type-03-blu {background:#014099;}
 
 /* Divider */
-	.dvd-type-01 {height:1px; background:#efefef;}
+	.dvd-type-01 {width:100%; height:1px; background:#efefef;}
 
 /* Form */
 	/* Checkbox & Radio Type */
@@ -131,6 +140,10 @@
 			.form-opt-btn-02 input:checked + .opt-txt {border-color:#e2e2e2; border-radius:34px; height:34px; min-height:auto; font-size:14px; color:#666; white-space:nowrap;}
 			.form-opt-btn-02 input:checked + .opt-txt {background:white; border-color:var(--mc); color:var(--mc);}
 			.form-opt-btn-02 input:disabled + .opt-txt {background:#e4e6f3; border-color:#e4e6f3;}
+
+			.form-opt-btn-03 .opt-txt,
+			.form-opt-btn-03 input:checked + .opt-txt {background:#efefef; border-color:#efefef; border-radius:46px; height:46px; min-height:auto; padding:0 32px; font-size:16px; color:#666; white-space:nowrap;}
+			.form-opt-btn-03 input:checked + .opt-txt {background:#1976c0; border-color:#1976c0; color:white;}
 
 		/* Check Box */
 			.form-opt-chk-01 .opt-txt {display:flex; align-items:center; justify-content:center; background:white; border:1px solid #f1f3ff; border-radius:50%; width:32px; height:32px;}
@@ -190,7 +203,13 @@
 		.ic-arrow-u-02:before {background-position:var(--bp-300) var(--bp-50); width:16px; height:14px;}
 		.ic-arrow-b:before {background-position:var(--bp-600) 0; width:10px; height:9px;}
 		.ic-arrow-d:before {background-position:var(--bp-400) var(--bp-50); width:12px; height:7px;}
+		.ic-book {background:#f5f5f5; border-radius:50%; width:44px; height:44px;}
+		.ic-book:before {background-position:var(--bp-500) var(--bp-50); width:24px; height:23px;}
+		.ic-cert {background:#f5f5f5; border-radius:50%; width:44px; height:44px;}
+		.ic-cert:before {background-position:var(--bp-550) var(--bp-50); width:31px; height:26px;}
 		.ic-clip:before {background-position:var(--bp-350) 0; width:18px; height:18px;}
+		.ic-chk:before {background-position:var(--bp-650) var(--bp-50); width:22px; height:22px;}
+		.ic-chk-02:before {background-position:var(--bp-700) var(--bp-50); width:26px; height:23px;}
 		.ic-delete:before {background-position:var(--bp-100) 0; width:12px; height:12px;}
 		.ic-info:before {background-position:var(--bp-650) 0; width:18px; height:18px;}
 		.ic-link:before {background-position:var(--bp-450) var(--bp-50); width:14px; height:14px;}
@@ -198,6 +217,8 @@
 		.ic-pencle:before {background-position:var(--bp-450) 0; width:13px; height:13px;}
 		.ic-plus:before {background-position:var(--bp-350) var(--bp-50); width:16px; height:16px;}
 		.ic-refrash:before {background-position:var(--bp-50) 0; width:14px; height:15px;}
+		.ic-sandwatch:before {background-position:var(--bp-600) var(--bp-50); width:15px; height:18px;}
+		.ic-schedule:before {background-position:var(--bp-750) var(--bp-50); width:14px; height:13px;}
 		.ic-search:before {background-position:var(--bp-150) 0; width:19px; height:19px;}
 		.ic-setting:before {background-position:var(--bp-500) 0; width:15px; height:15px;}
 
@@ -224,6 +245,7 @@
 		.ic-duck-02:before {background-position:var(--bp-550) var(--bp-850); width:99px; height:148px;}
 		.ic-duck-03:before {background-position:var(--bp-650) var(--bp-850); width:142px; height:123px;}
 		.ic-duck-04:before {background-position:var(--bp-800) var(--bp-850); width:121px; height:121px;}
+		.ic-duck-05:before {background-position:var(--bp-100) var(--bp-800); width:73px; height:124px;}
 
 /* List */
 	[class*="lst-tag"] {flex-wrap:wrap; gap:12px; margin-top:24px; font-size:14px;}
@@ -531,3 +553,43 @@
 		.mypage-side {width:220px;}
 		.mypage-side .thumb-type-badge {width:106px; height:106px;}
 		.mypage-contents .box-prev-semester {flex:0 0 380px; width:380px;}
+
+	/* 진로 맵 */
+		.qualification-wrap {margin-top:40px; padding-left:20px;}
+		.qualification-wrap > * + * {margin-top:20px;}
+		.qualification-wrap .qualification-top {position:relative; display:flex; align-items:center;}
+		.qualification-wrap .qualification-top:before {content:""; background:#e7f1fc; border:4px solid #acc3dd; border-radius:50%; width:40px; height:40px;}
+		.qualification-wrap .qualification-period {padding:0 0 0 50px;}
+		.qualification-wrap .qualification-tit {margin-right:10px; font-size:24px; font-weight:500; color:black;}
+		.qualification-wrap .qualification-lst-wrap {display:flex; min-height:40px; margin-top:24px; padding-left:18px;}
+		.qualification-wrap .qualification-lst-wrap:before {content:""; border-left:4px solid #acc3dd; border-radius:4px; width:4px; min-height:40px;}
+		.qualification-wrap .qualification-lst {display:grid; grid-template-columns:repeat(3, 1fr); gap:30px; width:100%; margin-left:70px; color:#666;}
+		.qualification-wrap .qualification-lst > * {position:relative; display:flex; flex-direction:column; overflow:hidden; gap:10px; border-radius:16px; height:174px; padding:24px 30px 0;}
+		.qualification-wrap .qualification-lst .qualification-tit-02 {font-size:20px; font-weight:500; color:black;}
+		.qualification-wrap .qualification-lst .qualification-btn {position:absolute; left:0; bottom:0; width:calc(100% + 60px); height:48px; margin:0 -30px; font-size:14px; font-weight:500; color:black;}
+		.qualification-wrap .qualification-lst .qualification-txt {margin-top:8px;}
+		.qualification-wrap > *:last-child .qualification-lst-wrap:before {display:none;}
+		.qualification-wrap .ic-chk-02 {position:absolute; left:10px; top:12px;}
+		.qualification-wrap .ic-duck-05 {position:absolute; left:-18px; top:-27px;}
+
+		/* 진행 */
+		.qualification-wrap > *.current {margin-top:48px;}
+		.qualification-wrap > *.current .qualification-top,
+		.qualification-wrap > *.current .qualification-tit {color:var(--mc);}
+		.qualification-wrap > *.current .qualification-lst-wrap:before {border-color:var(--mc); margin-top:50px;}
+
+		/* 종료 */
+		.qualification-wrap > *.end .qualification-top:before {background:#acc3dd;}
+
+		/* 자격 */
+		.qualification-wrap .qualification-lst > *.cert {background:#fff7ea;}
+		.qualification-wrap .qualification-lst > *.cert .qualification-btn {background:#fbebd1;}
+
+		/* 어학 */
+		.qualification-wrap .qualification-lst > *.lang {background:#e8faff;}
+		.qualification-wrap .qualification-lst > *.lang .qualification-btn {background:#d1f1fb;}
+
+		/* 미취득 */
+		.qualification-wrap .qualification-lst > *.not {background:#f1f1f1;}
+		.qualification-wrap .qualification-lst > *.not .chip-type-02-ylw {background:#ddcaab;}
+		.qualification-wrap .qualification-lst > *.not .chip-type-02-sky {background:#abd9dd;}
