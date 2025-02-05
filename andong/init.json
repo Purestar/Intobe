@@ -8,36 +8,36 @@
 
 	"MenuList": [
 		{ "id": "공통", "submenu": [
-			{ "menu": "로그인", "src": "./page/ULO_010000.html", "state": "comp" },
-			{ "menu": "레이아웃", "src": "./page/layout.html", "state": "comp" },
-			{ "menu": "메인", "src": "./page/UMA_010000.html", "state": "comp" },
-			{ "menu": "학과기반 진로설정", "src": "./page/UEN_010000.html", "state": "comp" },
-			{ "menu": "관심직무설정", "src": "./page/UEN_020000.html", "state": "comp" },
-			{ "menu": "팝업", "src": "./page/popup.html", "state": "work" },
-			{ "menu": "챗봇", "src": "./page/UCH_010000.html", "state": "comp" }
-		], "state": "work" },
+			{ "menu": "로그인", "src": "./page/ULO_010000.html", "state": "" },
+			{ "menu": "레이아웃", "src": "./page/layout.html", "state": "" },
+			{ "menu": "메인", "src": "./page/UMA_010000.html", "state": "" },
+			{ "menu": "학과기반 진로설정", "src": "./page/UEN_010000.html", "state": "" },
+			{ "menu": "관심직무설정", "src": "./page/UEN_020000.html", "state": "" },
+			{ "menu": "팝업", "src": "./page/popup.html", "state": "" },
+			{ "menu": "챗봇", "src": "./page/UCH_010000.html", "state": "" }
+		], "state": "" },
 		{ "id": "직업정보", "submenu": [
-			{ "menu": "목록", "src": "./page/UCE_010000.html", "state": "comp" },
-			{ "menu": "상세", "src": "./page/UCE_020100.html", "state": "comp" }
-		], "state": "comp" },
+			{ "menu": "목록", "src": "./page/UCE_010000.html", "state": "" },
+			{ "menu": "상세", "src": "./page/UCE_020100.html", "state": "" }
+		], "state": "" },
 		{ "id": "진로가이드", "submenu": [
-			{ "menu": "목록", "src": "./page/UCG_010000.html", "state": "work" },
-			{ "menu": "상세", "src": "./page/UCG_020100.html", "state": "work" }
-		], "state": "work" },
+			{ "menu": "목록", "src": "./page/UCG_010000.html", "state": "" },
+			{ "menu": "상세", "src": "./page/UCG_020100.html", "state": "" }
+		], "state": "" },
 		{ "id": "진로 맵", "submenu": [
-		], "state": "work" },
+		], "state": "" },
 		{ "id": "마이페이지", "submenu": [
-			{ "menu": "Home", "src": "./page/UMY_010000.html", "state": "comp" },
-			{ "menu": "배지관리", "src": "./page/UMY_020100.html", "state": "work" },
-			{ "menu": "스팩관리", "src": "./page/UMY_030000.html", "state": "comp" },
-			{ "menu": "보관함", "src": "./page/UMY_040100.html", "state": "comp" }
-		], "state": "work" },
+			{ "menu": "Home", "src": "./page/UMY_010000.html", "state": "" },
+			{ "menu": "배지관리", "src": "./page/UMY_020100.html", "state": "" },
+			{ "menu": "스팩관리", "src": "./page/UMY_030000.html", "state": "" },
+			{ "menu": "보관함", "src": "./page/UMY_040100.html", "state": "" }
+		], "state": "" },
 		{ "id": "e-Notice", "submenu": [
-			{ "menu": "목록", "src": "./page/UNO_010000.html", "state": "comp" },
-			{ "menu": "상세", "src": "./page/UNO_020000.html", "state": "comp" }
-		], "state": "comp" },
+			{ "menu": "목록", "src": "./page/UNO_010000.html", "state": "" },
+			{ "menu": "상세", "src": "./page/UNO_020000.html", "state": "" }
+		], "state": "" },
 		{ "id": "가이드", "submenu": [
-			{ "menu": "primeVue", "src": "https://primevue.org/", "state": "comp" }
-		], "state": "comp" }
+			{ "menu": "primeVue", "src": "https://primevue.org/", "state": "" }
+		], "state": "" }
 	]
 }
