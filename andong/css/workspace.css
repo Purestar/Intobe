@@ -7,7 +7,7 @@
 /* Workspace */
 	/* Header & Footer */
 	.workspace-header,
-	.workspace-footer {flex:0 0 var(--ws-h); background:#222; height:var(--ws-h); font-size:14px; color:white;}
+	.workspace-footer {flex:0 0 var(--ws-h); align-items:center; background:#222; height:var(--ws-h); font-size:14px; color:white;}
 	.workspace-footer {padding:0 20px;}
 
 	.workspace-header-btn {display:flex; justify-content:center; align-items:center; flex:0 0 var(--ws-h); width:var(--ws-h); height:var(--ws-h);}
