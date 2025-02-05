@@ -13,9 +13,9 @@
 			{ "menu": "메인", "src": "./page/UMA_010000.html", "state": "comp" },
 			{ "menu": "학과기반 진로설정", "src": "./page/UEN_010000.html", "state": "comp" },
 			{ "menu": "관심직무설정", "src": "./page/UEN_020000.html", "state": "comp" },
-			{ "menu": "팝업", "src": "./page/popup.html", "state": "work" },
+			{ "menu": "팝업", "src": "./page/popup.html", "state": "comp" },
 			{ "menu": "챗봇", "src": "./page/UCH_010000.html", "state": "comp" }
-		], "state": "work" },
+		], "state": "comp" },
 		{ "id": "직업정보", "submenu": [
 			{ "menu": "목록", "src": "./page/UCE_010000.html", "state": "comp" },
 			{ "menu": "상세", "src": "./page/UCE_020100.html", "state": "comp" }
