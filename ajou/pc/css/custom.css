@@ -769,8 +769,9 @@
 
 		.board-vertical{position: relative;}
 		.board-vertical, .board-vertical .swiper {height: 63px;width: 90%;}
-		.board-vertical .link-text {line-height: 63px;}
+		.board-vertical .link-text {align-self:center;}
 		.board-vertical .swi-btn_wrap{background-color: red;width: 50px;}
+		.board-vertical .swiper-slide {display:flex;}
 		.board-vertical .swiper-button-next{position: absolute;z-index:1;bottom: 25%;right: 0;background: var(--icon);display: inline-block;background-position: -550px -300px; width: 15px;height: 9px;}
 		.board-vertical .swiper-button-prev{position: absolute;z-index:1;top: 25%;right: 0;background: var(--icon);display: inline-block;background-position: -500px -300px; width: 15px;height: 9px;}
 	/* 마이페이지 메인 */

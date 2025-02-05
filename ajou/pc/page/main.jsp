@@ -37,18 +37,21 @@
 		<div class="main-notice fx-aic mt40 fx-gap-05">
 			<h2 class="fs-1 fw-b">공지사항</h2>
 			<div class="board-vertical">
-				<div class="swiper ">
+				<div class="swiper">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
-							<a href="#" class="link-text elps-01">[필독] 2021년 6월 2일부터 신입사원 교육과정이 시작됩니다. 신입사원2021년 6월 2일부터 신입사원 교육과정이 시작됩니다. 신입사원 . 신입사원 . 신입사원 . 신입사원 . 신입사원 . 신입사원 </a>
+							<a href="#" class="link-text elps-02">[필독] 2021년 6월 2일부터 신입사원 교육과정이 시작됩니다. 신입사원2021년 6월 2일부터 신입사원 교육과정이 시작됩니다. 신입사원 . 신입사원 . 신입사원 . 신입사원 . 신입사원 . 신입사원2021년 6월 2일부터 신입사원 교육과정이 시작됩니다. 신입사원2021년 6월 2일부터 신입사원 교육과정이 시작됩니다. 신입사원 . 신입사원 . 신입사원 . 신입사원 . 신입사원 . 신입사원2021년 6월 2일부터 신입사원 교육과정이 시작됩니다. 신입사원2021년 6월 2일부터 신입사원 교육과정이 시작됩니다. 신입사원 . 신입사원 . 신입사원 . 신입사원 . 신입사원 . 신입사원2021년 6월 2일부터 신입사원 교육과정이 시작됩니다. 신입사원2021년 6월 2일부터 신입사원 교육과정이 시작됩니다. 신입사원 . 신입사원 . 신입사원 . 신입사원 . 신입사원 . 신입사원 </a>
 						</div>
 						<div class="swiper-slide">
-							<a href="#" class="link-text elps-01">[1232필독] 2021년 6월 2일부터 신입사원 교육과정이 시작됩니다. 신입사원2021년 6월 2일부터 신입사원 교육과정이 시작됩니다. 신입사원 . 신입사원 . 신입사원 . 신입사원 . 신입사원 . 신입사원 </a>
+							<a href="#" class="link-text elps-02">[1232필독] 2021년 6월 2일부터 신입사원 교육과정이 시작됩니다. 신입사원2021년 6월 2일부터 신입사원 교육과정이 시작됩니다. 신입사원 . 신입사원 . 신입사원 . 신입사원 . 신입사원 . 신입사원 </a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" class="link-text elps-02">[1232필독] 2021년 6월 2일부터  </a>
 						</div>
 					</div>
 				</div>
-					<div class="swiper-button-next"></div>
-					<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
 			</div>
 		</div>
 	</div>
