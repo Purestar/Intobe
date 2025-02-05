@@ -70,6 +70,9 @@
 	/* Divider */
 		.m-divider {background:#f8f8f8; height:1.81vw; margin:0 calc(var(--init-mobile-inner) * -1);}
 
+	/* e-Chart */
+		.e-chart-v-bar {height:44.44vw;}
+
 	/* Icon */
 		/* General */
 			.ic-arrow-l:before {width:1.67vw; height:2.78vw;}

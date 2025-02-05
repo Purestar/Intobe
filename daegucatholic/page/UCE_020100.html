@@ -163,13 +163,13 @@
 							<div>
 								<div class="layout-flex align-center justify-between">
 									<div class="layout-flex align-center gap-8">
-										<h3 class="tit-04 mt-0">학력분포</h3>
+										<h3 class="tit-04 mt-0">재직자가 생각하는 일자리 전망</h3>
 										<div class="popover-type-01">
 											<n-popover trigger="click" placement="bottom">
 												<template #trigger>
 													<button type="button"><i class="ic-info flex"></i></button>
 												</template>
-												<span class="fs-16 m-fs-24">※ 위의 그래프는 직업당 평균 30명의 재직자가 해당<br class="mobile"> 직업의 향후 5년간 일자리 변화에 대해 응답한<br class="mobile"> 결<br class="pc">과입니다. 직업전문가와 재직자들의 입장과 견해에<br class="mobile"> 따라 일자리 전망에 차이가 있을 수 있으므로,<br class="mobile"> 참고자<br class="pc">료로 활용하시기 바랍니다.</span>
+												<span class="fs-16 m-fs-24">※ 위의 그래프는 직업당 평균 30명의<br class="mobile"> 재직자가 해당 직업의 향후 5년간<br class="mobile"> 일자리 변화에 대해 응답한<br class="mobile"> 결<br class="pc">과입니다. 직업전문가와 재직자들의 <br class="mobile">입장과 견해에 따라 일자리 전망에 <br class="mobile">차이가 있을 수 있으므로,<br class="mobile"> 참고자<br class="pc">료로 활용하시기 바랍니다.</span>
 											</n-popover>
 										</div>
 									</div>
@@ -179,7 +179,17 @@
 							</div>
 						</div>
 
-						<h3 class="tit-04">재직자가 생각하는 일자리 전망</h3>
+						<div class="layout-flex align-center gap-8 mt-40">
+							<h3 class="tit-04 mt-0">전문가가 분석한 일자리 전망</h3>
+							<div class="popover-type-01 flex">
+								<n-popover trigger="click" placement="bottom">
+									<template #trigger>
+										<button type="button"><i class="ic-info flex"></i></button>
+									</template>
+									<span class="fs-16 m-fs-24">※ 위의 일자리전망은 직업전문가들이 <br class="mobile">「중장기인력수급전망」,「정성적 직업전망조사」,<br class="mobile">「KNOW<br class="pc"> 재직자조사」등 각종 연구와 조사를<br class="mobile"> 기초로 작성하였습니다.</span>
+								</n-popover>
+							</div>
+						</div>
 						<div class="layout-ellipsis" style="-webkit-line-clamp: 5;">
 							<p class="txt-02">컴퓨터시스템설계 및 분석가는 조직의 효율적인 운영을 돕기 위해 현행 컴퓨터 시스템을 분석하여 정보 시스템을 통한 해결책을 설계하는 일을 한다. 경제？산업 분야를 비롯하여 사회 전반에 디지털 전환이 이루어짐에 따라 기업이 비즈니스를 위해 그리고 정부와 공공기관이 대국민 서비스를 제공하기 위해 컴퓨터시스템을 새롭게 구축하거나 또는 기존 업무의 효율화와 소비자 만족도 제고를 위해 기존 컴퓨터시스템을 개선하고자 하는 수요가 증가하고 있다. 근래에는 전산시스템 구축 수요는 기업 등에서 어느 정도 구축 사업이 마무리됨에 따라 과거처럼 폭발적인 증가세를 보이지는 않겠지만, 시스템의 기능 개선이나 사용자 환경(UI)의 편의성, 유무선 서비스 통합 제공 등 서비스 고도화를 위한 수요가 증가하고 있다. 최근 휴대성이 강화된 스마트 기기로 사용자 컴퓨터시스템설계 및 분석가는 조직의 효율적인 운영을 돕기 위해 현행 컴퓨터 시스템을 분석하여 정보 시스템을 통한 해결책을 설계하는 일을 한다. 경제？산업 분야를 비롯하여 사회 전반에 디지털 전환이 이루어짐에 따라 기업이 비즈니스를 위해 그리고 정부와 공공기관이 대국민 서비스를 제공하기 위해 컴퓨터시스템을 새롭게 구축하거나 또는 기존 업무의 효율화와 소비자 만족도 제고를 위해 기존 컴퓨터시스템을 개선하고자 하는 수요가 증가하고 있다. 근래에는 전산시스템 구축 수요는 기업 등에서 어느 정도 구축 사업이 마무리됨에 따라 과거처럼 폭발적인 증가세를 보이지는 않겠지만, 시스템의 기능 개선이나 사용자 환경(UI)의 편의성, 유무선 서비스 통합 제공 등 서비스 고도화를 위한 수요가 증가하고 있다. 최근 휴대성이 강화된 스마트 기기로 사용자</p>
 						</div>
@@ -398,11 +408,18 @@
 			const eduDistScore = echarts.init(eduDistDom);
 
 			const eduDistOpt = {
+				grid: {
+					left: 10,
+					right: 10,
+					top: 10,
+					bottom: 20,
+					containLabel: false // 축 레이블이 있는 경우만 true (없으면 false)
+				},
 				xAxis: {
 					type: 'category',
 					data: ['감소', '다소 감소', '유지', '다소 증가', '증가'],
 					axisLine: { show: false },
-        			axisTick: { show: false }
+        			axisTick: { show: false },
 				},
 				yAxis: { type: 'value', show: false },
 				series: [
@@ -423,6 +440,7 @@
 			};
 
 			eduDistScore.setOption(eduDistOpt);
+			window.addEventListener('resize', () => eduDistScore.resize());
 
 		</script>
 		<div data-include="../include/footer.html"></div>
