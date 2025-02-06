@@ -7,7 +7,7 @@
 		ig-layout[type="ellipsis"] {width:auto; margin:0;}
 		[class*="layout-"] {max-width:100%;}
 		[class*="layout-full"] {display:block; width:100dvw;}
-		[class*="layout-center"] {overflow-y:auto; overflow-x:hidden; display:inline-flex; place-content:center; flex-wrap:wrap; width:100dvw; min-height:100dvh;}
+		[class*="layout-center"] {overflow-y:auto; overflow-x:hidden; display:inline-flex; place-content:center; width:100dvw; min-height:100dvh;}
 		[class*="layout-inner"] {min-width:var(--init-w); width:var(--init-w); margin:0 auto;}
 		[class*="layout-inline-flex"] {display:inline-flex;}
 		[class*="layout-flex"] {display:flex; width:100%;}
