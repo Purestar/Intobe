@@ -18,66 +18,91 @@
 		<div data-include="../include/header.html"></div>
 		<div id="container">
 			<div class="layout-inner contents">
-				<div class="layout-full txt-c">
+
+				<!--<div class="layout-full txt-c">
 					<h2 class="sub-title"><strong>진로 맵</strong></h2>
 				</div>
-				<div class="layout-flex justify-center gap-20 mt-40 m-mt-48">
-					<button type="button" class="btn-type-b-blk btn-sz-56 btn-icon">
-						<i class="ic-book"></i>
-						어학성적 등록
-					</button>
-					<button type="button" class="btn-type-b-blk btn-sz-56 btn-icon">
-						<i class="ic-cert"></i>
-						자격증 등록
-					</button>
-				</div>
-				<div class="layout-flex gap-12 mt-60" data-scroll="hide">
-					<label class="form-opt-btn-03">
-						<input type="radio" checked>
-						<span class="opt-txt">방사선사</span>
-					</label>
-					<label class="form-opt-btn-03">
-						<input type="radio">
-						<span class="opt-txt">방사선산업 안전 원 및 위험관리원</span>
-					</label>
-					<label class="form-opt-btn-03">
-						<input type="radio">
-						<span class="opt-txt">진로(직업)1</span>
-					</label>
-					<label class="form-opt-btn-03">
-						<input type="radio">
-						<span class="opt-txt">진로(직업)2</span>
-					</label>
-					<label class="form-opt-btn-03">
-						<input type="radio">
-						<span class="opt-txt">진로(직업)3</span>
-					</label>
-					<label class="form-opt-btn-03">
-						<input type="radio">
-						<span class="opt-txt">진로(직업)4</span>
-					</label>
-				</div>
-				<div class="layout-flex justify-end mt-40 m-mt-60">
-					<button type="button" class="btn-icon">이전진로<i class="ic-arrow-d"></i></button>
-				</div>
+				-->
 
 				<div class="layout-flex align-center gap-20 mt-16">
-					<h3 class="tit-01 ws-nw">교과</h3>
+					<h3 class="tit-01 ws-nw">교과 진로맵</h3>
 					<hr class="dvd-type-01">
 				</div>
-				<div class="layout-flex gap-12 mt-16 m-mt-20" data-scroll="hide">
-					<label class="form-opt-btn-02">
+				<div class="layout-flex justify-end mt-20">
+					<button type="button" class="btn-icon">나의 진로 history<i class="ic-arrow-d"></i></button>
+				</div>
+				<div class="layout-flex gap-12 mt-40 ws-nw" data-scroll="hide">
+					<label class="form-opt-btn-04">
 						<input type="radio" checked>
-						<span class="opt-txt">전체</span>
+						<span class="opt-txt">
+							<span class="chip-type-04"><b>전공기반</b></span>
+							방사선사
+						</span>
 					</label>
-					<label class="form-opt-btn-02">
+					<label class="form-opt-btn-04">
 						<input type="radio">
-						<span class="opt-txt">이수</span>
+						<span class="opt-txt">
+							<span class="chip-type-04"><b>전공기반</b></span>
+							방사선산업 안전원 및 위험관리원
+						</span>
 					</label>
-					<label class="form-opt-btn-02">
+					<label class="form-opt-btn-04">
 						<input type="radio">
-						<span class="opt-txt">미이수</span>
+						<span class="opt-txt">
+							<span class="chip-type-04"><b>직무기반</b></span>
+							은행사무원
+						</span>
 					</label>
+					<label class="form-opt-btn-04">
+						<input type="radio">
+						<span class="opt-txt">
+							<span class="chip-type-04"><b>직무기반</b></span>
+							은행사무원
+						</span>
+					</label>
+				</div>
+
+				<div class="box-type-01-01 mt-20">
+					<div class="layout-flex flex-col gap-16">
+						<div class="layout-flex align-center gap-40 m-gap-24 m-flex-col m-flex-start">
+							<h2 class="tit-02 wb-keep cr-blk"><strong>관련전공</strong></h2>
+							<div data-scroll="hide">
+								<label class="form-opt-btn-02">
+									<input type="radio" checked>
+									<span class="opt-txt">컴퓨터공학전공</span>
+								</label>
+								<label class="form-opt-btn-02">
+									<input type="radio">
+									<span class="opt-txt">AI빅데이터공학과과</span>
+								</label>
+								<label class="form-opt-btn-02">
+									<input type="radio">
+									<span class="opt-txt">소프트웨어융합학과</span>
+								</label>
+								<label class="form-opt-btn-02">
+									<input type="radio">
+									<span class="opt-txt">소프트웨어융합학과</span>
+								</label>
+							</div>
+						</div>
+						<div class="layout-flex align-center gap-40 m-gap-24 m-flex-col m-flex-start">
+							<h2 class="tit-02 wb-keep cr-blk"><strong>이수구분</strong></h2>
+							<div data-scroll="hide">
+								<label class="form-opt-btn-02">
+									<input type="radio" checked>
+									<span class="opt-txt">전체</span>
+								</label>
+								<label class="form-opt-btn-02">
+									<input type="radio">
+									<span class="opt-txt">이수</span>
+								</label>
+								<label class="form-opt-btn-02">
+									<input type="radio">
+									<span class="opt-txt">미이수</span>
+								</label>
+							</div>
+						</div>
+					</div>
 				</div>
 
 				<h4 class="mt-40 m-mt-60 cr-blk fw-m">1학년</h4>
@@ -233,6 +258,17 @@
 				<div class="layout-flex align-center gap-20 mt-80">
 					<h3 class="tit-01 ws-nw">어학/자격</h3>
 					<hr class="dvd-type-01">
+				</div>
+
+				<div class="layout-flex justify-end m-justify-start gap-20 mt-20 m-mt-40">
+					<button type="button" class="btn-type-b-blk btn-sz-56 btn-icon">
+						<i class="ic-book"></i>
+						<b>어학성적 등록</b>
+					</button>
+					<button type="button" class="btn-type-b-blk btn-sz-56 btn-icon">
+						<i class="ic-cert"></i>
+						<b>자격증 등록</b>
+					</button>
 				</div>
 
 				<ul class="qualification-wrap">

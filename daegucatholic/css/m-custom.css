@@ -58,7 +58,7 @@
 	/* Button */
 		/* Size */
 			.btn-sz-32 {border-radius:6.67vw; height:6.67vw; font-size:2.78vw;}
-			.btn-sz-56 {border-radius:2.22vw; height:12.50vw; font-size:3.33vw;}
+			.btn-sz-56 {border-radius:8.89vw; height:8.89vw; font-size:3.33vw;}
 
 		/* Other */
 			.btn-icon {gap:10px;}
@@ -71,6 +71,8 @@
 		[class*="chip-type-01"] {border-radius:0.56vw; height:4.72vw; padding:0 2.22vw; font-size:2.78vw;}
 		[class*="chip-type-02"] {border-radius:4.72vw; height:4.72vw; padding:0 2.22vw; font-size:2.78vw;}
 
+		[class*="chip-type-04"] {border-radius:6.67vw; height:6.67vw; padding:0 2.78vw; font-size:3.33vw;}
+
 	/* Divider */
 		.m-divider {background:#f8f8f8; height:1.81vw; margin:0 calc(var(--init-mobile-inner) * -1);}
 
@@ -82,10 +84,11 @@
 			.ic-arrow-l:before {width:1.67vw; height:2.78vw;}
 			.ic-arrow-u:before {width:3.33vw; height:1.94vw;}
 			.ic-arrow-b:before {width:1.94vw; height:1.53vw;}
+			.ic-arrow-d:before {width:2.92vw; height:1.67vw;}
 			.ic-arrow-u-02:before {width:3.19vw; height:2.78vw;}
-			.ic-book {width:9.44vw; height:9.44vw;}
+			.ic-book {width:7.22vw; height:7.22vw;}
 			.ic-book:before {width:4.72vw; height:4.58vw;}
-			.ic-cert {width:9.44vw; height:9.44vw;}
+			.ic-cert {width:7.22vw; height:7.22vw;}
 			.ic-cert:before {width:5.97vw; height:5.00vw;}
 			.ic-chk:before {width:3.89vw; height:3.61vw;}
 			.ic-chk-02:before {width:3.33vw; height:2.50vw;}
@@ -139,6 +142,11 @@
 
 				.form-opt-btn-03 .opt-txt,
 				.form-opt-btn-03 input:checked + .opt-txt {border-radius:8.89vw; height:8.89vw; font-size:3.33vw;}
+
+				.form-opt-btn-04 .opt-txt,
+				.form-opt-btn-04 input:checked + .opt-txt {gap:2.78vw; border-radius:8.89vw; height:8.89vw; padding:0 2.78vw 0 0.83vw; font-size:3.33vw;}
+				.form-opt-btn-04 .opt-txt,
+				.form-opt-btn-04 input:checked + .opt-txt {border-width:0.28vw;}
 
 			/* Check Box */
 				.form-opt-chk-01 .opt-txt {width:5.56vw; height:5.56vw;}

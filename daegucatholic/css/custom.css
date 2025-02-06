@@ -97,7 +97,7 @@
 
 	/* Size */
 		.btn-sz-32 {border-radius:32px; height:32px; font-size:14px;}
-		.btn-sz-56 {height:56px; font-size:18px;}
+		.btn-sz-56 {border-radius:56px; height:56px; font-size:18px;}
 
 	/* Other */
 		.btn-icon {display:inline-flex; align-items:center; gap:10px;}
@@ -127,6 +127,8 @@
 
 	.chip-type-03-blu {background:#014099;}
 
+	[class*="chip-type-04"] {background:#f1f1f1; border:none; border-radius:20px; height:26px; padding:0 10px; font-size:13px; color:#666;}
+
 /* Divider */
 	.dvd-type-01 {width:100%; height:1px; background:#efefef;}
 
@@ -144,6 +146,12 @@
 			.form-opt-btn-03 .opt-txt,
 			.form-opt-btn-03 input:checked + .opt-txt {background:#efefef; border-color:#efefef; border-radius:46px; height:46px; min-height:auto; padding:0 32px; font-size:16px; color:#666; white-space:nowrap;}
 			.form-opt-btn-03 input:checked + .opt-txt {background:#1976c0; border-color:#1976c0; color:white;}
+
+			.form-opt-btn-04 .opt-txt,
+			.form-opt-btn-04 input:checked + .opt-txt {gap:16px; background:none; border-radius:34px; min-height:auto; height:34px; padding:0 16px 0 4px; font-size:14px;}
+			.form-opt-btn-04 .opt-txt {border:2px solid #e2e2e2; color:#666;}
+			.form-opt-btn-04 input:checked + .opt-txt {border:2px solid var(--mc); color:var(--mc);}
+			.form-opt-btn-04 input:checked + .opt-txt .chip-type-04 {background:var(--mc); color:white;}
 
 		/* Check Box */
 			.form-opt-chk-01 .opt-txt {display:flex; align-items:center; justify-content:center; background:white; border:1px solid #f1f3ff; border-radius:50%; width:32px; height:32px;}
