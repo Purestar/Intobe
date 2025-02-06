@@ -19,8 +19,8 @@
 			<!-- 공통 -->
 			<h1 style="font-size:30px; font-weight:bold;">공통</h1>
 			<div class="layout-grid mt-20" style="gap: 20px; grid-template-columns: repeat(7, minmax(0px, 1fr));">
-				<!-- 관심직무(UEN_030000) -->
-				<button class="btn-type" @click="toggleModal('modal1')">활동 뱃지 획득</button>
+				<!-- 활동 배지 획득(UEN_030000) -->
+				<button class="btn-type" @click="toggleModal('modal1')">활동 배지 획득</button>
 				<n-modal v-model:show="modals.modal1" class="pop-type">
 					<n-card style="width: 580px" :bordered="false" size="huge" role="dialog" aria-modal="true">
 						<template #header>
@@ -39,6 +39,31 @@
 
 						<template #footer>
 							<button type="button" class="btn-type-b w100">확인</button>
+						</template>
+					</n-card>
+				</n-modal>
+
+				<!-- 배지 획득(UEN_040000) -->
+				<button class="btn-type" @click="toggleModal('modal18')">배지 획득</button>
+				<n-modal v-model:show="modals.modal18" class="pop-type">
+					<n-card style="width: 580px" :bordered="false" size="huge" role="dialog" aria-modal="true">
+						<template #header>
+							<button type="button" class="pop-close-no-header" @click="toggleModal('modal18')"></button>
+						</template>
+
+						<div class="layout-flex align-center flex-col txt-c">
+							<div class="thumb-type-badge-02">
+								<div class="thumb-inner">
+									<img src="../images/badge/major.png">
+									<div class="txt-department">신소재화학공학과</div>
+								</div>
+							</div>
+							<p class="fs-24 m-mt-50"><strong>축하합니다!</strong></p>
+							<p class="cr-gry mt-20 m-fs-24 m-mt-40">DCU배지를 취득했습니다!<br>취득한 배지를 확인해보시겠어요?</p>
+						</div>
+
+						<template #footer>
+							<button type="button" class="btn-type-b w100">취득한 DCU배지 확인</button>
 						</template>
 					</n-card>
 				</n-modal>

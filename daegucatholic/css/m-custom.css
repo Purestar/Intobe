@@ -280,6 +280,11 @@
 		[class*="thumb-type-01"] .thumb-inner > * {padding:3.33vw;}
 		[class*="thumb-type-01"] .thumb-c {font-size:3.33vw;}
 
+		[class*="thumb-type-badge"] .thumb-inner {width:47.08vw; height:47.08vw;}
+		[class*="thumb-type-badge"] [class*="txt-department"] {top:30.56vw; height:8.06vw; padding:0 5.56vw 0 4.17vw; font-size:4.86vw;}
+		[class*="thumb-type-badge"] .txt-department-01 {font-size:3.33vw;}
+		[class*="thumb-type-badge"] .thumb-rb {padding:0 5.56vw 0 0;}
+
 	/* Tree Menu */
 		.tree-type-01 {position:relative; display:flex; border:0; padding:0; height:18vw; font-size:4.17vw;}
 		.tree-type-01 .tree-inner {flex:1;}
