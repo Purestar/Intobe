@@ -280,10 +280,15 @@
 		[class*="thumb-type-01"] .thumb-inner > * {padding:3.33vw;}
 		[class*="thumb-type-01"] .thumb-c {font-size:3.33vw;}
 
-		[class*="thumb-type-badge"] .thumb-inner {width:47.08vw; height:47.08vw;}
+		[class*="thumb-type-badge"] {width:21.11vw;}
 		[class*="thumb-type-badge"] [class*="txt-department"] {top:30.56vw; height:8.06vw; padding:0 5.56vw 0 4.17vw; font-size:4.86vw;}
 		[class*="thumb-type-badge"] .txt-department-01 {font-size:3.33vw;}
 		[class*="thumb-type-badge"] .thumb-rb {padding:0 5.56vw 0 0;}
+		[class*="thumb-type-badge"] .thumb-rb img {width:15.28vw; height:8.33vw;}
+
+		.thumb-type-badge-01 {width:47.08vw; height:47.08vw;}
+		.thumb-type-badge-02 {width:35.97vw; height:35.97vw;}
+		.thumb-type-badge-02 [class*="txt-department"] {top:23.34vw; height:6.15vw; padding:0 4.24vw 0 3.18vw; font-size:3.71vw;}
 
 	/* Tree Menu */
 		.tree-type-01 {position:relative; display:flex; border:0; padding:0; height:18vw; font-size:4.17vw;}
