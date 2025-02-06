@@ -117,6 +117,7 @@
 			.ic-chat-discom:before {width:3.47vw; height:3.33vw;}
 			.ic-chat-copy:before {width:3.33vw; height:3.19vw;}
 			.ic-chat-tdot:before {width:4.86vw; height:0.97vw;}
+			.ic-chat-hamburger:before {background-position:var(--bp-100) var(--bp-500); width:5.42vw; height:4.86vw;}
 
 		/* Mobile */
 			.ic-hamburger:before {background-position:0 var(--bp-500); width:5.56vw; height:4.31vw;}
@@ -411,6 +412,33 @@
 			.chatbot-chat-history-ctgy-list .chatbot-btn-tdot {width:9.72vw;}
 			.chatbot-chat-history-ctgy-list .chatbot-item-util-menu {right:6.94vw; top:2.22vw; border-radius:2.78vw; width:31.67vw;}
 			.chatbot-chat-history-ctgy-list .chatbot-item-util-menu button {padding:0 3.33vw;}
+
+		/* 챗봇 페이지 */
+			.chatpage-wrap {position:relative; display:flex; flex-direction:column;}
+			.chatpage-panel {position:absolute; left:0; top:0; flex:1; width:100%; padding:0 19.44vw 0 0;}
+			.chatpage-panel::before {content:""; position:absolute; left:0; top:0; width:100%; height:100%; background:rgba(0, 0, 0, 0.5);}
+			.chatpage-panel .chatpage-panel-head {position:relative; background:white; padding:0 5vw;}
+			.chatpage-panel .chatpage-panel-head-inner {height:var(--init-hh);}
+
+			.chatpage-wrap .chatpage-chat-title {font-size:5vw;}
+			.chatpage-wrap .chatbot-chat-list {gap:7.5vw; width:100%; padding:0 5vw;}
+			.chatpage-wrap .chat-msg-you {border-radius:4.44vw 0 4.44vw 4.44vw; min-height:11.11vw; padding:3.33vw 5.00vw; font-size:3.33vw;}
+			.chatpage-wrap .chat-msg-bot-wrap {gap:1.67vw;}
+			.chatpage-wrap .chat-msg-bot-wrap > img:first-child {width:11.11vw; height:11.11vw;}
+			.chatpage-wrap .chat-msg-bot {min-height:11.11vw; padding:3.33vw 0; font-size:3.33vw;}
+			.chatpage-wrap .chat-msg-info {gap:2.22vw; margin-top:3.33vw; padding:0; font-size:3.33vw;}
+			.chatpage-wrap .chat-msg-btn-group {gap:2.22vw;}
+			.chatpage-wrap .chatpage-chat-head {flex:0 0 var(--init-hh); background:white; border-bottom:1px solid #e2e2e2; height:var(--init-hh); padding:0 5vw;}
+			.chatpage-wrap .chatpage-chat-foot-inner {width:100%; padding:0 5vw 5vw;}
+			.chatpage-wrap .chatpage-chat-foot .chat-send-btn {right:8.33vw; top:3vw;}
+
+			.chatpage-wrap .chatbot-chat-history-ctgy {padding:0 20px;}
+			.chatpage-wrap .chatbot-chat-history-list {width:100%;}
+			.chatpage-wrap .chatbot-chat-history-ctgy-list {gap:3.33vw;}
+			.chatpage-wrap .chatbot-chat-history-ctgy-list > * {padding:0 5vw;}
+			.chatpage-wrap .chatpage-room-btn {height:7.22vw;}
+			.chatpage-wrap .chatpage-room-btn[contenteditable] {border-radius:1.11vw; width:calc(100% + 6.39vw); margin:0 -3.19vw; padding:0 2.22vw;}
+			.chatpage-wrap .chatbot-btn-tdot {right:2vw; height:calc(100% - 8px);}
 
 		/* 마이페이지 */
 			.mypage-side {width:100%;}

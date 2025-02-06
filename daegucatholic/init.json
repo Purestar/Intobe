@@ -15,6 +15,7 @@
 			{ "menu": "관심직무설정", "src": "./page/UEN_020000.html", "state": "comp" },
 			{ "menu": "팝업", "src": "./page/popup.html", "state": "comp" },
 			{ "menu": "챗봇", "src": "./page/UCH_010000.html", "state": "comp" },
+			{ "menu": "챗봇(페이지)", "src": "./page/UCH_010001.html", "state": "comp" },
 			{ "menu": "배지", "src": "./page/badge.html", "state": "comp" }
 		], "state": "comp" },
 		{ "id": "직업정보", "submenu": [

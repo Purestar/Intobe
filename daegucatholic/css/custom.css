@@ -567,6 +567,45 @@
 		.chatbot-chat-history-ctgy-list .chatbot-item-util-menu button {padding:0 16px;}
 		.chatbot-chat-history-ctgy-list .chatbot-item-util-menu.active {display:block;}
 
+	/* 챗봇 페이지 */
+		.chatpage-wrap {display:flex; height:calc(100dvh - var(--init-hh) - var(--init-fh));}
+		.chatpage-wrap > * {height:100%;}
+		.chatpage-panel {display:none; flex:0 0 260px; background:white; width:260px; padding:0 0 20px;}
+		.chatpage-panel .chatpage-panel-head {padding:0 20px;}
+		.chatpage-panel .chatpage-panel-head-inner {display:flex; justify-content:space-between; align-items:center; height:60px;}
+		.chatpage-panel .chatpage-panel-head.active-search .chatpage-history-btn,
+		.chatpage-panel .chatpage-panel-head.active-search .chatpage-new-btn,
+		.chatpage-panel .chatpage-panel-head .chatpage-history-search,
+		.chatpage-panel .chatpage-panel-head .chatpage-history-search-close {display:none;}
+		.chatpage-panel .chatpage-panel-head.active-search .chatpage-history-search,
+		.chatpage-panel .chatpage-panel-head.active-search .chatpage-history-search-close {display:block;}
+		.chatpage-panel .chatpage-panel-head.active-search .chatpage-history-close {display:none;}
+		.chatpage-panel .chatpage-panel-head.active-search .chatpage-panel-head-inner {border-bottom:1px solid #ccc;}
+		.chatpage-panel.active {display:flex; flex-direction:column; z-index:10;}
+		.chatpage-chat-cont {overflow-y:auto; display:flex; flex-direction:column; flex:1; background:#f5f5f5;}
+
+		.chatpage-wrap .chatpage-chat-title {font-size:20px; font-weight:700;}
+		.chatpage-wrap .chatpage-chat-intro {display:flex; flex-direction:column; justify-content:center; align-items:center; height:100%; line-height:var(--init-lh);}
+		.chatpage-wrap .chatbot-chat-list {display:flex; flex-direction:column; gap:28px; width:766px; margin:0 auto;}
+		.chatpage-wrap .chat-msg-you {align-self:flex-end; background:#ffd737; border-radius:20px 0 20px 20px; min-height:46px; padding:13px 24px; font-size:16px; color:black;}
+		.chatpage-wrap .chat-msg-bot-wrap {display:flex; align-items:flex-start; align-self:flex-start; gap:12px;}
+		.chatpage-wrap .chat-msg-bot {min-height:46px; padding:13px 0; font-size:16px; color:black;}
+		.chatpage-wrap .chat-msg-info {display:flex; gap:10px; font-size:14px; color:#666;}
+		.chatpage-wrap .chat-msg-btn-group {display:flex; gap:10px;}
+
+		.chatpage-wrap .chatpage-chat-head {display:flex; justify-content:space-between; align-items:center; position:sticky; left:0; top:0; background:#f5f5f5; padding:20px 40px;}
+		.chatpage-wrap .chatpage-chat-foot {position:sticky; left:0; bottom:0; display:flex; align-items:center; background:#f5f5f5;}
+		.chatpage-wrap .chatpage-chat-foot-inner {position:relative; width:766px; margin:0 auto; padding:0 0 60px;}
+		.chatpage-wrap .chatpage-chat-foot .chat-send-btn {display:flex; position:absolute; right:18px; top:10px; height:auto;}
+
+		.chatpage-wrap .chatbot-chat-history-ctgy {padding:0 20px;}
+		.chatpage-wrap .chatbot-chat-history-list {width:100%;}
+		.chatpage-wrap .chatbot-chat-history-ctgy-list {display:flex; flex-direction:column; gap:12px;}
+		.chatpage-wrap .chatbot-chat-history-ctgy-list > * {padding:0 20px;}
+		.chatpage-wrap .chatpage-room-btn {height:28px; padding:0;}
+		.chatpage-wrap .chatpage-room-btn[contenteditable] {border:1px solid black; border-radius:6px; width:calc(100% + 20px); margin:0 -10px; padding:0 10px;}
+		.chatpage-wrap .chatbot-btn-tdot {right:11px; top:50%; height:calc(100% - 8px); transform:translate(0, -50%);}
+
 		@keyframes chat-loading {
 			0%, 80%, 100% { opacity:0; transform: scale(0); }
 			40% { opacity:1; transform: scale(1) }
