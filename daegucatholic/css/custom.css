@@ -561,7 +561,7 @@
 		.chatbot-chat-history-ctgy-list > *:hover > button {background:#fafafa; color:black;}
 		.chatbot-chat-history-ctgy-list .chatbot-btn-tdot {display:none; justify-content:center; align-items:center; position:absolute; right:0; top:0; width:42px; height:100%;}
 		.chatbot-chat-history-ctgy-list > *:hover .chatbot-btn-tdot {display:flex;}
-		.chatbot-chat-history-ctgy-list .chatbot-item-util-menu {display:none; position:absolute; right:12px; top:36px; background:white; border:1px solid #e2e2e2; border-radius:10px; width:130px;}
+		.chatbot-chat-history-ctgy-list .chatbot-item-util-menu {display:none; position:absolute; right:12px; top:26px; background:white; border:1px solid #e2e2e2; border-radius:10px; width:130px;}
 		.chatbot-chat-history-ctgy-list .chatbot-item-util-menu > * {width:100%; text-align:left;}
 		.chatbot-chat-history-ctgy-list .chatbot-item-util-menu > * + * {border-top:1px solid #e2e2e2;}
 		.chatbot-chat-history-ctgy-list .chatbot-item-util-menu button {padding:0 16px;}
