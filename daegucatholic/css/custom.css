@@ -568,11 +568,11 @@
 		.chatbot-chat-history-ctgy-list .chatbot-item-util-menu.active {display:block;}
 
 	/* 챗봇 페이지 */
-		.chatpage-wrap {display:none; position:fixed; left:0; top:0; width:100dvw; height:100dvh;}
+		.chatpage-wrap {display:none; position:fixed; left:0; top:0; width:100dvw; height:100dvh; z-index:999;}
 		.chatpage-wrap.active {display:flex;}
 		.chatpage-wrap > * {height:100%;}
 		.chatpage-panel {display:none; flex:0 0 260px; width:260px; padding:0 0 20px;}
-		.chatpage-panel .chatpage-panel-head {padding:0 20px;}
+		.chatpage-panel .chatpage-panel-head {background:white; padding:0 20px;}
 		.chatpage-panel .chatpage-panel-head-inner {display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid transparent; height:60px;}
 		.chatpage-panel .chatpage-panel-head.active-search .chatpage-history-btn,
 		.chatpage-panel .chatpage-panel-head.active-search .chatpage-new-btn,
