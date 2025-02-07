@@ -587,7 +587,7 @@
 
 		.chatpage-wrap .chatpage-chat-title {font-size:20px; font-weight:700;}
 		.chatpage-wrap .chatpage-chat-intro {display:flex; flex-direction:column; justify-content:center; align-items:center; height:100%; line-height:var(--init-lh);}
-		.chatpage-wrap .chatbot-chat-list {display:flex; flex-direction:column; gap:28px; width:766px; margin:0 auto;}
+		.chatpage-wrap .chatbot-chat-list {display:flex; flex-direction:column; flex:1; gap:28px; width:766px; margin:0 auto;}
 		.chatpage-wrap .chat-msg-you {align-self:flex-end; background:#ffd737; border-radius:20px 0 20px 20px; min-height:46px; padding:13px 24px; font-size:16px; color:black;}
 		.chatpage-wrap .chat-msg-bot-wrap {display:flex; align-items:flex-start; align-self:flex-start; gap:12px;}
 		.chatpage-wrap .chat-msg-bot {min-height:46px; padding:13px 0; font-size:16px; color:black;}
