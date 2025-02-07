@@ -605,6 +605,7 @@
 		.chatpage-wrap .chatbot-chat-history-ctgy-list > * {padding:0 20px;}
 		.chatpage-wrap .chatpage-room-btn {height:28px; padding:0;}
 		.chatpage-wrap .chatpage-room-btn[contenteditable] {border:1px solid black; border-radius:6px; width:calc(100% + 20px); margin:0 -10px; padding:0 10px;}
+		.chatpage-wrap .chatpage-room-input {border:1px solid black; border-radius:6px; width:calc(100% + 20px); margin:0 -10px; padding:0 10px;}
 		.chatpage-wrap .chatbot-btn-tdot {right:11px; top:50%; height:calc(100% - 8px); transform:translate(0, -50%);}
 
 		@keyframes chat-loading {

@@ -440,6 +440,7 @@
 			.chatpage-wrap .chatbot-chat-history-ctgy-list > * {padding:0 5vw;}
 			.chatpage-wrap .chatpage-room-btn {height:7.22vw;}
 			.chatpage-wrap .chatpage-room-btn[contenteditable] {border-radius:1.11vw; width:calc(100% + 6.39vw); margin:0 -3.19vw; padding:0 2.22vw;}
+			.chatpage-wrap .chatpage-room-input {border-radius:1.11vw; width:calc(100% + 6.39vw); margin:0 -3.19vw; padding:0 2.22vw;}
 			.chatpage-wrap .chatbot-btn-tdot {right:2vw; height:calc(100% - 8px);}
 
 		/* 마이페이지 */
