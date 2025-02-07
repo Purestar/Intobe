@@ -419,6 +419,8 @@
 			.chatpage-panel::before {content:""; position:absolute; left:0; top:0; width:100%; height:100%; background:rgba(0, 0, 0, 0.5);}
 			.chatpage-panel .chatpage-panel-head {position:relative; background:white; padding:0 5vw;}
 			.chatpage-panel .chatpage-panel-head-inner {height:var(--init-hh);}
+			.chatpage-panel .chatpage-panel-head .chatpage-history-close {display:block;}
+			.chatpage-panel .chatpage-panel-head.active-search .chatpage-history-close {display:none;}
 
 			.chatpage-wrap .chatpage-chat-title {font-size:5vw;}
 			.chatpage-wrap .chatbot-chat-list {gap:7.5vw; width:100%; padding:0 5vw;}

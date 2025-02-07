@@ -568,18 +568,19 @@
 		.chatbot-chat-history-ctgy-list .chatbot-item-util-menu.active {display:block;}
 
 	/* 챗봇 페이지 */
-		.chatpage-wrap {display:flex; height:calc(100dvh - var(--init-hh) - var(--init-fh));}
+		.chatpage-wrap {display:none; position:fixed; left:0; top:0; width:100dvw; height:100dvh;}
+		.chatpage-wrap.active {display:flex;}
 		.chatpage-wrap > * {height:100%;}
-		.chatpage-panel {display:none; flex:0 0 260px; background:white; width:260px; padding:0 0 20px;}
+		.chatpage-panel {display:none; flex:0 0 260px; width:260px; padding:0 0 20px;}
 		.chatpage-panel .chatpage-panel-head {padding:0 20px;}
-		.chatpage-panel .chatpage-panel-head-inner {display:flex; justify-content:space-between; align-items:center; height:60px;}
+		.chatpage-panel .chatpage-panel-head-inner {display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid transparent; height:60px;}
 		.chatpage-panel .chatpage-panel-head.active-search .chatpage-history-btn,
 		.chatpage-panel .chatpage-panel-head.active-search .chatpage-new-btn,
 		.chatpage-panel .chatpage-panel-head .chatpage-history-search,
 		.chatpage-panel .chatpage-panel-head .chatpage-history-search-close {display:none;}
 		.chatpage-panel .chatpage-panel-head.active-search .chatpage-history-search,
 		.chatpage-panel .chatpage-panel-head.active-search .chatpage-history-search-close {display:block;}
-		.chatpage-panel .chatpage-panel-head.active-search .chatpage-history-close {display:none;}
+		.chatpage-panel .chatpage-panel-head .chatpage-history-close {display:none;}
 		.chatpage-panel .chatpage-panel-head.active-search .chatpage-panel-head-inner {border-bottom:1px solid #ccc;}
 		.chatpage-panel.active {display:flex; flex-direction:column; z-index:10;}
 		.chatpage-chat-cont {overflow-y:auto; display:flex; flex-direction:column; flex:1; background:#f5f5f5;}
