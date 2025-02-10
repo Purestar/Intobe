@@ -198,7 +198,7 @@ $.fn.prevttg = function () {
 	var $obj = $(this);
 
 	$obj.on("click", function (e) {
-		
+
 		if (e.target.tagName != "TEXTAREA" && e.target.tagName != "BUTTON" && e.target.tagName != "INPUT" && e.target.tagName != "A") {
 			$("[data-tta='"+ prevAct +"']").removeClass("active");
 			$("[data-ttatg='"+ prevAct +"']").removeClass("active");
@@ -529,7 +529,7 @@ $.fn.swiperInit = function () {
 			clickable: true
 		});
 	});
-	
+
 	$(".board-vertical").each(function () {
 		swiperTG = this;
 		new Swiper(swiperTG.querySelector(".swiper"), {
@@ -538,6 +538,7 @@ $.fn.swiperInit = function () {
 			delay: 3000,
 			disableOnInteraction: false,
 			},
+			slidesPerView: 2,
 			navigation: {
 				nextEl: swiperTG.querySelector(".swiper-button-next"),
 				prevEl: swiperTG.querySelector(".swiper-button-prev"),

@@ -6,28 +6,31 @@
 			<div class="swiper">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide main-slide01">
-						<img src="../images/temp/mainvisual04.png">
+						<img src="../images/temp/mainvisual.png">
 						<div class="swiper-cont">
 							<p>추천 콘텐츠 찾아보기</p>
-							<p class="tit-01 mt30">최근 무엇에<br>관심 있으세요?</p>
-							<a href="#" class="mt40">자세히 보기</a>
+							<p class="tit-01 mt5">최근 무엇에 관심 있으세요?</p>
+							<a href="#" class="mt24">자세히 보기</a>
+						</div>
+					</div>
+					<div class="swiper-slide main-slide01">
+						<img src="../images/temp/mainvisual02.png">
+						<div class="swiper-cont">
+							<p>사이트이용방법</p>
+							<p class="tit-01 mt5">MOCA 플랫폼? 자세히 알아보기!</p>
+							<a href="#" class="mt24">자세히 보기</a>
+						</div>
+					</div>
+					<div class="swiper-slide main-slide01">
+						<img src="../images/temp/mainvisual03.png">
+						<div class="swiper-cont">
+							<p>추천 모듈 찾기</p>
+							<p class="tit-01 mt5">콘텐츠 + 콘텐츠 모듈 학습하기!</p>
+							<a href="#" class="mt24">자세히 보기</a>
 						</div>
 					</div>
 					<div class="swiper-slide main-slide01">
 						<img src="../images/temp/mainvisual04.png">
-						<div class="swiper-cont">
-							<p>추천 콘텐츠 찾아보기</p>
-							<p class="tit-01 mt30">최근 무엇에<br>관심 있으세요?</p>
-							<a href="#" class="mt40">자세히 보기</a>
-						</div>
-					</div>
-					<div class="swiper-slide main-slide01">
-						<img src="../images/temp/mainvisual04.png">
-						<div class="swiper-cont">
-							<p>추천 콘텐츠 찾아보기</p>
-							<p class="tit-01 mt30">최근 무엇에<br>관심 있으세요?</p>
-							<a href="#" class="mt40">자세히 보기</a>
-						</div>
 					</div>
 				</div>
 			</div>
@@ -40,13 +43,13 @@
 				<div class="swiper">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
-							<a href="#" class="link-text elps-02">[필독] 2021년 6월 2일부터 신입사원 교육과정이 시작됩니다. 신입사원2021년 6월 2일부터 신입사원 교육과정이 시작됩니다. 신입사원 . 신입사원 . 신입사원 . 신입사원 . 신입사원 . 신입사원2021년 6월 2일부터 신입사원 교육과정이 시작됩니다. 신입사원2021년 6월 2일부터 신입사원 교육과정이 시작됩니다. 신입사원 . 신입사원 . 신입사원 . 신입사원 . 신입사원 . 신입사원2021년 6월 2일부터 신입사원 교육과정이 시작됩니다. 신입사원2021년 6월 2일부터 신입사원 교육과정이 시작됩니다. 신입사원 . 신입사원 . 신입사원 . 신입사원 . 신입사원 . 신입사원2021년 6월 2일부터 신입사원 교육과정이 시작됩니다. 신입사원2021년 6월 2일부터 신입사원 교육과정이 시작됩니다. 신입사원 . 신입사원 . 신입사원 . 신입사원 . 신입사원 . 신입사원 </a>
+							<a href="#" class="link-text elps">[필독] 2021년 6월 2일부터 신입사원 교육과정이 시작됩니다. 신입사원2021년 6월 2일부터 신입사원 교육과정이 시작됩니다. 신입사원 . 신입사원 . 신입사원 . 신입사원 . 신입사원 . 신입사원2021년 6월 2일부터 신입사원 교육과정이 시작됩니다. 신입사원2021년 6월 2일부터 신입사원 교육과정이 시작됩니다. 신입사원 . 신입사원 . 신입사원 . 신입사원 . 신입사원 . 신입사원2021년 6월 2일부터 신입사원 교육과정이 시작됩니다. 신입사원2021년 6월 2일부터 신입사원 교육과정이 시작됩니다. 신입사원 . 신입사원 . 신입사원 . 신입사원 . 신입사원 . 신입사원2021년 6월 2일부터 신입사원 교육과정이 시작됩니다. 신입사원2021년 6월 2일부터 신입사원 교육과정이 시작됩니다. 신입사원 . 신입사원 . 신입사원 . 신입사원 . 신입사원 . 신입사원 </a>
 						</div>
 						<div class="swiper-slide">
-							<a href="#" class="link-text elps-02">[1232필독] 2021년 6월 2일부터 신입사원 교육과정이 시작됩니다. 신입사원2021년 6월 2일부터 신입사원 교육과정이 시작됩니다. 신입사원 . 신입사원 . 신입사원 . 신입사원 . 신입사원 . 신입사원 </a>
+							<a href="#" class="link-text elps">[1232필독] 2021년 6월 2일부터 신입사원 교육과정이 시작됩니다. 신입사원2021년 6월 2일부터 신입사원 교육과정이 시작됩니다. 신입사원 . 신입사원 . 신입사원 . 신입사원 . 신입사원 . 신입사원 </a>
 						</div>
 						<div class="swiper-slide">
-							<a href="#" class="link-text elps-02">[1232필독] 2021년 6월 2일부터  </a>
+							<a href="#" class="link-text elps">[1232필독] 2021년 6월 2일부터  </a>
 						</div>
 					</div>
 				</div>

@@ -758,8 +758,8 @@
 		.main-page .main-slide {height:230px;}
 		.main-page .main-slide .swiper-button-next,
 		.main-page .main-slide .swiper-button-prev {top:85px;}
-		.main-page .main-slide01 .swiper-cont {left:80px; top:118px; font-size:18px; color:black;}
-		.main-page .main-slide01 .swiper-cont a {display:block; background:var(--bg-type01); border-radius:48px; width:160px; line-height:48px; text-align:center; color:white;}
+		.main-page .main-slide01 .swiper-cont {left:80px; top:54px; font-size:18px; color:black;}
+		.main-page .main-slide01 .swiper-cont a {display:block; background:var(--bg-type01); border-radius:40px; width:134px; line-height:40px; font-size:16px; text-align:center; color:white;}
 		.main-page .main-top {margin-top:93px; padding:0 50px;}
 		.main-page .main-top .main-notice {gap:42px;}
 		.main-page .main-top .brd-latest {width:572px;}

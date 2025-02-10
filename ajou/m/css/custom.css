@@ -884,5 +884,5 @@
 		.chain-cont > * {width:80%;}
 
 	/* 프라임 */
-		.prime {display:flex; align-items:center; background:#191510; height:100dvh; padding:0 5vw; text-align:center;}
+		.prime {display:flex; align-items:center; background:#191510; padding:0 5vw; text-align:center;}
 		.prime img {max-width:100%;}

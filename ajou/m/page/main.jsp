@@ -17,7 +17,7 @@
 						<img src="../images/temp/mainvisual02.png">
 						<div class="swiper-cont">
 							<p>사이트 이용방법</p>
-							<p class="tit-01 mt24">OSE플랫폼?<br>자세히 알아보기!</p>
+							<p class="tit-01 mt24">MOCA 플랫폼?<br>자세히 알아보기!</p>
 						</div>
 					</div>
 					<div class="swiper-slide main-slide01">
@@ -26,6 +26,9 @@
 							<p>추천 모듈 찾기</p>
 							<p class="tit-01 mt24">콘텐츠 + 콘텐츠<br>모듈 학습하기!</p>
 						</div>
+					</div>
+					<div class="swiper-slide main-slide01">
+						<img src="../images/temp/mainvisual04.png">
 					</div>
 				</div>
 			</div>
@@ -266,7 +269,7 @@
 		newContLst += '</li>';
 
 	$("[id='newContLst']").contRpt(newContLst, 8);
-															
+
 	///////////////////////////////////////
 	//	관심도 높은 모듈
 	///////////////////////////////////////
