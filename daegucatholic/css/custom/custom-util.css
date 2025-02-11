@@ -127,6 +127,8 @@
 		.grid-col-4 {grid-template-columns:repeat(4, 1fr);}
 		.grid-col-5 {grid-template-columns:repeat(5, 1fr);}
 		.grid-col-6 {grid-template-columns:repeat(6, 1fr);}
+		.grid-col-7 {grid-template-columns:repeat(7, 1fr);}
+		.grid-col-8 {grid-template-columns:repeat(8, 1fr);}
 
 /* Gap */
 	.gap-0 {gap:0;}
@@ -342,6 +344,8 @@ ig-boxholder {display:block;}
 			.m-grid-col-4 {grid-template-columns:repeat(4, 1fr);}
 			.m-grid-col-5 {grid-template-columns:repeat(5, 1fr);}
 			.m-grid-col-6 {grid-template-columns:repeat(6, 1fr);}
+			.m-grid-col-7 {grid-template-columns:repeat(7, 1fr);}
+			.m-grid-col-8 {grid-template-columns:repeat(8, 1fr);}
 
 	/* Height & Width */
 		.m-w100 {width:100%;}

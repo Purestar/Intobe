@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="대구가톨릭">
+		<meta name="description" content="대구가톨릭">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://unpkg.com/naive-ui"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script src="../js/pub.js"></script>
+		<link rel="stylesheet" href="../css/global.css">
+		<link rel="stylesheet" href="../css/workspace.css">
+	</head>
+	<body>
+		<div data-include="../include/header.html"></div>
+		<div id="container">
+			<div class="layout-inner contents">
+
+				<!-- 취업 희망 기업체 -->
+				<div class="box-type-02">
+					<div class="layout-flex gap-12">
+						<h2 class="tit-06">취업 희망 기업체</h2>
+						<i class="ic-setting"></i>
+					</div>
+
+					<!-- 등록 전 -->
+					<div class="layout-flex justify-center">
+						<button type="button" class="btn-type-b mt-20 m-w100">등록하기</button>
+					</div>
+
+					<!-- 등록 후 -->
+					<div class="brd-wrap">
+						<ul class="layout-grid brd-list-general-02 mt-20">
+							<li>
+								<div class="layout-flex align-center justify-between brd-cont">
+									<div class="flex align-center m-flex-col gap-12 m-w100 m-align-start">
+										<p class="brd-tit">전자계산조직응용기사</p>
+										<p class="cr-gry ws-nw">과학기술정보통신부</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- 나의 스펙 현황 -->
+				<div class="box-type-02 mt-40">
+					<div class="layout-flex justify-between align-center">
+						<h2 class="tit-06">나의 스펙 현황</h2>
+						<p class="m-fs-24">총 <b>00</b>개</p>
+					</div>
+					<ul class="layout-grid txt-c lst-item-01 mt-20 m-mt-50 grid-col-8 m-grid-col-2">
+						<li>
+							<h3>자격증</h3>
+							<p><strong>2</strong>개</p>
+						</li>
+						<li>
+							<h3>어학성적</h3>
+							<p><strong>6</strong>개</p>
+						</li>
+						<li>
+							<h3>교육이수</h3>
+							<p><strong>4</strong>개</p>
+						</li>
+						<li>
+							<h3>대외활동</h3>
+							<p><strong>18</strong>개</p>
+						</li>
+						<li>
+							<h3>해외경험</h3>
+							<p><strong>10</strong>개</p>
+						</li>
+						<li>
+							<h3>수상이력</h3>
+							<p><strong>5</strong>개</p>
+						</li>
+						<li>
+							<h3>해외경험</h3>
+							<p><strong>10</strong>개</p>
+						</li>
+						<li>
+							<h3>수상이력</h3>
+							<p><strong>5</strong>개</p>
+						</li>
+					</ul>
+				</div>
+				<div class="box-type-02 mt-40">
+					<div class="layout-flex gap-12 mt-40 ws-nw" data-scroll="hide">
+						<label class="form-opt-btn-04">
+							<input type="radio" checked="">
+							<span class="opt-txt">
+								<span class="chip-type-04"><b>희망기업</b></span>
+								대한적십지사 대구지사
+							</span>
+						</label>
+						<label class="form-opt-btn-04">
+							<input type="radio">
+							<span class="opt-txt">
+								<span class="chip-type-04"><b>전공기반</b></span>
+								방사선사
+							</span>
+						</label>
+						<label class="form-opt-btn-04">
+							<input type="radio">
+							<span class="opt-txt">
+								<span class="chip-type-04"><b>전공기반</b></span>
+								방사선산업 안전원 및 위험관리원
+							</span>
+						</label>
+						<label class="form-opt-btn-04">
+							<input type="radio">
+							<span class="opt-txt">
+								<span class="chip-type-04"><b>직무기반</b></span>
+								은행사무원
+							</span>
+						</label>
+						<label class="form-opt-btn-04">
+							<input type="radio">
+							<span class="opt-txt">
+								<span class="chip-type-04"><b>직무기반</b></span>
+								은행사무원
+							</span>
+						</label>
+					</div>
+
+					<!-- 데이터 없을 때 -->
+					<div class="no-data cr-gry mt-40  m-fs-24">해당 기업은 현재데이터 수집중입니다.</div>
+
+					<!-- 데이터 있을 때 -->
+					<h2 class="tit-06 mt-60">취업자 평균 스펙</h2>
+					<div class="layout-flex justify-between align-center m-flex-col gap-70 m-gap-60">
+						<div class="box-type-02 mt-20 m-w100 flex-1">
+							<div class="bar-h-01">
+								<div>
+									<div class="bar-v-03 grid-col-4">
+										<span><div class="layout-flex flex-col gap-8"><span class="m-fs-24">평균평점</span><strong class="fs-18 m-fs-28">3.80점</strong></div></span>
+										<span><div class="layout-flex flex-col gap-8"><span class="m-fs-24">TOEIC</span><strong class="fs-18 m-fs-28">800점</strong></div></span>
+										<span><div class="layout-flex flex-col gap-8"><span class="m-fs-24">어학성적</span><strong class="fs-18 m-fs-28">0개</strong></div></span>
+										<span><div class="layout-flex flex-col gap-8"><span class="m-fs-24">자격증</span><strong class="fs-18 m-fs-28">0개</strong></div></span>
+									</div>
+								</div>
+								<div>
+									<div class="bar-v-03 grid-col-4">
+										<span><div class="layout-flex flex-col gap-8"><span class="m-fs-24">교육이수</span><strong class="fs-18 m-fs-28">1.5회</strong></div></span>
+										<span><div class="layout-flex flex-col gap-8"><span class="m-fs-24">대외활동</span><strong class="fs-18 m-fs-28">1.5회</strong></div></span>
+										<span><div class="layout-flex flex-col gap-8"><span class="m-fs-24">해외경험</span><strong class="fs-18 m-fs-28">2개</strong></div></span>
+										<span><div class="layout-flex flex-col gap-8"><span class="m-fs-24">수상이력</span><strong class="fs-18 m-fs-28">1회</strong></div></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<ul class="bar-v-circle-01 justify-end">
+								<li><span style="background:#2fc1bc;"></span>나</li>
+								<li><span style="background:#1159b5;"></span>취업자 평균</li>
+							</ul>
+							<div id="jobAvgSpec" class="e-chart-radar mt-12 m-mt-60"></div>
+						</div>
+					</div>
+
+					<h2 class="tit-06 mt-60">취업 스펙 추천</h2>
+					<div class="bar-h-01 mt-48">
+						<div>
+							<div class="bar-v-03 grid-col-4">
+								<span><div class="layout-flex flex-col gap-8"><span class="m-fs-24">평균평점</span><strong class="fs-20 m-fs-24 cr-red">0.19 <i class="ic-arrow-u-03"></i></strong></div></span>
+								<span><div class="layout-flex flex-col gap-8"><span class="m-fs-24">TOEIC</span><strong class="fs-20 m-fs-24 cr-red">110점 <i class="ic-arrow-u-03"></i></strong></div></span>
+								<span><div class="layout-flex flex-col gap-8"><span class="m-fs-24">어학성적</span><strong class="fs-20 m-fs-24 cr-red">2개 <i class="ic-arrow-u-03"></i></strong></div></span>
+								<span><div class="layout-flex flex-col gap-8"><span class="m-fs-24">자격증</span><strong class="fs-20 m-fs-24 cr-red">2개 <i class="ic-arrow-u-03"></i></strong></div></span>
+							</div>
+						</div>
+						<div>
+							<div class="bar-v-03 grid-col-4">
+								<span><div class="layout-flex flex-col gap-8"><span class="m-fs-24">교육이수</span><strong class="fs-20 m-fs-24">0회</strong></div></span>
+								<span><div class="layout-flex flex-col gap-8"><span class="m-fs-24">대외활동</span><strong class="fs-20 m-fs-24">0회</strong></div></span>
+								<span><div class="layout-flex flex-col gap-8"><span class="m-fs-24">해외경험</span><strong class="fs-20 m-fs-24 cr-red">1회 <i class="ic-arrow-u-03"></i></strong></div></span>
+								<span><div class="layout-flex flex-col gap-8"><span class="m-fs-24">수상이력</span><strong class="fs-20 m-fs-24">0회</strong></div></span>
+							</div>
+						</div>
+					</div>
+
+					<div class="box-type-01-02 txt-02 txt-c mt-48 m-mt-20 m-fs-24 cr-blk">
+						<b>손장원</b>님이 취업을 희망하는<b>대한적십자사 대구지사</b> 취업자의 평균스펙과 비교했을때<br class="pc"><b>평균평저, 취득학점</b> 상승과 <b>교육이수, 대외활동, 해외경험, 수상이력</b> 경험이 더욱 필요합니다.
+					</div>
+
+					<h2 class="tit-06 mt-60">기업 추천</h2>
+					<div class="brd-wrap">
+						<ul class="layout-grid brd-list-general-02 mt-20">
+							<li>
+								<div class="brd-cont">
+									<div class="layout-flex align-center justify-between m-flex-row">
+										<div class="flex align-center m-flex-col gap-12 m-w100 m-align-start">
+											<p class="brd-tit m-fs-28">삼성전자</p>
+											<p class="cr-gry ws-nw m-fs-24">경기도 수원시 영통구 삼성로 129(매탄동)</p>
+										</div>
+										<div>
+											<button type="button" class="cr-gry"><span class="pc">취업자 평균 스펙</span> <i class="ic-arrow-b"></i></button>
+										</div>
+									</div>
+								</div>
+								<div class="brd-cont-bot">
+									<h2 class="tit-06">취업자 평균 스펙</h2>
+									<div class="layout-flex justify-between align-center m-flex-col gap-70 m-gap-60">
+										<div class="box-type-02 mt-20 m-w100 flex-1 bg-wht">
+											<div class="bar-h-01">
+												<div>
+													<div class="bar-v-03 grid-col-4">
+														<span><div class="layout-flex flex-col gap-8"><span class="m-fs-24">평균평점</span><strong class="fs-18 m-fs-28">3.80점</strong></div></span>
+														<span><div class="layout-flex flex-col gap-8"><span class="m-fs-24">TOEIC</span><strong class="fs-18 m-fs-28">800점</strong></div></span>
+														<span><div class="layout-flex flex-col gap-8"><span class="m-fs-24">어학성적</span><strong class="fs-18 m-fs-28">0개</strong></div></span>
+														<span><div class="layout-flex flex-col gap-8"><span class="m-fs-24">자격증</span><strong class="fs-18 m-fs-28">0개</strong></div></span>
+													</div>
+												</div>
+												<div>
+													<div class="bar-v-03 grid-col-4">
+														<span><div class="layout-flex flex-col gap-8"><span class="m-fs-24">교육이수</span><strong class="fs-18 m-fs-28">1.5회</strong></div></span>
+														<span><div class="layout-flex flex-col gap-8"><span class="m-fs-24">대외활동</span><strong class="fs-18 m-fs-28">1.5회</strong></div></span>
+														<span><div class="layout-flex flex-col gap-8"><span class="m-fs-24">해외경험</span><strong class="fs-18 m-fs-28">2개</strong></div></span>
+														<span><div class="layout-flex flex-col gap-8"><span class="m-fs-24">수상이력</span><strong class="fs-18 m-fs-28">1회</strong></div></span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div>
+											<ul class="bar-v-circle-01 justify-end">
+												<li><span style="background:#2fc1bc;"></span>나</li>
+												<li><span style="background:#1159b5;"></span>취업자 평균</li>
+											</ul>
+											<div id="jobAvgSpec" class="e-chart-radar mt-12 m-mt-60"></div>
+										</div>
+									</div>
+									<div class="txt-02 txt-c mt-40 m-mt-20 m-fs-24 cr-blk">
+										<b>손장원</b>님이 취업을 희망하는<b>대한적십자사 대구지사</b> 취업자의 평균스펙과 비교했을때<br class="pc"><b>평균평저, 취득학점</b> 상승과 <b>교육이수, 대외활동, 해외경험, 수상이력</b> 경험이 더욱 필요합니다.
+									</div>
+								</div>
+							</li>
+							<li class="active">
+								<div class="brd-cont">
+									<div class="layout-flex align-center justify-between m-flex-row">
+										<div class="flex align-center m-flex-col gap-12 m-w100 m-align-start">
+											<p class="brd-tit m-fs-28">삼성전자</p>
+											<p class="cr-gry ws-nw m-fs-24">경기도 수원시 영통구 삼성로 129(매탄동)</p>
+										</div>
+										<div>
+											<button type="button" class="cr-gry"><span class="pc">취업자 평균 스펙</span> <i class="ic-arrow-b"></i></button>
+										</div>
+									</div>
+								</div>
+								<div class="brd-cont-bot">
+									<h2 class="tit-06">취업자 평균 스펙</h2>
+									<div class="layout-flex justify-between align-center m-flex-col gap-70 m-gap-60">
+										<div class="box-type-02 mt-20 m-w100 flex-1 bg-wht">
+											<div class="bar-h-01">
+												<div>
+													<div class="bar-v-03 grid-col-4">
+														<span><div class="layout-flex flex-col gap-8"><span class="m-fs-24">평균평점</span><strong class="fs-18 m-fs-28">3.80점</strong></div></span>
+														<span><div class="layout-flex flex-col gap-8"><span class="m-fs-24">TOEIC</span><strong class="fs-18 m-fs-28">800점</strong></div></span>
+														<span><div class="layout-flex flex-col gap-8"><span class="m-fs-24">어학성적</span><strong class="fs-18 m-fs-28">0개</strong></div></span>
+														<span><div class="layout-flex flex-col gap-8"><span class="m-fs-24">자격증</span><strong class="fs-18 m-fs-28">0개</strong></div></span>
+													</div>
+												</div>
+												<div>
+													<div class="bar-v-03 grid-col-4">
+														<span><div class="layout-flex flex-col gap-8"><span class="m-fs-24">교육이수</span><strong class="fs-18 m-fs-28">1.5회</strong></div></span>
+														<span><div class="layout-flex flex-col gap-8"><span class="m-fs-24">대외활동</span><strong class="fs-18 m-fs-28">1.5회</strong></div></span>
+														<span><div class="layout-flex flex-col gap-8"><span class="m-fs-24">해외경험</span><strong class="fs-18 m-fs-28">2개</strong></div></span>
+														<span><div class="layout-flex flex-col gap-8"><span class="m-fs-24">수상이력</span><strong class="fs-18 m-fs-28">1회</strong></div></span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div>
+											<ul class="bar-v-circle-01 justify-end">
+												<li><span style="background:#2fc1bc;"></span>나</li>
+												<li><span style="background:#1159b5;"></span>취업자 평균</li>
+											</ul>
+											<div id="jobAvgSpec02" class="e-chart-radar mt-12 m-mt-60"></div>
+										</div>
+									</div>
+									<div class="txt-02 txt-c mt-40 m-mt-20 m-fs-24 cr-blk">
+										<b>손장원</b>님이 취업을 희망하는<b>대한적십자사 대구지사</b> 취업자의 평균스펙과 비교했을때<br class="pc"><b>평균평저, 취득학점</b> 상승과 <b>교육이수, 대외활동, 해외경험, 수상이력</b> 경험이 더욱 필요합니다.
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- 비교과 프로그램 추천 -->
+				<h3 class="tit-03 mt-80">취업 우수사례 졸업생이<br class="mobile"> 이수한 비교과 프로그램을 추천드려요!</h3>
+				<!-- 비교과 프로그램 추천 슬라이드 -->
+				<div id="coCurricular" class="brd-lst-gallery mt-24 m-mt-30 m-mside--inner">
+					<div class="swi-type">
+						<div class="swiper m-pside--inner">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="thumb-type-01-pur">
+										<div class="thumb-inner">
+											<div class="thumb-lt">
+												<span class="chip-type-01-pur">임박</span>
+											</div>
+											<div class="thumb-rt">
+												<div class="form-opt-chk-01">
+													<label>
+														<input type="checkbox">
+														<span class="opt-txt"></span>
+													</label>
+												</div>
+											</div>
+											<div class="thumb-c">자바 프로그래밍 및 실습</div>
+										</div>
+									</div>
+									<div class="layout-grid brd-cont-wrap">
+										<b class="fs-14 m-fs-24">교육혁신처</b>
+										<p>신청<span class="cr-blk ml-10">2024.08.19(수) ~ 2024.08.23(금)</span></p>
+										<p>운영<span class="cr-blk ml-10">2024.08.19(수) ~ 2024.08.23(금)</span></p>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="thumb-type-01-pur">
+										<div class="thumb-inner">
+											<div class="thumb-lt">
+												<span class="chip-type-01-grn">진행중</span>
+											</div>
+											<div class="thumb-rt">
+												<div class="form-opt-chk-01">
+													<label>
+														<input type="checkbox">
+														<span class="opt-txt"></span>
+													</label>
+												</div>
+											</div>
+											<div class="thumb-c">파이썬 프로그래밍</div>
+										</div>
+									</div>
+									<div class="layout-grid brd-cont-wrap">
+										<b class="fs-14 m-fs-24">교육혁신처</b>
+										<p>신청<span class="cr-blk ml-10">2024.08.19(수) ~ 2024.08.23(금)</span></p>
+										<p>운영<span class="cr-blk ml-10">2024.08.19(수) ~ 2024.08.23(금)</span></p>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="thumb-type-01-pur">
+										<div class="thumb-inner">
+											<div class="thumb-lt">
+												<span class="chip-type-01-ylw">예정</span>
+											</div>
+											<div class="thumb-rt">
+												<div class="form-opt-chk-01">
+													<label>
+														<input type="checkbox">
+														<span class="opt-txt"></span>
+													</label>
+												</div>
+											</div>
+											<div class="thumb-c">소프트웨어와 인공지능</div>
+										</div>
+									</div>
+									<div class="layout-grid brd-cont-wrap">
+										<b class="fs-14 m-fs-24">교육혁신처</b>
+										<p>신청<span class="cr-blk ml-10">2024.08.19(수) ~ 2024.08.23(금)</span></p>
+										<p>운영<span class="cr-blk ml-10">2024.08.19(수) ~ 2024.08.23(금)</span></p>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="thumb-type-01-pur">
+										<div class="thumb-inner">
+											<div class="thumb-lt">
+												<span class="chip-type-01-ylw">예정</span>
+											</div>
+											<div class="thumb-rt">
+												<div class="form-opt-chk-01">
+													<label>
+														<input type="checkbox">
+														<span class="opt-txt"></span>
+													</label>
+												</div>
+											</div>
+											<div class="thumb-c">비교과명이 노출됩니다</div>
+										</div>
+									</div>
+									<div class="layout-grid brd-cont-wrap">
+										<b class="fs-14 m-fs-24">교육혁신처</b>
+										<p>신청<span class="cr-blk ml-10">2024.08.19(수) ~ 2024.08.23(금)</span></p>
+										<p>운영<span class="cr-blk ml-10">2024.08.19(수) ~ 2024.08.23(금)</span></p>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="thumb-type-01-pur">
+										<div class="thumb-inner">
+											<div class="thumb-lt">
+												<span class="chip-type-01-ylw">예정</span>
+											</div>
+											<div class="thumb-rt">
+												<div class="form-opt-chk-01">
+													<label>
+														<input type="checkbox">
+														<span class="opt-txt"></span>
+													</label>
+												</div>
+											</div>
+											<div class="thumb-c">비교과명이 노출됩니다</div>
+										</div>
+									</div>
+									<div class="layout-grid brd-cont-wrap">
+										<b class="fs-14 m-fs-24">교육혁신처</b>
+										<p>신청<span class="cr-blk ml-10">2024.08.19(수) ~ 2024.08.23(금)</span></p>
+										<p>운영<span class="cr-blk ml-10">2024.08.19(수) ~ 2024.08.23(금)</span></p>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="thumb-type-01-pur">
+										<div class="thumb-inner">
+											<div class="thumb-lt">
+												<span class="chip-type-01-ylw">예정</span>
+											</div>
+											<div class="thumb-rt">
+												<div class="form-opt-chk-01">
+													<label>
+														<input type="checkbox">
+														<span class="opt-txt"></span>
+													</label>
+												</div>
+											</div>
+											<div class="thumb-c">비교과명이 노출됩니다</div>
+										</div>
+									</div>
+									<div class="layout-grid brd-cont-wrap">
+										<b class="fs-14 m-fs-24">교육혁신처</b>
+										<p>신청<span class="cr-blk ml-10">2024.08.19(수) ~ 2024.08.23(금)</span></p>
+										<p>운영<span class="cr-blk ml-10">2024.08.19(수) ~ 2024.08.23(금)</span></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-navigation">
+							<div class="swiper-button-prev swi-arrow-01"></div>
+							<div class="swiper-button-next swi-arrow-01"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div data-include="../include/footer.html"></div>
+		<script>
+			// 취업자 평균 스펙 방사형 차트
+			const jobAvgSpecItems = ['자격증', '어학성적', '교육이수', '대외활동', '해외경험', '수상이력'];
+			const jobAvgSpecDom = document.getElementById('jobAvgSpec');
+			const jobAvgSpecScore = echarts.init(jobAvgSpecDom);
+			const jobAvgSpecDom02 = document.getElementById('jobAvgSpec02');
+			const jobAvgSpecScore02 = echarts.init(jobAvgSpecDom02);
+
+			const jobAvgSpecOpt = {
+				color: ['#2fc1bc', '#1159b5'],	// 시리즈 색상 설정 (수정)
+				symbol: 'none',
+				radar: {
+					indicator: jobAvgSpecItems.map(function(item) {
+						return { name: item, max: 100 };
+					}),
+					name: {
+						textStyle: { color: '#666666' }
+					}
+				},
+				series: [{
+					name: '방사형 차트',
+					type: 'radar',
+					data: [
+						{
+							value: jobAvgSpecItems.map(function() { return getRandomValue(100); }),
+							name: '나'
+						},
+						{
+							value: jobAvgSpecItems.map(function() { return getRandomValue(100); }),
+							name: '취업자평균'
+						}
+					]
+				}]
+			};
+
+			jobAvgSpecScore.setOption(jobAvgSpecOpt);
+			window.addEventListener('resize', () => jobAvgSpecScore.resize());
+
+			jobAvgSpecScore02.setOption(jobAvgSpecOpt);
+			window.addEventListener('resize', () => jobAvgSpecScore02.resize());
+
+			// 비교과 프로그램 추천 슬라이드
+			const coCurricularSlide = new Swiper('#coCurricular .swiper', {
+				slidesPerView: 1.3,
+				spaceBetween: calculatePercentage(36),
+				navigation: {
+					nextEl: '#coCurricular .swiper-button-next',
+					prevEl: '#coCurricular .swiper-button-prev',
+				},
+				breakpoints: {
+					720: {
+						slidesPerView: 4,
+						spaceBetween: 38,
+					},
+				},
+			});
+		</script>
+	</body>
+</html>

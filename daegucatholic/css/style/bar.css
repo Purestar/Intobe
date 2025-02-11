@@ -16,3 +16,7 @@
 
 	/* Vertical Arrow */
 		[class*="bar-v-arrow"] > * + *:before {align-self:auto; background:none; border-left:1px solid var(--mc); border-top:1px solid var(--mc); width:4px; height:4px; transform:rotate(135deg);}
+
+	/* Vertical Circle */
+		[class*="bar-v-circle"] > *:before {display:none;}
+		[class*="bar-v-circle"] > * > *:first-child {align-self:auto; background:#ccc; border-radius:50%;}

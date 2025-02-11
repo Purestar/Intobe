@@ -7,8 +7,14 @@
 		.aco-type-01 .n-collapse-item .n-collapse-item__content-wrapper .n-collapse-item__content-inner {padding:5vw;}
 
 	/* Bar */
-		.bar-v-02, .bar-v-02 > * {gap:1.81vw;}
-		.bar-v-02 > * + *:before {height:1.94vw;}
+		/* Vertical */
+			.bar-v-02, .bar-v-02 > * {gap:1.81vw;}
+			.bar-v-02 > * + *:before {height:1.94vw;}
+
+		/* Vertical Circle */
+			.bar-v-circle-01 {gap:2.50vw; font-size:3.33vw;}
+			.bar-v-circle-01 > * {gap:1.11vw;}
+			.bar-v-circle-01 > * > *:first-child {width:1.67vw; height:1.67vw;}
 
 	/* Board */
 		.brd-wrap .brd-tit {font-size:3.89vw;}
@@ -18,14 +24,17 @@
 		.brd-lst-curr .brd-lst-item {gap:1.67vw; border-radius:2.78vw; padding:5.56vw; font-size:3.33vw;}
 		.brd-lst-curr .brd-lst-curr-stat {gap:1.67vw;}
 
-		.brd-list-general {gap:2.22vw; margin-top:3.19vw;}
-		.brd-list-general > * {border-radius:2.50vw; padding:3.81vw 5.56vw;}
-		.brd-list-general .brd-list-number {margin-right:2.50vw;}
-		.brd-list-general .brd-cont {align-items:flex-start; flex-direction:column; gap:2.22vw;}
-		.brd-list-general .brd-ctgy {flex:0 0 auto; width:auto; margin-left:0;}
-		.brd-list-general .bar-v {flex-direction:column; align-items:flex-start; gap:1.67vw;}
-		.brd-list-general .bar-v > * + * {gap:30px;}
-		.brd-list-general .bar-v > * + *:before {display:none;}
+		[class*="brd-list-general"] {gap:2.22vw; margin-top:3.19vw;}
+		[class*="brd-list-general"] > * {border-radius:2.50vw; padding:3.81vw 5.56vw;}
+		[class*="brd-list-general"] .brd-list-number {margin-right:2.50vw;}
+		[class*="brd-list-general"] .brd-cont {align-items:flex-start; flex-direction:column; gap:2.22vw;}
+		[class*="brd-list-general"] .brd-ctgy {flex:0 0 auto; width:auto; margin-left:0;}
+		[class*="brd-list-general"] .bar-v {flex-direction:column; align-items:flex-start; gap:1.67vw;}
+		[class*="brd-list-general"] .bar-v > * + * {gap:30px;}
+		[class*="brd-list-general"] .bar-v > * + *:before {display:none;}
+		[class*="brd-list-general"] .brd-cont-bot {margin:3.81vw -5.56vw -5.56vw; padding:5.56vw;}
+
+		.brd-list-general-02 > * {border-radius:2.78vw;}
 
 		[class*="brd-lst-gallery"] .brd-cont-wrap {gap:1.11vw; margin-top:2.78vw; line-height:1; font-size:3.33vw; color:#666;}
 		[class*="brd-lst-gallery"] .brd-lst-desc {line-height:4.72vw;}
@@ -42,7 +51,7 @@
 		.brd-view-general .brd-view-top .brd-tit {font-size:5.00vw;}
 		.brd-view-general .brd-view-cont {border-top-width:0.28vw; margin-top:5.56vw; padding:8.33vw 5.56vw; line-height:4.72vw;}
 		.brd-view-general .brd-file {margin-top:11.11vw;}
-		.brd-view-general .brd-list-general {margin-top:5.56vw;}
+		.brd-view-general [class*="brd-list-general"] {margin-top:5.56vw;}
 
 	/* Box */
 		[class*="box-type-01"] {border-radius:1.39vw; padding:4.17vw;}
@@ -78,6 +87,7 @@
 
 	/* e-Chart */
 		.e-chart-v-bar {height:44.44vw;}
+		.e-chart-radar {width:68.75vw; height:56.53vw;}
 
 	/* Icon */
 		/* General */
@@ -86,6 +96,7 @@
 			.ic-arrow-b:before {width:1.94vw; height:1.53vw;}
 			.ic-arrow-d:before {width:2.92vw; height:1.67vw;}
 			.ic-arrow-u-02:before {width:3.19vw; height:2.78vw;}
+			.ic-arrow-u-03:before {width:2.22vw; height:1.94vw;}
 			.ic-book {width:7.22vw; height:7.22vw;}
 			.ic-book:before {width:4.72vw; height:4.58vw;}
 			.ic-cert {width:7.22vw; height:7.22vw;}

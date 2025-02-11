@@ -30,10 +30,10 @@
 			{ "menu": "진로 맵", "src": "./page/UMM_020100.html", "state": "comp" }
 		], "state": "comp" },
 		{ "id": "취업스팩", "submenu": [
-			{ "menu": "취업스팩", "src": "./page/UMM_020100.html", "state": "" }
-		], "state": "" },
+			{ "menu": "취업스팩", "src": "./page/job_qual.html", "state": "comp" }
+		], "state": "comp" },
 		{ "id": "DCU 배지", "submenu": [
-			{ "menu": "DCU 배지", "src": "./page/UMM_020100.html", "state": "" }
+			{ "menu": "DCU 배지", "src": "./page/dcu_badge.html", "state": "" }
 		], "state": "" },
 		{ "id": "마이페이지", "submenu": [
 			{ "menu": "Home", "src": "./page/UMY_010000.html", "state": "comp" },
