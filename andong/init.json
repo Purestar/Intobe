@@ -37,7 +37,8 @@
 			{ "menu": "상세", "src": "./page/UNO_020000.html", "state": "" }
 		], "state": "" },
 		{ "id": "가이드", "submenu": [
-			{ "menu": "primeVue", "src": "https://primevue.org/", "state": "" }
+			{ "menu": "primeVue", "src": "https://primevue.org/", "state": "" },
+			{ "menu": "Layout", "src": "./guide/Layout.html", "state": "" }
 		], "state": "" }
 	]
 }

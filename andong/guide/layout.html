@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="대구가톨릭">
+		<meta name="description" content="대구가톨릭">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script type="module" src="../js/pub.js"></script>
+		<link rel="stylesheet" href="../css/global.css">
+		<link rel="stylesheet" href="../css/workspace.css">
+		<style>
+			.workspace-guide-inner div {border:1px solid red;}
+		</style>
+	</head>
+	<body>
+		<div class="workspace-guide">
+			<div class="workspace-guide-case">
+				<h1>Default</h1>
+				<div class="workspace-guide-inner">
+					<div data-layout>Full</div>
+				</div>
+			</div>
+			<div class="workspace-guide-case">
+				<h1>Margin</h1>
+				<div class="workspace-guide-inner">
+					<div data-layout="flex" style="--direction:column; --items:center; --gap:20; --pd:70; --m-pd:36; --text:center;">
+						<div><div data-layout style="--mg:70; --m-mg:36;">Margin<br>--mg:70;<br>--m-mg:36;</div></div>
+						<div><div data-layout style="--mg-t:70;">Margin Top<br>--mg-t:70;</div></div>
+						<div><div data-layout style="--mg-b:70;">Margin Bottom<br>--mg-b:70;</div></div>
+						<div><div data-layout style="--mg-l:70;">Margin Left<br>--mg-l:70;</div></div>
+						<div><div data-layout style="--mg-r:70;">Margin Right<br>--mg-r:70;</div></div>
+						<div><div data-layout style="--mg-ver:70;">Margin Vertical<br>--mg-ver:70;</div></div>
+						<div><div data-layout style="--mg-hor:70;">Margin Horizontal<br>--mg-hor:70;</div></div>
+					</div>
+				</div>
+			</div>
+			<div class="workspace-guide-case">
+				<h1>Padding</h1>
+				<div class="workspace-guide-inner">
+					<div data-layout="flex" style="--direction:column; --items:center; --gap:20; --pd:70; --m-pd:36;">
+						<div data-layout style="--pd:70;">Padding</div>
+						<div data-layout style="--pd-t:70;">Padding Top</div>
+						<div data-layout style="--pd-b:70;">Padding Bottom</div>
+						<div data-layout style="--pd-l:70;">Padding Left</div>
+						<div data-layout style="--pd-r:70;">Padding Right</div>
+						<div data-layout style="--pd-ver:70; --m-pd-ver:36;">Padding Vertical</div>
+						<div data-layout style="--pd-hor:70; --m-pd-hor:36;">Padding Horizontal</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div>
+
+			<h1>Inner</h1>
+			<div data-layout="inner">Inner</div>
+			<div data-layout="inner-max">Inner Max</div>
+
+			<h1>Flex</h1>
+			<h2>Gap</h2>
+			<div data-layout="flex" style="--direction:column; --items:center; --gap:20; --pd:70; --m-pd:36;">
+				<div data-layout="flex" style="--gap:70; --m-gap:36;">
+					<div>Flex</div><div>Flex</div><div>Flex</div>
+					<div>Flex</div><div>Flex</div><div>Flex</div>
+					<div>Flex</div><div>Flex</div><div>Flex</div>
+				</div>
+				<div data-layout="flex" style="--gap-r:70; --m-gap-r:36;">
+					<div>Flex</div><div>Flex</div><div>Flex</div>
+					<div>Flex</div><div>Flex</div><div>Flex</div>
+					<div>Flex</div><div>Flex</div><div>Flex</div>
+					<div>Flex</div><div>Flex</div><div>Flex</div>
+					<div>Flex</div><div>Flex</div><div>Flex</div>
+					<div>Flex</div><div>Flex</div><div>Flex</div>
+					<div>Flex</div><div>Flex</div><div>Flex</div>
+					<div>Flex</div><div>Flex</div><div>Flex</div>
+					<div>Flex</div><div>Flex</div><div>Flex</div>
+				</div>
+				<div data-layout="flex" style="--gap-c:70; --m-gap-c:36;">
+					<div>Flex</div><div>Flex</div><div>Flex</div>
+					<div>Flex</div><div>Flex</div><div>Flex</div>
+					<div>Flex</div><div>Flex</div><div>Flex</div>
+				</div>
+			</div>
+
+			<h1>Grid</h1>
+			<div data-layout="flex" style="--direction:column; --items:center; --gap:20; --m-gap:30; --pd:70; --m-pd:36;">
+				<div data-layout="grid" style="--gap:20; --m-gap:10; --cols:3;">
+					<div>Grid</div><div>Grid</div><div>Grid</div>
+					<div>Grid</div><div>Grid</div><div>Grid</div>
+					<div>Grid</div><div>Grid</div><div>Grid</div>
+				</div>
+				<div data-layout="grid" style="--gap:20; --m-gap:36; --cols:5; --m-cols:3;">
+					<div>Grid</div><div style="--span: 2;">Grid</div><div>Grid</div>
+					<div>Grid</div><div>Grid</div><div style="--m-span:3;">Grid</div>
+					<div>Grid</div><div>Grid</div><div style="--span:1; --m-span:1;">Grid</div>
+				</div>
+			</div>
+
+			<h1>Center</h1>
+			<div data-layout="center" style="--h:400;">
+				<div>Layout Center</div>
+			</div>
+
+			<h1>Center Horizontal Scroll Contents</h1>
+			<div data-layout="center" style="--h:400;">
+				<div style="display:flex; align-items:center; width:2000px;">
+					<h2>내용 시작</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<h2>내용 끝</h2>
+				</div>
+			</div>
+
+			<h1>Center Vertical Scroll Contents</h1>
+			<div data-layout="center" style="--h:400;">
+				<div style="width:200px;">
+					<h2>내용 시작</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<h2>내용 끝</h2>
+				</div>
+			</div>
+
+			<h1>Center Both Scroll Contents</h1>
+			<div data-layout="center" style="--w:400; --m-w:auto; --h:400;">
+				<div style="display:flex; justify-content:space-between; align-items:center; width:500px; height:500px; text-align:center;">
+					<h2>내용 시작</h2>
+					<div>
+					<h2>내용 시작</h2>
+					<p>Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit,<br>sed do eiusmod tempor incididunt ut<br> labore et dolore magna aliqua. <br>Ut enim ad minim veniam,<br> quis nostrud exercitation ullamco laboris nisi ut <br>aliquip ex ea commodo consequat. <br>Duis aute irure dolor in reprehenderit in voluptate velit esse<br> cillum dolore eu fugiat nulla pariatur. <br>Excepteur sint occaecat cupidatat non proident,<br> sunt in culpa qui officia deserunt<br> mollit anim id est laborum.</p>
+					<h2>내용 끝</h2>
+					</div>
+					<h2>내용 끝</h2>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

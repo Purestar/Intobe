@@ -66,3 +66,12 @@
 
 		.workspace-footer-sizemenu {display:none;}
 	}
+
+/* Guide */
+	.workspace-guide {background:#222; padding:20px;}
+	.workspace-guide-case {margin-top:20px;}
+	.workspace-guide-case:first-child {margin-top:0;}
+	.workspace-guide-case > * {margin-top:20px;}
+	.workspace-guide-case > *:first-child {margin-top:0;}
+	.workspace-guide-case h1 {font-size:20px; font-weight:700; color:white;}
+	.workspace-guide-inner {background:white; border-radius:10px; padding:20px;}

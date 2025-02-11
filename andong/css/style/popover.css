@@ -1,8 +1,0 @@
-/* Popover */
-	ig-popover {display:block;}
-	[class*="popover-type"] {display:block; position:relative; cursor:pointer;}
-	[class*="popover-type"] .popover-cont {position:relative; z-index:2;}
-	[class*="popover-type"] .popover-action {display:block; position:relative; background:white;}
-	[class*="popover-type"] .popover-msg {visibility:hidden; opacity:0; position:absolute; left:50%; top:50%; background:white; width:max-content; max-width:100dvw; pointer-events:none; transform:translate(-50%, -50%); transition:opacity .3s ease, transform .3s ease;}
-	[class*="popover-type"].active .popover-msg {visibility:visible; opacity:1; transition:opacity .3s ease, transform .3s ease; z-index:1;}
-	[class*="popover-type"].active .popover-action:before {content:""; position:absolute; background-image:var(--ic-c); background-size:var(--bg-sz); z-index:1;}
