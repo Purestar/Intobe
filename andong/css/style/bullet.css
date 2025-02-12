@@ -1,0 +1,17 @@
+/* Bullet */
+	/* List Bullet */
+	[class*="bp-"] > * {display:flex; gap:0.5em;}
+	[class*="bp-"] > *:before {content:""; color:inherit;}
+
+	/* Bullet Circle */
+		[class*="bp-circle"] > *:before {flex:0 0 0.5em; background:var(--mc); border-radius:50%; width:0.5em; height:0.5em; transform:translate(0, 0.5em)}
+
+	/* Bullet Square */
+		[class*="bp-square"] > *:before {flex:0 0 0.5em; background:var(--mc); width:0.5em; height:0.5em; transform:translate(0, 0.5em);}
+
+	/* Hyphen */
+		[class*="bp-hyphen"] > *:before {content:"- ";}
+
+	/* Numbering */
+		[class*="bp-number"] {counter-reset:list-num;}
+		[class*="bp-number"] > *:before {counter-increment:list-num; content:counter(list-num)". ";}

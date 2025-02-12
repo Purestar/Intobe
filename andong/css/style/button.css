@@ -1,0 +1,18 @@
+/* Button */
+	/* Button Base */
+	[class*="btn-type"] {position:relative; display:inline-flex; justify-content:center; align-items:center; background:var(--mc); border:1px solid var(--mc); border-radius:var(--fom-br); height:var(--fom-h); padding:0 var(--fom-pad); font-size:var(--fom-fs); vertical-align:top; word-break:keep-all; color:white;}
+	[class*="btn-type"]:hover {background:var(--moc); border-color:var(--moc); transition:background .3s, border-color .3s ease, color .3s ease; color:white;}
+	[class*="btn-type-b"] {background:white; color:var(--mc)}
+	[class*="btn-type-b"]:hover {background:#e4f0f3; color:var(--mc);}
+
+	/* Button Disabled */
+		button:disabled {cursor:default; pointer-events:none;}
+		[class*="btn-type"]:disabled,
+		[class*="btn-type"][disabled],
+		[class*="btn-type"][readonly] {background:var(--fom-dis-bg); border-color:var(--fom-dis-bg); color:var(--fom-ph); cursor:default; pointer-events:none; user-select:none;}
+		[disabled] [class*="ic-"] {opacity:0.5;}
+
+	/* Button Group */
+		[class*="btn-grp-type"] {overflow:hidden; display:inline-flex; border-radius:var(--fom-br); min-height:var(--fom-h);}
+		[class*="btn-grp-type"]:hover {background:none;}
+		[class*="btn-grp-type"] [class*="btn-type"] {border-radius:0;}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="Management">
+		<meta name="description" content="Management">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script type="module" src="../js/index.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://unpkg.com/naive-ui"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
+		<script type="module" src="../js/pub.js"></script>
+		<link rel="icon" href="../favicon.ico" sizes="any">
+		<link rel="stylesheet" href="../css/global.css">
+	</head>
+	<body>
+		<div id="container">
+			<div id="sub-container" class="wrap-inner">
+				<div id="contents">
+					<div class="wrap-flex flex-between flex-center m-flex-col m-flex-start gap-20">
+						<div class="wrap-flex gap-20">
+							<h2 class="tit-03">포트폴리오</h2>
+							<button type="button"><i class="ic-plus"></i></button>
+						</div>
+						<p class="txt-info"><i class="ic-info"></i>URL 또는 파일명 클릭시 등록한 포트폴리오를 확인할 수 있어요!</p>
+					</div>
+					<div class="brd-wrap mt-40">
+						<div class="wrap-flex flex-between">
+							<div class="wrap-flex gap-24">
+								<p class="brd-tot">총 <span class="cr-mc">1</span>건</p>
+							</div>
+							<ul class="wrap-flex gap-16">
+								<li>
+									<div class="form-type-opt-rdo-01">
+										<label>
+											<input type="radio" name="filter" checked>
+											<span class="opt-txt">최근 등록 순</span>
+										</label>
+									</div>
+								</li>
+								<li>
+									<div class="form-type-opt-rdo-01">
+										<label>
+											<input type="radio" name="filter" checked>
+											<span class="opt-txt">최근 수정 순</span>
+										</label>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<ul class="lst-type-02-02 mt-16">
+							<li>
+								<div class="wrap-flex flex-center gap-12 m-flex-col m-flex-start">
+									<div class="wrap-flex flex-center gap-12">
+										<span class="chip-type-01-blu-02">URL</span>
+										<h3 class="lst-tit">포트폴리오명이 노출됩니다.</h3>
+									</div>
+									<a href="#" class="btn-link-02 wrap-ellipsis">https://computer.yu.ac.kr/computer/index.do</a>
+								</div>
+								<div class="wrap-flex gap-40 m-flex-between m-w100">
+									<p class="wrap-flex gap-12">최종수정일<span class="cr-blk">2024.06.19</span></p>
+									<div class="wrap-flex flex-center gap-20">
+										<a href="#"><i class="ic-pencle-02"></i></a>
+										<button type="button"><i class="ic-trash"></i></button>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="wrap-flex flex-center gap-12 m-flex-col m-flex-start">
+									<div class="wrap-flex flex-center gap-12">
+										<span class="chip-type-01-sky-02">파일</span>
+										<h3 class="lst-tit">포트폴리오명이 노출됩니다.</h3>
+									</div>
+									<a href="#" class="btn-link-02">
+										<span class="wrap-ellipsis">게시판만들기.zip</span>
+									</a>
+								</div>
+								<div class="wrap-flex gap-40 m-flex-between m-w100">
+									<p class="wrap-flex gap-12">최종수정일<span class="cr-blk">2024.06.19</span></p>
+									<div class="wrap-flex flex-center gap-20">
+										<a href="#"><i class="ic-pencle-02"></i></a>
+										<button type="button"><i class="ic-trash"></i></button>
+									</div>
+								</div>
+							</li>
+							<li class="no-data flex-j-center">포트폴리오를 등록해주세요</li>
+						</ul>
+						<div class="brd-paging">
+							<a href="#" class="brd-paging-first"></a>
+							<a href="#" class="brd-paging-prev"></a>
+							<ul class="brd-paging-num">
+								<li class="active"><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+							</ul>
+							<a href="#" class="brd-paging-next"></a>
+							<a href="#" class="brd-paging-last"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

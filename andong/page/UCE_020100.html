@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="Management">
+		<meta name="description" content="Management">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script type="module" src="../js/index.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://unpkg.com/naive-ui"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
+		<script type="module" src="../js/pub.js"></script>
+		<link rel="icon" href="../favicon.ico" sizes="any">
+		<link rel="stylesheet" href="../css/global.css">
+	</head>
+	<body>
+		<div id="container">
+			<div id="sub-container" class="wrap-inner">
+				<div id="contents">
+					<h2 class="tit-03">AI Advisor가 롤 모델을 추천해드려요!</h2>
+					<p>김영남님의 적성과 관심분야를 분석해서 Ai Adviosr가 적합한 롤 모델을 추천해드려요</p>
+					<div class="job-slide-wrap">
+						<div class="swi-type swi-navigation-01">
+							<div class="swiper brd-wrap">
+								<ul class="swiper-wrapper">
+									<li class="swiper-slide">
+										<div>
+											<div class="wrap-flex flex-center gap-18">
+												<h3 class="tit-02">우아한강아지</h3>
+												<span class="chip-type-01-b-lgry">삼성전자</span>
+											</div>
+											<ul class="job-desc">
+												<li class="wrap-flex gap-12">주전공<span class="cr-blk">컴퓨터공학전공</span></li>
+												<li class="wrap-flex gap-12">복수전공<span class="cr-blk">소프트웨어 융합전공</span></li>
+											</ul>
+										</div>
+										<ul class="vbar-01">
+											<li>이수학점 <span class="cr-blk">130점</span></li>
+											<li>평균학점 <span class="cr-blk">3.80점</span></li>
+										</ul>
+										<p class="job-recom"><strong class="cr-mc">98%</strong>추천도</p>
+									</li>
+									<li class="swiper-slide">
+										<div>
+											<div class="wrap-flex flex-center gap-18">
+												<h3 class="tit-02">우아한강아지</h3>
+												<span class="chip-type-01-b-lgry">한화시스템</span>
+											</div>
+											<ul class="job-desc">
+												<li class="wrap-flex gap-12">주전공<span class="cr-blk">컴퓨터공학전공</span></li>
+												<li class="wrap-flex gap-12">복수전공<span class="cr-blk">소프트웨어 융합전공</span></li>
+											</ul>
+										</div>
+										<ul class="vbar-01">
+											<li>이수학점 <span class="cr-blk">130점</span></li>
+											<li>평균학점 <span class="cr-blk">3.80점</span></li>
+										</ul>
+										<p class="job-recom"><strong class="cr-mc">98%</strong>추천도</p>
+									</li>
+									<li class="swiper-slide">
+										<div>
+											<div class="wrap-flex flex-center gap-18">
+												<h3 class="tit-02">우아한강아지</h3>
+												<span class="chip-type-01-b-lgry">LG전자</span>
+											</div>
+											<ul class="job-desc">
+												<li class="wrap-flex gap-12">주전공<span class="cr-blk">컴퓨터공학전공</span></li>
+												<li class="wrap-flex gap-12">복수전공<span class="cr-blk">소프트웨어 융합전공</span></li>
+											</ul>
+										</div>
+										<ul class="vbar-01">
+											<li>이수학점 <span class="cr-blk">130점</span></li>
+											<li>평균학점 <span class="cr-blk">3.80점</span></li>
+										</ul>
+										<p class="job-recom"><strong class="cr-mc">98%</strong>추천도</p>
+									</li>
+									<li class="swiper-slide">
+										<div>
+											<div class="wrap-flex flex-center gap-18">
+												<h3 class="tit-02">우아한강아지</h3>
+												<span class="chip-type-01-b-lgry">LG전자</span>
+											</div>
+											<ul class="job-desc">
+												<li class="wrap-flex gap-12">주전공<span class="cr-blk">컴퓨터공학전공</span></li>
+												<li class="wrap-flex gap-12">복수전공<span class="cr-blk">소프트웨어 융합전공</span></li>
+											</ul>
+										</div>
+										<ul class="vbar-01">
+											<li>이수학점 <span class="cr-blk">130점</span></li>
+											<li>평균학점 <span class="cr-blk">3.80점</span></li>
+										</ul>
+										<p class="job-recom"><strong class="cr-mc">98%</strong>추천도</p>
+									</li>
+								</ul>
+							</div>
+							<div class="swiper-button-prev swi-arrow"></div>
+							<div class="swiper-button-next swi-arrow"></div>
+						</div>
+					</div>
+
+					<h2 class="tit-03 mt-60">찾으시는 조건을 설정해 롤 모델을 찾아보세요!</h2>
+					<p>전공 구분 오른쪽 [선택]버튼을 클릭하면 원하시는 영남대학교 전공을 쉽게 선택할 수 있어요</p>
+					<div class="job-type-wrap">
+						<div class="job-type-ctrl">
+							<div class="wrap-flex flex-center gap-20">
+								<b class="cr-blk">취업기업</b>
+								<div class="form-type-txt">
+									<input type="text" placeholder="기업명을 입력해주세요">
+								</div>
+							</div>
+							<div class="wrap-flex flex-center gap-20 mt-24 m-flex-col m-flex-start">
+								<b class="cr-blk">주전공</b>
+								<ul class="vbar-02-01">
+									<li>디지털융합대학</li>
+									<li>컴퓨터학부</li>
+									<li><n-select class="form-type-dropdown-01"></n-select></li>
+								</ul>
+							</div>
+							<div class="wrap-flex flex-center mt-24 gap-20">
+								<b class="cr-blk">복수전공</b>
+								<button type="button" class="btn-type-b btn-b-lgry btn-r-32-02">선택</button>
+							</div>
+							<div class="wrap-flex flex-center mt-24 gap-20">
+								<b class="cr-blk">부전공</b>
+								<button type="button" class="btn-type-b btn-b-lgry btn-r-32-02">선택</button>
+							</div>
+							<div class="wrap-flex flex-center gap-20 mt-24 m-flex-col m-flex-start">
+								<b class="cr-blk">이수학점</b>
+								<div class="form-type-txt" divide>
+									<input type="text" class="txt-r" value="000">
+									<label class="txt-suffix">점 이상</label>
+								</div>
+								<b class="cr-blk">평균학점</b>
+								<div class="wrap-flex flex-between m-flex-col gap-40 m-w100">
+									<div class="wrap-flex flex-center gap-36">
+										<div class="form-type-txt" divide>
+											<input type="text" class="txt-r" value="000">
+											<label class="txt-suffix">점 이상</label>
+										</div>
+									</div>
+									<div class="wrap-flex flex-center gap-24 m-flex-j-end">
+										<button type="button" class="btn-refresh"><i class="ic-refresh"></i>초기화</button>
+										<button type="button" class="btn-type job-btn-search">검색</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wrap-grid grid-col-2 mt-60 gap-36 m-grid-col-1">
+						<div>
+							<h2 class="tit-03">롤모델 선정에서 가장 중요하게 생각하는 요소는?</h2>
+							<p>컴퓨터학부 학생들이 롤 모델 선정에 가장 중요하게생각하는 요소를 알아보세요! </p>
+							<div class="box-type-03 mt-24">
+								<div class="wrap-flex flex-between flex-center m-flex-col">
+									<ul class="lst-type-03 bp-number-01 m-w100">
+										<li><span class="cr-blk">취업여부</span><span class="fs-14 m-fs-24">취업한선배를 찾아요</span></li>
+										<li><span class="cr-blk">주전공</span><span class="fs-14 m-fs-24">나와 동일한 주전공인 선배를 찾아요</span></li>
+										<li><span class="cr-blk">졸업학점</span><span class="fs-14 m-fs-24">졸업학점이 높은 선배를 찾아요</span></li>
+										<li><span class="cr-blk">복수전공</span><span class="fs-14 m-fs-24">복수전공을 한 선배를 찾아요</span></li>
+										<li><span class="cr-blk">부전공</span><span class="fs-14 m-fs-24">부전공을 한 선배를 찾아요</span></li>
+									</ul>
+									<div id="role-model-chart" class="role-model-chart m-mt-60"></div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<h2 class="tit-03">학생들의 PICK! 인기쟁이 롤모델은?</h2>
+							<p>컴퓨터학부 학생들이 가장 많이 설정한 롤모델!</p>
+							<ul class="lst-type-02 bp-number-01 mt-24">
+								<li>
+									<span class="lst-tit wrap-flex flex-center gap-12">아키텍쳐전문가 <span class="fs-14 m-fs-24">삼성전자</span></span>
+									<a href="#"><span class="txt-more">자세히</span><i class="ic-r-arrow-03"></i></a>
+								</li>
+								<li>
+									<span class="lst-tit wrap-flex flex-center gap-12">아키텍쳐전문가 <span class="fs-14 m-fs-24">한화시스템</span></span>
+									<a href="#"><span class="txt-more">자세히</span><i class="ic-r-arrow-03"></i></a>
+								</li>
+								<li>
+									<span class="lst-tit wrap-flex flex-center gap-12">아키텍쳐전문가 <span class="fs-14 m-fs-24">삼성SDS</span></span>
+									<a href="#"><span class="txt-more">자세히</span><i class="ic-r-arrow-03"></i></a>
+								</li>
+								<li>
+									<span class="lst-tit wrap-flex flex-center gap-12">아키텍쳐전문가 <span class="fs-14 m-fs-24">LG전자</span></span>
+									<a href="#"><span class="txt-more">자세히</span><i class="ic-r-arrow-03"></i></a>
+								</li>
+								<li>
+									<span class="lst-tit wrap-flex flex-center gap-12">아키텍쳐전문가 <span class="fs-14 m-fs-24">롯데정보통신</span></span>
+									<a href="#"><span class="txt-more">자세히</span><i class="ic-r-arrow-03"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			const { createApp, ref } = Vue
+			const { NSelect, NOption, create } = naive;
+
+			const app = createApp({
+				components: {
+					NSelect,
+					NOption
+				}
+			})
+
+			app.use(naive);
+			app.mount('#container');
+
+			const swiper = new Swiper('.job-slide-wrap .swiper', {
+				spaceBetween: 19,
+				slidesPerView: 1.02,
+				navigation: {
+					nextEl: '.job-slide-wrap .swiper-button-next',
+					prevEl: '.job-slide-wrap .swiper-button-prev',
+				},
+				breakpoints: {
+					1024: {
+						slidesPerView: 2.5,
+						spaceBetween: 42,
+					}
+				},
+			});
+
+			const chartDom = document.getElementById('role-model-chart');
+			const roleModelChart = echarts.init(chartDom);
+			const roleModelChartOpt = {
+				tooltip: {
+					trigger: 'item',
+					formatter: function(params) {
+						return `<div class="e-chart-tooltip-01">${params.name}<br>${params.value}%</div>`;
+					}
+				},
+				series: [{
+					type: 'pie',
+					radius: ['45%', '90%'],
+					label: { show: false },
+					data: [
+						{ value: 45, name: '취업여부', itemStyle: { color: '#3fe7ca' } },
+						{ value: 25, name: '주전공', itemStyle: { color: '#3fbde8' } },
+						{ value: 12, name: '졸업학점', itemStyle: { color: '#0b71be' } },
+						{ value: 10, name: '복수전공', itemStyle: { color: '#06478b' } },
+						{ value: 10, name: '부전공', itemStyle: { color: '#071553' } }
+					]
+				}]
+			};
+
+
+			roleModelChart.setOption(roleModelChartOpt);
+		</script>
+	</body>
+</html>

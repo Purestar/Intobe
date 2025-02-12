@@ -1,0 +1,10 @@
+/* Divider */
+	/* Horizontal Bar */
+	[class*="hbar"] {display:flex; flex-wrap:wrap;}
+	[class*="hbar"] > * {display:flex; flex-direction:column; width:100%;}
+	[class*="hbar"] > * + *:before {content:""; width:100%; height:1px;}
+
+	/* Vertical Bar */
+		[class*="vbar"] {display:flex; align-items:center; flex-wrap:wrap;}
+		[class*="vbar"] > * {display:flex; align-items:center; word-break:keep-all;}
+		[class*="vbar"] > * + *:before {content:""; width:1px;}

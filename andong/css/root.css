@@ -1,5 +1,115 @@
 :root {
 	/* Initialize */
+		--init-bg: white; /* 전체 배경 */
+		--init-ff: Poppins, Noto Sans KR; /* 서체 */
+		--init-fs: 16px; /* 글자 크기 */
+		--init-lh: 1.5; /* 행간 */
+		--init-ls: -0.05em; /* 자간 */
+		--init-c: #666; /* 글자 색깔 */
+		--init-hh: 108px; /* 헤더 높이 */
+		--init-fh: 192px; /* 푸터 높이 */
+		--init-pc-w: 1200px; /* [PC] 페이지 넓이 */
+		--init-pc-wr-side-pd: 20px; /* [PC] Full Warpper 좌우 여백 */
+		--init-m-w: 100dvw; /* [Mobile] 페이지 넓이 */
+		--init-m-wr-side-pd: 5vw; /* [Mobile] Warpper 좌우 여백 */
+		--init-m-dw: 720px; /* [Mobile] 디자인 넓이 */
+
+	/* Background */
+		--ico-c: url('../images/common_icon.png'); /* [PC] 공통 아이콘 이미지 경로 */
+		--ico: url('../images/icon.png'); /* [PC] 일반 아이콘 이미지 경로 */
+		--bg-img: url('../images/bg.png'); /* [PC] 일반 배경 이미지 경로 */
+		--ico-sz: 1000px; /* [PC] 이미지 스프라이트 크기 */
+		--50: -50px; /* 50 */
+		--100: -100px; /* 100 */
+		--150: -150px; /* 150 */
+		--200: -200px; /* 200 */
+		--250: -250px; /* 250 */
+		--300: -300px; /* 300 */
+		--350: -350px; /* 350 */
+		--400: -400px; /* 400 */
+		--450: -450px; /* 450 */
+		--500: -500px; /* 500 */
+		--550: -550px; /* 550 */
+		--600: -600px; /* 600 */
+		--650: -650px; /* 650 */
+		--700: -700px; /* 700 */
+		--750: -750px; /* 750 */
+		--800: -800px; /* 800 */
+		--850: -850px; /* 850 */
+		--900: -900px; /* 900 */
+		--950: -950px; /* 950 */
+
+	/* Color */
+		--mc: #00aacc; /* 메인 컬러 */
+		--moc: #0394b1; /* 메인 오버 컬러 */
+		--mdc: #00377a; /* 어두운 메인 컬러 */
+		--mlc: #0d5cbc; /* 밝은 메인 컬러 */
+		--mic: #f65555; /* 강조 컬러 */
+		--st-red: #fa331e; /* 상태 컬러 Red */
+		--st-org: #f9a015; /* 상태 컬러 Orange */
+		--st-ylw: #ffc107; /* 상태 컬러 Yellow */
+		--st-grn: #99ca04; /* 상태 컬러 Green */
+		--st-sky: #18a394; /* 상태 컬러 SkyBlue */
+		--st-blu: #1458db; /* 상태 컬러 Blue */
+		--st-pur: #9c27b0; /* 상태 컬러 Purple */
+		--st-pnk: #f52b81; /* 상태 컬러 Pink */
+
+	/* Form */
+		--fom-h: 48px; /* 높이 */
+		--fom-br: 8px; /* 보더 라디우스 */
+		--fom-pad: 20px; /* 좌우 패딩 */
+		--fom-fs: 16px; /* 폰트 크기 */
+		--fom-bg: white; /* 배경 */
+		--fom-bdr-c: #e2e2e2; /* 테두리 색상 */
+		--fom-fc: #222222; /* 폰트 컬러 */
+		--fom-ph: #aaaaaa; /* Placeholder 컬러 */
+		--fom-dis-bg: #f5f5f5; /* Disabled 배경 */
+		--fom-dis-bdr: #aaaaaa; /* Disabled 테두리 색상 */
+		--fom-opt-sz: calc(var(--fom-fs) + 4px); /* 체크박스, 라디오 크기 */
+		--fom-chk-ico-w: 12px; /* 체크박스 아이콘 넓이 */
+		--fom-chk-ico-h: 10px; /* 체크박스 아이콘 높이 */
+		--fom-rdo-gap: 8px; /* 라디오 선택 시 안쪽 갭 */
+		--fom-rg-h: 4px; /* Range Type 막대 크기 */
+		--fom-rg-thb-sz: 16px; /* Range Type 슬라이더 크기 */
+		--fom-dropitem: 3.5; /* 드롭다운 아이템 노출 개수 */
+		--fom-lh: calc(var(--fom-h) - 2px); /* 폼 행간 */
+		--fom-ta-h: 154px; /* 텍스트 에어리어 높이 */
+		--fom-valid-bg: #d4ffd4; /* 폼 밸리데이션 성공 배경 */
+		--fom-valid-bdr: #1b680c; /* 폼 밸리데이션 성공 테두리 */
+		--fom-invalid-bg: white; /* 폼 밸리데이션 실패 배경 */
+		--fom-invalid-bdr: #ff0048; /* 폼 밸리데이션 실패 테두리 */
+
+	/* Popup */
+		--pop-w: 700px; /* 팝업 기본 넓이 */
+		--pop-pad: 40px; /* 팝업 좌우 여백 */
+		--pop-max-h: 95dvh; /* 팝업 최대 높이 */
+		--pop-br: 20px; /* 팝업 보더 라디우스 */
+		--pop-hh: 60px; /* 팝업 헤더 높이 */
+		--pop-fh: 96px; /* 팝업 푸터 높이 */
+		--pop-cont-top-pad: 40px; /* 팝업 내용 위쪽 여백 */
+		--pop-cont-bot-pad: 60px; /* 팝업 내용 아래쪽 여백 */
+
+	/* Scroll */
+		--scr-w: 4px; /* 넓이 */
+		--scr-br: 4px; /* 보더 라디우스 */
+		--scr-bg1: #f1f1f1; /* 배경색 */
+		--scr-bg2: #c1c1c1; /* 색상 */
+
+	/* Thumb */
+		--thmb-bg: #f2f4f4; /* 썸네일 기본 배경 색상 */
+
+	/* Z-Index */
+		--zi-h: 1050; /* 헤더 */
+		--zi-f: 100; /* 푸더 */
+		--zi-pop: 1100; /* 팝업 */
+		--zi-dd: 400; /* 셀렉트 */
+		--zi-pn: 1000; /* 패널 */
+		--zi-tab: 450; /* 탭메뉴 */
+
+}
+
+:root {
+	/* Initialize */
 		--init-background-color: white; /* 배경색 */
 		--init-font-color: black; /* 글자색 */
 		--init-font-family: Poppins, Noto Sans KR; /* 글자체 */
@@ -15,10 +125,4 @@
 		--m-init-footer-height: 232px; /* 푸터 높이 */
 		--m-init-header-height: 148px; /* 헤더 높이 */
 		--m-init-layout-padding: 36; /* 모바일 패딩 인라인 */
-
-	/* Scroll */
-		--scr-w: 4px; /* 넓이 */
-		--scr-br: 4px; /* 보더 라디우스 */
-		--scr-bg1: #f1f1f1; /* 배경색 */
-		--scr-bg2: var(--mc); /* 색상 */
 }

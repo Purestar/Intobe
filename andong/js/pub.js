@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	// PrimeVue Config
 	app.use(PrimeVue.Config, { unstyled: true });
 
-	app.mount('#container');
+	//app.mount('#container');
 });
 
 // include.js

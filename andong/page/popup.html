@@ -2,557 +2,1463 @@
 <html lang="ko">
 	<head>
 		<meta charset="UTF-8">
-		<meta name="keywords" content="대구가톨릭">
-		<meta name="description" content="대구가톨릭">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+		<meta name="keywords" content="Management">
+		<meta name="description" content="Management">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>Index</title>
 		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script type="module" src="../js/index.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 		<script src="https://unpkg.com/naive-ui"></script>
 		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
-		<script src="../js/pub.js"></script>
+		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
+		<script type="module" src="../js/pub.js"></script>
+		<link rel="icon" href="../favicon.ico" sizes="any">
 		<link rel="stylesheet" href="../css/global.css">
-		<link rel="stylesheet" href="../css/workspace.css">
 	</head>
 	<body>
-		<div id="app">
-			<!-- 공통 -->
-			<h1 style="font-size:30px; font-weight:bold;">공통</h1>
-			<div class="layout-grid mt-20" style="gap: 20px; grid-template-columns: repeat(7, minmax(0px, 1fr));">
-				<!-- 관심직무(UEN_030000) -->
+		<div id="app" style="padding:30px;">
+			<h1 class="tit-01">첫진입</h1>
+			<div class="wrap-grid m-wrap-flex mt-20" style="grid-template-columns:repeat(7, 1fr); gap:10px;">
+				<!-- 활동 뱃지 획득 -->
 				<button class="btn-type" @click="toggleModal('modal1')">활동 뱃지 획득</button>
-				<n-modal v-model:show="modals.modal1" class="pop-type">
-					<n-card style="width: 580px" :bordered="false" size="huge" role="dialog" aria-modal="true">
+				<n-modal v-model:show="modals.modal1">
+					<n-card
+						style="width: 580px"
+						:bordered="false"
+						size="huge"
+						role="dialog"
+						aria-modal="true"
+					>
 						<template #header>
 							<button type="button" class="pop-close-no-header" @click="toggleModal('modal1')"></button>
 						</template>
-
-						<div class="layout-flex align-center flex-col txt-c">
-							<div class="thumb-type-character">
-								<div class="thumb-inner">
-									<img src="../images/dummy/mascot.png">
-								</div>
-							</div>
-							<p class="fs-24 mt-40 m-fs-36 m-mt-50"><strong>이제 AI 학사 Advisor가<br>김디쿠님에게 맞춤 추천할  마쳤습니다!</strong></p>
-							<p class="cr-gry mt-20 m-fs-24 m-mt-40">관심직무는 AI 학사 Advisor 메인에서 언제든지 가능해요 :D</p>
+						<div class="wrap-flex flex-col flex-center txt-c">
+							<img src="../assets/images/img/badge-01.png">
+							<h1 class="tit-01">AI 학사 Advisor에 오신걸 환영해요!</h1>
+							<h2 class="tit-02">첫 방문의 기념으로 Welcome배지를 선물로 드릴게요!</h2>
+							<p class="mt-20">활동에 따라 획득할 수 있어요!<br>획득한 배지는 메인에서 대표 배지로 변경할 수 있습니다.</p>
 						</div>
-
 						<template #footer>
 							<button type="button" class="btn-type-b w100">확인</button>
 						</template>
 					</n-card>
 				</n-modal>
 
-				<!-- 관심 직무 설정(UCO_030000) -->
-				<button class="btn-type" @click="toggleModal('modal2')">관심 직무 설정</button>
-				<n-modal v-model:show="modals.modal2" class="pop-type">
-					<n-card style="width: 720px" :bordered="false" size="huge" role="dialog" aria-modal="true">
+				<!-- 관심분야 설정완료 -->
+				<button class="btn-type" @click="toggleModal('modal2')">관심분야 설정완료</button>
+				<n-modal v-model:show="modals.modal2">
+					<n-card
+						style="width: 600px"
+						:bordered="false"
+						size="huge"
+						role="dialog"
+						aria-modal="true"
+					>
 						<template #header>
-							관심 직무 설정
 							<button type="button" class="pop-close-no-header" @click="toggleModal('modal2')"></button>
 						</template>
+						<div class="wrap-flex flex-col flex-center txt-c">
+							<img src="../assets/images/img/badge-01.png">
+							<h1 class="tit-01">이제 AI 학사 Advisor가<br>김영남님에게 맞춤 추천할  마쳤습니다!</h1>
+							<p class="mt-20">관심분야는 AI 학사 Advisor 메인에서 언제든지 가능해요 :D</p>
+						</div>
+						<template #footer>
+							<button type="button" class="btn-type w100">확인</button>
+						</template>
+					</n-card>
+				</n-modal>
+			</div>
 
-						<div class="txt-c">
-							<div class="box-type-01">
-								<p class="m-fs-24">국가직무능력표준을 기반으로 관심 직무를<br class="mobile">최대 2개까지 설정할 수 있습니다.</p>
+			<h1 class="tit-01 mt-20">공통</h1>
+			<div class="wrap-grid m-wrap-flex m-flex-wrap mt-20" style="grid-template-columns:repeat(7, 1fr); gap:10px;">
+				<!-- 활동 뱃지 획득 -->
+				<button class="btn-type" @click="toggleModal('modal5')">활동 뱃지 획득</button>
+				<n-modal v-model:show="modals.modal5">
+					<n-card
+						style="width: 580px"
+						:bordered="false"
+						size="huge"
+						role="dialog"
+						aria-modal="true"
+					>
+						<template #header>
+							<button type="button" class="pop-close-no-header" @click="toggleModal('modal5')"></button>
+						</template>
+						<div class="wrap-flex flex-col flex-center txt-c">
+							<img src="../assets/images/img/badge-01.png">
+							<h1 class="tit-01">[활동 배지명]획득!</h1>
+							<p class="mt-20">해당 활동 배지의 기주네 맞는 멘트가 노출됩니다.<br>획득한 배지는 메인의 프로필이미지로 사용할 수 있습니다.</p>
+						</div>
+						<template #footer>
+							<button type="button" class="btn-type-b w100">확인</button>
+						</template>
+					</n-card>
+				</n-modal>
+
+				<!-- 교과상세 -->
+				<button class="btn-type" @click="toggleModal('modal14')">교과상세</button>
+				<n-modal v-model:show="modals.modal14">
+					<n-card
+						style="width: 580px"
+						:bordered="false"
+						size="huge"
+						preset="dialog"
+						role="dialog"
+						aria-modal="true"
+					>
+						<template #header>
+							<h1 class="tit-01">교과 상세정보</h1>
+							<button type="button" class="pop-close-no-header" @click="toggleModal('modal14')"></button>
+						</template>
+
+						<p>컴퓨터공학전공</p>
+						<div class="wrap-flex flex-between">
+							<h2 class="tit-02">통계분석과 머신러닝 모델링</h2>
+							<div class="form-type-opt-chk-01-01 flex-0">
+								<label>
+									<input type="checkbox">
+									<span class="opt-txt"></span>
+								</label>
 							</div>
 						</div>
 
-						<div class="favor-job-list-wrap">
-							<div class="favor-job-list-top">
-								<ul data-scroll="v" class="favor-job-list">
-									<li class="active"><button type="button">사업관리</button></li>
-									<li><button type="button">경영 · 회계 · 사무</button></li>
-									<li><button type="button">금융 · 보험</button></li>
-									<li><button type="button">교육 · 자연 · 사회과학</button></li>
-									<li><button type="button">법률 · 경찰 · 소방 · 교도 · 국방</button></li>
-									<li><button type="button">보건 · 의료</button></li>
-									<li><button type="button">사회복지 · 종교</button></li>
-									<li><button type="button">문화 · 예술 · 디자인 · 방송</button></li>
-									<li><button type="button">운전 · 운송</button></li>
-									<li><button type="button">영업</button></li>
-								</ul>
-								<div class="w100" data-scroll="v">
-									<n-collapse class="aco-type-01" arrow-placement="right">
-										<n-collapse-item title="기획사무" name="1">
-											<div class="layout-flex flex-col gap-12">
-												<div class="form-opt-chk">
-													<label>
-														<input type="checkbox">
-														<span class="opt-txt">경영기획</span>
-													</label>
+						<ul class="box-type-04 mt-20 lst-type-04">
+							<li>이수구분<br><strong class="fs-18 m-fs-28">전공선택</strong></li>
+							<li>이수방식<br><strong class="fs-18 m-fs-28">오프라인</strong></li>
+							<li>이수학점<br><strong class="fs-18 m-fs-28">3학점</strong></li>
+							<li>이수시간<br><strong class="fs-18 m-fs-28">3시간</strong></li>
+						</ul>
+
+						<n-tabs type="line" class="tabs-type-02 mt-40" v-model:value="activeTab">
+							<n-tab-pane name="subinfo-1" tab="교과정보">
+								<div class="hbar-02">
+									<p>최근 빅데이터와 인공지능은 학계, 산업계에서 가장 관심의 대상이 되는 연구 분야로서, 특히, 이 두 분야의 핵심 기술인 데이터분석 기술 및 머신러닝 기술은 4차 산업혁명의 핵심기술로 부각되고 있다. 이들은 모두 많은 양의 데이터로부터 의미있는 정보/지식를 추출하여 분류, 예측, 최적화 등의 문제를 해결하는 기술로, 데이터 과학, 통계 및 컴퓨터 공학 기술이 융합된 기술이다. 본 강좌에서는 데이터분석의 기초 지식 및 절차, 도구들에 대해 공부하고, 이를 기반으로 머신러닝의 개념과 원리에서부터 신경망 학습, 고급의 딥러닝 기술에 이르는 다양한 이론과 실습을 학습한다</p>
+									<div>
+										<div>
+											<h2 class="tit-02">선수과목</h2>
+											<div class="wrap-flex flex-col gap-6 mt-16">
+												<div class="wrap-flex gap-12">
+													<span class="chip-type-02-sky"></span>
+													<p>프로그래밍 언어 (2학년 1학기)</p>
 												</div>
-												<div class="form-opt-chk">
-													<label>
-														<input type="checkbox">
-														<span class="opt-txt">홍보광고</span>
-													</label>
-												</div>
-												<div class="form-opt-chk">
-													<label>
-														<input type="checkbox">
-														<span class="opt-txt">마케팅</span>
-													</label>
+												<div class="wrap-flex gap-12">
+													<span class="chip-type-02-blu"></span>
+													<p>자료구조 (2학년2학기)</p>
 												</div>
 											</div>
-										</n-collapse-item>
-										<n-collapse-item title="총무 &middot; 인사" name="2"></n-collapse-item>
-										<n-collapse-item title="재무 &middot; 회계" name="3"></n-collapse-item>
-										<n-collapse-item title="생산 &middot; 품질관리" name="4"></n-collapse-item>
-									</n-collapse>
-								</div>
-							</div>
-							<div class="favor-job-list-bot">
-								<div class="layout-flex align-center justify-between">
-									<div class="cr-lgry"><span class="cr-mc">1</span> / 2</div>
-									<button type="button" class="btn-icon">다시 선택하기<i class="ic-refrash"></i></button>
-								</div>
-								<ul class="layout-flex lst-tag">
-									<li>
-										<div class="bar-v-arrow-01">
-											<span>사업관리</span>
-											<span>기획사무</span>
-											<span>마케팅</span>
+											<h2 class="tit-02 mt-40">후수과목</h2>
+											<div class="wrap-flex flex-col gap-6 mt-16">
+												<div class="wrap-flex gap-12">
+													<span class="chip-type-02-sky"></span>
+													<p>프로그래밍 언어 (2학년 1학기)</p>
+												</div>
+												<div class="wrap-flex gap-12">
+													<span class="chip-type-02-blu"></span>
+													<p>자료구조 (2학년2학기)</p>
+												</div>
+											</div>
 										</div>
-										<button type="button"><i class="ic-delete"></i></button>
-									</li>
-									<li>
-										<div class="bar-v-arrow-01">
-											<span>사업관리</span>
-											<span>기획사무</span>
-											<span>마케팅</span>
+									</div>
+								</div>
+							</n-tab-pane>
+							<n-tab-pane name="subinfo-2" tab="강의정보">
+								<div class="hbar-02">
+									<div>
+										<div class="wrap-flex flex-between">
+											<div>
+												<b class="fs-18 m-fs-28 cr-blk">조행래</b>
+												<div class="wrap-flex flex-col gap-10 lh-1 mt-16">
+													<div class="wrap-flex gap-12">
+														소속<span class="cr-blk">컴퓨터공학전공, 소프트웨어융합전공</span>
+													</div>
+													<div class="wrap-flex gap-12">
+														분야<span class="cr-blk">데이터베이스</span>
+													</div>
+												</div>
+											</div>
+											<a href="#" class="btn-type-b btn-b-lgry btn-r-40 gap-16 pc"><i class="ic-download"></i>강의계획서</a>
 										</div>
-										<button type="button"><i class="ic-delete"></i></button>
-									</li>
+									</div>
+									<div>
+										<div class="wrap-flex flex-between">
+											<div>
+												<b class="fs-18 m-fs-28 cr-blk">조행래</b>
+												<div class="wrap-flex flex-col gap-10 lh-1 mt-16">
+													<div class="wrap-flex gap-12">
+														소속<span class="cr-blk">컴퓨터공학전공, 소프트웨어융합전공</span>
+													</div>
+													<div class="wrap-flex gap-12">
+														분야<span class="cr-blk">데이터베이스</span>
+													</div>
+												</div>
+											</div>
+											<a href="#" class="btn-type-b btn-b-lgry btn-r-40 gap-16 pc"><i class="ic-download"></i>강의계획서</a>
+										</div>
+									</div>
+								</div>
+
+							</n-tab-pane>
+						</n-tabs>
+
+						<template #footer>
+							<button type="button" class="btn-type-b w100" @click="toggleModal('modal14')">확인</button>
+						</template>
+					</n-card>
+				</n-modal>
+
+				<!-- 보유스킬 -->
+				<button class="btn-type" @click="toggleModal('modal15')">보유스킬</button>
+				<n-modal v-model:show="modals.modal15">
+					<n-card
+						style="width: 580px"
+						:bordered="false"
+						size="huge"
+						preset="dialog"
+						role="dialog"
+						aria-modal="true"
+					>
+						<template #header>
+							<h1 class="tit-01">보유스킬</h1>
+							<button type="button" class="pop-close-no-header" @click="toggleModal('modal15')"></button>
+						</template>
+
+						<n-tabs type="line" class="tabs-type-01 mt-40">
+							<n-tab-pane name="skill-1" tab="스킬 분류로 찾기">
+								<div class="box-type-04 mt-24">
+									<table class="txt-l w100">
+										<colgroup>
+											<col style="width:9%;">
+											<col>
+										</colgroup>
+										<tbody>
+											<tr>
+												<th>분류</th>
+												<td>
+													<div class="wrap-flex gap-8 flex-wrap">
+														<div class="form-type-opt-btn-02-b-blu flex-0">
+															<label>
+																<input type="radio" name="skill">
+																<span class="chip-type-01-b-lgry w-max">front - end</span>
+															</label>
+														</div>
+														<div class="form-type-opt-btn-02-b-blu flex-0">
+															<label>
+																<input type="radio" name="skill">
+																<span class="chip-type-01-b-lgry w-max">back - end</span>
+															</label>
+														</div>
+														<div class="form-type-opt-btn-02-b-blu flex-0">
+															<label>
+																<input type="radio" name="skill">
+																<span class="chip-type-01-b-lgry w-max">DB</span>
+															</label>
+														</div>
+														<div class="form-type-opt-btn-02-b-blu flex-0">
+															<label>
+																<input type="radio" name="skill">
+																<span class="chip-type-01-b-lgry w-max">기타</span>
+															</label>
+														</div>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<ul class="lst-data-01 mt-12">
+									<li><button type="button">aaa</button></li>
+									<li><button type="button">aaa</button></li>
+									<li><button type="button">aaa</button></li>
+									<li><button type="button">aaa</button></li>
 								</ul>
+							</n-tab-pane>
+							<n-tab-pane name="skill-2" tab="직접 입력하기">
+								<div class="box-type-04 mt-24">
+									<table class="txt-l w100">
+										<colgroup>
+											<col style="width:12%;">
+											<col>
+										</colgroup>
+										<tbody>
+											<tr>
+												<th>분류</th>
+												<td><n-select class="form-type-dropdown-01" placeholder="분류 선택"></n-select></td>
+											</tr>
+											<tr>
+												<th>스킬명</th>
+												<td>
+													<div class="wrap-flex gap-8">
+														<div class="form-type-txt">
+															<input type="text" placeholder="보유한 스킬을 입력하세요">
+														</div>
+														<button type="button" class="btn-type">추가</button>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</n-tab-pane>
+						</n-tabs>
+
+						<div class="wrap-flex flex-between flex-center mt-40">
+							<p class="wrap-flex gap-12">
+								보유스킬
+								<span><b class="cr-mc">10</b>/15</span>
+							</p>
+							<div class="wrap-flex flex-center gap-12">
+								<div class="wrap-flex flex-center gap-12">
+									분류
+									<n-select class="form-type-dropdown-01" placeholder="전체"></n-select>
+								</div>
+								<button type="button" class="btn-refresh"><i class="ic-refresh"></i>초기화</button>
 							</div>
 						</div>
 
+						<ul class="lst-type-05 mt-8">
+							<li>
+								MS SQL
+								<div class="wrap-flex flex-center gap-24">
+									<div class="wrap-flex gap-10">
+										<div class="form-type-opt-btn-02-pnk">
+											<label>
+												<input type="radio" name="skill">
+												<span class="chip-type-01-b-lgry">입문</span>
+											</label>
+										</div>
+										<div class="form-type-opt-btn-02-pur">
+											<label>
+												<input type="radio" name="skill">
+												<span class="chip-type-01-b-lgry">기본</span>
+											</label>
+										</div>
+										<div class="form-type-opt-btn-02-blu">
+											<label>
+												<input type="radio" name="skill">
+												<span class="chip-type-01-b-lgry">능숙</span>
+											</label>
+										</div>
+										<div class="form-type-opt-btn-02-sky">
+											<label>
+												<input type="radio" name="skill">
+												<span class="chip-type-01-b-lgry">전문</span>
+											</label>
+										</div>
+									</div>
+									<button type="button"><i class="ic-trash"></i></button>
+								</div>
+							</li>
+							<li>
+								CSS
+								<div class="wrap-flex flex-center gap-24">
+									<div class="wrap-flex gap-10">
+										<div class="form-type-opt-btn-02-pnk">
+											<label>
+												<input type="radio" name="skill2">
+												<span class="chip-type-01-b-lgry">입문</span>
+											</label>
+										</div>
+										<div class="form-type-opt-btn-02-pur">
+											<label>
+												<input type="radio" name="skill2">
+												<span class="chip-type-01-b-lgry">기본</span>
+											</label>
+										</div>
+										<div class="form-type-opt-btn-02-blu">
+											<label>
+												<input type="radio" name="skill2">
+												<span class="chip-type-01-b-lgry">능숙</span>
+											</label>
+										</div>
+										<div class="form-type-opt-btn-02-sky">
+											<label>
+												<input type="radio" name="skill2" checked>
+												<span class="chip-type-01-b-lgry">전문</span>
+											</label>
+										</div>
+									</div>
+									<button type="button"><i class="ic-trash"></i></button>
+								</div>
+							</li>
+						</ul>
+
 						<template #footer>
-							<button type="button" class="btn-type-b w100">취소</button>
-							<button type="button" class="btn-type w100">설정</button>
+							<button type="button" class="btn-type-b btn-b-blk w100" @click="toggleModal('modal15')">닫기</button>
+							<button type="button" class="btn-type-b w100">저장</button>
 						</template>
+
+						<script>
+							(()=>{let t;function e(t){t&&t.shown&&(t.style.display='none',t.shown=!1)}function n(t){const e=c(t);if(!e||!e.datalist)return;const n=e.value.trim().toLowerCase();Array.from(e.datalist.getElementsByTagName('option')).forEach((t=>{t.setAttribute('tabindex',0),t.style.display=!n||t.value.toLowerCase().includes(n)?'block':'none'}))}function i(t){const n=c(t);if(n&&n.datalist)switch(t.keyCode){case 40:{let t=n.datalist.firstElementChild;t.offsetHeight||(t=a(t,1)),t&&t.focus();break}case 9:e(n.datalist);break;case 13:case 32:l(t)}}document.body.addEventListener('focusin',(function(s){const a=c(s);if(!a)return;if(a.list){const t=a.list;a.datalist=t,a.removeAttribute('list'),t.input=a,t.setAttribute('tabindex',-1),a.addEventListener('input',n),a.addEventListener('keydown',i),t.addEventListener('keydown',o),t.addEventListener('click',l)}const r=a.datalist;r&&!r.shown&&(e(t),r.shown=!0,n(s),r.style.width=a.offsetWidth+'px',r.style.left=a.offsetLeft+'px',r.style.display='block',t=r)}));const s={33:-12,34:12,38:-1,40:1};function o(t){const n=c(t);if(!n)return;const i=t.keyCode,o=s[i],r=n.parentElement;if(o){let e=a(n,o);e&&e.focus(),t.preventDefault()}else 9===i||13===i||32===i?l(t):8===i?r.input.focus():27===i&&e(r)}function a(t,e){let n=t;do{e<0?n=n.previousElementSibling:e>0&&(n=n.nextElementSibling),n&&n.offsetHeight&&(t=n,e-=Math.sign(e))}while(n&&e);return t}function l(t){const n=c(t),i=n&&n.parentElement;i&&i.input&&(i.input.value=n&&n.value||'',e(i))}function c(t){return t&&t.target}})();
+						</script>
 					</n-card>
 				</n-modal>
 
-				<!-- 자격증(UCO_040000) -->
-				<button class="btn-type" @click="toggleModal('modal3')">자격증</button>
-				<n-modal v-model:show="modals.modal3" class="pop-type">
-					<n-card style="width: 580px" :bordered="false" size="huge" role="dialog" aria-modal="true">
+				<!-- 비교과 프로그램 상세정보 -->
+				<button class="btn-type" @click="toggleModal('modal16')">비교과 프로그램 상세정보</button>
+				<n-modal v-model:show="modals.modal16">
+					<n-card
+						style="width: 580px"
+						:bordered="false"
+						size="huge"
+						preset="dialog"
+						role="dialog"
+						aria-modal="true"
+					>
 						<template #header>
-							자격증
+							<h1 class="tit-01">비교과 프로그램 상세정보</h1>
+							<button type="button" class="pop-close-no-header" @click="toggleModal('modal16')"></button>
+						</template>
+
+						<div class="thumb-type-03">
+							<div class="thumb-lt">
+								<span class="chip-type-02-grn-02"></span>
+							</div>
+							<img src="../assets/images/dummy/thumb-01.png">
+						</div>
+
+						<ul class="vbar-02 mt-40">
+							<li>학습역량</li>
+							<li>특강프로그램</li>
+						</ul>
+
+						<div class="wrap-flex flex-between">
+							<h2 class="tit-02">자바스크립트 기반 백엔드 프로그래밍</h2>
+							<div class="form-type-opt-chk-01-01 flex-0">
+								<label>
+									<input type="checkbox">
+									<span class="opt-txt"></span>
+								</label>
+							</div>
+						</div>
+
+						<div class="wrap-flex flex-col gap-10 lh-1 mt-16">
+							<div class="wrap-flex gap-12"> 소속<span class="cr-blk">컴퓨터공학전공, 소프트웨어융합전공</span></div>
+							<div class="wrap-flex gap-12"> 분야<span class="cr-blk">데이터베이스</span></div>
+						</div>
+
+						<ul class="box-type-04 mt-20 lst-type-04">
+							<li>이수구분<br><strong class="fs-18 m-fs-28">전공선택</strong></li>
+							<li>이수방식<br><strong class="fs-18 m-fs-28">오프라인</strong></li>
+							<li>이수학점<br><strong class="fs-18 m-fs-28">3학점</strong></li>
+							<li>이수시간<br><strong class="fs-18 m-fs-28">3시간</strong></li>
+						</ul>
+
+						<div class="mt-20">
+							* 컴퓨터학부 재학생만 신청가능<br>
+							여름방학에 컴퓨터학부 교수님들의 전공 비교과 특강을 통해<br>
+							전공능력을 키워보세요!<br><br>
+
+							- 특강명 : 자바스크립트 기반 백엔드 프로그래밍<br>
+							- 교수자명 : 조행래 교수님<br>
+							- 일자 : 8/5(월) ~ 8/9(금)<br>
+							- 장소 : IT관 109호
+						</div>
+
+						<template #footer>
+							<button type="button" class="btn-type-b btn-b-blk w100" @click="toggleModal('modal16')">닫기</button>
+							<a href="#" class="btn-type-b w100 btn-link">자세히보기<i class="ic-link"></i></a>
+						</template>
+					</n-card>
+				</n-modal>
+			</div>
+
+			<h1 class="tit-01 mt-20">메인</h1>
+			<div class="wrap-grid m-wrap-flex m-flex-wrap mt-20" style="grid-template-columns:repeat(7, 1fr); gap:10px;">
+				<!-- 관심분야설정 -->
+				<button class="btn-type" @click="toggleModal('modal3')">관심분야설정</button>
+				<n-modal v-model:show="modals.modal3">
+					<n-card
+						style="width: 720px"
+						:bordered="false"
+						size="huge"
+						preset="dialog"
+						role="dialog"
+						aria-modal="true"
+					>
+						<template #header>
 							<button type="button" class="pop-close-no-header" @click="toggleModal('modal3')"></button>
 						</template>
+						<div class="txt-c mx-h100">
+							<h1 class="tit-01">이영남님이 관심있는 분야를 알려주세요!</h1>
+							<p class="mt-8">관심분야 설정 시 AI Advisor의 추천 정확도가 높아집니다<br>최소 5개, 최대 8개까지 선택할 수 있어요!</p>
+							<n-tabs type="line" class="tabs-type-01-01 mt-40">
+								<n-tab-pane name="favor-1" tab="공통 관심 분야">
+									<ul class="wrap-grid favor-list">
+										<li>
+											<div class="form-type-opt-btn-01">
+												<label>
+													<input type="checkbox">
+													<span class="opt-txt">웹개발</span>
+												</label>
+											</div>
+										</li>
+										<li>
+											<div class="form-type-opt-btn-01">
+												<label>
+													<input type="checkbox">
+													<span class="opt-txt gap-4">게임<i class="ic-wait-02"></i></span>
+												</label>
+											</div>
+										</li>
+									</ul>
+									<p class="favor-total-txt mb-0">현재 <b class="cr-mc">0</b>개 선택</p>
+								</n-tab-pane>
+								<n-tab-pane name="favor-2" class="txt-l" tab="직접 등록한 관심 분야">
+									<p class="fs-16">공통 관심 분야에 나의 관심 분야가 없나요? 그렇다면 직접 등록해보세요!</p>
 
-						<table class="tbl-form">
-							<colgroup>
-								<col style="width:25%;">
-								<col>
-							</colgroup>
-							<tbody>
-								<tr>
-									<th>자격명<em>*</em></th>
-									<td><n-auto-complete v-model:value="value" :input-props="{ autocomplete: 'disabled' }" :options="options" placeholder="검색" clearable /></td>
-								</tr>
-								<tr>
-									<th>발급기관<em>*</em></th>
-									<td><n-input v-model:value="value" type="text" disabled /></td>
-								</tr>
-								<tr>
-									<th>취득일<em>*</em></th>
-									<td><n-date-picker v-model:value="timestamp" type="date" /></td>
-								</tr>
-							</tbody>
-						</table>
+									<div class="box-type-04 mt-20">
+										<table class="w100">
+											<colgroup>
+												<col style="width:17%;">
+												<col>
+											</colgroup>
+											<tbody>
+												<tr>
+													<th>관심분야명</th>
+													<td>
+														<div class="wrap-flex gap-8">
+															<div class="form-type-txt">
+																<input type="text" placeholder="관심분야를 입력해 주세요.">
+															</div>
+															<button type="button" class="btn-type">추가</button>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+
+									<p class="fs-16 mt-20">직접 등록 관심분야 <span class="cr-mc">2</span>/7</p>
+
+									<ul class="lst-type-02 mt-8">
+										<li>
+											<div class="wrap-flex flex-1 gap-12">
+												애니메이션
+											</div>
+											<button type="button"><i class="ic-trash"></i></button>
+										</li>
+										<li>
+											<div class="wrap-flex flex-1 gap-12">
+												게임
+												<i class="ic-wait-02"></i>
+											</div>
+											<button type="button"><i class="ic-trash"></i></button>
+										</li>
+									</ul>
+
+									<p class="mt-12">직접 등록한 관심 분야가 반영된  AI 교과 추천은, 등록 시점으로 부터 약 5일 뒤에 확인  가능합니다.</p>
+									<p class="wrap-flex flex-center gap-4"><i class="ic-wait-02"></i>모래시계 아이콘이 붙은 관심 분야는  신규 등록한 관심분야 검증 및 ‘AI 학습’ 중일 경우 표시됩니다.</p></p>
+								</n-tab-pane>
+							</n-tabs>
+						</div>
+						<template #footer>
+							<button type="button" class="btn-type-b btn-b-blk w100">닫기기</button>
+							<button type="button" class="btn-type-b w100">저장</button>
+						</template>
+					</n-card>
+				</n-modal>
+				<n-modal v-model:show="modals.modal3a">
+					<n-card
+						style="width: 580px"
+						:bordered="false"
+						size="huge"
+						preset="dialog"
+						role="dialog"
+						aria-modal="true"
+					>
+						<template #header>
+							<h1 class="tit-01">관심분야</h1><button type="button" class="pop-close-no-header" @click="toggleModal('modal3a')"></button>
+						</template>
+
+						<div class="mx-h100">
+							<div class="box-type-04">
+								<table class="w100">
+									<colgroup>
+										<col style="width:17%;">
+										<col>
+									</colgroup>
+									<tbody>
+										<tr>
+											<th>관심분야명</th>
+											<td>
+												<div class="wrap-flex gap-8">
+													<div class="form-type-txt">
+														<input type="text">
+													</div>
+													<button type="button" class="btn-type">추가</button>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<p class="mt-20">직접 등록 관심분야 <span class="cr-mc">2</span>/7</p>
+							<ul class="lst-type-02 mt-8">
+								<li><span>애니메이션</span><button type="button"><i class="ic-trash"></i></button></li>
+								<li><div class="wrap-flex flex-1 gap-4">게임<i class="ic-wait-02"></i></div><button type="button"><i class="ic-trash"></i></button></li>
+							</ul>
+						</div>
 
 						<template #footer>
-							<button type="button" class="btn-type-b w100">취소</button>
-							<button type="button" class="btn-type w100">등록</button>
+							<button type="button" class="btn-type-b btn-b-blk w100" @click="toggleModal('modal3a')">닫기</button>
 						</template>
 					</n-card>
 				</n-modal>
 
-				<!-- 어학성적(UCO_050000) -->
-				<button class="btn-type" @click="toggleModal('modal4')">어학성적</button>
-				<n-modal v-model:show="modals.modal4" class="pop-type">
-					<n-card style="width: 580px" :bordered="false" size="huge" role="dialog" aria-modal="true">
+				<!-- 대표배지변경 -->
+				<button class="btn-type" @click="toggleModal('modal4')">대표배지변경</button>
+				<n-modal v-model:show="modals.modal4">
+					<n-card
+						style="width: 720px"
+						:bordered="false"
+						size="huge"
+						preset="dialog"
+						role="dialog"
+						aria-modal="true"
+					>
 						<template #header>
-							어학성적
+							<h1 class="tit-01">대표 배지 변경</h1>
 							<button type="button" class="pop-close-no-header" @click="toggleModal('modal4')"></button>
 						</template>
 
-						<table class="tbl-form">
-							<colgroup>
-								<col style="width:25%;">
-								<col>
-							</colgroup>
-							<tbody>
-								<tr>
-									<th>외국어<em>*</em></th>
-									<td><n-auto-complete v-model:value="value" :input-props="{ autocomplete: 'disabled' }" :options="options" placeholder="검색" clearable /></td>
-								</tr>
-								<tr>
-									<th>시험명<em>*</em></th>
-									<td><n-auto-complete v-model:value="value" :input-props="{ autocomplete: 'disabled' }" :options="options" placeholder="검색" clearable disabled /></td>
-								</tr>
-								<tr>
-									<th>취득점수<em>*</em></th>
-									<td>
-										<div class="layout-flex gap-12">
-											<div><n-input v-model:value="value" type="text" /></div>
-											<div><n-input v-model:value="value" type="text" disabled /></div>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<th>취득일<em>*</em></th>
-									<td><n-date-picker v-model:value="timestamp" type="date" /></td>
-								</tr>
-							</tbody>
-						</table>
+						<div class="lst-badge">
+							<div class="form-type-opt-rdo-02">
+								<label>
+									<input type="radio" name="badge-chg">
+									<span class="opt-txt"><img src="../assets/images/img/badge-01.png" class="badge-img">웰컴</span>
+								</label>
+								<p class="fs-14 m-fs-24 txt-c">첫 방문을 환영해요</p>
+							</div>
+							<div class="form-type-opt-rdo-02">
+								<label>
+									<input type="radio" disabled name="badge-chg">
+									<span class="opt-txt"><img src="../assets/images/img/badge-02.png" class="badge-img">다재다능</span>
+								</label>
+								<p class="fs-14 m-fs-24 txt-c">스킬을 등록했어요</p>
+							</div>
+							<div class="form-type-opt-rdo-02">
+								<label>
+									<input type="radio" disabled name="badge-chg">
+									<span class="opt-txt"><img src="../assets/images/img/badge-03.png" class="badge-img">스킬장인</span>
+								</label>
+								<p class="fs-14 m-fs-24 txt-c">스킬을 15개나<br>보유했어요</p>
+							</div>
+							<div class="form-type-opt-rdo-02">
+								<label>
+									<input type="radio" name="badge-chg">
+									<span class="opt-txt"><img src="../assets/images/img/badge-04.png" class="badge-img">꿈의나침반</span>
+								</label>
+								<p class="fs-14 m-fs-24 txt-c">롤모델을 설정했어요</p>
+							</div>
+							<div class="form-type-opt-rdo-02">
+								<label>
+									<input type="radio" name="badge-chg">
+									<span class="opt-txt"><img src="../assets/images/img/badge-05.png" class="badge-img">자격입문자</span>
+								</label>
+								<p class="fs-14 m-fs-24 txt-c">첫자격스크랩</p>
+							</div>
+							<div class="form-type-opt-rdo-02">
+								<label>
+									<input type="radio" name="badge-chg">
+									<span class="opt-txt"><img src="../assets/images/img/badge-06.png" class="badge-img">자격활동가</span>
+								</label>
+								<p class="fs-14 m-fs-24 txt-c">10개이상 스크랩</p>
+							</div>
+							<div class="form-type-opt-rdo-02">
+								<label>
+									<input type="radio" disabled name="badge-chg">
+									<span class="opt-txt"><img src="../assets/images/img/badge-07.png" class="badge-img">자격전문가</span>
+								</label>
+								<p class="fs-14 m-fs-24 txt-c">20개이상 스크랩</p>
+							</div>
+							<div class="form-type-opt-rdo-02">
+								<label>
+									<input type="radio" disabled name="badge-chg">
+									<span class="opt-txt"><img src="../assets/images/img/badge-08.png" class="badge-img">자격마스터</span>
+								</label>
+								<p class="fs-14 m-fs-24 txt-c">30개이상 스크랩</p>
+							</div>
+							<div class="form-type-opt-rdo-02">
+								<label>
+									<input type="radio" name="badge-chg">
+									<span class="opt-txt"><img src="../assets/images/img/badge-09.png" class="badge-img">미래설계자</span>
+								</label>
+								<p class="fs-14 m-fs-24 txt-c">Major Map을 설계했어요</p>
+							</div>
+							<div class="form-type-opt-rdo-02">
+								<label>
+									<input type="radio" name="badge-chg">
+									<span class="opt-txt"><img src="../assets/images/img/badge-10.png" class="badge-img">자아탐구자</span>
+								</label>
+								<p class="fs-14 m-fs-24 txt-c">자기소개서를 작성했어요</p>
+							</div>
+							<div class="form-type-opt-rdo-02">
+								<label>
+									<input type="radio" name="badge-chg">
+									<span class="opt-txt"><img src="../assets/images/img/badge-11.png" class="badge-img">커리어프로</span>
+								</label>
+								<p class="fs-14 m-fs-24 txt-c">이력서를 작성했어요</p>
+							</div>
+							<div class="form-type-opt-rdo-02">
+								<label>
+									<input type="radio" name="badge-chg">
+									<span class="opt-txt"><img src="..
+										/assets/images/img/badge-12.png" class="badge-img">커리어빌더</span>
+								</label>
+								<p class="fs-14 m-fs-24 txt-c">포트폴리오를 등록했어요</p>
+							</div>
+						</div>
 
 						<template #footer>
-							<button type="button" class="btn-type-b w100">취소</button>
-							<button type="button" class="btn-type w100">등록</button>
+							<button type="button" class="btn-type-b btn-b-blk w100">취소</button>
+							<button type="button" class="btn-type-b w100">저장</button>
 						</template>
 					</n-card>
 				</n-modal>
 
-				<!-- 교내외활동(UCO_060000) -->
-				<button class="btn-type" @click="toggleModal('modal5')">교내외활동</button>
-				<n-modal v-model:show="modals.modal5" class="pop-type">
-					<n-card style="width: 580px" :bordered="false" size="huge" role="dialog" aria-modal="true">
-						<template #header>
-							교내외활동
-							<button type="button" class="pop-close-no-header" @click="toggleModal('modal5')"></button>
-						</template>
-
-						<table class="tbl-form">
-							<colgroup>
-								<col style="width:25%;">
-								<col>
-							</colgroup>
-							<tbody>
-								<tr>
-									<th>구분<em>*</em></th>
-									<td><n-select v-model:value="value" :options="options" /></td>
-								</tr>
-								<tr>
-									<th>활동명<em>*</em></th>
-									<td><n-input v-model:value="value" type="text" /></td>
-								</tr>
-								<tr>
-									<th>시작일<em>*</em></th>
-									<td><n-date-picker v-model:value="timestamp" type="date" /></td>
-								</tr>
-								<tr>
-									<th>종료일</th>
-									<td><n-date-picker v-model:value="timestamp" type="date" /></td>
-								</tr>
-								<tr>
-									<th>활동내용</th>
-									<td>
-										<div class="form-tarea">
-											<textarea type="textarea" placeholder="경험한 내용을 입력해주세요"></textarea>
-										</div>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-
-						<template #footer>
-							<button type="button" class="btn-type-b w100">취소</button>
-							<button type="button" class="btn-type w100">등록</button>
-						</template>
-					</n-card>
-				</n-modal>
-
-				<!-- 교육이수(UCO_070000) -->
-				<button class="btn-type" @click="toggleModal('modal6')">교육이수</button>
-				<n-modal v-model:show="modals.modal6" class="pop-type">
-					<n-card style="width: 580px" :bordered="false" size="huge" role="dialog" aria-modal="true">
-						<template #header>
-							교육이수
-							<button type="button" class="pop-close-no-header" @click="toggleModal('modal6')"></button>
-						</template>
-
-						<table class="tbl-form">
-							<colgroup>
-								<col style="width:25%;">
-								<col>
-							</colgroup>
-							<tbody>
-								<tr>
-									<th>교육명<em>*</em></th>
-									<td><n-input v-model:value="value" type="text" /></td>
-								</tr>
-								<tr>
-									<th>교육기관<em>*</em></th>
-									<td><n-input v-model:value="value" type="text" /></td>
-								</tr>
-								<tr>
-									<th>시작년월<em>*</em></th>
-									<td><n-date-picker v-model:value="timestamp" type="date" /></td>
-								</tr>
-								<tr>
-									<th>종료년월</th>
-									<td><n-date-picker v-model:value="timestamp" type="date" /></td>
-								</tr>
-								<tr>
-									<th>교육내용</th>
-									<td>
-										<div class="form-tarea">
-											<textarea type="textarea" placeholder="경험한 내용을 입력해주세요"></textarea>
-										</div>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-
-						<template #footer>
-							<button type="button" class="btn-type-b w100">취소</button>
-							<button type="button" class="btn-type w100">등록</button>
-						</template>
-					</n-card>
-				</n-modal>
-
-				<!-- 해외경험(UCO_080000) -->
-				<button class="btn-type" @click="toggleModal('modal7')">해외경험</button>
-				<n-modal v-model:show="modals.modal7" class="pop-type">
-					<n-card style="width: 580px" :bordered="false" size="huge" role="dialog" aria-modal="true">
-						<template #header>
-							해외경험
-							<button type="button" class="pop-close-no-header" @click="toggleModal('modal7')"></button>
-						</template>
-
-						<table class="tbl-form">
-							<colgroup>
-								<col style="width:25%;">
-								<col>
-							</colgroup>
-							<tbody>
-								<tr>
-									<th>구분<em>*</em></th>
-									<td><n-input v-model:value="value" type="text" /></td>
-								</tr>
-								<tr>
-									<th>국가명<em>*</em></th>
-									<td><n-auto-complete v-model:value="value" :input-props="{ autocomplete: 'disabled' }" :options="options" placeholder="검색" clearable /></td>
-								</tr>
-								<tr>
-									<th>시작년월<em>*</em></th>
-									<td><n-date-picker v-model:value="timestamp" type="date" /></td>
-								</tr>
-								<tr>
-									<th>종료년월</th>
-									<td><n-date-picker v-model:value="timestamp" type="date" /></td>
-								</tr>
-								<tr>
-									<th>경험내용</th>
-									<td>
-										<div class="form-tarea">
-											<textarea type="textarea" placeholder="경험한 내용을 입력해주세요"></textarea>
-										</div>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-
-						<template #footer>
-							<button type="button" class="btn-type-b w100">취소</button>
-							<button type="button" class="btn-type w100">등록</button>
-						</template>
-					</n-card>
-				</n-modal>
-
-				<!-- 수상(UCO_090000) -->
-				<button class="btn-type" @click="toggleModal('modal8')">수상</button>
-				<n-modal v-model:show="modals.modal8" class="pop-type">
-					<n-card style="width: 580px" :bordered="false" size="huge" role="dialog" aria-modal="true">
-						<template #header>
-							수상
-							<button type="button" class="pop-close-no-header" @click="toggleModal('modal8')"></button>
-						</template>
-
-						<table class="tbl-form">
-							<colgroup>
-								<col style="width:25%;">
-								<col>
-							</colgroup>
-							<tbody>
-								<tr>
-									<th>수상명<em>*</em></th>
-									<td><n-input v-model:value="value" type="text" /></td>
-								</tr>
-								<tr>
-									<th>수여기관관<em>*</em></th>
-									<td><n-input v-model:value="value" type="text" /></td>
-								</tr>
-								<tr>
-									<th>수상년월<em>*</em></th>
-									<td><n-input v-model:value="value" type="text" /></td>
-								</tr>
-								<tr>
-									<th>수여내용</th>
-									<td>
-										<div class="form-tarea">
-											<textarea type="textarea" placeholder="수여내용 또는 결과를 입력해주세요"></textarea>
-										</div>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-
-						<template #footer>
-							<button type="button" class="btn-type-b w100">취소</button>
-							<button type="button" class="btn-type w100">등록</button>
-						</template>
-					</n-card>
-				</n-modal>
+				<!-- 시스템 점검 안내 -->
+				<button class="btn-type" @click="toggleModal('modal4')" disabled>시스템 점검 안내</button>
 			</div>
 
-			<!-- 직업정보 -->
-			<h1 style="font-size:30px; margin-top:20px; font-weight:bold;">직업정보</h1>
-			<div class="layout-grid mt-20" style="gap: 20px; grid-template-columns: repeat(7, minmax(0px, 1fr));">
-				<button class="btn-type" @click="toggleModal('modal9')">전체보기</button>
-				<n-modal v-model:show="modals.modal9" class="pop-type">
-					<n-card style="width: 580px" :bordered="false" size="huge" role="dialog" aria-modal="true">
+			<h1 class="tit-01 mt-20">My Major Map</h1>
+			<div class="wrap-grid m-wrap-flex m-flex-wrap mt-20" style="grid-template-columns:repeat(7, 1fr); gap:10px;">
+				<!-- My Major Map 복제 -->
+				<button class="btn-type" @click="toggleModal('modal17')">My Major Map 복제</button>
+				<n-modal v-model:show="modals.modal17">
+					<n-card
+						style="width: 580px"
+						:bordered="false"
+						size="huge"
+						preset="dialog"
+						role="dialog"
+						aria-modal="true"
+					>
 						<template #header>
-							전체보기
-							<button type="button" class="pop-close-no-header" @click="toggleModal('modal9')"></button>
+							<button type="button" class="pop-close-no-header" @click="toggleModal('modal17')"></button>
 						</template>
-						<h2 class="tit-04 mt-0">업무수행능력중요도</h2>
-						<ul class="layout-auto lst-item-03 mt-16">
+						<div class="txt-c mx-h100">
+							<h1 class="tit-01">My Major Map 복제</h1>
+							<p class="mt-8">복제할 My Major Map제목을 입력해주세요</p>
+							<div class="form-type-txt mt-40">
+								<input type="text" value="소프트웨어 개발자를 위한 나의 여정지도_복제">
+							</div>
+						</div>
+						<template #footer>
+							<button type="button" class="btn-type-b btn-b-blk w100" @click="toggleModal('modal17')">취소</button>
+							<button type="button" class="btn-type-b w100">복제</button>
+						</template>
+					</n-card>
+				</n-modal>
+
+				<!-- 학기선택 -->
+				<button class="btn-type" @click="toggleModal('modal18')">학기선택</button>
+				<n-modal v-model:show="modals.modal18">
+					<n-card
+						style="width: 720px"
+						:bordered="false"
+						size="huge"
+						preset="dialog"
+						role="dialog"
+						aria-modal="true"
+					>
+						<template #header>
+							<button type="button" class="pop-close-no-header" @click="toggleModal('modal18')"></button>
+						</template>
+						<div class="txt-c mx-h100">
+							<h1 class="tit-01">어느학기에 추가할까요?</h1>
+							<p class="mt-8">이수계획이 가능한 학기만 선택할 수 있어요</p>
+						</div>
+						<h2 class="tit-05 mt-40">정규학기</h2>
+						<ul class="wrap-grid favor-list mt-16 m-wrap-grid m-grid-col-3">
 							<li>
-								<a href="#" class="lst-tit"><b>98 전산</b></a>
-								<p class="lst-desc">다양한 목적을 위해 소프트웨어나 인터넷을 활용하거나 프로그램을 작성한다</p>
+								<div class="form-type-opt-btn-01">
+									<label>
+										<input type="radio" name="period" disabled>
+										<span class="opt-txt">1학년 1학기</span>
+									</label>
+								</div>
 							</li>
 							<li>
-								<a href="#" class="lst-tit"><b>98 기술 설계</b></a>
-								<p class="lst-desc">사용자의 요구에 맞도록 장비와기술을 개발하여 적용한다.</p>
+								<div class="form-type-opt-btn-01">
+									<label>
+										<input type="radio" name="period" disabled>
+										<span class="opt-txt">1학년 2학기</span>
+									</label>
+								</div>
 							</li>
 							<li>
-								<a href="#" class="lst-tit"><b>98 논리적 분석</b></a>
-								<p class="lst-desc">문제를 해결하기 위해(혹은 의사결정을 하기위해) 체계적으로 이치에 맞는 생각을 해낸다.</p>
+								<div class="form-type-opt-btn-01">
+									<label>
+										<input type="radio" name="period" disabled>
+										<span class="opt-txt">2학년 1학기</span>
+									</label>
+								</div>
 							</li>
 							<li>
-								<a href="#" class="lst-tit"><b>96 기술 분석</b></a>
-								<p class="lst-desc">새로운 방법을 고안하고 기존의 방법을 개선하기 위해서 현재 사용되는 도구와 기술을 분석한다.</p>
+								<div class="form-type-opt-btn-01">
+									<label>
+										<input type="radio" name="period">
+										<span class="opt-txt">2학년 2학기</span>
+									</label>
+								</div>
 							</li>
 							<li>
-								<a href="#" class="lst-tit"><b>96 문제해결</b></a>
-								<p class="lst-desc">문제의 본질을 파악하여 해결방법을 찾고 이를 실행한다.</p>
+								<div class="form-type-opt-btn-01">
+									<label>
+										<input type="radio" name="period">
+										<span class="opt-txt">3학년 1학기</span>
+									</label>
+								</div>
 							</li>
 							<li>
-								<a href="#" class="lst-tit"><b>98 기술 설계</b></a>
-								<p class="lst-desc">사용자의 요구에 맞도록 장비와기술을 개발하여 적용한다.</p>
+								<div class="form-type-opt-btn-01">
+									<label>
+										<input type="radio" name="period">
+										<span class="opt-txt">3학년 2학기</span>
+									</label>
+								</div>
 							</li>
 							<li>
-								<a href="#" class="lst-tit"><b>98 논리적 분석</b></a>
-								<p class="lst-desc">문제를 해결하기 위해(혹은 의사결정을 하기위해) 체계적으로 이치에 맞는 생각을 해낸다.</p>
+								<div class="form-type-opt-btn-01">
+									<label>
+										<input type="radio" name="period">
+										<span class="opt-txt">4학년 1학기</span>
+									</label>
+								</div>
 							</li>
 							<li>
-								<a href="#" class="lst-tit"><b>96 기술 분석</b></a>
-								<p class="lst-desc">새로운 방법을 고안하고 기존의 방법을 개선하기 위해서 현재 사용되는 도구와 기술을 분석한다.</p>
+								<div class="form-type-opt-btn-01">
+									<label>
+										<input type="radio" name="period">
+										<span class="opt-txt">4학년 2학기</span>
+									</label>
+								</div>
+							</li>
+						</ul>
+
+						<h2 class="tit-05 mt-40">계절학기</h2>
+						<ul class="wrap-grid favor-list mt-16 m-wrap-grid m-grid-col-3">
+							<li>
+								<div class="form-type-opt-btn-01">
+									<label>
+										<input type="radio" name="period" disabled>
+										<span class="opt-txt">1학년 여름</span>
+									</label>
+								</div>
 							</li>
 							<li>
-								<a href="#" class="lst-tit"><b>96 문제해결</b></a>
-								<p class="lst-desc">문제의 본질을 파악하여 해결방법을 찾고 이를 실행한다.</p>
+								<div class="form-type-opt-btn-01">
+									<label>
+										<input type="radio" name="period" disabled>
+										<span class="opt-txt">1학년 겨울</span>
+									</label>
+								</div>
+							</li>
+							<li>
+								<div class="form-type-opt-btn-01">
+									<label>
+										<input type="radio" name="period" disabled>
+										<span class="opt-txt">2학년 여름</span>
+									</label>
+								</div>
+							</li>
+							<li>
+								<div class="form-type-opt-btn-01">
+									<label>
+										<input type="radio" name="period">
+										<span class="opt-txt">2학년 겨울</span>
+									</label>
+								</div>
+							</li>
+							<li>
+								<div class="form-type-opt-btn-01">
+									<label>
+										<input type="radio" name="period">
+										<span class="opt-txt">3학년 여름</span>
+									</label>
+								</div>
+							</li>
+							<li>
+								<div class="form-type-opt-btn-01">
+									<label>
+										<input type="radio" name="period">
+										<span class="opt-txt">3학년 겨울</span>
+									</label>
+								</div>
+							</li>
+							<li>
+								<div class="form-type-opt-btn-01">
+									<label>
+										<input type="radio" name="period">
+										<span class="opt-txt">4학년 여름</span>
+									</label>
+								</div>
+							</li>
+							<li>
+								<div class="form-type-opt-btn-01">
+									<label>
+										<input type="radio" name="period">
+										<span class="opt-txt">4학년 겨울</span>
+									</label>
+								</div>
 							</li>
 						</ul>
 						<template #footer>
-							<button type="button" class="btn-type-b w100">확인</button>
+							<button type="button" class="btn-type-b btn-b-blk w100" @click="toggleModal('modal18')">취소</button>
+							<button type="button" class="btn-type-b w100">추가</button>
+						</template>
+					</n-card>
+				</n-modal>
+
+				<!-- 학기변경 -->
+				<button class="btn-type" @click="toggleModal('modal19')">학기변경</button>
+				<n-modal v-model:show="modals.modal19">
+					<n-card
+						style="width: 720px"
+						:bordered="false"
+						size="huge"
+						preset="dialog"
+						role="dialog"
+						aria-modal="true"
+					>
+						<template #header>
+							<button type="button" class="pop-close-no-header" @click="toggleModal('modal19')"></button>
+						</template>
+						<div class="txt-c mx-h100">
+							<h1 class="tit-01">어느학기로 변경할까요?</h1>
+							<p class="mt-8">이수계획이 가능한 학기만 선택할 수 있어요</p>
+						</div>
+						<h2 class="tit-05 mt-40">정규학기</h2>
+						<ul class="wrap-grid favor-list mt-16 m-wrap-grid m-grid-col-3">
+							<li>
+								<div class="form-type-opt-btn-01">
+									<label>
+										<input type="radio" name="period" disabled>
+										<span class="opt-txt">1학년 1학기</span>
+									</label>
+								</div>
+							</li>
+							<li>
+								<div class="form-type-opt-btn-01">
+									<label>
+										<input type="radio" name="period" disabled>
+										<span class="opt-txt">1학년 2학기</span>
+									</label>
+								</div>
+							</li>
+							<li>
+								<div class="form-type-opt-btn-01">
+									<label>
+										<input type="radio" name="period" disabled>
+										<span class="opt-txt">2학년 1학기</span>
+									</label>
+								</div>
+							</li>
+							<li>
+								<div class="form-type-opt-btn-01">
+									<label>
+										<input type="radio" name="period">
+										<span class="opt-txt">2학년 2학기</span>
+									</label>
+								</div>
+							</li>
+							<li>
+								<div class="form-type-opt-btn-01">
+									<label>
+										<input type="radio" name="period">
+										<span class="opt-txt">3학년 1학기</span>
+									</label>
+								</div>
+							</li>
+							<li>
+								<div class="form-type-opt-btn-01">
+									<label>
+										<input type="radio" name="period">
+										<span class="opt-txt">3학년 2학기</span>
+									</label>
+								</div>
+							</li>
+							<li>
+								<div class="form-type-opt-btn-01">
+									<label>
+										<input type="radio" name="period">
+										<span class="opt-txt">4학년 1학기</span>
+									</label>
+								</div>
+							</li>
+							<li>
+								<div class="form-type-opt-btn-01">
+									<label>
+										<input type="radio" name="period">
+										<span class="opt-txt">4학년 2학기</span>
+									</label>
+								</div>
+							</li>
+						</ul>
+
+						<h2 class="tit-05 mt-40">계절학기</h2>
+						<ul class="wrap-grid favor-list mt-16 m-wrap-grid m-grid-col-3">
+							<li>
+								<div class="form-type-opt-btn-01">
+									<label>
+										<input type="radio" name="period" disabled>
+										<span class="opt-txt">1학년 여름</span>
+									</label>
+								</div>
+							</li>
+							<li>
+								<div class="form-type-opt-btn-01">
+									<label>
+										<input type="radio" name="period" disabled>
+										<span class="opt-txt">1학년 겨울</span>
+									</label>
+								</div>
+							</li>
+							<li>
+								<div class="form-type-opt-btn-01">
+									<label>
+										<input type="radio" name="period" disabled>
+										<span class="opt-txt">2학년 여름</span>
+									</label>
+								</div>
+							</li>
+							<li>
+								<div class="form-type-opt-btn-01">
+									<label>
+										<input type="radio" name="period">
+										<span class="opt-txt">2학년 겨울</span>
+									</label>
+								</div>
+							</li>
+							<li>
+								<div class="form-type-opt-btn-01">
+									<label>
+										<input type="radio" name="period">
+										<span class="opt-txt">3학년 여름</span>
+									</label>
+								</div>
+							</li>
+							<li>
+								<div class="form-type-opt-btn-01">
+									<label>
+										<input type="radio" name="period">
+										<span class="opt-txt">3학년 겨울</span>
+									</label>
+								</div>
+							</li>
+							<li>
+								<div class="form-type-opt-btn-01">
+									<label>
+										<input type="radio" name="period">
+										<span class="opt-txt">4학년 여름</span>
+									</label>
+								</div>
+							</li>
+							<li>
+								<div class="form-type-opt-btn-01">
+									<label>
+										<input type="radio" name="period">
+										<span class="opt-txt">4학년 겨울</span>
+									</label>
+								</div>
+							</li>
+						</ul>
+						<template #footer>
+							<button type="button" class="btn-type-b btn-b-blk w100" @click="toggleModal('modal19')">취소</button>
+							<button type="button" class="btn-type-b w100">변경</button>
+						</template>
+					</n-card>
+				</n-modal>
+
+				<!-- 설계Tip -->
+				<button class="btn-type" @click="toggleModal('modal20')">설계Tip</button>
+				<n-modal v-model:show="modals.modal20">
+					<n-card
+						style="width: 750px"
+						:bordered="false"
+						size="huge"
+						preset="dialog"
+						role="dialog"
+						aria-modal="true"
+					>
+						<template #header>
+							<button type="button" class="pop-close-no-header" @click="toggleModal('modal20')"></button>
+						</template>
+						<div class="txt-c mx-h100">
+							<h1 class="tit-01">설계Tip</h1>
+							<p class="mt-8">이수계획에 예정인 학기의 교과 이수 및 자격증 취득 계획을 설계할 수 있습니다.</p>
+						</div>
+						<ul class="mt-12">
+							<li>- 교과 이수 계획은 입학연도 기준에 따라 정규 학기 당 설계완료의 <span class="cr-blk">기준은 15학점</span>이며, <span class="cr-blk">최대 17학점</span>까지 설계할 수 있어요!</li>
+							<li>- 교과 조회 시 전공을 선택하시면, 현재 취득중인 주전공과 복수전공을 모두 조회할 수 있습니다.</li>
+							<li>- 15학점을 기준으로 15학점 미만 설계 시 ‘설계중’으로, 15학점 이상 설계 시 ‘설계완료’로 표시됩니다.</li>
+						</ul>
+						<template #footer>
+							<button type="button" class="btn-type-b w100" @click="toggleModal('modal20')">확인</button>
 						</template>
 					</n-card>
 				</n-modal>
 			</div>
 
-			<!-- 진로가이드 -->
-			<h1 style="font-size:30px; margin-top:20px; font-weight:bold;">진로가이드</h1>
-			<div class="layout-grid mt-20" style="gap: 20px; grid-template-columns: repeat(7, minmax(0px, 1fr));">
-				<button class="btn-type" @click="toggleModal('modal10')" disabled>진로가이드</button>
-				<n-modal v-model:show="modals.modal10" class="pop-type">
-					<n-card style="width: 580px" :bordered="false" size="huge" role="dialog" aria-modal="true">
+			<h1 class="tit-01 mt-20">My Career</h1>
+			<div class="wrap-grid m-wrap-flex m-flex-wrap mt-20" style="grid-template-columns:repeat(7, 1fr); gap:10px;">
+				<!-- 자기소개서 복제 -->
+				<button class="btn-type" @click="toggleModal('modal6')">자기소개서 복제</button>
+				<n-modal v-model:show="modals.modal6">
+					<n-card
+						style="width: 580px"
+						:bordered="false"
+						size="huge"
+						preset="dialog"
+						role="dialog"
+						aria-modal="true"
+					>
+						<template #header>
+							<button type="button" class="pop-close-no-header" @click="toggleModal('modal6')"></button>
+						</template>
+						<div class="txt-c mx-h100">
+							<h1 class="tit-01">자기소개서 복제</h1>
+							<p class="mt-8">복제할 자기소개서의 제목을 입력해주세요</p>
+							<div class="form-type-txt mt-40">
+								<input type="text" value="직업목표와 비전_복제">
+							</div>
+						</div>
+						<template #footer>
+							<button type="button" class="btn-type-b btn-b-blk w100" @click="toggleModal('modal6')">취소</button>
+							<button type="button" class="btn-type-b w100">복제</button>
+						</template>
+					</n-card>
+				</n-modal>
+
+				<!-- 주제선택 -->
+				<button class="btn-type" @click="toggleModal('modal7')">주제선택</button>
+				<n-modal v-model:show="modals.modal7">
+					<n-card
+						style="width: 580px"
+						:bordered="false"
+						size="huge"
+						preset="dialog"
+						role="dialog"
+						aria-modal="true"
+					>
+						<template #header>
+							<h1 class="tit-01">주제선택</h1><button type="button" class="pop-close-no-header" @click="toggleModal('modal7')"></button>
+						</template>
+						<div class="wrap-flex flex-col gap-16">
+							<div class="form-type-opt-01">
+								<label>
+									<input type="checkbox">
+									<div class="opt-txt">
+										<h2 class="tit-04"><strong>자신의 성장과 배경</strong></h2>
+										<p>가족, 교육, 중요 사건들이 현재의 나를 어떻게 형성했는지 설명합니다.</p>
+									</div>
+								</label>
+							</div>
+							<div class="form-type-opt-01">
+								<label>
+									<input type="checkbox">
+									<div class="opt-txt">
+										<h2 class="tit-04"><strong>자신의 성장과 배경</strong></h2>
+										<p>가족, 교육, 중요 사건들이 현재의 나를 어떻게 형성했는지 설명합니다.</p>
+									</div>
+								</label>
+							</div>
+						</div>
+						<template #footer>
+							<button type="button" class="btn-type-b btn-b-blk w100" @click="toggleModal('modal7')">취소</button>
+							<button type="button" class="btn-type-b w100">확인</button>
+						</template>
+					</n-card>
+				</n-modal>
+
+				<!-- 포트폴리오 등록 -->
+				<button class="btn-type" @click="toggleModal('modal8')">포트폴리오 등록</button>
+				<n-modal v-model:show="modals.modal8">
+					<n-card
+						style="width: 580px"
+						:bordered="false"
+						size="huge"
+						preset="dialog"
+						role="dialog"
+						aria-modal="true"
+					>
+						<template #header>
+							<button type="button" class="pop-close-no-header" @click="toggleModal('modal8')"></button>
+						</template>
+						<div class="txt-c mx-h100">
+							<h1 class="tit-01">포트폴리오 등록</h1>
+							<n-tabs type="line" class="tabs-type-01-01 mt-40">
+								<n-tab-pane name="portfolio-reg-1" tab="URL">
+									<div class="form-type-txt mt-12">
+										<input type="text" placeholder="포트폴리오의 제목을 입력해주세요.">
+									</div>
+									<div class="form-type-txt mt-16 invalid">
+										<input type="text" placeholder="포트폴리오의 URL을 입력해주세요.">
+									</div>
+								</n-tab-pane>
+								<n-tab-pane name="portfolio-reg-2" tab="파일">
+									<div class="form-type-txt mt-16">
+										<input type="text" placeholder="포트폴리오의 제목을 입력해주세요.">
+									</div>
+									<div class="form-type-txt form-type-file mt-16">
+										<input type="file" id="file">
+										<label class="btn-type-b btn-b-lgry file-button" for="file">파일찾기</label>
+									</div>
+									<p class="txt-info mt-8"><i class="ic-info"></i>확장자가 zip인 파일을 최대 00MB까지 등록할 수 있습니다.</p>
+								</n-tab-pane>
+							</n-tabs>
+						</div>
+						<template #footer>
+							<button type="button" class="btn-type-b btn-b-blk w100" @click="toggleModal('modal8')">취소</button>
+							<button type="button" class="btn-type-b w100">확인</button>
+						</template>
+					</n-card>
+				</n-modal>
+
+				<!-- 포트폴리오 수정 -->
+				<button class="btn-type" @click="toggleModal('modal9')">포트폴리오 수정 (URL)</button>
+				<n-modal v-model:show="modals.modal9">
+					<n-card
+						style="width: 580px"
+						:bordered="false"
+						size="huge"
+						preset="dialog"
+						role="dialog"
+						aria-modal="true"
+					>
+						<template #header>
+							<button type="button" class="pop-close-no-header" @click="toggleModal('modal9')"></button>
+						</template>
+						<div class="txt-c mx-h100">
+							<h1 class="tit-01">포트폴리오 등록</h1>
+							<div class="form-type-txt mt-40">
+								<input type="text" placeholder="포트폴리오의 제목을 입력해주세요.">
+							</div>
+							<div class="form-type-txt mt-16 invalid">
+								<input type="text" placeholder="포트폴리오의 URL을 입력해주세요.">
+							</div>
+						</div>
+						<template #footer>
+							<button type="button" class="btn-type-b btn-b-blk w100" @click="toggleModal('modal9')">취소</button>
+							<button type="button" class="btn-type-b w100">확인</button>
+						</template>
+					</n-card>
+				</n-modal>
+
+				<!-- 포트폴리오 수정 -->
+				<button class="btn-type" @click="toggleModal('modal10')">포트폴리오 수정 (File)</button>
+				<n-modal v-model:show="modals.modal10">
+					<n-card
+						style="width: 580px"
+						:bordered="false"
+						size="huge"
+						preset="dialog"
+						role="dialog"
+						aria-modal="true"
+					>
 						<template #header>
 							<button type="button" class="pop-close-no-header" @click="toggleModal('modal10')"></button>
 						</template>
-
+						<div class="txt-c mx-h100">
+							<h1 class="tit-01">포트폴리오 등록</h1>
+							<div class="form-type-txt mt-16">
+								<input type="text" placeholder="포트폴리오의 제목을 입력해주세요.">
+							</div>
+							<div class="form-type-txt form-type-file mt-16">
+								<input type="file" id="file">
+								<label class="btn-type-b btn-b-lgry file-button" for="file">파일찾기</label>
+							</div>
+							<p class="txt-info mt-8"><i class="ic-info"></i>확장자가 zip인 파일을 최대 00MB까지 등록할 수 있습니다.</p>
+						</div>
 						<template #footer>
+							<button type="button" class="btn-type-b btn-b-blk w100" @click="toggleModal('modal10')">취소</button>
 							<button type="button" class="btn-type-b w100">확인</button>
 						</template>
 					</n-card>
 				</n-modal>
-			</div>
 
-			<!-- 마이페이지 -->
-			<h1 style="font-size:30px; margin-top:20px; font-weight:bold;">마이페이지</h1>
-			<div class="layout-grid mt-20" style="gap: 20px; grid-template-columns: repeat(7, minmax(0px, 1fr));">
-				<button class="btn-type" @click="toggleModal('modal11')" disabled>마이페이지</button>
-				<n-modal v-model:show="modals.modal11" class="pop-type">
-					<n-card style="width: 580px" :bordered="false" size="huge" role="dialog" aria-modal="true">
+				<!-- 자기소개서 불러오기 -->
+				<button class="btn-type" @click="toggleModal('modal11')">자기소개서 불러오기</button>
+				<n-modal v-model:show="modals.modal11">
+					<n-card
+						style="width: 580px"
+						:bordered="false"
+						size="huge"
+						preset="dialog"
+						role="dialog"
+						aria-modal="true"
+					>
 						<template #header>
-							<button type="button" class="pop-close-no-header" @click="toggleModal('modal11')"></button>
+							<h1 class="tit-01">자기소개서 불러오기</h1><button type="button" class="pop-close-no-header" @click="toggleModal('modal11')"></button>
 						</template>
 
+						<p class="txt-info"><i class="ic-info"></i>어떤 내용을 작성해야 될지 막막하다면, 주제를 선택해 작성해 보세요.</p>
+
+						<div class="wrap-flex flex-col gap-16 mt-12">
+							<div class="form-type-opt-01">
+								<label>
+									<input type="checkbox">
+									<div class="opt-txt">
+										<h2><span class="tit-04"><strong>자신의 성장과 배경</strong></span> <span class="wb-keep">(항목 3개)</span></h2>
+										<p>#초안 #취업특강 #과제</p>
+									</div>
+								</label>
+							</div>
+							<div class="form-type-opt-01">
+								<label>
+									<input type="checkbox">
+									<div class="opt-txt">
+										<h2><span class="tit-04"><strong>자기소개서 제목이 모두 노출됩니다. 자기소개서 제목이 모두 노출됩니다소개서</strong></span> <span class="wb-keep">(항목 3개)</span></h2>
+									</div>
+								</label>
+							</div>
+						</div>
+
 						<template #footer>
+							<button type="button" class="btn-type-b btn-b-blk w100" @click="toggleModal('modal11')">취소</button>
 							<button type="button" class="btn-type-b w100">확인</button>
 						</template>
 					</n-card>
 				</n-modal>
+
+				<!-- 포트폴리오 불러오기 -->
+				<button class="btn-type" @click="toggleModal('modal12')">포트폴리오 불러오기</button>
+				<n-modal v-model:show="modals.modal12">
+					<n-card
+						style="width: 580px"
+						:bordered="false"
+						size="huge"
+						preset="dialog"
+						role="dialog"
+						aria-modal="true"
+					>
+						<template #header>
+							<h1 class="tit-01">포트폴리오 불러오기</h1><button type="button" class="pop-close-no-header" @click="toggleModal('modal12')"></button>
+						</template>
+
+						<p class="txt-info"><i class="ic-info"></i>어떤 내용을 작성해야 될지 막막하다면, 주제를 선택해 작성해 보세요.</p>
+
+						<div class="wrap-flex flex-col gap-16 mt-12">
+							<div class="form-type-opt-01">
+								<label>
+									<input type="checkbox">
+									<div class="opt-txt">
+										<div class="wrap-flex gap-12">
+											<span class="chip-type-01-blu-02">URL</span>
+											<div>
+												<h2 class="tit-04"><strong>자신의 성장과 배경</strong></h2>
+												<a href="#" class="btn-link-02">https://computer.yu.ac.kr/computer/index.do</a>
+											</div>
+										</div>
+									</div>
+								</label>
+							</div>
+							<div class="form-type-opt-01">
+								<label>
+									<input type="checkbox">
+									<div class="opt-txt">
+										<div class="wrap-flex gap-12">
+											<span class="chip-type-01-sky-02">파일</span>
+											<div>
+												<h2 class="tit-04"><strong>영남기업 사무직 2024 하반기채용 포트폴리오_이영남ㅁㅋㅌㅊㅋㅌㅊ</strong></h2>
+												<a href="#" class="btn-link-02">게시판 만들기.zip</a>
+											</div>
+										</div>
+									</div>
+								</label>
+							</div>
+						</div>
+
+						<template #footer>
+							<button type="button" class="btn-type-b btn-b-blk w100" @click="toggleModal('modal12')">취소</button>
+							<button type="button" class="btn-type-b w100">확인</button>
+						</template>
+					</n-card>
+				</n-modal>
+
+				<!-- 이력서 복제 -->
+				<button class="btn-type" @click="toggleModal('modal13')">이력서 복제</button>
+				<n-modal v-model:show="modals.modal13">
+					<n-card
+						style="width: 580px"
+						:bordered="false"
+						size="huge"
+						preset="dialog"
+						role="dialog"
+						aria-modal="true"
+					>
+						<template #header>
+							<h1 class="tit-01">이력서 복제</h1><button type="button" class="pop-close-no-header" @click="toggleModal('modal13')"></button>
+						</template>
+
+						<div class="txt-c mx-h100">
+							<h1 class="tit-01">이력서 복제</h1>
+							<p class="mt-8">복제할 이력서의 제목을 입력해주세요</p>
+							<div class="form-type-txt mt-16">
+								<input type="text" value="다양한 경험으로 준비되어있는 인재, 김영남 입니다_복제">
+							</div>
+						</div>
+
+						<template #footer>
+							<button type="button" class="btn-type-b btn-b-blk w100" @click="toggleModal('modal13')">취소</button>
+							<button type="button" class="btn-type-b w100">복제</button>
+						</template>
+					</n-card>
+				</n-modal>
 			</div>
+
+			<script>
+				const { createApp, ref, reactive } = Vue;
+				const { NTabs, NTabPane, NButton, NModal, NCard, NSelect } = naive;
+
+				const app = createApp({
+					components: {
+						NTabs,
+						NTabPane,
+						NButton,
+						NModal,
+						NCard,
+						NSelect
+					},
+					setup() {
+						const modals = reactive({
+							modal1: false,
+							modal2: false,
+							modal3: false,
+							modal3a: false,
+							modal4: false,
+							modal5: false,
+							modal6: false,
+							modal7: false,
+							modal8: false,
+							modal9: false,
+							modal10: false,
+							modal11: false,
+							modal12: false,
+							modal13: false,
+							modal14: false,
+							modal15: false,
+							modal16: false,
+							modal17: false,
+							modal18: false,
+							modal19: false,
+							modal20: false,
+						});
+
+						const toggleModal = (modalName) => { modals[modalName] = !modals[modalName] };
+
+						return {
+							modals,
+							toggleModal
+						};
+					}
+				});
+
+				app.use(naive);
+				app.mount('#app');
+			</script>
 		</div>
-
-		<script>
-			const { createApp, ref, reactive, computed, defineComponent } = Vue;
-			const { NTabs, NTabPane, NButton, NModal, NCard, NSelect, NCollapse, NCollapseItem, create } = naive;
-
-			const app = createApp({
-				components: {
-					NTabs,
-					NTabPane,
-					NButton,
-					NModal,
-					NCard,
-					NSelect,
-					NCollapse,
-					NCollapseItem,
-				},
-				setup() {
-					const modals = reactive({
-						modal1: false,
-						modal2: false,
-						modal3: false,
-						modal3a: false,
-						modal4: false,
-						modal5: false,
-						modal6: false,
-						modal7: false,
-						modal8: false,
-						modal9: false,
-						modal10: false,
-						modal11: false,
-						modal12: false,
-						modal13: false,
-						modal14: false,
-						modal15: false,
-						modal16: false,
-						modal17: false,
-						modal18: false,
-						modal19: false,
-						modal20: false,
-					});
-
-					const toggleModal = (modalName) => { modals[modalName] = !modals[modalName] };
-
-					return {
-						modals,
-						toggleModal
-					};
-				}
-			});
-
-			app.use(naive);
-			app.mount('#app');
-		</script>
 	</body>
 </html>

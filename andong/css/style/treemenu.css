@@ -1,0 +1,12 @@
+/* Tree Menu */
+	ig-tree {display:block;}
+	ig-tree, [class*="tree-type"] {max-width:fit-content;}
+	[class*="tree-type"] {display:flex; flex-direction: column}
+	[class*="tree-type"] summary {display:flex; flex-wrap:nowrap; gap:4px; align-items:center; padding:0 0 0 18px;}
+	[class*="tree-type"].tree-sub-item > summary {padding:0;}
+	[class*="tree-type"] button {text-align:left;}
+	[class*="tree-type"] .tree-arrow {display:flex; justify-content:center; width:14px; height:14px;}
+	[class*="tree-type"] .tree-arrow:before {content:""; background-image:var(--ico-c); background-size:var(--ico-sz); background-position:var(--150) var(--500); width:8px; height:14px; transition:transform .3s ease;}
+	[class*="tree-type"] [class*="tree-type"],
+	[class*="tree-type"] > * {padding-left:18px;}
+	[class*="tree-type"][open] > summary > .tree-arrow:before {transform:rotate(90deg); transition:transform .3s ease;}
