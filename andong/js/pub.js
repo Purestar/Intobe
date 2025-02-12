@@ -3,7 +3,17 @@ const log = (...args) => { console.log(...args); };
 // primeVue Component
 document.addEventListener('DOMContentLoaded', function() {
 	const { createApp, ref } = Vue;
+	const { NCard, NTabs, NTabPane, NSpace, NSelect, NOption, create } = naive;
+
 	const app = createApp({
+		components: {
+			NCard,
+			NTabs,
+			NTabPane,
+			NSpace,
+			NSelect,
+			NOption
+		},
 		setup() {
 			const { date, value } = ref();
 
@@ -15,10 +25,10 @@ document.addEventListener('DOMContentLoaded', function() {
 	});
 
 	// Accordion
-	app.component('ig-aco', PrimeVue.Accordion);
-	app.component('ig-aco-item', PrimeVue.AccordionPanel);
-	app.component('ig-aco-head', PrimeVue.AccordionHeader);
-	app.component('ig-aco-cont', PrimeVue.AccordionContent);
+	app.component('p-aco', PrimeVue.Accordion);
+	app.component('p-aco-panel', PrimeVue.AccordionPanel);
+	app.component('p-aco-header', PrimeVue.AccordionHeader);
+	app.component('p-aco-content', PrimeVue.AccordionContent);
 
 	// Form
 	app.component('p-autocomplete', PrimeVue.AutoComplete);
@@ -33,8 +43,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	// PrimeVue Config
 	app.use(PrimeVue.Config, { unstyled: true });
+	app.use(naive);
 
-	//app.mount('#container');
+	app.mount('#container');
 });
 
 // include.js
