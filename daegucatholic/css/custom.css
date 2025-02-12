@@ -21,6 +21,9 @@
 		.bar-h-01, .bar-h-01 > * {gap:24px;}
 		.bar-h-01 > *:before {background:#f0f0f0;}
 
+		.bar-h-02, .bar-h-02 > * {gap:40px;}
+		.bar-h-02 > *:before {background:#e9e9e9;}
+
 	/* Vertical */
 		.bar-v-01, .bar-v-01 > * {gap:8px;}
 

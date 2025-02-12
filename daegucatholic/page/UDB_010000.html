@@ -18,8 +18,135 @@
 		<div data-include="../include/header.html"></div>
 		<div id="container">
 			<div class="layout-inner contents">
+				<div class="layout-full txt-c">
+					<h2 class="sub-title">DCU배지</h2>
+				</div>
+				<h3 class="tit-06 mt-80">DCU배지란?</h3>
+				<p class="txt-02">DCU배지는 재학 기간 교과, 비교과, 장학, 진로, ESG 활동 성적과 취득 학위에 대한 디지털 인증을 위한 오픈 배지입니다. DCU 배지는 재학중에는 계획적인 학업계획수립과 달성 정도 확인에 사용할 수 있습니다. 또한 외부 인증 기관을 통해 신뢰할 수 있는 디지털 자격을 제공함으로 취업 및 외부활동에도 활용 가능합니다. DCU 배지는 향후 다양한 디지털 자격 증명을 위해 종류와 범위가 확대 될 예정입니다.</p>
+				<h3 class="tit-06 mt-60">DCU배지 살펴보기</h3>
+				<div class="box-type-02 mt-20">
+					<div class="bar-h-02">
+						<div>
+							<!-- 배지 슬라이드 -->
+							<div id="badgeSlide">
+								<div class="swi-type-02">
+									<div class="swiper m-pside--inner">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<div class="layout-flex flex-col align-center gap-16">
+													<div class="thumb-type-badge-01">
+														<div class="thumb-inner">
+															<img src="../images/badge/suksa.png">
+														</div>
+													</div>
+													<b class="fs-18 cr-blk m-fs-24">DCU 석사 학위</b>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="layout-flex flex-col align-center gap-16">
+													<div class="thumb-type-badge-01">
+														<div class="thumb-inner">
+															<img src="../images/badge/stella.png">
+														</div>
+													</div>
+													<b class="fs-18 cr-blk m-fs-24">DCU 스텔라 인성</b>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="layout-flex flex-col align-center gap-16">
+													<div class="thumb-type-badge-01">
+														<div class="thumb-inner">
+															<img src="../images/badge/esg.png">
+														</div>
+													</div>
+													<b class="fs-18 cr-blk m-fs-24">DCU ESG</b>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="layout-flex flex-col align-center gap-16">
+													<div class="thumb-type-badge-01">
+														<div class="thumb-inner">
+															<img src="../images/badge/extracurricular.png">
+														</div>
+													</div>
+													<b class="fs-18 cr-blk m-fs-24">DCU 비교과</b>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="layout-flex flex-col align-center gap-16">
+													<div class="thumb-type-badge-01">
+														<div class="thumb-inner">
+															<img src="../images/badge/career.png">
+														</div>
+													</div>
+													<b class="fs-18 cr-blk m-fs-24">DCU 진로</b>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="layout-flex flex-col align-center gap-16">
+													<div class="thumb-type-badge-01">
+														<div class="thumb-inner">
+															<img src="../images/badge/scholarship.png">
+														</div>
+													</div>
+													<b class="fs-18 cr-blk m-fs-24">DCU 장학</b>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-navigation">
+										<div class="swiper-button-prev swi-arrow-01"></div>
+										<div class="swiper-button-next swi-arrow-01"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="layout-flex gap-60">
+								<div class="flex flex-col align-center gap-16 ml-30">
+									<div class="thumb-type-badge-01">
+										<div class="thumb-inner">
+											<img src="../images/badge/extracurricular.png">
+										</div>
+									</div>
+									<b class="fs-24 cr-blk">DCU 비교과</b>
+								</div>
+								<div class="flex flex-col gap-32">
+									<div>
+										<h4 class="tit-02 m-fs-24"><b>배지 간략 설명</b></h4>
+										<p class="txt-02 mt-8 m-mt-16 m-fs-24">DCU가 인증하는 다양한 비교과 경험을 가진 인재군요!</p>
+									</div>
+									<div>
+										<h4 class="tit-02 m-fs-24"><b>발급기준</b></h4>
+										<p class="txt-02 mt-8 m-mt-16 m-fs-24">전체 학년, 전체학생 기준 비교과 수강 과목 수 기준으로 상대평가 발급</p>
+									</div>
+									<div>
+										<h4 class="tit-02 m-fs-24"><b>배지레벨</b></h4>
+										<p class="txt-02 mt-8 m-mt-16 m-fs-24">레벨1, 레벨2, 레벨3</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div data-include="../include/footer.html"></div>
+		<script>
+			// 비교과 프로그램 추천 슬라이드
+			const badgeSlide = new Swiper('#badgeSlide .swiper', {
+				slidesPerView: 3,
+				spaceBetween: calculatePercentage(36),
+				navigation: {
+					nextEl: '#badgeSlide .swiper-button-next',
+					prevEl: '#badgeSlide .swiper-button-prev',
+				},
+				breakpoints: {
+					720: {
+						slidesPerView: 6,
+					},
+				},
+			});
+		</script>
 	</body>
 </html>

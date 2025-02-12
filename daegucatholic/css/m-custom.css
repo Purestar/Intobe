@@ -7,6 +7,10 @@
 		.aco-type-01 .n-collapse-item .n-collapse-item__content-wrapper .n-collapse-item__content-inner {padding:5vw;}
 
 	/* Bar */
+		/* Horizontal */
+			.bar-h-01, .bar-h-01 > * {gap:3.33vw;}
+			.bar-h-02, .bar-h-02 > * {gap:7.22vw;}
+
 		/* Vertical */
 			.bar-v-02, .bar-v-02 > * {gap:1.81vw;}
 			.bar-v-02 > * + *:before {height:1.94vw;}
@@ -254,6 +258,9 @@
 			.swi-type-01 .swiper {padding:0 5vw;}
 			.swi-type-01 .swiper-button-prev {left:5vw;}
 			.swi-type-01 .swiper-button-next {right:5vw;}
+
+			.swi-type-02 .swiper-button-prev {left:-10vw;}
+			.swi-type-02 .swiper-button-next {right:-10vw;}
 
 	/* Table */
 		.tbl-form {border-spacing:0 4.17vw; font-size:3.89vw;}
