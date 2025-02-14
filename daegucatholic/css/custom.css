@@ -331,8 +331,10 @@
 /* Popup */
 	/*.pop-sz-01 .pop-wrap {width:580px;}*/
 
-	[class*="pop-type"] {gap:0;}
+	[class*="pop-type"] {gap:0; max-height:95dvh;}
 	[class*="pop-type"].n-card.n-modal {border-radius:20px;}
+	[class*="pop-type"] .n-card__content {overflow-y:auto;}
+	[class*="pop-type"] .n-card__footer {padding-top:var(--n-padding-top);}
 	.n-card-header__main {font-size:24px;}
 	.n-modal-container .n-card__footer {display:flex; gap:10px;}
 	.n-modal-container .n-card__footer [class*="btn-type"] {height:56px;}

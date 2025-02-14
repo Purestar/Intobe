@@ -237,7 +237,7 @@
 		.popover-type-01 .popover-action:before {width:2.22vw; height:1.81vw;}
 
 	/* Popup */
-		[class*="pop-type"] {width:100% !important;}
+		[class*="pop-type"] {width:100% !important; max-height:100dvh;}
 		[class*="pop-type"].n-card.n-modal {border-radius:0;}
 		[class*="pop-type"].pop-close-no-header {width:15.28vw; height:15.28vw;}
 		.n-card-header__main {font-size:5vw;}
