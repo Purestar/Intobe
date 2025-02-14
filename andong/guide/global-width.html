@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="대구가톨릭">
+		<meta name="description" content="대구가톨릭">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script type="module" src="../js/pub.js"></script>
+		<link rel="stylesheet" href="../css/global.css">
+		<style>
+			.workspace-guide-inner div {border:1px solid red;}
+		</style>
+	</head>
+	<body>
+		<div class="workspace-guide">
+			<!-- Information -->
+			<div class="workspace-guide-case">
+				<h1>Information</h1>
+				<ul class="workspace-guide-prop">
+					<li>
+						<span class="workspace-guide-prop-desc">width</span>
+						<span class="workspace-guide-prop-name">w</span>
+						<span class="workspace-guide-prop-value">&lt;Number&gt;</span>
+					</li>
+					<li>
+						<span class="workspace-guide-prop-desc">height</span>
+						<span class="workspace-guide-prop-name">h</span>
+						<span class="workspace-guide-prop-value">&lt;Number&gt;</span>
+					</li>
+				</ul>
+			</div>
+			<div class="workspace-guide-case">
+				<h1>Width</h1>
+				<div class="workspace-guide-inner">
+					<div style="--w:100; --m-w:300">Width</div>
+				</div>
+				<div class="workspace-guide-inner">
+					<xmp>
+						<div style="--w:100; --m-w:300">Width</div>
+					</xmp>
+				</div>
+			</div>
+			<hr>
+			<div class="workspace-guide-case">
+				<h1>Height</h1>
+				<div class="workspace-guide-inner">
+					<div style="--h:100; --m-h:300">Height</div>
+				</div>
+				<div class="workspace-guide-inner">
+					<xmp>
+						<div style="--h:100; --m-h:300">Height</div>
+					</xmp>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
