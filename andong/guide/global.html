@@ -33,20 +33,9 @@
 				</div>
 			</div>
 			<div class="workspace-guide-case">
-				<h1>Default</h1>
-				<div class="workspace-guide-inner">
-					<div>Full</div>
-				</div>
-				<div class="workspace-guide-inner">
-					<xmp>
-<div>Full</div>
-					</xmp>
-				</div>
-			</div>
-			<div class="workspace-guide-case">
 				<h1>Margin</h1>
 				<div class="workspace-guide-inner">
-					<div data-layout="flex" style="--items:center; --gap:20; --pd:70; --m-pd:36; --text:center;">
+					<div data-layout="flex" style="--justify:center; --items:center; --gap:20; --pd:70; --m-pd:36; --text:center;">
 						<div><div style="--mg:70; --m-mg:36;">Margin</div></div>
 						<div><div style="--mg-t:70; --m-mg-t:36;">Margin Top</div></div>
 						<div><div style="--mg-b:70; --m-mg-b:36;">Margin Bottom</div></div>
@@ -54,10 +43,16 @@
 						<div><div style="--mg-r:70; --m-mg-r:36;">Margin Right</div></div>
 						<div><div style="--mg-x:70; --m-mg-x:36;">Margin Inline</div></div>
 						<div><div style="--mg-y:70; --m-mg-y:36;">Margin Block</div></div>
+						<div><div style="--mg-x:70; --m-mg-x:36; --mg-y:70; --m-mg-y:36;">Margin Inline<br>Margin Block</div></div>
+					</div>
+					<div data-layout="flex" style="--justify:center; --items:center; --gap:20; --pd:70; --m-pd:36; --text:center;">
+						<div><div style="--mg-t:70; --m-mg-t:36; --mg-b:70; --m-mg-b:36;">Margin Top<br>Margin Bottom</div></div>
+						<div><div style="--mg-l:70; --m-mg-l:36; --mg-r:70; --m-mg-r:36;">Margin Left<br>Margin Right</div></div>
+						<div><div style="--mg-x:70; --m-mg-x:36; --mg-y:70; --m-mg-y:36;">Margin Inline<br>Margin Block</div></div>
 					</div>
 				</div>
 				<div class="workspace-guide-inner">
-					<ul class="workspace-guide-prop" style="--mg-t:20;">
+					<ul class="workspace-guide-prop">
 						<li>
 							<span class="workspace-guide-prop-desc">margin</span>
 							<span class="workspace-guide-prop-name">mg</span>
@@ -99,15 +94,55 @@
 			<div class="workspace-guide-case">
 				<h1>Padding</h1>
 				<div class="workspace-guide-inner">
-					<div data-layout="flex" style="--direction:column; --items:center; --gap:20; --pd:70; --m-pd:36;">
-						<div data-layout style="--pd:70; --m-pd:36;">Padding</div>
-						<div data-layout style="--pd-t:70;">Padding Top</div>
-						<div data-layout style="--pd-b:70;">Padding Bottom</div>
-						<div data-layout style="--pd-l:70;">Padding Left</div>
-						<div data-layout style="--pd-r:70;">Padding Right</div>
-						<div data-layout style="--pd-ver:70; --m-pd-ver:36;">Padding Vertical</div>
-						<div data-layout style="--pd-hor:70; --m-pd-hor:36;">Padding Horizontal</div>
+					<div data-layout="flex" style="--justify:center; --items:center; --gap:20; --pd:70; --m-pd:36; --text:center;">
+						<div style="--pd:70; --m-pd:36;">Padding</div>
+						<div style="--pd-t:70; --m-pd-t:36;">Padding Top</div>
+						<div style="--pd-b:70; --m-pd-b:36;">Padding Bottom</div>
+						<div style="--pd-l:70; --m-pd-l:36;">Padding Left</div>
+						<div style="--pd-r:70; --m-pd-r:36;">Padding Right</div>
+						<div style="--pd-x:70; --m-pd-x:36;">Padding Inline</div>
+						<div style="--pd-y:70; --m-pd-y:36;">Padding Block</div>
+						<div style="--pd-x:70; --m-pd-x:36; --pd-y:70; --m-pd-y:36;">Padding Inline<br>Padding Block</div>
 					</div>
+				</div>
+				<div class="workspace-guide-inner">
+					<ul class="workspace-guide-prop">
+						<li>
+							<span class="workspace-guide-prop-desc">padding</span>
+							<span class="workspace-guide-prop-name">pd</span>
+							<span class="workspace-guide-prop-value">&lt;숫자&gt;</span>
+						</li>
+						<li>
+							<span class="workspace-guide-prop-desc">padding-top</span>
+							<span class="workspace-guide-prop-name">pd-t</span>
+							<span class="workspace-guide-prop-value">&lt;숫자&gt;</span>
+						</li>
+						<li>
+							<span class="workspace-guide-prop-desc">padding-bottom</span>
+							<span class="workspace-guide-prop-name">pd-b</span>
+							<span class="workspace-guide-prop-value">&lt;숫자&gt;</span>
+						</li>
+						<li>
+							<span class="workspace-guide-prop-desc">padding-left</span>
+							<span class="workspace-guide-prop-name">pd-l</span>
+							<span class="workspace-guide-prop-value">&lt;숫자&gt;</span>
+						</li>
+						<li>
+							<span class="workspace-guide-prop-desc">padding-right</span>
+							<span class="workspace-guide-prop-name">pd-r</span>
+							<span class="workspace-guide-prop-value">&lt;숫자&gt;</span>
+						</li>
+						<li>
+							<span class="workspace-guide-prop-desc">padding-inline</span>
+							<span class="workspace-guide-prop-name">pd-x</span>
+							<span class="workspace-guide-prop-value">&lt;숫자&gt;</span>
+						</li>
+						<li>
+							<span class="workspace-guide-prop-desc">padding-block</span>
+							<span class="workspace-guide-prop-name">pd-y</span>
+							<span class="workspace-guide-prop-value">&lt;숫자&gt;</span>
+						</li>
+					</ul>
 				</div>
 			</div>
 			<div class="workspace-guide-case">
