@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="대구가톨릭">
+		<meta name="description" content="대구가톨릭">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script type="module" src="../js/pub.js"></script>
+		<link rel="stylesheet" href="../css/global.css">
+		<style>
+			.workspace-guide-inner div {border:1px solid red;}
+		</style>
+	</head>
+	<body>
+		<div class="workspace-guide">
+			<!-- Information -->
+			<div class="workspace-guide-case">
+				<h1>Information</h1>
+				<ul class="workspace-guide-prop">
+					<li>
+						<span class="workspace-guide-prop-attribute">layout</span>
+						<div>
+							<div class="workspace-guide-prop-attribute-value">inline</div>
+							<div class="workspace-guide-prop-attribute-value">inline-block</div>
+							<div class="workspace-guide-prop-attribute-value">inline-flex</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<hr> <!-- Inline -->
+			<div class="workspace-guide-case">
+				<h1>Inline</h1>
+				<div class="workspace-guide-inner">
+					<div data-layout="inline">Inline</div>
+				</div>
+				<div class="workspace-guide-inner">
+					<xmp>
+						<div data-layout="inline">Inline</div>
+					</xmp>
+				</div>
+			</div>
+
+			<hr> <!-- Inline Block -->
+			<div class="workspace-guide-case">
+				<h1>Inline Block</h1>
+				<div class="workspace-guide-inner">
+					<div data-layout="inline-block">Inline Block</div>
+					<div data-layout="inline-block">Inline Block</div>
+					<div data-layout="inline-block">Inline Block</div>
+				</div>
+				<div class="workspace-guide-inner">
+					<xmp>
+						<div data-layout="inline-block"></div>
+						<div data-layout="inline-block"></div>
+						<div data-layout="inline-block"></div>
+					</xmp>
+				</div>
+			</div>
+
+			<hr> <!-- Inline Flex -->
+			<div class="workspace-guide-case">
+				<h1>Inline Flex</h1>
+				<div class="workspace-guide-inner">
+					<div data-layout="inline-flex">Inline Flex</div>
+					<div data-layout="inline-flex">Inline Flex</div>
+					<div data-layout="inline-flex">Inline Flex</div>
+				</div>
+				<div class="workspace-guide-inner">
+					<xmp>
+						<div data-layout="inline-flex">Inline Flex</div>
+						<div data-layout="inline-flex">Inline Flex</div>
+						<div data-layout="inline-flex">Inline Flex</div>
+					</xmp>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

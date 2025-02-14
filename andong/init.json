@@ -71,12 +71,13 @@
 				], "state": "comp"},
 				{ "id": "Layout", "submenu": [
 					{ "menu": "Default", "src": "./guide/layout-default.html", "state": "comp" },
-					{ "menu": "Inline", "src": "./guide/layout-flex.html", "state": "comp" },
+					{ "menu": "Inline", "src": "./guide/layout-inline.html", "state": "comp" },
 					{ "menu": "Inner", "src": "./guide/layout-inner.html", "state": "comp" },
-					{ "menu": "Flex", "src": "./guide/layout-flex.html", "state": "comp" }
+					{ "menu": "Flex", "src": "./guide/layout-flex.html", "state": "comp" },
+					{ "menu": "Grid", "src": "./guide/layout-grid.html", "state": "comp" }
 				], "state": "comp"}
 			],
-			"state": "work"
+			"state": "comp"
 		}
 	]
 }

@@ -72,7 +72,7 @@
 
 		font-size:calc((var(--m-fs, var(--fs, var(--init-font-size))) * 100 / var(--init-mobile-design-width)) * 1vw);
 		font-weight:var(--m-fw, var(--fw));
-		text-align:var(--m-text, var(--text));
+		text-align:var(--m-text, var(--text, left));
 		color:var(--m-fc, var(--fc));
 	}
 }

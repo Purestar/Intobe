@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="대구가톨릭">
+		<meta name="description" content="대구가톨릭">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script type="module" src="../js/pub.js"></script>
+		<link rel="stylesheet" href="../css/global.css">
+		<style>
+			.workspace-guide-inner div {border:1px solid red;}
+		</style>
+	</head>
+	<body>
+		<div class="workspace-guide">
+			<!-- Information -->
+			<div class="workspace-guide-case">
+				<h1>Information</h1>
+				<ul class="workspace-guide-prop">
+					<li>
+						<span class="workspace-guide-prop-attribute">layout</span>
+						<div>
+							<div class="workspace-guide-prop-attribute-value">grid</div>
+						</div>
+					</li>
+				</ul>
+				<div data-layout="grid" style="--cols:2; --m-cols:1; --gap:20;">
+					<ul class="workspace-guide-prop">
+						<li>
+							<span class="workspace-guide-prop-desc">grid-template-columns</span>
+							<span class="workspace-guide-prop-name">cols</span>
+							<span class="workspace-guide-prop-value">&lt;Number&gt;</span>
+						</li>
+					</ul>
+					<ul class="workspace-guide-prop">
+						<li>
+							<span class="workspace-guide-prop-desc">gap</span>
+							<span class="workspace-guide-prop-name">gap</span>
+							<span class="workspace-guide-prop-value">&lt;Number&gt;</span>
+						</li>
+						<li>
+							<span class="workspace-guide-prop-desc">row-gap</span>
+							<span class="workspace-guide-prop-name">gap-r</span>
+							<span class="workspace-guide-prop-value">&lt;Number&gt;</span>
+						</li>
+						<li>
+							<span class="workspace-guide-prop-desc">column-gap</span>
+							<span class="workspace-guide-prop-name">gap-c</span>
+							<span class="workspace-guide-prop-value">&lt;Number&gt;</span>
+						</li>
+					</ul>
+					<ul class="workspace-guide-prop">
+						<li>
+							<span class="workspace-guide-prop-desc">grid-column</span>
+							<span class="workspace-guide-prop-name">colspan</span>
+							<span class="workspace-guide-prop-value">&lt;Value&gt;</span>
+						</li>
+					</ul>
+					<ul class="workspace-guide-prop">
+						<li>
+							<span class="workspace-guide-prop-desc">justify-content</span>
+							<span class="workspace-guide-prop-name">justify</span>
+							<div>
+								<div class="workspace-guide-prop-value">flex-start</div>
+								<div class="workspace-guide-prop-value">flex-end</div>
+								<div class="workspace-guide-prop-value">space-between</div>
+								<div class="workspace-guide-prop-value">space-around</div>
+								<div class="workspace-guide-prop-value">space-evenly</div>
+								<div class="workspace-guide-prop-value">center</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="workspace-guide-prop">
+						<li>
+							<span class="workspace-guide-prop-desc">grid-row</span>
+							<span class="workspace-guide-prop-name">rowspan</span>
+							<span class="workspace-guide-prop-value">&lt;Value&gt;</span>
+						</li>
+					</ul>
+					<ul class="workspace-guide-prop">
+						<li>
+							<span class="workspace-guide-prop-desc">align-items</span>
+							<span class="workspace-guide-prop-name">items</span>
+							<div>
+								<div class="workspace-guide-prop-value">flex-start</div>
+								<div class="workspace-guide-prop-value">flex-end</div>
+								<div class="workspace-guide-prop-value">stretch</div>
+								<div class="workspace-guide-prop-value">center</div>
+							</div>
+						</li>
+					</ul>
+					<!--
+
+
+					<ul class="workspace-guide-prop">
+						<li>
+							<span class="workspace-guide-prop-desc">align-self</span>
+							<span class="workspace-guide-prop-name">aself</span>
+							<div>
+								<div class="workspace-guide-prop-value">flex-start</div>
+								<div class="workspace-guide-prop-value">flex-end</div>
+								<div class="workspace-guide-prop-value">stretch</div>
+								<div class="workspace-guide-prop-value">center</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="workspace-guide-prop">
+						<li>
+							<span class="workspace-guide-prop-desc">flex-wrap</span>
+							<span class="workspace-guide-prop-name">wrap</span>
+							<div>
+								<div class="workspace-guide-prop-value">wrap</div>
+								<div class="workspace-guide-prop-value">nowrap</div>
+								<div class="workspace-guide-prop-value">wrap-reverse</div>
+							</div>
+						</li>
+					</ul>-->
+				</div>
+			</div>
+
+			<hr> <!-- Default -->
+			<div class="workspace-guide-case">
+				<h1>Default</h1>
+				<div class="workspace-guide-inner">
+					<div data-layout="grid">
+						<div>1</div><div>2</div><div>3</div>
+						<div>4</div><div>5</div><div>6</div>
+						<div>7</div><div>8</div><div>9</div>
+					</div>
+				</div>
+				<div class="workspace-guide-inner">
+					<xmp>
+						<div data-layout="grid"></div>
+					</xmp>
+				</div>
+			</div>
+
+			<hr> <!-- Columns -->
+			<div class="workspace-guide-case">
+				<h1>Columns</h1>
+				<div class="workspace-guide-inner">
+					<div data-layout="grid" style="--cols:3; --m-cols:1;">
+						<div>1</div><div>2</div><div>3</div>
+						<div>4</div><div>5</div><div>6</div>
+						<div>7</div><div>8</div><div>9</div>
+					</div>
+				</div>
+				<div class="workspace-guide-inner">
+					<xmp>
+						<div data-layout="grid" style="--cols:3; --m-cols:1;"></div>
+					</xmp>
+				</div>
+			</div>
+
+			<hr> <!-- Colspan -->
+			<div class="workspace-guide-case">
+				<h1>Colspan</h1>
+				<div class="workspace-guide-inner">
+					<div data-layout="grid" style="--gap:20; --m-gap:36; --cols:5; --m-cols:8;">
+						<div style="--colspan:1 / 4; --m-colspan:1 / 9;">Grid</div>
+						<div style="--colspan:4 / 6; --m-colspan:3 / 9;">Grid</div>
+						<div style="--colspan:span 3; --m-colspan:4 / 9;">Grid</div>
+						<div style="--colspan:span 2; --m-colspan:5 / 9;">Grid</div>
+						<div style="--colspan:span 3 / 4; --m-colspan:7 / 9;">Grid</div>
+						<div style="--colspan:span 2 / 6; --m-colspan:8 / 9;">Grid</div>
+					</div>
+				</div>
+			</div>
+
+			<hr> <!-- Rowspan -->
+			<div class="workspace-guide-case">
+				<h1>Rowspan</h1>
+				<div class="workspace-guide-inner">
+					<div data-layout="grid" style="--gap:20; --m-gap:36; --cols:5; --m-cols:8;">
+						<div style="--rowspan:1 / 4; --m-rowspan:1 / 9;">Grid</div>
+						<div style="--rowspan:4 / 6; --m-rowspan:3 / 9;">Grid</div>
+						<div style="--rowspan:span 3; --m-rowspan:4 / 9;">Grid</div>
+						<div style="--rowspan:span 2; --m-rowspan:5 / 9;">Grid</div>
+						<div style="--rowspan:span 3 / 4; --m-rowspan:7 / 9;">Grid</div>
+						<div style="--rowspan:span 2 / 6; --m-rowspan:8 / 9;">Grid</div>
+					</div>
+				</div>
+			</div>
+
+			<hr> <!-- Default -->
+			<div class="workspace-guide-case">
+				<h1>justify-self</h1>
+				<div class="workspace-guide-inner">
+					<div data-layout="grid" style="--gap:20; --m-gap:10; --cols:3;">
+						<div>Grid</div><div>Grid<br>1</div><div>Grid</div>
+						<div>Grid</div><div>Grid</div><div>Grid</div>
+						<div>Grid</div><div>Grid</div><div>Grid</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

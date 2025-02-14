@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="대구가톨릭">
+		<meta name="description" content="대구가톨릭">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script type="module" src="../js/pub.js"></script>
+		<link rel="stylesheet" href="../css/global.css">
+		<style>
+			.workspace-guide-inner div {border:1px solid red;}
+		</style>
+	</head>
+	<body>
+		<div class="workspace-guide">
+			<!-- Information -->
+			<div class="workspace-guide-case">
+				<h1>Information</h1>
+				<ul class="workspace-guide-prop">
+					<li>
+						<span class="workspace-guide-prop-attribute">layout</span>
+						<div>
+							<div class="workspace-guide-prop-attribute-value">flex</div>
+						</div>
+					</li>
+				</ul>
+				<div data-layout="grid" style="--cols:2; --m-cols:1; --gap:20;">
+					<ul class="workspace-guide-prop">
+						<li>
+							<span class="workspace-guide-prop-desc">flex-direction</span>
+							<span class="workspace-guide-prop-name">direction</span>
+							<div>
+								<div class="workspace-guide-prop-value">column</div>
+								<div class="workspace-guide-prop-value">row</div>
+								<div class="workspace-guide-prop-value">row-reverse</div>
+								<div class="workspace-guide-prop-value">column-reverse</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="workspace-guide-prop">
+						<li>
+							<span class="workspace-guide-prop-desc">gap</span>
+							<span class="workspace-guide-prop-name">gap</span>
+							<span class="workspace-guide-prop-value">&lt;Number&gt;</span>
+						</li>
+						<li>
+							<span class="workspace-guide-prop-desc">row-gap</span>
+							<span class="workspace-guide-prop-name">gap-r</span>
+							<span class="workspace-guide-prop-value">&lt;Number&gt;</span>
+						</li>
+						<li>
+							<span class="workspace-guide-prop-desc">column-gap</span>
+							<span class="workspace-guide-prop-name">gap-c</span>
+							<span class="workspace-guide-prop-value">&lt;Number&gt;</span>
+						</li>
+					</ul>
+					<ul class="workspace-guide-prop">
+						<li>
+							<span class="workspace-guide-prop-desc">justify-content</span>
+							<span class="workspace-guide-prop-name">justify</span>
+							<div>
+								<div class="workspace-guide-prop-value">flex-start</div>
+								<div class="workspace-guide-prop-value">flex-end</div>
+								<div class="workspace-guide-prop-value">space-between</div>
+								<div class="workspace-guide-prop-value">space-around</div>
+								<div class="workspace-guide-prop-value">space-evenly</div>
+								<div class="workspace-guide-prop-value">center</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="workspace-guide-prop">
+						<li>
+							<span class="workspace-guide-prop-desc">align-items</span>
+							<span class="workspace-guide-prop-name">items</span>
+							<div>
+								<div class="workspace-guide-prop-value">flex-start</div>
+								<div class="workspace-guide-prop-value">flex-end</div>
+								<div class="workspace-guide-prop-value">stretch</div>
+								<div class="workspace-guide-prop-value">center</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="workspace-guide-prop">
+						<li>
+							<span class="workspace-guide-prop-desc">align-self</span>
+							<span class="workspace-guide-prop-name">aself</span>
+							<div>
+								<div class="workspace-guide-prop-value">flex-start</div>
+								<div class="workspace-guide-prop-value">flex-end</div>
+								<div class="workspace-guide-prop-value">stretch</div>
+								<div class="workspace-guide-prop-value">center</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="workspace-guide-prop">
+						<li>
+							<span class="workspace-guide-prop-desc">flex-wrap</span>
+							<span class="workspace-guide-prop-name">wrap</span>
+							<div>
+								<div class="workspace-guide-prop-value">wrap</div>
+								<div class="workspace-guide-prop-value">nowrap</div>
+								<div class="workspace-guide-prop-value">wrap-reverse</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<hr> <!-- Default -->
+			<div class="workspace-guide-case">
+				<h1>Default</h1>
+				<div class="workspace-guide-inner">
+					<div data-layout="flex">
+						<div>Flex</div><div>Flex</div><div>Flex</div>
+						<div>Flex</div><div>Flex</div><div>Flex</div>
+						<div>Flex</div><div>Flex</div><div>Flex</div>
+					</div>
+				</div>
+				<div class="workspace-guide-inner">
+					<xmp>
+						<div data-layout="flex"></div>
+					</xmp>
+				</div>
+			</div>
+
+			<hr> <!-- Direction -->
+			<div class="workspace-guide-case">
+				<h1>Direction</h1>
+				<div data-layout="grid" style="--cols:2; --gap:20;">
+					<div class="workspace-guide-inner">
+						<div data-layout="flex" style="--direction:row;">
+							<div>1</div><div>2</div><div>3</div>
+							<div>4</div><div>5</div><div>6</div>
+							<div>7</div><div>8</div><div>9</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div data-layout="flex" style="--direction:row-reverse;">
+							<div>1</div><div>2</div><div>3</div>
+							<div>4</div><div>5</div><div>6</div>
+							<div>7</div><div>8</div><div>9</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div data-layout="flex" style="--direction:column;">
+							<div>1</div><div>2</div><div>3</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div data-layout="flex" style="--direction:column-reverse;">
+							<div>1</div><div>2</div><div>3</div>
+						</div>
+					</div>
+				</div>
+				<div class="workspace-guide-inner">
+					<xmp>
+						<div data-layout="flex" style="--direction:row;"></div>
+					</xmp>
+				</div>
+			</div>
+
+			<hr> <!-- Gap -->
+			<div class="workspace-guide-case">
+				<h1>Gap</h1>
+				<div class="workspace-guide-inner">
+					<div data-layout="flex" style="--gap:70; --m-gap:36;">
+						<div>Flex</div><div>Flex</div><div>Flex</div>
+						<div>Flex</div><div>Flex</div><div>Flex</div>
+						<div>Flex</div><div>Flex</div><div>Flex</div>
+					</div>
+				</div>
+				<div class="workspace-guide-inner">
+					<xmp>
+						<div data-layout="flex" style="--gap:70; --m-gap:36;"></div>
+					</xmp>
+				</div>
+			</div>
+
+			<hr> <!-- Row Gap & Column Gap -->
+			<div class="workspace-guide-case">
+				<h1>Row Gap & Column Gap</h1>
+				<div data-layout="grid" style="--cols:2; --m-cols:1; --gap:20;">
+					<div class="workspace-guide-inner">
+						<div data-layout="flex" style="--gap-r:70; --m-gap-r:36; --w:92;">
+							<div>Flex</div><div>Flex</div><div>Flex</div>
+							<div>Flex</div><div>Flex</div><div>Flex</div>
+							<div>Flex</div><div>Flex</div><div>Flex</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div data-layout="flex" style="--gap-c:70; --m-gap-c:36; --w:232;">
+							<div>Flex</div><div>Flex</div><div>Flex</div>
+							<div>Flex</div><div>Flex</div><div>Flex</div>
+							<div>Flex</div><div>Flex</div><div>Flex</div>
+						</div>
+					</div>
+				</div>
+				<div class="workspace-guide-inner">
+					<xmp>
+						<div data-layout="flex" style="--gap-r:70; --m-gap-r:36;"></div>
+						<div data-layout="flex" style="--gap-c:70; --m-gap-c:36;"></div>
+					</xmp>
+				</div>
+			</div>
+
+			<hr> <!-- Justify Content -->
+			<div class="workspace-guide-case">
+				<h1>Justify Content</h1>
+				<div data-layout="grid" style="--cols:2; --m-cols:1; --gap:20;">
+					<div class="workspace-guide-inner">
+						<div data-layout="flex" style="--justify:flex-start;">
+							<div>Flex</div><div>Flex</div><div>Flex</div>
+							<div>Flex</div><div>Flex</div><div>Flex</div>
+							<div>Flex</div><div>Flex</div><div>Flex</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div data-layout="flex" style="--justify:flex-end;">
+							<div>Flex</div><div>Flex</div><div>Flex</div>
+							<div>Flex</div><div>Flex</div><div>Flex</div>
+							<div>Flex</div><div>Flex</div><div>Flex</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div data-layout="flex" style="--justify:space-between;">
+							<div>Flex</div><div>Flex</div><div>Flex</div>
+							<div>Flex</div><div>Flex</div><div>Flex</div>
+							<div>Flex</div><div>Flex</div><div>Flex</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div data-layout="flex" style="--justify:space-around;">
+							<div>Flex</div><div>Flex</div><div>Flex</div>
+							<div>Flex</div><div>Flex</div><div>Flex</div>
+							<div>Flex</div><div>Flex</div><div>Flex</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div data-layout="flex" style="--justify:space-evenly;">
+							<div>Flex</div><div>Flex</div><div>Flex</div>
+							<div>Flex</div><div>Flex</div><div>Flex</div>
+							<div>Flex</div><div>Flex</div><div>Flex</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div data-layout="flex" style="--justify:center;">
+							<div>Flex</div><div>Flex</div><div>Flex</div>
+							<div>Flex</div><div>Flex</div><div>Flex</div>
+							<div>Flex</div><div>Flex</div><div>Flex</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="workspace-guide-inner">
+					<xmp>
+						<div data-layout="flex" style="--justify:space-between;"></div>
+					</xmp>
+				</div>
+			</div>
+
+			<hr> <!-- Align Items -->
+			<div class="workspace-guide-case">
+				<h1>Align Items</h1>
+				<div data-layout="grid" style="--cols:2; --m-cols:1; --gap:20;">
+					<div class="workspace-guide-inner">
+						<div data-layout="flex" style="--items:flex-start;">
+							<div>Test<br>Test<br>Test<br>Test<br>Test</div>
+							<div>Test<br>Test<br>Test<br>Test</div>
+							<div>Test<br>Test<br>Test</div>
+							<div>Test<br>Test</div>
+							<div>Test</div>
+							<div>Test<br>Test</div>
+							<div>Test<br>Test<br>Test</div>
+							<div>Test<br>Test<br>Test<br>Test</div>
+							<div>Test<br>Test<br>Test<br>Test<br>Test</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div data-layout="flex" style="--items:flex-end;">
+							<div>Test<br>Test<br>Test<br>Test<br>Test</div>
+							<div>Test<br>Test<br>Test<br>Test</div>
+							<div>Test<br>Test<br>Test</div>
+							<div>Test<br>Test</div>
+							<div>Test</div>
+							<div>Test<br>Test</div>
+							<div>Test<br>Test<br>Test</div>
+							<div>Test<br>Test<br>Test<br>Test</div>
+							<div>Test<br>Test<br>Test<br>Test<br>Test</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div data-layout="flex" style="--items:stretch;">
+							<div>Test<br>Test<br>Test<br>Test<br>Test</div>
+							<div>Test<br>Test<br>Test<br>Test</div>
+							<div>Test<br>Test<br>Test</div>
+							<div>Test<br>Test</div>
+							<div>Test</div>
+							<div>Test<br>Test</div>
+							<div>Test<br>Test<br>Test</div>
+							<div>Test<br>Test<br>Test<br>Test</div>
+							<div>Test<br>Test<br>Test<br>Test<br>Test</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div data-layout="flex" style="--items:center;">
+							<div>Test<br>Test<br>Test<br>Test<br>Test</div>
+							<div>Test<br>Test<br>Test<br>Test</div>
+							<div>Test<br>Test<br>Test</div>
+							<div>Test<br>Test</div>
+							<div>Test</div>
+							<div>Test<br>Test</div>
+							<div>Test<br>Test<br>Test</div>
+							<div>Test<br>Test<br>Test<br>Test</div>
+							<div>Test<br>Test<br>Test<br>Test<br>Test</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="workspace-guide-inner">
+					<xmp>
+						<div data-layout="flex" style="--justify:space-between;"></div>
+					</xmp>
+				</div>
+			</div>
+
+			<hr> <!-- Align Self -->
+			<div class="workspace-guide-case">
+				<h1>Align Self</h1>
+				<div data-layout="grid" style="--cols:2; --m-cols:1; --gap:20;">
+					<div class="workspace-guide-inner">
+						<div data-layout="flex">
+							<div>Test<br>Test<br>Test<br>Test<br>Test</div>
+							<div>Test<br>Test<br>Test<br>Test</div>
+							<div>Test<br>Test<br>Test</div>
+							<div>Test<br>Test</div>
+							<div data-layout style="background:red; --self:flex-start;">Test</div>
+							<div>Test<br>Test</div>
+							<div>Test<br>Test<br>Test</div>
+							<div>Test<br>Test<br>Test<br>Test</div>
+							<div>Test<br>Test<br>Test<br>Test<br>Test</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div data-layout="flex">
+							<div>Test<br>Test<br>Test<br>Test<br>Test</div>
+							<div>Test<br>Test<br>Test<br>Test</div>
+							<div>Test<br>Test<br>Test</div>
+							<div>Test<br>Test</div>
+							<div data-layout style="background:red; --self:flex-end;">Test</div>
+							<div>Test<br>Test</div>
+							<div>Test<br>Test<br>Test</div>
+							<div>Test<br>Test<br>Test<br>Test</div>
+							<div>Test<br>Test<br>Test<br>Test<br>Test</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div data-layout="flex">
+							<div>Test<br>Test<br>Test<br>Test<br>Test</div>
+							<div>Test<br>Test<br>Test<br>Test</div>
+							<div>Test<br>Test<br>Test</div>
+							<div>Test<br>Test</div>
+							<div data-layout style="background:red; --self:stretch;">Test</div>
+							<div>Test<br>Test</div>
+							<div>Test<br>Test<br>Test</div>
+							<div>Test<br>Test<br>Test<br>Test</div>
+							<div>Test<br>Test<br>Test<br>Test<br>Test</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div data-layout="flex">
+							<div>Test<br>Test<br>Test<br>Test<br>Test</div>
+							<div>Test<br>Test<br>Test<br>Test</div>
+							<div>Test<br>Test<br>Test</div>
+							<div>Test<br>Test</div>
+							<div data-layout style="background:red; --self:center;">Test</div>
+							<div>Test<br>Test</div>
+							<div>Test<br>Test<br>Test</div>
+							<div>Test<br>Test<br>Test<br>Test</div>
+							<div>Test<br>Test<br>Test<br>Test<br>Test</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="workspace-guide-inner">
+					<xmp>
+						<div data-layout="flex">
+							<div data-layout style="--self:flex-start;"></div>
+						</div>
+					</xmp>
+				</div>
+			</div>
+
+			<hr> <!-- Wrap -->
+			<div class="workspace-guide-case">
+				<h1>Wrap</h1>
+				<div data-layout="grid" style="--cols:2; --m-cols:1; --gap:20;">
+					<div class="workspace-guide-inner">
+						<div data-layout="flex" style="background:yellow; --wrap:wrap; --w:200;">
+							<div>Flex</div><div>Flex</div><div>Flex</div>
+							<div>Flex</div><div>Flex</div><div>Flex</div>
+							<div>Flex</div><div>Flex</div><div>Flex</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div data-layout="flex" style="background:yellow; --wrap:nowrap; --w:200;">
+							<div>Flex</div><div>Flex</div><div>Flex</div>
+							<div>Flex</div><div>Flex</div><div>Flex</div>
+							<div>Flex</div><div>Flex</div><div>Flex</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div data-layout="flex" style="background:yellow; --wrap:wrap-reverse; --w:200;">
+							<div>Flex</div><div>Flex</div><div>Flex</div>
+							<div>Flex</div><div>Flex</div><div>Flex</div>
+							<div>Flex</div><div>Flex</div><div>Flex</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="workspace-guide-inner">
+					<xmp>
+						<div data-layout="flex" style="--wrap:wrap;"></div>
+					</xmp>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
