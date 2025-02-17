@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="대구가톨릭">
+		<meta name="description" content="대구가톨릭">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script type="module" src="../js/pub.js"></script>
+		<link rel="stylesheet" href="../css/global.css">
+		<style>
+			.workspace-guide-inner div {border:1px solid red;}
+		</style>
+	</head>
+	<body>
+		<div class="workspace-guide">
+			<!-- Information -->
+			<div class="workspace-guide-case">
+				<h1>Information</h1>
+				<ul class="workspace-guide-prop">
+					<li>
+						<span class="workspace-guide-prop-desc">width</span>
+						<span class="workspace-guide-prop-name">w</span>
+						<span class="workspace-guide-prop-value">&lt;Number&gt;</span>
+					</li>
+					<li>
+						<span class="workspace-guide-prop-desc">height</span>
+						<span class="workspace-guide-prop-name">h</span>
+						<span class="workspace-guide-prop-value">&lt;Number&gt;</span>
+					</li>
+				</ul>
+			</div>
+
+			<hr> <!-- Width -->
+			<div class="workspace-guide-case">
+				<h1>Width</h1>
+				<div class="workspace-guide-inner">
+					<div style="--w:100;">Width 100px</div>
+				</div>
+				<div class="workspace-guide-inner">
+					<xmp>
+						<div style="--w:100;"></div>
+					</xmp>
+				</div>
+			</div>
+			<div class="workspace-guide-case">
+				<h1>Width Percentage</h1>
+				<div class="workspace-guide-inner">
+					<div style="--w-p:50;">Width 50%</div>
+				</div>
+				<div class="workspace-guide-inner">
+					<xmp>
+						<div style="--w-p:50;">Width 50%</div>
+					</xmp>
+				</div>
+			</div>
+			<div class="workspace-guide-case">
+				<h1>Width Responsive</h1>
+				<div class="workspace-guide-inner">
+					<div style="--w:100; --m-w:36;">Width 100px / 36px (5vw)</div>
+				</div>
+				<div class="workspace-guide-inner">
+					<xmp>
+						<div style="--w:100; --m-w:36;">Width 100px / 36px (5vw)</div>
+					</xmp>
+				</div>
+			</div>
+			<div class="workspace-guide-case">
+				<h1>Width px / % Responsive</h1>
+				<div class="workspace-guide-inner">
+					<div style="--w:100; --m-w-p:50;">Width 100px / 50%</div>
+				</div>
+				<div class="workspace-guide-inner">
+					<xmp>
+						<div style="--w:100; --m-w-p:50;">Width 100px / 50%</div>
+					</xmp>
+				</div>
+			</div>
+			<div class="workspace-guide-case">
+				<h1>Width Percentage Responsive</h1>
+				<div class="workspace-guide-inner">
+					<div style="--w-p:50; --m-w-p:30;">Width 50% / 30%</div>
+				</div>
+				<div class="workspace-guide-inner">
+					<xmp>
+						<div style="--w-p:50; --m-w-p:30;">Width 50% / 30%</div>
+					</xmp>
+				</div>
+			</div>
+
+			<hr> <!-- Height -->
+			<div class="workspace-guide-case">
+				<h1>Height</h1>
+				<div class="workspace-guide-inner">
+					<div style="--h:100;">Height 100px</div>
+				</div>
+				<div class="workspace-guide-inner">
+					<xmp>
+						<div style="--h:100;"></div>
+					</xmp>
+				</div>
+			</div>
+			<div class="workspace-guide-case">
+				<h1>Height Percentage</h1>
+				<div class="workspace-guide-inner">
+					<div style="--h:100;">
+						<div style="--h-p:50;">Height 50%</div>
+					</div>
+				</div>
+				<div class="workspace-guide-inner">
+					<xmp>
+						<div style="--h-p:50;">Height 50%</div>
+					</xmp>
+				</div>
+			</div>
+			<div class="workspace-guide-case">
+				<h1>Height Responsive</h1>
+				<div class="workspace-guide-inner">
+					<div style="--h:100; --m-h:36;">Height 100px / 36px (5vw)</div>
+				</div>
+				<div class="workspace-guide-inner">
+					<xmp>
+						<div style="--h:100; --m-h:36;">Height 100px / 36px (5vw)</div>
+					</xmp>
+				</div>
+			</div>
+			<div class="workspace-guide-case">
+				<h1>Height px / % Responsive</h1>
+				<div class="workspace-guide-inner">
+					<div style="--h:100;">
+						<div style="--h:100; --m-h-p:50;">Height 100px / 50%</div>
+					</div>
+				</div>
+				<div class="workspace-guide-inner">
+					<xmp>
+						<div style="--h:100; --m-h-p:50;">Height 100px / 50%</div>
+					</xmp>
+				</div>
+			</div>
+			<div class="workspace-guide-case">
+				<h1>Height Percentage Responsive</h1>
+				<div class="workspace-guide-inner">
+					<div style="--h:100;">
+						<div style="--h-p:50; --m-h-p:30;">Height 50% / 30%</div>
+					</div>
+				</div>
+				<div class="workspace-guide-inner">
+					<xmp>
+						<div style="--h-p:50; --m-h-p:30;">Height 50% / 30%</div>
+					</xmp>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

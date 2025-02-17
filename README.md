@@ -13,3 +13,6 @@ daegucatholic - 대구카톨릭
 andong - 안동대학교
 
 youngnam - 영남대학교
+
+## ETC
+guide - 가이드

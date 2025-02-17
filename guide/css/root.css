@@ -1,0 +1,78 @@
+:root {
+	/* Initialize */
+		--init-background-color: white; /* 배경색 */
+		--init-font-color: black; /* 글자색 */
+		--init-font-family: Poppins, Noto Sans KR; /* 글자체 */
+		--init-font-size: 16px; /* 글자 크기 */
+		--init-footer-height: 232px; /* 푸터 높이 */
+		--init-header-height: 148px; /* 헤더 높이 */
+		--init-line-height: 1.2; /* 행간 */
+		--init-letter-spacing: -0.02em; /* 자간 */
+		--init-layout-width: 1200px; /* 페이지 넓이 */
+		--init-mobile-design-width: 720; /* 모바일 디자인 넓이 */
+
+	/* Initialize - Mobile */
+		--m-init-footer-height: 232px; /* 푸터 높이 */
+		--m-init-header-height: 148px; /* 헤더 높이 */
+		--m-init-layout-padding: 36; /* 모바일 패딩 인라인 */
+
+	/* Background */
+		--bg-img: url('../../images/bg.png'); /* 배경 이미지 경로 */
+		--ic-c: url('../../images/common_icon.png'); /* 공통 아이콘 이미지 경로 */
+		--ic: url('../../images/icon.png'); /* 아이콘 이미지 경로 */
+		--bg-sz: 1000px; /* 이미지 스프라이트 크기 */
+		--bp-50: -50px; /* 50 */
+		--bp-100: -100px; /* 100 */
+		--bp-150: -150px; /* 150 */
+		--bp-200: -200px; /* 200 */
+		--bp-250: -250px; /* 250 */
+		--bp-300: -300px; /* 300 */
+		--bp-350: -350px; /* 350 */
+		--bp-400: -400px; /* 400 */
+		--bp-450: -450px; /* 450 */
+		--bp-500: -500px; /* 500 */
+		--bp-550: -550px; /* 550 */
+		--bp-600: -600px; /* 600 */
+		--bp-650: -650px; /* 650 */
+		--bp-700: -700px; /* 700 */
+		--bp-750: -750px; /* 750 */
+		--bp-800: -800px; /* 800 */
+		--bp-850: -850px; /* 850 */
+		--bp-900: -900px; /* 900 */
+		--bp-950: -950px; /* 950 */
+}
+
+@media all and (max-width:720px) {
+	:root {
+		/* Initialize */
+			--init-font-size: 3.33vw; /* 글자 크기 */
+			--init-footer-height: 47.36vw; /* 푸터 높이 */
+			--init-header-height: 16.66vw; /* 헤더 높이 */
+			--init-layout-width: 100dvw; /* 페이지 넓이 */
+
+		/* Background */
+			--bg-img: url('../../images/bg.png'); /* 배경 이미지 경로 */
+			--ic-c: url('../../images/common_icon.png'); /* 공통 아이콘 이미지 경로 */
+			--ic: url('../../images/icon.png'); /* 아이콘 이미지 경로 */
+			--bg-sz: 138.88vw; /* 이미지 스프라이트 크기 */
+			--bp-50: -6.94vw; /* 50 */
+			--bp-100: -13.89vw; /* 100 */
+			--bp-150: -20.83vw; /* 150 */
+			--bp-200: -27.78vw; /* 200 */
+			--bp-250: -34.72vw; /* 250 */
+			--bp-300: -41.67vw; /* 300 */
+			--bp-350: -48.61vw; /* 350 */
+			--bp-400: -55.56vw; /* 400 */
+			--bp-450: -62.50vw; /* 450 */
+			--bp-500: -69.44vw; /* 500 */
+			--bp-550: -76.39vw; /* 550 */
+			--bp-600: -83.33vw; /* 600 */
+			--bp-650: -90.28vw; /* 650 */
+			--bp-700: -97.22vw; /* 700 */
+			--bp-750: -104.17vw; /* 750 */
+			--bp-800: -111.11vw; /* 800 */
+			--bp-850: -118.06vw; /* 850 */
+			--bp-900: -125.00vw; /* 900 */
+			--bp-950: -131.94vw; /* 950 */
+	}
+}

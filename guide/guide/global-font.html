@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="대구가톨릭">
+		<meta name="description" content="대구가톨릭">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script type="module" src="../js/pub.js"></script>
+		<link rel="stylesheet" href="../css/global.css">
+		<style>
+			.workspace-guide-inner div {border:1px solid red;}
+		</style>
+	</head>
+	<body>
+		<div class="workspace-guide">
+			<!-- Information -->
+			<div class="workspace-guide-case">
+				<h1>Information</h1>
+				<div data-layout="grid" style="--cols:2; --gap:20;">
+					<ul class="workspace-guide-prop">
+						<li>
+							<span class="workspace-guide-prop-desc">font-size</span>
+							<span class="workspace-guide-prop-name">fs</span>
+							<span class="workspace-guide-prop-value">&lt;Number&gt;</span>
+						</li>
+						<li>
+							<span class="workspace-guide-prop-desc">color</span>
+							<span class="workspace-guide-prop-name">fc</span>
+							<span class="workspace-guide-prop-value">&lt;Value&gt;</span>
+						</li>
+						<li>
+							<span class="workspace-guide-prop-desc">font-weight</span>
+							<span class="workspace-guide-prop-name">fw</span>
+							<span class="workspace-guide-prop-value">&lt;Value&gt;</span>
+						</li>
+					</ul>
+					<ul class="workspace-guide-prop">
+						<li>
+							<span class="workspace-guide-prop-desc">text-align</span>
+							<span class="workspace-guide-prop-name">text</span>
+							<div>
+								<div class="workspace-guide-prop-value">left</div>
+								<div class="workspace-guide-prop-value">center</div>
+								<div class="workspace-guide-prop-value">right</div>
+								<div class="workspace-guide-prop-value">start</div>
+								<div class="workspace-guide-prop-value">justify</div>
+								<div class="workspace-guide-prop-value">end</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<hr> <!-- Color -->
+			<div class="workspace-guide-case">
+				<h1>Color</h1>
+				<div class="workspace-guide-inner">
+					<div style="--fc:red; --m-fc:blue;">Red / Blue</div>
+				</div>
+				<div class="workspace-guide-inner">
+					<xmp>
+						<div style="--fc:red; --m-fc:blue;"></div>
+					</xmp>
+				</div>
+			</div>
+
+			<hr>
+			<div class="workspace-guide-case">
+				<h1>Size</h1>
+				<div class="workspace-guide-inner">
+					<div style="--fs:20; --m-fs:20">Font Size</div>
+				</div>
+				<div class="workspace-guide-inner">
+					<xmp>
+						<div style="--fs:20; --m-fs:20">Font Size</div>
+					</xmp>
+				</div>
+			</div>
+
+			<hr> <!-- Text -->
+			<div class="workspace-guide-case">
+				<h1>Text Align</h1>
+				<div class="workspace-guide-inner">
+					<xmp>
+						<div style="--text:left;">Left</div>
+						<div style="--text:center;">Center</div>
+						<div style="--text:right;">Right</div>
+					</xmp>
+				</div>
+				<div class="workspace-guide-inner">
+					<div style="--text:left;">Left</div>
+					<div style="--text:center;">Center</div>
+					<div style="--text:right;">Right</div>
+				</div>
+			</div>
+
+			<hr> <!-- Weight -->
+			<div class="workspace-guide-case">
+				<h1>Weight</h1>
+				<div class="workspace-guide-inner">
+					<div style="--fw:700; --m-fw:400">700 / 400</div>
+					<div>400</div>
+					<div><b>500</b></div>
+					<div><strong>700</strong></div>
+				</div>
+				<div class="workspace-guide-inner">
+					<xmp>
+						<div style="--fw:700; --m-fw:400"></div>
+						<div>400</div>
+						<div><b>500</b></div>
+						<div><strong>700</strong></div>
+					</xmp>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

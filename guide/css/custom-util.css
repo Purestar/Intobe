@@ -1,0 +1,119 @@
+:root {
+	--n4: 4px;
+	--n6: 6px;
+	--n8: 8px;
+	--n10: 10px;
+	--n12: 12px;
+	--n14: 14px;
+	--n16: 16px;
+	--n18: 18px;
+	--n20: 20px;
+	--n24: 24px;
+	--n28: 28px;
+	--n30: 30px;
+	--n32: 32px;
+	--n36: 36px;
+	--n40: 40px;
+	--n50: 50px;
+	--n60: 60px;
+	--n70: 70px;
+	--n80: 80px;
+}
+
+/* Color */
+	/* Background */
+		.bg-red {background:var(--st-red);}
+		.bg-org {background:var(--st-org);}
+		.bg-ylw {background:var(--st-ylw);}
+		.bg-grn {background:var(--st-grn);}
+		.bg-sky {background:var(--st-sky);}
+		.bg-blu {background:var(--st-blu);}
+		.bg-pur {background:var(--st-pur);}
+
+		.bg-mc {background:var(--mc);}
+		.bg-moc {background:var(--moc);}
+		.bg-mdc {background:var(--mdc);}
+		.bg-mlc {background:var(--mlc);}
+
+	/* Border */
+		.bd-red {border-color:var(--st-red);}
+		.bd-org {border-color:var(--st-org);}
+		.bd-ylw {border-color:var(--st-ylw);}
+		.bd-grn {border-color:var(--st-grn);}
+		.bd-sky {border-color:var(--st-sky);}
+		.bd-blu {border-color:var(--st-blu);}
+		.bd-pur {border-color:var(--st-pur);}
+
+		.bd-mc {background:var(--mc);}
+		.bd-moc {background:var(--moc);}
+		.bd-mdc {background:var(--mdc);}
+		.bd-mlc {background:var(--mlc);}
+
+	/* Font Color */
+		.cr-red {color:var(--st-red);}
+		.cr-org {color:var(--st-org);}
+		.cr-ylw {color:var(--st-ylw);}
+		.cr-grn {color:var(--st-grn);}
+		.cr-sky {color:var(--st-sky);}
+		.cr-blu {color:var(--st-blu);}
+		.cr-pur {color:var(--st-pur);}
+
+		.cr-mc {background:var(--mc);}
+		.cr-moc {background:var(--moc);}
+		.cr-mdc {background:var(--mdc);}
+		.cr-mlc {background:var(--mlc);}
+
+/* Font */
+	/* Line Height */
+		.lh-1 {line-height:1;}
+
+	/* Word Break */
+		.wb-keep {word-break:keep-all;}
+
+/* Hidden */
+	/* Border */
+		.hdn-bdr {border:0;}
+		.hdn-bdr-t {border-top:0;}
+		.hdn-bdr-r {border-right:0;}
+		.hdn-bdr-b {border-bottom:0;}
+		.hdn-bdr-l {border-left:0;}
+
+/* Position */
+	.pos-r {position:relative;}
+
+	.zi-1 {z-index:1;}
+
+/* Transform */
+	.tf-r180 {transform:rotate(180deg);}
+
+@media all and (max-width:720px) {
+	:root {
+		--n4: 0.55vw;
+		--n6: 0.83vw;
+		--n8: 1.11vw;
+		--n10: 1.38vw;
+		--n12: 1.66vw;
+		--n14: 1.94vw;
+		--n16: 2.22vw;
+		--n18: 2.50vw;
+		--n20: 2.78vw;
+		--n24: 3.33vw;
+		--n28: 3.89vw;
+		--n30: 4.17vw;
+		--n32: 4.44vw;
+		--n36: 5.00vw;
+		--n40: 5.56vw;
+		--n50: 6.67vw;
+		--n60: 8.33vw;
+		--n70: 9.72vw;
+		--n80: 11.11vw;
+	}
+
+	/* Hidden */
+		/* Border */
+			.m-hdn-bdr {border:0;}
+			.m-hdn-bdr-t {border-top:0;}
+			.m-hdn-bdr-r {border-right:0;}
+			.m-hdn-bdr-b {border-bottom:0;}
+			.m-hdn-bdr-l {border-left:0;}
+}

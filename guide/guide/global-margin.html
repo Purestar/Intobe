@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="대구가톨릭">
+		<meta name="description" content="대구가톨릭">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script type="module" src="../js/pub.js"></script>
+		<link rel="stylesheet" href="../css/global.css">
+		<style>
+			.workspace-guide-inner div {border:1px solid red;}
+		</style>
+	</head>
+	<body>
+		<div class="workspace-guide">
+			<!-- Information -->
+			<div class="workspace-guide-case">
+				<h1>Information</h1>
+				<ul class="workspace-guide-prop">
+					<li>
+						<span class="workspace-guide-prop-desc">margin</span>
+						<span class="workspace-guide-prop-name">mg</span>
+						<span class="workspace-guide-prop-value">&lt;Number&gt;</span>
+					</li>
+					<li>
+						<span class="workspace-guide-prop-desc">margin-top</span>
+						<span class="workspace-guide-prop-name">mg-t</span>
+						<span class="workspace-guide-prop-value">&lt;Number&gt;</span>
+					</li>
+					<li>
+						<span class="workspace-guide-prop-desc">margin-bottom</span>
+						<span class="workspace-guide-prop-name">mg-b</span>
+						<span class="workspace-guide-prop-value">&lt;Number&gt;</span>
+					</li>
+					<li>
+						<span class="workspace-guide-prop-desc">margin-left</span>
+						<span class="workspace-guide-prop-name">mg-l</span>
+						<span class="workspace-guide-prop-value">&lt;Number&gt;</span>
+					</li>
+					<li>
+						<span class="workspace-guide-prop-desc">margin-right</span>
+						<span class="workspace-guide-prop-name">mg-r</span>
+						<span class="workspace-guide-prop-value">&lt;Number&gt;</span>
+					</li>
+					<li>
+						<span class="workspace-guide-prop-desc">margin-inline</span>
+						<span class="workspace-guide-prop-name">mg-x</span>
+						<span class="workspace-guide-prop-value">&lt;Number&gt;</span>
+					</li>
+					<li>
+						<span class="workspace-guide-prop-desc">margin-block</span>
+						<span class="workspace-guide-prop-name">mg-y</span>
+						<span class="workspace-guide-prop-value">&lt;Number&gt;</span>
+					</li>
+				</ul>
+			</div>
+			<hr><!-- Margin -->
+			<div class="workspace-guide-case">
+				<h1>Margin</h1>
+
+				<div class="workspace-guide-inner">
+					<div data-layout="flex" style="--justify:center; --items:center; --gap:20; --pd:70; --m-pd:36; --text:center;">
+						<div><div style="--mg:70; --m-mg:36;">Margin</div></div>
+						<div><div style="--mg-t:70; --m-mg-t:36;">Margin Top</div></div>
+						<div><div style="--mg-b:70; --m-mg-b:36;">Margin Bottom</div></div>
+						<div><div style="--mg-l:70; --m-mg-l:36;">Margin Left</div></div>
+						<div><div style="--mg-r:70; --m-mg-r:36;">Margin Right</div></div>
+						<div><div style="--mg-x:70; --m-mg-x:36;">Margin Inline</div></div>
+						<div><div style="--mg-y:70; --m-mg-y:36;">Margin Block</div></div>
+					</div>
+				</div>
+				<div class="workspace-guide-inner">
+					<xmp>
+						<div style="--mg:70; --m-mg:36;">Margin</div>
+						<div style="--mg-t:70; --m-mg-t:36;">Margin Top</div>
+						<div style="--mg-b:70; --m-mg-b:36;">Margin Bottom</div>
+						<div style="--mg-l:70; --m-mg-l:36;">Margin Left</div>
+						<div style="--mg-r:70; --m-mg-r:36;">Margin Right</div>
+						<div style="--mg-x:70; --m-mg-x:36;">Margin Inline</div>
+						<div style="--mg-y:70; --m-mg-y:36;">Margin Block</div>
+					</xmp>
+				</div>
+
+				<div class="workspace-guide-inner">
+					<div data-layout="flex" style="--justify:center; --items:center; --gap:20; --pd:70; --m-pd:36; --text:center;">
+						<div><div style="--mg-t:70; --m-mg-t:36; --mg-b:70; --m-mg-b:36; --mg-l:70; --m-mg-l:36; --mg-r:70; --m-mg-r:36;">Margin Top<br>Margin Bottom<br>Margin Left<br>Margin Right</div></div>
+						<div><div style="--mg-t:70; --m-mg-t:36; --mg-b:70; --m-mg-b:36;">Margin Top<br>Margin Bottom</div></div>
+						<div><div style="--mg-l:70; --m-mg-l:36; --mg-r:70; --m-mg-r:36;">Margin Left<br>Margin Right</div></div>
+						<div><div style="--mg-x:70; --m-mg-x:36; --mg-y:70; --m-mg-y:36;">Margin Inline<br>Margin Block</div></div>
+					</div>
+				</div>
+				<div class="workspace-guide-inner">
+					<xmp>
+						<div style="--mg-t:70; --m-mg-t:36; --mg-b:70; --m-mg-b:36; --mg-l:70; --m-mg-l:36; --mg-r:70; --m-mg-r:36;">Margin Top<br>Margin Bottom<br>Margin Left<br>Margin Right</div>
+						<div style="--mg-t:70; --m-mg-t:36; --mg-b:70; --m-mg-b:36;">Margin Top<br>Margin Bottom</div>
+						<div style="--mg-l:70; --m-mg-l:36; --mg-r:70; --m-mg-r:36;">Margin Left<br>Margin Right</div>
+						<div style="--mg-x:70; --m-mg-x:36; --mg-y:70; --m-mg-y:36;">Margin Inline<br>Margin Block</div>
+					</xmp>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
