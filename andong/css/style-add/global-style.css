@@ -1,4 +1,6 @@
 * {
+	display:var(--dp, revert);
+
 	margin-top:calc(var(--mg, var(--mg-y, var(--mg-t))) * 1px);
 	margin-bottom:calc(var(--mg, var(--mg-y, var(--mg-b))) * 1px);
 	margin-left:calc(var(--mg, var(--mg-x, var(--mg-l))) * 1px);
@@ -19,6 +21,10 @@
 }
 
 * * {
+	/* Display */
+	--dp: initial;
+
+	/* Margin */
 	--mg: initial;
 	--mg-y: initial;
 	--mg-x: initial;
@@ -34,6 +40,7 @@
 	--m-mg-b: initial;
 	--m-mg-l: initial;
 
+	/* Padding */
 	--pd: initial;
 	--pd-y: initial;
 	--pd-x: initial;
@@ -49,16 +56,17 @@
 	--m-pd-b: initial;
 	--m-pd-l: initial;
 
+	/* Width & Height */
 	--h: initial;
 	--w: initial;
 	--m-h: initial;
 	--m-w: initial;
-
-	--fc: initial;
 }
 
 @media all and (max-width:720px) {
 	* {
+		display:var(--m-dp, var(--dp, revert));
+
 		margin-top:calc((var(--m-mg, var(--m-mg-y, var(--m-mg-t, var(--mg, var(--mg-y, var(--mg-t)))))) * 100 / var(--init-mobile-design-width)) * 1vw);
 		margin-bottom:calc((var(--m-mg, var(--m-mg-y, var(--m-mg-b, var(--mg, var(--mg-y, var(--mg-b)))))) * 100 / var(--init-mobile-design-width)) * 1vw);
 		margin-left:calc((var(--m-mg, var(--m-mg-x, var(--m-mg-l, var(--mg, var(--mg-x, var(--mg-l)))))) * 100 / var(--init-mobile-design-width)) * 1vw);
