@@ -23,7 +23,7 @@
 
 	[data-layout] {align-self:var(--aself, flex-start);}
 
-	[data-layout="center"] {overflow:auto; display:flex;}
+	[data-layout="center"] {overflow:auto; display:flex; width:100dvw; height:100dvh;}
 	[data-layout="center"] > * {flex-shrink:0; margin:auto;}
 
 	[data-layout^="inner"] {width:var(--layout-width, var(--init-layout-width)); margin-inline:auto;}
