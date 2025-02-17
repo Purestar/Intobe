@@ -8,8 +8,10 @@
 	app-root {height:100dvh;}
 	.workspace {overflow:hidden; flex-wrap:nowrap;}
 	.workspace-header,
-	.workspace-footer {flex:0 0 var(--ws-h); background:#222; height:var(--ws-h); font-size:14px; color:white;}
+	.workspace-footer {display:flex; justify-content:space-between; align-items:center; flex:0 0 var(--ws-h); background:#222; height:var(--ws-h);  font-size:14px; color:white;}
 	.workspace-footer {padding:0 20px;}
+	.workspace-header header,
+	.workspace-footer footer {flex:1;}
 	.workspace-header-btn {display:flex; justify-content:center; align-items:center; flex:0 0 var(--ws-h); justify-content:center; align-items:center; width:var(--ws-h); height:var(--ws-h);}
 	.workspace-header-btn:last-child {pointer-events:none;}
 	.workspace-header-btn:last-child svg {display:none;}

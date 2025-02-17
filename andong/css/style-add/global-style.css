@@ -15,7 +15,7 @@
 	font-size:calc(var(--fs, --init-font-size) * 1px);
 	font-weight:var(--fw, 400);
 	text-align:var(--text, left);
-	color: var(--fc, var(--init-font-color));
+	color: var(--fc);
 }
 
 * * {
@@ -53,6 +53,8 @@
 	--w: initial;
 	--m-h: initial;
 	--m-w: initial;
+
+	--fc: initial;
 }
 
 @media all and (max-width:720px) {
