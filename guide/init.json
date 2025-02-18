@@ -27,6 +27,7 @@
 				{ "menu": "primeVue", "src": "https://primevue.org/", "state": "comp" },
 				{ "menu": "vw calculator", "src": "http://publishing.kr/vw/", "state": "comp" },
 				{ "id": "Global", "submenu": [
+					{ "menu": "Background", "src": "./guide/global-background.html", "state": "comp" },
 					{ "menu": "Border", "src": "./guide/global-border.html", "state": "comp" },
 					{ "menu": "Display", "src": "./guide/global-display.html", "state": "comp" },
 					{ "menu": "Font", "src": "./guide/global-font.html", "state": "comp" },
@@ -45,9 +46,10 @@
 				], "state": "comp"},
 				{ "id": "UI(General)", "submenu": [
 					{ "menu": "Bullet", "src": "./guide/ui-bullet.html", "state": "comp" },
+					{ "menu": "Button", "src": "./guide/ui-button.html", "state": "comp" },
 					{ "menu": "Divider", "src": "./guide/ui-divider.html", "state": "comp" }
 				], "state": "comp"},
-				{ "id": "UI(primeVue Base)", "submenu": [
+				{ "id": "UI(primeVue)", "submenu": [
 					{ "menu": "Accordion", "src": "./guide/ui-accordion.html", "state": "comp" }
 				], "state": "comp"}
 			],

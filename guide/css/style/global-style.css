@@ -14,6 +14,8 @@
 
 	display:var(--dp, revert);
 
+	background-color:var(--bg);
+
 	border-radius:var(--radius-result);
 
 	margin-top:calc(var(--mg, var(--mg-y, var(--mg-t))) * 1px);
@@ -36,6 +38,9 @@
 }
 
 * * {
+	/* Background */
+	--bg: initial;
+
 	/* Border */
 	--radius: initial;
 	--radius-p: initial;
