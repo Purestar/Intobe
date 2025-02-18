@@ -1,4 +1,5 @@
 @import "./style/global-style.css";
+@import "./style/bullet.css";
 @import "./style/divider.css";
 @import "./style/layout.css";
 @import "./style/scroll.css";

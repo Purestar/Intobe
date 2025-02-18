@@ -1,0 +1,22 @@
+/* Bullet */
+	/* Default */
+		[class*="bul-"] {word-break:break-all; color:var(--color);}
+		[class*="bul-"] > * {display:flex; gap:calc(var(--gap, 0) * 1px);}
+		[class*="bul-"] > *:before {content:""; color:var(--color);}
+
+	/* Circle */
+		[class*="bul-circle"] > *:before {flex:0 0 0.5em; background-color:var(--color, black); border-radius:50%; width:0.5em; height:0.5em; transform:translate(0, 0.32em);}
+
+	/* Square */
+		[class*="bul-square"] > *:before {flex:0 0 0.5em; background-color:var(--color, black); width:0.5em; height:0.5em; transform:translate(0, 0.32em);}
+
+	/* Hyphen */
+		[class*="bul-hyphen"] > *:before {content:"- ";}
+
+	/* Number */
+		[class*="bul-number"] {counter-reset:list-num;}
+		[class*="bul-number"] > *:before {counter-increment:list-num; content:counter(list-num)". ";}
+
+@media all and (max-width:720px) {
+	[class*="bul-"] > * {display:flex; gap:calc(var(--m-gap, var(--gap)) * 100 / var(--init-mobile-design-width) * 1vw);}
+}

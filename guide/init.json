@@ -44,6 +44,7 @@
 					{ "menu": "Grid", "src": "./guide/layout-grid.html", "state": "comp" }
 				], "state": "comp"},
 				{ "id": "UI(General)", "submenu": [
+					{ "menu": "Bullet", "src": "./guide/ui-bullet.html", "state": "comp" },
 					{ "menu": "Divider", "src": "./guide/ui-divider.html", "state": "comp" }
 				], "state": "comp"},
 				{ "id": "UI(primeVue Base)", "submenu": [
