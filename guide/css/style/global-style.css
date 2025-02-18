@@ -16,6 +16,7 @@
 
 	background-color:var(--bg);
 
+	border-color:var(--bd);
 	border-radius:var(--radius-result);
 
 	margin-top:calc(var(--mg, var(--mg-y, var(--mg-t))) * 1px);
