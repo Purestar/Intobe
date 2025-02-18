@@ -118,7 +118,7 @@ ig-wrap {display:block; max-width:100%;}
 	.workspace-guide-prop .workspace-guide-prop-value {color:#b17ff7;}
 	.workspace-guide-prop .workspace-guide-prop-desc {color:#f386c2;}
 	.workspace-guide-prop .workspace-guide-prop-attribute {color:#ffa1ad;}
-	.workspace-guide-prop .workspace-guide-prop-attribute::before {content:"data-";}
+	.workspace-guide-prop .workspace-guide-prop-attribute:not(.not-prefix)::before {content:"data-";}
 	.workspace-guide-prop .workspace-guide-prop-attribute-value {color:#adffc8;}
 	.workspace-guide-prop .workspace-guide-prop-attribute-value::before,
 	.workspace-guide-prop .workspace-guide-prop-attribute-value::after {content:'"';}
