@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="대구가톨릭">
+		<meta name="description" content="대구가톨릭">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script type="module" src="../js/pub.js"></script>
+		<link rel="stylesheet" href="../css/global.css">
+	</head>
+	<body>
+		<div class="workspace-guide">
+			<!-- Information -->
+			<div class="workspace-guide-case">
+				<h1>Information</h1>
+				<ul class="workspace-guide-prop">
+					<li>
+						<span class="workspace-guide-prop-attribute not-prefix">class</span>
+						<div>
+							<div class="workspace-guide-prop-attribute-value">div-h</div>
+							<div class="workspace-guide-prop-attribute-value">div-v</div>
+							<div class="workspace-guide-prop-attribute-value">div-h-arrow</div>
+							<div class="workspace-guide-prop-attribute-value">div-v-arrow</div>
+						</div>
+					</li>
+					<li><span class="workspace-guide-prop-attribute">slide</span></li>
+					<li><span class="workspace-guide-prop-attribute">qna</span></li>
+					<li><span class="workspace-guide-prop-attribute not-prefix">multiple</span></li>
+					<li><span class="workspace-guide-prop-attribute not-prefix">disabled</span></li>
+				</ul>
+				<ul class="workspace-guide-prop">
+					<li>
+						<span class="workspace-guide-prop-desc">gap</span>
+						<span class="workspace-guide-prop-name">gap</span>
+						<span class="workspace-guide-prop-value">&lt;Number&gt;</span>
+					</li>
+					<li>
+						<span class="workspace-guide-prop-desc">Object Color</span>
+						<span class="workspace-guide-prop-name">color</span>
+						<span class="workspace-guide-prop-value">&lt;Value&gt;</span>
+					</li>
+				</ul>
+			</div>
+
+			<hr> <!-- Line Divider -->
+			<div class="workspace-guide-case">
+				<h1>Line Divider</h1>
+				<div class="workspace-guide-inner">
+					<div class="div-h" style="--gap:10;">
+						<div>Item</div><div>Item</div><div>Item</div>
+					</div>
+					<div class="div-v" style="--gap:10; --mg-t:20">
+						<div>Item</div><div>Item</div><div>Item</div>
+					</div>
+				</div>
+				<div class="workspace-guide-inner">
+					<xmp>
+						<div class="div-h">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+						<div class="div-v">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+					</xmp>
+				</div>
+			</div>
+
+			<hr> <!-- Arrow Divider -->
+			<div class="workspace-guide-case">
+				<h1>Arrow Divider</h1>
+				<div class="workspace-guide-inner">
+					<div class="div-h-arrow" style="--gap:10;">
+						<div>Item</div><div>Item</div><div>Item</div>
+					</div>
+					<br>
+					<div class="div-v-arrow" style="--gap:10; --mg-t:20">
+						<div>Item</div><div>Item</div><div>Item</div>
+					</div>
+				</div>
+				<div class="workspace-guide-inner">
+					<xmp>
+						<div class="div-h-arrow">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+						<div class="div-v-arrow">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+					</xmp>
+				</div>
+			</div>
+
+			<hr> <!-- Divider Gap -->
+			<div class="workspace-guide-case">
+				<h1>Divider Gap</h1>
+				<div class="workspace-guide-inner">
+					<div class="div-h" style="--gap:40;">
+						<div>Item</div><div>Item</div><div>Item</div>
+					</div>
+				</div>
+				<div class="workspace-guide-inner">
+					<xmp>
+						<div class="div-h" style="--gap:40;">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+					</xmp>
+				</div>
+			</div>
+
+			<hr> <!-- Divider Color -->
+			<div class="workspace-guide-case">
+				<h1>Divider Color</h1>
+				<div class="workspace-guide-inner">
+					<div class="div-h" style="--color:red;">
+						<div>Item</div><div>Item</div><div>Item</div>
+					</div>
+				</div>
+				<div class="workspace-guide-inner">
+					<xmp>
+						<div class="div-h" style="--color:red;">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+					</xmp>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
