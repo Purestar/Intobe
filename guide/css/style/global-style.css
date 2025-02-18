@@ -7,7 +7,13 @@
 	--h-per:calc(var(--h-p) * 1%);
 	--height-result:var(--h-px, var(--h-per));
 
+	--radius-px:calc(var(--radius) * 1px);
+	--radius-per:calc(var(--radius-p) * 1%);
+	--radius-result:var(--radius-px, var(--radius-per));
+
 	display:var(--dp, revert);
+
+	border-radius:var(--radius-result);
 
 	margin-top:calc(var(--mg, var(--mg-y, var(--mg-t))) * 1px);
 	margin-bottom:calc(var(--mg, var(--mg-y, var(--mg-b))) * 1px);
@@ -83,7 +89,14 @@
 		--m-h-per:calc(var(--m-h-p) * 1%);
 		--height-result:var(--m-h-px, var(--m-h-per, var(--h-px, var(--h-per))));
 
+		--radius-px:calc((var(--radius) * 100 / var(--init-mobile-design-width)) * 1vw);
+		--m-radius-px:calc((var(--m-radius) * 100 / var(--init-mobile-design-width)) * 1vw);
+		--m-radius-per:calc(var(--m-radius-p) * 1%);
+		--radius-result:var(--m-radius-px, var(--m-radius-per, var(--radius-px, var(--radius-per))));
+
 		display:var(--m-dp, var(--dp, revert));
+
+		border-radius:var(--radius-result);
 
 		margin-top:calc((var(--m-mg, var(--m-mg-y, var(--m-mg-t, var(--mg, var(--mg-y, var(--mg-t)))))) * 100 / var(--init-mobile-design-width)) * 1vw);
 		margin-bottom:calc((var(--m-mg, var(--m-mg-y, var(--m-mg-b, var(--mg, var(--mg-y, var(--mg-b)))))) * 100 / var(--init-mobile-design-width)) * 1vw);

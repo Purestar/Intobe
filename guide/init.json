@@ -27,6 +27,7 @@
 				{ "menu": "primeVue", "src": "https://primevue.org/", "state": "comp" },
 				{ "menu": "vw calculator", "src": "http://publishing.kr/vw/", "state": "comp" },
 				{ "id": "Global", "submenu": [
+					{ "menu": "Border", "src": "./guide/global-border.html", "state": "comp" },
 					{ "menu": "Display", "src": "./guide/global-display.html", "state": "comp" },
 					{ "menu": "Font", "src": "./guide/global-font.html", "state": "comp" },
 					{ "menu": "Margin", "src": "./guide/global-margin.html", "state": "comp" },

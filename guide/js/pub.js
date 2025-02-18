@@ -17,9 +17,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	// Accordion
 	app.component('p-aco', PrimeVue.Accordion);
-	app.component('p-aco-panel', PrimeVue.AccordionPanel);
-	app.component('p-aco-header', PrimeVue.AccordionHeader);
-	app.component('p-aco-content', PrimeVue.AccordionContent);
+	app.component('p-aco-item', PrimeVue.AccordionPanel);
+	app.component('p-aco-head', PrimeVue.AccordionHeader);
+	app.component('p-aco-cont', PrimeVue.AccordionContent);
 
 	// Form
 	app.component('p-autocomplete', PrimeVue.AutoComplete);
