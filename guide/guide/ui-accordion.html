@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="대구가톨릭">
+		<meta name="description" content="대구가톨릭">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script type="module" src="../js/pub.js"></script>
+		<link rel="stylesheet" href="../css/global.css">
+	</head>
+	<body>
+		<div id="container">
+			<div class="workspace-guide">
+				<!-- Information -->
+				<div class="workspace-guide-case">
+					<h1>Information</h1>
+					<ul class="workspace-guide-prop">
+						<li>
+							<span class="workspace-guide-prop-attribute not-prefix">value</span>
+							<div class="workspace-guide-prop-attribute-value">&lt;Value&gt;</div>
+						</li>
+						<li><span class="workspace-guide-prop-attribute">slide</span></li>
+						<li><span class="workspace-guide-prop-attribute">qna</span></li>
+						<li><span class="workspace-guide-prop-attribute not-prefix">multiple</span></li>
+						<li><span class="workspace-guide-prop-attribute not-prefix">disabled</span></li>
+					</ul>
+					<ul class="workspace-guide-prop">
+						<li>
+							<span class="workspace-guide-prop-desc">Question Text</span>
+							<span class="workspace-guide-prop-name">txt-q</span>
+							<span class="workspace-guide-prop-value">&lt;String&gt;</span>
+						</li>
+						<li>
+							<span class="workspace-guide-prop-desc">Answer Text</span>
+							<span class="workspace-guide-prop-name">txt-a</span>
+							<span class="workspace-guide-prop-value">&lt;String&gt;</span>
+						</li>
+					</ul>
+				</div>
+
+				<hr> <!-- Default -->
+				<div class="workspace-guide-case">
+					<h1>Default</h1>
+					<div class="workspace-guide-inner">
+						<p-aco class="aco-type-test">
+							<p-aco-item class="aco-item">
+								<p-aco-head class="aco-head">Accordion 1</p-aco-head>
+								<p-aco-cont class="aco-cont">contents</p-aco-cont>
+							</p-aco-item>
+							<p-aco-item class="aco-item">
+								<p-aco-head class="aco-head">Accordion 2</p-aco-head>
+								<p-aco-cont class="aco-cont">contents</p-aco-cont>
+							</p-aco-item>
+							<p-aco-item class="aco-item">
+								<p-aco-head class="aco-head">Accordion 3</p-aco-head>
+								<p-aco-cont class="aco-cont">contents</p-aco-cont>
+							</p-aco-item>
+						</p-aco>
+					</div>
+					<div class="workspace-guide-inner">
+						<pre>
+							&lt;p-aco class="aco-type"&gt;
+								&lt;p-aco-item class="aco-item"&gt;
+									&lt;p-aco-head&gt; class="aco-head"&gt;&lt;/p-aco-head&gt;
+									&lt;p-aco-cont&gt; class="aco-cont"&gt;&lt;/p-aco-cont&gt;
+								&lt;/p-aco-item&gt;
+							&lt;/p-aco&gt;
+						</pre>
+					</div>
+				</div>
+
+				<hr> <!-- Closed -->
+				<div class="workspace-guide-case">
+					<h1>Closed</h1>
+					<div class="workspace-guide-inner">
+						<p-aco class="aco-type-test">
+							<p-aco-item class="aco-item" value="0">
+								<p-aco-head class="aco-head">Accordion 1</p-aco-head>
+								<p-aco-cont class="aco-cont">contents</p-aco-cont>
+							</p-aco-item>
+							<p-aco-item class="aco-item" value="1">
+								<p-aco-head class="aco-head">Accordion 2</p-aco-head>
+								<p-aco-cont class="aco-cont">contents</p-aco-cont>
+							</p-aco-item>
+							<p-aco-item class="aco-item" value="2">
+								<p-aco-head class="aco-head">Accordion 3</p-aco-head>
+								<p-aco-cont class="aco-cont">contents</p-aco-cont>
+							</p-aco-item>
+						</p-aco>
+					</div>
+					<div class="workspace-guide-inner">
+						<pre>
+							&lt;p-aco class="aco-type"&gt;
+								&lt;p-aco-item class="aco-item" value="0"&gt;
+									&lt;p-aco-head&gt; class="aco-head"&gt;&lt;/p-aco-head&gt;
+									&lt;p-aco-cont&gt; class="aco-cont"&gt;&lt;/p-aco-cont&gt;
+								&lt;/p-aco-item&gt;
+							&lt;/p-aco&gt;
+						</pre>
+					</div>
+				</div>
+
+				<hr> <!-- Opened -->
+				<div class="workspace-guide-case">
+					<h1>Opened</h1>
+					<div class="workspace-guide-inner">
+						<p-aco class="aco-type-test" value="0">
+							<p-aco-item class="aco-item" value="0">
+								<p-aco-head class="aco-head">Accordion 1</p-aco-head>
+								<p-aco-cont class="aco-cont">contents</p-aco-cont>
+							</p-aco-item>
+							<p-aco-item class="aco-item" value="1">
+								<p-aco-head class="aco-head">Accordion 2</p-aco-head>
+								<p-aco-cont class="aco-cont">contents</p-aco-cont>
+							</p-aco-item>
+							<p-aco-item class="aco-item" value="2">
+								<p-aco-head class="aco-head">Accordion 3</p-aco-head>
+								<p-aco-cont class="aco-cont">contents</p-aco-cont>
+							</p-aco-item>
+						</p-aco>
+					</div>
+					<div class="workspace-guide-inner">
+						<pre>
+							&lt;p-aco class="aco-type" value="0"&gt;
+								&lt;p-aco-item class="aco-item" value="0"&gt;
+									&lt;p-aco-head class="aco-head"&gt;&lt;/p-aco-head&gt;
+									&lt;p-aco-cont class="aco-cont"&gt;&lt;/p-aco-cont&gt;
+								&lt;/p-aco-item&gt;
+							&lt;/p-aco&gt;
+						</pre>
+					</div>
+				</div>
+
+				<hr> <!-- Icon -->
+				<div class="workspace-guide-case">
+					<h1>Icon</h1>
+					<div class="workspace-guide-inner">
+						<p-aco class="aco-type-test">
+							<p-aco-item class="aco-item" value="0">
+								<p-aco-head class="aco-head">Accordion 1<i class="aco-icon"></i></p-aco-head>
+								<p-aco-cont class="aco-cont">contents</p-aco-cont>
+							</p-aco-item>
+							<p-aco-item class="aco-item" value="1">
+								<p-aco-head class="aco-head">Accordion 2<i class="aco-icon"></i></p-aco-head>
+								<p-aco-cont class="aco-cont">contents</p-aco-cont>
+							</p-aco-item>
+							<p-aco-item class="aco-item" value="2">
+								<p-aco-head class="aco-head">Accordion 3<i class="aco-icon"></i></p-aco-head>
+								<p-aco-cont class="aco-cont">contents</p-aco-cont>
+							</p-aco-item>
+						</p-aco>
+					</div>
+					<div class="workspace-guide-inner">
+						<pre>
+							&lt;p-aco class="aco-type"&gt;
+								&lt;p-aco-item class="aco-item" value="0"&gt;
+									&lt;p-aco-head class="aco-head"&gt;
+										&lt;i&gt; class="aco-icon"&gt;&lt;/i&gt;
+									&lt;/p-aco-head&gt;
+									&lt;p-aco-cont&gt; class="aco-cont"&gt;&lt;/p-aco-cont&gt;
+								&lt;/p-aco-item&gt;
+							&lt;/p-aco&gt;
+						</pre>
+					</div>
+				</div>
+
+				<hr> <!-- Multiple -->
+				<div class="workspace-guide-case">
+					<h1>Multiple</h1>
+					<div class="workspace-guide-inner">
+						<p-aco class="aco-type-test" multiple>
+							<p-aco-item class="aco-item" value="0">
+								<p-aco-head class="aco-head">Accordion 1</p-aco-head>
+								<p-aco-cont class="aco-cont">contents</p-aco-cont>
+							</p-aco-item>
+							<p-aco-item class="aco-item" value="1">
+								<p-aco-head class="aco-head">Accordion 2</p-aco-head>
+								<p-aco-cont class="aco-cont">contents</p-aco-cont>
+							</p-aco-item>
+							<p-aco-item class="aco-item" value="2">
+								<p-aco-head class="aco-head">Accordion 3</p-aco-head>
+								<p-aco-cont class="aco-cont">contents</p-aco-cont>
+							</p-aco-item>
+						</p-aco>
+					</div>
+					<div class="workspace-guide-inner">
+						<pre>
+							&lt;p-aco class="aco-type" multiple&gt;&lt;/p-aco&gt;
+						</pre>
+					</div>
+				</div>
+
+				<hr> <!-- QnA -->
+				<div class="workspace-guide-case">
+					<h1>Q&A</h1>
+					<div class="workspace-guide-inner">
+						<p-aco data-qna class="aco-type-test">
+							<p-aco-item class="aco-item" value="0">
+								<p-aco-head class="aco-head">
+									<div class="aco-head-inner">
+										Accordion 1
+										<i class="aco-icon"></i>
+									</div>
+								</p-aco-head>
+								<p-aco-cont class="aco-cont">contents</p-aco-cont>
+							</p-aco-item>
+							<p-aco-item class="aco-item" value="1">
+								<p-aco-head class="aco-head">
+									<div class="aco-head-inner">
+										Accordion 2
+										<i class="aco-icon"></i>
+									</div>
+								</p-aco-head>
+								<p-aco-cont class="aco-cont">contents</p-aco-cont>
+							</p-aco-item>
+							<p-aco-item class="aco-item" value="2">
+								<p-aco-head class="aco-head">
+									<div class="aco-head-inner">
+										Accordion 3
+										<i class="aco-icon"></i>
+									</div>
+								</p-aco-head>
+								<p-aco-cont class="aco-cont">contents</p-aco-cont>
+							</p-aco-item>
+						</p-aco>
+					</div>
+					<div class="workspace-guide-inner">
+						<pre>
+							&lt;p-aco data-qna class="aco-type-test"&gt;
+								&lt;p-aco-item class="aco-item" value="0"&gt;
+									&lt;p-aco-head class="aco-head"&gt;
+										&lt;div class="aco-head-inner"&gt; Accordion 1 &lt;i class="aco-icon"&gt;&lt;/i&gt; &lt;/div&gt;
+									&lt;/p-aco-head&gt;
+									&lt;p-aco-cont class="aco-cont"&gt;contents&lt;/p-aco-cont&gt;
+								&lt;/p-aco-item&gt;
+							&lt;/p-aco&gt;
+						</pre>
+					</div>
+				</div>
+
+				<hr> <!-- QnA Custom -->
+				<div class="workspace-guide-case">
+					<h1>Q&A Custom</h1>
+					<div class="workspace-guide-inner">
+						<p-aco data-qna class="aco-type-test" style="--txt-q:'Question.'; --txt-a:'Answer.'">
+							<p-aco-item class="aco-item" value="0">
+								<p-aco-head class="aco-head">
+									<div class="aco-head-inner">Accordion 1</div>
+								</p-aco-head>
+								<p-aco-cont class="aco-cont">contents</p-aco-cont>
+							</p-aco-item>
+							<p-aco-item class="aco-item" value="1">
+								<p-aco-head class="aco-head">
+									<div class="aco-head-inner">Accordion 2</div>
+								</p-aco-head>
+								<p-aco-cont class="aco-cont">contents</p-aco-cont>
+							</p-aco-item>
+							<p-aco-item class="aco-item" value="2">
+								<p-aco-head class="aco-head">
+									<div class="aco-head-inner">Accordion 3</div>
+								</p-aco-head>
+								<p-aco-cont class="aco-cont">contents</p-aco-cont>
+							</p-aco-item>
+						</p-aco>
+					</div>
+					<div class="workspace-guide-inner">
+						<pre>
+							&lt;p-aco data-qna class="aco-type" style="--txt-q:'Question.'; --txt-a:'Answer.'"&gt;
+								&lt;p-aco-item class="aco-item" value="0"&gt;
+									&lt;p-aco-head class="aco-head"&gt;
+										&lt;div class="aco-head-inner"&gt;&lt;/div&gt;
+									&lt;/p-aco-head&gt;
+									&lt;p-aco-cont class="aco-cont"&gt;contents&lt;/p-aco-cont&gt;
+								&lt;/p-aco-item&gt;
+							&lt;/p-aco&gt;
+						</pre>
+					</div>
+				</div>
+
+				<hr> <!-- Animation -->
+				<div class="workspace-guide-case">
+					<h1>Animation</h1>
+					<div class="workspace-guide-inner">
+						<p-aco data-slide class="aco-type-test">
+							<p-aco-item class="aco-item" value="0">
+								<p-aco-head class="aco-head">Accordion 1</p-aco-head>
+								<p-aco-cont class="aco-cont">contents</p-aco-cont>
+							</p-aco-item>
+							<p-aco-item class="aco-item" value="1">
+								<p-aco-head class="aco-head">Accordion 2</p-aco-head>
+								<p-aco-cont class="aco-cont">contents</p-aco-cont>
+							</p-aco-item>
+							<p-aco-item class="aco-item" value="2">
+								<p-aco-head class="aco-head">Accordion 3</p-aco-head>
+								<p-aco-cont class="aco-cont">contents</p-aco-cont>
+							</p-aco-item>
+						</p-aco>
+					</div>
+					<div class="workspace-guide-inner">
+						<pre>
+							&lt;p-aco class="aco-type" data-slide&gt;&lt;/p-aco&gt;
+						</pre>
+					</div>
+				</div>
+
+				<hr> <!-- Scroll -->
+				<div class="workspace-guide-case">
+					<h1>Scroll</h1>
+					<div class="workspace-guide-inner">
+						<p-aco class="aco-type-test" multiple data-scroll="v" style="--h:200;">
+							<p-aco-item class="aco-item" value="0">
+								<p-aco-head class="aco-head">Accordion 1</p-aco-head>
+								<p-aco-cont class="aco-cont">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p-aco-cont>
+							</p-aco-item>
+							<p-aco-item class="aco-item" value="1">
+								<p-aco-head class="aco-head">Accordion 2</p-aco-head>
+								<p-aco-cont class="aco-cont">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p-aco-cont>
+							</p-aco-item>
+							<p-aco-item class="aco-item" value="2">
+								<p-aco-head class="aco-head">Accordion 3</p-aco-head>
+								<p-aco-cont class="aco-cont">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p-aco-cont>
+							</p-aco-item>
+						</p-aco>
+					</div>
+					<div class="workspace-guide-inner">
+						<pre>
+							&lt;p-aco class="aco-type-test" data-scroll="v" style="--h:200;"&gt;&lt;/p-aco&gt;
+						</pre>
+					</div>
+				</div>
+
+				<hr> <!-- Head Fix -->
+				<div class="workspace-guide-case">
+					<h1>Head Fix</h1>
+					<div class="workspace-guide-inner">
+						<p-aco class="aco-type-test" multiple data-scroll="v" data-head-fix style="--h:200;">
+							<p-aco-item class="aco-item" value="0">
+								<p-aco-head class="aco-head">Accordion 1</p-aco-head>
+								<p-aco-cont class="aco-cont">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p-aco-cont>
+							</p-aco-item>
+							<p-aco-item class="aco-item" value="1">
+								<p-aco-head class="aco-head">Accordion 2</p-aco-head>
+								<p-aco-cont class="aco-cont">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p-aco-cont>
+							</p-aco-item>
+							<p-aco-item class="aco-item" value="2">
+								<p-aco-head class="aco-head">Accordion 3</p-aco-head>
+								<p-aco-cont class="aco-cont">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p-aco-cont>
+							</p-aco-item>
+						</p-aco>
+					</div>
+					<div class="workspace-guide-inner">
+						<pre>
+							&lt;p-aco class="aco-type-test" data-scroll="v" style="--h:200;"&gt;&lt;/p-aco&gt;
+						</pre>
+					</div>
+				</div>
+
+				<hr> <!-- Disabled -->
+				<div class="workspace-guide-case">
+					<h1>Disabled</h1>
+					<div class="workspace-guide-inner">
+						<p-aco data-slide class="aco-type-test">
+							<p-aco-item class="aco-item" value="0" disabled>
+								<p-aco-head class="aco-head">Accordion 1</p-aco-head>
+								<p-aco-cont class="aco-cont">contents</p-aco-cont>
+							</p-aco-item>
+							<p-aco-item class="aco-item" value="1">
+								<p-aco-head class="aco-head">Accordion 2</p-aco-head>
+								<p-aco-cont class="aco-cont">contents</p-aco-cont>
+							</p-aco-item>
+							<p-aco-item class="aco-item" value="2">
+								<p-aco-head class="aco-head">Accordion 3</p-aco-head>
+								<p-aco-cont class="aco-cont">contents</p-aco-cont>
+							</p-aco-item>
+						</p-aco>
+					</div>
+					<div class="workspace-guide-inner">
+						<pre>
+							&lt;p-aco class="aco-type"&gt;
+								&lt;p-aco-item class="aco-item" value="0" disabled&gt;
+									&lt;p-aco-head class="aco-head"&gt;&lt;/p-aco-head&gt;
+									&lt;p-aco-cont class="aco-cont"&gt;&lt;/p-aco-cont&gt;
+								&lt;/p-aco-item&gt;
+							&lt;/p-aco&gt;
+						</pre>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

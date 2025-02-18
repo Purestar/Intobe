@@ -42,6 +42,9 @@
 					{ "menu": "Inner", "src": "./guide/layout-inner.html", "state": "comp" },
 					{ "menu": "Flex", "src": "./guide/layout-flex.html", "state": "comp" },
 					{ "menu": "Grid", "src": "./guide/layout-grid.html", "state": "comp" }
+				], "state": "comp"},
+				{ "id": "UI(primeVue Base)", "submenu": [
+					{ "menu": "Accordion", "src": "./guide/ui-accordion.html", "state": "comp" }
 				], "state": "comp"}
 			],
 			"state": "comp"
