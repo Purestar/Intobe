@@ -1,3 +1,4 @@
+
 * {
 	--w-px:calc(var(--w) * 1px);
 	--w-per:calc(var(--w-p) * 1%);
@@ -35,6 +36,10 @@
 }
 
 * * {
+	/* Border */
+	--radius: initial;
+	--radius-p: initial;
+
 	/* Display */
 	--dp: initial;
 
