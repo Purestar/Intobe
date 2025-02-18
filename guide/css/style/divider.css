@@ -16,3 +16,7 @@
 		[class*="div-v-arrow"] > * + *:before {background:none; border-left:1px solid var(--color, black); border-top:1px solid var(--color, black); width:4px; height:4px;}
 		[class*="div-h-arrow"] > * + *:before {align-self:center; transform:rotate(225deg);}
 		[class*="div-v-arrow"] > * + *:before {align-self:auto; transform:rotate(135deg);}
+
+@media all and (max-width:720px) {
+	[class*="div-"], [class*="div-"] > * {display:flex; gap:calc(var(--m-gap, var(--gap)) * 100 / var(--init-mobile-design-width) * 1vw);}
+}
