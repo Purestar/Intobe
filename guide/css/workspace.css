@@ -111,8 +111,9 @@ ig-wrap {display:block; max-width:100%;}
 	.workspace-guide-case h2 {font-size:18px; font-weight:500; color:white;}
 	.workspace-guide-case h3 {font-size:16px; font-weight:500; color:white;}
 	.workspace-guide-inner {background:white; border-radius:10px; padding:20px;}
-	.workspace-guide-prop {display:flex; flex-direction:column; gap:4px;}
+	.workspace-guide-prop {display:flex; flex-direction:column; gap:8px;}
 	.workspace-guide-prop > * {display:grid; grid-template-columns:repeat(3, 1fr); gap:4px; font-size:14px;}
+	.workspace-guide-prop > * + * {border-top:1px solid #73d2ff; padding-top:8px;}
 	.workspace-guide-prop .workspace-guide-prop-name {color:#73d2ff;}
 	.workspace-guide-prop .workspace-guide-prop-name::before {content:"--";}
 	.workspace-guide-prop .workspace-guide-prop-name::after {content:":";}
