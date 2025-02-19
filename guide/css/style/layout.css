@@ -1,27 +1,5 @@
 /* Layout */
-	[data-layout] [data-layout] {
-		--direction: initial;
-		--justify: initial;
-		--items: initial;
-		--aself: initial;
-		--wrap: initial;
-		--m-direction: initial;
-		--m-justify: initial;
-		--m-items: initial;
-		--m-aself: initial;
-		--m-wrap: initial;
-
-		--gap: initial;
-		--gap-r: initial;
-		--gap-c: initial;
-		--m-gap: initial;
-		--m-gap-r: initial;
-		--m-gap-c: initial;
-
-		--line: initial;
-	}
-
-	[data-layout] {align-self:var(--aself, flex-start);}
+	/*[data-layout] {align-self:var(--aself, flex-start);}
 
 	[data-layout="center"] {overflow:auto; display:flex; width:var(--width-result, 100%); height:var(--height-result, 100dvh);}
 	[data-layout="center"] > * {flex-shrink:0; margin:auto;}
@@ -62,4 +40,4 @@
 	[data-layout="grid"] > * {grid-column:var(--m-colspan, var(--colspan)); grid-row:var(--m-rowspan, var(--rowspan));}
 
 	[data-layout="ellipsis"] {-webkit-line-clamp:var(--m-line, var(--line));}
-}
+}*/
