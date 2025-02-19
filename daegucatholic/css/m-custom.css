@@ -223,6 +223,8 @@
 		.lst-latest .lst-tit {font-size:3.89vw;}
 		.lst-latest .lst-desc {font-size:3.33vw;}
 
+		.lst-badge > * {gap:1.11vw; padding:2.78vw; border-radius:2.22vw;}
+
 	/* Paging */
 		.paging-wrap {gap:1.94vw; margin-top:8.33vw; font-size:3.33vw;}
 		.paging-wrap a {width:6.67vw; height:6.67vw;}

@@ -318,6 +318,9 @@
 	.lst-latest .lst-tit {font-size:20px;}
 	.lst-latest .lst-desc {font-size:18px;}
 
+	.lst-badge > * {display:flex; flex-direction:column; align-items:center; gap:8px; border:1px solid #ddd; padding:20px; border-radius:16px;}
+	.lst-badge > .active {border:1px solid var(--mc);}
+
 /* Paging */
 	.paging-wrap {gap:10px; margin-top:60px; color:#666;}
 	.paging-wrap a {width:36px; height:36px;}
