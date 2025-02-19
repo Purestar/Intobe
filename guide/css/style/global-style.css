@@ -7,6 +7,9 @@
 	[style*="--bd"] { border-width:var(--bd-w, 1px); border-color: var(--bd, black); border-style:var(--bd-s, solid); }
 	[style*="--bd-r"] { border-radius:var(--bd-r); }
 
+/* Display */
+	[style*="--dp"] { display:var(--dp); }
+
 /* Width & Height */
 	[style*="--w"] { width: var(--w); }
 	[style*="--h"] { height: var(--h); }
@@ -20,11 +23,17 @@
 		/* Border */
 			--bd: initial; --bd-w: initial; --bd-s: initial; --bd-r: initial;
 
+		/* Display */
+			--dp: initial; --m-dp: initial;
+
 		/* Width & Height */
-			--w: initial; --h: initial;
+			--w: initial; --h: initial; --m-w: initial; --m-h: initial;
 	}
 
 @media all and (max-width:720px) {
+	/* Display */
+		[style*="--m-dp"] { display:var(--m-dp); }
+
 	/* Width & Height */
 		[style*="--m-w"] { width: var(--m-w); }
 		[style*="--m-h"] { height: var(--m-h); }
