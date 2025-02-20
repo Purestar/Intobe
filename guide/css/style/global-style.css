@@ -12,6 +12,7 @@
 	[style*="--ft-c"] { color:var(--ft-c); }
 	[style*="--ft-s"] { font-size:var(--ft-s); }
 	[style*="--ft-w"] { font-weight:var(--ft-w); }
+	[style*="--ft-ls"] { letter-spacing:var(--ft-ls); }
 	[style*="--txt-a"] { text-align:var(--txt-a); }
 	[style*="--txt-deco"] { text-decoration: var(--txt-deco-l, underline) var(--txt-deco-s, solid) var(--txt-deco-c, var(--ft-c, currentcolor)) var(--txt-deco-t, 1px); text-underline-offset: var(--txt-deco-uo, auto); }
 	[style*="--txt-emp"] { text-emphasis-color: var(--txt-emp-c, var(--ft-c, currentcolor)); text-emphasis-position: var(--txt-emp-p, auto); text-emphasis-style: var(--txt-emp-s, dot);}
