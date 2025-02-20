@@ -12,12 +12,13 @@
 	[style*="--ft-c"] { color:var(--ft-c); }
 	[style*="--ft-s"] { font-size:var(--ft-s); }
 	[style*="--ft-w"] { font-weight:var(--ft-w); }
-	[style*="--ft-ls"] { letter-spacing:var(--ft-ls); }
 	[style*="--txt-a"] { text-align:var(--txt-a); }
 	[style*="--txt-deco"] { text-decoration: var(--txt-deco-l, underline) var(--txt-deco-s, solid) var(--txt-deco-c, var(--ft-c, currentcolor)) var(--txt-deco-t, 1px); text-underline-offset: var(--txt-deco-uo, auto); }
 	[style*="--txt-emp"] { text-emphasis-color: var(--txt-emp-c, var(--ft-c, currentcolor)); text-emphasis-position: var(--txt-emp-p, auto); text-emphasis-style: var(--txt-emp-s, dot);}
 	[style*="--txt-emp-p:right"], [style*="--txt-emp-p:left"] { writing-mode: vertical-rl; }
 	[style*="--txt-emp-p:left"] { text-emphasis-position:over left; }
+	[style*="--txt-lh"] { line-height:var(--txt-lh); }
+	[style*="--txt-ls"] { letter-spacing:var(--txt-ls); }
 	[style*="--txt-ori"] { text-orientation: var(--txt-ori); writing-mode: vertical-rl; }
 	[style*="--txt-up"] { text-combine-upright:var(--txt-up); writing-mode: vertical-rl; }
 
@@ -57,6 +58,8 @@
 		[style*="--m-txt-a"] { text-align: var(--m-txt-a); }
 		[style*="--m-txt-deco"] { text-decoration: var(--m-txt-deco-l) var(--m-txt-deco-s) var(--m-txt-deco-c); text-underline-offset: var(--m-txt-deco-uo); }
 		[style*="--m-txt-emp"] { text-emphasis-color: var(--m-txt-emp-c); text-emphasis-position: var(--m-txt-emp-p); text-emphasis-style: var(--m-txt-emp-s); }
+		[style*="--m-txt-lh"] { line-height:var(--m-txt-lh); }
+		[style*="--m-txt-ls"] { letter-spacing:var(--m-txt-ls); }
 		[style*="--m-txt-ori"] { text-orientation: var(--m-txt-ori); }
 		[style*="--m-txt-up"] { text-combine-upright:var(--m-txt-up); }
 
