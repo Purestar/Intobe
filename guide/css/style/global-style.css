@@ -67,6 +67,7 @@
 			--gap-a: initial; --gap-r: initial; --gap-c: initial;
 			--m-gap-a: initial; --m-gap-r: initial; --m-gap-c: initial;
 			--grid-col: initial; --m-grid-col: initial; --grid-t-col: initial; --m-grid-t-col:initial;
+			--content: initial; --m-content: initial; --content-x: initial; --m-content-x: initial; --content-y: initial; --m-content-y: initial;
 
 		/* Margin & Padding */
 			--mg-a: initial; --m-mg-a: initial;
@@ -104,6 +105,7 @@
 		[style*="--m-gap-r"] { row-gap: var(--m-gap-r); }
 		[style*="--m-grid-col"] { grid-column: span var(--m-grid-col); }
 		[style*="--m-grid-t-col"] { grid-template-columns: repeat(var(--m-grid-t-col), 1fr); }
+		[style*="--m-content"] { place-content: var(--m-content, var(--m-content-y)) var(--m-content, var(--m-content-x)); flex-wrap:wrap; }
 
 	/* Margin & Padding */
 		[style*="--mg-t"] { margin-top: var(--m-mg-t); }
