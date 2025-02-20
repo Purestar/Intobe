@@ -30,9 +30,9 @@
 					{ "menu": "Background", "src": "./guide/global-background.html", "state": "comp" },
 					{ "menu": "Border", "src": "./guide/global-border.html", "state": "comp" },
 					{ "menu": "Display", "src": "./guide/global-display.html", "state": "comp" },
+					{ "menu": "Flex & Grid", "src": "./guide/global-flex.html", "state": "comp" },
 					{ "menu": "Font & Text", "src": "./guide/global-font.html", "state": "comp" },
-					{ "menu": "Margin", "src": "./guide/global-margin.html", "state": "comp" },
-					{ "menu": "Padding", "src": "./guide/global-padding.html", "state": "comp" },
+					{ "menu": "Margin & Padding", "src": "./guide/global-margin.html", "state": "comp" },
 					{ "menu": "Width & Height", "src": "./guide/global-width.html", "state": "comp" }
 				], "state": "comp"},
 				{ "id": "Layout", "submenu": [
