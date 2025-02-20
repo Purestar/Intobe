@@ -2,21 +2,30 @@
 	[style*="--bg"] { background-color:var(--bg); }
 
 /* Border */
-	[style*="--bd-w"] { border-width:var(--bd-w); }
-	[style*="--bd-s"] { border-style:var(--bd-s); }
-	[style*="--bd"] { border-width:var(--bd-w, 1px); border-color: var(--bd, black); border-style:var(--bd-s, solid); }
+	[style*="--bd"] { border-width:var(--bd-w, 1px); border-color: var(--bd-c, currentcolor); border-style:var(--bd-s, solid); }
 	[style*="--bd-r"] { border-radius:var(--bd-r); }
 
 /* Display */
 	[style*="--dp"] { display:var(--dp); }
+
+/* Font */
+	[style*="--ft-c"] { color:var(--ft-c); }
+	[style*="--ft-s"] { font-size:var(--ft-s); }
+	[style*="--ft-w"] { font-weight:var(--ft-w); }
+	[style*="--txt-a"] { text-align:var(--txt-a); }
+	[style*="--txt-deco"] { text-decoration: var(--txt-deco-l, underline) var(--txt-deco-s, solid) var(--txt-deco-c, var(--ft-c, currentcolor)) var(--txt-deco-t, 1px); text-underline-offset: var(--txt-deco-uo, auto); }
+	[style*="--txt-emp"] { text-emphasis-color: var(--txt-emp-c, var(--ft-c, currentcolor)); text-emphasis-position: var(--txt-emp-p, auto); text-emphasis-style: var(--txt-emp-s, dot);}
+	[style*="--txt-emp-p:right"], [style*="--txt-emp-p:left"] { writing-mode: vertical-rl; }
+	[style*="--txt-emp-p:left"] { text-emphasis-position:over left; }
+	[style*="--txt-ori"] { text-orientation: var(--txt-ori); writing-mode: vertical-rl; }
+	[style*="--txt-up"] { text-combine-upright:var(--txt-up); writing-mode: vertical-rl; }
 
 /* Width & Height */
 	[style*="--w"] { width: var(--w); }
 	[style*="--h"] { height: var(--h); }
 
 /* Style Initialize */
-	[style] > [style],
-	[style] + [style] {
+	[style] > [style], [style] + [style] {
 		/* Backgroud */
 			--bg: initial;
 
@@ -33,6 +42,16 @@
 @media all and (max-width:720px) {
 	/* Display */
 		[style*="--m-dp"] { display:var(--m-dp); }
+
+	/* Font */
+		[style*="--m-ft-c"] { color:var(--m-ft-c); }
+		[style*="--m-ft-s"] { font-size:var(--m-ft-s); }
+		[style*="--m-ft-w"] { font-weight:var(--m-ft-w); }
+		[style*="--m-txt-a"] { text-align:var(--txt); }
+		[style*="--m-txt-deco"] { text-decoration: var(--m-txt-deco-l) var(--m-txt-deco-s) var(--m-txt-deco-c); text-underline-offset: var(--m-txt-deco-uo);}
+		[style*="--m-txt-emp"] { text-emphasis-color: var(--m-txt-emp-c); text-emphasis-position: var(--m-txt-emp-p); text-emphasis-style: var(--m-txt-emp-s);}
+		[style*="--m-txt-ori"] { text-orientation: var(--m-txt-ori); writing-mode: vertical-rl; }
+		[style*="--m-txt-up"] { text-combine-upright:var(--m-txt-up); writing-mode: vertical-rl; }
 
 	/* Width & Height */
 		[style*="--m-w"] { width: var(--m-w); }

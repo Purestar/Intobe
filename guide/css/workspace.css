@@ -103,7 +103,7 @@ ig-wrap {display:block; max-width:100%;}
 
 	/* Guide */
 	.workspace-guide {background:#222; padding:20px;}
-	.workspace-guide-case {margin-top:40px;}
+	.workspace-guide-case {margin-top:20px;}
 	.workspace-guide-case:first-child {margin-top:0;}
 	.workspace-guide-case > * {margin-top:20px;}
 	.workspace-guide-case > *:first-child {margin-top:0;}

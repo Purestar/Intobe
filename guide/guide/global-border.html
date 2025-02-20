@@ -13,9 +13,6 @@
 		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
 		<script type="module" src="../js/pub.js"></script>
 		<link rel="stylesheet" href="../css/global.css">
-		<style>
-			.workspace-guide-inner div {--bd:red;}
-		</style>
 	</head>
 	<body>
 		<div class="workspace-guide">
@@ -31,12 +28,8 @@
 							<p class="workspace-guide-prop-desc">border-bottom-color</p>
 							<p class="workspace-guide-prop-desc">border-left-color</p>
 						</div>
-						<p class="workspace-guide-prop-name">bd</p>
-						<div>
-							<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
-							<p class="workspace-guide-prop-value">&lt;Value&gt;&lt;Value&gt;</p>
-							<p class="workspace-guide-prop-value">&lt;Value&gt;&lt;Value&gt;&lt;Value&gt;&lt;Value&gt;</p>
-						</div>
+						<p class="workspace-guide-prop-name">bd-c</p>
+						<p class="workspace-guide-prop-value">&lt;Value&gt;...&lt;Value&gt;</p>
 					</li>
 					<li>
 						<div>
@@ -48,9 +41,7 @@
 						</div>
 						<p class="workspace-guide-prop-name">bd-w</p>
 						<div>
-							<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
-							<p class="workspace-guide-prop-value">&lt;Value&gt;&lt;Value&gt;</p>
-							<p class="workspace-guide-prop-value">&lt;Value&gt;&lt;Value&gt;&lt;Value&gt;&lt;Value&gt;</p>
+							<p class="workspace-guide-prop-value">&lt;Value&gt;...&lt;Value&gt;</p>
 							<p class="workspace-guide-prop-value">thin</p>
 							<p class="workspace-guide-prop-value">medium</p>
 							<p class="workspace-guide-prop-value">thick</p>
@@ -66,9 +57,7 @@
 						</div>
 						<p class="workspace-guide-prop-name">bd-s</p>
 						<div>
-							<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
-							<p class="workspace-guide-prop-value">&lt;Value&gt;&lt;Value&gt;</p>
-							<p class="workspace-guide-prop-value">&lt;Value&gt;&lt;Value&gt;&lt;Value&gt;&lt;Value&gt;</p>
+							<p class="workspace-guide-prop-value">&lt;Value&gt;...&lt;Value&gt;</p>
 							<p class="workspace-guide-prop-value">solid (default)</p>
 							<p class="workspace-guide-prop-value">dashed</p>
 							<p class="workspace-guide-prop-value">dotted</p>
@@ -90,11 +79,7 @@
 							<p class="workspace-guide-prop-desc">border-bottom-left-radius</p>
 						</div>
 						<p class="workspace-guide-prop-name">bd-r</p>
-						<div>
-							<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
-							<p class="workspace-guide-prop-value">&lt;Value&gt;&lt;Value&gt;</p>
-							<p class="workspace-guide-prop-value">&lt;Value&gt;&lt;Value&gt;&lt;Value&gt;&lt;Value&gt;</p>
-						</div>
+						<p class="workspace-guide-prop-value">&lt;Value&gt;...&lt;Value&gt;</p>
 					</li>
 					<li>
 						<p class="workspace-guide-prop-desc"><s>border-block</s></p>
@@ -142,11 +127,11 @@
 			<div class="workspace-guide-case">
 				<h1>Color</h1>
 				<div class="workspace-guide-inner">
-					<div style="--bd:red; --h:30px;"></div>
+					<div style="--bd-c:red; --h:30px;"></div>
 				</div>
 				<div class="workspace-guide-inner">
 					<xmp>
-						<div style="--bd:red;"></div>
+						<div style="--bd-c:red;"></div>
 					</xmp>
 				</div>
 			</div>
@@ -155,11 +140,11 @@
 			<div class="workspace-guide-case">
 				<h1>Each Color</h1>
 				<div class="workspace-guide-inner">
-					<div style="--bd:red yellow green blue; --bd-w:5px; --h:30px;"></div>
+					<div style="--bd-c:red yellow green blue; --bd-w:5px; --h:30px;"></div>
 				</div>
 				<div class="workspace-guide-inner">
 					<xmp>
-						<div style="--bd:red yellow green blue;"></div>
+						<div style="--bd-c:red yellow green blue;"></div>
 					</xmp>
 				</div>
 			</div>
@@ -168,7 +153,7 @@
 			<div class="workspace-guide-case">
 				<h1>Width</h1>
 				<div class="workspace-guide-inner">
-					<div style="--bd:red; --bd-w:5px; --h:30px;"></div>
+					<div style="--bd-c:red; --bd-w:5px; --h:30px;"></div>
 				</div>
 				<div class="workspace-guide-inner">
 					<xmp>
@@ -181,7 +166,7 @@
 			<div class="workspace-guide-case">
 				<h1>Each Width</h1>
 				<div class="workspace-guide-inner">
-					<div style="--bd:red; --bd-w:5px 10px 1px medium; --h:30px;"></div>
+					<div style="--bd-c:red; --bd-w:5px 10px 1px medium; --h:30px;"></div>
 				</div>
 				<div class="workspace-guide-inner">
 					<xmp>
@@ -194,11 +179,11 @@
 			<div class="workspace-guide-case">
 				<h1>Style</h1>
 				<div class="workspace-guide-inner">
-					<div style="--bd:red; --bd-s:dashed; --h:30px;"></div>
+					<div style="--bd-c:red; --bd-s:dashed; --h:30px;"></div>
 				</div>
 				<div class="workspace-guide-inner">
 					<xmp>
-						<div style="--bd:red; --bd-s:dashed;"></div>
+						<div style="--bd-c:red; --bd-s:dashed;"></div>
 					</xmp>
 				</div>
 			</div>
@@ -207,7 +192,7 @@
 			<div class="workspace-guide-case">
 				<h1>Radius</h1>
 				<div class="workspace-guide-inner">
-					<div style="--bd:red; --bd-r:30px; --h:30px;"></div>
+					<div style="--bd-c:red; --bd-r:30px; --h:30px;"></div>
 				</div>
 				<div class="workspace-guide-inner">
 					<xmp>
@@ -220,7 +205,7 @@
 			<div class="workspace-guide-case">
 				<h1>Each Radius</h1>
 				<div class="workspace-guide-inner">
-					<div style="--bd:red; --bd-r:30px 20px 0px 10px; --h:30px;"></div>
+					<div style="--bd-c:red; --bd-r:30px 20px 0px 10px; --h:30px;"></div>
 				</div>
 				<div class="workspace-guide-inner">
 					<xmp>
@@ -233,7 +218,7 @@
 			<div class="workspace-guide-case">
 				<h1>Radius Percentage</h1>
 				<div class="workspace-guide-inner">
-					<div style="--bd:red; --bd-r:30%; --h:30px;"></div>
+					<div style="--bd-c:red; --bd-r:30%; --h:30px;"></div>
 				</div>
 				<div class="workspace-guide-inner">
 					<xmp>
@@ -246,7 +231,7 @@
 			<div class="workspace-guide-case">
 				<h1>Circle</h1>
 				<div class="workspace-guide-inner">
-					<div style="--bd:red; --bd-r:50%; --w:30px; --h:30px;"></div>
+					<div style="--bd-c:red; --bd-r:50%; --w:30px; --h:30px;"></div>
 				</div>
 				<div class="workspace-guide-inner">
 					<xmp>
