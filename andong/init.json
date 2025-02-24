@@ -31,9 +31,17 @@
 				], "state": ""},
 				{ "id": "My Major Map", "submenu": [
 					{ "menu": "목록", "src": "./page/majormap_l.html", "state": "comp" },
-					{ "menu": "등록/수정", "src": "./page/majormap_w.html", "state": "" },
 					{ "menu": "상세", "src": "./page/majormap_v.html", "state": "work" }
 				], "state": "work" },
+				{ "id": "My Career", "submenu": [
+					{ "menu": "나의진단", "src": "./page/.html", "state": "" },
+					{ "id": "자기소개서", "submenu": [
+						{ "menu": "목록", "src": "./page/UCA_030100.html", "state": "" },
+						{ "menu": "등록/수정", "src": "./page/UCA_030200.html", "state": "" },
+						{ "menu": "상세", "src": "./page/UCA_030400.html", "state": "" }
+					], "state": "" },
+					{ "menu": "포트폴리오", "src": "./page/portfolio_l.html", "state": "comp" }
+				], "state": "work"},
 				{ "id": "e-Notice", "submenu": [
 					{ "id": "공지사항", "submenu": [
 						{ "menu": "목록", "src": "./page/notice_l.html", "state": "comp" },

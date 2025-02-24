@@ -123,7 +123,7 @@
 
 	.chip-type-01-pur {background:#efeaff; color:#7f2bb0;}
 	.chip-type-01-blu {background:#eceeff; color:#372bb0;}
-	.chip-type-01-blu-02 {background:#0d5cbc; color:white;}
+	.chip-type-01-blu-02 {background:var(--mc); color:white;}
 	.chip-type-01-sky {background:#ecfaff; color:#00aacc;}
 	.chip-type-01-sky-02 {background:#00aacc; color:white;}
 	.chip-type-01-pnk {background:#ffeaf5; color:#f52b81;}
