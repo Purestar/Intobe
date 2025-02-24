@@ -17,16 +17,28 @@
 					{ "menu": "팝업", "src": "./page/popup.html", "state": "comp" }
 				], "state": "comp"},
 				{ "menu": "메인", "src": "./page/main.html", "state": "" },
+				{ "id": "진로탐색", "submenu": [
+					{ "id": "직업", "submenu": [
+						{ "menu": "홈", "src": "./page/job_home.html", "state": "" },
+						{ "menu": "목록", "src": "./page/job_l.html", "state": "" },
+						{ "menu": "상세", "src": "./page/job_v.html", "state": "" }
+					], "state": "" },
+					{ "id": "롤 모델", "submenu": [
+						{ "menu": "홈", "src": "./page/role_home.html", "state": "work" },
+						{ "menu": "목록", "src": "./page/role_l.html", "state": "" },
+						{ "menu": "상세", "src": "./page/role_v.html", "state": "" }
+					], "state": "" }
+				], "state": ""},
 				{ "id": "e-Notice", "submenu": [
 					{ "id": "공지사항", "submenu": [
 						{ "menu": "목록", "src": "./page/notice_l.html", "state": "comp" },
 						{ "menu": "상세", "src": "./page/notice_v.html", "state": "comp" }
 					], "state": "comp" },
-					{ "menu": "FAQ", "src": "./page/faq.html", "state": "" },
+					{ "menu": "FAQ", "src": "./page/faq.html", "state": "comp" },
 					{ "menu": "To-Do-List", "src": "./page/todolist.html", "state": "" }
-				], "state": ""}
+				], "state": "work"}
 			],
-			"state": ""
+			"state": "work"
 		},
 		{
 			"id": "Guide",

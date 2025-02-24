@@ -12,7 +12,7 @@
 /* General */
 	html {overflow-x:hidden; width:100dvw; height:100dvh; scroll-behavior:smooth; -moz-text-size-adjust:none; -webkit-text-size-adjust:none; text-size-adjust:none;}
 	html.loaded {transition:opacity .3s ease; opacity:1;}
-	body {overflow-x:hidden; display:flex; flex-direction:column; justify-content:space-between; flex-wrap:nowrap; background-color:var(--init-background-color); width:100vw; height:100dvh; font-family:var(--init-font-family); font-size:var(--init-font-size); line-height:var(--init-line-height); letter-spacing:var(--init-letter-spacing); color:var(--init-font-color);}
+	body {overflow-x:hidden; display:flex; flex-direction:column; justify-content:space-between; flex-wrap:nowrap; background-color:var(--init-background-color); width:100vw; height:100dvh; font-family:var(--init-ff); font-size:var(--init-fs); line-height:var(--init-lh); letter-spacing:var(--init-ls); color:var(--init-fc);}
 	::selection {background-color:var(--mc); color:white;}
 	.mobile {display:none !important;}
 
