@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="Management">
+		<meta name="description" content="Management">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script type="module" src="../js/index.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://unpkg.com/naive-ui"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
+		<script type="module" src="../js/pub.js"></script>
+		<link rel="icon" href="../favicon.ico" sizes="any">
+		<link rel="stylesheet" href="../css/global.css">
+	</head>
+	<body>
+		<div data-include="../include/header.html"></div>
+		<div id="container">
+			<div id="sub-container" class="wrap-inner">
+				<div id="contents">
+					<div class="sub-title">
+						<a href="#"><i class="ic-l-arrow"></i></a>
+						<h2 class="tit-03">자기소개서 등록</h2>
+					</div>
+
+					<p class="txt-info mt-40"><i class="ic-info"></i>어떤 내용을 작성해야 될지 막막하다면, 주제를 선택해 작성해 보세요.</p>
+					<div class="wrap-flex gap-12  m-flex-col">
+
+					</div>
+					<div class="brd-wrap mt-28">
+						<div class="brd-write">
+							<div class="wrap-flex gap-20">
+								<div class="form-type-txt-01">
+									<input type="text" placeholder="제목을 입력해주세요.">
+								</div>
+								<button type="button" class="btn-type btn-r-80">주제선택</button>
+							</div>
+							<div class="brd-write-area">
+								<div class="form-type-tarea-tr">
+									<span class="txt-limit">공백포함 <span class="cr-mc">0</span>자, 공백제외 <span class="cr-mc">0</span>자</span>
+									<textarea type="textarea" placeholder="내용을 입력해주세요."></textarea>
+								</div>
+							</div>
+							<div class="form-type-txt mt-16">
+								<input type="text" placeholder="태그를 쉼표(,)로 구분해 핵심을 기록해보세요! (최대 10개 등록가능)">
+							</div>
+							<div class="brd-write-ctrl">
+								<div></div>
+								<div class="wrap-flex gap-12">
+									<button type="button" class="btn-type-b">임시저장</button>
+									<a href="#" class="btn-type">작성완료</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div data-include="../include/footer.html"></div>
+	</body>
+</html>

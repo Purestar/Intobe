@@ -37,9 +37,9 @@
 					{ "menu": "나의진단", "src": "./page/diagnosis_l.html", "state": "" },
 					{ "id": "자기소개서", "submenu": [
 						{ "menu": "목록", "src": "./page/self-intro_l.html", "state": "comp" },
-						{ "menu": "등록/수정", "src": "./page/UCA_030200.html", "state": "" },
+						{ "menu": "등록/수정", "src": "./page/self-intro_w.html", "state": "comp" },
 						{ "menu": "상세", "src": "./page/UCA_030400.html", "state": "" }
-					], "state": "" },
+					], "state": "work" },
 					{ "menu": "포트폴리오", "src": "./page/portfolio_l.html", "state": "comp" }
 				], "state": "work"},
 				{ "id": "e-Notice", "submenu": [

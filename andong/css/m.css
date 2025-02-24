@@ -103,6 +103,23 @@
 				.brd-lst-03 {gap:2.50vw; margin-top:3.33vw;}
 				.brd-lst-03 > * {border-radius:2.50vw; padding:5.56vw;}
 
+			/* View */
+				.brd-view-01 {margin-top:5.56vw;}
+				.brd-view-01 .tabs-type-01-01 {margin-top:5.56vw;}
+				.brd-view-01 .n-tabs.n-tabs--top .n-tab-pane {padding-top:8.33vw;}
+				.brd-view-01 .n-tab-pane .tit-02 {margin-top:8.33vw;}
+				.brd-view-01 .n-tab-pane > *:first-child {margin-top:0;}
+				.brd-view-01 .brd-para {margin-top:3.33vw;}
+				.brd-view-01 .lst-type-02 {width:100%; margin-top:3.33vw;}
+
+			/* Write */
+				.brd-write .brd-write-area {border-radius:2.50vw; margin-top:3.33vw;}
+				.brd-write .btn-add {margin:5vw 0 0 5vw;}
+				.brd-write .brd-write-ctrl {gap:1.66vw; margin-top:11.11vw;}
+				.brd-write .brd-write-ctrl > * {flex:1;}
+				.brd-write .brd-write-ctrl [class*="btn-type"] {min-width:auto; width:100%;}
+				.brd-write .txt-extra-txt {width:auto;}
+
 			/* Paging */
 				.brd-paging {justify-content:space-between; gap:0.56vw; margin-top:9.03vw;}
 				.brd-paging a {width:6.67vw; height:6.67vw;}
@@ -213,6 +230,19 @@
 				.form-type-dropdown-01 .n-base-clear:before {width:2.92vw; height:1.53vw;}
 				.form-type-dropdown-01 .n-base-selection-placeholder__inner {font-size:3.89vw;}
 
+			/* File */
+				[class*="form-type-file"] .lst-file {gap:1.67vw;}
+
+				.form-type-file-01 {border-radius:1.39vw; width:29.17vw; height:38.89vw; font-size:3.89vw;}
+				.form-type-file-01 > * {gap:3.33vw;}
+
+			/* Text */
+				.form-type-txt-01 {border-radius:2.50vw; height:15.42vw; padding:0 4.17vw; font-size:4.44vw; }
+
+			/* Textarea */
+				.form-type-tarea-01 .txt-limit {margin-top:4.17vw; font-size:3.33vw;}
+				.form-type-tarea-tr .txt-limit {margin-top:4.17vw; font-size:3.33vw;}
+
 		/* Icon */
 			.ic-chk:before {width:4.17vw; height:3.06vw;}
 			.ic-clip:before {width:3.33vw; height:3.06vw;}
@@ -309,6 +339,7 @@
 			.tit-01 {font-size:5vw;}
 			.tit-02 {font-size:3.61vw; font-weight:500;}
 			.tit-03 {font-size:5vw;}
+			.tit-04 {font-size:3.89vw;}
 
 	/* 페이지 */
 		/* 관심 */
