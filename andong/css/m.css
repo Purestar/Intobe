@@ -75,6 +75,16 @@
 			.aco-type-01 .n-collapse-item__header-main {height:13.89vw; padding:0 5vw; font-size:3.89vw;}
 			.aco-type-01 .n-collapse-item .n-collapse-item__content-wrapper .n-collapse-item__content-inner {padding:5vw;}
 
+			.aco-type-02 .n-collapse-item {border-radius:2.50vw;}
+			.aco-type-02 .n-collapse-item + .n-collapse-item {margin-top:2.22vw;}
+			.aco-type-02 .n-collapse-item .n-collapse-item__header {height:14.72vw; padding:0 5.56vw;}
+			.aco-type-02 .n-collapse-item__header-main {gap:2.78vw;}
+			.aco-type-02 .n-base-icon:before {flex:0 0 3.33vw; width:3.33vw; height:1.94vw;}
+			.aco-type-02 .n-collapse-item .n-collapse-item__header .n-collapse-item__header-main {font-size:3.89vw;}
+
+			.aco-type-02.aco-qna .n-collapse-item__header-main:before {font-size:4.72vw;}
+			.aco-type-02.aco-qna .aco-cont {padding:5.56vw 5.56vw 5.56vw 11.94vw; font-size:3.89vw;}
+
 		/* Board */
 			/* General */
 				.brd-wrap .brd-tit {font-size:3.89vw;}
