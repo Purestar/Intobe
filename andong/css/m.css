@@ -38,6 +38,11 @@
 				--fom-fs: 3.33vw; /* 폰트 크기 */
 		}
 
+	/* common.css */
+		/* General */
+			.mobile {display:block !important;}
+			.pc {display:none !important;}
+
 	/* popup.css */
 		/* Popup Wrap */
 		.n-modal-body-wrapper .n-modal {height:100dvh; max-height:100dvh;}
@@ -50,7 +55,31 @@
 			[class*="pop-type"] .pop-close-no-header:before,
 			.n-modal-container .pop-close-no-header:before {background-position:var(--200) var(--250);}
 
+	/* wrap.css */
+		[class*="wrap-inner"] {flex:0 0 var(--init-m-w); width:var(--init-m-w); min-width:100%; padding:0 var(--init-m-wr-side-pd);}
+		[class*="wrap-center"] {width:var(--init-m-w); padding:var(--init-m-wr-side-pd);}
+
+		[class*="m-wrap-flex"] {display:flex;}
+		[class*="m-wrap-grid"] {display:grid !important;}
+		[class*="wrap-flex"][class*="m-wrap-grid"] {display:grid;}
+		[class*="wrap-grid"][class*="m-wrap-flex"] {display:flex;}
+
 	/* custom.css */
+		/* Button */
+			/* Button Color */
+			.btn-b-blk {border-color:black; color:black;}
+			.btn-b-blk:hover {background:#f5f5f5; border-color:black; color:black;}
+			.btn-b-lgry {border-color:#e2e2e2; color:#666;}
+
+		/* Button Size */
+			.btn-r-56 {height:12.50vw; font-size:4.17vw;}
+
+		/* Form */
+			/* Checkbox & Radio Type */
+				/* Button */
+					.form-type-opt-btn-01 .opt-txt,
+					.form-type-opt-btn-01 input:checked + .opt-txt {border-radius:2.78vw; min-height:15.28vw; font-size:4.17vw;}
+
 		/* Popup */
 			.n-card.n-modal {border-radius:0; width:100dvw !important;}
 			.n-card > .n-card-header {flex:0 0 15vw; padding:0 var(--init-m-wr-side-pd); height:15vw;}
@@ -61,4 +90,9 @@
 		/* Title */
 			.tit-01 {font-size:5vw;}
 			.tit-02 {font-size:3.61vw; font-weight:500;}
+
+	/* 페이지 */
+		/* 관심 */
+			.favor-list {gap:1.67vw; width:90dvw; margin-top:5.56vw; padding-bottom:5.56vw;}
+			.favor-total-txt {margin:2.78vw 0 5.56vw;}
 }

@@ -21,9 +21,9 @@
 		<div id="app">
 			<div class="wrap-center">
 				<div class="txt-c mx-h100">
-					<h1 class="tit-01">이영남님이 관심있는 분야를 알려주세요!</h1>
-					<p class="mt-20">관심분야 설정 시 AI Advisor의 추천 정확도가 높아집니다<br>최소 5개, 최대 8개까지 선택할 수 있어요!</p>
-					<ul class="wrap-grid favor-list">
+					<h1 class="tit-01">김경국님, 반가워요!</h1>
+					<p class="mt-20 m-fs-24 cr-lgry">방사선학과와 관련된 진로 중 관심있는<br class="mobile"> 진로를 1개 이상 선택해주세요</p>
+					<ul class="favor-list">
 						<li v-for="(item, index) in favorList" :key="index">
 							<div class="form-type-opt-btn-01">
 								<label>
@@ -33,8 +33,7 @@
 							</div>
 						</li>
 					</ul>
-					<p class="favor-total-txt">현재 <b class="cr-mc">{{ checkedCount }}</b>개 선택</p>
-					<button type="button" class="btn-type w100">다음</button>
+					<button type="button" class="btn-type btn-r-56 w100">다음</button>
 				</div>
 			</div>
 		</div>
@@ -46,23 +45,12 @@
 			createApp({
 				setup() {
 					const favorList = reactive([
-						{ label: '웹개발', checked: true },
-						{ label: '프론트엔드', checked: false },
-						{ label: '백엔드', checked: false },
-						{ label: '풀스택', checked: false },
-						{ label: '앱 개발', checked: false },
-						{ label: '프로그래밍언어', checked: false },
-						{ label: '알고리즘', checked: true },
-						{ label: '자료구조', checked: false },
-
-						{ label: '데이터베이스', checked: true },
-						{ label: '데브옵스', checked: false },
-						{ label: '인프라', checked: false },
-						{ label: '개발도구', checked: false },
-						{ label: '웹 퍼블리싱', checked: false },
-						{ label: '데스트톱 앱 개발', checked: false },
-						{ label: 'VR/AR', checked: true },
-						{ label: '데이터분석', checked: false }
+						{ label: '방사선사', checked: true },
+						{ label: '방사선산업 안전원 및 위험 관리원', checked: false },
+						{ label: '정부공공행정 전문가', checked: false },
+						{ label: '정부공공행정 전문가', checked: false },
+						{ label: '정부공공행정 전문가', checked: false },
+						{ label: '정부공공행정 전문가', checked: false },
 					]);
 
 					const checkedCount = computed(() => favorList.filter(item => item.checked).length);
