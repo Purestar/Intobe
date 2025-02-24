@@ -119,6 +119,7 @@
 				.brd-write .brd-write-ctrl > * {flex:1;}
 				.brd-write .brd-write-ctrl [class*="btn-type"] {min-width:auto; width:100%;}
 				.brd-write .txt-extra-txt {width:auto;}
+				.brd-write .form-type-tarea-tr {height:33.33vw;}
 
 			/* Paging */
 				.brd-paging {justify-content:space-between; gap:0.56vw; margin-top:9.03vw;}
@@ -147,6 +148,7 @@
 				.btn-r-32-02 {border-radius:1.11vw; height:7.78vw; padding:0 2.64vw; font-size:3.33vw;}
 
 				.m-r-71 {border-radius:1.94vw; height:9.86vw; padding:0 3vw;}
+				.m-btn-r-72 {border-radius:2.78vw; height:10.00vw; padding:0 3vw; font-size:3.89vw;}
 				.m-btn-r-90 {border-radius:2.50vw; height:12.50vw; padding:0 3vw; font-size:4.17vw;}
 
 			/* Button Other */
@@ -237,7 +239,7 @@
 				.form-type-file-01 > * {gap:3.33vw;}
 
 			/* Text */
-				.form-type-txt-01 {border-radius:2.50vw; height:15.42vw; padding:0 4.17vw; font-size:4.44vw; }
+				.form-type-txt-01 {flex:0 0 15.42vw; border-radius:2.50vw; height:15.42vw; padding:0 4.17vw; font-size:4.44vw;}
 
 			/* Textarea */
 				.form-type-tarea-01 .txt-limit {margin-top:4.17vw; font-size:3.33vw;}
