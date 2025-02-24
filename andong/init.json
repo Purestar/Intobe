@@ -13,9 +13,9 @@
 				{ "id": "공통", "submenu": [
 					{ "menu": "첫진입(학부X)", "src": "./page/UEN_010000.html", "state": "comp" },
 					{ "menu": "첫진입(학부O)", "src": "./page/UEN_020000.html", "state": "comp" },
-					{ "menu": "헤더/푸터", "src": "./page/layout.html", "state": "" },
+					{ "menu": "헤더/푸터", "src": "./page/layout.html", "state": "comp" },
 					{ "menu": "팝업", "src": "./page/popup.html", "state": "comp" }
-				], "state": ""},
+				], "state": "comp"},
 				{ "menu": "메인", "src": "./page/main.html", "state": "" },
 				{ "id": "e-Notice", "submenu": [
 					{ "id": "공지사항", "submenu": [
