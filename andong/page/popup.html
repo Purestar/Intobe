@@ -22,7 +22,7 @@
 			<h1 class="tit-01">첫진입</h1>
 			<div class="wrap-grid m-wrap-flex mt-20" style="grid-template-columns:repeat(7, 1fr); gap:10px;">
 				<!-- 활동 뱃지 획득 -->
-				<button class="btn-type" @click="toggleModal('modal1')">활동 뱃지 획득</button>
+				<button class="btn-type" @click="toggleModal('modal1')" disabled>활동 뱃지 획득</button>
 				<n-modal v-model:show="modals.modal1">
 					<n-card
 						style="width: 580px"
@@ -46,9 +46,9 @@
 					</n-card>
 				</n-modal>
 
-				<!-- 관심분야 설정완료 -->
-				<button class="btn-type" @click="toggleModal('modal2')">관심분야 설정완료</button>
-				<n-modal v-model:show="modals.modal2">
+				<!-- 관심진로 설정완료 -->
+				<button class="btn-type" @click="toggleModal('modal1')">관심진로 설정완료</button>
+				<n-modal v-model:show="modals.modal1">
 					<n-card
 						style="width: 600px"
 						:bordered="false"
@@ -57,15 +57,15 @@
 						aria-modal="true"
 					>
 						<template #header>
-							<button type="button" class="pop-close-no-header" @click="toggleModal('modal2')"></button>
+							<button type="button" class="pop-close-no-header" @click="toggleModal('modal1')"></button>
 						</template>
 						<div class="wrap-flex flex-col flex-center txt-c">
-							<img src="../assets/images/img/badge-01.png">
-							<h1 class="tit-01">이제 AI 학사 Advisor가<br>김영남님에게 맞춤 추천할  마쳤습니다!</h1>
+							<img src="../images/dummy/character.png">
+							<h1 class="tit-01 mt-40">이제 AI 학사 Advisor가<br>김영남님에게 맞춤 추천할  마쳤습니다!</h1>
 							<p class="mt-20">관심분야는 AI 학사 Advisor 메인에서 언제든지 가능해요 :D</p>
 						</div>
 						<template #footer>
-							<button type="button" class="btn-type w100">확인</button>
+							<button type="button" class="btn-type-b btn-b-blk w100">확인</button>
 						</template>
 					</n-card>
 				</n-modal>
@@ -74,7 +74,7 @@
 			<h1 class="tit-01 mt-20">공통</h1>
 			<div class="wrap-grid m-wrap-flex m-flex-wrap mt-20" style="grid-template-columns:repeat(7, 1fr); gap:10px;">
 				<!-- 활동 뱃지 획득 -->
-				<button class="btn-type" @click="toggleModal('modal5')">활동 뱃지 획득</button>
+				<button class="btn-type" @click="toggleModal('modal5')" disabled>활동 뱃지 획득</button>
 				<n-modal v-model:show="modals.modal5">
 					<n-card
 						style="width: 580px"
@@ -98,7 +98,7 @@
 				</n-modal>
 
 				<!-- 교과상세 -->
-				<button class="btn-type" @click="toggleModal('modal14')">교과상세</button>
+				<button class="btn-type" @click="toggleModal('modal14')" disabled>교과상세</button>
 				<n-modal v-model:show="modals.modal14">
 					<n-card
 						style="width: 580px"
@@ -209,7 +209,7 @@
 				</n-modal>
 
 				<!-- 보유스킬 -->
-				<button class="btn-type" @click="toggleModal('modal15')">보유스킬</button>
+				<button class="btn-type" @click="toggleModal('modal15')" disabled>보유스킬</button>
 				<n-modal v-model:show="modals.modal15">
 					<n-card
 						style="width: 580px"
@@ -396,7 +396,7 @@
 				</n-modal>
 
 				<!-- 비교과 프로그램 상세정보 -->
-				<button class="btn-type" @click="toggleModal('modal16')">비교과 프로그램 상세정보</button>
+				<button class="btn-type" @click="toggleModal('modal16')" disabled>비교과 프로그램 상세정보</button>
 				<n-modal v-model:show="modals.modal16">
 					<n-card
 						style="width: 580px"
@@ -467,7 +467,7 @@
 			<h1 class="tit-01 mt-20">메인</h1>
 			<div class="wrap-grid m-wrap-flex m-flex-wrap mt-20" style="grid-template-columns:repeat(7, 1fr); gap:10px;">
 				<!-- 관심분야설정 -->
-				<button class="btn-type" @click="toggleModal('modal3')">관심분야설정</button>
+				<button class="btn-type" @click="toggleModal('modal3')" disabled>관심분야설정</button>
 				<n-modal v-model:show="modals.modal3">
 					<n-card
 						style="width: 720px"
@@ -608,7 +608,7 @@
 				</n-modal>
 
 				<!-- 대표배지변경 -->
-				<button class="btn-type" @click="toggleModal('modal4')">대표배지변경</button>
+				<button class="btn-type" @click="toggleModal('modal4')" disabled>대표배지변경</button>
 				<n-modal v-model:show="modals.modal4">
 					<n-card
 						style="width: 720px"
@@ -725,7 +725,7 @@
 			<h1 class="tit-01 mt-20">My Major Map</h1>
 			<div class="wrap-grid m-wrap-flex m-flex-wrap mt-20" style="grid-template-columns:repeat(7, 1fr); gap:10px;">
 				<!-- My Major Map 복제 -->
-				<button class="btn-type" @click="toggleModal('modal17')">My Major Map 복제</button>
+				<button class="btn-type" @click="toggleModal('modal17')" disabled>My Major Map 복제</button>
 				<n-modal v-model:show="modals.modal17">
 					<n-card
 						style="width: 580px"
@@ -753,7 +753,7 @@
 				</n-modal>
 
 				<!-- 학기선택 -->
-				<button class="btn-type" @click="toggleModal('modal18')">학기선택</button>
+				<button class="btn-type" @click="toggleModal('modal18')" disabled>학기선택</button>
 				<n-modal v-model:show="modals.modal18">
 					<n-card
 						style="width: 720px"
@@ -913,7 +913,7 @@
 				</n-modal>
 
 				<!-- 학기변경 -->
-				<button class="btn-type" @click="toggleModal('modal19')">학기변경</button>
+				<button class="btn-type" @click="toggleModal('modal19')" disabled>학기변경</button>
 				<n-modal v-model:show="modals.modal19">
 					<n-card
 						style="width: 720px"
@@ -1073,7 +1073,7 @@
 				</n-modal>
 
 				<!-- 설계Tip -->
-				<button class="btn-type" @click="toggleModal('modal20')">설계Tip</button>
+				<button class="btn-type" @click="toggleModal('modal20')" disabled>설계Tip</button>
 				<n-modal v-model:show="modals.modal20">
 					<n-card
 						style="width: 750px"
@@ -1105,7 +1105,7 @@
 			<h1 class="tit-01 mt-20">My Career</h1>
 			<div class="wrap-grid m-wrap-flex m-flex-wrap mt-20" style="grid-template-columns:repeat(7, 1fr); gap:10px;">
 				<!-- 자기소개서 복제 -->
-				<button class="btn-type" @click="toggleModal('modal6')">자기소개서 복제</button>
+				<button class="btn-type" @click="toggleModal('modal6')" disabled>자기소개서 복제</button>
 				<n-modal v-model:show="modals.modal6">
 					<n-card
 						style="width: 580px"
@@ -1133,7 +1133,7 @@
 				</n-modal>
 
 				<!-- 주제선택 -->
-				<button class="btn-type" @click="toggleModal('modal7')">주제선택</button>
+				<button class="btn-type" @click="toggleModal('modal7')" disabled>주제선택</button>
 				<n-modal v-model:show="modals.modal7">
 					<n-card
 						style="width: 580px"
@@ -1174,7 +1174,7 @@
 				</n-modal>
 
 				<!-- 포트폴리오 등록 -->
-				<button class="btn-type" @click="toggleModal('modal8')">포트폴리오 등록</button>
+				<button class="btn-type" @click="toggleModal('modal8')" disabled>포트폴리오 등록</button>
 				<n-modal v-model:show="modals.modal8">
 					<n-card
 						style="width: 580px"
@@ -1218,7 +1218,7 @@
 				</n-modal>
 
 				<!-- 포트폴리오 수정 -->
-				<button class="btn-type" @click="toggleModal('modal9')">포트폴리오 수정 (URL)</button>
+				<button class="btn-type" @click="toggleModal('modal9')" disabled>포트폴리오 수정 (URL)</button>
 				<n-modal v-model:show="modals.modal9">
 					<n-card
 						style="width: 580px"
@@ -1248,7 +1248,7 @@
 				</n-modal>
 
 				<!-- 포트폴리오 수정 -->
-				<button class="btn-type" @click="toggleModal('modal10')">포트폴리오 수정 (File)</button>
+				<button class="btn-type" @click="toggleModal('modal10')" disabled>포트폴리오 수정 (File)</button>
 				<n-modal v-model:show="modals.modal10">
 					<n-card
 						style="width: 580px"
@@ -1280,7 +1280,7 @@
 				</n-modal>
 
 				<!-- 자기소개서 불러오기 -->
-				<button class="btn-type" @click="toggleModal('modal11')">자기소개서 불러오기</button>
+				<button class="btn-type" @click="toggleModal('modal11')" disabled>자기소개서 불러오기</button>
 				<n-modal v-model:show="modals.modal11">
 					<n-card
 						style="width: 580px"
@@ -1324,7 +1324,7 @@
 				</n-modal>
 
 				<!-- 포트폴리오 불러오기 -->
-				<button class="btn-type" @click="toggleModal('modal12')">포트폴리오 불러오기</button>
+				<button class="btn-type" @click="toggleModal('modal12')" disabled>포트폴리오 불러오기</button>
 				<n-modal v-model:show="modals.modal12">
 					<n-card
 						style="width: 580px"
@@ -1379,7 +1379,7 @@
 				</n-modal>
 
 				<!-- 이력서 복제 -->
-				<button class="btn-type" @click="toggleModal('modal13')">이력서 복제</button>
+				<button class="btn-type" @click="toggleModal('modal13')" disabled>이력서 복제</button>
 				<n-modal v-model:show="modals.modal13">
 					<n-card
 						style="width: 580px"
