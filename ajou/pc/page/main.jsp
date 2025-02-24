@@ -188,8 +188,11 @@
 		mainRecomLst += '		</span>';*/
 		mainRecomLst += '	</div>';
 		mainRecomLst += '	<div class="brd-hover">';
-		mainRecomLst += '		<p>한국 고전시가의 기초 :  고전시가의 개념과 갈래</p>';
-		mainRecomLst += '		<a href="#" class="btn-wht">자세히보기</a>';
+		mainRecomLst += '		<h3 class="brd-tit">한국 고전시가의 기초 :  고전시가의 개념과 갈래</h3>';
+		mainRecomLst += '		<div>';
+		mainRecomLst += '			<p class="brd-ctgr-txt">감수성, 소통력, 창의성, 사고력, 개방성</p>';
+		mainRecomLst += '			<a href="#" class="btn-wht">자세히보기</a>';
+		mainRecomLst += '		</div>';
 		mainRecomLst += '	</div>';
 		mainRecomLst += '</li>';
 
@@ -228,10 +231,13 @@
 		playingLst += '			<span><span class="brd-ic-date">시청일 2022-03-31 02:07</span></span>';
 		playingLst += '		</span>';
 		playingLst += '	</div>';
-		/*playingLst += '	<div class="brd-hover">';
-		playingLst += '		<p>한국 고전시가의 기초 :  고전시가의 개념과 갈래</p>';
-		playingLst += '		<a href="#" class="btn-wht">자세히보기</a>';
-		playingLst += '	</div>';*/
+		playingLst += '	<div class="brd-hover">';
+		playingLst += '		<h3 class="brd-tit">한국 고전시가의 기초 :  고전시가의 개념과 갈래</h3>';
+		playingLst += '		<div>';
+		playingLst += '			<p class="brd-ctgr-txt">감수성, 소통력, 창의성, 사고력, 개방성</p>';
+		playingLst += '			<a href="#" class="btn-wht">자세히보기</a>';
+		playingLst += '		</div>';
+		playingLst += '	</div>';
 		playingLst += '</li>';
 
 	$("[id='playingLst']").contRpt(playingLst, 8);
@@ -262,8 +268,11 @@
 		newContLst += '		</span>';
 		newContLst += '	</div>';
 		newContLst += '	<div class="brd-hover">';
-		newContLst += '		<p>한국 고전시가의 기초 :  고전시가의 개념과 갈래</p>';
-		newContLst += '		<a href="#" class="btn-wht">자세히보기</a>';
+		newContLst += '		<h3 class="brd-tit">한국 고전시가의 기초 :  고전시가의 개념과 갈래</h3>';
+		newContLst += '		<div>';
+		newContLst += '			<p class="brd-ctgr-txt">감수성, 소통력, 창의성, 사고력, 개방성</p>';
+		newContLst += '			<a href="#" class="btn-wht">자세히보기</a>';
+		newContLst += '		</div>';
 		newContLst += '	</div>';
 		newContLst += '</li>';
 
@@ -297,8 +306,11 @@
 		usrFavorModuleLst += '		</span>';
 		usrFavorModuleLst += '	</div>';
 		usrFavorModuleLst += '	<div class="brd-hover">';
-		usrFavorModuleLst += '		<p>한국 고전시가의 기초 :  고전시가의 개념과 갈래</p>';
-		usrFavorModuleLst += '		<a href="#" class="btn-wht">자세히보기</a>';
+		usrFavorModuleLst += '		<h3 class="brd-tit">한국 고전시가의 기초 :  고전시가의 개념과 갈래</h3>';
+		usrFavorModuleLst += '		<div>';
+		usrFavorModuleLst += '			<p class="brd-ctgr-txt">감수성, 소통력, 창의성, 사고력, 개방성</p>';
+		usrFavorModuleLst += '			<a href="#" class="btn-wht">자세히보기</a>';
+		usrFavorModuleLst += '		</div>';
 		usrFavorModuleLst += '	</div>';
 		usrFavorModuleLst += '</li>';
 
@@ -330,8 +342,11 @@
 		usrFavorRecomLst += '		</span>';
 		usrFavorRecomLst += '	</div>';
 		usrFavorRecomLst += '	<div class="brd-hover">';
-		usrFavorRecomLst += '		<p>한국 고전시가의 기초 :  고전시가의 개념과 갈래</p>';
-		usrFavorRecomLst += '		<a href="#" class="btn-wht">자세히보기</a>';
+		usrFavorRecomLst += '		<h3 class="brd-tit">한국 고전시가의 기초 :  고전시가의 개념과 갈래</h3>';
+		usrFavorRecomLst += '		<div>';
+		usrFavorRecomLst += '			<p class="brd-ctgr-txt">감수성, 소통력, 창의성, 사고력, 개방성</p>';
+		usrFavorRecomLst += '			<a href="#" class="btn-wht">자세히보기</a>';
+		usrFavorRecomLst += '		</div>';
 		usrFavorRecomLst += '	</div>';
 		usrFavorRecomLst += '</li>';
 

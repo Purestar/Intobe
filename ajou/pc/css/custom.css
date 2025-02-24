@@ -368,9 +368,11 @@
 			.brd-wrap .brd-ic-favor:before {background-position:-50px -50px; width:17px; height:12px; margin-right:6px;}
 			.brd-wrap .brd-ic-play {font-size:16px; line-height:1;}
 			.brd-wrap .brd-ic-play:before {background-position:-100px -50px; width:13px; height:13px; margin-right:6px;}
-			.brd-wrap .brd-hover {position:absolute; left:0; top:0; display:flex; justify-content:center; align-items:center; flex-direction:column; background:rgba(76, 79, 175, 0.86); opacity:0; width:100%; height:100%; padding:0 25px; font-size:20px; line-height:28px; text-align:center; transition:opacity .3s ease; color:white;}
+			.brd-wrap .brd-hover {position:absolute; left:0; top:0; display:flex; justify-content:space-between; align-items:center; flex-direction:column; background:rgba(76, 79, 175, 0.86); opacity:0; width:100%; height:100%; padding:40px 24px; font-size:20px; line-height:28px; transition:opacity .3s ease; color:white;}
 			.brd-wrap .brd-hover:hover {opacity:1; transition:opacity .3s ease;}
-			.brd-wrap .brd-hover .btn-wht {position:absolute; left:50%; bottom:25px; width:calc(100% - 50px); transform:translate(-50%, 0);}
+			.brd-wrap .brd-hover .brd-tit {font-size:20px; color:white;}
+			.brd-wrap .brd-hover .brd-ctgr-txt {padding:0 12px; font-size:16px;}
+			.brd-wrap .brd-hover .btn-wht {width:100%; margin-top:20px;}
 			.brd-wrap .brd-desc {font-size:16px; line-height:24px;}
 			.brd-wrap .brd-btn {display:flex; align-items:center;}
 			.brd-wrap .brd-stat {flex:0 0 170px;}
