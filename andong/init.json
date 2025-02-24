@@ -12,7 +12,7 @@
 			"submenu": [
 				{ "id": "공통", "submenu": [
 					{ "menu": "첫진입(학부X)", "src": "./page/UEN_010000.html", "state": "comp" },
-					{ "menu": "첫진입(학부O)", "src": "./page/UEN_020000.html", "state": "" },
+					{ "menu": "첫진입(학부O)", "src": "./page/UEN_020000.html", "state": "comp" },
 					{ "menu": "헤더/푸터", "src": "./page/layout.html", "state": "" },
 					{ "menu": "팝업", "src": "./page/popup.html", "state": "comp" }
 				], "state": ""},

@@ -24,6 +24,15 @@
 			.form-type-opt-btn-01 input:checked + .opt-txt {background:#eff6ff; border-color:var(--mc); color:#00377a;}
 			.form-type-opt-btn-01 input:disabled + .opt-txt {background:none; border:1px solid #e2e2e2; color:#e2e2e2;}
 
+		/* Checkbox */
+			[class*="form-type-opt-chk-01"] .opt-txt {align-items:center; word-break:keep-all;}
+			[class*="form-type-opt-chk-01"] .opt-txt:before {background-color:transparent; background-position:var(--250) var(--50); border:none; width:18px; height:24px; transition:none;}
+			[class*="form-type-opt-chk-01"] input:focus + .opt-txt:before {border:none !important;}
+			[class*="form-type-opt-chk-01"] input:checked + .opt-txt:before {background-color:transparent; background-position:var(--300) var(--50);}
+			[class*="form-type-opt-chk-01"] .opt-txt:after {display:none;}
+
+			.form-type-opt-chk-01-01 .opt-txt:before {flex:0 0 24px; background-position:var(--350) var(--50); width:24px; height:20px;}
+
 /* Icon */
 	.ic-delete:before {background-position:var(--600) var(--50); width:12px; height:12px;}
 	.ic-refresh-02:before {background-position:var(--550) var(--50); width:14px; height:15px;}
@@ -60,3 +69,45 @@
 		.favor-job-list > *.active > *,
 		.favor-job-list > * > *:hover {background:#f5f8fe; color:#1c4fa0;}
 		.favor-job-list > *.active > *:after {background-image:var(--ico); background-size:var(--ico-sz); background-position:var(--650) var(--50);}
+
+	/* 레이아웃 */
+		/* 헤더 */
+			.h-wrap {position:relative; flex:0 0 var(--init-hh); border-bottom:1px solid #ccd0d6; height:var(--init-hh); z-index:10;}
+			.h-vbar-logo,
+			.h-vbar-logo > * {gap:16px;}
+			.h-vbar-logo > *:before {background:#ccc; height:28px;}
+			.h-vbar-logo h2 {font-weight:500; font-size:20px;}
+			.h-right-wrap {position:relative; gap:36px; width:auto;}
+			.h-nav {gap:68px; font-size:20px; color:black;}
+			.h-nav > *.active,
+			.h-nav a:hover {color:var(--mdc);}
+			.h-nav > *.active {font-weight:500;}
+			.h-nav-sub-wrap {display:none; position:absolute; left:0; top:var(--init-hh); background:var(--mdc); width:100%; height:60px;}
+			.h-nav-sub-wrap.active {display:flex;}
+			.h-nav-submenu {display:none; gap:44px; color:#a3b7d0;}
+			.h-nav-submenu > *:hover,
+			.h-nav-submenu > *.active {color:white;}
+			.h-nav-submenu:nth-child(1) {padding-left:430px;}
+			.h-nav-submenu:nth-child(2) {padding-left:610px;}
+			.h-nav-submenu:nth-child(3) {padding-left:920px;}
+			.h-nav-submenu.active {display:flex;}
+			.h-bookmark {display:none; position:absolute; position:fixed; left:0; top:0; width:100dvw; height:100dvh; z-index:10;}
+			.h-bookmark:before {content:""; position:absolute; left:0; top:0; width:100dvw; height:100dvh; background:rgba(0, 0, 0, 0.1);}
+			.h-bookmark-inner {position:absolute; right:0; top:78px; background:white; box-shadow:10px 10px 15px rgba(0, 0, 0, 0.07); border-radius:8px; width:460px; height:478px; padding:30px;}
+			.h-bookmark-inner .n-tabs,
+			.h-bookmark-inner .n-tab-pane {height:100%;}
+			.h-bookmark-inner .n-tab-pane {overflow-y:auto;}
+			.h-bookmark-open.active {z-index:100;}
+			.h-bookmark-open.active .ic-ribbon:before {background-position:var(--250) 0;}
+			.h-bookmark-open.active + .h-bookmark {display:block;}
+			.h-bookmark .lst-type-02 > * {height:auto; padding:10px 24px;}
+			.h-bookmark .form-type-opt-chk-02 {flex:1;}
+
+		/* 푸터 */
+			.f-wrap {flex:0 0 var(--init-fh); border-top:1px solid #ccd0d6; height:var(--init-fh);}
+			.f-wrap .f-inner {gap:56px;}
+			.f-vbar-logo,
+			.f-vbar-logo > * {gap:16px;}
+			.f-vbar-logo > *:before {background:#858585; height:28px;}
+			.f-vbar-logo h2 {font-weight:500; font-size:24px; color:#999;}
+			.f-address {font-size:14px; text-align:left; color:#999;}

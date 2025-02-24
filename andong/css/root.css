@@ -6,8 +6,8 @@
 		--init-lh: 1.5; /* 행간 */
 		--init-ls: -0.05em; /* 자간 */
 		--init-c: #666; /* 글자 색깔 */
-		--init-hh: 108px; /* 헤더 높이 */
-		--init-fh: 192px; /* 푸터 높이 */
+		--init-hh: 98px; /* 헤더 높이 */
+		--init-fh: 153px; /* 푸터 높이 */
 		--init-pc-w: 1200px; /* [PC] 페이지 넓이 */
 		--init-pc-wr-side-pd: 20px; /* [PC] Full Warpper 좌우 여백 */
 		--init-m-w: 100dvw; /* [Mobile] 페이지 넓이 */
