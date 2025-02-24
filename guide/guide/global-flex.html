@@ -52,12 +52,61 @@
 						<p class="workspace-guide-prop-desc">place-content</p>
 						<div>
 							<p class="workspace-guide-prop-name">content</p>
-							<p class="workspace-guide-prop-name">content-y</p>
 							<p class="workspace-guide-prop-name">content-x</p>
+							<p class="workspace-guide-prop-name">content-y</p>
 						</div>
 						<div>
 							<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
 							<p class="workspace-guide-prop-value">&lt;Value&gt;&lt;Value&gt;</p>
+							<p class="workspace-guide-prop-value">start</p>
+							<p class="workspace-guide-prop-value">end</p>
+							<p class="workspace-guide-prop-value">flex-start</p>
+							<p class="workspace-guide-prop-value">flex-end</p>
+
+							<p class="workspace-guide-prop-value">first</p>
+							<p class="workspace-guide-prop-value">left</p>
+							<p class="workspace-guide-prop-value">right</p>
+
+							<p class="workspace-guide-prop-value">center</p>
+							<p class="workspace-guide-prop-value">stretch</p>
+							<p class="workspace-guide-prop-value">safe</p>
+							<p class="workspace-guide-prop-value">unsafe</p>
+
+							<p class="workspace-guide-prop-value">space-evenly</p>
+							<p class="workspace-guide-prop-value">space-between</p>
+							<p class="workspace-guide-prop-value">space-around</p>
+
+							<p class="workspace-guide-prop-value">baseline</p>
+							<p class="workspace-guide-prop-value">normal</p>
+						</div>
+					</li>
+					<li>
+						<p class="workspace-guide-prop-desc">place-items</p>
+						<div>
+							<p class="workspace-guide-prop-name">items</p>
+							<p class="workspace-guide-prop-name">items-x</p>
+							<p class="workspace-guide-prop-name">items-y</p>
+						</div>
+						<div>
+							<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+							<p class="workspace-guide-prop-value">&lt;Value&gt;&lt;Value&gt;</p>
+							<p class="workspace-guide-prop-value">start</p>
+							<p class="workspace-guide-prop-value">end</p>
+							<p class="workspace-guide-prop-value">self-start</p>
+							<p class="workspace-guide-prop-value">self-end</p>
+							<p class="workspace-guide-prop-value">flex-start</p>
+							<p class="workspace-guide-prop-value">flex-end</p>
+
+							<p class="workspace-guide-prop-value">center</p>
+							<p class="workspace-guide-prop-value">anchor-center</p>
+							<p class="workspace-guide-prop-value">stretch</p>
+							<p class="workspace-guide-prop-value">safe</p>
+							<p class="workspace-guide-prop-value">unsafe</p>
+
+							<p class="workspace-guide-prop-value">baseline</p>
+							<p class="workspace-guide-prop-value">first baseline</p>
+							<p class="workspace-guide-prop-value">last baseline</p>
+							<p class="workspace-guide-prop-value">normal</p>
 						</div>
 					</li>
 					<li>
@@ -195,6 +244,78 @@
 				<div class="workspace-guide-inner">
 					<xmp>
 						<div style="--dp:flex; --grid-t-col:3; --w:400px; --h:400px; --content-x:space-evenly; --content-y:space-evenly;">
+							<div style="--w:100px; --h:50px;">Item</div>
+							<div style="--w:100px; --h:50px;">Item</div>
+							<div style="--w:100px; --h:50px;">Item</div>
+							<div style="--w:100px; --h:50px;">Item</div>
+							<div style="--w:100px; --h:50px;">Item</div>
+							<div style="--w:100px; --h:50px;">Item</div>
+							<div style="--w:100px; --h:50px;">Item</div>
+							<div style="--w:100px; --h:50px;">Item</div>
+							<div style="--w:100px; --h:50px;">Item</div>
+						</div>
+					</xmp>
+				</div>
+			</div>
+
+			<hr> <!-- Place Items -->
+			<div class="workspace-guide-case">
+				<h1>Place Items</h1>
+				<div class="workspace-guide-inner">
+					<div style="--dp:grid; --grid-t-col:3; --w:400px; --h:400px; --items:center; ">
+						<div style="--w:100px; --h:50px;">Item</div>
+						<div style="--w:100px; --h:50px;">Item</div>
+						<div style="--w:100px; --h:50px;">Item</div>
+						<div style="--w:100px; --h:50px;">Item</div>
+						<div style="--w:100px; --h:50px;">Item</div>
+						<div style="--w:100px; --h:50px;">Item</div>
+						<div style="--w:100px; --h:50px;">Item</div>
+						<div style="--w:100px; --h:50px;">Item</div>
+						<div style="--w:100px; --h:50px;">Item</div>
+					</div>
+				</div>
+				<div class="workspace-guide-inner">
+					<xmp>
+						<div style="--dp:grid; --grid-t-col:3; --w:400px; --h:400px; --items:center; ">
+							<div style="--w:100px; --h:50px;">Item</div>
+							<div style="--w:100px; --h:50px;">Item</div>
+							<div style="--w:100px; --h:50px;">Item</div>
+							<div style="--w:100px; --h:50px;">Item</div>
+							<div style="--w:100px; --h:50px;">Item</div>
+							<div style="--w:100px; --h:50px;">Item</div>
+							<div style="--w:100px; --h:50px;">Item</div>
+							<div style="--w:100px; --h:50px;">Item</div>
+							<div style="--w:100px; --h:50px;">Item</div>
+						</div>
+					</xmp>
+				</div>
+				<div class="workspace-guide-inner">
+					<div style="--dp:grid; --grid-t-col:3; --w:400px; --h:400px; --items-x:start; --items-y:end;">
+						<div style="--w:100px; --h:50px;">Item</div>
+						<div style="--w:100px; --h:50px;">Item</div>
+						<div style="--w:100px; --h:50px;">Item</div>
+						<div style="--w:100px; --h:50px;">Item</div>
+						<div style="--w:100px; --h:50px;">Item</div>
+						<div style="--w:100px; --h:50px;">Item</div>
+						<div style="--w:100px; --h:50px;">Item</div>
+						<div style="--w:100px; --h:50px;">Item</div>
+						<div style="--w:100px; --h:50px;">Item</div>
+					</div>
+					<div style="--dp:grid; --grid-t-col:3; --w:400px; --h:400px; --items-y:end;">
+						<div style="--w:100px; --h:50px;">Item</div>
+						<div style="--w:100px; --h:50px;">Item</div>
+						<div style="--w:100px; --h:50px;">Item</div>
+						<div style="--w:100px; --h:50px;">Item</div>
+						<div style="--w:100px; --h:50px;">Item</div>
+						<div style="--w:100px; --h:50px;">Item</div>
+						<div style="--w:100px; --h:50px;">Item</div>
+						<div style="--w:100px; --h:50px;">Item</div>
+						<div style="--w:100px; --h:50px;">Item</div>
+					</div>
+				</div>
+				<div class="workspace-guide-inner">
+					<xmp>
+						<div style="--dp:grid; --grid-t-col:3; --w:400px; --h:400px; --items-x:start; --items-y:end;">
 							<div style="--w:100px; --h:50px;">Item</div>
 							<div style="--w:100px; --h:50px;">Item</div>
 							<div style="--w:100px; --h:50px;">Item</div>

@@ -29,7 +29,8 @@
 	[style*="--gap-r"] { row-gap: var(--gap-r); }
 	[style*="--grid-col"] { grid-column: span var(--grid-col); }
 	[style*="--grid-t-col"] { grid-template-columns: repeat(var(--grid-t-col), 1fr); }
-	[style*="--content"] { place-content: var(--content, var(--content-y)) var(--content, var(--content-x)); flex-wrap:wrap; }
+	[style*="--content"] { place-content: var(--content, var(--content-y, normal)) var(--content, var(--content-x, normal)); flex-wrap:wrap; }
+	[style*="--items"] { place-items: var(--items, var(--items-y, normal)) var(--items, var(--items-x, normal)); flex-wrap:wrap; }
 
 /* Margin & Padding */
 	[style*="--mg-t"] { margin-top: var(--mg-t); }
