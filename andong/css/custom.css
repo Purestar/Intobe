@@ -8,3 +8,7 @@
 	.n-card.n-modal {border-radius:20px;}
 	.n-modal-container .n-card__footer {display:flex; gap:10px;}
 	.n-modal-container .n-card__footer [class*="btn-type"] {height:56px;}
+
+/* Title */
+	.tit-01 {font-size:24px;}
+	.tit-02 {font-size:20px;}

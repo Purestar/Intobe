@@ -21,31 +21,6 @@
 		<div id="app" style="padding:30px;">
 			<h1 class="tit-01">첫진입</h1>
 			<div class="wrap-grid m-wrap-flex mt-20" style="grid-template-columns:repeat(7, 1fr); gap:10px;">
-				<!-- 활동 뱃지 획득 -->
-				<button class="btn-type" @click="toggleModal('modal1')" disabled>활동 뱃지 획득</button>
-				<n-modal v-model:show="modals.modal1">
-					<n-card
-						style="width: 580px"
-						:bordered="false"
-						size="huge"
-						role="dialog"
-						aria-modal="true"
-					>
-						<template #header>
-							<button type="button" class="pop-close-no-header" @click="toggleModal('modal1')"></button>
-						</template>
-						<div class="wrap-flex flex-col flex-center txt-c">
-							<img src="../assets/images/img/badge-01.png">
-							<h1 class="tit-01">AI 학사 Advisor에 오신걸 환영해요!</h1>
-							<h2 class="tit-02">첫 방문의 기념으로 Welcome배지를 선물로 드릴게요!</h2>
-							<p class="mt-20">활동에 따라 획득할 수 있어요!<br>획득한 배지는 메인에서 대표 배지로 변경할 수 있습니다.</p>
-						</div>
-						<template #footer>
-							<button type="button" class="btn-type-b w100">확인</button>
-						</template>
-					</n-card>
-				</n-modal>
-
 				<!-- 관심진로 설정완료 -->
 				<button class="btn-type" @click="toggleModal('modal1')">관심진로 설정완료</button>
 				<n-modal v-model:show="modals.modal1">
@@ -69,6 +44,33 @@
 						</template>
 					</n-card>
 				</n-modal>
+
+				<!-- 배지 획득 -->
+				<button class="btn-type" @click="toggleModal('modal2')">배지 획득</button>
+				<n-modal v-model:show="modals.modal2">
+					<n-card
+						style="width: 580px"
+						:bordered="false"
+						size="huge"
+						role="dialog"
+						aria-modal="true"
+					>
+						<template #header>
+							<button type="button" class="pop-close-no-header" @click="toggleModal('modal2')"></button>
+						</template>
+						<div class="wrap-flex flex-col flex-center txt-c">
+							<img src="../images/dummy/badge.png">
+							<h1 class="tit-01">AI 학사 Advisor에 오신걸 환영해요!</h1>
+							<h2 class="tit-02"><b>첫 방문의 기념으로 Welcome배지를 선물로 드릴게요!</b></h2>
+							<p class="mt-20">활동에 따라 획득할 수 있어요!<br>획득한 배지는 메인에서 대표 배지로 변경할 수 있습니다.</p>
+						</div>
+						<template #footer>
+							<button type="button" class="btn-type-b btn-b-blk w100">확인</button>
+						</template>
+					</n-card>
+				</n-modal>
+
+
 			</div>
 
 			<h1 class="tit-01 mt-20">공통</h1>

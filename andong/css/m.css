@@ -40,7 +40,7 @@
 
 	/* popup.css */
 		/* Popup Wrap */
-		.n-modal-body-wrapper .n-modal {max-height:100dvh;}
+		.n-modal-body-wrapper .n-modal {height:100dvh; max-height:100dvh;}
 
 		/* Popup Close */
 			[class*="pop-type"] [class*="pop-close"],
@@ -57,4 +57,8 @@
 			.n-card > .n-card__content {padding:0 var(--init-m-wr-side-pd) 3.88vw; font-size:var(--init-fs);}
 			.n-modal-container .n-card__footer {gap:10px; padding:0 var(--init-m-wr-side-pd) 8.33vw;}
 			.n-modal-container .n-card__footer [class*="btn-type"] {height:var(--fom-h);}
+
+		/* Title */
+			.tit-01 {font-size:5vw;}
+			.tit-02 {font-size:3.61vw; font-weight:500;}
 }
