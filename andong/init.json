@@ -15,46 +15,7 @@
 					{ "menu": "헤더/푸터", "src": "./page/layout.html", "state": "" },
 					{ "menu": "팝업", "src": "./page/popup.html", "state": "" }
 				], "state": ""},
-				{ "menu": "메인", "src": "./page/UMA_010000.html", "state": "" },
-				{ "id": "진로탐색", "submenu": [
-					{ "id": "직업", "submenu": [
-						{ "menu": "홈", "src": "./page/UCE_010100.html", "state": "" },
-						{ "menu": "목록", "src": "./page/UCE_010200.html", "state": "" },
-						{ "menu": "상세", "src": "./page/UCE_010300.html", "state": "" }
-					], "state": "" },
-					{ "id": "롤 모델", "submenu": [
-						{ "menu": "홈", "src": "./page/UCE_020100.html", "state": "" },
-						{ "menu": "목록", "src": "./page/UCE_020200.html", "state": "" },
-						{ "menu": "상세", "src": "./page/UCE_020300.html", "state": "" }
-					], "state": "" }
-				], "state": ""},
-				{ "id": "My Major Map", "submenu": [
-					{ "menu": "목록", "src": "./page/UMM_010000.html", "state": "" },
-					{ "menu": "등록/수정", "src": "./page/UMM_020100.html", "state": "" },
-					{ "menu": "상세", "src": "./page/UMM_030000.html", "state": "" }
-				], "state": "" },
-				{ "id": "My Career", "submenu": [
-					{ "menu": "대시보드", "src": "./page/UCA_010000.html", "state": "" },
-					{ "menu": "스팩", "src": "./page/UCA_020000.html", "state": "" },
-					{ "id": "자기소개서", "submenu": [
-						{ "menu": "목록", "src": "./page/UCA_030100.html", "state": "" },
-						{ "menu": "등록/수정", "src": "./page/UCA_030200.html", "state": "" },
-						{ "menu": "상세", "src": "./page/UCA_030400.html", "state": "" }
-					], "state": "" },
-					{ "menu": "포트폴리오", "src": "./page/UCA_040100.html", "state": "" },
-					{ "id": "이력서", "submenu": [
-						{ "menu": "목록", "src": "./page/UCA_050100.html", "state": "" },
-						{ "menu": "등록/수정", "src": "./page/UCA_050200.html", "state": "" },
-						{ "menu": "상세", "src": "./page/UCA_050300.html", "state": "" }
-					], "state": "" }
-				], "state": ""},
-				{ "id": "e-Notice", "submenu": [
-					{ "id": "공지사항", "submenu": [
-						{ "menu": "목록", "src": "./page/UEN_010100.html", "state": "" },
-						{ "menu": "상세", "src": "./page/UEN_010200.html", "state": "" }
-					], "state": "" },
-					{ "menu": "FAQ", "src": "./page/UEN_020000.html", "state": "" }
-				], "state": ""}
+				{ "menu": "메인", "src": "./page/UMA_010000.html", "state": "" }
 			],
 			"state": ""
 		},
@@ -62,23 +23,7 @@
 			"id": "Guide",
 			"submenu": [
 				{ "menu": "Naive UI", "src": "https://www.naiveui.com/en-US/os-theme/components/", "state": "comp" },
-				{ "menu": "primeVue", "src": "https://primevue.org/", "state": "comp" },
-				{ "id": "Global", "submenu": [
-					{ "menu": "Display", "src": "./guide/global-display.html", "state": "comp" },
-					{ "menu": "Font", "src": "./guide/global-font.html", "state": "comp" },
-					{ "menu": "Margin", "src": "./guide/global-margin.html", "state": "comp" },
-					{ "menu": "Padding", "src": "./guide/global-padding.html", "state": "comp" },
-					{ "menu": "Width & Height", "src": "./guide/global-width.html", "state": "comp" }
-				], "state": "comp"},
-				{ "id": "Layout", "submenu": [
-					{ "menu": "Default", "src": "./guide/layout-default.html", "state": "comp" },
-					{ "menu": "Center", "src": "./guide/layout-center.html", "state": "comp" },
-					{ "menu": "Ellipsis", "src": "./guide/layout-ellipsis.html", "state": "comp" },
-					{ "menu": "Inline", "src": "./guide/layout-inline.html", "state": "comp" },
-					{ "menu": "Inner", "src": "./guide/layout-inner.html", "state": "comp" },
-					{ "menu": "Flex", "src": "./guide/layout-flex.html", "state": "comp" },
-					{ "menu": "Grid", "src": "./guide/layout-grid.html", "state": "comp" }
-				], "state": "comp"}
+				{ "menu": "primeVue", "src": "https://primevue.org/", "state": "comp" }
 			],
 			"state": "comp"
 		}
