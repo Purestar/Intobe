@@ -91,6 +91,11 @@
 				.brd-paging .brd-paging-next:before {width:1.53vw; height:2.22vw;}
 
 		/* Box */
+			.box-type-01 {border-radius:2.08vw; box-shadow:0 1.11vw 4.58vw rgba(0, 0, 0, 0.08); padding:5.56vw 5.28vw;}
+			.box-type-02 {border-radius:2.50vw; padding:5.56vw;}
+			[class*="box-type-03"] {border-radius:2.50vw; padding:5.56vw;}
+			.box-type-03-01 {padding:5.56vw;}
+			.box-type-04 {border-radius:2.50vw; padding:5.00vw;}
 
 		/* Button */
 			/* Button Color */

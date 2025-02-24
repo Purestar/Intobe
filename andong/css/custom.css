@@ -28,6 +28,11 @@
 		.brd-paging-num {display:flex;}
 
 /* Box */
+	.box-type-01 {border-radius:13px; box-shadow:0 0 8px rgba(0, 0, 0, 0.06); padding:30px 34px;}
+	.box-type-02 {background:#eff6ff; border-radius:6px; padding:16px; color:var(--mdc);}
+	[class*="box-type-03"] {border:1px solid #e2e2e2; border-radius:16px; padding:44px 30px;}
+	.box-type-03-01 {padding:36px;}
+	.box-type-04 {background:#f9f9f9; border-radius:14px; padding:28px;}
 	.box-type-05 {background:#f5f5f5; border-radius:16px; padding:16px 0;}
 
 /* Button */
@@ -60,11 +65,37 @@
 
 			.form-type-opt-chk-01-01 .opt-txt:before {flex:0 0 24px; background-position:var(--350) var(--50); width:24px; height:20px;}
 
-/* Icon */
-	.ic-delete:before {background-position:var(--600) var(--50); width:12px; height:12px;}
-	.ic-notice:before {background-position:var(--100) var(--50); width:23px; height:26px;}
-	.ic-refresh-02:before {background-position:var(--550) var(--50); width:14px; height:15px;}
-	.ic-zoom:before {background-position:var(--200) var(--50); width:19px; height:19px;}
+	/* Icon */
+		.ic-chk:before {background-position:var(--350) var(--50); width:47px; height:46px;}
+		.ic-clip:before {background-position:var(--150) var(--50); width:18px; height:18px;}
+		.ic-comp:before {background-position:var(--250) 0; width:27px; height:19px;}
+		.ic-copy:before {background-position:var(--900) 0; width:16px; height:16px;}
+		.ic-delete:before {background-position:var(--600) var(--50); width:12px; height:12px;}
+		.ic-down:before {background-position:var(--600) 0; width:10px; height:8px;}
+		.ic-download:before {background-position:var(--250) var(--50); width:19px; height:19px;}
+		.ic-info:before {background-position:var(--50) 0; width:18px; height:18px;}
+		.ic-l-arrow:before {background-position:var(--700) 0; width:13px; height:23px;}
+		.ic-l-arrow-02:before {background-position:var(--400) var(--50); width:8px; height:14px;}
+		.ic-link:before {background-position:var(--300) 0; width:12px; height:12px;}
+		.ic-minus:before {background-position:var(--50) var(--50); width:10px; height:2px;}
+		.ic-note:before {background-position:var(--300) var(--50); width:31px; height:24px;}
+		.ic-notice:before {background-position:var(--100) var(--50); width:23px; height:26px;}
+		.ic-pencle:before {background-position:var(--450) 0; width:13px; height:12px;}
+		.ic-pencle-02:before {width:17px; height:18px;}
+		.ic-plus {border:1px solid #e3e3e3; border-radius:50%; box-shadow:0 3px 5px rgba(0, 0, 0, 0.14); width:36px; height:36px;}
+		.ic-plus:before {background-position:var(--200) 0; width:16px; height:16px;}
+		.ic-plus-02:before {background-position:0 var(--50); width:12px; height:12px;}
+		.ic-prn:before {background-position:var(--650) 0; width:19px; height:18px;}
+		.ic-r-arrow:before {background-position:var(--150) 0; width:35px; height:9px;}
+		.ic-r-arrow-02:before {background-position:var(--350) 0; width:5px; height:8px;}
+		.ic-r-arrow-03:before {background-position:var(--550) 0; width:7px; height:12px;}
+		.ic-refresh:before {background-position:var(--750) 0; width:18px; height:17px;}
+		.ic-refresh-02:before {background-position:var(--550) var(--50); width:14px; height:15px;}
+		.ic-setting:before {background-position:var(--100) 0; width:17px; height:17px;}
+		.ic-trash:before {background-position:var(--950) 0; width:16px; height:17px;}
+		.ic-wait:before {background-position:var(--500) 0; width:24px; height:19px;}
+		.ic-wait-02:before {background-position:var(--500) var(--50); width:10px; height:16px;}
+		.ic-zoom:before {background-position:var(--200) var(--50); width:19px; height:19px;}
 
 /* List */
 	/* List */
