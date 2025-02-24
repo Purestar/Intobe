@@ -197,6 +197,13 @@
 			.chk-rdo02 input:disabled + span:before {background:#f5f5f5; border-color:#e2e2e2;}
 			.chk-rdo02 input:checked:disabled + span:after {background:#aaa;}
 
+			.chk-rdo03 > span {display:block; background:#ededed; border-radius:50%; width:36px; height:36px;}
+			.chk-rdo03 > span:before {background:white; border:1px solid #e2e2e2; border-radius:50%; width:20px; height:20px; margin-right:8px;}
+			/*.chk-rdo03 input:checked + span:before {border-width:2px; border-color:var(--main-color); transition:background .3s;}
+			.chk-rdo03 input:checked + span:after {position:absolute; left:5px; top:5px; background:var(--main-color); border-radius:50%; width:10px; height:10px; transition:background .3s;}
+			.chk-rdo03 input:disabled + span:before {background:#f5f5f5; border-color:#e2e2e2;}
+			.chk-rdo03 input:checked:disabled + span:after {background:#aaa;}*/
+
 		/* Select (Nice Select Base) */
 			.sel-type01 .nice-select {background:transparent; border-radius:2px; height:40px; padding:0 39px 0 15px; color:#666;}
 			.sel-type01 .nice-select .list {border:1px solid var(--main-color);}

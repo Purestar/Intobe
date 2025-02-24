@@ -27,7 +27,56 @@
 						</ul>
 					</div>
 				</div>
-				<ul id="notiLst" class="brd-lst02"></ul>
+				<div class="brd-form">
+					<div class="fx-gap-01">
+                        <div class="inp-date">
+                            <input type="text" placeholder="yyyy.mm.dd">
+                        </div>
+                        <div class="inp-date">
+                            <input type="text" placeholder="yyyy.mm.dd">
+                        </div>
+						<button class="btn-b-" type="button">검색</button>
+						<button class="btn-b-lgry " type="button"><i class="btn-df-ic-reset"></i>초기화</button>
+						<button class="btn-b-lgry" type="button"><i class="btn-df-ic-print"></i>이력인쇄</button>
+					</div>
+					<div>
+						<ul class="brd-ft">
+							<li class="active"><a href="#">최근 완료순</a></li>
+							<li><a href="#">과거 완료순</a></li>
+						</ul>
+					</div>
+				</div>
+				<ul id="notiLst" class="brd-lst02">
+					<li>
+						<div class="brd-cont fx-aic fx-jcsb w100">
+							<div class="fx-aic fx-gap-06">
+								<div>
+									<label class="btn-df-ic-chk">
+										<input type="checkbox">
+										<span class="ic-ct-"></span>
+									</label>
+								</div>
+								<div>
+									<h3 class="brd-tit"><a href="#">MOCA 사이트 기능 업그레이드에 따른 서비스 일시중지 안내MOCA</a></h3>
+									<div class="brd-desc fx-row">
+										<p class="vbar-01">
+											<span><b>유형</b>운영자</span>
+											<span><b>분류</b>융합</span>
+											<span><b>러닝타임</b>총 12분 56초</span>
+										</p>
+										<p class="vbar-01">
+											<span><b>시청시작일시</b>2022-05-10  12:13:35</span>
+											<span><b>시청종료일시</b>2022-05-10  12:13:35</span>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div>
+								<button type="button" class="btn-b-lgry">학습완료</button>
+							</div>
+						</div>
+					</li>
+				</ul>
 				<%@ include file="../inc/brd_paging.jsp" %>
 			</div>
 		</div>
@@ -72,8 +121,8 @@
 		notiLst += '		</div>';
 		notiLst += '	</div>';
 		notiLst += '</li>';
-                
-	$("[id*='notiLst']").contRpt(notiLst, 6);
+
+	//$("[id*='notiLst']").contRpt(notiLst, 6);
 
 </script>
 <%@ include file="../inc/footer.jsp" %>
