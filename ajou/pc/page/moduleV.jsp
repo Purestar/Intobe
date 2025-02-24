@@ -11,6 +11,22 @@
                             <li>사이트이용</li>
                         </ul>
                         <h2 class="brd-vw-tit">강의 수강 중 궁금한 점이 있어서 문의드립니다.</h2>
+						<div class="mt10">
+							<span class="bage-08-red">역량 2</span>
+							<span class="bage-08-org">역량 3</span>
+							<span class="bage-08-grn03">역량 4</span>
+							<span class="bage-08-blu02">역량 5</span>
+							<span class="bage-08-nvy">cc</span>
+							<span class="bage-08-pur02">NEW</span>
+							<span class="bage-08-sky">BEST</span>
+							<span class="bage-08-grn02">CORE</span>
+							<span class="bage-08-bpnk">감수성</span>
+							<span class="bage-08-blpur">소통력</span>
+							<span class="bage-08-bblu">창의성</span>
+							<span class="bage-08-bsky">사고력</span>
+							<span class="bage-08-bgrn">개방성</span>
+						</div>
+						<div class="fx-gap-03 mt10 fx-wrap">					</div>
                         <p class="brd-vw-info vbar-01">
                             <span>담당교수 김현수</span>
                             <span><span class="brd-ic-play">20</span></span>
