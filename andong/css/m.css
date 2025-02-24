@@ -3,6 +3,7 @@
 		:root {
 			/* Initialize */
 				--init-fs: 3.33vw; /* 글자 크기 */
+				--init-font-size: 3.33vw;
 				--init-hh: 16.66vw; /* 헤더 높이 */
 				--init-fh: 47.36vw; /* 푸터 높이 */
 
@@ -73,7 +74,23 @@
 		/* Accordion */
 			.aco-type-01 .n-collapse-item__header-main {height:13.89vw; padding:0 5vw; font-size:3.89vw;}
 			.aco-type-01 .n-collapse-item .n-collapse-item__content-wrapper .n-collapse-item__content-inner {padding:5vw;}
-			.aco-type-01 .n-base-icon:before {}
+
+		/* Board */
+			/* General */
+				.brd-wrap .brd-tit {font-size:3.89vw;}
+				.brd-wrap .brd-ctgy {font-size:3.33vw;}
+				.brd-wrap .brd-sch {max-width:none;}
+
+			/* Paging */
+				.brd-paging {justify-content:space-between; gap:0.56vw; margin-top:9.03vw;}
+				.brd-paging a {width:6.67vw; height:6.67vw;}
+				.brd-paging > a {border-radius:1.11vw;}
+				.brd-paging .brd-paging-first:before,
+				.brd-paging .brd-paging-last:before {width:2.50vw; height:2.22vw;}
+				.brd-paging .brd-paging-prev:before,
+				.brd-paging .brd-paging-next:before {width:1.53vw; height:2.22vw;}
+
+		/* Box */
 
 		/* Button */
 			/* Button Color */
@@ -92,9 +109,29 @@
 
 		/* Icon */
 			.ic-delete:before {background-position:var(--650) var(--50); width:2.22vw; height:2.22vw;}
+			.ic-notice:before {width:3.75vw; height:4.31vw;}
 			.ic-refresh-02:before {background-position:var(--600) var(--50); width:3.06vw; height:3.47vw;}
+			.ic-zoom:before {width:4.44vw; height:4.44vw;}
 
 		/* List */
+			[class*="lst-type-02"] {gap:2.22vw;}
+			[class*="lst-type-02"] > * {border-radius:2.5vw; height:14.44vw; padding:0 5.27vw;}
+			[class*="lst-type-02"] a {gap:2.22vw; font-size:3.33vw;}
+			[class*="lst-type-02"] .lst-tit {font-size:3.89vw;}
+			[class*="lst-type-02"] .brd-num {width:3.75vw;}
+			[class*="lst-type-02"].bp-number-01 .lst-tit {font-size:3.06vw;}
+			[class*="lst-type-02"] .lst-bottom {width:calc(100% + 10.82vw); margin:5.56vw -5.42vw -5.42vw -5.42vw;}
+			[class*="lst-type-02"] .lst-bottom > * {height:10.00vw;}
+			[class*="lst-type-02"] .lst-bottom > *:first-child {border-bottom-left-radius:2.50vw;}
+			[class*="lst-type-02"] .lst-bottom > *:last-child {border-bottom-right-radius:2.50vw;}
+
+			.lst-type-02-01 > * {border-radius:2.50vw; height:auto; padding:5.28vw;}
+			.lst-type-02-01[class*="bp-number"] > * {gap:2.22vw;}
+			.lst-type-02-01[class*="bp-number"] .lst-tit {gap:2.22vw;}
+			.lst-type-02-01[class*="bp-number"] .lst-tit:before {width:4.58vw; height:4.58vw; font-size:3.06vw;}
+
+			.lst-type-02-02 > * {align-items:flex-start; flex-direction:column; border-radius:2.50vw; height:auto; padding:5.28vw;}
+
 			[class*="lst-tag"] {gap:1.67vw; margin-top:3.33vw; font-size:3.33vw;}
 			[class*="lst-tag"] > * {gap:2.78vw; border-radius:8.89vw; height:8.89vw; padding:0 4.17vw;}
 
@@ -108,6 +145,7 @@
 		/* Title */
 			.tit-01 {font-size:5vw;}
 			.tit-02 {font-size:3.61vw; font-weight:500;}
+			.tit-03 {font-size:5vw;}
 
 	/* 페이지 */
 		/* 관심 */
@@ -122,4 +160,46 @@
 			.favor-job-list {flex:0 0 45.83vw; width:45.83vw; padding:0;}
 			.favor-job-list > * > * {min-height:13.89vw; padding:0 4.72vw;}
 			.favor-job-list > * > *:after  {display:none;}
+
+	/* 레이아웃 */
+		/* 헤더 */
+		.h-wrap > .wrap-inner {padding-right:0;}
+		.h-vbar-logo,
+		.h-vbar-logo > * {gap:2.77vw;}
+		.h-vbar-logo > *:before {height:5vw;}
+		.h-vbar-logo h1 img {width:32.91vw;}
+		.h-vbar-logo h2 {font-size:4.44vw;}
+		.h-btn-hamburger {display:flex; align-items:center; justify-content:center; width:var(--init-hh); height:var(--init-hh);}
+		.h-btn-hamburger:before {content:""; background-position:var(--150) var(--600); background-image:var(--ico-c); background-size:var(--ico-sz); width:5.55vw; height:4.3vw;}
+		.h-btn-hamburger-close {display:flex; align-items:center; justify-content:center; position:absolute; right:0; top:0; width:var(--init-hh); height:var(--init-hh);}
+		.h-btn-hamburger-close:before {content:""; background-position:var(--200) var(--600); background-image:var(--ico-c); background-size:var(--ico-sz); width:4.16vw; height:4.16vw;}
+		.h-panel {display:none; position:fixed; left:0; top:0; background:rgba(0, 0, 0, 0.5); width:100dvw; height:100dvh; padding-left:10.27vw;}
+		.h-panel.active {display:block;}
+		.h-panel-inner {display:flex; flex-direction:column; background:white; width:100%; height:100dvh;}
+		.h-panel-info {height:33.61vw; padding:12.5vw 5.55vw 0;}
+		.h-usr-nm {font-size:6.66vw; font-weight:700;}
+		.h-panel-cont {display:flex; flex-direction:column; flex:1; height:calc(100dvh - 33.61vw); padding:0 5.55vw;}
+		.h-panel-cont .n-tabs {overflow:hidden; height:100%;}
+		.h-panel-cont .n-tab-pane {overflow-y:auto;}
+		.h-btn-logout {border-top:1px solid #ededed; height:21.38vw;}
+		.h-m-menu > * {display:flex; flex-direction:column; gap:5.27vw; padding:5.27vw 0;}
+		.h-m-menu > *:first-child {padding-top:0;}
+		.h-m-menu > * + * {border-top:1px solid #ededed;}
+		.h-m-menu > * > a {font-size:3.33vw; font-weight:700;}
+		.h-m-submenu {display:flex; flex-direction:column; gap:5.27vw; font-size:4.16vw;}
+
+		/* 푸터 */
+			.f-wrap .f-inner {flex-direction:column; align-items:flex-start; gap:5.55vw;}
+			.f-vbar-logo,
+			.f-vbar-logo > * {gap:2.77vw;}
+			.f-vbar-logo > *:before {height:5vw;}
+			.f-vbar-logo h1 img {width:32.91vw;}
+			.f-vbar-logo h2 {font-size:4.44vw;}
+			.f-address {font-size:3.33vw;}
+
+		/* 내용 */
+			#sub-container {padding:8.33vw 0;}
+			#sub-container > .wrap-inner,
+			#sub-container.wrap-inner {padding-left:5vw; padding-right:5vw;}
+			#contents .sub-title {gap:3.89vw;}
 }

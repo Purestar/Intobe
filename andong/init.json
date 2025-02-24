@@ -16,7 +16,15 @@
 					{ "menu": "헤더/푸터", "src": "./page/layout.html", "state": "" },
 					{ "menu": "팝업", "src": "./page/popup.html", "state": "comp" }
 				], "state": ""},
-				{ "menu": "메인", "src": "./page/UMA_010000.html", "state": "" }
+				{ "menu": "메인", "src": "./page/main.html", "state": "" },
+				{ "id": "e-Notice", "submenu": [
+					{ "id": "공지사항", "submenu": [
+						{ "menu": "목록", "src": "./page/notice_l.html", "state": "" },
+						{ "menu": "상세", "src": "./page/notice_v.html", "state": "" }
+					], "state": "" },
+					{ "menu": "FAQ", "src": "./page/faq.html", "state": "" },
+					{ "menu": "To-Do-List", "src": "./page/todolist.html", "state": "" }
+				], "state": ""}
 			],
 			"state": ""
 		},
