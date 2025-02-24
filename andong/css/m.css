@@ -36,12 +36,17 @@
 				--fom-br: 1.66vw; /* 보더 라디우스 */
 				--fom-pad: 5.83vw; /* 좌우 패딩 */
 				--fom-fs: 3.33vw; /* 폰트 크기 */
+				--fom-chk-ico-w: 3.06vw; /* 체크박스 아이콘 넓이 */
+				--fom-chk-ico-h: 2.36vw; /* 체크박스 아이콘 높이 */
 		}
 
 	/* common.css */
 		/* General */
 			.mobile {display:block !important;}
 			.pc {display:none !important;}
+
+	/* accordion.css */
+		[class*="aco-type"] .n-base-icon:before {flex:0 0 3.33vw; width:3.33vw; height:2.08vw;}
 
 	/* popup.css */
 		/* Popup Wrap */
@@ -65,6 +70,11 @@
 		[class*="wrap-grid"][class*="m-wrap-flex"] {display:flex;}
 
 	/* custom.css */
+		/* Accordion */
+			.aco-type-01 .n-collapse-item__header-main {height:13.89vw; padding:0 5vw; font-size:3.89vw;}
+			.aco-type-01 .n-collapse-item .n-collapse-item__content-wrapper .n-collapse-item__content-inner {padding:5vw;}
+			.aco-type-01 .n-base-icon:before {}
+
 		/* Button */
 			/* Button Color */
 			.btn-b-blk {border-color:black; color:black;}
@@ -79,6 +89,14 @@
 				/* Button */
 					.form-type-opt-btn-01 .opt-txt,
 					.form-type-opt-btn-01 input:checked + .opt-txt {border-radius:2.78vw; min-height:15.28vw; font-size:4.17vw;}
+
+		/* Icon */
+			.ic-delete:before {background-position:var(--650) var(--50); width:2.22vw; height:2.22vw;}
+			.ic-refresh-02:before {background-position:var(--600) var(--50); width:3.06vw; height:3.47vw;}
+
+		/* List */
+			[class*="lst-tag"] {gap:1.67vw; margin-top:3.33vw; font-size:3.33vw;}
+			[class*="lst-tag"] > * {gap:2.78vw; border-radius:8.89vw; height:8.89vw; padding:0 4.17vw;}
 
 		/* Popup */
 			.n-card.n-modal {border-radius:0; width:100dvw !important;}
@@ -95,4 +113,13 @@
 		/* 관심 */
 			.favor-list {gap:1.67vw; width:90dvw; margin-top:5.56vw; padding-bottom:5.56vw;}
 			.favor-total-txt {margin:2.78vw 0 5.56vw;}
+
+		/* 관심직무설정 */
+			.favor-job-wrap {width:100dvw; font-size:3.89vw;}
+			.favor-job-list-wrap {border-radius:0; border:0; border-top:1px solid #e2e2e2; margin:5.28vw calc(var(--init-m-wr-side-pd) * -1) 0;}
+			.favor-job-list-top {height:101.94vw;}
+			.favor-job-list-bot {border:0; padding:5.00vw;}
+			.favor-job-list {flex:0 0 45.83vw; width:45.83vw; padding:0;}
+			.favor-job-list > * > * {min-height:13.89vw; padding:0 4.72vw;}
+			.favor-job-list > * > *:after  {display:none;}
 }

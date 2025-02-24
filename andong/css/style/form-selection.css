@@ -45,7 +45,7 @@
 
 	/* Check Box */
 		[class*="form-type-opt-chk"] .opt-txt:before {border-radius:3px;}
-		[class*="form-type-opt-chk"] .opt-txt:after {left:calc((var(--fom-opt-sz) / 2) - (var(--fom-chk-ico-w) / 2)); top:calc((var(--fom-opt-sz) / 2) - (var(--fom-chk-ico-h) / 2)); background-image:var(--ico-c); background-position:var(--150) var(--50); width:var(--fom-chk-ico-w); height:var(--fom-chk-ico-h);}
+		[class*="form-type-opt-chk"] .opt-txt:after {left:calc((var(--fom-opt-sz) / 2) - (var(--fom-chk-ico-w) / 2)); top:calc((var(--fom-opt-sz) / 2) - (var(--fom-chk-ico-h) / 2)); background-image:var(--ico-c); background-position:var(--400) var(--50); width:var(--fom-chk-ico-w); height:var(--fom-chk-ico-h);}
 		[class*="form-type-opt-chk"] input:checked + .opt-txt:before {background-color:var(--mc);}
 		[class*="form-type-opt-chk"] input:checked + .opt-txt:after {visibility:visible;}
 		[class*="form-type-opt-chk"] input:disabled + .opt-txt:after {background-position:var(--200) var(--50);}

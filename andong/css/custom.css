@@ -1,3 +1,8 @@
+/* Accordion */
+	.aco-type-01 .n-collapse-item__header-main {height:40px; padding:0 24px;}
+	.aco-type-01 .n-collapse-item .n-collapse-item__content-wrapper .n-collapse-item__content-inner {padding:24px;}
+	.aco-type-01 .n-collapse-item__content-wrapper {border-top:1px solid #efefef;}
+
 /* Button */
 	/* Button Color */
 		.btn-b-blk {border-color:black; color:black;}
@@ -7,6 +12,9 @@
 	/* Button Size */
 		.btn-r-56 {height:56px; font-size:18px;}
 
+	/* Other */
+		.btn-icon {display:inline-flex; align-items:center; gap:10px;}
+
 /* Form */
 	/* Checkbox & Radio Type */
 		/* Button */
@@ -15,6 +23,14 @@
 			.form-type-opt-btn-01 .opt-txt {justify-content:center; border-color:#e2e2e2; color:#666;}
 			.form-type-opt-btn-01 input:checked + .opt-txt {background:#eff6ff; border-color:var(--mc); color:#00377a;}
 			.form-type-opt-btn-01 input:disabled + .opt-txt {background:none; border:1px solid #e2e2e2; color:#e2e2e2;}
+
+/* Icon */
+	.ic-delete:before {background-position:var(--600) var(--50); width:12px; height:12px;}
+	.ic-refresh-02:before {background-position:var(--550) var(--50); width:14px; height:15px;}
+
+/* List */
+	[class*="lst-tag"] {flex-wrap:wrap; gap:12px; margin-top:24px; font-size:14px;}
+	[class*="lst-tag"] > * {display:flex; align-items:center; gap:18px; background:#eceeff; border-radius:34px; height:34px; padding:0 24px; color:var(--mc);}
 
 /* Popup */
 	.n-card.n-modal {border-radius:20px;}
@@ -32,3 +48,15 @@
 		.favor-list [class*="form-type-opt-btn"] label,
 		.favor-list [class*="form-type-opt-btn"] .opt-txt {width:100%;}
 		.favor-total-txt {margin:20px 0 40px;}
+
+	/* 관심직무설정 */
+		.favor-job-wrap {width:640px;}
+		.favor-job-list-wrap {overflow:hidden; border:1px solid #e7e7e7; border-radius:14px; margin-top:30px;}
+		.favor-job-list-top {display:flex; height:424px;}
+		.favor-job-list-bot {border-top:1px solid #e7e7e7; padding:24px;}
+		.favor-job-list {flex:0 0 254px; border-right:1px solid #e7e7e7; width:254px; padding:10px 0;}
+		.favor-job-list > * > * {display:flex; justify-content:space-between; align-items:center; width:100%; min-height:42px; padding:0 23px; text-align:left;}
+		.favor-job-list > * > *:after  {content:""; width:7px; height:11px;}
+		.favor-job-list > *.active > *,
+		.favor-job-list > * > *:hover {background:#f5f8fe; color:#1c4fa0;}
+		.favor-job-list > *.active > *:after {background-image:var(--ico); background-size:var(--ico-sz); background-position:var(--650) var(--50);}
