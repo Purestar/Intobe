@@ -12,6 +12,7 @@
 					</div>
 					<input type="text" placeholder="검색어를 입력해주세요.">
 				</div>
+				<div class="fx-jcfe mt30"><button type="button" class="fx-aic"><i class="btn-df-ic-reset"></i>초기화</button></div>
                 <table class="tbl-type01">
 					<colgroup>
 						<col style="width:12%;">
