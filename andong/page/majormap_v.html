@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="Management">
+		<meta name="description" content="Management">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script type="module" src="../js/index.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://unpkg.com/naive-ui"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
+		<script type="module" src="../js/pub.js"></script>
+		<link rel="icon" href="../favicon.ico" sizes="any">
+		<link rel="stylesheet" href="../css/global.css">
+	</head>
+	<body>
+		<div data-include="../include/header.html"></div>
+		<div id="container">
+			<div id="sub-container">
+				<div id="contents" class="wrap-inner">
+					<div class="sub-title">
+						<a href="#"><i class="ic-l-arrow"></i></a>
+						<h2 class="tit-03">My Major Map 상세</h2>
+					</div>
+					<div class="brd-wrap mt-40">
+						<div class="lst-type-02-02 mt-16">
+							<div>
+								<div class="wrap-flex flex-col lh-1 gap-12">
+									<div class="wrap-flex flex-center gap-12 m-flex-wrap">
+										<i class="ic-comp"></i><span class="chip-type-01-b-lgry">기본 MAP</span><strong class="lst-tit fs-18">소프트웨어 개발자를 위한 나의 여정지도</strong>설계완료(121학점)
+									</div>
+									<ul class="wrap-flex gap-4">
+										<li>#첫 설계</li>
+										<li>#2학년</li>
+										<li>#1학기</li>
+									</ul>
+								</div>
+								<div class="wrap-flex gap-40 m-flex-between m-w100">
+									<p class="wrap-flex gap-12">최종수정일<span class="cr-blk">2024.06.19</span></p>
+									<div class="wrap-flex flex-center gap-20">
+										<a href="#"><i class="ic-pencle-02"></i></a>
+										<button type="button"><i class="ic-copy"></i></button>
+										<button type="button"><i class="ic-trash"></i></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="my-major-map-wrap mt-40">
+					<div class="wrap-inner">
+						<ul class="my-major-map">
+							<!--
+								complete: 이수완료
+								active: 이수 중
+							-->
+							<li class="complete">
+								<div class="my-major-map-step">
+									<i class="ic-chk"></i>
+								</div>
+								<div class="wrap-flex flex-center gap-12">
+									<h3 class="tit-02">이수완료</h3>
+									<span class="cr-blk">1학년 2학기</span>
+								</div>
+								<ul class="lst-type-02-01 my-major-map-lst">
+									<!--
+										[D]
+										bg-lblu: 전공핵심
+										bg-lsky: 전공필수
+										bg-lgrn: 전공선택
+										bg-lpnk: 교양선택
+										bg-lred: 교양필수
+										bg-lorg: 일반
+									-->
+									<li class="bg-lblu">
+										<div class="wrap-flex flex-col lh-1 gap-12">
+											<div class="wrap-flex flex-between">
+												<div class="wrap-flex gap-8">
+													<span class="chip-type-01-b-lgry">관심</span>
+													<span class="chip-type-01-b-lgry">AI추천</span>
+													<span class="chip-type-01-b-lgry">롤모델</span>
+													<span class="chip-type-01-b-lgry">전공추천</span>
+												</div>
+												<button type="button"><i class="ic-note"></i></button>
+											</div>
+											<div class="wrap-flex flex-center gap-12">
+												<h3 class="lst-tit">보안기초</h3>2학점(3)
+											</div>
+											<div class="wrap-flex flex-between">
+												<ul class="vbar-01">
+													<li>컴퓨터학부</li>
+													<li>1-1</li>
+													<li><span class="chip-type-02"></span></li>
+												</ul>
+												<button type="button" class="btn-type-b btn-b-lgry btn-r-32-02">교과정보</button>
+											</div>
+										</div>
+									</li>
+									<li class="bg-lgrn">
+										<div class="wrap-flex flex-col lh-1 gap-12">
+											<div class="wrap-flex flex-between">
+												<div class="wrap-flex gap-8">
+													<span class="chip-type-01-b-lgry">관심</span>
+													<span class="chip-type-01-b-lgry">AI추천</span>
+													<span class="chip-type-01-b-lgry">롤모델</span>
+													<span class="chip-type-01-b-lgry">전공추천</span>
+												</div>
+												<button type="button"><i class="ic-note"></i></button>
+											</div>
+											<div class="wrap-flex flex-center gap-12">
+												<h3 class="lst-tit">보안기초</h3>2학점(3)
+											</div>
+											<div class="wrap-flex flex-between">
+												<ul class="vbar-01">
+													<li>컴퓨터학부</li>
+													<li>1-1</li>
+													<li><span class="chip-type-02"></span></li>
+												</ul>
+												<button type="button" class="btn-type-b btn-b-lgry btn-r-32-02">교과정보</button>
+											</div>
+										</div>
+									</li>
+									<li class="bg-lsky">
+										<div class="wrap-flex flex-col lh-1 gap-12">
+											<div class="wrap-flex flex-between">
+												<div class="wrap-flex gap-8">
+													<span class="chip-type-01-b-lgry">관심</span>
+													<span class="chip-type-01-b-lgry">AI추천</span>
+													<span class="chip-type-01-b-lgry">롤모델</span>
+													<span class="chip-type-01-b-lgry">전공추천</span>
+												</div>
+												<button type="button"><i class="ic-note"></i></button>
+											</div>
+											<div class="wrap-flex flex-center gap-12">
+												<h3 class="lst-tit">보안기초</h3>2학점(3)
+											</div>
+											<div class="wrap-flex flex-between">
+												<ul class="vbar-01">
+													<li>컴퓨터학부</li>
+													<li>1-1</li>
+													<li><span class="chip-type-02"></span></li>
+												</ul>
+												<button type="button" class="btn-type-b btn-b-lgry btn-r-32-02">교과정보</button>
+											</div>
+										</div>
+									</li>
+									<li class="bg-lgry-02">
+										<div class="wrap-flex flex-col lh-1 gap-12">
+											<div class="wrap-flex flex-between">
+												<div class="wrap-flex gap-8">
+													<span class="chip-type-01-b-lgry">관심</span>
+													<span class="chip-type-01-b-lgry">AI추천</span>
+													<span class="chip-type-01-b-lgry">롤모델</span>
+													<span class="chip-type-01-b-lgry">전공추천</span>
+												</div>
+												<button type="button" disabled><i class="ic-note"></i></button>
+											</div>
+											<div class="wrap-flex flex-center gap-12">
+												<h3 class="lst-tit">보안기초</h3>2학점(3)
+											</div>
+											<div class="wrap-flex flex-between">
+												<ul class="vbar-01">
+													<li>컴퓨터학부</li>
+													<li>1-1</li>
+													<li><span class="chip-type-02"></span></li>
+												</ul>
+												<button type="button" class="btn-type-b btn-b-lgry btn-r-32-02">교과정보</button>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="wrap-flex flex-col lh-1 gap-12">
+											<div class="wrap-flex flex-between">
+												<div class="wrap-flex gap-8">
+													<span class="chip-type-01-b-lgry">관심</span>
+													<span class="chip-type-01-b-lgry">AI추천</span>
+													<span class="chip-type-01-b-lgry">롤모델</span>
+													<span class="chip-type-01-b-lgry">전공추천</span>
+												</div>
+												<button type="button"><i class="ic-note"></i></button>
+											</div>
+											<div class="wrap-flex flex-center gap-12">
+												<h3 class="lst-tit">정보보안기사</h3>
+											</div>
+											<div class="wrap-flex flex-between">
+												<ul class="vbar-01">
+													<li>한국산업인력공단</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li class="complete">
+								<div class="my-major-map-step">
+									<i class="ic-chk"></i>
+								</div>
+								<div class="wrap-flex flex-center gap-12">
+									<h3 class="tit-02">이수완료</h3>
+									<span class="cr-blk">1학년 2학기</span>
+								</div>
+								<ul class="lst-type-02-01 my-major-map-lst">
+									<!--
+										[D]
+										bg-lblu: 전공핵심
+										bg-lsky: 전공필수
+										bg-lgrn: 전공선택
+										bg-lpnk: 교양선택
+										bg-lred: 교양필수
+										bg-lorg: 일반
+									-->
+									<li class="bg-lblu">
+										<div class="wrap-flex flex-col lh-1 gap-12">
+											<div class="wrap-flex flex-between">
+												<div class="wrap-flex gap-8">
+													<span class="chip-type-01-b-lgry">관심</span>
+													<span class="chip-type-01-b-lgry">AI추천</span>
+													<span class="chip-type-01-b-lgry">롤모델</span>
+													<span class="chip-type-01-b-lgry">전공추천</span>
+												</div>
+												<button type="button"><i class="ic-note"></i></button>
+											</div>
+											<div class="wrap-flex flex-center gap-12">
+												<h3 class="lst-tit">보안기초</h3>2학점(3)
+											</div>
+											<div class="wrap-flex flex-between">
+												<ul class="vbar-01">
+													<li>컴퓨터학부</li>
+													<li>1-1</li>
+													<li><span class="chip-type-02"></span></li>
+												</ul>
+												<button type="button" class="btn-type-b btn-b-lgry btn-r-32-02">교과정보</button>
+											</div>
+										</div>
+									</li>
+									<li class="bg-lgrn">
+										<div class="wrap-flex flex-col lh-1 gap-12">
+											<div class="wrap-flex flex-between">
+												<div class="wrap-flex gap-8">
+													<span class="chip-type-01-b-lgry">관심</span>
+													<span class="chip-type-01-b-lgry">AI추천</span>
+													<span class="chip-type-01-b-lgry">롤모델</span>
+													<span class="chip-type-01-b-lgry">전공추천</span>
+												</div>
+												<button type="button"><i class="ic-note"></i></button>
+											</div>
+											<div class="wrap-flex flex-center gap-12">
+												<h3 class="lst-tit">보안기초</h3>2학점(3)
+											</div>
+											<div class="wrap-flex flex-between">
+												<ul class="vbar-01">
+													<li>컴퓨터학부</li>
+													<li>1-1</li>
+													<li><span class="chip-type-02"></span></li>
+												</ul>
+												<button type="button" class="btn-type-b btn-b-lgry btn-r-32-02">교과정보</button>
+											</div>
+										</div>
+									</li>
+									<li class="bg-lsky">
+										<div class="wrap-flex flex-col lh-1 gap-12">
+											<div class="wrap-flex flex-between">
+												<div class="wrap-flex gap-8">
+													<span class="chip-type-01-b-lgry">관심</span>
+													<span class="chip-type-01-b-lgry">AI추천</span>
+													<span class="chip-type-01-b-lgry">롤모델</span>
+													<span class="chip-type-01-b-lgry">전공추천</span>
+												</div>
+												<button type="button"><i class="ic-note"></i></button>
+											</div>
+											<div class="wrap-flex flex-center gap-12">
+												<h3 class="lst-tit">보안기초</h3>2학점(3)
+											</div>
+											<div class="wrap-flex flex-between">
+												<ul class="vbar-01">
+													<li>컴퓨터학부</li>
+													<li>1-1</li>
+													<li><span class="chip-type-02"></span></li>
+												</ul>
+												<button type="button" class="btn-type-b btn-b-lgry btn-r-32-02">교과정보</button>
+											</div>
+										</div>
+									</li>
+									<li class="bg-lgry-02">
+										<div class="wrap-flex flex-col lh-1 gap-12">
+											<div class="wrap-flex flex-between">
+												<div class="wrap-flex gap-8">
+													<span class="chip-type-01-b-lgry">관심</span>
+													<span class="chip-type-01-b-lgry">AI추천</span>
+													<span class="chip-type-01-b-lgry">롤모델</span>
+													<span class="chip-type-01-b-lgry">전공추천</span>
+												</div>
+												<button type="button" disabled><i class="ic-note"></i></button>
+											</div>
+											<div class="wrap-flex flex-center gap-12">
+												<h3 class="lst-tit">보안기초</h3>2학점(3)
+											</div>
+											<div class="wrap-flex flex-between">
+												<ul class="vbar-01">
+													<li>컴퓨터학부</li>
+													<li>1-1</li>
+													<li><span class="chip-type-02"></span></li>
+												</ul>
+												<button type="button" class="btn-type-b btn-b-lgry btn-r-32-02">교과정보</button>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="wrap-flex flex-col lh-1 gap-12">
+											<div class="wrap-flex flex-between">
+												<div class="wrap-flex gap-8">
+													<span class="chip-type-01-b-lgry">관심</span>
+													<span class="chip-type-01-b-lgry">AI추천</span>
+													<span class="chip-type-01-b-lgry">롤모델</span>
+													<span class="chip-type-01-b-lgry">전공추천</span>
+												</div>
+												<button type="button"><i class="ic-note"></i></button>
+											</div>
+											<div class="wrap-flex flex-center gap-12">
+												<h3 class="lst-tit">정보보안기사</h3>
+											</div>
+											<div class="wrap-flex flex-between">
+												<ul class="vbar-01">
+													<li>한국산업인력공단</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li class="active">
+								<div class="my-major-map-step">
+									<i class="ic-chk"></i>
+								</div>
+								<div class="wrap-flex flex-center gap-12">
+									<h3 class="tit-02">이수중</h3>
+									<span class="cr-blk">2학년 2학기</span>
+								</div>
+								<ul class="lst-type-02-01 my-major-map-lst">
+									<li class="bg-lblu">
+										<div class="wrap-flex flex-col lh-1 gap-12">
+											<div class="wrap-flex flex-between">
+												<div class="wrap-flex gap-8">
+													<span class="chip-type-01-b-lgry">관심</span>
+													<span class="chip-type-01-b-lgry">AI추천</span>
+													<span class="chip-type-01-b-lgry">롤모델</span>
+													<span class="chip-type-01-b-lgry">전공추천</span>
+												</div>
+												<button type="button"><i class="ic-note"></i></button>
+											</div>
+											<div class="wrap-flex flex-center gap-12">
+												<h3 class="lst-tit">보안기초</h3>2학점(3)
+											</div>
+											<div class="wrap-flex flex-between">
+												<ul class="vbar-01">
+													<li>컴퓨터학부</li>
+													<li>1-1</li>
+													<li><span class="chip-type-02"></span></li>
+												</ul>
+												<button type="button" class="btn-type-b btn-b-lgry btn-r-32-02">교과정보</button>
+											</div>
+										</div>
+									</li>
+									<li class="bg-lred">
+										<div class="wrap-flex flex-col lh-1 gap-12">
+											<div class="wrap-flex flex-between">
+												<div class="wrap-flex gap-8">
+													<span class="chip-type-01-b-lgry">관심</span>
+													<span class="chip-type-01-b-lgry">AI추천</span>
+													<span class="chip-type-01-b-lgry">롤모델</span>
+													<span class="chip-type-01-b-lgry">전공추천</span>
+												</div>
+												<button type="button"><i class="ic-note"></i></button>
+											</div>
+											<div class="wrap-flex flex-center gap-12">
+												<h3 class="lst-tit">보안기초</h3>2학점(3)
+											</div>
+											<div class="wrap-flex flex-between">
+												<ul class="vbar-01">
+													<li>컴퓨터학부</li>
+													<li>1-1</li>
+													<li><span class="chip-type-02"></span></li>
+												</ul>
+												<button type="button" class="btn-type-b btn-b-lgry btn-r-32-02">교과정보</button>
+											</div>
+										</div>
+									</li>
+									<li class="bg-lpnk">
+										<div class="wrap-flex flex-col lh-1 gap-12">
+											<div class="wrap-flex flex-between">
+												<div class="wrap-flex gap-8">
+													<span class="chip-type-01-b-lgry">관심</span>
+													<span class="chip-type-01-b-lgry">AI추천</span>
+													<span class="chip-type-01-b-lgry">롤모델</span>
+													<span class="chip-type-01-b-lgry">전공추천</span>
+												</div>
+												<button type="button"><i class="ic-note"></i></button>
+											</div>
+											<div class="wrap-flex flex-center gap-12">
+												<h3 class="lst-tit">보안기초</h3>2학점(3)
+											</div>
+											<div class="wrap-flex flex-between">
+												<ul class="vbar-01">
+													<li>컴퓨터학부</li>
+													<li>1-1</li>
+													<li><span class="chip-type-02"></span></li>
+												</ul>
+												<button type="button" class="btn-type-b btn-b-lgry btn-r-32-02">교과정보</button>
+											</div>
+										</div>
+									</li>
+									<li class="bg-lorg">
+										<div class="wrap-flex flex-col lh-1 gap-12">
+											<div class="wrap-flex flex-between">
+												<div class="wrap-flex gap-8">
+													<span class="chip-type-01-b-lgry">관심</span>
+													<span class="chip-type-01-b-lgry">AI추천</span>
+													<span class="chip-type-01-b-lgry">롤모델</span>
+													<span class="chip-type-01-b-lgry">전공추천</span>
+												</div>
+												<button type="button" disabled><i class="ic-note"></i></button>
+											</div>
+											<div class="wrap-flex flex-center gap-12">
+												<h3 class="lst-tit">보안기초</h3>2학점(3)
+											</div>
+											<div class="wrap-flex flex-between">
+												<ul class="vbar-01">
+													<li>컴퓨터학부</li>
+													<li>1-1</li>
+													<li><span class="chip-type-02"></span></li>
+												</ul>
+												<button type="button" class="btn-type-b btn-b-lgry btn-r-32-02">교과정보</button>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="wrap-flex flex-col lh-1 gap-12">
+											<div class="wrap-flex flex-between">
+												<div class="wrap-flex gap-8">
+													<span class="chip-type-01-b-lgry">관심</span>
+													<span class="chip-type-01-b-lgry">AI추천</span>
+													<span class="chip-type-01-b-lgry">롤모델</span>
+													<span class="chip-type-01-b-lgry">전공추천</span>
+												</div>
+												<button type="button"><i class="ic-note"></i></button>
+											</div>
+											<div class="wrap-flex flex-center gap-12">
+												<h3 class="lst-tit">정보보안기사</h3>
+											</div>
+											<div class="wrap-flex flex-between">
+												<ul class="vbar-01">
+													<li>한국산업인력공단</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<div class="my-major-map-step">
+									<i class="ic-chk"></i>
+								</div>
+								<div class="wrap-flex flex-center gap-12">
+									<h3 class="tit-02">이수예정</h3>
+									<span class="cr-blk">3학점 계획중</span>
+								</div>
+								<ul class="lst-type-02-01 my-major-map-lst">
+									<li class="bg-lblu">
+										<div class="wrap-flex flex-col lh-1 gap-12">
+											<div class="wrap-flex flex-between">
+												<div class="wrap-flex gap-8">
+													<span class="chip-type-01-b-lgry">관심</span>
+													<span class="chip-type-01-b-lgry">AI추천</span>
+													<span class="chip-type-01-b-lgry">롤모델</span>
+													<span class="chip-type-01-b-lgry">전공추천</span>
+												</div>
+												<button type="button"><i class="ic-note"></i></button>
+											</div>
+											<div class="wrap-flex flex-center gap-12">
+												<h3 class="lst-tit">보안기초</h3>2학점(3)
+											</div>
+											<div class="wrap-flex flex-between">
+												<ul class="vbar-01">
+													<li>컴퓨터학부</li>
+													<li>1-1</li>
+													<li><span class="chip-type-02"></span></li>
+												</ul>
+												<button type="button" class="btn-type-b btn-b-lgry btn-r-32-02">교과정보</button>
+											</div>
+										</div>
+									</li>
+									<li class="bg-lred">
+										<div class="wrap-flex flex-col lh-1 gap-12">
+											<div class="wrap-flex flex-between">
+												<div class="wrap-flex gap-8">
+													<span class="chip-type-01-b-lgry">관심</span>
+													<span class="chip-type-01-b-lgry">AI추천</span>
+													<span class="chip-type-01-b-lgry">롤모델</span>
+													<span class="chip-type-01-b-lgry">전공추천</span>
+												</div>
+												<button type="button"><i class="ic-note"></i></button>
+											</div>
+											<div class="wrap-flex flex-center gap-12">
+												<h3 class="lst-tit">보안기초</h3>2학점(3)
+											</div>
+											<div class="wrap-flex flex-between">
+												<ul class="vbar-01">
+													<li>컴퓨터학부</li>
+													<li>1-1</li>
+													<li><span class="chip-type-02"></span></li>
+												</ul>
+												<button type="button" class="btn-type-b btn-b-lgry btn-r-32-02">교과정보</button>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="wrap-inner mt-40">
+					<div class="wrap-flex flex-j-end gap-12">
+						<a href="#" class="btn-type-b btn-b-blk job-btn-search m-flex-1 m-btn-r-90">삭제</a>
+						<a href="#" class="btn-type-b job-btn-search m-flex-1 m-btn-r-90">수정</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div data-include="../include/footer.html"></div>
+	</body>
+</html>
