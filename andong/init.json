@@ -29,6 +29,11 @@
 						{ "menu": "상세", "src": "./page/role_v.html", "state": "" }
 					], "state": "" }
 				], "state": ""},
+				{ "id": "My Major Map", "submenu": [
+					{ "menu": "목록", "src": "./page/majormap_l.html", "state": "comp" },
+					{ "menu": "등록/수정", "src": "./page/majormap_w.html", "state": "" },
+					{ "menu": "상세", "src": "./page/majormap_v.html", "state": "" }
+				], "state": "work" },
 				{ "id": "e-Notice", "submenu": [
 					{ "id": "공지사항", "submenu": [
 						{ "menu": "목록", "src": "./page/notice_l.html", "state": "comp" },

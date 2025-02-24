@@ -162,10 +162,46 @@
 				.vbar-03 > * + *:before {background-image:var(--ico); background-position:0 var(--100); background-size:var(--ico-sz); width:0.69vw; height:1.2vw;}
 
 		/* Form */
+			.form-grp-type-01 .opt-txt {height:5.56vw; padding:0 3.33vw; font-size:3.33vw;}
+			.form-grp-type-01 input:checked + .opt-txt {padding:0 3.33vw; font-size:3.33vw;}
+			.form-grp-type-01 > *:first-child .opt-txt,
+			.form-grp-type-01 > *:first-child input:checked + .opt-txt {border-top-left-radius:1.11vw; border-bottom-left-radius:1.11vw;}
+			.form-grp-type-01 > *:last-child .opt-txt,
+			.form-grp-type-01 > *:last-child input:checked + .opt-txt {border-top-right-radius:1.11vw; border-bottom-right-radius:1.11vw;}
+
+			/* Selection Base */
+				.form-type-opt-01 .opt-txt {border-radius:2.50vw; padding:5.56vw;}
+
 			/* Checkbox & Radio Type */
 				/* Button */
 					.form-type-opt-btn-01 .opt-txt,
 					.form-type-opt-btn-01 input:checked + .opt-txt {border-radius:2.78vw; min-height:15.28vw; font-size:4.17vw;}
+
+				/* Checkbox */
+					[class*="form-type-opt-chk-01"] .opt-txt:before {width:3.47vw; height:4.44vw;}
+
+					.form-type-opt-chk-02 {font-weight:500;}
+					.form-type-opt-chk-02 .opt-txt {gap:2.50vw;}
+					.form-type-opt-chk-02 .opt-txt:before {flex:0 0 3.47vw; width:3.47vw; height:4.44vw;}
+
+					.form-type-opt-chk-03 .opt-txt {gap:2.78vw; align-items:center;}
+					.form-type-opt-chk-03 .opt-txt:before {flex:0 0 5.56vw; width:5.56vw; height:5.56vw;}
+					.form-type-opt-chk-03 .opt-txt:after {left:1.39vw; top:1.67vw; width:3.06vw; height:2.36vw;}
+
+				/* Radio */
+					.form-type-opt-rdo-01 .opt-txt {gap:2.50vw;}
+					.form-type-opt-rdo-01 .opt-txt:before,
+					.form-type-opt-rdo-01 .opt-txt:after {display:none;}
+
+					.form-type-opt-rdo-02 .opt-txt {font-size:3.88vw;}
+					.form-type-opt-rdo-02 .opt-txt:before {flex:0 0 27.78vw; border-radius:2.50vw; width:27.78vw; height:27.78vw;}
+					.form-type-opt-rdo-02 input:disabled + .opt-txt:after {left:9.44vw; top:7.36vw; width:9.31vw; height:10.97vw;}
+
+				/* Switch */
+					.form-type-opt-swh-01 .opt-txt {flex:0 0 11.25vw; width:11.25vw;}
+					.form-type-opt-swh-01 .opt-txt:before {flex:0 0 11.25vw; height:6.39vw;}
+					.form-type-opt-swh-01 .opt-txt:after {top:0.56vw; width:5.28vw; height:5.28vw;}
+					.form-type-opt-swh-01 input:checked + .opt-txt:after {left:5.28vw;}
 
 			/* Combobox */
 				.form-type-dropdown-01 .n-base-selection {border-radius:1.39vw; width:100%;}
@@ -178,32 +214,78 @@
 				.form-type-dropdown-01 .n-base-selection-placeholder__inner {font-size:3.89vw;}
 
 		/* Icon */
+			.ic-chk:before {width:4.17vw; height:3.06vw;}
+			.ic-clip:before {width:3.33vw; height:3.06vw;}
+			.ic-comp:before {width:4.17vw; height:3.19vw;}
+			.ic-copy:before {width:3.47vw; height:3.75vw;}
 			.ic-delete:before {background-position:var(--650) var(--50); width:2.22vw; height:2.22vw;}
+			.ic-down:before {width:2.36vw; height:2.08vw;}
+			.ic-info:before {width:3.33vw; height:3.33vw;}
+			.ic-l-arrow:before {width:2.78vw; height:4.72vw;}
+			.ic-link:before {width:2.50vw; height:2.50vw;}
+			.ic-minus:before {width:2.50vw; height:0.56vw;}
+			.ic-note:before {width:4.86vw; height:3.75vw;}
 			.ic-notice:before {width:3.75vw; height:4.31vw;}
+			.ic-pencle:before {width:3.33vw; height:3.19vw;}
+			.ic-pencle-02:before {width:3.33vw; height:3.19vw;}
+			.ic-plus {box-shadow:0 0.42vw 0.69vw rgba(0, 0, 0, 0.14); width:6.67vw; height:6.67vw;}
+			.ic-plus:before {width:2.92vw; height:2.92vw;}
+			.ic-plus-02:before {width:2.92vw; height:2.92vw;}
+			.ic-prn:before {width:4.03vw; height:4.17vw;}
+			.ic-r-arrow:before {width:4.86vw; height:1.25vw;}
+			.ic-r-arrow-02:before {width:1.25vw; height:2.08vw;}
+			.ic-r-arrow-03:before {width:1.25vw; height:2.22vw;}
+			.ic-refresh:before {width:3.61vw; height:3.61vw;}
 			.ic-refresh-02:before {background-position:var(--600) var(--50); width:3.06vw; height:3.47vw;}
+			.ic-trash:before {width:3.47vw; height:3.75vw;}
+			.ic-wait:before {width:4.17vw; height:3.47vw;}
+			.ic-wait-02:before {background-position:var(--550) var(--50); width:1.39vw; height:2.22vw;}
+			.ic-x:before {background-position:var(--450) var(--50); width:4.17vw; height:4.17vw;}
 			.ic-zoom:before {width:4.44vw; height:4.44vw;}
 
 		/* List */
-			[class*="lst-type-02"] {gap:2.22vw;}
-			[class*="lst-type-02"] > * {border-radius:2.5vw; height:14.44vw; padding:0 5.27vw;}
-			[class*="lst-type-02"] a {gap:2.22vw; font-size:3.33vw;}
-			[class*="lst-type-02"] .lst-tit {font-size:3.89vw;}
-			[class*="lst-type-02"] .brd-num {width:3.75vw;}
-			[class*="lst-type-02"].bp-number-01 .lst-tit {font-size:3.06vw;}
-			[class*="lst-type-02"] .lst-bottom {width:calc(100% + 10.82vw); margin:5.56vw -5.42vw -5.42vw -5.42vw;}
-			[class*="lst-type-02"] .lst-bottom > * {height:10.00vw;}
-			[class*="lst-type-02"] .lst-bottom > *:first-child {border-bottom-left-radius:2.50vw;}
-			[class*="lst-type-02"] .lst-bottom > *:last-child {border-bottom-right-radius:2.50vw;}
+			/* List */
+				.lst-type-01 {font-size:3.89vw;}
+				.lst-type-01 > * {gap:6.39vw; padding:4.44vw 0;}
 
-			.lst-type-02-01 > * {border-radius:2.50vw; height:auto; padding:5.28vw;}
-			.lst-type-02-01[class*="bp-number"] > * {gap:2.22vw;}
-			.lst-type-02-01[class*="bp-number"] .lst-tit {gap:2.22vw;}
-			.lst-type-02-01[class*="bp-number"] .lst-tit:before {width:4.58vw; height:4.58vw; font-size:3.06vw;}
+				[class*="lst-type-02"] {gap:2.22vw;}
+				[class*="lst-type-02"] > * {border-radius:2.5vw; height:14.44vw; padding:0 5.27vw;}
+				[class*="lst-type-02"] a {gap:2.22vw; font-size:3.33vw;}
+				[class*="lst-type-02"] .lst-tit {font-size:3.89vw;}
+				[class*="lst-type-02"] .brd-num {width:3.75vw;}
+				[class*="lst-type-02"].bp-number-01 .lst-tit {font-size:3.06vw;}
+				[class*="lst-type-02"] .lst-bottom {width:calc(100% + 10.82vw); margin:5.56vw -5.42vw -5.42vw -5.42vw;}
+				[class*="lst-type-02"] .lst-bottom > * {height:10.00vw;}
+				[class*="lst-type-02"] .lst-bottom > *:first-child {border-bottom-left-radius:2.50vw;}
+				[class*="lst-type-02"] .lst-bottom > *:last-child {border-bottom-right-radius:2.50vw;}
 
-			.lst-type-02-02 > * {align-items:flex-start; flex-direction:column; border-radius:2.50vw; height:auto; padding:5.28vw;}
+				.lst-type-02-01 > * {border-radius:2.50vw; height:auto; padding:5.28vw;}
+				.lst-type-02-01[class*="bp-number"] > * {gap:2.22vw;}
+				.lst-type-02-01[class*="bp-number"] .lst-tit {gap:2.22vw;}
+				.lst-type-02-01[class*="bp-number"] .lst-tit:before {width:4.58vw; height:4.58vw; font-size:3.06vw;}
 
-			[class*="lst-tag"] {gap:1.67vw; margin-top:3.33vw; font-size:3.33vw;}
-			[class*="lst-tag"] > * {gap:2.78vw; border-radius:8.89vw; height:8.89vw; padding:0 4.17vw;}
+				.lst-type-02-02 > * {align-items:flex-start; flex-direction:column; border-radius:2.50vw; height:auto; padding:5.28vw;}
+
+				.lst-type-04 {display:grid;}
+
+				.lst-type-05 {border-radius:2.08vw;}
+				.lst-type-05 > * {height:12.22vw; padding:0 4.17vw;}
+
+			/* Other */
+				[class*="lst-tag"] {gap:1.67vw; margin-top:3.33vw; font-size:3.33vw;}
+				[class*="lst-tag"] > * {gap:2.78vw; border-radius:8.89vw; height:8.89vw; padding:0 4.17vw;}
+
+				.lst-badge {grid-template-columns:repeat(3, 1fr); gap:3.33vw;}
+				.lst-badge .form-type-opt-rdo-02 {gap:2.08vw;}
+				.lst-badge .badge-img {border-radius:2.50vw;}
+
+				.lst-tag {gap:1.67vw; font-size:3.33vw;}
+				.lst-tag > * {gap:3.06vw; border-radius:8.89vw; height:8.89vw; padding:0 4.17vw;}
+				.lst-tag .lst-tag-delete:before {width:1.94vw; height:1.94vw;}
+
+				.lst-menu {gap:2.78vw;}
+				.lst-menu > * {border-radius:2.22vw; height:auto; padding:4.44vw 5.83vw;}
+				.lst-menu i {padding-bottom:2vw;}
 
 		/* Popup */
 			.n-card.n-modal {border-radius:0; width:100dvw !important;}
@@ -218,6 +300,10 @@
 				.swi-navigation-01 .swiper-button-next {width:8.33vw; height:8.33vw;}
 				.swi-navigation-01 .swiper-button-prev:after,
 				.swi-navigation-01 .swiper-button-next:after {width:1.67vw; height:2.78vw;}
+
+		/* Text */
+			.txt-info {gap:2.22vw; font-size:3.33vw;}
+			.txt-num {width:4.58vw; height:4.58vw; font-size:3.06vw;}
 
 		/* Title */
 			.tit-01 {font-size:5vw;}
