@@ -41,13 +41,22 @@
 				<p class="sub-top-txt02">나의 학습 이력을 조회할 수 있습니다.</p>
 			</div>
 			<div class="brd-wrap mt90">
-				<div class="brd-form">
-					<div class="sel-type01 ">
+				<div class="brd-form fx-jcsb fx-aic">
+					<div class="sel-type01">
 						<select name="" id="">
 							<option value="">최신순</option>
 							<option value="">관심도순</option>
 							<option value="">조회순</option>
 						</select>
+					</div>
+					<div class="fx-jcsb fx-aic fx-gap-05">
+						<h2 class="tit-07">교내부서 운영과정 보기</h2>
+						<div class="switch">
+							<div class="switch_1">
+							<input id="switch-1" type="checkbox">
+							<label for="switch-1"></label>
+							</div>
+						</div>
 					</div>
 				</div>
 				<ul id="notiLst" class="brd-lst02"></ul>
