@@ -48,12 +48,12 @@
 		--st-red: #fa331e; /* 상태 컬러 Red */
 		--st-org: #f9a015; /* 상태 컬러 Orange */
 		--st-ylw: #ffc107; /* 상태 컬러 Yellow */
-		--st-grn: #24bd65; /* 상태 컬러 Green */
-		--st-sky: #53b1e2; /* 상태 컬러 SkyBlue */
-		--st-blu: #1458db; /* 상태 컬러 Blue */
 		--st-pur: #9c27b0; /* 상태 컬러 Purple */
 		--st-pnk: #f52b81; /* 상태 컬러 Pink */
 
+		--st-grn: #24bd65; /* 상태 컬러 Green */
+		--st-sky: #53b1e2; /* 상태 컬러 SkyBlue */
+		--st-blu: #1c4fa0; /* 상태 컬러 Blue */
 	/* Form */
 		--fom-h: 48px; /* 높이 */
 		--fom-br: 8px; /* 보더 라디우스 */

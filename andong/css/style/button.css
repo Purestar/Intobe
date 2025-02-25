@@ -12,6 +12,9 @@
 		[class*="btn-type"][readonly] {background:var(--fom-dis-bg); border-color:var(--fom-dis-bg); color:var(--fom-ph); cursor:default; pointer-events:none; user-select:none;}
 		[disabled] [class*="ic-"] {opacity:0.5;}
 
+		[class*="btn-type-b"]:disabled,
+		[class*="btn-type-b"][disabled] {background:white; border-color:#e4e4e4; color:#e4e4e4;}
+
 	/* Button Group */
 		[class*="btn-grp-type"] {overflow:hidden; display:inline-flex; border-radius:var(--fom-br); min-height:var(--fom-h);}
 		[class*="btn-grp-type"]:hover {background:none;}

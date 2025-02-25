@@ -34,7 +34,10 @@
 					{ "menu": "상세", "src": "./page/majormap_v.html", "state": "work" }
 				], "state": "work" },
 				{ "id": "My Career", "submenu": [
-					{ "menu": "나의진단", "src": "./page/diagnosis_l.html", "state": "" },
+					{ "id": "나의진단", "submenu": [
+						{ "menu": "목록", "src": "./page/diagnosis_l.html", "state": "comp" },
+						{ "menu": "상세", "src": "./page/self-intro_v.html", "state": "" }
+					], "state": "work" },
 					{ "id": "자기소개서", "submenu": [
 						{ "menu": "목록", "src": "./page/self-intro_l.html", "state": "comp" },
 						{ "menu": "등록/수정", "src": "./page/self-intro_w.html", "state": "comp" },

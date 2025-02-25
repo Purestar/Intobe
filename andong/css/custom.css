@@ -165,9 +165,14 @@
 
 	[class*="chip-type-03"] {border:none; border-radius:30px; min-width:68px; height:30px; padding:0 14px; font-size:14px; font-weight:500; color:white;}
 
-	.chip-type-03-grn {background:#24bd65;}
-	.chip-type-03-sky {background:#39bdde;}
-	.chip-type-03-blu {background:#1c4fa0;}
+	.chip-type-03-grn {background:var(--st-grn);}
+	.chip-type-03-sky {background:var(--st-sky);}
+	.chip-type-03-blu {background:var(--st-blu);}
+
+	[class*="chip-type-04"] {flex:0 0 70px; border:none; border-radius:50%; width:70px; height:70px; font-size:14px; font-weight:500; color:white;}
+
+	.chip-type-04-grn {background:var(--st-grn);}
+	.chip-type-04-blu {background:var(--st-blu);}
 
 /* Divider */
 	/* Horizontal */
@@ -236,7 +241,7 @@
 			.form-type-opt-chk-01-01 .opt-txt:before {flex:0 0 25px; background-position:var(--350) var(--50);}
 
 			.form-type-opt-chk-02 .opt-txt {gap:12px; align-items:center; word-break:keep-all; color:black;}
-			.form-type-opt-chk-02 .opt-txt:before {flex:0 0 14px; background-position:var(--150) var(--50); border:none; width:14px; height:16px; transition:none;}
+			.form-type-opt-chk-02 .opt-txt:before {flex:0 0 17px; background-position:var(--150) var(--50); border:none; width:17px; height:15px; transition:none;}
 			.form-type-opt-chk-02 input:focus + .opt-txt:before {border:none !important;}
 			.form-type-opt-chk-02 input:checked + .opt-txt:before {background-color:transparent; background-position:var(--200) var(--50);}
 			.form-type-opt-chk-02 .opt-txt:after {display:none;}

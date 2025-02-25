@@ -22,5 +22,43 @@
 		<div id="container">
 		</div>
 		<div data-include="../include/footer.html"></div>
+
+		<script>
+			const { createApp } = Vue
+			const { NCard, NTabs, NTabPane, create } = naive
+
+			const bookMarkApp = createApp({
+				components: {
+					NCard,
+					NTabs,
+					NTabPane
+				}
+			});
+
+			const panelApp = createApp({
+				components: {
+					NCard,
+					NTabs,
+					NTabPane
+				}
+			})
+
+			const mobileBookMarkApp = createApp({
+				components: {
+					NCard,
+					NTabs,
+					NTabPane
+				}
+			});
+		</script>
+		<script>
+			console.log(bookMarkApp);
+			bookMarkApp.use(create())
+			bookMarkApp.mount('#bookmark-tabs')
+			panelApp.use(create())
+			panelApp.mount('#panel-tabs')
+			mobileBookMarkApp.use(create())
+			mobileBookMarkApp.mount('#m-bookmark-tabs')
+		</script>
 	</body>
 </html>

@@ -148,6 +148,7 @@
 				.btn-r-32-02 {border-radius:1.11vw; height:7.78vw; padding:0 2.64vw; font-size:3.33vw;}
 
 				.m-r-71 {border-radius:1.94vw; height:9.86vw; padding:0 3vw;}
+				.m-btn-r-56 {height:7.78vw; font-size:3.33vw;}
 				.m-btn-r-72 {border-radius:2.78vw; height:10.00vw; padding:0 3vw; font-size:3.89vw;}
 				.m-btn-r-90 {border-radius:2.50vw; height:12.50vw; padding:0 3vw; font-size:4.17vw;}
 
@@ -163,6 +164,7 @@
 		/* Chip */
 			[class*="chip-type-01"] {border-radius:4.72vw; height:4.72vw; padding:0 2.78vw; font-size:2.78vw;}
 			[class*="chip-type-02"] {border-radius:0.56vw; height:4.72vw; padding:0 1.94vw; font-size:2.78vw;}
+			[class*="chip-type-04"] {flex:0 0 13.89vw; width:13.89vw; height:13.89vw; font-size:3.33vw;}
 
 		/* Divider */
 			/* Horizontal */
