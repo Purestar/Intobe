@@ -290,22 +290,22 @@
 			.form-type-opt-swh-01 input:checked + .opt-txt + .txt-extra .lst-tit {color:black;}
 			.form-type-opt-swh-01:before {content:""; position:absolute; left:0; top:0; height:100%; width:100%;}
 
-		/* Datalist */
-			.form-type-datalist-01 datalist {width:100% !important; left:0 !important;}
-			.form-type-datalist-01 option:nth-child(even) {background:#f9f9f9;}
-			.form-type-datalist-01 option:hover {color:black;}
+	/* Datalist */
+		.form-type-datalist-01 datalist {width:100% !important; left:0 !important;}
+		.form-type-datalist-01 option:nth-child(even) {background:#f9f9f9;}
+		.form-type-datalist-01 option:hover {color:black;}
 
-		/* File */
-			.form-type-file-01 {background:#f9f9f9; border-radius:8px; width:150px; height:200px; font-size:14px; color:var(--mdc);}
-			.form-type-file-01 > * {display:flex; flex-direction:column; align-items:center; justify-content:center; gap:16px; width:100%; height:100%;}
-			.form-type-file-01 input {position:absolute; left:-1000em;}
+	/* File */
+		.form-type-file-01 {background:#f9f9f9; border-radius:8px; width:150px; height:200px; font-size:14px; color:var(--mdc);}
+		.form-type-file-01 > * {display:flex; flex-direction:column; align-items:center; justify-content:center; gap:16px; width:100%; height:100%;}
+		.form-type-file-01 input {position:absolute; left:-1000em;}
 
-		/* Text */
-			.form-type-txt-01 {border-color:#e2e2e2; border-radius:16px; height:80px; padding:0 24px; font-size:20px; font-weight:700;}
+	/* Text */
+		.form-type-txt-01 {border-color:#e2e2e2; border-radius:16px; height:80px; padding:0 24px; font-size:20px; font-weight:700;}
 
-		/* Textarea */
-			.form-type-tarea-01 .txt-limit {margin-top:30px; font-size:14px;}
-			.form-type-tarea-tr .txt-limit {font-size:14px; text-align:right;}
+	/* Textarea */
+		.form-type-tarea-01 .txt-limit {margin-top:30px; font-size:14px;}
+		.form-type-tarea-tr .txt-limit {font-size:14px; text-align:right;}
 
 	/* Combobox */
 		.form-type-dropdown-01 {flex:0;}
@@ -321,41 +321,47 @@
 		.form-type-dropdown-01 .n-base-clear:before {content:""; display:block; background-image:var(--ico-c); background-position:var(--150) var(--200); background-size:var(--ico-sz); width:14px; height:8px; transform-origin:center; transition:transform .3s ease;}
 		.form-type-dropdown-01 .n-base-selection--active .n-base-clear:before {transform:rotate(180deg);}
 
-	/* Icon */
-		.ic-chk:before {background-position:var(--350) var(--50); width:47px; height:46px;}
-		.ic-clip:before {background-position:var(--150) var(--50); width:18px; height:18px;}
-		.ic-comp:before {background-position:var(--250) 0; width:27px; height:19px;}
-		.ic-copy:before {background-position:var(--900) 0; width:16px; height:16px;}
-		.ic-delete:before {background-position:var(--600) var(--50); width:12px; height:12px;}
-		.ic-down:before {background-position:var(--600) 0; width:10px; height:8px;}
-		.ic-download:before {background-position:var(--250) var(--50); width:19px; height:19px;}
-		.ic-info:before {background-position:var(--50) 0; width:18px; height:18px;}
-		.ic-l-arrow:before {background-position:var(--700) 0; width:13px; height:23px;}
-		.ic-l-arrow-02:before {background-position:var(--400) var(--50); width:8px; height:14px;}
-		.ic-link:before {background-position:var(--300) 0; width:12px; height:12px;}
-		.ic-link-02:before {background-position:var(--850) var(--50); width:13px; height:13px;}
-		.ic-minus:before {background-position:var(--50) var(--50); width:10px; height:2px;}
-		.ic-note:before {background-position:var(--300) var(--50); width:31px; height:24px;}
-		.ic-notice:before {background-position:var(--100) var(--50); width:23px; height:26px;}
-		.ic-pencle:before {background-position:var(--450) 0; width:13px; height:12px;}
-		.ic-pencle-02:before {width:17px; height:18px;}
-		.ic-pencle-03:before {background-position:var(--750) var(--50); width:13px; height:13px;}
-		.ic-plus {border:1px solid #e3e3e3; border-radius:50%; box-shadow:0 3px 5px rgba(0, 0, 0, 0.14); width:36px; height:36px;}
-		.ic-plus:before {background-position:var(--200) 0; width:16px; height:16px;}
-		.ic-plus-02:before {background-position:0 var(--50); width:12px; height:12px;}
-		.ic-plus-03:before {background-position:var(--800) var(--50); width:12px; height:12px;}
-		.ic-prn:before {background-position:var(--650) 0; width:19px; height:18px;}
-		.ic-r-arrow:before {background-position:var(--150) 0; width:35px; height:9px;}
-		.ic-r-arrow-02:before {background-position:var(--350) 0; width:5px; height:8px;}
-		.ic-r-arrow-03:before {background-position:var(--550) 0; width:7px; height:12px;}
-		.ic-refresh:before {background-position:var(--750) 0; width:18px; height:17px;}
-		.ic-refresh-02:before {background-position:var(--550) var(--50); width:14px; height:15px;}
-		.ic-setting:before {background-position:var(--100) 0; width:17px; height:17px;}
-		.ic-setting-02:before {background-position:var(--700) var(--50); width:15px; height:15px;}
-		.ic-trash:before {background-position:var(--950) 0; width:16px; height:17px;}
-		.ic-wait:before {background-position:var(--500) 0; width:24px; height:19px;}
-		.ic-wait-02:before {background-position:var(--500) var(--50); width:10px; height:16px;}
-		.ic-zoom:before {background-position:var(--200) var(--50); width:19px; height:19px;}
+/* Graph */
+	.gra-hor-01 {overflow:hidden; background:#ebebeb; border-radius:12px; height:12px;}
+	.gra-hor-01 .gra-inner {background:var(--mc); border-radius:12px; height:100%;}
+
+/* Icon */
+	.ic-chk:before {background-position:var(--350) var(--50); width:47px; height:46px;}
+	.ic-chk-02 {flex:0 0 80px; background:#ebeef5; border-radius:50%; width:80px; height:80px;}
+	.ic-chk-02:before {background-position:var(--900) var(--50); width:36px; height:27px;}
+	.ic-clip:before {background-position:var(--150) var(--50); width:18px; height:18px;}
+	.ic-comp:before {background-position:var(--250) 0; width:27px; height:19px;}
+	.ic-copy:before {background-position:var(--900) 0; width:16px; height:16px;}
+	.ic-delete:before {background-position:var(--600) var(--50); width:12px; height:12px;}
+	.ic-down:before {background-position:var(--600) 0; width:10px; height:8px;}
+	.ic-download:before {background-position:var(--250) var(--50); width:19px; height:19px;}
+	.ic-info:before {background-position:var(--50) 0; width:18px; height:18px;}
+	.ic-l-arrow:before {background-position:var(--700) 0; width:13px; height:23px;}
+	.ic-l-arrow-02:before {background-position:var(--400) var(--50); width:8px; height:14px;}
+	.ic-link:before {background-position:var(--300) 0; width:12px; height:12px;}
+	.ic-link-02:before {background-position:var(--850) var(--50); width:13px; height:13px;}
+	.ic-minus:before {background-position:var(--50) var(--50); width:10px; height:2px;}
+	.ic-note:before {background-position:var(--300) var(--50); width:31px; height:24px;}
+	.ic-notice:before {background-position:var(--100) var(--50); width:23px; height:26px;}
+	.ic-pencle:before {background-position:var(--450) 0; width:13px; height:12px;}
+	.ic-pencle-02:before {width:17px; height:18px;}
+	.ic-pencle-03:before {background-position:var(--750) var(--50); width:13px; height:13px;}
+	.ic-plus {border:1px solid #e3e3e3; border-radius:50%; box-shadow:0 3px 5px rgba(0, 0, 0, 0.14); width:36px; height:36px;}
+	.ic-plus:before {background-position:var(--200) 0; width:16px; height:16px;}
+	.ic-plus-02:before {background-position:0 var(--50); width:12px; height:12px;}
+	.ic-plus-03:before {background-position:var(--800) var(--50); width:12px; height:12px;}
+	.ic-prn:before {background-position:var(--650) 0; width:19px; height:18px;}
+	.ic-r-arrow:before {background-position:var(--150) 0; width:35px; height:9px;}
+	.ic-r-arrow-02:before {background-position:var(--350) 0; width:5px; height:8px;}
+	.ic-r-arrow-03:before {background-position:var(--550) 0; width:7px; height:12px;}
+	.ic-refresh:before {background-position:var(--750) 0; width:18px; height:17px;}
+	.ic-refresh-02:before {background-position:var(--550) var(--50); width:14px; height:15px;}
+	.ic-setting:before {background-position:var(--100) 0; width:17px; height:17px;}
+	.ic-setting-02:before {background-position:var(--700) var(--50); width:15px; height:15px;}
+	.ic-trash:before {background-position:var(--950) 0; width:16px; height:17px;}
+	.ic-wait:before {background-position:var(--500) 0; width:24px; height:19px;}
+	.ic-wait-02:before {background-position:var(--500) var(--50); width:10px; height:16px;}
+	.ic-zoom:before {background-position:var(--200) var(--50); width:19px; height:19px;}
 
 /* List */
 	/* List */
@@ -577,6 +583,11 @@
 		.job-type .no-data {background:#f9f9f9; height:100%;}
 
 		.role-model-chart {width:170px; height:170px;}
+
+	/* My Career */
+		.survey-wrap {width:640px; margin:80px auto 0;}
+		.survey-wrap .survey-not {display:flex; align-items:center; justify-content:center; height:460px; font-size:24px; text-align:center; color:black;}
+		.survey-wrap .survey-comp {display:flex; flex-direction:column; align-items:center; justify-content:center; height:460px; font-size:24px; text-align:center; color:black;}
 
 	/* My Major Map */
 		.my-major-map-wrap {background:#f8f8f8; padding:60px 0 0;}

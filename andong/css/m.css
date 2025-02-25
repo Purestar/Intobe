@@ -247,8 +247,14 @@
 				.form-type-tarea-01 .txt-limit {margin-top:4.17vw; font-size:3.33vw;}
 				.form-type-tarea-tr .txt-limit {font-size:3.33vw;}
 
+		/* Graph */
+			.gra-hor-01 {border-radius:3.33vw; height:3.33vw;}
+			.gra-hor-01 .gra-inner {border-radius:3.33vw;}
+
 		/* Icon */
 			.ic-chk:before {width:4.17vw; height:3.06vw;}
+			.ic-chk-02 {flex:0 0 16.67vw; width:16.67vw; height:16.67vw;}
+			.ic-chk-02:before {width:6.81vw; height:5.42vw;}
 			.ic-clip:before {width:3.33vw; height:3.06vw;}
 			.ic-comp:before {width:4.17vw; height:3.19vw;}
 			.ic-copy:before {width:3.47vw; height:3.75vw;}
@@ -344,6 +350,7 @@
 			.tit-02 {font-size:3.61vw; font-weight:500;}
 			.tit-03 {font-size:5vw;}
 			.tit-04 {font-size:3.89vw;}
+			.tit-05 {font-size:3.89vw;}
 
 	/* 페이지 */
 		/* 관심 */
@@ -424,4 +431,9 @@
 		.job-btn-search {width:23.19vw;}
 
 		.role-model-chart {width:40.28vw; height:40.28vw;}
+
+	/* My Career */
+		.survey-wrap {width:100%; margin:5.83vw auto 0;}
+		.survey-wrap .survey-not {height:63.89vw; font-size:4.44vw;}
+		.survey-wrap .survey-comp {height:63.89vw; font-size:4.44vw;}
 }

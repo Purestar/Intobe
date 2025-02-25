@@ -36,15 +36,15 @@
 				{ "id": "My Career", "submenu": [
 					{ "id": "나의진단", "submenu": [
 						{ "menu": "목록", "src": "./page/diagnosis_l.html", "state": "comp" },
-						{ "menu": "상세", "src": "./page/self-intro_v.html", "state": "" }
-					], "state": "work" },
+						{ "menu": "설문", "src": "./page/diagnosis_survey.html", "state": "comp" }
+					], "state": "comp" },
 					{ "id": "자기소개서", "submenu": [
 						{ "menu": "목록", "src": "./page/self-intro_l.html", "state": "comp" },
 						{ "menu": "등록/수정", "src": "./page/self-intro_w.html", "state": "comp" },
 						{ "menu": "상세", "src": "./page/self-intro_v.html", "state": "comp" }
 					], "state": "comp" },
 					{ "menu": "포트폴리오", "src": "./page/portfolio_l.html", "state": "comp" }
-				], "state": "work"},
+				], "state": "comp"},
 				{ "id": "e-Notice", "submenu": [
 					{ "id": "공지사항", "submenu": [
 						{ "menu": "목록", "src": "./page/notice_l.html", "state": "comp" },
