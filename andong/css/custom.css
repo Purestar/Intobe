@@ -65,7 +65,7 @@
 
 	/* Write */
 		.brd-write .brd-write-area {overflow:hidden; border:1px solid #e2e2e2; border-radius:10px; margin-top:16px;}
-		.brd-write .form-type-tarea-tr {border-radius:0; height:150px;}
+		.brd-write .form-type-tarea-tr {border-top:1px solid #e2e2e2; border-radius:0; height:150px;}
 		.brd-write .btn-add {margin:20px 0 0 20px;}
 		.brd-write .brd-write-ctrl {display:flex; justify-content:space-between; margin-top:40px;}
 		.brd-write .brd-write-ctrl [class*="btn-type"] {min-width:122px;}

@@ -38,8 +38,8 @@
 					{ "id": "자기소개서", "submenu": [
 						{ "menu": "목록", "src": "./page/self-intro_l.html", "state": "comp" },
 						{ "menu": "등록/수정", "src": "./page/self-intro_w.html", "state": "comp" },
-						{ "menu": "상세", "src": "./page/self-intro_v.html", "state": "work" }
-					], "state": "work" },
+						{ "menu": "상세", "src": "./page/self-intro_v.html", "state": "comp" }
+					], "state": "comp" },
 					{ "menu": "포트폴리오", "src": "./page/portfolio_l.html", "state": "comp" }
 				], "state": "work"},
 				{ "id": "e-Notice", "submenu": [
