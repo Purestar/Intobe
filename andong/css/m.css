@@ -198,6 +198,9 @@
 					.form-type-opt-btn-01 .opt-txt,
 					.form-type-opt-btn-01 input:checked + .opt-txt {border-radius:2.78vw; min-height:15.28vw; font-size:4.17vw;}
 
+					.form-type-opt-btn-03 .opt-txt,
+					.form-type-opt-btn-03 input:checked + .opt-txt {border-radius:8.33vw; min-height:8.33vw; font-size:3.33vw;}
+
 				/* Checkbox */
 					[class*="form-type-opt-chk-01"] .opt-txt:before {width:3.47vw; height:4.44vw;}
 
