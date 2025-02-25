@@ -439,6 +439,10 @@
 			#sub-container.wrap-inner {padding-left:5vw; padding-right:5vw;}
 			#contents .sub-title {gap:3.89vw;}
 
+	/* 로그인 */
+		.login-wrap {padding-bottom:5.56vw;}
+		.login-cont {width:100%;}
+
 	/* 메인 */
 		/*.main-section {padding:8.33vw var(--init-m-wr-side-pd);}
 		.main-section > .wrap-inner {padding:0;}

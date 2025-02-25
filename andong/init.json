@@ -14,12 +14,13 @@
 					{ "menu": "첫진입(학부X)", "src": "./page/UEN_010000.html", "state": "comp" },
 					{ "menu": "첫진입(학부O)", "src": "./page/UEN_020000.html", "state": "comp" },
 					{ "menu": "헤더/푸터", "src": "./page/layout.html", "state": "comp" },
+					{ "menu": "로그인", "src": "./page/login.html", "state": "comp" },
 					{ "menu": "팝업", "src": "./page/popup.html", "state": "comp" }
 				], "state": "comp"},
 				{ "menu": "메인", "src": "./page/main.html", "state": "work" },
 				{ "id": "진로탐색", "submenu": [
 					{ "id": "직업", "submenu": [
-						{ "menu": "홈", "src": "./page/job_home.html", "state": "" },
+						{ "menu": "홈", "src": "./page/job_home.html", "state": "work" },
 						{ "menu": "목록", "src": "./page/job_l.html", "state": "" },
 						{ "menu": "상세", "src": "./page/job_v.html", "state": "" }
 					], "state": "" },
@@ -27,7 +28,7 @@
 						{ "menu": "홈", "src": "./page/role_home.html", "state": "comp" },
 						{ "menu": "찾기결과", "src": "./page/role_l.html", "state": "comp" },
 						{ "menu": "상세", "src": "./page/role_v.html", "state": "comp" }
-					], "state": "" }
+					], "state": "comp" }
 				], "state": ""},
 				{ "id": "My Major Map", "submenu": [
 					{ "menu": "목록", "src": "./page/majormap_l.html", "state": "comp" },

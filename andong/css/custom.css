@@ -428,6 +428,7 @@
 		[class*="lst-tag"] {flex-wrap:wrap; gap:12px; margin-top:24px; font-size:14px;}
 		[class*="lst-tag"] > * {display:flex; align-items:center; gap:18px; background:#eceeff; border-radius:34px; height:34px; padding:0 24px; color:var(--mc);}
 
+		.lst-tag-01 {display:flex; gap:12px; margin-top:0;}
 		.lst-tag-01 > * {background:#f5f5f5; color:#666;}
 
 		.lst-badge {display:grid; grid-template-columns:repeat(5, 1fr); gap:20px;}
@@ -588,6 +589,12 @@
 			#container {flex:1;}
 			#sub-container {padding:80px 0 120px;}
 			#contents .sub-title {display:flex; align-items:center; gap:24px;}
+
+
+	/* 로그인 */
+		.login-wrap {display:grid; justify-items:center; align-items:end; height:100dvh; padding-bottom:146px;}
+		.login-cont {display:grid; justify-content:center; justify-items:center; width:380px;}
+		.login-foot {display:grid; justify-items:center;}
 
 	/* 메인 */
 		.main-section {padding:60px 0;}
