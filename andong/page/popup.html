@@ -1164,78 +1164,9 @@
 					</n-card>
 				</n-modal>
 
-				<!-- 자기소개서 복제 -->
-				<button class="btn-type" @click="toggleModal('modal6')" disabled>자기소개서 복제</button>
-				<n-modal v-model:show="modals.modal6">
-					<n-card
-						style="width: 580px"
-						:bordered="false"
-						size="huge"
-						preset="dialog"
-						role="dialog"
-						aria-modal="true"
-					>
-						<template #header>
-							<button type="button" class="pop-close-no-header" @click="toggleModal('modal6')"></button>
-						</template>
-						<div class="txt-c mx-h100">
-							<h1 class="tit-01">자기소개서 복제</h1>
-							<p class="mt-8">복제할 자기소개서의 제목을 입력해주세요</p>
-							<div class="form-type-txt mt-40">
-								<input type="text" value="직업목표와 비전_복제">
-							</div>
-						</div>
-						<template #footer>
-							<button type="button" class="btn-type-b btn-b-blk w100" @click="toggleModal('modal6')">취소</button>
-							<button type="button" class="btn-type-b w100">복제</button>
-						</template>
-					</n-card>
-				</n-modal>
-
-				<!-- 주제선택 -->
-				<button class="btn-type" @click="toggleModal('modal7')" disabled>주제선택</button>
-				<n-modal v-model:show="modals.modal7">
-					<n-card
-						style="width: 580px"
-						:bordered="false"
-						size="huge"
-						preset="dialog"
-						role="dialog"
-						aria-modal="true"
-					>
-						<template #header>
-							<h1 class="tit-01">주제선택</h1><button type="button" class="pop-close-no-header" @click="toggleModal('modal7')"></button>
-						</template>
-						<div class="wrap-flex flex-col gap-16">
-							<div class="form-type-opt-01">
-								<label>
-									<input type="checkbox">
-									<div class="opt-txt">
-										<h2 class="tit-04"><strong>자신의 성장과 배경</strong></h2>
-										<p>가족, 교육, 중요 사건들이 현재의 나를 어떻게 형성했는지 설명합니다.</p>
-									</div>
-								</label>
-							</div>
-							<div class="form-type-opt-01">
-								<label>
-									<input type="checkbox">
-									<div class="opt-txt">
-										<h2 class="tit-04"><strong>자신의 성장과 배경</strong></h2>
-										<p>가족, 교육, 중요 사건들이 현재의 나를 어떻게 형성했는지 설명합니다.</p>
-									</div>
-								</label>
-							</div>
-						</div>
-						<template #footer>
-							<button type="button" class="btn-type-b btn-b-blk w100" @click="toggleModal('modal7')">취소</button>
-							<button type="button" class="btn-type-b w100">확인</button>
-						</template>
-					</n-card>
-				</n-modal>
-
 				<!-- 포트폴리오 등록 -->
-				<button class="btn-type" @click="toggleModal('modal8')" disabled>포트폴리오 등록</button>
-				<n-modal v-model:show="modals.modal8">
+				<button class="btn-type" @click="toggleModal('career2')">포트폴리오 등록</button>
+				<n-modal v-model:show="modals.career2">
 					<n-card
 						style="width: 580px"
 						:bordered="false"
@@ -1245,11 +1176,11 @@
 						aria-modal="true"
 					>
 						<template #header>
-							<button type="button" class="pop-close-no-header" @click="toggleModal('modal8')"></button>
+							<button type="button" class="pop-close-no-header" @click="toggleModal('career2')"></button>
 						</template>
 						<div class="txt-c mx-h100">
 							<h1 class="tit-01">포트폴리오 등록</h1>
-							<n-tabs type="line" class="tabs-type-01-01 mt-40">
+							<n-tabs type="line" class="tabs-type-01-01 tabs-equal mt-40">
 								<n-tab-pane name="portfolio-reg-1" tab="URL">
 									<div class="form-type-txt mt-12">
 										<input type="text" placeholder="포트폴리오의 제목을 입력해주세요.">
@@ -1271,15 +1202,15 @@
 							</n-tabs>
 						</div>
 						<template #footer>
-							<button type="button" class="btn-type-b btn-b-blk w100" @click="toggleModal('modal8')">취소</button>
-							<button type="button" class="btn-type-b w100">확인</button>
+							<button type="button" class="btn-type-b btn-b-blk w100" @click="toggleModal('career2')">취소</button>
+							<button type="button" class="btn-type w100">확인</button>
 						</template>
 					</n-card>
 				</n-modal>
 
 				<!-- 포트폴리오 수정 -->
-				<button class="btn-type" @click="toggleModal('modal9')" disabled>포트폴리오 수정 (URL)</button>
-				<n-modal v-model:show="modals.modal9">
+				<button class="btn-type" @click="toggleModal('career3')">포트폴리오 수정 (URL)</button>
+				<n-modal v-model:show="modals.career3">
 					<n-card
 						style="width: 580px"
 						:bordered="false"
@@ -1289,10 +1220,10 @@
 						aria-modal="true"
 					>
 						<template #header>
-							<button type="button" class="pop-close-no-header" @click="toggleModal('modal9')"></button>
+							<button type="button" class="pop-close-no-header" @click="toggleModal('career3')"></button>
 						</template>
 						<div class="txt-c mx-h100">
-							<h1 class="tit-01">포트폴리오 등록</h1>
+							<h1 class="tit-01">포트폴리오 수정</h1>
 							<div class="form-type-txt mt-40">
 								<input type="text" placeholder="포트폴리오의 제목을 입력해주세요.">
 							</div>
@@ -1301,15 +1232,15 @@
 							</div>
 						</div>
 						<template #footer>
-							<button type="button" class="btn-type-b btn-b-blk w100" @click="toggleModal('modal9')">취소</button>
-							<button type="button" class="btn-type-b w100">확인</button>
+							<button type="button" class="btn-type-b btn-b-blk w100" @click="toggleModal('career3')">취소</button>
+							<button type="button" class="btn-type w100">확인</button>
 						</template>
 					</n-card>
 				</n-modal>
 
-				<!-- 포트폴리오 수정 -->
-				<button class="btn-type" @click="toggleModal('modal10')" disabled>포트폴리오 수정 (File)</button>
-				<n-modal v-model:show="modals.modal10">
+				<!-- 포트폴리오 수정 (File) -->
+				<button class="btn-type" @click="toggleModal('career4')">포트폴리오 수정 (File)</button>
+				<n-modal v-model:show="modals.career4">
 					<n-card
 						style="width: 580px"
 						:bordered="false"
@@ -1319,10 +1250,10 @@
 						aria-modal="true"
 					>
 						<template #header>
-							<button type="button" class="pop-close-no-header" @click="toggleModal('modal10')"></button>
+							<button type="button" class="pop-close-no-header" @click="toggleModal('career4')"></button>
 						</template>
 						<div class="txt-c mx-h100">
-							<h1 class="tit-01">포트폴리오 등록</h1>
+							<h1 class="tit-01">포트폴리오 수정</h1>
 							<div class="form-type-txt mt-16">
 								<input type="text" placeholder="포트폴리오의 제목을 입력해주세요.">
 							</div>
@@ -1333,11 +1264,91 @@
 							<p class="txt-info mt-8"><i class="ic-info"></i>확장자가 zip인 파일을 최대 00MB까지 등록할 수 있습니다.</p>
 						</div>
 						<template #footer>
-							<button type="button" class="btn-type-b btn-b-blk w100" @click="toggleModal('modal10')">취소</button>
-							<button type="button" class="btn-type-b w100">확인</button>
+							<button type="button" class="btn-type-b btn-b-blk w100" @click="toggleModal('career4')">취소</button>
+							<button type="button" class="btn-type w100">확인</button>
 						</template>
 					</n-card>
 				</n-modal>
+
+				<!-- 자기소개서 복제 -->
+				<button class="btn-type" @click="toggleModal('career5')">자기소개서 복제</button>
+				<n-modal v-model:show="modals.career5">
+					<n-card
+						style="width: 580px"
+						:bordered="false"
+						size="huge"
+						preset="dialog"
+						role="dialog"
+						aria-modal="true"
+					>
+						<template #header>
+							<button type="button" class="pop-close-no-header" @click="toggleModal('career5')"></button>
+						</template>
+						<div class="txt-c mx-h100">
+							<h1 class="tit-01">자기소개서 복제</h1>
+							<p class="mt-8">복제할 자기소개서의 제목을 입력해주세요</p>
+							<div class="form-type-txt mt-40">
+								<input type="text" value="직업목표와 비전_복제">
+							</div>
+						</div>
+						<template #footer>
+							<button type="button" class="btn-type-b btn-b-blk w100" @click="toggleModal('career5')">취소</button>
+							<button type="button" class="btn-type w100">복제</button>
+						</template>
+					</n-card>
+				</n-modal>
+
+				<!-- 주제선택 -->
+				<button class="btn-type" @click="toggleModal('career6')">주제선택</button>
+				<n-modal v-model:show="modals.career6">
+					<n-card
+						style="width: 580px"
+						:bordered="false"
+						size="huge"
+						preset="dialog"
+						role="dialog"
+						aria-modal="true"
+					>
+						<template #header>
+							<h1 class="tit-01">주제선택</h1><button type="button" class="pop-close-no-header" @click="toggleModal('career6')"></button>
+						</template>
+						<div class="wrap-flex flex-col gap-16">
+							<div class="form-type-opt-rdo-03">
+								<label>
+									<input type="radio">
+									<div class="opt-txt">
+										<div>
+											<h2 class="tit-04"><strong>자신의 성장과 배경</strong></h2>
+											<p>가족, 교육, 중요 사건들이 현재의 나를 어떻게 형성했는지 설명합니다.</p>
+										</div>
+									</div>
+								</label>
+							</div>
+							<div class="form-type-opt-rdo-03">
+								<label>
+									<input type="radio">
+									<div class="opt-txt">
+										<div>
+											<h2 class="tit-04"><strong>자신의 성장과 배경</strong></h2>
+											<p>가족, 교육, 중요 사건들이 현재의 나를 어떻게 형성했는지 설명합니다.</p>
+										</div>
+									</div>
+								</label>
+							</div>
+						</div>
+						<template #footer>
+							<button type="button" class="btn-type-b btn-b-blk w100" @click="toggleModal('career6')">취소</button>
+							<button type="button" class="btn-type w100">확인</button>
+						</template>
+					</n-card>
+				</n-modal>
+
+
+
+
+
+
+
 
 				<!-- 자기소개서 불러오기 -->
 				<button class="btn-type" @click="toggleModal('modal11')" disabled>자기소개서 불러오기</button>
@@ -1486,26 +1497,10 @@
 						const modals = reactive({
 							modal1: false,
 							modal2: false,
-							modal3: false,
-							modal3a: false,
-							modal4: false,
-							modal5: false,
-							modal6: false,
-							modal7: false,
-							modal8: false,
-							modal9: false,
-							modal10: false,
-							modal11: false,
-							modal12: false,
-							modal13: false,
-							modal14: false,
-							modal15: false,
-							modal16: false,
-							modal17: false,
-							modal18: false,
-							modal19: false,
-							modal20: false,
 							career1: false,
+							career2: false,
+							career3: false,
+							career4: false,
 						});
 
 						const toggleModal = (modalName) => { modals[modalName] = !modals[modalName] };

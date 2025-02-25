@@ -274,6 +274,13 @@
 			.form-type-opt-rdo-02 input:disabled + .opt-txt:after {left:42px; top:40px; background-position:var(--450) var(--50); border-radius:0; width:28px; height:33px;}
 			.form-type-opt-rdo-02 input:disabled + .opt-txt img {opacity:0.5; filter:grayscale(100%);}
 
+			.form-type-opt-rdo-03,
+			.form-type-opt-rdo-03 > * {width:100%;}
+			.form-type-opt-rdo-03 .opt-txt {border:1px solid #e2e2e2; border-radius:16px; width:100%; padding:28px;}
+			.form-type-opt-rdo-03 input:checked + .opt-txt {background:#eff6ff; border-color:var(--mc);}
+			.form-type-opt-rdo-03 input:checked + .opt-txt [class*="tit-"] {color:var(--mc);}
+			.form-type-opt-rdo-03 input:checked + .opt-txt:after {left:33px; top:33px;}
+
 		/* Switch */
 			.form-type-opt-swh-01 {width:100%;}
 			.form-type-opt-swh-01 label {flex-direction:row-reverse; align-items:center; justify-content:space-between; width:100%;}
@@ -442,6 +449,48 @@
 		.swi-navigation-01 .swiper-button-next {background:white; border:1px solid #e3e3e3; border-radius:50%; width:50px; height:50px;}
 		.swi-navigation-01 .swiper-button-prev:after,
 		.swi-navigation-01 .swiper-button-next:after {background-position:var(--150) var(--450); width:8px; height:14px;}
+
+/* Tabs */
+	[class*="tabs-type"] .v-x-scroll {height:100%;}
+	[class*="tabs-type"] .n-tabs-nav.n-tabs-nav--line-type.n-tabs-nav--top .n-tabs-nav-scroll-content {border:0;}
+	[class*="tabs-type"] .n-tabs-wrapper {width:100%;}
+	[class*="tabs-type"] .n-tabs-tab,
+	[class*="tabs-type"] .n-tabs-tab.n-tabs-tab--active,
+	[class*="tabs-type"] .n-tabs-tab__label,
+	[class*="tabs-type"] .n-tabs-tab-pad {all:unset; cursor:pointer;}
+	[class*="tabs-type"] .n-tabs-tab__label {justify-content:center; width:100%; height:100%;}
+	[class*="tabs-type"] .n-tabs-bar {display:none;}
+
+	[class*="tabs-type-01"] .n-tabs-nav-scroll-wrapper {border:1px solid #e2e2e2; border-radius:40px; height:40px;}
+	[class*="tabs-type-01"] .n-tabs-tab-wrapper {overflow:hidden; flex:1; justify-content:center; cursor:pointer;}
+	[class*="tabs-type-01"] .n-tabs-tab__label {font-size:18px;}
+	[class*="tabs-type-01"] .n-tabs-tab {border-radius:40px; width:100% !important; word-break:keep-all; }
+	[class*="tabs-type-01"] .n-tabs-tab:hover {color:#666 !important;}
+	[class*="tabs-type-01"] .n-tabs-tab.n-tabs-tab--active {background:black; border-radius:40px;}
+	[class*="tabs-type-01"] .n-tabs-tab.n-tabs-tab--active .n-tabs-tab__label {color:white;}
+
+	.tabs-type-01-01 .n-tabs-nav-scroll-wrapper {border-radius:60px; height:60px;}
+
+	.tabs-type-02 > .n-tabs-nav--line-type > .n-tabs-nav-scroll-wrapper > .v-x-scroll > .n-tabs-nav-scroll-content {border-bottom:1px solid black !important;}
+	.tabs-type-02 > .n-tabs-nav--line-type > .n-tabs-nav-scroll-wrapper > .v-x-scroll > .n-tabs-nav-scroll-content > .n-tabs-wrapper {width:100%; height:50px; margin-bottom:-1px;}
+	.tabs-type-02 > .n-tabs-nav--line-type > .n-tabs-nav-scroll-wrapper > .v-x-scroll > .n-tabs-nav-scroll-content > .n-tabs-wrapper > .n-tabs-tab-wrapper > .n-tabs-tab {border:1px solid #e2e2e2; border-top-left-radius:12px; border-top-right-radius:12px; border-bottom:1px solid black; padding:0 40px; font-size:18px; color:#999;}
+	.tabs-type-02 > .n-tabs-nav--line-type > .n-tabs-nav-scroll-wrapper > .v-x-scroll > .n-tabs-nav-scroll-content > .n-tabs-wrapper > .n-tabs-tab-wrapper > .n-tabs-tab:hover,
+	.tabs-type-02 > .n-tabs-nav--line-type > .n-tabs-nav-scroll-wrapper > .v-x-scroll > .n-tabs-nav-scroll-content > .n-tabs-wrapper > .n-tabs-tab-wrapper > .n-tabs-tab.n-tabs-tab--active {border-color:black; border-bottom:1px solid white; color:black !important;}
+
+	.tabs-type-02.n-tabs--top .n-tab-pane {padding-top:40px;}
+
+/* Tab Menu */
+	.tab-menu-01 {gap:28px; font-weight:500;}
+	.tab-menu-01 > * {flex:0;}
+	.tab-menu-01 > * > * {border-bottom:2px solid transparent;}
+	.tab-menu-01 > *.active > *,
+	.tab-menu-01 > * > *:hover {background:none; border-color:black; color:black;}
+
+	.tab-menu-02 {border:1px solid #e2e2e2; border-radius:60px;}
+	.tab-menu-02 > * > * {border-radius:60px; height:60px; font-size:18px;}
+	.tab-menu-02 > * > *:hover {background:inherit; color:inherit;}
+	.tab-menu-02 > *.active > *,
+	.tab-menu-02 > *.active > *:hover {background:black; color:white;}
 
 /* Text */
 	.txt-info {display:flex; align-items: flex-start; gap:12px; font-size:14px;}

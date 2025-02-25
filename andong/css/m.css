@@ -341,6 +341,29 @@
 				.swi-navigation-01 .swiper-button-prev:after,
 				.swi-navigation-01 .swiper-button-next:after {width:1.67vw; height:2.78vw;}
 
+		/* Tabs */
+			[class*="tabs-type-01"] .n-tabs-nav-scroll-wrapper {border-radius:10.83vw; height:10.83vw;}
+			[class*="tabs-type-01"] .n-tabs-tab-wrapper {flex:none;}
+			[class*="tabs-type-01"] .n-tabs-tab__label {font-size:3.89vw;}
+			[class*="tabs-type-01"] .n-tabs-tab {border-radius:10.83vw; padding:0 4.44vw;}
+			[class*="tabs-type-01"] .n-tabs-tab.n-tabs-tab--active {border-radius:10.83vw; padding:0 4.44vw; word-break:keep-all;}
+
+			.tabs-type-01-01 .n-tabs-nav-scroll-wrapper {border-radius:11.11vw; height:11.11vw;}
+			.tabs-equal .n-tabs-tab-wrapper {flex:auto;}
+
+			.tabs-type-02 > .n-tabs-nav--line-type > .n-tabs-nav-scroll-wrapper > .v-x-scroll > .n-tabs-nav-scroll-content > .n-tabs-wrapper {height:11.11vw;}
+			.tabs-type-02 > .n-tabs-nav--line-type > .n-tabs-nav-scroll-wrapper > .v-x-scroll > .n-tabs-nav-scroll-content > .n-tabs-wrapper > .n-tabs-tab-wrapper > .n-tabs-tab,
+			.tabs-type-02 > .n-tabs-nav--line-type > .n-tabs-nav-scroll-wrapper > .v-x-scroll > .n-tabs-nav-scroll-content > .n-tabs-wrapper > .n-tabs-tab-wrapper > .n-tabs-tab.n-tabs-tab--activ {border-top-left-radius:2.50vw; border-top-right-radius:2.50vw; padding:0 10.14vw; font-size:3.89vw;}
+
+			.tabs-type-02.n-tabs--top .n-tab-pane {padding-top:5.55vw;}
+
+		/* Tab Menu */
+			.tab-menu-01 {gap:5.56vw;}
+			.tab-menu-01 > * > * {border-width:0.28vw;}
+
+			.tab-menu-02 {border-radius:11.11vw;}
+			.tab-menu-02 > * > * {border-radius:11.11vw; height:11.11vw; font-size:3.89vw;}
+
 		/* Text */
 			.txt-info {gap:2.22vw; font-size:3.33vw;}
 			.txt-num {width:4.58vw; height:4.58vw; font-size:3.06vw;}
