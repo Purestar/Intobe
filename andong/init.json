@@ -25,7 +25,7 @@
 					], "state": "" },
 					{ "id": "롤 모델", "submenu": [
 						{ "menu": "홈", "src": "./page/role_home.html", "state": "comp" },
-						{ "menu": "목록", "src": "./page/role_l.html", "state": "" },
+						{ "menu": "찾기결과", "src": "./page/role_l.html", "state": "comp" },
 						{ "menu": "상세", "src": "./page/role_v.html", "state": "" }
 					], "state": "" }
 				], "state": ""},
