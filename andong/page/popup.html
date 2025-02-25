@@ -1104,6 +1104,66 @@
 
 			<h1 class="tit-01 mt-20">My Career</h1>
 			<div class="wrap-grid m-wrap-flex m-flex-wrap mt-20" style="grid-template-columns:repeat(7, 1fr); gap:10px;">
+				<!-- 나의진단 -->
+				<button class="btn-type" @click="toggleModal('career1')">나의진단</button>
+				<n-modal v-model:show="modals.career1">
+					<n-card
+						style="width: 580px"
+						:bordered="false"
+						size="huge"
+						preset="dialog"
+						role="dialog"
+						aria-modal="true"
+					>
+						<template #header>
+							<h1 class="tit-01">진단하기</h1>
+							<button type="button" class="pop-close-no-header" @click="toggleModal('career1')"></button>
+						</template>
+						<h3 class="tit-01">2025년도 전공선호도조사</h3>
+						<p>제출기간 2025.03.01 ~ 2025.03.01</p>
+						<div class="gra-hor-01 mt-40">
+							<div class="gra-inner" style="width:30%;"></div>
+						</div>
+						<h4 class="tit-05 fw-m mt-24">3. 현재 대학생활에 만족하는가?</h4>
+						<ul class="wrap-grid gap-20 mt-40">
+							<li>
+								<label class="form-type-opt-rdo-03">
+									<input type="radio">
+									<span class="opt-txt">매우 그렇다</span>
+								</label>
+							</li>
+							<li>
+								<label class="form-type-opt-rdo-03">
+									<input type="radio">
+									<span class="opt-txt">그렇다</span>
+								</label>
+							</li>
+							<li>
+								<label class="form-type-opt-rdo-03">
+									<input type="radio">
+									<span class="opt-txt">보통</span>
+								</label>
+							</li>
+							<li>
+								<label class="form-type-opt-rdo-03">
+									<input type="radio">
+									<span class="opt-txt">그렇지 않다</span>
+								</label>
+							</li>
+							<li>
+								<label class="form-type-opt-rdo-03">
+									<input type="radio">
+									<span class="opt-txt">매우 그렇지 않다</span>
+								</label>
+							</li>
+						</ul>
+						<template #footer>
+							<button type="button" class="btn-type-b btn-b-blk btn-r-56 w100">이전</button>
+							<button type="button" class="btn-type btn-r-56 w100">다음</button>
+						</template>
+					</n-card>
+				</n-modal>
+
 				<!-- 자기소개서 복제 -->
 				<button class="btn-type" @click="toggleModal('modal6')" disabled>자기소개서 복제</button>
 				<n-modal v-model:show="modals.modal6">
@@ -1445,6 +1505,7 @@
 							modal18: false,
 							modal19: false,
 							modal20: false,
+							career1: false,
 						});
 
 						const toggleModal = (modalName) => { modals[modalName] = !modals[modalName] };
