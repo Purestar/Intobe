@@ -41,8 +41,8 @@
 
 	/* Color */
 		--mc: #1d2088; /* 메인 컬러 */
-		--moc: #0394b1; /* 메인 오버 컬러 */
-		--mdc: #00377a; /* 어두운 메인 컬러 */
+		--moc: #242562; /* 메인 오버 컬러 */
+		--mdc: #0d5cbc; /* 어두운 메인 컬러 */
 		--mlc: #01a0c7; /* 밝은 메인 컬러 */
 		--mic: #f65555; /* 강조 컬러 */
 		--st-red: #fa331e; /* 상태 컬러 Red */
@@ -63,7 +63,7 @@
 		--fom-bdr-c: #e2e2e2; /* 테두리 색상 */
 		--fom-fc: #222222; /* 폰트 컬러 */
 		--fom-ph: #aaaaaa; /* Placeholder 컬러 */
-		--fom-dis-bg: #f5f5f5; /* Disabled 배경 */
+		--fom-dis-bg: #b0b1c5; /* Disabled 배경 */
 		--fom-dis-bdr: #aaaaaa; /* Disabled 테두리 색상 */
 		--fom-opt-sz: calc(var(--fom-fs) + 4px); /* 체크박스, 라디오 크기 */
 		--fom-chk-ico-w: 12px; /* 체크박스 아이콘 넓이 */
