@@ -13,7 +13,8 @@
 		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
 		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
 		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
-		<script type="module" src="../js/pub.js"></script>
+		<script type="module" src="../js/module.js"></script>
+		<script src="../js/pub.js"></script>
 		<link rel="icon" href="../favicon.ico" sizes="any">
 		<link rel="stylesheet" href="../css/global.css">
 	</head>
@@ -23,7 +24,7 @@
 			<div id="sub-container" class="wrap-inner">
 				<div id="contents">
 					<h2 class="tit-03">AI Advisor가 롤 모델을 추천해드려요!</h2>
-					<p>김영남님의 적성과 관심분야를 분석해서 Ai Adviosr가 적합한 롤 모델을 추천해드려요</p>
+					<p>김경국님의 적성과 관심분야를 분석해서 Ai Adviosr가 적합한 롤 모델을 추천해드려요!</p>
 					<div class="job-slide-wrap">
 						<div class="swi-type swi-navigation-01">
 							<div class="swiper brd-wrap">
@@ -200,59 +201,51 @@
 			</div>
 		</div>
 		<script>
-			const { createApp, ref } = Vue
-			const { NSelect, NOption, create } = naive;
+			document.addEventListener('DOMContentLoaded', function() {
+				const swiper = new Swiper('.job-slide-wrap .swiper', {
+					loop: true,
+					delay: 100,
+					spaceBetween: calculatePercentage(19),
+					slidesPerView: 1.02,
+					draggable:true,
+					navigation: {
+						nextEl: '.job-slide-wrap .swiper-button-next',
+						prevEl: '.job-slide-wrap .swiper-button-prev'
+					},
+					breakpoints: {
+						1024: {
+							slidesPerView: 2.5,
+							spaceBetween: 42,
+						}
+					},
+				});
 
-			const app = createApp({
-				components: {
-					NSelect,
-					NOption
-				}
-			})
+				const chartDom = document.getElementById('role-model-chart');
+				const roleModelChart = echarts.init(chartDom);
+				const roleModelChartOpt = {
+					tooltip: {
+						trigger: 'item',
+						formatter: function(params) {
+							return `<div class="e-chart-tooltip-01">${params.name}<br>${params.value}%</div>`;
+						}
+					},
+					series: [{
+						type: 'pie',
+						radius: ['45%', '90%'],
+						label: { show: false },
+						data: [
+							{ value: 45, name: '취업여부', itemStyle: { color: '#3fe7ca' } },
+							{ value: 25, name: '주전공', itemStyle: { color: '#3fbde8' } },
+							{ value: 12, name: '졸업학점', itemStyle: { color: '#0b71be' } },
+							{ value: 10, name: '복수전공', itemStyle: { color: '#06478b' } },
+							{ value: 10, name: '부전공', itemStyle: { color: '#071553' } }
+						]
+					}]
+				};
 
-			app.use(naive);
-			app.mount('#container');
 
-			const swiper = new Swiper('.job-slide-wrap .swiper', {
-				spaceBetween: 19,
-				slidesPerView: 1.02,
-				navigation: {
-					nextEl: '.job-slide-wrap .swiper-button-next',
-					prevEl: '.job-slide-wrap .swiper-button-prev',
-				},
-				breakpoints: {
-					1024: {
-						slidesPerView: 2.5,
-						spaceBetween: 42,
-					}
-				},
+				roleModelChart.setOption(roleModelChartOpt);
 			});
-
-			const chartDom = document.getElementById('role-model-chart');
-			const roleModelChart = echarts.init(chartDom);
-			const roleModelChartOpt = {
-				tooltip: {
-					trigger: 'item',
-					formatter: function(params) {
-						return `<div class="e-chart-tooltip-01">${params.name}<br>${params.value}%</div>`;
-					}
-				},
-				series: [{
-					type: 'pie',
-					radius: ['45%', '90%'],
-					label: { show: false },
-					data: [
-						{ value: 45, name: '취업여부', itemStyle: { color: '#3fe7ca' } },
-						{ value: 25, name: '주전공', itemStyle: { color: '#3fbde8' } },
-						{ value: 12, name: '졸업학점', itemStyle: { color: '#0b71be' } },
-						{ value: 10, name: '복수전공', itemStyle: { color: '#06478b' } },
-						{ value: 10, name: '부전공', itemStyle: { color: '#071553' } }
-					]
-				}]
-			};
-
-
-			roleModelChart.setOption(roleModelChartOpt);
 		</script>
 		<div data-include="../include/footer.html"></div>
 	</body>
