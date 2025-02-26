@@ -28,12 +28,14 @@
 					</div>
 					<div class="brd-wrap">
 						<div class="brd-view-01">
-							<h3 class="form-type-opt-chk-01-01">
-								<label>
-									<input type="checkbox">
-									<span class="opt-txt tit-02 mt-0">시스템소프트웨어엔지니어</span>
-								</label>
-							</h3>
+							<div class="box-type-03-01 wrap-flex">
+								<h3 class="form-type-opt-chk-01-01">
+									<label>
+										<input type="checkbox">
+										<span class="opt-txt tit-02 mt-0">시스템소프트웨어엔지니어</span>
+									</label>
+								</h3>
+							</div>
 							<div id="board-detail-tabs">
 								<n-tabs type="line" class="tabs-type-01-01" v-model:value="activeTab">
 									<n-tab-pane name="bd-tab1" tab="기본정보">
@@ -101,7 +103,7 @@
 									<n-tab-pane name="bd-tab2" tab="교육/자격/훈련">
 										<h4 class="tit-02">필요기술 및 지식</h4>
 										<p class="brd-para">시스템소프트웨어개발자가 되기 위해서는 전문대학 및 대학교의 컴퓨터공학과, 전산(공학)과, 전자공학과, 전기공학과, 통신공학과 등의 학과에서 소프트웨어를 비롯해 컴퓨터하드웨어에 대한 공부를 하고 진출할 수 있다. 요즘은 소프트웨어를 집중적으로 공부하는 학과들이 별도로 개설되기도 한다. 이들 학과에서는 시스템소프트웨어 설계에 필요한 C언어, JAVA와 같은 프로그래밍 언어, 데이터베이스, 소프트웨어공학이론 등을 공부하고 실제소프트웨어 개발 실습을 하기도 한다. 또한, 비전공자들은 정보통신 관련 사설 교육기관이나 직업훈련학교 등에서 임베디드전문가 양성과정 등을 통해 관련 교육을 받을 수 있다. 시스템소프트웨어개발자는 개발·설계에 필요한 프로그래밍언어뿐만 아니라 각종 OS, 장비의 전자신호 등에 대한 충분한 이해가 필요하다. - 관련 자격증으로는 국가기술자격으로 컴퓨터시스템응용기술사(기사, 산업기사), 정보처리기술사(기사, 산업기사) 등이 있다. 해외 민간 기업에서 수행하는 자격증으로는 OCP, SCJP, CCNA같은 자격증이 있으며, 이러한 자격증은 민간 자격증이지만 국제적으로 권위가 인정되고 업계에서 통용되므로 국내 및 해외 취업에 도움이 된다.</p>
-										<h4 class="tit-02">국가기술 관련자격</h4>
+										<h4 class="tit-02">관련자격</h4>
 										<ul class="lst-type-02">
 											<li>
 												<div class="wrap-flex gap-12">
@@ -173,53 +175,6 @@
 													</div>
 													<span class="cr-blk">전자계산기조직응용기사</span>
 													<span>한국산업인력공단</span>
-												</div>
-											</li>
-										</ul>
-										<h4 class="tit-02">외국 관련 자격</h4>
-										<ul class="lst-type-02">
-											<li>
-												<div class="wrap-flex gap-12">
-													<div class="form-type-opt-chk-02">
-														<label>
-															<input type="checkbox">
-															<span class="opt-txt"></span>
-														</label>
-													</div>
-													<span class="cr-blk">MCSD</span>
-												</div>
-											</li>
-											<li>
-												<div class="wrap-flex gap-12">
-													<div class="form-type-opt-chk-02">
-														<label>
-															<input type="checkbox" checked>
-															<span class="opt-txt"></span>
-														</label>
-													</div>
-													<span class="cr-blk">MCSE</span>
-												</div>
-											</li>
-											<li>
-												<div class="wrap-flex gap-12">
-													<div class="form-type-opt-chk-02">
-														<label>
-															<input type="checkbox">
-															<span class="opt-txt"></span>
-														</label>
-													</div>
-													<span class="cr-blk">SCJP</span>
-												</div>
-											</li>
-											<li>
-												<div class="wrap-flex gap-12">
-													<div class="form-type-opt-chk-02">
-														<label>
-															<input type="checkbox" checked>
-															<span class="opt-txt"></span>
-														</label>
-													</div>
-													<span class="cr-blk">CCNA</span>
 												</div>
 											</li>
 										</ul>
@@ -379,7 +334,7 @@
 										</div>
 										<ul class="lst-type-02-02 mt-20">
 											<li class="m-flex-row m-flex-center">
-												<div class="m-wrap-flex m-flex-col-r">
+												<div class="gap-16 wrap-flex flex-col-r">
 													<ul class="vbar-01">
 														<li>컴퓨터공학전공</li>
 														<li>1 - 1</li>
@@ -399,7 +354,7 @@
 												<button type="button" class="btn-type-b btn-r-32-02 btn-b-lgry">교과정보</button>
 											</li>
 											<li class="m-flex-row m-flex-center">
-												<div class="m-wrap-flex m-flex-col-r">
+												<div class="gap-16 wrap-flex flex-col-r">
 													<ul class="vbar-01">
 														<li>소프트웨어공학전공</li>
 														<li>1 - 1</li>
@@ -418,10 +373,15 @@
 												</div>
 												<button type="button" class="btn-type-b btn-r-32-02 btn-b-lgry">교과정보</button>
 											</li>
+											<li class="no-data flex-j-center flex-col gap-24 m-flex-center">
+												<p>관련된 교과가 아직 개설 되지 않았어요!</p>
+											</li>
 										</ul>
 										<div class="brd-paging">
-											<a href="#" class="brd-paging-first"></a>
-											<a href="#" class="brd-paging-prev"></a>
+											<div class="brd-paging-ctrl">
+												<a href="#" class="brd-paging-first"></a>
+												<a href="#" class="brd-paging-prev"></a>
+											</div>
 											<ul class="brd-paging-num">
 												<li class="active"><a href="#">1</a></li>
 												<li><a href="#">2</a></li>
@@ -429,8 +389,10 @@
 												<li><a href="#">4</a></li>
 												<li><a href="#">5</a></li>
 											</ul>
-											<a href="#" class="brd-paging-next"></a>
-											<a href="#" class="brd-paging-last"></a>
+											<div class="brd-paging-ctrl">
+												<a href="#" class="brd-paging-next"></a>
+												<a href="#" class="brd-paging-last"></a>
+											</div>
 										</div>
 									</n-tab-pane>
 								</n-tabs>

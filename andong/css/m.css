@@ -202,11 +202,11 @@
 					.form-type-opt-btn-03 input:checked + .opt-txt {border-radius:8.33vw; min-height:8.33vw; font-size:3.33vw;}
 
 				/* Checkbox */
-					[class*="form-type-opt-chk-01"] .opt-txt:before {width:3.47vw; height:4.44vw;}
+					[class*="form-type-opt-chk-01"] .opt-txt:before {flex:0 0 4.17vw; width:4.17vw; height:3.61vw;}
 
 					.form-type-opt-chk-02 {font-weight:500;}
 					.form-type-opt-chk-02 .opt-txt {gap:2.50vw;}
-					.form-type-opt-chk-02 .opt-txt:before {flex:0 0 3.47vw; width:3.47vw; height:4.44vw;}
+					.form-type-opt-chk-02 .opt-txt:before {flex:0 0 4.17vw; width:4.17vw; height:3.61vw;}
 
 					.form-type-opt-chk-03 .opt-txt {gap:2.78vw; align-items:center;}
 					.form-type-opt-chk-03 .opt-txt:before {flex:0 0 5.56vw; width:5.56vw; height:5.56vw;}
@@ -378,7 +378,7 @@
 
 		/* Title */
 			.tit-01 {font-size:5vw;}
-			.tit-02 {font-size:3.61vw; font-weight:500;}
+			.tit-02 {font-size:4.44vw; font-weight:500;}
 			.tit-03 {font-size:5vw;}
 			.tit-04 {font-size:3.89vw;}
 			.tit-05 {font-size:3.89vw;}

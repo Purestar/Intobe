@@ -20,10 +20,10 @@
 				{ "menu": "메인", "src": "./page/main.html", "state": "work" },
 				{ "id": "진로탐색", "submenu": [
 					{ "id": "직업", "submenu": [
-						{ "menu": "홈", "src": "./page/job_home.html", "state": "work" },
+						{ "menu": "홈", "src": "./page/job_home.html", "state": "comp" },
 						{ "menu": "목록", "src": "./page/job_l.html", "state": "" },
-						{ "menu": "상세", "src": "./page/job_v.html", "state": "" }
-					], "state": "" },
+						{ "menu": "상세", "src": "./page/job_v.html", "state": "comp" }
+					], "state": "work" },
 					{ "id": "롤 모델", "submenu": [
 						{ "menu": "홈", "src": "./page/role_home.html", "state": "comp" },
 						{ "menu": "찾기결과", "src": "./page/role_l.html", "state": "comp" },
