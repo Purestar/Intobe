@@ -230,10 +230,13 @@
 			.form-type-opt-btn-02-blu input:checked + .chip-type-01-b-lgry {background:#eceeff; border-color:#eceeff; color:#372bb0;}
 			.form-type-opt-btn-02-b-blu input:checked + .chip-type-01-b-lgry {background:#eff6ff; border-color:var(--mdc); color:var(--mdc);}
 
-			.form-type-opt-btn-03 .opt-txt,
-			.form-type-opt-btn-03 input:checked + .opt-txt {border-radius:40px; min-height:40px; font-size:16px; white-space:nowrap;}
-			.form-type-opt-btn-03 .opt-txt {justify-content:center; border-color:#ccc; color:#ccc;}
-			.form-type-opt-btn-03 input:checked + .opt-txt {background:black; border-color:black; color:white;}
+			[class*="form-type-opt-btn-03"] .opt-txt,
+			[class*="form-type-opt-btn-03"] input:checked + .opt-txt {border-radius:40px; min-height:40px; font-size:16px; white-space:nowrap;}
+			[class*="form-type-opt-btn-03"] .opt-txt {justify-content:center; border-color:#ccc; color:#ccc;}
+			[class*="form-type-opt-btn-03"] input:checked + .opt-txt {background:black; border-color:black; color:white;}
+			[class*="form-type-opt-btn-03"] input:disabled + .opt-txt {background:white; border-color:#e2e2e2; color:#e2e2e2;}
+
+			.form-type-opt-btn-03-01 input:checked + .opt-txt {background:#f5f8fe; border-color:var(--mc); color:var(--mc);}
 
 			.form-grp-type-01 .opt-txt {border-color:#e2e2e2; border-radius:0; height:24px; padding:0 16px; font-size:14px; word-break:keep-all; color:#666;}
 			.form-grp-type-01 input:checked + .opt-txt {background:#eff6ff; border-color:var(--mdc); border-radius:0; padding:0 16px; font-size:14px; color:var(--mdc);}
