@@ -147,9 +147,11 @@
 	.chip-type-01-pur {background:#efeaff; color:#7f2bb0;}
 	.chip-type-01-blu {background:#eceeff; color:#372bb0;}
 	.chip-type-01-blu-02 {background:var(--mc); color:white;}
+	.chip-type-01-blu-03 {background:#1c4fa0; color:white;}
 	.chip-type-01-sky {background:#ecfaff; color:#00aacc;}
 	.chip-type-01-sky-02 {background:#00aacc; color:white;}
 	.chip-type-01-pnk {background:#ffeaf5; color:#f52b81;}
+	.chip-type-01-pnk-02 {background:#f95289; color:white;}
 	.chip-type-01-grn {background:#18bba9; color:white;}
 
 	.chip-type-01-b-lgry {background:white; border:1px solid #e3e3e4; color:#666;}
@@ -698,3 +700,14 @@
 		.my-major-map > *.complete .my-major-map-step:before {left:-20px; top:-23px; background:var(--mc); border:0; width:70px; height:70px;}
 		.my-major-map > *.complete .my-major-map-step .ic-chk {display:block;}
 		.my-major-map > *.active .my-major-map-step:before {opacity:0; left:-46px; top:-40px; border:0; border-radius:0; background-image:var(--bg-img); background-size:var(--ico-sz); background-position:var(--200) 0; width:148px; height:152px;}
+
+/* 팝업 */
+	.time-table {border:1px solid #e2e2e2; border-radius:8px; font-size:16px; text-align:center;}
+	.time-table th {font-weight:400;}
+	.time-table th,
+	.time-table td {border-right:1px solid #e2e2e2; border-bottom:1px solid #e2e2e2; height:62px;}
+	.time-table tbody tr:last-child th, .time-table tbody tr:last-child td {border-bottom:0;}
+	.time-table thead tr th:last-child, .time-table tbody tr td:last-child {border-right:0;}
+	.time-table .bg-sky {background:#f1f6fd; color:#1c4fa0;}
+	.time-table .bg-grn {background:#e7f8f6; color:#18bba9;}
+	.time-table .bg-pnk {background:#feedf3; color:#f95289;}

@@ -522,7 +522,7 @@
 							<div class="wrap-flex gap-12"> 분야<span class="cr-blk">데이터베이스</span></div>
 						</div>
 
-						<ul class="box-type-04 mt-20 lst-type-04">
+						<ul class="box-type-04 mt-20 lst-type-04 m-grid-col-4">
 							<li>모집대상<br><strong class="fs-18 m-fs-28">재학생</strong></li>
 							<li>모집학년<br><strong class="fs-18 m-fs-28">전체</strong></li>
 							<li>모집학과<br><strong class="fs-18 m-fs-28">전체</strong></li>
@@ -544,6 +544,121 @@
 							<button type="button" class="btn-type-b btn-b-blk w100" @click="toggleModal('main3')">닫기</button>
 							<a href="#" class="btn-type w100 gap-20">CANU 바로가기<i class="ic-link-03"></i></a>
 						</template>
+					</n-card>
+				</n-modal>
+
+				<!-- 시간표 -->
+				<button class="btn-type" @click="toggleModal('main4')">시간표</button>
+				<n-modal v-model:show="modals.main4">
+					<n-card
+						style="width: 720px"
+						:bordered="false"
+						size="huge"
+						preset="dialog"
+						role="dialog"
+						aria-modal="true"
+					>
+						<template #header>
+							<div class="wrap-flex gap-24 align-center">
+								<h1 class="tit-01">시간표</h1>
+								<div class="wrap-flex gap-10">
+									<span class="chip-type-01-blu-03">전공필수</span>
+									<span class="chip-type-01-grn">전공선택</span>
+									<span class="chip-type-01-pnk-02">교양</span>
+								</div>
+							</div>
+							<button type="button" class="pop-close-no-header" @click="toggleModal('main4')"></button>
+						</template>
+
+						<table class="time-table">
+							<colgroup>
+								<col><col><col><col><col><col>
+							</colgroup>
+							<thead>
+								<tr>
+									<th>시간</th>
+									<th>월</th>
+									<th>화</th>
+									<th>수</th>
+									<th>목</th>
+									<th>금</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>09:00~10:00</th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>10:00~11:00</th>
+									<td class="bg-sky">경영학원론</td>
+									<td></td>
+									<td></td>
+									<td class="bg-sky">무역영어</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>11:00~12:00</th>
+									<td class="bg-sky">경영학원론</td>
+									<td></td>
+									<td class="bg-grn">투자론</td>
+									<td class="bg-sky">무역영어</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>12:00~13:00</th>
+									<td class="bg-sky">경영학원론</td>
+									<td class="bg-sky">경영학원론</td>
+									<td class="bg-grn">투자론</td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>13:00~14:00</th>
+									<td></td>
+									<td class="bg-sky">경영학원론</td>
+									<td></td>
+									<td class="bg-pnk">테니스</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>14:00~15:00</th>
+									<td class="bg-pnk">골프</td>
+									<td class="bg-sky">경영학원론</td>
+									<td></td>
+									<td class="bg-pnk">테니스</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>15:00~16:00</th>
+									<td class="bg-pnk">골프</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>16:00~17:00</th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>17:00~18:00</th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
 					</n-card>
 				</n-modal>
 

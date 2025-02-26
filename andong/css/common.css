@@ -85,6 +85,8 @@
 	::-webkit-file-upload-button {display:none;}
 	::placeholder {color:var(--fom-ph);}
 
+	table {width:100%; table-layout:fixed; border-collapse:separate; border-spacing: 0;}
+
 /* Storybook */
 	.sb-show-main.sb-main-centered #storybook-root {width:100%;}
 	.docs-story > div > div {width:100%;}
