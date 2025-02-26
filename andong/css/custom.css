@@ -356,6 +356,7 @@
 	.ic-l-arrow-02:before {background-position:var(--400) var(--50); width:8px; height:14px;}
 	.ic-link:before {background-position:var(--300) 0; width:12px; height:12px;}
 	.ic-link-02:before {background-position:var(--850) var(--50); width:13px; height:13px;}
+	.ic-link-03:before {background-position:var(--50) var(--100); width:8px; height:8px;}
 	.ic-minus:before {background-position:var(--50) var(--50); width:10px; height:2px;}
 	.ic-note:before {background-position:var(--300) var(--50); width:31px; height:24px;}
 	.ic-notice:before {background-position:var(--100) var(--50); width:23px; height:26px;}
@@ -389,7 +390,7 @@
 		.lst-type-01 dt {font-weight:700; color:black;}
 		.lst-type-01 dd {display:flex; flex:1; align-items:center; justify-content:space-between; gap:50px; color:black;}
 
-		[class*="lst-type-02"] {display:flex; flex-direction:column; gap:12px;}
+		[class*="lst-type-02"] {display:flex; flex-direction:column; gap:12px; font-size:16px;}
 		[class*="lst-type-02"] > * {overflow:hidden; display:flex; justify-content:space-between; align-items:center; background:white; border:1px solid #e2e2e2; border-radius:6px; height:48px; padding:0 24px;}
 		[class*="lst-type-02"] [class*="form-type-opt-chk"] {flex:0;}
 		[class*="lst-type-02"] [class*="form-type-opt-chk"] label {width:100%;}

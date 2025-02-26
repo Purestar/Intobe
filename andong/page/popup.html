@@ -722,6 +722,104 @@
 				<button class="btn-type" @click="toggleModal('modal4')" disabled>시스템 점검 안내</button>
 			</div>
 
+			<h1 class="tit-01 mt-20">진로탐색</h1>
+			<div class="wrap-grid m-wrap-flex m-flex-wrap mt-20" style="grid-template-columns:repeat(7, 1fr); gap:10px;">
+				<!-- 전공상세 -->
+				<button class="btn-type" @click="toggleModal('majorexp1')">전공상세</button>
+				<n-modal v-model:show="modals.majorexp1">
+					<n-card
+						style="width: 580px"
+						:bordered="false"
+						size="huge"
+						preset="dialog"
+						role="dialog"
+						aria-modal="true"
+					>
+						<template #header>
+							<div class="wrap-flex gap-24 align-center">
+								<h1 class="tit-01">컴퓨터공학 전공</h1>
+								<a href="#" class="btn-type btn-r-32-02 btn-icon">학과홈페이지<i class="ic-link-03"></i></a>
+							</div>
+							<button type="button" class="pop-close-no-header" @click="toggleModal('majorexp1')"></button>
+						</template>
+						<h2 class="tit-02">전공소개</h2>
+						<p class="mt-16">미래의 정보화 사회를 주도해 나갈 컴퓨터공학은 논리적인 사고, 전체를 볼 수 있는 안목, 체계적이고 조직적인 사고력을 필요로 하는 학문입니다. 이러한 사고력을 바탕으로 본 학과에서는 컴퓨터를 이요해 정보를 처리하고 가공하여 인류의 삶의 질 향상에 기여합니다.</p>
+						<h2 class="tit-02 mt-40">교육목표</h2>
+						<p class="mt-16">SW기술을 중심으로 소프트웨어, 웹/앱 개발, 2D/3D 게임, VR/AR 그래픽디자인, 디지털영상(정지영상,동영상)등 다양한  IT멀티미디어 분야에 관한 이론.원리 및 인공지능, 블록체인 등과 같은 응용 기술을 갖춥니다. </p>
+						<h2 class="tit-02 mt-40">필요역량</h2>
+						<p class="mt-16">#인성, #자기주도, #실무, #전문, #창의, #융햡, #소통,#글로컬 </p>
+						<h2 class="tit-02 mt-40">관련직업</h2>
+						<ul class="lst-type-02 mt-16">
+							<li>
+								<div class="wrap-flex gap-12">
+									<div class="form-type-opt-chk-02">
+										<label>
+											<input type="checkbox">
+											<span class="opt-txt"></span>
+										</label>
+									</div>
+									<span class="cr-blk">빅데이터 전문가</span>
+								</div>
+								<a href="#">
+									<span class="txt-more">자세히</span>
+									<i class="ic-r-arrow-03"></i>
+								</a>
+							</li>
+							<li>
+								<div class="wrap-flex gap-12">
+									<div class="form-type-opt-chk-02">
+										<label>
+											<input type="checkbox">
+											<span class="opt-txt"></span>
+										</label>
+									</div>
+									<span class="cr-blk">응용프로그래머</span>
+								</div>
+								<a href="#">
+									<span class="txt-more">자세히</span>
+									<i class="ic-r-arrow-03"></i>
+								</a>
+							</li>
+						</ul>
+						<h2 class="tit-02 mt-40">관련자격</h2>
+						<ul class="lst-type-02 mt-16">
+							<li>
+								<div class="wrap-flex gap-12">
+									<div class="form-type-opt-chk-02">
+										<label>
+											<input type="checkbox">
+											<span class="opt-txt"></span>
+										</label>
+									</div>
+									<span class="cr-blk">전자계산조직응용기사</span>
+									<span>국가기술</span>
+								</div>
+								<a href="#">
+									<span class="txt-more">자세히</span>
+									<i class="ic-r-arrow-03"></i>
+								</a>
+							</li>
+							<li>
+								<div class="wrap-flex gap-12">
+									<div class="form-type-opt-chk-02">
+										<label>
+											<input type="checkbox">
+											<span class="opt-txt"></span>
+										</label>
+									</div>
+									<span class="cr-blk">전자계산조직응용기술사</span>
+									<span>국가기술</span>
+								</div>
+								<a href="#">
+									<span class="txt-more">자세히</span>
+									<i class="ic-r-arrow-03"></i>
+								</a>
+							</li>
+						</ul>
+					</n-card>
+				</n-modal>
+			</div>
+
 			<h1 class="tit-01 mt-20">My Major Map</h1>
 			<div class="wrap-grid m-wrap-flex m-flex-wrap mt-20" style="grid-template-columns:repeat(7, 1fr); gap:10px;">
 				<!-- My Major Map 복제 -->
@@ -1101,6 +1199,7 @@
 					</n-card>
 				</n-modal>
 			</div>
+
 
 			<h1 class="tit-01 mt-20">My Career</h1>
 			<div class="wrap-grid m-wrap-flex m-flex-wrap mt-20" style="grid-template-columns:repeat(7, 1fr); gap:10px;">

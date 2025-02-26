@@ -269,6 +269,7 @@
 			.ic-info:before {width:3.33vw; height:3.33vw;}
 			.ic-l-arrow:before {width:2.78vw; height:4.72vw;}
 			.ic-link:before {width:2.50vw; height:2.50vw;}
+			.ic-link-03:before {width:2.08vw; height:2.08vw;}
 			.ic-minus:before {width:2.50vw; height:0.56vw;}
 			.ic-note:before {width:4.86vw; height:3.75vw;}
 			.ic-notice:before {width:3.75vw; height:4.31vw;}
@@ -294,7 +295,7 @@
 				.lst-type-01 {font-size:3.89vw;}
 				.lst-type-01 > * {gap:6.39vw; padding:4.44vw 0;}
 
-				[class*="lst-type-02"] {gap:2.22vw;}
+				[class*="lst-type-02"] {gap:2.22vw; font-size:3.89vw;}
 				[class*="lst-type-02"] > * {border-radius:2.5vw; height:14.44vw; padding:0 5.27vw;}
 				[class*="lst-type-02"] a {gap:2.22vw; font-size:3.33vw;}
 				[class*="lst-type-02"] .lst-tit {font-size:3.89vw;}
@@ -335,8 +336,8 @@
 
 		/* Popup */
 			.n-card.n-modal {border-radius:0; width:100dvw !important;}
-			.n-card > .n-card-header {flex:0 0 15vw; padding:0 var(--init-m-wr-side-pd); height:15vw;}
-			.n-card > .n-card__content {padding:0 var(--init-m-wr-side-pd) 3.88vw; font-size:var(--init-fs);}
+			.n-card > .n-card-header {flex:0 0 15vw; border-bottom:1px solid #e2e2e2; padding:0 var(--init-m-wr-side-pd); height:15vw;}
+			.n-card > .n-card__content {padding:8.33vw var(--init-m-wr-side-pd); font-size:var(--init-fs);}
 			.n-modal-container .n-card__footer {gap:10px; padding:0 var(--init-m-wr-side-pd) 8.33vw;}
 			.n-modal-container .n-card__footer [class*="btn-type"] {height:var(--fom-h);}
 
