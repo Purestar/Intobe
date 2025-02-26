@@ -21,15 +21,15 @@
 				{ "id": "진로탐색", "submenu": [
 					{ "id": "직업", "submenu": [
 						{ "menu": "홈", "src": "./page/job_home.html", "state": "comp" },
-						{ "menu": "목록", "src": "./page/job_l.html", "state": "" },
 						{ "menu": "상세", "src": "./page/job_v.html", "state": "comp" }
-					], "state": "work" },
+					], "state": "comp" },
+					{ "menu": "전공탐색", "src": "./page/majorexp.html", "state": "comp" },
 					{ "id": "롤 모델", "submenu": [
 						{ "menu": "홈", "src": "./page/role_home.html", "state": "comp" },
 						{ "menu": "찾기결과", "src": "./page/role_l.html", "state": "comp" },
 						{ "menu": "상세", "src": "./page/role_v.html", "state": "comp" }
 					], "state": "comp" }
-				], "state": ""},
+				], "state": "comp"},
 				{ "id": "My Major Map", "submenu": [
 					{ "menu": "목록", "src": "./page/majormap_l.html", "state": "comp" },
 					{ "menu": "상세", "src": "./page/majormap_v.html", "state": "work" }

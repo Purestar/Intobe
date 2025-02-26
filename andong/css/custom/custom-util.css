@@ -299,6 +299,8 @@
 		.m-flex-row-r {flex-direction:row-reverse;}
 		.m-flex-col-r {flex-direction:column-reverse;}
 
+		.m-align-self-end {align-self:end;}
+
 		.m-flex-none {flex:none;}
 		.m-flex-wrap {flex-wrap:wrap;}
 		.m-flex-no-wrap {flex-wrap:nowrap;}

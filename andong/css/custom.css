@@ -5,9 +5,12 @@
 }
 
 /* Accordion */
-	.aco-type-01 .n-collapse-item__header-main {height:40px; padding:0 24px;}
-	.aco-type-01 .n-collapse-item .n-collapse-item__content-wrapper .n-collapse-item__content-inner {padding:24px;}
-	.aco-type-01 .n-collapse-item__content-wrapper {border-top:1px solid #efefef;}
+	[class*="aco-type-01"] .n-collapse-item__header-main {height:40px; padding:0 24px;}
+	[class*="aco-type-01"] .n-collapse-item .n-collapse-item__content-wrapper .n-collapse-item__content-inner {padding:24px;}
+	[class*="aco-type-01"] .n-collapse-item__content-wrapper {border-top:1px solid #efefef;}
+
+	.aco-type-01-01 .n-collapse-item__header-main {height:58px; padding:0 32px; font-size:18px; font-weight:500 !important; color:black;}
+	.aco-type-01-01 .n-collapse-item__content-wrapper {background:#f9f9f9;}
 
 	.aco-type-02 .n-collapse-item {border:1px solid #e2e2e2; border-radius:16px; margin:0;}
 	.aco-type-02 .n-collapse-item + .n-collapse-item {margin-top:15px;}
@@ -344,6 +347,7 @@
 	.ic-clip:before {background-position:var(--150) var(--50); width:18px; height:18px;}
 	.ic-comp:before {background-position:var(--250) 0; width:27px; height:19px;}
 	.ic-copy:before {background-position:var(--900) 0; width:16px; height:16px;}
+	.ic-d-arrow:before {background-position:var(--950) var(--50); width:12px; height:8px;}
 	.ic-delete:before {background-position:var(--600) var(--50); width:12px; height:12px;}
 	.ic-down:before {background-position:var(--600) 0; width:10px; height:8px;}
 	.ic-download:before {background-position:var(--250) var(--50); width:19px; height:19px;}
@@ -386,7 +390,7 @@
 		.lst-type-01 dd {display:flex; flex:1; align-items:center; justify-content:space-between; gap:50px; color:black;}
 
 		[class*="lst-type-02"] {display:flex; flex-direction:column; gap:12px;}
-		[class*="lst-type-02"] > * {overflow:hidden; display:flex; justify-content:space-between; align-items:center; border:1px solid #e2e2e2; border-radius:6px; height:48px; padding:0 24px;}
+		[class*="lst-type-02"] > * {overflow:hidden; display:flex; justify-content:space-between; align-items:center; background:white; border:1px solid #e2e2e2; border-radius:6px; height:48px; padding:0 24px;}
 		[class*="lst-type-02"] [class*="form-type-opt-chk"] {flex:0;}
 		[class*="lst-type-02"] [class*="form-type-opt-chk"] label {width:100%;}
 		[class*="lst-type-02"] a {display:flex; align-items:center; justify-content:center; gap:16px; font-size:14px;}
@@ -661,6 +665,11 @@
 		.job-type-ctrl:first-child {border-top:none;}
 		.job-btn-search {width:122px;}
 		.job-type .no-data {background:#f9f9f9; height:100%;}
+		.job-type-tbl {border:1px solid #e2e2e2; border-radius:15px; width:100%; margin-top:18px;}
+		.job-type-tbl th {border-right:1px solid #e2e2e2; border-top:1px solid #e2e2e2; font-size:20px; text-align:center; color:black;}
+		.job-type-tbl td {border-top:1px solid #e2e2e2;}
+		.job-type-tbl tr:first-child th,
+		.job-type-tbl tr:first-child td {border-top:0;}
 
 		.role-model-chart {width:170px; height:170px;}
 
