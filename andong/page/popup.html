@@ -918,8 +918,8 @@
 			<h1 class="tit-01 mt-20">My Major Map</h1>
 			<div class="wrap-grid m-wrap-flex m-flex-wrap mt-20" style="grid-template-columns:repeat(7, 1fr); gap:10px;">
 				<!-- My Major Map 복제 -->
-				<button class="btn-type" @click="toggleModal('modal17')" disabled>My Major Map 복제</button>
-				<n-modal v-model:show="modals.modal17">
+				<button class="btn-type" @click="toggleModal('majormap1')">My Major Map 복제</button>
+				<n-modal v-model:show="modals.majormap1">
 					<n-card
 						style="width: 580px"
 						:bordered="false"
@@ -929,7 +929,7 @@
 						aria-modal="true"
 					>
 						<template #header>
-							<button type="button" class="pop-close-no-header" @click="toggleModal('modal17')"></button>
+							<button type="button" class="pop-close-no-header" @click="toggleModal('majormap1')"></button>
 						</template>
 						<div class="txt-c mx-h100">
 							<h1 class="tit-01">My Major Map 복제</h1>
@@ -939,11 +939,22 @@
 							</div>
 						</div>
 						<template #footer>
-							<button type="button" class="btn-type-b btn-b-blk w100" @click="toggleModal('modal17')">취소</button>
-							<button type="button" class="btn-type-b w100">복제</button>
+							<button type="button" class="btn-type-b btn-b-blk w100" @click="toggleModal('majormap1')">취소</button>
+							<button type="button" class="btn-type w100">복제</button>
 						</template>
 					</n-card>
 				</n-modal>
+
+
+
+
+
+
+
+
+
+
+
 
 				<!-- 학기선택 -->
 				<button class="btn-type" @click="toggleModal('modal18')" disabled>학기선택</button>
