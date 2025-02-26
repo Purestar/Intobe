@@ -584,7 +584,430 @@
 					</div>
 				</div>-->
 			</div>
+			<div class="my-major-map-pool" :class="{ active: isActive }">
+				<button type="button" class="btn-pool-tg mt-40 m-mt-0" @click="togglePool"><i class="ic-l-arrow-02"></i>POOL</button>
+				<div class="my-major-map-pool-wrap">
+					<button type="button" class="btn-pool-close"><i class="ic-close"></i></button>
+					<n-tabs type="line" class="tabs-type-01-01 tabs-equal">
+						<n-tab-pane name="pool-tab1" tab="교과 POOL">
+							<div class="box-type-04 mt-24">
+								<table class="txt-l">
+									<colgroup>
+										<col style="width:17%;">
+										<col>
+									</colgroup>
+									<tbody>
+										<tr>
+											<th>부전공</th>
+											<td>
+												<div class="wrap-flex gap-8 flex-wrap">
+													<div class="form-type-opt-btn-02-b-blu flex-0" disabled>
+														<label>
+															<input type="checkbox">
+															<span class="chip-type-01-b-lgry">전체</span>
+														</label>
+													</div>
+													<div class="form-type-opt-btn-02-b-blu flex-0">
+														<label>
+															<input type="checkbox">
+															<span class="chip-type-01-b-lgry">관심</span>
+														</label>
+													</div>
+													<div class="form-type-opt-btn-02-b-blu flex-0">
+														<label>
+															<input type="checkbox">
+															<span class="chip-type-01-b-lgry">AI추천</span>
+														</label>
+													</div>
+													<div class="form-type-opt-btn-02-b-blu flex-0">
+														<label>
+															<input type="checkbox">
+															<span class="chip-type-01-b-lgry">롤모델</span>
+														</label>
+													</div>
+													<div class="form-type-opt-btn-02-b-blu flex-0">
+														<label>
+															<input type="checkbox">
+															<span class="chip-type-01-b-lgry">전공추천</span>
+														</label>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th>교과구분</th>
+											<td>
+												<div class="wrap-flex gap-8 flex-wrap">
+													<div class="form-type-opt-btn-02-b-blu flex-0">
+														<label>
+															<input type="checkbox">
+															<span class="chip-type-01-b-lgry">전체</span>
+														</label>
+													</div>
+													<div class="form-type-opt-btn-02-b-blu flex-0">
+														<label>
+															<input type="checkbox">
+															<span class="chip-type-01-b-lgry">전공</span>
+														</label>
+													</div>
+													<div class="form-type-opt-btn-02-b-blu flex-0">
+														<label>
+															<input type="checkbox">
+															<span class="chip-type-01-b-lgry">타전공</span>
+														</label>
+													</div>
+													<div class="form-type-opt-btn-02-b-blu flex-0">
+														<label>
+															<input type="checkbox">
+															<span class="chip-type-01-b-lgry">교양</span>
+														</label>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th>이수구분</th>
+											<td>
+												<div class="wrap-flex gap-8 flex-wrap">
+													<div class="form-type-opt-btn-02-b-blu flex-0">
+														<label>
+															<input type="checkbox">
+															<span class="chip-type-01-b-lgry">전체</span>
+														</label>
+													</div>
+													<div class="form-type-opt-btn-02-b-blu flex-0">
+														<label>
+															<input type="checkbox">
+															<span class="chip-type-01-b-lgry">전공핵심</span>
+														</label>
+													</div>
+													<div class="form-type-opt-btn-02-b-blu flex-0">
+														<label>
+															<input type="checkbox">
+															<span class="chip-type-01-b-lgry">전공선택</span>
+														</label>
+													</div>
+													<div class="form-type-opt-btn-02-b-blu flex-0">
+														<label>
+															<input type="checkbox">
+															<span class="chip-type-01-b-lgry">교양필수</span>
+														</label>
+													</div>
+													<div class="form-type-opt-btn-02-b-blu flex-0">
+														<label>
+															<input type="checkbox">
+															<span class="chip-type-01-b-lgry">교양선택</span>
+														</label>
+													</div>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="my-major-map-pool-list" data-scroll="v">
+								<ul class="lst-type-02-02">
+									<!--
+										[D]
+										bg-lblu: 전공핵심
+										bg-lsky: 전공필수
+										bg-lgrn: 전공선택
+										bg-lpnk: 교양선택
+										bg-lred: 교양필수
+										bg-lorg: 일반
+									-->
+									<li class="bg-lblu">
+										<div class="wrap-flex flex-col lh-1 gap-12">
+											<div class="wrap-flex gap-8">
+												<span class="chip-type-01-b-lgry">관심</span>
+												<span class="chip-type-01-b-lgry">AI추천</span>
+												<span class="chip-type-01-b-lgry">롤모델</span>
+												<span class="chip-type-01-b-lgry">전공추천</span>
+											</div>
+											<div class="wrap-flex flex-center gap-12">
+												<h3 class="lst-tit">보안기초</h3>2학점(3)
+											</div>
+											<div class="wrap-flex flex-between">
+												<ul class="vbar-01">
+													<li>컴퓨터학부</li>
+													<li>1-1</li>
+													<li><span class="chip-type-01"></span></li>
+												</ul>
+											</div>
+										</div>
+										<div class="wrap-flex flex-col gap-12">
+											<button type="button" class="btn-type btn-r-32-02">추가하기</button>
+											<button type="button" class="btn-type-b btn-b-lgry btn-r-32-02">교과정보</button>
+										</div>
+									</li>
+									<li class="bg-lgrn">
+										<div class="wrap-flex flex-col lh-1 gap-12">
+											<div class="wrap-flex gap-8">
+												<span class="chip-type-01-b-lgry">관심</span>
+												<span class="chip-type-01-b-lgry">AI추천</span>
+												<span class="chip-type-01-b-lgry">롤모델</span>
+												<span class="chip-type-01-b-lgry">전공추천</span>
+											</div>
+											<div class="wrap-flex flex-center gap-12">
+												<h3 class="lst-tit">보안기초</h3>2학점(3)
+											</div>
+											<div class="wrap-flex flex-between">
+												<ul class="vbar-01">
+													<li>컴퓨터학부</li>
+													<li>1-1</li>
+													<li><span class="chip-type-01"></span></li>
+												</ul>
+											</div>
+										</div>
+										<div class="wrap-flex flex-col gap-12">
+											<button type="button" class="btn-type btn-r-32-02">추가하기</button>
+											<button type="button" class="btn-type-b btn-b-lgry btn-r-32-02">교과정보</button>
+										</div>
+									</li>
+									<li class="bg-lsky">
+										<div class="wrap-flex flex-col lh-1 gap-12">
+											<div class="wrap-flex gap-8">
+												<span class="chip-type-01-b-lgry">관심</span>
+												<span class="chip-type-01-b-lgry">AI추천</span>
+												<span class="chip-type-01-b-lgry">롤모델</span>
+												<span class="chip-type-01-b-lgry">전공추천</span>
+											</div>
+											<div class="wrap-flex flex-center gap-12">
+												<h3 class="lst-tit">보안기초</h3>2학점(3)
+											</div>
+											<div class="wrap-flex flex-between">
+												<ul class="vbar-01">
+													<li>컴퓨터학부</li>
+													<li>1-1</li>
+													<li><span class="chip-type-01"></span></li>
+												</ul>
+											</div>
+										</div>
+										<div class="wrap-flex flex-col gap-12">
+											<button type="button" class="btn-type btn-r-32-02">추가하기</button>
+											<button type="button" class="btn-type-b btn-b-lgry btn-r-32-02">교과정보</button>
+										</div>
+									</li>
+									<li class="bg-lgry-02">
+										<div class="wrap-flex flex-col lh-1 gap-12">
+											<div class="wrap-flex gap-8">
+												<span class="chip-type-01-b-lgry">관심</span>
+												<span class="chip-type-01-b-lgry">AI추천</span>
+												<span class="chip-type-01-b-lgry">롤모델</span>
+												<span class="chip-type-01-b-lgry">전공추천</span>
+											</div>
+											<div class="wrap-flex flex-center gap-12">
+												<h3 class="lst-tit">보안기초</h3>2학점(3)
+											</div>
+											<div class="wrap-flex flex-between">
+												<ul class="vbar-01">
+													<li>컴퓨터학부</li>
+													<li>1-1</li>
+												</ul>
+											</div>
+										</div>
+										<div class="wrap-flex flex-col gap-12">
+											<button type="button" class="btn-type btn-r-32-02">추가하기</button>
+											<button type="button" class="btn-type-b btn-b-lgry btn-r-32-02">교과정보</button>
+										</div>
+									</li>
+									<li>
+										<div class="wrap-flex flex-col lh-1 gap-12">
+											<div class="wrap-flex gap-8">
+												<span class="chip-type-01-b-lgry">관심</span>
+												<span class="chip-type-01-b-lgry">AI추천</span>
+												<span class="chip-type-01-b-lgry">롤모델</span>
+												<span class="chip-type-01-b-lgry">전공추천</span>
+											</div>
+											<div class="wrap-flex flex-center gap-12">
+												<h3 class="lst-tit">정보보안기사</h3>
+											</div>
+											<div class="wrap-flex flex-between">
+												<ul class="vbar-01">
+													<li>한국산업인력공단</li>
+												</ul>
+											</div>
+										</div>
+										<div class="wrap-flex flex-col gap-12">
+											<button type="button" class="btn-type btn-r-32-02">추가하기</button>
+											<button type="button" class="btn-type-b btn-b-lgry btn-r-32-02">교과정보</button>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</n-tab-pane>
+						<n-tab-pane name="pool-tab2" tab="자격 POOL">
+							<div class="box-type-04 mt-24">
+								<table class="txt-l">
+									<colgroup>
+										<col style="width:17%;">
+										<col>
+									</colgroup>
+									<tbody>
+										<tr>
+											<th>구분</th>
+											<td>
+												<div class="wrap-flex gap-8">
+													<div class="form-type-opt-btn-02-b-blu flex-0">
+														<label>
+															<input type="checkbox">
+															<span class="chip-type-01-b-lgry">전체</span>
+														</label>
+													</div>
+													<div class="form-type-opt-btn-02-b-blu flex-0">
+														<label>
+															<input type="checkbox">
+															<span class="chip-type-01-b-lgry">관심</span>
+														</label>
+													</div>
+													<div class="form-type-opt-btn-02-b-blu flex-0">
+														<label>
+															<input type="checkbox">
+															<span class="chip-type-01-b-lgry">AI추천</span>
+														</label>
+													</div>
+													<div class="form-type-opt-btn-02-b-blu flex-0">
+														<label>
+															<input type="checkbox">
+															<span class="chip-type-01-b-lgry">롤모델</span>
+														</label>
+													</div>
+													<div class="form-type-opt-btn-02-b-blu flex-0">
+														<label>
+															<input type="checkbox">
+															<span class="chip-type-01-b-lgry">전공추천</span>
+														</label>
+													</div>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="my-major-map-pool-list" data-scroll="v">
+								<ul class="lst-type-02-02">
+									<li>
+										<div class="wrap-flex flex-col lh-1 gap-12">
+											<div class="wrap-flex gap-8">
+												<span class="chip-type-01-b-lgry">관심</span>
+												<span class="chip-type-01-b-lgry">AI추천</span>
+												<span class="chip-type-01-b-lgry">롤모델</span>
+												<span class="chip-type-01-b-lgry">전공추천</span>
+											</div>
+											<div class="wrap-flex flex-center gap-12">
+												<h3 class="lst-tit">정보보안기사</h3>
+											</div>
+											<div class="wrap-flex flex-between">
+												<ul class="vbar-01">
+													<li>한국산업인력공단</li>
+												</ul>
+											</div>
+										</div>
+										<div class="wrap-flex flex-col gap-12">
+											<button type="button" class="btn-type btn-r-32-02">추가하기</button>
+										</div>
+									</li>
+									<li>
+										<div class="wrap-flex flex-col lh-1 gap-12">
+											<div class="wrap-flex gap-8">
+												<span class="chip-type-01-b-lgry">관심</span>
+												<span class="chip-type-01-b-lgry">AI추천</span>
+												<span class="chip-type-01-b-lgry">롤모델</span>
+												<span class="chip-type-01-b-lgry">전공추천</span>
+											</div>
+											<div class="wrap-flex flex-center gap-12">
+												<h3 class="lst-tit">정보보안기사</h3>
+											</div>
+											<div class="wrap-flex flex-between">
+												<ul class="vbar-01">
+													<li>한국산업인력공단</li>
+												</ul>
+											</div>
+										</div>
+										<div class="wrap-flex flex-col gap-12">
+											<button type="button" class="btn-type btn-r-32-02">추가하기</button>
+										</div>
+									</li>
+									<li>
+										<div class="wrap-flex flex-col lh-1 gap-12">
+											<div class="wrap-flex gap-8">
+												<span class="chip-type-01-b-lgry">관심</span>
+												<span class="chip-type-01-b-lgry">AI추천</span>
+												<span class="chip-type-01-b-lgry">롤모델</span>
+												<span class="chip-type-01-b-lgry">전공추천</span>
+											</div>
+											<div class="wrap-flex flex-center gap-12">
+												<h3 class="lst-tit">정보보안기사</h3>
+											</div>
+											<div class="wrap-flex flex-between">
+												<ul class="vbar-01">
+													<li>한국산업인력공단</li>
+												</ul>
+											</div>
+										</div>
+										<div class="wrap-flex flex-col gap-12">
+											<button type="button" class="btn-type btn-r-32-02">추가하기</button>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</n-tab-pane>
+					</n-tabs>
+				</div>
+			</div>
 		</div>
 		<div data-include="../include/footer.html"></div>
+		<script>
+			const { createApp } = Vue;
+			const { NTabs, NTabPane, NSpace, NSelect, NOption, create } = naive;
+
+			const app = createApp({
+				data() {
+					return {
+						isActive: false
+					};
+				},
+				methods: {
+					togglePool() {
+						this.isActive = !this.isActive;
+					},
+					handleScroll() {
+						// 모든 li 요소를 다시 선택합니다.
+						const listItems = document.querySelectorAll('.my-major-map > li');
+
+						// listItems 길이를 콘솔에 출력해봅니다.
+						console.log(`li 요소의 개수: ${listItems.length}`);
+
+						// 각 li 요소의 위치와 윈도우의 높이를 가져옵니다.
+						listItems.forEach(item => {
+							console.log("a"); // 스크롤 이벤트 호출 여부 확인
+							const itemTop = item.getBoundingClientRect().top;
+							const windowHeight = window.innerHeight;
+
+							// 요소가 윈도우 화면의 75% 부분에 진입하면 'animate' 클래스 추가
+							if (itemTop < windowHeight * 0.75) {
+								item.classList.add('animate');
+								console.log(`애니메이션 추가: ${item.textContent}`);
+							}
+						});
+					}
+				},
+				mounted() {
+					// 스크롤 이벤트를 등록하고 this를 바인딩합니다.
+					window.addEventListener('scroll', this.handleScroll.bind(this));
+				},
+				beforeUnmount() {
+					// 컴포넌트가 파괴되기 전에 스크롤 이벤트 제거
+					window.removeEventListener('scroll', this.handleScroll);
+				},
+				components: {
+					NTabs,
+					NTabPane,
+				}
+			});
+
+			app.use(create());
+			app.mount('#container');
+		</script>
 	</body>
 </html>

@@ -127,6 +127,7 @@
 	.flex-col-r {flex-direction:column-reverse;}
 
 	.flex-1 {flex:1;}
+	.flex-0 {flex:0;}
 	.flex-wrap {flex-wrap:wrap;}
 
 /* Font */

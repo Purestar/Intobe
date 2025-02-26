@@ -716,22 +716,44 @@
 		.my-major-map > *.comp-plan .my-major-map-step {background:#5f75bb; color:white;}
 		.my-major-map > *.comp-plan .my-major-map-step:before {background:#93a4d9;}
 
-		.my-major-map-lst > * .chip-type-01 {color:white;}
+		.my-major-map-lst > * .chip-type-01,
+		.my-major-map-pool-list .lst-type-02-02 > * .chip-type-01 {color:white;}
 
-		.my-major-map-lst > *.bg-lblu .chip-type-01 {background:var(--mc);}
-		.my-major-map-lst > *.bg-lblu .chip-type-01:before {content:"전공선택";}
+		.my-major-map-lst > *.bg-lblu .chip-type-01,
+		.my-major-map-pool-list .lst-type-02-02 > *.bg-lblu .chip-type-01 {background:var(--mc);}
+		.my-major-map-lst > *.bg-lblu .chip-type-01:before,
+		.my-major-map-pool-list .lst-type-02-02 > *.bg-lblu .chip-type-01:before {content:"전공선택";}
 
-		.my-major-map-lst > *.bg-lgrn .chip-type-01 {background:#99ca04;}
-		.my-major-map-lst > *.bg-lgrn .chip-type-01:before {content:"전공핵심";}
+		.my-major-map-lst > *.bg-lgrn .chip-type-01,
+		.my-major-map-pool-list .lst-type-02-02 > *.bg-lgrn .chip-type-01 {background:#99ca04;}
+		.my-major-map-lst > *.bg-lgrn .chip-type-01:before,
+		.my-major-map-pool-list .lst-type-02-02 > *.bg-lgrn .chip-type-01:before {content:"전공핵심";}
 
-		.my-major-map-lst > *.bg-lsky .chip-type-01 {background:#18bba9;}
-		.my-major-map-lst > *.bg-lsky .chip-type-01:before {content:"전공필수";}
+		.my-major-map-lst > *.bg-lsky .chip-type-01,
+		.my-major-map-pool-list .lst-type-02-02 > *.bg-lsky .chip-type-01  {background:#18bba9;}
+		.my-major-map-lst > *.bg-lsky .chip-type-01:before,
+		.my-major-map-pool-list .lst-type-02-02 > *.bg-lsky .chip-type-01:before {content:"전공필수";}
 
-		.my-major-map-lst > *.bg-lred .chip-type-01 {background:#fa331e;}
-		.my-major-map-lst > *.bg-lred .chip-type-01:before {content:"교양필수";}
+		.my-major-map-lst > *.bg-lred .chip-type-01,
+		.my-major-map-pool-list .lst-type-02-02 > *.bg-lred .chip-type-01  {background:#fa331e;}
+		.my-major-map-lst > *.bg-lred .chip-type-01:before,
+		.my-major-map-pool-list .lst-type-02-02 > *.bg-lred .chip-type-01:before {content:"교양필수";}
 
-		.my-major-map-lst > *.bg-lorg .chip-type-01 {background:#f9a015;}
-		.my-major-map-lst > *.bg-lorg .chip-type-01:before {content:"일반";}
+		.my-major-map-lst > *.bg-lorg .chip-type-01,
+		.my-major-map-pool-list .lst-type-02-02 > *.bg-lorg .chip-type-01 {background:#f9a015;}
+		.my-major-map-lst > *.bg-lorg .chip-type-01:before,
+		.my-major-map-pool-list .lst-type-02-02 > *.bg-lorg .chip-type-01:before {content:"일반";}
+
+		.my-major-map-pool {display:flex; align-items:flex-start; position:fixed; right:0; top:0; height:100%; padding:20px 0; transform:translate(604px, 0); transition:transform .3s ease; z-index:10;}
+		.my-major-map-pool .btn-pool-tg {display:flex; flex:0 0 48px; align-items:center; gap:16px; background:var(--mc); border-top-left-radius:24px; border-bottom-left-radius:24px; width:48px; height:auto; padding:32px 0; font-weight:500; writing-mode:vertical-rl; text-orientation:upright; color:white;}
+		.my-major-map-pool-wrap {display:flex; background:white; border-top-left-radius:24px; border-bottom-left-radius:24px; width:604px; height:100%; padding:40px;}
+		.my-major-map-pool-wrap .n-tabs {overflow:hidden; height:100%;}
+		.my-major-map-pool-wrap .n-tab-pane {overflow:hidden; display:flex; flex-direction:column; height:100%; padding:0 !important;}
+		.my-major-map-pool-wrap .my-major-map-pool-list {height:100%; margin-top:40px;}
+		.my-major-map-pool-back {display:none; position:fixed; left:0; top:0; width:100dvw; height:100dvh;}
+		.my-major-map-pool.active {transform:translate(0, 0); transition:transform .3s ease;}
+		.my-major-map-pool.active .btn-pool-tg .ic-l-arrow-02 {transform:rotate(180deg);}
+		.my-major-map-pool.active + .my-major-map-pool-back {display:block;}
 
 /* 팝업 */
 	.time-table {border:1px solid #e2e2e2; border-radius:8px; font-size:16px; text-align:center;}

@@ -523,6 +523,17 @@
 			.my-major-map-step:before {border:0.56vw solid #c4c4c4; width:4.44vw; height:4.44vw;}
 			.my-major-map > *.complete .my-major-map-step:before {left:-2.78vw; top:-2.78vw; width:9.72vw; height:9.72vw;}
 			.my-major-map > *.active .my-major-map-step:before {left:-6.39vw; top:-5.56vw; background-position:var(--250) 0; width:20.56vw; height:21.11vw;}
+			.my-major-map-pool {flex-direction:column; margin:0; padding:0; transform:translate(100dvw, 0);}
+			.my-major-map-pool .btn-pool-tg {position:static; flex:0 0 var(--init-hh); background:white; gap:0; border-radius:0; border-bottom:1px solid #e2e2e2; width:100%; height:var(--init-hh); padding:0 var(--init-m-wr-side-pd); writing-mode:inherit; font-size:5vw; color:black;}
+			.my-major-map-pool-header {display:flex; justify-content:space-between; align-items:center; height:15.28vw; padding:0 var(--init-m-wr-side-pd)}
+			.my-major-map-pool-header h1 {font-size:5vw; font-weight:700; color:black;}
+			.my-major-map-pool-wrap {overflow:hidden; flex-direction:column; border-top-left-radius:0; border-bottom-left-radius:0; width:100dvw; height:100dvh; padding:var(--init-m-wr-side-pd) 0;}
+			.my-major-map-pool-wrap .my-major-map-pool-list {margin-top:40px;}
+			.my-major-map-pool-wrap .n-tabs {padding:0 var(--init-m-wr-side-pd) 0;}
+			.my-major-map-pool-form {table-layout:fixed; width:100%;}
+			.my-major-map-pool-form col:nth-child(1) {width:20vw !important;}
+			.my-major-map-pool-form th {vertical-align:top;}
+			.my-major-map-pool-list .lst-type-02-02 > * {flex-direction:row;}
 
 	/* 팝업 */
 		.time-table {border-radius:2.22vw; font-size:2.78vw;}
