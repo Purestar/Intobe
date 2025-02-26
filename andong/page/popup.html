@@ -462,6 +462,117 @@
 
 			<h1 class="tit-01 mt-20">메인</h1>
 			<div class="wrap-grid m-wrap-flex m-flex-wrap mt-20" style="grid-template-columns:repeat(7, 1fr); gap:10px;">
+				<!-- 대표배지변경 -->
+				<button class="btn-type" @click="toggleModal('main1')">대표배지변경</button>
+				<n-modal v-model:show="modals.main1">
+					<n-card
+						style="width: 720px"
+						:bordered="false"
+						size="huge"
+						preset="dialog"
+						role="dialog"
+						aria-modal="true"
+					>
+						<template #header>
+							<h1 class="tit-01">대표 배지 변경</h1>
+							<button type="button" class="pop-close-no-header" @click="toggleModal('main1')"></button>
+						</template>
+
+						<div class="lst-badge">
+							<div class="form-type-opt-rdo-02">
+								<label>
+									<input type="radio" name="badge-chg">
+									<span class="opt-txt"><img src="../assets/images/img/badge-01.png" class="badge-img">웰컴</span>
+								</label>
+								<p class="fs-14 m-fs-24 txt-c">첫 방문을 환영해요</p>
+							</div>
+							<div class="form-type-opt-rdo-02">
+								<label>
+									<input type="radio" disabled name="badge-chg">
+									<span class="opt-txt"><img src="../assets/images/img/badge-02.png" class="badge-img">다재다능</span>
+								</label>
+								<p class="fs-14 m-fs-24 txt-c">스킬을 등록했어요</p>
+							</div>
+							<div class="form-type-opt-rdo-02">
+								<label>
+									<input type="radio" disabled name="badge-chg">
+									<span class="opt-txt"><img src="../assets/images/img/badge-03.png" class="badge-img">스킬장인</span>
+								</label>
+								<p class="fs-14 m-fs-24 txt-c">스킬을 15개나<br>보유했어요</p>
+							</div>
+							<div class="form-type-opt-rdo-02">
+								<label>
+									<input type="radio" name="badge-chg">
+									<span class="opt-txt"><img src="../assets/images/img/badge-04.png" class="badge-img">꿈의나침반</span>
+								</label>
+								<p class="fs-14 m-fs-24 txt-c">롤모델을 설정했어요</p>
+							</div>
+							<div class="form-type-opt-rdo-02">
+								<label>
+									<input type="radio" name="badge-chg">
+									<span class="opt-txt"><img src="../assets/images/img/badge-05.png" class="badge-img">자격입문자</span>
+								</label>
+								<p class="fs-14 m-fs-24 txt-c">첫자격스크랩</p>
+							</div>
+							<div class="form-type-opt-rdo-02">
+								<label>
+									<input type="radio" name="badge-chg">
+									<span class="opt-txt"><img src="../assets/images/img/badge-06.png" class="badge-img">자격활동가</span>
+								</label>
+								<p class="fs-14 m-fs-24 txt-c">10개이상 스크랩</p>
+							</div>
+							<div class="form-type-opt-rdo-02">
+								<label>
+									<input type="radio" disabled name="badge-chg">
+									<span class="opt-txt"><img src="../assets/images/img/badge-07.png" class="badge-img">자격전문가</span>
+								</label>
+								<p class="fs-14 m-fs-24 txt-c">20개이상 스크랩</p>
+							</div>
+							<div class="form-type-opt-rdo-02">
+								<label>
+									<input type="radio" disabled name="badge-chg">
+									<span class="opt-txt"><img src="../assets/images/img/badge-08.png" class="badge-img">자격마스터</span>
+								</label>
+								<p class="fs-14 m-fs-24 txt-c">30개이상 스크랩</p>
+							</div>
+							<div class="form-type-opt-rdo-02">
+								<label>
+									<input type="radio" name="badge-chg">
+									<span class="opt-txt"><img src="../assets/images/img/badge-09.png" class="badge-img">미래설계자</span>
+								</label>
+								<p class="fs-14 m-fs-24 txt-c">Major Map을 설계했어요</p>
+							</div>
+							<div class="form-type-opt-rdo-02">
+								<label>
+									<input type="radio" name="badge-chg">
+									<span class="opt-txt"><img src="../assets/images/img/badge-10.png" class="badge-img">자아탐구자</span>
+								</label>
+								<p class="fs-14 m-fs-24 txt-c">자기소개서를 작성했어요</p>
+							</div>
+							<div class="form-type-opt-rdo-02">
+								<label>
+									<input type="radio" name="badge-chg">
+									<span class="opt-txt"><img src="../assets/images/img/badge-11.png" class="badge-img">커리어프로</span>
+								</label>
+								<p class="fs-14 m-fs-24 txt-c">이력서를 작성했어요</p>
+							</div>
+							<div class="form-type-opt-rdo-02">
+								<label>
+									<input type="radio" name="badge-chg">
+									<span class="opt-txt"><img src="..
+										/assets/images/img/badge-12.png" class="badge-img">커리어빌더</span>
+								</label>
+								<p class="fs-14 m-fs-24 txt-c">포트폴리오를 등록했어요</p>
+							</div>
+						</div>
+
+						<template #footer>
+							<button type="button" class="btn-type-b btn-b-blk w100">취소</button>
+							<button type="button" class="btn-type w100">변경</button>
+						</template>
+					</n-card>
+				</n-modal>
+
 				<!-- 관심분야설정 -->
 				<button class="btn-type" @click="toggleModal('modal3')" disabled>관심분야설정</button>
 				<n-modal v-model:show="modals.modal3">
@@ -603,116 +714,7 @@
 					</n-card>
 				</n-modal>
 
-				<!-- 대표배지변경 -->
-				<button class="btn-type" @click="toggleModal('modal4')" disabled>대표배지변경</button>
-				<n-modal v-model:show="modals.modal4">
-					<n-card
-						style="width: 720px"
-						:bordered="false"
-						size="huge"
-						preset="dialog"
-						role="dialog"
-						aria-modal="true"
-					>
-						<template #header>
-							<h1 class="tit-01">대표 배지 변경</h1>
-							<button type="button" class="pop-close-no-header" @click="toggleModal('modal4')"></button>
-						</template>
 
-						<div class="lst-badge">
-							<div class="form-type-opt-rdo-02">
-								<label>
-									<input type="radio" name="badge-chg">
-									<span class="opt-txt"><img src="../assets/images/img/badge-01.png" class="badge-img">웰컴</span>
-								</label>
-								<p class="fs-14 m-fs-24 txt-c">첫 방문을 환영해요</p>
-							</div>
-							<div class="form-type-opt-rdo-02">
-								<label>
-									<input type="radio" disabled name="badge-chg">
-									<span class="opt-txt"><img src="../assets/images/img/badge-02.png" class="badge-img">다재다능</span>
-								</label>
-								<p class="fs-14 m-fs-24 txt-c">스킬을 등록했어요</p>
-							</div>
-							<div class="form-type-opt-rdo-02">
-								<label>
-									<input type="radio" disabled name="badge-chg">
-									<span class="opt-txt"><img src="../assets/images/img/badge-03.png" class="badge-img">스킬장인</span>
-								</label>
-								<p class="fs-14 m-fs-24 txt-c">스킬을 15개나<br>보유했어요</p>
-							</div>
-							<div class="form-type-opt-rdo-02">
-								<label>
-									<input type="radio" name="badge-chg">
-									<span class="opt-txt"><img src="../assets/images/img/badge-04.png" class="badge-img">꿈의나침반</span>
-								</label>
-								<p class="fs-14 m-fs-24 txt-c">롤모델을 설정했어요</p>
-							</div>
-							<div class="form-type-opt-rdo-02">
-								<label>
-									<input type="radio" name="badge-chg">
-									<span class="opt-txt"><img src="../assets/images/img/badge-05.png" class="badge-img">자격입문자</span>
-								</label>
-								<p class="fs-14 m-fs-24 txt-c">첫자격스크랩</p>
-							</div>
-							<div class="form-type-opt-rdo-02">
-								<label>
-									<input type="radio" name="badge-chg">
-									<span class="opt-txt"><img src="../assets/images/img/badge-06.png" class="badge-img">자격활동가</span>
-								</label>
-								<p class="fs-14 m-fs-24 txt-c">10개이상 스크랩</p>
-							</div>
-							<div class="form-type-opt-rdo-02">
-								<label>
-									<input type="radio" disabled name="badge-chg">
-									<span class="opt-txt"><img src="../assets/images/img/badge-07.png" class="badge-img">자격전문가</span>
-								</label>
-								<p class="fs-14 m-fs-24 txt-c">20개이상 스크랩</p>
-							</div>
-							<div class="form-type-opt-rdo-02">
-								<label>
-									<input type="radio" disabled name="badge-chg">
-									<span class="opt-txt"><img src="../assets/images/img/badge-08.png" class="badge-img">자격마스터</span>
-								</label>
-								<p class="fs-14 m-fs-24 txt-c">30개이상 스크랩</p>
-							</div>
-							<div class="form-type-opt-rdo-02">
-								<label>
-									<input type="radio" name="badge-chg">
-									<span class="opt-txt"><img src="../assets/images/img/badge-09.png" class="badge-img">미래설계자</span>
-								</label>
-								<p class="fs-14 m-fs-24 txt-c">Major Map을 설계했어요</p>
-							</div>
-							<div class="form-type-opt-rdo-02">
-								<label>
-									<input type="radio" name="badge-chg">
-									<span class="opt-txt"><img src="../assets/images/img/badge-10.png" class="badge-img">자아탐구자</span>
-								</label>
-								<p class="fs-14 m-fs-24 txt-c">자기소개서를 작성했어요</p>
-							</div>
-							<div class="form-type-opt-rdo-02">
-								<label>
-									<input type="radio" name="badge-chg">
-									<span class="opt-txt"><img src="../assets/images/img/badge-11.png" class="badge-img">커리어프로</span>
-								</label>
-								<p class="fs-14 m-fs-24 txt-c">이력서를 작성했어요</p>
-							</div>
-							<div class="form-type-opt-rdo-02">
-								<label>
-									<input type="radio" name="badge-chg">
-									<span class="opt-txt"><img src="..
-										/assets/images/img/badge-12.png" class="badge-img">커리어빌더</span>
-								</label>
-								<p class="fs-14 m-fs-24 txt-c">포트폴리오를 등록했어요</p>
-							</div>
-						</div>
-
-						<template #footer>
-							<button type="button" class="btn-type-b btn-b-blk w100">취소</button>
-							<button type="button" class="btn-type-b w100">저장</button>
-						</template>
-					</n-card>
-				</n-modal>
 
 				<!-- 시스템 점검 안내 -->
 				<button class="btn-type" @click="toggleModal('modal4')" disabled>시스템 점검 안내</button>
