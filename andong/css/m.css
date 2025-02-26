@@ -444,10 +444,10 @@
 		.login-cont {width:100%;}
 
 	/* 메인 */
-		/*.main-section {padding:8.33vw var(--init-m-wr-side-pd);}
+		.main-section {padding:8.33vw var(--init-m-wr-side-pd);}
 		.main-section > .wrap-inner {padding:0;}
 
-		.main-top-cont {gap:28px;}
+		/*.main-top-cont {gap:28px;}
 		.main-top-left-cont {gap:24px; min-width:auto;}
 		.main-top-quick {gap:2.77vw;}
 		.main-top-quick > * {border-radius:2.22vw; height:16.67vw; margin-top:5.56vw; font-size:3.33vw;}
@@ -481,6 +481,7 @@
 		.job-type-lst {gap:3vw; padding:5.00vw 0; line-height:5.56vw;}
 		.job-type-lst button {gap:1.67vw; height:5.56vw; padding:0 5.00vw;}
 		.job-type-lst button:after {background-position:var(--500) var(--50); width:1.67vw; height:2.78vw;}
+		.job-type-lst-02 {grid-template-columns:repeat(2, 1fr); gap:3.33vw; padding:5vw; font-size:3.33vw;}
 		.job-type-ctrl {padding:5.00vw;}
 		.job-btn-search {width:23.19vw;}
 

@@ -62,33 +62,80 @@
 
 					<h2 class="tit-03 mt-60">알아보고 싶은 직업을 직접 검색해보세요!</h2>
 					<!--<p>한국표준직업분류를 선택하거나 궁금한 직업을 직접 입력해서 알아볼 수 있어요.</p>-->
-					<div class="wrap-flex flex-j-end mt-20">
-						<button type="button" class="btn-refresh"><i class="ic-refresh"></i>선택 초기화</button>
-					</div>
 					<div class="job-type-wrap">
 						<div class="job-type-ctrl">
-							<div class="wrap-flex gap-12">
+							<div class="wrap-flex flex-j-end">
+								<button type="button" class="btn-refresh"><i class="ic-refresh"></i>선택 초기화</button>
+							</div>
+							<div class="job-type-inner mt-16">
+								<div class="job-type grid-col-2 m-grid-col-1 m-gap-20">
+									<div>
+										<div class="pc h100">
+											<h3 class="job-type-tit">직업분류1차선택</h3>
+											<ul data-scroll="v" class="job-type-lst">
+												<li><button type="button">관리자</button></li>
+												<li class="active"><button type="button">전문가 및 관련 종사자</button></li>
+												<li><button type="button">사무종사자</button></li>
+												<li><button type="button">서비스종사자</button></li>
+												<li><button type="button">판매종사자</button></li>
+												<li><button type="button">농림 . 어업 숙련 종사자</button></li>
+												<li><button type="button">기능원 및 관련 기능 종사자</button></li>
+												<li><button type="button">장치. 기계 조작 및 조립종사자 </button></li>
+												<li><button type="button">단순노무 종사자</button></li>
+												<li><button type="button">군인</button></li>
+												<li><button type="button">관리자</button></li>
+												<li class="active"><button type="button">전문가 및 관련 종사자</button></li>
+												<li><button type="button">사무종사자</button></li>
+												<li><button type="button">서비스종사자</button></li>
+												<li><button type="button">판매종사자</button></li>
+												<li><button type="button">농림 . 어업 숙련 종사자</button></li>
+												<li><button type="button">기능원 및 관련 기능 종사자</button></li>
+												<li><button type="button">장치. 기계 조작 및 조립종사자 </button></li>
+												<li><button type="button">단순노무 종사자</button></li>
+												<li><button type="button">군인</button></li>
+											</ul>
+										</div>
+										<div class="mobile">
+											<b class="cr-blk">대분류</b>
+											<n-select class="form-type-dropdown-01 mt-20" placeholder="선택"></n-select>
+										</div>
+									</div>
+									<div>
+										<div class="pc h100">
+											<h3 class="job-type-tit">직업분류2차선택</h3>
+											<p class="job-type-lst no-data wrap-flex flex-center flex-j-center">1차 분류를 선택해주세요.</p>
+										</div>
+										<div class="mobile">
+											<b class="cr-blk">소분류</b>
+											<n-select class="form-type-dropdown-01 mt-20" placeholder="선택"></n-select>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="wrap-flex gap-12 mt-28">
 								<div class="form-type-txt">
 									<input type="text" value="소프트웨어 엔지니어">
 								</div>
 								<button type="button" class="btn-type job-btn-search">검색</button>
 							</div>
-							<div class="wrap-flex flex-center mt-24 gap-20 m-flex-col m-flex-start">
-								<b class="cr-blk">최근검색어</b>
-								<ul class="lst-tag-01">
-									<li>엔지니어<button type="button"><i class="ic-delete"></i></button></li>
-									<li>게임기획자<button type="button"><i class="ic-delete"></i></button></li>
-									<li>인공지능 엔지니어<button type="button"><i class="ic-delete"></i></button></li>
-									<li>3D개발자<button type="button"><i class="ic-delete"></i></button></li>
-									<li>빅데이커아키텍쳐<button type="button"><i class="ic-delete"></i></button></li>
-								</ul>
+							<div class="wrap-flex flex-center mt-24 gap-24 m-flex-col m-flex-start">
+								<b class="cr-blk wb-keep">최근검색어</b>
+								<div class="w100" data-scroll="hide">
+									<ul class="lst-tag-01 m-ws-nw m-flex-no-wrap m-mt-0">
+										<li>엔지니어<button type="button"><i class="ic-delete"></i></button></li>
+										<li>게임기획자<button type="button"><i class="ic-delete"></i></button></li>
+										<li>인공지능 엔지니어<button type="button"><i class="ic-delete"></i></button></li>
+										<li>3D개발자<button type="button"><i class="ic-delete"></i></button></li>
+										<li>빅데이커아키텍쳐<button type="button"><i class="ic-delete"></i></button></li>
+									</ul>
+								</div>
 							</div>
-							<div class="wrap-flex flex-center mt-24 gap-20">
+							<div class="wrap-flex flex-center mt-24 m-mt-40 gap-24 m-flex-col m-flex-start">
 								<b class="cr-blk">인기검색어</b>
 								<button type="button" class="btn-type-b btn-b-lgry btn-r-32-02">엔지니어</button>
 							</div>
 						</div>
-						<ul class="job-type-lst grid-col-3 m-grid-col-1">
+						<ul class="job-type-lst-02 grid-col-3 m-grid-col-1">
 							<li><button type="button">관리자</button></li>
 							<li><button type="button">전문가 및 관련 종사자</button></li>
 							<li><button type="button">사무종사자</button></li>
@@ -102,28 +149,10 @@
 						</ul>
 					</div>
 
-					<div class="brd-paging">
-						<div class="brd-paging-ctrl">
-							<a href="#" class="brd-paging-prev"></a>
-							<a href="#" class="brd-paging-first"></a>
-						</div>
-						<ul class="brd-paging-num">
-							<li class="active"><a href="#">1</a></li>
-							<li><a href="#">2</a></li>
-							<li><a href="#">3</a></li>
-							<li><a href="#">4</a></li>
-							<li><a href="#">5</a></li>
-						</ul>
-						<div class="brd-paging-ctrl">
-							<a href="#" class="brd-paging-next"></a>
-							<a href="#" class="brd-paging-last"></a>
-						</div>
-					</div>
-
-					<div class="wrap-grid grid-col-2 mt-60 gap-36 m-grid-col-1">
+					<div class="wrap-grid grid-col-2 mt-60 m-mt-80 gap-80 m-grid-col-1">
 						<div>
 							<h2 class="tit-03">AI 가 주목하는, 자주 추천한 직업순위!</h2>
-							<p>개인의 관심과 적성까지 고려한 직업추천 ! AI는 어떤 직업을 추천하고 있을까요?</p>
+							<p>개인의 관심과 적성까지 고려한 직업추천!<br class="mobile"> AI는 어떤 직업을 추천하고 있을까요?</p>
 							<ul class="lst-type-02 bp-number-01 mt-24">
 								<li>
 									<span class="lst-tit">아키텍쳐전문가</span>
@@ -149,7 +178,7 @@
 						</div>
 						<div>
 							<h2 class="tit-03">재학생의 뜨거운 관심을 받고 있는 직업!</h2>
-							<p>가장많은 컴퓨터학부의 학생이 관심있는 TOP5 직업을 알아보세요.</p>
+							<p>가장많은 컴퓨터학부의 학생이 관심있는<br class="mobile"> TOP5 직업을 알아보세요.</p>
 							<ul class="lst-type-02 bp-number-01 mt-24">
 								<li>
 									<span class="lst-tit">아키텍쳐전문가</span>

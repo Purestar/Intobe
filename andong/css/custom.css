@@ -640,11 +640,13 @@
 		.job-slide-wrap .swiper-button-prev {left:-25px;}
 		.job-slide-wrap .swiper-button-next {right:-25px;}
 
-		.job-type-wrap {overflow:hidden; border:1px solid #e7e7e7; border-radius:15px; margin-top:18px;}
+		.job-type-wrap {overflow:hidden; border:1px solid #e2e2e2; border-radius:15px; margin-top:18px;}
 		.job-type {display:grid; grid-template-columns:repeat(3, 1fr);}
-		.job-type > * + * {border-left:1px solid #e7e7e7;}
-		.job-type-full {border-bottom:1px solid #e7e7e7; margin:24px -28px 0 -28px;}
-		.job-type-tit {font-weight:500; line-height:46px; text-align:center; color:black;}
+		.job-type > * + * {border-left:1px solid #e2e2e2;}
+		.job-type-inner {border:1px solid #e2e2e2; border-radius:10px;}
+		.job-type-inner .job-type-tit {text-align:center;}
+		.job-type-full {border-bottom:1px solid #e2e2e2; margin:24px -28px 0 -28px;}
+		.job-type-tit {border-bottom:1px solid #e2e2e2; font-weight:500; line-height:46px; text-align:center; color:black;}
 		.job-type-lst {overflow-y:auto; display:grid; max-height:448px; padding:24px 0; line-height:40px;}
 		.job-type-lst button {display:flex; align-items:center; justify-content:space-between; gap:12px; width:100%; height:40px; padding:0 24px; text-align:left;}
 		.job-type-lst button:hover,
@@ -652,6 +654,9 @@
 		.job-type-lst button:after {display:none; content:""; background-image:var(--ico); background-size:var(--ico-sz); background-position:var(--450) var(--50); width:6px; height:9px;}
 		.job-type-lst button:hover:after,
 		.job-type-lst > *.active button:after {display:block; background-position:var(--800) 0;}
+		.job-type-lst-02 {display:grid; grid-template-columns:repeat(3, 1fr); gap:20px; border-top:1px solid #e2e2e2; padding:24px; color:black;}
+		.job-type-lst-02 button {text-align:left;}
+		.job-type-lst-02 button:hover {text-decoration:underline;}
 		.job-type-ctrl {border-top:1px solid #e7e7e7; padding:28px;}
 		.job-type-ctrl:first-child {border-top:none;}
 		.job-btn-search {width:122px;}
