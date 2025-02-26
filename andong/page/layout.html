@@ -135,21 +135,21 @@
 						<button type="button" class="h-btn-hamburger"></button>
 						<div class="h-panel">
 							<div class="h-panel-inner">
-								<div class="h-panel-info bg-mlc cr-wht">
-									<div class="vbar-01">
+								<div class="h-panel-info">
+									<div class="wrap-flex align-center cr-blk gap-30">
+										<p class="h-usr-nm">이영남</p>
+										<span class="chip-type-01-blu">재학생</span>
+									</div>
+									<div class="vbar-01 mt-20">
 										<div class="vbar-03">
 											<span>컴퓨터학부</span>
 											<span>컴퓨터공학전공</span>
 										</div>
-										<div class="vbar-01">
-											<span>1학년</span>
-											<span>재학중</span>
-										</div>
+										<span>1학년</span>
 									</div>
-									<p class="h-usr-nm">이영남</p>
 								</div>
 								<div id="panel-tabs" class="h-panel-cont">
-									<n-tabs type="line" class="tabs-type-02 mt-40">
+									<n-tabs type="line" class="tabs-type-03 mt-40">
 										<n-tab-pane name="panel-1" tab="메뉴">
 											<nav>
 												<ul class="h-m-menu">
@@ -390,6 +390,9 @@
 			document.addEventListener("DOMContentLoaded", function () {
 				// 모든 체크박스 선택
 				const checkboxes = document.querySelectorAll(".toggle-checkbox");
+				const hamburgerBtn = document.querySelector(".h-btn-hamburger");
+				const closeBtn = document.querySelector(".h-btn-hamburger-close");
+				const panel = document.querySelector(".h-panel");
 
 				checkboxes.forEach(checkbox => {
 					checkbox.addEventListener("change", function () {
@@ -399,6 +402,16 @@
 							parentDiv.classList.toggle("active", this.checked);
 						}
 					});
+				});
+
+				// h-btn-hamburger 클릭 시 h-panel에 active 클래스 추가
+				hamburgerBtn.addEventListener("click", function() {
+					panel.classList.add("active");
+				});
+
+				// h-btn-hamburger-close 클릭 시 h-panel에서 active 클래스 제거
+				closeBtn.addEventListener("click", function() {
+					panel.classList.remove("active");
 				});
 			});
 		</script>

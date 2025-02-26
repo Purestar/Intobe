@@ -493,6 +493,11 @@
 
 	.tabs-type-02.n-tabs--top .n-tab-pane {padding-top:40px;}
 
+	.tabs-type-03 > .n-tabs-nav .n-tabs-tab-wrapper + .n-tabs-tab-wrapper {margin-left:44px;}
+	.tabs-type-03 > .n-tabs-nav .n-tabs-tab.n-tabs-tab--active .n-tabs-tab__label,
+	.tabs-type-03 > .n-tabs-nav .n-tabs-tab__label:hover {color:var(--mc);}
+	.tabs-type-03 > .n-tabs-nav .n-tabs-tab__label {font-size:32px;}
+
 /* Tab Menu */
 	.tab-menu-01 {gap:28px; font-weight:500;}
 	.tab-menu-01 > * {flex:0;}

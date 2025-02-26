@@ -20,7 +20,7 @@
 
 				<div class="form-type-opt-chk-01-01 h-bookmark-open">
 					<label>
-						<input type="checkbox">
+						<input type="checkbox" class="toggle-checkbox">
 						<span class="opt-txt"></span>
 					</label>
 				</div>
@@ -30,7 +30,10 @@
 					<div class="wrap-inner pos-r">
 						<div class="h-bookmark-inner">
 							<div id="bookmark-tabs">
-								<n-tabs type="line" class="tabs-type-01">
+								<div class="txt-r">
+									<a href="#" style="text-decoration:underline;">로그아웃</a>
+								</div>
+								<n-tabs type="line" class="tabs-type-01 mt-20">
 									<n-tab-pane name="itrst-job" tab="관심직업">
 										<ul class="lst-type-02">
 											<li>
@@ -113,21 +116,21 @@
 				<button type="button" class="h-btn-hamburger"></button>
 				<div class="h-panel">
 					<div class="h-panel-inner">
-						<div class="h-panel-info bg-mlc cr-wht">
-							<div class="vbar-01">
+						<div class="h-panel-info">
+							<div class="wrap-flex align-center cr-blk gap-30">
+								<p class="h-usr-nm">이영남</p>
+								<span class="chip-type-01-blu">재학생</span>
+							</div>
+							<div class="vbar-01 mt-20">
 								<div class="vbar-03">
 									<span>컴퓨터학부</span>
 									<span>컴퓨터공학전공</span>
 								</div>
-								<div class="vbar-01">
-									<span>1학년</span>
-									<span>재학중</span>
-								</div>
+								<span>1학년</span>
 							</div>
-							<p class="h-usr-nm">이영남</p>
 						</div>
 						<div id="panel-tabs" class="h-panel-cont">
-							<n-tabs type="line" class="tabs-type-02 mt-40">
+							<n-tabs type="line" class="tabs-type-03 mt-40">
 								<n-tab-pane name="panel-1" tab="메뉴">
 									<nav>
 										<ul class="h-m-menu">
