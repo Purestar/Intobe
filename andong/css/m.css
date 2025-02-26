@@ -378,7 +378,7 @@
 		/* Thumb */
 			.thumb-type-01 {width:22.22vw; height:22.22vw;}
 			.thumb-type-03 {border-radius:1.94vw; height:51.11vw;}
-			.thumb-type-03 [class*="thumb-"] {padding:3.33vw;}
+			.thumb-type-03 .thumb-lt {padding:3.33vw 0;}
 
 		/* Title */
 			.tit-01 {font-size:5vw;}

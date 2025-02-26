@@ -93,116 +93,7 @@
 					</n-card>
 				</n-modal>
 
-				<!-- 교과상세 -->
-				<button class="btn-type" @click="toggleModal('modal14')" disabled>교과상세</button>
-				<n-modal v-model:show="modals.modal14">
-					<n-card
-						style="width: 580px"
-						:bordered="false"
-						size="huge"
-						preset="dialog"
-						role="dialog"
-						aria-modal="true"
-					>
-						<template #header>
-							<h1 class="tit-01">교과 상세정보</h1>
-							<button type="button" class="pop-close-no-header" @click="toggleModal('modal14')"></button>
-						</template>
 
-						<p>컴퓨터공학전공</p>
-						<div class="wrap-flex flex-between">
-							<h2 class="tit-02">통계분석과 머신러닝 모델링</h2>
-							<div class="form-type-opt-chk-01-01 flex-0">
-								<label>
-									<input type="checkbox">
-									<span class="opt-txt"></span>
-								</label>
-							</div>
-						</div>
-
-						<ul class="box-type-04 mt-20 lst-type-04">
-							<li>이수구분<br><strong class="fs-18 m-fs-28">전공선택</strong></li>
-							<li>이수방식<br><strong class="fs-18 m-fs-28">오프라인</strong></li>
-							<li>이수학점<br><strong class="fs-18 m-fs-28">3학점</strong></li>
-							<li>이수시간<br><strong class="fs-18 m-fs-28">3시간</strong></li>
-						</ul>
-
-						<n-tabs type="line" class="tabs-type-02 mt-40" v-model:value="activeTab">
-							<n-tab-pane name="subinfo-1" tab="교과정보">
-								<div class="hbar-02">
-									<p>최근 빅데이터와 인공지능은 학계, 산업계에서 가장 관심의 대상이 되는 연구 분야로서, 특히, 이 두 분야의 핵심 기술인 데이터분석 기술 및 머신러닝 기술은 4차 산업혁명의 핵심기술로 부각되고 있다. 이들은 모두 많은 양의 데이터로부터 의미있는 정보/지식를 추출하여 분류, 예측, 최적화 등의 문제를 해결하는 기술로, 데이터 과학, 통계 및 컴퓨터 공학 기술이 융합된 기술이다. 본 강좌에서는 데이터분석의 기초 지식 및 절차, 도구들에 대해 공부하고, 이를 기반으로 머신러닝의 개념과 원리에서부터 신경망 학습, 고급의 딥러닝 기술에 이르는 다양한 이론과 실습을 학습한다</p>
-									<div>
-										<div>
-											<h2 class="tit-02">선수과목</h2>
-											<div class="wrap-flex flex-col gap-6 mt-16">
-												<div class="wrap-flex gap-12">
-													<span class="chip-type-02-sky"></span>
-													<p>프로그래밍 언어 (2학년 1학기)</p>
-												</div>
-												<div class="wrap-flex gap-12">
-													<span class="chip-type-02-blu"></span>
-													<p>자료구조 (2학년2학기)</p>
-												</div>
-											</div>
-											<h2 class="tit-02 mt-40">후수과목</h2>
-											<div class="wrap-flex flex-col gap-6 mt-16">
-												<div class="wrap-flex gap-12">
-													<span class="chip-type-02-sky"></span>
-													<p>프로그래밍 언어 (2학년 1학기)</p>
-												</div>
-												<div class="wrap-flex gap-12">
-													<span class="chip-type-02-blu"></span>
-													<p>자료구조 (2학년2학기)</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</n-tab-pane>
-							<n-tab-pane name="subinfo-2" tab="강의정보">
-								<div class="hbar-02">
-									<div>
-										<div class="wrap-flex flex-between">
-											<div>
-												<b class="fs-18 m-fs-28 cr-blk">조행래</b>
-												<div class="wrap-flex flex-col gap-10 lh-1 mt-16">
-													<div class="wrap-flex gap-12">
-														소속<span class="cr-blk">컴퓨터공학전공, 소프트웨어융합전공</span>
-													</div>
-													<div class="wrap-flex gap-12">
-														분야<span class="cr-blk">데이터베이스</span>
-													</div>
-												</div>
-											</div>
-											<a href="#" class="btn-type-b btn-b-lgry btn-r-40 gap-16 pc"><i class="ic-download"></i>강의계획서</a>
-										</div>
-									</div>
-									<div>
-										<div class="wrap-flex flex-between">
-											<div>
-												<b class="fs-18 m-fs-28 cr-blk">조행래</b>
-												<div class="wrap-flex flex-col gap-10 lh-1 mt-16">
-													<div class="wrap-flex gap-12">
-														소속<span class="cr-blk">컴퓨터공학전공, 소프트웨어융합전공</span>
-													</div>
-													<div class="wrap-flex gap-12">
-														분야<span class="cr-blk">데이터베이스</span>
-													</div>
-												</div>
-											</div>
-											<a href="#" class="btn-type-b btn-b-lgry btn-r-40 gap-16 pc"><i class="ic-download"></i>강의계획서</a>
-										</div>
-									</div>
-								</div>
-
-							</n-tab-pane>
-						</n-tabs>
-
-						<template #footer>
-							<button type="button" class="btn-type-b w100" @click="toggleModal('modal14')">확인</button>
-						</template>
-					</n-card>
-				</n-modal>
 
 				<!-- 보유스킬 -->
 				<button class="btn-type" @click="toggleModal('modal15')" disabled>보유스킬</button>
@@ -391,73 +282,7 @@
 					</n-card>
 				</n-modal>
 
-				<!-- 비교과 프로그램 상세정보 -->
-				<button class="btn-type" @click="toggleModal('modal16')" disabled>비교과 프로그램 상세정보</button>
-				<n-modal v-model:show="modals.modal16">
-					<n-card
-						style="width: 580px"
-						:bordered="false"
-						size="huge"
-						preset="dialog"
-						role="dialog"
-						aria-modal="true"
-					>
-						<template #header>
-							<h1 class="tit-01">비교과 프로그램 상세정보</h1>
-							<button type="button" class="pop-close-no-header" @click="toggleModal('modal16')"></button>
-						</template>
 
-						<div class="thumb-type-03">
-							<div class="thumb-lt">
-								<span class="chip-type-02-grn-02"></span>
-							</div>
-							<img src="../assets/images/dummy/thumb-01.png">
-						</div>
-
-						<ul class="vbar-02 mt-40">
-							<li>학습역량</li>
-							<li>특강프로그램</li>
-						</ul>
-
-						<div class="wrap-flex flex-between">
-							<h2 class="tit-02">자바스크립트 기반 백엔드 프로그래밍</h2>
-							<div class="form-type-opt-chk-01-01 flex-0">
-								<label>
-									<input type="checkbox">
-									<span class="opt-txt"></span>
-								</label>
-							</div>
-						</div>
-
-						<div class="wrap-flex flex-col gap-10 lh-1 mt-16">
-							<div class="wrap-flex gap-12"> 소속<span class="cr-blk">컴퓨터공학전공, 소프트웨어융합전공</span></div>
-							<div class="wrap-flex gap-12"> 분야<span class="cr-blk">데이터베이스</span></div>
-						</div>
-
-						<ul class="box-type-04 mt-20 lst-type-04">
-							<li>이수구분<br><strong class="fs-18 m-fs-28">전공선택</strong></li>
-							<li>이수방식<br><strong class="fs-18 m-fs-28">오프라인</strong></li>
-							<li>이수학점<br><strong class="fs-18 m-fs-28">3학점</strong></li>
-							<li>이수시간<br><strong class="fs-18 m-fs-28">3시간</strong></li>
-						</ul>
-
-						<div class="mt-20">
-							* 컴퓨터학부 재학생만 신청가능<br>
-							여름방학에 컴퓨터학부 교수님들의 전공 비교과 특강을 통해<br>
-							전공능력을 키워보세요!<br><br>
-
-							- 특강명 : 자바스크립트 기반 백엔드 프로그래밍<br>
-							- 교수자명 : 조행래 교수님<br>
-							- 일자 : 8/5(월) ~ 8/9(금)<br>
-							- 장소 : IT관 109호
-						</div>
-
-						<template #footer>
-							<button type="button" class="btn-type-b btn-b-blk w100" @click="toggleModal('modal16')">닫기</button>
-							<a href="#" class="btn-type-b w100 btn-link">자세히보기<i class="ic-link"></i></a>
-						</template>
-					</n-card>
-				</n-modal>
 			</div>
 
 			<h1 class="tit-01 mt-20">메인</h1>
@@ -572,6 +397,165 @@
 						</template>
 					</n-card>
 				</n-modal>
+
+				<!-- 교과상세 -->
+				<button class="btn-type" @click="toggleModal('main2')">교과상세</button>
+				<n-modal v-model:show="modals.main2">
+					<n-card
+						style="width: 580px"
+						:bordered="false"
+						size="huge"
+						preset="dialog"
+						role="dialog"
+						aria-modal="true"
+					>
+						<template #header>
+							<h1 class="tit-01">교과 상세정보</h1>
+							<button type="button" class="pop-close-no-header" @click="toggleModal('main2')"></button>
+						</template>
+
+						<p>컴퓨터공학전공</p>
+						<div class="wrap-flex justify-between align-center">
+							<h2 class="tit-02">통계분석과 머신러닝 모델링</h2>
+							<div>
+								<div class="form-type-opt-chk-01-01 wrap-flex">
+									<label>
+										<input type="checkbox">
+										<span class="opt-txt"></span>
+									</label>
+								</div>
+							</div>
+						</div>
+
+						<ul class="box-type-04 mt-20 lst-type-04 m-grid-col-3">
+							<li>이수구분<br><strong class="fs-18 m-fs-28">전공선택</strong></li>
+							<li>이수학점<br><strong class="fs-18 m-fs-28">3학점</strong></li>
+							<li>이수시간<br><strong class="fs-18 m-fs-28">3시간</strong></li>
+						</ul>
+
+						<h2 class="tit-02 mt-40">선수과목</h2>
+						<div class="wrap-flex mt-16">
+							<span class="chip-type-01-grn">전공필수</span>
+							<p>프로그래밍 언어 (2학년 1학기)</p>
+						</div>
+						<div class="wrap-flex mt-8">
+							<span class="chip-type-01-blu-02">전공선택</span>
+							<p>자료구조 (2학년2학기)</p>
+						</div>
+
+						<h2 class="tit-02 mt-40">강의정보</h2>
+
+						<ul class="wrap-flex gap-8 mt-16" data-scroll="hide">
+							<li>
+								<label class="form-type-opt-btn-03">
+									<input type="radio" name="" checked>
+									<span class="opt-txt">백강혁</span>
+								</label>
+							</li>
+							<li>
+								<label class="form-type-opt-btn-03">
+									<input type="radio" name="">
+									<span class="opt-txt">양재원</span>
+								</label>
+							</li>
+							<li>
+								<label class="form-type-opt-btn-03">
+									<input type="radio" name="">
+									<span class="opt-txt">천장미</span>
+								</label>
+							</li>
+						</ul>
+
+						<h3 class="cr-blk mt-28">강의 세부내용1</h3>
+						<p>최근 빅데이터와 인공지능은 학계, 산업계에서 가장 관심의 대상이 되는 연구분야로서, 특히, 이 두 분야의 핵심 기술인 데이터분석인공지능은 학계, 산업계에서 가장 관심의 대상이 되는 연구분야로서, 특히, 이 두 분야의 핵심기술인데이터 분석터분석인공지능은 학계, 산업계에서 가장 관심의 대상이 되는 연구분야로 서특히퓨터학부 재학생만 신청가능여름방학에 컴퓨터학부 교수님들의 전공 비교과 특강을 통해 전공능력을 키워보세요!</p>
+						<h3 class="cr-blk mt-28">주별계획</h3>
+						<p>1주차~기술로, 데이터 과학, 통계 및 컴퓨터 공학 기술이 융합된 두 분야의 핵심기술인 데이터분석터분석인공지능은 학계, 산업계에서 가장 관심의 대상이 되는 연구주차~기술로, 데이터 과학, 통계 및 컴퓨터 공학 기술이 융합된 두 분야의 핵2주차 심기술인 데이터분석터분석인공지능은 학계, 산업계에서 가장 관심의대상되는 연구데이터분석터분석인공지능은 학 공학, 산업계에서 가장 관심의 대상</p>
+
+						<template #footer>
+							<button type="button" class="btn-type-b btn-b-blk w100" @click="toggleModal('main2')">확인</button>
+						</template>
+					</n-card>
+				</n-modal>
+
+				<!-- 비교과 프로그램 상세정보 -->
+				<button class="btn-type" @click="toggleModal('main3')">비교과 프로그램 상세정보</button>
+				<n-modal v-model:show="modals.main3">
+					<n-card
+						style="width: 580px"
+						:bordered="false"
+						size="huge"
+						preset="dialog"
+						role="dialog"
+						aria-modal="true"
+					>
+						<template #header>
+							<h1 class="tit-01">비교과 프로그램 상세정보</h1>
+							<button type="button" class="pop-close-no-header" @click="toggleModal('main3')"></button>
+						</template>
+
+						<div class="thumb-type-03">
+							<div class="thumb-lt">
+								<span class="chip-type-02-grn"></span>
+							</div>
+							<img src="../assets/images/dummy/thumb-01.png">
+						</div>
+
+						<ul class="vbar-02 mt-40">
+							<li>학습역량</li>
+							<li>특강프로그램</li>
+						</ul>
+
+						<div class="wrap-flex justify-between align-center">
+							<h2 class="tit-02">자바스크립트 기반 백엔드 프로그래밍</h2>
+							<div>
+								<div class="form-type-opt-chk-01-01 wrap-flex">
+									<label>
+										<input type="checkbox">
+										<span class="opt-txt"></span>
+									</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="wrap-flex flex-col gap-10 lh-1 mt-16">
+							<div class="wrap-flex gap-12"> 소속<span class="cr-blk">컴퓨터공학전공, 소프트웨어융합전공</span></div>
+							<div class="wrap-flex gap-12"> 분야<span class="cr-blk">데이터베이스</span></div>
+						</div>
+
+						<ul class="box-type-04 mt-20 lst-type-04">
+							<li>모집대상<br><strong class="fs-18 m-fs-28">재학생</strong></li>
+							<li>모집학년<br><strong class="fs-18 m-fs-28">전체</strong></li>
+							<li>모집학과<br><strong class="fs-18 m-fs-28">전체</strong></li>
+							<li>모집성별<br><strong class="fs-18 m-fs-28">전체</strong></li>
+						</ul>
+
+						<div class="mt-20">
+							* 컴퓨터학부 재학생만 신청가능<br>
+							여름방학에 컴퓨터학부 교수님들의 전공 비교과 특강을 통해<br>
+							전공능력을 키워보세요!<br><br>
+
+							- 특강명 : 자바스크립트 기반 백엔드 프로그래밍<br>
+							- 교수자명 : 조행래 교수님<br>
+							- 일자 : 8/5(월) ~ 8/9(금)<br>
+							- 장소 : IT관 109호
+						</div>
+
+						<template #footer>
+							<button type="button" class="btn-type-b btn-b-blk w100" @click="toggleModal('main3')">닫기</button>
+							<a href="#" class="btn-type w100 gap-20">CANU 바로가기<i class="ic-link-03"></i></a>
+						</template>
+					</n-card>
+				</n-modal>
+
+
+
+
+
+
+
+
+
+
 
 				<!-- 관심분야설정 -->
 				<button class="btn-type" @click="toggleModal('modal3')" disabled>관심분야설정</button>
@@ -713,8 +697,6 @@
 						</template>
 					</n-card>
 				</n-modal>
-
-
 
 				<!-- 시스템 점검 안내 -->
 				<button class="btn-type" @click="toggleModal('modal4')" disabled>시스템 점검 안내</button>

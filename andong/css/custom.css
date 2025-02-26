@@ -150,6 +150,7 @@
 	.chip-type-01-sky {background:#ecfaff; color:#00aacc;}
 	.chip-type-01-sky-02 {background:#00aacc; color:white;}
 	.chip-type-01-pnk {background:#ffeaf5; color:#f52b81;}
+	.chip-type-01-grn {background:#18bba9; color:white;}
 
 	.chip-type-01-b-lgry {background:white; border:1px solid #e3e3e4; color:#666;}
 
@@ -519,7 +520,7 @@
 	.thumb-type-01 {border-radius:50%; width:102px; height:102px;}
 	.thumb-type-02 {border-radius:8px; width:150px; height:200px;}
 	.thumb-type-03 {border-radius:16px; width:100%; height:284px;}
-	.thumb-type-03 [class*="thumb-"] {padding:20px;}
+	.thumb-type-03 .thumb-lt {padding:20px 0;}
 
 /* Title */
 	.tit-01 {font-size:24px;}
