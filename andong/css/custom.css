@@ -356,7 +356,7 @@
 		.form-type-dropdown-01 .n-base-selection--active .n-base-clear:before {transform:rotate(180deg);}
 
 /* Full Calendar */
-	.fc-wrap .fc-toolbar-chunk {flex:1; gap:0; align-items:center;}
+	.fc-wrap .fc-toolbar-chunk {display:flex; flex:1; gap:0; align-items:center;}
 	.fc-wrap .fc-toolbar-chunk > * {margin-left:0 !important;}
 	.fc-wrap .fc-toolbar-chunk:nth-child(2) {gap:24px; justify-content:center;}
 	.fc-wrap .fc-item {font-size:14px; font-weight:500;}
@@ -374,7 +374,7 @@
 	.fc-wrap .fc-button:active,
 	.fc-wrap .fc-button:active:focus {background-color:white !important; border-color:#e4e4e4 !important; box-shadow:none !important; padding:0 !important;}
 	.fc-wrap .fc-prev-button,
-	.fc-wrap .fc-next-button {border-color:#e4e4e4; border-radius:50%; width:50px; height:50px;}
+	.fc-wrap .fc-next-button {justify-content:center; border-color:#e4e4e4; border-radius:50%; width:50px; height:50px;}
 	.fc-wrap .fc-prev-button .fc-icon,
 	.fc-wrap .fc-next-button .fc-icon {display:none;}
 	.fc-wrap .fc-col-header-cell {background:#f9f9f9; height:60px; vertical-align:middle; color:black;}

@@ -52,8 +52,8 @@
 						{ "menu": "상세", "src": "./page/notice_v.html", "state": "comp" }
 					], "state": "comp" },
 					{ "menu": "FAQ", "src": "./page/faq.html", "state": "comp" },
-					{ "menu": "To-Do-List", "src": "./page/todolist.html", "state": "" }
-				], "state": "work"}
+					{ "menu": "To-Do-List", "src": "./page/todolist.html", "state": "comp" }
+				], "state": "comp"}
 			],
 			"state": "work"
 		},

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="Management">
+		<meta name="description" content="Management">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script type="module" src="../js/index.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://unpkg.com/naive-ui"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
+		<script type="module" src="../js/module.js"></script>
+		<script type="module" src="../js/pub.js"></script>
+		<link rel="icon" href="../favicon.ico" sizes="any">
+		<link rel="stylesheet" href="../css/global.css">
+	</head>
+	<body>
+		<div data-include="../include/header.html"></div>
+		<div id="container">
+			<div id="sub-container" class="wrap-inner">
+				<div id="contents">
+					<div class="sub-title">
+						<a href="#"><i class="ic-l-arrow"></i></a><h2 class="tit-03">롤 모델 찾기 결과</h2>
+					</div>
+					<div class="wrap-flex flex-j-end mt-20">
+						<button type="button" class="btn-refresh"><i class="ic-refresh"></i>선택 초기화</button>
+					</div>
+					<div class="job-type-wrap">
+						<div class="job-type-ctrl">
+							<div class="wrap-flex flex-center gap-20">
+								<b class="cr-blk">취업기업</b>
+								<div class="form-type-txt">
+									<input type="text" placeholder="기업명을 입력해주세요">
+								</div>
+							</div>
+							<div class="wrap-flex flex-center gap-20 mt-24 m-flex-col m-flex-start">
+								<b class="cr-blk">주전공</b>
+								<ul class="vbar-02-01">
+									<li>디지털융합대학</li>
+									<li>컴퓨터학부</li>
+									<li><n-select class="form-type-dropdown-01"></n-select></li>
+								</ul>
+							</div>
+							<div class="wrap-flex flex-center mt-24 gap-20 m-flex-col m-flex-start">
+								<b class="cr-blk">복수전공</b>
+								<ul class="lst-tag-01 mt-0">
+									<li>
+										<ul class="vbar-02-01">
+											<li>디지털융합대학</li>
+											<li>컴퓨터학부</li>
+											<li>컴퓨터공학전공</li>
+										</ul>
+										<button type="button"><i class="ic-delete"></i></button>
+									</li>
+								</ul>
+							</div>
+							<div class="job-type job-type-full m-grid-col-1 m-gap-20">
+								<div>
+									<div class="pc h100">
+										<ul data-scroll="v" class="job-type-lst">
+											<li><button type="button">관리자</button></li>
+											<li class="active"><button type="button">전문가 및 관련 종사자</button></li>
+											<li><button type="button">사무종사자</button></li>
+											<li><button type="button">서비스종사자</button></li>
+											<li><button type="button">판매종사자</button></li>
+											<li><button type="button">농림 . 어업 숙련 종사자</button></li>
+											<li><button type="button">기능원 및 관련 기능 종사자</button></li>
+											<li><button type="button">장치. 기계 조작 및 조립종사자 </button></li>
+											<li><button type="button">단순노무 종사자</button></li>
+											<li><button type="button">군인</button></li>
+											<li><button type="button">관리자</button></li>
+											<li class="active"><button type="button">전문가 및 관련 종사자</button></li>
+											<li><button type="button">사무종사자</button></li>
+											<li><button type="button">서비스종사자</button></li>
+											<li><button type="button">판매종사자</button></li>
+											<li><button type="button">농림 . 어업 숙련 종사자</button></li>
+											<li><button type="button">기능원 및 관련 기능 종사자</button></li>
+											<li><button type="button">장치. 기계 조작 및 조립종사자 </button></li>
+											<li><button type="button">단순노무 종사자</button></li>
+											<li><button type="button">군인</button></li>
+										</ul>
+									</div>
+									<div class="mobile">
+										<b class="cr-blk">1차 작업분류</b>
+										<n-select class="form-type-dropdown-01 mt-20" placeholder="선택"></n-select>
+									</div>
+								</div>
+								<div>
+									<div class="pc h100">
+										<p class="job-type-lst no-data wrap-flex flex-center flex-j-center">1차 분류를 선택해주세요.</p>
+									</div>
+									<div class="mobile">
+										<b class="cr-blk">2차 작업분류</b>
+										<n-select class="form-type-dropdown-01 mt-20" placeholder="선택"></n-select>
+									</div>
+								</div>
+								<div>
+									<div class="pc h100">
+										<p class="job-type-lst no-data wrap-flex flex-center flex-j-center">2차 분류를 선택해주세요.</p>
+									</div>
+									<div class="mobile">
+										<b class="cr-blk">3차 작업분류</b>
+										<n-select class="form-type-dropdown-01 mt-20" placeholder="선택"></n-select>
+									</div>
+								</div>
+							</div>
+							<div class="wrap-flex flex-center mt-24 gap-20">
+								<b class="cr-blk">부전공</b>
+								<button type="button" class="btn-type-b btn-b-lgry btn-r-32-02">선택</button>
+							</div>
+							<div class="job-type job-type-full m-grid-col-1 m-gap-20">
+								<div>
+									<div class="pc h100">
+										<ul data-scroll="v" class="job-type-lst">
+											<li><button type="button">관리자</button></li>
+											<li class="active"><button type="button">전문가 및 관련 종사자</button></li>
+											<li><button type="button">사무종사자</button></li>
+											<li><button type="button">서비스종사자</button></li>
+											<li><button type="button">판매종사자</button></li>
+											<li><button type="button">농림 . 어업 숙련 종사자</button></li>
+											<li><button type="button">기능원 및 관련 기능 종사자</button></li>
+											<li><button type="button">장치. 기계 조작 및 조립종사자 </button></li>
+											<li><button type="button">단순노무 종사자</button></li>
+											<li><button type="button">군인</button></li>
+										</ul>
+									</div>
+									<div class="mobile">
+										<b class="cr-blk">1차 작업분류</b>
+										<n-select class="form-type-dropdown-01 mt-20" placeholder="선택"></n-select>
+									</div>
+								</div>
+								<div>
+									<div class="pc h100">
+										<p class="job-type-lst no-data wrap-flex flex-center flex-j-center">1차 분류를 선택해주세요.</p>
+									</div>
+									<div class="mobile">
+										<b class="cr-blk">2차 작업분류</b>
+										<n-select class="form-type-dropdown-01 mt-20" placeholder="선택"></n-select>
+									</div>
+								</div>
+								<div>
+									<div class="pc h100">
+										<p class="job-type-lst no-data wrap-flex flex-center flex-j-center">2차 분류를 선택해주세요.</p>
+									</div>
+									<div class="mobile">
+										<b class="cr-blk">3차 작업분류</b>
+										<n-select class="form-type-dropdown-01 mt-20" placeholder="선택"></n-select>
+									</div>
+								</div>
+							</div>
+							<div class="wrap-flex flex-center gap-20 mt-24 m-flex-col m-flex-start">
+								<b class="cr-blk">이수학점</b>
+								<div class="form-type-txt" divide>
+									<input type="text" class="txt-r" value="000">
+									<label class="txt-suffix">점 이상</label>
+								</div>
+								<b class="cr-blk">평균학점</b>
+								<div class="wrap-flex flex-between m-flex-col gap-40 m-w100">
+									<div class="wrap-flex flex-center gap-36">
+										<div class="form-type-txt" divide>
+											<input type="text" class="txt-r" value="000">
+											<label class="txt-suffix">점 이상</label>
+										</div>
+									</div>
+									<div class="wrap-flex flex-center gap-24 m-flex-j-end">
+										<button type="button" class="btn-refresh"><i class="ic-refresh"></i>초기화</button>
+										<button type="button" class="btn-type job-btn-search">검색</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="brd-wrap mt-60">
+						<p class="brd-tot">총 <span class="cr-mc">1</span>건</p>
+						<ul class="brd-lst-03">
+							<li>
+								<div class="wrap-flex flex-between m-flex-col m-flex-start">
+									<div class="wrap-flex flex-center gap-24 m-flex-col m-flex-start">
+										<h3 class="brd-tit wrap-flex flex-center gap-8">
+											<a href="#" class="brd-link">우아한강아지</a>
+											<span class="chip-type-01-b-lgry">삼성전자</span>
+										</h3>
+										<p>컴퓨터공학전공 / 소프트웨어 융합전공</p>
+									</div>
+									<ul class="vbar-01">
+										<li>총 이수학점 <span class="cr-blk">130점</span></li>
+										<li>평균평점 <span class="cr-blk">3.80점</span></li>
+									</ul>
+								</div>
+							</li>
+							<li class="no-data">검색결과가 없습니다.<br>다른조건으로 검색해보세요!</li>
+						</ul>
+						<div data-include="../include/paging.html"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div data-include="../include/footer.html"></div>
+	</body>
+</html>
