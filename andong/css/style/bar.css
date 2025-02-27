@@ -1,8 +1,8 @@
 /* Bar */
 	/* Default */
-		[class*="bar-"] {display:flex; gap:4px; line-height:1;}
-		[class*="bar-"] > * {display:flex; gap:4px;}
-		[class*="bar-"] > * + *:before {content:""; background:#ccc;}
+		[class*="bar-"]:not(.n-scrollbar-container, .n-scrollbar-content, .n-scrollbar-content) {display:flex; gap:4px; line-height:1;}
+		[class*="bar-"]:not(.n-scrollbar-container, .n-scrollbar-content, .n-scrollbar-content) > * {display:flex; gap:4px;}
+		[class*="bar-"]:not(.n-scrollbar-container, .n-scrollbar-content, .n-scrollbar-content) > * + *:before {content:""; background:#ccc;}
 
 	/* Horizontal Bar */
 		[class*="bar-h"] {flex-direction:column;}
