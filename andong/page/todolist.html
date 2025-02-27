@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="Management">
+		<meta name="description" content="Management">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script type="module" src="../js/index.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://unpkg.com/naive-ui"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
+		<script src='../js/fullcalendar.js'></script>
+		<script type="module" src="../js/pub.js"></script>
+		<link rel="icon" href="../favicon.ico" sizes="any">
+		<link rel="stylesheet" href="../css/global.css">
+	</head>
+	<body>
+		<div data-include="../include/header.html"></div>
+		<div id="container">
+			<div id="sub-container" class="wrap-inner">
+				<div id="contents">
+					<div class="wrap-flex align-center gap-20">
+						<h2 class="tit-03">To-Do-List</h2>
+						<button type="button" class="btn-type-b btn-b-lgry btn-type-sha btn-r-32-r"><i class="ic-plus-03"></i></button>
+					</div>
+					<div id="calendar" class="fc-wrap mt-40"></div>
+				</div>
+			</div>
+		</div>
+		<div data-include="../include/footer.html"></div>
+		<script type="module">
+		document.addEventListener('DOMContentLoaded', function () {
+			const calendarEl = document.getElementById('calendar');
+			const eventData = [
+				{ title: '데이터분석조별과제', start: '2025-03-04', type: '완료' },
+				{ title: '공모전마감일 18:00', start: '2025-03-09', type: '진행' },
+				{ title: '도서관 책반납', start: '2025-03-18', type: '완료' },
+				{ title: '동아리 MT 21(목)09:00 ~ 23(토)18:00', start: '2025-03-26', end: '2025-03-28', type: '대기' },
+			];
+
+			const calendar = new FullCalendar.Calendar(calendarEl, {
+				initialView: 'dayGridMonth',
+				locale: 'ko',
+				headerToolbar: {
+					left: '',
+					center: 'prev title next',
+					right: ''
+				},
+				eventDidMount: function (info) {
+					// 이벤트의 type에 따라 색상을 변경
+					var eventType = info.event.extendedProps.type;
+					if (eventType === '완료') {
+						info.el.style.backgroundColor = '#1d2088';
+						info.el.style.borderColor = '#1d2088';
+					} else if (eventType === '진행') {
+						info.el.style.backgroundColor = '#24bd65';
+						info.el.style.borderColor = '#24bd65';
+					} else if (eventType === '대기') {
+						info.el.style.backgroundColor = '#39bdde';
+						info.el.style.borderColor = '#39bdde';
+					}
+				},
+				dayCellContent: function (arg) {
+					// arg.date의 getDate()로 날짜의 숫자만 추출하여 반환
+					return { html: arg.date.getDate().toString() };
+				},
+				events: eventData
+			});
+			calendar.render();
+
+			// left 컨테이너 내용을 업데이트하는 함수
+			function updateLeftContent() {
+				const leftContainer = document.querySelector('.fc-header-toolbar .fc-toolbar-chunk');
+				if (leftContainer) {
+					if (!leftContainer.querySelector('ul')) {
+						const order = { '대기': 1, '진행': 2, '완료': 3 };
+						const uniqueTypes = Array.from(new Set(eventData.map(function (e) {
+							return e.type;
+						}))).sort(function (a, b) {
+							return order[a] - order[b];
+						});
+						const ulEl = document.createElement('ul');
+						ulEl.className = 'vbar-06 fc-item';
+						uniqueTypes.forEach(function (type) {
+							const liEl = document.createElement('li');
+							liEl.textContent = type;
+							ulEl.appendChild(liEl);
+						});
+
+						leftContainer.appendChild(ulEl);
+					}
+				}
+			}
+
+			const intervalId = setInterval(function () {
+				updateLeftContent();
+				const leftContainer = document.querySelector('.fc-header-toolbar .fc-toolbar-chunk');
+				if (leftContainer && leftContainer.querySelector('ul') && !leftContainer.querySelector('button.fc-myLeft-button')) {
+					clearInterval(intervalId);
+				}
+			}, 200);
+
+			const centerChunk = document.querySelector('.fc-header-toolbar .fc-toolbar-chunk:nth-of-type(2)');
+			if (centerChunk) {
+				const prevBtn = centerChunk.querySelector('.fc-prev-button');
+				if (prevBtn) {
+					prevBtn.innerHTML = '<i class="ic-l-arrow-03"></i>';
+				}
+				const nextBtn = centerChunk.querySelector('.fc-next-button');
+				if (nextBtn) {
+					nextBtn.innerHTML = '<i class="ic-l-arrow-03 tf-r180"></i>';
+				}
+			} else {
+				console.log('center 영역 버튼을 찾을 수 없습니다.');
+			}
+		});
+		</script>
+	</body>
+</html>
