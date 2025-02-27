@@ -60,8 +60,7 @@
 		{
 			"id": "Guide",
 			"submenu": [
-				{ "menu": "Naive UI", "src": "https://www.naiveui.com/en-US/os-theme/components/", "state": "comp" },
-				{ "menu": "primeVue", "src": "https://primevue.org/", "state": "comp" }
+				{ "menu": "Naive UI", "src": "https://www.naiveui.com/en-US/os-theme/components/", "state": "comp" }
 			],
 			"state": "comp"
 		}

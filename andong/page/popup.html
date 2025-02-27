@@ -1687,6 +1687,93 @@
 				</n-modal>
 			</div>
 
+			<h1 class="tit-01 mt-20">e-Notice</h1>
+			<div class="wrap-grid m-wrap-flex m-flex-wrap mt-20" style="grid-template-columns:repeat(7, 1fr); gap:10px;">
+				<!-- To-Do-List -->
+				<button class="btn-type" @click="toggleModal('enotice1')">To-Do-List</button>
+				<n-modal v-model:show="modals.enotice1">
+					<n-card
+						style="width: 580px"
+						:bordered="false"
+						size="huge"
+						preset="dialog"
+						role="dialog"
+						aria-modal="true"
+					>
+						<template #header>
+							<h1 class="tit-01">To-Do-List</h1>
+							<button type="button" class="pop-close-no-header" @click="toggleModal('enotice1')"></button>
+						</template>
+						<div class="wrap-grid gap-16">
+							<div class="form-type-txt">
+								<input type="text" placeholder="일정을 입력하세요">
+							</div>
+							<div class="form-type-tarea">
+								<textarea placeholder="일정의 상세내용을 입력하세요"></textarea>
+							</div>
+
+							<!-- 기본 -->
+							<div class="form-type-txt form-type-picker">
+								<div class="vbar-01 w100">
+									<n-date-picker v-model:value="timestamp" type="date" class="flex-1"></n-date-picker>
+								</div>
+							</div>
+
+							<!-- 종료일 체크 -->
+							<div class="form-type-txt form-type-picker">
+								<div class="vbar-01 wrap-grid grid-col-2">
+									<n-date-picker v-model:value="timestamp" type="date" class="flex-1"></n-date-picker>
+									<n-date-picker v-model:value="timestamp" type="date" class="flex-1"></n-date-picker>
+								</div>
+							</div>
+
+							<!-- 시간포함 체크 -->
+							<div class="form-type-txt form-type-picker">
+								<div class="vbar-01 wrap-grid grid-col-2">
+									<n-date-picker v-model:value="timestamp" type="date" class="flex-1"></n-date-picker>
+									<n-time-picker default-formatted-value="00:12:13"></n-time-picker>
+								</div>
+							</div>
+
+							<!-- 전부 체크 -->
+							<div class="form-type-txt form-type-picker">
+								<div class="vbar-01 wrap-grid grid-col-2">
+									<n-date-picker v-model:value="timestamp" type="date" class="flex-1"></n-date-picker>
+									<n-time-picker default-formatted-value="00:12:13"></n-time-picker>
+								</div>
+							</div>
+							<div class="form-type-txt form-type-picker">
+								<div class="vbar-01 wrap-grid grid-col-2">
+									<n-date-picker v-model:value="timestamp" type="date" class="flex-1"></n-date-picker>
+									<n-time-picker default-formatted-value="00:12:13"></n-time-picker>
+								</div>
+							</div>
+
+							<div class="wrap-grid grid-col-2">
+								<div class="wrap-flex gap-40">
+									<b class="cr-blk fs-16">종료일</b>
+									<label class="form-type-opt-swh-01">
+										<input type="checkbox">
+										<span class="opt-txt align-center"></span>
+									</label>
+								</div>
+								<div class="wrap-flex gap-40">
+									<b class="cr-blk fs-16">시간포함</b>
+									<label class="form-type-opt-swh-01">
+										<input type="checkbox">
+										<span class="opt-txt align-center"></span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<template #footer>
+							<button type="button" class="btn-type-b btn-b-blk w100" @click="toggleModal('enotice1')">취소</button>
+							<button type="button" class="btn-type w100">저장</button>
+						</template>
+					</n-card>
+				</n-modal>
+			</div>
+
 			<script>
 				const { createApp, ref, reactive } = Vue;
 				const { NTabs, NTabPane, NButton, NModal, NCard, NSelect } = naive;
