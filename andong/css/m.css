@@ -578,9 +578,6 @@
 
 	/* 팝업 */
 		.time-table {border-radius:2.22vw; font-size:2.78vw;}
-		.time-table th,
+		.time-table thead th {height:8.17vw;}
 		.time-table td {height:14.17vw;}
-		.time-table .bg-sky {background:#1c4fa0; color:white;}
-		.time-table .bg-grn {background:#18bba9; color:white;}
-		.time-table .bg-pnk {background:#f95289; color:white;}
 }
