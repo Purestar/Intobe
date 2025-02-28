@@ -17,7 +17,7 @@
 					{ "menu": "로그인", "src": "./page/login.html", "state": "comp" },
 					{ "menu": "팝업", "src": "./page/popup.html", "state": "comp" }
 				], "state": "comp"},
-				{ "menu": "메인", "src": "./page/main.html", "state": "work" },
+				{ "menu": "메인", "src": "./page/main.html", "state": "comp" },
 				{ "id": "진로탐색", "submenu": [
 					{ "id": "직업", "submenu": [
 						{ "menu": "홈", "src": "./page/job_home.html", "state": "comp" },
