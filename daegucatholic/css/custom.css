@@ -234,6 +234,7 @@
 		.ic-arrow-u-03:before {background-position:var(--bp-900) var(--bp-50); width:11px; height:10px;}
 		.ic-arrow-b:before {background-position:var(--bp-600) 0; width:10px; height:9px;}
 		.ic-arrow-d:before {background-position:var(--bp-400) var(--bp-50); width:12px; height:7px;}
+		.ic-arrow-d-02:before {background-position:var(--bp-950) var(--bp-50); width:16px; height:14px;}
 		.ic-book {background:#f5f5f5; border-radius:50%; width:44px; height:44px;}
 		.ic-book:before {background-position:var(--bp-500) var(--bp-50); width:24px; height:23px;}
 		.ic-cert {background:#f5f5f5; border-radius:50%; width:44px; height:44px;}
