@@ -468,12 +468,12 @@
 		[class*="lst-type-02"].bp-number-01 .lst-tit {align-items:center; flex:1; font-size:16px; font-weight:500;}
 		[class*="lst-type-02"] .brd-num {width:23px; text-align:center;}
 		[class*="lst-type-02"] .no-data {color:#999;}
-		[class*="lst-type-02"] .lst-bottom {display:flex; width:calc(100% + 48px); margin:24px -24px -28px -24px;}
+		[class*="lst-type-02"] .lst-bottom {position:relative; display:flex; width:calc(100% + 48px); margin:24px -24px -29px -24px; z-index:10;}
 		[class*="lst-type-02"] .lst-bottom > * {flex:1; border-radius:0; border-top-left-radius:0; border-top-right-radius:0; font-weight:500;}
 		[class*="lst-type-02"] .lst-bottom > *:first-child {border-bottom-left-radius:16px;}
 		[class*="lst-type-02"] .lst-bottom > *:last-child {border-bottom-right-radius:16px;}
 
-		.lst-type-02-01 > * {display:block; border-radius:16px; height:auto; padding:28px 24px;}
+		.lst-type-02-01 > * {overflow:visible; display:block; border-radius:16px; height:auto; padding:28px 24px;}
 		.lst-type-02-01[class*="bp-number"] > * {display:flex; align-items:flex-start; flex-direction:column; gap:8px;}
 		.lst-type-02-01[class*="bp-number"] > *:before {display:none; text-align:center;}
 		.lst-type-02-01[class*="bp-number"] .lst-tit {display:flex; gap:12px;}
@@ -773,6 +773,7 @@
 		.my-major-map-step {position:relative; z-index:1; overflow:hidden; display:flex; align-items:center; background:#d7d7df; box-shadow:-7px -1px 13px 0px rgba(0, 0, 0, 0.19); width:200px; height:80px; font-size:16px; color:#767891;}
 		.my-major-map-step:before {content:""; background:#e2e2f0; width:14px; height:100%; margin-right:16px;}
 		.my-major-map-step:after {content:""; flex:0 0 44px; background:white; box-shadow:inset 11px 0 20px 0px rgb(0 0 0 / 10%); width:44px; height:80px; clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); transform:translate(50%, 0);}
+		.my-major-map-pool-list .lst-type-02-02 > * {align-items:center;}
 
 		.my-major-map > *.complete .my-major-map-step {background:#a0a1b5; color:white;}
 		.my-major-map > *.complete .my-major-map-step:before {background:#8d8fb2;}

@@ -33,8 +33,8 @@
 				{ "id": "My Major Map", "submenu": [
 					{ "menu": "목록", "src": "./page/majormap_l.html", "state": "comp" },
 					{ "menu": "상세", "src": "./page/majormap_v.html", "state": "comp" },
-					{ "menu": "설계", "src": "./page/majormap_plan.html", "state": "work" }
-				], "state": "work" },
+					{ "menu": "설계", "src": "./page/majormap_plan.html", "state": "comp" }
+				], "state": "comp" },
 				{ "id": "My Career", "submenu": [
 					{ "id": "나의진단", "submenu": [
 						{ "menu": "목록", "src": "./page/diagnosis_l.html", "state": "comp" },
@@ -56,7 +56,7 @@
 					{ "menu": "To-Do-List", "src": "./page/todolist.html", "state": "comp" }
 				], "state": "comp"}
 			],
-			"state": "work"
+			"state": "comp"
 		},
 		{
 			"id": "Guide",

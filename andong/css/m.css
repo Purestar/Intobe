@@ -557,7 +557,7 @@
 			.my-major-map-wrap {padding:5.56vw 0 0; margin-bottom:-8.2vw;}
 			.my-major-map > *:last-child .my-major-map-lst {padding-bottom:19.44vw;}
 			.my-major-map:before {width:8.33vw;}
-			.my-major-map-lst {grid-template-columns:1fr; margin-top:3.33vw; padding:0 0 8.33vw 19.44vw;}
+			.my-major-map-lst {grid-template-columns:1fr; margin-top:3.33vw; padding:0 0 8.33vw 13.33vw;}
 			.my-major-map-lst:before {background-size:8.33vw 13.75vw; width:8.33vw;}
 			.my-major-map-step {box-shadow:-0.97vw -0.14vw 1.81vw 0.00vw rgba(0, 0, 0, 0.19); width:27.78vw; height:11.11vw; font-size:2.22vw;}
 			.my-major-map-step:before {width:1.94vw; margin-right:2.50vw;}
@@ -577,18 +577,9 @@
 			.my-major-map-pool.active .btn-pool-tg .ic-l-arrow-02 {transform:rotate(180deg);}
 			.my-major-map-pool.active + .my-major-map-pool-back {display:block;}
 
-			/*.my-major-map-wrap {padding:8.33vw 0 0;}
-			.my-major-map > * {padding:0 0 7.78vw 19.03vw;}
-			.my-major-map > *:last-child {padding-bottom:11.11vw;}
-			.my-major-map-lst {grid-template-columns:repeat(1, 1fr); margin-top:3.33vw;}
-			.my-major-map-lst .vbar-01 {display:grid; grid-template-columns:repeat(2, 1fr);}
-			.my-major-map-lst .vbar-01 > *:nth-child(3):before {display:none;}
-			.my-major-map-step {left:2.78vw; width:4.44vw;}
-			.my-major-map-step:before {border:0.56vw solid #c4c4c4; width:4.44vw; height:4.44vw;}
-			.my-major-map > *.complete .my-major-map-step:before {left:-2.78vw; top:-2.78vw; width:9.72vw; height:9.72vw;}
-			.my-major-map > *.active .my-major-map-step:before {left:-6.39vw; top:-5.56vw; background-position:var(--250) 0; width:20.56vw; height:21.11vw;}
 			.my-major-map-pool {flex-direction:column; margin:0; padding:0; transform:translate(100dvw, 0);}
 			.my-major-map-pool .btn-pool-tg {position:static; flex:0 0 var(--init-hh); background:white; gap:0; border-radius:0; border-bottom:1px solid #e2e2e2; width:100%; height:var(--init-hh); padding:0 var(--init-m-wr-side-pd); writing-mode:inherit; font-size:5vw; color:black;}
+			.my-major-map-pool .btn-pool-close {position:absolute; right:0; top:0; width:var(--init-hh); height:var(--init-hh);}
 			.my-major-map-pool-header {display:flex; justify-content:space-between; align-items:center; height:15.28vw; padding:0 var(--init-m-wr-side-pd)}
 			.my-major-map-pool-header h1 {font-size:5vw; font-weight:700; color:black;}
 			.my-major-map-pool-wrap {overflow:hidden; flex-direction:column; border-top-left-radius:0; border-bottom-left-radius:0; width:100dvw; height:100dvh; padding:var(--init-m-wr-side-pd) 0;}
@@ -597,7 +588,7 @@
 			.my-major-map-pool-form {table-layout:fixed; width:100%;}
 			.my-major-map-pool-form col:nth-child(1) {width:20vw !important;}
 			.my-major-map-pool-form th {vertical-align:top;}
-			.my-major-map-pool-list .lst-type-02-02 > * {flex-direction:row;}*/
+			.my-major-map-pool-list .lst-type-02-02 > * {flex-direction:row;}
 
 	/* 팝업 */
 		.time-table {border-radius:2.22vw; font-size:2.78vw;}
