@@ -32,7 +32,8 @@
 				], "state": "comp"},
 				{ "id": "My Major Map", "submenu": [
 					{ "menu": "목록", "src": "./page/majormap_l.html", "state": "comp" },
-					{ "menu": "상세", "src": "./page/majormap_v.html", "state": "work" }
+					{ "menu": "상세", "src": "./page/majormap_v.html", "state": "comp" },
+					{ "menu": "설계", "src": "./page/majormap_plan.html", "state": "work" }
 				], "state": "work" },
 				{ "id": "My Career", "submenu": [
 					{ "id": "나의진단", "submenu": [

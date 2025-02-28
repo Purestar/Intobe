@@ -554,7 +554,30 @@
 			.survey-wrap .survey-comp {height:63.89vw; font-size:4.44vw;}
 
 		/* My Major Map */
-			.my-major-map-wrap {padding:8.33vw 0 0;}
+			.my-major-map-wrap {padding:5.56vw 0 0; margin-bottom:-8.2vw;}
+			.my-major-map > *:last-child .my-major-map-lst {padding-bottom:19.44vw;}
+			.my-major-map:before {width:8.33vw;}
+			.my-major-map-lst {grid-template-columns:1fr; margin-top:3.33vw; padding:0 0 8.33vw 19.44vw;}
+			.my-major-map-lst:before {background-size:8.33vw 13.75vw; width:8.33vw;}
+			.my-major-map-step {box-shadow:-0.97vw -0.14vw 1.81vw 0.00vw rgba(0, 0, 0, 0.19); width:27.78vw; height:11.11vw; font-size:2.22vw;}
+			.my-major-map-step:before {width:1.94vw; margin-right:2.50vw;}
+			.my-major-map-step:after {flex:0 0 6.11vw; box-shadow:inset 1.53vw 0 2.78vw 0.00vw rgb(0 0 0 / 10%); width:6.11vw; height:11.11vw;}
+
+			.my-major-map > *.complete .my-major-map-lst:before {background-size:8.33vw 13.75vw;}
+
+
+			.my-major-map-pool {display:flex; align-items:flex-start; position:fixed; right:0; top:0; height:100%; padding:20px 0; transform:translate(604px, 0); transition:transform .3s ease; z-index:10;}
+			.my-major-map-pool .btn-pool-tg {display:flex; flex:0 0 48px; align-items:center; gap:16px; background:var(--mc); border-top-left-radius:24px; border-bottom-left-radius:24px; width:48px; height:auto; padding:32px 0; font-weight:500; writing-mode:vertical-rl; text-orientation:upright; color:white;}
+			.my-major-map-pool-wrap {display:flex; background:white; border-top-left-radius:24px; border-bottom-left-radius:24px; width:604px; height:100%; padding:40px;}
+			.my-major-map-pool-wrap .n-tabs {overflow:hidden; height:100%;}
+			.my-major-map-pool-wrap .n-tab-pane {overflow:hidden; display:flex; flex-direction:column; height:100%; padding:0 !important;}
+			.my-major-map-pool-wrap .my-major-map-pool-list {height:100%; margin-top:40px;}
+			.my-major-map-pool-back {display:none; position:fixed; left:0; top:0; width:100dvw; height:100dvh;}
+			.my-major-map-pool.active {transform:translate(0, 0); transition:transform .3s ease;}
+			.my-major-map-pool.active .btn-pool-tg .ic-l-arrow-02 {transform:rotate(180deg);}
+			.my-major-map-pool.active + .my-major-map-pool-back {display:block;}
+
+			/*.my-major-map-wrap {padding:8.33vw 0 0;}
 			.my-major-map > * {padding:0 0 7.78vw 19.03vw;}
 			.my-major-map > *:last-child {padding-bottom:11.11vw;}
 			.my-major-map-lst {grid-template-columns:repeat(1, 1fr); margin-top:3.33vw;}
@@ -574,7 +597,7 @@
 			.my-major-map-pool-form {table-layout:fixed; width:100%;}
 			.my-major-map-pool-form col:nth-child(1) {width:20vw !important;}
 			.my-major-map-pool-form th {vertical-align:top;}
-			.my-major-map-pool-list .lst-type-02-02 > * {flex-direction:row;}
+			.my-major-map-pool-list .lst-type-02-02 > * {flex-direction:row;}*/
 
 	/* 팝업 */
 		.time-table {border-radius:2.22vw; font-size:2.78vw;}
