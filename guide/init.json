@@ -41,10 +41,7 @@
 					{ "menu": "Default", "src": "./guide/layout-default.html", "state": "comp" },
 					{ "menu": "Center", "src": "./guide/layout-center.html", "state": "comp" },
 					{ "menu": "Ellipsis", "src": "./guide/layout-ellipsis.html", "state": "comp" },
-					{ "menu": "Inline", "src": "./guide/layout-inline.html", "state": "comp" },
-					{ "menu": "Inner", "src": "./guide/layout-inner.html", "state": "comp" },
-					{ "menu": "Flex", "src": "./guide/layout-flex.html", "state": "comp" },
-					{ "menu": "Grid", "src": "./guide/layout-grid.html", "state": "comp" }
+					{ "menu": "Inner", "src": "./guide/layout-inner.html", "state": "comp" }
 				], "state": "comp"},
 				{ "id": "UI(General)", "submenu": [
 					{ "menu": "Bullet", "src": "./guide/ui-bullet.html", "state": "comp" },

@@ -24,13 +24,11 @@
 				<h1>Information</h1>
 				<ul class="workspace-guide-prop">
 					<li>
-						<span class="workspace-guide-prop-attribute">layout</span>
-						<div>
-							<div class="workspace-guide-prop-attribute-value">flex</div>
-						</div>
+						<p class="workspace-guide-prop-attribute not-prefix">class</p>
+						<p class="workspace-guide-prop-attribute-value">layout-flex</p>
 					</li>
 				</ul>
-				<div data-layout="grid" style="--cols:2; --m-cols:1; --gap:20;">
+				<div class="layout-grid" style="--grid-t-col:2; --m-grid-t-col:1; --gap:20;">
 					<ul class="workspace-guide-prop">
 						<li>
 							<span class="workspace-guide-prop-desc">flex-direction</span>
@@ -116,7 +114,7 @@
 			<div class="workspace-guide-case">
 				<h1>Default</h1>
 				<div class="workspace-guide-inner">
-					<div data-layout="flex">
+					<div class="layout-flex">
 						<div>Flex</div><div>Flex</div><div>Flex</div>
 						<div>Flex</div><div>Flex</div><div>Flex</div>
 						<div>Flex</div><div>Flex</div><div>Flex</div>
@@ -124,7 +122,7 @@
 				</div>
 				<div class="workspace-guide-inner">
 					<xmp>
-						<div data-layout="flex"></div>
+						<div class="layout-flex"></div>
 					</xmp>
 				</div>
 			</div>
@@ -132,35 +130,35 @@
 			<hr> <!-- Direction -->
 			<div class="workspace-guide-case">
 				<h1>Direction</h1>
-				<div data-layout="grid" style="--cols:2; --gap:20;">
+				<div class="layout-grid" style="--cols:2; --gap:20;">
 					<div class="workspace-guide-inner">
-						<div data-layout="flex" style="--direction:row;">
+						<div class="layout-flex">
 							<div>1</div><div>2</div><div>3</div>
 							<div>4</div><div>5</div><div>6</div>
 							<div>7</div><div>8</div><div>9</div>
 						</div>
 					</div>
 					<div class="workspace-guide-inner">
-						<div data-layout="flex" style="--direction:row-reverse;">
+						<div class="layout-flex" style="--direction:row-reverse;">
 							<div>1</div><div>2</div><div>3</div>
 							<div>4</div><div>5</div><div>6</div>
 							<div>7</div><div>8</div><div>9</div>
 						</div>
 					</div>
 					<div class="workspace-guide-inner">
-						<div data-layout="flex" style="--direction:column;">
+						<div class="layout-flex" style="--direction:column;">
 							<div>1</div><div>2</div><div>3</div>
 						</div>
 					</div>
 					<div class="workspace-guide-inner">
-						<div data-layout="flex" style="--direction:column-reverse;">
+						<div class="layout-flex" style="--direction:column-reverse;">
 							<div>1</div><div>2</div><div>3</div>
 						</div>
 					</div>
 				</div>
 				<div class="workspace-guide-inner">
 					<xmp>
-						<div data-layout="flex" style="--direction:row;"></div>
+						<div class="layout-flex" style="--direction:row;"></div>
 					</xmp>
 				</div>
 			</div>
@@ -169,7 +167,7 @@
 			<div class="workspace-guide-case">
 				<h1>Gap</h1>
 				<div class="workspace-guide-inner">
-					<div data-layout="flex" style="--gap:70; --m-gap:36;">
+					<div class="layout-flex" style="--gap:70; --m-gap:36;">
 						<div>Flex</div><div>Flex</div><div>Flex</div>
 						<div>Flex</div><div>Flex</div><div>Flex</div>
 						<div>Flex</div><div>Flex</div><div>Flex</div>
@@ -177,7 +175,7 @@
 				</div>
 				<div class="workspace-guide-inner">
 					<xmp>
-						<div data-layout="flex" style="--gap:70; --m-gap:36;"></div>
+						<div class="layout-flex" style="--gap:70; --m-gap:36;"></div>
 					</xmp>
 				</div>
 			</div>
@@ -185,16 +183,16 @@
 			<hr> <!-- Row Gap & Column Gap -->
 			<div class="workspace-guide-case">
 				<h1>Row Gap & Column Gap</h1>
-				<div data-layout="grid" style="--cols:2; --m-cols:1; --gap:20;">
+				<div class="layout-grid" style="--cols:2; --m-cols:1; --gap:20;">
 					<div class="workspace-guide-inner">
-						<div data-layout="flex" style="--gap-r:70; --m-gap-r:36; --w:92;">
+						<div class="layout-flex" style="--gap-r:70; --m-gap-r:36; --w:92;">
 							<div>Flex</div><div>Flex</div><div>Flex</div>
 							<div>Flex</div><div>Flex</div><div>Flex</div>
 							<div>Flex</div><div>Flex</div><div>Flex</div>
 						</div>
 					</div>
 					<div class="workspace-guide-inner">
-						<div data-layout="flex" style="--gap-c:70; --m-gap-c:36; --w:232;">
+						<div class="layout-flex" style="--gap-c:70; --m-gap-c:36; --w:232;">
 							<div>Flex</div><div>Flex</div><div>Flex</div>
 							<div>Flex</div><div>Flex</div><div>Flex</div>
 							<div>Flex</div><div>Flex</div><div>Flex</div>
@@ -203,8 +201,8 @@
 				</div>
 				<div class="workspace-guide-inner">
 					<xmp>
-						<div data-layout="flex" style="--gap-r:70; --m-gap-r:36;"></div>
-						<div data-layout="flex" style="--gap-c:70; --m-gap-c:36;"></div>
+						<div class="layout-flex" style="--gap-r:70; --m-gap-r:36;"></div>
+						<div class="layout-flex" style="--gap-c:70; --m-gap-c:36;"></div>
 					</xmp>
 				</div>
 			</div>
@@ -212,44 +210,44 @@
 			<hr> <!-- Justify Content -->
 			<div class="workspace-guide-case">
 				<h1>Justify Content</h1>
-				<div data-layout="grid" style="--cols:2; --m-cols:1; --gap:20;">
+				<div class="layout-grid" style="--cols:2; --m-cols:1; --gap:20;">
 					<div class="workspace-guide-inner">
-						<div data-layout="flex" style="--justify:flex-start;">
+						<div class="layout-flex" style="--justify:flex-start;">
 							<div>Flex</div><div>Flex</div><div>Flex</div>
 							<div>Flex</div><div>Flex</div><div>Flex</div>
 							<div>Flex</div><div>Flex</div><div>Flex</div>
 						</div>
 					</div>
 					<div class="workspace-guide-inner">
-						<div data-layout="flex" style="--justify:flex-end;">
+						<div class="layout-flex" style="--justify:flex-end;">
 							<div>Flex</div><div>Flex</div><div>Flex</div>
 							<div>Flex</div><div>Flex</div><div>Flex</div>
 							<div>Flex</div><div>Flex</div><div>Flex</div>
 						</div>
 					</div>
 					<div class="workspace-guide-inner">
-						<div data-layout="flex" style="--justify:space-between;">
+						<div class="layout-flex" style="--justify:space-between;">
 							<div>Flex</div><div>Flex</div><div>Flex</div>
 							<div>Flex</div><div>Flex</div><div>Flex</div>
 							<div>Flex</div><div>Flex</div><div>Flex</div>
 						</div>
 					</div>
 					<div class="workspace-guide-inner">
-						<div data-layout="flex" style="--justify:space-around;">
+						<div class="layout-flex" style="--justify:space-around;">
 							<div>Flex</div><div>Flex</div><div>Flex</div>
 							<div>Flex</div><div>Flex</div><div>Flex</div>
 							<div>Flex</div><div>Flex</div><div>Flex</div>
 						</div>
 					</div>
 					<div class="workspace-guide-inner">
-						<div data-layout="flex" style="--justify:space-evenly;">
+						<div class="layout-flex" style="--justify:space-evenly;">
 							<div>Flex</div><div>Flex</div><div>Flex</div>
 							<div>Flex</div><div>Flex</div><div>Flex</div>
 							<div>Flex</div><div>Flex</div><div>Flex</div>
 						</div>
 					</div>
 					<div class="workspace-guide-inner">
-						<div data-layout="flex" style="--justify:center;">
+						<div class="layout-flex" style="--justify:center;">
 							<div>Flex</div><div>Flex</div><div>Flex</div>
 							<div>Flex</div><div>Flex</div><div>Flex</div>
 							<div>Flex</div><div>Flex</div><div>Flex</div>
@@ -259,7 +257,7 @@
 
 				<div class="workspace-guide-inner">
 					<xmp>
-						<div data-layout="flex" style="--justify:space-between;"></div>
+						<div class="layout-flex" style="--justify:space-between;"></div>
 					</xmp>
 				</div>
 			</div>
@@ -267,9 +265,9 @@
 			<hr> <!-- Align Items -->
 			<div class="workspace-guide-case">
 				<h1>Align Items</h1>
-				<div data-layout="grid" style="--cols:2; --m-cols:1; --gap:20;">
+				<div class="layout-grid" style="--cols:2; --m-cols:1; --gap:20;">
 					<div class="workspace-guide-inner">
-						<div data-layout="flex" style="--items:flex-start;">
+						<div class="layout-flex" style="--items:flex-start;">
 							<div>Test<br>Test<br>Test<br>Test<br>Test</div>
 							<div>Test<br>Test<br>Test<br>Test</div>
 							<div>Test<br>Test<br>Test</div>
@@ -282,7 +280,7 @@
 						</div>
 					</div>
 					<div class="workspace-guide-inner">
-						<div data-layout="flex" style="--items:flex-end;">
+						<div class="layout-flex" style="--items:flex-end;">
 							<div>Test<br>Test<br>Test<br>Test<br>Test</div>
 							<div>Test<br>Test<br>Test<br>Test</div>
 							<div>Test<br>Test<br>Test</div>
@@ -295,7 +293,7 @@
 						</div>
 					</div>
 					<div class="workspace-guide-inner">
-						<div data-layout="flex" style="--items:stretch;">
+						<div class="layout-flex" style="--items:stretch;">
 							<div>Test<br>Test<br>Test<br>Test<br>Test</div>
 							<div>Test<br>Test<br>Test<br>Test</div>
 							<div>Test<br>Test<br>Test</div>
@@ -308,7 +306,7 @@
 						</div>
 					</div>
 					<div class="workspace-guide-inner">
-						<div data-layout="flex" style="--items:center;">
+						<div class="layout-flex" style="--items:center;">
 							<div>Test<br>Test<br>Test<br>Test<br>Test</div>
 							<div>Test<br>Test<br>Test<br>Test</div>
 							<div>Test<br>Test<br>Test</div>
@@ -324,7 +322,7 @@
 
 				<div class="workspace-guide-inner">
 					<xmp>
-						<div data-layout="flex" style="--justify:space-between;"></div>
+						<div class="layout-flex" style="--justify:space-between;"></div>
 					</xmp>
 				</div>
 			</div>
@@ -332,9 +330,9 @@
 			<hr> <!-- Align Self -->
 			<div class="workspace-guide-case">
 				<h1>Align Self</h1>
-				<div data-layout="grid" style="--cols:2; --m-cols:1; --gap:20;">
+				<div class="layout-grid" style="--cols:2; --m-cols:1; --gap:20;">
 					<div class="workspace-guide-inner">
-						<div data-layout="flex">
+						<div class="layout-flex">
 							<div>Test<br>Test<br>Test<br>Test<br>Test</div>
 							<div>Test<br>Test<br>Test<br>Test</div>
 							<div>Test<br>Test<br>Test</div>
@@ -347,7 +345,7 @@
 						</div>
 					</div>
 					<div class="workspace-guide-inner">
-						<div data-layout="flex">
+						<div class="layout-flex">
 							<div>Test<br>Test<br>Test<br>Test<br>Test</div>
 							<div>Test<br>Test<br>Test<br>Test</div>
 							<div>Test<br>Test<br>Test</div>
@@ -360,7 +358,7 @@
 						</div>
 					</div>
 					<div class="workspace-guide-inner">
-						<div data-layout="flex">
+						<div class="layout-flex">
 							<div>Test<br>Test<br>Test<br>Test<br>Test</div>
 							<div>Test<br>Test<br>Test<br>Test</div>
 							<div>Test<br>Test<br>Test</div>
@@ -373,7 +371,7 @@
 						</div>
 					</div>
 					<div class="workspace-guide-inner">
-						<div data-layout="flex">
+						<div class="layout-flex">
 							<div>Test<br>Test<br>Test<br>Test<br>Test</div>
 							<div>Test<br>Test<br>Test<br>Test</div>
 							<div>Test<br>Test<br>Test</div>
@@ -389,7 +387,7 @@
 
 				<div class="workspace-guide-inner">
 					<xmp>
-						<div data-layout="flex">
+						<div class="layout-flex">
 							<div data-layout style="--self:flex-start;"></div>
 						</div>
 					</xmp>
@@ -399,23 +397,23 @@
 			<hr> <!-- Wrap -->
 			<div class="workspace-guide-case">
 				<h1>Wrap</h1>
-				<div data-layout="grid" style="--cols:2; --m-cols:1; --gap:20;">
+				<div class="layout-grid" style="--cols:2; --m-cols:1; --gap:20;">
 					<div class="workspace-guide-inner">
-						<div data-layout="flex" style="background:yellow; --wrap:wrap; --w:200;">
+						<div class="layout-flex" style="background:yellow; --wrap:wrap; --w:200;">
 							<div>Flex</div><div>Flex</div><div>Flex</div>
 							<div>Flex</div><div>Flex</div><div>Flex</div>
 							<div>Flex</div><div>Flex</div><div>Flex</div>
 						</div>
 					</div>
 					<div class="workspace-guide-inner">
-						<div data-layout="flex" style="background:yellow; --wrap:nowrap; --w:200;">
+						<div class="layout-flex" style="background:yellow; --wrap:nowrap; --w:200;">
 							<div>Flex</div><div>Flex</div><div>Flex</div>
 							<div>Flex</div><div>Flex</div><div>Flex</div>
 							<div>Flex</div><div>Flex</div><div>Flex</div>
 						</div>
 					</div>
 					<div class="workspace-guide-inner">
-						<div data-layout="flex" style="background:yellow; --wrap:wrap-reverse; --w:200;">
+						<div class="layout-flex" style="background:yellow; --wrap:wrap-reverse; --w:200;">
 							<div>Flex</div><div>Flex</div><div>Flex</div>
 							<div>Flex</div><div>Flex</div><div>Flex</div>
 							<div>Flex</div><div>Flex</div><div>Flex</div>
@@ -425,7 +423,7 @@
 
 				<div class="workspace-guide-inner">
 					<xmp>
-						<div data-layout="flex" style="--wrap:wrap;"></div>
+						<div class="layout-flex" style="--wrap:wrap;"></div>
 					</xmp>
 				</div>
 			</div>
