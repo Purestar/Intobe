@@ -14,7 +14,7 @@
 	/* Initialize - Mobile */
 		--m-init-footer-height: 232px; /* 푸터 높이 */
 		--m-init-header-height: 148px; /* 헤더 높이 */
-		--m-init-layout-padding: 36; /* 모바일 패딩 인라인 */
+		--m-init-layout-padding: 5vw; /* 모바일 패딩 인라인 */
 
 	/* Background */
 		--bg-img: url('../../images/bg.png'); /* 배경 이미지 경로 */
