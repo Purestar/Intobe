@@ -84,6 +84,13 @@
 	}
 
 @media all and (max-width:720px) {
+	/* Background */
+		[style*="--m-bg"] { background-color:var(--m-bg); }
+
+	/* Border */
+		[style*="--m-bd"] { border-width:var(--m-bd-w, 1px); border-color: var(--m-bd-c, currentcolor); border-style:var(--m-bd-s, solid); }
+		[style*="--m-bd-r"] { border-radius:var(--m-bd-r); }
+
 	/* Display */
 		[style*="--m-dp"] { display: var(--m-dp); }
 
@@ -106,7 +113,8 @@
 		[style*="--m-gap-r"] { row-gap: var(--m-gap-r); }
 		[style*="--m-grid-col"] { grid-column: span var(--m-grid-col); }
 		[style*="--m-grid-t-col"] { grid-template-columns: repeat(var(--m-grid-t-col), 1fr); }
-		[style*="--m-content"] { place-content: var(--m-content, var(--m-content-y)) var(--m-content, var(--m-content-x)); flex-wrap:wrap; }
+		[style*="--m-content"] { place-content: var(--m-content, var(--m-content-y)) var(--m-content, var(--m-content-x)); }
+		[style*="--m-items"] { place-items: var(--m-items, var(--m-items-y, normal)) var(--m-items, var(--m-items-x, normal)); }
 
 	/* Margin & Padding */
 		[style*="--mg-t"] { margin-top: var(--m-mg-t); }
