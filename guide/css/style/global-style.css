@@ -97,6 +97,11 @@
 			--pd-t: initial; --m-pd-t: initial; --pd-b: initial; --m-pd-b: initial; --pd-l: initial; --m-pd-l: initial; --pd-r: initial; --m-pd-r: initial;
 		}
 
+	/* Overflow */
+		[style*="--ovf"] > [style*="--ovf"] { --ovf: initial; --m-ovf: initial; }
+		[style*="--ovf-x"] > [style*="--ovf-x"] { --ovf-x: initial; --m-ovf-x: initial; }
+		[style*="--ovf-y"] > [style*="--ovf-y"] { --ovf-y: initial; --m-ovf-y: initial; }
+
 	/* Position */
 		[style*="--pos"] > [style*="--pos"] { --pos: initial; --m-pos: initial; }
 		[style*="--left"] > [style*="--left"] { --left: initial; --m-left: initial; }
@@ -167,6 +172,11 @@
 		[style*="--m-bottom"] { bottom: var(--m-bottom); }
 		[style*="--m-right"] { right: var(--m-right); }
 		[style*="--m-z-idx"] { z-index: var(--m-z-idx); }
+
+	/* Overflow */
+		[style*="--m-ovf"] { overflow: var(--m-ovf); }
+		[style*="--m-ovf-x"] { overflow-x: var(--m-ovf-x); }
+		[style*="--m-ovf-y"] { overflow-y: var(--m-ovf-y); }
 
 	/* Width & Height */
 		[style*="--m-w"] { width: var(--m-w); }
