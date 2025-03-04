@@ -601,7 +601,7 @@
 		.chatbot-chat-history-ctgy-list .chatbot-item-util-menu.active {display:block;}
 
 	/* 챗봇 페이지 */
-		.chatpage-wrap {display:none; position:fixed; left:0; top:0; width:100dvw; height:100dvh; z-index:999;}
+		.chatpage-wrap {display:none; height:calc(100dvh - var(--init-hh) - var(--init-fh)); z-index:999;}
 		.chatpage-wrap.active {display:flex;}
 		.chatpage-wrap > * {height:100%;}
 		.chatpage-panel {display:none; flex:0 0 260px; width:260px; padding:0 0 20px;}
