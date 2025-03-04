@@ -24,27 +24,103 @@
 				<h1>Information</h1>
 				<ul class="workspace-guide-prop">
 					<li>
-						<span class="workspace-guide-prop-desc">width</span>
-						<span class="workspace-guide-prop-name">pos</span>
-						<span class="workspace-guide-prop-value">&lt;Number&gt;</span>
+						<p class="workspace-guide-prop-desc">position</p>
+						<p class="workspace-guide-prop-name">pos</p>
+						<div>
+							<p class="workspace-guide-prop-value">static</p>
+							<p class="workspace-guide-prop-value">relative</p>
+							<p class="workspace-guide-prop-value">absolute</p>
+							<p class="workspace-guide-prop-value">sticky</p>
+							<p class="workspace-guide-prop-value">fixed</p>
+						</div>
 					</li>
 					<li>
-						<span class="workspace-guide-prop-desc">height</span>
-						<span class="workspace-guide-prop-name">h</span>
-						<span class="workspace-guide-prop-value">&lt;Number&gt;</span>
+						<p class="workspace-guide-prop-desc">left</p>
+						<p class="workspace-guide-prop-name">left</p>
+						<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+					</li>
+					<li>
+						<p class="workspace-guide-prop-desc">top</p>
+						<p class="workspace-guide-prop-name">top</p>
+						<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+					</li>
+					<li>
+						<p class="workspace-guide-prop-desc">bottom</p>
+						<p class="workspace-guide-prop-name">bottom</p>
+						<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+					</li>
+					<li>
+						<p class="workspace-guide-prop-desc">right</p>
+						<p class="workspace-guide-prop-name">right</p>
+						<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+					</li>
+					<li>
+						<p class="workspace-guide-prop-desc">z-index</p>
+						<p class="workspace-guide-prop-name">z-idx</p>
+						<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+					</li>
+					<li>
+						<p class="workspace-guide-prop-desc"><s>position-anchor</s></p>
+						<p class="workspace-guide-prop-desc"><s>position-area</s></p>
+						<p class="workspace-guide-prop-desc"><s>position-try</s></p>
+						<p class="workspace-guide-prop-desc"><s>position-try-fallbacks</s></p>
+						<p class="workspace-guide-prop-desc"><s>position-try-order</s></p>
+						<p class="workspace-guide-prop-desc"><s>position-visibility</s></p>
 					</li>
 				</ul>
 			</div>
 
-			<hr> <!-- Width -->
+			<hr> <!-- Position -->
 			<div class="workspace-guide-case">
-				<h1>Width</h1>
+				<h1>Position</h1>
 				<div class="workspace-guide-inner">
-					<div style="--w:100px;">Width 100px</div>
+					<div style="--pos:relative;">
+						<div style="--pos:absolute; --m-pos:static;">Absolute / Static</div>
+					</div>
 				</div>
 				<div class="workspace-guide-inner">
 					<xmp>
-						<div style="--w:100px;"></div>
+						<div style="--pos:absolute; --m-pos:static;"></div>
+					</xmp>
+				</div>
+			</div>
+
+			<hr> <!-- Sticky -->
+			<div class="workspace-guide-case">
+				<h1>Sticky</h1>
+				<div class="workspace-guide-inner">
+					<div style="--h:400px; overflow-y:auto;">
+						<div style="--pos:sticky; --left:0; --top:0;">Top</div>
+						<div style="--h:1200px"></div>
+						<div style="--pos:sticky; --left:0; --bottom:0;">Bottom</div>
+					</div>
+				</div>
+				<div class="workspace-guide-inner">
+					<xmp>
+						<div style="--h:400px; overflow-y:auto;">
+							<div style="--pos:sticky; --left:0; --top:0;">Top</div>
+							<div style="--h:1200px"></div>
+							<div style="--pos:sticky; --left:0; --bottom:0;">Bottom</div>
+						</div>
+					</xmp>
+				</div>
+			</div>
+
+			<hr> <!-- Z-index -->
+			<div class="workspace-guide-case">
+				<h1>Z-index</h1>
+				<div class="workspace-guide-inner">
+					<div style="--pos:relative;">
+						<div style="--pos:absolute; --bg:red; --z-idx:10;">1st div</div>
+						<div style="--pos:absolute; --bg:yellow; --left:20px;">2nd div</div>
+					</div>
+				</div>
+				<div class="workspace-guide-inner">
+					<xmp>
+						<div style="--h:400px; overflow-y:auto;">
+							<div style="--pos:absolute; --z-idx:10;"></div>
+							<div style="--pos:absolute; --left:20px;"></div>
+						</div>
 					</xmp>
 				</div>
 			</div>
