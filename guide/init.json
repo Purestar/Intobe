@@ -33,6 +33,7 @@
 					{ "menu": "Flex & Grid", "src": "./guide/global-flex.html", "state": "comp" },
 					{ "menu": "Font & Text", "src": "./guide/global-font.html", "state": "comp" },
 					{ "menu": "Margin & Padding", "src": "./guide/global-margin.html", "state": "comp" },
+					{ "menu": "Overflow", "src": "./guide/global-overflow.html", "state": "comp" },
 					{ "menu": "Position", "src": "./guide/global-position.html", "state": "comp" },
 					{ "menu": "Width & Height", "src": "./guide/global-width.html", "state": "comp" }
 				], "state": "comp"},

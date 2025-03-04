@@ -50,6 +50,11 @@
 	[style*="--pd-y"] { padding-block: var(--pd-y); }
 	[style*="--pd-a"] { padding: var(--pd-a); }
 
+/* Overflow */
+	[style*="--ovf"] { overflow: var(--ovf); }
+	[style*="--ovf-x"] { overflow-x: var(--ovf-x); overflow-y: hidden; white-space: nowrap; }
+	[style*="--ovf-y"] { overflow-x: hidden; overflow-y: var(--ovf-y); }
+
 /* Position */
 	[style*="--pos"] { position: var(--pos); }
 	[style*="--left"] { left: var(--left); }
