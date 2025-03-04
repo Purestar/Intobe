@@ -51,7 +51,7 @@
 
 	/* popup.css */
 		/* Popup Wrap */
-		.n-modal-body-wrapper .n-modal {height:100dvh; max-height:100dvh;}
+		.n-modal-body-wrapper .n-modal {max-height:100dvh;}
 
 		/* Popup Close */
 			[class*="pop-type"] [class*="pop-close"],
