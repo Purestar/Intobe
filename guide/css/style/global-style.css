@@ -7,7 +7,8 @@
 	[style*="--ol"] { outline-width:var(--ol-w, 1px); outline-color: var(--ol-c, currentcolor); outline-style:var(--ol-s, solid); }
 
 /* Display */
-	[style*="--dp"] { display:var(--dp); }
+	[style*="--dp"] { display: var(--dp); }
+	[style*="--dp:flex"] > * { flex-shrink: 0; flex-basis:var(--w); }
 
 /* Font & Text */
 	[style*="--ft-c"] { color:var(--ft-c); }
@@ -24,7 +25,8 @@
 	[style*="--txt-up"] { text-combine-upright:var(--txt-up); writing-mode: vertical-rl; }
 
 /* Flex & Grid */
-	[style*="--direction"] { flex-direction: var(--direction); }
+	[style*="--flex-direction"] { flex-direction: var(--flex-direction); }
+	[style*="--flex-wrap"] { flex-wrap: var(--flex-wrap); }
 	[style*="--gap"] { display: var(--dp, flex); flex-wrap:wrap; }
 	[style*="--gap-a"] { gap: var(--gap-a); }
 	[style*="--gap-c"] { column-gap: var(--gap-c); }
@@ -80,7 +82,8 @@
 		[style*="--dp"] > [style*="--dp"] { --dp: initial; --m-dp: initial; }
 
 	/* Flex & Grid */
-		[style*="--direction"] { --direction: initial; --m-direction: initial; }
+		[style*="--flex-direction"] { --flex-direction: initial; --m-flex-direction: initial; }
+		[style*="--flex-wrap"] { --flex-wrap: initial; --m-flex-wrap: initial; }
 		[style*="--gap"] > [style*="--gap"] { --gap-a: initial; --gap-r: initial; --gap-c: initial; --m-gap-a: initial; --m-gap-r: initial; --m-gap-c: initial; }
 		[style*="--grid"] > [style*="--grid"] { --grid-col: initial; --m-grid-col: initial; --grid-t-col: initial; --m-grid-t-col:initial; }
 		[style*="--content"] > [style*="--content"] { --content: initial; --m-content: initial; --content-x: initial; --m-content-x: initial; --content-y: initial; --m-content-y: initial; }
@@ -141,7 +144,8 @@
 		[style*="--m-txt-up"] { text-combine-upright:var(--m-txt-up); }
 
 	/* Flex & Grid */
-		[style*="--m-direction"] { flex-direction: var(--m-direction); }
+		[style*="--m-direction"] { flex-direction: var(--m-flex-direction); }
+		[style*="--m-flex-wrap"] { flex-wrap: var(--m-flex-wrap); }
 		[style*="--m-gap"] { display: var(--m-dp); gap: var(--m-gap); }
 		[style*="--m-gap-a"] { gap: var(--m-gap-a); }
 		[style*="--m-gap-c"] { column-gap: var(--m-gap-c); }

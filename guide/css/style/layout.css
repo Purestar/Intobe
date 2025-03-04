@@ -1,10 +1,11 @@
 /* Layout */
 	[class*="layout"] {}
 
-	[class*="layout-center"] {overflow:auto; display:flex; width:var(--w, 100%); height:var(--h, 100dvh);}
+	[class*="layout-center"] {overflow:var(--ovf, auto); display:var(--dp, flex); width:var(--w, 100%); height:var(--h, 100dvh);}
 	[class*="layout-center"] > * {flex-shrink:0; margin:auto;}
 
-	[class*="layout-flex"] {display:flex; /*flex-direction:var(--direction, row); flex-wrap:var(--wrap, wrap);*/}
+	[class*="layout-flex"] {display:flex; flex-direction:var(--flex-direction, row); flex-wrap:var(--flex-wrap, wrap);}
+	[class*="layout-flex"] > * {flex-shrink:0; flex-basis:var(--w);}
 
 	/*[data-layout] {align-self:var(--aself, flex-start);}
 
