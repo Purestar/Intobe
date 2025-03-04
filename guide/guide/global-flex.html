@@ -24,6 +24,16 @@
 				<h1>Information</h1>
 				<ul class="workspace-guide-prop">
 					<li>
+						<p class="workspace-guide-prop-desc">flex-direction</p>
+						<p class="workspace-guide-prop-name">direction</p>
+						<div>
+							<p class="workspace-guide-prop-value">row</p>
+							<p class="workspace-guide-prop-value">row-reverse</p>
+							<p class="workspace-guide-prop-value">column</p>
+							<p class="workspace-guide-prop-value">column-reverse</p>
+						</div>
+					</li>
+					<li>
 						<p class="workspace-guide-prop-desc">gap</p>
 						<p class="workspace-guide-prop-name">gap-a</p>
 						<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
@@ -123,13 +133,36 @@
 						<p class="workspace-guide-prop-desc"><s>grid-template</s></p>
 						<p class="workspace-guide-prop-desc"><s>grid-template-areas</s></p>
 						<p class="workspace-guide-prop-desc"><s>grid-template-rows</s></p>
-						<p class="workspace-guide-prop-desc"><s></s></p>
-						<p class="workspace-guide-prop-desc"><s></s></p>
-						<p class="workspace-guide-prop-desc"><s></s></p>
-						<p class="workspace-guide-prop-desc"><s></s></p>
-						<p class="workspace-guide-prop-desc"><s></s></p>
 					</li>
 				</ul>
+			</div>
+
+			<hr> <!-- Direction -->
+			<div class="workspace-guide-case">
+				<h1>Direction</h1>
+				<div class="workspace-guide-inner">
+					<div style="--dp:flex; --direction:row">
+						<div>row1</div><div>row2</div><div>row3</div>
+					</div>
+					<div style="--dp:flex; --direction:column">
+						<div>column1</div><div>column2</div><div>column3</div>
+					</div>
+					<div style="--dp:flex; --direction:row-reverse">
+						<div>row-reverse1</div><div>row-reverse2</div><div>row-reverse3</div>
+					</div>
+					<div style="--dp:flex; --direction:column-reverse">
+						<div>column-reverse1</div><div>column-reverse2</div><div>column-reverse3</div>
+					</div>
+				</div>
+				<div class="workspace-guide-inner">
+					<xmp>
+						<div style="--dp:grid; --grid-t-col:3;">
+							<div>Item</div>
+							<div>Item</div>
+							<div>Item</div>
+						</div>
+					</xmp>
+				</div>
 			</div>
 
 			<hr> <!-- Gap -->
