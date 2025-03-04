@@ -24,31 +24,33 @@
 				<h1>Information</h1>
 				<ul class="workspace-guide-prop">
 					<li>
-						<span class="workspace-guide-prop-attribute">layout</span>
+						<p class="workspace-guide-prop-attribute not-prefix">class</p>
 						<div>
-							<div class="workspace-guide-prop-attribute-value">center</div>
+							<div class="workspace-guide-prop-attribute-value">layout-center</div>
 						</div>
 					</li>
 				</ul>
 			</div>
 
+			<hr> <!-- Center -->
 			<div class="workspace-guide-case">
 				<h1>Center</h1>
 				<div class="workspace-guide-inner">
-					<div data-layout="center" style="--h:400;">
+					<div class="layout-center" style="--h:400px;">
 						<div>Layout Center</div>
 					</div>
 				</div>
 			</div>
 
+			<hr> <!-- Center Horizontal Scroll Contents -->
 			<div class="workspace-guide-case">
 				<h1>Center Horizontal Scroll Contents</h1>
 				<div class="workspace-guide-inner">
-					<div data-layout="center" style="--h:200;">
-						<div data-layout="flex">
-							<p>내용 시작</p>
+					<div class="layout-center" style="--h:200px;">
+						<div class="layout-flex">
+							<p><em>내용 시작</em></p>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-							<p>내용 끝</p>
+							<p><em>내용 끝</em></p>
 						</div>
 					</div>
 				</div>
@@ -57,11 +59,11 @@
 			<div class="workspace-guide-case">
 				<h1>Center Vertical Scroll Contents</h1>
 				<div class="workspace-guide-inner">
-					<div data-layout="center" style="--h:200;">
-						<div data-layout style="--w:200;">
-							<p>내용 시작</p>
+					<div class="layout-center" style="--h:200px;">
+						<div style="--w:200px; --txt-a:center;">
+							<p><em>내용 시작</em></p>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-							<p>내용 끝</p>
+							<p><em>내용 끝</em></p>
 						</div>
 					</div>
 				</div>
@@ -70,21 +72,21 @@
 			<div class="workspace-guide-case">
 				<h1>Center Both Scroll Contents</h1>
 				<div class="workspace-guide-inner">
-					<div data-layout="center" style="--w:200; --h:200;">
-						<div data-layout="flex" style="--justify:space-between; --items:center; --w:500; --h:500; --text:center; --wrap:nowrap;">
-							<p>내용 시작</h2>
+					<div class="layout-center" style="--w:200px; --h:200px;">
+						<div class="layout-flex" style="--content-x:center; --content-y:space-between; --w:500px; --h:500px; --txt-a:center;">
+							<p><em>내용 시작</em></p>
 							<div>
-								<p>내용 시작</p>
+								<p><em>내용 시작</em></p>
 								<p>Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit,<br>sed do eiusmod tempor incididunt ut<br> labore et dolore magna aliqua. <br>Ut enim ad minim veniam,<br> quis nostrud exercitation ullamco laboris nisi ut <br>aliquip ex ea commodo consequat. <br>Duis aute irure dolor in reprehenderit in voluptate velit esse<br> cillum dolore eu fugiat nulla pariatur. <br>Excepteur sint occaecat cupidatat non proident,<br> sunt in culpa qui officia deserunt<br> mollit anim id est laborum.</p>
-								<p>내용 끝</p>
+								<p><em>내용 끝</em></p>
 							</div>
-							<p>내용 끝</p>
+							<p><em>내용 끝</em></p>
 						</div>
 					</div>
 				</div>
 				<div class="workspace-guide-inner">
 					<xmp>
-						<div data-layout="center"></div>
+						<div class="layout-center"></div>
 					</xmp>
 				</div>
 			</div>

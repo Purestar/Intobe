@@ -1,20 +1,18 @@
 /* Layout */
+	[class*="layout"] {}
+
+	[class*="layout-center"] {overflow:auto; display:flex; width:var(--w, 100%); height:var(--h, 100dvh);}
+	[class*="layout-center"] > * {flex-shrink:0; margin:auto;}
+
+	[class*="layout-flex"] {display:flex; /*flex-direction:var(--direction, row); flex-wrap:var(--wrap, wrap);*/}
+
 	/*[data-layout] {align-self:var(--aself, flex-start);}
 
-	[data-layout="center"] {overflow:auto; display:flex; width:var(--width-result, 100%); height:var(--height-result, 100dvh);}
-	[data-layout="center"] > * {flex-shrink:0; margin:auto;}
+
 
 	[data-layout^="inner"] {width:var(--layout-width, var(--init-layout-width)); margin-inline:auto;}
 	[data-layout="inner-max"] {max-width:100%;}
 
-	[data-layout="flex"],
-	[data-layout="grid"] {
-		column-gap:calc(var(--gap-c, var(--gap, 0)) * 1px);
-		row-gap:calc(var(--gap-r, var(--gap, 0)) * 1px);
-		justify-content:var(--justify, flex-start);
-		align-items:var(--items, flex-start);
-	}
-	[data-layout="flex"] {display:flex; flex-direction:var(--direction, row); flex-wrap:var(--wrap, wrap);}
 	[data-layout="grid"] {display:grid; grid-template-columns:repeat(var(--cols, 1), 1fr);}
 	[data-layout="grid"] > * {grid-column:var(--colspan); grid-row:var(--rowspan);}
 
