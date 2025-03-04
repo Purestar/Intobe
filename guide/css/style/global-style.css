@@ -130,6 +130,7 @@
 
 	/* Display */
 		[style*="--m-dp"] { display: var(--m-dp); }
+		[style*="--m-dp:flex"] > * { flex-basis:var(--m-w); }
 
 	/* Font & Text */
 		[style*="--m-ft-c"] { color: var(--m-ft-c); }

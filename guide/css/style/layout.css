@@ -4,8 +4,18 @@
 	[class*="layout-center"] {overflow:var(--ovf, auto); display:var(--dp, flex); width:var(--w, 100%); height:var(--h, 100dvh);}
 	[class*="layout-center"] > * {flex-shrink:0; margin:auto;}
 
-	[class*="layout-flex"] {display:flex; flex-direction:var(--flex-direction, row); flex-wrap:var(--flex-wrap, wrap);}
+	[class*="layout-ellipsis"] {overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:var(--line, 1); text-align:left; word-break:break-all;}
+	[class*="layout-ellipsis"][data-disabled] {white-space:normal; -webkit-box-orient:unset; -webkit-line-clamp:0;}
+
+	[class*="layout-flex"] {display:var(--dp, flex);}
 	[class*="layout-flex"] > * {flex-shrink:0; flex-basis:var(--w);}
+
+@media all and (max-width:720px) {
+	[class*="layout-center"] {overflow:var(--m-ovf, auto); display:var(--m-dp, flex); width:var(--m-w, 100%); height:var(--m-h, 100dvh);}
+
+	[class*="layout-flex"] {display:var(--m-dp, flex);}
+	[class*="layout-flex"] > * {flex-basis:var(--m-w);}
+}
 
 	/*[data-layout] {align-self:var(--aself, flex-start);}
 
@@ -21,8 +31,7 @@
 	[data-layout="inline-block"] {display:inline-block;}
 	[data-layout="inline-flex"] {display:inline-flex;}
 
-	[data-layout="ellipsis"] {overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:var(--line, 1); text-align:left; word-break:break-all;}
-	[data-layout="ellipsis"][data-disabled] {white-space:normal; -webkit-box-orient:unset; -webkit-line-clamp:0;}
+
 
 @media all and (max-width:720px) {
 	[data-layout^="inner"] {width:100%; padding-inline:var(--m-layout-padding, calc(var(--m-init-layout-padding) * 100 / var(--init-mobile-design-width) * 1vw));}
@@ -38,5 +47,5 @@
 	[data-layout="grid"] {grid-template-columns:repeat(var(--m-cols, var(--cols)), 1fr);}
 	[data-layout="grid"] > * {grid-column:var(--m-colspan, var(--colspan)); grid-row:var(--m-rowspan, var(--rowspan));}
 
-	[data-layout="ellipsis"] {-webkit-line-clamp:var(--m-line, var(--line));}
+	[class*="layout-ellipsis"] {-webkit-line-clamp:var(--m-line, var(--line));}
 }*/
