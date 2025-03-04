@@ -1,4 +1,4 @@
-/* Backgroud */
+/* Background */
 	[style*="--bg"] { background-color:var(--bg); }
 
 /* Border */
@@ -55,7 +55,7 @@
 
 /* Style Initialize */
 	[style] > [style], [style] + [style] {
-		/* Backgroud */
+		/* Background */
 			--bg: initial;
 
 		/* Border */
