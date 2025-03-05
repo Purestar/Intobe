@@ -1,22 +1,40 @@
 /* Bullet */
 	/* Default */
-		[class*="bul-"] {word-break:break-all; color:var(--color);}
-		[class*="bul-"] > * {display:flex; gap:calc(var(--gap, 0) * 1px);}
-		[class*="bul-"] > *:before {content:""; color:var(--color);}
+		[class*="bul-"] {display:flex; flex-direction:var(--flex-direction, column);}
+		[class*="bul-"] > * {display:flex; gap:var(--bul-gap-a, 10px); max-width:100%; word-break:break-all;}
+		[class*="bul-"] > *:before {content:"";}
 
-	/* Circle */
-		[class*="bul-circle"] > *:before {flex:0 0 0.5em; background-color:var(--color, black); border-radius:50%; width:0.5em; height:0.5em; transform:translate(0, 0.32em);}
+	/* Figure */
+		[class*="bul-cir"] > *:before,
+		[class*="bul-squ"] > *:before,
+		[class*="bul-hyp"] > *:before {flex:0 0 var(--bul-w, 0.5em); background-color:var(--bul-c, var(--ft-c, black)); width:var(--bul-w, 0.5em);}
 
-	/* Square */
-		[class*="bul-square"] > *:before {flex:0 0 0.5em; background-color:var(--color, black); width:0.5em; height:0.5em; transform:translate(0, 0.32em);}
+		[class*="bul-cir"] > *:before,
+		[class*="bul-squ"] > *:before {height:var(--bul-w, var(--bul-h, 0.5em)); translate:0 calc((var(--txt-lh, var(--init-line-height)) * 1em - var(--bul-w, 0.5em)) / 2);}
 
-	/* Hyphen */
-		[class*="bul-hyphen"] > *:before {content:"- ";}
+		[class*="bul-hyp"] > *:before {height:var(--bul-h, 1px); translate:0 calc((var(--txt-lh, var(--init-line-height)) * 1em - var(--bul-h, 1px)) / 2);}
+
+		[class*="bul-cir"] > *:before {border-radius:50%;}
 
 	/* Number */
-		[class*="bul-number"] {counter-reset:list-num;}
-		[class*="bul-number"] > *:before {counter-increment:list-num; content:counter(list-num)". ";}
+		[class*="bul-num"] {counter-reset:list-num;}
+		[class*="bul-num"] > *:before {counter-increment:list-num; content:counter(list-num)". "; font-size:var(--bul-w, var(--ft-s));}
 
 @media all and (max-width:720px) {
-	[class*="bul-"] > * {display:flex; gap:calc(var(--m-gap, var(--gap)) * 100 / var(--init-mobile-design-width) * 1vw);}
+	/* Default */
+		[class*="bul-"] {flex-direction:var(--m-flex-direction, var(--flex-direction, column));}
+		[class*="bul-"] > * {gap:var(--m-bul-gap-a, var(--bul-gap-a, 10px));}
+
+	/* Figure */
+		[class*="bul-cir"] > *:before,
+		[class*="bul-squ"] > *:before,
+		[class*="bul-hyp"] > *:before {flex:0 0 var(--m-bul-w, var(--bul-w, 0.5em)); background-color:var(--m-bul-c, var(--bul-c, var(--ft-c, black))); width:var(--m-bul-w, var(--bul-w, 0.5em));}
+
+		[class*="bul-cir"] > *:before,
+		[class*="bul-squ"] > *:before {height:var(--m-bul-w, var(--bul-w, var(--bul-h, 0.5em))); translate:0 calc((var(--m-txt-lh, var(--txt-lh, var(--init-line-height))) * 1em - var(--m-bul-w, var(--bul-w, 0.5em))) / 2);}
+
+		[class*="bul-hyp"] > *:before {height:var(--m-bul-h, var(--bul-h, 1px)); translate:0 calc((var(--m-txt-lh, var(--txt-lh, var(--init-line-height))) * 1em - var(--m-bul-w, var(--bul-w, 1px))) / 2);}
+
+	/* Number */
+		[class*="bul-num"] > *:before {font-size:var(--m-bul-w, var(--bul-w, var(--ft-s)));}
 }
