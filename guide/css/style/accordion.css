@@ -1,5 +1,6 @@
 /* Accordion */
 	/* Default */
+		[class*="aco-type"] {overflow:auto;}
 		[class*="aco-type"] > .aco-item > .aco-head {display:flex; align-items:center; justify-content:space-between; width:100%;}
 		[class*="aco-type"] > .aco-item > .aco-head[disabled] {opacity:0.5;}
 		[class*="aco-type"] > .aco-item > .aco-head svg {display:none;}
