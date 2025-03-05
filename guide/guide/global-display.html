@@ -26,7 +26,7 @@
 					<li>
 						<span class="workspace-guide-prop-desc">display</span>
 						<span class="workspace-guide-prop-name">dp</span>
-						<div>
+						<div style="--dp:grid; --grid-t-col:4;">
 							<p class="workspace-guide-prop-value">none</p>
 							<p class="workspace-guide-prop-value">block</p>
 							<p class="workspace-guide-prop-value">inline</p>
@@ -67,24 +67,26 @@
 					</li>
 				</ul>
 			</div>
-			<hr><!-- Display -->
-			<div class="workspace-guide-case">
-				<h1>Display</h1>
+			<hr> <!-- Display -->
+			<div style="--dp:grid; --grid-t-col:1; --gap-a:20px;">
+				<div class="workspace-guide-case">
+					<h1>Display</h1>
 
-				<div class="workspace-guide-inner">
-					<div style="--dp:inline-block; --m-dp:flex;">
-						<div>Box</div>
-						<div>Box</div>
-						<div>Box</div>
-						<div>Box</div>
-						<div>Box</div>
-						<div>Box</div>
+					<div class="workspace-guide-inner">
+						<div style="--dp:inline-block; --m-dp:flex;">
+							<div>Box</div>
+							<div>Box</div>
+							<div>Box</div>
+							<div>Box</div>
+							<div>Box</div>
+							<div>Box</div>
+						</div>
 					</div>
-				</div>
-				<div class="workspace-guide-inner">
-					<xmp>
-						<div style="--dp:inline-block; --m-dp:flex;"></div>
-					</xmp>
+					<div class="workspace-guide-inner">
+						<xmp>
+							<div style="--dp:inline-block; --m-dp:flex;"></div>
+						</xmp>
+					</div>
 				</div>
 			</div>
 		</div>

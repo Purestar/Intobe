@@ -13,6 +13,17 @@
 	[class*="layout-inner"] {width:var(--w, var(--init-layout-width)); margin-inline:var(--mg-x, auto);}
 	[class*="layout-inner-max"] {max-width:100%;}
 
+/* Initialize */
+	[style*="--ovf"] [class*="layout-center"] { --ovf: initial; --m-ovf: initial; }
+	[style*="--dp"] [class*="layout-center"],
+	[style*="--dp"] [class*="layout-flex"],
+	[style*="--dp"] [class*="layout-grid"] { --dp: initial; --m-dp: initial; }
+	[style*="--w"] [class*="layout-center"],
+	[style*="--w"] [class*="layout-inner"] { --w: initial; --m-w: initial; }
+	[style*="--h"] [class*="layout-center"],
+	[style*="--h"] [class*="layout-inner"] { --h: initial; --m-h: initial; }
+	[style*="--mg-x"] [class*="layout-inner"] { --mg-x: initial; --mg-x: initial; }
+
 @media all and (max-width:720px) {
 	[class*="layout-inner"] {width:var(--m-w, 100%); padding-inline:var(--m-init-layout-padding);}
 
