@@ -56,6 +56,14 @@
 							<p class="workspace-guide-prop-value"></p>
 						</div>
 					</li>
+					<li>
+						<p class="workspace-guide-prop-desc">animation-iteration-count</p>
+						<p class="workspace-guide-prop-name">ani-rpt</p>
+						<div style="--grid-t-col:5;">
+							<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+							<p class="workspace-guide-prop-value">infinite</p>
+						</div>
+					</li>
 				</ul>
 			</div>
 
@@ -80,6 +88,9 @@
 				<div style="--grid-t-col:5; --gap-a:20px;">
 					<div class="workspace-guide-inner">
 						<div data-ani style="--ani-n:flash;">flash</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div data-ani style="--ani-n:pulse;">pulse</div>
 					</div>
 					<div class="workspace-guide-inner" style="--grid-col:5;">
 						<xmp>
@@ -109,34 +120,34 @@
 				<h1>Easing</h1>
 				<div style="--grid-t-col:5; --gap-a:20px;">
 					<div class="workspace-guide-inner">
-						<div data-ani style="--ani-dur:5s;">linear</div>
+						<div data-ani>linear</div>
 					</div>
 					<div class="workspace-guide-inner">
-						<div data-ani style="--ani-dur:5s; --ani-ease:linear(0, 0.25 50% 75%, 1);">linear(0, 0.25 50% 75%, 1)</div>
+						<div data-ani style="--ani-ease:linear(0, 0.25 50% 75%, 1);">linear(0, 0.25 50% 75%, 1)</div>
 					</div>
 					<div class="workspace-guide-inner">
-						<div data-ani style="--ani-dur:5s; --ani-ease:ease;">ease</div>
+						<div data-ani style="--ani-ease:ease;">ease</div>
 					</div>
 					<div class="workspace-guide-inner">
-						<div data-ani style="--ani-dur:5s; --ani-ease:ease-in;">ease-in</div>
+						<div data-ani style="--ani-ease:ease-in;">ease-in</div>
 					</div>
 					<div class="workspace-guide-inner">
-						<div data-ani style="--ani-dur:5s; --ani-ease:ease-out;">ease-out</div>
+						<div data-ani style="--ani-ease:ease-out;">ease-out</div>
 					</div>
 					<div class="workspace-guide-inner">
-						<div data-ani style="--ani-dur:5s; --ani-ease:ease-out;">ease-in-out</div>
+						<div data-ani style="--ani-ease:ease-out;">ease-in-out</div>
 					</div>
 					<div class="workspace-guide-inner">
-						<div data-ani style="--ani-dur:5s; --ani-ease:step-start;">step-start</div>
+						<div data-ani style="--ani-ease:step-start;">step-start</div>
 					</div>
 					<div class="workspace-guide-inner">
-						<div data-ani style="--ani-dur:5s; --ani-ease:step-end;">step-end</div>
+						<div data-ani style="--ani-ease:step-end;">step-end</div>
 					</div>
 					<div class="workspace-guide-inner">
-						<div data-ani style="--ani-dur:5s; --ani-ease:steps(5, end);">steps(5, end)</div>
+						<div data-ani style="--ani-ease:steps(5, end);">steps(5, end)</div>
 					</div>
 					<div class="workspace-guide-inner">
-						<div data-ani style="--ani-dur:5s; --ani-ease:cubic-bezier(0.1, -0.6, 0.2, 0);">cubic-bezier(0.1, -0.6, 0.2, 0)</div>
+						<div data-ani style="--ani-ease:cubic-bezier(0.1, -0.6, 0.2, 0);">cubic-bezier(0.1, -0.6, 0.2, 0)</div>
 					</div>
 					<div class="workspace-guide-inner" style="--grid-col:5;">
 						<xmp>
@@ -151,20 +162,35 @@
 				<h1>Repeat</h1>
 				<div style="--grid-t-col:5; --gap-a:20px;">
 					<div class="workspace-guide-inner">
-						<div data-ani style="--ani-dur:3s; --ani-rpt:1;">1</div>
+						<div data-ani style="--ani-rpt:1;">1</div>
 					</div>
 					<div class="workspace-guide-inner">
-						<div data-ani style="--ani-dur:3s; --ani-rpt:1.5;">1.5</div>
+						<div data-ani style="--ani-rpt:1.5;">1.5</div>
 					</div>
 					<div class="workspace-guide-inner">
-						<div data-ani style="--ani-dur:3s; --ani-rpt:2;">2</div>
+						<div data-ani style="--ani-rpt:2;">2</div>
 					</div>
 					<div class="workspace-guide-inner">
-						<div data-ani style="--ani-dur:3s;">infinite</div>
+						<div data-ani>infinite</div>
 					</div>
 					<div class="workspace-guide-inner" style="--grid-col:5;">
 						<xmp>
 							<div data-ani style="--ani-rpt:1;"></div>
+						</xmp>
+					</div>
+				</div>
+			</div>
+
+			<hr> <!-- Auto Start -->
+			<div class="workspace-guide-case">
+				<h1>Auto Start</h1>
+				<div style="--grid-t-col:1; --gap-a:20px;">
+					<div class="workspace-guide-inner">
+						<div data-ani-auto>1</div>
+					</div>
+					<div class="workspace-guide-inner" style="--grid-col:1;">
+						<xmp>
+							<div data-ani-auto></div>
 						</xmp>
 					</div>
 				</div>
