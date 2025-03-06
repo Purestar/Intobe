@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="대구가톨릭">
+		<meta name="description" content="대구가톨릭">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script type="module" src="../js/pub.js"></script>
+		<link rel="stylesheet" href="../css/global.css">
+		<style>
+			.workspace-guide-inner div {border:1px solid red;}
+		</style>
+	</head>
+	<body>
+		<div class="workspace-guide">
+			<!-- Information -->
+			<div class="workspace-guide-case">
+				<h1>Information</h1>
+				<ul class="workspace-guide-prop">
+					<li>
+						<div>
+							<p class="workspace-guide-prop-attribute">ani</p>
+							<p class="workspace-guide-prop-attribute">ani-target</p>
+						</div>
+						<div style="--dp:grid; --grid-t-col:5; --grid-col:2;">
+							<p class="workspace-guide-prop-attribute-value">bounce (default)</p>
+							<p class="workspace-guide-prop-attribute-value">flash</p>
+						</div>
+					</li>
+					<li>
+						<p class="workspace-guide-prop-desc">animation-duration</p>
+						<p class="workspace-guide-prop-name">ani-dur</p>
+						<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+					</li>
+					<li>
+						<p class="workspace-guide-prop-desc">animation-timing-function</p>
+						<p class="workspace-guide-prop-name">ani-ease</p>
+						<div style="--grid-t-col:5;">
+							<p class="workspace-guide-prop-value">linear</p>
+							<p class="workspace-guide-prop-value">linear()</p>
+							<p class="workspace-guide-prop-value">ease</p>
+							<p class="workspace-guide-prop-value">ease-in</p>
+							<p class="workspace-guide-prop-value">ease-out</p>
+							<p class="workspace-guide-prop-value">ease-in-out</p>
+							<p class="workspace-guide-prop-value">step-start</p>
+							<p class="workspace-guide-prop-value">step-end</p>
+							<p class="workspace-guide-prop-value" style="--grid-col:5;">cubic-bezier(&lt;number [0,1]&gt; , &lt;number&gt; , &lt;number [0,1]&gt; , &lt;number&gt;)</p>
+							<p class="workspace-guide-prop-value">steps</p>
+							<p class="workspace-guide-prop-value"></p>
+							<p class="workspace-guide-prop-value"></p>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<hr> <!-- Default -->
+			<div style="--grid-t-col:1;">
+				<div class="workspace-guide-case">
+					<h1>Default</h1>
+					<div class="workspace-guide-inner">
+						<div data-ani>Bounce</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<xmp>
+							<div data-ani></div>
+						</xmp>
+					</div>
+				</div>
+			</div>
+
+			<hr> <!-- Type -->
+			<div class="workspace-guide-case">
+				<h1>Type</h1>
+				<div style="--grid-t-col:5; --gap-a:20px;">
+					<div class="workspace-guide-inner">
+						<div data-ani style="--ani-n:flash;">flash</div>
+					</div>
+					<div class="workspace-guide-inner" style="--grid-col:5;">
+						<xmp>
+							<div data-ani style="--ani-n:flash;"></div>
+						</xmp>
+					</div>
+				</div>
+			</div>
+
+			<hr> <!-- Duration -->
+			<div style="--grid-t-col:1; --gap-a:20px;">
+				<div class="workspace-guide-case">
+					<h1>Duration</h1>
+					<div class="workspace-guide-inner">
+						<div data-ani style="--ani-dur: 3s;">3s</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<xmp>
+							<div data-ani style="--ani-dur: 3s;"></div>
+						</xmp>
+					</div>
+				</div>
+			</div>
+
+			<hr> <!-- Easing -->
+			<div class="workspace-guide-case">
+				<h1>Easing</h1>
+				<div style="--grid-t-col:5; --gap-a:20px;">
+					<div class="workspace-guide-inner">
+						<div data-ani style="--ani-dur:5s;">linear</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div data-ani style="--ani-dur:5s; --ani-ease:linear(0, 0.25 50% 75%, 1);">linear(0, 0.25 50% 75%, 1)</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div data-ani style="--ani-dur:5s; --ani-ease:ease;">ease</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div data-ani style="--ani-dur:5s; --ani-ease:ease-in;">ease-in</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div data-ani style="--ani-dur:5s; --ani-ease:ease-out;">ease-out</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div data-ani style="--ani-dur:5s; --ani-ease:ease-out;">ease-in-out</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div data-ani style="--ani-dur:5s; --ani-ease:step-start;">step-start</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div data-ani style="--ani-dur:5s; --ani-ease:step-end;">step-end</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div data-ani style="--ani-dur:5s; --ani-ease:steps(5, end);">steps(5, end)</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div data-ani style="--ani-dur:5s; --ani-ease:cubic-bezier(0.1, -0.6, 0.2, 0);">cubic-bezier(0.1, -0.6, 0.2, 0)</div>
+					</div>
+					<div class="workspace-guide-inner" style="--grid-col:5;">
+						<xmp>
+							<div data-ani style="--ani-ease:ease-in;"></div>
+						</xmp>
+					</div>
+				</div>
+			</div>
+
+			<hr> <!-- Repeat -->
+			<div class="workspace-guide-case">
+				<h1>Repeat</h1>
+				<div style="--grid-t-col:5; --gap-a:20px;">
+					<div class="workspace-guide-inner">
+						<div data-ani style="--ani-dur:3s; --ani-rpt:1;">1</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div data-ani style="--ani-dur:3s; --ani-rpt:1.5;">1.5</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div data-ani style="--ani-dur:3s; --ani-rpt:2;">2</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div data-ani style="--ani-dur:3s;">infinite</div>
+					</div>
+					<div class="workspace-guide-inner" style="--grid-col:5;">
+						<xmp>
+							<div data-ani style="--ani-rpt:1;"></div>
+						</xmp>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

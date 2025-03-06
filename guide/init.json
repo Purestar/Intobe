@@ -37,6 +37,7 @@
 					{ "menu": "Position", "src": "./guide/global-position.html", "state": "comp" },
 					{ "menu": "Width & Height", "src": "./guide/global-width.html", "state": "comp" }
 				], "state": "comp"},
+				{ "menu": "Animation", "src": "./guide/animation.html", "state": "work" },
 				{ "menu": "Layout", "src": "./guide/layout.html", "state": "comp" },
 				{ "id": "UI(General)", "submenu": [
 					{ "menu": "Bullet", "src": "./guide/ui-bullet.html", "state": "comp" },

@@ -1,10 +1,10 @@
 /* Divider */
 	/* Default */
 		[class*="div-"], [class*="div-"] > * {display:flex; gap:var(--div-gap, 0);}
-		[class*="div-"] > * + *:before {content:""; background-color:var(--div-c, black); animation-name:var(--div-ani);}
+		[class*="div-"] > * + *:before {content:""; background-color:var(--div-c, black); animation-name:attr(data-ani);}
 
 	/* Animation */
-		[class*="div-"][data-ani] > * + *:before {animation: var(--ani-dur, .5s) linear 1s infinite alternate bounce; animation-name:var(--ani-n, bounce);}
+		[class*="div-"][data-ani-target] > * + *:before {animation: var(--ani-dur, .5s) var(--ani-ease, linear) var(--ani-dly, 0s) infinite alternate bounce; animation-name:var(--ani-n, bounce);}
 
 	/* Horizontal Bar */
 		[class*="div-h"] {width:var(--div-w, 100%);}
