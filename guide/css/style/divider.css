@@ -4,7 +4,8 @@
 		[class*="div-"] > * + *:before {content:""; background-color:var(--div-c, black); animation-name:attr(data-ani);}
 
 	/* Animation */
-		[class*="div-"][data-ani-target] > * + *:before {
+		[class*="div-"][data-ani]:hover > * + *:before,
+		[class*="div-"][data-ani-auto] > * + *:before {
 			animation-fill-mode: both;
 			animation-duration: var(--ani-dur, .5s);
 			animation-delay: var(--ani-dly, 0s);
