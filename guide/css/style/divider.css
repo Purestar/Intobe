@@ -1,22 +1,41 @@
 /* Divider */
 	/* Default */
-		[class*="div-"], [class*="div-"] > * {display:flex; gap:calc(var(--gap, 0) * 1px);}
-		[class*="div-"] > * + *:before {content:""; background-color:#ccc;}
+		[class*="div-"], [class*="div-"] > * {display:flex; gap:var(--div-gap, 0);}
+		[class*="div-"] > * + *:before {content:""; background-color:var(--div-c, black); animation-name:var(--div-ani);}
+
+	/* Animation */
+		[class*="div-"][data-ani] > * + *:before {animation: var(--ani-dur, .5s) linear 1s infinite alternate bounce; animation-name:var(--ani-n, bounce);}
 
 	/* Horizontal Bar */
+		[class*="div-h"] {width:var(--div-w, 100%);}
 		[class*="div-h"], [class*="div-h"] > * {flex-direction:column;}
-		[class*="div-h"] > * + *:before {background-color:var(--color, black); width:100%; height:1px;}
+		[class*="div-h"] > * + *:before {place-self:center; width:100%; height:var(--div-h, 1px);}
+		[class*="div-h-"] {width:fit-content;}
 
 	/* Vertical Bar */
-		[class*="div-v"], [class*="div-v"] > * {align-items:center;}
-		[class*="div-v"] > * + *:before {background-color:var(--color, black); align-self:normal; width:1px;}
+		[class*="div-v"], [class*="div-v"] > * {place-items:center;}
+		[class*="div-v"] > * + *:before {width:var(--div-w, 1px); height:var(--div-h, var(--ft-s, var(--init-font-size)));}
 
 	/* Arrow */
 		[class*="div-h-arrow"] > * + *:before,
-		[class*="div-v-arrow"] > * + *:before {background:none; border-left:1px solid var(--color, black); border-top:1px solid var(--color, black); width:4px; height:4px;}
-		[class*="div-h-arrow"] > * + *:before {align-self:center; transform:rotate(225deg);}
-		[class*="div-v-arrow"] > * + *:before {align-self:auto; transform:rotate(135deg);}
+		[class*="div-v-arrow"] > * + *:before {background:none; border-left:1px solid var(--div-c, black); border-top:1px solid var(--div-c, black); width:var(--div-w, 4px); height:var(--div-w, 4px);}
+		[class*="div-h-arrow"] > * + *:before {rotate:225deg; translate:0 -35%;}
+		[class*="div-v-arrow"] > * + *:before {rotate:135deg; translate:-35% 0;}
 
-@media all and (max-width:720px) {
-	[class*="div-"], [class*="div-"] > * {display:flex; gap:calc(var(--m-gap, var(--gap)) * 100 / var(--init-mobile-design-width) * 1vw);}
-}
+	/* Slash */
+		[class*="div-h-slash"] > * + *:before,
+		[class*="div-v-slash"] > * + *:before {rotate:var(--div-rotate, 10deg);}
+
+	/* Circle & Square */
+		[class*="div-h-cir"] > * + *:before,
+		[class*="div-v-cir"] > * + *:before,
+		[class*="div-h-squ"] > * + *:before,
+		[class*="div-v-squ"] > * + *:before,
+		[class*="div-h-dia"] > * + *:before,
+		[class*="div-v-dia"] > * + *:before {width:var(--div-w, 8px); height:var(--div-w, 8px); rotate:var(--div-rotate, 0);}
+
+		[class*="div-h-cir"] > * + *:before,
+		[class*="div-v-cir"] > * + *:before {border-radius:50%;}
+
+		[class*="div-h-dia"] > * + *:before,
+		[class*="div-v-dia"] > * + *:before {rotate:45deg;}

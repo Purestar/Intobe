@@ -22,24 +22,45 @@
 				<ul class="workspace-guide-prop">
 					<li>
 						<span class="workspace-guide-prop-attribute not-prefix">class</span>
-						<div>
+						<div style="--grid-t-col:8; --grid-col:2;">
 							<div class="workspace-guide-prop-attribute-value">div-h</div>
 							<div class="workspace-guide-prop-attribute-value">div-v</div>
 							<div class="workspace-guide-prop-attribute-value">div-h-arrow</div>
 							<div class="workspace-guide-prop-attribute-value">div-v-arrow</div>
+							<div class="workspace-guide-prop-attribute-value">div-h-slash</div>
+							<div class="workspace-guide-prop-attribute-value">div-v-slash</div>
+							<div class="workspace-guide-prop-attribute-value">div-h-cir</div>
+							<div class="workspace-guide-prop-attribute-value">div-v-cir</div>
+							<div class="workspace-guide-prop-attribute-value">div-h-squ</div>
+							<div class="workspace-guide-prop-attribute-value">div-v-squ</div>
+							<div class="workspace-guide-prop-attribute-value">div-h-dia</div>
+							<div class="workspace-guide-prop-attribute-value">div-v-dia</div>
 						</div>
 					</li>
-				</ul>
-				<ul class="workspace-guide-prop">
 					<li>
-						<span class="workspace-guide-prop-desc">gap</span>
-						<span class="workspace-guide-prop-name">gap</span>
-						<span class="workspace-guide-prop-value">&lt;Number&gt;</span>
+						<p class="workspace-guide-prop-desc">Divider Color</p>
+						<p class="workspace-guide-prop-name">div-c</p>
+						<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
 					</li>
 					<li>
-						<span class="workspace-guide-prop-desc">Object Color</span>
-						<span class="workspace-guide-prop-name">color</span>
-						<span class="workspace-guide-prop-value">&lt;Value&gt;</span>
+						<p class="workspace-guide-prop-desc">Divider Gap</p>
+						<p class="workspace-guide-prop-name">div-gap</p>
+						<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+					</li>
+					<li>
+						<p class="workspace-guide-prop-desc">Divider Width</p>
+						<p class="workspace-guide-prop-name">div-w</p>
+						<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+					</li>
+					<li>
+						<p class="workspace-guide-prop-desc">Divider Height</p>
+						<p class="workspace-guide-prop-name">div-h</p>
+						<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+					</li>
+					<li>
+						<p class="workspace-guide-prop-desc">Divider Rotate</p>
+						<p class="workspace-guide-prop-name">div-rotate</p>
+						<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
 					</li>
 				</ul>
 			</div>
@@ -47,81 +68,308 @@
 			<hr> <!-- Line Divider -->
 			<div class="workspace-guide-case">
 				<h1>Line Divider</h1>
-				<div class="workspace-guide-inner">
-					<div class="div-h" style="--gap:10;">
-						<div>Item</div><div>Item</div><div>Item</div>
-					</div>
-					<div class="div-v" style="--gap:10; --mg-t:20">
-						<div>Item</div><div>Item</div><div>Item</div>
-					</div>
-				</div>
-				<div class="workspace-guide-inner">
-					<xmp>
+				<div style="--grid-t-col:2; --gap-a:20px;">
+					<div class="workspace-guide-inner">
 						<div class="div-h">
 							<div>Item</div><div>Item</div><div>Item</div>
 						</div>
+					</div>
+					<div class="workspace-guide-inner">
 						<div class="div-v">
 							<div>Item</div><div>Item</div><div>Item</div>
 						</div>
-					</xmp>
+					</div>
+					<div class="workspace-guide-inner" style="--grid-col:2;">
+						<xmp>
+							<div class="div-h"></div>
+							<div class="div-v"></div>
+						</xmp>
+					</div>
 				</div>
 			</div>
 
 			<hr> <!-- Arrow Divider -->
 			<div class="workspace-guide-case">
 				<h1>Arrow Divider</h1>
-				<div class="workspace-guide-inner">
-					<div class="div-h-arrow" style="--gap:10;">
-						<div>Item</div><div>Item</div><div>Item</div>
-					</div>
-					<br>
-					<div class="div-v-arrow" style="--gap:10; --mg-t:20">
-						<div>Item</div><div>Item</div><div>Item</div>
-					</div>
-				</div>
-				<div class="workspace-guide-inner">
-					<xmp>
+				<div style="--grid-t-col:2; --gap-a:20px;">
+					<div class="workspace-guide-inner">
 						<div class="div-h-arrow">
 							<div>Item</div><div>Item</div><div>Item</div>
 						</div>
+					</div>
+					<div class="workspace-guide-inner">
 						<div class="div-v-arrow">
 							<div>Item</div><div>Item</div><div>Item</div>
 						</div>
-					</xmp>
+					</div>
+					<div class="workspace-guide-inner" style="--grid-col:2;">
+						<xmp>
+							<div class="div-h-arrow"></div>
+							<div class="div-v-arrow"></div>
+						</xmp>
+					</div>
 				</div>
 			</div>
 
-			<hr> <!-- Divider Gap -->
+			<hr> <!-- Slash Divider -->
 			<div class="workspace-guide-case">
-				<h1>Divider Gap</h1>
-				<div class="workspace-guide-inner">
-					<div class="div-h" style="--gap:40;">
-						<div>Item</div><div>Item</div><div>Item</div>
-					</div>
-				</div>
-				<div class="workspace-guide-inner">
-					<xmp>
-						<div class="div-h" style="--gap:40;">
+				<h1>Slash Divider</h1>
+				<div style="--grid-t-col:2; --gap-a:20px;">
+					<div class="workspace-guide-inner">
+						<div class="div-h-slash">
 							<div>Item</div><div>Item</div><div>Item</div>
 						</div>
-					</xmp>
+					</div>
+					<div class="workspace-guide-inner">
+						<div class="div-v-slash">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner" style="--grid-col:2;">
+						<xmp>
+							<div class="div-h-slash"></div>
+							<div class="div-v-slash"></div>
+						</xmp>
+					</div>
 				</div>
 			</div>
 
-			<hr> <!-- Divider Color -->
+			<hr> <!-- Circle & Square & Diamond Divider -->
 			<div class="workspace-guide-case">
-				<h1>Divider Color</h1>
-				<div class="workspace-guide-inner">
-					<div class="div-h" style="--color:red;">
-						<div>Item</div><div>Item</div><div>Item</div>
-					</div>
-				</div>
-				<div class="workspace-guide-inner">
-					<xmp>
-						<div class="div-h" style="--color:red;">
+				<h1>Circle & Square & Diamond Divider</h1>
+				<div style="--grid-t-col:4; --gap-a:20px;">
+					<div class="workspace-guide-inner">
+						<div class="div-h-cir">
 							<div>Item</div><div>Item</div><div>Item</div>
 						</div>
-					</xmp>
+					</div>
+					<div class="workspace-guide-inner">
+						<div class="div-v-cir">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div class="div-h-squ">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div class="div-v-squ">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div class="div-h-dia">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div class="div-v-dia">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner" style="--grid-col:4;">
+						<xmp>
+							<div class="div-h-cir"></div>
+							<div class="div-h-squ"></div>
+							<div class="div-h-dia"></div>
+						</xmp>
+					</div>
+				</div>
+			</div>
+
+			<hr> <!-- Divider Gap & Divider Color -->
+			<div style="--grid-t-col:2; --gap-a:20px;">
+				<!-- Divider Gap -->
+				<div class="workspace-guide-case">
+					<h1>Divider Gap</h1>
+					<div class="workspace-guide-inner">
+						<div class="div-h" style="--div-gap:10px;">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<xmp>
+							<div class="div-h" style="--div-gap:10px;">
+								<div>Item</div><div>Item</div><div>Item</div>
+							</div>
+						</xmp>
+					</div>
+				</div>
+
+				<!-- Divider Color -->
+				<div class="workspace-guide-case">
+					<h1>Divider Color</h1>
+					<div class="workspace-guide-inner">
+						<div class="div-h" style="--div-c:red;">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<xmp>
+							<div class="div-h" style="--div-c:red;">
+								<div>Item</div><div>Item</div><div>Item</div>
+							</div>
+						</xmp>
+					</div>
+				</div>
+			</div>
+
+			<hr> <!-- Divider Rotate -->
+			<div class="workspace-guide-case">
+				<h1>Divider Rotate</h1>
+				<div style="--grid-t-col:4; --gap-a:20px;">
+					<div class="workspace-guide-inner">
+						<div class="div-h-slash" style="--div-gap:20px; --div-rotate:45deg;">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div class="div-v-slash" style="--div-gap:20px; --div-rotate:45deg;">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div class="div-h-squ" style="--div-gap:20px; --div-rotate:45deg;">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div class="div-v-squ" style="--div-gap:20px; --div-rotate:45deg;">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner" style="--grid-col:4;">
+						<xmp>
+							<div class="div-" style="--div-rotate:45deg;"></div>
+						</xmp>
+					</div>
+				</div>
+			</div>
+
+			<hr> <!-- Divider Size -->
+			<div class="workspace-guide-case">
+				<h1>Divider Size</h1>
+				<div style="--grid-t-col:4; --gap-a:20px;">
+					<div class="workspace-guide-inner">
+						<div class="div-h" style="--div-gap:10px; --div-w:max-content; --div-h:5px;">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div class="div-v" style="--div-gap:10px; --div-w:2px; --div-h:6px;">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div class="div-h-arrow" style="--div-gap:10px; --div-w:8px;">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div class="div-v-arrow" style="--div-gap:10px; --div-w:8px;">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div class="div-h-slash" style="--div-gap:20px; --div-h:8px;">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div class="div-v-slash" style="--div-gap:20px; --div-w:8px;">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div class="div-h-cir" style="--div-gap:20px; --div-w:8px;">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div class="div-v-cir" style="--div-gap:20px; --div-w:8px;">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div class="div-h-squ" style="--div-gap:20px; --div-w:8px;">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div class="div-v-squ" style="--div-gap:20px; --div-w:8px;">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner" style="--grid-col:4;">
+						<xmp>
+							<div class="div-" style="--div-w:max-content; --div-h:5px;"></div>
+							<div class="div-h-arrow" style="--div-w:6px;"></div>
+						</xmp>
+					</div>
+				</div>
+			</div>
+
+			<hr> <!-- Divider Size -->
+			<div class="workspace-guide-case">
+				<h1>Divider Animation</h1>
+				<div style="--grid-t-col:4; --gap-a:20px;">
+					<div class="workspace-guide-inner">
+						<div class="div-h" data-ani style="--div-gap:10px; --div-w:max-content; --div-h:5px;">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div class="div-v" style="--div-gap:10px; --div-w:2px; --div-h:6px;">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div class="div-h-arrow" style="--div-gap:10px; --div-w:8px;">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div class="div-v-arrow" style="--div-gap:10px; --div-w:8px;">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div class="div-h-slash" style="--div-gap:20px; --div-h:8px;">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div class="div-v-slash" style="--div-gap:20px; --div-w:8px;">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div class="div-h-cir" style="--div-gap:20px; --div-w:8px;">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div class="div-v-cir" style="--div-gap:20px; --div-w:8px;">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div class="div-h-squ" style="--div-gap:20px; --div-w:8px;">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div class="div-v-squ" style="--div-gap:20px; --div-w:8px;">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner" style="--grid-col:4;">
+						<xmp>
+							<div class="div-" style="--div-w:max-content; --div-h:5px;"></div>
+							<div class="div-h-arrow" style="--div-w:6px;"></div>
+						</xmp>
+					</div>
 				</div>
 			</div>
 		</div>
