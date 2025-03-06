@@ -4,7 +4,14 @@
 		[class*="div-"] > * + *:before {content:""; background-color:var(--div-c, black); animation-name:attr(data-ani);}
 
 	/* Animation */
-		[class*="div-"][data-ani-target] > * + *:before {animation: var(--ani-dur, .5s) var(--ani-ease, linear) var(--ani-dly, 0s) infinite alternate bounce; animation-name:var(--ani-n, bounce);}
+		[class*="div-"][data-ani-target] > * + *:before {
+			animation-fill-mode: both;
+			animation-duration: var(--ani-dur, .5s);
+			animation-delay: var(--ani-dly, 0s);
+			animation-timing-function: var(--ani-ease, linear);
+			animation-name:var(--ani-n, bounce);
+			animation-iteration-count:var(--ani-rpt, infinite);
+		}
 
 	/* Horizontal Bar */
 		[class*="div-h"] {width:var(--div-w, 100%);}
