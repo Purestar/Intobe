@@ -1,7 +1,7 @@
 /* Bullet */
 	/* Default */
 		[class*="bul-"] {display:flex; flex-direction:var(--flex-direction, column);}
-		[class*="bul-"] > * {display:flex; gap:var(--bul-gap-a, 10px); max-width:100%; word-break:break-all;}
+		[class*="bul-"] > * {display:flex; gap:var(--bul-gap, 10px); max-width:100%; word-break:break-all;}
 		[class*="bul-"] > *:before {content:"";}
 
 	/* Figure */
@@ -23,7 +23,7 @@
 @media all and (max-width:720px) {
 	/* Default */
 		[class*="bul-"] {flex-direction:var(--m-flex-direction, var(--flex-direction, column));}
-		[class*="bul-"] > * {gap:var(--m-bul-gap-a, var(--bul-gap-a, 10px));}
+		[class*="bul-"] > * {gap:var(--m-bul-gap, var(--bul-gap, 10px));}
 
 	/* Figure */
 		[class*="bul-cir"] > *:before,
