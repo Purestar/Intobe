@@ -25,12 +25,14 @@
 				<ul class="workspace-guide-prop">
 					<li>
 						<div>
-							<p class="workspace-guide-prop-attribute">ani</p>
-							<p class="workspace-guide-prop-attribute">ani-auto</p>
+							<p class="workspace-guide-prop-attribute">ani-this</p>
+							<p class="workspace-guide-prop-attribute">ani-this-auto</p>
 						</div>
 						<div style="--dp:grid; --grid-t-col:5; --grid-col:2;">
 							<p class="workspace-guide-prop-attribute-value">bounce (default)</p>
 							<p class="workspace-guide-prop-attribute-value">flash</p>
+							<p class="workspace-guide-prop-attribute-value">pulse</p>
+							<p class="workspace-guide-prop-attribute-value">rubberBand</p>
 						</div>
 					</li>
 					<li>
@@ -72,11 +74,11 @@
 				<div class="workspace-guide-case">
 					<h1>Default</h1>
 					<div class="workspace-guide-inner">
-						<div data-ani>Bounce</div>
+						<div data-ani-this>Bounce</div>
 					</div>
 					<div class="workspace-guide-inner">
 						<xmp>
-							<div data-ani></div>
+							<div data-ani-this></div>
 						</xmp>
 					</div>
 				</div>
@@ -87,14 +89,17 @@
 				<h1>Type</h1>
 				<div style="--grid-t-col:5; --gap-a:20px;">
 					<div class="workspace-guide-inner">
-						<div data-ani style="--ani-n:flash;">flash</div>
+						<div data-ani-this style="--ani-n:flash;">flash</div>
 					</div>
 					<div class="workspace-guide-inner">
-						<div data-ani style="--ani-n:pulse;">pulse</div>
+						<div data-ani-this style="--ani-dur:3s; --ani-n:pulse;">pulse</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div data-ani-this style="--ani-dur:3s; --ani-n:rubberBand;">rubberBand</div>
 					</div>
 					<div class="workspace-guide-inner" style="--grid-col:5;">
 						<xmp>
-							<div data-ani style="--ani-n:flash;"></div>
+							<div data-ani-this style="--ani-n:flash;"></div>
 						</xmp>
 					</div>
 				</div>
@@ -105,11 +110,11 @@
 				<div class="workspace-guide-case">
 					<h1>Duration</h1>
 					<div class="workspace-guide-inner">
-						<div data-ani style="--ani-dur: 3s;">3s</div>
+						<div data-ani-this style="--ani-dur: 3s;">3s</div>
 					</div>
 					<div class="workspace-guide-inner">
 						<xmp>
-							<div data-ani style="--ani-dur: 3s;"></div>
+							<div data-ani-this style="--ani-dur: 3s;"></div>
 						</xmp>
 					</div>
 				</div>
@@ -120,38 +125,38 @@
 				<h1>Easing</h1>
 				<div style="--grid-t-col:5; --gap-a:20px;">
 					<div class="workspace-guide-inner">
-						<div data-ani>linear</div>
+						<div data-ani-this>linear</div>
 					</div>
 					<div class="workspace-guide-inner">
-						<div data-ani style="--ani-ease:linear(0, 0.25 50% 75%, 1);">linear(0, 0.25 50% 75%, 1)</div>
+						<div data-ani-this style="--ani-ease:linear(0, 0.25 50% 75%, 1);">linear(0, 0.25 50% 75%, 1)</div>
 					</div>
 					<div class="workspace-guide-inner">
-						<div data-ani style="--ani-ease:ease;">ease</div>
+						<div data-ani-this style="--ani-ease:ease;">ease</div>
 					</div>
 					<div class="workspace-guide-inner">
-						<div data-ani style="--ani-ease:ease-in;">ease-in</div>
+						<div data-ani-this style="--ani-ease:ease-in;">ease-in</div>
 					</div>
 					<div class="workspace-guide-inner">
-						<div data-ani style="--ani-ease:ease-out;">ease-out</div>
+						<div data-ani-this style="--ani-ease:ease-out;">ease-out</div>
 					</div>
 					<div class="workspace-guide-inner">
-						<div data-ani style="--ani-ease:ease-out;">ease-in-out</div>
+						<div data-ani-this style="--ani-ease:ease-out;">ease-in-out</div>
 					</div>
 					<div class="workspace-guide-inner">
-						<div data-ani style="--ani-ease:step-start;">step-start</div>
+						<div data-ani-this style="--ani-ease:step-start;">step-start</div>
 					</div>
 					<div class="workspace-guide-inner">
-						<div data-ani style="--ani-ease:step-end;">step-end</div>
+						<div data-ani-this style="--ani-ease:step-end;">step-end</div>
 					</div>
 					<div class="workspace-guide-inner">
-						<div data-ani style="--ani-ease:steps(5, end);">steps(5, end)</div>
+						<div data-ani-this style="--ani-ease:steps(5, end);">steps(5, end)</div>
 					</div>
 					<div class="workspace-guide-inner">
-						<div data-ani style="--ani-ease:cubic-bezier(0.1, -0.6, 0.2, 0);">cubic-bezier(0.1, -0.6, 0.2, 0)</div>
+						<div data-ani-this style="--ani-ease:cubic-bezier(0.1, -0.6, 0.2, 0);">cubic-bezier(0.1, -0.6, 0.2, 0)</div>
 					</div>
 					<div class="workspace-guide-inner" style="--grid-col:5;">
 						<xmp>
-							<div data-ani style="--ani-ease:ease-in;"></div>
+							<div data-ani-this style="--ani-ease:ease-in;"></div>
 						</xmp>
 					</div>
 				</div>
@@ -162,20 +167,20 @@
 				<h1>Repeat</h1>
 				<div style="--grid-t-col:5; --gap-a:20px;">
 					<div class="workspace-guide-inner">
-						<div data-ani style="--ani-rpt:1;">1</div>
+						<div data-ani-this style="--ani-rpt:1;">1</div>
 					</div>
 					<div class="workspace-guide-inner">
-						<div data-ani style="--ani-rpt:1.5;">1.5</div>
+						<div data-ani-this style="--ani-rpt:1.5;">1.5</div>
 					</div>
 					<div class="workspace-guide-inner">
-						<div data-ani style="--ani-rpt:2;">2</div>
+						<div data-ani-this style="--ani-rpt:2;">2</div>
 					</div>
 					<div class="workspace-guide-inner">
-						<div data-ani>infinite</div>
+						<div data-ani-this>infinite</div>
 					</div>
 					<div class="workspace-guide-inner" style="--grid-col:5;">
 						<xmp>
-							<div data-ani style="--ani-rpt:1;"></div>
+							<div data-ani-this style="--ani-rpt:1;"></div>
 						</xmp>
 					</div>
 				</div>
@@ -186,11 +191,11 @@
 				<h1>Auto Start</h1>
 				<div style="--grid-t-col:1; --gap-a:20px;">
 					<div class="workspace-guide-inner">
-						<div data-ani-auto>1</div>
+						<div data-ani-this-auto>1</div>
 					</div>
 					<div class="workspace-guide-inner" style="--grid-col:1;">
 						<xmp>
-							<div data-ani-auto></div>
+							<div data-ani-this-auto></div>
 						</xmp>
 					</div>
 				</div>
