@@ -25,6 +25,7 @@
 		[class*="btn-type"][data-disabled] [class*="ic-"] {opacity:0.5;}
 
 	/* Group */
-		/*[class*="btn-grp-type"] {overflow:hidden; display:inline-flex; border-radius:var(--fom-br); min-height:var(--fom-h);}
-		[class*="btn-grp-type"]:hover {background:none;}
-		[class*="btn-grp-type"] [class*="btn-type"] {border-radius:0;}*/
+		[class*="btn-grp-type"] {overflow:hidden; display:flex; border-radius:var(--btn-bd-r, var(--fom-br)); width:fit-content; min-height:var(--btn-h, var(--fom-h));}
+		[class*="btn-grp-type"] [class*="btn-type"] {border-radius:0;}
+		[class*="btn-grp-type"][data-equal] {width:100%;}
+		[class*="btn-grp-type"][data-equal] > [class*="btn-type"] {flex:1;}
