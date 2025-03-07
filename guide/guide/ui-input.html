@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="대구가톨릭">
+		<meta name="description" content="대구가톨릭">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script type="module" src="../js/pub.js"></script>
+		<link rel="stylesheet" href="../css/global.css">
+		<link rel="stylesheet" href="../css/workspace.css">
+	</head>
+	<body>
+		<div id="container">
+			<div class="workspace-guide">
+				<!-- Information -->
+				<div class="workspace-guide-case">
+					<h1>Information</h1>
+					<ul class="workspace-guide-prop">
+						<li>
+							<p class="workspace-guide-prop-attribute not-prefix">class</p>
+							<div style="--grid-t-col:8; --grid-col:2;">
+								<p class="workspace-guide-prop-attribute-value">chip-type</p>
+							</div>
+						</li>
+						<li>
+							<p class="workspace-guide-prop-desc">Background Color</p>
+							<p class="workspace-guide-prop-name">form-bg</p>
+							<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+						</li>
+						<li>
+							<p class="workspace-guide-prop-desc">Border Color</p>
+							<p class="workspace-guide-prop-name">form-bd-c</p>
+							<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+						</li>
+						<li>
+							<p class="workspace-guide-prop-desc">Border Radius</p>
+							<p class="workspace-guide-prop-name">form-bd-r</p>
+							<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+						</li>
+						<li>
+							<p class="workspace-guide-prop-desc">Color</p>
+							<p class="workspace-guide-prop-name">form-ft-c</p>
+							<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+						</li>
+						<li>
+							<p class="workspace-guide-prop-desc">Font Size</p>
+							<p class="workspace-guide-prop-name">form-ft-s</p>
+							<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+						</li>
+						<li>
+							<p class="workspace-guide-prop-desc">Padding Inline</p>
+							<p class="workspace-guide-prop-name">form-pad-x</p>
+							<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+						</li>
+						<li>
+							<p class="workspace-guide-prop-desc">Width</p>
+							<p class="workspace-guide-prop-name">form-w</p>
+							<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+						</li>
+						<li>
+							<p class="workspace-guide-prop-desc">Height</p>
+							<p class="workspace-guide-prop-name">form-h</p>
+							<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+						</li>
+					</ul>
+				</div>
+
+				<hr> <!-- Default -->
+				<div class="workspace-guide-case">
+					<h1>Default</h1>
+					<div class="workspace-guide-inner">
+						<div class="form-txt">
+							<p-input></p-input>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<pre>
+							&lt;div class="form-txt"&gt;
+								&lt;p-input&gt;&lt;/p-input&gt;
+							&lt;/div&gt;
+						</pre>
+					</div>
+				</div>
+
+				<hr> <!-- Auto Complete -->
+				<div class="workspace-guide-case">
+					<h1>Auto Complete</h1>
+					<div class="workspace-guide-inner">
+						<p-autocomplete class="form-txt"></p-autocomplete>
+					</div>
+					<div class="workspace-guide-inner">
+						<pre>
+							&lt;p-autocomplete&gt; class="form-txt"&gt;&lt;/p-autocomplete&gt;
+						</pre>
+					</div>
+				</div>
+
+				<hr>
+				<div style="--grid-t-col:4; --gap-a:20px;">
+					<!-- Background Color -->
+					<div class="workspace-guide-case">
+						<h1>Background Color</h1>
+						<div class="workspace-guide-inner">
+							<div class="form-txt" style="--form-bg:red;">
+								<p-input></p-input>
+							</div>
+						</div>
+					</div>
+
+					<!-- Background Color -->
+					<div class="workspace-guide-case">
+						<h1>Border Color</h1>
+						<div class="workspace-guide-inner">
+							<div class="form-txt" style="--form-bd-c:red;">
+								<p-input></p-input>
+							</div>
+						</div>
+					</div>
+
+					<!-- Background Radius -->
+					<div class="workspace-guide-case">
+						<h1>Border Radius</h1>
+						<div class="workspace-guide-inner">
+							<div class="form-txt" style="--form-bd-r:30px;">
+								<p-input></p-input>
+							</div>
+						</div>
+					</div>
+
+					<!-- Color -->
+					<div class="workspace-guide-case">
+						<h1>Color</h1>
+						<div class="workspace-guide-inner">
+							<div class="form-txt" style="--form-ft-c:red;">
+								<p-input></p-input>
+							</div>
+						</div>
+					</div>
+
+					<!-- Font Size -->
+					<div class="workspace-guide-case">
+						<h1>Font Size</h1>
+						<div class="workspace-guide-inner">
+							<div class="form-txt" style="--form-ft-s:10px;">
+								<p-input></p-input>
+							</div>
+						</div>
+					</div>
+
+					<!-- Padding Inline -->
+					<div class="workspace-guide-case">
+						<h1>Padding Inline</h1>
+						<div class="workspace-guide-inner">
+							<div class="form-txt" style="--form-pad-x:30px;">
+								<p-input></p-input>
+							</div>
+						</div>
+					</div>
+
+					<!-- Width -->
+					<div class="workspace-guide-case">
+						<h1>Width</h1>
+						<div class="workspace-guide-inner">
+							<div class="form-txt" style="--form-w:80px;">
+								<p-input></p-input>
+							</div>
+						</div>
+					</div>
+
+					<!-- Height -->
+					<div class="workspace-guide-case">
+						<h1>Height</h1>
+						<div class="workspace-guide-inner">
+							<div class="form-txt" style="--form-h:80px;">
+								<p-input></p-input>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

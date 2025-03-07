@@ -20,10 +20,11 @@ document.addEventListener('DOMContentLoaded', function() {
 	app.component('p-aco-item', PrimeVue.AccordionPanel);
 	app.component('p-aco-head', PrimeVue.AccordionHeader);
 	app.component('p-aco-cont', PrimeVue.AccordionContent);
-
+log(PrimeVue);
 	// Form
 	app.component('p-autocomplete', PrimeVue.AutoComplete);
 	app.component('p-datepicker', PrimeVue.DatePicker);
+	app.component('p-input', PrimeVue.InputText);
 
 	// Tabs
 	app.component('p-tabs', PrimeVue.Tabs);
