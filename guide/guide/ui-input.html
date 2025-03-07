@@ -25,7 +25,14 @@
 						<li>
 							<p class="workspace-guide-prop-attribute not-prefix">class</p>
 							<div style="--grid-t-col:8; --grid-col:2;">
-								<p class="workspace-guide-prop-attribute-value">chip-type</p>
+								<p class="workspace-guide-prop-attribute-value">form-txt</p>
+							</div>
+						</li>
+						<li>
+							<p class="workspace-guide-prop-attribute not-prefix">data-float-label</p>
+							<div style="--grid-t-col:8; --grid-col:2;">
+								<p class="workspace-guide-prop-attribute-value">in</p>
+								<p class="workspace-guide-prop-attribute-value">on</p>
 							</div>
 						</li>
 						<li>
@@ -34,8 +41,18 @@
 							<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
 						</li>
 						<li>
+							<p class="workspace-guide-prop-desc">Background Color (Disabled)</p>
+							<p class="workspace-guide-prop-name">form-dis-bg</p>
+							<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+						</li>
+						<li>
 							<p class="workspace-guide-prop-desc">Border Color</p>
 							<p class="workspace-guide-prop-name">form-bd-c</p>
+							<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+						</li>
+						<li>
+							<p class="workspace-guide-prop-desc">Border Color (Disabled)</p>
+							<p class="workspace-guide-prop-name">form-dis-bd-r</p>
 							<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
 						</li>
 						<li>
@@ -46,6 +63,16 @@
 						<li>
 							<p class="workspace-guide-prop-desc">Color</p>
 							<p class="workspace-guide-prop-name">form-ft-c</p>
+							<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+						</li>
+						<li>
+							<p class="workspace-guide-prop-desc">Color (Disabled)</p>
+							<p class="workspace-guide-prop-name">form-dis-ft-c</p>
+							<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+						</li>
+						<li>
+							<p class="workspace-guide-prop-desc">Focus Color</p>
+							<p class="workspace-guide-prop-name">form-focus-bd-c</p>
 							<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
 						</li>
 						<li>
@@ -74,9 +101,21 @@
 				<hr> <!-- Default -->
 				<div class="workspace-guide-case">
 					<h1>Default</h1>
-					<div class="workspace-guide-inner">
-						<div class="form-txt">
-							<p-input></p-input>
+					<div style="--grid-t-col:3; --gap-a:20px;">
+						<div class="workspace-guide-inner">
+							<div class="form-txt">
+								<p-input placeholder="Placeholder"></p-input>
+							</div>
+						</div>
+						<div class="workspace-guide-inner">
+							<div class="form-txt">
+								<p-input placeholder="Readonly" readonly></p-input>
+							</div>
+						</div>
+						<div class="workspace-guide-inner">
+							<div class="form-txt">
+								<p-input placeholder="Disabled" disabled></p-input>
+							</div>
 						</div>
 					</div>
 					<div class="workspace-guide-inner">
@@ -84,6 +123,57 @@
 							&lt;div class="form-txt"&gt;
 								&lt;p-input&gt;&lt;/p-input&gt;
 							&lt;/div&gt;
+						</pre>
+					</div>
+				</div>
+
+				<hr> <!-- Float Label -->
+				<div class="workspace-guide-case">
+					<h1>Float Label</h1>
+					<div style="--grid-t-col:3; --gap-a:20px;">
+						<div class="workspace-guide-inner">
+							<p-float-label class="form-txt">
+								<p-input id="over_label" v-model="value1"></p-input>
+								<label for="over_label">Over Label</label>
+							</p-float-label>
+						</div>
+						<div class="workspace-guide-inner">
+							<p-float-label class="form-txt" data-float-label="in">
+								<p-input id="in_label" v-model="value2" variant="filled"></p-input>
+								<label for="in_label">In Label</label>
+							</p-float-label>
+						</div>
+						<div class="workspace-guide-inner">
+							<p-float-label class="form-txt" data-float-label="on">
+								<p-input id="on_label" v-model="value3"></p-input>
+								<label for="on_label">Over Label</label>
+							</p-float-label>
+						</div>
+						<div class="workspace-guide-inner" style="--form-ft-s:12px;">
+							<p-float-label class="form-txt">
+								<p-input id="over_label" v-model="value1"></p-input>
+								<label for="over_label">Over Label</label>
+							</p-float-label>
+						</div>
+						<div class="workspace-guide-inner">
+							<p-float-label class="form-txt" data-float-label="in" style="--form-ft-s:14px;">
+								<p-input id="in_label" v-model="value2" variant="filled"></p-input>
+								<label for="in_label">In Label</label>
+							</p-float-label>
+						</div>
+						<div class="workspace-guide-inner">
+							<p-float-label class="form-txt" data-float-label="on" style="--form-ft-s:18px;">
+								<p-input id="on_label" v-model="value3"></p-input>
+								<label for="on_label">Over Label</label>
+							</p-float-label>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<pre>
+							&lt;p-float-label class="form-txt" data-float-label&gt;
+								&lt;p-input id="over_label" v-model="value1"&gt;&lt;/p-input&gt;
+								&lt;label for="over_label"&gt;Over Label&lt;/label&gt;
+							&lt;/p-float-label&gt;
 						</pre>
 					</div>
 				</div>
@@ -96,7 +186,7 @@
 					</div>
 					<div class="workspace-guide-inner">
 						<pre>
-							&lt;p-autocomplete&gt; class="form-txt"&gt;&lt;/p-autocomplete&gt;
+							&lt;p-autocomplete class="form-txt"&gt;&lt;/p-autocomplete&gt;
 						</pre>
 					</div>
 				</div>
@@ -138,6 +228,16 @@
 						<h1>Color</h1>
 						<div class="workspace-guide-inner">
 							<div class="form-txt" style="--form-ft-c:red;">
+								<p-input></p-input>
+							</div>
+						</div>
+					</div>
+
+					<!-- Focus Color -->
+					<div class="workspace-guide-case">
+						<h1>Focus Color</h1>
+						<div class="workspace-guide-inner">
+							<div class="form-txt" style="--form-focus-bd-c:red;">
 								<p-input></p-input>
 							</div>
 						</div>

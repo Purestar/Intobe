@@ -23,9 +23,10 @@ document.addEventListener('DOMContentLoaded', function() {
 log(PrimeVue);
 	// Form
 	app.component('p-autocomplete', PrimeVue.AutoComplete);
-	app.component('p-select', PrimeVue.Select);
-	app.component('p-datepicker', PrimeVue.DatePicker);
+	/*app.component('p-datepicker', PrimeVue.DatePicker);*/
 	app.component('p-input', PrimeVue.InputText);
+	app.component('p-float-label', PrimeVue.FloatLabel);
+	app.component('p-select', PrimeVue.Select);
 
 	// Tabs
 	app.component('p-tabs', PrimeVue.Tabs);

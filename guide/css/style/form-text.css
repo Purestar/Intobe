@@ -1,28 +1,35 @@
 /* Text Type */
-	[class*="form-txt"] {
-		background:var(--form-bg, var(--fom-bg));
-		border:1px solid var(--form-bd-c, var(--fom-bdr-c));
-		border-radius:var(--form-bd-r, var(--fom-br));
-		width:var(--form-w, 100%);
-		height:var(--form-h, var(--fom-h));
-		padding:0 var(--form-pad-x, var(--fom-pad));
-		font-size:var(--form-ft-s, var(--fom-fs));
-		color:var(--form-ft-c, var(--fom-fc));
-		transition:border-color var(--trans-dft);
-	}
+	/* Default */
+		[class*="form-txt"] {
+			background:var(--form-bg, var(--fom-bg));
+			border:1px solid var(--form-bd-c, var(--fom-bdr-c));
+			border-radius:var(--form-bd-r, var(--fom-br));
+			width:var(--form-w, 100%);
+			height:var(--form-h, var(--fom-h));
+			padding:0 var(--form-pad-x, var(--fom-pad));
+			font-size:var(--form-ft-s, var(--fom-fs));
+			color:var(--form-ft-c, var(--fom-fc));
+			transition:border-color var(--trans-dft);
+		}
 
-	/*[class*="form-txt"] input {background:cornflowerblue; min-width:1em; width:auto; max-width:100%;}*/
+	/* Focus */
+		[class*="form-txt"]:has(input:focus) {border-color:var(--form-focus-bd-c, var(--fom-fcs-brd-c)); transition:border-color var(--trans-dft);}
 
-	/*
-	[class*="form-txt"].focused,
-	[class*="form-txt"]:hover,
-	[class*="form-txt"][divide] input:focus,
-	[class*="form-txt"][divide] input:hover {border-color:var(--fom-fcs-brd-c); transition:border-color var(--trans-dft);}
-	[class*="form-txt"] .txt-label {transition:all .1s ease; position:absolute; left:var(--fom-pad); top:50%; transform:translate(0, -50%)}
-	[class*="form-txt"].focused .txt-label,
-	[class*="form-txt"].active .txt-label {transition:all .1s ease; top:25%; font-size:60%; transform:translate(0, -75%)}
-	[class*="form-txt"][disabled],
-	[class*="form-txt"][disabled][divide] input {background-color:var(--dis-bg); border-color:var(--dis-bdr); color:var(--fom-ph); pointer-events:none; cursor:auto;}
-	[class*="form-txt"][disabled] {color:inherit;}
-	[class*="form-txt"][disabled][divide] {background:none; color:inherit;}*/
+	/* Disabled */
+		[class*="form-txt"]:has(input:disabled) {background-color:var(--form-dis-bg, var(--dis-bg)); border-color:var(--form-dis-bd-r, var(--dis-bdr)); color:var(--form-dis-ft-c, var(--fom-ph)); pointer-events:none; cursor:auto;}
+
+	/* Float Label */
+		[class*="form-txt"][data-pc-name="floatlabel"] {position:relative;}
+		[class*="form-txt"][data-pc-name="floatlabel"] label {
+			position: absolute;
+			left: var(--form-pad-x, var(--fom-pad));
+			top: 50%;
+			transform: translateY(-50%);
+			line-height: 1;
+			font-weight: var(--p-floatlabel-font-weight);
+			transition: var(--trans-dft);
+		}
+		[class*="form-txt"][data-pc-name="floatlabel"]:has(input:focus, input[value]) label { top: 0; font-size: 0.75em; transform: translateY(-1.1em); }
+		[class*="form-txt"][data-pc-name="floatlabel"][data-float-label="in"]:has(input:focus, input[value]) label { transform: translateY(0.1em); }
+		[class*="form-txt"][data-pc-name="floatlabel"][data-float-label="on"]:has(input:focus, input[value]) label { background:white; transform: translateY(-0.5em); }
 
