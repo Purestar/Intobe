@@ -39,15 +39,16 @@
 				], "state": "comp"},
 				{ "menu": "Animation", "src": "./guide/animation.html", "state": "comp" },
 				{ "menu": "Layout", "src": "./guide/layout.html", "state": "comp" },
-				{ "id": "UI(General)", "submenu": [
+				{ "id": "UI", "submenu": [
+					{ "menu": "Accordion", "src": "./guide/ui-accordion.html", "state": "comp" },
 					{ "menu": "Bullet", "src": "./guide/ui-bullet.html", "state": "comp" },
 					{ "menu": "Button", "src": "./guide/ui-button.html", "state": "comp" },
 					{ "menu": "Chip", "src": "./guide/ui-chip.html", "state": "comp" },
-					{ "menu": "Divider", "src": "./guide/ui-divider.html", "state": "comp" }
-				], "state": "comp"},
-				{ "id": "UI(primeVue)", "submenu": [
-					{ "menu": "Accordion", "src": "./guide/ui-accordion.html", "state": "comp" }
-				], "state": "comp"}
+					{ "menu": "Divider", "src": "./guide/ui-divider.html", "state": "comp" },
+					{ "id": "Form", "submenu": [
+						{ "menu": "Input", "src": "./guide/ui-input.html", "state": "comp" }
+					], "state": "work"}
+				], "state": "work"}
 			],
 			"state": "comp"
 		}

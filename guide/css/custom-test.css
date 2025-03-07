@@ -1,5 +1,5 @@
 /* Accordion Test */
 	.aco-type-test,
-	.aco-item,
-	.aco-head,
-	.aco-cont {border:1px solid #ffa1ad;}
+	.aco-type-test .aco-item,
+	.aco-type-test .aco-head,
+	.aco-type-test .aco-cont {border:1px solid #ffa1ad;}
