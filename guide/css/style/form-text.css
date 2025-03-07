@@ -26,10 +26,11 @@
 			top: 50%;
 			transform: translateY(-50%);
 			line-height: 1;
-			font-weight: var(--p-floatlabel-font-weight);
 			transition: var(--trans-dft);
+			cursor: auto;
 		}
-		[class*="form-txt"][data-pc-name="floatlabel"]:has(input:focus, input[value]) label { top: 0; font-size: 0.75em; transform: translateY(-1.1em); }
-		[class*="form-txt"][data-pc-name="floatlabel"][data-float-label="in"]:has(input:focus, input[value]) label { transform: translateY(0.1em); }
+		[class*="form-txt"][data-pc-name="floatlabel"]:has(input:focus, input[value]) label { top: 0; font-size: 0.75em; transform: translateY(-1.2em); }
+		[class*="form-txt"][data-pc-name="floatlabel"][data-float-label="in"] input {padding-top:0.75em;}
+		[class*="form-txt"][data-pc-name="floatlabel"][data-float-label="in"]:has(input:focus, input[value]) label { transform: translateY(0.2em); }
 		[class*="form-txt"][data-pc-name="floatlabel"][data-float-label="on"]:has(input:focus, input[value]) label { background:white; transform: translateY(-0.5em); }
 

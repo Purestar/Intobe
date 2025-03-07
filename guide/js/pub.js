@@ -24,8 +24,9 @@ log(PrimeVue);
 	// Form
 	app.component('p-autocomplete', PrimeVue.AutoComplete);
 	/*app.component('p-datepicker', PrimeVue.DatePicker);*/
-	app.component('p-input', PrimeVue.InputText);
 	app.component('p-float-label', PrimeVue.FloatLabel);
+	app.component('p-input', PrimeVue.InputText);
+	app.component('p-msg', PrimeVue.Message);
 	app.component('p-select', PrimeVue.Select);
 
 	// Tabs
