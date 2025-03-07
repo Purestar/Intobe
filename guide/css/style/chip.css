@@ -1,0 +1,2 @@
+/* Chip */
+	[class*="chip-type"] {display:flex; place-items:center; place-content:center; border:1px solid var(--chip-bd-c, var(--mc)); border-radius:var(--chip-bd-r, 16px); width:fit-content; padding:0 var(--chip-pad-x, 16px);}
