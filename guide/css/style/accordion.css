@@ -22,6 +22,6 @@
 		[class*="aco-type"][data-slide] > [data-p-active] > .aco-cont {transition:grid-template-rows var(--trans-dft);}
 
 	/* QnA */
-		[class*="aco-type"][data-qna] > .aco-item > .aco-head:before {content:var(--txt-q, "Q.");}
+		[class*="aco-type"][data-qna] > .aco-item > .aco-head:before {content:var(--aco-txt-q, "Q.");}
 		[class*="aco-type"][data-qna] > .aco-item > .aco-cont > [data-pc-section] {display:flex;}
-		[class*="aco-type"][data-qna] > .aco-item > .aco-cont > [data-pc-section]:before {content:var(--txt-a, "Q.");}
+		[class*="aco-type"][data-qna] > .aco-item > .aco-cont > [data-pc-section]:before {content:var(--aco-txt-a, "Q.");}
