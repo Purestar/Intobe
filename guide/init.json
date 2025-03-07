@@ -46,7 +46,8 @@
 					{ "menu": "Chip", "src": "./guide/ui-chip.html", "state": "comp" },
 					{ "menu": "Divider", "src": "./guide/ui-divider.html", "state": "comp" },
 					{ "id": "Form", "submenu": [
-						{ "menu": "Input", "src": "./guide/ui-input.html", "state": "comp" }
+						{ "menu": "Combobox", "src": "./guide/ui-combo.html", "state": "work" },
+						{ "menu": "Input", "src": "./guide/ui-input.html", "state": "work" }
 					], "state": "work"}
 				], "state": "work"}
 			],

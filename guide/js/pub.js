@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
 log(PrimeVue);
 	// Form
 	app.component('p-autocomplete', PrimeVue.AutoComplete);
+	app.component('p-select', PrimeVue.Select);
 	app.component('p-datepicker', PrimeVue.DatePicker);
 	app.component('p-input', PrimeVue.InputText);
 
