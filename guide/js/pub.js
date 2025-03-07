@@ -37,7 +37,8 @@ log(PrimeVue);
 	app.component('p-tabpanel', PrimeVue.TabPanel);
 
 	// PrimeVue Config
-	app.use(PrimeVue.Config, { unstyled: true });
+	app.use(PrimeVue.Config, { theme: 'none' });
+	//app.use(PrimeVue.Config, { unstyled: true });
 
 	app.mount('#container');
 });

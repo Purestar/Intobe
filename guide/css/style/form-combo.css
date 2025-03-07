@@ -1,41 +1,61 @@
-/* Combobox Default */
-	/*[class*="form-combo"],
-	[class*="form-dropdown"] {display:flex; align-items:center; width:100%; gap:4px;}
-	[class*="form-combo"] .form-inner,
+/* Select */
+	/* Default */
+		[class*="form-sel"] {
+			border:1px solid var(--form-bd-c, var(--fom-bdr-c));
+			border-radius:var(--form-bd-r, var(--fom-br));
+			width:var(--form-w, 100%);
+			height:var(--form-h, var(--fom-h));
+			padding:0 var(--form-pad-x, var(--fom-pad));
+			font-size:var(--form-ft-s, var(--fom-fs));
+			color:var(--form-ft-c, var(--fom-fc));
+			transition:border-color var(--trans-dft);
+			cursor:pointer;
+		}
+		[class*="form-sel"] > [data-pc-section="label"] {display:flex; place-content:space-between; place-items:center; width:100%; outline:0;}
+		[class*="form-sel"] > [data-pc-section="dropdown"] {display:none;}
+
+	/* Icon */
+		[class*="form-sel"] > [data-pc-section="label"]:after {content:""; background-image:var(--ic-c); background-size:var(--bg-sz); background-position:var(--bp-150) var(--bp-200); width:12px; height:7px; transition:rotate var(--trans-dft); z-index:0; cursor:pointer;}
+		[class*="form-sel"]:has([data-pc-section="label"]:focus) [data-pc-section="label"]:after {rotate:180deg;}
+
+	/* Focus */
+		[class*="form-sel"]:has([data-pc-section="label"]:focus) {border-color:var(--form-focus-bd-c, var(--fom-fcs-brd-c)); transition:border-color var(--trans-dft);}
+
+	/*[class*="form-sel"] .form-inner,
 	[class*="form-dropdown"] .form-inner {position:relative; width:100%;}
-	[class*="form-combo"] .form-icon,
+	[class*="form-sel"] .form-icon,
 	[class*="form-dropdown"] .form-icon {pointer-events:none; right:1px; top:1px;}
-	[class*="form-combo"] .form-icon:after,
+	[class*="form-sel"] .form-icon:after,
 	[class*="form-dropdown"] .form-icon:after {content:""; background-image:var(--ic-c); background-size:var(--bg-sz); background-position:var(--bp-150) var(--bp-200); width:20px; height:15px; transition:transform var(--trans-dft); z-index:0; cursor:pointer;}*/
 
 /* Combo Disabled */
-	/*[class*="form-combo"] select:disabled,
+	/*[class*="form-sel"] select:disabled,
 	[class*="form-dropdown"][disabled] .form-top,
 	[class*="form-dropdown"][disabled] .form-txt {opacity:1; background:var(--dis-bg); border-color:var(--dis-bdr); color:var(--fom-ph); pointer-events:none; cursor:auto;}
-	[class*="form-combo"] select:disabled + .form-icon,
+	[class*="form-sel"] select:disabled + .form-icon,
 	[class*="form-dropdown"][disabled] .form-icon {background:var(--dis-bg);}
-	[class*="form-combo"] select:disabled + .form-icon:after,
+	[class*="form-sel"] select:disabled + .form-icon:after,
 	[class*="form-dropdown"][disabled] .form-icon:after {opacity:0.3;}*/
 
 /* Combo Active */
-	/*[class*="form-combo"].active .form-icon:after,
+	/*[class*="form-sel"].active .form-icon:after,
 	[class*="form-dropdown"].active .form-icon:after {transform:rotate(180deg); transition:transform var(--trans-dft);}*/
 
 /* Combo - Select Default */
-	/*[class*="form-combo"] select {overflow:auto; position:relative; background:none; border:1px solid var(--fom-bdr-c); border-radius:var(--fom-br); height:100%; padding:0 var(--fom-h) 0 var(--fom-pad); line-height:var(--fom-lh); transition:border-color var(--trans-dft), border-radius var(--trans-dft);}*/
+	/*[class*="form-sel"] select {overflow:auto; position:relative; background:none; border:1px solid var(--fom-bdr-c); border-radius:var(--fom-br); height:100%; padding:0 var(--fom-h) 0 var(--fom-pad); line-height:var(--fom-lh); transition:border-color var(--trans-dft), border-radius var(--trans-dft);}*/
 
 /* Combo - Select Active */
-	/*[class*="form-combo"] select:hover {border-color:var(--moc);}
-	[class*="form-combo"] select:focus {border-color:var(--moc); border-radius:var(--fom-br) var(--fom-br) 0 0;}*/
+	/*[class*="form-sel"] select:hover {border-color:var(--moc);}
+	[class*="form-sel"] select:focus {border-color:var(--moc); border-radius:var(--fom-br) var(--fom-br) 0 0;}*/
 
 /* Combo - Select Option */
-	/*[class*="form-combo"] option {display:flex; align-items:center; height:var(--fom-h);}
-	[class*="form-combo"] option:checked {background:var(--moc); color:white;}*/
+	/*[class*="form-sel"] option {display:flex; align-items:center; height:var(--fom-h);}
+	[class*="form-sel"] option:checked {background:var(--moc); color:white;}*/
 
 /* Combo - Select Size */
-	/*[class*="form-combo"] select[size] {height:auto; padding:0;}
-	[class*="form-combo"] select[size] option {padding:0 var(--fom-pad);}
-	[class*="form-combo"] select[size] + .form-icon {display:none;}*/
+	/*[class*="form-sel"] select[size] {height:auto; padding:0;}
+	[class*="form-sel"] select[size] option {padding:0 var(--fom-pad);}
+	[class*="form-sel"] select[size] + .form-icon {display:none;}*/
 
 /* Combo - Dropdown Default */
 	/*[class*="form-dropdown"] .form-top {overflow-x:auto; position:relative; background:none; border:1px solid var(--fom-bdr-c); border-radius:var(--fom-br); width:100%; height:var(--fom-h); padding:0 var(--fom-h) 0 var(--fom-pad); text-align:left; transition:border-color var(--trans-dft), border-radius var(--trans-dft); white-space:nowrap;}*/
@@ -45,13 +65,13 @@
 
 	[class*="form-dropdown"] .form-list label {cursor:pointer;}
 	[class*="form-dropdown"] .form-list label > input {position:absolute; left:-100vw;}
-	[class*="form-dropdown"] .form-list .form-combo-text {display:flex; align-items:center; width:100%; height:var(--fom-h); padding:0 var(--fom-pad);}
-	[class*="form-dropdown"] .form-list .form-combo-text:hover {background:var(--mlc); color:black;}
-	[class*="form-dropdown"] .form-list .form-combo-drtinp-txt,
-	[class*="form-dropdown"] .form-list .form-combo-drtinp-txt:hover  {background:white; font-size:14px; text-decoration:underline; color:var(--mc);}
-	[class*="form-dropdown"] .form-list .form-combo-not-match:hover {background:white; color:var(--fom-fc);}
+	[class*="form-dropdown"] .form-list .form-sel-text {display:flex; align-items:center; width:100%; height:var(--fom-h); padding:0 var(--fom-pad);}
+	[class*="form-dropdown"] .form-list .form-sel-text:hover {background:var(--mlc); color:black;}
+	[class*="form-dropdown"] .form-list .form-sel-drtinp-txt,
+	[class*="form-dropdown"] .form-list .form-sel-drtinp-txt:hover  {background:white; font-size:14px; text-decoration:underline; color:var(--mc);}
+	[class*="form-dropdown"] .form-list .form-sel-not-match:hover {background:white; color:var(--fom-fc);}
 	[class*="form-dropdown"] .form-list > * {width:100%;}
-	[class*="form-dropdown"] .form-list > *.active .form-combo-text {background:#f9f9f9; color:black;}
+	[class*="form-dropdown"] .form-list > *.active .form-sel-text {background:#f9f9f9; color:black;}
 	[class*="form-dropdown"] .form-list > *.hide {display:none;}*/
 
 /* Combo - Dropdown Above */
