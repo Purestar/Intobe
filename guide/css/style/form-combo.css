@@ -13,16 +13,22 @@
 			cursor:pointer;
 		}
 		[class*="form-sel"] > * {flex-shrink:1;}
-		[class*="form-sel"] > .p-select-label {overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:var(--line, 1); word-break:break-all; width:100%; outline:0;}
-		[class*="form-sel"] > .p-select-dropdown {display:flex;}
-		[class*="form-sel"] > .p-select-dropdown svg {display:none;}
+		[class*="form-sel"] > .p-select-label,
+		[class*="form-sel"] > .p-cascadeselect-label {overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:var(--line, 1); word-break:break-all; width:100%; outline:0;}
+		[class*="form-sel"] > .p-select-dropdown,
+		[class*="form-sel"] > .p-cascadeselect-dropdown {display:flex;}
+		[class*="form-sel"] > .p-select-dropdown svg,
+		[class*="form-sel"] > .p-cascadeselect-dropdown svg {display:none;}
 
 	/* Icon */
-		[class*="form-sel"] > .p-select-dropdown:after {content:""; flex-shrink:0; background-image:var(--ic-c); background-size:var(--bg-sz); background-position:var(--bp-150) var(--bp-200); width:12px; height:7px; transition:rotate var(--trans-dft); z-index:0; cursor:pointer;}
-		[class*="form-sel"].p-select-open .p-select-dropdown:after {rotate:180deg;}
+		[class*="form-sel"] > .p-select-dropdown:after,
+		[class*="form-sel"] > .p-cascadeselect-dropdown:after {content:""; flex-shrink:0; background-image:var(--ic-c); background-size:var(--bg-sz); background-position:var(--bp-150) var(--bp-200); width:12px; height:7px; transition:rotate var(--trans-dft); z-index:0; cursor:pointer;}
+		[class*="form-sel"].p-select-open .p-select-dropdown:after,
+		[class*="form-sel"].p-cascadeselect-open .p-cascadeselect-dropdown:after {rotate:180deg;}
 
 	/* Focus */
-		[class*="form-sel"].p-select-open {border-color:var(--form-focus-bd-c, var(--fom-fcs-brd-c)); border-radius:var(--form-bd-r, var(--fom-br)) var(--form-bd-r, var(--fom-br)) 0 0; transition:border-color var(--trans-dft), border-radius var(--trans-dft);}
+		[class*="form-sel"].p-select-open,
+		[class*="form-sel"].p-cascadeselect-open {border-color:var(--form-focus-bd-c, var(--fom-fcs-brd-c)); border-radius:var(--form-bd-r, var(--fom-br)) var(--form-bd-r, var(--fom-br)) 0 0; transition:border-color var(--trans-dft), border-radius var(--trans-dft);}
 
 	/* Disabled */
 		[class*="form-sel"].p-disabled {opacity:1; background:var(--dis-bg); border-color:var(--dis-bdr); color:var(--fom-ph); pointer-events:none; cursor:auto;}
@@ -32,10 +38,16 @@
 		[class*="form-dropdown"][disabled] .form-icon:after {opacity:0.3;}
 
 	/* List */
-		[class*="form-panel-sel"] {overflow:hidden; background:white; border:1px solid var(--form-focus-bd-c, var(--fom-fcs-brd-c)); border-radius:0 0 var(--form-bd-r, var(--fom-br)) var(--form-bd-r, var(--fom-br));}
+		[class*="form-panel-sel"],
+		[class*="form-panel-cascade"] {overflow:hidden; background:white; border:1px solid var(--form-focus-bd-c, var(--fom-fcs-brd-c)); border-radius:0 0 var(--form-bd-r, var(--fom-br)) var(--form-bd-r, var(--fom-br));}
 		[class*="form-panel-sel"][style*="margin-top"] {border-radius:var(--form-bd-r, var(--fom-br)) var(--form-bd-r, var(--fom-br)) 0 0;}
 		[class*="form-panel-sel"] .p-select-list-container {width:100%; cursor:pointer;}
 		[class*="form-panel-sel"] .p-select-list {overflow-y:auto; max-height:calc(var(--form-dropitem, var(--fom-dropitem)) * var(--form-h, var(--fom-h)));}
 		[class*="form-panel-sel"] .p-select-list > * {display:flex; gap:12px; place-items:center; width:100%; min-height:var(--form-h, var(--fom-h)); padding:var(--form-pad-x, var(--fom-pad));}
 		[class*="form-panel-sel"] .p-select-list > *:hover {background-color:var(--form-focus-bd-c, var(--fom-fcs-brd-c)); color:white;}
 		[class*="form-panel-sel"] .p-select-list > * > svg {flex-shrink:0;}
+
+		[class*="form-panel-cascade"] .p-cascadeselect-option-content {display:flex;}
+		[class*="form-panel-cascade"] .p-cascadeselect-group-icon-container {display:flex;}
+		[class*="form-panel-cascade"] .p-cascadeselect-group-icon-container:after {content:""; background:red; width:4px; height:4px;}
+		[class*="form-panel-cascade"] .p-cascadeselect-group-icon-container svg {display:none;}
