@@ -8,9 +8,20 @@ document.addEventListener('DOMContentLoaded', function() {
 		setup() {
 			const { date, value } = ref();
 
+			const pubSelectList = ref();
+			const pubSelectListTest = ref([
+				{ test: 'Test 1' },
+				{ test: 'Test 2' },
+				{ test: 'Test 3Test 3Test 3Test 3Test 3Test 3Test 3Test 3Test 3Test 3Test 3Test 3Test 3Test 3Test 3Test 3Test 3Test 3Test 3Test 3Test 3Test 3Test 3Test 3Test 3Test 3Test 3Test 3Test 3Test 3Test 3Test 3Test 3Test 3Test 3Test 3Test 3Test 3Test 3Test 3Test 3Test 3Test 3' },
+				{ test: 'Test 4' },
+				{ test: 'Test 5' }
+			]);
+
 			return {
 				date,
-				value
+				value,
+				pubSelectList,
+				pubSelectListTest
 			};
 		},
 	});

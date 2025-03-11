@@ -1,6 +1,7 @@
 /* Select */
 	/* Default */
 		[class*="form-sel"] {
+			gap:12px;
 			border:1px solid var(--form-bd-c, var(--fom-bdr-c));
 			border-radius:var(--form-bd-r, var(--fom-br));
 			width:var(--form-w, 100%);
@@ -8,79 +9,33 @@
 			padding:0 var(--form-pad-x, var(--fom-pad));
 			font-size:var(--form-ft-s, var(--fom-fs));
 			color:var(--form-ft-c, var(--fom-fc));
-			transition:border-color var(--trans-dft);
+			transition:border-color var(--trans-dft), border-radius var(--trans-dft);
 			cursor:pointer;
 		}
-		[class*="form-sel"] > [data-pc-section="label"] {display:flex; place-content:space-between; place-items:center; width:100%; outline:0;}
-		[class*="form-sel"] > [data-pc-section="dropdown"] {display:none;}
+		[class*="form-sel"] > * {flex-shrink:1;}
+		[class*="form-sel"] > .p-select-label {overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:var(--line, 1); word-break:break-all; width:100%; outline:0;}
+		[class*="form-sel"] > .p-select-dropdown {display:flex;}
+		[class*="form-sel"] > .p-select-dropdown svg {display:none;}
 
 	/* Icon */
-		[class*="form-sel"] > [data-pc-section="label"]:after {content:""; background-image:var(--ic-c); background-size:var(--bg-sz); background-position:var(--bp-150) var(--bp-200); width:12px; height:7px; transition:rotate var(--trans-dft); z-index:0; cursor:pointer;}
-		[class*="form-sel"]:has([data-pc-section="label"]:focus) [data-pc-section="label"]:after {rotate:180deg;}
+		[class*="form-sel"] > .p-select-dropdown:after {content:""; flex-shrink:0; background-image:var(--ic-c); background-size:var(--bg-sz); background-position:var(--bp-150) var(--bp-200); width:12px; height:7px; transition:rotate var(--trans-dft); z-index:0; cursor:pointer;}
+		[class*="form-sel"].p-select-open .p-select-dropdown:after {rotate:180deg;}
 
 	/* Focus */
-		[class*="form-sel"]:has([data-pc-section="label"]:focus) {border-color:var(--form-focus-bd-c, var(--fom-fcs-brd-c)); transition:border-color var(--trans-dft);}
+		[class*="form-sel"].p-select-open {border-color:var(--form-focus-bd-c, var(--fom-fcs-brd-c)); border-radius:var(--form-bd-r, var(--fom-br)) var(--form-bd-r, var(--fom-br)) 0 0; transition:border-color var(--trans-dft), border-radius var(--trans-dft);}
 
-	/*[class*="form-sel"] .form-inner,
-	[class*="form-dropdown"] .form-inner {position:relative; width:100%;}
-	[class*="form-sel"] .form-icon,
-	[class*="form-dropdown"] .form-icon {pointer-events:none; right:1px; top:1px;}
-	[class*="form-sel"] .form-icon:after,
-	[class*="form-dropdown"] .form-icon:after {content:""; background-image:var(--ic-c); background-size:var(--bg-sz); background-position:var(--bp-150) var(--bp-200); width:20px; height:15px; transition:transform var(--trans-dft); z-index:0; cursor:pointer;}*/
+	/* Disabled */
+		[class*="form-sel"].p-disabled {opacity:1; background:var(--dis-bg); border-color:var(--dis-bdr); color:var(--fom-ph); pointer-events:none; cursor:auto;}
+		[class*="form-sel"] select:disabled + .form-icon,
+		[class*="form-dropdown"][disabled] .form-icon {background:var(--dis-bg);}
+		[class*="form-sel"] select:disabled + .form-icon:after,
+		[class*="form-dropdown"][disabled] .form-icon:after {opacity:0.3;}
 
-/* Combo Disabled */
-	/*[class*="form-sel"] select:disabled,
-	[class*="form-dropdown"][disabled] .form-top,
-	[class*="form-dropdown"][disabled] .form-txt {opacity:1; background:var(--dis-bg); border-color:var(--dis-bdr); color:var(--fom-ph); pointer-events:none; cursor:auto;}
-	[class*="form-sel"] select:disabled + .form-icon,
-	[class*="form-dropdown"][disabled] .form-icon {background:var(--dis-bg);}
-	[class*="form-sel"] select:disabled + .form-icon:after,
-	[class*="form-dropdown"][disabled] .form-icon:after {opacity:0.3;}*/
-
-/* Combo Active */
-	/*[class*="form-sel"].active .form-icon:after,
-	[class*="form-dropdown"].active .form-icon:after {transform:rotate(180deg); transition:transform var(--trans-dft);}*/
-
-/* Combo - Select Default */
-	/*[class*="form-sel"] select {overflow:auto; position:relative; background:none; border:1px solid var(--fom-bdr-c); border-radius:var(--fom-br); height:100%; padding:0 var(--fom-h) 0 var(--fom-pad); line-height:var(--fom-lh); transition:border-color var(--trans-dft), border-radius var(--trans-dft);}*/
-
-/* Combo - Select Active */
-	/*[class*="form-sel"] select:hover {border-color:var(--moc);}
-	[class*="form-sel"] select:focus {border-color:var(--moc); border-radius:var(--fom-br) var(--fom-br) 0 0;}*/
-
-/* Combo - Select Option */
-	/*[class*="form-sel"] option {display:flex; align-items:center; height:var(--fom-h);}
-	[class*="form-sel"] option:checked {background:var(--moc); color:white;}*/
-
-/* Combo - Select Size */
-	/*[class*="form-sel"] select[size] {height:auto; padding:0;}
-	[class*="form-sel"] select[size] option {padding:0 var(--fom-pad);}
-	[class*="form-sel"] select[size] + .form-icon {display:none;}*/
-
-/* Combo - Dropdown Default */
-	/*[class*="form-dropdown"] .form-top {overflow-x:auto; position:relative; background:none; border:1px solid var(--fom-bdr-c); border-radius:var(--fom-br); width:100%; height:var(--fom-h); padding:0 var(--fom-h) 0 var(--fom-pad); text-align:left; transition:border-color var(--trans-dft), border-radius var(--trans-dft); white-space:nowrap;}*/
-
-/* Combo - Dropdown Option */
-	/*[class*="form-dropdown"] .form-list {opacity:0; visibility:hidden; overflow:auto; display:flex; flex-wrap:nowrap; flex-direction:column; gap:0; position:absolute; left:1px; top:calc(var(--fom-h) - 1px); background:white; border-width:1px; border-color:var(--moc); border-radius:0 0 var(--fom-br) var(--fom-br); width:max-content; min-width:100%; max-height:calc(var(--fom-h) * var(--fom-dropitem)); margin-left:-1px; z-index:-1; user-select:none;}
-
-	[class*="form-dropdown"] .form-list label {cursor:pointer;}
-	[class*="form-dropdown"] .form-list label > input {position:absolute; left:-100vw;}
-	[class*="form-dropdown"] .form-list .form-sel-text {display:flex; align-items:center; width:100%; height:var(--fom-h); padding:0 var(--fom-pad);}
-	[class*="form-dropdown"] .form-list .form-sel-text:hover {background:var(--mlc); color:black;}
-	[class*="form-dropdown"] .form-list .form-sel-drtinp-txt,
-	[class*="form-dropdown"] .form-list .form-sel-drtinp-txt:hover  {background:white; font-size:14px; text-decoration:underline; color:var(--mc);}
-	[class*="form-dropdown"] .form-list .form-sel-not-match:hover {background:white; color:var(--fom-fc);}
-	[class*="form-dropdown"] .form-list > * {width:100%;}
-	[class*="form-dropdown"] .form-list > *.active .form-sel-text {background:#f9f9f9; color:black;}
-	[class*="form-dropdown"] .form-list > *.hide {display:none;}*/
-
-/* Combo - Dropdown Above */
-	/*[class*="form-dropdown"].above .form-top {border-radius:0 0 var(--fom-br) var(--fom-br);}
-	[class*="form-dropdown"].above .form-list {top:auto; bottom:var(--fom-h); border-radius:var(--fom-br) var(--fom-br) 0 0;}
-	[class*="form-dropdown"].active.above .form-top {border-radius:0 0 var(--fom-br) var(--fom-br);}
-	[class*="form-dropdown"].active.above .form-list {border-radius:var(--fom-br) var(--fom-br) 0 0;}*/
-
-/* Combo - Dropdown Active */
-	/*[class*="form-dropdown"] .form-top:hover {border-color:var(--moc);}
-	[class*="form-dropdown"].active .form-top {border-color:var(--moc); border-radius:var(--fom-br) var(--fom-br) 0 0;}
-	[class*="form-dropdown"].active .form-list {opacity:1; visibility:visible; z-index:0; user-select:auto; transition:opacity var(--trans-dft);}*/
+	/* List */
+		[class*="form-panel-sel"] {overflow:hidden; background:white; border:1px solid var(--form-focus-bd-c, var(--fom-fcs-brd-c)); border-radius:0 0 var(--form-bd-r, var(--fom-br)) var(--form-bd-r, var(--fom-br));}
+		[class*="form-panel-sel"][style*="margin-top"] {border-radius:var(--form-bd-r, var(--fom-br)) var(--form-bd-r, var(--fom-br)) 0 0;}
+		[class*="form-panel-sel"] .p-select-list-container {width:100%; cursor:pointer;}
+		[class*="form-panel-sel"] .p-select-list {overflow-y:auto; max-height:calc(var(--form-dropitem, var(--fom-dropitem)) * var(--form-h, var(--fom-h)));}
+		[class*="form-panel-sel"] .p-select-list > * {display:flex; gap:12px; place-items:center; width:100%; min-height:var(--form-h, var(--fom-h)); padding:var(--form-pad-x, var(--fom-pad));}
+		[class*="form-panel-sel"] .p-select-list > *:hover {background-color:var(--form-focus-bd-c, var(--fom-fcs-brd-c)); color:white;}
+		[class*="form-panel-sel"] .p-select-list > * > svg {flex-shrink:0;}

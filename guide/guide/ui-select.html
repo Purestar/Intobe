@@ -25,7 +25,7 @@
 						<li>
 							<p class="workspace-guide-prop-attribute not-prefix">class</p>
 							<div style="--grid-t-col:8; --grid-col:2;">
-								<p class="workspace-guide-prop-attribute-value">chip-type</p>
+								<p class="workspace-guide-prop-attribute-value">form-sel</p>
 							</div>
 						</li>
 						<li>
@@ -36,6 +36,11 @@
 						<li>
 							<p class="workspace-guide-prop-desc">Border Color</p>
 							<p class="workspace-guide-prop-name">form-bd-c</p>
+							<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+						</li>
+						<li>
+							<p class="workspace-guide-prop-desc">Border Color (Focus)</p>
+							<p class="workspace-guide-prop-name">form-focus-bd-c</p>
 							<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
 						</li>
 						<li>
@@ -51,6 +56,11 @@
 						<li>
 							<p class="workspace-guide-prop-desc">Font Size</p>
 							<p class="workspace-guide-prop-name">form-ft-s</p>
+							<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+						</li>
+						<li>
+							<p class="workspace-guide-prop-desc">Max List</p>
+							<p class="workspace-guide-prop-name">form-dropitem</p>
 							<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
 						</li>
 						<li>
@@ -74,14 +84,72 @@
 				<hr> <!-- Default -->
 				<div class="workspace-guide-case">
 					<h1>Default</h1>
-					<div class="workspace-guide-inner">
-						<p-select class="form-sel" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Select a City"></p-select>
+					<div style="--grid-t-col:3; --gap-a:20px;">
+						<div class="workspace-guide-inner">
+							<p-select class="form-sel" panel-class="form-panel-sel"></p-select>
+						</div>
+						<div class="workspace-guide-inner">
+							<p-select class="form-sel" placeholder="Placeholder" panel-class="form-panel-sel"></p-select>
+						</div>
+						<div class="workspace-guide-inner">
+							<p-select class="form-sel" placeholder="Disabled" panel-class="form-panel-sel" disabled></p-select>
+						</div>
 					</div>
 					<div class="workspace-guide-inner">
 						<pre>
-							&lt;div class="form-txt"&gt;
-								&lt;p-input&gt;&lt;/p-input&gt;
-							&lt;/div&gt;
+							&lt;p-select class="form-sel" panel-class="form-panel-sel"&gt;&lt;/p-select&gt;
+						</pre>
+					</div>
+				</div>
+
+				<hr> <!-- Empty Text -->
+				<div class="workspace-guide-case">
+					<h1>Empty Text</h1>
+					<div class="workspace-guide-inner">
+						<p-select class="form-sel" panel-class="form-panel-sel" empty-message="선택 가능한 항목이 없습니다."></p-select>
+					</div>
+					<div class="workspace-guide-inner">
+						<pre>
+							&lt;p-select <em>empty-message="선택 가능한 항목이 없습니다."</em>&gt;&lt;/p-select&gt;
+						</pre>
+					</div>
+				</div>
+
+				<hr> <!-- Custom List -->
+				<div class="workspace-guide-case">
+					<h1>Custom List</h1>
+					<div class="workspace-guide-inner">
+						<p-select class="form-sel-test" panel-class="form-panel-sel-test"></p-select>
+					</div>
+					<div class="workspace-guide-inner">
+						<pre>
+							&lt;p-select <em>panel-class="form-panel-sel-test"</em>&gt;&lt;/p-select&gt;
+						</pre>
+					</div>
+				</div>
+
+				<hr> <!-- List Data -->
+				<div class="workspace-guide-case">
+					<h1>List Data</h1>
+					<div class="workspace-guide-inner">
+						<p-select class="form-sel" placeholder="List Data" panel-class="form-panel-sel" v-model="pubSelectList" :options="pubSelectListTest" option-label="test"></p-select>
+					</div>
+					<div class="workspace-guide-inner">
+						<pre>
+							&lt;p-select <em>v-model="pubSelectList" :options="pubSelectListTest" option-label="test"</em>&gt;&lt;/p-select&gt;
+						</pre>
+					</div>
+				</div>
+
+				<hr> <!-- Checkmark -->
+				<div class="workspace-guide-case">
+					<h1>Checkmark</h1>
+					<div class="workspace-guide-inner">
+						<p-select class="form-sel" placeholder="List Data" panel-class="form-panel-sel" v-model="pubSelectList" :options="pubSelectListTest" option-label="test" checkmark></p-select>
+					</div>
+					<div class="workspace-guide-inner">
+						<pre>
+							&lt;p-select <em>checkmark</em>&gt;&lt;/p-select&gt;
 						</pre>
 					</div>
 				</div>
