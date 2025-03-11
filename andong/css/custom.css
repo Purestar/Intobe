@@ -663,11 +663,10 @@
 			.f-address {font-size:14px; text-align:left; color:#999;}
 
 		/* 내용 */
-			#app {display:flex; flex-direction:column; min-height:100dvw;}
+			#app {display:flex; flex-direction:column; min-height:100dvh;}
 			#container {flex:1;}
 			#sub-container {padding:80px 0 120px;}
 			#contents .sub-title {display:flex; align-items:center; gap:24px;}
-
 
 	/* 로그인 */
 		.login-wrap {display:grid; justify-items:center; align-items:end; height:100dvh; padding-bottom:146px;}
