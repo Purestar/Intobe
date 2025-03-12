@@ -22,7 +22,8 @@
 
 	/* Icon */
 		[class*="form-sel"] > .p-select-dropdown:after,
-		[class*="form-sel"] > .p-cascadeselect-dropdown:after {content:""; flex-shrink:0; background-image:var(--ic-c); background-size:var(--bg-sz); background-position:var(--bp-150) var(--bp-200); width:12px; height:7px; transition:rotate var(--trans-dft); z-index:0; cursor:pointer;}
+		[class*="form-sel"] > .p-cascadeselect-dropdown:after,
+		[class*="form-panel-cascade"] .p-cascadeselect-group-icon-container:after {content:""; flex-shrink:0; background-image:var(--ic-c); background-size:var(--bg-sz); background-position:var(--bp-150) var(--bp-200); width:12px; height:7px; transition:rotate var(--trans-dft); z-index:0; cursor:pointer;}
 		[class*="form-sel"].p-select-open .p-select-dropdown:after,
 		[class*="form-sel"].p-cascadeselect-open .p-cascadeselect-dropdown:after {rotate:180deg;}
 
@@ -39,15 +40,23 @@
 
 	/* List */
 		[class*="form-panel-sel"],
-		[class*="form-panel-cascade"] {overflow:hidden; background:white; border:1px solid var(--form-focus-bd-c, var(--fom-fcs-brd-c)); border-radius:0 0 var(--form-bd-r, var(--fom-br)) var(--form-bd-r, var(--fom-br));}
+		[class*="form-panel-cascade"] .p-cascadeselect-list {overflow:hidden; background:white; border:1px solid var(--form-focus-bd-c, var(--fom-fcs-brd-c)); border-radius:0 0 var(--form-bd-r, var(--fom-br)) var(--form-bd-r, var(--fom-br));}
 		[class*="form-panel-sel"][style*="margin-top"] {border-radius:var(--form-bd-r, var(--fom-br)) var(--form-bd-r, var(--fom-br)) 0 0;}
 		[class*="form-panel-sel"] .p-select-list-container {width:100%; cursor:pointer;}
 		[class*="form-panel-sel"] .p-select-list {overflow-y:auto; max-height:calc(var(--form-dropitem, var(--fom-dropitem)) * var(--form-h, var(--fom-h)));}
 		[class*="form-panel-sel"] .p-select-list > * {display:flex; gap:12px; place-items:center; width:100%; min-height:var(--form-h, var(--fom-h)); padding:var(--form-pad-x, var(--fom-pad));}
-		[class*="form-panel-sel"] .p-select-list > *:hover {background-color:var(--form-focus-bd-c, var(--fom-fcs-brd-c)); color:white;}
 		[class*="form-panel-sel"] .p-select-list > * > svg {flex-shrink:0;}
 
-		[class*="form-panel-cascade"] .p-cascadeselect-option-content {display:flex;}
+	/* List - Focus, :hover, Active */
+		[class*="form-panel-sel"] .p-select-list > *:hover,
+		[class*="form-panel-cascade"] .p-cascadeselect-option:hover > .p-cascadeselect-option-content,
+		[class*="form-panel-cascade"] .p-cascadeselect-option.p-cascadeselect-option-active > .p-cascadeselect-option-content {background-color:var(--form-focus-bd-c, var(--fom-fcs-brd-c)); color:white;}
+
+	/* List - Cascade Select */
+		[class*="form-panel-cascade"] {cursor:pointer;}
+		[class*="form-panel-cascade"] .p-cascadeselect-list {overflow:visible; position:relative;}
+		[class*="form-panel-cascade"] .p-cascadeselect-list .p-cascadeselect-list {position:absolute; left:100%; top:-1px; width:max-content;}
+		[class*="form-panel-cascade"] .p-cascadeselect-option-content {display:flex; gap:4px; place-content:space-between; place-items:center; height:var(--form-h, var(--fom-h)); padding:0 var(--form-pad-x, var(--fom-pad));}
 		[class*="form-panel-cascade"] .p-cascadeselect-group-icon-container {display:flex;}
-		[class*="form-panel-cascade"] .p-cascadeselect-group-icon-container:after {content:""; background:red; width:4px; height:4px;}
+		[class*="form-panel-cascade"] .p-cascadeselect-group-icon-container:after {content:""; rotate:270deg;}
 		[class*="form-panel-cascade"] .p-cascadeselect-group-icon-container svg {display:none;}

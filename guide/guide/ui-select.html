@@ -157,25 +157,20 @@
 				<hr> <!-- Cascade Select -->
 				<div class="workspace-guide-case">
 					<h1>Cascade Select</h1>
-					<div class="workspace-guide-inner">
-						<p-cascade-select class="form-sel"></p-cascade-select>
+					<div style="--grid-t-col:3; --gap-a:20px;">
+						<div class="workspace-guide-inner">
+							<p-cascade-select class="form-sel"></p-cascade-select>
+						</div>
+						<div class="workspace-guide-inner">
+							<p-cascade-select class="form-sel" v-model="pubSelectList" :options="pubSelectListTest02" option-label="cname" option-group-label="name" :option-group-children="['states', 'cities']" placeholder="Select a City" panel-class="form-panel-cascade"></p-cascade-select>
+						</div>
+						<div class="workspace-guide-inner">
+							<p-cascade-select class="form-sel" disabled></p-cascade-select>
+						</div>
 					</div>
 					<div class="workspace-guide-inner">
 						<pre>
-							&lt;p-cascade-select <em>checkmark</em>&gt;&lt;/p-cascade-select&gt;
-						</pre>
-					</div>
-				</div>
-
-				<hr> <!-- Cascade Select List Data -->
-				<div class="workspace-guide-case">
-					<h1>[WIP] Cascade Select List Data</h1>
-					<div class="workspace-guide-inner">
-						<p-cascade-select class="form-sel" v-model="pubSelectList" :options="pubSelectListTest02" option-label="cname" option-group-label="name" :option-group-children="['states', 'cities']" panel-class="form-panel-cascade"></p-cascade-select>
-					</div>
-					<div class="workspace-guide-inner">
-						<pre>
-							&lt;p-cascade-select <em>checkmark</em>&gt;&lt;/p-cascade-select&gt;
+							&lt;p-cascade-select class="form-sel"&gt;&lt;/p-cascade-select&gt;
 						</pre>
 					</div>
 				</div>
