@@ -112,6 +112,7 @@ log(PrimeVue);
 	// Form
 	app.component('p-autocomplete', PrimeVue.AutoComplete);
 	app.component('p-cascade-select', PrimeVue.CascadeSelect);
+	app.component('p-color-picker', PrimeVue.ColorPicker);
 	//app.component('p-checkbox', PrimeVue.Checkbox);
 	/*app.component('p-datepicker', PrimeVue.DatePicker);*/
 	app.component('p-float-label', PrimeVue.FloatLabel);
@@ -130,7 +131,7 @@ log(PrimeVue);
 	app.use(PrimeVue.Config, { theme: 'none' });
 	//app.use(PrimeVue.Config, { unstyled: true });
 
-	app.mount('#container');
+	app.mount('body');
 });
 
 // include.js
