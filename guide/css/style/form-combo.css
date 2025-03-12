@@ -49,6 +49,10 @@
 		[class*="form-panel-sel"] .p-select-list > * {display:flex; gap:12px; place-items:center; width:100%; min-height:var(--form-h, var(--fom-h)); padding:var(--form-pad-x, var(--fom-pad));}
 		[class*="form-panel-sel"] .p-select-list > * > svg {flex-shrink:0;}
 
+	/* Filter */
+		[class*="form-panel-sel"] .p-select-header {width:100%; padding:var(--form-pad-x, var(--fom-pad));}
+		[class*="form-panel-sel"] .p-iconfield {display:flex; place-items:center; border:1px solid var(--form-bd-c, var(--fom-bdr-c)); border-radius:var(--form-bd-r, var(--fom-br)); width:var(--form-w, 100%); height:var(--form-h, var(--fom-h)); padding:0 var(--form-pad-x, var(--fom-pad)); font-size:var(--form-ft-s, var(--fom-fs));}
+
 	/* List - Focus, :hover, Active */
 		[class*="form-panel-sel"] .p-select-list > .p-focus,
 		[class*="form-panel-cascade"] .p-cascadeselect-option.p-focus > .p-cascadeselect-option-content,
