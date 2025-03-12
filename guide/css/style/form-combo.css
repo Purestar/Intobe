@@ -1,6 +1,7 @@
 /* Select */
 	/* Default */
-		[class*="form-sel"] {
+		[class*="form-sel"],
+		[class*="form-float-sel"] .p-select {
 			gap:12px;
 			border:1px solid var(--form-bd-c, var(--fom-bdr-c));
 			border-radius:var(--form-bd-r, var(--fom-br));
@@ -14,11 +15,34 @@
 		}
 		[class*="form-sel"] > * {flex-shrink:1;}
 		[class*="form-sel"] > .p-select-label,
-		[class*="form-sel"] > .p-cascadeselect-label {overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:var(--line, 1); word-break:break-all; width:100%; outline:0;}
+		[class*="form-sel"] > .p-cascadeselect-label,
+		[class*="form-float-sel"] .p-select-label {overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:var(--line, 1); word-break:break-all; width:100%; outline:0;}
 		[class*="form-sel"] > .p-select-dropdown,
-		[class*="form-sel"] > .p-cascadeselect-dropdown {display:flex;}
+		[class*="form-sel"] > .p-cascadeselect-dropdown,
+		[class*="form-float-sel"] .p-select-dropdown {display:flex;}
 		[class*="form-sel"] > .p-select-dropdown svg,
-		[class*="form-sel"] > .p-cascadeselect-dropdown svg {display:none;}
+		[class*="form-sel"] > .p-cascadeselect-dropdown svg,
+		[class*="form-float-sel"] .p-select-dropdown svg {display:none;}
+
+	/* Float Label */
+		[class*="form-float-sel"] {position:relative;}
+		[class*="form-float-sel"] .p-select {place-items:center;}
+		[class*="form-float-sel"] label {
+			position: absolute;
+			left: var(--form-pad-x, var(--fom-pad));
+			top: 50%;
+			transform: translateY(-50%);
+			line-height: 1;
+			transition: var(--trans-dft);
+			cursor: auto;
+		}
+		[class*="form-float-sel"] .p-select {display:flex; place-content:space-between; width:100%;}
+		[class*="form-float-sel"] .p-select.p-focus + label,
+		[class*="form-float-sel"] .p-inputwrapper-filled + label { top: 0; font-size: 0.75em; transform: translateY(-1.2em); }
+		[class*="form-float-sel"].p-floatlabel-in .p-select.p-focus + label,
+		[class*="form-float-sel"].p-floatlabel-in .p-inputwrapper-filled + label { transform: translateY(0.2em); }
+		[class*="form-float-sel"].p-floatlabel-on .p-select.p-focus + label,
+		[class*="form-float-sel"].p-floatlabel-on .p-inputwrapper-filled + label { background:white; transform: translateY(-0.5em); }
 
 	/* Icon */
 		[class*="form-sel"] > .p-select-dropdown:after,

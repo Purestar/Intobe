@@ -171,11 +171,62 @@
 				<div class="workspace-guide-case">
 					<h1>Filter</h1>
 					<div class="workspace-guide-inner">
-						<p-select class="form-sel" placeholder="List Data" panel-class="form-panel-sel" v-model="pubSelectList" :options="pubSelectListTest" option-label="test" filter :filter-input-class="'form-txt'"></p-select>
+						<p-select class="form-sel" placeholder="List Data" panel-class="form-panel-sel" v-model="pubSelectList" :options="pubSelectListTest" option-label="test" filter></p-select>
 					</div>
 					<div class="workspace-guide-inner">
 						<pre>
 							&lt;p-select <em>filter</em>&gt;&lt;/p-select&gt;
+						</pre>
+					</div>
+				</div>
+
+				<hr> <!-- Float Label -->
+				<div class="workspace-guide-case">
+					<h1>Float Label</h1>
+					<div style="--grid-t-col:3; --gap-a:20px;">
+						<div class="workspace-guide-inner">
+							<p-float-label class="form-float-sel">
+								<p-select input-id="over_label" class="form-sel" panel-class="form-panel-sel" v-model="pubSelectList" :options="pubSelectListTest"></p-select>
+								<label for="over_label">Over Label</label>
+							</p-float-label>
+						</div>
+						<div class="workspace-guide-inner">
+							<p-float-label class="form-float-sel" variant="in">
+								<p-select input-id="in_label" class="form-sel" panel-class="form-panel-sel" v-model="pubSelectList" :options="pubSelectListTest"></p-select>
+								<label for="in_label">In Label</label>
+							</p-float-label>
+						</div>
+						<div class="workspace-guide-inner">
+							<p-float-label class="form-float-sel" variant="on">
+								<p-select input-id="on_label" class="form-sel" panel-class="form-panel-sel" v-model="pubSelectList" :options="pubSelectListTest"></p-select>
+								<label for="on_label">On Label</label>
+							</p-float-label>
+						</div>
+						<div class="workspace-guide-inner" style="--form-ft-s:12px; --form-h:80px;">
+							<p-float-label class="form-float-sel">
+								<p-select input-id="over_label02" class="form-sel" panel-class="form-panel-sel" v-model="pubSelectList" :options="pubSelectListTest"></p-select>
+								<label for="over_label02">Over Label</label>
+							</p-float-label>
+						</div>
+						<div class="workspace-guide-inner">
+							<p-float-label class="form-float-sel" variant="in" style="--form-ft-s:14px;">
+								<p-select input-id="in_label02" class="form-sel" panel-class="form-panel-sel" v-model="pubSelectList" :options="pubSelectListTest"></p-select>
+								<label for="in_label02">In Label</label>
+							</p-float-label>
+						</div>
+						<div class="workspace-guide-inner">
+							<p-float-label class="form-float-sel" variant="on" style="--form-ft-s:18px;">
+								<p-select input-id="on_label02" class="form-sel" panel-class="form-panel-sel" v-model="pubSelectList" :options="pubSelectListTest"></p-select>
+								<label for="on_label02">On Label</label>
+							</p-float-label>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<pre>
+							&lt;p-float-label class="form-txt" data-float-label&gt;
+								&lt;p-input id="over_label" v-model="value1"&gt;&lt;/p-input&gt;
+								&lt;label for="over_label"&gt;Over Label&lt;/label&gt;
+							&lt;/p-float-label&gt;
 						</pre>
 					</div>
 				</div>
