@@ -253,7 +253,7 @@
 	/* Swiper */
 		/* Navigation */
 			.swiper-button-prev.swi-arrow-01,
-			.swiper-button-next.swi-arrow-01 {width:9.72vw; height:9.72vw;}
+			.swiper-button-next.swi-arrow-01 {width:9.72vw; height:9.72vw; z-index:1;}
 			.swiper-button-prev.swi-arrow-01:after,
 			.swiper-button-next.swi-arrow-01:after {width:1.53vw; height:2.50vw;}
 
@@ -313,6 +313,7 @@
 
 		.thumb-type-badge-01 {width:19.44vw; height:19.44vw;}
 		.thumb-type-badge-01 .txt-department {top:10.14vw;}
+		.thumb-type-badge-01 .mypage-badge .txt-department {top:10.14vw;}
 
 		.thumb-type-badge-02 {width:12.50vw; height:12.50vw;}
 		.thumb-type-badge-02 .txt-department {top:5.14vw;}
@@ -462,7 +463,7 @@
 			.chatbot-chat-history-ctgy-list .chatbot-item-util-menu button {padding:0 3.33vw;}
 
 		/* 챗봇 페이지 */
-			.chatpage-wrap {position:relative; flex-direction:column;}
+			.chatpage-wrap {position:relative; flex-direction:column; z-index:1;}
 			.chatpage-panel {position:absolute; left:0; top:0; flex:1; width:100%; padding:0 19.44vw 0 0;}
 			.chatpage-panel::before {content:""; position:absolute; left:0; top:0; width:100%; height:100%; background:rgba(0, 0, 0, 0.5);}
 			.chatpage-panel .chatpage-panel-head {position:relative; background:white; padding:0 5vw;}
