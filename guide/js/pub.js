@@ -108,9 +108,11 @@ document.addEventListener('DOMContentLoaded', function() {
 	app.component('p-aco-head', PrimeVue.AccordionHeader);
 	app.component('p-aco-cont', PrimeVue.AccordionContent);
 log(PrimeVue);
+
 	// Form
 	app.component('p-autocomplete', PrimeVue.AutoComplete);
 	app.component('p-cascade-select', PrimeVue.CascadeSelect);
+	//app.component('p-checkbox', PrimeVue.Checkbox);
 	/*app.component('p-datepicker', PrimeVue.DatePicker);*/
 	app.component('p-float-label', PrimeVue.FloatLabel);
 	app.component('p-input', PrimeVue.InputText);

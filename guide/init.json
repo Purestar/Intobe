@@ -46,8 +46,9 @@
 					{ "menu": "Chip", "src": "./guide/ui-chip.html", "state": "comp" },
 					{ "menu": "Divider", "src": "./guide/ui-divider.html", "state": "comp" },
 					{ "id": "Form", "submenu": [
+						{ "menu": "Checkbox & Radio (Selection)", "src": "./guide/ui-checkbox.html", "state": "comp" },
 						{ "menu": "Input", "src": "./guide/ui-input.html", "state": "work" },
-						{ "menu": "Select", "src": "./guide/ui-select.html", "state": "work" }
+						{ "menu": "Select(Combo)", "src": "./guide/ui-select.html", "state": "work" }
 					], "state": "work"}
 				], "state": "work"}
 			],
