@@ -40,6 +40,8 @@
 
 	/* List */
 		[class*="form-panel-sel"],
+		[class*="form-panel-cascade"] {display:block;}
+		[class*="form-panel-sel"],
 		[class*="form-panel-cascade"] .p-cascadeselect-list {overflow:hidden; background:white; border:1px solid var(--form-focus-bd-c, var(--fom-fcs-brd-c)); border-radius:0 0 var(--form-bd-r, var(--fom-br)) var(--form-bd-r, var(--fom-br));}
 		[class*="form-panel-sel"][style*="margin-top"] {border-radius:var(--form-bd-r, var(--fom-br)) var(--form-bd-r, var(--fom-br)) 0 0;}
 		[class*="form-panel-sel"] .p-select-list-container {width:100%; cursor:pointer;}
@@ -48,8 +50,8 @@
 		[class*="form-panel-sel"] .p-select-list > * > svg {flex-shrink:0;}
 
 	/* List - Focus, :hover, Active */
-		[class*="form-panel-sel"] .p-select-list > *:hover,
-		[class*="form-panel-cascade"] .p-cascadeselect-option:hover > .p-cascadeselect-option-content,
+		[class*="form-panel-sel"] .p-select-list > .p-focus,
+		[class*="form-panel-cascade"] .p-cascadeselect-option.p-focus > .p-cascadeselect-option-content,
 		[class*="form-panel-cascade"] .p-cascadeselect-option.p-cascadeselect-option-active > .p-cascadeselect-option-content {background-color:var(--form-focus-bd-c, var(--fom-fcs-brd-c)); color:white;}
 
 	/* List - Cascade Select */

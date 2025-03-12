@@ -154,6 +154,32 @@
 					</div>
 				</div>
 
+				<hr> <!-- Editable -->
+				<div class="workspace-guide-case">
+					<h1>Editable</h1>
+					<div class="workspace-guide-inner">
+						<p-select class="form-sel" placeholder="List Data" panel-class="form-panel-sel" v-model="pubSelectList" :options="pubSelectListTest" option-label="test" editable></p-select>
+					</div>
+					<div class="workspace-guide-inner">
+						<pre>
+							&lt;p-select <em>editable</em>&gt;&lt;/p-select&gt;
+						</pre>
+					</div>
+				</div>
+
+				<hr> <!-- Filter -->
+				<div class="workspace-guide-case">
+					<h1>Filter</h1>
+					<div class="workspace-guide-inner">
+						<p-select class="form-sel" placeholder="List Data" panel-class="form-panel-sel" v-model="pubSelectList" :options="pubSelectListTest" option-label="test" filter :filter-input-class="'form-txt'"></p-select>
+					</div>
+					<div class="workspace-guide-inner">
+						<pre>
+							&lt;p-select <em>filter</em>&gt;&lt;/p-select&gt;
+						</pre>
+					</div>
+				</div>
+
 				<hr> <!-- Cascade Select -->
 				<div class="workspace-guide-case">
 					<h1>Cascade Select</h1>
