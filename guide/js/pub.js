@@ -120,8 +120,8 @@ log(PrimeVue);
 	app.component('p-msg', PrimeVue.Message);
 	app.component('p-select', PrimeVue.Select);
 
-	// Popover
-	app.component('p-popover', PrimeVue.Popover);
+	// Popup
+	app.component('p-popup', PrimeVue.Dialog);
 
 	// Tabs
 	app.component('p-tabs', PrimeVue.Tabs);
@@ -135,6 +135,9 @@ log(PrimeVue);
 	app.component('p-data-tbl-col', PrimeVue.Column);
 	app.component('p-data-tbl-col-gr', PrimeVue.ColumnGroup);
 	app.component('p-data-tbl-row', PrimeVue.Row);
+	app.component('p-popover', PrimeVue.Popover);
+
+	// Directive
 	app.directive('tooltip', PrimeVue.Tooltip);
 
 	// PrimeVue Config
