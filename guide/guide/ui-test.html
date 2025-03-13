@@ -26,6 +26,15 @@
 						<p-data-col field="quantity" header="Quantity"></p-data-col>
 					</p-data-tbl>
 				</div>
+				<div class="workspace-guide-case">
+					<div class="workspace-guide-inner">
+						<button v-tooltip="'Enter your username'" id="btn">버튼</button>
+						<p-popover ref="op">popover</p-popover>
+						<style>
+
+						</style>
+					</div>
+				</div>
 
 				<div class="workspace-guide-case">
 					<div class="workspace-guide-inner">
@@ -60,5 +69,13 @@
 				</div>
 			</div>
 		</div>
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				console.log(document.getElementById("btn"));
+				document.getElementById("btn").addEventListener("click", (event) => {
+					console.log("버튼 클릭됨!", event);
+				});
+			});
+		</script>
 	</body>
 </html>

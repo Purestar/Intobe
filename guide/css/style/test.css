@@ -581,3 +581,5 @@
 .p-datatable-row-toggle-icon:dir(rtl) {
 	transform: rotate(180deg);
 }
+
+.p-tooltip {position:absolute;}

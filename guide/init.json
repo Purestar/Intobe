@@ -51,6 +51,7 @@
 						{ "menu": "Picker", "src": "./guide/ui-picker.html", "state": "comp" },
 						{ "menu": "Select(Combo)", "src": "./guide/ui-select.html", "state": "comp" }
 					], "state": "comp"},
+					{ "menu": "Tooltip", "src": "./guide/ui-tooltip.html", "state": "comp" },
 					{ "menu": "Test", "src": "./guide/ui-test.html", "state": "comp" }
 				], "state": "work"}
 			],
