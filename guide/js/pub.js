@@ -113,8 +113,7 @@ log(PrimeVue);
 	app.component('p-autocomplete', PrimeVue.AutoComplete);
 	app.component('p-cascade-select', PrimeVue.CascadeSelect);
 	app.component('p-color-picker', PrimeVue.ColorPicker);
-	//app.component('p-checkbox', PrimeVue.Checkbox);
-	/*app.component('p-datepicker', PrimeVue.DatePicker);*/
+	app.component('p-date-picker', PrimeVue.DatePicker);
 	app.component('p-float-label', PrimeVue.FloatLabel);
 	app.component('p-input', PrimeVue.InputText);
 	app.component('p-msg', PrimeVue.Message);
@@ -128,7 +127,58 @@ log(PrimeVue);
 	app.component('p-tabpanel', PrimeVue.TabPanel);
 
 	// PrimeVue Config
-	app.use(PrimeVue.Config, { theme: 'none' });
+	app.use(PrimeVue.Config, {
+		theme: 'none',
+		locale: {
+			startsWith: '로 시작',
+			contains: '포함',
+			notContains: '포함하지 않음',
+			endsWith: '로 끝남',
+			equals: '같음',
+			notEquals: '같지 않음',
+			noFilter: '필터 없음',
+			lt: '보다 작음',
+			lte: '보다 작거나 같음',
+			gt: '보다 큼',
+			gte: '보다 크거나 같음',
+			dateIs: '날짜가 동일함',
+			dateIsNot: '날짜가 다름',
+			dateBefore: '이전 날짜',
+			dateAfter: '이후 날짜',
+			clear: '초기화',
+			apply: '적용',
+			matchAll: '모두 일치',
+			matchAny: '하나라도 일치',
+			addRule: '규칙 추가',
+			removeRule: '규칙 제거',
+			accept: '예',
+			reject: '아니오',
+			choose: '선택',
+			upload: '업로드',
+			cancel: '취소',
+			dayNames: ['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'],
+			dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+			dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+			monthNames: [
+				'1월', '2월', '3월', '4월', '5월', '6월',
+				'7월', '8월', '9월', '10월', '11월', '12월'
+			],
+			monthNamesShort: [
+				'1월', '2월', '3월', '4월', '5월', '6월',
+				'7월', '8월', '9월', '10월', '11월', '12월'
+			],
+			today: '오늘',
+			weekHeader: '주',
+			firstDayOfWeek: 0, // 0: 일요일 시작, 1: 월요일 시작
+			dateFormat: 'yy-mm-dd',
+			weak: '약함',
+			medium: '보통',
+			strong: '강함',
+			passwordPrompt: '비밀번호를 입력하세요',
+			emptyFilterMessage: '결과 없음',
+			emptyMessage: '데이터 없음',
+		},
+	});
 	//app.use(PrimeVue.Config, { unstyled: true });
 
 	app.mount('body');
