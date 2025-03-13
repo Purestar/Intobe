@@ -1,6 +1,6 @@
 /* Bar */
 	/* Default */
-		[class*="bar-"] {display:flex; gap:4px; line-height:1;}
+		[class*="bar-"] {display:flex; flex-wrap:wrap; gap:4px; line-height:1;}
 		[class*="bar-"] > * {display:flex; gap:4px;}
 		[class*="bar-"] > * + *:before {content:""; background:#ccc;}
 
