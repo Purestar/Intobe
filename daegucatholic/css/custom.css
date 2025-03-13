@@ -698,3 +698,6 @@
 		.qualification-wrap .qualification-lst > *.not {background:#f1f1f1;}
 		.qualification-wrap .qualification-lst > *.not .chip-type-02-ylw {background:#ddcaab;}
 		.qualification-wrap .qualification-lst > *.not .chip-type-02-sky {background:#abd9dd;}
+
+	/* DCU 배지 */
+		#badgeSlide .swiper {width:100%;}
