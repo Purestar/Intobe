@@ -107,6 +107,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	app.component('p-aco-item', PrimeVue.AccordionPanel);
 	app.component('p-aco-head', PrimeVue.AccordionHeader);
 	app.component('p-aco-cont', PrimeVue.AccordionContent);
+
 log(PrimeVue);
 
 	// Form
@@ -121,10 +122,16 @@ log(PrimeVue);
 
 	// Tabs
 	app.component('p-tabs', PrimeVue.Tabs);
-	app.component('p-tablist', PrimeVue.TabList);
+	app.component('p-tab-list', PrimeVue.TabList);
 	app.component('p-tab', PrimeVue.Tab);
-	app.component('p-tabpanels', PrimeVue.TabPanels);
-	app.component('p-tabpanel', PrimeVue.TabPanel);
+	app.component('p-tab-panels', PrimeVue.TabPanels);
+	app.component('p-tab-panel', PrimeVue.TabPanel);
+
+	// Test
+	app.component('p-data-tbl', PrimeVue.DataTable);
+	app.component('p-data-tbl-col', PrimeVue.Column);
+	app.component('p-data-tbl-col-gr', PrimeVue.ColumnGroup);
+	app.component('p-data-tbl-row', PrimeVue.Row);
 
 	// PrimeVue Config
 	app.use(PrimeVue.Config, {

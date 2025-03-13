@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="대구가톨릭">
+		<meta name="description" content="대구가톨릭">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script type="module" src="../js/pub.js"></script>
+		<link rel="stylesheet" href="../css/global.css">
+		<link rel="stylesheet" href="../css/workspace.css">
+	</head>
+	<body>
+		<div id="container">
+			<div class="workspace-guide">
+				<div class="workspace-guide-case">
+					<p-data-tbl :value="products" table-style="min-width: 50rem">
+						<p-data-col field="code" header="Code"></p-data-col>
+						<p-data-col field="name" header="Name"></p-data-col>
+						<p-data-col field="category" header="Category"></p-data-col>
+						<p-data-col field="quantity" header="Quantity"></p-data-col>
+					</p-data-tbl>
+				</div>
+
+				<div class="workspace-guide-case">
+					<div class="workspace-guide-inner">
+						<p-tabs value="0">
+							<p-tab-list>
+								<p-tab value="0">Header I</p-tab>
+								<p-tab value="1">Header II</p-tab>
+								<p-tab value="2">Header III</p-tab>
+							</p-tab-list>
+							<p-tab-panels>
+								<p-tab-panel value="0">
+									<p class="m-0">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+									</p>
+								</p-tab-panel>
+								<p-tab-panel value="1">
+									<p class="m-0">
+										Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+										ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Consectetur, adipisci velit, sed quia non numquam eius modi.
+									</p>
+								</p-tab-panel>
+								<p-tab-panel value="2">
+									<p class="m-0">
+										At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa
+										qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
+									</p>
+								</p-tab-panel>
+							</p-tab-panels>
+						</p-tabs>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
