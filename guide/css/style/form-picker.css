@@ -22,10 +22,11 @@
 
 
 /* Date Picker */
-	[class*="form-txt-date"] {padding-right:var(--fom-h);}
-	[class*="form-txt-date"] .form-datetime {position:absolute; left:0; top:var(--fom-h); padding:0;}
-	[class*="form-txt-date"] .form-icon:after,
-	[class*="form-txt-date"] .form-icon:after {content:""; background-position:var(--bp-150) var(--bp-400); width:16px; height:17px;}
+	[class*="form-txt-date"] {padding-right:0;}
+	[class*="form-txt-date"] > * {flex-shrink:unset;}
+	[class*="form-txt-date"] .p-datepicker-dropdown {display:flex; place-items:center; place-content:center; flex:0 0 var(--fom-h);}
+	[class*="form-txt-date"] .p-datepicker-dropdown svg {display:none;}
+	[class*="form-txt-date"] .p-datepicker-dropdown:after {content:""; background-image:var(--ic-c); background-position:var(--bp-150) var(--bp-400); background-size:var(--bg-sz); width:16px; height:17px;}
 
 	.p-datepicker-panel {background:white; border:1px solid black;}
 	.p-datepicker-calendar-container {display:flex;}
