@@ -50,7 +50,8 @@
 						{ "menu": "Checkbox & Radio (Selection)", "src": "./guide/ui-checkbox.html", "state": "comp" },
 						{ "menu": "Input", "src": "./guide/ui-input.html", "state": "comp" },
 						{ "menu": "Picker", "src": "./guide/ui-picker.html", "state": "comp" },
-						{ "menu": "Select(Combo)", "src": "./guide/ui-select.html", "state": "comp" }
+						{ "menu": "Select(Combo)", "src": "./guide/ui-select.html", "state": "comp" },
+						{ "menu": "Textarea", "src": "./guide/ui-tarea.html", "state": "" }
 					], "state": "comp"},
 					{ "menu": "Icon", "src": "./guide/ui-icon.html", "state": "" },
 					{ "menu": "Popup", "src": "./guide/ui-popup.html", "state": "comp" },
