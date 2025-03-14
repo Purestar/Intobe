@@ -110,8 +110,6 @@ document.addEventListener('DOMContentLoaded', function() {
 				btn.addEventListener("click", function () {
 					window.openPopup();
 				});
-			} else {
-				console.error("버튼을 찾을 수 없습니다.");
 			}
         }
 	});
@@ -138,6 +136,7 @@ log(PrimeVue);
 	app.component('p-cascade-select', PrimeVue.CascadeSelect);
 	app.component('p-color-picker', PrimeVue.ColorPicker);
 	app.component('p-date-picker', PrimeVue.DatePicker);
+	app.component('p-file', PrimeVue.FileUpload);
 	app.component('p-float-label', PrimeVue.FloatLabel);
 	app.component('p-input', PrimeVue.InputText);
 	app.component('p-msg', PrimeVue.Message);
