@@ -17,7 +17,8 @@
 				{ "id": "1Depth", "submenu": [
 					{ "menu": "2Depth", "src": "", "state": "" }
 				], "state": ""},
-				{ "menu": "1Depth", "src": "", "state": "" }
+				{ "menu": "1Depth", "src": "", "state": "" },
+				{ "menu": "Test", "src": "./page/test.html", "state": "" }
 			],
 			"state": ""
 		},
@@ -51,6 +52,8 @@
 						{ "menu": "Picker", "src": "./guide/ui-picker.html", "state": "comp" },
 						{ "menu": "Select(Combo)", "src": "./guide/ui-select.html", "state": "comp" }
 					], "state": "comp"},
+					{ "menu": "Popup", "src": "./guide/ui-popup.html", "state": "comp" },
+					{ "menu": "Tabs", "src": "./guide/ui-tabs.html", "state": "comp" },
 					{ "menu": "Tooltip", "src": "./guide/ui-tooltip.html", "state": "comp" },
 					{ "menu": "Test", "src": "./guide/ui-test.html", "state": "comp" }
 				], "state": "work"}

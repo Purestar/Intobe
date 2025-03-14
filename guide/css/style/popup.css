@@ -11,9 +11,12 @@
 		[class*="pop-type"] .p-dialog-footer [class*="btn-type"] {height:auto;}
 
 	/* Popup Content */
-		[class*="pop-type"] .p-dialog-content {overflow-y:auto; max-height:var(--pop-max-h); padding:var(--pop-cont-top-pad) 0 var(--pop-cont-bot-pad);}
+		[class*="pop-type"] .p-dialog-content {flex:1; overflow-y:auto; max-height:var(--pop-max-h); padding:var(--pop-cont-top-pad) 0 var(--pop-cont-bot-pad);}
 		[class*="pop-type"] .p-dialog-content .pop-cont {padding:1px var(--pop-pad);}
 		[class*="pop-type"] .p-dialog-content .pop-cont > *:first-child {margin-top:0;}
+
+	/* Popup Full */
+		[class*="pop-type"].p-dialog-maximized {border-radius:0; width:100dvw; height:100dvh; max-height:100dvh; transition:width var(--trans-dft), height var(--trans-dft);}
 
 	/* Popup Backdrop */
 		.p-overlay-mask {background:rgba(0, 0, 0, .5);}

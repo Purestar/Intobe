@@ -18,33 +18,34 @@
 	<body>
 		<div id="container">
 			<div class="workspace-guide">
-
 				<div class="workspace-guide-case">
 					<div class="workspace-guide-inner">
-						<!-- HTML 버튼 -->
-						<button class="btn-type" id="openPopupBtn">버튼</button>
-
-						<!-- Vue 인스턴스 내부의 다이얼로그 -->
-						<p-popup class="pop-type" modal v-model:visible="popupOpen" header-class="pop-head">
-							<template #header>
-								<h1 class="pop-title">Popup Title</h1>
-							</template>
-							<div class="pop-cont">팝업 내용팝업 내용팝업 내용팝업 내용팝업 내용팝업 내용팝업</div>
-							<template #footer>
-								<button type="button" class="btn-type" @click="popupOpen = false">버튼</button>
-								<button type="button" class="btn-type" @click="popupOpen = false">버튼</button>
-							</template>
-						</p-popup>
-					</div>
-				</div>
-
-				<div class="workspace-guide-case">
-					<div class="workspace-guide-inner">
-						<p-tabs value="0">
-							<p-tab-list>
+						<p-tabs value="0" scrollable class="tab-wrap">
+							<p-tab-list class="tab-menu">
 								<p-tab value="0">Header I</p-tab>
 								<p-tab value="1">Header II</p-tab>
 								<p-tab value="2">Header III</p-tab>
+								<p-tab value="3">Header I</p-tab>
+								<p-tab value="4">Header II</p-tab>
+								<p-tab value="5">Header III</p-tab>
+								<p-tab value="6">Header I</p-tab>
+								<p-tab value="7">Header II</p-tab>
+								<p-tab value="8">Header III</p-tab>
+								<p-tab value="9">Header I</p-tab>
+								<p-tab value="10">Header II</p-tab>
+								<p-tab value="11">Header III</p-tab>
+								<p-tab value="12">Header I</p-tab>
+								<p-tab value="13">Header II</p-tab>
+								<p-tab value="14">Header III</p-tab>
+								<p-tab value="15">Header I</p-tab>
+								<p-tab value="16">Header II</p-tab>
+								<p-tab value="17">Header III</p-tab>
+								<p-tab value="18">Header I</p-tab>
+								<p-tab value="19">Header II</p-tab>
+								<p-tab value="20">Header III</p-tab>
+								<p-tab value="21">Header I</p-tab>
+								<p-tab value="22">Header II</p-tab>
+								<p-tab value="23">Header III</p-tab>
 							</p-tab-list>
 							<p-tab-panels>
 								<p-tab-panel value="0">
@@ -81,5 +82,4 @@
 			</div>
 		</div>
 	</body>
-
 </html>
