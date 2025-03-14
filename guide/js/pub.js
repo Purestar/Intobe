@@ -158,6 +158,7 @@ log(PrimeVue);
 	app.component('p-data-tbl-col-gr', PrimeVue.ColumnGroup);
 	app.component('p-data-tbl-row', PrimeVue.Row);
 	app.component('p-popover', PrimeVue.Popover);
+	app.component('p-chart', PrimeVue.Chart);
 
 	// Directive
 	app.directive('tooltip', PrimeVue.Tooltip);

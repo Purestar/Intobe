@@ -16,18 +16,6 @@
 		<link rel="stylesheet" href="../css/workspace.css">
 	</head>
 	<body>
-		<div id="container">
-			<div class="workspace-guide">
-
-				<div class="workspace-guide-case">
-					<p-data-tbl :value="products" table-style="min-width: 50rem">
-						<p-data-col field="code" header="Code"></p-data-col>
-						<p-data-col field="name" header="Name"></p-data-col>
-						<p-data-col field="category" header="Category"></p-data-col>
-						<p-data-col field="quantity" header="Quantity"></p-data-col>
-					</p-data-tbl>
-				</div>
-			</div>
-		</div>
+		<p-chart type="bar" :data="chartData" :options="chartOptions"></p-chart>
 	</body>
 </html>
