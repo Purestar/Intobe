@@ -92,15 +92,38 @@ document.addEventListener('DOMContentLoaded', function() {
 				}
 			]);
 
+			const popupOpen = ref(false);
+			app.config.globalProperties.popupOpen = popupOpen;
+
 			return {
 				date,
 				value,
 				pubSelectList,
 				pubSelectListTest,
-				pubSelectListTest02
+				pubSelectListTest02,
+				popupOpen
 			};
 		},
+        mounted() {
+			const btn = document.getElementById("openPopupBtn");
+			if (btn) {
+				btn.addEventListener("click", function () {
+					window.openPopup();
+				});
+			} else {
+				console.error("버튼을 찾을 수 없습니다.");
+			}
+        }
 	});
+
+	window.openPopup = function () {
+        app.config.globalProperties.popupOpen.value = true;
+        console.log("팝업 열기 상태:", app.config.globalProperties.popupOpen.value);
+    };
+    window.closePopup = function () {
+        app.config.globalProperties.popupOpen.value = false;
+        console.log("팝업 닫기 상태:", app.config.globalProperties.popupOpen.value);
+    };
 
 	// Accordion
 	app.component('p-aco', PrimeVue.Accordion);

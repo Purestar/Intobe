@@ -84,6 +84,16 @@
 		--fom-lh: calc(var(--fom-h) - 2px); /* 폼 행간 */
 		--fom-ta-h: 120px; /* 텍스트 에어리어 높이 */
 
+	/* Popup */
+		--pop-w: 720px; /* 팝업 기본 넓이 */
+		--pop-pad: 40px; /* 팝업 좌우 여백 */
+		--pop-max-h: 95dvh; /* 팝업 최대 높이 */
+		--pop-br: 10px; /* 팝업 보더 라디우스 */
+		--pop-hh: 48px; /* 팝업 헤더 높이 */
+		--pop-fh: 136px; /* 팝업 푸터 높이 */
+		--pop-cont-top-pad: 8px; /* 팝업 내용 위쪽 여백 */
+		--pop-cont-bot-pad: 20px; /* 팝업 내용 아래쪽 여백 */
+
 	/* Scroll */
 		--scr-w: 4px; /* 넓이 */
 		--scr-br: 4px; /* 보더 라디우스 */

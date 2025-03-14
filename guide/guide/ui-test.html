@@ -18,31 +18,22 @@
 	<body>
 		<div id="container">
 			<div class="workspace-guide">
-				<div class="workspace-guide-case">
-					<p-data-tbl :value="products" table-style="min-width: 50rem">
-						<p-data-col field="code" header="Code"></p-data-col>
-						<p-data-col field="name" header="Name"></p-data-col>
-						<p-data-col field="category" header="Category"></p-data-col>
-						<p-data-col field="quantity" header="Quantity"></p-data-col>
-					</p-data-tbl>
-				</div>
+
 				<div class="workspace-guide-case">
 					<div class="workspace-guide-inner">
-						<button class="btn-type">버튼</button>
-						<p-popup v-model:visible="visible" modal header="Edit Profile" :style="{ width: '25rem' }">
-							<span class="text-surface-500 dark:text-surface-400 block mb-8">Update your information.</span>
-							<div class="flex items-center gap-4 mb-4">
-								<label for="username" class="font-semibold w-24">Username</label>
-								<InputText id="username" class="flex-auto" autocomplete="off" />
-							</div>
-							<div class="flex items-center gap-4 mb-8">
-								<label for="email" class="font-semibold w-24">Email</label>
-								<InputText id="email" class="flex-auto" autocomplete="off" />
-							</div>
-							<div class="flex justify-end gap-2">
-								<Button type="button" label="Cancel" severity="secondary" @click="visible = false"></Button>
-								<Button type="button" label="Save" @click="visible = false"></Button>
-							</div>
+						<!-- HTML 버튼 -->
+						<button class="btn-type" id="openPopupBtn">버튼</button>
+
+						<!-- Vue 인스턴스 내부의 다이얼로그 -->
+						<p-popup class="pop-type" modal v-model:visible="popupOpen" header-class="pop-head">
+							<template #header>
+								<h1 class="pop-title">Popup Title</h1>
+							</template>
+							<div class="pop-cont">팝업 내용팝업 내용팝업 내용팝업 내용팝업 내용팝업 내용팝업</div>
+							<template #footer>
+								<button type="button" class="btn-type" @click="popupOpen = false">버튼</button>
+								<button type="button" class="btn-type" @click="popupOpen = false">버튼</button>
+							</template>
 						</p-popup>
 					</div>
 				</div>
@@ -78,7 +69,17 @@
 						</p-tabs>
 					</div>
 				</div>
+
+				<div class="workspace-guide-case">
+					<p-data-tbl :value="products" table-style="min-width: 50rem">
+						<p-data-col field="code" header="Code"></p-data-col>
+						<p-data-col field="name" header="Name"></p-data-col>
+						<p-data-col field="category" header="Category"></p-data-col>
+						<p-data-col field="quantity" header="Quantity"></p-data-col>
+					</p-data-tbl>
+				</div>
 			</div>
 		</div>
 	</body>
+
 </html>
