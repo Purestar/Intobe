@@ -515,9 +515,9 @@
 			.qualification-wrap .qualification-lst-wrap {min-height:12.50vw; margin-top:2.50vw; padding-left:3.7vw;}
 			.qualification-wrap .qualification-lst-wrap:before {border-left:0.56vw solid #acc3dd; border-radius:0.56vw; width:0.56vw; min-height:12.50vw;}
 			.qualification-wrap .qualification-lst {grid-template-columns:repeat(1, 1fr); gap:2.78vw; margin-left:8.33vw;}
-			.qualification-wrap .qualification-lst > * {gap:1.39vw; border-radius:2.22vw; height:34.72vw; padding:4.17vw 5.56vw 0;}
+			.qualification-wrap .qualification-lst > * {gap:1.39vw; border-radius:2.22vw; /*height:34.72vw;*/ padding:4.17vw 5.56vw;}
 			.qualification-wrap .qualification-lst .qualification-tit-02 {font-size:3.89vw;}
-			.qualification-wrap .qualification-lst .qualification-btn {width:calc(100% + 11.11vw); height:10.56vw; margin:0 -5.56vw; font-size:3.33vw;}
+			.qualification-wrap .qualification-lst .qualification-btn {width:calc(100% + 11.11vw); height:10.56vw; margin:0 -5.56vw; font-size:3.33vw; translate:0 4.17vw;}
 			.qualification-wrap .qualification-lst .qualification-txt {margin-top:1.11vw;}
 			.qualification-wrap .ic-chk-02 {left:2.2vw; top:2.5vw;}
 			.qualification-wrap .ic-duck-05 {left:-2.50vw; top:-3.75vw;}

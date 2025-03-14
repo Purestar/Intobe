@@ -194,6 +194,9 @@
 		.n-date-panel .n-date-panel-dates .n-date-panel-date.n-date-panel-date--selected::after {background-color:var(--mc);}
 		.n-date-panel .n-date-panel-dates .n-date-panel-date.n-date-panel-date--current .n-date-panel-date__sup {background-color:var(--mc);}
 
+	/* Select */
+		.n-base-selection .n-base-suffix {right:0;}
+
 /* e-Chart */
 	.e-chart-v-bar {width:100%; height:300px;}
 	.e-chart-h-line {width:100%; height:230px;}
@@ -669,9 +672,9 @@
 		.qualification-wrap .qualification-lst-wrap {display:flex; min-height:40px; margin-top:24px; padding-left:18px;}
 		.qualification-wrap .qualification-lst-wrap:before {content:""; border-left:4px solid #acc3dd; border-radius:4px; width:4px; min-height:40px;}
 		.qualification-wrap .qualification-lst {display:grid; grid-template-columns:repeat(3, 1fr); gap:30px; width:100%; margin-left:70px; color:#666;}
-		.qualification-wrap .qualification-lst > * {position:relative; display:flex; flex-direction:column; overflow:hidden; gap:10px; border-radius:16px; height:174px; padding:24px 30px 0;}
+		.qualification-wrap .qualification-lst > * {position:relative; display:flex; flex-direction:column; overflow:hidden; gap:10px; border-radius:16px; /*height:174px;*/ padding:24px 30px;}
 		.qualification-wrap .qualification-lst .qualification-tit-02 {font-size:20px; font-weight:500; color:black;}
-		.qualification-wrap .qualification-lst .qualification-btn {position:absolute; left:0; bottom:0; width:calc(100% + 60px); height:48px; margin:0 -30px; font-size:14px; font-weight:500; color:black;}
+		.qualification-wrap .qualification-lst .qualification-btn {/*position:absolute; left:0; bottom:0;*/ width:calc(100% + 60px); height:48px; margin:0 -30px; font-size:14px; font-weight:500; translate:0 24px; color:black;}
 		.qualification-wrap .qualification-lst .qualification-txt {margin-top:8px;}
 		.qualification-wrap > *:last-child .qualification-lst-wrap:before {display:none;}
 		.qualification-wrap .ic-chk-02 {position:absolute; left:10px; top:12px;}
