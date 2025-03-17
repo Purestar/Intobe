@@ -141,6 +141,7 @@ log(PrimeVue);
 	app.component('p-input', PrimeVue.InputText);
 	app.component('p-msg', PrimeVue.Message);
 	app.component('p-select', PrimeVue.Select);
+	app.component('p-tarea', PrimeVue.Textarea);
 
 	// Popup
 	app.component('p-popup', PrimeVue.Dialog);
