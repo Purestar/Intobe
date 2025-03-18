@@ -168,12 +168,23 @@
 			.form-opt-btn-03 input:checked + .opt-txt {background:#efefef; border-color:#efefef; border-radius:46px; height:46px; min-height:auto; padding:0 32px; font-size:16px; color:#666; white-space:nowrap;}
 			.form-opt-btn-03 input:checked + .opt-txt {background:#1976c0; border-color:#1976c0; color:white;}
 
-			.form-opt-btn-04 .opt-txt,
-			.form-opt-btn-04 input:checked + .opt-txt {gap:16px; background:none; border-radius:34px; min-height:auto; height:34px; padding:0 16px 0 4px; font-size:14px;}
-			.form-opt-btn-04 .opt-txt {border:2px solid #e2e2e2; color:#666;}
-			.form-opt-btn-04 input:checked + .opt-txt {border:2px solid var(--mc); color:var(--mc);}
-			.form-opt-btn-04 input:checked + .opt-txt .chip-type-04 {background:var(--mc); color:white;}
+			[class*="form-opt-btn-04"] .opt-txt,
+			[class*="form-opt-btn-04"] input:checked + .opt-txt {gap:16px; background:none; border-radius:34px; min-height:auto; height:34px; padding:0 16px 0 4px; font-size:14px;}
+			[class*="form-opt-btn-04"] .opt-txt {border:2px solid #e2e2e2; color:#666;}
+			[class*="form-opt-btn-04"] input:checked + .opt-txt {border:2px solid var(--mc); color:var(--mc);}
+			[class*="form-opt-btn-04"] input:checked + .opt-txt .chip-type-04 {background:var(--mc); color:white;}
 
+			.form-opt-btn-04-pnk .opt-txt:hover {border-color:#ff6565;}
+			.form-opt-btn-04-pnk input:focus + .opt-txt,
+			.form-opt-btn-04-pnk input:checked + .opt-txt,
+			.form-opt-btn-04-pnk input:checked:focus + .opt-txt {border-color:#ff6565; color:#ff6565;}
+			.form-opt-btn-04-pnk input:checked + .opt-txt .chip-type-04 {background-color:#ff6565;}
+
+			.form-opt-btn-04-grn .opt-txt:hover {border-color:#00ba90;}
+			.form-opt-btn-04-grn input:focus + .opt-txt,
+			.form-opt-btn-04-grn input:checked + .opt-txt,
+			.form-opt-btn-04-grn input:checked:focus + .opt-txt {border-color:#00ba90; color:#00ba90;}
+			.form-opt-btn-04-grn input:checked + .opt-txt .chip-type-04 {background-color:#00ba90;}
 		/* Check Box */
 			.form-opt-chk-01 .opt-txt {display:flex; align-items:center; justify-content:center; background:white; border:1px solid #f1f3ff; border-radius:50%; width:32px; height:32px;}
 			.form-opt-chk-01 .opt-txt:before {display:none;}

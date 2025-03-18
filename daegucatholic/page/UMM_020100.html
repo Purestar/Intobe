@@ -32,28 +32,28 @@
 					<n-select value="나의 진로 history" class="w-auto"></n-select>
 				</div>
 				<div class="layout-flex gap-12 mt-40 ws-nw" data-scroll="hide">
-					<label class="form-opt-btn-04">
+					<label class="form-opt-btn-04-pnk">
 						<input type="radio" checked>
 						<span class="opt-txt">
 							<span class="chip-type-04"><b>전공기반</b></span>
 							방사선사
 						</span>
 					</label>
-					<label class="form-opt-btn-04">
+					<label class="form-opt-btn-04-pnk">
 						<input type="radio">
 						<span class="opt-txt">
 							<span class="chip-type-04"><b>전공기반</b></span>
 							방사선산업 안전원 및 위험관리원
 						</span>
 					</label>
-					<label class="form-opt-btn-04">
+					<label class="form-opt-btn-04-grn">
 						<input type="radio">
 						<span class="opt-txt">
 							<span class="chip-type-04"><b>직무기반</b></span>
 							은행사무원
 						</span>
 					</label>
-					<label class="form-opt-btn-04">
+					<label class="form-opt-btn-04-grn">
 						<input type="radio">
 						<span class="opt-txt">
 							<span class="chip-type-04"><b>직무기반</b></span>
@@ -107,7 +107,7 @@
 
 				<h4 class="mt-40 m-mt-60 cr-blk fw-m">1학년</h4>
 				<div class="mt-16 m-mt-20 m-mside--inner">
-					<div id="curriculum01" class="swi-type brd-wrap">
+					<div id="curriculum01" class="swi-type-01 brd-wrap">
 						<div class="swiper m-pside--inner">
 							<div class="swiper-wrapper brd-lst-curr">
 								<div class="swiper-slide">
@@ -121,7 +121,44 @@
 										</div>
 									</div>
 								</div>
+								<div class="swiper-slide">
+									<div class="brd-lst-item">
+										<p class="brd-lst-curr-stat"><i class="ic-sandwatch"></i>미이수</p>
+										<h5 class="brd-tit">대학생프로그래밍경진대회</h5>
+										<div class="bar-v-01">
+											<span>컴퓨터공학전공</span>
+											<span>1-1</span>
+											<span>3학점 (3시간)</span>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="brd-lst-item">
+										<p class="brd-lst-curr-stat"><i class="ic-sandwatch"></i>미이수</p>
+										<h5 class="brd-tit">대학생프로그래밍경진대회</h5>
+										<div class="bar-v-01">
+											<span>컴퓨터공학전공</span>
+											<span>1-1</span>
+											<span>3학점 (3시간)</span>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="brd-lst-item">
+										<p class="brd-lst-curr-stat"><i class="ic-sandwatch"></i>미이수</p>
+										<h5 class="brd-tit">대학생프로그래밍경진대회</h5>
+										<div class="bar-v-01">
+											<span>컴퓨터공학전공</span>
+											<span>1-1</span>
+											<span>3학점 (3시간)</span>
+										</div>
+									</div>
+								</div>
 							</div>
+						</div>
+						<div class="swiper-navigation pc">
+							<div class="swiper-button-prev swi-arrow-01"></div>
+							<div class="swiper-button-next swi-arrow-01"></div>
 						</div>
 					</div>
 				</div>
@@ -541,6 +578,10 @@
 							slidesPerView: 3,
 							spaceBetween: 30
 						},
+					},
+					navigation: {
+						nextEl: '#curriculum01 .swiper-button-next',
+						prevEl: '#curriculum01 .swiper-button-prev',
 					},
 				});
 
