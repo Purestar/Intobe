@@ -12,6 +12,10 @@
 			/* Check Box */
 				[class*="form-opt-chk"] .opt-txt:before {border-radius:1.11vw;}
 
+	/* Graph */
+		/* Horizontal Bar */
+			[class*="grp-hor-bar"] .grp-tot {font-size:6.11vw;}
+
 	/* Popover */
 		[class*="popover-type"] .popover-msg {position:fixed; top:auto; width:calc(100dvw - 10vw); transform:translate(-50%, 0) !important;}
 		[class*="popover-type"].active {z-index:10;}

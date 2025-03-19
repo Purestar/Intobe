@@ -4,6 +4,7 @@
 		[class*="btn-type"] {display:inline-flex; justify-content:center; align-items:center; background:var(--mc); border:1px solid var(--mc); border-radius:var(--fom-br); height:var(--fom-h); padding:0 var(--fom-pad); font-size:var(--fom-fs); vertical-align:top; word-break:break-all; transition:background var(--trans-dft), border-color var(--trans-dft), color var(--trans-dft); color:white;}
 		[class*="btn-type"]:hover {background:var(--moc); border-color:var(--moc); transition:background var(--trans-dft), border-color var(--trans-dft), color var(--trans-dft); color:white;}
 		[class*="btn-type"] [class*="ic-"] {display:flex;}
+		[class*="btn-r"] {border-radius:50%; padding:0;}
 		[class*="btn-type-b"] {background:white; color:var(--mc)}
 		[class*="btn-type-b"]:hover {background:#e4f0f3; color:var(--mc);}
 		[class*="btn-type-tran"] {background:transparent; border-color:transparent; color:var(--mc)}

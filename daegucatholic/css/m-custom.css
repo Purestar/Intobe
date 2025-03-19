@@ -73,6 +73,8 @@
 			.btn-sz-32 {border-radius:6.67vw; height:6.67vw; font-size:2.78vw;}
 			.btn-sz-56 {border-radius:8.89vw; height:8.89vw; font-size:3.33vw;}
 
+			.btn-r-sz-32 {width:6.11vw; height:6.11vw;}
+
 		/* Other */
 			.btn-icon {gap:2vw;}
 			.btn-search {width:23.19vw;}
@@ -123,7 +125,7 @@
 			.ic-schedule:before {width:3.47vw; height:3.33vw;}
 			.ic-search:before {width:4.44vw; height:4.44vw;}
 			.ic-sandwatch:before {width:2.50vw; height:3.33vw;}
-			.ic-setting:before {width:2.5vw; height:2.22vw;}
+			.ic-setting:before {width:4.17vw; height:4.17vw;}
 			.ic-setting-02:before {width:2.5vw; height:2.22vw;}
 
 		/* Chatbot */
@@ -194,6 +196,8 @@
 		.grp-hor-bar-01-02 .grp-txt-period {gap:0; flex-direction:column; justify-content:center; left:1.11vw; top:0; gap:0.56vw; border-radius:1.39vw; width:11.28vw; height:7.78vw; padding:0 1.81vw; font-size:1.81vw;}
 		.grp-hor-bar-01-02 .grp-txt-period strong {font-size:2.78vw;}
 		.grp-hor-bar-01-02 .grp-txt-period:before {left:-1.25vw; top:1.39vw; width:1.25vw; height:1.11vw;}
+		.grp-hor-bar-01-02 .grp-xaxis {margin-top:1.39vw; font-size:1.81vw;}
+		.grp-hor-bar-01-02 .grp-xaxis > *:before {top:-3.3vw; border-radius:0.56vw 0.56vw 0 0; width:0.56vw; height:1.81vw;}
 
 		.grp-label-01 {gap:4.44vw;}
 		.grp-label-01 > * {gap:2.22vw; font-size:3.33vw;}
@@ -321,6 +325,10 @@
 		.thumb-type-badge-02 {width:12.50vw; height:12.50vw;}
 		.thumb-type-badge-02 .txt-department {top:5.14vw;}
 
+		.thumb-type-badge-03 {width:9.72vw; height:9.72vw;}
+		.thumb-type-badge-03 .txt-department {top:2.8vw; transform:scale(0.2065);}
+		.thumb-type-badge-03 .thumb-rb {transform:scale(0.2065);}
+
 	/* Tree Menu */
 		.tree-type-01 {position:relative; display:flex; border:0; padding:0; height:18vw; font-size:4.17vw;}
 		.tree-type-01 .tree-inner {flex:1;}
@@ -386,8 +394,9 @@
 
 		/* 메인 */
 			.main-section {padding:13.89vw var(--init-mobile-inner) 11.11vw;}
-
-			.main-spec-top {margin-top:-40vw; margin-bottom:-2.39vw; padding-left:2.08vw;}
+			.main-section.section-top {padding-top:6.11vw; padding-bottom:29.17vw;}
+			.main-spec-top {margin-top:-30vw; margin-bottom:-2.39vw; padding-left:2.08vw;}
+			.main-stat-top .grp-inner-wrap {padding:0 2.22vw;}
 			.main-spec-top .main-spec-txt {flex-direction:column; align-items:flex-start; gap:1.67vw;}
 			.main-stat-top-util {flex-direction:column; align-items:flex-start;}
 			.main-stat-bot .swi-type {margin:0; padding:0;}
