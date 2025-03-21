@@ -1,10 +1,52 @@
-import { html } from 'lit';
-import { ifDefined } from 'lit/directives/if-defined.js';
-export const commonArgTypes = {
-	// General
-	backgroundColor: { control: 'color', description: '--bg-c', table: { category: 'Global' } },
-	mBackgroundColor: { control: 'color', description: '--m-bg-c', table: { category: 'Global-Mobile' } },
+const commonBackgroundColor = {
+	control: 'color',
+	table: { category: 'Global-Background' }
 };
+
+const commonBorderColor = {
+	control: 'color',
+	table: { category: 'Global-Border' }
+};
+
+const commonBorderRadius = {
+	control: 'text',
+	table: { category: 'Global-Border' }
+};
+
+const commonBorderStyle = {
+	control: 'inline-radio',
+	options: ['solid', 'dashed', 'dotted', 'double', 'groove', 'inset', 'outset', 'ridge', 'none', 'hidden'],
+	table: { category: 'Global-Border' }
+};
+
+const commonBorderWidth = {
+	control: 'text',
+	table: { category: 'Global-Border' }
+};
+
+export const commonArgTypes = {
+	backgroundColor: { ...commonBackgroundColor, description: '--bg-c' },
+	mBackgroundColor: { ...commonBackgroundColor, description: '--m-bg-c' },
+
+	borderColor: { ...commonBorderColor, description: '--bd-c' },
+	borderRadius: { ...commonBorderRadius, description: '--bd-r' },
+	borderStyle: { ...commonBorderStyle, description: '--bd-s' },
+	borderWidth: { ...commonBorderWidth, description: '--bd-w' },
+	mBorderColor: { ...commonBorderColor, description: '--m-bd-c' },
+	mBorderRadius: { ...commonBorderRadius, description: '--m-bd-r' },
+	mBorderStyle: { ...commonBorderStyle, description: '--m-bd-s' },
+	mBorderWidth: { ...commonBorderWidth, description: '--m-bd-w' },
+
+	outlineColor: { ...commonBorderColor, description: '--ol-c' },
+	outlineStyle: { ...commonBorderStyle, description: '--ol-s' },
+	outlineWidth: { ...commonBorderWidth, description: '--ol-w' },
+	mOutlineColor: { ...commonBorderColor, description: '--m-ol-c' },
+	mOutlineStyle: { ...commonBorderStyle, description: '--m-ol-s' },
+	mOutlineWidth: { ...commonBorderWidth, description: '--m-ol-w' },
+};
+
+
+
 //import { log } from '../../index.js';
 /*
 export const generateMarkup = (itemsCount, contentTemplate) => {
