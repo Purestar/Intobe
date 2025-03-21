@@ -28,7 +28,20 @@ export default {
 		placeContentY: 'normal',
 		placeItems: 'normal',
 		placeItemsX: 'normal',
-		placeItemsY: 'normal'
+		placeItemsY: 'normal',
+
+		mDisplay: 'flex',
+		mFlexDirection: 'row',
+		mFlexWrap: 'nowrap',
+		mGap: '',
+		mGapX: '',
+		mGapY: '',
+		mPlaceContent: 'normal',
+		mPlaceContentX: 'normal',
+		mPlaceContentY: 'normal',
+		mPlaceItems: 'normal',
+		mPlaceItemsX: 'normal',
+		mPlaceItemsY: 'normal'
 	}
 };
 

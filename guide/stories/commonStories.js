@@ -94,7 +94,7 @@ export const commonArgTypes = {
 
 	flexDirection: { ...commonFlexDirection, description: '--flex-d' },
 	flexWrap: { ...commonFlexWrap, description: '--flex-w' },
-	gap: { ...commonGap, description: '--gap-a' },
+	gap: { ...commonGap, description: '--gap' },
 	gapX: { ...commonGap, description: '--gap-x' },
 	gapY: { ...commonGap, description: '--gap-y' },
 	gridColumn: { ...commonFlex, control: 'number', description: '--grid-col' },
@@ -104,7 +104,20 @@ export const commonArgTypes = {
 	placeContentY: { ...commonPlaceContent, description: '--content-y' },
 	placeItems: { ...commonPlaceItems, description: '--items' },
 	placeItemsX: { ...commonPlaceItems, description: '--items-x' },
-	placeItemsY: { ...commonPlaceItems, description: '--items-y' }
+	placeItemsY: { ...commonPlaceItems, description: '--items-y' },
+	mFlexDirection: { ...commonFlexDirection, description: '--m-flex-d' },
+	mFlexWrap: { ...commonFlexWrap, description: '--m-flex-w' },
+	mGap: { ...commonGap, description: '--m-gap' },
+	mGapX: { ...commonGap, description: '--m-gap-x' },
+	mGapY: { ...commonGap, description: '--m-gap-y' },
+	mGridColumn: { ...commonFlex, control: 'number', description: '--m-grid-col' },
+	mGridTemplateColumn: { ...commonFlex, control: { type: 'number', min: '0' }, description: '--m-grid-t-col' },
+	mPlaceContent: { ...commonPlaceContent, description: '--m-content' },
+	mPlaceContentX: { ...commonPlaceContent, description: '--m-content-x' },
+	mPlaceContentY: { ...commonPlaceContent, description: '--m-content-y' },
+	mPlaceItems: { ...commonPlaceItems, description: '--m-items' },
+	mPlaceItemsX: { ...commonPlaceItems, description: '--m-items-x' },
+	mPlaceItemsY: { ...commonPlaceItems, description: '--m-items-y' }
 };
 
 
