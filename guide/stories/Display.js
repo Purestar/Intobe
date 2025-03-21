@@ -5,15 +5,15 @@ export const Display = ({
 }) => {
 	return html`
 		<div style='--dp:${display}; --m-dp:${mDisplay}; --bd-c:red; --w:200px; --h:200px;'>
-			<span>1</span>
-			<span>2</span>
-			<span>3</span>
-			<span>4</span>
-			<span>5</span>
-			<span>6</span>
-			<span>7</span>
-			<span>8</span>
-			<span>9</span>
+			<div style="--bd-c:blue; --w:30px; --h:30px;">1</div>
+			<div style="--bd-c:blue; --w:30px; --h:30px;">2</div>
+			<div style="--bd-c:blue; --w:30px; --h:30px;">3</div>
+			<div style="--bd-c:blue; --w:30px; --h:30px;">4</div>
+			<div style="--bd-c:blue; --w:30px; --h:30px;">5</div>
+			<div style="--bd-c:blue; --w:30px; --h:30px;">6</div>
+			<div style="--bd-c:blue; --w:30px; --h:30px;">7</div>
+			<div style="--bd-c:blue; --w:30px; --h:30px;">8</div>
+			<div style="--bd-c:blue; --w:30px; --h:30px;">9</div>
 		</div>
 	`;
 };

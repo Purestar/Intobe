@@ -1,35 +1,10 @@
-const commonBackgroundColor = {
-	control: 'color',
-	table: { category: '[G] Background' }
-};
-
-const commonBorder = {
-	table: { category: '[G] Border' }
-};
-
-const commonBorderColor = {
-	...commonBorder,
-	control: 'color',
-};
-
-const commonBorderRadius = {
-	...commonBorder,
-	control: 'text',
-};
-
-const commonBorderStyle = {
-	...commonBorder,
-	control: 'inline-radio',
-	options: ['solid', 'dashed', 'dotted', 'double', 'groove', 'inset', 'outset', 'ridge', 'none', 'hidden'],
-};
-
-const commonBorderWidth = {
-	...commonBorder,
-	control: 'text',
-};
-
-const commonDisplay = {
-	control: 'inline-radio',
+const commonBackgroundColor = { control: 'color', table: { category: '[G] Background' } };
+const commonBorder = { table: { category: '[G] Border' } };
+const commonBorderColor = { ...commonBorder, control: 'color' };
+const commonBorderRadius = { ...commonBorder, control: 'text' };
+const commonBorderStyle = { ...commonBorder, control: 'inline-radio', options: ['solid', 'dashed', 'dotted', 'double', 'groove', 'inset', 'outset', 'ridge', 'none', 'hidden'] };
+const commonBorderWidth = { ...commonBorder, control: 'text' };
+const commonDisplay = { control: 'inline-radio', table: { category: '[G] Display' },
 	options: [
 		// "b" 그룹
 		'block',
@@ -85,9 +60,14 @@ const commonDisplay = {
 		'table-header-group',
 		'table-row',
 		'table-row-group'
-	],
-	table: { category: '[G] Display' }
+	]
 };
+const commonFlex = { table: { category: '[G] Flex&Grid' } }
+const commonFlexDirection = { ...commonFlex, control: 'inline-radio', options: [ 'row', 'column', 'row-reverse', 'column-reverse' ] };
+const commonFlexWrap = { ...commonFlex, control: 'inline-radio', options: [ 'nowrap', 'wrap', 'wrap-reverse' ] };
+const commonGap = { ...commonFlex, control: 'text' };
+const commonPlaceContent = { ...commonFlex, control: 'inline-radio', options: [ 'start', 'end', 'flex-start', 'flex-end', 'first', 'left', 'right', 'center', 'stretch', 'safe', 'unsafe', 'space-evenly', 'space-between', 'space-around', 'baseline', 'normal' ], };
+const commonPlaceItems = { ...commonFlex, control: 'inline-radio', options: [ 'start', 'end', 'self-start', 'self-end', 'flex-start', 'flex-end', 'center', 'anchor-center', 'stretch', 'safe', 'unsafe', 'baseline', 'first baseline', 'last baseline', 'normal' ], };
 
 export const commonArgTypes = {
 	backgroundColor: { ...commonBackgroundColor, description: '--bg-c' },
@@ -111,7 +91,51 @@ export const commonArgTypes = {
 
 	display: { ...commonDisplay, description: '--dp' },
 	mDisplay: { ...commonDisplay, description: '--m-dp' },
+
+	flexDirection: { ...commonFlexDirection, description: '--flex-d' },
+	flexWrap: { ...commonFlexWrap, description: '--flex-w' },
+	gap: { ...commonGap, description: '--gap-a' },
+	gapX: { ...commonGap, description: '--gap-x' },
+	gapY: { ...commonGap, description: '--gap-y' },
+	gridColumn: { ...commonFlex, control: 'number', description: '--grid-col' },
+	gridTemplateColumn: { ...commonFlex, control: { type: 'number', min: '0' }, description: '--grid-t-col' },
+	placeContent: { ...commonPlaceContent, description: '--content' },
+	placeContentX: { ...commonPlaceContent, description: '--content-x' },
+	placeContentY: { ...commonPlaceContent, description: '--content-y' },
+	placeItems: { ...commonPlaceItems, description: '--items' },
+	placeItemsX: { ...commonPlaceItems, description: '--items-x' },
+	placeItemsY: { ...commonPlaceItems, description: '--items-y' }
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

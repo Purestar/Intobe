@@ -1,5 +1,6 @@
 /* Scroll */
 	[data-scroll] {overflow:auto; display:block;}
+	[data-scroll] > * {flex-wrap:nowrap;}
 	[data-scroll="vertical"], [data-scroll="v"] {overflow-x:hidden; overflow-y:auto; height:var(--h, 100%);}
 	[data-scroll="horizontal"],
 	[data-scroll="h"] {overflow-x:auto; overflow-y:hidden; width:var(--w, 100%);}
