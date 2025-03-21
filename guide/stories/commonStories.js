@@ -1,27 +1,92 @@
 const commonBackgroundColor = {
 	control: 'color',
-	table: { category: 'Global-Background' }
+	table: { category: '[G] Background' }
+};
+
+const commonBorder = {
+	table: { category: '[G] Border' }
 };
 
 const commonBorderColor = {
+	...commonBorder,
 	control: 'color',
-	table: { category: 'Global-Border' }
 };
 
 const commonBorderRadius = {
+	...commonBorder,
 	control: 'text',
-	table: { category: 'Global-Border' }
 };
 
 const commonBorderStyle = {
+	...commonBorder,
 	control: 'inline-radio',
 	options: ['solid', 'dashed', 'dotted', 'double', 'groove', 'inset', 'outset', 'ridge', 'none', 'hidden'],
-	table: { category: 'Global-Border' }
 };
 
 const commonBorderWidth = {
+	...commonBorder,
 	control: 'text',
-	table: { category: 'Global-Border' }
+};
+
+const commonDisplay = {
+	control: 'inline-radio',
+	options: [
+		// "b" 그룹
+		'block',
+		'block flex',
+		'block flow',
+		'block flow-root',
+		'block grid',
+
+		// "c" 그룹
+		'contents',
+
+		// "f" 그룹
+		'flex',
+		'flow-root',
+
+		// "g" 그룹
+		'grid',
+
+		// "i" 그룹
+		'inline',
+		'inline flex',
+		'inline flow',
+		'inline flow-root',
+		'inline-block',
+		'inline-flex',
+		'inline-grid',
+		'inline-table',
+
+		// "l" 그룹
+		'list-item',
+
+		// "n" 그룹
+		'none',
+
+		// "r" 그룹
+		'ruby',
+		'ruby-base',
+		'ruby-base-container',
+		'ruby-text',
+		'ruby-text-container',
+		'run-in',
+
+		// "s" 그룹
+		'subgrid',
+
+		// "t" 그룹
+		'table',
+		'table-caption',
+		'table-cell',
+		'table-column',
+		'table-column-group',
+		'table-footer-group',
+		'table-header-group',
+		'table-row',
+		'table-row-group'
+	],
+	table: { category: '[G] Display' }
 };
 
 export const commonArgTypes = {
@@ -32,17 +97,20 @@ export const commonArgTypes = {
 	borderRadius: { ...commonBorderRadius, description: '--bd-r' },
 	borderStyle: { ...commonBorderStyle, description: '--bd-s' },
 	borderWidth: { ...commonBorderWidth, description: '--bd-w' },
+	outlineColor: { ...commonBorderColor, description: '--ol-c' },
+	outlineStyle: { ...commonBorderStyle, description: '--ol-s' },
+	outlineWidth: { ...commonBorderWidth, description: '--ol-w' },
+
 	mBorderColor: { ...commonBorderColor, description: '--m-bd-c' },
 	mBorderRadius: { ...commonBorderRadius, description: '--m-bd-r' },
 	mBorderStyle: { ...commonBorderStyle, description: '--m-bd-s' },
 	mBorderWidth: { ...commonBorderWidth, description: '--m-bd-w' },
-
-	outlineColor: { ...commonBorderColor, description: '--ol-c' },
-	outlineStyle: { ...commonBorderStyle, description: '--ol-s' },
-	outlineWidth: { ...commonBorderWidth, description: '--ol-w' },
 	mOutlineColor: { ...commonBorderColor, description: '--m-ol-c' },
 	mOutlineStyle: { ...commonBorderStyle, description: '--m-ol-s' },
 	mOutlineWidth: { ...commonBorderWidth, description: '--m-ol-w' },
+
+	display: { ...commonDisplay, description: '--dp' },
+	mDisplay: { ...commonDisplay, description: '--m-dp' },
 };
 
 
