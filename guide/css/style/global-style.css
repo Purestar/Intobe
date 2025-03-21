@@ -1,5 +1,5 @@
 /* Background */
-	[style*="--bg"] { background-color:var(--bg); }
+	[style*="--bg-c"] { background-color:var(--bg-c); }
 
 /* Border & Outline */
 	[style*="--bd"] { border-width:var(--bd-w, 1px); border-color: var(--bd-c, currentcolor); border-style:var(--bd-s, solid); }
@@ -73,7 +73,7 @@
 
 /* Style Initialize */
 	/* Background */
-		[style*="--bg"] > [style*="--bg"] { --bg: initial; --m-bg: initial; }
+		[style*="--bg-c"] > [style*="--bg-c"] { --bg: initial; --m-bg: initial; }
 
 	/* Border */
 		[style*="--bd"] > [style*="--bd"] { --bd: initial; --bd-w: initial; --bd-s: initial; --bd-r: initial; --m-bd: initial; --m-bd-w: initial; --m-bd-s: initial; --m-bd-r: initial; }
@@ -122,7 +122,7 @@
 
 @media all and (max-width:720px) {
 	/* Background */
-		[style*="--m-bg"] { background-color:var(--m-bg); }
+		[style*="--m-bg-c"] { background-color:var(--m-bg-c); }
 
 	/* Border */
 		[style*="--m-bd"] { border-width:var(--m-bd-w, 1px); border-color: var(--m-bd-c, currentcolor); border-style:var(--m-bd-s, solid); }

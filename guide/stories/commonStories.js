@@ -1,5 +1,10 @@
 import { html } from 'lit';
 import { ifDefined } from 'lit/directives/if-defined.js';
+export const commonArgTypes = {
+	// General
+	backgroundColor: { control: 'color', description: '--bg-c', table: { category: 'Global' } },
+	mBackgroundColor: { control: 'color', description: '--m-bg-c', table: { category: 'Global-Mobile' } },
+};
 //import { log } from '../../index.js';
 /*
 export const generateMarkup = (itemsCount, contentTemplate) => {

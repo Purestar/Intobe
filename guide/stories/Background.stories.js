@@ -1,12 +1,11 @@
 import { Background } from './Background';
+import { commonArgTypes } from './commonStories';
 
 export default {
 	title: 'Global/Background',
 	tags: ['autodocs'],
 	render: (args) => Background(args),
-	argTypes: {
-		backgroundColor: { control: 'color' },
-	},
+	argTypes: commonArgTypes,
 };
 
 export const Default = { args: { backgroundColor: 'red' } };
