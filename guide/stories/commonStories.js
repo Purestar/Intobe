@@ -71,6 +71,7 @@ const commonOverflow = { control: 'inline-radio', options: [ 'off', 'visible', '
 const commonPlaceContent = { ...commonFlex, control: 'inline-radio', options: [ 'start', 'end', 'flex-start', 'flex-end', 'first', 'left', 'right', 'center', 'stretch', 'safe', 'unsafe', 'space-evenly', 'space-between', 'space-around', 'baseline', 'normal' ], };
 const commonPlaceItems = { ...commonFlex, control: 'inline-radio', options: [ 'start', 'end', 'self-start', 'self-end', 'flex-start', 'flex-end', 'center', 'anchor-center', 'stretch', 'safe', 'unsafe', 'baseline', 'first baseline', 'last baseline', 'normal' ], };
 const commonPosition = { control: 'text', table: { category: '[G] Position' } }
+const commonWidth = { control: 'text', table: { category: '[G] Width&Height' } }
 
 export const commonBackgroundArgTypes = {
 	backgroundColor: { ...commonBackgroundColor, description: '--bg-c' },
@@ -176,6 +177,13 @@ export const commonPositionArgTypes = {
 	zindex: { ...commonPosition, control: { type: 'number', min: '-1' }, description: '--z-idx' },
 }
 
+export const commonWidthArgTypes = {
+	width: { ...commonWidth, description: '--w' },
+	height: { ...commonWidth, description: '--h' },
+	mWidth: { ...commonWidth, description: '--m-w' },
+	mHeight: { ...commonWidth, description: '--m-h' }
+}
+
 export const commonArgTypes = {
 	...commonBackgroundArgTypes,
 	...commonBorderArgTypes,
@@ -183,7 +191,8 @@ export const commonArgTypes = {
 	...commonFlexGridArgTypes,
 	...commonMarginPaddingArgTypes,
 	...commonOverflowArgTypes,
-	...commonPositionArgTypes
+	...commonPositionArgTypes,
+	...commonWidthArgTypes
 };
 
 

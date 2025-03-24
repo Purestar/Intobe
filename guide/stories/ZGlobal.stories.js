@@ -1,4 +1,4 @@
-import { Global } from './Global';
+import { Global } from './ZGlobal';
 import { commonArgTypes } from './commonStories';
 
 export default {
