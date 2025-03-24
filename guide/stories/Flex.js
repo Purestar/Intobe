@@ -63,15 +63,15 @@ export const Flex = ({
 
 			--bd-c:red;
 		'>
-			<span style="--grid-col:${gridColumn}; --bd-c:blue; --w:30px; --h:30px;">1</span>
-			<span style="--bd-c:blue; --w:30px; --h:40px;">2</span>
-			<span style="--bd-c:blue; --w:30px; --h:50px;">3</span>
-			<span style="--grid-col:${gridColumn}; --bd-c:blue; --w:30px; --h:40px;">4</span>
-			<span style="--bd-c:blue; --w:30px; --h:30px;">5</span>
-			<span style="--bd-c:blue; --w:30px; --h:40px;">6</span>
-			<span style="--bd-c:blue; --w:30px; --h:50px;">7</span>
-			<span style="--grid-col:${gridColumn}; --bd-c:blue; --w:30px; --h:40px;">8</span>
-			<span style="--bd-c:blue; --w:30px; --h:30px;">9</span>
+			<span style="--grid-col:${gridColumn}; --m-grid-col:${mGridColumn}; --bd-c:blue; --h:30px;">1</span>
+			<span style="--bd-c:blue; --h:40px;">2</span>
+			<span style="--bd-c:blue; --h:50px;">3</span>
+			<span style="--grid-col:${gridColumn}; --m-grid-col:${mGridColumn}; --bd-c:blue; --h:40px;">4</span>
+			<span style="--bd-c:blue; --h:30px;">5</span>
+			<span style="--bd-c:blue; --h:40px;">6</span>
+			<span style="--bd-c:blue; --h:50px;">7</span>
+			<span style="--grid-col:${gridColumn}; --m-grid-col:${mGridColumn}; --bd-c:blue; --h:40px;">8</span>
+			<span style="--bd-c:blue; --h:30px;">9</span>
 		</div>
 
 		<div style='
@@ -105,15 +105,15 @@ export const Flex = ({
 
 			--bd-c:red; --w:200px;
 		'>
-			<span style="--grid-col:${gridColumn}; --bd-c:blue; --w:30px; --h:30px;">1</span>
-			<span style="--bd-c:blue; --w:30px; --h:40px;">2</span>
-			<span style="--bd-c:blue; --w:30px; --h:50px;">3</span>
-			<span style="--grid-col:${gridColumn}; --bd-c:blue; --w:30px; --h:40px;">4</span>
-			<span style="--bd-c:blue; --w:30px; --h:30px;">5</span>
-			<span style="--bd-c:blue; --w:30px; --h:40px;">6</span>
-			<span style="--bd-c:blue; --w:30px; --h:50px;">7</span>
-			<span style="--grid-col:${gridColumn}; --bd-c:blue; --w:30px; --h:40px;">8</span>
-			<span style="--bd-c:blue; --w:30px; --h:30px;">9</span>
+			<span style="--grid-col:${gridColumn}; --m-grid-col:${mGridColumn}; --bd-c:blue; --h:30px;">1</span>
+			<span style="--bd-c:blue; --h:40px;">2</span>
+			<span style="--bd-c:blue; --h:50px;">3</span>
+			<span style="--grid-col:${gridColumn}; --m-grid-col:${mGridColumn}; --bd-c:blue; --h:40px;">4</span>
+			<span style="--bd-c:blue; --h:30px;">5</span>
+			<span style="--bd-c:blue; --h:40px;">6</span>
+			<span style="--bd-c:blue; --h:50px;">7</span>
+			<span style="--grid-col:${gridColumn}; --m-grid-col:${mGridColumn}; --bd-c:blue; --h:40px;">8</span>
+			<span style="--bd-c:blue; --h:30px;">9</span>
 		</div>
 	`;
 };

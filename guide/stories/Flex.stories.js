@@ -1,20 +1,19 @@
 import { Flex } from './Flex';
-import { commonArgTypes } from './commonStories';
+import { commonFlexGridArgTypes } from './commonStories';
 
 export default {
 	title: 'Global/Flex&Grid',
 	tags: ['autodocs'],
 	render: (args) => Flex(args),
 	argTypes: {
-		...commonArgTypes,
 		display: {
-			...commonArgTypes.display,
+			control: 'inline-radio',
 			options: ['flex', 'grid']
 		},
 		mDisplay: {
-			...commonArgTypes.display,
+			control: 'inline-radio',
 			options: ['flex', 'grid']
-		}
+		},
 	},
 	args: {
 		display: 'flex',

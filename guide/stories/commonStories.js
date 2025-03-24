@@ -69,10 +69,14 @@ const commonGap = { ...commonFlex, control: 'text' };
 const commonPlaceContent = { ...commonFlex, control: 'inline-radio', options: [ 'start', 'end', 'flex-start', 'flex-end', 'first', 'left', 'right', 'center', 'stretch', 'safe', 'unsafe', 'space-evenly', 'space-between', 'space-around', 'baseline', 'normal' ], };
 const commonPlaceItems = { ...commonFlex, control: 'inline-radio', options: [ 'start', 'end', 'self-start', 'self-end', 'flex-start', 'flex-end', 'center', 'anchor-center', 'stretch', 'safe', 'unsafe', 'baseline', 'first baseline', 'last baseline', 'normal' ], };
 
-export const commonArgTypes = {
+const commonMarginPadding = { control: 'text', table: { category: '[G] Margin&Padding' } }
+
+export const commonBackgroundArgTypes = {
 	backgroundColor: { ...commonBackgroundColor, description: '--bg-c' },
 	mBackgroundColor: { ...commonBackgroundColor, description: '--m-bg-c' },
+}
 
+export const commonBorderArgTypes = {
 	borderColor: { ...commonBorderColor, description: '--bd-c' },
 	borderRadius: { ...commonBorderRadius, description: '--bd-r' },
 	borderStyle: { ...commonBorderStyle, description: '--bd-s' },
@@ -88,10 +92,14 @@ export const commonArgTypes = {
 	mOutlineColor: { ...commonBorderColor, description: '--m-ol-c' },
 	mOutlineStyle: { ...commonBorderStyle, description: '--m-ol-s' },
 	mOutlineWidth: { ...commonBorderWidth, description: '--m-ol-w' },
+}
 
+export const commonDisplayArgTypes = {
 	display: { ...commonDisplay, description: '--dp' },
-	mDisplay: { ...commonDisplay, description: '--m-dp' },
+	mDisplay: { ...commonDisplay, description: '--m-dp' }
+}
 
+export const commonFlexGridArgTypes = {
 	flexDirection: { ...commonFlexDirection, description: '--flex-d' },
 	flexWrap: { ...commonFlexWrap, description: '--flex-w' },
 	gap: { ...commonGap, description: '--gap' },
@@ -118,6 +126,46 @@ export const commonArgTypes = {
 	mPlaceItems: { ...commonPlaceItems, description: '--m-items' },
 	mPlaceItemsX: { ...commonPlaceItems, description: '--m-items-x' },
 	mPlaceItemsY: { ...commonPlaceItems, description: '--m-items-y' }
+}
+
+export const commonMarginPaddingArgTypes = {
+	margin: {...commonMarginPadding, description: '--mg-a'},
+	marginTop: {...commonMarginPadding, description: '--mg-t'},
+	marginBottom: {...commonMarginPadding, description: '--mg-b'},
+	marginLeft: {...commonMarginPadding, description: '--mg-l'},
+	marginRight: {...commonMarginPadding, description: '--mg-r'},
+	marginX: {...commonMarginPadding, description: '--mg-x'},
+	marginY: {...commonMarginPadding, description: '--mg-y'},
+	mMargin: {...commonMarginPadding, description: '--mg-a'},
+	mMarginTop: {...commonMarginPadding, description: '--mg-t'},
+	mMarginBottom: {...commonMarginPadding, description: '--mg-b'},
+	mMarginLeft: {...commonMarginPadding, description: '--mg-l'},
+	mMarginRight: {...commonMarginPadding, description: '--mg-r'},
+	mMarginX: {...commonMarginPadding, description: '--mg-x'},
+	mMarginY: {...commonMarginPadding, description: '--mg-y'},
+
+	padding: {...commonMarginPadding, description: '--mg-a'},
+	paddingTop: {...commonMarginPadding, description: '--mg-t'},
+	paddingBottom: {...commonMarginPadding, description: '--mg-b'},
+	paddingLeft: {...commonMarginPadding, description: '--mg-l'},
+	paddingRight: {...commonMarginPadding, description: '--mg-r'},
+	paddingX: {...commonMarginPadding, description: '--mg-x'},
+	paddingY: {...commonMarginPadding, description: '--mg-y'},
+	mPadding: {...commonMarginPadding, description: '--mg-a'},
+	mPaddingTop: {...commonMarginPadding, description: '--mg-t'},
+	mPaddingBottom: {...commonMarginPadding, description: '--mg-b'},
+	mPaddingLeft: {...commonMarginPadding, description: '--mg-l'},
+	mPaddingRight: {...commonMarginPadding, description: '--mg-r'},
+	mPaddingX: {...commonMarginPadding, description: '--mg-x'},
+	mPaddingY: {...commonMarginPadding, description: '--mg-y'},
+}
+
+export const commonArgTypes = {
+	...commonBackgroundArgTypes,
+	...commonBorderArgTypes,
+	...commonDisplayArgTypes,
+	...commonFlexGridArgTypes,
+	...commonMarginPaddingArgTypes
 };
 
 
