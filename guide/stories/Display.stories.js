@@ -6,10 +6,6 @@ export default {
 	tags: ['autodocs'],
 	render: (args) => Display(args),
 	argTypes: commonDisplayArgTypes,
-	args: {
-		display: 'block',
-		mDisplay: 'flex',
-	}
 };
 
 export const Default = {};

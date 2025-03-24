@@ -4,6 +4,10 @@ export const Background = ({
 	mBackgroundColor
 }) => {
 	return html`
-		<div style='--bg-c:${backgroundColor}; --m-bg-c:${mBackgroundColor}; --w:200px; --h:200px;'></div>
+		<div style='
+			${backgroundColor !== undefined ? `--bg-c:${backgroundColor};` : ''}
+			${mBackgroundColor !== undefined ? `--m-bg-c:${mBackgroundColor};` : ''}
+			--w:200px; --h:200px;
+		'></div>
 	`;
 };

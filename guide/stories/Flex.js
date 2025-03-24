@@ -34,32 +34,32 @@ export const Flex = ({
 	return html`
 		<div style='
 			--dp:${display};
-			--flex-d:${flexDirection};
-			--flex-w:${flexWrap};
-			${gap !== '' ? `--gap:${gap};` : ''}
-			${gapX !== '' ? `--gap-x:${gapX};` : ''}
-			${gapY !== '' ? `--gap-y:${gapY};` : ''}
-			${gridTemplateColumn !== 0 ? `--grid-t-col:${gridTemplateColumn};` : ''}
-			${placeContent !== 'normal' ? `--content:${placeContent};` : ''}
-			${placeContentX !== 'normal' ? `--content-x:${placeContentX};` : ''}
-			${placeContentY !== 'normal' ? `--content-y:${placeContentY};` : ''}
-			${placeItems !== 'normal' ? `--items:${placeItems};` : ''}
-			${placeItemsX !== 'normal' ? `--items-x:${placeItemsX};` : ''}
-			${placeItemsY !== 'normal' ? `--items-y:${placeItemsY};` : ''}
+			${flexDirection !== undefined ? `--flex-d:${flexDirection};` : ''}
+			${flexWrap !== undefined ? `--flex-w:${flexWrap};` : ''}
+			${gap !== undefined && gap !== '' ? `--gap:${gap};` : ''}
+			${gapX !== undefined && gapX !== '' ? `--gap-x:${gapX};` : ''}
+			${gapY !== undefined && gapY !== '' ? `--gap-y:${gapY};` : ''}
+			${gridTemplateColumn !== undefined ? `--grid-t-col:${gridTemplateColumn};` : ''}
+			${placeContent !== undefined ? `--content:${placeContent};` : ''}
+			${placeContentX !== undefined ? `--content-x:${placeContentX};` : ''}
+			${placeContentY !== undefined ? `--content-y:${placeContentY};` : ''}
+			${placeItems !== undefined ? `--items:${placeItems};` : ''}
+			${placeItemsX !== undefined ? `--items-x:${placeItemsX};` : ''}
+			${placeItemsY !== undefined ? `--items-y:${placeItemsY};` : ''}
 
 			--m-dp:${mDisplay};
-			--m-flex-d:${mFlexDirection};
-			--m-flex-w:${mFlexWrap};
-			${mGap !== '' ? `--m-gap:${mGap};` : ''}
-			${mGapX !== '' ? `--m-gap-x:${mGapX};` : ''}
-			${mGapY !== '' ? `--m-gap-y:${mGapY};` : ''}
-			${mGridTemplateColumn !== 0 ? `--m-grid-t-col:${mGridTemplateColumn};` : ''}
-			${mPlaceContent !== 'normal' ? `--m-content:${mPlaceContent};` : ''}
-			${mPlaceContentX !== 'normal' ? `--m-content-x:${mPlaceContentX};` : ''}
-			${mPlaceContentY !== 'normal' ? `--m-content-y:${mPlaceContentY};` : ''}
-			${mPlaceItems !== 'normal' ? `--m-items:${mPlaceItems};` : ''}
-			${mPlaceItemsX !== 'normal' ? `--m-items-x:${mPlaceItemsX};` : ''}
-			${mPlaceItemsY !== 'normal' ? `--m-items-y:${mPlaceItemsY};` : ''}
+			${mFlexDirection !== undefined ? `--m-flex-d:${mFlexDirection};` : ''}
+			${mFlexWrap !== undefined ? `--m-flex-w:${mFlexWrap};` : ''}
+			${mGap !== undefined  && mGap !== '' ? `--m-gap:${mGap};` : ''}
+			${mGapX !== undefined && mGapX !== '' ? `--m-gap-x:${mGapX};` : ''}
+			${mGapY !== undefined && mGapY !== '' ? `--m-gap-y:${mGapY};` : ''}
+			${mGridTemplateColumn !== undefined ? `--m-grid-t-col:${mGridTemplateColumn};` : ''}
+			${mPlaceContent !== undefined ? `--m-content:${mPlaceContent};` : ''}
+			${mPlaceContentX !== undefined ? `--m-content-x:${mPlaceContentX};` : ''}
+			${mPlaceContentY !== undefined ? `--m-content-y:${mPlaceContentY};` : ''}
+			${mPlaceItems !== undefined ? `--m-items:${mPlaceItems};` : ''}
+			${mPlaceItemsX !== undefined ? `--m-items-x:${mPlaceItemsX};` : ''}
+			${mPlaceItemsY !== undefined ? `--m-items-y:${mPlaceItemsY};` : ''}
 
 			--bd-c:red;
 		'>
@@ -76,32 +76,32 @@ export const Flex = ({
 
 		<div style='
 			--dp:${display};
-			--flex-d:${flexDirection};
-			--flex-w:${flexWrap};
-			${gap !== '' ? `--gap:${gap};` : ''}
-			${gapX !== '' ? `--gap-x:${gapX};` : ''}
-			${gapY !== '' ? `--gap-y:${gapY};` : ''}
-			${gridTemplateColumn !== 0 ? `--grid-t-col:${gridTemplateColumn};` : ''}
-			${placeContent !== 'normal' ? `--content:${placeContent};` : ''}
-			${placeContentX !== 'normal' ? `--content-x:${placeContentX};` : ''}
-			${placeContentY !== 'normal' ? `--content-y:${placeContentY};` : ''}
-			${placeItems !== 'normal' ? `--items:${placeItems};` : ''}
-			${placeItemsX !== 'normal' ? `--items-x:${placeItemsX};` : ''}
-			${placeItemsY !== 'normal' ? `--items-y:${placeItemsY};` : ''}
+			${flexDirection !== undefined ? `--flex-d:${flexDirection};` : ''}
+			${flexWrap !== undefined ? `--flex-w:${flexWrap};` : ''}
+			${gap !== undefined && gap !== '' ? `--gap:${gap};` : ''}
+			${gapX !== undefined && gapX !== '' ? `--gap-x:${gapX};` : ''}
+			${gapY !== undefined && gapY !== '' ? `--gap-y:${gapY};` : ''}
+			${gridTemplateColumn !== undefined ? `--grid-t-col:${gridTemplateColumn};` : ''}
+			${placeContent !== undefined ? `--content:${placeContent};` : ''}
+			${placeContentX !== undefined ? `--content-x:${placeContentX};` : ''}
+			${placeContentY !== undefined ? `--content-y:${placeContentY};` : ''}
+			${placeItems !== undefined ? `--items:${placeItems};` : ''}
+			${placeItemsX !== undefined ? `--items-x:${placeItemsX};` : ''}
+			${placeItemsY !== undefined ? `--items-y:${placeItemsY};` : ''}
 
 			--m-dp:${mDisplay};
-			--m-flex-d:${mFlexDirection};
-			--m-flex-w:${mFlexWrap};
-			${mGap !== '' ? `--m-gap:${mGap};` : ''}
-			${mGapX !== '' ? `--m-gap-x:${mGapX};` : ''}
-			${mGapY !== '' ? `--m-gap-y:${mGapY};` : ''}
+			${mFlexDirection !== undefined ? `--m-flex-d:${mFlexDirection};` : ''}
+			${mFlexWrap !== undefined ? `--m-flex-w:${mFlexWrap};` : ''}
+			${mGap !== undefined  && mGap !== '' ? `--m-gap:${mGap};` : ''}
+			${mGapX !== undefined && mGapX !== '' ? `--m-gap-x:${mGapX};` : ''}
+			${mGapY !== undefined && mGapY !== '' ? `--m-gap-y:${mGapY};` : ''}
 			${mGridTemplateColumn !== 0 ? `--m-grid-t-col:${mGridTemplateColumn};` : ''}
-			${mPlaceContent !== 'normal' ? `--m-content:${mPlaceContent};` : ''}
-			${mPlaceContentX !== 'normal' ? `--m-content-x:${mPlaceContentX};` : ''}
-			${mPlaceContentY !== 'normal' ? `--m-content-y:${mPlaceContentY};` : ''}
-			${mPlaceItems !== 'normal' ? `--m-items:${mPlaceItems};` : ''}
-			${mPlaceItemsX !== 'normal' ? `--m-items-x:${mPlaceItemsX};` : ''}
-			${mPlaceItemsY !== 'normal' ? `--m-items-y:${mPlaceItemsY};` : ''}
+			${mPlaceContent !== undefined ? `--m-content:${mPlaceContent};` : ''}
+			${mPlaceContentX !== undefined ? `--m-content-x:${mPlaceContentX};` : ''}
+			${mPlaceContentY !== undefined ? `--m-content-y:${mPlaceContentY};` : ''}
+			${mPlaceItems !== undefined ? `--m-items:${mPlaceItems};` : ''}
+			${mPlaceItemsX !== undefined ? `--m-items-x:${mPlaceItemsX};` : ''}
+			${mPlaceItemsY !== undefined ? `--m-items-y:${mPlaceItemsY};` : ''}
 
 			--bd-c:red; --w:200px;
 		'>
@@ -117,3 +117,8 @@ export const Flex = ({
 		</div>
 	`;
 };
+
+/*
+${gap !== '' ? `--gap:${gap};` : ''}
+			${gapX !== '' ? `--gap-x:${gapX};` : ''}
+			${gapY !== '' ? `--gap-y:${gapY};` : ''}*/

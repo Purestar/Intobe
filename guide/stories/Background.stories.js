@@ -6,10 +6,6 @@ export default {
 	tags: ['autodocs'],
 	render: (args) => Background(args),
 	argTypes: commonBackgroundArgTypes,
-	args: {
-		backgroundColor: 'red',
-		mBackgroundColor: 'blue',
-	}
 };
 
 export const Default = {};

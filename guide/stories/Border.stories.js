@@ -6,17 +6,6 @@ export default {
 	tags: ['autodocs'],
 	render: (args) => Border(args),
 	argTypes: commonBorderArgTypes,
-	args: {
-		borderColor: 'red',
-		borderRadius: '10px',
-		borderStyle: 'solid',
-		borderWidth: '1px',
-
-		mBorderColor: 'blue',
-		mBorderRadius: '10px',
-		mBorderStyle: 'solid',
-		mBorderWidth: '1px'
-	}
 };
 
 export const Default = {};

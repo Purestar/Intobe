@@ -90,6 +90,12 @@ export const Global = ({
 	top,
 	bottom,
 	zindex,
+	mPosition,
+	mLeft,
+	mRight,
+	mTop,
+	mBottom,
+	mZindex,
 
 	width,
 	height,
@@ -99,99 +105,106 @@ export const Global = ({
 	return html`
 		<div style='--h:100dvh; --dp:flex; --content:center; --items:center;'>
 			<div style='
-				--bg-c:${backgroundColor};
-				--m-bg-c:${mBackgroundColor};
+				${backgroundColor !== undefined ? `--bg-c:${backgroundColor};` : ''}
+				${mBackgroundColor !== undefined ? `--m-bg-c:${mBackgroundColor};` : ''}
 
-				--bd-c:${borderColor};
-				--bd-r:${borderRadius};
-				--bd-s:${borderStyle};
-				--bd-w:${borderWidth};
-				--ol-c:${outlineColor};
-				--ol-s:${outlineStyle};
-				--ol-w:${outlineWidth};
-				--m-bd-c:${mBorderColor};
-				--m-bd-r:${mBorderRadius};
-				--m-bd-s:${mBorderStyle};
-				--m-bd-w:${mBorderWidth};
-				--m-ol-c:${mOutlineColor};
-				--m-ol-s:${mOutlineStyle};
-				--m-ol-w:${mOutlineWidth};
+				${borderColor !== undefined ? `--bd-c:${borderColor};` : ''}
+				${borderRadius !== undefined ? `--bd-r:${borderRadius};` : ''}
+				${borderStyle !== undefined ? `--bd-s:${borderStyle};` : ''}
+				${borderWidth !== undefined ? `--bd-w:${borderWidth};` : ''}
+				${outlineColor !== undefined ? `--ol-c:${outlineColor};` : ''}
+				${outlineStyle !== undefined ? `--ol-s:${outlineStyle};` : ''}
+				${outlineWidth !== undefined ? `--ol-w:${outlineWidth};` : ''}
+				${mBorderColor !== undefined ? `--m-bd-c:${mBorderColor};` : ''}
+				${mBorderRadius !== undefined ? `--m-bd-r:${mBorderRadius};` : ''}
+				${mBorderStyle !== undefined ? `--m-bd-s:${mBorderStyle};` : ''}
+				${mBorderWidth !== undefined ? `--m-bl-w:${mBorderWidth};` : ''}
+				${mOutlineColor !== undefined ? `--m-ol-c:${mOutlineColor};` : ''}
+				${mOutlineStyle !== undefined ? `--m-ol-s:${mOutlineStyle};` : ''}
+				${mOutlineWidth !== undefined ? `--m-ol-w:${mOutlineWidth};` : ''}
 
-				--dp:${display};
-				--m-dp:${mDisplay};
+				${display !== undefined ? `--dp:${display};` : ''}
+				${mDisplay !== undefined ? `--m-dp:${mDisplay};` : ''}
 
-				--flex-d:${flexDirection};
-				--flex-w:${flexWrap};
-				${gap !== '' ? `--gap:${gap};` : ''}
-				${gapX !== '' ? `--gap-x:${gapX};` : ''}
-				${gapY !== '' ? `--gap-y:${gapY};` : ''}
-				${gridTemplateColumn !== 0 ? `--grid-t-col:${gridTemplateColumn};` : ''}
-				${placeContent !== 'normal' ? `--content:${placeContent};` : ''}
-				${placeContentX !== 'normal' ? `--content-x:${placeContentX};` : ''}
-				${placeContentY !== 'normal' ? `--content-y:${placeContentY};` : ''}
-				${placeItems !== 'normal' ? `--items:${placeItems};` : ''}
-				${placeItemsX !== 'normal' ? `--items-x:${placeItemsX};` : ''}
-				${placeItemsY !== 'normal' ? `--items-y:${placeItemsY};` : ''}
-				--m-flex-d:${mFlexDirection};
-				--m-flex-w:${mFlexWrap};
-				${mGap !== '' ? `--m-gap:${mGap};` : ''}
-				${mGapX !== '' ? `--m-gap-x:${mGapX};` : ''}
-				${mGapY !== '' ? `--m-gap-y:${mGapY};` : ''}
-				${mGridTemplateColumn !== 0 ? `--m-grid-t-col:${mGridTemplateColumn};` : ''}
-				${mPlaceContent !== 'normal' ? `--m-content:${mPlaceContent};` : ''}
-				${mPlaceContentX !== 'normal' ? `--m-content-x:${mPlaceContentX};` : ''}
-				${mPlaceContentY !== 'normal' ? `--m-content-y:${mPlaceContentY};` : ''}
-				${mPlaceItems !== 'normal' ? `--m-items:${mPlaceItems};` : ''}
-				${mPlaceItemsX !== 'normal' ? `--m-items-x:${mPlaceItemsX};` : ''}
-				${mPlaceItemsY !== 'normal' ? `--m-items-y:${mPlaceItemsY};` : ''}
+				${flexDirection !== undefined ? `--flex-d:${flexDirection};` : ''}
+				${flexWrap !== undefined ? `--flex-w:${flexWrap};` : ''}
+				${gap !== undefined && gap !== '' ? `--gap:${gap};` : ''}
+				${gapX !== undefined && gapX !== '' ? `--gap-x:${gapX};` : ''}
+				${gapY !== undefined && gapY !== '' ? `--gap-y:${gapY};` : ''}
+				${gridTemplateColumn !== undefined ? `--grid-t-col:${gridTemplateColumn};` : ''}
+				${placeContent !== undefined ? `--content:${placeContent};` : ''}
+				${placeContentX !== undefined ? `--content-x:${placeContentX};` : ''}
+				${placeContentY !== undefined ? `--content-y:${placeContentY};` : ''}
+				${placeItems !== undefined ? `--items:${placeItems};` : ''}
+				${placeItemsX !== undefined ? `--items-x:${placeItemsX};` : ''}
+				${placeItemsY !== undefined ? `--items-y:${placeItemsY};` : ''}
+				${mFlexDirection !== undefined ? `--m-flex-d:${mFlexDirection};` : ''}
+				${mFlexWrap !== undefined ? `--m-flex-w:${mFlexWrap};` : ''}
+				${mGap !== undefined  && mGap !== '' ? `--m-gap:${mGap};` : ''}
+				${mGapX !== undefined && mGapX !== '' ? `--m-gap-x:${mGapX};` : ''}
+				${mGapY !== undefined && mGapY !== '' ? `--m-gap-y:${mGapY};` : ''}
+				${mGridTemplateColumn !== undefined ? `--m-grid-t-col:${mGridTemplateColumn};` : ''}
+				${mPlaceContent !== undefined ? `--m-content:${mPlaceContent};` : ''}
+				${mPlaceContentX !== undefined ? `--m-content-x:${mPlaceContentX};` : ''}
+				${mPlaceContentY !== undefined ? `--m-content-y:${mPlaceContentY};` : ''}
+				${mPlaceItems !== undefined ? `--m-items:${mPlaceItems};` : ''}
+				${mPlaceItemsX !== undefined ? `--m-items-x:${mPlaceItemsX};` : ''}
+				${mPlaceItemsY !== undefined ? `--m-items-y:${mPlaceItemsY};` : ''}
 
-				${margin !== '' ? `--mg-a:${margin};` : ''}
-				${marginX !== '' ? `--mg-x:${marginX};` : ''}
-				${marginY !== '' ? `--mg-y:${marginY};` : ''}
-				${marginTop !== '' ? `--mg-t:${marginTop};` : ''}
-				${marginBottom !== '' ? `--mg-b:${marginBottom};` : ''}
-				${marginLeft !== '' ? `--mg-l:${marginLeft};` : ''}
-				${marginRight !== '' ? `--mg-r:${marginRight};` : ''}
+				${margin !== undefined && margin !== '' ? `--mg-a:${margin};` : ''}
+				${marginX !== undefined && marginX !== '' ? `--mg-x:${marginX};` : ''}
+				${marginY !== undefined && marginY !== '' ? `--mg-y:${marginY};` : ''}
+				${marginTop !== undefined && marginTop !== '' ? `--mg-t:${marginTop};` : ''}
+				${marginBottom !== undefined && marginBottom !== '' ? `--mg-b:${marginBottom};` : ''}
+				${marginLeft !== undefined && marginLeft !== '' ? `--mg-l:${marginLeft};` : ''}
+				${marginRight !== undefined && marginRight !== '' ? `--mg-r:${marginRight};` : ''}
 
-				${mMargin !== '' ? `--m-mg-a:${mMargin};` : ''}
-				${mMarginTop !== '' ? `--m-mg-x:${mMarginTop};` : ''}
-				${mMarginBottom !== '' ? `--m-mg-y:${mMarginBottom};` : ''}
-				${mMarginLeft !== '' ? `--m-mg-t:${mMarginLeft};` : ''}
-				${mMarginRight !== '' ? `--m-mg-b:${mMarginRight};` : ''}
-				${mMarginX !== '' ? `--m-mg-l:${mMarginX};` : ''}
-				${mMarginY !== '' ? `--m-mg-r:${mMarginY};` : ''}
+				${mMargin !== undefined && mMargin !== '' ? `--m-mg-a:${mMargin};` : ''}
+				${mMarginTop !== undefined && mMarginTop !== '' ? `--m-mg-x:${mMarginTop};` : ''}
+				${mMarginBottom !== undefined && mMarginBottom !== '' ? `--m-mg-y:${mMarginBottom};` : ''}
+				${mMarginLeft !== undefined && mMarginLeft !== '' ? `--m-mg-t:${mMarginLeft};` : ''}
+				${mMarginRight !== undefined && mMarginRight !== '' ? `--m-mg-b:${mMarginRight};` : ''}
+				${mMarginX !== undefined && mMarginX !== '' ? `--m-mg-l:${mMarginX};` : ''}
+				${mMarginY !== undefined && mMarginY !== '' ? `--m-mg-r:${mMarginY};` : ''}
 
-				${padding !== '' ? `--pd-a:${padding};` : ''}
-				${paddingX !== '' ? `--pd-x:${paddingX};` : ''}
-				${paddingY !== '' ? `--pd-y:${paddingY};` : ''}
-				${paddingTop !== '' ? `--pd-t:${paddingTop};` : ''}
-				${paddingBottom !== '' ? `--pd-b:${paddingBottom};` : ''}
-				${paddingLeft !== '' ? `--pd-l:${paddingLeft};` : ''}
-				${paddingRight !== '' ? `--pd-r:${paddingRight};` : ''}
+				${padding !== undefined && padding !== '' ? `--pd-a:${padding};` : ''}
+				${paddingX !== undefined && paddingX !== '' ? `--pd-x:${paddingX};` : ''}
+				${paddingY !== undefined && paddingY !== '' ? `--pd-y:${paddingY};` : ''}
+				${paddingTop !== undefined && paddingTop !== '' ? `--pd-t:${paddingTop};` : ''}
+				${paddingBottom !== undefined && paddingBottom !== '' ? `--pd-b:${paddingBottom};` : ''}
+				${paddingLeft !== undefined && paddingLeft !== '' ? `--pd-l:${paddingLeft};` : ''}
+				${paddingRight !== undefined && paddingRight !== '' ? `--pd-r:${paddingRight};` : ''}
 
-				${mPadding !== '' ? `--m-pd-a:${mPadding};` : ''}
-				${mPaddingTop !== '' ? `--m-pd-x:${mPaddingTop};` : ''}
-				${mPaddingBottom !== '' ? `--m-pd-y:${mPaddingBottom};` : ''}
-				${mPaddingLeft !== '' ? `--m-pd-t:${mPaddingLeft};` : ''}
-				${mPaddingRight !== '' ? `--m-pd-b:${mPaddingRight};` : ''}
-				${mPaddingX !== '' ? `--m-pd-l:${mPaddingX};` : ''}
-				${mPaddingY !== '' ? `--m-pd-r:${mPaddingY};` : ''}
+				${mPadding !== undefined && mPadding !== '' ? `--m-pd-a:${mPadding};` : ''}
+				${mPaddingTop !== undefined && mPaddingTop !== '' ? `--m-pd-x:${mPaddingTop};` : ''}
+				${mPaddingBottom !== undefined && mPaddingBottom !== '' ? `--m-pd-y:${mPaddingBottom};` : ''}
+				${mPaddingLeft !== undefined && mPaddingLeft !== '' ? `--m-pd-t:${mPaddingLeft};` : ''}
+				${mPaddingRight !== undefined && mPaddingRight !== '' ? `--m-pd-b:${mPaddingRight};` : ''}
+				${mPaddingX !== undefined && mPaddingX !== '' ? `--m-pd-l:${mPaddingX};` : ''}
+				${mPaddingY !== undefined && mPaddingY !== '' ? `--m-pd-r:${mPaddingY};` : ''}
 
 				${overflow !== 'off' ? `--ovf:${overflow};` : ''}
 				${overflowX !== 'off' ? `--ovf-x:${overflowX};` : ''}
 				${overflowY !== 'off' ? `--ovf-y:${overflowY};` : ''}
 
-				--pos:${position};
-				${left !== '' ? `--left:${left};` : ''}
-				${right !== '' ? `--right:${right};` : ''}
-				${top !== '' ? `--top:${top};` : ''}
-				${bottom !== '' ? `--bottom:${bottom};` : ''}
-				${zindex !== '' ? `--zindex:${zindex};` : ''}
+				${position !== undefined && position !== 'static' ? `--pos:${position};` : ''}
+				${left !== undefined && left !== '' ? `--left:${left};` : ''}
+				${right !== undefined && right !== '' ? `--right:${right};` : ''}
+				${top !== undefined && top !== '' ? `--top:${top};` : ''}
+				${bottom !== undefined && bottom !== '' ? `--bottom:${bottom};` : ''}
+				${zindex !== undefined && zindex !== '' ? `--z-idx:${zindex};` : ''}
 
-				--w:${width};
-				--h:${height};
-				--m-w:${mWidth};
-				--m-h:${mHeight};
+				${mPosition !== undefined && mPosition !== 'static' ? `--m-pos:${mPosition};` : ''}
+				${mLeft !== undefined && mLeft !== '' ? `--m-left:${mLeft};` : ''}
+				${mRight !== undefined && mRight !== '' ? `--m-right:${mRight};` : ''}
+				${mTop !== undefined && mTop !== '' ? `--m-top:${mTop};` : ''}
+				${mBottom !== undefined && mBottom !== '' ? `--m-bottom:${mBottom};` : ''}
+				${mZindex !== undefined && mZindex !== '' ? `--m-z-idx:${mZindex};` : ''}
+
+				${width !== undefined && width !== '' ? `--w:${width};` : ''}
+				${height !== undefined && height !== '' ? `--h:${height};` : ''}
+				${mWidth !== undefined && mWidth !== '' ? `--m-w:${mWidth};` : ''}
+				${mHeight !== undefined && mHeight !== '' ? `--m-h:${mHeight};` : ''}
 			'>
 				<span style="--grid-col:${gridColumn}; --m-grid-col:${mGridColumn}; --bd-c:blue; --h:30px;">1</span>
 				<span style="--bd-c:blue; --h:40px;">2</span>

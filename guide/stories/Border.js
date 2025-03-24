@@ -17,23 +17,22 @@ export const Border = ({
 }) => {
 	return html`
 		<div style='
-			--bd-c:${borderColor};
-			--bd-r:${borderRadius};
-			--bd-s:${borderStyle};
-			--bd-w:${borderWidth};
-			--ol-c:${outlineColor};
-			--ol-s:${outlineStyle};
-			--ol-w:${outlineWidth};
+			${borderColor !== undefined ? `--bd-c:${borderColor};` : ''}
+			${borderRadius !== undefined ? `--bd-r:${borderRadius};` : ''}
+			${borderStyle !== undefined ? `--bd-s:${borderStyle};` : ''}
+			${borderWidth !== undefined ? `--bd-w:${borderWidth};` : ''}
+			${outlineColor !== undefined ? `--ol-c:${outlineColor};` : ''}
+			${outlineStyle !== undefined ? `--ol-s:${outlineStyle};` : ''}
+			${outlineWidth !== undefined ? `--ol-w:${outlineWidth};` : ''}
+			${mBorderColor !== undefined ? `--m-bd-c:${mBorderColor};` : ''}
+			${mBorderRadius !== undefined ? `--m-bd-r:${mBorderRadius};` : ''}
+			${mBorderStyle !== undefined ? `--m-bd-s:${mBorderStyle};` : ''}
+			${mBorderWidth !== undefined ? `--m-bl-w:${mBorderWidth};` : ''}
+			${mOutlineColor !== undefined ? `--m-ol-c:${mOutlineColor};` : ''}
+			${mOutlineStyle !== undefined ? `--m-ol-s:${mOutlineStyle};` : ''}
+			${mOutlineWidth !== undefined ? `--m-ol-w:${mOutlineWidth};` : ''}
 
-			--m-bd-c:${mBorderColor};
-			--m-bd-r:${mBorderRadius};
-			--m-bd-s:${mBorderStyle};
-			--m-bd-w:${mBorderWidth};
-			--m-ol-c:${mOutlineColor};
-			--m-ol-s:${mOutlineStyle};
-			--m-ol-w:${mOutlineWidth};
-
-			--w:30px; --h:30px;
+			--w:50px; --h:50px;
 		'>
 		</div>
 	`;

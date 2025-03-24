@@ -7,10 +7,10 @@ export const Width = ({
 }) => {
 	return html`
 		<div style='
-			--w:${width};
-			--h:${height};
-			--m-w:${mWidth};
-			--m-h:${mHeight};
+			${width !== undefined && width !== '' ? `--w:${width};` : ''}
+			${height !== undefined && height !== '' ? `--h:${height};` : ''}
+			${mWidth !== undefined && mWidth !== '' ? `--m-w:${mWidth};` : ''}
+			${mHeight !== undefined && mHeight !== '' ? `--m-h:${mHeight};` : ''}
 
 			--bd-c:red;
 		'>
