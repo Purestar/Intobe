@@ -66,11 +66,11 @@ const commonFlex = { table: { category: '[G] Flex&Grid' } }
 const commonFlexDirection = { ...commonFlex, control: 'inline-radio', options: [ 'row', 'column', 'row-reverse', 'column-reverse' ] };
 const commonFlexWrap = { ...commonFlex, control: 'inline-radio', options: [ 'nowrap', 'wrap', 'wrap-reverse' ] };
 const commonGap = { ...commonFlex, control: 'text' };
+const commonMarginPadding = { control: 'text', table: { category: '[G] Margin&Padding' } }
 const commonOverflow = { control: 'inline-radio', options: [ 'off', 'visible', 'auto', 'hidden', 'clip', 'scroll' ], table: { category: '[G] Overflow' } }
 const commonPlaceContent = { ...commonFlex, control: 'inline-radio', options: [ 'start', 'end', 'flex-start', 'flex-end', 'first', 'left', 'right', 'center', 'stretch', 'safe', 'unsafe', 'space-evenly', 'space-between', 'space-around', 'baseline', 'normal' ], };
 const commonPlaceItems = { ...commonFlex, control: 'inline-radio', options: [ 'start', 'end', 'self-start', 'self-end', 'flex-start', 'flex-end', 'center', 'anchor-center', 'stretch', 'safe', 'unsafe', 'baseline', 'first baseline', 'last baseline', 'normal' ], };
-
-const commonMarginPadding = { control: 'text', table: { category: '[G] Margin&Padding' } }
+const commonPosition = { control: 'text', table: { category: '[G] Position' } }
 
 export const commonBackgroundArgTypes = {
 	backgroundColor: { ...commonBackgroundColor, description: '--bg-c' },
@@ -129,12 +129,6 @@ export const commonFlexGridArgTypes = {
 	mPlaceItemsY: { ...commonPlaceItems, description: '--m-items-y' }
 }
 
-export const commonOverflowArgTypes = {
-	overflow: { ...commonOverflow, description: '--ovf' },
-	overflowX: { ...commonOverflow, description: '--ovf-x' },
-	overflowY: { ...commonOverflow, description: '--ovf-y' },
-}
-
 export const commonMarginPaddingArgTypes = {
 	margin: {...commonMarginPadding, description: '--mg-a'},
 	marginTop: {...commonMarginPadding, description: '--mg-t'},
@@ -167,13 +161,29 @@ export const commonMarginPaddingArgTypes = {
 	mPaddingY: {...commonMarginPadding, description: '--mg-y'},
 }
 
+export const commonOverflowArgTypes = {
+	overflow: { ...commonOverflow, description: '--ovf' },
+	overflowX: { ...commonOverflow, description: '--ovf-x' },
+	overflowY: { ...commonOverflow, description: '--ovf-y' },
+}
+
+export const commonPositionArgTypes = {
+	position: { ...commonPosition, control: 'inline-radio', options: [ 'static', 'relative', 'absolute', 'sticky', 'fixed' ], description: '--pos' },
+	left: { ...commonPosition, description: '--left' },
+	right: { ...commonPosition, description: '--right' },
+	top: { ...commonPosition, description: '--top' },
+	bottom: { ...commonPosition, description: '--bottom' },
+	zindex: { ...commonPosition, control: { type: 'number', min: '-1' }, description: '--z-idx' },
+}
+
 export const commonArgTypes = {
 	...commonBackgroundArgTypes,
 	...commonBorderArgTypes,
 	...commonDisplayArgTypes,
 	...commonFlexGridArgTypes,
 	...commonMarginPaddingArgTypes,
-	...commonOverflowArgTypes
+	...commonOverflowArgTypes,
+	...commonPositionArgTypes
 };
 
 
