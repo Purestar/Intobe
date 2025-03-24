@@ -142,13 +142,3 @@ ig-tree, [class*="tree-type"] {max-width:fit-content;}
 [class*="tree-type"] [class*="tree-type"],
 [class*="tree-type"] > * {padding-left:18px;}
 [class*="tree-type"][open] > summary > .tree-arrow:before {transform:rotate(90deg); transition:transform .3s ease;}
-
-/* Storybook */
-.sb-show-main.sb-main-centered #storybook-root {width:100%;}
-.docs-story > div > div {width:100%;}
-.sbdocs-content {width:100% !important; max-width:100% !important;}
-.innerZoomElementWrapper [data-name] {display:flex; justify-content:center;}
-#root-inner {width:100%; max-width:100%; padding:0 20px;}
-#storybook-root {/*display:flex;*/ align-items:center; justify-content:center; padding:0 !important;}
-#storybook-root[hidden] {display:none;}
-/*.sb-show-main {padding:0;}*/

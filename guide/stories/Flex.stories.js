@@ -8,12 +8,15 @@ export default {
 	argTypes: {
 		display: {
 			control: 'inline-radio',
-			options: ['flex', 'grid']
+			options: ['flex', 'grid'],
+			table: { category: '[G] Display' }
 		},
 		mDisplay: {
 			control: 'inline-radio',
-			options: ['flex', 'grid']
+			options: ['flex', 'grid'],
+			table: { category: '[GM] Display' }
 		},
+		...commonFlexGridArgTypes
 	},
 	args: {
 		display: 'flex',

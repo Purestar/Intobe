@@ -189,7 +189,7 @@
 
 	/* Overflow */
 		[style*="--m-ovf"] { overflow: var(--m-ovf); }
-		[style*="--m-ovf-x"] { overflow-x: var(--m-ovf-x); }
+		[style*="--m-ovf-x"] { overflow-x: var(--m-ovf-x); white-space: nowrap; }
 		[style*="--m-ovf-y"] { overflow-y: var(--m-ovf-y); }
 
 	/* Width & Height */

@@ -9,7 +9,10 @@ export default {
 	args: {
 		overflow: 'off',
 		overflowX: 'off',
-		overflowY: 'off'
+		overflowY: 'off',
+		mOverflow: 'off',
+		mOverflowX: 'off',
+		mOverflowY: 'off'
 	}
 };
 

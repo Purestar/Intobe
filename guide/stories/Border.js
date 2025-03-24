@@ -33,7 +33,7 @@ export const Border = ({
 			--m-ol-s:${mOutlineStyle};
 			--m-ol-w:${mOutlineWidth};
 
-			--h:30px;
+			--w:30px; --h:30px;
 		'>
 		</div>
 	`;

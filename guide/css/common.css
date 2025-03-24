@@ -93,4 +93,3 @@
 	*::-webkit-scrollbar {background:var(--scr-bg1); width:var(--scr-w); height:var(--scr-w); border-radius:var(--scr-br);}
 	*::-webkit-scrollbar-thumb {background:var(--scr-bg2); width:var(--scr-w); border-radius:var(--scr-br);}
 	*::-webkit-scrollbar-track {border-radius:var(--scr-br);}
-
