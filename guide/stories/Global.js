@@ -47,6 +47,42 @@ export const Global = ({
 	mPlaceItems,
 	mPlaceItemsX,
 	mPlaceItemsY,
+
+	margin,
+	marginTop,
+	marginBottom,
+	marginLeft,
+	marginRight,
+	marginX,
+	marginY,
+
+	mMargin,
+	mMarginTop,
+	mMarginBottom,
+	mMarginLeft,
+	mMarginRight,
+	mMarginX,
+	mMarginY,
+
+	padding,
+	paddingTop,
+	paddingBottom,
+	paddingLeft,
+	paddingRight,
+	paddingX,
+	paddingY,
+
+	mPadding,
+	mPaddingTop,
+	mPaddingBottom,
+	mPaddingLeft,
+	mPaddingRight,
+	mPaddingX,
+	mPaddingY,
+
+	overflow,
+	overflowX,
+	overflowY
 }) => {
 	return html`
 		<div style='
@@ -95,6 +131,42 @@ export const Global = ({
 			${mPlaceItems !== 'normal' ? `--m-items:${mPlaceItems};` : ''}
 			${mPlaceItemsX !== 'normal' ? `--m-items-x:${mPlaceItemsX};` : ''}
 			${mPlaceItemsY !== 'normal' ? `--m-items-y:${mPlaceItemsY};` : ''}
+
+			${margin !== '' ? `--mg-a:${margin};` : ''}
+			${marginX !== '' ? `--mg-x:${marginX};` : ''}
+			${marginY !== '' ? `--mg-y:${marginY};` : ''}
+			${marginTop !== '' ? `--mg-t:${marginTop};` : ''}
+			${marginBottom !== '' ? `--mg-b:${marginBottom};` : ''}
+			${marginLeft !== '' ? `--mg-l:${marginLeft};` : ''}
+			${marginRight !== '' ? `--mg-r:${marginRight};` : ''}
+
+			${mMargin !== '' ? `--m-mg-a:${mMargin};` : ''}
+			${mMarginTop !== '' ? `--m-mg-x:${mMarginTop};` : ''}
+			${mMarginBottom !== '' ? `--m-mg-y:${mMarginBottom};` : ''}
+			${mMarginLeft !== '' ? `--m-mg-t:${mMarginLeft};` : ''}
+			${mMarginRight !== '' ? `--m-mg-b:${mMarginRight};` : ''}
+			${mMarginX !== '' ? `--m-mg-l:${mMarginX};` : ''}
+			${mMarginY !== '' ? `--m-mg-r:${mMarginY};` : ''}
+
+			${padding !== '' ? `--pd-a:${padding};` : ''}
+			${paddingX !== '' ? `--pd-x:${paddingX};` : ''}
+			${paddingY !== '' ? `--pd-y:${paddingY};` : ''}
+			${paddingTop !== '' ? `--pd-t:${paddingTop};` : ''}
+			${paddingBottom !== '' ? `--pd-b:${paddingBottom};` : ''}
+			${paddingLeft !== '' ? `--pd-l:${paddingLeft};` : ''}
+			${paddingRight !== '' ? `--pd-r:${paddingRight};` : ''}
+
+			${mPadding !== '' ? `--m-pd-a:${mPadding};` : ''}
+			${mPaddingTop !== '' ? `--m-pd-x:${mPaddingTop};` : ''}
+			${mPaddingBottom !== '' ? `--m-pd-y:${mPaddingBottom};` : ''}
+			${mPaddingLeft !== '' ? `--m-pd-t:${mPaddingLeft};` : ''}
+			${mPaddingRight !== '' ? `--m-pd-b:${mPaddingRight};` : ''}
+			${mPaddingX !== '' ? `--m-pd-l:${mPaddingX};` : ''}
+			${mPaddingY !== '' ? `--m-pd-r:${mPaddingY};` : ''}
+
+			${overflow !== 'off' ? `--ovf:${overflow};` : ''}
+			${overflowX !== 'off' ? `--ovf-x:${overflowX};` : ''}
+			${overflowY !== 'off' ? `--ovf-y:${overflowY};` : ''}
 
 			--h:${height};
 		'>
