@@ -67,6 +67,7 @@ const commonDisplay = { control: 'inline-radio', table: { category: '[G] Display
 const commonFlex = { table: { category: '[G] Flex&Grid' } }
 const commonFlexDirection = { ...commonFlex, control: 'inline-radio', options: [ 'row', 'column', 'row-reverse', 'column-reverse' ] };
 const commonFlexWrap = { ...commonFlex, control: 'inline-radio', options: [ 'nowrap', 'wrap', 'wrap-reverse' ] };
+const commonFont = { control: 'text', table: { category: '[G] Font' } }
 const commonGap = { ...commonFlex, control: 'text' };
 const commonMargin = { control: 'text', table: { category: '[G] Margin' } }
 const commonOverflow = { control: 'inline-radio', options: [ 'visible', 'auto', 'hidden', 'clip', 'scroll' ], table: { category: '[G] Overflow' } }
@@ -81,6 +82,7 @@ const commonMBackgroundColor = { table: { category: '[GM] Background' } };
 const commonMBorder = { table: { category: '[GM] Border' } };
 const commonMDisplay = { table: { category: '[GM] Display' } };
 const commonMFlex = { table: { category: '[GM] Flex&Grid' } };
+const commonMFont = { table: { category: '[GM] Font' } }
 const commonMMargin = { control: 'text', table: { category: '[GM] Margin' } }
 const commonMPadding = { control: 'text', table: { category: '[GM] Padding' } }
 const commonMOverflow = { table: { category: '[GM] Overflow' } }
@@ -143,6 +145,50 @@ export const commonFlexGridArgTypes = {
 	mPlaceItemsX: { ...commonPlaceItems, ...commonMFlex, description: '--m-items-x' },
 	mPlaceItemsY: { ...commonPlaceItems, ...commonMFlex, description: '--m-items-y' }
 }
+
+export const commonFontArgTypes = {
+	align: { ...commonFont, control: 'inline-radio', options: [ 'start', 'end', 'left', 'right', 'center', 'justify', 'match-parent', '-moz-center', '-webkit-center' ], description: '--txt-a' },
+	color: { ...commonFont, control: 'color', description: '--ft-c' },
+	combineUpright: { ...commonFont, control: 'inline-radio', options: [ 'off', 'none', 'all' ], description: '--txt-up' },
+	decorationColor: { ...commonFont, control: 'color', description: '--txt-deco-c' },
+	decorationLine: { ...commonFont, control: 'inline-radio', options: [ 'off', 'underline', 'overline', 'line-through', 'blink' ], description: '--txt-deco-l' },
+	decorationOffset: { ...commonFont, description: '--txt-deco-uo' },
+	decorationStyle: { ...commonFont, control: 'inline-radio', options: [ 'off', 'solid', 'double', 'dotted', 'dashed', 'wavy' ], description: '--txt-deco-l' },
+	decorationThickness: { ...commonFont, description: '--txt-deco-t' },
+	emphasisColor: { ...commonFont, control: 'color', description: '--txt-emp-c' },
+	emphasisPosition: { ...commonFont, control: 'inline-radio', options: [ 'off', 'auto', 'over', 'under', 'right', 'left' ], description: '--txt-emp-p' },
+	emphasisStyle: { ...commonFont, control: 'inline-radio', options: [ 'off', 'dot', 'none', 'filled', 'open', 'circle', 'double-circle', 'triangle', 'filled sesame', 'open sesame' ], description: '--txt-emp-s' },
+	lineHeight: { ...commonFont, description: '--txt-lh' },
+	orientation: { ...commonFont, control: 'inline-radio', options: [ 'off', 'mixed', 'upright', 'sideways-right', 'sideways', 'use-glyph-orientation' ], description: '--txt-ori' },
+	size: { ...commonFont, description: '--ft-s' },
+	spacing: { ...commonFont, description: '--txt-ls' },
+	weight: { ...commonFont,  description: '--ft-w' },
+
+	mAlign: { ...commonFont, ...commonMFont, control: 'inline-radio', options: [ 'start', 'end', 'left', 'right', 'center', 'justify', 'match-parent', '-moz-center', '-webkit-center' ], description: '--m-txt-a' },
+	mColor: { ...commonFont, ...commonMFont, control: 'color', description: '--m-ft-c' },
+	mCombineUpright: { ...commonFont, ...commonMFont, control: 'inline-radio', options: [ 'off', 'none', 'all' ], description: '--m-txt-up' },
+	mDecorationColor: { ...commonFont, ...commonMFont, control: 'color', description: '--m-txt-deco-c' },
+	mDecorationLine: { ...commonFont, ...commonMFont, control: 'inline-radio', options: [ 'off', 'underline', 'overline', 'line-through', 'blink' ], description: '--m-txt-deco-l' },
+	mDecorationOffset: { ...commonFont, ...commonMFont, description: '--m-txt-deco-uo' },
+	mDecorationStyle: { ...commonFont, ...commonMFont, control: 'inline-radio', options: [ 'off', 'solid', 'double', 'dotted', 'dashed', 'wavy' ], description: '--m-txt-deco-l' },
+	mDecorationThickness: { ...commonFont, ...commonMFont, description: '--m-txt-deco-t' },
+	mEmphasisColor: { ...commonFont, ...commonMFont, control: 'color', description: '--m-txt-emp-c' },
+	mEmphasisPosition: { ...commonFont, ...commonMFont, control: 'inline-radio', options: [ 'off', 'auto', 'over', 'under', 'right', 'left' ], description: '--m-txt-emp-p' },
+	mEmphasisStyle: { ...commonFont, ...commonMFont, control: 'inline-radio', options: [ 'off', 'dot', 'none', 'filled', 'open', 'circle', 'double-circle', 'triangle', 'filled sesame', 'open sesame' ], description: '--m-txt-emp-s' },
+	mLineHeight: { ...commonFont, ...commonMFont, description: '--m-txt-lh' },
+	mOrientation: { ...commonFont, ...commonMFont, control: 'inline-radio', options: [ 'off', 'mixed', 'upright', 'sideways-right', 'sideways', 'use-glyph-orientation' ], description: '--m-txt-ori' },
+	mSize: { ...commonFont, ...commonMFont, description: '--m-ft-s' },
+	mSpacing: { ...commonFont, ...commonMFont, description: '--m-txt-ls' },
+	mWeight: { ...commonFont, ...commonMFont,  description: '--m-ft-w' },
+}
+
+
+
+
+
+
+
+
 
 export const commonMarginArgTypes = {
 	margin: {...commonMargin, description: '--mg-a'},
@@ -212,6 +258,7 @@ export const commonArgTypes = {
 	...commonBorderArgTypes,
 	...commonDisplayArgTypes,
 	...commonFlexGridArgTypes,
+	...commonFontArgTypes,
 	...commonMarginArgTypes,
 	...commonOverflowArgTypes,
 	...commonPositionArgTypes,

@@ -83,6 +83,9 @@ export const Global = ({
 	overflow,
 	overflowX,
 	overflowY,
+	mOverflow,
+	mOverflowX,
+	mOverflowY,
 
 	position,
 	left,
@@ -100,7 +103,40 @@ export const Global = ({
 	width,
 	height,
 	mWidth,
-	mHeight
+	mHeight,
+
+	align,
+	color,
+	combineUpright,
+	decorationColor,
+	decorationLine,
+	decorationOffset,
+	decorationStyle,
+	decorationThickness,
+	emphasisColor,
+	emphasisPosition,
+	emphasisStyle,
+	lineHeight,
+	orientation,
+	size,
+	spacing,
+	weight,
+	mAlign,
+	mColor,
+	mCombineUpright,
+	mDecorationColor,
+	mDecorationLine,
+	mDecorationOffset,
+	mDecorationStyle,
+	mDecorationThickness,
+	mEmphasisColor,
+	mEmphasisPosition,
+	mEmphasisStyle,
+	mLineHeight,
+	mOrientation,
+	mSize,
+	mSpacing,
+	mWeight
 }) => {
 	return html`
 		<div style='--h:100dvh; --dp:flex; --content:center; --items:center;'>
@@ -183,9 +219,12 @@ export const Global = ({
 				${mPaddingX !== undefined && mPaddingX !== '' ? `--m-pd-l:${mPaddingX};` : ''}
 				${mPaddingY !== undefined && mPaddingY !== '' ? `--m-pd-r:${mPaddingY};` : ''}
 
-				${overflow !== 'off' ? `--ovf:${overflow};` : ''}
-				${overflowX !== 'off' ? `--ovf-x:${overflowX};` : ''}
-				${overflowY !== 'off' ? `--ovf-y:${overflowY};` : ''}
+				${overflow !== undefined && overflow !== 'visible' ? `--ovf:${overflow};` : ''}
+				${overflowX !== undefined && overflowX !== 'visible' ? `--ovf-x:${overflowX};` : ''}
+				${overflowY !== undefined && overflowY !== 'visible' ? `--ovf-y:${overflowY};` : ''}
+				${mOverflow !== undefined && mOverflow !== 'visible' ? `--m-ovf:${mOverflow};` : ''}
+				${mOverflowX !== undefined && mOverflowX !== 'visible' ? `--m-ovf-x:${mOverflowX};` : ''}
+				${mOverflowY !== undefined && mOverflowY !== 'visible' ? `--m-ovf-y:${mOverflowY};` : ''}
 
 				${position !== undefined && position !== 'static' ? `--pos:${position};` : ''}
 				${left !== undefined && left !== '' ? `--left:${left};` : ''}
@@ -205,15 +244,48 @@ export const Global = ({
 				${height !== undefined && height !== '' ? `--h:${height};` : ''}
 				${mWidth !== undefined && mWidth !== '' ? `--m-w:${mWidth};` : ''}
 				${mHeight !== undefined && mHeight !== '' ? `--m-h:${mHeight};` : ''}
+
+				${align !== undefined && align !== '' ? `--txt-a:${align};` : ''}
+				${color !== undefined ? `--ft-c:${color};` : ''}
+				${combineUpright !== undefined && combineUpright !== 'off' ? `--txt-up:${combineUpright};` : ''}
+				${decorationColor !== undefined ? `--txt-deco-c:${decorationColor};` : ''}
+				${decorationLine !== undefined && decorationLine !== 'off' ? `--txt-deco-l:${decorationLine};` : ''}
+				${decorationOffset !== undefined && decorationOffset !== '' ? `--txt-deco-uo:${decorationOffset};` : ''}
+				${decorationStyle !== undefined && decorationStyle !== 'off' ? `--txt-deco-s:${decorationStyle};` : ''}
+				${decorationThickness !== undefined && decorationThickness !== '' ? `--txt-deco-t:${decorationThickness};` : ''}
+				${emphasisColor !== undefined && emphasisColor !== '' ? `--txt-emp-c:${emphasisColor};` : ''}
+				${emphasisPosition !== undefined && emphasisPosition !== 'off' ? `--txt-emp-p:${emphasisPosition};` : ''}
+				${emphasisStyle !== undefined && emphasisStyle !== 'off' ? `--txt-emp-s:${emphasisStyle};` : ''}
+				${lineHeight !== undefined && lineHeight !== '' ? `--txt-lh:${lineHeight};` : ''}
+				${orientation !== undefined && orientation !== 'off' ? `--txt-ori:${orientation};` : ''}
+				${size !== undefined && size !== '' ? `--ft-s:${size};` : ''}
+				${spacing !== undefined && spacing !== '' ? `--txt-ls:${spacing};` : ''}
+				${weight !== undefined && weight !== '' ? `--ft-w:${weight};` : ''}
+				${mAlign !== undefined && mAlign !== '' ? `--m-txt-a:${mAlign};` : ''}
+				${mColor !== undefined ? `--m-ft-c:${mColor};` : ''}
+				${mCombineUpright !== undefined && mCombineUpright !== 'off' ? `--m-txt-up:${mCombineUpright};` : ''}
+				${mDecorationColor !== undefined ? `--txt-deco-c:${mDecorationColor};` : ''}
+				${mDecorationLine !== undefined && mDecorationLine !== 'off' ? `--m-txt-deco-l:${mDecorationLine};` : ''}
+				${mDecorationOffset !== undefined && mDecorationOffset !== '' ? `--m-txt-deco-uo:${mDecorationOffset};` : ''}
+				${mDecorationStyle !== undefined && mDecorationStyle !== 'off' ? `--m-txt-deco-s:${mDecorationStyle};` : ''}
+				${mDecorationThickness !== undefined && mDecorationThickness !== '' ? `--m-txt-deco-t:${mDecorationThickness};` : ''}
+				${mEmphasisColor !== undefined && mEmphasisColor !== '' ? `--m-txt-emp-c:${mEmphasisColor};` : ''}
+				${mEmphasisPosition !== undefined && mEmphasisPosition !== 'off' ? `--m-txt-emp-p:${mEmphasisPosition};` : ''}
+				${mEmphasisStyle !== undefined && mEmphasisStyle !== 'off' ? `--m-txt-emp-s:${mEmphasisStyle};` : ''}
+				${mLineHeight !== undefined && mLineHeight !== '' ? `--m-txt-lh:${mLineHeight};` : ''}
+				${mOrientation !== undefined && mOrientation !== 'off' ? `--m-txt-ori:${mOrientation};` : ''}
+				${mSize !== undefined && mSize !== '' ? `--m-ft-s:${mSize};` : ''}
+				${mSpacing !== undefined && mSpacing !== '' ? `--m-txt-ls:${mSpacing};` : ''}
+				${mWeight !== undefined && mWeight !== '' ? `--m-ft-w:${mWeight};` : ''}
 			'>
-				<span style="--grid-col:${gridColumn}; --m-grid-col:${mGridColumn}; --bd-c:blue; --h:30px;">1</span>
+				<span style="${gridColumn !== undefined && gridColumn !== '' ? `--grid-t-col:${gridColumn};` : ''} ${mGridColumn !== undefined && mGridColumn !== '' ? `--m-grid-t-col:${gridColumn};` : ''} --bd-c:blue; --h:30px;">1</span>
 				<span style="--bd-c:blue; --h:40px;">2</span>
 				<span style="--bd-c:blue; --h:50px;">3</span>
-				<span style="--grid-col:${gridColumn}; --m-grid-col:${mGridColumn}; --bd-c:blue; --h:40px;">4</span>
+				<span style="${gridColumn !== undefined && gridColumn !== '' ? `--grid-t-col:${gridColumn};` : ''} ${mGridColumn !== undefined && mGridColumn !== '' ? `--m-grid-t-col:${gridColumn};` : ''} --bd-c:blue; --h:40px;">4</span>
 				<span style="--bd-c:blue; --h:30px;">5</span>
 				<span style="--bd-c:blue; --h:40px;">6</span>
 				<span style="--bd-c:blue; --h:50px;">7</span>
-				<span style="--grid-col:${gridColumn}; --m-grid-col:${mGridColumn}; --bd-c:blue; --h:40px;">8</span>
+				<span style="${gridColumn !== undefined && gridColumn !== '' ? `--grid-t-col:${gridColumn};` : ''} ${mGridColumn !== undefined && mGridColumn !== '' ? `--m-grid-t-col:${gridColumn};` : ''} --bd-c:blue; --h:40px;">8</span>
 				<span style="--bd-c:blue; --h:30px;">9</span>
 			</div>
 		</div>
