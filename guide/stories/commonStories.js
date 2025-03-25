@@ -89,6 +89,7 @@ const commonMOverflow = { table: { category: '[GM] Overflow' } }
 const commonMPosition = { table: { category: '[GM] Position' } }
 const commonMWidth = { table: { category: '[GM] Width&Height' } }
 
+// Global Style
 export const commonBackgroundArgTypes = {
 	backgroundColor: { ...commonBackgroundColor, description: '--bg-c' },
 	mBackgroundColor: { ...commonBackgroundColor, ...commonMBackgroundColor, description: '--m-bg-c' },
@@ -182,14 +183,6 @@ export const commonFontArgTypes = {
 	mWeight: { ...commonFont, ...commonMFont,  description: '--m-ft-w' },
 }
 
-
-
-
-
-
-
-
-
 export const commonMarginArgTypes = {
 	margin: {...commonMargin, description: '--mg-a'},
 	marginTop: {...commonMargin, description: '--mg-t'},
@@ -265,6 +258,29 @@ export const commonArgTypes = {
 	...commonWidthArgTypes
 };
 
+// UI
+export const accordionArgTypes = {
+	/*// General
+	ellipsis:	{ control: { type: 'number', min: '1' }, description: '말줄임', table: { category: 'General' } },
+
+	// Action
+	multi:		{ control: { type: 'number', min: 1 }, description: '한번에 열리는 아코디언 개수 설정', table: { category: 'Action' } },
+	slide:		{ control: { type: 'boolean' }, description: '슬라이드 애니메이션', table: { category: 'Action' } },
+
+	// Template
+	headReverse:	{ control: { type: 'boolean' }, description: '헤더 정렬 반전', table: { category: 'Template' } },
+	scroll:			{ control: { type: 'inline-radio' }, options: ['none', 'fix'], table: { category: 'Template' } },
+	type:			{ control: { type: 'inline-radio' }, description: '템플릿', options: ['none', 'qna'], table: { category: 'Template' } },*/
+
+	// Action
+	//opened:		{ control: 'boolean', table: { category: 'Action' } },
+}
+
+// Util
+export const generateMarkup = (itemsCount, contentTemplate) => { return Array.from({ length: itemsCount }, (_, index) => `${contentTemplate(index + 1)}`).join(''); };
+
+
+
 
 
 
@@ -299,9 +315,7 @@ export const commonArgTypes = {
 
 //import { log } from '../../index.js';
 /*
-export const generateMarkup = (itemsCount, contentTemplate) => {
-	return Array.from({ length: itemsCount }, (_, index) => `${contentTemplate(index + 1)}`).join('');
-};
+
 
 export const commonArgTypes = {
 	// General
@@ -339,20 +353,7 @@ export const commonComponentArgTypes = {
 };
 
 // Accordion ArgTypes
-export const accordionArgTypes = {
-	// General
-	...commonComponentArgTypes,
-	ellipsis:	{ control: { type: 'number', min: '1' }, description: '말줄임', table: { category: 'General' } },
 
-	// Action
-	multi:		{ control: { type: 'number', min: 1 }, description: '한번에 열리는 아코디언 개수 설정', table: { category: 'Action' } },
-	slide:		{ control: { type: 'boolean' }, description: '슬라이드 애니메이션', table: { category: 'Action' } },
-
-	// Template
-	headReverse:	{ control: { type: 'boolean' }, description: '헤더 정렬 반전', table: { category: 'Template' } },
-	scroll:			{ control: { type: 'inline-radio' }, options: ['none', 'fix'], table: { category: 'Template' } },
-	type:			{ control: { type: 'inline-radio' }, description: '템플릿', options: ['none', 'qna'], table: { category: 'Template' } },
-}
 
 // Bar ArgTypes
 export const barArgTypes = {
