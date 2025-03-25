@@ -1,9 +1,9 @@
-import { primeVue } from './primeVue';
+import { UI } from './UI';
 import { generateMarkup } from './commonStories';
 
 export default {
 	title: 'UI/Accordion/Detail',
-	render: (args) => primeVue(args),
+	render: (args) => UI(args),
 };
 
 const createMarkup = {
