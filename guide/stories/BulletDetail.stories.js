@@ -19,14 +19,14 @@ export const Number = { args: { markup: `<div class="bul-num">${createMarkup.def
 export const Color = { args: { markup: `<div class="bul-cir" style="--ft-c:red;">${createMarkup.default()}</div>` }}
 export const BulletColor = { args: { markup: `<div class="bul-cir" style="--bul-c:red;">${createMarkup.default()}</div>` }}
 export const Gap = { args: { markup: `<div class="bul-cir" style="--bul-gap:20px;">${createMarkup.default()}</div>` }}
-export const SizeBullet = { args: { markup: `
+export const BulletSize = { args: { markup: `
 	<div class="layout-flex" style="--gap:20px;">
 		<div class="bul-cir" style="--bul-w:10px;">${createMarkup.default()}</div>
 		<div class="bul-squ" style="--bul-w:5px;">${createMarkup.default()}</div>
 		<div class="bul-hyp" style="--bul-w:7px; --bul-h:2px;">${createMarkup.default()}</div>
 	</div>
 ` }}
-export const SizeFont = { args: { markup: `
+export const FontSize = { args: { markup: `
 	<div class="layout-flex" style="--gap:20px;">
 		<div class="bul-cir" style="--ft-s:10px;">${createMarkup.default()}</div>
 		<div class="bul-squ" style="--ft-s:15px;">${createMarkup.default()}</div>
