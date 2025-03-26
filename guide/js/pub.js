@@ -1,4 +1,4 @@
-const log = (...args) => { console.log(...args); };
+export const log = (...args) => { console.log(...args); };
 
 // primeVue Component
 document.addEventListener('DOMContentLoaded', function() {
