@@ -1,32 +1,25 @@
-let vueAppInstance = null;
-let appData = null;
-let vueMounted = false;
+const vueAppInstances = new Map();
 
 // Vue 앱 unmount 함수
-function destroyVueApp() {
-	const root = document.getElementById('root-inner');
-	if (vueAppInstance && root) {
-		try { vueAppInstance.unmount(); root.innerHTML = ''; console.log('[PrimeVue] Vue 앱 unmounted'); }
-		catch (e) { console.warn('unmount 실패:', e); }
-		vueAppInstance = null;
-		appData = null;
-		vueMounted = false;
+function destroyVueApp(mountId = 'root-inner') {
+	const root = document.getElementById(mountId);
+	const instance = vueAppInstances.get(mountId);
+	if (instance && root) {
+		try {
+			instance.unmount();
+			root.innerHTML = '';
+			console.log(`[PrimeVue] Vue 앱 unmounted → #${mountId}`);
+		} catch (e) {
+			console.warn('unmount 실패:', e);
+		}
+		vueAppInstances.delete(mountId);
 	}
 }
 
-// Storybook 스토리 바뀔 때마다 Vue 앱 제거
-if (typeof window !== 'undefined') { window.addEventListener('storyRendered', () => { destroyVueApp(); }); }
-
-// Vue 앱 mount 함수
-function mountVueToRoot(args = {}) {
-	const root = document.getElementById('root-inner');
-	/*if (!root || !window.Vue || !window.PrimeVue) return;
-
-	if (vueAppInstance && vueMounted && appData) {
-		// 이미 mount 되어 있으면 상태만 갱신
-		appData.activeIndex = args.activeIndex ?? 0;
-		return;
-	}*/
+// Vue mount 함수
+function mountVueToRoot(args = {}, mountId = 'root-inner') {
+	const root = document.getElementById(mountId);
+	if (!root || !window.Vue || !window.PrimeVue) return;
 
 	const { createApp } = Vue;
 	const app = createApp({ template: args.template });
@@ -37,33 +30,51 @@ function mountVueToRoot(args = {}) {
 	app.component('p-aco-cont', PrimeVue.AccordionContent);
 
 	app.use(PrimeVue.Config, { theme: 'none' });
-
 	app.mount(root);
-	vueAppInstance = app;
-	vueMounted = true;
 
-	console.log('[PrimeVue] Vue 앱 mounted → #root-inner');
+	vueAppInstances.set(mountId, app);
+	console.log(`[PrimeVue] Vue 앱 mounted → #${mountId}`);
+}
+
+// DOM에서 storybook이 생성한 컨테이너 찾기
+function findStoryContainer() {
+	// Docs 탭에선 story--* ID의 div가 스토리별로 존재
+	const candidates = [...document.querySelectorAll('.docs-story')];
+	return candidates.find(el => el.id?.startsWith('story--'));
 }
 
 // ✅ Storybook에서 사용하는 컴포넌트 함수
 export const UI = (args) => {
-	setTimeout(() => {
-		destroyVueApp();      // 스토리 재진입 시 이전 Vue 앱 제거
-		mountVueToRoot(args); // 새 Vue 앱 mount
-	}, 0);
+	let mountId = args.mountId;
 
-	// root-inner 컨테이너를 유지 (기존이 있으면 재사용)
-	let container = document.getElementById('root-inner');
+	if (!mountId) {
+		const storyRoot = findStoryContainer();
+		if (storyRoot) {
+			mountId = storyRoot.id;
+		} else {
+			// fallback용 고유 ID 생성
+			mountId = `root-${Math.random().toString(36).slice(2, 8)}`;
+		}
+	}
+
+	destroyVueApp(mountId);
+
+	let container = document.getElementById(mountId);
 	if (!container) {
 		container = document.createElement('div');
-		container.id = 'root-inner';
+		container.id = mountId;
 	}
+
+	setTimeout(() => {
+		mountVueToRoot(args, mountId);
+	}, 0);
 
 	return container;
 };
 
+// 템플릿 여러 개 생성 (기본 제공)
 export const generateMarkup = (count, templateFn, args = {}) => {
 	return Array.from({ length: count }, (_, index) =>
 		templateFn(index + 1, args)
-	).join('\n'); // ← 줄바꿈 포함
+	).join('\n');
 };

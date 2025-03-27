@@ -342,6 +342,7 @@ const log = (...args) => { console.log(...args); };
 export const createStaticStory = (name, args) => {
 	const story = (args) => accordionTemplate(args);
 	story.args = args;
+
 	story.parameters = {
 		docs: {
 			source: {
