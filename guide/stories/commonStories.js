@@ -259,25 +259,183 @@ export const commonArgTypes = {
 };
 
 // UI
+import { UI, generateMarkup } from './UI';
+
 export const accordionArgTypes = {
-	/*// General
-	ellipsis:	{ control: { type: 'number', min: '1' }, description: '말줄임', table: { category: 'General' } },
+	Multiple: { control: 'boolean', description: '여러개 열림', table: { category: 'Action' } },
+	Opened: { control: 'boolean', table: { category: 'Action' } },
+	Slide: { control: 'boolean', description: '슬라이드 애니메이션', table: { category: 'Action' } },
 
-	// Action
-	multi:		{ control: { type: 'number', min: 1 }, description: '한번에 열리는 아코디언 개수 설정', table: { category: 'Action' } },
-	slide:		{ control: { type: 'boolean' }, description: '슬라이드 애니메이션', table: { category: 'Action' } },
-
-	// Template
-	headReverse:	{ control: { type: 'boolean' }, description: '헤더 정렬 반전', table: { category: 'Template' } },
-	scroll:			{ control: { type: 'inline-radio' }, options: ['none', 'fix'], table: { category: 'Template' } },
-	type:			{ control: { type: 'inline-radio' }, description: '템플릿', options: ['none', 'qna'], table: { category: 'Template' } },*/
-
-	// Action
-	//opened:		{ control: 'boolean', table: { category: 'Action' } },
+	Disabled: { control: 'boolean', description: '비활성화', table: { category: 'Design' } },
+	Ellipsis: { control: 'boolean', description: '말줄임', table: { category: 'Design' } },
+	HeadReverse: { control: 'boolean', description: '헤더 정렬 반전', table: { category: 'Design' } },
+	Icon: { control: 'boolean', description: '아이콘', table: { category: 'Design' } },
+	QnA: { control: 'boolean', description: 'Q&A', table: { category: 'Design' } },
+	Scroll: { control: 'inline-radio', options: ['off', 'scroll', 'scrollFix'], table: { category: 'Design' } },
+	QuestionText: { control: 'text', description: '질문 접두어', table: { category: 'Design' } },
+	AnswerText: { control: 'text', description: '답변 접두어', table: { category: 'Design' } },
 }
 
+export const accordionArgs = {
+	Ellipsis: false,
+	HeadReverse: false,
+	Icon: false,
+	Multiple: false,
+	Opened: false,
+	QnA: false,
+	Slide: false,
+	Disabled: false,
+	Scroll: 'off',
+	QuestionText: '',
+	AnswerText: ''
+}
+
+export const getAccordionTemplate = (args) => {
+	/*const itemTemplate = (index, args) => {
+		const titleText = `아코디언 제목 ${index}`;
+		const icon = args.Icon ? '<i class="aco-icon"></i>' : '';
+
+		const headContent = args.QnA
+			? `
+			<div class="aco-head-inner">
+				${titleText}
+			</div>${icon ? '\n' + icon : ''}`
+					: `${titleText}${icon ? '\n' + icon : ''}`;
+
+				return `
+			<p-aco-item class="aco-item" value="${index}"${args.Disabled ? ' disabled' : ''}>
+				<p-aco-head class="aco-head">
+					${headContent}
+				</p-aco-head>
+				<p-aco-cont class="aco-cont">내용 ${index}</p-aco-cont>
+			</p-aco-item>`.trim();
+	};*/
+
+	const itemTemplate = (index, args) => `
+		<p-aco-item class="aco-item" ${args.Disabled ? 'disabled ' : ''}value="${index}">
+			<p-aco-head class="aco-head">
+				${args.QnA ? '<div class="aco-head-inner">' : ''}
+					${args.Ellipsis ? '<p class="layout-ellipsis">' : ''}아코디언 제목 ${index}${args.Ellipsis ? '</p>' : ''}
+				${args.QnA ? '</div>' : ''}
+				${args.Icon ? '<i class="aco-icon"></i>' : ''}
+			</p-aco-head>
+			<p-aco-cont class="aco-cont">내용 ${index}</p-aco-cont>
+		</p-aco-item>
+	`;
+
+
+	const styleString = [
+		args.Ellipsis ? '--w:80px;' : '',
+		args.Scroll !== undefined && args.Scroll !== 'off' ? '--h:50px;' : '',
+		args.QuestionText ? `--aco-txt-q:"${args.QuestionText}";` : '',
+		args.AnswerText ? `--aco-txt-a:"${args.AnswerText}";` : ''
+	].filter(Boolean).join(' ');
+
+	const attributeList = [
+		'class="aco-type"',
+		args.HeadReverse ? 'data-head-reverse' : '',
+		args.Multiple ? 'multiple' : '',
+		args.Opened ? `value="1"` : '',
+		args.QnA ? 'data-qna' : '',
+		args.Slide ? 'data-slide' : '',
+		args.Scroll === 'scrollFix' ? 'data-head-fix' : '',
+		styleString ? `style='${styleString}'` : ''
+	].filter(Boolean).join(' ');
+
+	const template = `
+		<p-aco ${attributeList}>
+			${generateMarkup(3, itemTemplate, args)}
+		</p-aco>
+	`;
+
+	return prettifyHTML(template);
+};
+
+export const accordionTemplate = (args) => {
+	const template = getAccordionTemplate(args);
+	return UI({ ...args, template });
+};
+
 // Util
-export const generateMarkup = (itemsCount, contentTemplate) => { return Array.from({ length: itemsCount }, (_, index) => `${contentTemplate(index + 1)}`).join(''); };
+const log = (...args) => { console.log(...args); };
+
+// Static Code View
+export const createStaticStory = (name, args) => {
+	const story = (args) => accordionTemplate(args);
+	story.args = args;
+	story.parameters = {
+		docs: {
+			source: {
+				code: getAccordionTemplate(args),
+				language: 'html'
+			}
+		}
+	};
+	return story;
+}
+
+export const prettifyHTML = (html, options = {}) => {
+	const inlineTags = options.inlineTags || ['i'];
+
+	const lines = html
+		.replace(/>\s*</g, '>\n<')   // 태그 사이 줄바꿈
+		.replace(/\s*\n\s*/g, '\n')  // 불필요한 공백 줄 제거
+		.trim()
+		.split('\n');
+
+	let indentLevel = 0;
+	const result = [];
+
+	for (let i = 0; i < lines.length; i++) {
+		let line = lines[i].trim();
+
+		// ✅ inline 태그 병합 처리
+		let merged = false;
+		for (const tag of inlineTags) {
+			const openTag = new RegExp(`^<${tag}[^>]*>$`);
+			const closeTag = new RegExp(`^</${tag}>$`);
+
+			if (line.match(openTag)) {
+				let buffer = line;
+				let j = i + 1;
+
+				// 다음 줄부터 닫는 태그를 찾을 때까지 병합
+				while (j < lines.length && !lines[j].trim().match(closeTag)) {
+					buffer += lines[j].trim();
+					j++;
+				}
+
+				if (j < lines.length && lines[j].trim().match(closeTag)) {
+					// 닫는 태그 찾음 → 병합 완료
+					buffer += lines[j].trim();
+					result.push('\t'.repeat(indentLevel) + buffer);
+					i = j; // 병합된 줄까지 skip
+					merged = true;
+					break;
+				}
+			}
+		}
+		if (merged) continue;
+
+		// 닫는 태그면 indent 먼저 감소
+		if (/^<\/[^>]+>/.test(line)) indentLevel--;
+
+		result.push('\t'.repeat(Math.max(indentLevel, 0)) + line);
+
+		// 여는 태그면 indent 증가 (셀프 클로징 제외)
+		if (/^<[^/!][^>]*[^/]?>$/.test(line) && !line.includes('</')) indentLevel++;
+	}
+
+	return result.join('\n');
+};
+
+
+
+
+
+
+
+//const generateMarkup = (count, templateFn, args = {}) => { return Array.from({ length: count }, (_, index) => templateFn(index + 1, args) ).join(''); };
 
 
 

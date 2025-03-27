@@ -22,12 +22,12 @@
 		[class*="aco-type"][data-head-fix] > .aco-item > .aco-head {position:sticky; left:0; top:0;}
 
 	/* Head Reverse */
-		[class*="aco-type"][data-head-reverse] > .aco-item > .aco-head {flex-direction:row-reverse;}
+		[class*="aco-type"][data-head-reverse] > .aco-item > .aco-head {flex-direction:row-reverse; justify-content:flex-end;}
 
 	/* Slide */
 		[class*="aco-type"][data-slide] > [data-p-active] > .aco-cont {transition:grid-template-rows var(--trans-dft);}
 
 	/* QnA */
-		[class*="aco-type"][data-qna] > .aco-item > .aco-head:before {content:var(--aco-txt-q, "Q.");}
+		[class*="aco-type"][data-qna] > .aco-item > .aco-head .aco-head-inner:before {content:var(--aco-txt-q, "Q.");}
 		[class*="aco-type"][data-qna] > .aco-item > .aco-cont > [data-pc-section] {display:flex;}
-		[class*="aco-type"][data-qna] > .aco-item > .aco-cont > [data-pc-section]:before {content:var(--aco-txt-a, "Q.");}
+		[class*="aco-type"][data-qna] > .aco-item > .aco-cont > [data-pc-section]:before {content:var(--aco-txt-a, "A.");}

@@ -7,7 +7,7 @@
 	/* Figure */
 		[class*="bul-cir"] > *:before,
 		[class*="bul-squ"] > *:before,
-		[class*="bul-hyp"] > *:before {flex:0 0 var(--bul-w, 0.5em); background-color:var(--bul-c, var(--bul-ft-c, var(--ft-c))); width:var(--bul-w, 0.5em);}
+		[class*="bul-hyp"] > *:before {flex:0 0 var(--bul-w, 0.5em); background-color:var(--bul-c, var(--bul-ft-c, var(--ft-c, black))); width:var(--bul-w, 0.5em);}
 
 		[class*="bul-cir"] > *:before,
 		[class*="bul-squ"] > *:before {height:var(--bul-w, var(--bul-h, 0.5em)); translate:0 calc((var(--txt-lh, var(--init-line-height)) * 1em - var(--bul-w, 0.5em)) / 2);}

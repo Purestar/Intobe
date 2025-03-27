@@ -189,8 +189,8 @@
 
 	/* Overflow */
 		[style*="--m-ovf"] { overflow: var(--m-ovf); }
-		[style*="--m-ovf-x"] { overflow-x: var(--m-ovf-x); overflow-y: var(--m-ovf-y, var(--ovf-y)); white-space: nowrap; }
-		[style*="--m-ovf-y"] { overflow-y: var(--m-ovf-y); overflow-x: var(--m-ovf-x, var(--ovf-x)); }
+		[style*="--m-ovf-x"] { overflow-x: var(--m-ovf-x); overflow-y: var(--m-ovf-y, var(--ovf-y, hidden)); white-space: nowrap; }
+		[style*="--m-ovf-y"] { overflow-y: var(--m-ovf-y); overflow-x: var(--m-ovf-x, var(--ovf-x, hidden)); }
 
 	/* Width & Height */
 		[style*="--m-w"] { width: var(--m-w); }
