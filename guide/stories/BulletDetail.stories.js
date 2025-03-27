@@ -1,15 +1,15 @@
-import { UI } from './UI';
-import { generateMarkup } from './commonStories';
+import { bulletArgTypes, bulletArgs, generateMarkupStatic } from './commonStories';
 
 export default {
-	title: 'UI/Bullet/Detail',
-	render: (args) => UI(args),
+	title: 'UI/Bullet',
+	render: (args) => Bullet(args),
+	tags: ['autodocs'],
+	argTypes: bulletArgTypes,
+	args: bulletArgs
 };
 
 const createMarkup = {
-	default: () => generateMarkup(3, (i) => `
-		<div>Item ${i}</div>
-	`)
+	default: () => generateMarkupStatic(3, (i) => `<div>Item ${i}</div>`)
 }
 
 export const Circle = { args: { markup: `<div class="bul-cir">${createMarkup.default()}</div>` }}

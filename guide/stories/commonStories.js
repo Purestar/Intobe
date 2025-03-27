@@ -336,6 +336,22 @@ export const accordionTemplate = (args) => {
 	return UI({ ...args, template });
 };
 
+// Bullet
+export const bulletArgTypes = {
+	Type: { control: 'inline-radio', options: ['bul-cir', 'bul-squ', 'bul-hyp', 'bul-num'], description: 'class', table: { category: 'Class' } },
+	FontColor: { control: 'color', description: '--ft-c', table: { category: 'General' } },
+	FontSize: { control: 'text', description: '--ft-s', table: { category: 'General' } },
+	GapY: { control: 'text', description: '--gap-y', table: { category: 'General' } },
+	LineHeight: { control: 'text', description: '--txt-lh', table: { category: 'General' } },
+	BulletGap: { control: 'text', description: '--bul-gap', table: { category: 'Bullet' } },
+	BulletColor: { control: 'color', description: '--bul-c', table: { category: 'Bullet' } },
+	BulletSize: { control: 'text', description: '--bul-w', table: { category: 'Bullet' } }
+}
+
+export const bulletArgs = {
+	Type: 'bul-cir'
+}
+
 // Util
 const log = (...args) => { console.log(...args); };
 
@@ -410,12 +426,7 @@ export const prettifyHTML = (html, options = {}) => {
 };
 
 
-
-
-
-
-
-//const generateMarkup = (count, templateFn, args = {}) => { return Array.from({ length: count }, (_, index) => templateFn(index + 1, args) ).join(''); };
+export const generateMarkupStatic = (count, templateFn, args = {}) => { return Array.from({ length: count }, (_, index) => templateFn(index + 1, args) ).join(''); };
 
 
 

@@ -1,23 +1,19 @@
 import { html } from 'lit';
 export const Bullet = ({
-	type,
-	color,
-	bulletColor,
-	bulletGap,
-	size,
-	fontSize,
-	gap
+	Type,
+	FontColor,
+	BulletColor,
+	BulletGap,
+	BulletSize,
+	FontSize,
+	GapY,
+	LineHeight
 }) => {
 	return html`
-		<div class='${type}' style='
-			${color !== undefined ? `--bul-ft-c:${color};` : ''}
-			${bulletColor !== undefined ? `--bul-c:${bulletColor};` : ''}
-			${bulletGap !== undefined ? `--bul-gap:${bulletGap};` : ''}
-			${size !== undefined ? `--bul-w:${size};` : ''}
-			${fontSize !== undefined ? `--ft-s:${fontSize};` : ''}
-			${gap !== undefined ? `--gap:${gap};` : ''}
-		'>
-			<div>Item</div><div>Item</div><div>Item</div><div>Item</div>
-		</div>
+<div class='${Type}' style='${BulletColor !== undefined ? `--bul-c:${BulletColor}; ` : ''}${BulletGap !== undefined ? `--bul-gap:${BulletGap}; ` : ''}${BulletSize !== undefined ? `--bul-w:${BulletSize}; ` : ''}${FontColor !== undefined ? `--ft-c:${FontColor}; ` : ''}${FontSize !== undefined ? `--ft-s:${FontSize}; ` : ''}${GapY !== undefined ? `--gap-y:${GapY}; ` : ''}${LineHeight !== undefined ? `--txt-lh:${LineHeight}; ` : ''}'>
+	<div>Item 1Item 1Item 1Item 1Item 1Item 1Item 1Item 1Item 1Item 1Item 1Item 1Item 1Item 1Item 1Item 1Item 1Item 1Item 1Item 1Item 1Item 1Item 1Item 1Item 1Item 1Item 1Item 1Item 1Item 1Item 1Item 1Item 1Item 1Item 1Item 1Item 1Item 1Item 1Item 1Item 1Item 1Item 1Item 1Item 1Item 1</div>
+	<div>Item 2</div>
+	<div>Item 3</div>
+</div>
 	`;
 };

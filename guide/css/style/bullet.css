@@ -1,6 +1,6 @@
 /* Bullet */
 	/* Default */
-		[class*="bul-"] {display:flex; flex-direction:var(--flex-direction, column); color:var(--bul-ft-c, var(--ft-c));}
+		[class*="bul-"] {display:flex; flex-direction:var(--flex-direction, column);}
 		[class*="bul-"] > * {display:flex; gap:var(--bul-gap, 10px); max-width:100%; word-break:break-all;}
 		[class*="bul-"] > *:before {content:"";}
 
