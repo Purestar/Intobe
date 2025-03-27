@@ -261,6 +261,7 @@ export const commonArgTypes = {
 // UI
 import { UI, generateMarkup } from './UI';
 
+// Accordion
 export const accordionArgTypes = {
 	Multiple: { control: 'boolean', description: '여러개 열림', table: { category: 'Action' } },
 	Opened: { control: 'boolean', table: { category: 'Action' } },
@@ -290,27 +291,7 @@ export const accordionArgs = {
 	AnswerText: ''
 }
 
-export const getAccordionTemplate = (args) => {
-	/*const itemTemplate = (index, args) => {
-		const titleText = `아코디언 제목 ${index}`;
-		const icon = args.Icon ? '<i class="aco-icon"></i>' : '';
-
-		const headContent = args.QnA
-			? `
-			<div class="aco-head-inner">
-				${titleText}
-			</div>${icon ? '\n' + icon : ''}`
-					: `${titleText}${icon ? '\n' + icon : ''}`;
-
-				return `
-			<p-aco-item class="aco-item" value="${index}"${args.Disabled ? ' disabled' : ''}>
-				<p-aco-head class="aco-head">
-					${headContent}
-				</p-aco-head>
-				<p-aco-cont class="aco-cont">내용 ${index}</p-aco-cont>
-			</p-aco-item>`.trim();
-	};*/
-
+export const getAccordionTemplate = (args, mountId) => {
 	const itemTemplate = (index, args) => `
 		<p-aco-item class="aco-item" ${args.Disabled ? 'disabled ' : ''}value="${index}">
 			<p-aco-head class="aco-head">
@@ -322,7 +303,6 @@ export const getAccordionTemplate = (args) => {
 			<p-aco-cont class="aco-cont">내용 ${index}</p-aco-cont>
 		</p-aco-item>
 	`;
-
 
 	const styleString = [
 		args.Ellipsis ? '--w:80px;' : '',
@@ -359,7 +339,6 @@ export const accordionTemplate = (args) => {
 // Util
 const log = (...args) => { console.log(...args); };
 
-// Static Code View
 export const createStaticStory = (name, args) => {
 	const story = (args) => accordionTemplate(args);
 	story.args = args;
