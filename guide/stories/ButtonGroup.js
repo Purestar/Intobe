@@ -1,7 +1,7 @@
 import { html } from 'lit';
 import { unsafeHTML } from 'lit/directives/unsafe-html.js';
 
-export const Button = ({
+export const ButtonGroup = ({
 	Type,
 	DesignType,
 
@@ -30,7 +30,12 @@ export const Button = ({
 	Href,
 	Target,
 
-	Cont
+	Equal,
+	Scroll,
+	Shadow,
+	CustomShadow,
+
+	Cont,
 }) => {
 	const style = (`
 		${Background !== undefined ? `--btn-bg-c:${Background};` : ''}
@@ -50,30 +55,19 @@ export const Button = ({
 		${DisabledBackground !== undefined ? `--btn-dis-bg-c:${DisabledBackground};` : ''}
 		${DisabledBorderColor !== undefined ? `--btn-dis-bd-c:${DisabledBorderColor};` : ''}
 		${DisabledFontColor !== undefined ? `--btn-dis-ft-c:${DisabledFontColor};` : ''}
+
+		${Scroll !== undefined ? `--w:300px;` : ''}
+		${CustomShadow !== undefined ? `--sha-side-w:50px;` : ''}
 	`).replace(/\s+/g, ' ').trim();
 
-	let template;
-
-	if (Type === 'Link') {
-		template = html`
-<a class="${DesignType}" href="${Href}" ?data-disabled=${Disabled} ?data-ellipsis-over=${EllipsisOver} target=${Target ? '_blank' : null} style="${style}">
-	${Cont !== undefined && Cont !== '' ? unsafeHTML(Cont) : 'Button'}
-</a>
-		`;
-	} else if (Type === 'Fake') {
-		template = html`
-<span class="${DesignType}" ?data-disabled=${Disabled} ?data-ellipsis-over=${EllipsisOver} style="${style}">
-	${Cont !== undefined && Cont !== '' ? unsafeHTML(Cont) : 'Button'}
-</span>
-		`;
-	} else {
-		// 기본은 button
-		template = html`
-<button class="${DesignType}" ?disabled=${Disabled} ?data-ellipsis-over=${EllipsisOver} style="${style}">
-	${Cont !== undefined && Cont !== '' ? unsafeHTML(Cont) : 'Button'}
-</button>
-		`;
-	}
-
-	return template;
+	return html`
+<div class="btn-grp-type" ?data-equal=${Equal} ?data-scroll=${Scroll} ?data-shadow=${Shadow} ?disabled=${Disabled} ?data-ellipsis-over=${EllipsisOver} style="${style}">
+	<button type="button" class="btn-type">Button 1</button>
+	<button type="button" class="btn-type">Button 2</button>
+	<button type="button" class="btn-type">Button 3</button>
+	<button type="button" class="btn-type">Button 4</button>
+	<button type="button" class="btn-type">Button 5</button>
+	${Cont ? unsafeHTML(Cont) : ''}
+</div>
+	`;
 };

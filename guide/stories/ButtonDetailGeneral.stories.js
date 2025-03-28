@@ -11,7 +11,7 @@ export default {
 
 export const Border = { args: { DesignType: 'btn-type-b' }}
 export const Transparent = { args: { DesignType: 'btn-type-tran' }}
-export const Link = { args: { markup: `<a href="http://www.naver.com/" class="btn-type" style="--btn-bg: #03c75a; --btn-over-bg: #00873c;">Naver</a>` }}
-export const TargetLink = { args: { markup: `<a href="http://www.naver.com/" class="btn-type" target="_blank" style="--btn-bg:#03c75a; --btn-over-bg:#00873c;">Naver</a>` }}
-export const FakeButton = { args: { markup: `<p class="btn-type">Button</p>` }}
+export const Link = { args: { Type: 'Link', Href: 'http://www.naver.com/', Background: '#03c75a', BackgroundOver: '#00873c', Cont: `Naver` }}
+export const TargetLink = { args: { Type: 'Link', Href: 'http://www.naver.com/', Target: true, Background: '#03c75a', BackgroundOver: '#00873c', Cont: `Naver` }}
+export const FakeButton = { args: { Type: 'Fake' }}
 export const Disabled = { args: { Disabled: true }}
