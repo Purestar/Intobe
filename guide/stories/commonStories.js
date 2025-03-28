@@ -261,6 +261,9 @@ export const commonArgTypes = {
 // UI
 import { UI, generateMarkup } from './UI';
 
+// UI Common
+const UIBorderStyle = { control: 'inline-radio', options: ['solid', 'dashed', 'dotted', 'double', 'groove', 'inset', 'outset', 'ridge', 'none', 'hidden'] };
+
 // Accordion
 export const accordionArgTypes = {
 	Multiple: { control: 'boolean', description: '여러개 열림', table: { category: 'Action' } },
@@ -339,17 +342,53 @@ export const accordionTemplate = (args) => {
 // Bullet
 export const bulletArgTypes = {
 	Type: { control: 'inline-radio', options: ['bul-cir', 'bul-squ', 'bul-hyp', 'bul-num'], description: 'class', table: { category: 'Class' } },
-	FontColor: { control: 'color', description: '--ft-c', table: { category: 'General' } },
-	FontSize: { control: 'text', description: '--ft-s', table: { category: 'General' } },
-	GapY: { control: 'text', description: '--gap-y', table: { category: 'General' } },
-	LineHeight: { control: 'text', description: '--txt-lh', table: { category: 'General' } },
-	BulletGap: { control: 'text', description: '--bul-gap', table: { category: 'Bullet' } },
-	BulletColor: { control: 'color', description: '--bul-c', table: { category: 'Bullet' } },
-	BulletSize: { control: 'text', description: '--bul-w', table: { category: 'Bullet' } }
+	FontColor: { control: 'color', description: '--ft-c', table: { category: 'Style' } },
+	FontSize: { control: 'text', description: '--ft-s', table: { category: 'Style' } },
+	GapY: { control: 'text', description: '--gap-y', table: { category: 'Style' } },
+	LineHeight: { control: 'text', description: '--txt-lh', table: { category: 'Style' } },
+	BulletGap: { control: 'text', description: '--bul-gap', table: { category: 'Style' } },
+	BulletColor: { control: 'color', description: '--bul-c', table: { category: 'Style' } },
+	BulletSize: { control: 'text', description: '--bul-w', table: { category: 'Style' } }
 }
 
 export const bulletArgs = {
 	Type: 'bul-cir'
+}
+
+// Button
+export const buttonArgTypes = {
+	Type: { control: 'inline-radio', options: ['Button', 'Link', 'Fake'], description: 'class', table: { category: 'DOM' } },
+	DesignType: { control: 'inline-radio', options: ['btn-type', 'btn-type-b', 'btn-type-tran'], description: 'class', table: { category: 'Class' } },
+
+	Ellipsis: { control: 'boolean', table: { category: 'DOM' } },
+	EllipsisOver: { control: 'boolean', table: { category: 'Attribute' } },
+
+	Background: { control: 'color', description: '--btn-bg-c', table: { category: 'Style - Background' } },
+	BackgroundOver: { control: 'color', description: '--btn-over-bg-c', table: { category: 'Style - Background' } },
+
+	BorderColor: { control: 'color', description: '--btn-bd-c', table: { category: 'Style - Border' } },
+	BorderColorOver: { control: 'color', description: '--btn-over-bd-c', table: { category: 'Style - Border' } },
+	BorderStyle: { ...UIBorderStyle, description: '--btn-bd-s', table: { category: 'Style - Border' } },
+	BorderWidth: { control: 'text', description: '--btn-bd-w', table: { category: 'Style - Border' } },
+	Radius: { control: 'text', description: '--btn-bd-r', table: { category: 'Style - Border' } },
+
+	Width: { control: 'text', description: '--btn-w', table: { category: 'Style - Size' } },
+	Height: { control: 'text', description: '--btn-h', table: { category: 'Style - Size' } },
+
+	Disabled: { control: 'boolean', table: { category: 'Style - Disabled' } },
+	DisabledBackground: { control: 'color', description: '--btn-dis-bg-c', table: { category: 'Style - Disabled' } },
+	DisabledBorderColor: { control: 'color', description: '--btn-dis-bd-c', table: { category: 'Style - Disabled' } },
+	DisabledFontColor: { control: 'color', description: '--btn-dis-ft-c', table: { category: 'Style - Disabled' } },
+
+	FontSize: { control: 'text', description: '--btn-ft-s', table: { category: 'Style' } },
+	PaddingX: { control: 'text', description: '--btn-pad-x', table: { category: 'Style' } }
+}
+
+export const buttonArgs = {
+	Type: 'Button',
+	DesignType: 'btn-type',
+	Disabled: false,
+	Ellipsis: false
 }
 
 // Util

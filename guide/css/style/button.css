@@ -8,7 +8,7 @@
 
 		[class*="btn-type"]:hover {background-color:var(--btn-over-bg-c, var(--moc)); border-color:var(--btn-over-bd-c, var(--btn-over-bg-c, var(--moc))); transition:background var(--trans-dft), border-color var(--trans-dft), color var(--trans-dft);}
 
-		[class*="btn-type"][data-ellipsis-hover]:hover {width:max-content;}
+		[class*="btn-type"][data-ellipsis-over]:hover {width:max-content;}
 
 	/* Border Button */
 		[class*="btn-type-b"] {background-color:var(--btn-bg-c, white); border-color:var(--btn-bd-c, var(--mc)); color:var(--btn-ft-c, var(--mc));}

@@ -1,23 +1,33 @@
-import { UI } from './UI';
-import { generateMarkup } from './commonStories';
+import { Button } from './Button';
+import { buttonArgTypes, buttonArgs } from './commonStories';
 
 export default {
 	title: 'UI/Button/Detail/Custom',
-	render: (args) => UI(args),
+	render: (args) => Button(args),
+	tags: ['autodocs'],
+	argTypes: buttonArgTypes,
+	args: buttonArgs
 };
 
-export const Background = { args: { markup: `<button class="btn-type" style="--btn-bg:red;">Button</button>` }}
-export const BackgroundOver = { args: { markup: `<button class="btn-type" style="--btn-over-bg:red;">Button</button>` }}
-export const Border = { args: { markup: `<button class="btn-type" style="--btn-bd-c:green;">Button</button>` }}
-export const BorderOver = { args: { markup: `<button class="btn-type" style="--btn-over-bd-c:yellow;">Button</button>` }}
-export const Radius = { args: { markup: `<button class="btn-type" style="--btn-bd-r:24px;">Button</button>` }}
-export const DisabledBackground = { args: { markup: `<button class="btn-type" disabled style="--btn-dis-bg:gray;">Button</button>` }}
-export const DisabledBorder = { args: { markup: `<button class="btn-type" disabled style="--btn-dis-bd-c:gray;">Button</button>` }}
-export const DisabledColor = { args: { markup: `<button class="btn-type" disabled style="--btn-dis-ft-c:gray;">Button</button>` }}
-export const Width = { args: { markup: `<button class="btn-type" style="--btn-w:200px;">Button</button>` }}
-export const Height = { args: { markup: `<button class="btn-type" style="--btn-h:100px;">Button</button>` }}
-export const FontSize = { args: { markup: `<button class="btn-type" style="--btn-ft-s:30px;">Button</button>` }}
-export const AutoHeight = { args: { markup: `<button type="button" class="btn-type" style="--btn-w: 80px;">ButtonButton</button>` }}
-export const PaddingX = { args: { markup: `<button type="button" class="btn-type" style="--btn-pad-x: 0;">Button</button>` }}
-export const Ellipsis = { args: { markup: `<button type="button" class="btn-type" style="--btn-w: 80px;"><p class="layout-ellipsis">ButtonButton</p></button>` }}
-export const EllipsisOverDisible = { args: { markup: `<button type="button" data-ellipsis-hover="" class="btn-type" style="--btn-w: 80px;"><p class="layout-ellipsis">ButtonButton</p></button>` }}
+export const Background = { args: { Background: 'red' }}
+export const BackgroundOver = { args: { BackgroundOver: 'red' }}
+
+export const Border = { args: { BorderColor: 'green' }}
+export const BorderOver = { args: { BorderColorOver: 'red', BorderWidth: '5px' }}
+export const BorderStyle = { args: { BorderColor: 'red', BorderStyle: 'dashed', BorderWidth: '2px' }}
+export const BorderWidth = { args: { BorderColor: 'red', BorderWidth: '5px' }}
+export const Radius = { args: { Radius: '24px' }}
+
+export const Width = { args: { Width: '200px' }}
+export const Height = { args: { Height: '100px' }}
+
+export const FontSize = { args: { FontSize: '30px' }}
+export const PaddingX = { args: { PaddingX: '0' }}
+
+export const DisabledBackground = { args: { Disabled: true, DisabledBackground: 'gray' }}
+export const DisabledBorder = { args: { Disabled: true, DisabledBorderColor: 'gray' }}
+export const DisabledColor = { args: { Disabled: true, DisabledFontColor: 'gray' }}
+
+export const AutoHeight = { args: { Width: '100px', Cont: 'ButtonButtonButtonButton' }}
+export const Ellipsis = { args: { Width: '80px', Cont: `<p class="layout-ellipsis">ButtonButton</p>` }}
+export const EllipsisOverDisible = { args: { EllipsisOver: true, Width: '80px', Cont: `<p class="layout-ellipsis">ButtonButton</p>` }}

@@ -1,28 +1,76 @@
 import { html } from 'lit';
+import { unsafeHTML } from 'lit/directives/unsafe-html.js';
+
 export const Button = ({
 	Type,
-	ButtonBackground,
-	ButtonOverBackground,
-	ButtonBorderColor,
-	ButtonBorderStyle,
-	ButtonBorderWidth,
-	ButtonOverBorderColor,
-	ButtonBorderRadius,
+	DesignType,
 
-	ButtonDisabledBackground
+	Background,
+	BackgroundOver,
+
+	BorderColor,
+	BorderColorOver,
+	BorderStyle,
+	BorderWidth,
+	Radius,
+
+	Width,
+	Height,
+
+	FontSize,
+	PaddingX,
+
+	Disabled,
+	DisabledBackground,
+	DisabledBorderColor,
+	DisabledFontColor,
+
+	EllipsisOver,
+
+	Cont
 }) => {
-	return html`
-		<button class="${Type}" style='
-			${ButtonBackground !== undefined ? `--bg-c:${ButtonBackground};` : ''}
-			${ButtonOverBackground !== undefined ? `--btn-over-bg-c:${ButtonOverBackground};` : ''}
-			${ButtonBorderColor !== undefined ? `--btn-bd-c:${ButtonBorderColor};` : ''}
-			${ButtonOverBorderColor !== undefined ? `--btn-over-bd-c:${ButtonOverBorderColor};` : ''}
-			${ButtonBorderStyle !== undefined ? `--btn-bd-s:${ButtonBorderStyle};` : ''}
-			${ButtonBorderWidth !== undefined ? `--btn-bd-w:${ButtonBorderWidth};` : ''}
-			${ButtonBorderRadius !== undefined ? `--btn-bd-r:${ButtonBorderRadius};` : ''}
-		'>Button</button>
-		<button class="${Type}" disabled style='
-			${ButtonDisabledBackground !== undefined ? `--btn-dis-bg-c:${ButtonDisabledBackground};` : ''}
-		'>Button</button>
-	`;
+	const style = (`
+		${Background !== undefined ? `--btn-bg-c:${Background};` : ''}
+		${BackgroundOver !== undefined ? `--btn-over-bg-c:${BackgroundOver};` : ''}
+
+		${BorderColor !== undefined ? `--btn-bd-c:${BorderColor};` : ''}
+		${BorderColorOver !== undefined ? `--btn-over-bd-c:${BorderColorOver};` : ''}
+		${BorderStyle !== undefined ? `--btn-bd-s:${BorderStyle};` : ''}
+		${BorderWidth !== undefined ? `--btn-bd-w:${BorderWidth};` : ''}
+		${Radius !== undefined ? `--btn-bd-r:${Radius};` : ''}
+
+		${Width !== undefined ? `--btn-w:${Width};` : ''}
+		${Height !== undefined ? `--btn-h:${Height};` : ''}
+
+		${FontSize !== undefined ? `--btn-ft-s:${FontSize};` : ''}
+		${PaddingX !== undefined ? `--btn-pad-x:${PaddingX};` : ''}
+		${DisabledBackground !== undefined ? `--btn-dis-bg-c:${DisabledBackground};` : ''}
+		${DisabledBorderColor !== undefined ? `--btn-dis-bd-c:${DisabledBorderColor};` : ''}
+		${DisabledFontColor !== undefined ? `--btn-dis-ft-c:${DisabledFontColor};` : ''}
+	`).replace(/\s+/g, ' ').trim();
+
+	let template;
+
+	if (Type === 'Link') {
+		template = html`
+			<a class="${DesignType}" href="#" ?data-disabled=${Disabled} ?data-ellipsis-over=${EllipsisOver} style="${style}">
+				${Cont !== undefined && Cont !== '' ? unsafeHTML(Cont) : 'Button'}
+			</a>
+		`;
+	} else if (Type === 'Fake') {
+		template = html`
+			<span class="${DesignType}" ?data-disabled=${Disabled} ?data-ellipsis-over=${EllipsisOver} style="${style}">
+				${Cont !== undefined && Cont !== '' ? unsafeHTML(Cont) : 'Button'}
+			</span>
+		`;
+	} else {
+		// 기본은 button
+		template = html`
+			<button class="${DesignType}" ?disabled=${Disabled} ?data-ellipsis-over=${EllipsisOver} style="${style}">
+				${Cont !== undefined && Cont !== '' ? unsafeHTML(Cont) : 'Button'}
+			</button>
+		`;
+	}
+
+	return template;
 };
