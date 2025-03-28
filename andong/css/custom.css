@@ -626,7 +626,7 @@
 			.h-vbar-logo,
 			.h-vbar-logo > * {gap:16px;}
 			.h-vbar-logo > *:before {background:#ccc; height:28px;}
-			.h-vbar-logo h2 {font-weight:500; font-size:20px;}
+			.h-vbar-logo h2 {font-weight:500; font-size:20px; color:black;}
 			.h-right-wrap {position:relative; gap:36px; width:auto;}
 			.h-nav {gap:68px; font-size:20px; color:black;}
 			.h-nav > *.active,
@@ -669,8 +669,8 @@
 			#contents .sub-title {display:flex; align-items:center; gap:24px;}
 
 	/* 로그인 */
-		.login-wrap {display:grid; justify-items:center; align-items:end; height:100dvh; padding-bottom:146px;}
-		.login-cont {display:grid; justify-content:center; justify-items:center; width:380px;}
+		.login-wrap {display:grid; gap:70px; width:1080px;}
+		.login-cont {display:grid; grid-template-columns:repeat(2, 1fr); justify-content:center; justify-items:center; align-items:center; border-radius:32px; box-shadow:0 0 57px rgba(0, 0, 0, 0.06);}
 		.login-foot {display:grid; justify-items:center;}
 
 	/* 메인 */

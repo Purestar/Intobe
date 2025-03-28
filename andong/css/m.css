@@ -484,8 +484,9 @@
 				#contents .sub-title {gap:3.89vw;}
 
 		/* 로그인 */
-			.login-wrap {padding-bottom:5.56vw;}
-			.login-cont {width:100%;}
+			.login-wrap {height:100dvh; padding-bottom:5.56vw;}
+			.login-cont {display:block; box-shadow:none; width:100%;}
+			.login-foot {align-content: center}
 
 		/* 메인 */
 			.main-section {padding:8.33vw var(--init-m-wr-side-pd);}
