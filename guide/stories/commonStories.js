@@ -419,6 +419,7 @@ export const buttonArgs = {
 	Ellipsis: false
 }
 
+// Chip
 export const chipArgTypes = {
 	Class: { control: 'inline-radio', options: ['chip-type'], description: 'class', table: { category: 'Class' } },
 	Cont: { control: 'text', description: 'DOM', table: { category: 'DOM' } },
@@ -442,6 +443,7 @@ export const chipArgs = {
 	Cont: 'Chip'
 }
 
+// Divider
 export const dividerArgTypes = {
 	Class: { control: 'inline-radio', options: ['div-h', 'div-v', 'div-h-arrow', 'div-v-arrow', 'div-h-slash', 'div-v-slash', 'div-h-cir', 'div-v-cir', 'div-h-squ', 'div-v-squ', 'div-h-dia', 'div-v-dia'], description: 'class', table: { category: 'Class' } },
 	Cont: { control: 'text', description: 'DOM', table: { category: 'DOM' } },
@@ -459,6 +461,17 @@ export const dividerArgTypes = {
 export const dividerArgs = {
 	Class: 'div-h',
 	Cont: '<div>Item</div><div>Item</div><div>Item</div>'
+}
+
+// Form - Checkbox
+export const checkboxArgTypes = {
+	Class: { control: 'inline-radio', options: ['form-opt-chk', 'form-opt-rdo', 'form-opt-swh', 'form-opt-btn'], description: 'class', table: { category: 'Class' } },
+	Cont: { control: 'text', description: 'DOM', table: { category: 'DOM' } },
+}
+
+export const checkboxArgs = {
+	Class: 'form-opt-chk',
+	Cont: 'Label'
 }
 
 // Util
@@ -534,8 +547,19 @@ export const prettifyHTML = (html, options = {}) => {
 	return result.join('\n');
 };
 
-
 export const generateMarkupStatic = (count, templateFn, args = {}) => { return Array.from({ length: count }, (_, index) => templateFn(index + 1, args) ).join(''); };
+
+export const styleMap = (styleProps) => {
+	let Style = '';
+
+	for (const { key, value, condition } of styleProps) {
+		if (value !== undefined && (condition ? condition(value) : value !== '')) {
+			Style += `${key}:${value};`;
+		}
+	}
+
+	return Style;
+}
 
 
 

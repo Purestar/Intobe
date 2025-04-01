@@ -1,7 +1,7 @@
 /* Checkbox & Radio Type */
 	/* Default */
 		[class*="form-opt"] {display:flex; cursor:default;}
-		[class*="form-opt"] input {position:absolute; left:0; top:50%; transform:translate(0, -50%); width:1px; height:1px; z-index:-1;}
+		[class*="form-opt"] input {position:absolute; left:0; top:50%; translate:0, -50%; width:1px; height:1px; z-index:-1;}
 		[class*="form-opt"] .opt-txt {display:flex; cursor:pointer;}
 		[class*="form-opt"] .opt-txt:before,
 		[class*="form-opt"] .opt-txt:after {content:""; background:var(--ic-c); background-size:var(--bg-sz);}

@@ -27,25 +27,9 @@
 			"submenu": [
 				{ "menu": "primeVue", "src": "https://primevue.org/", "state": "comp" },
 				{ "menu": "vw calculator", "src": "http://publishing.kr/vw/", "state": "comp" },
-				{ "id": "Global", "submenu": [
-					{ "menu": "Background", "src": "./guide/global-background.html", "state": "comp" },
-					{ "menu": "Border & Outline", "src": "./guide/global-border.html", "state": "comp" },
-					{ "menu": "Display", "src": "./guide/global-display.html", "state": "comp" },
-					{ "menu": "Flex & Grid", "src": "./guide/global-flex.html", "state": "comp" },
-					{ "menu": "Font & Text", "src": "./guide/global-font.html", "state": "comp" },
-					{ "menu": "Margin & Padding", "src": "./guide/global-margin.html", "state": "comp" },
-					{ "menu": "Overflow & Scroll", "src": "./guide/global-overflow.html", "state": "comp" },
-					{ "menu": "Position", "src": "./guide/global-position.html", "state": "comp" },
-					{ "menu": "Width & Height", "src": "./guide/global-width.html", "state": "comp" }
-				], "state": "comp"},
 				{ "menu": "Animation", "src": "./guide/animation.html", "state": "comp" },
 				{ "menu": "Layout", "src": "./guide/layout.html", "state": "comp" },
 				{ "id": "UI", "submenu": [
-					{ "menu": "Accordion", "src": "./guide/ui-accordion.html", "state": "comp" },
-					{ "menu": "Bullet", "src": "./guide/ui-bullet.html", "state": "comp" },
-					{ "menu": "Button", "src": "./guide/ui-button.html", "state": "comp" },
-					{ "menu": "Chip", "src": "./guide/ui-chip.html", "state": "comp" },
-					{ "menu": "Divider", "src": "./guide/ui-divider.html", "state": "comp" },
 					{ "id": "Form", "submenu": [
 						{ "menu": "Checkbox & Radio (Selection)", "src": "./guide/ui-checkbox.html", "state": "comp" },
 						{ "menu": "Input", "src": "./guide/ui-input.html", "state": "comp" },
