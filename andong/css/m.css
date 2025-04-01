@@ -132,6 +132,8 @@
 				.brd-paging .brd-paging-last:before {width:2.50vw; height:2.22vw;}
 				.brd-paging .brd-paging-prev:before,
 				.brd-paging .brd-paging-next:before {width:1.53vw; height:2.22vw;}
+				.brd-paging-num {gap:0;}
+				.brd-paging-num a {width:5.67vw; height:6.67vw;}
 
 		/* Box */
 			.box-type-01 {border-radius:2.08vw; box-shadow:0 1.11vw 4.58vw rgba(0, 0, 0, 0.08); padding:5.56vw 5.28vw;}
@@ -331,7 +333,7 @@
 				.lst-type-01 > * {gap:6.39vw; padding:4.44vw 0;}
 
 				[class*="lst-type-02"] {gap:2.22vw; font-size:3.89vw;}
-				[class*="lst-type-02"] > * {border-radius:2.5vw; height:14.44vw; padding:0 5.27vw;}
+				[class*="lst-type-02"] > * {border-radius:2.5vw; min-height:14.44vw; height:auto; padding:0 5.27vw;}
 				[class*="lst-type-02"] a {gap:2.22vw; font-size:3.33vw;}
 				[class*="lst-type-02"] .lst-tit {font-size:3.89vw;}
 				[class*="lst-type-02"] .brd-num {width:3.75vw;}
@@ -461,6 +463,8 @@
 				.h-panel-cont {display:flex; flex-direction:column; flex:1; height:calc(100dvh - 33.61vw); padding:0 5.55vw;}
 				.h-panel-cont .n-tabs {overflow:hidden; height:100%;}
 				.h-panel-cont .n-tab-pane {overflow-y:auto;}
+				.h-panel .form-type-opt-chk-02 {flex:1; width:100%;}
+				.h-panel .form-type-opt-chk-02 .opt-txt {word-break:break-all;}
 				.h-btn-logout {border-top:1px solid #ededed; height:21.38vw;}
 				.h-m-menu > * {display:flex; flex-direction:column; gap:5.27vw; padding:5.27vw 0;}
 				.h-m-menu > *:first-child {padding-top:0;}
@@ -534,10 +538,12 @@
 			.job-type-ctrl {padding:5.00vw;}
 			.job-btn-search {width:23.19vw;}
 			.job-type-tbl {border:0; margin-top:3.61vw;}
+			.job-type-tbl colgroup {display:none;}
 			.job-type-tbl tbody {display:flex; flex-direction:column; gap:5.56vw;}
 			.job-type-tbl tr {display:flex; flex-direction:column;}
 			.job-type-tbl th {border:0; font-size:4.72vw; text-align:left;}
 			.job-type-tbl td {border:1px solid #e2e2e2; border-radius:2.50vw; margin-top:3.61vw;}
+			.job-type-tbl tr:first-child td {border-top:1px solid #e2e2e2;}
 
 			.role-model-chart {width:40.28vw; height:40.28vw;}
 
@@ -565,7 +571,6 @@
 			.my-major-map-step:after {flex:0 0 6.11vw; box-shadow:inset 1.53vw 0 2.78vw 0.00vw rgb(0 0 0 / 10%); width:6.11vw; height:11.11vw;}
 
 			.my-major-map > *.complete .my-major-map-lst:before {background-size:8.33vw 13.75vw;}
-
 
 			.my-major-map-pool {display:flex; align-items:flex-start; position:fixed; right:0; top:0; height:100%; padding:20px 0; transform:translate(604px, 0); transition:transform .3s ease; z-index:10;}
 			.my-major-map-pool .btn-pool-tg {display:flex; flex:0 0 48px; align-items:center; gap:16px; background:var(--mc); border-top-left-radius:24px; border-bottom-left-radius:24px; width:48px; height:auto; padding:32px 0; font-weight:500; writing-mode:vertical-rl; text-orientation:upright; color:white;}

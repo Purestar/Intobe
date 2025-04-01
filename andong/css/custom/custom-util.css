@@ -83,6 +83,7 @@
 	[class*="elps"] {overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:1;}
 
 	.elps-2 {-webkit-line-clamp: 2;}
+	.elps-3 {-webkit-line-clamp: 3;}
 
 /* Flex Layout */
 	.flex {display:flex;}
@@ -129,6 +130,7 @@
 	.flex-1 {flex:1;}
 	.flex-0 {flex:0;}
 	.flex-wrap {flex-wrap:wrap;}
+	.flex-s-0 {flex-shrink:0;}
 
 /* Font */
 	/* Line Height */
@@ -258,6 +260,9 @@
 		--n80: 11.11vw;
 		--n100: 13.89vw;
 	}
+
+	/* Ellipsis */
+		.m-elps-2 {-webkit-line-clamp: 2;}
 
 	/* Flex Layout */
 		.m-flex-tl {place-content:start start;}

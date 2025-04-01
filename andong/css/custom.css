@@ -652,6 +652,7 @@
 			.h-bookmark-open.active + .h-bookmark {display:block;}
 			.h-bookmark .lst-type-02 > * {height:auto; padding:10px 24px;}
 			.h-bookmark .form-type-opt-chk-02 {flex:1;}
+			.h-bookmark .form-type-opt-chk-02 .opt-txt {word-break:break-all;}
 
 		/* 푸터 */
 			.f-wrap {flex:0 0 var(--init-fh); border-top:1px solid #ccd0d6; height:var(--init-fh);}
