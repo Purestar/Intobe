@@ -1,11 +1,11 @@
 import { Border } from './Border';
-import { commonBorderArgTypes } from './commonStories';
+import { commonStrokeArgTypes } from './commonStories';
 
 export default {
 	title: 'Global/Border&Outline',
 	tags: ['autodocs'],
 	render: (args) => Border(args),
-	argTypes: commonBorderArgTypes,
+	argTypes: commonStrokeArgTypes,
 };
 
 export const Default = {};

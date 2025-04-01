@@ -5,21 +5,21 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
-    "vite": "^6.2.3"
+    "vite": "^6.2.4"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.6",
-    "@storybook/addon-essentials": "^8.6.10",
-    "@storybook/addon-interactions": "^8.6.10",
-    "@storybook/blocks": "^8.6.10",
-    "@storybook/experimental-addon-test": "^8.6.10",
-    "@storybook/html": "^8.6.10",
-    "@storybook/html-vite": "^8.6.10",
-    "@storybook/test": "^8.6.10",
-    "@storybook/web-components": "^8.6.10",
-    "@storybook/web-components-vite": "^8.6.10",
+    "@storybook/addon-essentials": "^8.6.11",
+    "@storybook/addon-interactions": "^8.6.11",
+    "@storybook/blocks": "^8.6.11",
+    "@storybook/experimental-addon-test": "^8.6.11",
+    "@storybook/html": "^8.6.11",
+    "@storybook/html-vite": "^8.6.11",
+    "@storybook/test": "^8.6.11",
+    "@storybook/web-components": "^8.6.11",
+    "@storybook/web-components-vite": "^8.6.11",
     "@vitejs/plugin-vue": "^5.2.3",
     "lit": "^3.2.1",
-    "storybook": "^8.6.10"
+    "storybook": "^8.6.11"
   }
 }

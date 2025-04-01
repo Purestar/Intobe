@@ -1,11 +1,11 @@
 import { Width } from './Width';
-import { commonWidthArgTypes } from './commonStories';
+import { commonSizeArgTypes } from './commonStories';
 
 export default {
 	title: 'Global/Width&Height',
 	tags: ['autodocs'],
 	render: (args) => Width(args),
-	argTypes: commonWidthArgTypes,
+	argTypes: commonSizeArgTypes,
 };
 
 export const Default = {};

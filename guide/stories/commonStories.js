@@ -100,17 +100,11 @@ export const commonBorderArgTypes = {
 	borderRadius: { ...commonBorderRadius, description: '--bd-r' },
 	borderStyle: { ...commonBorderStyle, description: '--bd-s' },
 	borderWidth: { ...commonBorderWidth, description: '--bd-w' },
-	outlineColor: { ...commonBorderColor, description: '--ol-c' },
-	outlineStyle: { ...commonBorderStyle, description: '--ol-s' },
-	outlineWidth: { ...commonBorderWidth, description: '--ol-w' },
 
 	mBorderColor: { ...commonBorderColor, ...commonMBorder, description: '--m-bd-c' },
 	mBorderRadius: { ...commonBorderRadius, ...commonMBorder, description: '--m-bd-r' },
 	mBorderStyle: { ...commonBorderStyle, ...commonMBorder, description: '--m-bd-s' },
 	mBorderWidth: { ...commonBorderWidth, ...commonMBorder, description: '--m-bd-w' },
-	mOutlineColor: { ...commonBorderColor, ...commonMBorder, description: '--m-ol-c' },
-	mOutlineStyle: { ...commonBorderStyle, ...commonMBorder, description: '--m-ol-s' },
-	mOutlineWidth: { ...commonBorderWidth, ...commonMBorder, description: '--m-ol-w' },
 }
 
 export const commonDisplayArgTypes = {
@@ -183,6 +177,12 @@ export const commonFontArgTypes = {
 	mWeight: { ...commonFont, ...commonMFont,  description: '--m-ft-w' },
 }
 
+export const commonHeightArgTypes = {
+	height: { ...commonWidth, description: '--h' },
+
+	mHeight: { ...commonWidth, ...commonMWidth, description: '--m-h' }
+}
+
 export const commonMarginArgTypes = {
 	margin: {...commonMargin, description: '--mg-a'},
 	marginTop: {...commonMargin, description: '--mg-t'},
@@ -191,6 +191,7 @@ export const commonMarginArgTypes = {
 	marginRight: {...commonMargin, description: '--mg-r'},
 	marginX: {...commonMargin, description: '--mg-x'},
 	marginY: {...commonMargin, description: '--mg-y'},
+
 	mMargin: {...commonMargin, ...commonMMargin, description: '--m-mg-a'},
 	mMarginTop: {...commonMargin, ...commonMMargin, description: '--m-mg-t'},
 	mMarginBottom: {...commonMargin, ...commonMMargin, description: '--m-mg-b'},
@@ -198,21 +199,6 @@ export const commonMarginArgTypes = {
 	mMarginRight: {...commonMargin, ...commonMMargin, description: '--m-mg-r'},
 	mMarginX: {...commonMargin, ...commonMMargin, description: '--m-mg-x'},
 	mMarginY: {...commonMargin, ...commonMMargin, description: '--m-mg-y'},
-
-	padding: {...commonPadding, description: '--pd-a'},
-	paddingTop: {...commonPadding, description: '--pd-t'},
-	paddingBottom: {...commonPadding, description: '--pd-b'},
-	paddingLeft: {...commonPadding, description: '--pd-l'},
-	paddingRight: {...commonPadding, description: '--pd-r'},
-	paddingX: {...commonPadding, description: '--pd-x'},
-	paddingY: {...commonPadding, description: '--pd-y'},
-	mPadding: {...commonPadding, ...commonMPadding, description: '--m-pd-a'},
-	mPaddingTop: {...commonPadding, ...commonMPadding, description: '--m-pd-t'},
-	mPaddingBottom: {...commonPadding, ...commonMPadding, description: '--m-pd-b'},
-	mPaddingLeft: {...commonPadding, ...commonMPadding, description: '--m-pd-l'},
-	mPaddingRight: {...commonPadding, ...commonMPadding, description: '--m-pd-r'},
-	mPaddingX: {...commonPadding, ...commonMPadding, description: '--m-pd-x'},
-	mPaddingY: {...commonPadding, ...commonMPadding, description: '--m-pd-y'},
 }
 
 export const commonOverflowArgTypes = {
@@ -222,6 +208,34 @@ export const commonOverflowArgTypes = {
 	mOverflow: { ...commonOverflow, ...commonMOverflow, description: '--m-ovf' },
 	mOverflowX: { ...commonOverflow, ...commonMOverflow, description: '--m-ovf-x' },
 	mOverflowY: { ...commonOverflow, ...commonMOverflow, description: '--m-ovf-y' },
+}
+
+export const commonOutlineArgTypes = {
+	outlineColor: { ...commonBorderColor, description: '--ol-c' },
+	outlineStyle: { ...commonBorderStyle, description: '--ol-s' },
+	outlineWidth: { ...commonBorderWidth, description: '--ol-w' },
+
+	mOutlineColor: { ...commonBorderColor, ...commonMBorder, description: '--m-ol-c' },
+	mOutlineStyle: { ...commonBorderStyle, ...commonMBorder, description: '--m-ol-s' },
+	mOutlineWidth: { ...commonBorderWidth, ...commonMBorder, description: '--m-ol-w' },
+}
+
+export const commonPaddingArgTypes = {
+	padding: {...commonPadding, description: '--pd-a'},
+	paddingTop: {...commonPadding, description: '--pd-t'},
+	paddingBottom: {...commonPadding, description: '--pd-b'},
+	paddingLeft: {...commonPadding, description: '--pd-l'},
+	paddingRight: {...commonPadding, description: '--pd-r'},
+	paddingX: {...commonPadding, description: '--pd-x'},
+	paddingY: {...commonPadding, description: '--pd-y'},
+
+	mPadding: {...commonPadding, ...commonMPadding, description: '--m-pd-a'},
+	mPaddingTop: {...commonPadding, ...commonMPadding, description: '--m-pd-t'},
+	mPaddingBottom: {...commonPadding, ...commonMPadding, description: '--m-pd-b'},
+	mPaddingLeft: {...commonPadding, ...commonMPadding, description: '--m-pd-l'},
+	mPaddingRight: {...commonPadding, ...commonMPadding, description: '--m-pd-r'},
+	mPaddingX: {...commonPadding, ...commonMPadding, description: '--m-pd-x'},
+	mPaddingY: {...commonPadding, ...commonMPadding, description: '--m-pd-y'},
 }
 
 export const commonPositionArgTypes = {
@@ -241,21 +255,35 @@ export const commonPositionArgTypes = {
 
 export const commonWidthArgTypes = {
 	width: { ...commonWidth, description: '--w' },
-	height: { ...commonWidth, description: '--h' },
-	mWidth: { ...commonWidth, ...commonMWidth, description: '--m-w' },
-	mHeight: { ...commonWidth, ...commonMWidth, description: '--m-h' }
+
+	mWidth: { ...commonWidth, ...commonMWidth, description: '--m-w' }
+}
+
+export const commonSpacingArgTypes = {
+	...commonMarginArgTypes,
+	...commonPaddingArgTypes
+}
+
+export const commonSizeArgTypes = {
+	...commonWidthArgTypes,
+	...commonHeightArgTypes
+}
+
+export const commonStrokeArgTypes = {
+	...commonBorderArgTypes,
+	...commonOutlineArgTypes
 }
 
 export const commonArgTypes = {
 	...commonBackgroundArgTypes,
-	...commonBorderArgTypes,
+	...commonStrokeArgTypes,
 	...commonDisplayArgTypes,
 	...commonFlexGridArgTypes,
 	...commonFontArgTypes,
-	...commonMarginArgTypes,
+	...commonSpacingArgTypes,
 	...commonOverflowArgTypes,
 	...commonPositionArgTypes,
-	...commonWidthArgTypes
+	...commonSizeArgTypes
 };
 
 // UI
@@ -380,8 +408,8 @@ export const buttonArgTypes = {
 	DisabledBorderColor: { control: 'color', description: '--btn-dis-bd-c', table: { category: 'Style - Disabled' } },
 	DisabledFontColor: { control: 'color', description: '--btn-dis-ft-c', table: { category: 'Style - Disabled' } },
 
-	FontSize: { control: 'text', description: '--btn-ft-s', table: { category: 'Style' } },
-	PaddingX: { control: 'text', description: '--btn-pad-x', table: { category: 'Style' } }
+	FontSize: { control: 'text', description: '--btn-ft-s', table: { category: 'Style - Font' } },
+	PaddingX: { control: 'text', description: '--btn-pad-x', table: { category: 'Style - Spacing' } }
 }
 
 export const buttonArgs = {
@@ -389,6 +417,24 @@ export const buttonArgs = {
 	DesignType: 'btn-type',
 	Disabled: false,
 	Ellipsis: false
+}
+
+export const chipArgTypes = {
+	BackgroundColor: { control: 'color', description: '--chip-bg-c', table: { category: 'Style - Background' } },
+
+	BorderColor: { control: 'color', description: '--chip-bd-c', table: { category: 'Style - Border' } },
+	BorderRadius: { control: 'text', description: '--chip-bd-r', table: { category: 'Style - Border' } },
+
+	Width: { control: 'text', description: '--chip-w', table: { category: 'Style - Size' } },
+	Height: { control: 'text', description: '--chip-h', table: { category: 'Style - Size' } },
+
+	FontSize: { control: 'text', description: '--chip-ft-s', table: { category: 'Style - Font' } },
+	Color: { control: 'color', description: '--chip-ft-c', table: { category: 'Style - Font' } },
+
+	PaddingX: { control: 'text', description: '--chip-pd-x', table: { category: 'Style - Spacing' } }
+}
+
+export const chipArgs = {
 }
 
 // Util

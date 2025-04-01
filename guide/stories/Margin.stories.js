@@ -1,11 +1,11 @@
 import { Margin } from './Margin';
-import { commonMarginArgTypes } from './commonStories';
+import { commonSpacingArgTypes } from './commonStories';
 
 export default {
 	title: 'Global/Margin&Padding',
 	tags: ['autodocs'],
 	render: (args) => Margin(args),
-	argTypes: commonMarginArgTypes,
+	argTypes: commonSpacingArgTypes,
 };
 
 export const Default = {};
