@@ -24,10 +24,23 @@ function mountVueToRoot(args = {}, mountId = 'root-inner') {
 	const { createApp } = Vue;
 	const app = createApp({ template: args.template });
 
+	// Accordion
 	app.component('p-aco', PrimeVue.Accordion);
 	app.component('p-aco-item', PrimeVue.AccordionPanel);
 	app.component('p-aco-head', PrimeVue.AccordionHeader);
 	app.component('p-aco-cont', PrimeVue.AccordionContent);
+
+	// Form
+	app.component('p-autocomplete', PrimeVue.AutoComplete);
+	app.component('p-cascade-select', PrimeVue.CascadeSelect);
+	app.component('p-color-picker', PrimeVue.ColorPicker);
+	app.component('p-date-picker', PrimeVue.DatePicker);
+	app.component('p-file', PrimeVue.FileUpload);
+	app.component('p-float-label', PrimeVue.FloatLabel);
+	app.component('p-input', PrimeVue.InputText);
+	app.component('p-msg', PrimeVue.Message);
+	app.component('p-select', PrimeVue.Select);
+	app.component('p-tarea', PrimeVue.Textarea);
 
 	app.use(PrimeVue.Config, { theme: 'none' });
 	app.mount(root);

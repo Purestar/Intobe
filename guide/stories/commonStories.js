@@ -474,6 +474,91 @@ export const checkboxArgs = {
 	Cont: 'Label'
 }
 
+// Form - Input
+export const inputArgTypes = {
+	Placeholder: { control: 'text', table: { category: 'Design' } },
+	Readonly: { control: 'boolean', table: { category: 'Action' } },
+	Disabled: { control: 'boolean', table: { category: 'Action' } },
+
+	/*Multiple: { control: 'boolean', description: '여러개 열림', table: { category: 'Action' } },
+	Opened: { control: 'boolean', table: { category: 'Action' } },
+	Slide: { control: 'boolean', description: '슬라이드 애니메이션', table: { category: 'Action' } },
+
+	Disabled: { control: 'boolean', description: '비활성화', table: { category: 'Design' } },
+	Ellipsis: { control: 'boolean', description: '말줄임', table: { category: 'Design' } },
+	HeadReverse: { control: 'boolean', description: '헤더 정렬 반전', table: { category: 'Design' } },
+	Icon: { control: 'boolean', description: '아이콘', table: { category: 'Design' } },
+	QnA: { control: 'boolean', description: 'Q&A', table: { category: 'Design' } },
+	Scroll: { control: 'inline-radio', options: ['off', 'scroll', 'scrollFix'], table: { category: 'Design' } },
+	QuestionText: { control: 'text', description: '질문 접두어', table: { category: 'Design' } },
+	AnswerText: { control: 'text', description: '답변 접두어', table: { category: 'Design' } },*/
+}
+
+export const inputArgs = {
+	Readonly: false,
+	Disabled: false
+	/*Ellipsis: false,
+	HeadReverse: false,
+	Icon: false,
+	Multiple: false,
+	Opened: false,
+	QnA: false,
+	Slide: false,
+	Disabled: false,
+	Scroll: 'off',
+	QuestionText: '',
+	AnswerText: ''*/
+}
+
+export const getInputTemplate = (args, mountId) => {
+	/*const itemTemplate = (index, args) => `
+		<p-aco-item class="aco-item" ${args.Disabled ? 'disabled ' : ''}value="${index}">
+			<p-aco-head class="aco-head">
+				${args.QnA ? '<div class="aco-head-inner">' : ''}
+					${args.Ellipsis ? '<p class="layout-ellipsis">' : ''}아코디언 제목 ${index}${args.Ellipsis ? '</p>' : ''}
+				${args.QnA ? '</div>' : ''}
+				${args.Icon ? '<i class="aco-icon"></i>' : ''}
+			</p-aco-head>
+			<p-aco-cont class="aco-cont">내용 ${index}</p-aco-cont>
+		</p-aco-item>
+	`;*/
+
+	const styleString = [
+		/*args.Ellipsis ? '--w:80px;' : '',
+		args.Scroll !== undefined && args.Scroll !== 'off' ? '--h:50px;' : '',
+		args.QuestionText ? `--aco-txt-q:"${args.QuestionText}";` : '',
+		args.AnswerText ? `--aco-txt-a:"${args.AnswerText}";` : ''*/
+	].filter(Boolean).join(' ');
+
+	const attributeList = [
+		args.Placeholder ? `placeholder='${args.Placeholder}'` : '',
+		args.Readonly ? 'readonly' : '',
+		args.Disabled ? 'disabled' : '',
+		args.FloatLabel ? 'data-float-label' : '',
+		/*
+		args.Multiple ? 'multiple' : '',
+		args.Opened ? `value="1"` : '',
+		args.QnA ? 'data-qna' : '',
+		args.Slide ? 'data-slide' : '',
+		args.Scroll === 'scrollFix' ? 'data-head-fix' : '',
+		styleString ? `style='${styleString}'` : ''*/
+	].filter(Boolean).join(' ');
+
+	//${generateMarkup(3, itemTemplate, args)}
+	const template = `
+		<div class="form-txt">
+			<p-input ${attributeList}></p-input>
+		</div>
+	`;
+
+	return prettifyHTML(template);
+};
+
+export const inputTemplate = (args) => {
+	const template = getInputTemplate(args);
+	return UI({ ...args, template });
+};
+
 // Util
 const log = (...args) => { console.log(...args); };
 
@@ -485,6 +570,21 @@ export const createStaticStory = (name, args) => {
 		docs: {
 			source: {
 				code: getAccordionTemplate(args),
+				language: 'html'
+			}
+		}
+	};
+	return story;
+}
+
+export const createInputStory = (name, args) => {
+	const story = (args) => inputTemplate(args);
+	story.args = args;
+
+	story.parameters = {
+		docs: {
+			source: {
+				code: getInputTemplate(args),
 				language: 'html'
 			}
 		}
