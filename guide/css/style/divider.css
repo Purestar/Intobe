@@ -1,7 +1,7 @@
 /* Divider */
 	/* Default */
 		[class*="div-"], [class*="div-"] > * {display:flex; gap:var(--div-gap, 0);}
-		[class*="div-"] > * + *:before {content:""; background-color:var(--div-c, black); animation-name:attr(data-ani);}
+		[class*="div-"] > * + *:before {content:""; background-color:var(--div-bg-c, black); animation-name:attr(data-ani); rotate:var(--div-rotate, 0deg);}
 
 	/* Animation */
 		[class*="div-"][data-ani]:hover > * + *:before,
@@ -26,9 +26,9 @@
 
 	/* Arrow */
 		[class*="div-h-arrow"] > * + *:before,
-		[class*="div-v-arrow"] > * + *:before {background:none; border-left:1px solid var(--div-c, black); border-top:1px solid var(--div-c, black); width:var(--div-w, 4px); height:var(--div-w, 4px);}
-		[class*="div-h-arrow"] > * + *:before {rotate:225deg; translate:0 -35%;}
-		[class*="div-v-arrow"] > * + *:before {rotate:135deg; translate:-35% 0;}
+		[class*="div-v-arrow"] > * + *:before {background:none; border-left:1px solid var(--div-bg-c, black); border-top:1px solid var(--div-bg-c, black); width:var(--div-w, 4px); height:var(--div-w, 4px);}
+		[class*="div-h-arrow"] > * + *:before {rotate:var(--div-rotate, 225deg); translate:0 -35%;}
+		[class*="div-v-arrow"] > * + *:before {rotate:var(--div-rotate, 135deg); translate:-35% 0;}
 
 	/* Slash */
 		[class*="div-h-slash"] > * + *:before,
@@ -46,4 +46,4 @@
 		[class*="div-v-cir"] > * + *:before {border-radius:50%;}
 
 		[class*="div-h-dia"] > * + *:before,
-		[class*="div-v-dia"] > * + *:before {rotate:45deg;}
+		[class*="div-v-dia"] > * + *:before {rotate:var(--div-rotate, 45deg);}

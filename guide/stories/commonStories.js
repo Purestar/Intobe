@@ -420,6 +420,9 @@ export const buttonArgs = {
 }
 
 export const chipArgTypes = {
+	Class: { control: 'inline-radio', options: ['chip-type'], description: 'class', table: { category: 'Class' } },
+	Cont: { control: 'text', description: 'DOM', table: { category: 'DOM' } },
+
 	BackgroundColor: { control: 'color', description: '--chip-bg-c', table: { category: 'Style - Background' } },
 
 	BorderColor: { control: 'color', description: '--chip-bd-c', table: { category: 'Style - Border' } },
@@ -435,6 +438,27 @@ export const chipArgTypes = {
 }
 
 export const chipArgs = {
+	Class: 'chip-type',
+	Cont: 'Chip'
+}
+
+export const dividerArgTypes = {
+	Class: { control: 'inline-radio', options: ['div-h', 'div-v', 'div-h-arrow', 'div-v-arrow', 'div-h-slash', 'div-v-slash', 'div-h-cir', 'div-v-cir', 'div-h-squ', 'div-v-squ', 'div-h-dia', 'div-v-dia'], description: 'class', table: { category: 'Class' } },
+	Cont: { control: 'text', description: 'DOM', table: { category: 'DOM' } },
+
+	BackgroundColor: { control: 'color', description: '--div-bg-c', table: { category: 'Style - Background' } },
+
+	Width: { control: 'text', description: '--div-w', table: { category: 'Style - Size' } },
+	Height: { control: 'text', description: '--div-h', table: { category: 'Style - Size' } },
+
+	Gap: { ...commonGap, description: '--div-gap', table: { category: 'Style - Flex' } },
+
+	Rotate: { control: 'text', description: '--div-rotate', table: { category: 'Style - Transform' } },
+}
+
+export const dividerArgs = {
+	Class: 'div-h',
+	Cont: '<div>Item</div><div>Item</div><div>Item</div>'
 }
 
 // Util
