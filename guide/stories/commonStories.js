@@ -476,80 +476,93 @@ export const checkboxArgs = {
 
 // Form - Input
 export const inputArgTypes = {
+	BackgroundColor: { control: 'color', description: '--form-bg-c', table: { category: 'Style - Background' } },
+	BorderColor: { control: 'color', description: '--form-bd-c', table: { category: 'Style - Border' } },
+	BorderFocusColor: { control: 'color', description: '--form-focus-bd-c', table: { category: 'Style - Border' } },
+	BorderRadius: { control: 'text', description: '--form-bd-r', table: { category: 'Style - Border' } },
+
+	DisabledBackgroundColor: { control: 'color', description: '--form-bg-c', table: { category: 'Style - Disabled' } },
+	DisabledBorderColor: { control: 'color', description: '--form-dis-bd-r', table: { category: 'Style - Disabled' } },
+	DisabledFontColor: { control: 'color', description: '--form-dis-ft-c', table: { category: 'Style - Disabled' } },
+
+	FontColor: { control: 'color', description: '--form-ft-c', table: { category: 'Style - Font' } },
+	FontSize: { control: 'text', description: '--form-ft-s', table: { category: 'Style - Font' } },
+
+	Width: { control: 'text', description: '--form-w', table: { category: 'Style - Size' } },
+	Height: { control: 'text', description: '--form-h', table: { category: 'Style - Size' } },
+
+	PaddingX: { control: 'text', description: '--form-pd-x', table: { category: 'Style - Spacing' } },
+
 	Placeholder: { control: 'text', table: { category: 'Design' } },
+	FloatLabel: { control: 'boolean', table: { category: 'Design' } },
+	File: { control: 'boolean', table: { category: 'Design' } },
+	FloatLabelType: { control: 'inline-radio', options: ['over', 'in', 'on' ], table: { category: 'Design' } },
+	Value: { control: 'text', table: { category: 'Design' } },
+
+	AutoComplete: { control: 'boolean', table: { category: 'Action' } },
 	Readonly: { control: 'boolean', table: { category: 'Action' } },
 	Disabled: { control: 'boolean', table: { category: 'Action' } },
-
-	/*Multiple: { control: 'boolean', description: '여러개 열림', table: { category: 'Action' } },
-	Opened: { control: 'boolean', table: { category: 'Action' } },
-	Slide: { control: 'boolean', description: '슬라이드 애니메이션', table: { category: 'Action' } },
-
-	Disabled: { control: 'boolean', description: '비활성화', table: { category: 'Design' } },
-	Ellipsis: { control: 'boolean', description: '말줄임', table: { category: 'Design' } },
-	HeadReverse: { control: 'boolean', description: '헤더 정렬 반전', table: { category: 'Design' } },
-	Icon: { control: 'boolean', description: '아이콘', table: { category: 'Design' } },
-	QnA: { control: 'boolean', description: 'Q&A', table: { category: 'Design' } },
-	Scroll: { control: 'inline-radio', options: ['off', 'scroll', 'scrollFix'], table: { category: 'Design' } },
-	QuestionText: { control: 'text', description: '질문 접두어', table: { category: 'Design' } },
-	AnswerText: { control: 'text', description: '답변 접두어', table: { category: 'Design' } },*/
 }
 
 export const inputArgs = {
+	AutoComplete: false,
 	Readonly: false,
-	Disabled: false
-	/*Ellipsis: false,
-	HeadReverse: false,
-	Icon: false,
-	Multiple: false,
-	Opened: false,
-	QnA: false,
-	Slide: false,
 	Disabled: false,
-	Scroll: 'off',
-	QuestionText: '',
-	AnswerText: ''*/
+	FloatLabel: false,
+	File: false,
 }
 
-export const getInputTemplate = (args, mountId) => {
-	/*const itemTemplate = (index, args) => `
-		<p-aco-item class="aco-item" ${args.Disabled ? 'disabled ' : ''}value="${index}">
-			<p-aco-head class="aco-head">
-				${args.QnA ? '<div class="aco-head-inner">' : ''}
-					${args.Ellipsis ? '<p class="layout-ellipsis">' : ''}아코디언 제목 ${index}${args.Ellipsis ? '</p>' : ''}
-				${args.QnA ? '</div>' : ''}
-				${args.Icon ? '<i class="aco-icon"></i>' : ''}
-			</p-aco-head>
-			<p-aco-cont class="aco-cont">내용 ${index}</p-aco-cont>
-		</p-aco-item>
-	`;*/
-
+export const getInputTemplate = (args) => {
 	const styleString = [
-		/*args.Ellipsis ? '--w:80px;' : '',
-		args.Scroll !== undefined && args.Scroll !== 'off' ? '--h:50px;' : '',
-		args.QuestionText ? `--aco-txt-q:"${args.QuestionText}";` : '',
-		args.AnswerText ? `--aco-txt-a:"${args.AnswerText}";` : ''*/
+		args.BackgroundColor !== undefined && args.BackgroundColor !== '' ? `--form-bg-c:${args.BackgroundColor};` : '',
+		args.BorderColor !== undefined && args.BorderColor !== '' ? `--form-bd-c:${args.BorderColor};` : '',
+		args.BorderFocusColor !== undefined && args.BorderFocusColor !== '' ? `--form-focus-bd-c:${args.BorderFocusColor};` : '',
+		args.BorderRadius !== undefined && args.BorderRadius !== '' ? `--form-bd-r:${args.BorderRadius};` : '',
+
+		args.FontColor !== undefined && args.FontColor !== '' ? `--form-ft-c:${args.FontColor};` : '',
+		args.FontSize !== undefined && args.FontSize !== '' ? `--form-ft-s:${args.FontSize};` : '',
+
+		args.Width !== undefined && args.Width !== '' ? `--form-w:${args.Width};` : '',
+		args.Height !== undefined && args.Height !== '' ? `--form-h:${args.Height};` : '',
+
+		args.PaddingX !== undefined && args.PaddingX !== '' ? `--form-pd-x:${args.PaddingX};` : '',
+
+		args.DisabledBackgroundColor !== undefined && args.DisabledBackgroundColor !== '' ? `--form-dis-bg-c:${args.DisabledBackgroundColor};` : '',
+		args.DisabledBorderColor !== undefined && args.DisabledBorderColor !== '' ? `--form-dis-bd-r:${args.DisabledBorderColor};` : '',
+		args.DisabledFontColor !== undefined && args.DisabledFontColor !== '' ? `--form-dis-ft-c:${args.DisabledFontColor};` : '',
 	].filter(Boolean).join(' ');
 
 	const attributeList = [
-		args.Placeholder ? `placeholder='${args.Placeholder}'` : '',
+		args.Placeholder && !args.FloatLabel ? `placeholder='${args.Placeholder}'` : '',
 		args.Readonly ? 'readonly' : '',
 		args.Disabled ? 'disabled' : '',
-		args.FloatLabel ? 'data-float-label' : '',
-		/*
-		args.Multiple ? 'multiple' : '',
-		args.Opened ? `value="1"` : '',
-		args.QnA ? 'data-qna' : '',
-		args.Slide ? 'data-slide' : '',
-		args.Scroll === 'scrollFix' ? 'data-head-fix' : '',
-		styleString ? `style='${styleString}'` : ''*/
+		args.Value ? `value='${args.Value}'` : '',
 	].filter(Boolean).join(' ');
 
-	//${generateMarkup(3, itemTemplate, args)}
-	const template = `
-		<div class="form-txt">
-			<p-input ${attributeList}></p-input>
-		</div>
-	`;
+	let template = ''
+	if (args.FloatLabel) {
+		template = `
+			<p-float-label class="form-txt" data-float-label="${args.FloatLabelType}" style='${styleString}'>
+				<p-input id="label" ${attributeList}></p-input>
+				<label for="label">Float Label</label>
+			</p-float-label>
+		`;
+	} else if (args.AutoComplete) {
+		template = `
+			<p-autocomplete class="form-txt" ${attributeList} style='${styleString}'></p-autocomplete>
+		`;
+	} else if (args.File) {
+		template = `
+			<em style='--ft-s:30px;'>스타일 작업 전!</em>
+			<p-file class="form-txt-file" ${attributeList} style='${styleString}'></p-file>
+		`;
+	} else {
+		template  = `
+			<div class="form-txt" style='${styleString}'>
+				<p-input ${attributeList}></p-input>
+			</div>
+		`;
+	}
 
 	return prettifyHTML(template);
 };
