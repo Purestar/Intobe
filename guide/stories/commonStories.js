@@ -572,38 +572,55 @@ export const inputTemplate = (args) => {
 	return UI({ ...args, template });
 };
 
+// Form - Picker
+export const pickerArgTypes = {
+	Type: { control: 'inline-radio', options: ['color', 'date'], table: { category: 'Design' } },
+	Inline: { control: 'boolean', table: { category: 'Design' } },
+}
+
+export const pickerArgs = {
+	Type: 'color',
+	Inline: false,
+}
+
+export const getPickerTemplate = (args) => {
+	const attributeList = [
+		args.Inline ? 'inline' : '',
+	].filter(Boolean).join(' ');
+
+	let template = '';
+	if (args.Type === 'color') {
+		template = `<p-color-picker class="form-color" ${attributeList}></p-color-picker>`;
+	} else if (args.Type === 'date') {
+		template = `<p-date-picker class="form-txt-date" ${attributeList} show-icon></p-date-picker>`;
+	}
+
+	return prettifyHTML(template);
+};
+
+export const pickerTemplate = (args) => {
+	const template = getPickerTemplate(args);
+	return UI({ ...args, template });
+};
+
 // Util
 const log = (...args) => { console.log(...args); };
 
-export const createStaticStory = (name, args) => {
-	const story = (args) => accordionTemplate(args);
+export const createTemplateStory = (args, templateFn, getTemplateFn) => {
+	const story = (args) => templateFn(args);
 	story.args = args;
 
 	story.parameters = {
 		docs: {
-			source: {
-				code: getAccordionTemplate(args),
-				language: 'html'
-			}
+			source: { code: getTemplateFn(args), language: 'html' }
 		}
 	};
 	return story;
 }
 
-export const createInputStory = (name, args) => {
-	const story = (args) => inputTemplate(args);
-	story.args = args;
-
-	story.parameters = {
-		docs: {
-			source: {
-				code: getInputTemplate(args),
-				language: 'html'
-			}
-		}
-	};
-	return story;
-}
+export const createAccordionStory = (args) => createTemplateStory(args, accordionTemplate, getAccordionTemplate);
+export const createInputStory = (args) => createTemplateStory(args, inputTemplate, getInputTemplate);
+export const createPickerStory = (args) => createTemplateStory(args, pickerTemplate, getPickerTemplate);
 
 export const prettifyHTML = (html, options = {}) => {
 	const inlineTags = options.inlineTags || ['i'];

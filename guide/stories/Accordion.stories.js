@@ -1,4 +1,4 @@
-import { accordionArgTypes, accordionArgs, accordionTemplate, getAccordionTemplate } from './commonStories';
+import { accordionArgTypes, accordionArgs, accordionTemplate, createAccordionStory } from './commonStories';
 
 export default {
 	title: 'UI/Accordion',
@@ -8,13 +8,4 @@ export default {
 	args: { ...accordionArgs },
 };
 
-export const Default = (args) => accordionTemplate(args);
-Default.args = { ...accordionArgs };
-Default.parameters = {
-	docs: {
-		source: {
-			language: 'html',
-			code: getAccordionTemplate(Default.args)
-		}
-	}
-};
+export const Default = createAccordionStory({ });

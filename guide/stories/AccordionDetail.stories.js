@@ -1,4 +1,4 @@
-import { accordionArgTypes, accordionArgs, accordionTemplate, getAccordionTemplate, createStaticStory } from './commonStories';
+import { accordionArgTypes, accordionTemplate, createAccordionStory } from './commonStories';
 
 export default {
 	title: 'UI/Accordion/Detail',
@@ -7,15 +7,15 @@ export default {
 	argTypes: { ...accordionArgTypes }
 };
 
-export const Ellipsis = createStaticStory('Ellipsis', { Ellipsis: true });
-export const HeadReverse = createStaticStory('HeadReverse', { HeadReverse: true });
-export const Icon = createStaticStory('Icon', { Icon: true });
-export const Multiple = createStaticStory('Multiple', { Multiple: true });
-export const Opened = createStaticStory('Opened', { Opened: true });
-export const QuestionText = createStaticStory('QuestionText', { QnA: true, QuestionText: '질문.' });
-export const AnswerText = createStaticStory('AnswerText', { QnA: true, AnswerText: '답변.' });
-export const Scroll = createStaticStory('Scroll', { Scroll: 'scroll' });
-export const ScrollHeadFix = createStaticStory('ScrollHeadFix', { Scroll: 'scrollFix' });
-export const Slide = createStaticStory('Slide', { Slide: true });
-export const QnA = createStaticStory('QnA', { QnA: true });
-export const Disabled = createStaticStory('Disabled', { Disabled: true });
+export const Ellipsis = createAccordionStory({ Ellipsis: true });
+export const HeadReverse = createAccordionStory({ HeadReverse: true });
+export const Icon = createAccordionStory({ Icon: true });
+export const Multiple = createAccordionStory({ Multiple: true });
+export const Opened = createAccordionStory({ Opened: true });
+export const QuestionText = createAccordionStory({ QnA: true, QuestionText: '질문.' });
+export const AnswerText = createAccordionStory({ QnA: true, AnswerText: '답변.' });
+export const Scroll = createAccordionStory({ Scroll: 'scroll' });
+export const ScrollHeadFix = createAccordionStory({ Scroll: 'scrollFix' });
+export const Slide = createAccordionStory({ Slide: true });
+export const QnA = createAccordionStory({ QnA: true });
+export const Disabled = createAccordionStory({ Disabled: true });
