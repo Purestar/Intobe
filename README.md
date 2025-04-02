@@ -15,4 +15,5 @@ andong - 안동대학교
 youngnam - 영남대학교
 
 ## ETC
+Checkout 후 터미널에서 npm i로 모듈 설치 후 npm run dev, npm run storybook로 서버를 올린 후 확인 가능
 guide - 가이드
