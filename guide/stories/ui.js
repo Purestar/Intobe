@@ -42,6 +42,8 @@ function mountVueToRoot(args = {}, mountId = 'root-inner') {
 	app.component('p-select', PrimeVue.Select);
 	app.component('p-tarea', PrimeVue.Textarea);
 
+	console.log(PrimeVue);
+
 	app.use(PrimeVue.Config, { theme: 'none' });
 	app.mount(root);
 

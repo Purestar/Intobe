@@ -9,6 +9,11 @@ const preview = {
       },
     },
   },
+  docs: {
+    description: {
+      component: '이 컴포넌트는 <option> 태그를 직접 삽입할 수 없고 options 배열로만 구성됩니다',
+    },
+  },
 };
 
 export default preview;
