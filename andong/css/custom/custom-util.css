@@ -15,6 +15,7 @@
 	--n36: 36px;
 	--n40: 40px;
 	--n50: 50px;
+	--n56: 56px;
 	--n60: 60px;
 	--n70: 70px;
 	--n80: 80px;
@@ -214,6 +215,7 @@
 		.mt-32 {margin-top:var(--n32);}
 		.mt-36 {margin-top:var(--n36);}
 		.mt-40 {margin-top:var(--n40);}
+		.mt-56 {margin-top:var(--n56);}
 		.mt-60 {margin-top:var(--n60);}
 		.mt-80 {margin-top:var(--n80);}
 		.mt-100 {margin-top:var(--n100);}
@@ -255,6 +257,7 @@
 		--n36: 5.00vw;
 		--n40: 5.56vw;
 		--n50: 6.67vw;
+		--n56: 7.78vw;
 		--n60: 8.33vw;
 		--n70: 9.72vw;
 		--n80: 11.11vw;

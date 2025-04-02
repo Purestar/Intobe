@@ -54,6 +54,9 @@
 					], "state": "comp" },
 					{ "menu": "FAQ", "src": "./page/faq.html", "state": "comp" },
 					{ "menu": "To-Do-List", "src": "./page/todolist.html", "state": "comp" }
+				], "state": "comp"},
+				{ "id": "추가작업", "submenu": [
+					{ "menu": "1학년진단실시안내", "src": "./page/page1.html", "state": "comp" }
 				], "state": "comp"}
 			],
 			"state": "comp"

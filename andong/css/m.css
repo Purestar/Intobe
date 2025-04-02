@@ -137,7 +137,7 @@
 
 		/* Box */
 			.box-type-01 {border-radius:2.08vw; box-shadow:0 1.11vw 4.58vw rgba(0, 0, 0, 0.08); padding:5.56vw 5.28vw;}
-			.box-type-02 {border-radius:2.50vw; padding:5.56vw;}
+			[class*="box-type-02"] {border-radius:2.50vw; padding:5.56vw;}
 			[class*="box-type-03"] {border-radius:2.50vw; padding:5.56vw;}
 			.box-type-03-01 {padding:5.56vw;}
 			.box-type-04 {border-radius:2.50vw; padding:5.00vw;}
@@ -485,6 +485,7 @@
 				#sub-container {padding:8.33vw 0;}
 				#sub-container > .wrap-inner,
 				#sub-container.wrap-inner {padding-left:5vw; padding-right:5vw;}
+				#sub-container.wrap-center {padding:var(--init-m-wr-side-pd);}
 				#contents .sub-title {gap:3.89vw;}
 
 		/* 로그인 */
@@ -595,6 +596,9 @@
 			.my-major-map-pool-form col:nth-child(1) {width:20vw !important;}
 			.my-major-map-pool-form th {vertical-align:top;}
 			.my-major-map-pool-list .lst-type-02-02 > * {flex-direction:row;}
+
+		/* 기타 */
+			.notice-page-link {width:100%;}
 
 	/* 팝업 */
 		.time-table {border-radius:2.22vw; font-size:2.78vw;}
