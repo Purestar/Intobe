@@ -17,20 +17,3 @@
 
 	/* Disabled */
 		[class*="form-txt"]:has(input:disabled) {background-color:var(--form-dis-bg-c, var(--dis-bg)); border-color:var(--form-dis-bd-r, var(--dis-bdr)); color:var(--form-dis-ft-c, var(--fom-ph)); pointer-events:none; cursor:auto;}
-
-	/* Float Label */
-		[class*="form-txt"][data-pc-name="floatlabel"] {position:relative;}
-		[class*="form-txt"][data-pc-name="floatlabel"] label {
-			position: absolute;
-			left: var(--form-pd-x, var(--fom-pad));
-			top: 50%;
-			transform: translateY(-50%);
-			line-height: 1;
-			transition: var(--trans-dft);
-			cursor: auto;
-		}
-		[class*="form-txt"][data-pc-name="floatlabel"]:has(input:focus, input[value]) label { top: 0; font-size: 0.75em; transform: translateY(-1.2em); }
-		[class*="form-txt"][data-pc-name="floatlabel"][data-float-label="in"] input {padding-top:0.75em;}
-		[class*="form-txt"][data-pc-name="floatlabel"][data-float-label="in"]:has(input:focus, input[value]) label { transform: translateY(0.2em); }
-		[class*="form-txt"][data-pc-name="floatlabel"][data-float-label="on"]:has(input:focus, input[value]) label { background:white; transform: translateY(-0.5em); }
-

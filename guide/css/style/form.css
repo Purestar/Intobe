@@ -3,33 +3,39 @@
 		[class*="form-"] {display:flex; place-items:center; position:relative;}
 		[class*="form-"] > * {flex-shrink:0;}
 		[class*="form-"] input {background:none;}
-		[class*="form-"] .form-icon {display:flex; align-items:center; justify-content:center; position:absolute; right:0; top:0; background-color:white; border-radius:0 var(--fom-br) var(--fom-br) 0; width:calc(var(--fom-h) - 2px); height:calc(var(--fom-h) - 2px);}
-		[class*="form-"] .form-icon:after,
-		[class*="form-"] .form-icon:after {content:""; background-image:var(--ic-c); background-size:var(--bg-sz); z-index:0; cursor:pointer;}
 
-	/* Divide */
-		/*[class*="form-"][divide] {background:none; border:0; padding:0; gap:4px;}
-		[class*="form-"][divide] .form-icon {right:1px; top:1px;}*/
+	/* Float Label */
+		/* Default */
+			.p-floatlabel {position:relative;}
+			.p-floatlabel label {position: absolute; left: var(--form-pd-l, var(--fom-pad)); top: 50%; translate: 0 -50%; line-height: 1; transition: var(--trans-dft); cursor: auto;}
+			.p-floatlabel input:focus + label,
+			.p-floatlabel input.p-filled + label,
+			.p-floatlabel .p-inputwrapper-focus + label,
+			.p-floatlabel .p-inputwrapper-filled + label,
+			.p-floatlabel textarea:focus + label,
+			.p-floatlabel textarea.p-filled + label {top:0; font-size: 0.7em;}
+			.p-floatlabel textarea + label {top:calc(var(--fom-h) / 2);}
 
-	/* Text */
-		/*[class*="form-"] .txt-limit,
-		[class*="form-"] .txt-prefix,
-		[class*="form-"] .txt-suffix {word-break:keep-all; white-space:nowrap;}*/
+		/* Over */
+			.p-floatlabel-over input:focus + label,
+			.p-floatlabel-over input.p-filled + label,
+			.p-floatlabel-over .p-inputwrapper-focus + label,
+			.p-floatlabel-over .p-inputwrapper-filled + label,
+			.p-floatlabel-over textarea:focus + label,
+			.p-floatlabel-over textarea.p-filled + label { transform: translateY(-1em); }
 
-	/* Validation */
-		/*[class*="form-"]:not([divide]).valid,
-		[class*="form-"][divide].valid input {background:var(--valid-bg); border-color:var(--valid-bdr) !important;}
-		[class*="form-"]:not([divide]).invalid,
-		[class*="form-"][divide].invalid input,
-		[class*="form-"] .form-inner.invalid .form-top,
-		[class*="form-"][divide].invalid textarea {background:var(--invalid-bg); border-color:var(--invalid-bdr) !important;} {background:var(--invalid-bg); border-color:var(--invalid-bdr) !important;}
-		.form-pass-txt, .form-err-txt {display:none;}
-		[class*="form-"].focused + .form-pass-txt,
-		[class*="form-"].focused + .form-err-txt {display:block;}
-		.form-pass-txt {color:var(--valid-bdr);}
-		.form-err-txt {color:var(--invalid-bdr);}*/
+		/* In */
+			.p-floatlabel-in input:focus + label,
+			.p-floatlabel-in input.p-filled + label,
+			.p-floatlabel-in .p-inputwrapper-focus + label,
+			.p-floatlabel-in .p-inputwrapper-filled + label,
+			.p-floatlabel-in textarea:focus + label,
+			.p-floatlabel-in textarea.p-filled + label { transform: translateY(0.7em); }
 
-	/* Disabled & Readonly */
-		/*[class*="form-"][disabled],
-		[class*="form-"][readonly] {pointer-events:none;}
-		[class*="form-"][disabled] .form-icon {background:none;}*/
+		/* On */
+			.p-floatlabel-on input:focus + label,
+			.p-floatlabel-on input.p-filled + label,
+			.p-floatlabel-on .p-inputwrapper-focus + label,
+			.p-floatlabel-on .p-inputwrapper-filled + label,
+			.p-floatlabel-on textarea:focus + label,
+			.p-floatlabel-on textarea.p-filled + label { background:white; transform: translateY(-0.1em); }

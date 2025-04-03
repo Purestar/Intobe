@@ -31,8 +31,6 @@
 				{ "menu": "Layout", "src": "./guide/layout.html", "state": "comp" },
 				{ "id": "UI", "submenu": [
 					{ "id": "Form", "submenu": [
-						{ "menu": "Picker", "src": "./guide/ui-picker.html", "state": "comp" },
-						{ "menu": "Select(Combo)", "src": "./guide/ui-select.html", "state": "comp" },
 						{ "menu": "Textarea", "src": "./guide/ui-tarea.html", "state": "comp" }
 					], "state": "comp"},
 					{ "menu": "Icon", "src": "./guide/ui-icon.html", "state": "" },

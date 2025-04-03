@@ -26,26 +26,6 @@
 		[class*="form-sel"] > .p-cascadeselect-dropdown svg,
 		[class*="form-float-sel"] .p-select-dropdown svg {display:none;}
 
-	/* Float Label */
-		[class*="form-float-sel"] {position:relative;}
-		[class*="form-float-sel"] .p-select {place-items:center;}
-		[class*="form-float-sel"] label {
-			position: absolute;
-			left: var(--form-pd-l, var(--fom-pad));
-			top: 50%;
-			transform: translateY(-50%);
-			line-height: 1;
-			transition: var(--trans-dft);
-			cursor: auto;
-		}
-		[class*="form-float-sel"] .p-select {display:flex; place-content:space-between; width:100%;}
-		[class*="form-float-sel"] .p-select.p-focus + label,
-		[class*="form-float-sel"] .p-inputwrapper-filled + label { top: 0; font-size: 0.75em; transform: translateY(-1.2em); }
-		[class*="form-float-sel"].p-floatlabel-in .p-select.p-focus + label,
-		[class*="form-float-sel"].p-floatlabel-in .p-inputwrapper-filled + label { transform: translateY(0.2em); }
-		[class*="form-float-sel"].p-floatlabel-on .p-select.p-focus + label,
-		[class*="form-float-sel"].p-floatlabel-on .p-inputwrapper-filled + label { background:white; transform: translateY(-0.5em); }
-
 	/* Icon */
 		[class*="form-sel"] > .p-select-dropdown:after,
 		[class*="form-sel"] > .p-cascadeselect-dropdown:after,

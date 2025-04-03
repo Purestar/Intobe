@@ -541,7 +541,7 @@ export const getInputTemplate = (args) => {
 	let template = ''
 	if (args.FloatLabel) {
 		template = `
-			<p-float-label class="form-txt" data-float-label="${args.FloatLabelType}" style='${styleString}'>
+			<p-float-label class="form-txt" variant="${args.FloatLabelType}" style='${styleString}'>
 				<p-input id="label" ${attributeList}></p-input>
 				<label for="label">Float Label</label>
 			</p-float-label>
@@ -736,8 +736,6 @@ export const getSelectTemplate = (args) => {
 		args.DisabledBackgroundColor !== undefined && args.DisabledBackgroundColor !== '' ? `--form-dis-bg-c:${args.DisabledBackgroundColor};` : '',
 		args.DisabledBorderColor !== undefined && args.DisabledBorderColor !== '' ? `--form-dis-bd-r:${args.DisabledBorderColor};` : '',
 		args.DisabledFontColor !== undefined && args.DisabledFontColor !== '' ? `--form-dis-ft-c:${args.DisabledFontColor};` : '',
-
-		args.ListPaddingX !== undefined && args.ListPaddingX !== '' ? `--form-lst-pd-x:${args.ListPaddingX};` : '',
 	].filter(Boolean).join(' ');
 
 	const attributeList = [
@@ -754,8 +752,8 @@ export const getSelectTemplate = (args) => {
 	let template = ``;
 	if (args.FloatLabel) {
 		template = `
-			<p-float-label class="form-float-sel" variant="${args.FloatLabelType}" :options="${pubSelectListTest}" style='${styleString}'>
-				<p-select input-id="label" ${attributeList}></p-select>
+			<p-float-label variant="${args.FloatLabelType}" style='${styleString}'>
+				<p-select input-id="label" ${attributeList} :options="${pubSelectListTest}"></p-select>
 				<label for="label">Label</label>
 			</p-float-label>
 		`;
@@ -772,6 +770,96 @@ export const getSelectTemplate = (args) => {
 
 export const selectTemplate = (args) => {
 	const template = getSelectTemplate(args);
+	return UI({ ...args, template });
+};
+
+// Form - Textarea
+export const tareaArgTypes = {
+	BackgroundColor: { control: 'color', description: '--form-bg-c', table: { category: 'Style - Background' } },
+	BorderColor: { control: 'color', description: '--form-bd-c', table: { category: 'Style - Border' } },
+	BorderFocusColor: { control: 'color', description: '--form-focus-bd-c', table: { category: 'Style - Border' } },
+	BorderRadius: { control: 'text', description: '--form-bd-r', table: { category: 'Style - Border' } },
+
+	DisabledBackgroundColor: { control: 'color', description: '--form-bg-c', table: { category: 'Style - Disabled' } },
+	DisabledBorderColor: { control: 'color', description: '--form-dis-bd-c', table: { category: 'Style - Disabled' } },
+	DisabledFontColor: { control: 'color', description: '--form-dis-ft-c', table: { category: 'Style - Disabled' } },
+
+	FontColor: { control: 'color', description: '--form-ft-c', table: { category: 'Style - Font' } },
+	FontSize: { control: 'text', description: '--form-ft-s', table: { category: 'Style - Font' } },
+
+	Width: { control: 'text', description: '--form-w', table: { category: 'Style - Size' } },
+	Height: { control: 'text', description: '--form-h', table: { category: 'Style - Size' } },
+
+	PaddingX: { control: 'text', description: '--form-pd-x', table: { category: 'Style - Spacing' } },
+	PaddingY: { control: 'text', description: '--form-pd-y', table: { category: 'Style - Spacing' } },
+
+	Placeholder: { control: 'text', table: { category: 'Design' } },
+	FloatLabel: { control: 'boolean', table: { category: 'Design' } },
+	FloatLabelType: { control: 'inline-radio', options: ['over', 'in', 'on' ], table: { category: 'Design' } },
+
+	Disabled: { control: 'boolean', table: { category: 'Action' } },
+	AutoResize: { control: 'boolean', table: { category: 'Action' } },
+}
+
+export const tareaArgs = {
+	AutoResize: false,
+	Disabled: false,
+	FloatLabel: false,
+}
+
+export const getTareaTemplate = (args) => {
+	const styleString = [
+		args.BackgroundColor !== undefined && args.BackgroundColor !== '' ? `--form-bg-c:${args.BackgroundColor};` : '',
+		args.BorderColor !== undefined && args.BorderColor !== '' ? `--form-bd-c:${args.BorderColor};` : '',
+		args.BorderFocusColor !== undefined && args.BorderFocusColor !== '' ? `--form-focus-bd-c:${args.BorderFocusColor};` : '',
+		args.BorderRadius !== undefined && args.BorderRadius !== '' ? `--form-bd-r:${args.BorderRadius};` : '',
+
+		args.FontColor !== undefined && args.FontColor !== '' ? `--form-ft-c:${args.FontColor};` : '',
+		args.FontSize !== undefined && args.FontSize !== '' ? `--form-ft-s:${args.FontSize};` : '',
+
+		args.Width !== undefined && args.Width !== '' ? `--form-w:${args.Width};` : '',
+		args.Height !== undefined && args.Height !== '' ? `--form-h:${args.Height};` : '',
+
+		args.PaddingX !== undefined && args.PaddingX !== '' ? `--form-pd-x:${args.PaddingX};` : '',
+		args.PaddingY !== undefined && args.PaddingY !== '' ? `--form-pd-y:${args.PaddingY};` : '',
+
+		args.DisabledBackgroundColor !== undefined && args.DisabledBackgroundColor !== '' ? `--form-dis-bg-c:${args.DisabledBackgroundColor};` : '',
+		args.DisabledBorderColor !== undefined && args.DisabledBorderColor !== '' ? `--form-dis-bd-c:${args.DisabledBorderColor};` : '',
+		args.DisabledFontColor !== undefined && args.DisabledFontColor !== '' ? `--form-dis-ft-c:${args.DisabledFontColor};` : '',
+	].filter(Boolean).join(' ');
+
+	const attributeList = [
+		args.Placeholder && !args.FloatLabel ? `placeholder='${args.Placeholder}'` : '',
+		args.Disabled ? 'disabled' : '',
+		args.AutoResize ? 'autoResize' : '',
+	].filter(Boolean).join(' ');
+
+	const attributeWrapList = [
+		`class="form-tarea"`,
+		args.Disabled ? 'data-disabled' : '',
+	].filter(Boolean).join(' ');
+
+	let template = ``;
+	if (args.FloatLabel) {
+		template = `
+			<p-float-label ${attributeWrapList} variant="${args.FloatLabelType}" style='${styleString}'>
+				<p-tarea input-id="label" ${attributeList}></p-tarea>
+				<label for="label">Label</label>
+			</p-float-label>
+		`;
+	} else {
+		template  = `
+			<div ${attributeWrapList} style='${styleString}'>
+				<p-tarea ${attributeList} value="asd"></p-tarea>
+			</div>
+		`;
+	}
+
+	return prettifyHTML(template);
+};
+
+export const tareaTemplate = (args) => {
+	const template = getTareaTemplate(args);
 	return UI({ ...args, template });
 };
 
@@ -794,6 +882,7 @@ export const createAccordionStory = (args) => createTemplateStory(args, accordio
 export const createInputStory = (args) => createTemplateStory(args, inputTemplate, getInputTemplate);
 export const createPickerStory = (args) => createTemplateStory(args, pickerTemplate, getPickerTemplate);
 export const createSelectStory = (args) => createTemplateStory(args, selectTemplate, getSelectTemplate);
+export const createTareaStory = (args) => createTemplateStory(args, tareaTemplate, getTareaTemplate);
 
 export const prettifyHTML = (html, options = {}) => {
 	const inlineTags = options.inlineTags || ['i'];
