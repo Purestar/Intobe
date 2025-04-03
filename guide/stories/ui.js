@@ -22,7 +22,24 @@ function mountVueToRoot(args = {}, mountId = 'root-inner') {
 	if (!root || !window.Vue || !window.PrimeVue) return;
 
 	const { createApp } = Vue;
-	const app = createApp({ template: args.template });
+	const app = createApp({
+		template: args.template,
+		data() {
+			return {
+				popups: { }
+			};
+		},
+		methods: {
+			// 팝업 이름(popupId)을 받아 해당 상태를 토글
+			togglePopup(popupId) {
+				// 만약 해당 팝업 상태가 정의되어 있지 않다면 false로 초기화
+				if (this.popups[popupId] === undefined) {
+					this.popups[popupId] = false;
+				}
+				this.popups[popupId] = !this.popups[popupId];
+			}
+		}
+	});
 
 	// Accordion
 	app.component('p-aco', PrimeVue.Accordion);
@@ -41,6 +58,9 @@ function mountVueToRoot(args = {}, mountId = 'root-inner') {
 	app.component('p-msg', PrimeVue.Message);
 	app.component('p-select', PrimeVue.Select);
 	app.component('p-tarea', PrimeVue.Textarea);
+
+	// Popup
+	app.component('p-popup', PrimeVue.Dialog);
 
 	console.log(PrimeVue);
 

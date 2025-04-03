@@ -1,9 +1,4 @@
-
-
 /* Textarea */
-	/*textarea {font-size:var(--fom-fs); color:var(--fom-fc); resize:none;}
-	textarea::placeholder {color:var(--fom-ph);}
-	textarea[disabled] {background:var(--dis-bg);}*/
 	[class*="form-tarea"] {display:flex; background-color:var(--form-bg-c, var(--fom-bg)); border:1px solid var(--form-bd-c, var(--fom-bdr-c)); border-radius:var(--form-bd-r, var(--fom-br)); width:var(--form-w, 100%); min-height:var(--form-h, var(--fom-ta-h)); padding:var(--form-pd-y, var(--fom-pad)) var(--form-pd-x, var(--fom-pad)); font-size:var(--form-ft-s, var(--fom-fs)); font-weight:400; line-height:var(--fom-opt-sz); color:var(--form-ft-c, var(--fom-fc)); transition:border-color .3s ease;}
 	[class*="form-tarea"] textarea {min-height:calc(var(--form-h, var(--fom-ta-h)) - (var(--fom-pad) * 2));}
 	[class*="form-tarea"]:hover {border-color:var(--form-focus-bd-c, var(--moc)); transition:border-color .3s ease;}

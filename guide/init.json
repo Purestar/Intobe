@@ -30,11 +30,7 @@
 				{ "menu": "Animation", "src": "./guide/animation.html", "state": "comp" },
 				{ "menu": "Layout", "src": "./guide/layout.html", "state": "comp" },
 				{ "id": "UI", "submenu": [
-					{ "id": "Form", "submenu": [
-						{ "menu": "Textarea", "src": "./guide/ui-tarea.html", "state": "comp" }
-					], "state": "comp"},
 					{ "menu": "Icon", "src": "./guide/ui-icon.html", "state": "" },
-					{ "menu": "Popup", "src": "./guide/ui-popup.html", "state": "comp" },
 					{ "menu": "Slider(Swiper)", "src": "./guide/ui-slider.html", "state": "" },
 					{ "menu": "Tabs", "src": "./guide/ui-tabs.html", "state": "comp" },
 					{ "menu": "Thumb", "src": "./guide/ui-thumb.html", "state": "" },
