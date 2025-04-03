@@ -604,22 +604,23 @@ export const pickerTemplate = (args) => {
 
 // Form - Select
 export const selectArgTypes = {
-	//BackgroundColor: { control: 'color', description: '--form-bg-c', table: { category: 'Style - Background' } },
-	//BorderColor: { control: 'color', description: '--form-bd-c', table: { category: 'Style - Border' } },
-	//BorderFocusColor: { control: 'color', description: '--form-focus-bd-c', table: { category: 'Style - Border' } },
-	//BorderRadius: { control: 'text', description: '--form-bd-r', table: { category: 'Style - Border' } },
+	BackgroundColor: { control: 'color', description: '--form-bg-c', table: { category: 'Style - Background' } },
+	BorderColor: { control: 'color', description: '--form-bd-c', table: { category: 'Style - Border' } },
+	BorderFocusColor: { control: 'color', description: '--form-focus-bd-c', table: { category: 'Style - Border' } },
+	BorderRadius: { control: 'text', description: '--form-bd-r', table: { category: 'Style - Border' } },
 
-	//DisabledBackgroundColor: { control: 'color', description: '--form-bg-c', table: { category: 'Style - Disabled' } },
-	//DisabledBorderColor: { control: 'color', description: '--form-dis-bd-r', table: { category: 'Style - Disabled' } },
-	//DisabledFontColor: { control: 'color', description: '--form-dis-ft-c', table: { category: 'Style - Disabled' } },
+	DisabledBackgroundColor: { control: 'color', description: '--form-bg-c', table: { category: 'Style - Disabled' } },
+	DisabledBorderColor: { control: 'color', description: '--form-dis-bd-r', table: { category: 'Style - Disabled' } },
+	DisabledFontColor: { control: 'color', description: '--form-dis-ft-c', table: { category: 'Style - Disabled' } },
 
-	//FontColor: { control: 'color', description: '--form-ft-c', table: { category: 'Style - Font' } },
-	//FontSize: { control: 'text', description: '--form-ft-s', table: { category: 'Style - Font' } },
+	FontColor: { control: 'color', description: '--form-ft-c', table: { category: 'Style - Font' } },
+	FontSize: { control: 'text', description: '--form-ft-s', table: { category: 'Style - Font' } },
 
-	//Width: { control: 'text', description: '--form-w', table: { category: 'Style - Size' } },
-	//Height: { control: 'text', description: '--form-h', table: { category: 'Style - Size' } },
+	Width: { control: 'text', description: '--form-w', table: { category: 'Style - Size' } },
+	Height: { control: 'text', description: '--form-h', table: { category: 'Style - Size' } },
 
-	//PaddingX: { control: 'text', description: '--form-pd-x', table: { category: 'Style - Spacing' } },
+	PaddingLeft: { control: 'text', description: '--form-pd-l', table: { category: 'Style - Spacing' } },
+	PaddingRight: { control: 'text', description: '--form-pd-r', table: { category: 'Style - Spacing' } },
 
 	Checkmark: { control: 'boolean', table: { category: 'Design' } },
 	EmptyText: { control: 'text', table: { category: 'Design' } },
@@ -718,22 +719,25 @@ export const getSelectTemplate = (args) => {
 	]`;
 
 	const styleString = [
-		//args.BackgroundColor !== undefined && args.BackgroundColor !== '' ? `--form-bg-c:${args.BackgroundColor};` : '',
-		//args.BorderColor !== undefined && args.BorderColor !== '' ? `--form-bd-c:${args.BorderColor};` : '',
-		//args.BorderFocusColor !== undefined && args.BorderFocusColor !== '' ? `--form-focus-bd-c:${args.BorderFocusColor};` : '',
-		//args.BorderRadius !== undefined && args.BorderRadius !== '' ? `--form-bd-r:${args.BorderRadius};` : '',
+		args.BackgroundColor !== undefined && args.BackgroundColor !== '' ? `--form-bg-c:${args.BackgroundColor};` : '',
+		args.BorderColor !== undefined && args.BorderColor !== '' ? `--form-bd-c:${args.BorderColor};` : '',
+		args.BorderFocusColor !== undefined && args.BorderFocusColor !== '' ? `--form-focus-bd-c:${args.BorderFocusColor};` : '',
+		args.BorderRadius !== undefined && args.BorderRadius !== '' ? `--form-bd-r:${args.BorderRadius};` : '',
 
-		//args.FontColor !== undefined && args.FontColor !== '' ? `--form-ft-c:${args.FontColor};` : '',
-		//args.FontSize !== undefined && args.FontSize !== '' ? `--form-ft-s:${args.FontSize};` : '',
+		args.FontColor !== undefined && args.FontColor !== '' ? `--form-ft-c:${args.FontColor};` : '',
+		args.FontSize !== undefined && args.FontSize !== '' ? `--form-ft-s:${args.FontSize};` : '',
 
-		//args.Width !== undefined && args.Width !== '' ? `--form-w:${args.Width};` : '',
-		//args.Height !== undefined && args.Height !== '' ? `--form-h:${args.Height};` : '',
+		args.Width !== undefined && args.Width !== '' ? `--form-w:${args.Width};` : '',
+		args.Height !== undefined && args.Height !== '' ? `--form-h:${args.Height};` : '',
 
-		//args.PaddingX !== undefined && args.PaddingX !== '' ? `--form-pd-x:${args.PaddingX};` : '',
+		args.PaddingLeft !== undefined && args.PaddingLeft !== '' ? `--form-pd-l:${args.PaddingLeft};` : '',
+		args.PaddingRight !== undefined && args.PaddingRight !== '' ? `--form-pd-r:${args.PaddingRight};` : '',
 
-		//args.DisabledBackgroundColor !== undefined && args.DisabledBackgroundColor !== '' ? `--form-dis-bg-c:${args.DisabledBackgroundColor};` : '',
-		//args.DisabledBorderColor !== undefined && args.DisabledBorderColor !== '' ? `--form-dis-bd-r:${args.DisabledBorderColor};` : '',
-		//args.DisabledFontColor !== undefined && args.DisabledFontColor !== '' ? `--form-dis-ft-c:${args.DisabledFontColor};` : '',
+		args.DisabledBackgroundColor !== undefined && args.DisabledBackgroundColor !== '' ? `--form-dis-bg-c:${args.DisabledBackgroundColor};` : '',
+		args.DisabledBorderColor !== undefined && args.DisabledBorderColor !== '' ? `--form-dis-bd-r:${args.DisabledBorderColor};` : '',
+		args.DisabledFontColor !== undefined && args.DisabledFontColor !== '' ? `--form-dis-ft-c:${args.DisabledFontColor};` : '',
+
+		args.ListPaddingX !== undefined && args.ListPaddingX !== '' ? `--form-lst-pd-x:${args.ListPaddingX};` : '',
 	].filter(Boolean).join(' ');
 
 	const attributeList = [
@@ -759,8 +763,6 @@ export const getSelectTemplate = (args) => {
 		template  = `
 			<p-cascade-select class="form-sel" v-model="${pubSelectList}" :options="${pubSelectListTest02}" option-label="cname" option-group-label="name" :option-group-children="['states', 'cities']" placeholder="Select a City" panel-class="form-panel-cascade" style='${styleString}'></p-cascade-select>
 		`;
-
-		// <p-cascade-select class="form-sel" v-model="pubSelectList" :options="pubSelectListTest02" option-label="cname" option-group-label="name" :option-group-children="['states', 'cities']" placeholder="Select a City" panel-class="form-panel-cascade"></p-cascade-select>
 	} else {
 		template  = `<p-select ${attributeList} :options="${pubSelectListTest}" style='${styleString}'></p-select>`;
 	}
