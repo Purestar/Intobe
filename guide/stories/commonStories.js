@@ -888,15 +888,8 @@ export const popupArgTypes = {
 	FootHeight: { control: 'text', description: '--pop-foot-h', table: { category: 'Style - Size (Foot)' } },
 
 	FootGap: { control: 'text', description: '--pop-foot-gap', table: { category: 'Style - Spacing (Foot)' } },
-	/*PaddingX: { control: 'text', description: '--form-pd-x', table: { category: 'Style - Spacing' } },
-	PaddingY: { control: 'text', description: '--form-pd-y', table: { category: 'Style - Spacing' } },
-
-	Placeholder: { control: 'text', table: { category: 'Design' } },
-
-	FloatLabelType: { control: 'inline-radio', options: ['over', 'in', 'on' ], table: { category: 'Design' } },
-
-	Disabled: { control: 'boolean', table: { category: 'Action' } },
-	AutoResize: { control: 'boolean', table: { category: 'Action' } },*/
+	PaddingX: { control: 'text', description: '--pop-pd-x', table: { category: 'Style - Spacing (Cont)' } },
+	PaddingY: { control: 'text', description: '--pop-pd-y', table: { category: 'Style - Spacing (Cont)' } },
 }
 
 export const popupArgs = {
@@ -921,13 +914,9 @@ export const getPopupTemplate = (args) => {
 		args.HeadMinHeight !== undefined && args.HeadMinHeight !== '' ? `--pop-head-min-h:${args.HeadMinHeight};` : '',
 		args.FootHeight !== undefined && args.FootHeight !== '' ? `--pop-foot-h:${args.FootHeight};` : '',
 
+		args.PaddingX !== undefined && args.PaddingX !== '' ? `--pop-pd-x:${args.PaddingX};` : '',
+		args.PaddingY !== undefined && args.PaddingY !== '' ? `--pop-pd-y:${args.PaddingY};` : '',
 		args.FootGap !== undefined && args.FootGap !== '' ? `--pop-foot-gap:${args.FootGap};` : '',
-		/*args.PaddingX !== undefined && args.PaddingX !== '' ? `--form-pd-x:${args.PaddingX};` : '',
-		args.PaddingY !== undefined && args.PaddingY !== '' ? `--form-pd-y:${args.PaddingY};` : '',
-
-		args.DisabledBackgroundColor !== undefined && args.DisabledBackgroundColor !== '' ? `--form-dis-bg-c:${args.DisabledBackgroundColor};` : '',
-		args.DisabledBorderColor !== undefined && args.DisabledBorderColor !== '' ? `--form-dis-bd-c:${args.DisabledBorderColor};` : '',
-		args.DisabledFontColor !== undefined && args.DisabledFontColor !== '' ? `--form-dis-ft-c:${args.DisabledFontColor};` : '',*/
 	].filter(Boolean).join(' ');
 
 	const attributeList = [
@@ -972,7 +961,7 @@ export const getPopupTemplate = (args) => {
 		</p-popup>
 
 		<button type="button" class="btn-type" @click="togglePopup('anotherPopup')">버튼</button>
-		<p-popup ${anotherPopupAttributeList} ${styleString}>
+		<p-popup ${anotherPopupAttributeList}>
 			<template #header>
 				<h1 class="pop-title">Popup Title</h1>
 			</template>
