@@ -972,9 +972,7 @@ export const getPopupTemplate = (args) => {
 
 		<button type="button" class="btn-type" @click="togglePopup('anotherPopup')">버튼</button>
 		<p-popup ${anotherPopupAttributeList}>
-			<template #header>
-				<h1 class="pop-title">Popup Title</h1>
-			</template>
+			${args.Head ? headTemplate : ''}
 			<div class="pop-cont">
 				<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
 			</div>
@@ -1068,6 +1066,33 @@ export const tabsTemplate = (args) => {
 	return UI({ ...args, template });
 };
 
+// Tooltip
+export const tooltipArgTypes = {
+	Value: { control: 'text', table: { category: 'Tooltip' } },
+}
+export const tooltipArgs = {
+	Value: ""
+}
+export const getTooltipTemplate = (args) => {
+	const styleString = [
+
+	].filter(Boolean).join(' ');
+
+	const attributeList = [
+		`v-tooltip.top="{ value: '${args.Value || `Tooltip`}', class: 't-tip' }"`,
+		`style="${styleString}"`
+	].filter(Boolean).join(' ');
+
+	const template = `<div ${attributeList}>툴팁</div>`;
+
+	return prettifyHTML(template);
+};
+
+export const tooltipTemplate = (args) => {
+	const template = getTooltipTemplate(args);
+	return UI({ ...args, template });
+};
+
 // Util
 const log = (...args) => { console.log(...args); };
 
@@ -1090,6 +1115,7 @@ export const createSelectStory = (args) => createTemplateStory(args, selectTempl
 export const createTareaStory = (args) => createTemplateStory(args, tareaTemplate, getTareaTemplate);
 export const createPopupStory = (args) => createTemplateStory(args, popupTemplate, getPopupTemplate);
 export const createTabsStory = (args) => createTemplateStory(args, tabsTemplate, getTabsTemplate);
+export const createTooltipStory = (args) => createTemplateStory(args, tooltipTemplate, getTooltipTemplate);
 
 export const prettifyHTML = (html, options = {}) => {
 	const inlineTags = options.inlineTags || ['i'];

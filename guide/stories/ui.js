@@ -69,6 +69,9 @@ function mountVueToRoot(args = {}, mountId = 'root-inner') {
 	app.component('p-tab-panels', PrimeVue.TabPanels);
 	app.component('p-tab-panel', PrimeVue.TabPanel);
 
+	// Directive
+	app.directive('tooltip', PrimeVue.Tooltip);
+
 	//console.log(PrimeVue);
 
 	app.use(PrimeVue.Config, { theme: 'none' });
