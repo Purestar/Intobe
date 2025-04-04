@@ -1,13 +1,14 @@
 /* Popup */
 	/* Popup Wrap */
-		[class*="pop-type"] {overflow:hidden; background:white; border:1px solid var(--mc); border-radius:var(--pop-br); width:var(--pop-w); max-height:var(--pop-max-h);}
+		[class*="pop-type"] {overflow:hidden; background:white; border:1px solid var(--pop-bd-c, var(--mc)); border-radius:var(--pop-bd-r, var(--pop-br)); width:var(--pop-w); max-height:var(--pop-max-h);}
+		[class*="pop-type"] > * {flex-shrink:0;}
 
 	/* Popup Header */
-		[class*="pop-type"] .p-dialog-header {position:sticky; left:0; top:0; display:flex; place-content:space-between; background:var(--mc); min-height:var(--pop-hh); padding:10px var(--pop-hh) 10px 30px;}
-		[class*="pop-type"] .p-dialog-header .pop-title {flex:1; text-wrap:wrap;}
+		[class*="pop-type"] .p-dialog-header {position:sticky; left:0; top:0; display:flex; place-content:space-between; place-items:center; background:var(--pop-bg-c, var(--mc)); min-height:var(--pop-head-min-h, var(--pop-hh)); padding:0 0 0 30px;}
+		[class*="pop-type"] .p-dialog-header .pop-title {flex:1; text-wrap:wrap; color:var(--pop-head-ft-c, white); font-size:var(--pop-head-ft-s, 20px);}
 
 	/* Popup Footer */
-		[class*="pop-type"] .p-dialog-footer {display:flex; place-content:center; place-items:center; gap:10px; height:var(--pop-fh); padding-bottom:var(--pop-cont-fpad);}
+		[class*="pop-type"] .p-dialog-footer {display:flex; place-content:center; place-items:center; gap:var(--pop-foot-gap, 12px); height:var(--pop-foot-h, var(--pop-fh)); padding-bottom:var(--pop-cont-fpad);}
 		[class*="pop-type"] .p-dialog-footer [class*="btn-type"] {height:auto;}
 
 	/* Popup Content */
@@ -22,6 +23,6 @@
 		.p-overlay-mask {background:rgba(0, 0, 0, .5);}
 
 	/* Popup Close */
-		[class*="pop-type"] .p-dialog-close-button {display:flex; place-items:center; place-content:center; flex:0 0 var(--pop-hh); position:absolute; right:0; top:0; width:var(--pop-hh); height:var(--pop-hh); text-indent:-1000em;}
+		[class*="pop-type"] .p-dialog-close-button {display:flex; place-items:center; place-content:center; flex:0 0 var(--pop-head-min-h, var(--pop-head-min-h, var(--pop-hh))); width:var(--pop-head-min-h, var(--pop-hh)); height:var(--pop-head-min-h, var(--pop-hh)); text-indent:-1000em;}
 		[class*="pop-type"] .p-dialog-close-button svg {display:none;}
 		[class*="pop-type"] .p-dialog-close-button:before {content:""; background-image:var(--ic-c); background-position:var(--bp-150) var(--bp-250); background-size:var(--bg-sz); width:23px; height:20px;}

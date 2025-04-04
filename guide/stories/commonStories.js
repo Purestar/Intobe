@@ -869,22 +869,26 @@ export const popupArgTypes = {
 	Full: { control: 'boolean', table: { category: 'Design' } },
 	PopupName: { control: 'text', table: { category: 'Popup' } },
 
-	/*BackgroundColor: { control: 'color', description: '--form-bg-c', table: { category: 'Style - Background' } },
-	BorderColor: { control: 'color', description: '--form-bd-c', table: { category: 'Style - Border' } },
-	BorderFocusColor: { control: 'color', description: '--form-focus-bd-c', table: { category: 'Style - Border' } },
+	BackgroundColor: { control: 'color', description: '--form-bg-c', table: { category: 'Style - Background' } },
+	BorderColor: { control: 'color', description: '--pop-bd-c', table: { category: 'Style - Border' } },
+	//BorderFocusColor: { control: 'color', description: '--form-focus-bd-c', table: { category: 'Style - Border' } },
 	BorderRadius: { control: 'text', description: '--form-bd-r', table: { category: 'Style - Border' } },
 
-	DisabledBackgroundColor: { control: 'color', description: '--form-bg-c', table: { category: 'Style - Disabled' } },
+	/*DisabledBackgroundColor: { control: 'color', description: '--form-bg-c', table: { category: 'Style - Disabled' } },
 	DisabledBorderColor: { control: 'color', description: '--form-dis-bd-c', table: { category: 'Style - Disabled' } },
-	DisabledFontColor: { control: 'color', description: '--form-dis-ft-c', table: { category: 'Style - Disabled' } },
+	DisabledFontColor: { control: 'color', description: '--form-dis-ft-c', table: { category: 'Style - Disabled' } },*/
 
-	FontColor: { control: 'color', description: '--form-ft-c', table: { category: 'Style - Font' } },
-	FontSize: { control: 'text', description: '--form-ft-s', table: { category: 'Style - Font' } },
+	HeadFontColor: { control: 'color', description: '--pop-head-ft-c', table: { category: 'Style - Font (head)' } },
+	HeadFontSize: { control: 'text', description: '--pop-head-ft-s', table: { category: 'Style - Font (head)' } },
+	//FontSize: { control: 'text', description: '--form-ft-s', table: { category: 'Style - Font' } },
 
-	Width: { control: 'text', description: '--form-w', table: { category: 'Style - Size' } },
-	Height: { control: 'text', description: '--form-h', table: { category: 'Style - Size' } },
+	Width: { control: 'text', description: '--pop-w', table: { category: 'Style - Size' } },
+	MaxHeight: { control: 'text', description: '--pop-max-h', table: { category: 'Style - Size' } },
+	HeadMinHeight: { control: 'text', description: '--pop-head-min-h', table: { category: 'Style - Size (Head)' } },
+	FootHeight: { control: 'text', description: '--pop-foot-h', table: { category: 'Style - Size (Foot)' } },
 
-	PaddingX: { control: 'text', description: '--form-pd-x', table: { category: 'Style - Spacing' } },
+	FootGap: { control: 'text', description: '--pop-foot-gap', table: { category: 'Style - Spacing (Foot)' } },
+	/*PaddingX: { control: 'text', description: '--form-pd-x', table: { category: 'Style - Spacing' } },
 	PaddingY: { control: 'text', description: '--form-pd-y', table: { category: 'Style - Spacing' } },
 
 	Placeholder: { control: 'text', table: { category: 'Design' } },
@@ -903,7 +907,27 @@ export const popupArgs = {
 
 export const getPopupTemplate = (args) => {
 	const styleString = [
+		args.BackgroundColor !== undefined && args.BackgroundColor !== '' ? `--pop-bg-c:${args.BackgroundColor};` : '',
+		args.BorderColor !== undefined && args.BorderColor !== '' ? `--pop-bd-c:${args.BorderColor};` : '',
+		args.BorderRadius !== undefined && args.BorderRadius !== '' ? `--pop-bd-r:${args.BorderRadius};` : '',
 
+		args.HeadFontColor !== undefined && args.HeadFontColor !== '' ? `--pop-head-ft-c:${args.HeadFontColor};` : '',
+		args.HeadFontSize !== undefined && args.HeadFontSize !== '' ? `--pop-head-ft-s:${args.HeadFontSize};` : '',
+		//args.FontColor !== undefined && args.FontColor !== '' ? `--form-ft-c:${args.FontColor};` : '',
+		//args.FontSize !== undefined && args.FontSize !== '' ? `--form-ft-s:${args.FontSize};` : '',
+
+		args.Width !== undefined && args.Width !== '' ? `--pop-w:${args.Width};` : '',
+		args.MaxHeight !== undefined && args.MaxHeight !== '' ? `--pop-max-h:${args.MaxHeight};` : '',
+		args.HeadMinHeight !== undefined && args.HeadMinHeight !== '' ? `--pop-head-min-h:${args.HeadMinHeight};` : '',
+		args.FootHeight !== undefined && args.FootHeight !== '' ? `--pop-foot-h:${args.FootHeight};` : '',
+
+		args.FootGap !== undefined && args.FootGap !== '' ? `--pop-foot-gap:${args.FootGap};` : '',
+		/*args.PaddingX !== undefined && args.PaddingX !== '' ? `--form-pd-x:${args.PaddingX};` : '',
+		args.PaddingY !== undefined && args.PaddingY !== '' ? `--form-pd-y:${args.PaddingY};` : '',
+
+		args.DisabledBackgroundColor !== undefined && args.DisabledBackgroundColor !== '' ? `--form-dis-bg-c:${args.DisabledBackgroundColor};` : '',
+		args.DisabledBorderColor !== undefined && args.DisabledBorderColor !== '' ? `--form-dis-bd-c:${args.DisabledBorderColor};` : '',
+		args.DisabledFontColor !== undefined && args.DisabledFontColor !== '' ? `--form-dis-ft-c:${args.DisabledFontColor};` : '',*/
 	].filter(Boolean).join(' ');
 
 	const attributeList = [
@@ -948,7 +972,7 @@ export const getPopupTemplate = (args) => {
 		</p-popup>
 
 		<button type="button" class="btn-type" @click="togglePopup('anotherPopup')">버튼</button>
-		<p-popup ${anotherPopupAttributeList}>
+		<p-popup ${anotherPopupAttributeList} ${styleString}>
 			<template #header>
 				<h1 class="pop-title">Popup Title</h1>
 			</template>
