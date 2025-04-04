@@ -2,11 +2,12 @@
 	[class*="tab-wrap"] {display:flex; flex-direction:column;}
 	[class*="tab-wrap"] .p-tablist-nav-button {display:flex;}
 	[class*="tab-wrap"] .p-tablist-nav-button svg {display:none;}
-	[class*="tab-wrap"] .p-tablist-nav-button:before {content:""; border-left:1px solid var(--div-c, black); border-top:1px solid var(--div-c, black); width:10px; height:10px;}
+	[class*="tab-wrap"] .p-tablist-nav-button:before {content:""; border-left:1px solid var(--bg-c, black); border-top:1px solid var(--bg-c, black); width:10px; height:10px;}
 	[class*="tab-wrap"] .p-tablist-prev-button:before {rotate:315deg;}
 	[class*="tab-wrap"] .p-tablist-next-button:before {rotate:135deg;}
 
-	[class*="tab-menu"] {display:flex; gap:4px; position:relative; place-items:center;}
+	[class*="tab-menu"] {display:flex; position:relative; place-items:center;}
 	[class*="tab-menu"] .p-tablist-viewport {overflow-x:auto; overflow-y:hidden; scroll-behavior:smooth; scrollbar-width:none;}
 	[class*="tab-menu"] .p-tablist-tab-list {position:relative; display:flex;}
-	[class*="tab-menu"] .p-tablist-tab-list > * {flex:1; white-space:nowrap;}
+	[class*="tab-menu"] .p-tablist-tab-list .p-tab {flex-shrink:0; width:30px; white-space:nowrap;}
+	[class*="tab-menu"] > *:not(.p-tablist-content) {width:30px;}

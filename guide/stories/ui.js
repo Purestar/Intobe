@@ -62,7 +62,14 @@ function mountVueToRoot(args = {}, mountId = 'root-inner') {
 	// Popup
 	app.component('p-popup', PrimeVue.Dialog);
 
-	console.log(PrimeVue);
+	// Tabs
+	app.component('p-tabs', PrimeVue.Tabs);
+	app.component('p-tab-list', PrimeVue.TabList);
+	app.component('p-tab', PrimeVue.Tab);
+	app.component('p-tab-panels', PrimeVue.TabPanels);
+	app.component('p-tab-panel', PrimeVue.TabPanel);
+
+	//console.log(PrimeVue);
 
 	app.use(PrimeVue.Config, { theme: 'none' });
 	app.mount(root);

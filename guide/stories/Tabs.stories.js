@@ -1,7 +1,7 @@
 import { tabsArgTypes, tabsArgs, tabsTemplate, createTabsStory } from './commonStories';
 
 export default {
-	title: 'UI/Form/Textabs',
+	title: 'UI/Tabs',
 	tags: ['autodocs'],
 	render: tabsTemplate,
 	argTypes: { ...tabsArgTypes },
@@ -9,7 +9,5 @@ export default {
 };
 
 export const Default = createTabsStory({ });
-export const Placeholder = createTabsStory({ Placeholder: 'Placeholder' });
-export const AutoResize = createTabsStory({ AutoResize: true });
-export const FloatLabel = createTabsStory({ FloatLabel: true });
-export const Disabled = createTabsStory({ Disabled: true });
+export const Scrollable = createTabsStory({ Scrollable: true });
+export const MenuOnly = createTabsStory({ MenuOnly: true });

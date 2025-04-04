@@ -871,16 +871,12 @@ export const popupArgTypes = {
 
 	BackgroundColor: { control: 'color', description: '--form-bg-c', table: { category: 'Style - Background' } },
 	BorderColor: { control: 'color', description: '--pop-bd-c', table: { category: 'Style - Border' } },
-	//BorderFocusColor: { control: 'color', description: '--form-focus-bd-c', table: { category: 'Style - Border' } },
 	BorderRadius: { control: 'text', description: '--form-bd-r', table: { category: 'Style - Border' } },
-
-	/*DisabledBackgroundColor: { control: 'color', description: '--form-bg-c', table: { category: 'Style - Disabled' } },
-	DisabledBorderColor: { control: 'color', description: '--form-dis-bd-c', table: { category: 'Style - Disabled' } },
-	DisabledFontColor: { control: 'color', description: '--form-dis-ft-c', table: { category: 'Style - Disabled' } },*/
 
 	HeadFontColor: { control: 'color', description: '--pop-head-ft-c', table: { category: 'Style - Font (head)' } },
 	HeadFontSize: { control: 'text', description: '--pop-head-ft-s', table: { category: 'Style - Font (head)' } },
-	//FontSize: { control: 'text', description: '--form-ft-s', table: { category: 'Style - Font' } },
+	FontSize: { control: 'text', description: '--form-ft-s', table: { category: 'Style - Font' } },
+	FontColor: { control: 'color', description: '--pop-ft-c', table: { category: 'Style - Font' } },
 
 	Width: { control: 'text', description: '--pop-w', table: { category: 'Style - Size' } },
 	MaxHeight: { control: 'text', description: '--pop-max-h', table: { category: 'Style - Size' } },
@@ -888,8 +884,8 @@ export const popupArgTypes = {
 	FootHeight: { control: 'text', description: '--pop-foot-h', table: { category: 'Style - Size (Foot)' } },
 
 	FootGap: { control: 'text', description: '--pop-foot-gap', table: { category: 'Style - Spacing (Foot)' } },
-	PaddingX: { control: 'text', description: '--pop-pd-x', table: { category: 'Style - Spacing (Cont)' } },
-	PaddingY: { control: 'text', description: '--pop-pd-y', table: { category: 'Style - Spacing (Cont)' } },
+	PaddingX: { control: 'text', description: '--pop-pd-x', table: { category: 'Style - Spacing' } },
+	PaddingY: { control: 'text', description: '--pop-pd-y', table: { category: 'Style - Spacing' } },
 }
 
 export const popupArgs = {
@@ -906,8 +902,8 @@ export const getPopupTemplate = (args) => {
 
 		args.HeadFontColor !== undefined && args.HeadFontColor !== '' ? `--pop-head-ft-c:${args.HeadFontColor};` : '',
 		args.HeadFontSize !== undefined && args.HeadFontSize !== '' ? `--pop-head-ft-s:${args.HeadFontSize};` : '',
-		//args.FontColor !== undefined && args.FontColor !== '' ? `--form-ft-c:${args.FontColor};` : '',
-		//args.FontSize !== undefined && args.FontSize !== '' ? `--form-ft-s:${args.FontSize};` : '',
+		args.FontColor !== undefined && args.FontColor !== '' ? `--pop-ft-c:${args.FontColor};` : '',
+		args.FontSize !== undefined && args.FontSize !== '' ? `--pop-ft-s:${args.FontSize};` : '',
 
 		args.Width !== undefined && args.Width !== '' ? `--pop-w:${args.Width};` : '',
 		args.MaxHeight !== undefined && args.MaxHeight !== '' ? `--pop-max-h:${args.MaxHeight};` : '',
@@ -983,6 +979,123 @@ export const popupTemplate = (args) => {
 	return UI({ ...args, template });
 };
 
+// Tabs
+export const tabsArgTypes = {
+	/*Modal: { control: 'boolean', table: { category: 'Design' } },
+	Full: { control: 'boolean', table: { category: 'Design' } },
+	PopupName: { control: 'text', table: { category: 'Popup' } },
+
+	BackgroundColor: { control: 'color', description: '--form-bg-c', table: { category: 'Style - Background' } },
+	BorderColor: { control: 'color', description: '--pop-bd-c', table: { category: 'Style - Border' } },
+	BorderRadius: { control: 'text', description: '--form-bd-r', table: { category: 'Style - Border' } },
+
+	HeadFontColor: { control: 'color', description: '--pop-head-ft-c', table: { category: 'Style - Font (head)' } },
+	HeadFontSize: { control: 'text', description: '--pop-head-ft-s', table: { category: 'Style - Font (head)' } },
+	FontSize: { control: 'text', description: '--form-ft-s', table: { category: 'Style - Font' } },
+	FontColor: { control: 'color', description: '--pop-ft-c', table: { category: 'Style - Font' } },
+
+	Width: { control: 'text', description: '--pop-w', table: { category: 'Style - Size' } },
+	MaxHeight: { control: 'text', description: '--pop-max-h', table: { category: 'Style - Size' } },
+	HeadMinHeight: { control: 'text', description: '--pop-head-min-h', table: { category: 'Style - Size (Head)' } },
+	FootHeight: { control: 'text', description: '--pop-foot-h', table: { category: 'Style - Size (Foot)' } },
+
+	FootGap: { control: 'text', description: '--pop-foot-gap', table: { category: 'Style - Spacing (Foot)' } },
+	PaddingX: { control: 'text', description: '--pop-pd-x', table: { category: 'Style - Spacing' } },
+	PaddingY: { control: 'text', description: '--pop-pd-y', table: { category: 'Style - Spacing' } },*/
+}
+
+export const tabsArgs = {
+	/*Modal: false,
+	Full: false,
+	PopupName: 'popup'*/
+}
+
+export const getTabsTemplate = (args) => {
+	const styleString = [
+		/*args.BackgroundColor !== undefined && args.BackgroundColor !== '' ? `--pop-bg-c:${args.BackgroundColor};` : '',
+		args.BorderColor !== undefined && args.BorderColor !== '' ? `--pop-bd-c:${args.BorderColor};` : '',
+		args.BorderRadius !== undefined && args.BorderRadius !== '' ? `--pop-bd-r:${args.BorderRadius};` : '',
+
+		args.HeadFontColor !== undefined && args.HeadFontColor !== '' ? `--pop-head-ft-c:${args.HeadFontColor};` : '',
+		args.HeadFontSize !== undefined && args.HeadFontSize !== '' ? `--pop-head-ft-s:${args.HeadFontSize};` : '',
+		args.FontColor !== undefined && args.FontColor !== '' ? `--pop-ft-c:${args.FontColor};` : '',
+		args.FontSize !== undefined && args.FontSize !== '' ? `--pop-ft-s:${args.FontSize};` : '',
+
+		args.Width !== undefined && args.Width !== '' ? `--pop-w:${args.Width};` : '',
+		args.MaxHeight !== undefined && args.MaxHeight !== '' ? `--pop-max-h:${args.MaxHeight};` : '',
+		args.HeadMinHeight !== undefined && args.HeadMinHeight !== '' ? `--pop-head-min-h:${args.HeadMinHeight};` : '',
+		args.FootHeight !== undefined && args.FootHeight !== '' ? `--pop-foot-h:${args.FootHeight};` : '',
+
+		args.PaddingX !== undefined && args.PaddingX !== '' ? `--pop-pd-x:${args.PaddingX};` : '',
+		args.PaddingY !== undefined && args.PaddingY !== '' ? `--pop-pd-y:${args.PaddingY};` : '',
+		args.FootGap !== undefined && args.FootGap !== '' ? `--pop-foot-gap:${args.FootGap};` : '',*/
+
+		args.Scrollable ? `--w:100px;` : ''
+	].filter(Boolean).join(' ');
+
+	const attributeList = [
+		`class="tab-wrap"`,
+		`style="${styleString}"`,
+		`value="0"`,
+		args.Scrollable ? `scrollable` : ``,
+	].filter(Boolean).join(' ');
+
+	let template = ``;
+	if (args.Scrollable) {
+		template  = `
+			<p-tabs ${attributeList}>
+				<p-tab-list class="tab-menu">
+					<p-tab value="0">1</p-tab>
+					<p-tab value="1">2</p-tab>
+					<p-tab value="2">3</p-tab>
+					<p-tab value="0">4</p-tab>
+					<p-tab value="1">5</p-tab>
+					<p-tab value="2">6</p-tab>
+					<p-tab value="0">7</p-tab>
+					<p-tab value="1">8</p-tab>
+					<p-tab value="2">9</p-tab>
+					<p-tab value="0">10</p-tab>
+				</p-tab-list>
+				<p-tab-panels>
+					<p-tab-panel value="0">1</p-tab-panel>
+					<p-tab-panel value="1">2</p-tab-panel>
+					<p-tab-panel value="2">3</p-tab-panel>
+				</p-tab-panels>
+			</p-tabs>
+		`;
+	} else if (args.MenuOnly) {
+		template  = `
+			<ul class="tab-menu">
+				<li><button type="button">1</button></li>
+				<li><button type="button">2</button></li>
+				<li><button type="button">3</button></li>
+			</ul>
+		`;
+	} else {
+		template  = `
+			<p-tabs ${attributeList}>
+				<p-tab-list class="tab-menu">
+					<p-tab value="0">1</p-tab>
+					<p-tab value="1">2</p-tab>
+					<p-tab value="2">3</p-tab>
+				</p-tab-list>
+				<p-tab-panels>
+					<p-tab-panel value="0">1</p-tab-panel>
+					<p-tab-panel value="1">2</p-tab-panel>
+					<p-tab-panel value="2">3</p-tab-panel>
+				</p-tab-panels>
+			</p-tabs>
+		`;
+	}
+
+	return prettifyHTML(template);
+};
+
+export const tabsTemplate = (args) => {
+	const template = getTabsTemplate(args);
+	return UI({ ...args, template });
+};
+
 // Util
 const log = (...args) => { console.log(...args); };
 
@@ -1004,6 +1117,7 @@ export const createPickerStory = (args) => createTemplateStory(args, pickerTempl
 export const createSelectStory = (args) => createTemplateStory(args, selectTemplate, getSelectTemplate);
 export const createTareaStory = (args) => createTemplateStory(args, tareaTemplate, getTareaTemplate);
 export const createPopupStory = (args) => createTemplateStory(args, popupTemplate, getPopupTemplate);
+export const createTabsStory = (args) => createTemplateStory(args, tabsTemplate, getTabsTemplate);
 
 export const prettifyHTML = (html, options = {}) => {
 	const inlineTags = options.inlineTags || ['i'];
