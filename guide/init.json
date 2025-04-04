@@ -28,11 +28,10 @@
 				{ "menu": "primeVue", "src": "https://primevue.org/", "state": "comp" },
 				{ "menu": "vw calculator", "src": "http://publishing.kr/vw/", "state": "comp" },
 				{ "menu": "Animation", "src": "./guide/animation.html", "state": "comp" },
-				{ "menu": "Layout", "src": "./guide/layout.html", "state": "comp" },
 				{ "id": "UI", "submenu": [
 					{ "menu": "Icon", "src": "./guide/ui-icon.html", "state": "" },
 					{ "menu": "Slider(Swiper)", "src": "./guide/ui-slider.html", "state": "" },
-					{ "menu": "Thumb", "src": "./guide/ui-thumb.html", "state": "" },
+					{ "menu": "Thumb", "src": "./guide/ui-thumb.html", "state": "" }
 				], "state": "work"}
 			],
 			"state": "comp"

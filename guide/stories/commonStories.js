@@ -259,6 +259,31 @@ export const commonPositionArgTypes = {
 	mZindex: { ...commonPosition, ...commonMPosition, control: { type: 'number', min: '-1' }, description: '--m-z-idx' },
 }
 
+export const commonSwiperArgTypes = {
+	// Action
+	autoplay: { control: { type: 'boolean' }, table: { category: 'Action' } },
+	delay: { control: { type: 'number' }, table: { category: 'Action' } },
+	freeMode: { control: { type: 'boolean' }, table: { category: 'Action' } },
+	loop: { control: { type: 'boolean' }, table: { category: 'Action' } },
+
+	// Control
+	navigation: { control: { type: 'text' }, table: { category: 'Control' } },
+	pagenation: { control: { type: 'text' }, table: { category: 'Control' } },
+	pagenationClick: { control: { type: 'boolean' }, table: { category: 'Control' } },
+	pagenationDynamic: { control: { type: 'number', min: 1 }, table: { category: 'Control' } },
+	pagenationType: { control: { type: 'radio' }, options: ['progressbar', 'bullets', 'fraction'], table: { category: 'Control' } },
+	scrollbar: { control: { type: 'text' }, table: { category: 'Control' } },
+
+	// Design
+	centeredSlides: { control: { type: 'boolean' }, table: { category: 'Design' } },
+	direction: { control: { type: 'radio' }, options: ['horizontal', 'vertical'], table: { category: 'Design' } },
+	effect: { control: { type: 'radio' }, options: ['none', 'fade', 'coverflow', 'flip', 'cards'], table: { category: 'Design' } },
+	//grid: { control: { type: 'number', min: 2 }, table: { category: 'Design' } },
+	slidesPerView: { control: { type: 'radio' }, options: ['auto', '2', '3', '4'], table: { category: 'Design' } },
+	spaceBetween: { control: { type: 'number' }, table: { category: 'Design' } },
+	thumbnail: { control: { type: 'boolean' }, table: { category: 'Design' } },
+}
+
 export const commonWidthArgTypes = {
 	width: { ...commonWidth, description: '--w' },
 
