@@ -891,7 +891,9 @@ export const popupArgTypes = {
 export const popupArgs = {
 	Modal: false,
 	Full: false,
-	PopupName: 'popup'
+	PopupName: 'popup',
+	Head: true,
+	Foot: true,
 }
 
 export const getPopupTemplate = (args) => {
@@ -915,28 +917,43 @@ export const getPopupTemplate = (args) => {
 		args.FootGap !== undefined && args.FootGap !== '' ? `--pop-foot-gap:${args.FootGap};` : '',
 	].filter(Boolean).join(' ');
 
-	const attributeList = [
+	const commonAttributeList = [
 		`class="pop-type"`,
 		`style="${styleString}"`,
-		`v-model:visible="popups['${args.PopupName}']"`,
 		args.Modal ? `modal` : ``,
-		args.Full ? `maximizable` : ``
+		args.Full ? `maximizable` : ``,
+		args.Head ? `data-head` : ``,
+		args.Foot ? `data-foot` : ``
+	]
+
+	const attributeList = [
+		...commonAttributeList,
+		`v-model:visible="popups['${args.PopupName}']"`,
 	].filter(Boolean).join(' ');
 
 	const anotherPopupAttributeList = [
-		`class="pop-type"`,
-		`style="${styleString}"`,
+		...commonAttributeList,
 		`v-model:visible="popups['anotherPopup']"`,
-		args.Modal ? `modal` : ``,
-		args.Full ? `maximizable` : ``
 	].filter(Boolean).join(' ');
 
+	const headTemplate = `
+		<template #header>
+			<h1 class="pop-title">Popup Title</h1>
+		</template>
+	`;
+
+	const footTemplate = `
+		<template #footer>
+			<button type="button" class="btn-type-b" data-popup="${args.PopupName}" @click="togglePopup($event.currentTarget.dataset.popup)">취소</button>
+			<button type="button" class="btn-type" data-popup="${args.PopupName}" @click="togglePopup($event.currentTarget.dataset.popup)">확인</button>
+		</template>
+	`
+
 	const template  = `
+		<em style='--ft-s:30px;'>값을 변경 후 팝업을 다시 열어야 적용</em>
 		<button type="button" class="btn-type" @click="togglePopup('${args.PopupName}')">버튼</button>
 		<p-popup ${attributeList}>
-			<template #header>
-				<h1 class="pop-title">Popup Title</h1>
-			</template>
+			${args.Head ? headTemplate : ''}
 			<div class="pop-cont">
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
@@ -950,10 +967,7 @@ export const getPopupTemplate = (args) => {
 
 				<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
 			</div>
-			<template #footer>
-				<button type="button" class="btn-type-b" data-popup="${args.PopupName}" @click="togglePopup($event.currentTarget.dataset.popup)">취소</button>
-				<button type="button" class="btn-type" data-popup="${args.PopupName}" @click="togglePopup($event.currentTarget.dataset.popup)">확인</button>
-			</template>
+			${args.Foot ? footTemplate : ''}
 		</p-popup>
 
 		<button type="button" class="btn-type" @click="togglePopup('anotherPopup')">버튼</button>
@@ -964,12 +978,16 @@ export const getPopupTemplate = (args) => {
 			<div class="pop-cont">
 				<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
 			</div>
-			<template #footer>
-				<button type="button" class="btn-type-b" data-popup="anotherPopup" @click="togglePopup('anotherPopup')">취소</button>
-				<button type="button" class="btn-type" data-popup="anotherPopup" @click="togglePopup('anotherPopup')">확인</button>
-			</template>
+			${args.Foot ? `
+				<template #footer>
+					<button type="button" class="btn-type-b" data-popup="anotherPopup" @click="togglePopup('anotherPopup')">취소</button>
+					<button type="button" class="btn-type" data-popup="anotherPopup" @click="togglePopup('anotherPopup')">확인</button>
+				</template>
+			` : ''}
 		</p-popup>
 	`;
+
+
 
 	return prettifyHTML(template);
 };
@@ -980,56 +998,10 @@ export const popupTemplate = (args) => {
 };
 
 // Tabs
-export const tabsArgTypes = {
-	/*Modal: { control: 'boolean', table: { category: 'Design' } },
-	Full: { control: 'boolean', table: { category: 'Design' } },
-	PopupName: { control: 'text', table: { category: 'Popup' } },
-
-	BackgroundColor: { control: 'color', description: '--form-bg-c', table: { category: 'Style - Background' } },
-	BorderColor: { control: 'color', description: '--pop-bd-c', table: { category: 'Style - Border' } },
-	BorderRadius: { control: 'text', description: '--form-bd-r', table: { category: 'Style - Border' } },
-
-	HeadFontColor: { control: 'color', description: '--pop-head-ft-c', table: { category: 'Style - Font (head)' } },
-	HeadFontSize: { control: 'text', description: '--pop-head-ft-s', table: { category: 'Style - Font (head)' } },
-	FontSize: { control: 'text', description: '--form-ft-s', table: { category: 'Style - Font' } },
-	FontColor: { control: 'color', description: '--pop-ft-c', table: { category: 'Style - Font' } },
-
-	Width: { control: 'text', description: '--pop-w', table: { category: 'Style - Size' } },
-	MaxHeight: { control: 'text', description: '--pop-max-h', table: { category: 'Style - Size' } },
-	HeadMinHeight: { control: 'text', description: '--pop-head-min-h', table: { category: 'Style - Size (Head)' } },
-	FootHeight: { control: 'text', description: '--pop-foot-h', table: { category: 'Style - Size (Foot)' } },
-
-	FootGap: { control: 'text', description: '--pop-foot-gap', table: { category: 'Style - Spacing (Foot)' } },
-	PaddingX: { control: 'text', description: '--pop-pd-x', table: { category: 'Style - Spacing' } },
-	PaddingY: { control: 'text', description: '--pop-pd-y', table: { category: 'Style - Spacing' } },*/
-}
-
-export const tabsArgs = {
-	/*Modal: false,
-	Full: false,
-	PopupName: 'popup'*/
-}
-
+export const tabsArgTypes = { }
+export const tabsArgs = { }
 export const getTabsTemplate = (args) => {
 	const styleString = [
-		/*args.BackgroundColor !== undefined && args.BackgroundColor !== '' ? `--pop-bg-c:${args.BackgroundColor};` : '',
-		args.BorderColor !== undefined && args.BorderColor !== '' ? `--pop-bd-c:${args.BorderColor};` : '',
-		args.BorderRadius !== undefined && args.BorderRadius !== '' ? `--pop-bd-r:${args.BorderRadius};` : '',
-
-		args.HeadFontColor !== undefined && args.HeadFontColor !== '' ? `--pop-head-ft-c:${args.HeadFontColor};` : '',
-		args.HeadFontSize !== undefined && args.HeadFontSize !== '' ? `--pop-head-ft-s:${args.HeadFontSize};` : '',
-		args.FontColor !== undefined && args.FontColor !== '' ? `--pop-ft-c:${args.FontColor};` : '',
-		args.FontSize !== undefined && args.FontSize !== '' ? `--pop-ft-s:${args.FontSize};` : '',
-
-		args.Width !== undefined && args.Width !== '' ? `--pop-w:${args.Width};` : '',
-		args.MaxHeight !== undefined && args.MaxHeight !== '' ? `--pop-max-h:${args.MaxHeight};` : '',
-		args.HeadMinHeight !== undefined && args.HeadMinHeight !== '' ? `--pop-head-min-h:${args.HeadMinHeight};` : '',
-		args.FootHeight !== undefined && args.FootHeight !== '' ? `--pop-foot-h:${args.FootHeight};` : '',
-
-		args.PaddingX !== undefined && args.PaddingX !== '' ? `--pop-pd-x:${args.PaddingX};` : '',
-		args.PaddingY !== undefined && args.PaddingY !== '' ? `--pop-pd-y:${args.PaddingY};` : '',
-		args.FootGap !== undefined && args.FootGap !== '' ? `--pop-foot-gap:${args.FootGap};` : '',*/
-
 		args.Scrollable ? `--w:100px;` : ''
 	].filter(Boolean).join(' ');
 

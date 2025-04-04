@@ -32,10 +32,8 @@
 				{ "id": "UI", "submenu": [
 					{ "menu": "Icon", "src": "./guide/ui-icon.html", "state": "" },
 					{ "menu": "Slider(Swiper)", "src": "./guide/ui-slider.html", "state": "" },
-					{ "menu": "Tabs", "src": "./guide/ui-tabs.html", "state": "comp" },
 					{ "menu": "Thumb", "src": "./guide/ui-thumb.html", "state": "" },
-					{ "menu": "Tooltip", "src": "./guide/ui-tooltip.html", "state": "comp" },
-					{ "menu": "Test", "src": "./guide/ui-test.html", "state": "comp" }
+					{ "menu": "Tooltip", "src": "./guide/ui-tooltip.html", "state": "comp" }
 				], "state": "work"}
 			],
 			"state": "comp"
