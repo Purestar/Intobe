@@ -33,7 +33,6 @@
 					{ "menu": "Icon", "src": "./guide/ui-icon.html", "state": "" },
 					{ "menu": "Slider(Swiper)", "src": "./guide/ui-slider.html", "state": "" },
 					{ "menu": "Thumb", "src": "./guide/ui-thumb.html", "state": "" },
-					{ "menu": "Tooltip", "src": "./guide/ui-tooltip.html", "state": "comp" }
 				], "state": "work"}
 			],
 			"state": "comp"

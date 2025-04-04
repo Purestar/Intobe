@@ -182,6 +182,13 @@ export const commonHeightArgTypes = {
 	mHeight: { ...commonWidth, ...commonMWidth, description: '--m-h' }
 }
 
+export const commonLayoutArgTypes = {
+	Class: { control: 'text' },
+	Style: { control: 'text' },
+	Markup: { control: 'text' },
+	Attribute: { control: 'text' },
+}
+
 export const commonMarginArgTypes = {
 	margin: {...commonMargin, description: '--mg-a'},
 	marginTop: {...commonMargin, description: '--mg-t'},
