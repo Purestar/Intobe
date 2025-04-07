@@ -1,5 +1,6 @@
 import { Swiper } from './Swiper';
 import { commonSwiperArgTypes } from './commonStories';
+import { generateMarkup } from './UI';
 
 export default {
 	title: 'UI/Swiper',
@@ -8,4 +9,8 @@ export default {
 	argTypes: { ...commonSwiperArgTypes },
 };
 
-export const Default = { args: {  }};
+const markup = generateMarkup(5, (index) => `
+	<div class="swiper-slide">Slide ${index}</div>
+`);
+
+export const Default = { args: { Markup: markup }};

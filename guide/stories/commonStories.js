@@ -261,27 +261,41 @@ export const commonPositionArgTypes = {
 
 export const commonSwiperArgTypes = {
 	// Action
-	autoplay: { control: { type: 'boolean' }, table: { category: 'Action' } },
-	delay: { control: { type: 'number' }, table: { category: 'Action' } },
-	freeMode: { control: { type: 'boolean' }, table: { category: 'Action' } },
-	loop: { control: { type: 'boolean' }, table: { category: 'Action' } },
+	Autoplay: { control: { type: 'boolean' }, table: { category: 'Action' } },
+	Delay: { control: { type: 'number' }, table: { category: 'Action' } },
+	FreeMode: { control: { type: 'boolean' }, table: { category: 'Action' } },
+	Loop: { control: { type: 'boolean' }, table: { category: 'Action' } },
 
 	// Control
-	navigation: { control: { type: 'text' }, table: { category: 'Control' } },
-	pagenation: { control: { type: 'text' }, table: { category: 'Control' } },
-	pagenationClick: { control: { type: 'boolean' }, table: { category: 'Control' } },
-	pagenationDynamic: { control: { type: 'number', min: 1 }, table: { category: 'Control' } },
-	pagenationType: { control: { type: 'radio' }, options: ['progressbar', 'bullets', 'fraction'], table: { category: 'Control' } },
-	scrollbar: { control: { type: 'text' }, table: { category: 'Control' } },
+	Navigation: { control: { type: 'boolean' }, table: { category: 'Control' } },
+	Pagenation: { control: { type: 'boolean' }, table: { category: 'Control' } },
+	PagenationClick: { control: { type: 'boolean' }, table: { category: 'Control' } },
+	PagenationDynamic: { control: { type: 'number', min: 1 }, table: { category: 'Control' } },
+	PagenationType: { control: { type: 'radio' }, options: ['progressbar', 'bullets', 'fraction'], table: { category: 'Control' } },
+	Scrollbar: { control: { type: 'boolean' }, table: { category: 'Control' } },
 
 	// Design
-	centeredSlides: { control: { type: 'boolean' }, table: { category: 'Design' } },
-	direction: { control: { type: 'radio' }, options: ['horizontal', 'vertical'], table: { category: 'Design' } },
-	effect: { control: { type: 'radio' }, options: ['none', 'fade', 'coverflow', 'flip', 'cards'], table: { category: 'Design' } },
+	CenteredSlides: { control: { type: 'boolean' }, table: { category: 'Design' } },
+	Direction: { control: { type: 'radio' }, options: ['horizontal', 'vertical'], table: { category: 'Design' } },
+	Effect: { control: { type: 'radio' }, options: ['none', 'fade', 'coverflow', 'flip', 'cards'], table: { category: 'Design' } },
 	//grid: { control: { type: 'number', min: 2 }, table: { category: 'Design' } },
-	slidesPerView: { control: { type: 'radio' }, options: ['auto', '2', '3', '4'], table: { category: 'Design' } },
-	spaceBetween: { control: { type: 'number' }, table: { category: 'Design' } },
-	thumbnail: { control: { type: 'boolean' }, table: { category: 'Design' } },
+	SlidesPerView: { control: { type: 'radio' }, options: ['auto', '2', '3', '4'], table: { category: 'Design' } },
+	SpaceBetween: { control: { type: 'number' }, table: { category: 'Design' } },
+	Thumbnail: { control: { type: 'boolean' }, table: { category: 'Design' } },
+}
+
+export const commonSwiperArgs = {
+	Autoplay: false,
+	Delay: 3000,
+	FreeMode: false,
+	Loop: false,
+	Navigation: false,
+	Pagenation: false,
+	Scrollbar: false,
+
+	CenteredSlides: false,
+	Direction: "horizontal",
+	PagenationType: "bullets"
 }
 
 export const commonWidthArgTypes = {
