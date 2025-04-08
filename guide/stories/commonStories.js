@@ -1139,6 +1139,142 @@ export const tooltipTemplate = (args) => {
 	return UI({ ...args, template });
 };
 
+// Tabs
+export const treemenuArgTypes = { }
+export const treemenuArgs = { }
+export const getTreemenuTemplate = (args) => {
+	const styleString = [
+	].filter(Boolean).join(' ');
+
+	const attributeList = [
+		`class="tree-type"`,
+		`style="${styleString}"`,
+	].filter(Boolean).join(' ');
+
+	let template = ``;
+	if (args.Scrollable) {
+		template  = `
+			<div ${attributeList}>
+				<details class="tree-inner tree-sub-item">
+					<summary>
+						<span class="tree-arrow"></span>
+					</summary>
+					<details class="tree-inner">
+						<summary>메뉴 1-1</summary>
+					</details>
+					<details class="tree-inner tree-sub-item">
+						<summary>
+							<span class="tree-arrow"></span>
+							메뉴 1-2
+						</summary>
+						<details class="tree-inner">
+							<summary>메뉴 1-2-1</summary>
+						</details>
+						<details class="tree-inner">
+							<summary>메뉴 1-2-2</summary>
+							<details class="tree-inner">
+								<summary>메뉴 1-2-2-1</summary>
+							</details>
+							<details class="tree-inner">
+								<summary>메뉴 1-2-2-2</summary>
+							</details>
+						</details>
+					</details>
+				</details>
+				<details class="tree-inner tree-sub-item">
+					<summary>
+						<span class="tree-arrow"></span>
+						메뉴 2
+					</summary>
+					<details class="tree-inner">
+						<summary>메뉴 2-1</summary>
+					</details>
+					<details class="tree-inner tree-sub-item">
+						<summary>
+							<span class="tree-arrow"></span>
+							메뉴 2-2
+						</summary>
+						<details class="tree-inner">
+							<summary>메뉴 2-2-1</summary>
+						</details>
+						<details class="tree-inner">
+							<summary>메뉴 2-2-2</summary>
+						</details>
+					</details>
+				</details>
+			</div>
+		`;
+	} else if (args.MenuOnly) {
+		template  = `
+			<ul class="tab-menu">
+				<li><button type="button">1</button></li>
+				<li><button type="button">2</button></li>
+				<li><button type="button">3</button></li>
+			</ul>
+		`;
+	} else {
+		template  = `
+			<div ${attributeList}>
+				<details class="tree-inner tree-sub-item">
+					<summary>
+						<span class="tree-arrow"></span>
+						메뉴 1
+					</summary>
+					<details class="tree-inner">
+						<summary>메뉴 1-1</summary>
+					</details>
+					<details class="tree-inner tree-sub-item">
+						<summary>
+							<span class="tree-arrow"></span>
+							메뉴 1-2
+						</summary>
+						<details class="tree-inner">
+							<summary>메뉴 1-2-1</summary>
+						</details>
+						<details class="tree-inner">
+							<summary>메뉴 1-2-2</summary>
+							<details class="tree-inner">
+								<summary>메뉴 1-2-2-1</summary>
+							</details>
+							<details class="tree-inner">
+								<summary>메뉴 1-2-2-2</summary>
+							</details>
+						</details>
+					</details>
+				</details>
+				<details class="tree-inner tree-sub-item">
+					<summary>
+						<span class="tree-arrow"></span>
+						메뉴 2
+					</summary>
+					<details class="tree-inner">
+						<summary>메뉴 2-1</summary>
+					</details>
+					<details class="tree-inner tree-sub-item">
+						<summary>
+							<span class="tree-arrow"></span>
+							메뉴 2-2
+						</summary>
+						<details class="tree-inner">
+							<summary>메뉴 2-2-1</summary>
+						</details>
+						<details class="tree-inner">
+							<summary>메뉴 2-2-2</summary>
+						</details>
+					</details>
+				</details>
+			</div>
+		`;
+	}
+
+	return prettifyHTML(template);
+};
+
+export const treemenuTemplate = (args) => {
+	const template = getTreemenuTemplate(args);
+	return UI({ ...args, template });
+};
+
 // Util
 const log = (...args) => { console.log(...args); };
 
@@ -1162,6 +1298,7 @@ export const createTareaStory = (args) => createTemplateStory(args, tareaTemplat
 export const createPopupStory = (args) => createTemplateStory(args, popupTemplate, getPopupTemplate);
 export const createTabsStory = (args) => createTemplateStory(args, tabsTemplate, getTabsTemplate);
 export const createTooltipStory = (args) => createTemplateStory(args, tooltipTemplate, getTooltipTemplate);
+export const createTreemenuStory = (args) => createTemplateStory(args, treemenuTemplate, getTreemenuTemplate);
 
 export const prettifyHTML = (html, options = {}) => {
 	const inlineTags = options.inlineTags || ['i'];
