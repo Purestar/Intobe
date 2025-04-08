@@ -1151,121 +1151,58 @@ export const getTreemenuTemplate = (args) => {
 		`style="${styleString}"`,
 	].filter(Boolean).join(' ');
 
-	let template = ``;
-	if (args.Scrollable) {
-		template  = `
-			<div ${attributeList}>
-				<details class="tree-inner tree-sub-item">
-					<summary>
-						<span class="tree-arrow"></span>
-					</summary>
-					<details class="tree-inner">
-						<summary>메뉴 1-1</summary>
-					</details>
-					<details class="tree-inner tree-sub-item">
-						<summary>
-							<span class="tree-arrow"></span>
-							메뉴 1-2
-						</summary>
-						<details class="tree-inner">
-							<summary>메뉴 1-2-1</summary>
-						</details>
-						<details class="tree-inner">
-							<summary>메뉴 1-2-2</summary>
-							<details class="tree-inner">
-								<summary>메뉴 1-2-2-1</summary>
-							</details>
-							<details class="tree-inner">
-								<summary>메뉴 1-2-2-2</summary>
-							</details>
-						</details>
-					</details>
+	const template  = `
+		<div ${attributeList}>
+			<details class="tree-inner tree-sub-item">
+				<summary>
+					<span class="tree-arrow"></span>
+					메뉴 1
+				</summary>
+				<details class="tree-inner">
+					<summary>메뉴 1-1</summary>
 				</details>
 				<details class="tree-inner tree-sub-item">
 					<summary>
 						<span class="tree-arrow"></span>
-						메뉴 2
+						메뉴 1-2
 					</summary>
 					<details class="tree-inner">
-						<summary>메뉴 2-1</summary>
+						<summary>메뉴 1-2-1</summary>
 					</details>
-					<details class="tree-inner tree-sub-item">
-						<summary>
-							<span class="tree-arrow"></span>
-							메뉴 2-2
-						</summary>
+					<details class="tree-inner">
+						<summary>메뉴 1-2-2</summary>
 						<details class="tree-inner">
-							<summary>메뉴 2-2-1</summary>
+							<summary>메뉴 1-2-2-1</summary>
 						</details>
 						<details class="tree-inner">
-							<summary>메뉴 2-2-2</summary>
+							<summary>메뉴 1-2-2-2</summary>
 						</details>
 					</details>
 				</details>
-			</div>
-		`;
-	} else if (args.MenuOnly) {
-		template  = `
-			<ul class="tab-menu">
-				<li><button type="button">1</button></li>
-				<li><button type="button">2</button></li>
-				<li><button type="button">3</button></li>
-			</ul>
-		`;
-	} else {
-		template  = `
-			<div ${attributeList}>
-				<details class="tree-inner tree-sub-item">
-					<summary>
-						<span class="tree-arrow"></span>
-						메뉴 1
-					</summary>
-					<details class="tree-inner">
-						<summary>메뉴 1-1</summary>
-					</details>
-					<details class="tree-inner tree-sub-item">
-						<summary>
-							<span class="tree-arrow"></span>
-							메뉴 1-2
-						</summary>
-						<details class="tree-inner">
-							<summary>메뉴 1-2-1</summary>
-						</details>
-						<details class="tree-inner">
-							<summary>메뉴 1-2-2</summary>
-							<details class="tree-inner">
-								<summary>메뉴 1-2-2-1</summary>
-							</details>
-							<details class="tree-inner">
-								<summary>메뉴 1-2-2-2</summary>
-							</details>
-						</details>
-					</details>
+			</details>
+			<details class="tree-inner tree-sub-item">
+				<summary>
+					<span class="tree-arrow"></span>
+					메뉴 2
+				</summary>
+				<details class="tree-inner">
+					<summary>메뉴 2-1</summary>
 				</details>
 				<details class="tree-inner tree-sub-item">
 					<summary>
 						<span class="tree-arrow"></span>
-						메뉴 2
+						메뉴 2-2
 					</summary>
 					<details class="tree-inner">
-						<summary>메뉴 2-1</summary>
+						<summary>메뉴 2-2-1</summary>
 					</details>
-					<details class="tree-inner tree-sub-item">
-						<summary>
-							<span class="tree-arrow"></span>
-							메뉴 2-2
-						</summary>
-						<details class="tree-inner">
-							<summary>메뉴 2-2-1</summary>
-						</details>
-						<details class="tree-inner">
-							<summary>메뉴 2-2-2</summary>
-						</details>
+					<details class="tree-inner">
+						<summary>메뉴 2-2-2</summary>
 					</details>
 				</details>
-			</div>
-		`;
-	}
+			</details>
+		</div>
+	`;
 
 	return prettifyHTML(template);
 };
