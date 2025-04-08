@@ -1,6 +1,4 @@
 /* Tree Menu */
-	ig-tree {display:block;}
-	ig-tree, [class*="tree-inner"] {max-width:fit-content;}
 	[class*="tree-inner"] {display:flex; flex-direction:column;}
 	[class*="tree-inner"] summary {display:flex; flex-wrap:nowrap; gap:4px; align-items:center; padding:0 0 0 18px;}
 	[class*="tree-inner"].tree-sub-item > summary {padding:0;}
