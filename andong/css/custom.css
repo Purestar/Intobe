@@ -372,6 +372,9 @@
 		.form-type-dropdown-01 .n-base-clear:before {content:""; display:block; background-image:var(--ico-c); background-position:var(--150) var(--200); background-size:var(--ico-sz); width:14px; height:8px; transform-origin:center; transition:transform .3s ease;}
 		.form-type-dropdown-01 .n-base-selection--active .n-base-clear:before {transform:rotate(180deg);}
 
+		.form-type-dropdown-01.w100 .n-base-selection,
+		.form-type-dropdown-01.w100 .n-base-selection-label {width:100%;}
+
 /* Full Calendar */
 	.fc-wrap .fc-toolbar-chunk {display:flex; flex:1; gap:0; align-items:center;}
 	.fc-wrap .fc-toolbar-chunk > * {margin-left:0 !important;}
@@ -407,6 +410,7 @@
 	.gra-hor-01 .gra-inner {background:var(--mc); border-radius:12px; height:100%;}
 
 /* Icon */
+	.ic-cal:before {background-position:0 var(--900); width:138px; height:84px;}
 	.ic-chk:before {background-position:var(--350) var(--50); width:47px; height:46px;}
 	.ic-chk-02 {flex:0 0 80px; background:#ebeef5; border-radius:50%; width:80px; height:80px;}
 	.ic-chk-02:before {background-position:var(--900) var(--50); width:36px; height:27px;}
@@ -439,6 +443,7 @@
 	.ic-r-arrow-02:before {background-position:var(--350) 0; width:5px; height:8px;}
 	.ic-r-arrow-03:before {background-position:var(--550) 0; width:7px; height:12px;}
 	.ic-r-arrow-04:before {background-position:var(--150) var(--100); width:33px; height:7px;}
+	.ic-r-arrow-05:before {background-position:var(--200) var(--100); width:9px; height:14px;}
 	.ic-refresh:before {background-position:var(--750) 0; width:18px; height:17px;}
 	.ic-refresh-02:before {background-position:var(--550) var(--50); width:14px; height:15px;}
 	.ic-setting:before {background-position:var(--100) 0; width:17px; height:17px;}

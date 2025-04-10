@@ -289,6 +289,7 @@
 			.gra-hor-01 .gra-inner {border-radius:3.33vw;}
 
 		/* Icon */
+			.ic-cal:before {background-position:0 var(--850); width:30.69vw; height:18.33vw;}
 			.ic-chk:before {width:4.17vw; height:3.06vw;}
 			.ic-chk-02 {flex:0 0 16.67vw; width:16.67vw; height:16.67vw;}
 			.ic-chk-02:before {width:6.81vw; height:5.42vw;}
@@ -318,6 +319,7 @@
 			.ic-r-arrow-02:before {width:1.25vw; height:2.08vw;}
 			.ic-r-arrow-03:before {width:1.25vw; height:2.22vw;}
 			.ic-r-arrow-04:before {width:4.86vw; height:1.25vw;}
+			.ic-r-arrow-05:before {width:1.81vw; height:2.92vw;}
 			.ic-refresh:before {width:3.61vw; height:3.61vw;}
 			.ic-refresh-02:before {background-position:var(--600) var(--50); width:3.06vw; height:3.47vw;}
 			.ic-setting-02:before {width:2.50vw; height:2.22vw;}

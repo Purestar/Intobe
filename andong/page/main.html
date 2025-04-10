@@ -13,7 +13,8 @@
 		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
 		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
 		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
-		<script src="../js/pub.js"></script>
+		<script type="module" src="../js/module.js"></script>
+		<script type="module" src="../js/pub.js"></script>
 		<link rel="icon" href="../favicon.ico" sizes="any">
 		<link rel="stylesheet" href="../css/global.css">
 	</head>
@@ -22,7 +23,7 @@
 		<div id="container">
 			<div class="wrap-inner main-section">
 				<div class="wrap-flex flex-between m-flex-col main-top-cont">
-					<div class="wrap-flex box-type-01 main-top-left-cont">
+					<div class="wrap-flex box-type-01 main-top-left-cont align-center">
 						<div class="m-flex-col">
 							<!-- 모바일 학생정보 -->
 							<div class="mobile">
@@ -109,6 +110,15 @@
 							</ul>
 						</div>
 					</div>
+					<div class="box-type-01 wrap-flex flex-col align-center w100">
+						<h2 class="tit-01 cr-mc wrap-flex align-center gap-12 m-gap-30"><i class="ic-cal"></i>주간계획표<i class="ic-r-arrow-05"></i></h2>
+						<div class="wrap-flex gap-10 m-gap-18 w100 mt-30">
+							<n-select class="form-type-dropdown-01 w100 flex-1" placeholder="년도"></n-select>
+							<n-select class="form-type-dropdown-01 w100 flex-1" placeholder="학기"></n-select>
+						</div>
+						<a href="#" class="btn-type w100 mt-12 m-mt-20">주간계획표 조회</a>
+					</div>
+					<!--
 					<div class="box-type-01 w100">
 						<div class="wrap-flex flex-center justify-between">
 							<h2 class="tit-01">오늘 나의 일정?</h2>
@@ -144,6 +154,7 @@
 							</li>
 						</ul>
 					</div>
+					-->
 				</div>
 			</div>
 
