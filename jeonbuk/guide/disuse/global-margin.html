@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="대구가톨릭">
+		<meta name="description" content="대구가톨릭">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script type="module" src="../js/pub.js"></script>
+		<link rel="stylesheet" href="../css/global.css">
+		<link rel="stylesheet" href="../css/workspace.css">
+		<style>
+			.workspace-guide-inner div {border:1px solid red;}
+		</style>
+	</head>
+	<body>
+		<div class="workspace-guide">
+			<!-- Information -->
+			<div class="workspace-guide-case">
+				<h1>Information</h1>
+				<ul class="workspace-guide-prop">
+					<li>
+						<p class="workspace-guide-prop-desc">margin</p>
+						<p class="workspace-guide-prop-name">mg-a</p>
+						<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+					</li>
+					<li>
+						<p class="workspace-guide-prop-desc">margin-top</p>
+						<p class="workspace-guide-prop-name">mg-t</p>
+						<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+					</li>
+					<li>
+						<p class="workspace-guide-prop-desc">margin-bottom</p>
+						<p class="workspace-guide-prop-name">mg-b</p>
+						<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+					</li>
+					<li>
+						<p class="workspace-guide-prop-desc">margin-left</p>
+						<p class="workspace-guide-prop-name">mg-l</p>
+						<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+					</li>
+					<li>
+						<p class="workspace-guide-prop-desc">margin-right</p>
+						<p class="workspace-guide-prop-name">mg-r</p>
+						<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+					</li>
+					<li>
+						<p class="workspace-guide-prop-desc">margin-inline</p>
+						<p class="workspace-guide-prop-name">mg-x</p>
+						<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+					</li>
+					<li>
+						<p class="workspace-guide-prop-desc">margin-block</p>
+						<p class="workspace-guide-prop-name">mg-y</p>
+						<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+					</li>
+				</ul>
+				<ul class="workspace-guide-prop">
+					<li>
+						<p class="workspace-guide-prop-desc">padding</p>
+						<p class="workspace-guide-prop-name">pd-a</p>
+						<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+					</li>
+					<li>
+						<p class="workspace-guide-prop-desc">padding-top</p>
+						<p class="workspace-guide-prop-name">pd-t</p>
+						<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+					</li>
+					<li>
+						<p class="workspace-guide-prop-desc">padding-bottom</p>
+						<p class="workspace-guide-prop-name">pd-b</p>
+						<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+					</li>
+					<li>
+						<p class="workspace-guide-prop-desc">padding-left</p>
+						<p class="workspace-guide-prop-name">pd-l</p>
+						<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+					</li>
+					<li>
+						<p class="workspace-guide-prop-desc">padding-right</p>
+						<p class="workspace-guide-prop-name">pd-r</p>
+						<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+					</li>
+					<li>
+						<p class="workspace-guide-prop-desc">padding-inline</p>
+						<p class="workspace-guide-prop-name">pd-x</p>
+						<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+					</li>
+					<li>
+						<p class="workspace-guide-prop-desc">padding-block</p>
+						<p class="workspace-guide-prop-name">pd-y</p>
+						<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+					</li>
+				</ul>
+			</div>
+
+			<hr> <!-- Margin -->
+			<div class="workspace-guide-case">
+				<h1>Margin</h1>
+				<div style="--dp:grid; --grid-t-col:4; --items-y:flex-start; --gap-a:20px;">
+					<div class="workspace-guide-inner">
+						<div style="--mg-a:70px; --m-mg-a:5vw;">Margin</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div style="--mg-t:70px; --m-mg-t:5vw;">Margin Top</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div style="--mg-b:70px; --m-mg-b:5vw;">Margin Bottom</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div style="--mg-l:70px; --m-mg-l:5vw;">Margin Left</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div style="--mg-r:70px; --m-mg-r:5vw;">Margin Right</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div style="--mg-x:70px; --m-mg-x:5vw;">Margin Inline</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div style="--mg-y:70px; --m-mg-y:5vw;">Margin Block</div>
+					</div>
+					<div class="workspace-guide-inner" style="--grid-col:4;">
+						<xmp>
+							<div style="--mg-a:70px;"></div>
+						</xmp>
+					</div>
+				</div>
+			</div>
+
+			<hr> <!-- Padding -->
+			<div class="workspace-guide-case">
+				<h1>Padding</h1>
+				<div style="--dp:grid; --grid-t-col:4; --items-y:flex-start; --gap-a:20px;">
+					<div class="workspace-guide-inner">
+						<div style="--pd-a:70px; --m-pd-a:5vw;">Padding</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div style="--pd-t:70px; --m-pd-t:5vw;">Padding Top</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div style="--pd-b:70px; --m-pd-b:5vw;">Padding Bottom</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div style="--pd-l:70px; --m-pd-l:5vw;">Padding Left</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div style="--pd-r:70px; --m-pd-r:5vw; --txt-a:right">Padding Right</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div style="--pd-x:70px; --m-pd-x:5vw;">Padding Inline</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div style="--pd-y:70px; --m-pd-y:5vw;">Padding Block</div>
+					</div>
+					<div class="workspace-guide-inner" style="--grid-col:4;">
+						<xmp>
+							<div style="--pd-a:70px;">Padding</div>
+						</xmp>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

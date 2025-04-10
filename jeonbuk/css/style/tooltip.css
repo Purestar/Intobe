@@ -1,0 +1,2 @@
+/* Tooltip */
+	[class*="t-tip"] {position:absolute; border:1px solid red;}

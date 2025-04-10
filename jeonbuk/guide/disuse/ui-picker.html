@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="대구가톨릭">
+		<meta name="description" content="대구가톨릭">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script type="module" src="../js/pub.js"></script>
+		<link rel="stylesheet" href="../css/global.css">
+		<link rel="stylesheet" href="../css/workspace.css">
+	</head>
+	<body>
+		<div class="workspace-guide">
+			<!-- Information -->
+			<div class="workspace-guide-case">
+				<h1>Information</h1>
+				<ul class="workspace-guide-prop">
+					<li>
+						<p class="workspace-guide-prop-attribute not-prefix">class</p>
+						<div style="--grid-t-col:4; --grid-col:2;">
+							<p class="workspace-guide-prop-attribute-value">form-color</p>
+							<p class="workspace-guide-prop-attribute-value">form-txt-date</p>
+						</div>
+					</li>
+					<!--<li>
+						<p class="workspace-guide-prop-desc">Border Color</p>
+						<p class="workspace-guide-prop-name">chip-bd-c</p>
+						<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+					</li>
+					<li>
+						<p class="workspace-guide-prop-desc">Border Radius</p>
+						<p class="workspace-guide-prop-name">chip-bd-r</p>
+						<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+					</li>
+					<li>
+						<p class="workspace-guide-prop-desc">Padding Inline</p>
+						<p class="workspace-guide-prop-name">chip-pad-x</p>
+						<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+					</li>-->
+				</ul>
+			</div>
+
+			<hr>
+			<div style="--grid-t-col:1; --gap-a:20px;">
+				<!-- Color Picker -->
+				<div class="workspace-guide-case">
+					<h1>Color Picker</h1>
+					<div style="--grid-t-col:3; --gap-a:20px;">
+						<div class="workspace-guide-inner">
+							<p-color-picker class="form-color"></p-color-picker>
+						</div>
+						<div class="workspace-guide-inner">
+							<p-color-picker class="form-color" panel-class="form-panel-color"></p-color-picker>
+						</div>
+						<div class="workspace-guide-inner">
+							<p-color-picker class="form-color" disabled></p-color-picker>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<pre>
+							&lt;p-color-picker class="form-color"&gt;&lt;/p-color-picker&gt;
+						</pre>
+					</div>
+				</div>
+
+				<!-- Color Picker Inline -->
+				<div class="workspace-guide-case">
+					<h1>Color Picker Inline</h1>
+					<div class="workspace-guide-inner">
+						<p-color-picker inline></p-color-picker>
+					</div>
+					<div class="workspace-guide-inner">
+						<pre>
+							&lt;p-color-picker <em>inline</em>&gt;&lt;/p-color-picker&gt;
+						</pre>
+					</div>
+				</div>
+			</div>
+
+			<hr>
+			<div style="--grid-t-col:1; --gap-a:20px;">
+				<!-- Date Picker -->
+				<div class="workspace-guide-case">
+					<h1>Date Picker</h1>
+					<div style="--grid-t-col:3; --gap-a:20px;">
+						<div class="workspace-guide-inner">
+							<p-date-picker class="form-txt-date" show-icon></p-date-picker>
+						</div>
+						<div class="workspace-guide-inner">
+							<p-date-picker inline></p-date-picker>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<pre>
+							&lt;p-color-picker class="form-color"&gt;&lt;/p-color-picker&gt;
+						</pre>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

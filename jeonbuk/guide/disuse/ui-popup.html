@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="대구가톨릭">
+		<meta name="description" content="대구가톨릭">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script type="module" src="../js/pub.js"></script>
+		<link rel="stylesheet" href="../css/global.css">
+		<link rel="stylesheet" href="../css/workspace.css">
+	</head>
+	<body>
+		<div id="container">
+			<div class="workspace-guide">
+				<div class="workspace-guide-case">
+					<div class="workspace-guide-inner">
+						<!-- HTML 버튼 -->
+						<button class="btn-type" id="openPopupBtn">버튼</button>
+
+						<!-- Vue 인스턴스 내부의 다이얼로그 -->
+						<p-popup class="pop-type" modal v-model:visible="popupOpen" maximizable header-class="pop-head">
+							<template #header>
+								<h1 class="pop-title">Popup Title</h1>
+							</template>
+							<div class="pop-cont">팝업 내용팝업 내용팝업 내용팝업 내용팝업 내용팝업 내용팝업</div>
+							<template #footer>
+								<button type="button" class="btn-type" @click="popupOpen = false">버튼</button>
+								<button type="button" class="btn-type" @click="popupOpen = false">버튼</button>
+							</template>
+						</p-popup>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

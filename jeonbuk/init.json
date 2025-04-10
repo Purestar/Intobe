@@ -1,0 +1,39 @@
+{
+	"Setting": {
+		"breakPoint": [1200, 1024],
+		"breakPointUnit": ["px", "vw"],
+		"device": ["360px", "768px", "1024px", "1200px", "100%"],
+		"project": "Intobe Project"
+	},
+
+	"MenuList": [
+		{
+			"id": "Path",
+			"submenu": [
+				{ "id": "공통", "submenu": [
+					{ "menu": "레이아웃", "src": "./page/layout.html", "state": "" },
+					{ "menu": "팝업", "src": "./page/popup.html", "state": "" }
+				], "state": ""},
+				{ "id": "1Depth", "submenu": [
+					{ "menu": "2Depth", "src": "", "state": "" }
+				], "state": ""},
+				{ "menu": "1Depth", "src": "", "state": "" },
+				{ "menu": "Test", "src": "./page/test.html", "state": "" }
+			],
+			"state": ""
+		},
+		{
+			"id": "Guide",
+			"submenu": [
+				{ "menu": "primeVue", "src": "https://primevue.org/", "state": "comp" },
+				{ "menu": "vw calculator", "src": "http://publishing.kr/vw/", "state": "comp" },
+				{ "menu": "Animation", "src": "./guide/animation.html", "state": "comp" },
+				{ "id": "UI", "submenu": [
+					{ "menu": "Icon", "src": "./guide/ui-icon.html", "state": "" },
+					{ "menu": "Thumb", "src": "./guide/ui-thumb.html", "state": "" }
+				], "state": "work"}
+			],
+			"state": "comp"
+		}
+	]
+}

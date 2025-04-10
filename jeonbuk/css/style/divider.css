@@ -1,0 +1,49 @@
+/* Divider */
+	/* Default */
+		[class*="div-"], [class*="div-"] > * {display:flex; gap:var(--div-gap, 0);}
+		[class*="div-"] > * + *:before {content:""; background-color:var(--div-bg-c, black); animation-name:attr(data-ani); rotate:var(--div-rotate, 0deg);}
+
+	/* Animation */
+		[class*="div-"][data-ani]:hover > * + *:before,
+		[class*="div-"][data-ani-auto] > * + *:before {
+			animation-fill-mode: both;
+			animation-duration: var(--ani-dur, .5s);
+			animation-delay: var(--ani-dly, 0s);
+			animation-timing-function: var(--ani-ease, linear);
+			animation-name:var(--ani-n, bounce);
+			animation-iteration-count:var(--ani-rpt, infinite);
+		}
+
+	/* Horizontal Bar */
+		[class*="div-h"] {width:var(--div-w, 100%);}
+		[class*="div-h"], [class*="div-h"] > * {flex-direction:column;}
+		[class*="div-h"] > * + *:before {place-self:center; width:100%; height:var(--div-h, 1px);}
+		[class*="div-h-"] {width:fit-content;}
+
+	/* Vertical Bar */
+		[class*="div-v"], [class*="div-v"] > * {place-items:center;}
+		[class*="div-v"] > * + *:before {width:var(--div-w, 1px); height:var(--div-h, var(--ft-s, var(--init-font-size)));}
+
+	/* Arrow */
+		[class*="div-h-arrow"] > * + *:before,
+		[class*="div-v-arrow"] > * + *:before {background:none; border-left:1px solid var(--div-bg-c, black); border-top:1px solid var(--div-bg-c, black); width:var(--div-w, 4px); height:var(--div-w, 4px);}
+		[class*="div-h-arrow"] > * + *:before {rotate:var(--div-rotate, 225deg); translate:0 -35%;}
+		[class*="div-v-arrow"] > * + *:before {rotate:var(--div-rotate, 135deg); translate:-35% 0;}
+
+	/* Slash */
+		[class*="div-h-slash"] > * + *:before,
+		[class*="div-v-slash"] > * + *:before {rotate:var(--div-rotate, 10deg);}
+
+	/* Circle & Square */
+		[class*="div-h-cir"] > * + *:before,
+		[class*="div-v-cir"] > * + *:before,
+		[class*="div-h-squ"] > * + *:before,
+		[class*="div-v-squ"] > * + *:before,
+		[class*="div-h-dia"] > * + *:before,
+		[class*="div-v-dia"] > * + *:before {width:var(--div-w, 8px); height:var(--div-w, 8px); rotate:var(--div-rotate, 0);}
+
+		[class*="div-h-cir"] > * + *:before,
+		[class*="div-v-cir"] > * + *:before {border-radius:50%;}
+
+		[class*="div-h-dia"] > * + *:before,
+		[class*="div-v-dia"] > * + *:before {rotate:var(--div-rotate, 45deg);}

@@ -1,0 +1,41 @@
+/* Form */
+	/* Default */
+		[class*="form-"] {display:flex; place-items:center; position:relative;}
+		[class*="form-"] > * {flex-shrink:0;}
+		[class*="form-"] input {background:none;}
+
+	/* Float Label */
+		/* Default */
+			.p-floatlabel {position:relative;}
+			.p-floatlabel label {position: absolute; left: var(--form-pd-l, var(--fom-pad)); top: 50%; translate: 0 -50%; line-height: 1; transition: var(--trans-dft); cursor: auto;}
+			.p-floatlabel input:focus + label,
+			.p-floatlabel input.p-filled + label,
+			.p-floatlabel .p-inputwrapper-focus + label,
+			.p-floatlabel .p-inputwrapper-filled + label,
+			.p-floatlabel textarea:focus + label,
+			.p-floatlabel textarea.p-filled + label {top:0; font-size: 0.7em;}
+			.p-floatlabel textarea + label {top:calc(var(--fom-h) / 2);}
+
+		/* Over */
+			.p-floatlabel-over input:focus + label,
+			.p-floatlabel-over input.p-filled + label,
+			.p-floatlabel-over .p-inputwrapper-focus + label,
+			.p-floatlabel-over .p-inputwrapper-filled + label,
+			.p-floatlabel-over textarea:focus + label,
+			.p-floatlabel-over textarea.p-filled + label { transform: translateY(-1em); }
+
+		/* In */
+			.p-floatlabel-in input:focus + label,
+			.p-floatlabel-in input.p-filled + label,
+			.p-floatlabel-in .p-inputwrapper-focus + label,
+			.p-floatlabel-in .p-inputwrapper-filled + label,
+			.p-floatlabel-in textarea:focus + label,
+			.p-floatlabel-in textarea.p-filled + label { transform: translateY(0.7em); }
+
+		/* On */
+			.p-floatlabel-on input:focus + label,
+			.p-floatlabel-on input.p-filled + label,
+			.p-floatlabel-on .p-inputwrapper-focus + label,
+			.p-floatlabel-on .p-inputwrapper-filled + label,
+			.p-floatlabel-on textarea:focus + label,
+			.p-floatlabel-on textarea.p-filled + label { background:white; transform: translateY(-0.1em); }

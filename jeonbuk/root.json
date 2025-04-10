@@ -1,0 +1,132 @@
+{
+	"RootCSS": [
+		{
+			"id": "Initialize",
+			"items": [
+				{ "name": "init-bg", "desc": "전체 배경", "type": "color", "value": "white", "default": "white" },
+				{ "name": "init-ff", "desc": "서체", "type": "text", "value": "Arial", "default": "Arial" },
+				{ "name": "init-fs", "desc": "글자 크기", "type": "number", "value": "16", "unit": "px", "default": "16" },
+				{ "name": "init-lh", "desc": "행간", "type": "text", "value": "1.5", "default": "1.5" },
+				{ "name": "init-ls", "desc": "자간", "type": "number", "value": "0", "unit": "em", "default": "0" },
+				{ "name": "init-c", "desc": "글자 색깔", "type": "color", "value": "black", "default": "black" },
+				{ "name": "init-hh", "desc": "헤더 높이", "type": "number", "value": "60", "unit": "px", "default": "60" },
+				{ "name": "init-fh", "desc": "푸터 높이", "type": "number", "value": "100", "unit": "px", "default": "100" },
+				{ "name": "init-pc-w", "desc": "[PC] 페이지 넓이", "type": "number", "value": "1200", "unit": "px", "default": "1200" },
+				{ "name": "init-pc-wr-side-pd", "desc": "[PC] Full Warpper 좌우 여백", "type": "number", "value": "20", "unit": "px", "default": "20" },
+				{ "name": "init-m-w", "desc": "[Mobile] 페이지 넓이", "type": "number", "value": "100", "unit": "dvw", "default": "100" },
+				{ "name": "init-m-wr-side-pd", "desc": "[Mobile] Warpper 좌우 여백", "type": "number", "value": "5", "unit": "vw", "default": "5" },
+				{ "name": "init-m-dw", "desc": "[Mobile] 디자인 넓이", "type": "number", "value": "720", "unit": "px", "default": "720" }
+			]
+		},
+		{
+			"id": "Background",
+			"items": [
+				{ "name": "ico-c", "desc": "[PC] 공통 아이콘 이미지 경로", "type": "text", "value": "url('../images/common_icon.png')", "default": "url('../images/common_icon.png')", "readonly": true },
+				{ "name": "ico", "desc": "[PC] 일반 아이콘 이미지 경로", "type": "text", "value": "url('../images/icon.png')", "default": "url('../images/icon.png')", "readonly": true },
+				{ "name": "ico-sz", "desc": "[PC] 이미지 스프라이트 크기", "type": "text", "value": "1000", "unit": "px", "default":"1000", "readonly": true },
+				{ "name": "50", "desc": "50", "type": "text", "value": "-50", "unit": "px", "default": "-50", "readonly": true },
+				{ "name": "100", "desc": "100", "type": "text", "value": "-100", "unit": "px", "default": "-100", "readonly": true },
+				{ "name": "150", "desc": "150", "type": "text", "value": "-150", "unit": "px", "default": "-150", "readonly": true },
+				{ "name": "200", "desc": "200", "type": "text", "value": "-200", "unit": "px", "default": "-200", "readonly": true },
+				{ "name": "250", "desc": "250", "type": "text", "value": "-250", "unit": "px", "default": "-250", "readonly": true },
+				{ "name": "300", "desc": "300", "type": "text", "value": "-300", "unit": "px", "default": "-300", "readonly": true },
+				{ "name": "350", "desc": "350", "type": "text", "value": "-350", "unit": "px", "default": "-350", "readonly": true },
+				{ "name": "400", "desc": "400", "type": "text", "value": "-400", "unit": "px", "default": "-400", "readonly": true },
+				{ "name": "450", "desc": "450", "type": "text", "value": "-450", "unit": "px", "default": "-450", "readonly": true },
+				{ "name": "500", "desc": "500", "type": "text", "value": "-500", "unit": "px", "default": "-500", "readonly": true },
+				{ "name": "550", "desc": "550", "type": "text", "value": "-550", "unit": "px", "default": "-550", "readonly": true },
+				{ "name": "600", "desc": "600", "type": "text", "value": "-600", "unit": "px", "default": "-600", "readonly": true },
+				{ "name": "650", "desc": "650", "type": "text", "value": "-650", "unit": "px", "default": "-650", "readonly": true },
+				{ "name": "700", "desc": "700", "type": "text", "value": "-700", "unit": "px", "default": "-700", "readonly": true },
+				{ "name": "750", "desc": "750", "type": "text", "value": "-750", "unit": "px", "default": "-750", "readonly": true },
+				{ "name": "800", "desc": "800", "type": "text", "value": "-800", "unit": "px", "default": "-800", "readonly": true },
+				{ "name": "850", "desc": "850", "type": "text", "value": "-850", "unit": "px", "default": "-850", "readonly": true },
+				{ "name": "900", "desc": "900", "type": "text", "value": "-900", "unit": "px", "default": "-900", "readonly": true },
+				{ "name": "950", "desc": "950", "type": "text", "value": "-950", "unit": "px", "default": "-950", "readonly": true }
+			]
+		},
+		{
+			"id": "Color",
+			"items": [
+				{ "name": "mc", "desc": "메인 컬러", "type": "color", "value": "#bbbbbb", "default": "#bbbbbb" },
+				{ "name": "moc", "desc": "메인 오버 컬러", "type": "color", "value": "#1b1b1b", "default": "#1b1b1b" },
+				{ "name": "mlc", "desc": "밝은 메인 컬러", "type": "color", "value": "#999999", "default": "#999999" },
+				{ "name": "mic", "desc": "강조 컬러", "type": "color", "value": "#f65555", "default": "#f65555" },
+				{ "name": "st-red", "desc": "상태 컬러 Red", "type": "color", "value": "#f94144", "default": "#f94144" },
+				{ "name": "st-org", "desc": "상태 컬러 Orange", "type": "color", "value": "#f3722c", "default": "#f3722c" },
+				{ "name": "st-ylw", "desc": "상태 컬러 Yellow", "type": "color", "value": "#f9c74f", "default": "#f9c74f" },
+				{ "name": "st-grn", "desc": "상태 컬러 Green", "type": "color", "value": "#90be6d", "default": "#90be6d" },
+				{ "name": "st-sky", "desc": "상태 컬러 SkyBlue", "type": "color", "value": "#57bed6", "default": "#57bed6" },
+				{ "name": "st-blu", "desc": "상태 컬러 Blue", "type": "color", "value": "#6670c9", "default": "#6670c9" },
+				{ "name": "st-pur", "desc": "상태 컬러 Purple", "type": "color", "value": "#9c71d4", "default": "#9c71d4" }
+			]
+		},
+		{
+			"id": "Form",
+			"items": [
+				{ "name": "fom-h", "desc": "높이", "type": "number", "value": "48", "unit": "px", "default": "48" },
+				{ "name": "fom-br", "desc": "보더 라디우스", "type": "number", "value": "4", "unit": "px", "default": "4" },
+				{ "name": "fom-pad", "desc": "좌우 패딩", "type": "number", "value": "16", "unit": "px", "default": "16" },
+				{ "name": "fom-fs", "desc": "폰트 크기", "type": "number", "value": "16", "unit": "px", "default": "16" },
+				{ "name": "fom-bg", "desc": "배경", "type": "color", "value": "white", "default": "white" },
+				{ "name": "fom-bdr-c", "desc": "테두리 색상", "type": "color", "value": "#aaaaaa", "default": "#aaaaaa" },
+				{ "name": "fom-fc", "desc": "폰트 컬러", "type": "color", "value": "#222222", "default": "#222222" },
+				{ "name": "fom-ph", "desc": "Placeholder 컬러", "type": "color", "value": "#aaaaaa", "default": "#aaaaaa" },
+				{ "name": "fom-dis-bg", "desc": "Disabled 배경", "type": "color", "value": "#f5f5f5", "default": "#f5f5f5" },
+				{ "name": "fom-dis-bdr", "desc": "Disabled 테두리 색상", "type": "color", "value": "#aaaaaa", "default": "#aaaaaa" },
+				{ "name": "fom-opt-sz", "desc": "체크박스, 라디오 크기", "type": "text", "value": "calc(var(--fom-fs) + 4px)", "default": "calc(var(--fom-fs) + 4px)" },
+				{ "name": "fom-chk-ico-w", "desc": "체크박스 아이콘 넓이", "type": "number", "value": "12", "unit": "px", "default": "12" },
+				{ "name": "fom-chk-ico-h", "desc": "체크박스 아이콘 높이", "type": "number", "value": "10", "unit": "px", "default": "10" },
+				{ "name": "fom-rdo-gap", "desc": "라디오 선택 시 안쪽 갭", "type": "number", "value": "8", "unit": "px", "default": "8" },
+				{ "name": "fom-rg-h", "desc": "Range Type 막대 크기", "type": "number", "value": "4", "unit": "px", "default": "4" },
+				{ "name": "fom-rg-thb-sz", "desc": "Range Type 슬라이더 크기", "type": "number", "value": "16", "unit": "px", "default": "16" },
+				{ "name": "fom-dropitem", "desc": "드롭다운 아이템 노출 개수", "type": "number", "value": "3.5", "default": "3.5" },
+				{ "name": "fom-lh", "desc": "폼 행간", "type": "text", "value": "calc(var(--fom-h) - 2px)", "default": "calc(var(--fom-h) - 2px)" },
+				{ "name": "fom-ta-h", "desc": "텍스트 에어리어 높이", "type": "number", "value": "120", "unit": "px", "default": "120" },
+				{ "name": "fom-valid-bg", "desc": "유효성 통과 배경", "type": "color", "value": "#d4ffd4", "default": "#d4ffd4" },
+				{ "name": "fom-valid-bdr", "desc": "유효성 통과 테두리", "type": "color", "value": "#1b680c", "default": "#1b680c" },
+				{ "name": "fom-invalid-bg", "desc": "유효성 실패 배경", "type": "color", "value": "#ffebeb", "default": "#ffebeb" },
+				{ "name": "fom-invalid-bdr", "desc": "유효성 실패 테두리", "type": "color", "value": "#c85656", "default": "#c85656" }
+			]
+		},
+		{
+			"id": "Popup",
+			"items": [
+				{ "name": "pop-w", "desc": "팝업 기본 넓이", "type": "number", "value": "700", "unit": "px", "default": "700" },
+				{ "name": "pop-pad", "desc": "팝업 좌우 여백", "type": "number", "value": "30", "unit": "px", "default": "30" },
+				{ "name": "pop-max-h", "desc": "팝업 최대 높이", "type": "number", "value": "95", "unit": "dvh", "default": "95" },
+				{ "name": "pop-br", "desc": "팝업 보더 라디우스", "type": "number", "value": "10", "unit": "px", "default": "10" },
+				{ "name": "pop-hh", "desc": "팝업 헤더 높이", "type": "number", "value": "60", "unit": "px", "default": "60" },
+				{ "name": "pop-fh", "desc": "팝업 푸터 높이", "type": "number", "value": "140", "unit": "px", "default": "140" },
+				{ "name": "pop-cont-top-pad", "desc": "팝업 내용 위쪽 여백", "type": "number", "value": "40", "unit": "px", "default": "40" },
+				{ "name": "pop-cont-bot-pad", "desc": "팝업 내용 아래쪽 여백", "type": "number", "value": "50", "unit": "px", "default": "50" }
+			]
+		},
+		{
+			"id": "Scroll",
+			"items": [
+				{ "name": "scr-w", "desc": "넓이", "type": "number", "value": "4", "unit": "px", "default": "4" },
+				{ "name": "scr-br", "desc": "보더 라디우스", "type": "number", "value": "4", "unit": "px", "default": "4" },
+				{ "name": "scr-bg1", "desc": "배경색", "type": "color", "value": "#f1f1f1", "default": "#f1f1f1" },
+				{ "name": "scr-bg2", "desc": "색상", "type": "color", "value": "#c1c1c1", "default": "#c1c1c1" }
+			]
+		},
+		{
+			"id": "Thumb",
+			"items": [
+				{ "name": "thmb-bg", "desc": "썸네일 기본 배경 색상", "type": "color", "value": "#f2f4f4", "default": "#f2f4f4" }
+			]
+		},
+		{
+			"id": "Z-Index",
+			"items": [
+				{ "name": "zi-h", "desc": "헤더", "type": "number", "value": "1050", "default": "1050" },
+				{ "name": "zi-f", "desc": "푸더", "type": "number", "value": "100", "default": "100" },
+				{ "name": "zi-pop", "desc": "팝업", "type": "number", "value": "1100", "default": "1100" },
+				{ "name": "zi-dd", "desc": "셀렉트", "type": "number", "value": "400", "default": "400" },
+				{ "name": "zi-pn", "desc": "패널", "type": "number", "value": "1000", "default": "1000" },
+				{ "name": "zi-tab", "desc": "탭메뉴", "type": "number", "value": "450", "default": "450" }
+			]
+		}
+	]
+}

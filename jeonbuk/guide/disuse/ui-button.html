@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="대구가톨릭">
+		<meta name="description" content="대구가톨릭">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script type="module" src="../js/pub.js"></script>
+		<link rel="stylesheet" href="../css/global.css">
+		<link rel="stylesheet" href="../css/workspace.css">
+	</head>
+	<body>
+		<div class="workspace-guide">
+			<!-- Information -->
+			<div class="workspace-guide-case">
+				<h1>Information</h1>
+				<ul class="workspace-guide-prop">
+					<li>
+						<p class="workspace-guide-prop-attribute not-prefix">class</p>
+						<div style="--grid-t-col:8; --grid-col:2;">
+							<div class="workspace-guide-prop-attribute-value">btn-type</div>
+							<div class="workspace-guide-prop-attribute-value">btn-type-b</div>
+							<div class="workspace-guide-prop-attribute-value">btn-type-tran</div>
+						</div>
+					</li>
+					<li><p class="workspace-guide-prop-attribute">disabled</p></li>
+					<li><p class="workspace-guide-prop-attribute">equal</p></li>
+					<li>
+						<p class="workspace-guide-prop-desc">background-color</p>
+						<p class="workspace-guide-prop-name">btn-bg</p>
+						<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+					</li>
+					<li>
+						<p class="workspace-guide-prop-desc">background-color (Mouse Over)</p>
+						<p class="workspace-guide-prop-name">btn-over-bg</p>
+						<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+					</li>
+					<li>
+						<p class="workspace-guide-prop-desc">background-color (Disabled)</p>
+						<p class="workspace-guide-prop-name">btn-dis-bg</p>
+						<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+					</li>
+					<li>
+						<p class="workspace-guide-prop-desc">border-color</p>
+						<p class="workspace-guide-prop-name">btn-bd-c</p>
+						<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+					</li>
+					<li>
+						<p class="workspace-guide-prop-desc">border-color (Disabled)</p>
+						<p class="workspace-guide-prop-name">btn-dis-bd-c</p>
+						<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+					</li>
+					<li>
+						<p class="workspace-guide-prop-desc">border-radius</p>
+						<p class="workspace-guide-prop-name">btn-bd-r</p>
+						<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+					</li>
+					<li>
+						<p class="workspace-guide-prop-desc">color</p>
+						<p class="workspace-guide-prop-name">btn-ft-c</p>
+						<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+					</li>
+					<li>
+						<p class="workspace-guide-prop-desc">color (Disabled)</p>
+						<p class="workspace-guide-prop-name">btn-dis-ft-c</p>
+						<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+					</li>
+					<li>
+						<p class="workspace-guide-prop-desc">width</p>
+						<p class="workspace-guide-prop-name">btn-w</p>
+						<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+					</li>
+					<li>
+						<p class="workspace-guide-prop-desc">height</p>
+						<p class="workspace-guide-prop-name">btn-h</p>
+						<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+					</li>
+					<li>
+						<p class="workspace-guide-prop-desc">padding-block</p>
+						<p class="workspace-guide-prop-name">btn-pad-x</p>
+						<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+					</li>
+				</ul>
+			</div>
+
+			<hr>
+			<div style="--grid-t-col:2; --gap-a:20px;">
+				<!-- Default -->
+				<div class="workspace-guide-case">
+					<h1>Default</h1>
+					<div class="workspace-guide-inner">
+						<button type="button" class="btn-type">Button</button>
+					</div>
+					<div class="workspace-guide-inner">
+						<xmp>
+							<button type="button" class="btn-type"></button>
+						</xmp>
+					</div>
+				</div>
+
+				<!-- Border Button -->
+				<div class="workspace-guide-case">
+					<h1>Border Button</h1>
+					<div class="workspace-guide-inner">
+						<button type="button" class="btn-type-b">Button</button>
+					</div>
+					<div class="workspace-guide-inner">
+						<xmp>
+							<button type="button" class="btn-type-b"></button>
+						</xmp>
+					</div>
+				</div>
+
+				<!-- Transparent Button -->
+				<div class="workspace-guide-case">
+					<h1>Transparent Button</h1>
+					<div class="workspace-guide-inner">
+						<button type="button" class="btn-type-tran">Button</button>
+					</div>
+					<div class="workspace-guide-inner">
+						<xmp>
+							<button type="button" class="btn-type-tran"></button>
+						</xmp>
+					</div>
+				</div>
+
+				<!-- Link -->
+				<div class="workspace-guide-case">
+					<h1>Link</h1>
+					<div class="workspace-guide-inner">
+						<a href="http://www.naver.com/" class="btn-type" style="--btn-bg:#03c75a; --btn-over-bg:#00873c;">Naver</a>
+					</div>
+					<div class="workspace-guide-inner">
+						<xmp>
+							<a href="#" class="btn-type"></a>
+						</xmp>
+					</div>
+				</div>
+
+				<!-- Link Target -->
+				<div class="workspace-guide-case">
+					<h1>Link Target</h1>
+					<div class="workspace-guide-inner">
+						<a href="http://www.naver.com/" class="btn-type" target="_blank" style="--btn-bg:#03c75a; --btn-over-bg:#00873c;">Naver</a>
+					</div>
+					<div class="workspace-guide-inner">
+						<xmp>
+							<a href="#" class="btn-type" target="_blank"></a>
+						</xmp>
+					</div>
+				</div>
+
+				<!-- Fake Button -->
+				<div class="workspace-guide-case">
+					<h1>Fake Button</h1>
+					<div class="workspace-guide-inner">
+						<p class="btn-type">Button</p>
+					</div>
+					<div class="workspace-guide-inner">
+						<xmp>
+							<p class="btn-type">Button</p>
+						</xmp>
+					</div>
+				</div>
+			</div>
+
+			<hr> <!-- Disabled -->
+			<div style="--grid-t-col:2; --gap-a:20px;">
+				<!-- Default -->
+				<div class="workspace-guide-case">
+					<h1>Default Disabled</h1>
+					<div class="workspace-guide-inner">
+						<button type="button" class="btn-type" disabled>Button</button>
+					</div>
+					<div class="workspace-guide-inner">
+						<xmp>
+							<button type="button" class="btn-type" disabled></button>
+						</xmp>
+					</div>
+				</div>
+
+				<!-- Border Button -->
+				<div class="workspace-guide-case">
+					<h1>Border Button Disabled</h1>
+					<div class="workspace-guide-inner">
+						<button type="button" class="btn-type-b" disabled>Button</button>
+					</div>
+					<div class="workspace-guide-inner">
+						<xmp>
+							<button type="button" class="btn-type-b" disabled></button>
+						</xmp>
+					</div>
+				</div>
+
+				<!-- Transparent Button -->
+				<div class="workspace-guide-case">
+					<h1>Transparent Button Disabled</h1>
+					<div class="workspace-guide-inner">
+						<button type="button" class="btn-type-tran" disabled>Button</button>
+					</div>
+					<div class="workspace-guide-inner">
+						<xmp>
+							<button type="button" class="btn-type-tran" disabled></button>
+						</xmp>
+					</div>
+				</div>
+
+				<!-- Link -->
+				<div class="workspace-guide-case">
+					<h1>Link Disabled</h1>
+					<div class="workspace-guide-inner">
+						<a href="http://www.naver.com/" class="btn-type" data-disabled>Button</a>
+					</div>
+					<div class="workspace-guide-inner">
+						<xmp>
+							<a href="http://www.naver.com/" class="btn-type" data-disabled></a>
+						</xmp>
+					</div>
+				</div>
+
+				<!-- Fake Button -->
+				<div class="workspace-guide-case">
+					<h1>Fake Button Disabled</h1>
+					<div class="workspace-guide-inner">
+						<p class="btn-type" data-disabled>Button</p>
+					</div>
+					<div class="workspace-guide-inner">
+						<xmp>
+							<p class="btn-type" data-disabled></p>
+						</xmp>
+					</div>
+				</div>
+			</div>
+
+			<hr>
+			<div style="--grid-t-col:2; --gap-a:20px;">
+				<!-- Background -->
+				<div class="workspace-guide-case">
+					<h1>Background</h1>
+					<div class="workspace-guide-inner">
+						<button type="button" class="btn-type" style="--btn-bg:blue;">Button</button>
+					</div>
+					<div class="workspace-guide-inner">
+						<xmp>
+							<button type="button" class="btn-type" style="--btn-bg:blue;"></button>
+						</xmp>
+					</div>
+				</div>
+
+				<!-- Background Over Color -->
+				<div class="workspace-guide-case">
+					<h1>Background Over Color</h1>
+					<div class="workspace-guide-inner">
+						<button type="button" class="btn-type" style="--btn-over-bg:green;">Button</button>
+					</div>
+					<div class="workspace-guide-inner">
+						<xmp>
+							<button type="button" class="btn-type" style="--btn-over-bg:green;"></button>
+						</xmp>
+					</div>
+				</div>
+
+				<!-- Font Size -->
+				<div class="workspace-guide-case">
+					<h1>Font Size</h1>
+					<div class="workspace-guide-inner">
+						<button type="button" class="btn-type" style="--btn-ft-s:30px;">Button</button>
+					</div>
+					<div class="workspace-guide-inner">
+						<xmp>
+							<button type="button" class="btn-type" style="--btn-ft-s:30px;"></button>
+						</xmp>
+					</div>
+				</div>
+
+				<!-- Radius -->
+				<div class="workspace-guide-case">
+					<h1>Radius</h1>
+					<div class="workspace-guide-inner">
+						<button type="button" class="btn-type" style="--btn-bd-r:48px;">Button</button>
+					</div>
+					<div class="workspace-guide-inner">
+						<xmp>
+							<button type="button" class="btn-type" style="--btn-bd-r:48px;"></button>
+						</xmp>
+					</div>
+				</div>
+			</div>
+
+			<hr>
+			<div style="--grid-t-col:2; --gap-a:20px;">
+				<!-- Width -->
+				<div class="workspace-guide-case">
+					<h1>Width</h1>
+					<div class="workspace-guide-inner">
+						<button type="button" class="btn-type" style="--btn-w:120px;">Button</button>
+					</div>
+					<div class="workspace-guide-inner">
+						<xmp>
+							<button type="button" class="btn-type" style="--btn-w:120px;"></button>
+						</xmp>
+					</div>
+				</div>
+
+				<!-- Height -->
+				<div class="workspace-guide-case">
+					<h1>Height</h1>
+					<div class="workspace-guide-inner">
+						<button type="button" class="btn-type" style="--btn-h:80px;">Button</button>
+					</div>
+					<div class="workspace-guide-inner">
+						<xmp>
+							<button type="button" class="btn-type" style="--btn-h:80px;"></button>
+						</xmp>
+					</div>
+				</div>
+
+				<!-- Auto Height -->
+				<div class="workspace-guide-case">
+					<h1>Auto Height</h1>
+					<div class="workspace-guide-inner">
+						<button type="button" class="btn-type" style="--btn-w:80px;">ButtonButton</button>
+					</div>
+					<div class="workspace-guide-inner">
+						<xmp>
+							<button type="button" class="btn-type" style="--btn-w:80px;"></button>
+						</xmp>
+					</div>
+				</div>
+
+				<!-- Padding Inline -->
+				<div class="workspace-guide-case">
+					<h1>Padding Inline</h1>
+					<div class="workspace-guide-inner">
+						<button type="button" class="btn-type" style="--btn-pad-x:0;">Button</button>
+					</div>
+					<div class="workspace-guide-inner">
+						<xmp>
+							<button type="button" class="btn-type" style="--btn-pad-x:0;"></button>
+						</xmp>
+					</div>
+				</div>
+			</div>
+
+			<hr> <!-- Ellipsis -->
+			<div style="--grid-t-col:2; --gap-a:20px;">
+				<div class="workspace-guide-case">
+					<h1>Ellipsis</h1>
+					<div class="workspace-guide-inner">
+						<button type="button" class="btn-type" style="--btn-w:80px;"><p class="layout-ellipsis">ButtonButton</p></button>
+					</div>
+					<div class="workspace-guide-inner">
+						<xmp>
+							<button type="button" class="btn-type" style="--btn-w:80px;">
+								<p class="layout-ellipsis"></p>
+							</button>
+						</xmp>
+					</div>
+				</div>
+				<div class="workspace-guide-case">
+					<h1>Ellipsis Mouse Over Disable</h1>
+					<div class="workspace-guide-inner">
+						<button type="button" data-ellipsis-hover class="btn-type" style="--btn-w:80px;"><p class="layout-ellipsis">ButtonButton</p></button>
+					</div>
+					<div class="workspace-guide-inner">
+						<xmp>
+							<button type="button" data-ellipsis-hover class="btn-type" style="--btn-w:80px;">
+								<p class="layout-ellipsis"></p>
+							</button>
+						</xmp>
+					</div>
+				</div>
+			</div>
+
+			<hr> <!-- Button Group -->
+			<div class="workspace-guide-case">
+				<h1>Button Group</h1>
+				<div style="--grid-t-col:2; --gap-a:20px;">
+					<div class="workspace-guide-inner">
+						<div class="btn-grp-type">
+							<button type="button" class="btn-type">Button</button>
+							<button type="button" class="btn-type">Button</button>
+							<button type="button" class="btn-type">Button</button>
+							<button type="button" class="btn-type">Button</button>
+							<button type="button" class="btn-type">Button</button>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div class="btn-grp-type" style="--btn-h:80px;">
+							<button type="button" class="btn-type">Button</button>
+							<button type="button" class="btn-type">Button</button>
+							<button type="button" class="btn-type">Button</button>
+							<button type="button" class="btn-type">Button</button>
+							<button type="button" class="btn-type">Button</button>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div class="btn-grp-type" data-equal>
+							<button type="button" class="btn-type">Button</button>
+							<button type="button" class="btn-type">Button</button>
+							<button type="button" class="btn-type">Button</button>
+							<button type="button" class="btn-type">Button</button>
+							<button type="button" class="btn-type">Button</button>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div class="btn-grp-type">
+							<button type="button" class="btn-type">Button</button>
+							<button type="button" class="btn-type" style="--btn-ft-s:30px;">Button</button>
+							<button type="button" class="btn-type" style="--btn-bg:rgb(93, 152, 201);">Button</button>
+							<button type="button" class="btn-type" style="--btn-h:80px;">Button</button>
+							<button type="button" class="btn-type" style="--btn-w:120px;">Button</button>
+						</div>
+					</div>
+					<div class="workspace-guide-inner" style="--grid-col:2;">
+						<xmp>
+							<div class="btn-grp-type"></div>
+						</xmp>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
