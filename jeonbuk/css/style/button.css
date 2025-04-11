@@ -38,3 +38,8 @@
 		[class*="btn-grp-type"] [class*="btn-type"] {border-radius:0; height:auto; white-space:nowrap;}
 		[class*="btn-grp-type"][data-equal] {width:var(--w, 100%);}
 		[class*="btn-grp-type"][data-equal] > [class*="btn-type"] {flex:1; white-space:wrap;}
+
+@media all and (max-width:720px) {
+	/* Default */
+		[class*="btn-type"] {gap:1.67vw;}
+}

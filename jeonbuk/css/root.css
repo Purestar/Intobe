@@ -107,7 +107,7 @@
 @media all and (max-width:720px) {
 	:root {
 		/* Initialize */
-			--init-font-size: 3.33vw; /* 글자 크기 */
+			--init-font-size: 3.33vw; /* 글자 크기 24px */
 			--init-footer-height: 61.39vw; /* 푸터 높이 */
 			--init-header-height: 15.28vw; /* 헤더 높이 */
 			--init-layout-width: 100dvw; /* 페이지 넓이 */

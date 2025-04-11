@@ -19,7 +19,7 @@
 					{ "menu": "희망기업설정", "src": "", "state": "" },
 					{ "menu": "희망직업설정", "src": "", "state": "" }
 				], "state": ""},
-				{ "menu": "메인", "src": "./page/UMA_010000.html", "state": "" },
+				{ "menu": "메인", "src": "./page/UMA_010000.html", "state": "work" },
 				{ "id": "진로탐색", "submenu": [
 					{ "menu": "직업", "submenu": [
 						{ "menu": "목록", "src": "", "state": "" },

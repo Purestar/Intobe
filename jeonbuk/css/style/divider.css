@@ -18,8 +18,8 @@
 		}
 
 	/* Horizontal Bar */
-		[class*="div-h"] {width:var(--div-w, 100%); row-gap:var(--div-gap, 0);}
-		[class*="div-h"], [class*="div-h"] > * {flex-direction:column;}
+		[class*="div-h"] {width:var(--div-w, 100%);}
+		[class*="div-h"], [class*="div-h"] > * {flex-direction:column; row-gap:var(--div-gap, 0);}
 		[class*="div-h"] > * + *:before {place-self:center; width:100%; height:var(--div-h, 1px);}
 		[class*="div-h-"] {width:100%;}
 
