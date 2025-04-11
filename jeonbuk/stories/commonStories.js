@@ -454,6 +454,7 @@ export const buttonArgTypes = {
 	DisabledFontColor: { control: 'color', description: '--btn-dis-ft-c', table: { category: 'Style - Disabled' } },
 
 	FontSize: { control: 'text', description: '--btn-ft-s', table: { category: 'Style - Font' } },
+	Color: { control: 'color', description: '--btn-ft-c', table: { category: 'Style - Font' } },
 	PaddingX: { control: 'text', description: '--btn-pad-x', table: { category: 'Style - Spacing' } }
 }
 

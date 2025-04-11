@@ -1,0 +1,10 @@
+/* Box */
+	[class*="box-type"] {
+		background:var(--box-bg-c);
+		border-radius: var(--box-bd-r);
+		box-shadow:0 0 var(--box-sha-size) rgba(0, 0, 0, var(--box-sha-opa));
+		padding:var(--box-pad, var(--box-pad-y, var(--box-pad-t)))
+				var(--box-pad, var(--box-pad-x, var(--box-pad-r)))
+				var(--box-pad, var(--box-pad-y, var(--box-pad-b)))
+				var(--box-pad, var(--box-pad-x, var(--box-pad-l)));
+	}

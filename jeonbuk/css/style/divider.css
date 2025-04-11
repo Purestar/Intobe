@@ -3,6 +3,9 @@
 		[class*="div-"], [class*="div-"] > * {display:flex; gap:var(--div-gap, 0);}
 		[class*="div-"] > * + *:before {content:""; background-color:var(--div-bg-c, black); animation-name:attr(data-ani); rotate:var(--div-rotate, 0deg);}
 
+	/* Equal */
+		[class*="div-"].div-equal > * {flex:1;}
+
 	/* Animation */
 		[class*="div-"][data-ani]:hover > * + *:before,
 		[class*="div-"][data-ani-auto] > * + *:before {
@@ -18,7 +21,7 @@
 		[class*="div-h"] {width:var(--div-w, 100%);}
 		[class*="div-h"], [class*="div-h"] > * {flex-direction:column;}
 		[class*="div-h"] > * + *:before {place-self:center; width:100%; height:var(--div-h, 1px);}
-		[class*="div-h-"] {width:fit-content;}
+		[class*="div-h-"] {width:100%;}
 
 	/* Vertical Bar */
 		[class*="div-v"], [class*="div-v"] > * {place-items:center;}

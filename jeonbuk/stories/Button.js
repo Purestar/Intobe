@@ -18,6 +18,7 @@ export const Button = ({
 	Height,
 
 	FontSize,
+	Color,
 	PaddingX,
 
 	Disabled,
@@ -46,6 +47,7 @@ export const Button = ({
 		${Height !== undefined ? `--btn-h:${Height};` : ''}
 
 		${FontSize !== undefined ? `--btn-ft-s:${FontSize};` : ''}
+		${Color !== undefined ? `--btn-ft-c:${Color};` : ''}
 		${PaddingX !== undefined ? `--btn-pad-x:${PaddingX};` : ''}
 		${DisabledBackground !== undefined ? `--btn-dis-bg-c:${DisabledBackground};` : ''}
 		${DisabledBorderColor !== undefined ? `--btn-dis-bd-c:${DisabledBorderColor};` : ''}
