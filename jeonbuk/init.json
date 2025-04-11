@@ -162,7 +162,8 @@
 			"id": "Guide",
 			"submenu": [
 				{ "menu": "primeVue", "src": "https://primevue.org/", "state": "comp" },
-				{ "menu": "vw calculator", "src": "http://publishing.kr/vw/", "state": "comp" }
+				{ "menu": "vw calculator", "src": "http://publishing.kr/vw/", "state": "comp" },
+				{ "menu": "UI Guide", "src": "./storybook-static/", "state": "comp" }
 			],
 			"state": "comp"
 		}
