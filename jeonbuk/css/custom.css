@@ -1,9 +1,13 @@
 /* Divider */
-	.div-v-01 {--div-bg-c:rgba(255, 255, 255, 0.5); --div-gap:16px;}
+	.div-v-01 {--div-bg-c:rgba(255, 255, 255, 0.5); --div-gap:16px; --div-h:10px;}
 
 /* Icon */
-	.ic-link:before {background-position:0 0; width:12px; height:12px;}
-	.ic-cabinet:before {background-position:var(--bp-100) 0; width:18px; height:19px;}
+	/* General */
+		.ic-link:before {background-position:0 0; width:12px; height:12px;}
+		.ic-cabinet:before {background-position:var(--bp-100) 0; width:18px; height:19px;}
+
+	/* Arrow */
+		.ic-u-arr-01:before {background-position:var(--bp-150) 0; width:21px; height:36px;}
 
 /* Common */
 	/* Layout */
@@ -23,6 +27,16 @@
 			.h-gnb a {display:flex; place-items:center;}
 			.h-gnb > * {padding-top:10px;}
 			.h-gnb > *:first-child {padding-top:0;}
+
+		/* Footer */
+			.f-wrap {background:black; height:var(--init-footer-height); padding:36px 0 0; font-size:14px; color:#999;}
+			.f-menu {display:flex; gap:30px;}
+			.f-menu a:hover {color:white;}
+			.f-info {margin-top:36px; line-height:24px;}
+
+		/* Float Menu */
+			.float-menu {display:flex; flex-direction:column; gap:10px; position:fixed; right:12px; top:50%; translate:0 -50%;}
+			.float-menu .float-btn-top {display:flex; place-items:center; place-content:center; background:#a6165f; border-radius:50%; width:76px; height:76px;}
 
 		/* Container */
 			#container {flex:1;}
