@@ -1,5 +1,5 @@
 /* Box */
-	.box-type-01 {--box-bg-c:white; --box-sha-size:8px; --box-sha-opa:0.06; --box-bd-r:30px;}
+	.box-type-01 {--box-bg-c:white; --box-sha-size:33px; --box-sha-opa:0.06; --box-bd-r:30px;}
 
 /* Button */
 	/* Color */
@@ -10,7 +10,7 @@
 		.btn-sz-34 {--btn-h:34px; --btn-bd-r:34px; --btn-ft-s:14px;}
 
 /* Chip */
-	[class*="chip-type-01"] {--chip-bg-c:#ffffff; --chip-bd-c:#000000; --chip-bd-r:4px; --chip-pd-x:7px; --chip-h:20px; --chip-ft-s:12px; --chip-ft-c:#000000;}
+	[class*="chip-type-01"] {--chip-bg-c:#ffffff; --chip-bd-c:#ccc; --chip-bd-r:4px; --chip-pd-x:7px; --chip-h:20px; --chip-ft-s:12px; --chip-ft-c:#666; font-weight:bold;}
 
 	.chip-type-01-blu {--chip-bd-c:#004386; --chip-ft-c:#004386;}
 
@@ -90,3 +90,4 @@
 		.main-alarm.active {background:#ffeaea;}
 		.main-alarm.active:before {background-position:var(--bp-250) 0;}
 		.main-alarm.active:after {content:""; position:absolute; right:0; top:0; background:#a6165f; border:3px solid white; border-radius:50%; width:12px; height:12px;}
+		.main-top-lst {display:grid; grid-template-columns:repeat(3, 1fr);}

@@ -1,2 +1,12 @@
 /* Chip */
-	[class*="chip-type"] {display:flex; place-items:center; place-content:center; background-color:var(--chip-bg-c, var(--bg-c, var(--mc))); border:1px solid var(--chip-bd-c, var(--bd-c, var(--mc))); border-radius:var(--chip-bd-r, var(--bd-r, 16px)); width:var(--chip-w, var(--w, fit-content)); height:var(--chip-h, var(--h, fit-content)); padding-inline:var(--chip-pd-x, var(--pd-x, 16px)); font-size:var(--chip-ft-s, var(--ft-s, 16px)); color:var(--chip-ft-c, var(--ft-c, white));}
+	[class*="chip-type"] {
+		display:flex; place-items:center; place-content:center;
+		background-color:var(--chip-bg-c, var(--mc));
+		border:1px solid var(--chip-bd-c, var(--mc));
+		border-radius:var(--chip-bd-r, 16px);
+		width:var(--chip-w, fit-content);
+		height:var(--chip-h, fit-content);
+		padding-inline:var(--chip-pd-x, 16px);
+		font-size:var(--chip-ft-s, 16px);
+		color:var(--chip-ft-c, white);
+	}
