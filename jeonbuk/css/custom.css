@@ -1,5 +1,30 @@
-/* */
+/* Divider */
+	.div-v-01 {--div-bg-c:rgba(255, 255, 255, 0.5); --div-gap:16px;}
 
-/* Page */
+/* Icon */
+	.ic-link:before {background-position:0 0; width:12px; height:12px;}
+	.ic-cabinet:before {background-position:var(--bp-100) 0; width:18px; height:19px;}
+
+/* Common */
 	/* Layout */
-		#container {flex:1;}
+		/* Header */
+			.h-wrap {position:relative; background:rgba(255, 255, 255, 0.1); height:var(--init-header-height); padding-top:20px; color:white; z-index:10;}
+			.h-wrap .h-top {display:flex; place-content:space-between; font-size:14px;}
+
+			.h-lang-wrap {position:relative;}
+			.h-lang-wrap .h-lang-select {display:flex; place-items:center; gap:11px; width:100%; height:auto;}
+			.h-lang-wrap .h-lang-select:after {content:""; background-image:var(--ic); background-size:var(--bg-sz); background-position:var(--bp-50) 0; width:10px; height:6px;}
+			.h-lang-wrap .h-lang-menu {display:none; gap:18px; flex-direction:column; position:absolute; left:50%; top:26px; background:white; border-radius:10px; width:125px; padding:8px 12px; translate:-50% 0; color:black;}
+			.h-lang-wrap .h-lang-menu button {display:flex; gap:10px;}
+
+			.h-lang-wrap.active .h-lang-menu {display:flex;}
+
+			.h-gnb {display:flex; place-content:space-between; place-items:center; margin-top:16px; font-size:22px;}
+			.h-gnb a {display:flex; place-items:center;}
+			.h-gnb > * {padding-top:10px;}
+			.h-gnb > *:first-child {padding-top:0;}
+
+		/* Container */
+			#container {flex:1;}
+	/* 메인 */
+		.main-wrap {background:url("../images/img/bg_visual.png") center top no-repeat; min-height:614px; margin-top:calc(var(--init-header-height) * -1); padding-top:400px;}

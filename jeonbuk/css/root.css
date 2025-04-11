@@ -5,7 +5,7 @@
 		--init-font-family: Poppins, Noto Sans KR; /* 글자체 */
 		--init-font-size: 16px; /* 글자 크기 */
 		--init-footer-height: 232px; /* 푸터 높이 */
-		--init-header-height: 148px; /* 헤더 높이 */
+		--init-header-height: 120px; /* 헤더 높이 */
 		--init-line-height: 1.2; /* 행간 */
 		--init-letter-spacing: -0.02em; /* 자간 */
 		--init-layout-width: 1200px; /* 페이지 넓이 */

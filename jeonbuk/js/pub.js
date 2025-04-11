@@ -129,8 +129,6 @@ document.addEventListener('DOMContentLoaded', function() {
 	app.component('p-aco-head', PrimeVue.AccordionHeader);
 	app.component('p-aco-cont', PrimeVue.AccordionContent);
 
-log(PrimeVue);
-
 	// Form
 	app.component('p-autocomplete', PrimeVue.AutoComplete);
 	app.component('p-cascade-select', PrimeVue.CascadeSelect);
@@ -218,6 +216,8 @@ log(PrimeVue);
 		},
 	});
 	//app.use(PrimeVue.Config, { unstyled: true });
+
+
 
 	app.mount('body');
 });
