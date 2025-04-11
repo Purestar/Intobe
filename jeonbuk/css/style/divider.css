@@ -1,6 +1,6 @@
 /* Divider */
 	/* Default */
-		[class*="div-"], [class*="div-"] > * {display:flex; gap:var(--div-gap, 0);}
+		[class*="div-"], [class*="div-"] > * {display:flex;}
 		[class*="div-"] > * + *:before {content:""; background-color:var(--div-bg-c, black); animation-name:attr(data-ani); rotate:var(--div-rotate, 0deg);}
 
 	/* Equal */
@@ -18,13 +18,13 @@
 		}
 
 	/* Horizontal Bar */
-		[class*="div-h"] {width:var(--div-w, 100%);}
+		[class*="div-h"] {width:var(--div-w, 100%); row-gap:var(--div-gap, 0);}
 		[class*="div-h"], [class*="div-h"] > * {flex-direction:column;}
 		[class*="div-h"] > * + *:before {place-self:center; width:100%; height:var(--div-h, 1px);}
 		[class*="div-h-"] {width:100%;}
 
 	/* Vertical Bar */
-		[class*="div-v"], [class*="div-v"] > * {place-items:center;}
+		[class*="div-v"], [class*="div-v"] > * {place-items:center; column-gap:var(--div-gap, 0);}
 		[class*="div-v"] > * + *:before {width:var(--div-w, 1px); height:var(--div-h, var(--ft-s, var(--init-font-size)));}
 
 	/* Arrow */

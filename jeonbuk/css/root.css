@@ -108,14 +108,14 @@
 	:root {
 		/* Initialize */
 			--init-font-size: 3.33vw; /* 글자 크기 */
-			--init-footer-height: 47.36vw; /* 푸터 높이 */
-			--init-header-height: 16.66vw; /* 헤더 높이 */
+			--init-footer-height: 61.39vw; /* 푸터 높이 */
+			--init-header-height: 15.28vw; /* 헤더 높이 */
 			--init-layout-width: 100dvw; /* 페이지 넓이 */
 
 		/* Background */
-			--bg-img: url('../../images/bg.png'); /* 배경 이미지 경로 */
-			--ic-c: url('../../images/common_icon.png'); /* 공통 아이콘 이미지 경로 */
-			--ic: url('../../images/icon.png'); /* 아이콘 이미지 경로 */
+			--bg-img: url('../../images/m_bg.png'); /* 배경 이미지 경로 */
+			--ic-c: url('../../images/m_common_icon.png'); /* 공통 아이콘 이미지 경로 */
+			--ic: url('../../images/m_icon.png'); /* 아이콘 이미지 경로 */
 			--bg-sz: 138.88vw; /* 이미지 스프라이트 크기 */
 			--bp-50: -6.94vw; /* 50 */
 			--bp-100: -13.89vw; /* 100 */

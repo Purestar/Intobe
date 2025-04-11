@@ -1,0 +1,8 @@
+[class*="mobile"] {display:none;}
+
+@media all and (max-width:720px) {
+	.pc {display:none;}
+
+	.mobile {display:block;}
+	.mobile-flex {display:flex;}
+}
