@@ -1,9 +1,0 @@
-/* Accordion Test */
-	.aco-type-test,
-	.aco-type-test .aco-item,
-	.aco-type-test .aco-head,
-	.aco-type-test .aco-cont {border:1px solid #ffa1ad;}
-
-/* Form */
-	/* Select */
-		.form-sel-test, .form-panel-sel-test {border-color:red;}
