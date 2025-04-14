@@ -24,4 +24,8 @@
 	[class*="layout-flex"] > * {flex-basis:var(--m-w);}
 
 	[class*="layout-grid"] {display:var(--m-dp, grid);}
+
+	.m-full {width:100dvw !important; margin-inline:calc(var(--m-init-layout-padding) * -1); padding-inline:var(--m-init-layout-padding);}
+	.m-full[class*="swi-type"] {width:100dvw !important; padding:0;}
+	.m-full .swiper {padding-inline:var(--m-init-layout-padding);}
 }
