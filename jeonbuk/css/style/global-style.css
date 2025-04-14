@@ -26,7 +26,7 @@
 /* Flex & Grid */
 	[style*="--flex-d"] { flex-direction: var(--flex-d); }
 	[style*="--flex-w"] { flex-wrap: var(--flex-w); }
-	[style*="--gap"] { display: var(--dp, flex); flex-wrap:var(--flex-w, wrap); gap: var(--gap); }
+	[style*="--gap"] { gap: var(--gap); }
 	[style*="--gap-x"] { column-gap: var(--gap-x); }
 	[style*="--gap-y"] { row-gap: var(--gap-y); }
 	[style*="--grid"] { display: var(--dp, grid); }
@@ -147,9 +147,9 @@
 		[style*="--m-txt-up"] { text-combine-upright:var(--m-txt-up); }
 
 	/* Flex & Grid */
-		[style*="--m-direction"] { flex-direction: var(--m-flex-d); }
+		[style*="--m-flex-d"] { flex-direction: var(--m-flex-d); }
 		[style*="--m-flex-w"] { flex-wrap: var(--m-flex-w); }
-		[style*="--m-gap"] { display: var(--m-dp); gap: var(--m-gap); }
+		[style*="--m-gap"] { gap: var(--m-gap); }
 		[style*="--m-gap-x"] { column-gap: var(--m-gap-x); }
 		[style*="--m-gap-y"] { row-gap: var(--m-gap-y); }
 		[style*="--m-grid"] { display: var(--m-dp); }

@@ -50,3 +50,6 @@
 
 		[class*="div-h-dia"] > * + *:before,
 		[class*="div-v-dia"] > * + *:before {rotate:var(--div-rotate, 45deg);}
+
+	/* Add Style */
+		[class*="div-v"], [class*="div-v"] > * {flex-shrink:0;}

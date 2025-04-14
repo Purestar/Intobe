@@ -12,7 +12,8 @@
 		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
 		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
 		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
-		<script type="module" src="../js/pub.js"></script>
+		<script type="module" src="../js/module.js"></script>
+		<script src="../js/pub.js"></script>
 		<link rel="icon" href="../favicon.ico" sizes="any">
 		<link rel="stylesheet" href="../css/global.css">
 	</head>
@@ -30,12 +31,12 @@
 								<!-- PC 학생정보 -->
 								<div class="pc">
 									<div class="layout-flex" style="--content:space-between;">
-										<div style="--gap:50px;">
+										<div style="--dp:flex; --gap:50px;">
 											<div class="thumb-type-01 thumb-center">
 												<img src="../images/dummy/badge.png">
 											</div>
 											<div>
-												<div class="layout-flex" style="--gap:12px; --items:center;">
+												<div style="--dp:flex; --gap:12px; --items:center;">
 													<strong style="--ft-s:38px;">김전북</strong>
 													<div class="div-v-03" style="--mg-l:24px; --ft-c:#666;">
 														<span>컴퓨터공학전공</span>
@@ -71,8 +72,8 @@
 
 								<!-- Mobile 학생정보 -->
 								<div class="mobile">
-									<div class="layout-flex" style="--content:space-between;">
-										<div style="--gap:4.72vw; --items:center;">
+									<div style="--dp:flex; --content:space-between;">
+										<div style="--dp:flex; --gap:4.72vw; --items:center;">
 											<div class="thumb-type-01 thumb-center">
 												<img src="../images/dummy/badge.png">
 											</div>
@@ -251,10 +252,583 @@
 						</div>
 					</div>
 				</div>
+
+				<div id="personalized" class="swi-type-01 m-full" style="--mg-t:40px; --mg-b:80px; --m-mg-t:11.11vw; --m-mg-b:18.06vw;">
+					<div class="swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="personalized-wrap-pnk">
+									<h2 class="personalized-tit">맞춤형 전공 추천<span class="personalized-txt">AI</span></h2>
+									<ul class="lst-item">
+										<li>
+											<div style="--dp:flex; --content:space-between; --items:center;">
+												<b class="lst-tit">바이오메디컬공학부</b>
+												<label class="form-opt-chk-01">
+													<input type="checkbox">
+													<span class="opt-txt"></span>
+												</label>
+											</div>
+										</li>
+										<li>
+											<div style="--dp:flex; --content:space-between; --items:center;">
+												<b class="lst-tit">바이오메디컬공학부</b>
+												<label class="form-opt-chk-01">
+													<input type="checkbox">
+													<span class="opt-txt"></span>
+												</label>
+											</div>
+										</li>
+										<li>
+											<div style="--dp:flex; --content:space-between; --items:center;">
+												<b class="lst-tit">바이오메디컬공학부</b>
+												<label class="form-opt-chk-01">
+													<input type="checkbox">
+													<span class="opt-txt"></span>
+												</label>
+											</div>
+										</li>
+									</ul>
+									<a href="#" class="personalized-lnk">더 알아보기<i class="ic-r-arr-02"></i></a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="personalized-wrap-pur">
+									<h2 class="personalized-tit">맞춤형 직업업 추천<span class="personalized-txt">AI</span></h2>
+									<ul class="lst-item">
+										<li>
+											<div style="--dp:flex; --content:space-between; --items:center;">
+												<b class="lst-tit">바이오메디컬공학부</b>
+												<label class="form-opt-chk-01">
+													<input type="checkbox">
+													<span class="opt-txt"></span>
+												</label>
+											</div>
+										</li>
+										<li>
+											<div style="--dp:flex; --content:space-between; --items:center;">
+												<b class="lst-tit">바이오메디컬공학부</b>
+												<label class="form-opt-chk-01">
+													<input type="checkbox">
+													<span class="opt-txt"></span>
+												</label>
+											</div>
+										</li>
+										<li>
+											<div style="--dp:flex; --content:space-between; --items:center;">
+												<b class="lst-tit">바이오메디컬공학부</b>
+												<label class="form-opt-chk-01">
+													<input type="checkbox">
+													<span class="opt-txt"></span>
+												</label>
+											</div>
+										</li>
+									</ul>
+									<a href="#" class="personalized-lnk">더 알아보기<i class="ic-r-arr-02"></i></a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="personalized-wrap-blu">
+									<h2 class="personalized-tit">맞춤형 AI선배 추천<span class="personalized-txt">AI</span></h2>
+									<ul class="lst-item">
+										<li>
+											<div style="--dp:flex; --content:space-between; --items:center;">
+												<b class="lst-tit">바이오메디컬공학부</b>
+												<label class="form-opt-chk-01">
+													<input type="checkbox">
+													<span class="opt-txt"></span>
+												</label>
+											</div>
+										</li>
+										<li>
+											<div style="--dp:flex; --content:space-between; --items:center;">
+												<b class="lst-tit">바이오메디컬공학부</b>
+												<label class="form-opt-chk-01">
+													<input type="checkbox">
+													<span class="opt-txt"></span>
+												</label>
+											</div>
+										</li>
+										<li>
+											<div style="--dp:flex; --content:space-between; --items:center;">
+												<b class="lst-tit">바이오메디컬공학부</b>
+												<label class="form-opt-chk-01">
+													<input type="checkbox">
+													<span class="opt-txt"></span>
+												</label>
+											</div>
+										</li>
+									</ul>
+									<a href="#" class="personalized-lnk">더 알아보기<i class="ic-r-arr-02"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination swi-page-01"></div>
+					</div>
+				</div>
 			</div>
+			<section class="main-section-wrap">
+				<section class="main-section">
+					<div class="layout-inner">
+						<div style="--dp:flex; --content:space-between; --m-items:end;">
+							<h2 class="main-tit"><strong>AI가 김전북님의 진로를 분석해</strong><br class="mobile"> 교과목을 추천해드려요!</h2>
+							<a href="#" class="btn-type-b-lgry btn-sz-34">전체보기<i class="ic-r-arr-02"></i></a>
+						</div>
+						<div id="pathfinder" class="swi-type-02 m-full" style="--mg-t:40px; --m-mg-t:5.56vw;">
+							<div class="swiper brd-wrap">
+								<div class="swiper-wrapper brd-lst-01">
+									<div class="swiper-slide">
+										<div class="thumb-type-blu">
+											<img src="../images/dummy/thumb_01_blu.png">
+											<div class="thumb-lt">
+												<span class="chip-type-01">전공필수</span>
+											</div>
+											<div class="thumb-rt">
+												<label class="form-opt-chk-01">
+													<input type="checkbox">
+													<span class="opt-txt"></span>
+												</label>
+											</div>
+											<div class="thumb-c">이산수학</div>
+										</div>
+										<div class="brd-cont">
+											<div class="brd-chip-lst">
+												<span class="chip-type-01">관심사</span>
+												<span class="chip-type-01">롤모델</span>
+											</div>
+											<div class="brd-ctgy div-v-03">
+												<span>컴퓨터공학전공</span>
+												<span>2-2</span>
+												<span>2학점 (2시간)</span>
+											</div>
+											<p class="brd-desc layout-ellipsis" style="--line:2;">표준자바(J2SE)를 중심으로 자바의 기본 기능들과 라이브러리, 네트워크, 애플릿표준자바(J2SE)를 중심으로 자바의 기본 기능들과 라이브러리, 네트워크, 애플릿</p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="thumb-type-grn">
+											<img src="../images/dummy/thumb_01_grn.png">
+											<div class="thumb-lt">
+												<span class="chip-type-01">전공선택</span>
+											</div>
+											<div class="thumb-rt">
+												<label class="form-opt-chk-01">
+													<input type="checkbox">
+													<span class="opt-txt"></span>
+												</label>
+											</div>
+											<div class="thumb-c">이산수학</div>
+										</div>
+										<div class="brd-cont">
+											<div class="brd-chip-lst">
+												<span class="chip-type-01">관심사</span>
+												<span class="chip-type-01">롤모델</span>
+											</div>
+											<div class="brd-ctgy div-v-03">
+												<span>컴퓨터공학전공</span>
+												<span>2-2</span>
+												<span>2학점 (2시간)</span>
+											</div>
+											<p class="brd-desc layout-ellipsis" style="--line:2;">표준자바(J2SE)를 중심으로 자바의 기본 기능들과 라이브러리, 네트워크, 애플릿표준자바(J2SE)를 중심으로 자바의 기본 기능들과 라이브러리, 네트워크, 애플릿</p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="thumb-type-lgrn">
+											<img src="../images/dummy/thumb_01_lgrn.png">
+											<div class="thumb-lt">
+												<span class="chip-type-01">전공핵심</span>
+											</div>
+											<div class="thumb-rt">
+												<label class="form-opt-chk-01">
+													<input type="checkbox">
+													<span class="opt-txt"></span>
+												</label>
+											</div>
+											<div class="thumb-c">이산수학</div>
+										</div>
+										<div class="brd-cont">
+											<div class="brd-chip-lst">
+												<span class="chip-type-01">관심사</span>
+												<span class="chip-type-01">롤모델</span>
+											</div>
+											<div class="brd-ctgy div-v-03">
+												<span>컴퓨터공학전공</span>
+												<span>2-2</span>
+												<span>2학점 (2시간)</span>
+											</div>
+											<p class="brd-desc layout-ellipsis" style="--line:2;">표준자바(J2SE)를 중심으로 자바의 기본 기능들과 라이브러리, 네트워크, 애플릿표준자바(J2SE)를 중심으로 자바의 기본 기능들과 라이브러리, 네트워크, 애플릿</p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="thumb-type-ylw">
+											<img src="../images/dummy/thumb_01_ylw.png">
+											<div class="thumb-lt">
+												<span class="chip-type-01">전공핵심</span>
+											</div>
+											<div class="thumb-rt">
+												<label class="form-opt-chk-01">
+													<input type="checkbox">
+													<span class="opt-txt"></span>
+												</label>
+											</div>
+											<div class="thumb-c">이산수학</div>
+										</div>
+										<div class="brd-cont">
+											<div class="brd-chip-lst">
+												<span class="chip-type-01">관심사</span>
+												<span class="chip-type-01">롤모델</span>
+											</div>
+											<div class="brd-ctgy div-v-03">
+												<span>컴퓨터공학전공</span>
+												<span>2-2</span>
+												<span>2학점 (2시간)</span>
+											</div>
+											<p class="brd-desc layout-ellipsis" style="--line:2;">표준자바(J2SE)를 중심으로 자바의 기본 기능들과 라이브러리, 네트워크, 애플릿표준자바(J2SE)를 중심으로 자바의 기본 기능들과 라이브러리, 네트워크, 애플릿</p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="thumb-type-ylw">
+											<img src="../images/dummy/thumb_01_ylw.png">
+											<div class="thumb-lt">
+												<span class="chip-type-01">전공핵심</span>
+											</div>
+											<div class="thumb-rt">
+												<label class="form-opt-chk-01">
+													<input type="checkbox">
+													<span class="opt-txt"></span>
+												</label>
+											</div>
+											<div class="thumb-c">이산수학</div>
+										</div>
+										<div class="brd-cont">
+											<div class="brd-chip-lst">
+												<span class="chip-type-01">관심사</span>
+												<span class="chip-type-01">롤모델</span>
+											</div>
+											<div class="brd-ctgy div-v-03">
+												<span>컴퓨터공학전공</span>
+												<span>2-2</span>
+												<span>2학점 (2시간)</span>
+											</div>
+											<p class="brd-desc layout-ellipsis" style="--line:2;">표준자바(J2SE)를 중심으로 자바의 기본 기능들과 라이브러리, 네트워크, 애플릿표준자바(J2SE)를 중심으로 자바의 기본 기능들과 라이브러리, 네트워크, 애플릿</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-nav-wrap swi-nav-01 pc">
+								<div class="swiper-button-prev"></div>
+								<div class="swiper-button-next"></div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="main-section">
+					<div class="layout-inner">
+						<h2 class="main-tit"><strong>김전북님의 진로를 위한</strong><br class="mobile"> 비교과 프로그램을 추천해드려요!</h2>
+
+						<div id="extracurriculars" class="swi-type-03 m-full" style="--mg-t:40px; --m-mg-t:5.56vw;">
+							<div class="swiper brd-wrap">
+								<div class="swiper-wrapper brd-lst-02">
+									<div class="swiper-slide">
+										<div style="--dp:flex; --content:space-between; --items:center;">
+											<div style="--items:center; --gap:12px; --m-gap:2.78vw; --ft-c:#666;">
+												<span class="chip-type-01-red">예정</span>
+												<span style="--ft-s:14px; --m-ft-s:3.33vw;">취업지원처</span>
+											</div>
+											<label class="form-opt-chk-01">
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</div>
+										<h3 class="brd-tit">비교과명이 노출됩니다.</h3>
+										<div class="brd-date-wrap">
+											<p><span style="--ft-c:#666;">신청기간</span> 2024.08.19(수) ~ 2024.08.23(금)</p>
+											<p><span style="--ft-c:#666;">운영기간</span> 2024.08.19(수) ~ 2024.08.23(금)</p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div style="--dp:flex; --content:space-between; --items:center;">
+											<div style="--items:center; --gap:12px; --m-gap:2.78vw; --ft-c:#666;">
+												<span class="chip-type-01-red">예정</span>
+												<span style="--ft-s:14px; --m-ft-s:3.33vw;">취업지원처</span>
+											</div>
+											<label class="form-opt-chk-01">
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</div>
+										<h3 class="brd-tit">비교과명이 노출됩니다.</h3>
+										<div class="brd-date-wrap">
+											<p><span style="--ft-c:#666;">신청기간</span> 2024.08.19(수) ~ 2024.08.23(금)</p>
+											<p><span style="--ft-c:#666;">운영기간</span> 2024.08.19(수) ~ 2024.08.23(금)</p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div style="--dp:flex; --content:space-between; --items:center;">
+											<div style="--items:center; --gap:12px; --m-gap:2.78vw; --ft-c:#666;">
+												<span class="chip-type-01-red">예정</span>
+												<span style="--ft-s:14px; --m-ft-s:3.33vw;">취업지원처</span>
+											</div>
+											<label class="form-opt-chk-01">
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</div>
+										<h3 class="brd-tit">비교과명이 노출됩니다.</h3>
+										<div class="brd-date-wrap">
+											<p><span style="--ft-c:#666;">신청기간</span> 2024.08.19(수) ~ 2024.08.23(금)</p>
+											<p><span style="--ft-c:#666;">운영기간</span> 2024.08.19(수) ~ 2024.08.23(금)</p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div style="--dp:flex; --content:space-between; --items:center;">
+											<div style="--items:center; --gap:12px; --m-gap:2.78vw; --ft-c:#666;">
+												<span class="chip-type-01-red">예정</span>
+												<span style="--ft-s:14px; --m-ft-s:3.33vw;">취업지원처</span>
+											</div>
+											<label class="form-opt-chk-01">
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</div>
+										<h3 class="brd-tit">비교과명이 노출됩니다.</h3>
+										<div class="brd-date-wrap">
+											<p><span style="--ft-c:#666;">신청기간</span> 2024.08.19(수) ~ 2024.08.23(금)</p>
+											<p><span style="--ft-c:#666;">운영기간</span> 2024.08.19(수) ~ 2024.08.23(금)</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-nav-wrap swi-nav-01 pc">
+								<div class="swiper-button-prev"></div>
+								<div class="swiper-button-next"></div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="main-section">
+					<div class="layout-inner">
+						<h2 class="main-tit"><strong>AI Job  CHECK LIST!</strong></h2>
+						<ul class="main-aijob-lst m-full" data-scroll="h">
+							<li><span class="main-aijob-lst-txt">멘토링<br>참여</span></li>
+							<li><span class="main-aijob-lst-txt">AI선배<br>설정</span></li>
+							<li class="active"><span class="main-aijob-lst-txt">메이저맵 설계</span></li>
+							<li><span class="main-aijob-lst-txt">포트폴리오<br>등록</span></li>
+							<li><span class="main-aijob-lst-txt">자기소개서<br>작성</span></li>
+							<li class="active"><span class="main-aijob-lst-txt">이력서작성</span></li>
+						</ul>
+					</div>
+				</section>
+				<section class="main-section">
+					<div class="layout-inner">
+						<h2 class="main-tit"><strong>통합취업정보</strong></h2>
+						<div style="--dp:flex; --mg-t:30px; --gap:30px; --m-flex-d:column; --m-mg-t:5.56vw; --m-gap:4.72vw;">
+							<div class="box-type-02" style="flex:1;">
+								<div style="--dp:flex; --content:space-between; --m-items:end;">
+									<h3 class="main-tit-02"><strong>고용24 채용정보</strong></h3>
+									<a href="#" class="btn-type-b-lgry btn-sz-34">더보기<i class="ic-r-arr-02"></i></a>
+								</div>
+								<ul class="lst-latest-02" style="--mg-t:50px; --m-mg-t:5.56vw;">
+									<li>
+										<a href="#" class="lst-lnk layout-ellipsis">[한국언론진흥재단]2025년1차 정규직 신입사원패용공고 다함께 돌봄 센터 돌봄교사 모집 국어학원강사모집 (주)휴먼</a>
+										<div class="div-v-03 lst-term">
+											<span>등록 : 2025.03.10</span>
+											<span>마감 : 채용시까지</span>
+										</div>
+									</li>
+									<li>
+										<a href="#" class="lst-lnk layout-ellipsis">[한국언론진흥재단]2025년1차 정규직 신입사원패용공고 다함께 돌봄 센터 돌봄교사 모집 국어학원강사모집 (주)휴먼</a>
+										<div class="div-v-03 lst-term">
+											<span>등록 : 2025.03.10</span>
+											<span>마감 : 채용시까지</span>
+										</div>
+									</li>
+									<li>
+										<a href="#" class="lst-lnk layout-ellipsis">[한국언론진흥재단]2025년1차 정규직 신입사원패용공고 다함께 돌봄 센터 돌봄교사 모집 국어학원강사모집 (주)휴먼</a>
+										<div class="div-v-03 lst-term">
+											<span>등록 : 2025.03.10</span>
+											<span>마감 : 채용시까지</span>
+										</div>
+									</li>
+									<li>
+										<a href="#" class="lst-lnk layout-ellipsis">[한국언론진흥재단]2025년1차 정규직 신입사원패용공고 다함께 돌봄 센터 돌봄교사 모집 국어학원강사모집 (주)휴먼</a>
+										<div class="div-v-03 lst-term">
+											<span>등록 : 2025.03.10</span>
+											<span>마감 : 채용시까지</span>
+										</div>
+									</li>
+									<li>
+										<a href="#" class="lst-lnk layout-ellipsis">[한국언론진흥재단]2025년1차 정규직 신입사원패용공고 다함께 돌봄 센터 돌봄교사 모집 국어학원강사모집 (주)휴먼</a>
+										<div class="div-v-03 lst-term">
+											<span>등록 : 2025.03.10</span>
+											<span>마감 : 채용시까지</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="layout-flex" style="--flex-d:column; --gap:12px; --w:388px; --m-dp:grid; --m-w:100%; --m-gap:4.72vw;">
+								<a href="#" class="box-type-02-01" style="--h:110px; --m-h:20.69vw;">
+									<div style="--dp:flex; --items:center; --content:space-between;">
+										<div>
+											<div style="--flex-d:column; --gap:10px;">
+												<p style="--ft-s:15px; --m-ft-s:3.33vw;">등록된 스펙을 AI프렌즈가 분석해드려요!</p>
+												<p style="--ft-s:20px; --m-ft-s:3.89vw;"><strong>큰사람에서 스펙을 등록해보세요!</strong></p>
+											</div>
+										</div>
+										<i class="ic-r-arr-01"></i>
+									</div>
+								</a>
+								<a href="#" class="box-type-02-01" style="--h:110px; --m-h:20.69vw;">
+									<div style="--dp:flex; --items:center; --content:space-between;">
+										<div>
+											<div style="--flex-d:column; --gap:10px;">
+												<p style="--ft-s:15px; --m-ft-s:3.33vw;">유학생을 모집하고 있는 기업을 찾고있나요?</p>
+												<p style="--ft-s:20px; --m-ft-s:3.89vw;"><strong>유학생 지원정보를 확인해보세요!</strong></p>
+											</div>
+										</div>
+										<i class="ic-r-arr-01"></i>
+									</div>
+								</a>
+								<div style="--dp:flex; --gap:12px;">
+									<a href="#" class="box-type-02" style="flex:1; --dp:flex; --content:center; --items:center; --h:110px; --m-h:20.69vw;"><img src="../images/img/img_jobkorea.png"></a>
+									<a href="#" class="box-type-02" style="flex:1; --dp:flex; --content:center; --items:center; --h:110px; --m-h:20.69vw;"><img src="../images/img/img_gy24.png"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="main-section">
+					<div class="layout-inner">
+						<div style="--dp:grid; --gap:80px; --grid-t-col:2; --m-dp:grid; --m-grid-t-col:1; --m-gap:11.11vw;">
+							<div>
+								<div style="--dp:flex; --content:space-between; --m-items:end;">
+									<h2 class="main-tit"><strong>공지사항</strong></h2>
+									<a href="#" class="btn-type-b-lgry btn-sz-34">더보기<i class="ic-r-arr-02"></i></a>
+								</div>
+								<ul class="lst-latest" style="--mg-t:40px; --m-mg-t:5.56vw;">
+									<li>
+										<a href="#" class="lst-lnk layout-ellipsis">[한국언론진흥재단]2025년1차 정규직 신입사원패용공고 다함께 돌봄 센터 돌봄교사 모집 국어학원강사모집 (주)휴먼</a>
+										<div class="lst-date">2025.01.15</div>
+									</li>
+									<li>
+										<a href="#" class="lst-lnk layout-ellipsis">[한국언론진흥재단]2025년1차 정규직 신입사원패용공고 다함께 돌봄 센터 돌봄교사 모집 국어학원강사모집 (주)휴먼</a>
+										<div class="lst-date">2025.01.15</div>
+									</li>
+									<li>
+										<a href="#" class="lst-lnk layout-ellipsis">[한국언론진흥재단]2025년1차 정규직 신입사원패용공고 다함께 돌봄 센터 돌봄교사 모집 국어학원강사모집 (주)휴먼</a>
+										<div class="lst-date">2025.01.15</div>
+									</li>
+								</ul>
+							</div>
+							<div>
+								<div style="--dp:flex; --content:space-between; --m-items:end;">
+									<h2 class="main-tit"><strong>FAQ</strong></h2>
+									<a href="#" class="btn-type-b-lgry btn-sz-34">더보기<i class="ic-r-arr-02"></i></a>
+								</div>
+								<ul class="lst-latest" style="--mg-t:40px; --m-mg-t:5.56vw;">
+									<li>
+										<a href="#" class="lst-lnk layout-ellipsis">
+											<div style="--dp:flex; --flex-w:nowrap; --gap:8px;">
+												<strong>Q.</strong>
+												<span class="div-v-04">
+													<span>Major Map설계</span>
+													<span>My Major Map은 어떻게 활용하나요?</span>
+												</span>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="lst-lnk layout-ellipsis">
+											<div style="--dp:flex; --flex-w:nowrap; --gap:8px;">
+												<strong>Q.</strong>
+												<span class="div-v-04">
+													<span>Major Map설계</span>
+													<span>My Major Map은 어떻게 활용하나요?</span>
+												</span>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="lst-lnk layout-ellipsis">
+											<div style="--dp:flex; --flex-w:nowrap; --gap:8px;">
+												<strong>Q.</strong>
+												<span class="div-v-04">
+													<span>Major Map설계</span>
+													<span>My Major Map은 어떻게 활용하나요?</span>
+												</span>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+			</section>
 		</div>
 
 		<!-- 푸터 -->
 		<div data-include="../include/footer.html"></div>
+
+		<script>
+			let resizeTimeout;
+
+			function initSwipers() {
+				// 메인 상단 스테이터스 슬라이드
+				const personalizedSlide = new Swiper('#personalized .swiper', {
+					slidesPerView: 1.05,
+					spaceBetween: calculatePercentage(30),
+					pagination: { el: '#personalized .swiper-pagination' },
+					breakpoints: {
+						720: {
+							slidesPerView: 3,
+							spaceBetween: 18
+						},
+					},
+				});
+
+				// 교과목 추천 슬라이드
+				const pathfinderSlide = new Swiper('#pathfinder .swiper', {
+					slidesPerView: 1.3,
+					spaceBetween: calculatePercentage(36),
+					navigation: {
+						nextEl: "#pathfinder .swiper-button-next",
+						prevEl: "#pathfinder .swiper-button-prev"
+					},
+					breakpoints: {
+						720: {
+							slidesPerView: 4,
+							spaceBetween: 40
+						},
+					},
+				});
+
+				// 비교과목 추천 슬라이드
+				const extracurricularsSlide = new Swiper('#extracurriculars .swiper', {
+					slidesPerView: 1.2,
+					spaceBetween: calculatePercentage(36),
+					navigation: {
+						nextEl: "#extracurriculars .swiper-button-next",
+						prevEl: "#extracurriculars .swiper-button-prev"
+					},
+					breakpoints: {
+						720: {
+							slidesPerView: 3,
+							spaceBetween: 40
+						},
+					},
+				});
+			}
+
+			function updateSwiperSpace() {
+				clearTimeout(resizeTimeout);
+				resizeTimeout = setTimeout(() => {
+					if (window.personalizedSlide) window.personalizedSlide.destroy(true, true);
+					if (window.pathfinderSlide) window.pathfinderSlide.destroy(true, true);
+					initSwipers();
+				}, 200);
+			}
+
+			window.addEventListener('DOMContentLoaded', () => { initSwipers() });
+			window.addEventListener('resize', updateSwiperSpace);
+		</script>
 	</body>
 </html>
