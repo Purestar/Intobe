@@ -474,7 +474,7 @@
 		[class*="lst-type-02"].bp-number-01 .lst-tit {align-items:center; flex:1; font-size:16px; font-weight:500;}
 		[class*="lst-type-02"] .brd-num {width:23px; text-align:center;}
 		[class*="lst-type-02"] .no-data {color:#999;}
-		[class*="lst-type-02"] .lst-bottom {position:relative; display:flex; width:calc(100% + 48px); margin:24px -24px -29px -24px; z-index:10;}
+		[class*="lst-type-02"] .lst-bottom {position:relative; display:flex; width:calc(100% + 48px); margin:24px -24px -29px -24px; z-index:9;}
 		[class*="lst-type-02"] .lst-bottom > * {flex:1; border-radius:0; border-top-left-radius:0; border-top-right-radius:0; font-weight:500;}
 		[class*="lst-type-02"] .lst-bottom > *:first-child {border-bottom-left-radius:16px;}
 		[class*="lst-type-02"] .lst-bottom > *:last-child {border-bottom-right-radius:16px;}
