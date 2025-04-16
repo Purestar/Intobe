@@ -656,9 +656,14 @@
 				</div>
 			</div>
 			<div class="my-major-map-pool" :class="{ active: isActive }">
-				<button type="button" class="btn-pool-tg mt-40 m-mt-0" @click="togglePool"><i class="ic-l-arrow-02"></i>POOL</button>
+				<button type="button" class="btn-pool-tg mt-40" @click="togglePool"><i class="ic-l-arrow-02"></i>POOL</button>
 				<div class="my-major-map-pool-wrap">
-					<button type="button" class="btn-pool-close" @click="togglePool"><i class="ic-x"></i></button>
+					<div class="mobile">
+						<div class="my-major-map-pool-header">
+							<h1>POOL</h1>
+							<button type="button" class="btn-pool-close" @click="togglePool"><i class="ic-x"></i></button>
+						</div>
+					</div>
 					<n-tabs type="line" class="tabs-type-01-01 tabs-equal">
 						<n-tab-pane name="pool-tab1" tab="교과 POOL">
 							<div class="box-type-04 mt-24">

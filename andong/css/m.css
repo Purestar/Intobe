@@ -575,23 +575,12 @@
 
 			.my-major-map > *.complete .my-major-map-lst:before {background-size:8.33vw 13.75vw;}
 
-			.my-major-map-pool {display:flex; align-items:flex-start; position:fixed; right:0; top:0; height:100%; padding:20px 0; transform:translate(604px, 0); transition:transform .3s ease; z-index:10;}
-			.my-major-map-pool .btn-pool-tg {display:flex; flex:0 0 48px; align-items:center; gap:16px; background:var(--mc); border-top-left-radius:24px; border-bottom-left-radius:24px; width:48px; height:auto; padding:32px 0; font-weight:500; writing-mode:vertical-rl; text-orientation:upright; color:white;}
-			.my-major-map-pool-wrap {display:flex; background:white; border-top-left-radius:24px; border-bottom-left-radius:24px; width:604px; height:100%; padding:40px;}
-			.my-major-map-pool-wrap .n-tabs {overflow:hidden; height:100%;}
-			.my-major-map-pool-wrap .n-tab-pane {overflow:hidden; display:flex; flex-direction:column; height:100%; padding:0 !important;}
-			.my-major-map-pool-wrap .my-major-map-pool-list {height:100%; margin-top:40px;}
-			.my-major-map-pool-back {display:none; position:fixed; left:0; top:0; width:100dvw; height:100dvh;}
-			.my-major-map-pool.active {transform:translate(0, 0); transition:transform .3s ease;}
-			.my-major-map-pool.active .btn-pool-tg .ic-l-arrow-02 {transform:rotate(180deg);}
-			.my-major-map-pool.active + .my-major-map-pool-back {display:block;}
-
-			.my-major-map-pool {flex-direction:column; margin:0; padding:0; transform:translate(100dvw, 0);}
-			.my-major-map-pool .btn-pool-tg {position:static; flex:0 0 var(--init-hh); background:white; gap:0; border-radius:0; border-bottom:1px solid #e2e2e2; width:100%; height:var(--init-hh); padding:0 var(--init-m-wr-side-pd); writing-mode:inherit; font-size:5vw; color:black;}
+			.my-major-map-pool {padding:0; transform:translate(100dvw, 0);}
+			.my-major-map-pool .btn-pool-tg {flex:0 0 6.67vw; gap:2.22vw; border-top-left-radius:3.33vw; border-bottom-left-radius:3.33vw; width:6.67vw; padding:4.44vw 0;}
 			.my-major-map-pool .btn-pool-close {position:absolute; right:0; top:0; width:var(--init-hh); height:var(--init-hh);}
 			.my-major-map-pool-header {display:flex; justify-content:space-between; align-items:center; height:15.28vw; padding:0 var(--init-m-wr-side-pd)}
 			.my-major-map-pool-header h1 {font-size:5vw; font-weight:700; color:black;}
-			.my-major-map-pool-wrap {overflow:hidden; flex-direction:column; border-top-left-radius:0; border-bottom-left-radius:0; width:100dvw; height:100dvh; padding:var(--init-m-wr-side-pd) 0;}
+			.my-major-map-pool-wrap {overflow:hidden; flex-direction:column; border-top-left-radius:0; border-bottom-left-radius:0; width:100dvw; height:100dvh; padding:0 0 var(--init-m-wr-side-pd);}
 			.my-major-map-pool-wrap .my-major-map-pool-list {margin-top:40px;}
 			.my-major-map-pool-wrap .n-tabs {padding:0 var(--init-m-wr-side-pd) 0;}
 			.my-major-map-pool-form {table-layout:fixed; width:100%;}
