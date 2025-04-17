@@ -1,10 +1,20 @@
 // primeVue Component
 document.addEventListener('DOMContentLoaded', function() {
-	const { createApp, ref } = Vue;
+	const { createApp, ref, reactive } = Vue;
 
 	const app = createApp({
 		setup() {
-			const { date, value } = ref();
+			const popups = reactive({ popup: false });
+
+			function togglePopup(id) {
+				popups[id] = !popups[id];
+			}
+
+			return {
+				popups,
+				togglePopup
+			};
+			/*const { date, value } = ref();
 
 			const pubSelectList = ref();
 			const pubSelectListTest = ref([
@@ -100,7 +110,7 @@ document.addEventListener('DOMContentLoaded', function() {
 				pubSelectListTest,
 				pubSelectListTest02,
 				popupOpen
-			};
+			};*/
 		},
         mounted() {
 			const btn = document.getElementById("openPopupBtn");

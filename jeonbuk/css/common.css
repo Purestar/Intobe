@@ -22,6 +22,8 @@
 		strong {font-weight:700;}
 		small {font-size:80%;}
 		em {font-style:normal; color:var(--mic);}
+		q {color:var(--mc);}
+		q:before, q:after {display:none;}
 
 		ul, ol {list-style:none;}
 		summary {list-style-type:none; cursor:pointer;}

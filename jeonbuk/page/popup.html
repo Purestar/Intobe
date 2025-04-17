@@ -7,12 +7,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>Index</title>
 		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-		<script type="module" src="../js/index.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
 		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
 		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
-		<script type="module" src="../js/pub.js"></script>
+		<script type="module" src="../js/module.js"></script>
+		<script src="../js/pub.js"></script>
 		<link rel="icon" href="../favicon.ico" sizes="any">
 		<link rel="stylesheet" href="../css/global.css">
 	</head>
@@ -21,15 +21,162 @@
 			<div style="--flex-d:column; --gap:10px;">
 				<h1 style="--ft-s:20px; --ft-w:bold;">진입</h1>
 				<div style="--dp:grid; --grid-t-col:7; --gap:10px;">
-					<button class="btn-type" disabled>초기설정완료</button>
-					<button class="btn-type" disabled>웰컴배지획득</button>
-					<button class="btn-type" disabled>취업스팩분석 결과 확인</button>
+					<!-- 초기설정완료 -->
+					<button type="button" class="btn-type" @click="togglePopup('common-01')">초기설정완료</button>
+					<p-popup class="pop-type-alert" modal v-model:visible="popups['common-01']">
+						<div class="pop-cont">
+							<div style="--dp:flex; --flex-d:column; --items:center; --txt-a:center;">
+								<img src="../images/img/img_chara.png">
+								<h2 class="txt-01" style="--mg-t:64px;">이제 AI Job이<br>김전북님에게 맞춤 추천할 준비를 마쳤습니다!</h2>
+								<p style="--mg-t:24px;">설정한 진로는 AI Job 메인에서언제든지 변경할 수 있습니다. </p>
+							</div>
+						</div>
+						<template #footer>
+							<button type="button" class="btn-type-b-blk">확인</button>
+						</template>
+					</p-popup>
+
+					<!-- 웰컴배지획득 -->
+					<button type="button" class="btn-type" @click="togglePopup('common-02')">웰컴배지획득</button>
+					<p-popup class="pop-type-alert" modal v-model:visible="popups['common-02']">
+						<div class="pop-cont">
+							<div style="--dp:flex; --flex-d:column; --items:center; --txt-a:center;">
+								<img src="../images/img/badge-01.png">
+								<h2 class="txt-01" style="--mg-t:64px;">AI 학사 Advisor에 오신걸 환영해요!<br>첫 방문의 기념으로 Welcome배지를 선물로 드릴게요!</h2>
+								<p style="--mg-t:24px;">활동에 따라 획득할 수 있어요!<br>획득한 배지는 메인에서 대표 배지로 변경할 수 있습니다.</p>
+							</div>
+						</div>
+						<template #footer>
+							<button type="button" class="btn-type-b-blk">확인</button>
+						</template>
+					</p-popup>
+
+					<!-- 취업스팩분석 결과 확인하기 -->
+					<button type="button" class="btn-type" @click="togglePopup('common-03')">취업스팩분석 결과 확인</button>
+					<p-popup class="pop-type-01" modal :style="{ width: '580px' }" v-model:visible="popups['common-03']">
+						<template #header>
+							<h1 class="pop-title">취업스팩분석 결과 확인하기</h1>
+						</template>
+						<div class="pop-cont">
+							<div style="--dp:flex; --flex-d:column; --items:center; --txt-a:center;">
+								<p class="txt-02">우리 학교 선배가 취업한 기업을 ‘희망기업’으로 선택하셨네요!</p>
+								<p class="txt-01"><b><q>‘AI 취업스펙 분석 결과’</q>를 지금 바로 확인하세요!</b></p>
+
+								<div class="thumb-type-02 thumb-center" style="--mg-t:36px; --m-mg-t:8.33vw;">
+									<img src="../images/dummy/img_samsung.png">
+								</div>
+							</div>
+						</div>
+						<template #footer>
+							<a href="#" class="btn-type">바로가기</a>
+						</template>
+					</p-popup>
 				</div>
 			</div>
 			<div style="--flex-d:column; --gap:10px;">
 				<h1 style="--ft-s:20px; --ft-w:bold;">메인</h1>
 				<div style="--dp:grid; --grid-t-col:7; --gap:10px;">
-					<button class="btn-type" disabled>대표배지변경</button>
+					<!-- 대표배지변경 -->
+					<button type="button" class="btn-type" @click="togglePopup('main-01')">대표배지변경</button>
+					<p-popup class="pop-type-01" modal v-model:visible="popups['main-01']">
+						<template #header>
+							<h1 class="pop-title">대표배지변경</h1>
+						</template>
+						<div class="pop-cont">
+							<div class="lst-badge">
+								<div class="form-opt-rdo-02">
+									<label>
+										<input type="radio" name="badge-chg">
+										<span class="opt-txt"><img src="../images/img/badge-01.png" class="badge-img">웰컴</span>
+									</label>
+									<p class="lst-badge-desc">첫 방문을 환영해요</p>
+								</div>
+								<div class="form-opt-rdo-02">
+									<label>
+										<input type="radio" disabled name="badge-chg">
+										<span class="opt-txt"><img src="../images/img/badge-02.png" class="badge-img">다재다능</span>
+									</label>
+									<p class="lst-badge-desc">스킬을 등록했어요</p>
+								</div>
+								<div class="form-opt-rdo-02">
+									<label>
+										<input type="radio" disabled name="badge-chg">
+										<span class="opt-txt"><img src="../images/img/badge-03.png" class="badge-img">스킬장인</span>
+									</label>
+									<p class="lst-badge-desc">스킬을 15개나<br>보유했어요</p>
+								</div>
+								<div class="form-opt-rdo-02">
+									<label>
+										<input type="radio" name="badge-chg">
+										<span class="opt-txt"><img src="../images/img/badge-04.png" class="badge-img">꿈의나침반</span>
+									</label>
+									<p class="lst-badge-desc">롤모델을 설정했어요</p>
+								</div>
+								<div class="form-opt-rdo-02">
+									<label>
+										<input type="radio" name="badge-chg">
+										<span class="opt-txt"><img src="../images/img/badge-05.png" class="badge-img">자격입문자</span>
+									</label>
+									<p class="lst-badge-desc">첫자격스크랩</p>
+								</div>
+								<div class="form-opt-rdo-02">
+									<label>
+										<input type="radio" name="badge-chg">
+										<span class="opt-txt"><img src="../images/img/badge-06.png" class="badge-img">자격활동가</span>
+									</label>
+									<p class="lst-badge-desc">10개이상 스크랩</p>
+								</div>
+								<div class="form-opt-rdo-02">
+									<label>
+										<input type="radio" disabled name="badge-chg">
+										<span class="opt-txt"><img src="../images/img/badge-07.png" class="badge-img">자격전문가</span>
+									</label>
+									<p class="lst-badge-desc">20개이상 스크랩</p>
+								</div>
+								<div class="form-opt-rdo-02">
+									<label>
+										<input type="radio" disabled name="badge-chg">
+										<span class="opt-txt"><img src="../images/img/badge-08.png" class="badge-img">자격마스터</span>
+									</label>
+									<p class="lst-badge-desc">30개이상 스크랩</p>
+								</div>
+								<div class="form-opt-rdo-02">
+									<label>
+										<input type="radio" name="badge-chg">
+										<span class="opt-txt"><img src="../images/img/badge-09.png" class="badge-img">미래설계자</span>
+									</label>
+									<p class="lst-badge-desc">Major Map을 설계했어요</p>
+								</div>
+								<div class="form-opt-rdo-02">
+									<label>
+										<input type="radio" name="badge-chg">
+										<span class="opt-txt"><img src="../images/img/badge-10.png" class="badge-img">자아탐구자</span>
+									</label>
+									<p class="lst-badge-desc">자기소개서를 작성했어요</p>
+								</div>
+								<div class="form-opt-rdo-02">
+									<label>
+										<input type="radio" name="badge-chg">
+										<span class="opt-txt"><img src="../images/img/badge-11.png" class="badge-img">커리어프로</span>
+									</label>
+									<p class="lst-badge-desc">이력서를 작성했어요</p>
+								</div>
+								<div class="form-opt-rdo-02">
+									<label>
+										<input type="radio" name="badge-chg">
+										<span class="opt-txt"><img src="..
+											/images/img/badge-12.png" class="badge-img">커리어빌더</span>
+									</label>
+									<p class="lst-badge-desc">포트폴리오를 등록했어요</p>
+								</div>
+							</div>
+						</div>
+						<template #footer>
+							<button type="button" class="btn-type-b-blk">취소</button>
+							<button type="button" class="btn-type">변경</button>
+						</template>
+					</p-popup>
+
 					<button class="btn-type" disabled>메인팝업</button>
 				</div>
 			</div>

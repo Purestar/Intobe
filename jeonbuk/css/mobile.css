@@ -45,6 +45,11 @@
 			.form-opt-chk-01 input:focus:checked + .opt-txt:before {flex:0 0 5.56vw; width:5.56vw; height:5.56vw;}
 			.form-opt-chk-01 .opt-txt:after {left:1.25vw; top:1.53vw; width:3.33vw; height:2.78vw;}
 
+		/* Radio */
+			.form-opt-rdo-02 .opt-txt {font-size:3.88vw;}
+			.form-opt-rdo-02 .opt-txt:before {flex:0 0 27.78vw; border-radius:2.50vw; width:27.78vw; height:27.78vw;}
+			.form-opt-rdo-02 input:disabled + .opt-txt:after {left:9.44vw; top:7.36vw; width:9.31vw; height:10.97vw;}
+
 	/* Icon */
 		/* General */
 			.ic-setting:before {width:2.50vw; height:2.22vw;}
@@ -77,8 +82,33 @@
 		.lst-latest-02 .lst-lnk {--m-line:0; line-height:5vw;}
 		.lst-latest-02 .lst-term {--div-gap:2.22vw;}
 
+		.lst-badge {grid-template-columns:repeat(3, 1fr); gap:3.33vw;}
+		.lst-badge .form-opt-rdo-02 {gap:2.08vw;}
+		.lst-badge .badge-img {border-radius:2.50vw;}
+		.lst-badge-desc {font-size:3.33vw; line-height:4.72vw;}
+
+	/* Popup */
+		.pop-type-01, .pop-type-alert {
+			--pop-cont-top-pad: 8.33vw;
+			--pop-head-min-h: 15.28vw;
+			--pop-head-ft-s: 5vw;
+			--pop-pd-x: 5vw;
+			--pop-foot-h: 25.42vw;
+			--pop-bd-r: 0;
+			--pop-max-h: 100dvh;
+		}
+		.pop-type-01 .p-dialog-header {border-bottom:1px solid #e2e2e2;}
+		.pop-type-01 .p-dialog-close-button:before,
+		.pop-type-alert .p-dialog-close-button:before {width:4.17vw; height:4.17vw;}
+		.pop-type-01 .p-dialog-footer > [class*="btn-type"],
+		.pop-type-alert .p-dialog-footer > [class*="btn-type"] {--btn-h:12.5vw; --btn-ft-s:4.17vw;}
+
+	/* Text */
+		.txt-01 {font-size:5.28vw; line-height:7.22vw;}
+
 	/* Thumb */
 		.thumb-type-01 {width:19.44vw; height:19.44vw;}
+		.thumb-type-02 {border-radius:1.94vw; width:50vw; height:30.56vw;}
 
 	/* Common */
 		/* Layout */

@@ -4,14 +4,13 @@
 		[class*="pop-type"] > * {flex-shrink:0;}
 
 	/* Popup Header */
-		[class*="pop-type"] .p-dialog-header {position:sticky; left:0; top:0; display:flex; place-content:space-between; place-items:center; background:var(--pop-bg-c, var(--mc)); min-height:var(--pop-head-min-h, var(--pop-hh)); padding:0 0 0 30px;}
+		[class*="pop-type"] .p-dialog-header {position:sticky; left:0; top:0; display:flex; place-content:space-between; place-items:center; background:var(--pop-bg-c, var(--mc)); min-height:var(--pop-head-min-h, var(--pop-hh)); padding:0 0 0 var(--pop-pd-x, var(--pop-pad));}
 		[class*="pop-type"] .p-dialog-header .pop-title {flex:1; text-wrap:wrap; color:var(--pop-head-ft-c, white); font-size:var(--pop-head-ft-s, 20px);}
 		[class*="pop-type"] .p-dialog-header-actions {display:flex; place-items:center;}
-		[class*="pop-type"]:not([data-head]) .p-dialog-header {all:unset; position:relative;}
-		[class*="pop-type"]:not([data-head]) .p-dialog-header-actions {position:absolute; right:0; top:0;}
+		[class*="pop-type"] .p-dialog-header-actions:first-child {position:absolute; right:0; top:0;}
 
 	/* Popup Footer */
-		[class*="pop-type"] .p-dialog-footer {display:flex; place-content:center; place-items:center; gap:var(--pop-foot-gap, 12px); height:var(--pop-foot-h, var(--pop-fh));}
+		[class*="pop-type"] .p-dialog-footer {display:flex; place-content:center; place-items:center; gap:var(--pop-foot-gap, 12px); height:var(--pop-foot-h, var(--pop-fh)); padding-inline:var(--pop-pd-x); }
 		[class*="pop-type"] .p-dialog-footer [class*="btn-type"] {height:auto;}
 
 	/* Popup Content */
@@ -30,3 +29,7 @@
 		[class*="pop-type"] .p-dialog-close-button svg {display:none;}
 		[class*="pop-type"] .p-dialog-close-button:before {content:""; background-image:var(--ic-c); background-position:var(--bp-150) var(--bp-250); background-size:var(--bg-sz); width:23px; height:20px;}
 		[class*="pop-type"]:not([data-head]) .p-dialog-close-button:before {background-position:var(--bp-200) var(--bp-250);}
+
+@media all and (max-width:720px) {
+	[class*="pop-type"] {width:100dvw !important;}
+}
