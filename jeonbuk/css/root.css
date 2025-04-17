@@ -97,8 +97,8 @@
 	/* Scroll */
 		--scr-w: 4px; /* 넓이 */
 		--scr-br: 4px; /* 보더 라디우스 */
-		--scr-bg1: var(--mlc); /* 배경색 */
-		--scr-bg2: var(--mc); /* 색상 */
+		--scr-bg1: #eee; /* 배경색 */
+		--scr-bg2: #dfdfdf; /* 색상 */
 
 	/* Transition */
 		--trans-dft: .3s ease; /* 기본 트랜지션 */
@@ -138,6 +138,9 @@
 			--bp-950: -131.94vw; /* 950 */
 
 		/* Form */
+			--fom-h: 12.5vw; /* 높이 */
+			--fom-br: 2.22vw; /* 보더 라디우스 */
 			--fom-fs: 3.33vw; /* 폰트 크기 */
+			--fom-pad: 4.17vw; /* 좌우 패딩 */
 	}
 }

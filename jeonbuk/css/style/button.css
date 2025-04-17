@@ -1,7 +1,7 @@
 /* Button */
 	/* Default */
 		[class*="btn-type"] {
-			display:flex; place-items:center; place-content:center; gap:12px;
+			display:flex; place-items:center; place-content:center; gap:var(--btn-gap, 12px);
 			background-color:var(--btn-bg-c, var(--bg-c, var(--mc)));
 			border:var(--btn-bd-w, var(--bd-w, 1px)) var(--btn-bd-s, var(--bd-s, solid)) var(--btn-bd-c, var(--btn-bg-c, var(--mc)));
 			border-radius:var(--btn-bd-r, var(--fom-br));
@@ -10,7 +10,7 @@
 			padding:0 var(--btn-pad-x, var(--fom-pad));
 			font-size:var(--btn-ft-s, var(--fom-fs));
 
-			word-break:break-all; transition:background var(--trans-dft), border-color var(--trans-dft), color var(--trans-dft);
+			word-break:keep-all; transition:background var(--trans-dft), border-color var(--trans-dft), color var(--trans-dft);
 			color:var(--btn-ft-c, white);
 		}
 
@@ -39,7 +39,13 @@
 		[class*="btn-grp-type"][data-equal] {width:var(--w, 100%);}
 		[class*="btn-grp-type"][data-equal] > [class*="btn-type"] {flex:1; white-space:wrap;}
 
+	/* Icon */
+		.btn-icon {display:inline-flex; gap:var(--btn-gap, 12px);}
+
+	/* Width */
+		.btn-full {--btn-w: 100%;}
+
 @media all and (max-width:720px) {
 	/* Default */
-		[class*="btn-type"] {gap:1.67vw;}
+		.btn-icon {gap:var(--btn-gap, 1.67vw);}
 }

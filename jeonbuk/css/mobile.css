@@ -1,4 +1,9 @@
 @media all and (max-width:720px) {
+	/* Accordion */
+		.aco-type-01 .aco-head {height:13.89vw; padding:0 5vw;}
+		.aco-type-01 .aco-cont[data-p-active="true"] {padding:5vw;}
+		.aco-type-01 > .aco-item > .aco-head .aco-icon::after {width:3.33vw; height:1.67vw;}
+
 	/* Board */
 		/* General */
 			.brd-wrap .brd-tit {font-size:3.89vw;}
@@ -22,6 +27,7 @@
 	/* Box */
 		[class*="box-type-02"] {--box-bd-r:2.5vw; --box-pd:4.58vw;}
 		.box-type-02-01 {--box-pd:4.72vw;}
+		.box-type-03 {--box-bd-r:2.5vw; --box-pd-x:5.56vw; --box-pd-y:5.56vw;}
 
 	/* Button */
 		/* Size */
@@ -38,21 +44,27 @@
 			.div-v-01 {--div-gap:1.67vw; --div-h:1.67vw;}
 
 	/* Form */
-		/* Checkbox */
-			.form-opt-chk-01 .opt-txt:before,
-			.form-opt-chk-01 input:checked + .opt-txt:before,
-			.form-opt-chk-01 input:focus + .opt-txt:before,
-			.form-opt-chk-01 input:focus:checked + .opt-txt:before {flex:0 0 5.56vw; width:5.56vw; height:5.56vw;}
-			.form-opt-chk-01 .opt-txt:after {left:1.25vw; top:1.53vw; width:3.33vw; height:2.78vw;}
+		/* Selction */
+			/* Button */
+				.form-opt-btn-01 .opt-txt, .form-opt-btn-01 input:checked + .opt-txt {border-radius:2.78vw; min-height:13.89vw; padding:0 5.28vw; font-size:3.89vw;}
 
-		/* Radio */
-			.form-opt-rdo-02 .opt-txt {font-size:3.88vw;}
-			.form-opt-rdo-02 .opt-txt:before {flex:0 0 27.78vw; border-radius:2.50vw; width:27.78vw; height:27.78vw;}
-			.form-opt-rdo-02 input:disabled + .opt-txt:after {left:9.44vw; top:7.36vw; width:9.31vw; height:10.97vw;}
+			/* Checkbox */
+				.form-opt-chk-01 .opt-txt:before,
+				.form-opt-chk-01 input:checked + .opt-txt:before,
+				.form-opt-chk-01 input:focus + .opt-txt:before,
+				.form-opt-chk-01 input:focus:checked + .opt-txt:before {flex:0 0 5.56vw; width:5.56vw; height:5.56vw;}
+				.form-opt-chk-01 .opt-txt:after {left:1.25vw; top:1.53vw; width:3.33vw; height:2.78vw;}
+
+			/* Radio */
+				.form-opt-rdo-02 .opt-txt {font-size:3.88vw;}
+				.form-opt-rdo-02 .opt-txt:before {flex:0 0 27.78vw; border-radius:2.50vw; width:27.78vw; height:27.78vw;}
+				.form-opt-rdo-02 input:disabled + .opt-txt:after {left:9.44vw; top:7.36vw; width:9.31vw; height:10.97vw;}
 
 	/* Icon */
 		/* General */
+			.ic-delete:before {width:2.22vw; height:2.22vw;}
 			.ic-setting:before {width:2.50vw; height:2.22vw;}
+			.ic-refresh:before {width:3.06vw; height:3.47vw;}
 
 		/* Arrow */
 			/* Up */
@@ -105,6 +117,7 @@
 
 	/* Text */
 		.txt-01 {font-size:5.28vw; line-height:7.22vw;}
+		.txt-02 {font-size:5.28vw;}
 
 	/* Thumb */
 		.thumb-type-01 {width:19.44vw; height:19.44vw;}
@@ -154,4 +167,16 @@
 		.main-aijob-lst > *.active:before {width:4.17vw; height:3.06vw;}
 		.main-aijob-lst > *.active:after {font-size:3.89vw;}
 		.main-aijob-lst > *.active .main-aijob-lst-txt {margin-top:2.22vw;}
+
+	/* 진입 */
+		.set-preffer {border:0; border-radius:0; width:100dvw; height:100dvh; padding-top:16.67vw;}
+		.set-preffer-lst {gap:2.22vw; margin-top:5.56vw;}
+
+		.favor-job-wrap {width:100dvw; font-size:3.89vw;}
+		.favor-job-list-wrap {border-radius:0; border:0; border-top:1px solid #e2e2e2; margin-top:8.89vw;}
+		.favor-job-list-top {height:calc(100% - 20.83vw);}
+		.favor-job-list-bot {border:0; height:20.83vw; padding:5.00vw;}
+		.favor-job-list {flex:0 0 45.83vw; width:45.83vw; padding:0;}
+		.favor-job-list > * > * {min-height:13.89vw; padding:0 4.72vw;}
+		.favor-job-list > * > *:after  {display:none;}
 }

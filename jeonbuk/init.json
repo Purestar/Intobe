@@ -16,9 +16,9 @@
 				], "state": ""},
 				{ "menu": "로그인", "src": "", "state": "" },
 				{ "id": "진입", "submenu": [
-					{ "menu": "희망기업설정", "src": "./page/UFE_010000.html", "state": "" },
-					{ "menu": "희망직업설정", "src": "", "state": "" }
-				], "state": ""},
+					{ "menu": "희망기업설정", "src": "./page/UFE_010000.html", "state": "comp" },
+					{ "menu": "희망직업설정", "src": "./page/UFE_020000.html", "state": "comp" }
+				], "state": "comp"},
 				{ "menu": "메인", "src": "./page/UMA_010000.html", "state": "comp" },
 				{ "id": "진로탐색", "submenu": [
 					{ "menu": "직업", "submenu": [

@@ -9,3 +9,5 @@
 				var(--box-pd, var(--box-pd-y, var(--box-pd-b)))
 				var(--box-pd, var(--box-pd-x, var(--box-pd-l)));
 	}
+
+	[class*="box-type"] [class*="box-type"] {}
