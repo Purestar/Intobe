@@ -16,6 +16,11 @@
 		.brd-wrap .brd-top {display:flex; place-content:space-between; place-items:flex-end; margin-top:40px; color:black;}
 		.brd-wrap .brd-filter {display:flex; gap:10px;}
 		.brd-wrap .brd-filter [class*="form-txt"] {flex:0 0 295px; width:295px;}
+		.brd-wrap .brd-file {display:flex; gap:40px; margin-top:60px;}
+		.brd-wrap .brd-file-size {color:#999;}
+		.brd-wrap .brd-file-lst {display:flex; flex-direction:column; gap:16px;}
+		.brd-wrap .brd-file-lst > * {display:flex; gap:10px;}
+		.brd-wrap .brd-img {display:block; margin:0 auto;}
 
 	/* List */
 		.brd-lst-01:not(.swiper-wrapper) {display:flex; gap:40px;}
@@ -45,8 +50,6 @@
 		.brd-view-01 {display:flex; flex-direction:column; border:1px solid #e2e2e2; border-radius:20px; min-height:467px; margin-top:15px; padding:32px 40px;}
 		.brd-view-01 .brd-cont {flex:1;}
 		.brd-view-01 + .brd-lst-03 {margin-top:38px;}
-		.brd-view-01 .brd-file {display:flex; gap:40px;}
-		.brd-view-01 .brd-file-size {color:#999;}
 
 	/* Paging */
 		.brd-paging {display:flex; justify-content:center; gap:4px; margin-top:60px;}

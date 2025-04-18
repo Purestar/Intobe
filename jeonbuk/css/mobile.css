@@ -15,6 +15,9 @@
 			.brd-wrap .brd-filter {width:100%; gap:2.08vw;}
 			.brd-wrap .brd-filter > * {width:100%;}
 			.brd-wrap .brd-filter [class*="form-txt"] {flex:0 0 56.94vw; width:56.94vw;}
+			.brd-wrap .brd-file {flex-direction:column; gap:3.33vw; margin-top:13.89vw;}
+			.brd-wrap .brd-file-lst {gap:3.89vw;}
+			.brd-wrap .brd-file-lst > * {gap:2.22vw;}
 
 		/* List */
 			.brd-lst-01:not(.swiper-wrapper) {gap:5vw;}
@@ -36,7 +39,6 @@
 		/* View */
 			.brd-view-01 {border-radius:2.78vw; min-height:80.42vw; margin-top:2.78vw; padding:4.44vw 5.56vw;}
 			.brd-view-01 + .brd-lst-03 {margin-top:5.56vw;}
-			.brd-view-01 .brd-file {flex-direction:column; gap:3.33vw;}
 
 		/* Paging */
 			.brd-paging {gap:0.56vw; margin-top:8.33vw;}
