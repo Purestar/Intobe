@@ -140,8 +140,9 @@
 				{ "id": "e-Notice", "submenu": [
 					{ "id": "공지사항", "submenu": [
 						{ "menu": "목록", "src": "./page/UEN_010100.html", "state": "comp" },
-						{ "menu": "상세", "src": "", "state": "" }
-					], "state": "work" },
+						{ "menu": "상세", "src": "./page/UEN_010200.html", "state": "comp" }
+					], "state": "comp" },
+					{ "menu": "FAQ", "src": "./page/UEN_010100.html", "state": "" },
 					{ "id": "유학생 지원 정보", "submenu": [
 						{ "menu": "목록", "src": "", "state": "" },
 						{ "menu": "상세", "src": "", "state": "" }

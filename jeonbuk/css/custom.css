@@ -41,6 +41,13 @@
 		.brd-lst-03 .brd-lst-tit {display:flex; place-items:center; flex:1; gap:30px; font-size:18px;}
 		.brd-lst-03 .brd-num {width:22px; font-size:20px; text-align:center;}
 
+	/* View */
+		.brd-view-01 {display:flex; flex-direction:column; border:1px solid #e2e2e2; border-radius:20px; min-height:467px; margin-top:15px; padding:32px 40px;}
+		.brd-view-01 .brd-cont {flex:1;}
+		.brd-view-01 + .brd-lst-03 {margin-top:38px;}
+		.brd-view-01 .brd-file {display:flex; gap:40px;}
+		.brd-view-01 .brd-file-size {color:#999;}
+
 	/* Paging */
 		.brd-paging {display:flex; justify-content:center; gap:4px; margin-top:60px;}
 		.brd-paging a {display:flex; align-items:center; justify-content:center; border-radius:50%; width:36px; height:36px; color:#666;}
@@ -152,19 +159,22 @@
 		.sub-header .ic-cabinet:before {background-position:var(--bp-100) -19px;}
 		.ic-delete:before {background-position:var(--bp-600) 0; width:10px; height:10px;}
 		.ic-download:before {background-position:var(--bp-650) 0; width:14px; height:14px;}
-		.ic-file:before {background-position:var(--bp-800) 0; width:16px; height:16px;}
+		.ic-file:before {background-position:var(--bp-800) 0; width:18px; height:18px;}
 		.ic-notice:before {background-position:var(--bp-750) 0; width:22px; height:20px;}
 		.ic-refresh:before {background-position:var(--bp-500) 0; width:14px; height:15px;}
 		.ic-search:before {background-position:var(--bp-700) 0; width:19px; height:19px;}
 		.ic-setting:before {background-position:var(--bp-300) 0; width:15px; height:15px;}
 
 	/* Arrow */
-		/*  Up */
+		/* Up */
 			.ic-u-arr-01:before {background-position:var(--bp-150) 0; width:21px; height:36px;}
 
 		/* Right */
 			.ic-r-arr-01:before {background-position:var(--bp-200) 0; width:9px; height:14px;}
 			.ic-r-arr-02:before {background-position:var(--bp-350) 0; width:5px; height:8px;}
+
+		/* Left */
+			.ic-l-arr-01:before {background-position:var(--bp-850) 0; width:15px; height:24px;}
 
 /* List */
 	.lst-stat {display:var(--dp, flex); gap:12px;}
@@ -300,6 +310,7 @@
 			#container {flex:1;}
 			.sub-layout {padding-block:80px;}
 			.sub-tit {font-size:40px; font-weight:700; color:black;}
+			.sub-tit-02 {display:flex; place-items:center; gap:20px; font-size:28px; font-weight:700; color:black;}
 
 	/* 메인 */
 		.main-wrap {background:url("../images/img/bg_visual.png") center top no-repeat; min-height:614px; margin-top:calc(var(--init-header-height) * -1); padding-top:400px;}
