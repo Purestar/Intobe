@@ -13,6 +13,9 @@
 		.brd-wrap .brd-ctgy {--div-gap:9px; font-size:14px; font-weight:500;}
 		.brd-wrap .brd-date-wrap {margin-top:12px; display:flex; flex-direction:column; gap:8px;}
 		.brd-wrap .brd-date-wrap > * {display:flex; gap:12px;}
+		.brd-wrap .brd-top {display:flex; place-content:space-between; place-items:flex-end; margin-top:40px; color:black;}
+		.brd-wrap .brd-filter {display:flex; gap:10px;}
+		.brd-wrap .brd-filter [class*="form-txt"] {flex:0 0 295px; width:295px;}
 
 	/* List */
 		.brd-lst-01:not(.swiper-wrapper) {display:flex; gap:40px;}
@@ -32,6 +35,27 @@
 		.brd-lst-02:not(.swiper-wrapper) {display:flex; gap:40px;}
 		.brd-lst-02 > * {border:1px solid #e7e7e7; border-radius:18px; padding:32px;}
 		.brd-lst-02 .brd-tit {margin-top:14px;}
+
+		.brd-lst-03 {display:flex; flex-direction:column; gap:20px; margin-top:20px; font-weight:500; color:black;}
+		.brd-lst-03 > * {display:flex; gap:110px; border:1px solid #e2e2e2; border-radius:20px; padding:32px 40px;}
+		.brd-lst-03 .brd-lst-tit {display:flex; place-items:center; flex:1; gap:30px; font-size:18px;}
+		.brd-lst-03 .brd-num {width:22px; font-size:20px; text-align:center;}
+
+	/* Paging */
+		.brd-paging {display:flex; justify-content:center; gap:4px; margin-top:60px;}
+		.brd-paging a {display:flex; align-items:center; justify-content:center; border-radius:50%; width:36px; height:36px; color:#666;}
+		.brd-paging a:hover,
+		.brd-paging-num > *.active a {background:#ececfa; color:var(--mc);}
+		.brd-paging > * {display:flex; gap:4px;}
+		.brd-paging .brd-paging-ctrl a {border-radius:36px;}
+		.brd-paging .brd-paging-ctrl a:before {content:""; background-image:var(--ic-c); background-size:var(--bg-sz);}
+		.brd-paging .brd-paging-first:before,
+		.brd-paging .brd-paging-last:before {background-position:var(--bp-150) var(--bp-550); width:11px; height:10px;}
+		.brd-paging .brd-paging-prev:before,
+		.brd-paging .brd-paging-next:before {background-position:var(--bp-200) var(--bp-550); width:7px; height:10px;}
+		.brd-paging .brd-paging-last:before,
+		.brd-paging .brd-paging-next:before {transform:rotate(180deg);}
+		.brd-paging-num {display:flex;}
 
 /* Box */
 	.box-type-01 {--box-bg-c:white; --box-sha-size:33px; --box-sha-opa:0.06; --box-bd-r:30px;}
@@ -123,10 +147,15 @@
 /* Icon */
 	/* General */
 		.ic-link:before {background-position:0 0; width:12px; height:12px;}
+		.sub-header .ic-link:before {background-position:0 -12px; width:12px; height:12px;}
 		.ic-cabinet:before {background-position:var(--bp-100) 0; width:18px; height:19px;}
+		.sub-header .ic-cabinet:before {background-position:var(--bp-100) -19px;}
 		.ic-delete:before {background-position:var(--bp-600) 0; width:10px; height:10px;}
 		.ic-download:before {background-position:var(--bp-650) 0; width:14px; height:14px;}
+		.ic-file:before {background-position:var(--bp-800) 0; width:16px; height:16px;}
+		.ic-notice:before {background-position:var(--bp-750) 0; width:22px; height:20px;}
 		.ic-refresh:before {background-position:var(--bp-500) 0; width:14px; height:15px;}
+		.ic-search:before {background-position:var(--bp-700) 0; width:19px; height:19px;}
 		.ic-setting:before {background-position:var(--bp-300) 0; width:15px; height:15px;}
 
 	/* Arrow */
@@ -251,7 +280,11 @@
 			.h-gnb {display:flex; place-content:space-between; place-items:center; margin-top:16px; font-size:22px;}
 			.h-gnb a {display:flex; place-items:center;}
 			.h-gnb > * {padding-top:10px;}
-			.h-gnb > *:first-child {padding-top:0;}
+			.h-gnb > *:first-child {background:url("../images/img/img_gnb_menu.png") no-repeat; width:123px; height:51px; font-size:0;}
+
+			.sub-header .h-wrap {border-bottom:1px solid #e2e2e2; color:black;}
+			.sub-header .h-gnb > *:first-child {background:url("../images/img/img_gnb_menu_02.png") no-repeat;}
+			.sub-header .h-lang-wrap .h-lang-select:after {background-position:var(--bp-50) -6px;}
 
 		/* Footer */
 			.f-wrap {background:black; height:var(--init-footer-height); padding:36px 0 0; font-size:14px; color:#999;}
@@ -265,6 +298,8 @@
 
 		/* Container */
 			#container {flex:1;}
+			.sub-layout {padding-block:80px;}
+			.sub-tit {font-size:40px; font-weight:700; color:black;}
 
 	/* 메인 */
 		.main-wrap {background:url("../images/img/bg_visual.png") center top no-repeat; min-height:614px; margin-top:calc(var(--init-header-height) * -1); padding-top:400px;}

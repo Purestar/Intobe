@@ -12,8 +12,14 @@
 			transition:border-color var(--trans-dft);
 		}
 
+		[class*="form-txt"] input {flex:1;}
+
 	/* Focus */
 		[class*="form-txt"]:has(input:focus) {border-color:var(--form-focus-bd-c, var(--fom-fcs-brd-c)); transition:border-color var(--trans-dft);}
 
 	/* Disabled */
 		[class*="form-txt"]:has(input:disabled) {background-color:var(--form-dis-bg-c, var(--dis-bg)); border-color:var(--form-dis-bd-r, var(--dis-bdr)); color:var(--form-dis-ft-c, var(--fom-ph)); pointer-events:none; cursor:auto;}
+
+	/* Icon */
+		.form-icon {padding-right:0;}
+		.form-icon-btn {display:flex; flex:0 0 var(--fom-h); place-items:center; place-content:center; width:var(--fom-h); height:var(--fom-h);}

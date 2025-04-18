@@ -70,3 +70,9 @@
 		[class*="form-panel-cascade"] .p-cascadeselect-group-icon-container {display:flex;}
 		[class*="form-panel-cascade"] .p-cascadeselect-group-icon-container:after {content:""; rotate:270deg;}
 		[class*="form-panel-cascade"] .p-cascadeselect-group-icon-container svg {display:none;}
+
+@media all and (max-width:720px) {
+	[class*="form-sel"] > .p-select-dropdown:after,
+	[class*="form-sel"] > .p-cascadeselect-dropdown:after,
+	[class*="form-panel-cascade"] .p-cascadeselect-group-icon-container:after {width:2.92vw; height:1.67vw;}
+}

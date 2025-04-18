@@ -92,7 +92,7 @@
 
 	/* Vertical Bar */
 		[class*="div-v"], [class*="div-v"] > * {column-gap:var(--m-div-gap, var(--div-gap));}
-		[class*="div-v"] > * + *:before {width:var(--m-div-w, var(--div-w)); height:var(--m-div-h, var(--div-h, var(--ft-s)));}
+		[class*="div-v"] > * + *:before {width:var(--m-div-w, var(--div-w, 1px)); height:var(--m-div-h, var(--div-h, var(--ft-s)));}
 
 	/* Arrow */
 		[class*="div-h-arrow"] > * + *:before,

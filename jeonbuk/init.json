@@ -21,11 +21,11 @@
 				], "state": "comp"},
 				{ "menu": "메인", "src": "./page/UMA_010000.html", "state": "comp" },
 				{ "id": "진로탐색", "submenu": [
-					{ "menu": "직업", "submenu": [
+					{ "id": "직업", "submenu": [
 						{ "menu": "목록", "src": "", "state": "" },
 						{ "menu": "상세", "src": "", "state": "" }
 					], "state": "" },
-					{ "menu": "AI선배", "submenu": [
+					{ "id": "AI선배", "submenu": [
 						{ "menu": "목록", "src": "", "state": "" },
 						{ "menu": "찾기결과", "src": "", "state": "" },
 						{ "menu": "상세", "src": "", "state": "" }
@@ -41,13 +41,13 @@
 					{ "menu": "홈", "src": "", "state": "" },
 					{ "menu": "취업스펙분석", "src": "", "state": "" },
 					{ "menu": "스펙정보", "src": "", "state": "" },
-					{ "menu": "자기소개서", "submenu": [
+					{ "id": "자기소개서", "submenu": [
 						{ "menu": "목록", "src": "", "state": "" },
 						{ "menu": "등록/수정", "src": "", "state": "" },
 						{ "menu": "상세", "src": "", "state": "" }
 					], "state": "" },
 					{ "menu": "포트폴리오", "src": "", "state": "" },
-					{ "menu": "이력서", "submenu": [
+					{ "id": "이력서", "submenu": [
 						{ "menu": "목록", "src": "", "state": "" },
 						{ "menu": "등록/수정", "src": "", "state": "" },
 						{ "menu": "상세", "src": "", "state": "" }
@@ -55,16 +55,16 @@
 				], "state": ""},
 				{ "id": "멘토링", "submenu": [
 					{ "menu": "멘토링 프로그램 소개", "src": "", "state": "" },
-					{ "menu": "멘티모집", "submenu": [
+					{ "id": "멘티모집", "submenu": [
 						{ "menu": "목록", "src": "", "state": "" },
-						{ "menu": "상세/신청하기", "submenu": [
+						{ "id": "상세/신청하기", "submenu": [
 							{ "menu": "신청서 작성", "src": "", "state": "" },
 							{ "menu": "신청 완료", "src": "", "state": "" }
 						], "state": "" }
 					], "state": "" },
-					{ "menu": "멘토 지원", "submenu": [
+					{ "id": "멘토 지원", "submenu": [
 						{ "menu": "목록", "src": "", "state": "" },
-						{ "menu": "상세/신청하기", "submenu": [
+						{ "id": "상세/신청하기", "submenu": [
 							{ "menu": "지원하기/개인정보 제공/이용 동의", "src": "", "state": "" },
 							{ "menu": "기본정보 입력", "src": "", "state": "" },
 							{ "menu": "멘토정보 입력", "src": "", "state": "" },
@@ -73,14 +73,14 @@
 							{ "menu": "신청 완료", "src": "", "state": "" }
 						], "state": "" }
 					], "state": "" },
-					{ "menu": "공지사항", "submenu": [
+					{ "id": "공지사항", "submenu": [
 						{ "menu": "목록", "src": "", "state": "" },
 						{ "menu": "상세", "src": "", "state": "" }
 					], "state": "" },
-					{ "menu": "나의 멘토링(멘티 권한)", "submenu": [
+					{ "id": "나의 멘토링(멘티 권한)", "submenu": [
 						{ "menu": "목록", "src": "", "state": "" },
 						{ "menu": "멘토링 홈", "src": "", "state": "" },
-						{ "menu": "멘토링 활동/보고", "submenu": [
+						{ "id": "멘토링 활동/보고", "submenu": [
 							{ "menu": "목록", "src": "", "state": "" },
 							{ "menu": "활동보고서 등록/수정", "src": "", "state": "" },
 							{ "menu": "활동보고서 상세", "src": "", "state": "" },
@@ -90,22 +90,22 @@
 							{ "menu": "최종보고서 등록 - 보고완료", "src": "", "state": "" }
 						], "state": "" },
 						{ "menu": "멘토링 캘린더", "src": "", "state": "" },
-						{ "menu": "질의/응답", "submenu": [
+						{ "id": "질의/응답", "submenu": [
 							{ "menu": "목록", "src": "", "state": "" },
 							{ "menu": "상세", "src": "", "state": "" },
 							{ "menu": "등록/수정", "src": "", "state": "" }
 						], "state": "" },
-						{ "menu": "학습자료", "submenu": [
+						{ "id": "학습자료", "submenu": [
 							{ "menu": "목록", "src": "", "state": "" },
 							{ "menu": "등록/수정", "src": "", "state": "" },
 							{ "menu": "상세", "src": "", "state": "" }
 						], "state": "" },
 						{ "menu": "설문조사", "src": "", "state": "" }
 					], "state": "" },
-					{ "menu": "나의 멘토링(멘토 권한)", "submenu": [
+					{ "id": "나의 멘토링(멘토 권한)", "submenu": [
 						{ "menu": "목록", "src": "", "state": "" },
 						{ "menu": "멘토링 홈", "src": "", "state": "" },
-						{ "menu": "멘토링 계획/보고", "submenu": [
+						{ "id": "멘토링 계획/보고", "submenu": [
 							{ "menu": "목록", "src": "", "state": "" },
 							{ "menu": "활동보고서 등록/수정", "src": "", "state": "" },
 							{ "menu": "활동보고서 상세", "src": "", "state": "" },
@@ -116,17 +116,17 @@
 							{ "menu": "최종보고서 등록 - 보고완료", "src": "", "state": "" }
 						], "state": "" },
 						{ "menu": "멘토링 캘린더", "src": "", "state": "" },
-						{ "menu": "질의/응답", "submenu": [
+						{ "id": "질의/응답", "submenu": [
 							{ "menu": "목록", "src": "", "state": "" },
 							{ "menu": "상세", "src": "", "state": "" },
 							{ "menu": "등록/수정", "src": "", "state": "" }
 						], "state": "" },
-						{ "menu": "학습자료", "submenu": [
+						{ "id": "학습자료", "submenu": [
 							{ "menu": "목록", "src": "", "state": "" },
 							{ "menu": "등록/수정", "src": "", "state": "" },
 							{ "menu": "상세", "src": "", "state": "" }
 						], "state": "" },
-						{ "menu": "멘티 학습지도", "submenu": [
+						{ "id": "멘티 학습지도", "submenu": [
 							{ "menu": "목록", "src": "", "state": "" },
 							{ "menu": "상세", "src": "", "state": "" }
 						], "state": "" },
@@ -138,16 +138,16 @@
 					{ "menu": "대화이력", "src": "", "state": "" }
 				], "state": ""},
 				{ "id": "e-Notice", "submenu": [
-					{ "menu": "공지사항", "submenu": [
-						{ "menu": "목록", "src": "", "state": "" },
+					{ "id": "공지사항", "submenu": [
+						{ "menu": "목록", "src": "./page/UEN_010100.html", "state": "comp" },
 						{ "menu": "상세", "src": "", "state": "" }
-					], "state": "" },
-					{ "menu": "유학생 지원 정보", "submenu": [
+					], "state": "work" },
+					{ "id": "유학생 지원 정보", "submenu": [
 						{ "menu": "목록", "src": "", "state": "" },
 						{ "menu": "상세", "src": "", "state": "" }
 					], "state": "" },
 					{ "menu": "설문조사", "src": "", "state": "" },
-					{ "menu": "Q&A", "submenu": [
+					{ "id": "Q&A", "submenu": [
 						{ "menu": "목록", "src": "", "state": "" },
 						{ "menu": "등록/수정", "src": "", "state": "" },
 						{ "menu": "상세", "src": "", "state": "" }
