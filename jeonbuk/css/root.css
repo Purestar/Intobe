@@ -1,12 +1,12 @@
 :root {
 	/* Initialize */
 		--init-background-color: white; /* 배경색 */
-		--init-font-color: black; /* 글자색 */
+		--init-font-color: #666; /* 글자색 */
 		--init-font-family: Poppins, Noto Sans KR; /* 글자체 */
 		--init-font-size: 16px; /* 글자 크기 */
 		--init-footer-height: 266px; /* 푸터 높이 */
 		--init-header-height: 120px; /* 헤더 높이 */
-		--init-line-height: 1.2; /* 행간 */
+		--init-line-height: 1.5; /* 행간 */
 		--init-letter-spacing: -0.02em; /* 자간 */
 		--init-layout-width: 1200px; /* 페이지 넓이 */
 		--init-mobile-design-width: 720; /* 모바일 디자인 넓이 */
@@ -48,13 +48,12 @@
 		--mdc: #440000; /* 메인 어두운 컬러 */
 		--mic: #f65555; /* 강조 컬러 */
 
-		--st-red: #f94144; /* 상태 컬러 Red */
-		--st-org: #f3722c; /* 상태 컬러 Orange */
-		--st-ylw: #f9c74f; /* 상태 컬러 Yellow */
-		--st-grn: #90be6d; /* 상태 컬러 Green */
-		--st-sky: #57bed6; /* 상태 컬러 SkyBlue */
-		--st-blu: #6670c9; /* 상태 컬러 Blue */
-		--st-pur: #9c71d4; /* 상태 컬러 Purple */
+		--cr-red:#bb1e55;
+		--cr-ygrn:#7b9904;
+		--cr-grn:#00866b;
+		--cr-blu:#004386;
+		--cr-pur:#a6165f;
+		--cr-pur-02:#771ebb;
 
 		--dis-bg: #f5f5f5; /* Disabled 배경 */
 		--dis-bdr: #e2e2e2; /* Disabled 테두리 색상 */

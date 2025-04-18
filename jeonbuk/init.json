@@ -11,8 +11,8 @@
 			"id": "Path",
 			"submenu": [
 				{ "id": "공통", "submenu": [
-					{ "menu": "레이아웃", "src": "./page/layout.html", "state": "" },
-					{ "menu": "팝업", "src": "./page/popup.html", "state": "" }
+					{ "menu": "레이아웃", "src": "./page/layout.html", "state": "work" },
+					{ "menu": "팝업", "src": "./page/popup.html", "state": "comp" }
 				], "state": ""},
 				{ "menu": "로그인", "src": "", "state": "" },
 				{ "id": "진입", "submenu": [

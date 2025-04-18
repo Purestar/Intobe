@@ -12,14 +12,14 @@
 /* General */
 	html {overflow-x:hidden; width:100dvw; height:100dvh; scroll-behavior:smooth; -moz-text-size-adjust:none; -webkit-text-size-adjust:none; text-size-adjust:none;}
 	html.loaded {transition:opacity .3s ease; opacity:1;}
-	body {overflow-x:hidden; display:flex; flex-direction:column; justify-content:space-between; flex-wrap:nowrap; background-color:var(--init-background-color); width:100vw; font-family:var(--init-font-family); font-size:var(--init-font-size); line-height:var(--init-line-height); letter-spacing:var(--init-letter-spacing); color:var(--init-font-color);}
+	body {overflow-x:hidden; display:flex; flex-direction:column; justify-content:space-between; flex-wrap:nowrap; background-color:var(--init-background-color); width:100vw; min-height:100dvh; font-family:var(--init-font-family); font-size:var(--init-font-size); line-height:var(--init-line-height); letter-spacing:var(--init-letter-spacing); color:var(--init-font-color);}
 	::selection {background-color:var(--mc); color:white;}
 
 /* Default Tag Style */
 	/* General */
 		a {text-decoration:none; color:inherit;}
-		b {font-weight:500;}
-		strong {font-weight:700;}
+		b {font-weight:500; color:var(--ft-c, black);}
+		strong {font-weight:700; color:var(--ft-c, black);}
 		small {font-size:80%;}
 		em {font-style:normal; color:var(--mic);}
 		q {color:var(--mc);}

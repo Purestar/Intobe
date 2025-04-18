@@ -181,14 +181,377 @@
 				</div>
 			</div>
 			<div style="--flex-d:column; --gap:10px;">
-				<h1 style="--ft-s:20px; --ft-w:bold;">메인</h1>
+				<h1 style="--ft-s:20px; --ft-w:bold;">공통</h1>
 				<div style="--dp:grid; --grid-t-col:7; --gap:10px;">
-					<button class="btn-type" disabled>희망직무설정</button>
-					<button class="btn-type" disabled>희망기업설정</button>
+					<!-- 희망 직무 설정 -->
+					<button type="button" class="btn-type" @click="togglePopup('common-04')">희망 직무 설정</button>
+					<p-popup class="pop-type-01" modal :style="{ width: '720px' }" v-model:visible="popups['common-04']">
+						<template #header>
+							<h1 class="pop-title">희망 직무 설정</h1>
+						</template>
+						<div class="pop-cont">
+							<div class="box-type-03-01" style="--txt-a:center;">
+								<p>취업을 희망하는 직무를 최대 5개까지 설정할 수있습니다.</p>
+							</div>
+							<div class="box-type-02 set-preffer" style="--mg-t:20px; --m-mg-t:0; padding-block:0;">
+								<div class="favor-job-list-wrap">
+									<div class="favor-job-list-top">
+										<ul data-scroll="v" class="favor-job-list">
+											<li class="active"><button type="button">사업관리</button></li>
+											<li><button type="button">경영 · 회계 · 사무</button></li>
+											<li><button type="button">금융 · 보험</button></li>
+											<li><button type="button">교육 · 자연 · 사회과학</button></li>
+											<li><button type="button">법률 · 경찰 · 소방 · 교도 · 국방</button></li>
+											<li><button type="button">보건 · 의료</button></li>
+											<li><button type="button">사회복지 · 종교</button></li>
+											<li><button type="button">문화 · 예술 · 디자인 · 방송</button></li>
+											<li><button type="button">운전 · 운송</button></li>
+											<li><button type="button">영업</button></li>
+										</ul>
+										<p-aco class="aco-type-01">
+											<p-aco-item class="aco-item" value="1">
+												<p-aco-head class="aco-head">금융<i class="aco-icon"></i></p-aco-head>
+												<p-aco-cont class="aco-cont">
+													<div style="--dp:flex; --flex-d:column; --gap:12px;">
+														<div class="form-opt-chk">
+															<label>
+																<input type="checkbox">
+																<span class="opt-txt">경영기획</span>
+															</label>
+														</div>
+														<div class="form-opt-chk">
+															<label>
+																<input type="checkbox">
+																<span class="opt-txt">홍보광고</span>
+															</label>
+														</div>
+														<div class="form-opt-chk">
+															<label>
+																<input type="checkbox">
+																<span class="opt-txt">마케팅</span>
+															</label>
+														</div>
+														<div class="form-opt-chk">
+															<label>
+																<input type="checkbox">
+																<span class="opt-txt">경영기획</span>
+															</label>
+														</div>
+														<div class="form-opt-chk">
+															<label>
+																<input type="checkbox">
+																<span class="opt-txt">홍보광고</span>
+															</label>
+														</div>
+														<div class="form-opt-chk">
+															<label>
+																<input type="checkbox">
+																<span class="opt-txt">마케팅</span>
+															</label>
+														</div>
+														<div class="form-opt-chk">
+															<label>
+																<input type="checkbox">
+																<span class="opt-txt">경영기획</span>
+															</label>
+														</div>
+														<div class="form-opt-chk">
+															<label>
+																<input type="checkbox">
+																<span class="opt-txt">홍보광고</span>
+															</label>
+														</div>
+														<div class="form-opt-chk">
+															<label>
+																<input type="checkbox">
+																<span class="opt-txt">마케팅</span>
+															</label>
+														</div>
+													</div>
+												</p-aco-cont>
+											</p-aco-item>
+											<p-aco-item class="aco-item" value="2">
+												<p-aco-head class="aco-head">재무 / 회계<i class="aco-icon"></i></p-aco-head>
+												<p-aco-cont class="aco-cont">
+													<div style="--dp:flex; --flex-d:column; --gap:12px;">
+														<div class="form-opt-chk">
+															<label>
+																<input type="checkbox">
+																<span class="opt-txt">경영기획</span>
+															</label>
+														</div>
+													</div>
+												</p-aco-cont>
+											</p-aco-item>
+											<p-aco-item class="aco-item" value="3">
+												<p-aco-head class="aco-head">생산 / 품질관리<i class="aco-icon"></i></p-aco-head>
+												<p-aco-cont class="aco-cont">
+													<div style="--dp:flex; --flex-d:column; --gap:12px;">
+														<div class="form-opt-chk">
+															<label>
+																<input type="checkbox">
+																<span class="opt-txt">경영기획</span>
+															</label>
+														</div>
+													</div>
+												</p-aco-cont>
+											</p-aco-item>
+										</p-aco>
+									</div>
+									<div class="favor-job-list-bot">
+										<div style="--dp:flex; --items:center; --content:space-between;">
+											<div class="cr-lgry"><q>2</q> / 3</div>
+											<button type="button" class="btn-icon btn-refresh">다시 선택하기<i class="ic-refresh"></i></button>
+										</div>
+										<ul class="wrap-flex lst-tag-02" style="--mg-t:20px; --m-mg-t:3.33vw;">
+											<li>은행사무원<button type="button"><i class="ic-delete"></i></button></li>
+											<li>출납창구사무원<button type="button"><i class="ic-delete"></i></button></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<template #footer>
+							<button type="button" class="btn-type-b-blk">취소</button>
+							<a href="#" class="btn-type">확인</a>
+						</template>
+					</p-popup>
+
+
+					<!-- 희망 기업 설정 -->
+					<button type="button" class="btn-type" @click="togglePopup('common-05')">희망 기업 설정</button>
+					<p-popup class="pop-type-01" modal :style="{ width: '720px' }" v-model:visible="popups['common-05']">
+						<template #header>
+							<h1 class="pop-title">희망 기업 설정</h1>
+						</template>
+						<div class="pop-cont" style="--dp:flex; --flex-d:column; max-height:var(--pop-max-h);">
+							<div class="box-type-03" style="--mg-t:40px; --m-mg-t:8.33vw; --pos:sticky; --left:0; --top:0; --z-idx:1;">
+								<div style="--dp:flex; --content:space-between; --items:center; --m-gap:4.17vw;">
+									<div style="--dp:flex; --gap:12px; --m-w:100%; --m-gap:3.06vw;">
+										<div class="form-txt">
+											<p-input placeholder="찾으시는 기업명을 입력하세요"></p-input>
+										</div>
+										<button type="button" class="btn-type-b">조회</button>
+									</div>
+									<button type="button" class="btn-icon btn-refresh">다시 선택하기<i class="ic-refresh"></i></button>
+								</div>
+							</div>
+							<div class="set-preffer-lst" data-scroll="y" style="--h:10dvh;">
+								<label class="form-opt-btn-01">
+									<input type="checkbox">
+									<span class="opt-txt">네이버</span>
+								</label>
+								<label class="form-opt-btn-01">
+									<input type="checkbox">
+									<span class="opt-txt">네이버</span>
+								</label>
+								<label class="form-opt-btn-01">
+									<input type="checkbox">
+									<span class="opt-txt">네이버</span>
+								</label>
+								<label class="form-opt-btn-01">
+									<input type="checkbox">
+									<span class="opt-txt">네이버</span>
+								</label>
+								<label class="form-opt-btn-01">
+									<input type="checkbox">
+									<span class="opt-txt">네이버</span>
+								</label>
+								<label class="form-opt-btn-01">
+									<input type="checkbox">
+									<span class="opt-txt">네이버</span>
+								</label>
+								<label class="form-opt-btn-01">
+									<input type="checkbox">
+									<span class="opt-txt">네이버</span>
+								</label>
+								<label class="form-opt-btn-01">
+									<input type="checkbox">
+									<span class="opt-txt">네이버</span>
+								</label>
+								<label class="form-opt-btn-01">
+									<input type="checkbox">
+									<span class="opt-txt">네이버</span>
+								</label>
+							</div>
+						</div>
+						<template #footer>
+							<button type="button" class="btn-type-b-blk">다음에 설정할래요</button>
+							<a href="#" class="btn-type">설정</a>
+						</template>
+					</p-popup>
+
 					<button class="btn-type" disabled>학과상세정보</button>
-					<button class="btn-type" disabled>교과목상세정보</button>
-					<button class="btn-type" disabled>비교과상세정보</button>
-					<button class="btn-type" disabled>활동배지획득</button>
+
+					<!-- 교과 상세정보 -->
+					<button type="button" class="btn-type" @click="togglePopup('common-07')">교과 상세정보</button>
+					<p-popup class="pop-type-01" modal :style="{ width: '580px' }" v-model:visible="popups['common-07']">
+						<template #header>
+							<h1 class="pop-title">교과 상세정보</h1>
+						</template>
+						<div class="pop-cont">
+							<ul class="div-v-arrow-01" style="--mg-t:40px; --m-mg-t:5.56vw;">
+								<li>컴퓨터공학전공</li>
+							</ul>
+							<div style="--dp:flex; --content:space-between; --items:center; --mg-t:15px; --m-mg-t:2.22vw;">
+								<h2 style="--ft-s:20px; --m-ft-s:3.89vw;"><b>통계분석과 머신러닝 모델링</b></h2>
+								<div class="form-opt-chk-02">
+									<label>
+										<input type="checkbox">
+										<span class="opt-txt"></span>
+									</label>
+								</div>
+							</div>
+
+							<div class="box-type-03" style="--box-pd-x:0; --mg-t:24px; --m-mg-t:8.33vw;">
+								<ul class="div-v-03-01 div-grid" style="--div-grid-t-col:4;">
+									<li><p>이수구분<br><strong class="txt-18-26">전공선택</strong></p></li>
+									<li><p>이수방식<br><strong class="txt-18-26">오프라인</strong></p></li>
+									<li><p>이수학점<br><strong class="txt-18-26">3학점</strong></p></li>
+									<li><p>이수시간<br><strong class="txt-18-26">3시간</strong></p></li>
+								</ul>
+							</div>
+
+							<p-tabs class="tab-wrap-01" style="--mg-t:40px; --m-mg-t:8.33vw;" value="0">
+								<p-tab-list class="tab-menu-01">
+									<p-tab value="0">교과정보</p-tab>
+									<p-tab value="1">강의정보</p-tab>
+								</p-tab-list>
+								<p-tab-panels>
+									<p-tab-panel value="0">
+										<div class="div-h-01" style="--div-gap:40px; --m-div-gap:8.33vw;">
+											<p>최근 빅데이터와 인공지능은 학계, 산업계에서 가장 관심의 대상이 되는 연구 분야로서, 특히, 이 두 분야의 핵심 기술인 데이터분석 기술 및 머신러닝 기술은 4차 산업혁명의 핵심기술로 부각되고 있다. 이들은 모두 많은 양의 데이터로부터 의미있는 정보/지식를 추출하여 분류, 예측, 최적화 등의 문제를 해결하는 기술로, 데이터 과학, 통계 및 컴퓨터 공학 기술이 융합된 기술이다. 본 강좌에서는 데이터분석의 기초 지식 및 절차, 도구들에 대해 공부하고, 이를 기반으로 머신러닝의 개념과 원리에서부터 신경망 학습, 고급의 딥러닝 기술에 이르는 다양한 이론과 실습을 학습한다</p>
+											<div>
+												<div>
+													<h2 class="txt-20-32"><b>선수과목</b></h2>
+													<div style="--flex-d:column; --gap:6px; --m-gap:1.39vw; --mg-t:16px; --m-mg-t:3.33vw;">
+														<div style="--gap:10px; --m-gap:2.22vw;">
+															<span class="chip-type-01-ygrn">전공핵심</span>
+															<p>프로그래밍 언어 (2학년 1학기)</p>
+														</div>
+														<div style="--gap:10px; --m-gap:2.22vw;">
+															<span class="chip-type-01-ygrn">전공핵심</span>
+															<p>자료구조 (2학년2학기)</p>
+														</div>
+													</div>
+
+													<h2 class="txt-20-32" style="--mg-t:40px; --m-mg-t:8.33vw;"><b>후수과목</b></h2>
+													<div style="--flex-d:column; --gap:6px; --m-gap:1.39vw; --mg-t:16px; --m-mg-t:3.33vw;">
+														<div style="--gap:10px; --m-gap:2.22vw;">
+															<span class="chip-type-01-grn">전공선택</span>
+															<p>인공지능 (4학년 1학기)</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</p-tab-panel>
+									<p-tab-panel value="1">
+										<ul class="lst-item-02">
+											<li>
+												<div>
+													<h2 class="lst-tit"><b>김철수</b></h2>
+													<div class="lst-cont">
+														<p class="lst-desc">소속<span class="cr-blk">컴퓨터공학전공, 소프트웨어융합전공</span></p>
+														<p class="lst-desc">분야<span class="cr-blk">데이터베이스</span></p>
+													</div>
+												</div>
+												<a href="#" class="btn-type-lgry btn-sz-34">강의계획서<i class="ic-download"></i></a>
+											</li>
+											<li>
+												<div>
+													<h2 class="lst-tit"><b>김철수</b></h2>
+													<div class="lst-cont">
+														<p class="lst-desc">소속<span class="cr-blk">컴퓨터공학전공, 소프트웨어융합전공</span></p>
+														<p class="lst-desc">분야<span class="cr-blk">데이터베이스</span></p>
+													</div>
+												</div>
+												<a href="#" class="btn-type-lgry btn-sz-34">강의계획서<i class="ic-download"></i></a>
+											</li>
+										</ul>
+									</p-tab-panel>
+								</p-tab-panels>
+							</p-tabs>
+						</div>
+						<template #footer>
+							<a href="#" class="btn-type-b-blk">확인</a>
+						</template>
+					</p-popup>
+
+					<!-- 비교과 프로그램 상세정보 -->
+					<button type="button" class="btn-type" @click="togglePopup('common-08')">비교과 프로그램 상세정보</button>
+					<p-popup class="pop-type-01" modal :style="{ width: '580px' }" v-model:visible="popups['common-08']">
+						<template #header>
+							<h1 class="pop-title">비교과 프로그램 상세정보</h1>
+						</template>
+						<div class="pop-cont">
+							<div class="thumb-type-03">
+								<div class="thumb-lt">
+									<span class="chip-type-01-pur-02">진행</span>
+								</div>
+								<img src="../images/dummy/thumb-01.png">
+							</div>
+
+							<ul class="div-v-arrow-01" style="--mg-t:40px; --m-mg-t:5.56vw;">
+								<li>학습역량</li>
+								<li>특강프로그램</li>
+							</ul>
+
+							<div style="--dp:flex; --content:space-between; --items:center; --mg-t:15px; --m-mg-t:2.22vw;">
+								<h2 style="--ft-s:20px; --m-ft-s:3.89vw;"><b>통계분석과 머신러닝 모델링</b></h2>
+								<div class="form-opt-chk-02">
+									<label>
+										<input type="checkbox">
+										<span class="opt-txt"></span>
+									</label>
+								</div>
+							</div>
+
+							<div style="--mg-t:16px;">
+								<div style="--gap:12px; --m-gap:2.22vw;"> 소속<span class="cr-blk">컴퓨터공학전공, 소프트웨어융합전공</span></div>
+								<div style="--gap:12px; --m-gap:2.22vw;"> 분야<span class="cr-blk">데이터베이스</span></div>
+							</div>
+
+							<div class="box-type-03" style="--box-pd-x:0; --mg-t:24px; --m-mg-t:8.33vw;">
+								<ul class="div-v-03-01 div-grid" style="--div-grid-t-col:4;">
+									<li><p>모집대상<br><strong class="txt-18-26">재학생</strong></p></li>
+									<li><p>모집학년<br><strong class="txt-18-26">전체</strong></p></li>
+									<li><p>모집학과<br><strong class="txt-18-26">전체</strong></p></li>
+									<li><p>모집성별<br><strong class="txt-18-26">전체</strong></p></li>
+								</ul>
+							</div>
+
+							<div style="--mg-t:40px; --m-mg-t:8.33vw;">
+								* 컴퓨터학부 재학생만 신청가능<br>
+								여름방학에 컴퓨터학부 교수님들의 전공 비교과 특강을 통해<br>
+								전공능력을 키워보세요!<br><br>
+
+								- 특강명 : 자바스크립트 기반 백엔드 프로그래밍<br>
+								- 교수자명 : 조행래 교수님<br>
+								- 일자 : 8/5(월) ~ 8/9(금)<br>
+								- 장소 : IT관 109호
+							</div>
+						</div>
+						<template #footer>
+							<button type="button" class="btn-type-b-blk">닫기</button>
+							<a href="#" class="btn-type">바로가기<i class="ic-link"></i></a>
+						</template>
+					</p-popup>
+
+					<!-- 활동배지획득 -->
+					<button type="button" class="btn-type" @click="togglePopup('common-09')">활동배지획득</button>
+					<p-popup class="pop-type-alert" modal v-model:visible="popups['common-09']">
+						<div class="pop-cont">
+							<div style="--dp:flex; --flex-d:column; --items:center; --txt-a:center;">
+								<img src="../images/img/badge-01.png">
+								<h2 class="txt-01" style="--mg-t:64px;"><strong>[활동 배지명]획득!</strong></h2>
+								<p style="--mg-t:16px; --m-mg-t:3.33vw;">해당 활동 배지의 기주네 맞는 멘트가 노출됩니다.<br>획득한 배지는 메인의 프로필이미지로 사용할 수 있습니다.</p>
+							</div>
+						</div>
+						<template #footer>
+							<button type="button" class="btn-type-b-blk">확인</button>
+						</template>
+					</p-popup>
 				</div>
 			</div>
 			<div style="--flex-d:column; --gap:10px;">

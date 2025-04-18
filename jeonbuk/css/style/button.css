@@ -47,5 +47,6 @@
 
 @media all and (max-width:720px) {
 	/* Default */
+		[class*="btn-type"] {gap:var(--btn-gap, 1.67vw);}
 		.btn-icon {gap:var(--btn-gap, 1.67vw);}
 }
