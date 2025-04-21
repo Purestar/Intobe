@@ -1,0 +1,30 @@
+/* Graph */
+	/* Horizontal */
+		[class*="grp-type-h"] {
+			background-color:var(--grp-back-bg-c, #e4e4e4);
+			border-radius:var(--grp-bd-r, var(--grp-h, 12px));
+			height:var(--grp-h, 12px);
+		}
+
+		[class*="grp-type-h"] .grp-inner {
+			background-color:var(--grp-bg-c, var(--mc));
+			border-radius:var(--grp-bd-r, var(--grp-h, 12px));
+			width:var(--w, 20%);
+			height:100%;
+		}
+
+@media all and (max-width:720px) {
+	/* Graph */
+		/* Horizontal */
+			[class*="grp-type-h"] {
+				background-color:var(--grp-back-bg-c, var(--grp-back-bg-c, #e4e4e4));
+				border-radius:var(--grp-bd-r, var(--grp-h, 3.33vw));
+				height:var(--grp-h, 3.33vw);
+			}
+
+			[class*="grp-type-h"] .grp-inner {
+				background-color:var(--grp-bg-c, var(--mc));
+				border-radius:var(--grp-bd-r, var(--grp-h, 12px));
+				width:var(--w, 20%);
+			}
+}

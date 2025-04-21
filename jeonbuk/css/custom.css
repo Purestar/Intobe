@@ -172,8 +172,6 @@
 		}
 
 /* Form */
-
-
 	/* Selction */
 		/* Button */
 			.form-opt-btn-01 {
@@ -293,6 +291,9 @@
 	.lst-badge .form-opt-rdo-02 {gap:12px;}
 	.lst-badge .badge-img {position:absolute; left:1px; top:1px; border-radius:12px; width:100%;}
 	.lst-badge-desc {font-size:14px; text-align:center; color:#666;}
+
+	.lst-form {display:flex; flex-direction:column; gap:20px;}
+	.lst-form dt {font-size:18px; font-weight:500; color:black;}
 
 /* Popup */
 	.pop-type-01, .pop-type-alert {
@@ -449,6 +450,12 @@
 		.favor-job-list > *.active > *,
 		.favor-job-list > * > *:hover {background:white; color:#1c4fa0;}
 		.favor-job-list > *.active > *:after {background-image:var(--ic); background-size:var(--bg-sz); background-position:var(--bp-550) 0;}
+
+	/* e-Notice */
+		.survey-wrap {width:720px; margin:40px auto 0;}
+		.survey-wrap .survey-top {display:flex; flex-direction:column; gap:12px;}
+		.survey-wrap .survey-tit {font-size:20px;}
+		.survey-wrap .lst-form {margin-top:60px;}
 
 	/* 팝업 */
 		.pop-type-01 .favor-job-list-wrap {flex:inherit; height:calc(100dvh - 368px); margin-top:0;}
