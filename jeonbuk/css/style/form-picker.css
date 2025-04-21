@@ -44,19 +44,8 @@
 	/*[class*="form-date"].above .form-datetime {top:auto; bottom:var(--fom-h);}*/
 
 /* File */
-	/*[class*="form-file"] {display:flex; align-items:center; padding-right:0;}
-	[class*="form-file"] input[type="file"] {padding-right:var(--fom-pad); line-height:var(--fom-lh);}
-	[class*="form-file"] .file-button {position:static; min-width:fit-content; height:100%;}*/
-
-/* File List */
-	/*[class*="form-file"] .lst-file {display:flex; flex:1; gap:10px; flex-direction:column; flex-wrap:wrap; width:100%; font-size:var(--fom-fs); line-height:var(--fom-fs);}
-	[class*="form-file"] .lst-file > * {display:flex; align-items:center; flex:1; gap:10px; word-break:break-all;}
-	[class*="form-file"] .lst-file a,
-	[class*="form-file"] .lst-file button {cursor:pointer; pointer-events: all;}
-	[class*="form-file"] .lst-file a {display:flex; gap:10px;}
-	[class*="form-file"] .lst-file a:hover {text-decoration:underline;}
-
-	[class*="form-file"] .lst-file-del {display:inline-flex; align-items:center; justify-content:center; text-indent:-1000em;}
+	[class*="form-file"] {position:relative;}
+	[class*="form-file"] input[type="file"] {position:absolute; left:-100em;}
 
 /* Range */
 	/*[class*="form-range"] {border:0;}

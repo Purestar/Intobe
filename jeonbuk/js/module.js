@@ -197,7 +197,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			removeRule: '규칙 제거',
 			accept: '예',
 			reject: '아니오',
-			choose: '선택',
+			choose: '파일선택',
 			upload: '업로드',
 			cancel: '취소',
 			dayNames: ['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'],

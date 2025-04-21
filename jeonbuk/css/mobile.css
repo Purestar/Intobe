@@ -61,11 +61,19 @@
 			.brd-lst-03 {gap:2.78vw; margin-top:2.78vw;}
 			.brd-lst-03 > * {flex-direction:column; gap:2.78vw; border-radius:2.78vw; padding:4.44vw 5.14vw;}
 			.brd-lst-03 .brd-lst-tit {gap:2.78vw; font-size:3.89vw;}
+			.brd-lst-03 .brd-lst-tit-inner {gap:2.5vw;}
 			.brd-lst-03 .brd-num {display:none;}
+			.brd-lst-03.brd-answer .brd-lst-tit {gap:2.5vw;}
+			.brd-lst-03.brd-answer .brd-lst-tit:before {width:1.94vw; height:1.94vw;}
 
 		/* View */
 			.brd-view-01 {border-radius:2.78vw; min-height:80.42vw; margin-top:2.78vw; padding:4.44vw 5.56vw;}
 			.brd-view-01 + .brd-lst-03 {margin-top:5.56vw;}
+
+		/* Form */
+			.brd-form-01 {margin-top:2.78vw;}
+			.brd-form-01 [class*="form-tarea"] {height:80.97vw;}
+			.brd-form-01 .brd-file {margin-top:5.56vw; padding-bottom:5.56vw;}
 
 		/* Paging */
 			.brd-paging {gap:0.56vw; margin-top:8.33vw;}
@@ -85,7 +93,8 @@
 
 	/* Button */
 		/* Size */
-			.btn-sz-34 {--btn-h:6.67vw; --btn-bd-r:6.67vw; --btn-pad-x:3.33vw; --btn-ft-s:2.78vw;}
+			[class*="btn-sz-34"] {--btn-h:6.67vw; --btn-bd-r:6.67vw; --btn-pad-x:3.33vw; --btn-ft-s:2.78vw;}
+			.btn-sz-34-r {--btn-bd-r:2.22vw;}
 
 	/* Chip */
 		[class*="chip-type-01"] {--chip-bd-r:0.97vw; --chip-pd-x:1.25vw; --chip-h:4.72vw; --chip-ft-s:2.78vw;}
@@ -103,7 +112,19 @@
 	/* Form */
 		/* Selction */
 			/* Button */
-				.form-opt-btn-01 .opt-txt, .form-opt-btn-01 input:checked + .opt-txt {border-radius:2.78vw; min-height:13.89vw; padding:0 5.28vw; font-size:3.89vw;}
+				.form-opt-btn-01 {
+					--form-opt-btn-bd-r: 2.78vw;
+					--form-opt-btn-ft-s: 3.89vw;
+					--form-opt-btn-h: 13.89vw;
+					--form-opt-btn-pd-x: 5.28vw;
+				}
+
+				.form-opt-btn-02 {
+					--form-opt-btn-bd-r: 8.33vw;
+					--form-opt-btn-ft-s: 3.33vw;
+					--form-opt-btn-h: 8.33vw;
+					--form-opt-btn-pd-x: 4.17vw;
+				}
 
 			/* Checkbox */
 				.form-opt-chk-01 .opt-txt:before,
@@ -123,9 +144,11 @@
 	/* Icon */
 		/* General */
 			.ic-delete:before {width:2.22vw; height:2.22vw;}
+			.ic-delete-02:before {width:1.94vw; height:1.94vw;}
 			.ic-download:before {width:2.22vw; height:2.22vw;}
 			.ic-file:before {width:3.06vw; height:2.78vw;}
 			.ic-link:before {width:2.78vw; height:2.78vw;}
+			.ic-lock:before {width:2.78vw; height:3.47vw;}
 			.ic-notice:before {width:3.06vw; height:2.78vw;}
 			.ic-setting:before {width:2.50vw; height:2.22vw;}
 			.ic-refresh:before {width:3.06vw; height:3.47vw;}
