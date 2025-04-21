@@ -147,7 +147,10 @@
 						{ "menu": "목록", "src": "./page/UEN_020100.html", "state": "comp" },
 						{ "menu": "상세", "src": "./page/UEN_020200.html", "state": "comp" }
 					], "state": "comp" },
-					{ "menu": "설문조사", "src": "./page/.html", "state": "" },
+					{ "id": "설문조사", "submenu": [
+						{ "menu": "목록", "src": "./page/UEN_030100.html", "state": "comp" },
+						{ "menu": "상세", "src": "./page/UEN_030200.html", "state": "work" }
+					], "state": "work" },
 					{ "id": "Q&A", "submenu": [
 						{ "menu": "목록", "src": "./page/UEN_040100.html", "state": "comp" },
 						{ "menu": "등록/수정", "src": "./page/UEN_040200.html", "state": "comp" },

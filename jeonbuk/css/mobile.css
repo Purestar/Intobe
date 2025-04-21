@@ -38,7 +38,7 @@
 			.brd-wrap .brd-ctgy {--div-gap:2.22vw; font-size:3.33vw;}
 			.brd-wrap .brd-date-wrap {margin-top:2.78vw; gap:2.22vw; font-size:3.33vw;}
 			.brd-wrap .brd-date-wrap > * {gap:2.22vw;}
-			.brd-wrap .brd-top {flex-direction:column-reverse; place-items:flex-start; gap:8.33vw; margin-top:5.56vw;}
+			.brd-wrap .brd-top {flex-direction:column-reverse; place-items:flex-start; gap:5.56vw; margin-top:5.56vw;}
 			.brd-wrap .brd-filter {width:100%; gap:2.08vw;}
 			.brd-wrap .brd-filter > * {width:100%;}
 			.brd-wrap .brd-filter [class*="form-txt"] {flex:0 0 56.94vw; width:56.94vw;}
