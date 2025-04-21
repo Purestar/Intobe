@@ -1,9 +1,20 @@
 /* Accordion */
-	.aco-type-01 .aco-head {height:54px; padding:0 24px;}
+	.aco-type-01 .aco-head {height:54px; padding:0 24px; font-size:18px; font-weight:500; color:black;}
 	.aco-type-01 > * + *,
 	.aco-type-01 .aco-cont {border-top:1px solid #efefef; text-align:left;}
 	.aco-type-01 .aco-cont[data-p-active="true"] {padding:24px;}
 	.aco-type-01 > .aco-item > .aco-head .aco-icon::after {width:14px; height:8px;}
+	.aco-type-01 .aco-icon:after {width:14px; height:8px;}
+
+	.aco-type-02 {gap:20px;}
+	.aco-type-02 .aco-head {height:94px; padding:0 40px; font-size:18px; font-weight:500; color:black;}
+	.aco-type-02 > .aco-item {border:1px solid #e2e2e2; border-radius:20px;}
+	.aco-type-02 > .p-accordionpanel-active > .aco-cont {border-top:1px solid #efefef; padding:40px; color:black;}
+	.aco-type-02 > .aco-item > .aco-head .aco-icon::after {background-position:var(--bp-200) var(--bp-300); width:18px; height:11px;}
+
+	.aco-qna-01 {--aco-txt-q:'Q'; --aco-txt-a:'';}
+	.aco-qna-01 .aco-head-inner {gap:20px;}
+	.aco-qna-01 .aco-head-inner:before {font-size:26px; font-weight:500; color:var(--mc);}
 
 /* Board */
 	/* General */

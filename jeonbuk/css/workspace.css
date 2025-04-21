@@ -35,7 +35,7 @@ ig-wrap {display:block; max-width:100%;}
 	.workspace-header-btn:last-child svg {display:none;}
 	.workspace-view-wrap {height:100%;}
 
-	workspace-container {display:block; flex:1; height:calc(100dvh - 120px);}
+	workspace-container {display:block; height:calc(100dvh - 120px);}
 	.workspace-container {overflow:hidden; height:100%;}
 	.workspace-container.active-left workspace-menu {overflow:hidden; width:0;}
 	.workspace-container.active-right workspace-setting {overflow:hidden; width:0;}
