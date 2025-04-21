@@ -1,8 +1,35 @@
 @media all and (max-width:720px) {
 	/* Accordion */
-		.aco-type-01 .aco-head {height:13.89vw; padding:0 5vw;}
-		.aco-type-01 .aco-cont[data-p-active="true"] {padding:5vw;}
-		.aco-type-01 > .aco-item > .aco-head .aco-icon::after {width:3.33vw; height:1.67vw;}
+		.aco-type-01 {
+			--aco-head-h:13.89vw;
+			--aco-head-ft-s:3.89vw;
+			--aco-head-pd-x:5vw;
+
+			--aco-cont-pd-a:5vw;
+
+			--aco-icon-w:3.33vw;
+			--aco-icon-h:1.67vw;
+		}
+
+		.aco-type-02 {
+			--aco-gap:2.78vw;
+			--aco-bd-r:2.78vw;
+
+			--aco-head-h:14.86vw;
+			--aco-head-pd-x:5vw;
+			--aco-head-ft-s:3.89vw;
+
+			--aco-cont-pd-a:5.56vw;
+
+			--aco-icon-w:3.47vw;
+			--aco-icon-h:1.94vw;
+		}
+
+		.aco-qna-01 {
+			--aco-txt-q-ft-s:3.89vw;
+
+			--aco-head-gap:3.33vw;
+		}
 
 	/* Board */
 		/* General */

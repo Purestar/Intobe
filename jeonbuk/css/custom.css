@@ -1,20 +1,51 @@
 /* Accordion */
-	.aco-type-01 .aco-head {height:54px; padding:0 24px; font-size:18px; font-weight:500; color:black;}
-	.aco-type-01 > * + *,
-	.aco-type-01 .aco-cont {border-top:1px solid #efefef; text-align:left;}
-	.aco-type-01 .aco-cont[data-p-active="true"] {padding:24px;}
-	.aco-type-01 > .aco-item > .aco-head .aco-icon::after {width:14px; height:8px;}
-	.aco-type-01 .aco-icon:after {width:14px; height:8px;}
+	.aco-type-01 {
+		--aco-bd-c:#e2e2e2;
 
-	.aco-type-02 {gap:20px;}
-	.aco-type-02 .aco-head {height:94px; padding:0 40px; font-size:18px; font-weight:500; color:black;}
-	.aco-type-02 > .aco-item {border:1px solid #e2e2e2; border-radius:20px;}
-	.aco-type-02 > .p-accordionpanel-active > .aco-cont {border-top:1px solid #efefef; padding:40px; color:black;}
-	.aco-type-02 > .aco-item > .aco-head .aco-icon::after {background-position:var(--bp-200) var(--bp-300); width:18px; height:11px;}
+		--aco-head-h:54px;
+		--aco-head-pd-x:24px;
+		--aco-head-ft-c:black;
+		--aco-head-ft-s:18px;
+		--aco-head-ft-w:500;
 
-	.aco-qna-01 {--aco-txt-q:'Q'; --aco-txt-a:'';}
-	.aco-qna-01 .aco-head-inner {gap:20px;}
-	.aco-qna-01 .aco-head-inner:before {font-size:26px; font-weight:500; color:var(--mc);}
+		--aco-cont-bd-w:1px;
+		--aco-cont-pd-a:24px;
+
+		--aco-icon-w:14px;
+		--aco-icon-h:8px;
+	}
+
+	.aco-type-01 > .aco-item + .aco-item {border-top:1px solid #e2e2e2;}
+	.aco-type-01 > .aco-item:last-child {border-bottom:1px solid #e2e2e2;}
+
+	.aco-type-02 {
+		--aco-gap:20px;
+		--aco-bd-c:#e2e2e2;
+		--aco-bd-w:1px;
+		--aco-bd-r:20px;
+
+		--aco-head-h:94px;
+		--aco-head-pd-x:40px;
+		--aco-head-ft-c:black;
+		--aco-head-ft-s:18px;
+		--aco-head-ft-w:500;
+
+		--aco-cont-pd-a:40px;
+		--aco-cont-ft-c:black;
+
+		--aco-bp-x:var(--bp-200);
+		--aco-icon-w:18px;
+		--aco-icon-h:11px;
+	}
+
+	.aco-qna-01 {
+		--aco-txt-q:'Q';
+		--aco-txt-q-ft-s:26px;
+
+		--aco-txt-a:'';
+
+		--aco-head-gap:20px;
+	}
 
 /* Board */
 	/* General */
