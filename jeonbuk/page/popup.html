@@ -554,6 +554,57 @@
 				</div>
 			</div>
 			<div style="--flex-d:column; --gap:10px;">
+				<h1 style="--ft-s:20px; --ft-w:bold;">진로탐색</h1>
+				<div style="--dp:grid; --grid-t-col:7; --gap:10px;">
+					<!-- 업무지표 -->
+					<button type="button" class="btn-type" @click="togglePopup('career-01')">업무지표</button>
+					<p-popup class="pop-type-01" :style="{ width: '580px' }" modal v-model:visible="popups['career-01']">
+						<template #header>
+							<h1 class="pop-title">컴퓨터시스템 설계 및 분석가</h1>
+						</template>
+						<div class="pop-cont">
+							<h2 class="txt-01"><strong>업무수행능력중요도</strong></h2>
+
+							<ul class="lst-item-04" style="--mg-t:12px; --m-mg-t:1.94vw;">
+								<li>
+									<div style="--dp:grid; --gap:8px; --m-gap:2.78vw;">
+										<h3 class="txt-18-28"><b>98 전산</b></h3>
+										<p>다양한 목적을 위해 소프트웨어나 인터넷을 활용하거나 프로그램을 작성한다.</p>
+									</div>
+								</li>
+								<li>
+									<div style="--dp:grid; --gap:8px; --m-gap:2.78vw;">
+										<h3 class="txt-18-28"><b>98 전산</b></h3>
+										<p>다양한 목적을 위해 소프트웨어나 인터넷을 활용하거나 프로그램을 작성한다.</p>
+									</div>
+								</li>
+								<li>
+									<div style="--dp:grid; --gap:8px; --m-gap:2.78vw;">
+										<h3 class="txt-18-28"><b>98 전산</b></h3>
+										<p>다양한 목적을 위해 소프트웨어나 인터넷을 활용하거나 프로그램을 작성한다.</p>
+									</div>
+								</li>
+								<li>
+									<div style="--dp:grid; --gap:8px; --m-gap:2.78vw;">
+										<h3 class="txt-18-28"><b>98 전산</b></h3>
+										<p>다양한 목적을 위해 소프트웨어나 인터넷을 활용하거나 프로그램을 작성한다.</p>
+									</div>
+								</li>
+								<li>
+									<div style="--dp:grid; --gap:8px; --m-gap:2.78vw;">
+										<h3 class="txt-18-28"><b>98 전산</b></h3>
+										<p>다양한 목적을 위해 소프트웨어나 인터넷을 활용하거나 프로그램을 작성한다.</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<template #footer>
+							<button type="button" class="btn-type-b-blk">확인</button>
+						</template>
+					</p-popup>
+				</div>
+			</div>
+			<div style="--flex-d:column; --gap:10px;">
 				<h1 style="--ft-s:20px; --ft-w:bold;">메이저맵</h1>
 				<div style="--dp:grid; --grid-t-col:7; --gap:10px;">
 					<button class="btn-type" disabled>사용안내</button>

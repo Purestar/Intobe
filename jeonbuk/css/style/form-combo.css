@@ -3,7 +3,7 @@
 		[class*="form-sel"],
 		[class*="form-float-sel"] .p-select {
 			gap:12px;
-			background: var(--form-bg-c);
+			background: var(--form-bg-c, var(--fom-bg));
 			border:1px solid var(--form-bd-c, var(--fom-bdr-c));
 			border-radius:var(--form-bd-r, var(--fom-br));
 			width:var(--form-w, 100%);

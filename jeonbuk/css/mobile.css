@@ -154,6 +154,7 @@
 			.ic-delete-02:before {width:1.94vw; height:1.94vw;}
 			.ic-download:before {width:2.22vw; height:2.22vw;}
 			.ic-file:before {width:3.06vw; height:2.78vw;}
+			.ic-info:before {width:3.33vw; height:3.33vw;}
 			.ic-link:before {width:2.78vw; height:2.78vw;}
 			.ic-lock:before {width:2.78vw; height:3.47vw;}
 			.ic-notice:before {width:3.06vw; height:2.78vw;}
@@ -197,6 +198,9 @@
 		[class*="lst-item-03"] .lst-tit {font-size:3.89vw;}
 
 		.lst-item-03-01 .lst-tit {font-size:3.89vw;}
+
+		.lst-item-04 {border-radius:3.89vw;}
+		.lst-item-04 > * {padding:5.56vw;}
 
 		[class*="lst-latest"] {gap:5vw;}
 		.lst-latest-02 > * {flex-direction:column; gap:2.5vw;}
@@ -268,6 +272,21 @@
 	/* Thumb */
 		.thumb-type-01 {width:19.44vw; height:19.44vw;}
 		.thumb-type-02 {--thumb-bd-r:1.94vw; width:50vw; height:30.56vw;}
+
+	/* Tooltip */
+		.t-tip-01 {
+			--tip-bd-r:2.22vw;
+			--tip-bd-w:0.14vw;
+			--tip-pd:4.44vw;
+			--tip-ft-s:3.33vw;
+
+			--tip-arrow-w:2.5vw;
+			--tip-arrow-h:1.94vw;
+
+			--tip-gap:0.97vw;
+
+			--tip-sha-size:3.06vw;
+		}
 
 	/* Common */
 		/* Layout */
@@ -351,7 +370,7 @@
 			.survey-wrap .survey-top {gap:2.22vw;}
 			.survey-wrap .survey-tit {font-size:3.89vw;}
 			.survey-wrap .lst-form {margin-top:11.11vw; padding:0 4.17vw;}
-			.survey-list {margin-top:11.11vw;}
+			.survey-list {height:58.33vw; margin-top:11.11vw;}
 			.survey-list > *:first-child {margin-top:0;}
 
 		/* 팝업 */

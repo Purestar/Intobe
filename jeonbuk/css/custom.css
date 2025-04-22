@@ -79,7 +79,7 @@
 
 		.brd-lst-01 .brd-cont {display:flex; flex-direction:column; gap:12px; margin-top:16px;}
 
-		.brd-lst-02:not(.swiper-wrapper) {display:flex; gap:40px;}
+		.brd-lst-02:not(.swiper-wrapper) {display:grid; gap:40px;}
 		.brd-lst-02 > * {border:1px solid #e7e7e7; border-radius:18px; padding:32px;}
 		.brd-lst-02 .brd-tit {margin-top:14px;}
 
@@ -252,6 +252,7 @@
 		.ic-delete-02:before {background-position:var(--bp-950) 0; width:8px; height:8px;}
 		.ic-download:before {background-position:var(--bp-650) 0; width:14px; height:14px;}
 		.ic-file:before {background-position:var(--bp-800) 0; width:18px; height:18px;}
+		.ic-info:before {background-position:var(--bp-100) var(--bp-50); width:18px; height:18px;}
 		.ic-link:before {background-position:0 0; width:12px; height:12px;}
 		.sub-header .ic-link:before {background-position:0 -12px; width:12px; height:12px;}
 		.ic-lock:before {background-position:var(--bp-900) 0; width:16px; height:19px;}
@@ -315,6 +316,10 @@
 	[class*="lst-item-03"] .lst-bottom > * {flex:1; border-radius:0; border-top-left-radius:0; border-top-right-radius:0; font-weight:500;}
 	[class*="lst-item-03"] .lst-bottom > *:first-child {border-bottom-left-radius:16px;}
 	[class*="lst-item-03"] .lst-bottom > *:last-child {border-bottom-right-radius:16px;}*/
+
+	.lst-item-04 {border:1px solid #e2e2e2; border-radius:18px;}
+	.lst-item-04 > * {padding:30px 40px;}
+	.lst-item-04 > * + * {border-top:1px solid #e2e2e2;}
 
 	[class*="lst-latest"] {display:flex; flex-direction:column; gap:24px;}
 	[class*="lst-latest"] > * {display:flex; place-content:space-between; gap:48px;}
@@ -397,6 +402,23 @@
 	.txt-20-32 {font-size:20px;}
 	.txt-24-32 {font-size:24px;}
 	.txt-28-36 {font-size:28px;}
+
+/* Tooltip */
+	.t-tip-01 {
+		--tip-bd-r:16px;
+		--tip-bd-w:1px;
+		--tip-bd-c:#f0f0f0;
+		--tip-pd:24px;
+		--tip-ft-s:15px;
+
+		--tip-arrow-w:18px;
+		--tip-arrow-h:14px;
+
+		--tip-gap:7px;
+
+		--tip-sha-size:22px;
+		--tip-sha-opa:0.08;
+	}
 
 /* Common */
 	/* Layout */
@@ -531,7 +553,7 @@
 		.survey-wrap .survey-top {display:flex; flex-direction:column; gap:12px;}
 		.survey-wrap .survey-tit {font-size:20px;}
 		.survey-wrap .lst-form {margin-top:60px; padding:0 40px;}
-		.survey-list {margin-top:40px;}
+		.survey-list {height:420px; margin-top:40px;}
 		.survey-list > *:first-child {margin-top:0;}
 
 	/* 팝업 */

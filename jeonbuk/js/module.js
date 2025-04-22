@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		},
 	});
 	//app.use(PrimeVue.Config, { unstyled: true });
-
+	registerTooltipScrollClose();
 
 
 	app.mount('body');
@@ -150,6 +150,21 @@ function includeHTML() {
 				.catch((error) => console.error(error));
 		}
 	});
+}
+
+export function registerTooltipScrollClose() {
+	if (typeof window === 'undefined') return;
+
+	let hideTooltips = () => {
+		const tooltips = document.querySelectorAll('.p-tooltip');
+		tooltips.forEach(el => {
+			el.style.display = 'none';
+		});
+	};
+
+	window.addEventListener('scroll', () => {
+		hideTooltips();
+	}, { passive: true });
 }
 
 document.addEventListener("DOMContentLoaded", includeHTML);
