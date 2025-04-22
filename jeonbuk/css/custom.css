@@ -530,7 +530,9 @@
 		.survey-wrap {width:720px; margin:40px auto 0;}
 		.survey-wrap .survey-top {display:flex; flex-direction:column; gap:12px;}
 		.survey-wrap .survey-tit {font-size:20px;}
-		.survey-wrap .lst-form {margin-top:60px;}
+		.survey-wrap .lst-form {margin-top:60px; padding:0 40px;}
+		.survey-list {margin-top:40px;}
+		.survey-list > *:first-child {margin-top:0;}
 
 	/* 팝업 */
 		.pop-type-01 .favor-job-list-wrap {flex:inherit; height:calc(100dvh - 368px); margin-top:0;}

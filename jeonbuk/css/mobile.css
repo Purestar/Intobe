@@ -350,7 +350,9 @@
 			.survey-wrap {width:100%; margin:7.78vw 0 0;}
 			.survey-wrap .survey-top {gap:2.22vw;}
 			.survey-wrap .survey-tit {font-size:3.89vw;}
-			.survey-wrap .lst-form {margin-top:11.11vw;}
+			.survey-wrap .lst-form {margin-top:11.11vw; padding:0 4.17vw;}
+			.survey-list {margin-top:11.11vw;}
+			.survey-list > *:first-child {margin-top:0;}
 
 		/* 팝업 */
 			.pop-type-01 .set-preffer {height:auto; margin-left:calc(var(--pop-pd-x) * -1);}
