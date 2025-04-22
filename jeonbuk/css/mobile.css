@@ -92,7 +92,10 @@
 		.box-type-03-01 {--box-pd-y:2.78vw; --box-bd-r:8.33vw;}
 
 	/* Bullet */
-		/* Numbering */
+		/* Circle */
+			.bul-cir-01 {--bul-gap:1.11vw; --bul-w:0.42vw; --bul-gap-y:2.78vw;}
+
+		/* Number */
 			.bul-num-01 {--bul-gap:2.22vw; --bul-w:4.58vw; --bul-ft-s:3.06vw;}
 
 	/* Button */
@@ -286,8 +289,8 @@
 			/* Container */
 				#container {flex:1;}
 				.sub-layout {padding-block:8.33vw;}
-				.sub-tit {font-size:6.11vw;}
-				.sub-tit-02 {gap:2.78vw; font-size:5vw;}
+				.sub-tit {margin-bottom:5.56vw; font-size:6.11vw;}
+				.sub-tit-02 {margin-bottom:5.56vw; gap:2.78vw; font-size:5vw;}
 
 		/* 메인 */
 			.main-wrap {background:url("../images/img/bg_m_visual.png") center top no-repeat; background-size:100%; min-height:39.58vw; padding-top:28.61vw;}
@@ -338,8 +341,6 @@
 			.job-type-lst button:after {display:none;}
 			.job-type-rst-wrap {max-height:89.58vw; padding:5.56vw;}
 			.job-type-rst-wrap .brd-paging {margin-top:5vw;}
-			.job-type-rst {gap:2.22vw; font-size:3.89vw;}
-			.job-type-rst button {border-radius:3.89vw; padding:5.28vw;}
 			.job-type-ctrl {padding:5.56vw 3.89vw;}
 
 		/* e-Notice */

@@ -23,7 +23,7 @@
 				{ "id": "진로탐색", "submenu": [
 					{ "id": "직업", "submenu": [
 						{ "menu": "목록", "src": "./page/UCE_010100.html", "state": "comp" },
-						{ "menu": "상세", "src": "./page/.html", "state": "" }
+						{ "menu": "상세", "src": "./page/UCE_010201.html", "state": "work" }
 					], "state": "work" },
 					{ "id": "AI선배", "submenu": [
 						{ "menu": "목록", "src": "./page/.html", "state": "" },

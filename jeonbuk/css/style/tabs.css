@@ -11,6 +11,7 @@
 		[class*="tab-menu"] .p-tablist-viewport {overflow-x:auto; overflow-y:hidden; scroll-behavior:smooth; scrollbar-width:none;}
 		[class*="tab-menu"] .p-tablist-tab-list {position:relative; display:flex;}
 		[class*="tab-menu"] .p-tablist-tab-list .p-tab {flex-shrink:0; white-space:nowrap;}
+		[class*="tab-menu"][data-scroll] .p-tablist-active-bar {display:none;}
 
 	/* Variation */
 		/* Wrap */
