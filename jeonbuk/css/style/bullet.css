@@ -2,7 +2,7 @@
 	/* Default */
 		[class*="bul-"] {display:flex; flex-direction:var(--flex-direction, column);}
 		[class*="bul-"] > * {display:flex; gap:var(--bul-gap, 10px); max-width:100%; word-break:break-all;}
-		[class*="bul-"] > *:before {content:"";}
+		[class*="bul-"] > *:before {content:""; display:flex;}
 
 	/* Figure */
 		[class*="bul-cir"] > *:before,
@@ -18,11 +18,20 @@
 
 	/* Number */
 		[class*="bul-num"] {counter-reset:list-num;}
-		[class*="bul-num"] > *:before {counter-increment:list-num; content:counter(list-num)". "; font-size:var(--bul-w, var(--ft-s)); color:var(--bul-c, var(--ft-c))}
+		[class*="bul-num"] > *:before {
+			counter-increment:list-num;
+			content: counter(list-num) var(--bul-sur, '.');
+			background-color:var(--bul-bg-c);
+			border-radius:var(--bul-bd-r, 0);
+			width:var(--bul-w, 0.5em);
+			height:var(--bul-h, var(--bul-w, 0.5em));
+			font-size:var(--bul-ft-s, var(--ft-s));
+			color:var(--bul-ft-c, var(--ft-c));
+		}
 
 @media all and (max-width:720px) {
 	/* Default */
-		[class*="bul-"] {flex-direction:var(--m-flex-direction, var(--flex-direction, column));}
+		[class*="bul-"] {flex-direction:var(--m-flex-d, var(--flex-d, column));}
 		[class*="bul-"] > * {gap:var(--m-bul-gap, var(--bul-gap, 10px));}
 
 	/* Figure */
@@ -36,5 +45,12 @@
 		[class*="bul-hyp"] > *:before {height:var(--m-bul-h, var(--bul-h, 1px)); translate:0 calc((var(--m-txt-lh, var(--txt-lh, var(--init-line-height))) * 1em - var(--m-bul-w, var(--bul-w, 1px))) / 2);}
 
 	/* Number */
-		[class*="bul-num"] > *:before {font-size:var(--m-bul-w, var(--bul-w, var(--ft-s)));}
+		[class*="bul-num"] > *:before {
+			content: counter(list-num) var(--m-bul-sur, var(--bul-sur, '.'));
+			background-color:var(--m-bul-bg-c, var(--bul-bg-c));
+			border-radius:var(--m-bul-bd-r, var(--bul-bd-r, 0));
+			height:var(--m-bul-h, var(--bul-h, var(--m-bul-w, var(--bul-w, 0.5em))));
+			font-size:var(--m-bul-ft-s, var(--bul-ft-s, var(--ft-s)));
+			color:var(--m-bul-ft-c, var(--bul-ft-c, var(--ft-c)));
+		}
 }

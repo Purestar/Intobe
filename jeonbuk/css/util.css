@@ -1,2 +1,7 @@
 /* Font */
 	.cr-blk {color:black;}
+
+@media all and (max-width:720px) {
+	.m-flex-nw {flex-wrap:nowrap;}
+	.m-ws-nw {white-space:nowrap;}
+}

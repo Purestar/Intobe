@@ -2,8 +2,13 @@
 	[data-scroll] {overflow:auto;}
 	[data-scroll] > * {flex-wrap:nowrap; word-break:keep-all;}
 	[data-scroll="y"] {overflow-x:hidden; overflow-y:auto; height:var(--h, 100%);}
-	[data-scroll="x"] {overflow-x:auto; overflow-y:hidden; width:var(--w, 100%);}
+	[data-scroll="x"],
+	[data-scroll="xh"] {overflow-x:auto; overflow-y:hidden; width:var(--w, 100%);}
 	[data-scroll="h"] {width:var(--w, 100%); height:var(--h, 100%);}
-	[data-scroll="h"]::-webkit-scrollbar {width:0; height:0; border-radius:0;}
-	[data-scroll="h"]::-webkit-scrollbar-thumb {width:0; border-radius:0;}
-	[data-scroll="h"]::-webkit-scrollbar-track {border-radius:0;}
+
+	[data-scroll="h"]::-webkit-scrollbar,
+	[data-scroll="xh"]::-webkit-scrollbar {width:0; height:0; border-radius:0;}
+	[data-scroll="h"]::-webkit-scrollbar-thumb,
+	[data-scroll="xh"]::-webkit-scrollbar-thumb {width:0; border-radius:0;}
+	[data-scroll="h"]::-webkit-scrollbar-track,
+	[data-scroll="xh"]::-webkit-scrollbar-track {border-radius:0;}
