@@ -192,9 +192,11 @@
 		.lst-item-02 .lst-cont {margin-top:3.33vw;}
 		.lst-item-02 .lst-desc {gap:2.22vw;}
 
-		.lst-item-03 {gap:2.22vw;}
-		.lst-item-03 > * {border-radius:2.78vw; padding:5.28vw;}
-		.lst-item-03 .lst-tit {font-size:3.89vw;}
+		[class*="lst-item-03"] {gap:2.22vw;}
+		[class*="lst-item-03"] > * {border-radius:2.78vw; padding:5.28vw;}
+		[class*="lst-item-03"] .lst-tit {font-size:3.89vw;}
+
+		.lst-item-03-01 .lst-tit {font-size:3.89vw;}
 
 		[class*="lst-latest"] {gap:5vw;}
 		.lst-latest-02 > * {flex-direction:column; gap:2.5vw;}
@@ -255,6 +257,7 @@
 		.txt-01 {font-size:5.28vw; line-height:7.22vw;}
 		.txt-02 {font-size:5.28vw;}
 
+		.txt-14-24 {font-size:3.33vw;}
 		.txt-18-26 {font-size:3.61vw;}
 		.txt-20-28 {font-size:3.89vw;}
 		.txt-20-30 {font-size:4.17vw;}

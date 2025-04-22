@@ -179,6 +179,10 @@
 			--m-div-gap:1.11vw; --m-div-w:0.83vw;
 		}
 
+/* e-Chart */
+	.e-chart-wrap {width:100%;}
+	.e-chart-wrap > div {width:100% !important;}
+
 /* Form */
 	/* Selction */
 		/* Button */
@@ -386,6 +390,7 @@
 	.txt-01 {font-size:20px; line-height:28px;}
 	.txt-02 {font-size:28px;}
 
+	.txt-14-24 {font-size:14px;}
 	.txt-18-26 {font-size:18px;}
 	.txt-20-28 {font-size:20px;}
 	.txt-20-30 {font-size:20px;}
