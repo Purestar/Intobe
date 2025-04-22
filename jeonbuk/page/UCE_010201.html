@@ -35,7 +35,7 @@
 					</label>
 				</div>
 
-				<p-tabs class="tab-wrap-01" style="--mg-t:60px; --m-mg-t:8.33vw;" value="1">
+				<p-tabs class="tab-wrap-01" style="--mg-t:60px; --m-mg-t:8.33vw;" value="0">
 					<p-tab-list class="tab-menu-01" data-scroll="xh">
 						<p-tab value="0">기본정보</p-tab>
 						<p-tab value="1">교육 및 자격</p-tab>
@@ -676,6 +676,30 @@
 						eduDist03Chart.setOption(eduDist02Option);
 						eduDist03Chart.resize();
 					}, 50);
+				});
+
+				// 특정 엘리먼트가 실제로 보여지게 됐는지 체크 후 차트 resize
+				const watchVisibilityAndResize = (el, chart) => {
+					const check = () => {
+						if (el && el.offsetWidth > 0 && el.offsetHeight > 0) {
+							chart.resize();
+						} else {
+							requestAnimationFrame(check);
+						}
+					};
+					check();
+				};
+
+				// 탭 클릭 시 visible 되면 resize 호출
+				document.querySelectorAll('.p-tab').forEach((tab, idx) => {
+					tab.addEventListener('click', () => {
+						if (idx === 1) {
+							watchVisibilityAndResize(document.getElementById('eduDist'), eduDistChart);
+							watchVisibilityAndResize(document.getElementById('eduDist02'), eduDist02Chart);
+						} else if (idx === 2) {
+							watchVisibilityAndResize(document.getElementById('eduDist03'), eduDist03Chart);
+						}
+					});
 				});
 			});
 		</script>
