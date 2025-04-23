@@ -1,10 +1,11 @@
 /* Thumb */
 	/* Default */
 		[class*="thumb-type"] {overflow:hidden; position:relative; display:flex; flex-wrap:nowrap; justify-content:center; align-items:center; background-color:var(--thmb-bg); background-position:center; background-repeat:no-repeat; background-size:50% auto; width:100%; height:100%;}
-		[class*="thumb-type"] img {width:100%; height:100%;}
+		[class*="thumb-type"] img,
+		[class*="thumb-type"] video {width:100%; height:100%;}
 		[class*="thumb-type"]:before,
 		[class*="thumb-type"]:after {content:"";}
-		[class*="thumb-type"] > *:not(img) {position:absolute; padding-inline:var(--thumb-pd-a, var(--thumb-pd-x)); padding-block:var(--thumb-pd-a, var(--thumb-pd-y));}
+		[class*="thumb-type"] > *:not(img, video) {position:absolute; padding-inline:var(--thumb-pd-a, var(--thumb-pd-x)); padding-block:var(--thumb-pd-a, var(--thumb-pd-y));}
 		[class*="thumb-type"] .thumb-lt {left:0; top:0;}
 		[class*="thumb-type"] .thumb-rt {right:0; top:0;}
 		[class*="thumb-type"] .thumb-lb {left:0; bottom:0;}

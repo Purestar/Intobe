@@ -602,6 +602,43 @@
 							<button type="button" class="btn-type-b-blk">확인</button>
 						</template>
 					</p-popup>
+
+					<!-- 학과상세 -->
+					<button type="button" class="btn-type" @click="togglePopup('career-02')">학과상세</button>
+					<p-popup class="pop-type-01" :style="{ width: '580px' }" modal v-model:visible="popups['career-02']">
+						<div class="pop-cont">
+							<div style="--dp:flex; --content:space-between;">
+								<div style="--dp:flex; --items:center;">
+									<h2 class="txt-01"><strong>업무수행능력중요도</strong></h2>
+									<label class="form-opt-chk-01">
+										<input type="checkbox">
+										<span class="opt-txt"></span>
+									</label>
+								</div>
+								<div style="--gap:10px; --items:center; --m-mg-t:5.56vw;">
+									<a href="#" class="btn-type-b btn-sz-34">학과홈페이지<i class="ic-ur-arr-01"></i></a>
+									<a href="#" class="btn-type-lgry btn-sz-34">전공가이드<i class="ic-download"></i></a>
+								</div>
+							</div>
+							<div class="thumb-type-03" style="--mg-t:24px; --m-mg-t:5.56vw;">
+								<video controls>
+									<source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+									브라우저가 video 태그를 지원하지 않습니다.
+								</video>
+							</div>
+							<p style="--mg-t:20px; --m-mg-t:3.33vw;">
+								<q class="txt-14-24">#인성  #자기주도  #실무  #전문  #창의  #융합  #소통  #글로컬 </q>
+							</p>
+
+							<h2 class="txt-20-32" style="--mg-t:40px; --m-mg-t:11.11vw;"><b>전공소개</b></h2>
+							<p style="--mg-t:16px; --m-mg-t:2.78vw;">미래의 정보화 사회를 주도해 나갈 컴퓨터공학은 논리적인 사고, 전체를 볼 수 있는 안목, 체계적이고 조직적인 사고력을 필요로 하는 학문입니다. 이러한 사고력을 바탕으로 본 학과에서는 컴퓨터를 이요해 정보를 처리하고 가공하여 인류의 삶의 질 향상에 기여합니다.</p>
+							<h2 class="txt-20-32" style="--mg-t:40px; --m-mg-t:11.11vw;"><b>교육목표</b></h2>
+							<p style="--mg-t:16px; --m-mg-t:2.78vw;">SW기술을 중심으로 소프트웨어, 웹/앱 개발, 2D/3D 게임, VR/AR 그래픽디자인, 디지털영상(정지영상,동영상)등 다양한  IT멀티미디어 분야에 관한 이론.원리 및 인공지능, 블록체인 등과 같은 응용 기술을 갖춥니다. </p>
+						</div>
+						<template #footer>
+							<button type="button" class="btn-type-b-blk">확인</button>
+						</template>
+					</p-popup>
 				</div>
 			</div>
 			<div style="--flex-d:column; --gap:10px;">

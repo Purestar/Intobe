@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="Management">
+		<meta name="description" content="Management">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script type="module" src="../js/index.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
+		<script type="module" src="../js/module.js"></script>
+		<script src="../js/pub.js"></script>
+		<link rel="icon" href="../favicon.ico" sizes="any">
+		<link rel="stylesheet" href="../css/global.css">
+	</head>
+	<body>
+		<!-- 헤더 -->
+		<div class="sub-header">
+			<div data-include="../include/header.html"></div>
+		</div>
+
+		<!-- 본문 -->
+		<div id="container">
+			<div class="layout-inner sub-layout">
+				<h2 class="txt-28-36"><strong>AI Job의 맞춤 전공 추천!</strong></h2>
+
+				<div id="job" class="job-slide-wrap">
+					<div class="swi-type-03 swi-navigation-01 m-full">
+						<div class="swiper brd-wrap">
+							<ul class="swiper-wrapper">
+								<li class="swiper-slide">
+									<div style="--pos:absolute; --right:10px; --top:10px; --m-right:1.39vw; --m-top:1.39vw;">
+										<label class="form-opt-chk-01">
+											<input type="checkbox">
+											<span class="opt-txt"></span>
+										</label>
+									</div>
+									<div>
+										<h3 class="txt-20-30"><b>시스템소프트웨어엔지니어</b></h3>
+										<p class="job-desc">컴퓨터시스템의동작, 제어 및 관리와 관련된 시스템소프트웨어를 개발한다. </p>
+									</div>
+									<p style="--ft-s:14px; --m-ft-s:3.33vw;"><q>16명</q> 학생이 관심있는 직업이에요!</p>
+									<p class="job-recom"><strong class="txt-24-32"><q>98%</q></strong>추천도</p>
+								</li>
+								<li class="swiper-slide">
+									<div style="--pos:absolute; --right:10px; --top:10px; --m-right:1.39vw; --m-top:1.39vw;">
+										<label class="form-opt-chk-01">
+											<input type="checkbox">
+											<span class="opt-txt"></span>
+										</label>
+									</div>
+									<div>
+										<h3 class="txt-20-30"><b>시스템소프트웨어엔지니어</b></h3>
+										<p class="job-desc">컴퓨터시스템의동작, 제어 및 관리와 관련된 시스템소프트웨어를 개발한다. </p>
+									</div>
+									<p style="--ft-s:14px; --m-ft-s:3.33vw;"><q>16명</q> 학생이 관심있는 직업이에요!</p>
+									<p class="job-recom"><strong class="txt-24-32"><q>98%</q></strong>추천도</p>
+								</li>
+								<li class="swiper-slide">
+									<div style="--pos:absolute; --right:10px; --top:10px; --m-right:1.39vw; --m-top:1.39vw;">
+										<label class="form-opt-chk-01">
+											<input type="checkbox">
+											<span class="opt-txt"></span>
+										</label>
+									</div>
+									<div>
+										<h3 class="txt-20-30"><b>시스템소프트웨어엔지니어</b></h3>
+										<p class="job-desc">컴퓨터시스템의동작, 제어 및 관리와 관련된 시스템소프트웨어를 개발한다. </p>
+									</div>
+									<p style="--ft-s:14px; --m-ft-s:3.33vw;"><q>16명</q> 학생이 관심있는 직업이에요!</p>
+									<p class="job-recom"><strong class="txt-24-32"><q>98%</q></strong>추천도</p>
+								</li>
+								<li class="swiper-slide">
+									<div style="--pos:absolute; --right:10px; --top:10px; --m-right:1.39vw; --m-top:1.39vw;">
+										<label class="form-opt-chk-01">
+											<input type="checkbox">
+											<span class="opt-txt"></span>
+										</label>
+									</div>
+									<div>
+										<h3 class="txt-20-30"><b>시스템소프트웨어엔지니어</b></h3>
+										<p class="job-desc">컴퓨터시스템의동작, 제어 및 관리와 관련된 시스템소프트웨어를 개발한다. </p>
+									</div>
+									<p style="--ft-s:14px; --m-ft-s:3.33vw;"><q>16명</q> 학생이 관심있는 직업이에요!</p>
+									<p class="job-recom"><strong class="txt-24-32"><q>98%</q></strong>추천도</p>
+								</li>
+							</ul>
+						</div>
+						<div class="swiper-nav-wrap swi-nav-01">
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+					</div>
+				</div>
+
+				<h2 class="txt-28-36" style="--mg-t:80px; --m-mg-t:11.11vw;"><strong>알아보고 싶은 전공을 탐색해보세요!</strong></h2>
+
+			</div>
+		</div>
+
+		<!-- 푸터 -->
+		<div data-include="../include/footer.html"></div>
+
+		<script>
+			let resizeTimeout;
+
+			function initSwipers() {
+				// 메인 상단 스테이터스 슬라이드
+				const jobSlide = new Swiper('#job .swiper', {
+					slidesPerView: 1.05,
+					spaceBetween: calculatePercentage(19),
+					navigation: {
+						nextEl: "#job .swiper-button-next",
+						prevEl: "#job .swiper-button-prev"
+					},
+					breakpoints: {
+						720: {
+							slidesPerView: 2.5,
+							spaceBetween: 42,
+						},
+					},
+				});
+			}
+
+			function updateSwiperSpace() {
+				clearTimeout(resizeTimeout);
+				resizeTimeout = setTimeout(() => {
+					if (window.jobSlide) window.jobSlide.destroy(true, true);
+					initSwipers();
+				}, 200);
+			}
+
+			window.addEventListener('DOMContentLoaded', () => { initSwipers() });
+			window.addEventListener('resize', updateSwiperSpace);
+		</script>
+	</body>
+</html>

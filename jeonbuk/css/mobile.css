@@ -165,6 +165,9 @@
 			/* Up */
 				.ic-u-arr-01:before {width:3.33vw; height:6.67vw;}
 
+			/* Up & Rignt */
+				.ic-ur-arr-01:before {width:2.08vw; height:2.08vw;}
+
 			/* Right */
 				.ic-r-arr-01:before {width:2.08vw; height:3.47vw;}
 				.ic-r-arr-02:before {width:1.25vw; height:1.94vw;}

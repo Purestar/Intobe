@@ -265,6 +265,9 @@
 		/* Up */
 			.ic-u-arr-01:before {background-position:var(--bp-150) 0; width:21px; height:36px;}
 
+		/* Up & Rignt */
+			.ic-ur-arr-01:before {background-position:var(--bp-150) var(--bp-50); width:8px; height:8px;}
+
 		/* Right */
 			.ic-r-arr-01:before {background-position:var(--bp-200) 0; width:9px; height:14px;}
 			.ic-r-arr-02:before {background-position:var(--bp-350) 0; width:5px; height:8px;}
