@@ -223,7 +223,7 @@
 			}
 			.form-opt-btn-01 .opt-txt, .form-opt-btn-01 input:checked + .opt-txt {place-content:flex-start; width:100%;}
 
-			.form-opt-btn-02 {
+			[class*="form-opt-btn-02"] {
 				--form-opt-btn-bd-c: #ccc;
 				--form-opt-btn-bd-r: 40px;
 				--form-opt-btn-ft-c: #999;
@@ -234,6 +234,12 @@
 
 				--form-opt-btn-chk-bg-c:black;
 				--form-opt-btn-chk-ft-c:white;
+			}
+
+			.form-opt-btn-02-01 {
+				--form-opt-btn-chk-bg-c:#f3f6ff;
+				--form-opt-btn-chk-bd-c:var(--mc);
+				--form-opt-btn-chk-ft-c:var(--mc);
 			}
 
 		/* Checkbox */
@@ -422,6 +428,7 @@
 
 	.txt-14-24 {font-size:14px;}
 	.txt-18-26 {font-size:18px;}
+	.txt-18-28 {font-size:18px;}
 	.txt-20-28 {font-size:20px;}
 	.txt-20-30 {font-size:20px;}
 	.txt-20-32 {font-size:20px;}

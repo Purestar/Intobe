@@ -145,7 +145,7 @@
 					--form-opt-btn-pd-x: 5.28vw;
 				}
 
-				.form-opt-btn-02 {
+				[class*="form-opt-btn-02"] {
 					--form-opt-btn-bd-r: 8.33vw;
 					--form-opt-btn-ft-s: 3.33vw;
 					--form-opt-btn-h: 8.33vw;
@@ -285,6 +285,7 @@
 
 		.txt-14-24 {font-size:3.33vw;}
 		.txt-18-26 {font-size:3.61vw;}
+		.txt-18-28 {font-size:3.89vw;}
 		.txt-20-28 {font-size:3.89vw;}
 		.txt-20-30 {font-size:4.17vw;}
 		.txt-20-32 {font-size:4.44vw;}

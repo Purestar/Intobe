@@ -27,9 +27,9 @@
 					], "state": "comp" },
 					{ "id": "AI선배", "submenu": [
 						{ "menu": "목록", "src": "./page/UCE_020100.html", "state": "comp" },
-						{ "menu": "찾기결과", "src": "./page/UCE_020200.html", "state": "work" },
-						{ "menu": "상세", "src": "./page/.html", "state": "" }
-					], "state": "work" },
+						{ "menu": "찾기결과", "src": "./page/UCE_020200.html", "state": "comp" },
+						{ "menu": "상세", "src": "./page/UCE_020301.html", "state": "comp" }
+					], "state": "comp" },
 					{ "menu": "학과탐색", "src": "./page/UCE_030100.html", "state": "work" }
 				], "state": "work"},
 				{ "id": "메이저맵", "submenu": [
@@ -159,7 +159,7 @@
 				], "state": "comp"},
 				{ "menu": "보관함", "src": "./page/.html", "state": "" }
 			],
-			"state": ""
+			"state": "work"
 		},
 		{
 			"id": "Guide",
