@@ -1,5 +1,6 @@
 /* Box */
 	[class*="box-type"] {
+		position:relative;
 		background:var(--box-bg-c);
 		border:1px solid var(--box-bd-c);
 		border-radius: var(--box-bd-r);

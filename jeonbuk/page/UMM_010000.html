@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="Management">
+		<meta name="description" content="Management">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script type="module" src="../js/index.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
+		<script type="module" src="../js/module.js"></script>
+		<script src="../js/pub.js"></script>
+		<link rel="icon" href="../favicon.ico" sizes="any">
+		<link rel="stylesheet" href="../css/global.css">
+	</head>
+	<body>
+		<!-- 헤더 -->
+		<div class="sub-header">
+			<div data-include="../include/header.html"></div>
+		</div>
+
+		<!-- 본문 -->
+		<div id="container">
+			<div class="layout-inner sub-layout">
+				<div class="box-type-04" style="--box-pd-l:193px; --m-box-pd-l:26.25vw;">
+					<div style="--dp:flex; --pos:absolute; --left:50px; --bottom:0; --m-left:3.06vw;"><i class="bi-chara-01"></i></div>
+					<p class="txt-24-30"><strong><q>희망하는 진로를 위한 계획을 세우고 실천해보세요!</q></strong></p>
+					<p style="--mg-t:6px; --m-mg-t:2.78vw; --m-ft-s:3.06vw;"><b>구체적으로 교과 이수 및 자격증 취득계획을 세우면 진로에 한 발 더나아갈 수 있습니다.</b></p>
+				</div>
+				<div style="--dp:flex; --content:space-between; --items:center; --m-flex-d:column; --m-items:flex-start; --m-gap:4.44vw; --mg-t:60px; --m-mg-t:8.33vw;">
+					<div style="--gap:16px; --items:center; --m-gap:3.33vw;">
+						<h2 class="sub-tit-02" style="margin-bottom:0;">메이저맵</h2>
+						<button type="button" class="btn-type btn-sz-34" style="--btn-w:34px; --m-btn-w:6.67vw;"><i class="ic-plus"></i></button>
+					</div>
+					<div style="--gap:12px; --items:center; --m-gap:1.67vw;">
+						<i class="ic-info"></i>메이저맵은 최대 10개까지 설계할 수 있어요!
+					</div>
+				</div>
+				<div style="--dp:flex; --content:flex-end; --mg-t:24px; --m-mg-t:5.56vw;">
+					<p-select class="form-sel-01" placeholder="최근수정순" panel-class="form-panel-sel" :options="['최근수정순', '등록순']"></p-select>
+				</div>
+				<div class="brd-wrap">
+					<ul class="brd-lst-03">
+						<li>
+							<div style="--dp:flex; --content:space-between; --items:center; --w:100%; --m-gap:2.22vw;">
+								<div style="--flex-d:column; --gap:20px; --m-gap:2.22vw;">
+									<div style="--gap:16px; --items:center; --m-gap:2.5vw;">
+										<span class="chip-type-01">기본 MAP</span>
+										<div class="brd-lst-tit-inner">
+											<a href="#" class="layout-ellipsis">김전북님의 메이저</a>
+										</div>
+									</div>
+									<p>#첫 설계  #2학년 1학기  #2024.03.05</p>
+								</div>
+								<div style="--gap:40px; --m-content:space-between; --m-gap:0; --m-w:100%;">
+									<p>최종수정일 2024.06.19</p>
+									<div style="--gap:24px; --m-gap:4.72vw;">
+										<button type="button"><i class="ic-pencle"></i></button>
+										<button type="button"><i class="ic-copy"></i></button>
+										<button type="button"><i class="ic-trash"></i></button>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div style="--dp:flex; --content:space-between; --items:center; --w:100%; --m-gap:2.22vw;">
+								<div style="--flex-d:column; --gap:20px; --m-gap:2.22vw;">
+									<div style="--gap:16px; --items:center; --m-gap:2.5vw;">
+										<div class="brd-lst-tit-inner">
+											<a href="#" class="layout-ellipsis">김전북님의 메이저</a>
+										</div>
+									</div>
+								</div>
+								<div style="--gap:40px; --m-content:space-between; --m-gap:0; --m-w:100%;">
+									<p>최종수정일 2024.06.19</p>
+									<div style="--gap:24px; --m-gap:4.72vw;">
+										<button type="button"><i class="ic-pencle"></i></button>
+										<button type="button"><i class="ic-copy"></i></button>
+										<button type="button"><i class="ic-trash"></i></button>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- 푸터 -->
+		<div data-include="../include/footer.html"></div>
+	</body>
+</html>

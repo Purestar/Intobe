@@ -31,6 +31,9 @@
 			--aco-head-gap:3.33vw;
 		}
 
+	/* Background Image */
+		.bi-chara-01:before {width:21.67vw; height:29.44vw;}
+
 	/* Board */
 		/* General */
 			.brd-wrap .brd-tit {font-size:3.89vw;}
@@ -90,6 +93,7 @@
 		.box-type-02-01 {--box-pd:4.72vw;}
 		[class*="box-type-03"] {--box-bd-r:2.5vw; --box-pd-x:5.56vw; --box-pd-y:5.56vw;}
 		.box-type-03-01 {--box-pd-y:2.78vw; --box-bd-r:8.33vw;}
+		.box-type-04 {--box-pd-y:3.61vw; --box-pd-r:10vw;}
 
 	/* Bullet */
 		/* Circle */
@@ -169,6 +173,7 @@
 
 	/* Icon */
 		/* General */
+			.ic-copy:before {width:3.47vw; height:3.75vw;}
 			.ic-delete:before {width:2.22vw; height:2.22vw;}
 			.ic-delete-02:before {width:1.94vw; height:1.94vw;}
 			.ic-download:before {width:2.22vw; height:2.22vw;}
@@ -177,8 +182,11 @@
 			.ic-link:before {width:2.78vw; height:2.78vw;}
 			.ic-lock:before {width:2.78vw; height:3.47vw;}
 			.ic-notice:before {width:3.06vw; height:2.78vw;}
+			.ic-pencle:before {width:3.75vw; height:3.75vw;}
+			.ic-plus:before {width:2.92vw; height:2.92vw;}
 			.ic-setting:before {width:2.50vw; height:2.22vw;}
 			.ic-refresh:before {width:3.06vw; height:3.47vw;}
+			.ic-trash:before {width:3.61vw; height:3.89vw;}
 
 		/* Arrow */
 			/* Up */
@@ -290,6 +298,7 @@
 		.txt-20-28 {font-size:3.89vw;}
 		.txt-20-30 {font-size:4.17vw;}
 		.txt-20-32 {font-size:4.44vw;}
+		.txt-24-30 {font-size:4.17vw;}
 		.txt-24-32 {font-size:4.44vw;}
 		.txt-28-36 {font-size:5vw;}
 

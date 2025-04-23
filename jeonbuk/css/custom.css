@@ -47,6 +47,9 @@
 		--aco-head-gap:20px;
 	}
 
+/* Background Image */
+	.bi-chara-01:before {background-position:var(--bp-250) 0; width:119px; height:129px;}
+
 /* Board */
 	/* General */
 		.brd-wrap .brd-tit {font-size:18px; font-weight:500; color:black;}
@@ -125,6 +128,7 @@
 	.box-type-02-01 {--box-pd:30px;}
 	[class*="box-type-03"] {--box-bg-c:#f5f5f5; --box-bd-c:transparent; --box-bd-r:18px; --box-pd:initial; --box-pd-x:30px; --box-pd-y:22px;}
 	.box-type-03-01 {--box-pd-y:14px; --box-bd-r:44px;}
+	.box-type-04 {--box-bg-c:#eceeff; --box-pd-y:22px; --box-pd-x:0; --box-bd-r:9999px 9999px;}
 
 /* Bullet */
 	/* Circle */
@@ -206,6 +210,16 @@
 	.e-chart-tooltip-01 {line-height:1.5; font-weight:700; text-align:center; color:black;}
 
 /* Form */
+	/* Combo */
+		.form-sel-01 {
+			--form-bd-c:transparent;
+			--form-h: auto;
+			--form-pd-l: 0;
+			--form-pd-r: 0;
+			--form-focus-bd-c:transparent;
+			--form-w: auto;
+		}
+
 	/* Selction */
 		/* Button */
 			.form-opt-btn-01 {
@@ -276,6 +290,7 @@
 	/* General */
 		.ic-cabinet:before {background-position:var(--bp-100) 0; width:18px; height:19px;}
 		.sub-header .ic-cabinet:before {background-position:var(--bp-100) -19px;}
+		.ic-copy:before {background-position:var(--bp-300) var(--bp-50); width:16px; height:16px;}
 		.ic-delete:before {background-position:var(--bp-600) 0; width:10px; height:10px;}
 		.ic-delete-02:before {background-position:var(--bp-950) 0; width:8px; height:8px;}
 		.ic-download:before {background-position:var(--bp-650) 0; width:14px; height:14px;}
@@ -285,9 +300,12 @@
 		.sub-header .ic-link:before {background-position:0 -12px; width:12px; height:12px;}
 		.ic-lock:before {background-position:var(--bp-900) 0; width:16px; height:19px;}
 		.ic-notice:before {background-position:var(--bp-750) 0; width:22px; height:20px;}
+		.ic-pencle:before {background-position:var(--bp-250) var(--bp-50); width:17px; height:18px;}
+		.ic-plus:before {background-position:var(--bp-400) var(--bp-50); width:12px; height:12px;}
 		.ic-refresh:before {background-position:var(--bp-500) 0; width:14px; height:15px;}
 		.ic-search:before {background-position:var(--bp-700) 0; width:19px; height:19px;}
 		.ic-setting:before {background-position:var(--bp-300) 0; width:15px; height:15px;}
+		.ic-trash:before {background-position:var(--bp-350) var(--bp-50); width:16px; height:17px;}
 
 	/* Arrow */
 		/* Up */
@@ -420,6 +438,7 @@
 	.txt-20-28 {font-size:20px;}
 	.txt-20-30 {font-size:20px;}
 	.txt-20-32 {font-size:20px;}
+	.txt-24-30 {font-size:24px;}
 	.txt-24-32 {font-size:24px;}
 	.txt-28-36 {font-size:28px;}
 
