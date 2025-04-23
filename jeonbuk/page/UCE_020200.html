@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="Management">
+		<meta name="description" content="Management">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script type="module" src="../js/index.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
+		<script type="module" src="../js/module.js"></script>
+		<script src="../js/pub.js"></script>
+		<link rel="icon" href="../favicon.ico" sizes="any">
+		<link rel="stylesheet" href="../css/global.css">
+	</head>
+	<body>
+		<!-- 헤더 -->
+		<div class="sub-header">
+			<div data-include="../include/header.html"></div>
+		</div>
+
+		<!-- 본문 -->
+		<div id="container">
+			<div class="layout-inner sub-layout">
+				<h2 class="sub-tit-02"><a href="#"><i class="ic-l-arr-01"></i></a>AI선배</h2>
+				<div class="box-type-02 job-type-wrap" style="--box-pd:0;">
+					<div class="job-type-ctrl">
+						<div style="--dp:grid; --gap:24px; --m-gap:5.56vw;">
+							<div style="--dp:flex; --items:center; --m-dp:grid; --m-items:flex-start; --m-gap:3.06vw;">
+								<b style="--w:110px; --m-w:18.06vw;">취업기업</b>
+								<div class="flex-1" style="--m-w:100%;">
+									<div class="form-txt">
+										<p-input placeholder="기업명을 입력해주세요"></p-input>
+									</div>
+								</div>
+							</div>
+
+							<!-- 주전공 -->
+							<div style="--dp: flex; --flex-w: nowrap; --items: center; --m-dp: grid; --m-flex-d: column; --m-items: flex-start;--m-gap:3.06vw;">
+								<div style="--gap:0; --items:center;">
+									<b style="--w:110px; --m-w:18.06vw;">주전공</b>
+									<div style="--gap:24px;">
+										<ul class="lst-tag-02 pc">
+											<li>
+												<div class="div-v-arrow-01 txt-14-24">
+													<span>공과대학</span>
+													<span>바이오메티컬학부</span>
+													<span>헬스케어기기공학전공</span>
+												</div>
+												<button type="button"><i class="ic-delete-02"></i></button>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<ul class="lst-tag-02 mobile-flex m-flex-nw m-ws-nw" data-scroll="xh">
+									<li>
+										<div class="div-v-arrow-01 txt-14-24">
+											<span>공과대학</span>
+											<span>바이오메티컬학부</span>
+											<span>헬스케어기기공학전공</span>
+										</div>
+										<button type="button"><i class="ic-delete-02"></i></button>
+									</li>
+								</ul>
+							</div>
+
+							<!-- 복수전공  -->
+							<div style="--dp: flex; --flex-w: nowrap; --items: center; --m-dp: grid; --m-flex-d: column; --m-items: flex-start;--m-gap:3.06vw;">
+								<div style="--gap:0; --items:center;">
+									<b style="--w:110px; --m-w:18.06vw;">복수전공</b>
+									<div style="--gap:24px;">
+										<button type="button" class="btn-type-b-lgry btn-sz-34-r">선택</button>
+										<ul class="lst-tag-02 pc"></ul>
+									</div>
+								</div>
+								<ul class="lst-tag-02 mobile-flex m-flex-nw m-ws-nw" data-scroll="xh"></ul>
+							</div>
+
+							<!-- 부전공 -->
+							<div style="--dp: flex; --flex-w: nowrap; --items: center; --m-dp: grid; --m-flex-d: column; --m-items: flex-start;--m-gap:3.06vw;">
+								<div style="--gap:0; --items:center;">
+									<b style="--w:110px; --m-w:18.06vw;">부전공</b>
+									<div style="--gap:24px;">
+										<button type="button" class="btn-type-b-lgry btn-sz-34-r">선택</button>
+										<ul class="lst-tag-02 pc"></ul>
+									</div>
+								</div>
+								<ul class="lst-tag-02 mobile-flex m-flex-nw m-ws-nw" data-scroll="xh"></ul>
+							</div>
+							<div style="--dp:flex; --content:space-between; --items:center; --m-gap:8.33vw;">
+								<div style="--gap:50px; --m-flex-d:column; --m-gap:5.56vw; --m-w:100%;">
+									<div style="--dp:flex; --items:center; --flex-w:nowrap; --m-dp:grid; --m-items:flex-start; --m-gap:3.33vw;">
+										<b style="--w:110px; --m-w:18.06vw;">이수학점</b>
+										<div style="--gap:16px; --items:center; --m-w:100%; --m-gap:2.5vw;">
+											<div class="form-txt" style="--form-w:100px; --m-form-w:100%;">
+												<p-input placeholder="000" style="--txt-a:right;"></p-input>
+											</div>
+											<span class="ws-nw cr-blk">점 이상</span>
+										</div>
+									</div>
+									<div style="--dp:flex; --items:center; --flex-w:nowrap; --m-dp:grid; --m-items:flex-start; --m-gap:3.33vw;">
+										<b style="--w:110px; --m-w:18.06vw;">평균평점</b>
+										<div style="--gap:16px; --items:center; --m-w:100%; --m-gap:2.5vw;">
+											<div class="form-txt" style="--form-w:100px; --m-form-w:100%;">
+												<p-input placeholder="000" style="--txt-a:right;"></p-input>
+											</div>
+											<span class="ws-nw cr-blk">점 이상</span>
+										</div>
+									</div>
+								</div>
+								<div style="--gap:26px; --items:center; --m-w:100%;">
+									<button type="button" class="btn-icon"><i class="ic-refresh"></i>초기화</button>
+									<a href="#" class="btn-type-b m-flex-1" style="--btn-w:122px;">검색</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="brd-wrap">
+					<div class="brd-top">
+						<p class="brd-tot">총 <q>10</q>개</p>
+					</div>
+
+					<ul class="brd-lst-03">
+						<li>
+							<div class="brd-lst-tit">
+								<div style="--dp:flex; --m-dp:grid; --gap:16px; --m-gap:3.33vw;">
+									<div style="--gap:16px; --m-gap:2.78vw; --items:center;">
+										<div class="brd-lst-tit-inner">
+											<a href="#" class="layout-ellipsis">우아한강아지</a>
+										</div>
+										<span class="chip-type-02">삼성전자</span>
+									</div>
+									<div class="div-v-arrow-01 txt-14-24">
+										<span>공과대학</span>
+										<span>바이오메티컬학부</span>
+										<span>헬스케어기기공학전공</span>
+									</div>
+								</div>
+							</div>
+							<div class="div-v-03">
+								<span><span style="--ft-c:#666;">이수학점</span> 130점</span>
+								<span><span style="--ft-c:#666;">평균학점</span> 3.80점</span>
+							</div>
+						</li>
+						<li>
+							<div class="brd-lst-tit">
+								<div style="--dp:flex; --m-dp:grid; --gap:16px; --m-gap:3.33vw;">
+									<div style="--gap:16px; --m-gap:2.78vw; --items:center;">
+										<div class="brd-lst-tit-inner">
+											<a href="#" class="layout-ellipsis">우아한강아지</a>
+										</div>
+										<span class="chip-type-02">삼성전자</span>
+									</div>
+									<div class="div-v-arrow-01 txt-14-24">
+										<span>공과대학</span>
+										<span>바이오메티컬학부</span>
+										<span>헬스케어기기공학전공</span>
+									</div>
+								</div>
+							</div>
+							<div class="div-v-03">
+								<span><span style="--ft-c:#666;">이수학점</span> 130점</span>
+								<span><span style="--ft-c:#666;">평균학점</span> 3.80점</span>
+							</div>
+						</li>
+					</ul>
+
+					<p class="no-data" style="--h:200px; --m-h:29.17vw;">검색 결과가 없습니다.<br>다른 조건으로 검색해보세요!</p>
+
+					<div data-include="../include/paging.html"></div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 푸터 -->
+		<div data-include="../include/footer.html"></div>
+	</body>
+</html>

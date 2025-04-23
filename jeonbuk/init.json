@@ -27,7 +27,7 @@
 					], "state": "comp" },
 					{ "id": "AI선배", "submenu": [
 						{ "menu": "목록", "src": "./page/UCE_020100.html", "state": "comp" },
-						{ "menu": "찾기결과", "src": "./page/.html", "state": "" },
+						{ "menu": "찾기결과", "src": "./page/UCE_020200.html", "state": "work" },
 						{ "menu": "상세", "src": "./page/.html", "state": "" }
 					], "state": "work" },
 					{ "menu": "학과탐색", "src": "./page/UCE_030100.html", "state": "work" }
