@@ -30,8 +30,8 @@
 						{ "menu": "찾기결과", "src": "./page/UCE_020200.html", "state": "comp" },
 						{ "menu": "상세", "src": "./page/UCE_020301.html", "state": "comp" }
 					], "state": "comp" },
-					{ "menu": "학과탐색", "src": "./page/UCE_030100.html", "state": "work" }
-				], "state": "work"},
+					{ "menu": "학과탐색", "src": "./page/UCE_030100.html", "state": "comp" }
+				], "state": "comp"},
 				{ "id": "메이저맵", "submenu": [
 					{ "menu": "목록", "src": "./page/.html", "state": "" },
 					{ "menu": "상세", "src": "./page/.html", "state": "" },

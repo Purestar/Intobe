@@ -183,6 +183,7 @@
 		/* Arrow */
 			/* Up */
 				.ic-u-arr-01:before {width:3.33vw; height:6.67vw;}
+				.ic-u-arr-02:before {width:1.53vw; height:0.83vw;}
 
 			/* Up & Rignt */
 				.ic-ur-arr-01:before {width:2.08vw; height:2.08vw;}
@@ -387,6 +388,13 @@
 			.job-type-rst-wrap {max-height:89.58vw; padding:5.56vw;}
 			.job-type-rst-wrap .brd-paging {margin-top:5vw;}
 			.job-type-ctrl {padding:5.56vw 3.89vw;}
+			.job-type-tbl {border:0; margin-top:3.61vw;}
+			.job-type-tbl colgroup {display:none;}
+			.job-type-tbl tbody {display:flex; flex-direction:column; gap:5.56vw;}
+			.job-type-tbl tr {display:flex; flex-direction:column;}
+			.job-type-tbl th {border:0; font-size:4.72vw; text-align:left;}
+			.job-type-tbl td {border:1px solid #e2e2e2; border-radius:2.50vw; margin-top:3.61vw;}
+			.job-type-tbl tr:first-child td {border-top:1px solid #e2e2e2;}
 
 		/* e-Notice */
 			.survey-wrap {width:100%; margin:7.78vw 0 0;}
