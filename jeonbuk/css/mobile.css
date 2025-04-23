@@ -104,7 +104,19 @@
 			.btn-sz-34-r {--btn-bd-r:2.22vw;}
 
 	/* Chip */
-		[class*="chip-type-01"] {--chip-bd-r:0.97vw; --chip-pd-x:1.25vw; --chip-h:4.72vw; --chip-ft-s:2.78vw;}
+		[class*="chip-type-01"] {
+			--chip-bd-r:0.97vw;
+			--chip-pd-x:1.25vw;
+			--chip-h:4.72vw;
+			--chip-ft-s:2.78vw;
+		}
+
+		[class*="chip-type-02"] {
+			--chip-bd-r:4.72vw;
+			--chip-pd-x:2.22vw;
+			--chip-h:4.72vw;
+			--chip-ft-s:2.78vw;
+		}
 
 	/* Divider */
 		/* Horizontal */
@@ -112,9 +124,16 @@
 			.div-h-02 {--div-gap:8.33vw;}
 			[class*="div-v-03"] {--div-h:2.36vw; --div-gap:2.08vw;}
 			.div-v-03-01 {--div-h:8.89vw;}
+			.div-v-03-02 {--div-gap:2.22vw;}
 
 		/* Vertical */
 			.div-v-01 {--div-gap:1.67vw; --div-h:1.67vw;}
+
+		/* Arrow */
+			.div-v-arrow-01 {
+				--m-div-gap:1.11vw;
+				--m-div-w:0.83vw;
+			}
 
 	/* Form */
 		/* Selction */
@@ -185,7 +204,7 @@
 		.lst-stat > * {gap:1.67vw; border-radius:3.89vw; min-height:16.81vw; font-size:3.06vw;}
 
 		[class*="lst-tag"] {flex:1; flex-wrap:wrap; gap:1.39vw; font-size:2.78vw; word-break:keep-all;}
-		[class*="lst-tag"] > * {border-radius:6.67vw; height:6.67vw; padding:0 3.89vw;}
+		[class*="lst-tag"] > * {column-gap:3.33vw; border-radius:6.67vw; min-height:6.67vw; padding:0 3.89vw;}
 
 		.lst-item {gap:2.22vw;}
 		.lst-item > * {border-radius:2.78vw; padding:5.56vw;}

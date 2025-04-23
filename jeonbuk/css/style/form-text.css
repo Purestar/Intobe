@@ -22,4 +22,37 @@
 
 	/* Icon */
 		.form-icon {padding-right:0;}
-		.form-icon-btn {display:flex; flex:0 0 var(--fom-h); place-items:center; place-content:center; width:var(--fom-h); height:var(--fom-h);}
+		.form-icon-btn {display:flex; flex:0 0 var(--form-w, var(--fom-h)); place-items:center; place-content:center; width:var(--form-h, var(--fom-h)); height:var(--form-h, var(--fom-h));}
+
+@media all and (max-width:720px) {
+	/* Default */
+		[class*="form-txt"] {
+			background:var(--m-form-bg-c, var(--form-bg-c, var(--fom-bg)));
+			border:1px solid var(--m-form-bd-c, var(--form-bd-c, var(--fom-bdr-c)));
+			border-radius:var(--m-form-bd-r, var(--form-bd-r, var(--fom-br)));
+			width:var(--m-form-w, var(--form-w, 100%));
+			height:var(--m-form-h, var(--form-h, var(--fom-h)));
+			padding:0 var(--m-form-pd-x, var(--form-pd-x, var(--fom-pad)));
+			font-size:var(--m-form-ft-s, var(--form-ft-s, var(--fom-fs)));
+			color:var(--m-form-ft-c, var(--form-ft-c, var(--fom-fc)));
+		}
+
+	/* Focus */
+		[class*="form-txt"]:has(input:focus) {
+			border-color:var(--m-form-focus-bd-c, var(--form-focus-bd-c, var(--fom-fcs-brd-c)));
+		}
+
+	/* Disabled */
+		[class*="form-txt"]:has(input:disabled) {
+			background-color:var(--m-form-dis-bg-c, var(--form-dis-bg-c, var(--dis-bg)));
+			border-color:var(--m-form-dis-bd-r, var(--form-dis-bd-r, var(--dis-bdr)));
+			color:var(--m-form-dis-ft-c, var(--form-dis-ft-c, var(--fom-ph)));
+		}
+
+	/* Icon */
+		.form-icon-btn {
+			flex:0 0 var(--m-form-w, var(--form-w, var(--fom-h)));
+			width:var(--m-form-h, var(--form-h, var(--fom-h)));
+			height:var(--m-form-h, var(--form-h, var(--fom-h)));
+		}
+}

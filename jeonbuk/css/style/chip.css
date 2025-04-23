@@ -8,5 +8,6 @@
 		height:var(--chip-h, fit-content);
 		padding-inline:var(--chip-pd-x, 16px);
 		font-size:var(--chip-ft-s, 16px);
+		font-weight:var(--chip-ft-w);
 		color:var(--chip-ft-c, white);
 	}

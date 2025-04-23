@@ -70,7 +70,7 @@
 	[style*="--z-idx"] { z-index: var(--z-idx); }
 
 /* Width & Height */
-	[style*="--w"] { width: var(--w); }
+	[style*="--w"] { flex:0 0 var(--w); width: var(--w); }
 	[style*="--h"] { height: var(--h); }
 
 /* Style Initialize */
@@ -146,6 +146,6 @@
 		[style*="--m-ovf-y"] { overflow-y: var(--m-ovf-y); overflow-x: var(--m-ovf-x, var(--ovf-x, hidden)); }
 
 	/* Width & Height */
-		[style*="--m-w"] { width: var(--m-w); }
+		[style*="--m-w"] { flex:0 0 var(--m-w, var(--w)); width: var(--m-w); }
 		[style*="--m-h"] { height: var(--m-h); }
 }

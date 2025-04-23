@@ -1,7 +1,16 @@
+/* Flex */
+	.flex-1 {flex:1;}
+
 /* Font */
 	.cr-blk {color:black;}
+	.wb-ka {word-break:keep-all;}
+	.ws-nw {white-space:nowrap;}
 
 @media all and (max-width:720px) {
-	.m-flex-nw {flex-wrap:nowrap;}
-	.m-ws-nw {white-space:nowrap;}
+	/* Flex */
+		.m-flex-1 {flex:1;}
+		.m-flex-nw {flex-wrap:nowrap;}
+
+	/* Font */
+		.m-ws-nw {white-space:nowrap;}
 }

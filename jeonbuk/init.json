@@ -26,10 +26,10 @@
 						{ "menu": "상세", "src": "./page/UCE_010201.html", "state": "comp" }
 					], "state": "comp" },
 					{ "id": "AI선배", "submenu": [
-						{ "menu": "목록", "src": "./page/.html", "state": "" },
+						{ "menu": "목록", "src": "./page/UCE_020100.html", "state": "comp" },
 						{ "menu": "찾기결과", "src": "./page/.html", "state": "" },
 						{ "menu": "상세", "src": "./page/.html", "state": "" }
-					], "state": "" },
+					], "state": "work" },
 					{ "menu": "학과탐색", "src": "./page/UCE_030100.html", "state": "work" }
 				], "state": "work"},
 				{ "id": "메이저맵", "submenu": [
