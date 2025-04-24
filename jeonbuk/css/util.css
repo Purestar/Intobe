@@ -6,6 +6,9 @@
 	.wb-ka {word-break:keep-all;}
 	.ws-nw {white-space:nowrap;}
 
+/* Margin */
+	.mt-0 {margin-top:0 !important;}
+
 @media all and (max-width:720px) {
 	/* Flex */
 		.m-flex-1 {flex:1;}

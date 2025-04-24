@@ -34,7 +34,7 @@
 				], "state": "comp"},
 				{ "id": "메이저맵", "submenu": [
 					{ "menu": "목록", "src": "./page/UMM_010000.html", "state": "comp" },
-					{ "menu": "상세", "src": "./page/UMM_020000.html", "state": "work" },
+					{ "menu": "상세", "src": "./page/UMM_020000.html", "state": "comp" },
 					{ "menu": "등록/수정", "src": "./page/.html", "state": "" }
 				], "state": "work"},
 				{ "id": "커리어관리", "submenu": [

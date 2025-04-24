@@ -59,7 +59,7 @@
 
 			.brd-lst-02:not(.swiper-wrapper) {gap:4.44vw;}
 			.brd-lst-02 > * {border-radius:2.78vw; padding:5.56vw;}
-			.brd-lst-02 .brd-tit {margin-top:3.33vw;}
+			/*.brd-lst-02 .brd-tit {margin-top:3.33vw;}*/
 
 			.brd-lst-03 {gap:2.78vw; margin-top:2.78vw;}
 			.brd-lst-03 > * {flex-direction:column; gap:2.78vw; border-radius:2.78vw; padding:4.44vw 5.14vw;}
@@ -68,6 +68,7 @@
 			.brd-lst-03 .brd-num {display:none;}
 			.brd-lst-03.brd-answer .brd-lst-tit {gap:2.5vw;}
 			.brd-lst-03.brd-answer .brd-lst-tit:before {width:1.94vw; height:1.94vw;}
+			.brd-lst-03 .brd-lst-bottom {margin:4.44vw -5.14vw -4.44vw;}
 
 		/* View */
 			.brd-view-01 {border-radius:2.78vw; min-height:80.42vw; margin-top:2.78vw; padding:4.44vw 5.56vw;}
@@ -119,6 +120,13 @@
 			--chip-bd-r:4.72vw;
 			--chip-pd-x:2.22vw;
 			--chip-h:4.72vw;
+			--chip-ft-s:2.78vw;
+		}
+
+		[class*="chip-type-03"] {
+			--chip-bd-r:6.67vw;
+			--chip-pd-x:3.33vw;
+			--chip-h:6.67vw;
 			--chip-ft-s:2.78vw;
 		}
 
@@ -181,8 +189,10 @@
 			.ic-info:before {width:3.33vw; height:3.33vw;}
 			.ic-link:before {width:2.78vw; height:2.78vw;}
 			.ic-lock:before {width:2.78vw; height:3.47vw;}
+			.ic-mascot:before {width:5.56vw; height:5.56vw;}
 			.ic-notice:before {width:3.06vw; height:2.78vw;}
 			.ic-pencle:before {width:3.75vw; height:3.75vw;}
+			.ic-plan:before {width:3.47vw; height:3.33vw;}
 			.ic-plus:before {width:2.92vw; height:2.92vw;}
 			.ic-setting:before {width:2.50vw; height:2.22vw;}
 			.ic-refresh:before {width:3.06vw; height:3.47vw;}
@@ -404,6 +414,12 @@
 			.job-type-tbl th {border:0; font-size:4.72vw; text-align:left;}
 			.job-type-tbl td {border:1px solid #e2e2e2; border-radius:2.50vw; margin-top:3.61vw;}
 			.job-type-tbl tr:first-child td {border-top:1px solid #e2e2e2;}
+
+		/* 메이저맵 */
+			.major-map-stat {padding:5.83vw 5.56vw 5vw; font-size:2.5vw;}
+			.major-map-stat > *:before {border-width:0.28vw; width:1.94vw; height:1.94vw;}
+			.major-map-stat > *:after {left:2.58vw; height:0.28vw;}
+			.major-map-stat > *:nth-child(4n+1):before {width:3.06vw; height:3.06vw;}
 
 		/* e-Notice */
 			.survey-wrap {width:100%; margin:7.78vw 0 0;}
