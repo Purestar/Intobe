@@ -28,7 +28,7 @@
 			<div class="layout-inner sub-layout">
 				<h2 class="sub-tit-02"><a href="#"><i class="ic-l-arr-01"></i></a>메이저맵</h2>
 				<div class="brd-wrap">
-					<ul class="brd-lst-03">
+					<ul id="majorMapTop" class="brd-lst-03" :class="{ 'sticky-active': isSticky }" style="position:sticky; left:0; top:0;">
 						<li style="--ovf:hidden;">
 							<div style="--dp:grid; --w:100%;">
 								<div style="--dp:flex; --content:space-between; --items:center; --w:100%; --m-gap:2.22vw;">
@@ -246,5 +246,23 @@
 
 		<!-- 푸터 -->
 		<div data-include="../include/footer.html"></div>
+		<script type="module">
+			document.addEventListener('DOMContentLoaded', () => {
+				const target = document.getElementById('majorMapTop');
+				if (!target) return;
+
+				let lastSticky = false;
+
+				window.addEventListener('scroll', () => {
+					const { top } = target.getBoundingClientRect();
+					const isNowSticky = top <= 0;
+
+					if (isNowSticky !== lastSticky) {
+						target.classList.toggle('sticky-active', isNowSticky);
+						lastSticky = isNowSticky;
+					}
+				});
+			});
+		</script>
 	</body>
 </html>

@@ -610,6 +610,9 @@
 		.major-map-stat > *.complete:after,
 		.major-map-stat > *.active:after {background:var(--mc);}
 
+		#majorMapTop.sticky-active {background:white; width:100dvw; box-shadow:0 3px 12px rgba(0, 0, 0, 0.07); margin-left: calc(-50dvw + 50%); z-index:100;}
+		#majorMapTop.sticky-active > * {border:0;}
+
 	/* e-Notice */
 		.survey-wrap {width:720px; margin:40px auto 0;}
 		.survey-wrap .survey-top {display:flex; flex-direction:column; gap:12px;}
