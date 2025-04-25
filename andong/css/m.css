@@ -142,6 +142,10 @@
 			.box-type-03-01 {padding:5.56vw;}
 			.box-type-04 {border-radius:2.50vw; padding:5.00vw;}
 
+		/* Bullet */
+			.bp-circle-01 {gap:4.72vw;}
+			.bp-circle-01 > *:before {flex:0 0 0.42vw; width:0.42vw; height:0.42vw; translate:0 -0.42vw;}
+
 		/* Button */
 			/* Button Color */
 				.btn-b-blk {border-color:black; color:black;}
@@ -549,6 +553,11 @@
 			.job-type-tbl tr:first-child td {border-top:1px solid #e2e2e2;}
 
 			.role-model-chart {width:40.28vw; height:40.28vw;}
+
+			.spec-info-wrap {border-radius:2.50vw; margin-top:3.61vw; padding:0;}
+			.spec-info-wrap [class*="bp-circle"] {padding:6.11vw;}
+			.spec-info-wrap .job-type-tit {background:white; font-size:3.89vw; line-height:14.44vw;}
+			.spec-info-wrap > * + * {border-top:1px solid #e2e2e2;}
 
 		/* My Career */
 			.career-stat .lst-type-04 {height:auto;}

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="Management">
+		<meta name="description" content="Management">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script type="module" src="../js/index.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://unpkg.com/naive-ui"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
+		<script type="module" src="../js/module.js"></script>
+		<script type="module" src="../js/pub.js"></script>
+		<link rel="icon" href="../favicon.ico" sizes="any">
+		<link rel="stylesheet" href="../css/global.css">
+	</head>
+	<body>
+		<div data-include="../include/header.html"></div>
+		<div id="container">
+			<div id="sub-container" class="wrap-inner">
+				<div id="contents">
+					<div class="sub-title">
+						<a href="#"><i class="ic-l-arrow"></i></a><h2 class="tit-03">롤 모델 상세정보</h2>
+					</div>
+					<div class="brd-wrap">
+						<div class="brd-view-01">
+							<div class="brd-lst-03">
+								<div>
+									<div class="wrap-flex flex-between align-center m-flex-center">
+										<div>
+											<div class="wrap-flex flex-center gap-24 m-gap-16 m-flex-col m-flex-start">
+												<h3 class="brd-tit wrap-flex flex-center gap-8">
+													<a href="#" class="brd-link">우아한강아지</a>
+													<span class="chip-type-01-b-lgry">삼성전자</span>
+												</h3>
+												<div class="vbar-01">
+													<p>이수학점 <span class="cr-blk">130점</span></p>
+													<p>평균평점 <span class="cr-blk">3.80점</span></p>
+												</div>
+											</div>
+											<div class="mt-16 m-mt-8">
+												<p>주전공 <span class="cr-blk">컴퓨터공학전공</span></p>
+												<p>복수전공 <span class="cr-blk">소프트웨어 융합전공</span></p>
+											</div>
+										</div>
+										<button type="button" class="btn-type-b btn-r-32-02 btn-b-lgry">롤모델 설정</button>
+									</div>
+								</div>
+							</div>
+							<div id="board-detail-tabs">
+								<n-tabs type="line" class="tabs-type-01-01 tabs-equal" v-model:value="activeTab">
+									<n-tab-pane name="bd-tab1" tab="교과/비교과">
+										<h4 class="tit-02">교과</h4>
+										<ul class="box-type-04 mt-20 lst-type-04 m-grid-col-3 m-gap-v-70">
+											<li>전공핵심<br><strong class="fs-18 m-fs-28">4개</strong></li>
+											<li>전공선택<br><strong class="fs-18 m-fs-28">1개</strong></li>
+											<li>교양필수<br><strong class="fs-18 m-fs-28">1개</strong></li>
+											<li class="m-hdn-bdr-l">총 이수학점<br><strong class="fs-18 m-fs-28">1학점</strong></li>
+											<li>평점<br><strong class="fs-18 m-fs-28">1점</strong></li>
+										</ul>
+										<ul class="wrap-flex gap-8 mt-40" data-scroll="hide">
+											<li>
+												<label class="form-type-opt-btn-03">
+													<input type="radio">
+													<span class="opt-txt">전체</span>
+												</label>
+											</li>
+											<li>
+												<label class="form-type-opt-btn-03">
+													<input type="radio">
+													<span class="opt-txt">24년도</span>
+												</label>
+											</li>
+											<li>
+												<label class="form-type-opt-btn-03">
+													<input type="radio">
+													<span class="opt-txt">23년도</span>
+												</label>
+											</li>
+											<li>
+												<label class="form-type-opt-btn-03">
+													<input type="radio">
+													<span class="opt-txt">22년도</span>
+												</label>
+											</li>
+											<li>
+												<label class="form-type-opt-btn-03">
+													<input type="radio">
+													<span class="opt-txt">21년도</span>
+												</label>
+											</li>
+										</ul>
+										<ul class="lst-type-02-02 wrap-grid grid-col-2 mt-20 m-grid-col-1">
+											<li class="m-flex-row m-flex-center">
+												<div>
+													<div class="wrap-flex flex-center gap-12"><h3 class="brd-tit"><b class="fs-18">보안기초</b></h3>2학점(3)</div>
+													<ul class="vbar-01">
+														<li>컴퓨터학부</li>
+														<li>1-1</li>
+														<li>전공핵심</li>
+													</ul>
+												</div>
+												<button type="button" class="btn-type-b btn-r-32-02 btn-b-lgry">교과정보</button>
+											</li>
+											<li class="m-flex-row m-flex-center">
+												<div>
+													<div class="wrap-flex flex-center gap-12"><h3 class="brd-tit"><b class="fs-18">보안기초</b></h3>2학점(3)</div>
+													<ul class="vbar-01">
+														<li>컴퓨터학부</li>
+														<li>1-1</li>
+														<li>전공핵심</li>
+													</ul>
+												</div>
+												<button type="button" class="btn-type-b btn-r-32-02 btn-b-lgry">교과정보</button>
+											</li>
+											<li class="m-flex-row m-flex-center">
+												<div>
+													<div class="wrap-flex flex-center gap-12"><h3 class="brd-tit"><b class="fs-18">보안기초</b></h3>2학점(3)</div>
+													<ul class="vbar-01">
+														<li>컴퓨터학부</li>
+														<li>1-1</li>
+														<li>전공핵심</li>
+													</ul>
+												</div>
+												<button type="button" class="btn-type-b btn-r-32-02 btn-b-lgry">교과정보</button>
+											</li>
+										</ul>
+										<h4 class="tit-02">비교과</h4>
+										<ul class="box-type-04 mt-20 lst-type-04 m-grid-col-3 m-gap-v-70">
+											<li>학습역량<br><strong class="fs-18 m-fs-28">1개</strong></li>
+											<li>진로/취업/창업지원<br><strong class="fs-18 m-fs-28">1개</strong></li>
+											<li>학생활동지원<br><strong class="fs-18 m-fs-28">1개</strong></li>
+											<li class="m-hdn-bdr-l">글로벌 지원<br><strong class="fs-18 m-fs-28">1개</strong></li>
+											<li>법정의무교육<br><strong class="fs-18 m-fs-28">1개</strong></li>
+										</ul>
+										<ul class="lst-type-02-01 mt-20">
+											<li>
+												<div class="wrap-flex flex-col gap-8">
+													<p class="cr-blk">학습역량</p>
+													<h3 class="lst-tit">2024학년도 Learning Contents Award</h3>
+													<p class="cr-dft">2024.06.03 ~ 2024.09.11</p>
+												</div>
+											</li>
+											<li>
+												<div class="wrap-flex flex-col gap-8">
+													<p class="cr-blk">진로/취업/창업지원</p>
+													<h3 class="lst-tit">[지방대학활성화사업(SW)] IT, 전산직 취업전략 그리고 합격사례</h3>
+													<p class="cr-dft">2024.05.29 12:00 ~ 2024.05.29 13:00</p>
+												</div>
+											</li>
+										</ul>
+									</n-tab-pane>
+									<n-tab-pane name="bd-tab2" tab="스펙">
+										<h4 class="tit-02">스펙정보</h4>
+										<div class="job-type grid-col-3 m-grid-col-1 spec-info-wrap">
+											<div>
+												<h3 class="job-type-tit">자격증</h3>
+												<ul class="bp-circle-01">
+													<li>IM2</li>
+													<li>토익</li>
+												</ul>
+											</div>
+											<div>
+												<h3 class="job-type-tit">국가공인자격증</h3>
+												<ul class="bp-circle-01">
+													<li>건축기사​</li>
+													<li>건설안전사업기사 필기​</li>
+													<li>운전면허 1종 대형​</li>
+													<li>건설 안전기사​</li>
+												</ul>
+											</div>
+											<div>
+												<h3 class="job-type-tit">민간자격증</h3>
+												<ul class="bp-circle-01">
+													<li>컴퓨터활용능력 2급(필기)</li>
+													<li>빅데이터 관리사​</li>
+													<li>ERP 정보관리사 회계/인사 1급</li>
+													<li>ITQ 한글파워포인트 A등급</li>
+												</ul>
+											</div>
+										</div>
+									</n-tab-pane>
+								</n-tabs>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div data-include="../include/footer.html"></div>
+	</body>
+</html>

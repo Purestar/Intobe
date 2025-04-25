@@ -27,7 +27,7 @@
 					{ "id": "롤 모델", "submenu": [
 						{ "menu": "홈", "src": "./page/role_home.html", "state": "comp" },
 						{ "menu": "찾기결과", "src": "./page/role_l.html", "state": "comp" },
-						{ "menu": "상세", "src": "./page/role_v.html", "state": "comp" }
+						{ "menu": "상세", "src": "./page/role_v_02.html", "state": "comp" }
 					], "state": "comp" }
 				], "state": "comp"},
 				{ "id": "My Major Map", "submenu": [
