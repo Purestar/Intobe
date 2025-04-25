@@ -648,7 +648,24 @@
 					<button class="btn-type" disabled>교과계획추가</button>
 					<button class="btn-type" disabled>자격증계획추가</button>
 					<button class="btn-type" disabled>학기변경</button>
-					<button class="btn-type" disabled>복제</button>
+
+					<!-- 복제 -->
+					<button type="button" class="btn-type" @click="togglePopup('map-05')">복제</button>
+					<p-popup class="pop-type-alert-01" modal :style="{ width: '580px' }" v-model:visible="popups['map-05']">
+						<div class="pop-cont">
+							<div style="--dp:flex; --flex-d:column; --items:center; --txt-a:center;">
+								<h2 class="txt-01"><strong>메이저맵 복제</strong></h2>
+								<p style="--mg-t:16px; --m-mg-t:3.33vw;">복제할 메이저앱의 제목을 입력해주세요</p>
+								<div class="form-txt" style="--mg-t:40px; --m-mg-t:8.33vw;">
+									<p-input placeholder="소프트웨어 개발자를 위한 나의 여정지도_복제"></p-input>
+								</div>
+							</div>
+						</div>
+						<template #footer>
+							<button type="button" class="btn-type-b-blk">취소</button>
+							<button type="button" class="btn-type">복제</button>
+						</template>
+					</p-popup>
 				</div>
 			</div>
 			<div style="--flex-d:column; --gap:10px;">

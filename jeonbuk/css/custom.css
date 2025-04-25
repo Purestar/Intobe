@@ -389,8 +389,9 @@
 	.lst-form dt {font-size:18px; font-weight:500; color:black;}
 
 /* Popup */
-	.pop-type-01, .pop-type-alert {
+	.pop-type-01, [class*="pop-type-alert"] {
 		--pop-bd-c: white;
+		--pop-bd-r: 20px;
 		--pop-head-min-h:100px;
 		--pop-bg-c:white;
 		--pop-head-ft-s: 24px;
@@ -401,7 +402,10 @@
 	}
 	.pop-type-01 .p-dialog-header .pop-title {font-weight:700;}
 	.pop-type-01 .p-dialog-footer > [class*="btn-type"],
-	.pop-type-alert .p-dialog-footer > [class*="btn-type"] {flex:1; --btn-h:56px;}
+	[class*="pop-type-alert"] .p-dialog-footer > [class*="btn-type"] {flex:1; --btn-h:56px;}
+
+	.pop-type-alert-01 {--pop-head-min-h:60px;}
+	.pop-type-alert-01 .p-dialog-header {padding-right:40px;}
 
 
 /* Swiper */
