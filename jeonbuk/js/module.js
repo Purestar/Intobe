@@ -1,3 +1,5 @@
+//import ToastService from 'primevue/toastservice';
+
 // primeVue Component
 document.addEventListener('DOMContentLoaded', function() {
 	const { createApp, ref, reactive } = Vue;
@@ -5,6 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
 	const app = createApp({
 		setup() {
 			const popups = reactive({ popup: false });
+			const toast = PrimeVue.useToast();
+			log(toast);
 
 			function togglePopup(id) {
 				popups[id] = !popups[id];
@@ -61,6 +65,9 @@ document.addEventListener('DOMContentLoaded', function() {
 	app.component('p-tab', PrimeVue.Tab);
 	app.component('p-tab-panels', PrimeVue.TabPanels);
 	app.component('p-tab-panel', PrimeVue.TabPanel);
+
+	// Toast
+	app.component('p-toast', PrimeVue.Toast);
 
 	// Test
 	app.component('p-data-tbl', PrimeVue.DataTable);
@@ -126,9 +133,37 @@ document.addEventListener('DOMContentLoaded', function() {
 			emptyMessage: '데이터 없음',
 		},
 	});
+
+	app.use(PrimeVue.ToastService);
 	//app.use(PrimeVue.Config, { unstyled: true });
 	registerTooltipScrollClose();
 
+	// Toast
+	window.showToast = function(buttonElement) {
+		if (!buttonElement) {
+			console.error('버튼 요소가 없습니다.');
+			return;
+		}
+
+		const messageContent = buttonElement.getAttribute('data-message');
+		if (!messageContent) {
+			console.error('data-message 속성이 없습니다.');
+			return;
+		}
+
+		const toastService = app.config.globalProperties.$toast;
+		if (!toastService) {
+			console.error('ToastService를 찾을 수 없습니다.');
+			return;
+		}
+
+		toastService.add({
+			severity: 'info',
+			summary: '알림',
+			detail: messageContent,
+			life: 3000
+		});
+	};
 
 	app.mount('body');
 });

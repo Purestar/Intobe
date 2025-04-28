@@ -26,54 +26,54 @@
 		<!-- 본문 -->
 		<div id="container">
 			<div class="layout-inner sub-layout">
-				<h2 class="sub-tit-02"><a href="#"><i class="ic-l-arr-01"></i></a>메이저맵</h2>
+				<div style="--gap:20px; --items:center; --m-gap:3.33vw;">
+					<h2 class="sub-tit-02" style="margin-bottom:0;"><a href="#"><i class="ic-l-arr-01"></i></a>메이저맵</h2>
+					<button type="button" class="btn-type-lgry btn-sz-34" style="--btn-gap: 12px; --items: center; --m-btn-gap: 1.67vw;"><i class="ic-info"></i>메이저맵 사용 안내</button>
+				</div>
 				<div class="brd-wrap">
-					<ul id="majorMapTop" class="brd-lst-03" style="--pos:sticky; --left:0; --top:0;">
-						<li style="--ovf:hidden;">
-							<div style="--dp:grid; --w:100%;">
-								<div style="--dp:flex; --content:space-between; --items:center; --w:100%; --m-gap:2.22vw;">
-									<div style="--flex-d:column; --gap:20px; --m-gap:2.22vw;">
-										<div style="--gap:16px; --items:center; --m-gap:2.5vw;">
-											<span class="chip-type-01">기본 MAP</span>
-											<div class="brd-lst-tit-inner">
-												<a href="#" class="layout-ellipsis">김전북님의 메이저</a>
-											</div>
-										</div>
-										<p>#첫 설계  #2학년 1학기  #2024.03.05</p>
-									</div>
-									<div style="--gap:40px; --m-content:space-between; --m-gap:0; --m-w:100%;">
-										<p>최종수정일 2024.06.19</p>
-										<div style="--gap:24px; --m-gap:4.72vw;">
-											<button type="button"><i class="ic-pencle"></i></button>
-											<button type="button"><i class="ic-copy"></i></button>
-											<button type="button"><i class="ic-trash"></i></button>
-										</div>
-									</div>
-								</div>
-								<div class="brd-lst-bottom">
-									<ul class="major-map-stat">
-										<li class="complete">1학년</li>
-										<li class="complete"></li>
-										<li class="active"><i class="ic-mascot"></i></li>
-										<li class="current"></li>
-										<li>2학년</li>
-										<li></li>
-										<li></li>
-										<li></li>
-										<li>3학년</li>
-										<li></li>
-										<li></li>
-										<li></li>
-										<li>4학년</li>
-										<li></li>
-										<li></li>
-										<li></li>
-										<li>졸업</li>
-									</ul>
+					<div id="majorMapTop-02" style="--pos:sticky; --left:0; --top:0;">
+						<div class="majormap-top-form" style="--gap:40px; --content:space-between; --mg-t:36px; --m-flex-d:column; --m-gap:18px; --m-mg-t:4.17vw; --m-items:flex-end;">
+							<div class="flex-1" style="--m-w:100%;">
+								<div class="form-txt">
+									<p-input placeholder="메이저맵 제목을 입력해주세요"></p-input>
 								</div>
 							</div>
-						</li>
-					</ul>
+							<div style="--gap:24px; --m-gap:5.56vw;">
+								<label class="form-opt-chk">
+									<input type="checkbox">
+									<span class="opt-txt">기본 Map설정</span>
+								</label>
+								<button type="button" class="btn-type" style="--btn-w:122px; --m-btn-w:22.22vw;">검색</button>
+							</div>
+						</div>
+						<ul class="brd-lst-03" >
+							<li style="--ovf:hidden; padding:0;">
+								<div style="--dp:grid; --w:100%;">
+									<div class="brd-lst-bottom" style="margin:0;">
+										<ul class="major-map-stat">
+											<li class="complete">1학년</li>
+											<li class="complete"></li>
+											<li class="active"><i class="ic-mascot"></i></li>
+											<li class="current"></li>
+											<li>2학년</li>
+											<li></li>
+											<li></li>
+											<li></li>
+											<li>3학년</li>
+											<li></li>
+											<li></li>
+											<li></li>
+											<li>4학년</li>
+											<li></li>
+											<li></li>
+											<li></li>
+											<li>졸업</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
 
 					<!-- 1학년 1학기 -->
 					<div class="cr-blk" style="--gap:20px; --items:center; --mg-t:80px; --m-gap:2.78vw; --m-mg-t:11.11vw;">
@@ -127,24 +127,27 @@
 							<p>취득일2024.08.19</p>
 						</li>
 						<li style="--gap:4px; --flex-d:column; --m-gap:1.11vw;">
-							<div class="txt-14-24" style="--gap:4px; --m-gap:1.11vw;"><i class="ic-plan"></i>계획</div>
+							<div style="--dp:flex; --content:space-between;">
+								<div class="txt-14-24" style="--gap:4px; --m-gap:1.11vw;"><i class="ic-plan"></i>계획</div>
+								<div style="--gap:20px; --m-gap:5.56vw;">
+									<button type="button" class="ic-pencle-02"></button>
+									<button type="button" class="ic-delete-03"></button>
+								</div>
+							</div>
 							<h3 class="brd-tit layout-ellipsis">과정명이 한줄로 노출됩니다</h3>
 							<p>과학기술정보통신부</p>
 						</li>
 					</ul>
-
-					<!-- 1학년 여름학기 -->
-					<div class="cr-blk" style="--gap:20px; --items:center; --mg-t:80px; --m-gap:2.78vw; --m-mg-t:11.11vw;">
-						<h3 class="txt-24-32"><b>1학년 여름학기</b></h3>
-						<p>종료</p>
-					</div>
 
 					<!-- 1학년 2학기 -->
 					<div style="--gap:20px; --items:center; --mg-t:80px; --m-gap:2.78vw; --m-mg-t:11.11vw;">
 						<h3 class="txt-24-32"><b><q>1학년 2학기</q></b></h3>
 						<p><q>진행</q></p>
 					</div>
-					<h4 class="chip-type-03" style="--mg-t:24px; --m-mg-t:5.56vw;">교과</h4>
+					<div style="--gap:12px; --mg-t:24px; --m-mg-t:5.56vw; --m-gap:3.33vw;">
+						<h4 class="chip-type-03">교과</h4>
+						<button type="button" class="btn-type-b-lgry btn-sz-34-r">계획추가</button>
+					</div>
 					<ul class="brd-lst-02" style="--grid-t-col:3; --m-grid-t-col:1; --mg-t:16px; --m-mg-t:3.33vw;">
 						<!-- 미이수일 경우 stat -->
 						<li class="stat" style="--gap:4px; --flex-d:column; --m-gap:1.11vw;">
@@ -206,9 +209,15 @@
 					<ul class="brd-lst-02" style="--grid-t-col:3; --m-grid-t-col:1; --mg-t:16px; --m-mg-t:3.33vw;">
 						<!-- 미이수일 경우 stat -->
 						<li class="stat" style="--gap:4px; --flex-d:column; --m-gap:1.11vw;">
-							<div style="--gap:16px; --items:center; --m-gap:3.33vw;">
-								<span class="chip-type-01-red">미이수</span>
-								<div class="txt-14-24 stat-ind" style="--gap:4px; --m-gap:1.11vw;"><i class="ic-plan"></i>계획</div>
+							<div style="--dp:flex; --content:space-between;">
+								<div style="--gap:16px; --items:center; --m-gap:3.33vw;">
+									<span class="chip-type-01-red">미이수</span>
+									<div class="txt-14-24 stat-ind" style="--gap:4px; --m-gap:1.11vw;"><i class="ic-plan"></i>계획</div>
+								</div>
+								<div style="--gap:20px; --m-gap:5.56vw;">
+									<button type="button" class="ic-pencle-02"></button>
+									<button type="button" class="ic-delete-03"></button>
+								</div>
 							</div>
 							<h3 class="brd-tit layout-ellipsis">과정명이 한줄로 노출됩니다과정명이 한줄로 노출됩니다</h3>
 							<div class="div-v-03 txt-14-24 stat-ind">
@@ -221,7 +230,15 @@
 					<h4 class="chip-type-03" style="--mg-t:40px; --m-mg-t:8.33vw;">자격증</h4>
 					<ul class="brd-lst-02" style="--grid-t-col:3; --m-grid-t-col:1; --mg-t:16px; --m-mg-t:3.33vw;">
 						<li style="--gap:4px; --flex-d:column; --m-gap:1.11vw;">
-							<div class="txt-14-24" style="--gap:4px; --m-gap:1.11vw;"><i class="ic-plan"></i>계획</div>
+							<div style="--dp:flex; --content:space-between;">
+								<div style="--gap:16px; --items:center; --m-gap:3.33vw;">
+									<div class="txt-14-24 stat-ind" style="--gap:4px; --m-gap:1.11vw;"><i class="ic-plan"></i>계획</div>
+								</div>
+								<div style="--gap:20px; --m-gap:5.56vw;">
+									<button type="button" class="ic-pencle-02"></button>
+									<button type="button" class="ic-delete-03"></button>
+								</div>
+							</div>
 							<h3 class="brd-tit layout-ellipsis">과정명이 한줄로 노출됩니다</h3>
 							<p>과학기술정보통신부</p>
 						</li>
@@ -232,13 +249,13 @@
 						<h3 class="txt-24-32"><b>4학년 2학기</b></h3>
 						<p>예정</p>
 					</div>
-					<div style="--gap:20px; --mg-t:24px; --m-mg-t:5.56vw; --items:center;">
+					<div style="--gap:20px; --mg-t:24px; --m-mg-t:5.56vw; --items:center; --m-gap:3.33vw;">
 						<h4 class="chip-type-03">교과</h4>
-						<p class="cr-blk">계획된 교과가 없습니다.</p>
+						<button type="button" class="btn-type-b-lgry btn-sz-34-r">계획추가</button>
 					</div>
-					<div style="--gap:20px; --mg-t:24px; --m-mg-t:5.56vw; --items:center;">
+					<div style="--gap:20px; --mg-t:24px; --m-mg-t:5.56vw; --items:center; --m-gap:3.33vw;">
 						<h4 class="chip-type-03">자격증</h4>
-						<p class="cr-blk">계획된 자격증이 없습니다.</p>
+						<button type="button" class="btn-type-b-lgry btn-sz-34-r">계획추가</button>
 					</div>
 				</div>
 			</div>
@@ -248,7 +265,7 @@
 		<div data-include="../include/footer.html"></div>
 		<script type="module">
 			document.addEventListener('DOMContentLoaded', () => {
-				const target = document.getElementById('majorMapTop');
+				const target = document.getElementById('majorMapTop-02');
 				if (!target) return;
 
 				let lastSticky = false;

@@ -184,6 +184,7 @@
 			.ic-copy:before {width:3.47vw; height:3.75vw;}
 			.ic-delete:before {width:2.22vw; height:2.22vw;}
 			.ic-delete-02:before {width:1.94vw; height:1.94vw;}
+			.ic-delete-03:before {width:3.06vw; height:3.06vw;}
 			.ic-download:before {width:2.22vw; height:2.22vw;}
 			.ic-file:before {width:3.06vw; height:2.78vw;}
 			.ic-info:before {width:3.33vw; height:3.33vw;}
@@ -192,6 +193,7 @@
 			.ic-mascot:before {width:5.56vw; height:5.56vw;}
 			.ic-notice:before {width:3.06vw; height:2.78vw;}
 			.ic-pencle:before {width:3.75vw; height:3.75vw;}
+			.ic-pencle-02:before {width:3.19vw; height:3.19vw;}
 			.ic-plan:before {width:3.47vw; height:3.33vw;}
 			.ic-plus:before {width:2.92vw; height:2.92vw;}
 			.ic-setting:before {width:2.50vw; height:2.22vw;}
@@ -319,6 +321,14 @@
 		.thumb-type-01 {width:19.44vw; height:19.44vw;}
 		.thumb-type-02 {--thumb-bd-r:1.94vw; width:50vw; height:30.56vw;}
 
+	/* Toast */
+		.toast-type-01 {
+			--toast-bd-r: 2.78vw;
+			--toast-ft-s: 3.89vw;
+			--toast-pd-y: 11.11vw;
+			--toast-w: 100%;
+		}
+
 	/* Tooltip */
 		.t-tip-01 {
 			--tip-bd-r:2.22vw;
@@ -423,6 +433,9 @@
 			.major-map-stat > *:before {border-width:0.28vw; width:1.94vw; height:1.94vw;}
 			.major-map-stat > *:after {left:2.58vw; height:0.28vw;}
 			.major-map-stat > *:nth-child(4n+1):before {width:3.06vw; height:3.06vw;}
+
+			#majorMapTop-02.sticky-active {padding:0;}
+			#majorMapTop-02.sticky-active .majormap-top-form {padding:5vw 5vw 0;}
 
 		/* e-Notice */
 			.survey-wrap {width:100%; margin:7.78vw 0 0;}

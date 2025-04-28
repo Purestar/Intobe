@@ -666,6 +666,9 @@
 							<button type="button" class="btn-type">복제</button>
 						</template>
 					</p-popup>
+
+					<!-- 토스트 메세지 -->
+					<button type="button" class="btn-type" data-message="계획이 임시 삭제되었습니다.<br>[저장]버튼을 클릭해 변경사항을 저장해주세요" onclick="showToast(this)">계획 임시 삭제</button>
 				</div>
 			</div>
 			<div style="--flex-d:column; --gap:10px;">
@@ -702,5 +705,12 @@
 				</div>
 			</div>-->
 		</div>
+
+		<!-- 토스트 메세지 공통 -->
+		<p-toast class="toast-type-01" position="top-center">
+			<template #message="slotProps">
+				<div v-html="slotProps.message.detail"></div>
+			</template>
+		</p-toast>
 	</body>
 </html>
