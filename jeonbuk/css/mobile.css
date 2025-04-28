@@ -198,9 +198,22 @@
 			.ic-pencle-02:before {width:3.19vw; height:3.19vw;}
 			.ic-plan:before {width:3.47vw; height:3.33vw;}
 			.ic-plus:before {width:2.92vw; height:2.92vw;}
+			.ic-search:before {width:4.86vw; height:4.86vw;}
 			.ic-setting:before {width:2.50vw; height:2.22vw;}
 			.ic-refresh:before {width:3.06vw; height:3.47vw;}
 			.ic-trash:before {width:3.61vw; height:3.89vw;}
+
+		/* Chatbot */
+			.ic-chat-history:before {width:6.67vw; height:5.00vw;}
+			.ic-chat-new:before {width:6.67vw; height:5.00vw;}
+			.ic-chat-close:before {width:4.17vw; height:4.17vw;}
+			.ic-chat-send:before {width:6.67vw; height:6.67vw;}
+			.ic-chat-stop:before {width:6.67vw; height:6.67vw;}
+			.ic-chat-recom:before,
+			.ic-chat-discom:before {width:3.47vw; height:3.33vw;}
+			.ic-chat-copy:before {width:3.33vw; height:3.19vw;}
+			.ic-chat-tdot:before {width:4.86vw; height:0.97vw;}
+			/*.ic-chat-hamburger:before {background-position:var(--bp-100) var(--bp-500); width:5.42vw; height:4.86vw;}*/
 
 		/* Arrow */
 			/* Up */
@@ -438,6 +451,40 @@
 
 			#majorMapTop-02.sticky-active {padding:0;}
 			#majorMapTop-02.sticky-active .majormap-top-form {padding:5vw 5vw 0;}
+
+		/* 챗봇 */
+			.chatbot-wrap {right:2.50vw; bottom:4.17vw;}
+			.chatbot-wrap .chatbot-chat-wrap {position:fixed; right:0; top:0; bottom:auto; border-radius:0; box-shadow:none; width:100dvw; height:100dvh; max-height:100dvh;}
+			.chatbot-wrap .chatbot-chat-intro img {width:31.94vw; height:31.94vw;}
+			.chatbot-wrap .chatbot-chat-head {flex:0 0 15.28vw; height:15.28vw; font-size:5vw;}
+			.chatbot-wrap .chatbot-chat-head-left,
+			.chatbot-wrap .chatbot-chat-head-right {padding:0 5vw;}
+			.chatbot-wrap .chatbot-chat-head button {flex:0 0 10.25vw; width:10.25vw; height:15.28vw;}
+
+			.chatbot-wrap .chatbot-chat-cont {padding:10.00vw 5.00vw; line-height:4.44vw;}
+			.chatbot-wrap .chatbot-chat-list {gap:5.83vw;}
+			.chatbot-wrap .chat-msg-you {border-radius:4.44vw 0 4.44vw 4.44vw; min-height:11.11vw; padding:3.33vw 5.00vw; font-size:3.33vw;}
+			.chatbot-wrap .chat-msg-bot-wrap {gap:1.67vw;}
+			.chatbot-wrap .chat-msg-bot-wrap > img:first-child {width:11.11vw; height:11.11vw;}
+			.chatbot-wrap .chat-msg-bot {border-radius:0 4.44vw 4.44vw 4.44vw; min-height:11.11vw; padding:3.33vw 5.00vw; font-size:3.33vw;}
+			.chatbot-wrap .chat-msg-info {margin-top:3.33vw; padding:0; font-size:3.33vw;}
+			.chatbot-wrap .chat-msg-btn-group {gap:2.22vw;}
+
+			.chatbot-wrap .chatbot-chat-foot {flex:0 0 23.61vw; height:23.61vw; padding:0 5.00vw;}
+			.chatbot-wrap .chatbot-chat-foot .chat-send-btn {right:8.33vw;}
+			.chatbot-wrap .chatbot-btn {width:19.44vw; height:19.44vw;}
+
+			.chat-loading-dots {gap:1.11vw; margin-left:3.33vw;}
+			.chat-loading-dots span {width:1.94vw; height:1.94vw;}
+
+			.chatbot-chat-history-wrap .chatbot-chat-head {width:80.56vw;}
+			.chatbot-chat-history-list {width:80.56vw; padding:6.94vw 0;}
+			.chatbot-chat-history-ctgy {margin-top:3.61vw; padding:0 5.00vw; font-size:3.33vw;}
+			.chatbot-chat-history-ctgy-list {margin-top:3.61vw;}
+			.chatbot-chat-history-ctgy-list button {height:9.72vw; padding:0 5vw;}
+			.chatbot-chat-history-ctgy-list .chatbot-btn-tdot {width:9.72vw;}
+			.chatbot-chat-history-ctgy-list .chatbot-item-util-menu {right:6.94vw; top:2.22vw; border-radius:2.78vw; width:31.67vw;}
+			.chatbot-chat-history-ctgy-list .chatbot-item-util-menu button {padding:0 3.33vw;}
 
 		/* e-Notice */
 			.survey-wrap {width:100%; margin:7.78vw 0 0;}

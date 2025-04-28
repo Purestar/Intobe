@@ -133,10 +133,7 @@
 						{ "menu": "설문조사", "src": "./page/.html", "state": "" }
 					], "state": "" }
 				], "state": ""},
-				{ "id": "챗봇", "submenu": [
-					{ "menu": "대화창", "src": "./page/.html", "state": "" },
-					{ "menu": "대화이력", "src": "./page/.html", "state": "" }
-				], "state": ""},
+				{ "menu": "챗봇", "src": "./page/UCH_010000.html", "state": "comp" },
 				{ "id": "e-Notice", "submenu": [
 					{ "id": "공지사항", "submenu": [
 						{ "menu": "목록", "src": "./page/UEN_010100.html", "state": "comp" },

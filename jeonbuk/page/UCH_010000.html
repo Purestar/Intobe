@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="Management">
+		<meta name="description" content="Management">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script type="module" src="../js/index.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
+		<script type="module" src="../js/module.js"></script>
+		<script src="../js/pub.js"></script>
+		<link rel="icon" href="../favicon.ico" sizes="any">
+		<link rel="stylesheet" href="../css/global.css">
+	</head>
+	<body>
+		<!-- 헤더 -->
+		<div class="sub-header">
+			<div data-include="../include/header.html"></div>
+		</div>
+
+		<!-- 본문 -->
+		<div id="container"></div>
+
+		<!-- 푸터 -->
+		<div class="chatbot-wrap">
+			<div class="chatbot-chat-wrap">
+				<div class="chatbot-chat-head">
+					<div class="chatbot-chat-head-left">
+						<button type="button" class="chatbot-history-btn"><i class="ic-chat-history"></i></button>
+						<button type="button"><i class="ic-chat-new"></i></button>
+					</div>
+					<h1 class="chatbot-chat-head-title layout-ellipsis">도서관 운영시간도서관 운영시간도서관 운영시간도서관 운영시간도서관 운영시간</h1>
+					<div class="chatbot-chat-head-right">
+						<button type="button" class="chatbot-chat-close"><i class="ic-chat-close"></i></button>
+					</div>
+				</div>
+				<div class="chatbot-chat-cont">
+					<!-- 첫 화면 -->
+					<div class="chatbot-chat-intro">
+						<img src="../images/img/img_chatbot.png">
+						<p class="fs-24 m-fs-40 mt-20 m-mt-24"><strong>무엇을 도와드릴까요?</strong></p>
+						<p class="fs-14 m-fs-24 cr-gry mt-12 m-mt-20">메세지를 입력해대화를 시작해보세요!</p>
+					</div>
+
+					<!-- 메세지 입력 후 -->
+					<div class="chatbot-chat-list">
+						<div class="chat-msg-you">
+							<p>도서관 운영시간이 어떻게 돼?</p>
+						</div>
+						<div class="chat-msg-bot-wrap">
+							<img src="../images/img/img_chatbot_thumb.png">
+							<div class="chat-msg-bot">
+								<p>
+									생각중
+									<span class="chat-loading-dots">
+										<span></span>
+										<span></span>
+										<span></span>
+									</span>
+								</p>
+							</div>
+						</div>
+						<div class="chat-msg-you">
+							<p>도서관 운영시간이 어떻게 돼?</p>
+						</div>
+						<div class="chat-msg-bot-wrap">
+							<img src="../images/img/img_chatbot_thumb.png">
+							<div>
+								<div class="chat-msg-bot">
+									<p>중앙도서서관 운영시간은 평일 오전 9시부터 오후 10시까지, 주말은 오전 10시부터 오후 6시까지입니다.</p>
+								</div>
+								<div class="chat-msg-info">
+									<div>2025.01.06 14:16</div>
+									<div class="chat-msg-btn-group">
+										<button type="button"><i class="ic-chat-recom"></i></button>
+										<button type="button"><i class="ic-chat-discom"></i></button>
+										<button type="button"><i class="ic-chat-copy"></i></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="chat-msg-you">
+							<p>What are the hours of operation for the library?</p>
+						</div>
+						<div class="chat-msg-bot-wrap">
+							<img src="../images/img/img_chatbot_thumb.png">
+							<div>
+								<div class="chat-msg-bot">
+									<p>The Central Library opens from 9 a.m. to 10 p.m. E on weekdays and from 10 a.m. to 6 p.m. on weekends.</p>
+								</div>
+								<div class="chat-msg-info">
+									<div>2025.01.06 14:16</div>
+									<div class="chat-msg-btn-group">
+										<button type="button"><i class="ic-chat-recom"></i></button>
+										<button type="button"><i class="ic-chat-discom"></i></button>
+										<button type="button"><i class="ic-chat-copy"></i></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="chat-msg-you">
+							<p>Thời gian thư viện hoạt động thể nào?.</p>
+						</div>
+						<div class="chat-msg-bot-wrap">
+							<img src="../images/img/img_chatbot_thumb.png">
+							<div>
+								<div class="chat-msg-bot">
+									<p>Thời gian hoạt động của thư viện trung ương từ 9 giờ sáng đến 10 giờ tối ngày thường, cuối tuần từ 10 giờ sáng đến 6 giờ chiều.</p>
+								</div>
+								<div class="chat-msg-info">
+									<div>2025.01.06 14:16</div>
+									<div class="chat-msg-btn-group">
+										<button type="button"><i class="ic-chat-recom"></i></button>
+										<button type="button"><i class="ic-chat-discom"></i></button>
+										<button type="button"><i class="ic-chat-copy"></i></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="chat-msg-you">
+							<p>图书馆几点营业?</p>
+						</div>
+						<div class="chat-msg-bot-wrap">
+							<img src="../images/img/img_chatbot_thumb.png">
+							<div>
+								<div class="chat-msg-bot">
+									<p>中央图书馆运营时间为平日上午9点到 下午10点周末为上午10点到下午6点。</p>
+								</div>
+								<div class="chat-msg-info">
+									<div>2025.01.06 14:16</div>
+									<div class="chat-msg-btn-group">
+										<button type="button"><i class="ic-chat-recom"></i></button>
+										<button type="button"><i class="ic-chat-discom"></i></button>
+										<button type="button"><i class="ic-chat-copy"></i></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="chatbot-chat-foot">
+					<div class="form-txt">
+						<p-input placeholder="메세지를 입력하세요"></p-input>
+					</div>
+					<button type="button" class="chat-send-btn">
+						<!-- 기본 아이콘 -->
+						<i class="ic-chat-send"></i>
+
+						<!-- 생각중일때 중지아이콘 -->
+						<i class="ic-chat-stop"></i>
+
+						<!-- 전송 아이콘 활성화 -->
+						<i class="ic-chat-send active"></i>
+					</button>
+				</div>
+
+				<div class="chatbot-chat-history-wrap">
+					<div class="chatbot-chat-head">
+						<div class="chatbot-chat-head-left flex-1" style="--items:center;">
+							<button type="button" class="chatbot-history-btn"><i class="ic-chat-history"></i></button>
+							<button type="button"><i class="ic-chat-new"></i></button>
+							<button type="button" class="chatbot-history-search-btn"><i class="ic-search"></i></button>
+							<div class="form-txt chatbot-history-search-wrap">
+								<p-input placeholder="검색어를 입력하세요" class="chatbot-history-search"></p-input>
+							</div>
+						</div>
+						<div class="chatbot-chat-head-right">
+							<button type="button" class="chatbot-history-close"><i class="ic-chat-close"></i></button>
+						</div>
+					</div>
+					<div class="chatbot-chat-history-list">
+						<p class="chatbot-chat-history-ctgy">오늘</p>
+						<ul class="chatbot-chat-history-ctgy-list">
+							<li>
+								<button type="button">도서관 운영시간</button>
+								<button type="button" class="chatbot-btn-tdot"><i class="ic-chat-tdot"></i></button>
+								<ul class="chatbot-item-util-menu active">
+									<li><button type="button">제목 바꾸기</button></li>
+									<li><button type="button">삭제</button></li>
+								</ul>
+							</li>
+							<li>
+								<button type="button">종강날짜</button>
+								<button type="button" class="chatbot-btn-tdot"><i class="ic-chat-tdot"></i></button>
+								<ul class="chatbot-item-util-menu">
+									<li><button type="button">제목 바꾸기</button></li>
+									<li><button type="button">삭제</button></li>
+								</ul>
+							</li>
+							<li>
+								<button type="button">Issuance of student card</button>
+								<button type="button" class="chatbot-btn-tdot"><i class="ic-chat-tdot"></i></button>
+								<ul class="chatbot-item-util-menu">
+									<li><button type="button">제목 바꾸기</button></li>
+									<li><button type="button">삭제</button></li>
+								</ul>
+							</li>
+						</ul>
+						<p class="chatbot-chat-history-ctgy">2025.01.06</p>
+						<ul class="chatbot-chat-history-ctgy-list">
+							<li>
+								<button type="button">도서관 운영시간</button>
+								<button type="button" class="chatbot-btn-tdot"><i class="ic-chat-tdot"></i></button>
+								<ul class="chatbot-item-util-menu">
+									<li><button type="button">제목 바꾸기</button></li>
+									<li><button type="button">삭제</button></li>
+								</ul>
+							</li>
+							<li>
+								<button type="button">종강날짜</button>
+								<button type="button" class="chatbot-btn-tdot"><i class="ic-chat-tdot"></i></button>
+								<ul class="chatbot-item-util-menu">
+									<li><button type="button">제목 바꾸기</button></li>
+									<li><button type="button">삭제</button></li>
+								</ul>
+							</li>
+							<li>
+								<button type="button">시험성적</button>
+								<button type="button" class="chatbot-btn-tdot"><i class="ic-chat-tdot"></i></button>
+								<ul class="chatbot-item-util-menu">
+									<li><button type="button">제목 바꾸기</button></li>
+									<li><button type="button">삭제</button></li>
+								</ul>
+							</li>
+							<li>
+								<button type="button">스펙 등록하는 법</button>
+								<button type="button" class="chatbot-btn-tdot"><i class="ic-chat-tdot"></i></button>
+								<ul class="chatbot-item-util-menu">
+									<li><button type="button">제목 바꾸기</button></li>
+									<li><button type="button">삭제</button></li>
+								</ul>
+							</li>
+							<li>
+								<button type="button">장학금 신청기간</button>
+								<button type="button" class="chatbot-btn-tdot"><i class="ic-chat-tdot"></i></button>
+								<ul class="chatbot-item-util-menu">
+									<li><button type="button">제목 바꾸기</button></li>
+									<li><button type="button">삭제</button></li>
+								</ul>
+							</li>
+							<li>
+								<button type="button">스펙 등록하는 법</button>
+								<button type="button" class="chatbot-btn-tdot"><i class="ic-chat-tdot"></i></button>
+								<ul class="chatbot-item-util-menu">
+									<li><button type="button">제목 바꾸기</button></li>
+									<li><button type="button">삭제</button></li>
+								</ul>
+							</li>
+							<li>
+								<button type="button">장학금 신청기간</button>
+								<button type="button" class="chatbot-btn-tdot"><i class="ic-chat-tdot"></i></button>
+								<ul class="chatbot-item-util-menu">
+									<li><button type="button">제목 바꾸기</button></li>
+									<li><button type="button">삭제</button></li>
+								</ul>
+							</li>
+							<li>
+								<button type="button">스펙 등록하는 법</button>
+								<button type="button" class="chatbot-btn-tdot"><i class="ic-chat-tdot"></i></button>
+								<ul class="chatbot-item-util-menu">
+									<li><button type="button">제목 바꾸기</button></li>
+									<li><button type="button">삭제</button></li>
+								</ul>
+							</li>
+							<li>
+								<button type="button">장학금 신청기간</button>
+								<button type="button" class="chatbot-btn-tdot"><i class="ic-chat-tdot"></i></button>
+								<ul class="chatbot-item-util-menu">
+									<li><button type="button">제목 바꾸기</button></li>
+									<li><button type="button">삭제</button></li>
+								</ul>
+							</li>
+							<li>
+								<button type="button">스펙 등록하는 법</button>
+								<button type="button" class="chatbot-btn-tdot"><i class="ic-chat-tdot"></i></button>
+								<ul class="chatbot-item-util-menu">
+									<li><button type="button">제목 바꾸기</button></li>
+									<li><button type="button">삭제</button></li>
+								</ul>
+							</li>
+							<li>
+								<button type="button">장학금 신청기간</button>
+								<button type="button" class="chatbot-btn-tdot"><i class="ic-chat-tdot"></i></button>
+								<ul class="chatbot-item-util-menu">
+									<li><button type="button">제목 바꾸기</button></li>
+									<li><button type="button">삭제</button></li>
+								</ul>
+							</li>
+						</ul>
+						<p class="chatbot-chat-history-ctgy">2025.01.05</p>
+						<ul class="chatbot-chat-history-ctgy-list">
+							<li>
+								<button type="button">신청할 수 있는 비교과 프로그램</button>
+								<button type="button" class="chatbot-btn-tdot"><i class="ic-chat-tdot"></i></button>
+								<ul class="chatbot-item-util-menu">
+									<li><button type="button">제목 바꾸기</button></li>
+									<li><button type="button">삭제</button></li>
+								</ul>
+							</li>
+							<li>
+								<button type="button">수강신청기간</button>
+								<button type="button" class="chatbot-btn-tdot"><i class="ic-chat-tdot"></i></button>
+								<ul class="chatbot-item-util-menu">
+									<li><button type="button">제목 바꾸기</button></li>
+									<li><button type="button">삭제</button></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="float-menu">
+			<button type="button" class="float-btn-chat chatbot-btn">
+				<img src="../images/img/btn_chatbot.png" style="--m-dp:none;">
+				<img src="../images/img/btn_m_chatbot.png" style="--dp:none; --m-dp:block;">
+			</button>
+			<a href="#" class="float-btn-top"><i class="ic-u-arr-01"></i></a>
+		</div>
+		<footer class="f-wrap">
+			<div class="layout-inner">
+				<ul class="f-menu">
+					<li><a href="#">개인정보처리방침</a></li>
+					<li><a href="#">이메일무단수집거부</a></li>
+				</ul>
+				<div class="f-info">
+					<p>(우)54896 전북특별자치도 전주시 덕진구 백제대로567 전북대학교<br class="mobile"> JBNU 인터내셔널센터 3층 취업진로지원과</p>
+					<div class="div-v-01" style="--flex-w:wrap;">
+						<span>TEL 채용공고 270-4834</span>
+						<span>기업추천 270-4242</span>
+						<span>큰사람프로젝트 270-3492</span>
+						<span>평생지도교수제 270-4831</span>
+						<span>인적성검사 270-4831</span>
+					</div>
+					<div class="div-v-01">
+						<span>E-Mail 채용공고 job@jbou.ac.kr</span>
+						<span>추천채용 recruit@jbou.ac.kr</span>
+					</div>
+					<p>FAX 063-270-3000</p>
+					<p>ⓒ Jeonbuk National University. All rights reserved.</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

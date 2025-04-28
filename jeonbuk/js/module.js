@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
 		setup() {
 			const popups = reactive({ popup: false });
 			const toast = PrimeVue.useToast();
-			log(toast);
 
 			function togglePopup(id) {
 				popups[id] = !popups[id];
@@ -26,6 +25,8 @@ document.addEventListener('DOMContentLoaded', function() {
 					window.openPopup();
 				});
 			}
+
+			chatBot();
         }
 	});
 
@@ -184,6 +185,55 @@ function includeHTML() {
 				})
 				.catch((error) => console.error(error));
 		}
+	});
+}
+
+function chatBot() {
+	// 버튼과 대상 요소를 선택
+	const chatbotSearchBtn = document.querySelector('.chatbot-history-search-btn');
+	const chatbotHistoryDiv = document.querySelector('.chatbot-chat-history-wrap');
+	const chatbotHistoryHeadLeftDiv = chatbotHistoryDiv.querySelector('.chatbot-chat-history-wrap .chatbot-chat-head-left');
+	const chatbotBtn = document.querySelector('.chatbot-btn');
+	const chatbotDiv = document.querySelector('.chatbot-chat-wrap');
+	const chatbotCloseBtn = document.querySelector('.chatbot-chat-close');
+	const chatbotHistoryBtn = document.querySelectorAll('.chatbot-history-btn');
+	const chatbotHistoryCloseBtn = document.querySelector('.chatbot-history-close');
+	const chatbotHistorySearchInput = document.querySelector('.chatbot-history-search');
+
+	// 검색버튼 클릭 시
+	chatbotSearchBtn.addEventListener('click', () => {
+		chatbotHistoryHeadLeftDiv.classList.add('active-search');
+	});
+
+	// 검색 필드 포커스 벗어날 시
+	chatbotHistorySearchInput.addEventListener('blur', () => {
+		setTimeout(() => {
+			chatbotHistoryHeadLeftDiv.classList.remove('active-search');
+			chatbotHistorySearchInput.value = "";
+		}, 100);
+	});
+
+	// 챗봇 토글
+	chatbotBtn.addEventListener('click', () => {
+		log("a")
+		chatbotDiv.classList.toggle('active');
+	});
+
+	// 챗봇 닫기
+	chatbotCloseBtn.addEventListener('click', () => {
+		chatbotDiv.classList.remove('active');
+	});
+
+	// 챗봇 이력
+	chatbotHistoryBtn.forEach((btn) => {
+		btn.addEventListener('click', () => {
+			chatbotHistoryDiv.classList.toggle('active');
+		});
+	});
+
+	// 챗봇 이력 닫기
+	chatbotHistoryCloseBtn.addEventListener('click', () => {
+		chatbotHistoryDiv.classList.remove('active');
 	});
 }
 
