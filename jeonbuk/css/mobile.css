@@ -295,8 +295,8 @@
 
 	/* Swiper */
 		/* Navigation */
-			.swi-nav-01 > * {background:white; border:1px solid #e3e3e3; border-radius:50%; width:50px; height:50px;}
-			.swi-nav-01 > *:after {background-position:var(--bp-150) var(--bp-450); width:9px; height:14px;}
+			.swi-nav-01 > * {width:8.33vw; height:8.33vw;}
+			.swi-nav-01 > *:after {width:1.67vw; height:2.78vw;}
 
 		/* Swiper */
 			.swi-type-03 .swiper-nav-wrap {padding:0 5vw;}
