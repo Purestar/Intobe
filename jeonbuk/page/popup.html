@@ -644,10 +644,373 @@
 			<div style="--flex-d:column; --gap:10px;">
 				<h1 style="--ft-s:20px; --ft-w:bold;">메이저맵</h1>
 				<div style="--dp:grid; --grid-t-col:7; --gap:10px;">
-					<button class="btn-type" disabled>사용안내</button>
-					<button class="btn-type" disabled>교과계획추가</button>
-					<button class="btn-type" disabled>자격증계획추가</button>
-					<button class="btn-type" disabled>학기변경</button>
+					<!-- 메이저맵 사용 안내 -->
+					<button type="button" class="btn-type" @click="togglePopup('map-01')">메이저맵 사용 안내</button>
+					<p-popup class="pop-type-alert-01" modal :style="{ width: '580px' }" v-model:visible="popups['map-01']">
+						<div class="pop-cont">
+							<div style="--dp:flex; --flex-d:column; --items:center;">
+								<h2 class="txt-01"><strong>메이저맵 사용 안내</strong></h2>
+								<div class="box-type-03" style="--mg-t:40px; --m-mg-t:8.33vw;">
+									<ul class="bul-cir-01">
+										<li><p>[계획 추가] 버튼을 클릭해 해당 학기의 교과 또는 자격증 계획을 추가할 수 있으며, ​추가한 교과 및 자격증 계획은   ‘<span class="txt-14-24"><i class="ic-plan"></i>계획</span>’   이 표시됩니다.<br>( 해당 표시가 없는 교과는 계획하지 않고 이수한 교과입니다.)</p></li>
+										<li>예정 상태의 학기는 교과와 자격증 계획 모두 추가할 수 있으며, 진행 상태의 학기는 자격증 계획만 추가할 수 있습니다.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<template #footer>
+							<button type="button" class="btn-type-b-blk">확인</button>
+						</template>
+					</p-popup>
+
+					<!-- 교과계획추가 -->
+					<button type="button" class="btn-type" @click="togglePopup('map-02')">교과계획추가</button>
+					<p-popup class="pop-type-01" modal :style="{ width: '580px' }" v-model:visible="popups['map-02']">
+						<template #header>
+							<h1 class="pop-title">교과 계획추가</h1>
+						</template>
+						<div class="pop-cont">
+							<p-tabs class="tab-wrap-01" value="0" style="--tab-cont-pd-y:24px; --m-tab-cont-pd-y:6.67vw;">
+								<p-tab-list class="tab-menu-01">
+									<p-tab value="0">내보관함</p-tab>
+									<p-tab value="1">교과검색</p-tab>
+								</p-tab-list>
+								<p-tab-panels>
+									<p-tab-panel value="0">
+										<div class="box-type-03" style="--grid-t-col:1; --gap:12px; --m-gap:2.22vw;">
+											<div style="--gap:6px; --items:center; --m-gap:0.69vw;">
+												<p-date-picker class="form-txt-date" show-icon></p-date-picker>
+												~
+												<p-date-picker class="form-txt-date" show-icon></p-date-picker>
+											</div>
+											<div style="--gap:20px; --m-gap:3.33vw;">
+												<p-select class="form-sel" panel-class="form-panel-sel" placeholder="학과/전공" :options="['Test 1']"></p-select>
+												<p-select class="form-sel" panel-class="form-panel-sel" placeholder="이수구분" :options="['Test 1']"></p-select>
+											</div>
+											<div style="--gap:20px; --m-gap:3.33vw;">
+												<p-select class="form-sel" panel-class="form-panel-sel" placeholder="학년" :options="['1학년', '2학년','3학년','4학년']"></p-select>
+												<p-select class="form-sel" panel-class="form-panel-sel" placeholder="학기" :options="['1학기','2학기','여름학기','겨울학기']"></p-select>
+											</div>
+											<div style="--gap:12px; --m-gap:1.67vw;">
+												<div class="form-txt">
+													<p-input placeholder="교과명"></p-input>
+												</div>
+												<button type="button" class="btn-type-b" style="--btn-w:92px; --m-btn-w:23.19vw;">조회</button>
+											</div>
+										</div>
+									</p-tab-panel>
+									<p-tab-panel value="1">
+										<div class="box-type-03" style="--grid-t-col:1; --gap:12px; --m-gap:2.22vw;">
+											<div style="--gap:20px; --m-gap:3.33vw;">
+												<p-select class="form-sel" panel-class="form-panel-sel" placeholder="학과/전공" :options="['Test 1']"></p-select>
+												<p-select class="form-sel" panel-class="form-panel-sel" placeholder="이수구분" :options="['Test 1']"></p-select>
+											</div>
+											<div style="--gap:20px; --m-gap:3.33vw;">
+												<p-select class="form-sel" panel-class="form-panel-sel" placeholder="학년" :options="['1학년', '2학년','3학년','4학년']"></p-select>
+												<p-select class="form-sel" panel-class="form-panel-sel" placeholder="학기" :options="['1학기','2학기','여름학기','겨울학기']"></p-select>
+											</div>
+											<div style="--gap:12px; --m-gap:1.67vw;">
+												<div class="form-txt">
+													<p-input placeholder="교과명"></p-input>
+												</div>
+												<button type="button" class="btn-type-b" style="--btn-w:92px; --m-btn-w:23.19vw;">조회</button>
+											</div>
+										</div>
+									</p-tab-panel>
+								</p-tab-panels>
+							</p-tabs>
+
+							<div class="brd-wrap">
+								<div data-scroll="y" style="--h:30dvh;">
+									<p class="brd-tot">총 <q>10</q>개</p>
+									<b>2025.04.18</b>
+									<ul style="--dp:grid; --gap:16px; --mg-t:12px; --m-gap:2.22vw;">
+										<li class="form-opt-btn-01">
+											<label>
+												<input type="radio">
+												<div class="box-type-02">
+													<span class="chip-type-01-red">미이수</span>
+													<h3 class="brd-tit layout-ellipsis">과정명이 한줄로 노출됩니다과정명이 한줄로 노출됩니다</h3>
+													<div class="div-v-03 txt-14-24">
+														<span>컴퓨터공학전공</span>
+														<span>2-2</span>
+														<span>2학점 (2시간)</span>
+													</div>
+												</div>
+											</label>
+										</li>
+										<li class="form-opt-btn-01">
+											<label>
+												<input type="radio">
+												<div class="box-type-02">
+													<span class="chip-type-01-gry">이수</span>
+													<h3 class="brd-tit layout-ellipsis">과정명이 한줄로 노출됩니다과정명이 한줄로 노출됩니다</h3>
+													<div class="div-v-03 txt-14-24">
+														<span>컴퓨터공학전공</span>
+														<span>2-2</span>
+														<span>2학점 (2시간)</span>
+													</div>
+												</div>
+											</label>
+										</li>
+									</ul>
+								</div>
+
+								<div class="brd-paging" style="--mg-t:44px;">
+									<div class="brd-paging-ctrl">
+										<a href="#" class="brd-paging-first"></a>
+										<a href="#" class="brd-paging-prev"></a>
+									</div>
+									<ul class="brd-paging-num">
+										<li class="active"><a href="#">1</a></li>
+										<li><a href="#">2</a></li>
+										<li><a href="#">3</a></li>
+										<li><a href="#">4</a></li>
+										<li><a href="#">5</a></li>
+									</ul>
+									<div class="brd-paging-ctrl">
+										<a href="#" class="brd-paging-next"></a>
+										<a href="#" class="brd-paging-last"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<template #footer>
+							<button type="button" class="btn-type-b-blk">취소</button>
+							<button type="button" class="btn-type">추가(1)</button>
+						</template>
+					</p-popup>
+
+					<!-- 자격증계획추가 -->
+					<button type="button" class="btn-type" @click="togglePopup('map-03')">자격증계획추가</button>
+					<p-popup class="pop-type-01" modal :style="{ width: '580px' }" v-model:visible="popups['map-03']">
+						<template #header>
+							<h1 class="pop-title">자격증 계획추가</h1>
+						</template>
+						<div class="pop-cont">
+							<p-tabs class="tab-wrap-01" value="0" style="--tab-cont-pd-y:24px; --m-tab-cont-pd-y:6.67vw;">
+								<p-tab-list class="tab-menu-01">
+									<p-tab value="0">내보관함</p-tab>
+									<p-tab value="1">교과검색</p-tab>
+								</p-tab-list>
+								<p-tab-panels>
+									<p-tab-panel value="0">
+										<div class="box-type-03" style="--grid-t-col:1; --gap:12px; --m-gap:2.22vw;">
+											<div style="--gap:6px; --items:center; --m-gap:0.69vw;">
+												<p-date-picker class="form-txt-date" placeholder="보관일" show-icon></p-date-picker>
+												~
+												<p-date-picker class="form-txt-date" placeholder="보관일" show-icon></p-date-picker>
+											</div>
+											<div style="--gap:12px; --m-gap:1.67vw;">
+												<div class="form-txt">
+													<p-input placeholder="교과명"></p-input>
+												</div>
+												<button type="button" class="btn-type-b" style="--btn-w:92px; --m-btn-w:23.19vw;">조회</button>
+											</div>
+										</div>
+									</p-tab-panel>
+									<p-tab-panel value="1">
+										<div class="box-type-03" style="--grid-t-col:1; --gap:12px; --m-gap:2.22vw;">
+											<div style="--gap:12px; --m-gap:1.67vw;">
+												<div class="form-txt">
+													<p-input placeholder="교과명"></p-input>
+												</div>
+												<button type="button" class="btn-type-b" style="--btn-w:92px; --m-btn-w:23.19vw;">조회</button>
+											</div>
+										</div>
+									</p-tab-panel>
+								</p-tab-panels>
+							</p-tabs>
+
+							<div class="brd-wrap">
+								<div data-scroll="y" style="--h:30dvh;">
+									<p class="brd-tot">총 <q>10</q>개</p>
+									<p><b>2025.04.18</b></p>
+									<ul style="--dp:grid; --gap:16px; --mg-t:12px; --m-gap:2.22vw;">
+										<li class="form-opt-btn-01">
+											<label>
+												<input type="radio">
+												<div class="box-type-02">
+													<h3 class="brd-tit layout-ellipsis">자격증명이 노출</h3>
+													<p>자격증 발행처가 노출됩니다.</p>
+												</div>
+											</label>
+										</li>
+										<li class="form-opt-btn-01">
+											<label>
+												<input type="radio">
+												<div class="box-type-02">
+													<h3 class="brd-tit layout-ellipsis">자격증명이 노출</h3>
+													<p>자격증 발행처가 노출됩니다.</p>
+												</div>
+											</label>
+										</li>
+									</ul>
+									<p style="--mg-t:40px; --m-mg-t:5.56vw;"><b>2025.04.18</b></p>
+									<ul style="--dp:grid; --gap:16px; --mg-t:12px; --m-gap:2.22vw;">
+										<li class="form-opt-btn-01">
+											<label>
+												<input type="radio">
+												<div class="box-type-02">
+													<h3 class="brd-tit layout-ellipsis">자격증명이 노출</h3>
+													<p>자격증 발행처가 노출됩니다.</p>
+												</div>
+											</label>
+										</li>
+										<li class="form-opt-btn-01">
+											<label>
+												<input type="radio">
+												<div class="box-type-02">
+													<h3 class="brd-tit layout-ellipsis">자격증명이 노출</h3>
+													<p>자격증 발행처가 노출됩니다.</p>
+												</div>
+											</label>
+										</li>
+									</ul>
+								</div>
+
+								<div class="brd-paging" style="--mg-t:44px;">
+									<div class="brd-paging-ctrl">
+										<a href="#" class="brd-paging-first"></a>
+										<a href="#" class="brd-paging-prev"></a>
+									</div>
+									<ul class="brd-paging-num">
+										<li class="active"><a href="#">1</a></li>
+										<li><a href="#">2</a></li>
+										<li><a href="#">3</a></li>
+										<li><a href="#">4</a></li>
+										<li><a href="#">5</a></li>
+									</ul>
+									<div class="brd-paging-ctrl">
+										<a href="#" class="brd-paging-next"></a>
+										<a href="#" class="brd-paging-last"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<template #footer>
+							<button type="button" class="btn-type-b-blk">취소</button>
+							<button type="button" class="btn-type">추가(1)</button>
+						</template>
+					</p-popup>
+
+					<!-- 학기변경 -->
+					<button type="button" class="btn-type" @click="togglePopup('map-04')">학기변경</button>
+					<p-popup class="pop-type-alert-01" modal :style="{ width: '720px' }" v-model:visible="popups['map-04']">
+						<div class="pop-cont">
+							<div style="--dp:flex; --flex-d:column; --items:center;">
+								<h2 class="txt-01"><strong>어느학기에 추가할까요?</strong></h2>
+								<p>이수계획이 가능한 학기만 선택할 수 있어요</p>
+							</div>
+							<h3 class="txt-18-26" style="--mg-t:40px; --m-mg-t:8.33vw;"><strong>정규학기</strong></h3>
+							<ul style="--dp:grid; --grid-t-col:4; --mg-t:16px; --m-mg-t:3.33vw; --gap:12px; --m-gap:3.33vw; --m-grid-t-col:2;">
+								<li class="form-opt-btn-02-01">
+									<label>
+										<input type="radio" disabled>
+										<span class="opt-txt">1학년 1학기</span>
+									</label>
+								</li>
+								<li class="form-opt-btn-02-01">
+									<label>
+										<input type="radio" disabled>
+										<span class="opt-txt">1학년 2학기</span>
+									</label>
+								</li>
+								<li class="form-opt-btn-02-01">
+									<label>
+										<input type="radio" disabled>
+										<span class="opt-txt">2학년 1학기</span>
+									</label>
+								</li>
+								<li class="form-opt-btn-02-01">
+									<label>
+										<input type="radio">
+										<span class="opt-txt">2학년 2학기</span>
+									</label>
+								</li>
+								<li class="form-opt-btn-02-01">
+									<label>
+										<input type="radio">
+										<span class="opt-txt">3학년 1학기</span>
+									</label>
+								</li>
+								<li class="form-opt-btn-02-01">
+									<label>
+										<input type="radio">
+										<span class="opt-txt">3학년 2학기</span>
+									</label>
+								</li>
+								<li class="form-opt-btn-02-01">
+									<label>
+										<input type="radio" checked>
+										<span class="opt-txt">4학년 1학기</span>
+									</label>
+								</li>
+								<li class="form-opt-btn-02-01">
+									<label>
+										<input type="radio">
+										<span class="opt-txt">4학년 2학기</span>
+									</label>
+								</li>
+							</ul>
+
+							<h3 class="txt-18-26" style="--mg-t:40px; --m-mg-t:8.33vw;"><strong>계절학기</strong></h3>
+							<ul style="--dp:grid; --grid-t-col:4; --mg-t:16px; --m-mg-t:3.33vw; --gap:12px; --m-gap:3.33vw; --m-grid-t-col:2;">
+								<li class="form-opt-btn-02-01">
+									<label>
+										<input type="radio" disabled>
+										<span class="opt-txt">1학년 여름</span>
+									</label>
+								</li>
+								<li class="form-opt-btn-02-01">
+									<label>
+										<input type="radio" disabled>
+										<span class="opt-txt">1학년 겨울</span>
+									</label>
+								</li>
+								<li class="form-opt-btn-02-01">
+									<label>
+										<input type="radio" disabled>
+										<span class="opt-txt">2학년 여름</span>
+									</label>
+								</li>
+								<li class="form-opt-btn-02-01">
+									<label>
+										<input type="radio">
+										<span class="opt-txt">2학년 겨울</span>
+									</label>
+								</li>
+								<li class="form-opt-btn-02-01">
+									<label>
+										<input type="radio">
+										<span class="opt-txt">3학년 여름</span>
+									</label>
+								</li>
+								<li class="form-opt-btn-02-01">
+									<label>
+										<input type="radio">
+										<span class="opt-txt">3학년 겨울</span>
+									</label>
+								</li>
+								<li class="form-opt-btn-02-01">
+									<label>
+										<input type="radio" checked>
+										<span class="opt-txt">4학년 여름</span>
+									</label>
+								</li>
+								<li class="form-opt-btn-02-01">
+									<label>
+										<input type="radio">
+										<span class="opt-txt">4학년 겨울</span>
+									</label>
+								</li>
+							</ul>
+						</div>
+						<template #footer>
+							<button type="button" class="btn-type-b-blk">취소</button>
+							<button type="button" class="btn-type">변경</button>
+						</template>
+					</p-popup>
 
 					<!-- 복제 -->
 					<button type="button" class="btn-type" @click="togglePopup('map-05')">복제</button>

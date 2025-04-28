@@ -35,7 +35,7 @@
 	[style*="--content"] { place-content: var(--content, normal); flex-wrap:var(--flex-w, wrap); }
 	[style*="--content-x"] { place-content: var(--content-y, normal) var(--content-x); }
 	[style*="--content-y"] { place-content: var(--content-y) var(--content-x, normal); }
-	[style*="--items"] { place-items: var(--items, normal); flex-wrap:var(--flex-w, wrap); }
+	[style*="--items"] { place-items: var(--items, normal); /*flex-wrap:var(--flex-w, wrap);*/ }
 	[style*="--items-x"] { place-items: var(--items-y, normal) var(--items-x); }
 	[style*="--items-y"] { place-items: var(--items-y) var(--items-x, normal); }
 

@@ -26,7 +26,7 @@
 	[class*="form-txt-date"] > * {flex-shrink:unset;}
 	[class*="form-txt-date"] .p-datepicker-dropdown {display:flex; place-items:center; place-content:center; flex:0 0 var(--fom-h);}
 	[class*="form-txt-date"] .p-datepicker-dropdown svg {display:none;}
-	[class*="form-txt-date"] .p-datepicker-dropdown:after {content:""; background-image:var(--ic-c); background-position:var(--bp-150) var(--bp-400); background-size:var(--bg-sz); width:16px; height:17px;}
+	[class*="form-txt-date"] .p-datepicker-dropdown:after {content:""; background-image:var(--ic-c); background-position:var(--bp-150) var(--bp-400); background-size:var(--bg-sz); width:18px; height:20px;}
 
 	.p-datepicker-panel {background:white; border:1px solid black;}
 	.p-datepicker-calendar-container {display:flex;}
@@ -54,3 +54,8 @@
 	[class*="form-range"] input[type="range"]::-webkit-slider-thumb {background:var(--moc); width:var(--fom-rg-thb-sz); height:var(--fom-rg-thb-sz); transform:translate(0, calc(-50% + calc(var(--fom-rg-h) / 2))); transition:background-color var(--trans-dft);}
 	[class*="form-range"] input[type="range"]:disabled::-webkit-slider-runnable-track {background:var(--dis-bg); transition:background-color var(--trans-dft);}
 	[class*="form-range"] input[type="range"]:disabled::-webkit-slider-thumb {background:var(--dis-bdr); transition:background-color var(--trans-dft);}*/
+
+@media all and (max-width:720px) {
+	/* Date Picker */
+	[class*="form-txt-date"] .p-datepicker-dropdown:after {width:3.33vw; height:3.89vw;}
+}

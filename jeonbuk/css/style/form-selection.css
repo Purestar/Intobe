@@ -1,7 +1,7 @@
 /* Checkbox & Radio Type */
 	/* Default */
 		[class*="form-opt"] {display:flex; cursor:default;}
-		[class*="form-opt"] input {position:absolute; left:0; top:50%; translate:0, -50%; width:1px; height:1px; z-index:-1;}
+		[class*="form-opt"] input {position:absolute; left:0; top:50%; translate:0 -50%; width:1px; height:1px; z-index:-1;}
 		[class*="form-opt"] .opt-txt {position:relative; display:flex; cursor:pointer;}
 		[class*="form-opt"] .opt-txt:before,
 		[class*="form-opt"] .opt-txt:after {content:""; background:var(--ic-c); background-size:var(--bg-sz);}
@@ -15,12 +15,14 @@
 		[class*="form-opt"] input:disabled + .opt-txt {cursor:default; user-select:none; color:var(--fom-bdr-c);}
 		[class*="form-opt"] input:disabled + .opt-txt:before,
 		[class*="form-opt"] input:checked:disabled + .opt-txt:before {background:var(--dis-bg); border-color:var(--dis-bdr);}
+		label[class*="form-opt"] {cursor:pointer;}
 
 	/* Button */
+		[class*="form-opt-btn"] label {width:100%;}
 		[class*="form-opt-btn"] .opt-txt {justify-content:center; align-items:center; background:white; user-select:none;}
 		[class*="form-opt-btn"] .opt-txt:before {display:none;}
 		[class*="form-opt-btn"] .opt-txt:hover {transition:background var(--trans-dft), border-color var(--trans-dft);}
-		[class*="form-opt-btn"] input:disabled + .opt-txt {background:var(--dis-bg); border-color:var(--dis-bg); color:var(--fom-ph); pointer-events:none;}
+		[class*="form-opt-btn"] input:disabled + .opt-txt {pointer-events:none;}
 
 	/* Check Box, Radio, Switch Default */
 		[class*="form-opt-chk"],
@@ -67,8 +69,6 @@
 		[class*="form-opt-swh"] input:disabled + .opt-txt:after {background:var(--dis-bdr);}
 
 /* Variation */
-
-
 	/* Button */
 		[class*="form-opt-btn"] .opt-txt {
 			border-color:var(--form-opt-btn-bd-c, var(--mc));
@@ -91,4 +91,10 @@
 			background-color:var(--form-opt-btn-chk-bg-c, var(--mc));
 			border-color:var(--form-opt-btn-chk-bd-c, var(--form-opt-btn-chk-bg-c, var(--mc)));
 			color: var(--form-opt-btn-chk-ft-c, var(--mc));
+		}
+
+		[class*="form-opt-btn"] input:disabled + .opt-txt {
+			background:var(--form-opt-btn-dis-bg-c, var(--dis-bg));
+			border-color:var(--form-opt-btn-dis-bd-c, var(--dis-bg));
+			color:var(--form-opt-btn-dis-ft-c, var(--fom-ph));
 		}

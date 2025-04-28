@@ -109,7 +109,7 @@
 		.brd-form-01 .brd-file {border-bottom:1px solid #e2e2e2; margin-top:26px; padding-bottom:40px;}
 
 	/* Paging */
-		.brd-paging {display:flex; justify-content:center; gap:4px; margin-top:60px;}
+		.brd-paging {display:flex; justify-content:center; gap:4px; margin-top:var(--mg-t, 60px);}
 		.brd-paging a {display:flex; align-items:center; justify-content:center; border-radius:50%; width:36px; height:36px; color:#666;}
 		.brd-paging a:hover,
 		.brd-paging-num > *.active a {background:#ececfa; color:var(--mc);}
@@ -249,7 +249,10 @@
 				--form-opt-btn-chk-bd-c:var(--mc);
 				--form-opt-btn-chk-ft-c:var(--mc);
 			}
+			.form-opt-btn-01 label {width:100%;}
 			.form-opt-btn-01 .opt-txt, .form-opt-btn-01 input:checked + .opt-txt {place-content:flex-start; width:100%;}
+			.form-opt-btn-01 .box-type-02 {--box-pd:30px;}
+			.form-opt-btn-01 input:checked + .box-type-02 {--box-bg-c:#f3f6ff; --box-bd-c:var(--mc);}
 
 			[class*="form-opt-btn-02"] {
 				--form-opt-btn-bd-c: #ccc;
@@ -268,6 +271,9 @@
 				--form-opt-btn-chk-bg-c:#f3f6ff;
 				--form-opt-btn-chk-bd-c:var(--mc);
 				--form-opt-btn-chk-ft-c:var(--mc);
+				--form-opt-btn-dis-bg-c:white;
+				--form-opt-btn-dis-bd-c:#e2e2e2;
+				--form-opt-btn-dis-ft-c:#bbb;
 			}
 
 		/* Checkbox */
@@ -408,6 +414,7 @@
 
 	.pop-type-alert-01 {--pop-head-min-h:60px;}
 	.pop-type-alert-01 .p-dialog-header {padding-right:40px;}
+	.pop-type-alert-01 .p-dialog-content {padding-top:0;}
 
 /* Swiper */
 	/* Pagenation */
