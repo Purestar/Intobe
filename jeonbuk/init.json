@@ -44,9 +44,9 @@
 					{ "id": "자기소개서", "submenu": [
 						{ "menu": "목록", "src": "./page/UCA_030100.html", "state": "comp" },
 						{ "menu": "등록/수정", "src": "./page/UCA_030200.html", "state": "comp" },
-						{ "menu": "상세", "src": "./page/UCA_030300.html", "state": "" }
-					], "state": "work" },
-					{ "menu": "포트폴리오", "src": "./page/.html", "state": "" },
+						{ "menu": "상세", "src": "./page/UCA_030300.html", "state": "comp" }
+					], "state": "comp" },
+					{ "menu": "포트폴리오", "src": "./page/UCA_040100.html", "state": "comp" },
 					{ "id": "이력서", "submenu": [
 						{ "menu": "목록", "src": "./page/.html", "state": "" },
 						{ "menu": "등록/수정", "src": "./page/.html", "state": "" },
