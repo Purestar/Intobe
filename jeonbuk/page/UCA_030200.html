@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="Management">
+		<meta name="description" content="Management">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script type="module" src="../js/index.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
+		<script type="module" src="../js/module.js"></script>
+		<script src="../js/pub.js"></script>
+		<link rel="icon" href="../favicon.ico" sizes="any">
+		<link rel="stylesheet" href="../css/global.css">
+	</head>
+	<body>
+		<!-- 헤더 -->
+		<div class="sub-header">
+			<div data-include="../include/header.html"></div>
+		</div>
+
+		<!-- 본문 -->
+		<div id="container">
+			<div class="layout-inner sub-layout">
+				<div style="--content:space-between; --items:center; --m-flex-d:column; --m-gap:4.17vw; --m-items:flex-start;">
+					<h2 class="sub-tit-02" style="margin-bottom:0;"><a href="#"><i class="ic-l-arr-01"></i></a>자기소개서</h2>
+					<div style="--items:center; --gap:36px; --m-gap:3.33vw; --m-flex-d:column; --m-items:flex-start;">
+						<p style="--gap:12px; --m-gap:1.67vw; --m-items:flex-start;"><i class="ic-info"></i>어떤 내용을 작성해야 될지 막막하다면, 주제를 선택해 작성해 보세요!</p>
+						<div style="--gap:12px; --m-gap:1.67vw;">
+							<button type="button" class="btn-type-b btn-sz-34">주제선택</button>
+							<button type="button" class="btn-type-b btn-sz-34">AI 작성</button>
+						</div>
+					</div>
+				</div>
+				<div class="form-txt-01" style="--mg-t:40px; --m-mg-t:5.56vw;">
+					<p-input placeholder="제목을 입력해주세요."></p-input>
+				</div>
+				<div class="box-type-02" style="--ovf:hidden; --box-pd:0; --mg-t:24px; --m-mg-t:2.78vw;">
+					<div style="--dp:flex;">
+						<div class="form-txt flex-1" style="--form-bd-w:0;">
+							<p-input placeholder="성격의 장단점"></p-input>
+						</div>
+						<div style="--bd-w:0 0 0 1px; --bd-c:#e2e2e2; --gap:20px; --pd-x:32px; --items:center; --m-pd-x:5.56vw;">
+							<button type="button"><i class="ic-u-arr-04 tr-180" style="--dp:flex;"></i></button>
+							<button type="button"><i class="ic-u-arr-04" style="--dp:flex;"></i></button>
+							<button type="button"><i class="ic-trash" style="--dp:flex;"></i></button>
+						</div>
+					</div>
+					<div style="--bd-w:1px 0 0 0; --bd-c:#e2e2e2; --pd-x:28px; --pd-y:24px; --m-pd-x:4.17vw; --m-pd-y:4.17vw;">
+						<p class="txt-14-24" style="--txt-a:right;"><b>공백포함 <q>0</q>자, 공백제외 <q>0</q>자</b></p>
+						<div class="form-tarea" style="--form-bd-w:0; --form-pd-x:0;">
+							<p-tarea placeholder="내용을 입력해주세요" style="--m-form-h:19.72vw;"></p-tarea>
+						</div>
+					</div>
+					<div style="--bd-w:1px 0 0 0; --bd-c:#e2e2e2;">
+						<button type="button" class="btn-type" style="--btn-bd-r:0; --btn-bg-c:#f3f6ff; --btn-over-bg-c:#f3f6ff; --btn-w:100%; --btn-ft-c:black;">추가 <i class="ic-plus-02"></i></button>
+					</div>
+				</div>
+				<div class="form-txt" style="--mg-t:20px; --m-mg-t:2.78vw;">
+					<p-input placeholder="태그를  쉼표( , )로 구분해 핵심을 기록해보세요! (최대 10개 등록 가능)"></p-input>
+				</div>
+				<div style="--gap:12px; --content:flex-end; --mg-t:40px; --m-grid-t-col:2; --m-gap:3.33vw; --m-mg-t:8.33vw;">
+					<button type="button" class="btn-type-b" style="--btn-w:122px; --m-btn-w:100%;">임시저장</button>
+					<a href="#" class="btn-type" style="--btn-w:122px; --m-btn-w:100%;">등록</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- 푸터 -->
+		<div data-include="../include/footer.html"></div>
+	</body>
+</html>

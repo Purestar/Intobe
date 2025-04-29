@@ -2,12 +2,13 @@
 	/* Default */
 		[class*="form-txt"] {
 			background:var(--form-bg-c, var(--fom-bg));
-			border:1px solid var(--form-bd-c, var(--fom-bdr-c));
+			border:var(--form-bd-w, 1px) solid var(--form-bd-c, var(--fom-bdr-c));
 			border-radius:var(--form-bd-r, var(--fom-br));
 			width:var(--form-w, 100%);
 			height:var(--form-h, var(--fom-h));
 			padding:0 var(--form-pd-x, var(--fom-pad));
 			font-size:var(--form-ft-s, var(--fom-fs));
+			font-weight:var(--form-ft-w, 400);
 			color:var(--form-ft-c, var(--fom-fc));
 			transition:border-color var(--trans-dft);
 		}
@@ -28,12 +29,13 @@
 	/* Default */
 		[class*="form-txt"] {
 			background:var(--m-form-bg-c, var(--form-bg-c, var(--fom-bg)));
-			border:1px solid var(--m-form-bd-c, var(--form-bd-c, var(--fom-bdr-c)));
+			border:var(--m-form-bd-w, var(--form-bd-w, 1px)) solid var(--m-form-bd-c, var(--form-bd-c, var(--fom-bdr-c)));
 			border-radius:var(--m-form-bd-r, var(--form-bd-r, var(--fom-br)));
 			width:var(--m-form-w, var(--form-w, 100%));
 			height:var(--m-form-h, var(--form-h, var(--fom-h)));
 			padding:0 var(--m-form-pd-x, var(--form-pd-x, var(--fom-pad)));
 			font-size:var(--m-form-ft-s, var(--form-ft-s, var(--fom-fs)));
+			font-weight:var(--m-form-ft-w, var(--form-ft-w, 400));
 			color:var(--m-form-ft-c, var(--form-ft-c, var(--fom-fc)));
 		}
 

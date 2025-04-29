@@ -1,5 +1,60 @@
 /* Textarea */
-	[class*="form-tarea"] {display:flex; background-color:var(--form-bg-c, var(--fom-bg)); border:1px solid var(--form-bd-c, var(--fom-bdr-c)); border-radius:var(--form-bd-r, var(--fom-br)); width:var(--form-w, 100%); min-height:var(--form-h, var(--fom-ta-h)); padding:var(--form-pd-y, var(--fom-pad)) var(--form-pd-x, var(--fom-pad)); font-size:var(--form-ft-s, var(--fom-fs)); font-weight:400; line-height:var(--fom-opt-sz); color:var(--form-ft-c, var(--fom-fc)); transition:border-color .3s ease;}
-	[class*="form-tarea"] textarea {min-height:calc(var(--form-h, var(--fom-ta-h)) - (var(--fom-pad) * 2));}
-	[class*="form-tarea"]:hover {border-color:var(--form-focus-bd-c, var(--moc)); transition:border-color .3s ease;}
-	[class*="form-tarea"][data-disabled] {background-color:var(--form-dis-bg-c, var(--dis-bg)); border-color:var(--form-dis-bd-c, var(--dis-bdr)); color:var(--form-dis-ft-c, var(--fom-ph)); pointer-events:none; cursor:auto;}
+	/* Default */
+		[class*="form-tarea"] {display:flex; font-weight:400; transition:border-color .3s ease;}
+		[class*="form-tarea"]:hover {transition:border-color .3s ease;}
+		[class*="form-tarea"][data-disabled] {pointer-events:none; cursor:auto;}
+
+	/* Variable */
+		[class*="form-tarea"] {
+			background-color:var(--form-bg-c, var(--fom-bg));
+			border:var(--form-bd-w, 1px) solid var(--form-bd-c, var(--fom-bdr-c));
+			border-radius:var(--form-bd-r, var(--fom-br));
+			width:var(--form-w, 100%);
+			min-height:var(--form-h, var(--fom-ta-h));
+			padding:var(--form-pd-y, var(--fom-pad)) var(--form-pd-x, var(--fom-pad));
+			font-size:var(--form-ft-s, var(--fom-fs));
+			line-height:var(--fom-opt-sz);
+			color:var(--form-ft-c, var(--fom-fc));
+		}
+
+		[class*="form-tarea"] textarea {
+			min-height:calc(var(--form-h, var(--fom-ta-h)) - (var(--form-pd-x, var(--fom-pad)) * 2));
+		}
+
+		[class*="form-tarea"]:hover {
+			border-color:var(--form-focus-bd-c, var(--moc));
+		}
+
+		[class*="form-tarea"][data-disabled] {
+			background-color:var(--form-dis-bg-c, var(--dis-bg));
+			border-color:var(--form-dis-bd-c, var(--dis-bdr));
+			color:var(--form-dis-ft-c, var(--fom-ph));
+		}
+
+@media all and (max-width:720px) {
+	[class*="form-tarea"] {
+		background:var(--m-form-bg-c, var(--form-bg-c, var(--fom-bg)));
+		border:var(--m-form-bd-w, var(--form-bd-w, 1px)) solid var(--m-form-bd-c, var(--form-bd-c, var(--fom-bdr-c)));
+		border-radius:var(--m-form-bd-r, var(--form-bd-r, var(--fom-br)));
+		width:var(--m-form-w, var(--form-w, 100%));
+		min-height:var(--m-form-h, var(--form-h, var(--fom-h)));
+		padding:var(--m-form-pd-y, var(--form-pd-y, var(--fom-pad))) var(--m-form-pd-x, var(--form-pd-x, var(--fom-pad)));
+		font-size:var(--m-form-ft-s, var(--form-ft-s, var(--fom-fs)));
+		line-height:var(--m-fom-opt-sz, var(--fom-opt-sz));
+		color:var(--m-form-ft-c, var(--form-ft-c, var(--fom-fc)));
+	}
+
+	[class*="form-tarea"] textarea {
+		min-height:calc(var(--m-form-h, var(--form-h, var(--fom-ta-h))) - (var(--m-form-pd-x, var(--form-pd-x, var(--fom-pad))) * 2));
+	}
+
+	[class*="form-tarea"]:hover {
+		border-color:var(--m-form-focus-bd-c, var(--form-focus-bd-c, var(--moc)));
+	}
+
+	[class*="form-tarea"][data-disabled] {
+		background-color:var(--m-form-dis-bg-c, var(--form-dis-bg-c, var(--dis-bg)));
+		border-color:var(--m-form-dis-bd-c, var(--form-dis-bd-c, var(--dis-bdr)));
+		color:var(--m-form-dis-ft-c, var(--form-dis-ft-c, var(--fom-ph)));
+	}
+}

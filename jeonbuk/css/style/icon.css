@@ -1,9 +1,9 @@
 /* Background Image */
-	[class*="bi-"] {position:relative; display:inline-flex; justify-content:center; align-items:center; font-size:0; cursor:inherit;}
+	[class*="bi-"] {position:relative; display:var(--dp, inline-flex); justify-content:center; align-items:center; font-size:0; cursor:inherit;}
 	[class*="bi-"]:before,
 	[class*="bi-"]:after {content:""; display:inline-block; background-image:var(--bg-img); background-size:var(--bg-sz); font-size:0;}
 
 /* Icon */
-	[class*="ic-"] {position:relative; display:inline-flex; justify-content:center; align-items:center; font-size:0; cursor:inherit;}
+	[class*="ic-"] {position:relative; display:var(--dp, inline-flex); justify-content:center; align-items:center; font-size:0; cursor:inherit;}
 	[class*="ic-"]:before,
 	[class*="ic-"]:after {content:""; display:inline-block; background-image:var(--ic); background-size:var(--bg-sz); font-size:0;}

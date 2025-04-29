@@ -346,6 +346,15 @@
 			.form-opt-rdo-02 input:disabled + .opt-txt:after {visibility:visible; left:38px; top:35px; background-position:var(--bp-350) var(--bp-50); border-radius:0; width:36px; height:45px;}
 			.form-opt-rdo-02 input:disabled + .opt-txt img {opacity:0.5; filter:grayscale(100%);}
 
+	/* Text */
+		.form-txt-01 {
+			--form-bd-r:20px;
+			--form-h:95px;
+			--form-pd-x:36px;
+			--form-ft-s:20px;
+			--form-ft-w:700;
+		}
+
 /* Icon */
 	/* General */
 		.ic-cabinet:before {background-position:var(--bp-100) 0; width:18px; height:19px;}
@@ -366,6 +375,8 @@
 		.ic-pencle-02:before {background-position:var(--bp-550) var(--bp-50); width:13px; height:13px;}
 		.ic-plan:before {background-position:var(--bp-500) var(--bp-50); width:14px; height:13px;}
 		.ic-plus:before {background-position:var(--bp-400) var(--bp-50); width:12px; height:12px;}
+		.ic-plus-02 {background:var(--mc); border-radius:50%; width:19px; height:19px;}
+		.ic-plus-02:before {background-position:var(--bp-400) var(--bp-100); width:7px; height:7px;}
 		.ic-refresh:before {background-position:var(--bp-500) 0; width:14px; height:15px;}
 		.ic-search:before {background-position:var(--bp-700) 0; width:19px; height:19px;}
 		.ic-setting:before {background-position:var(--bp-300) 0; width:15px; height:15px;}
@@ -395,6 +406,7 @@
 			.ic-u-arr-01:before {background-position:var(--bp-150) 0; width:21px; height:36px;}
 			.ic-u-arr-02:before {background-position:var(--bp-200) var(--bp-50); width:8px; height:6px;}
 			.ic-u-arr-03:before {background-position:var(--bp-200) var(--bp-100); width:11px; height:10px;}
+			.ic-u-arr-04:before {background-position:var(--bp-350) var(--bp-100); width:10px; height:8px;}
 
 		/* Up & Rignt */
 			.ic-ur-arr-01:before {background-position:var(--bp-150) var(--bp-50); width:8px; height:8px;}

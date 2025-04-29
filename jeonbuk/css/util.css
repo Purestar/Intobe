@@ -9,6 +9,9 @@
 /* Margin */
 	.mt-0 {margin-top:0 !important;}
 
+/* Rotate */
+	.tr-180 {rotate:180deg;}
+
 @media all and (max-width:720px) {
 	/* Flex */
 		.m-flex-1 {flex:1;}

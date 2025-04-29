@@ -202,6 +202,13 @@
 				.form-opt-rdo-02 .opt-txt {font-size:3.88vw;}
 				.form-opt-rdo-02 .opt-txt:before {flex:0 0 27.78vw; border-radius:2.50vw; width:27.78vw; height:27.78vw;}
 				.form-opt-rdo-02 input:disabled + .opt-txt:after {left:9.44vw; top:7.36vw; width:9.31vw; height:10.97vw;}
+		/* Text */
+			.form-txt-01 {
+				--form-bd-r:2.78vw;
+				--form-h:15.42vw;
+				--form-pd-x:3.89vw;
+				--form-ft-s:4.44vw;
+			}
 
 	/* Icon */
 		/* General */
@@ -220,6 +227,8 @@
 			.ic-pencle-02:before {width:3.19vw; height:3.19vw;}
 			.ic-plan:before {width:3.47vw; height:3.33vw;}
 			.ic-plus:before {width:2.92vw; height:2.92vw;}
+			.ic-plus-02 {width:4.44vw; height:4.44vw;}
+			.ic-plus-02:before {width:2.08vw; height:2.08vw;}
 			.ic-search:before {width:4.86vw; height:4.86vw;}
 			.ic-setting:before {width:2.50vw; height:2.22vw;}
 			.ic-refresh:before {width:3.06vw; height:3.47vw;}
@@ -244,6 +253,7 @@
 				.ic-u-arr-01:before {width:3.33vw; height:6.67vw;}
 				.ic-u-arr-02:before {width:1.53vw; height:0.83vw;}
 				.ic-u-arr-03:before {width:2.22vw; height:1.94vw;}
+				.ic-u-arr-04:before {width:2.36vw; height:2.08vw;}
 
 			/* Up & Rignt */
 				.ic-ur-arr-01:before {width:2.08vw; height:2.08vw;}
