@@ -1150,6 +1150,24 @@
 						</template>
 					</p-popup>
 
+					<!-- 자기소개서 복제 -->
+					<button type="button" class="btn-type" @click="togglePopup('careeradm-02')">자기소개서 복제</button>
+					<p-popup class="pop-type-alert-01" modal :style="{ width: '580px' }" v-model:visible="popups['careeradm-02']">
+						<div class="pop-cont">
+							<div style="--dp:flex; --flex-d:column; --items:center; --txt-a:center;">
+								<h2 class="txt-01"><strong>자기소개서 복제</strong></h2>
+								<p style="--mg-t:16px; --m-mg-t:3.33vw;">복제할 자기소개서의 제목을 입력해주세요</p>
+								<div class="form-txt" style="--mg-t:40px; --m-mg-t:8.33vw;">
+									<p-input placeholder="직업목표와 비전_복제"></p-input>
+								</div>
+							</div>
+						</div>
+						<template #footer>
+							<button type="button" class="btn-type-b-blk">취소</button>
+							<button type="button" class="btn-type">복제</button>
+						</template>
+					</p-popup>
+
 					<button class="btn-type" disabled>주제선택</button>
 					<button class="btn-type" disabled>포트폴리오 등록</button>
 					<button class="btn-type" disabled>포트폴리오 URL수정</button>

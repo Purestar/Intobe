@@ -176,6 +176,7 @@
 					--form-opt-btn-ft-s: 3.33vw;
 					--form-opt-btn-h: 8.33vw;
 					--form-opt-btn-pd-x: 4.17vw;
+					--form-opt-btn-gap:1.67vw;
 				}
 
 				[class*="form-opt-btn-03"] {
@@ -223,6 +224,8 @@
 			.ic-setting:before {width:2.50vw; height:2.22vw;}
 			.ic-refresh:before {width:3.06vw; height:3.47vw;}
 			.ic-trash:before {width:3.61vw; height:3.89vw;}
+			.ic-w-comp:before {width:4.17vw; height:3.19vw;}
+			.ic-w-temp:before {width:4.17vw; height:3.47vw;}
 
 		/* Chatbot */
 			.ic-chat-history:before {width:6.67vw; height:5.00vw;}

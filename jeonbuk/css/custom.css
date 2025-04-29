@@ -278,10 +278,14 @@
 				--form-opt-btn-ft-w: 500;
 				--form-opt-btn-h: 34px;
 				--form-opt-btn-pd-x: 20px;
+				--form-opt-btn-gap:8px;
 
 				--form-opt-btn-chk-bg-c:black;
 				--form-opt-btn-chk-ft-c:white;
 			}
+
+			[class*="form-opt-btn-02"] [class*="ic-"] {opacity:0.5;}
+			[class*="form-opt-btn-02"] input:checked + .opt-txt [class*="ic-"] {opacity:1;}
 
 			.form-opt-btn-02-01 {
 				--form-opt-btn-chk-bg-c:#f3f6ff;
@@ -366,6 +370,8 @@
 		.ic-search:before {background-position:var(--bp-700) 0; width:19px; height:19px;}
 		.ic-setting:before {background-position:var(--bp-300) 0; width:15px; height:15px;}
 		.ic-trash:before {background-position:var(--bp-350) var(--bp-50); width:16px; height:17px;}
+		.ic-w-comp:before {background-position:var(--bp-250) var(--bp-100); width:26px; height:19px;}
+		.ic-w-temp:before {background-position:var(--bp-300) var(--bp-100); width:24px; height:19px;}
 
 	/* Chatbot */
 		.ic-chat-history:before {background-position:var(--bp-650) var(--bp-50); width:26px; height:20px;}
