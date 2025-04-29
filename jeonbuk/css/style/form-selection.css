@@ -71,6 +71,7 @@
 /* Variation */
 	/* Button */
 		[class*="form-opt-btn"] .opt-txt {
+			gap: var(--form-opt-btn-gap);
 			border-color:var(--form-opt-btn-bd-c, var(--mc));
 			border-width:var(--form-opt-btn-bd-w, 1px);
 			border-radius:var(--form-opt-btn-bd-r, var(--fom-br));

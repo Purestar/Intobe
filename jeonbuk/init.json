@@ -39,7 +39,7 @@
 				], "state": "comp"},
 				{ "id": "커리어관리", "submenu": [
 					{ "menu": "홈", "src": "./page/UCA_010100.html", "state": "comp" },
-					{ "menu": "취업스펙분석", "src": "./page/.html", "state": "" },
+					{ "menu": "취업스펙분석", "src": "./page/UCA_020000.html", "state": "comp" },
 					{ "menu": "스펙정보", "src": "./page/.html", "state": "" },
 					{ "id": "자기소개서", "submenu": [
 						{ "menu": "목록", "src": "./page/.html", "state": "" },

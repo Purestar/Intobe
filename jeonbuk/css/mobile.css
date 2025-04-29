@@ -17,6 +17,7 @@
 
 			--aco-head-h:14.86vw;
 			--aco-head-pd-x:5vw;
+			--aco-head-pd-y:5.56vw;
 			--aco-head-ft-s:3.89vw;
 
 			--aco-cont-pd-a:5.56vw;
@@ -131,6 +132,13 @@
 			--chip-ft-s:2.78vw;
 		}
 
+		[class*="chip-type-04"] {
+			--chip-bd-r:6.94vw;
+			--chip-pd-x:3.33vw;
+			--chip-h:6.94vw;
+			--chip-ft-s:3.33vw;
+		}
+
 	/* Divider */
 		/* Horizontal */
 			.div-h-01 {--div-gap:6.94vw;}
@@ -167,6 +175,15 @@
 					--form-opt-btn-h: 8.33vw;
 					--form-opt-btn-pd-x: 4.17vw;
 				}
+
+				[class*="form-opt-btn-03"] {
+					--form-opt-btn-bd-w: 0.28vw;
+					--form-opt-btn-bd-r: 8.89vw;
+					--form-opt-btn-ft-s: 3.33vw;
+					--form-opt-btn-h: 8.89vw;
+					--form-opt-btn-gap:2.78vw;
+				}
+				[class*="form-opt-btn-03"] .opt-txt {padding:0 2.78vw 0 1.11vw;}
 
 			/* Checkbox */
 				.form-opt-chk-01 .opt-txt:before,
@@ -221,6 +238,7 @@
 			/* Up */
 				.ic-u-arr-01:before {width:3.33vw; height:6.67vw;}
 				.ic-u-arr-02:before {width:1.53vw; height:0.83vw;}
+				.ic-u-arr-03:before {width:2.22vw; height:1.94vw;}
 
 			/* Up & Rignt */
 				.ic-ur-arr-01:before {width:2.08vw; height:2.08vw;}

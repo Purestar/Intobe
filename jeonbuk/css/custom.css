@@ -26,6 +26,7 @@
 
 		--aco-head-h:94px;
 		--aco-head-pd-x:40px;
+		--aco-head-pd-y:36px;
 		--aco-head-ft-c:black;
 		--aco-head-ft-s:18px;
 		--aco-head-ft-w:500;
@@ -198,6 +199,16 @@
 		--chip-ft-w:500;
 	}
 
+	[class*="chip-type-04"] {
+		--chip-bg-c:#f1f1f1;
+		--chip-bd-c:#f1f1f1;
+		--chip-bd-r:26px;
+		--chip-pd-x:10px;
+		--chip-h:26px;
+		--chip-ft-s:13px;
+		--chip-ft-c:#666666;
+		--chip-ft-w:500;
+	}
 
 /* Divider */
 	/* Horizontal */
@@ -278,6 +289,26 @@
 				--form-opt-btn-dis-ft-c:#bbb;
 			}
 
+			[class*="form-opt-btn-03"] {
+				--form-opt-btn-bg-c: white;
+				--form-opt-btn-bd-c: #e2e2e2;
+				--form-opt-btn-bd-w: 2px;
+				--form-opt-btn-bd-r: 34px;
+				--form-opt-btn-ft-c: #666;
+				--form-opt-btn-ft-s: 14px;
+				--form-opt-btn-ft-w: 500;
+				--form-opt-btn-h: 34px;
+				--form-opt-btn-gap:16px;
+
+				--form-opt-btn-chk-bg-c:white;
+				--form-opt-btn-chk-bd-c: #a6165f;
+				--form-opt-btn-chk-ft-c:#a6165f;
+
+				white-space:nowrap;
+			}
+			[class*="form-opt-btn-03"] .opt-txt {padding:0 16px 0 4px;}
+			[class*="form-opt-btn-03"] input:checked + .opt-txt [class*="chip-type"] {--chip-bg-c:#a6165f; --chip-ft-c:white;}
+
 		/* Checkbox */
 			.form-opt-chk-01 .opt-txt:before,
 			.form-opt-chk-01 input:checked + .opt-txt:before,
@@ -354,6 +385,7 @@
 		/* Up */
 			.ic-u-arr-01:before {background-position:var(--bp-150) 0; width:21px; height:36px;}
 			.ic-u-arr-02:before {background-position:var(--bp-200) var(--bp-50); width:8px; height:6px;}
+			.ic-u-arr-03:before {background-position:var(--bp-200) var(--bp-100); width:11px; height:10px;}
 
 		/* Up & Rignt */
 			.ic-ur-arr-01:before {background-position:var(--bp-150) var(--bp-50); width:8px; height:8px;}
