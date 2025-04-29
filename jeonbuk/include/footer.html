@@ -115,7 +115,9 @@
 			</div>
 		</div>
 		<div class="chatbot-chat-foot">
-			<n-input v-model:value="value" type="text" placeholder="메세지를 입력하세요"></n-input>
+			<div class="form-txt">
+				<p-input placeholder="메세지를 입력하세요"></p-input>
+			</div>
 			<button type="button" class="chat-send-btn">
 				<!-- 기본 아이콘 -->
 				<i class="ic-chat-send"></i>
@@ -130,11 +132,13 @@
 
 		<div class="chatbot-chat-history-wrap">
 			<div class="chatbot-chat-head">
-				<div class="chatbot-chat-head-left flex-1">
+				<div class="chatbot-chat-head-left flex-1" style="--items:center;">
 					<button type="button" class="chatbot-history-btn"><i class="ic-chat-history"></i></button>
 					<button type="button"><i class="ic-chat-new"></i></button>
 					<button type="button" class="chatbot-history-search-btn"><i class="ic-search"></i></button>
-					<input type="text" class="chatbot-history-search">
+					<div class="form-txt chatbot-history-search-wrap">
+						<p-input placeholder="검색어를 입력하세요" class="chatbot-history-search"></p-input>
+					</div>
 				</div>
 				<div class="chatbot-chat-head-right">
 					<button type="button" class="chatbot-history-close"><i class="ic-chat-close"></i></button>
@@ -225,7 +229,8 @@
 							<li><button type="button">제목 바꾸기</button></li>
 							<li><button type="button">삭제</button></li>
 						</ul>
-					</li><li>
+					</li>
+					<li>
 						<button type="button">스펙 등록하는 법</button>
 						<button type="button" class="chatbot-btn-tdot"><i class="ic-chat-tdot"></i></button>
 						<ul class="chatbot-item-util-menu">

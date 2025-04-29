@@ -135,6 +135,7 @@
 /* Bullet */
 	/* Circle */
 		.bul-cir-01 {--bul-gap:5px; --bul-w:2px; --bul-ft-c:#666; --bul-gap-y:12px;}
+		.bul-cir-02 {--bul-gap:12px; --bul-w:12px; --bul-gap-y:18px;}
 
 	/* Number */
 		.bul-num-01 {--bul-bg-c:black; --bul-bd-r:50%; --bul-gap:13px; --bul-w:20px; --bul-ft-s:14px; --bul-sur:''; --bul-ft-c:white;}
@@ -209,6 +210,7 @@
 		[class*="div-v-03"] {--div-bg-c:#e2e2e2; --div-h:10px; --div-gap:12px;}
 		.div-v-03-01 {--div-h:48px;}
 		.div-v-03-02 {--div-gap:8px;}
+		.div-v-03-03 {--div-h:48px; --div-gap-x:0; --div-gap-y:50px;}
 		.div-v-04 {--div-bg-c:black; --div-h:14px; --div-gap:9px;}
 
 	/* Arrow */

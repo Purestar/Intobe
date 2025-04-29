@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="Management">
+		<meta name="description" content="Management">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script type="module" src="../js/index.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
+		<script type="module" src="../js/module.js"></script>
+		<script src="../js/pub.js"></script>
+		<link rel="icon" href="../favicon.ico" sizes="any">
+		<link rel="stylesheet" href="../css/global.css">
+	</head>
+	<body>
+		<!-- 헤더 -->
+		<div class="sub-header">
+			<div data-include="../include/header.html"></div>
+		</div>
+
+		<!-- 본문 -->
+		<div id="container">
+			<div class="layout-inner sub-layout">
+				<h2 class="txt-28-36"><strong>나의 커리어 현황</strong></h2>
+				<div style="--grid-t-col:3; --m-grid-t-col:1; --gap:30px; --m-gap:8.33vw; --mg-t:36px; --m-mg-t:5.56vw;">
+					<div style="--w:449px; --m-w:100%">
+						<h3 class="txt-20-32"><b>성적</b></h3>
+						<div class="box-type-02" style="--box-pd-x:0; --box-pd-y:24px; --mg-t:20px; --m-mg-t:3.33vw; --m-box-pd-y:5vw;">
+							<ul class="div-v-03-03 div-grid cr-blk" style="--div-grid-t-col:3; ">
+								<li><p><b>평균평점</b><br><strong class="txt-18-26">3.80</strong>점</p></li>
+								<li><p><b>취득학점</b><br><strong class="txt-18-26">69</strong>학점</p></li>
+								<li><p><b>비교과이수</b><br><strong class="txt-18-26">0</strong>건</p></li>
+								<li><p><b>TOEIC</b><br><strong class="txt-18-26">800</strong>점</p></li>
+								<li><p><b>TOEIC Speaking</b><br><strong class="txt-18-26">IH</strong></p></li>
+								<li><p><b>G-TELP</b><br><strong class="txt-18-26">LEVEL2</strong></p></li>
+							</ul>
+						</div>
+					</div>
+					<div style="--w:449px; --m-w:100%">
+						<h3 class="txt-20-32"><b>스펙</b></h3>
+						<div class="box-type-02" style="--box-pd-x:0; --box-pd-y:24px; --mg-t:20px; --m-mg-t:3.33vw; --m-box-pd-y:5vw;">
+							<ul class="div-v-03-03 div-grid cr-blk" style="--div-grid-t-col:3;">
+								<li><p><b>어학성적</b><br><strong class="txt-18-26">2</strong>개</p></li>
+								<li><p><b>자격증</b><br><strong class="txt-18-26">2</strong>개</p></li>
+								<li><p><b>교육이수</b><br><strong class="txt-18-26">2</strong>개</p></li>
+								<li><p><b>교내/외 활동</b><br><strong class="txt-18-26">0</strong>회</p></li>
+								<li><p><b>해외경험</b><br><strong class="txt-18-26">0</strong>회</p></li>
+								<li><p><b>수상이력</b><br><strong class="txt-18-26">1</strong>회</p></li>
+							</ul>
+						</div>
+					</div>
+					<div style="--w:242px; --m-w:100%;">
+						<h3 class="txt-20-32"><b>진로준비</b></h3>
+						<div class="box-type-02" style="--box-pd-x:30px; --box-pd-y:24px; --mg-t:20px; --m-mg-t:3.33vw; --m-box-pd-y:5vw; --m-box-pd-x:3.33vw;">
+							<div class="pc">
+								<ul class="div-h-02 cr-blk" style="--div-gap:17px;">
+									<li><p style="--dp:flex; --content:space-between; --items:center;"><b>포트폴리오</b><span><strong class="txt-18-26">00</strong>건</span></p></li>
+									<li><p style="--dp:flex; --content:space-between; --items:center;"><b>자기소개서</b><span><strong class="txt-18-26">00</strong>건</span></p></li>
+									<li><p style="--dp:flex; --content:space-between; --items:center;"><b>이력서</b><span><strong class="txt-18-26">00</strong>개</span></p></li>
+								</ul>
+							</div>
+							<div class="mobile">
+								<ul class="div-v-03" style="--content:center; --m-div-gap:3.33vw;">
+									<li><p style="--dp:flex; --content:space-between; --items:center;"><b>포트폴리오</b><strong class="txt-18-26">00</strong>건</p></li>
+									<li><p style="--dp:flex; --content:space-between; --items:center;"><b>자기소개서</b><strong class="txt-18-26">00</strong>건</p></li>
+									<li><p style="--dp:flex; --content:space-between; --items:center;"><b>이력서</b><strong class="txt-18-26">00</strong>개</p></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div style="--content:space-between; --items:center; --m-flex-d:column; --m-gap:4.17vw; --mg-t:80px; --m-mg-t:11.11vw; --m-items:flex-start;">
+					<h2 class="txt-28-36"><strong>나의 커리어 분석</strong></h2>
+					<p class="txt-14-24" style="--items:center; --gap:12px; --m-gap:1.67vw;"><i class="ic-info"></i>현재 전북대학교 학생의 커리어와 나의 커리어를 비교해보세요!</p>
+				</div>
+
+				<p-tabs class="tab-wrap-01" style="--mg-t:36px; --m-mg-t:5.56vw;" value="0">
+					<p-tab-list class="tab-menu-01">
+						<p-tab value="0">전체</p-tab>
+						<p-tab value="1">우수그룹</p-tab>
+						<p-tab value="2">유사그룹</p-tab>
+					</p-tab-list>
+					<p-tab-panels>
+						<p-tab-panel value="0">
+							<div style="--grid-t-col:3; --m-grid-t-col:1; --gap:30px; --m-gap:8.33vw; --mg-t:36px; --m-mg-t:5.56vw;">
+								<div style="--w:449px; --m-w:100%">
+									<h3 class="txt-20-32"><b>평균성적 현황</b></h3>
+									<div class="box-type-02" style="--box-pd-x:0; --box-pd-y:24px; --mg-t:20px; --m-mg-t:3.33vw; --m-box-pd-y:5vw;">
+										<div id="avgPerStat" class="e-chart-wrap" style="--h:236px; --m-h:63.47vw;"></div>
+										<ul class="bul-cir-02 cr-blk txt-14-24" style="--flex-d:row; --content:center; --mg-t:36px; --m-mg-t:5.56vw;">
+											<li style="--bul-c:#b3dd63;">나</li>
+											<li style="--bul-c:#26abd0;">전체평균</li>
+										</ul>
+										<div style="--pd-t:36px; --bd-c:#e2e2e2; --bd-s:solid; --bd-w:1px 0 0; --m-pd-t:5vw; --mg-t:40px; --m-mg-t:8.89vw;">
+											<ul class="div-v-03-03 div-grid cr-blk" style="--div-grid-t-col:3;">
+												<li><p><b>평균평점</b><br><strong class="txt-18-26">3.80</strong>점</p></li>
+												<li><p><b>취득학점</b><br><strong class="txt-18-26">69</strong>학점</p></li>
+												<li><p><b>비교과이수</b><br><strong class="txt-18-26">0</strong>건</p></li>
+												<li><p><b>TOEIC</b><br><strong class="txt-18-26">800</strong>점</p></li>
+												<li><p><b>TOEIC Speaking</b><br><strong class="txt-18-26">IH</strong></p></li>
+												<li><p><b>G-TELP</b><br><strong class="txt-18-26">LEVEL2</strong></p></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div style="--w:449px; --m-w:100%">
+									<h3 class="txt-20-32"><b>평균 스펙 현황</b></h3>
+									<div class="box-type-02" style="--box-pd-x:0; --box-pd-y:24px; --mg-t:20px; --m-mg-t:3.33vw; --m-box-pd-y:5vw;">
+										<div id="avgSpecStat" class="e-chart-wrap" style="--h:236px; --m-h:63.47vw;"></div>
+										<ul class="bul-cir-02 cr-blk txt-14-24" style="--flex-d:row; --content:center; --mg-t:36px; --m-mg-t:5.56vw;">
+											<li style="--bul-c:#b3dd63;">나</li>
+											<li style="--bul-c:#26abd0;">전체평균</li>
+										</ul>
+										<div style="--pd-t:36px; --bd-c:#e2e2e2; --bd-s:solid; --bd-w:1px 0 0; --m-pd-t:5vw; --mg-t:40px; --m-mg-t:8.89vw;">
+											<ul class="div-v-03-03 div-grid cr-blk" style="--div-grid-t-col:3;">
+												<li><p><b>어학성적</b><br><strong class="txt-18-26">2</strong>개</p></li>
+												<li><p><b>자격증</b><br><strong class="txt-18-26">2</strong>개</p></li>
+												<li><p><b>교육이수</b><br><strong class="txt-18-26">2</strong>개</p></li>
+												<li><p><b>교내/외 활동</b><br><strong class="txt-18-26">0</strong>회</p></li>
+												<li><p><b>해외경험</b><br><strong class="txt-18-26">0</strong>회</p></li>
+												<li><p><b>수상이력</b><br><strong class="txt-18-26">1</strong>회</p></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div style="--w:242px; --m-w:100%;">
+									<h3 class="txt-20-32"><b>평균 진로준비 현황</b></h3>
+									<div class="box-type-02" style="--box-pd-x:0; --box-pd-y:24px; --mg-t:20px; --m-mg-t:3.33vw; --m-box-pd-y:5vw;">
+										<div id="careerPrepStat" class="e-chart-wrap" style="--h:236px; --m-h:39.17vw;"></div>
+										<ul class="bul-cir-02 cr-blk txt-14-24" style="--flex-d:row; --content:center; --mg-t:36px; --m-mg-t:5.56vw;">
+											<li style="--bul-c:#b3dd63;">나</li>
+											<li style="--bul-c:#26abd0;">전체평균</li>
+										</ul>
+										<div style="--pd-x:30px; --pd-t:36px; --bd-c:#e2e2e2; --bd-s:solid; --bd-w:1px 0 0; --m-pd-t:5vw; --m-pd-x:0; --mg-t:40px; --m-mg-t:8.89vw;">
+											<div class="pc">
+												<ul class="div-h-02 cr-blk" style="--div-gap:17px;">
+													<li><p style="--dp:flex; --content:space-between; --items:center;"><b>포트폴리오</b><span><strong class="txt-18-26">00</strong>건</span></p></li>
+													<li><p style="--dp:flex; --content:space-between; --items:center;"><b>자기소개서</b><span><strong class="txt-18-26">00</strong>건</span></p></li>
+													<li><p style="--dp:flex; --content:space-between; --items:center;"><b>이력서</b><span><strong class="txt-18-26">00</strong>개</span></p></li>
+												</ul>
+											</div>
+											<div class="mobile">
+												<ul class="div-v-03" style="--content:center; --m-div-gap:3.33vw;">
+													<li><p style="--dp:flex; --content:space-between; --items:center;"><b>포트폴리오</b><strong class="txt-18-26">00</strong>건</p></li>
+													<li><p style="--dp:flex; --content:space-between; --items:center;"><b>자기소개서</b><strong class="txt-18-26">00</strong>건</p></li>
+													<li><p style="--dp:flex; --content:space-between; --items:center;"><b>이력서</b><strong class="txt-18-26">00</strong>개</p></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="box-type-03 cr-blk" style="--txt-a:center; --mg-t:40px; --m-mg-t:5.56vw;">
+								현재 <b>김전북님</b>은 컴퓨터학부 전체 학생 평균 취득 점수<br class="mobile">보다 <b>평점, TOEIC, G-TEPL</b> 점수에서 우수한 점수를<br class="mobile"> 보이고 있으며,<br class="pc"><b>취득 학점, TOEIC  Speaking</b>의 점수는<br class="mobile"> 떨어지고 있어 분발이 필요합니다.
+							</div>
+
+							<div style="--grid-t-col:3; --m-grid-t-col:1; --gap:30px; --m-gap:8.33vw; --mg-t:36px; --m-mg-t:5.56vw;">
+								<div>
+									<h3 class="txt-20-32"><b>가장 많이 취득한 자격증</b></h3>
+									<div class="box-type-02" style="--mg-t:20px; --m-mg-t:3.33vw;">
+										<ul class="bul-num-01">
+											<li><b>정보처리기사</b><span class="txt-14-24">산업인력공단</span></li>
+											<li><b>ADsP</b><span class="txt-14-24">한국데이터산업진흥원</span></li>
+											<li><b>SW테스트전문가</b><span class="txt-14-24">한국정보통신기술</span></li>
+										</ul>
+									</div>
+								</div>
+								<div>
+									<h3 class="txt-20-32"><b>가장 많이 보유한 어학성적</b></h3>
+									<div class="box-type-02" style="--mg-t:20px; --m-mg-t:3.33vw;">
+										<ul class="bul-num-01">
+											<li><b>TOELC</b><span class="txt-14-24">영어</span></li>
+											<li><b>G-TELP</b><span class="txt-14-24">영어</span></li>
+											<li><b>HSK</b><span class="txt-14-24">중국어</span></li>
+										</ul>
+									</div>
+								</div>
+								<div>
+									<h3 class="txt-20-32"><b>가장 많이한 해외경험</b></h3>
+									<div class="box-type-02" style="--mg-t:20px; --m-mg-t:3.33vw;">
+										<ul class="bul-num-01">
+											<li><b>어학연수</b></li>
+											<li><b>워킹홀리데이</b></li>
+											<li><b>유학</b></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</p-tab-panel>
+						<p-tab-panel value="1"></p-tab-panel>
+						<p-tab-panel value="2"></p-tab-panel>
+					</p-tab-panels>
+				</p-tabs>
+			</div>
+		</div>
+
+		<!-- 푸터 -->
+		<div data-include="../include/footer.html"></div>
+
+		<script>
+			window.addEventListener('load', () => {
+				let isMobile = window.innerWidth < 720;
+				let resizeTimeout = null;
+
+				const avgPerStatItems = ['평점', '취득학점', 'TOELC', '토익스피킹', 'OPIC', 'G-PTELP'];
+				const avgSpecStatItems = ['자격증', '해외경험', '수상이력', '어학성적', '교육이수', '교내/외 활동'];
+
+				const createRadarOption = (items) => {
+					const reversedItems = [...items].reverse();
+
+					return {
+						color: ['#b3dd63', '#26abd0'], symbol: 'none',
+						radar: {
+							indicator: reversedItems.map(item => ({ name: item, max: 100 })),
+							name: { fontSize: isMobile ? calculatePercentage(24) : 14, textStyle: { color: '#666' } },
+							startAngle: 150
+						},
+						series: [{
+							name: '방사형 차트', type: 'radar', areaStyle: { opacity: 0.3 },
+							data: [
+								{ value: reversedItems.map(() => getRandomValue(100)), name: '나' },
+								{ value: reversedItems.map(() => getRandomValue(100)), name: '전체평균' }
+							]
+						}]
+					};
+				};
+
+				const careerPrepStatOption = {
+					grid: {
+						left: isMobile ? calculatePercentage(100) : 24,
+						right: isMobile ? calculatePercentage(100) : 24,
+						top: 0,
+						bottom: isMobile ? calculatePercentage(40) : 24,
+						containLabel: false
+					},
+					xAxis: {
+						type: 'category',
+						data: ['포트폴리오', '자기소개서', '이력서'],
+						axisLine: { show: true, lineStyle: { color: '#e2e2e2' } }, axisTick: { show: false },
+						axisLabel: {
+							interval: 0, overflow: 'break', color: '#666',
+							fontSize: isMobile ? calculatePercentage(24) : 14
+						}
+					},
+					yAxis: { type: 'value', show: false },
+					series: [
+						{
+							name: '나', type: 'bar',
+							data: [getRandomValue(100), getRandomValue(100), getRandomValue(100)],
+							barWidth: isMobile ? calculatePercentage(40) : 20,
+							barGap: 0,
+							itemStyle: {
+								color: '#b3dd63',
+								borderRadius: [isMobile ? calculatePercentage(40) : 20, isMobile ? calculatePercentage(40) : 20, 0, 0]
+							}
+						},
+						{
+							name: '전체평균', type: 'bar',
+							data: [getRandomValue(100), getRandomValue(100), getRandomValue(100)],
+							barWidth: isMobile ? calculatePercentage(40) : 20,
+							barGap: 0,
+							itemStyle: {
+								color: '#26abd0',
+								borderRadius: [isMobile ? calculatePercentage(40) : 20, isMobile ? calculatePercentage(40) : 20, 0, 0]
+							}
+						}
+					]
+				};
+
+				const avgPerStatScore = echarts.init(document.getElementById('avgPerStat'));
+				const avgSpecStatScore = echarts.init(document.getElementById('avgSpecStat'));
+				const careerPrepStatScore = echarts.init(document.getElementById('careerPrepStat'));
+
+				avgPerStatScore.setOption(createRadarOption(avgPerStatItems));
+				avgSpecStatScore.setOption(createRadarOption(avgSpecStatItems));
+				careerPrepStatScore.setOption(careerPrepStatOption);
+
+				window.addEventListener('resize', () => {
+					if (resizeTimeout) clearTimeout(resizeTimeout);
+
+					resizeTimeout = setTimeout(() => {
+						isMobile = window.innerWidth < 720;
+
+						avgPerStatScore.setOption({
+							radar: { name: { fontSize: isMobile ? calculatePercentage(24) : 14 } }
+						});
+
+						avgSpecStatScore.setOption({
+							radar: { name: { fontSize: isMobile ? calculatePercentage(24) : 14 } }
+						});
+
+						careerPrepStatScore.setOption({
+							grid: {
+								left: isMobile ? calculatePercentage(100) : 24,
+								right: isMobile ? calculatePercentage(100) : 24,
+								bottom: isMobile ? calculatePercentage(40) : 24,
+							},
+							xAxis: {
+								axisLabel: { fontSize: isMobile ? calculatePercentage(24) : 14 }
+							},
+							series: [
+								{
+									barWidth: isMobile ? calculatePercentage(40) : 20,
+									itemStyle: { borderRadius: [isMobile ? calculatePercentage(40) : 20, isMobile ? calculatePercentage(40) : 20, 0, 0] }
+								},
+								{
+									barWidth: isMobile ? calculatePercentage(40) : 20,
+									itemStyle: { borderRadius: [isMobile ? calculatePercentage(40) : 20, isMobile ? calculatePercentage(40) : 20, 0, 0] }
+								},
+							]
+						});
+
+						avgPerStatScore.resize();
+						avgSpecStatScore.resize();
+						careerPrepStatScore.resize();
+					}, 50);
+				});
+			});
+		</script>
+	</body>
+</html>

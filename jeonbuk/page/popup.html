@@ -1037,7 +1037,119 @@
 			<div style="--flex-d:column; --gap:10px;">
 				<h1 style="--ft-s:20px; --ft-w:bold;">커리어관리</h1>
 				<div style="--dp:grid; --grid-t-col:7; --gap:10px;">
-					<button class="btn-type" disabled>비교과이수이력</button>
+					<!-- 비교과 프로그램 이수이력 -->
+					<button type="button" class="btn-type" @click="togglePopup('careeradm-01')">비교과 프로그램 이수이력</button>
+					<p-popup class="pop-type-01" modal :style="{ width: '580px' }" v-model:visible="popups['careeradm-01']">
+						<template #header>
+							<h1 class="pop-title">비교과 프로그램 이수이력</h1>
+						</template>
+						<div class="pop-cont" style="--dp:flex; --flex-d:column;">
+							<div class="box-type-03" style="--box-pd-x:0;">
+								<ul class="div-v-03-03 div-grid cr-blk" style="--div-grid-t-col:5;">
+									<li><p><b>학습역량</b><br><strong class="txt-18-26">2</strong>개</p></li>
+									<li><p><b>진로/창업</b><br><strong class="txt-18-26">2</strong>개</p></li>
+									<li><p><b>학생활동</b><br><strong class="txt-18-26">2</strong>개</p></li>
+									<li><p><b>글로벌</b><br><strong class="txt-18-26">0</strong>개</p></li>
+									<li><p><b>법정의무</b><br><strong class="txt-18-26">0</strong>개</p></li>
+								</ul>
+							</div>
+							<div class="brd-wrap" data-scroll="y" style="--mg-t:40px; --m-mg-t:5.56vw;">
+								<ul class="brd-lst-03 mt-0">
+									<li>
+										<div style="--gap:8px; --flex-d:column;">
+											<span class="txt-14-24" style="--ft-c:#666;">학습역량</span>
+											<a href="#" class="layout-ellipsis brd-tit">[지방대학활성화사업(SW)] IT, 전산직 취업전략 그리고 합격사례</a>
+											<p>2024.06.03 ~ 2024.09.11</p>
+										</div>
+									</li>
+									<li>
+										<div style="--gap:8px; --flex-d:column;">
+											<span class="txt-14-24" style="--ft-c:#666;">학습역량</span>
+											<a href="#" class="layout-ellipsis brd-tit">[지방대학활성화사업(SW)] IT, 전산직 취업전략 그리고 합격사례</a>
+											<p>2024.06.03 ~ 2024.09.11</p>
+										</div>
+									</li>
+									<li>
+										<div style="--gap:8px; --flex-d:column;">
+											<span class="txt-14-24" style="--ft-c:#666;">학습역량</span>
+											<a href="#" class="layout-ellipsis brd-tit">[지방대학활성화사업(SW)] IT, 전산직 취업전략 그리고 합격사례</a>
+											<p>2024.06.03 ~ 2024.09.11</p>
+										</div>
+									</li>
+									<li>
+										<div style="--gap:8px; --flex-d:column;">
+											<span class="txt-14-24" style="--ft-c:#666;">학습역량</span>
+											<a href="#" class="layout-ellipsis brd-tit">[지방대학활성화사업(SW)] IT, 전산직 취업전략 그리고 합격사례</a>
+											<p>2024.06.03 ~ 2024.09.11</p>
+										</div>
+									</li>
+									<li>
+										<div style="--gap:8px; --flex-d:column;">
+											<span class="txt-14-24" style="--ft-c:#666;">학습역량</span>
+											<a href="#" class="layout-ellipsis brd-tit">[지방대학활성화사업(SW)] IT, 전산직 취업전략 그리고 합격사례</a>
+											<p>2024.06.03 ~ 2024.09.11</p>
+										</div>
+									</li>
+									<li>
+										<div style="--gap:8px; --flex-d:column;">
+											<span class="txt-14-24" style="--ft-c:#666;">학습역량</span>
+											<a href="#" class="layout-ellipsis brd-tit">[지방대학활성화사업(SW)] IT, 전산직 취업전략 그리고 합격사례</a>
+											<p>2024.06.03 ~ 2024.09.11</p>
+										</div>
+									</li>
+									<li>
+										<div style="--gap:8px; --flex-d:column;">
+											<span class="txt-14-24" style="--ft-c:#666;">학습역량</span>
+											<a href="#" class="layout-ellipsis brd-tit">[지방대학활성화사업(SW)] IT, 전산직 취업전략 그리고 합격사례</a>
+											<p>2024.06.03 ~ 2024.09.11</p>
+										</div>
+									</li>
+									<li>
+										<div style="--gap:8px; --flex-d:column;">
+											<span class="txt-14-24" style="--ft-c:#666;">학습역량</span>
+											<a href="#" class="layout-ellipsis brd-tit">[지방대학활성화사업(SW)] IT, 전산직 취업전략 그리고 합격사례</a>
+											<p>2024.06.03 ~ 2024.09.11</p>
+										</div>
+									</li>
+									<li>
+										<div style="--gap:8px; --flex-d:column;">
+											<span class="txt-14-24" style="--ft-c:#666;">학습역량</span>
+											<a href="#" class="layout-ellipsis brd-tit">[지방대학활성화사업(SW)] IT, 전산직 취업전략 그리고 합격사례</a>
+											<p>2024.06.03 ~ 2024.09.11</p>
+										</div>
+									</li>
+									<li>
+										<div style="--gap:8px; --flex-d:column;">
+											<span class="txt-14-24" style="--ft-c:#666;">학습역량</span>
+											<a href="#" class="layout-ellipsis brd-tit">[지방대학활성화사업(SW)] IT, 전산직 취업전략 그리고 합격사례</a>
+											<p>2024.06.03 ~ 2024.09.11</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="brd-paging">
+								<div class="brd-paging-ctrl">
+									<a href="#" class="brd-paging-first"></a>
+									<a href="#" class="brd-paging-prev"></a>
+								</div>
+								<ul class="brd-paging-num">
+									<li class="active"><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+									<li><a href="#">5</a></li>
+								</ul>
+								<div class="brd-paging-ctrl">
+									<a href="#" class="brd-paging-next"></a>
+									<a href="#" class="brd-paging-last"></a>
+								</div>
+							</div>
+						</div>
+						<template #footer>
+							<button type="button" class="btn-type-b-blk">확인</button>
+						</template>
+					</p-popup>
+
 					<button class="btn-type" disabled>주제선택</button>
 					<button class="btn-type" disabled>포트폴리오 등록</button>
 					<button class="btn-type" disabled>포트폴리오 URL수정</button>

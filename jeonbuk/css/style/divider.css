@@ -9,7 +9,7 @@
 
 	/* Grid */
 		[class*="div-"].div-grid,
-		[class*="div-"].div-grid > * {column-gap:0; row-gap:var(--div-gap, 0);}
+		[class*="div-"].div-grid > * {column-gap:var(--div-gap-x, var(--div-gap, 0)); row-gap:var(--div-gap-y, var(--div-gap, 0));}
 		[class*="div-"].div-grid {display:grid; grid-template-columns: repeat(var(--div-grid-t-col), 1fr);}
 		[class*="div-"].div-grid > * {place-content:space-between; width:100%; text-align:center;}
 		[class*="div-"].div-grid > *:first-child:before {content:"";}
@@ -72,7 +72,7 @@
 
 	/* Grid */
 		[class*="div-"].div-grid,
-		[class*="div-"].div-grid > * {row-gap:var(--m-div-gap, var(--div-gap));}
+		[class*="div-"].div-grid > * {column-gap:var(--m-div-gap-x, var(--div-gap-x, var(--div-gap, 0))); row-gap:var(--m-div-gap-y, var(--div-gap-y, var(--div-gap, 0)));}
 		[class*="div-"].div-grid {grid-template-columns: repeat(var(--m-div-grid-t-col, var(--div-grid-t-col)), 1fr);}
 
 	/* Animation */

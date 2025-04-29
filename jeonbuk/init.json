@@ -38,7 +38,7 @@
 					{ "menu": "등록/수정", "src": "./page/UMM_030100.html", "state": "comp" }
 				], "state": "comp"},
 				{ "id": "커리어관리", "submenu": [
-					{ "menu": "홈", "src": "./page/.html", "state": "" },
+					{ "menu": "홈", "src": "./page/UCA_010100.html", "state": "comp" },
 					{ "menu": "취업스펙분석", "src": "./page/.html", "state": "" },
 					{ "menu": "스펙정보", "src": "./page/.html", "state": "" },
 					{ "id": "자기소개서", "submenu": [
@@ -51,7 +51,7 @@
 						{ "menu": "목록", "src": "./page/.html", "state": "" },
 						{ "menu": "등록/수정", "src": "./page/.html", "state": "" },
 						{ "menu": "상세", "src": "./page/.html", "state": "" }
-					], "state": "" }
+					], "state": "work" }
 				], "state": ""},
 				{ "id": "멘토링", "submenu": [
 					{ "menu": "멘토링 프로그램 소개", "src": "./page/.html", "state": "" },

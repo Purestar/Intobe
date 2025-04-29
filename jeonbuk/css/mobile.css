@@ -99,6 +99,7 @@
 	/* Bullet */
 		/* Circle */
 			.bul-cir-01 {--bul-gap:1.11vw; --bul-w:0.42vw; --bul-gap-y:2.78vw;}
+			.bul-cir-02 {--bul-gap:2.22vw; --bul-w:2.22vw; --bul-gap-y:4.44vw;}
 
 		/* Number */
 			.bul-num-01 {--bul-gap:2.22vw; --bul-w:4.58vw; --bul-ft-s:3.06vw;}
@@ -137,6 +138,7 @@
 			[class*="div-v-03"] {--div-h:2.36vw; --div-gap:2.08vw;}
 			.div-v-03-01 {--div-h:8.89vw;}
 			.div-v-03-02 {--div-gap:2.22vw;}
+			.div-v-03-03 {--div-h:8.89vw; --m-div-gap-y:6.94vw;}
 
 		/* Vertical */
 			.div-v-01 {--div-gap:1.67vw; --div-h:1.67vw;}

@@ -12,3 +12,11 @@
 	[data-scroll="xh"]::-webkit-scrollbar-thumb {width:0; border-radius:0;}
 	[data-scroll="h"]::-webkit-scrollbar-track,
 	[data-scroll="xh"]::-webkit-scrollbar-track {border-radius:0;}
+
+@media all and (max-width:720px) {
+	/* Scroll */
+		[data-scroll="y"] {height:var(--m-h, var(--h, 100%));}
+		[data-scroll="x"],
+		[data-scroll="xh"] {width:var(--m-w, var(--w, 100%));}
+		[data-scroll="h"] {width:var(--m-w, var(--w, 100%)); height:var(--m-h, var(--h, 100%));}
+}

@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
 				});
 			}
 
-			chatBot();
+			if(document.querySelector(".chatbot-wrap") !== null) chatBot();
         }
 	});
 

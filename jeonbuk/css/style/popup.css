@@ -14,8 +14,8 @@
 		[class*="pop-type"] .p-dialog-footer [class*="btn-type"] {height:auto;}
 
 	/* Popup Content */
-		[class*="pop-type"] .p-dialog-content {flex:1; overflow-x:hidden; overflow-y:auto; max-height:calc(var(--pop-max-h) - var(--pop-head-min-h, var(--pop-hh)) - var(--pop-foot-h, var(--pop-fh))); padding:var(--pop-pd-y, var(--pop-cont-top-pad)) 0 var(--pop-pd-y, var(--pop-cont-bot-pad));}
-		[class*="pop-type"] .p-dialog-content [class*="pop-cont"] {max-height:calc(var(--pop-max-h) - var(--pop-head-min-h, var(--pop-hh)) - var(--pop-foot-h, var(--pop-fh))); padding:1px var(--pop-pd-x, var(--pop-pad)); font-size:var(--pop-ft-s); color:var(--pop-ft-c);}
+		[class*="pop-type"] .p-dialog-content {flex:1; max-height:calc(var(--pop-max-h) - var(--pop-head-min-h, var(--pop-hh)) - var(--pop-foot-h, var(--pop-fh)));}
+		[class*="pop-type"] .p-dialog-content [class*="pop-cont"] {overflow-x:hidden; overflow-y:auto; max-height:calc(var(--pop-max-h) - var(--pop-head-min-h, var(--pop-hh)) - var(--pop-foot-h, var(--pop-fh))); padding:var(--pop-pd-y, var(--pop-cont-top-pad)) var(--pop-pd-x, var(--pop-pad)) var(--pop-pd-y, var(--pop-cont-bot-pad)); font-size:var(--pop-ft-s); color:var(--pop-ft-c);}
 		[class*="pop-type"] .p-dialog-content [class*="pop-cont"] > *:first-child {margin-top:0;}
 		[class*="pop-type"] .p-dialog-content .pop-cont-full {max-height:var(--m);}
 
