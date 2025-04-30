@@ -1340,6 +1340,97 @@
 							<button type="button" class="btn-type">복제</button>
 						</template>
 					</p-popup>
+
+					<!-- 포트폴리오 불러오기 -->
+					<button type="button" class="btn-type" @click="togglePopup('careeradm-08')">포트폴리오 불러오기</button>
+					<p-popup class="pop-type-01" modal :style="{ width: '580px' }" v-model:visible="popups['careeradm-08']">
+						<template #header>
+							<h1 class="pop-title">포트폴리오 불러오기</h1>
+						</template>
+						<div class="pop-cont">
+							<div class="brd-wrap">
+								<ul style="--dp:grid; --gap:16px;">
+									<li class="form-opt-btn-01">
+										<label>
+											<input type="checkbox">
+											<div class="box-type-02">
+												<div style="--gap:16px; --flex-d:column; --m-gap:1.67vw;">
+													<div style="--dp:flex; --items:center; --gap:12px; --m-gap:2.22vw;">
+														<span class="chip-type-01-pur">URL</span>
+														<h3 class="txt-18-28"><b>00기업 지원 자기소개서</b></h3>
+													</div>
+													<a href="https://www.jbnu.ac.kr/web/index.do" style="--ft-c:#666;" target="_blank">https://www.jbnu.ac.kr/web/index.do</a>
+												</div>
+											</div>
+										</label>
+									</li>
+									<li class="form-opt-btn-01">
+										<label>
+											<input type="checkbox">
+											<div class="box-type-02">
+												<div style="--gap:16px; --flex-d:column; --m-gap:1.67vw;">
+													<div style="--dp:flex; --items:center; --gap:12px; --m-gap:2.22vw;">
+														<span class="chip-type-01-blu-02">파일</span>
+														<h3 class="txt-18-28"><b>00기업 지원 자기소개서</b></h3>
+													</div>
+													<a href="2024학년 실습기록.zip" style="--ft-c:#666;">2024학년 실습기록.zip</a>
+												</div>
+											</div>
+										</label>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<template #footer>
+							<button type="button" class="btn-type-b-blk">취소</button>
+							<button type="button" class="btn-type">확인</button>
+						</template>
+					</p-popup>
+
+					<!-- 자기소개서 불러오기 -->
+					<button type="button" class="btn-type" @click="togglePopup('careeradm-09')">자기소개서 불러오기</button>
+					<p-popup class="pop-type-01" modal :style="{ width: '580px' }" v-model:visible="popups['careeradm-09']">
+						<template #header>
+							<h1 class="pop-title">자기소개서 불러오기</h1>
+						</template>
+						<div class="pop-cont">
+							<div class="brd-wrap">
+								<ul style="--dp:grid; --gap:16px;">
+									<li class="form-opt-btn-01">
+										<label>
+											<input type="checkbox">
+											<div class="box-type-02">
+												<div style="--gap:16px; --flex-d:column; --m-gap:1.67vw;">
+													<div style="--dp:flex; --items:center; --gap:12px; --m-gap:2.22vw;">
+														<h3 class="txt-18-28"><b>00기업 지원 자기소개서</b></h3>
+														<span>(항목 3개)</span>
+													</div>
+													<p>#초안  #취업특강  #과제</p>
+												</div>
+											</div>
+										</label>
+									</li>
+									<li class="form-opt-btn-01">
+										<label>
+											<input type="checkbox">
+											<div class="box-type-02">
+												<div style="--gap:16px; --flex-d:column; --m-gap:1.67vw;">
+													<div style="--dp:flex; --items:center; --gap:12px; --m-gap:2.22vw;">
+														<h3 class="txt-18-28"><b>00기업 지원 자기소개서</b></h3>
+														<span>(항목 3개)</span>
+													</div>
+												</div>
+											</div>
+										</label>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<template #footer>
+							<button type="button" class="btn-type-b-blk">취소</button>
+							<button type="button" class="btn-type">확인</button>
+						</template>
+					</p-popup>
 				</div>
 			</div>
 			<div style="--flex-d:column; --gap:10px;">
