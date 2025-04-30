@@ -154,7 +154,7 @@
 						{ "menu": "상세", "src": "./page/UEN_040300.html", "state": "comp" }
 					], "state": "comp" }
 				], "state": "comp"},
-				{ "menu": "보관함", "src": "./page/UST_010000.html", "state": "work" }
+				{ "menu": "보관함", "src": "./page/UST_010000.html", "state": "comp" }
 			],
 			"state": "work"
 		},
