@@ -449,6 +449,9 @@
 				.sub-tit {margin-bottom:5.56vw; font-size:6.11vw;}
 				.sub-tit-02 {margin-bottom:5.56vw; gap:2.78vw; font-size:5vw;}
 
+		/* 로그인 */
+			.login-wrap {box-shadow:none; border-radius:0;}
+
 		/* 메인 */
 			.main-wrap {background:url("../images/img/bg_m_visual.png") center top no-repeat; background-size:100%; min-height:39.58vw; padding-top:28.61vw;}
 			.main-alarm {width:6.94vw; height:6.94vw;}
