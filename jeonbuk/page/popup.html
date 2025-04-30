@@ -1151,7 +1151,7 @@
 					</p-popup>
 
 					<!-- 자기소개서 복제 -->
-					<button type="button" class="btn-type" @click="togglePopup('careeradm-02')">자기소개서 복제</button>
+					<button type="button" class="btn-type-alert-01" @click="togglePopup('careeradm-02')">자기소개서 복제</button>
 					<p-popup class="pop-type-alert-01" modal :style="{ width: '580px' }" v-model:visible="popups['careeradm-02']">
 						<div class="pop-cont">
 							<div style="--dp:flex; --flex-d:column; --items:center; --txt-a:center;">
@@ -1240,7 +1240,89 @@
 						</template>
 					</p-popup>
 
-					<button class="btn-type" disabled>포트폴리오 등록</button>
+					<!-- 포트폴리오 등록 -->
+					<button type="button" class="btn-type-alert-01" @click="togglePopup('careeradm-04')">포트폴리오 등록</button>
+					<p-popup class="pop-type-alert-01" modal :style="{ width: '580px' }" v-model:visible="popups['careeradm-04']">
+						<div class="pop-cont">
+							<h2 class="txt-01" style="--txt-a:center;"><strong>포트폴리오 등록</strong></h2>
+							<div style="--gap:10px; --mg-t:40px; --m-gap:1.67vw; --m-mg-t:5.56vw;">
+								<label class="form-opt-btn-02">
+									<input type="radio">
+									<span class="opt-txt">URL</span>
+								</label>
+								<label class="form-opt-btn-02">
+									<input type="radio">
+									<span class="opt-txt">파일</span>
+								</label>
+							</div>
+							<div style="--gap:16px; --flex-d:column; --mg-t:24px; --m-mg-t:3.33vw; --m-gap:2.78vw;">
+								<div class="form-txt" style="--form-w:100%;">
+									<p-input placeholder="포트폴리오의 제목을 입력해주세요."></p-input>
+								</div>
+								<div class="form-txt">
+									<p-input placeholder="포트폴리오의 URL을 입력해주세요."></p-input>
+								</div>
+								<div>
+									<label class="form-txt-file-01">
+										<input type="file">
+										<span class="file-name" style="--bg-c:#f5f5f5;"></span>
+										<span class="btn-type-b-lgry">파일찾기</span>
+									</label>
+									<p class="txt-14-24" style="--gap:12px; --items:center; --mg-t:10px; --m-gap:1.67vw;"><i class="ic-info"></i>확장자가 zip인 파일을 최대 00MB까지 등록할 수 있습니다.</p>
+								</div>
+							</div>
+						</div>
+						<template #footer>
+							<button type="button" class="btn-type-b-blk">취소</button>
+							<button type="button" class="btn-type">확인</button>
+						</template>
+					</p-popup>
+
+					<!-- 포트폴리오 URL수정 -->
+					<button type="button" class="btn-type-alert-01" @click="togglePopup('careeradm-05')">포트폴리오 URL수정</button>
+					<p-popup class="pop-type-alert-01" modal :style="{ width: '580px' }" v-model:visible="popups['careeradm-05']">
+						<div class="pop-cont">
+							<h2 class="txt-01" style="--txt-a:center;"><strong>포트폴리오 수정</strong></h2>
+							<div style="--gap:16px; --flex-d:column; --mg-t:24px; --m-mg-t:3.33vw; --m-gap:2.78vw;">
+								<div class="form-txt" style="--form-w:100%;">
+									<p-input placeholder="포트폴리오의 제목을 입력해주세요." value="김전북 포트폴리오"></p-input>
+								</div>
+								<div class="form-txt">
+									<p-input placeholder="포트폴리오의 URL을 입력해주세요." value="https://www.jbnu.ac.kr/web/index.do"></p-input>
+								</div>
+							</div>
+						</div>
+						<template #footer>
+							<button type="button" class="btn-type-b-blk">취소</button>
+							<button type="button" class="btn-type">확인</button>
+						</template>
+					</p-popup>
+
+					<!-- 포트폴리오 파일수정 -->
+					<button type="button" class="btn-type-alert-01" @click="togglePopup('careeradm-06')">포트폴리오 파일수정</button>
+					<p-popup class="pop-type-alert-01" modal :style="{ width: '580px' }" v-model:visible="popups['careeradm-06']">
+						<div class="pop-cont">
+							<h2 class="txt-01" style="--txt-a:center;"><strong>포트폴리오 등록</strong></h2>
+							<div style="--gap:16px; --flex-d:column; --mg-t:24px; --m-mg-t:3.33vw; --m-gap:2.78vw;">
+								<div class="form-txt" style="--form-w:100%;">
+									<p-input placeholder="포트폴리오의 제목을 입력해주세요." value="김전북 포트폴리오"></p-input>
+								</div>
+								<div>
+									<label class="form-txt-file-01">
+										<input type="file">
+										<span class="file-name">MyPortfolio..zip</span>
+										<span class="btn-type-b-lgry">파일찾기</span>
+									</label>
+									<p class="txt-14-24" style="--gap:12px; --items:center; --mg-t:10px; --m-gap:1.67vw;"><i class="ic-info"></i>확장자가 zip인 파일을 최대 00MB까지 등록할 수 있습니다.</p>
+								</div>
+							</div>
+						</div>
+						<template #footer>
+							<button type="button" class="btn-type-b-blk">취소</button>
+							<button type="button" class="btn-type">확인</button>
+						</template>
+					</p-popup>
+
 					<button class="btn-type" disabled>포트폴리오 URL수정</button>
 					<button class="btn-type" disabled>포트폴리오 파일수정</button>
 					<button class="btn-type" disabled>포트폴리오 불러오기</button>

@@ -251,6 +251,12 @@
 			--form-w: auto;
 		}
 
+	/* Picker */
+		.form-txt-file-01 {position:relative; overflow:hidden; --form-pd-x:0;}
+		.form-txt-file-01 input {position:absolute; left:-1000em;}
+		.form-txt-file-01 [class*="btn-type"] {--btn-bd-r:0; --btn-w:112px; border-right:0;}
+		.form-txt-file-01 .file-name {display:flex; place-items:center; flex:1; height:100%; padding-left:var(--fom-pad);}
+
 	/* Selction */
 		/* Button */
 			.form-opt-btn-01 {

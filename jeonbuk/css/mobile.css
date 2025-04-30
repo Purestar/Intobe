@@ -160,6 +160,9 @@
 			}
 
 	/* Form */
+		/* Picker */
+			.form-txt-file-01 [class*="btn-type"] {--btn-w:27.22vw;}
+
 		/* Selction */
 			/* Button */
 				.form-opt-btn-01 {
@@ -202,6 +205,7 @@
 				.form-opt-rdo-02 .opt-txt {font-size:3.88vw;}
 				.form-opt-rdo-02 .opt-txt:before {flex:0 0 27.78vw; border-radius:2.50vw; width:27.78vw; height:27.78vw;}
 				.form-opt-rdo-02 input:disabled + .opt-txt:after {left:9.44vw; top:7.36vw; width:9.31vw; height:10.97vw;}
+
 		/* Text */
 			.form-txt-01 {
 				--form-bd-r:2.78vw;
