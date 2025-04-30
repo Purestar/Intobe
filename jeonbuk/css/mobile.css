@@ -109,6 +109,8 @@
 
 	/* Button */
 		/* Size */
+			.btn-sz-24 {--btn-h:5.56vw; --btn-bd-r:1.11vw;}
+
 			[class*="btn-sz-34"] {--btn-h:6.67vw; --btn-bd-r:6.67vw; --btn-pad-x:3.33vw; --btn-ft-s:2.78vw;}
 			.btn-sz-34-r {--btn-bd-r:2.22vw;}
 
@@ -191,6 +193,12 @@
 				}
 				[class*="form-opt-btn-03"] .opt-txt {padding:0 2.78vw 0 1.11vw;}
 
+				.form-opt-btn-04 {
+					--form-opt-btn-bd-r: 1.11vw;
+					--form-opt-btn-ft-s: 3.06vw;
+					--form-opt-btn-h: 5.56vw;
+				}
+
 			/* Checkbox */
 				.form-opt-chk-01 .opt-txt:before,
 				.form-opt-chk-01 input:checked + .opt-txt:before,
@@ -205,6 +213,20 @@
 				.form-opt-rdo-02 .opt-txt {font-size:3.88vw;}
 				.form-opt-rdo-02 .opt-txt:before {flex:0 0 27.78vw; border-radius:2.50vw; width:27.78vw; height:27.78vw;}
 				.form-opt-rdo-02 input:disabled + .opt-txt:after {left:9.44vw; top:7.36vw; width:9.31vw; height:10.97vw;}
+
+			/* Switch */
+				[class*="form-opt-swh-01"] {
+					--form-opt-swh-w:11.25vw;
+					--form-opt-swh-h:6.39vw;
+					--form-opt-swh-point-sz:5.28vw;
+					--form-opt-swh-point-gap:0.69vw;
+				}
+
+				[class*="form-opt-swh-01"] .box-type-02 {--box-pd-x:5.56vw; --box-pd-y:6.94vw;}
+
+				.form-opt-swh-01-01 .opt-txt:before {translate:-5.56vw 0;}
+				.form-opt-swh-01-01 .opt-txt:after {translate:-5.56vw 0;}
+				.form-opt-swh-01-01 .box-type-02 {padding-right:23.61vw;}
 
 		/* Text */
 			.form-txt-01 {
@@ -226,6 +248,7 @@
 			.ic-link:before {width:2.78vw; height:2.78vw;}
 			.ic-lock:before {width:2.78vw; height:3.47vw;}
 			.ic-mascot:before {width:5.56vw; height:5.56vw;}
+			.ic-minus:before {width:2.5vw; height:0.56vw;}
 			.ic-notice:before {width:3.06vw; height:2.78vw;}
 			.ic-pencle:before {width:3.75vw; height:3.75vw;}
 			.ic-pencle-02:before {width:3.19vw; height:3.19vw;}
@@ -233,6 +256,7 @@
 			.ic-plus:before {width:2.92vw; height:2.92vw;}
 			.ic-plus-02 {width:4.44vw; height:4.44vw;}
 			.ic-plus-02:before {width:2.08vw; height:2.08vw;}
+			.ic-plus-03:before {width:2.92vw; height:2.92vw;}
 			.ic-search:before {width:4.86vw; height:4.86vw;}
 			.ic-setting:before {width:2.50vw; height:2.22vw;}
 			.ic-refresh:before {width:3.06vw; height:3.47vw;}
@@ -374,6 +398,7 @@
 	/* Thumb */
 		.thumb-type-01 {width:19.44vw; height:19.44vw;}
 		.thumb-type-02 {--thumb-bd-r:1.94vw; width:50vw; height:30.56vw;}
+		.thumb-type-04 {--thumb-bg-c:#f9f9f9; --thumb-bd-r:2.78vw;}
 
 	/* Toast */
 		.toast-type-01 {

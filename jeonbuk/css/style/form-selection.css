@@ -34,6 +34,7 @@
 		[class*="form-opt-chk"] .opt-txt:before,
 		[class*="form-opt-rdo"] .opt-txt:before,
 		[class*="form-opt-swh"] .opt-txt:before {flex:0 0 var(--fom-opt-sz); background:white; border:1px solid #e2e2e2; width:var(--fom-opt-sz); height:var(--fom-opt-sz);}
+		[class*="form-opt-swh"] .opt-txt {flex-direction:var(--form-opt-swh-flex-d, row-reverse);}
 
 	/* Check Box */
 		[class*="form-opt-chk"] .opt-txt:before {border-radius:3px;}
@@ -60,13 +61,15 @@
 		[class*="form-opt-rt"] .active .opt-txt:before {background-position:var(--bp-200) 0; transition:none;}
 		[class*="form-opt-rt"] .active input:disabled + .opt-txt:before {opacity:0.4; background-image:var(--ic-c); background-position:var(--bp-150) 0;}
 
-		/* Switch */
-		[class*="form-opt-swh"] .opt-txt:before {flex:0 0 calc(var(--fom-fs) * 2); background:white; border-color:var(--mc); border-radius:var(--fom-opt-sz); width:calc(var(--fom-fs) * 2);}
-		[class*="form-opt-swh"] .opt-txt:after {left:calc(var(--fom-rdo-gap) / 2); top:calc(var(--fom-rdo-gap) / 2); width:calc(var(--fom-opt-sz) - var(--fom-rdo-gap)); height:calc(var(--fom-opt-sz) - var(--fom-rdo-gap));}
-		[class*="form-opt-swh"] .opt-txt:after {visibility:visible; background:var(--moc); border-radius:50%; transition:left var(--trans-dft);}
+	/* Switch */
+		[class*="form-opt-swh"] .opt-txt:after {visibility:visible; border-radius:50%; transition:right var(--trans-dft);}
+		[class*="form-opt-swh"] input:checked + .opt-txt:after {transition:right var(--trans-dft);}
 
-		[class*="form-opt-swh"] input:checked + .opt-txt:after {left:calc( (var(--fom-fs) * 2) - (var(--fom-opt-sz) - (var(--fom-rdo-gap)/2)) ); transition:left var(--trans-dft);}
-		[class*="form-opt-swh"] input:disabled + .opt-txt:after {background:var(--dis-bdr);}
+
+/* Group */
+	[class*="form-opt-group"] {overflow:hidden; display:inline-flex;}
+	[class*="form-opt-group"] [class*="form-opt-btn"]:first-child .opt-txt {border-radius:var(--form-opt-btn-bd-r, var(--fom-br)) 0 0 var(--form-opt-btn-bd-r, var(--fom-br));}
+	[class*="form-opt-group"] [class*="form-opt-btn"]:last-child .opt-txt {border-radius:0 var(--form-opt-btn-bd-r, var(--fom-br)) var(--form-opt-btn-bd-r, var(--fom-br)) 0;}
 
 /* Variation */
 	/* Button */
@@ -98,4 +101,38 @@
 			background:var(--form-opt-btn-dis-bg-c, var(--dis-bg));
 			border-color:var(--form-opt-btn-dis-bd-c, var(--dis-bg));
 			color:var(--form-opt-btn-dis-ft-c, var(--fom-ph));
+		}
+
+	/* Switch */
+		[class*="form-opt-swh"] .opt-txt:before {
+			flex:0 0 var(--form-opt-swh-w, calc(var(--fom-fs) * 2));
+			background:var(--form-opt-swh-bg-c, white);
+			border-color:var(--form-opt-swh-bd-c, var(--form-opt-swh-bg-c, var(--mc)));
+			border-radius:var(--form-opt-swh-bd-r, var(--form-opt-swh-h, var(--fom-opt-sz)));
+			height:var(--form-opt-swh-h, var(--fom-opt-sz));
+		}
+
+		[class*="form-opt-swh"] .opt-txt:after {
+			right:calc(var(--form-opt-swh-w, (var(--fom-fs) * 2)) - var(--form-opt-swh-point-sz, var(--fom-opt-sz) + var(--fom-rdo-gap)) - var(--form-opt-swh-point-gap, var(--fom-rdo-gap) / 2));
+			top:calc((var(--form-opt-swh-h, var(--fom-opt-sz)) - var(--form-opt-swh-point-sz, var(--fom-opt-sz) + var(--fom-rdo-gap))) / 2);
+			background-color:var(--form-opt-swh-point-bg-c, var(--moc));
+			width:calc(var(--form-opt-swh-point-sz, var(--form-opt-swh-point-w, var(--fom-opt-sz) - var(--fom-rdo-gap))));
+			height:calc(var(--form-opt-swh-point-sz, var(--form-opt-swh-point-h, var(--fom-opt-sz) - var(--fom-rdo-gap))));
+		}
+
+		[class*="form-opt-swh"] input:checked + .opt-txt:before {
+			background-color:var(--form-opt-swh-chk-bg-c, var(--mc));
+		}
+
+		[class*="form-opt-swh"] input:checked + .opt-txt:after {
+			right:calc(var(--form-opt-swh-point-gap, var(--fom-rdo-gap) / 2));
+			background-color:var(--form-opt-swh-chk-point-bg-c, var(--moc));
+		}
+
+		[class*="form-opt-swh"] input:disabled + .opt-txt:before {
+			background-color:var(--form-opt-swh-dis-bg-c, var(--dis-bdr));
+		}
+
+		[class*="form-opt-swh"] input:disabled + .opt-txt:after {
+			background-color:var(--form-opt-swh-dis-point-bg-c, var(--dis-bdr));
 		}

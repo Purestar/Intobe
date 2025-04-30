@@ -103,7 +103,7 @@
 	/* Flex & Grid */
 		[style*="--m-flex-d"] { flex-direction: var(--m-flex-d); }
 		[style*="--m-flex-w"] { flex-wrap: var(--m-flex-w); }
-		[style*="--m-gap"] { gap: var(--m-gap); }
+		[style*="--m-gap"] { display:var(--dp, flex); gap: var(--m-gap); }
 		[style*="--m-gap-x"] { column-gap: var(--m-gap-x); }
 		[style*="--m-gap-y"] { row-gap: var(--m-gap-y); }
 		[style*="--m-grid-col"] { grid-column: span var(--m-grid-col); }

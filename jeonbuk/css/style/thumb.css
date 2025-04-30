@@ -1,6 +1,6 @@
 /* Thumb */
 	/* Default */
-		[class*="thumb-type"] {overflow:hidden; position:relative; display:flex; flex-wrap:nowrap; justify-content:center; align-items:center; background-color:var(--thmb-bg); background-position:center; background-repeat:no-repeat; background-size:50% auto; width:100%; height:100%;}
+		[class*="thumb-type"] {overflow:hidden; position:relative; display:flex; flex-wrap:nowrap; justify-content:center; align-items:center; background-position:center; background-repeat:no-repeat; background-size:50% auto; width:100%; height:100%;}
 		[class*="thumb-type"] img,
 		[class*="thumb-type"] video {width:100%; height:100%;}
 		[class*="thumb-type"]:before,
@@ -16,4 +16,4 @@
 		.thumb-origin img {width:auto; height:auto; pointer-events:none; max-inline-size:none; max-block-size:none;}
 
 	/* Variation */
-		[class*="thumb-type"] {aspect-ratio:var(--thumb-ratio, 4 / 3); border-radius:var(--thumb-bd-r)}
+		[class*="thumb-type"] {aspect-ratio:var(--thumb-ratio, 4 / 3); background-color:var(--thumb-bg-c, var(--thmb-bg)); border-radius:var(--thumb-bd-r)}
