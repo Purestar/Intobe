@@ -85,28 +85,46 @@
 								<div class="job-type-ctrl" style="--txt-a:right;">
 									<buton type="button" class="btn-icon btn-refresh"><i class="ic-refresh"></i>선택초기화</buton>
 								</div>
-								<div class="job-type" style="--grid-t-col:2;">
+								<div class="job-type" style="--grid-t-col:2; --m-grid-t-col:1; --m-gap:3.89vw; --m-pd-a:5vw;">
 									<div>
-										<h3 class="job-type-tit">직업분류1차선택</h3>
-										<ul data-scroll="v" class="job-type-lst">
-											<li><button type="button">관리자</button></li>
-											<li class="active"><button type="button">전문가 및 관련 종사자</button></li>
-											<li><button type="button">사무종사자</button></li>
-											<li><button type="button">서비스종사자</button></li>
-											<li><button type="button">판매종사자</button></li>
-											<li><button type="button">농림 . 어업 숙련 종사자</button></li>
-											<li><button type="button">기능원 및 관련 기능 종사자</button></li>
-											<li><button type="button">장치. 기계 조작 및 조립종사자 </button></li>
-											<li><button type="button">단순노무 종사자</button></li>
-											<li><button type="button">군인</button></li>
-											<li><button type="button">관리자</button></li>
-										</ul>
+										<div class="pc">
+											<h3 class="job-type-tit">직업분류1차선택</h3>
+											<ul data-scroll="v" class="job-type-lst">
+												<li><button type="button">관리자</button></li>
+												<li class="active"><button type="button">전문가 및 관련 종사자</button></li>
+												<li><button type="button">사무종사자</button></li>
+												<li><button type="button">서비스종사자</button></li>
+												<li><button type="button">판매종사자</button></li>
+												<li><button type="button">농림 . 어업 숙련 종사자</button></li>
+												<li><button type="button">기능원 및 관련 기능 종사자</button></li>
+												<li><button type="button">장치. 기계 조작 및 조립종사자 </button></li>
+												<li><button type="button">단순노무 종사자</button></li>
+												<li><button type="button">군인</button></li>
+												<li><button type="button">관리자</button></li>
+											</ul>
+										</div>
+										<div class="mobile">
+											<div style="--flex-d:column; --gap:2.78vw;">
+												<b>직업분류1차선택</b>
+												<p-select class="form-sel" panel-class="form-panel-sel" placeholder="직업분류1차선택" :options="['관리자', '전문가 및 관련 종사자', '사무종사자', '서비스종사자', '판매종사자']">
+												</p-select>
+											</div>
+										</div>
 									</div>
 									<div>
-										<h3 class="job-type-tit">직업분류2차선택</h3>
-										<ul data-scroll="v" class="job-type-lst" style="--h:100%;">
-											<li class="job-type-lst no-data">1차 분류를 선택해주세요.</li>
-										</ul>
+										<div class="pc">
+											<h3 class="job-type-tit">직업분류2차선택</h3>
+											<ul data-scroll="v" class="job-type-lst" style="--h:100%;">
+												<li class="job-type-lst no-data">1차 분류를 선택해주세요.</li>
+											</ul>
+										</div>
+										<div class="mobile">
+											<div style="--flex-d:column; --gap:2.78vw;">
+												<b>직업분류2차선택</b>
+												<p-select class="form-sel" panel-class="form-panel-sel" placeholder="직업분류2차선택" :options="['관리자', '전문가 및 관련 종사자', '사무종사자', '서비스종사자', '판매종사자']">
+												</p-select>
+											</div>
+										</div>
 									</div>
 								</div>
 
@@ -138,7 +156,7 @@
 											</div>
 											<button type="button" class="btn-type-b" style="--btn-w:122px;">검색</button>
 										</div>
-										<div style="--dp:flex; --flex-w:nowrap; --items:center; --m-dp:grid; --m-flex-d:column; --m-items:flex-start; --m-gap:3.33vw;">
+										<div style="--dp:flex; --flex-w:nowrap; --items:center; --m-grid-t-col:1; --m-items:flex-start; --m-gap:3.33vw;">
 											<b style="--w:110px; --m-w:auto;">최근검색어</b>
 											<ul class="lst-tag-02 m-flex-nw m-ws-nw" data-scroll="xh">
 												<li>엔지니어<button type="button"><i class="ic-delete-02"></i></button></li>
@@ -155,7 +173,7 @@
 												<li>인공지능 엔지니어<button type="button"><i class="ic-delete-02"></i></button></li>
 											</ul>
 										</div>
-										<div style="--dp:flex; --flex-w:nowrap; --items:center; --m-dp:grid; --m-flex-d:column; --m-items:flex-start; --m-gap:3.33vw;">
+										<div style="--dp:flex; --flex-w:nowrap; --items:center; --m-grid-t-col:1; --m-flex-d:column; --m-items:flex-start; --m-gap:3.33vw;">
 											<b style="--w:110px; --m-w:auto;">인기검색어</b>
 											<ul class="lst-tag-01 m-flex-nw m-ws-nw" data-scroll="xh">
 												<li>게임 개발자</li>

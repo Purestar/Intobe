@@ -496,6 +496,7 @@
 			.job-slide-wrap .job-recom {right:7.22vw; top:14.72vw; width:20.14vw; height:11.25vw;}
 
 			.job-type-wrap .job-type-tit {line-height:10vw;}
+			.job-type-wrap .job-type > * + * {border:0;}
 			.job-type-lst {max-height:73.61vw; padding:4.72vw 0; line-height:5.56vw;}
 			.job-type-lst button {height:11.11vw; padding:0 4.72vw;}
 			.job-type-lst button:after {display:none;}

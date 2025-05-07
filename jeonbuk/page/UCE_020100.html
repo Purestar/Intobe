@@ -139,7 +139,7 @@
 							<div class="job-type-wrap">
 								<div class="job-type-ctrl">
 									<div style="--dp:grid; --gap:24px; --m-gap:5.56vw;">
-										<div style="--dp:flex; --items:center; --m-dp:grid; --m-items:flex-start; --m-gap:3.06vw;">
+										<div style="--dp:flex; --items:center; --m-grid-t-col:1; --m-items:flex-start; --m-gap:3.06vw;">
 											<b style="--w:110px; --m-w:18.06vw;">취업기업</b>
 											<div class="flex-1" style="--m-w:100%;">
 												<div class="form-txt">
@@ -149,7 +149,7 @@
 										</div>
 
 										<!-- 주전공 -->
-										<div style="--dp: flex; --flex-w: nowrap; --items: center; --m-dp: grid; --m-flex-d: column; --m-items: flex-start;--m-gap:3.06vw;">
+										<div style="--dp: flex; --flex-w: nowrap; --items: center; --m-grid-t-col:1; --m-items: flex-start;--m-gap:3.06vw;">
 											<div style="--gap:0; --items:center;">
 												<b style="--w:110px; --m-w:18.06vw;">주전공</b>
 												<div style="--gap:24px;">
@@ -268,9 +268,9 @@
 									</div>
 								</div>
 
-								<div class="pc">
-									<div class="job-type" style="--grid-t-col:3;">
-										<div>
+								<div class="job-type" style="--grid-t-col:3; --m-grid-t-col:1; --m-gap:3.89vw; --m-pd-a:5vw;">
+									<div>
+										<div class="pc">
 											<ul data-scroll="v" class="job-type-lst">
 												<li><button type="button">관리자</button></li>
 												<li class="active"><button type="button">전문가 및 관련 종사자</button></li>
@@ -285,7 +285,16 @@
 												<li><button type="button">관리자</button></li>
 											</ul>
 										</div>
-										<div>
+										<div class="mobile">
+											<div style="--flex-d:column; --gap:2.78vw;">
+												<b>대분류</b>
+												<p-select class="form-sel" panel-class="form-panel-sel" placeholder="" :options="['관리자', '전문가 및 관련 종사자', '사무종사자', '서비스종사자', '판매종사자']">
+												</p-select>
+											</div>
+										</div>
+									</div>
+									<div>
+										<div class="pc">
 											<ul data-scroll="v" class="job-type-lst">
 												<li><button type="button">관리자</button></li>
 												<li class="active"><button type="button">전문가 및 관련 종사자</button></li>
@@ -300,117 +309,26 @@
 												<li><button type="button">관리자</button></li>
 											</ul>
 										</div>
-										<div>
+										<div class="mobile">
+											<div style="--flex-d:column; --gap:2.78vw;">
+												<b>중분류</b>
+												<p-select class="form-sel" panel-class="form-panel-sel" placeholder="1차 분류를 선택해주세요." :options="['관리자', '전문가 및 관련 종사자', '사무종사자', '서비스종사자', '판매종사자']">
+												</p-select>
+											</div>
+										</div>
+									</div>
+									<div>
+										<div class="pc" style="--h:100%;">
 											<ul data-scroll="v" class="job-type-lst" style="--h:100%;">
 												<li class="job-type-lst no-data">2차 분류를 선택해주세요.</li>
 											</ul>
 										</div>
-									</div>
-								</div>
-								<div class="mobile">
-									<div class="favor-job-list-wrap" style="margin-top:0;">
-										<div class="favor-job-list-top" style="height:100%;">
-											<ul data-scroll="v" class="favor-job-list">
-												<li class="active"><button type="button">사업관리</button></li>
-												<li><button type="button">경영 · 회계 · 사무</button></li>
-												<li><button type="button">금융 · 보험</button></li>
-												<li><button type="button">교육 · 자연 · 사회과학</button></li>
-												<li><button type="button">법률 · 경찰 · 소방 · 교도 · 국방</button></li>
-												<li><button type="button">보건 · 의료</button></li>
-												<li><button type="button">사회복지 · 종교</button></li>
-												<li><button type="button">문화 · 예술 · 디자인 · 방송</button></li>
-												<li><button type="button">운전 · 운송</button></li>
-												<li><button type="button">영업</button></li>
-											</ul>
-											<p-aco class="aco-type-01">
-												<p-aco-item class="aco-item" value="1">
-													<p-aco-head class="aco-head">금융<i class="aco-icon"></i></p-aco-head>
-													<p-aco-cont class="aco-cont">
-														<div style="--dp:flex; --flex-d:column; --gap:12px;">
-															<div class="form-opt-chk">
-																<label>
-																	<input type="checkbox">
-																	<span class="opt-txt">경영기획</span>
-																</label>
-															</div>
-															<div class="form-opt-chk">
-																<label>
-																	<input type="checkbox">
-																	<span class="opt-txt">홍보광고</span>
-																</label>
-															</div>
-															<div class="form-opt-chk">
-																<label>
-																	<input type="checkbox">
-																	<span class="opt-txt">마케팅</span>
-																</label>
-															</div>
-															<div class="form-opt-chk">
-																<label>
-																	<input type="checkbox">
-																	<span class="opt-txt">경영기획</span>
-																</label>
-															</div>
-															<div class="form-opt-chk">
-																<label>
-																	<input type="checkbox">
-																	<span class="opt-txt">홍보광고</span>
-																</label>
-															</div>
-															<div class="form-opt-chk">
-																<label>
-																	<input type="checkbox">
-																	<span class="opt-txt">마케팅</span>
-																</label>
-															</div>
-															<div class="form-opt-chk">
-																<label>
-																	<input type="checkbox">
-																	<span class="opt-txt">경영기획</span>
-																</label>
-															</div>
-															<div class="form-opt-chk">
-																<label>
-																	<input type="checkbox">
-																	<span class="opt-txt">홍보광고</span>
-																</label>
-															</div>
-															<div class="form-opt-chk">
-																<label>
-																	<input type="checkbox">
-																	<span class="opt-txt">마케팅</span>
-																</label>
-															</div>
-														</div>
-													</p-aco-cont>
-												</p-aco-item>
-												<p-aco-item class="aco-item" value="2">
-													<p-aco-head class="aco-head">재무 / 회계<i class="aco-icon"></i></p-aco-head>
-													<p-aco-cont class="aco-cont">
-														<div style="--dp:flex; --flex-d:column; --gap:12px;">
-															<div class="form-opt-chk">
-																<label>
-																	<input type="checkbox">
-																	<span class="opt-txt">경영기획</span>
-																</label>
-															</div>
-														</div>
-													</p-aco-cont>
-												</p-aco-item>
-												<p-aco-item class="aco-item" value="3">
-													<p-aco-head class="aco-head">생산 / 품질관리<i class="aco-icon"></i></p-aco-head>
-													<p-aco-cont class="aco-cont">
-														<div style="--dp:flex; --flex-d:column; --gap:12px;">
-															<div class="form-opt-chk">
-																<label>
-																	<input type="checkbox">
-																	<span class="opt-txt">경영기획</span>
-																</label>
-															</div>
-														</div>
-													</p-aco-cont>
-												</p-aco-item>
-											</p-aco>
+										<div class="mobile">
+											<div style="--flex-d:column; --gap:2.78vw;">
+												<b>소분류</b>
+												<p-select class="form-sel" panel-class="form-panel-sel" placeholder="2차 분류를 선택해주세요." :options="['관리자', '전문가 및 관련 종사자', '사무종사자', '서비스종사자', '판매종사자']">
+												</p-select>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -419,7 +337,7 @@
 									<div style="--dp:grid; --gap:24px; --m-gap:5.56vw;">
 
 										<!-- 복수전공  -->
-										<div style="--dp: flex; --flex-w: nowrap; --items: center; --m-dp: grid; --m-flex-d: column; --m-items: flex-start;--m-gap:3.06vw;">
+										<div style="--dp: flex; --flex-w: nowrap; --items: center; --m-grid-t-col:1; --m-items: flex-start;--m-gap:3.06vw;">
 											<div style="--gap:0; --items:center;">
 												<b style="--w:110px; --m-w:18.06vw;">복수전공</b>
 												<div style="--gap:24px;">
@@ -537,7 +455,7 @@
 										</div>
 
 										<!-- 부전공 -->
-										<div style="--dp: flex; --flex-w: nowrap; --items: center; --m-dp: grid; --m-flex-d: column; --m-items: flex-start;--m-gap:3.06vw;">
+										<div style="--dp: flex; --flex-w: nowrap; --items: center; --m-grid-t-col:1; --m-items: flex-start;--m-gap:3.06vw;">
 											<div style="--gap:0; --items:center;">
 												<b style="--w:110px; --m-w:18.06vw;">부전공</b>
 												<div style="--gap:24px;">
@@ -654,20 +572,20 @@
 											</ul>
 										</div>
 
-										<div style="--dp:flex; --content:space-between; --items:center; --m-gap:8.33vw;">
+										<div style="--dp:flex; --content:space-between; --items:center; --m-dp:grid; --m-grid-t-col:1; --m-gap:8.33vw;">
 											<div style="--gap:50px; --m-flex-d:column; --m-gap:5.56vw; --m-w:100%;">
-												<div style="--dp:flex; --items:center; --flex-w:nowrap; --m-dp:grid; --m-items:flex-start; --m-gap:3.33vw;">
+												<div style="--dp:flex; --items:center; --flex-w:nowrap; --m-grid-t-col:1; --m-items:flex-start; --m-gap:3.33vw;">
 													<b style="--w:110px; --m-w:18.06vw;">이수학점</b>
-													<div style="--gap:16px; --items:center; --m-w:100%; --m-gap:2.5vw;">
+													<div style="--gap:16px; --items:center; --m-dp:flex; --m-w:100%; --m-gap:2.5vw;">
 														<div class="form-txt" style="--form-w:100px; --m-form-w:100%;">
 															<p-input placeholder="000" style="--txt-a:right;"></p-input>
 														</div>
 														<span class="ws-nw cr-blk">점 이상</span>
 													</div>
 												</div>
-												<div style="--dp:flex; --items:center; --flex-w:nowrap; --m-dp:grid; --m-items:flex-start; --m-gap:3.33vw;">
+												<div style="--dp:flex; --items:center; --flex-w:nowrap; --m-grid-t-col:1; --m-items:flex-start; --m-gap:3.33vw;">
 													<b style="--w:110px; --m-w:18.06vw;">평균평점</b>
-													<div style="--gap:16px; --items:center; --m-w:100%; --m-gap:2.5vw;">
+													<div style="--gap:16px; --items:center; --m-w:100%; --m-dp:flex; --m-gap:2.5vw;">
 														<div class="form-txt" style="--form-w:100px; --m-form-w:100%;">
 															<p-input placeholder="000" style="--txt-a:right;"></p-input>
 														</div>
