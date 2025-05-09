@@ -176,11 +176,20 @@
 	.chip-type-01-blu {--chip-bd-c:var(--cr-blu); --chip-ft-c:var(--cr-blu);}
 	.chip-type-01-blu-02 {--chip-bg-c:var(--cr-blu); --chip-bd-c:var(--cr-blu); --chip-ft-c:white;}
 	.chip-type-01-red {--chip-bg-c:var(--cr-red); --chip-bd-c:var(--cr-red); --chip-ft-c:white;}
+	.chip-type-01-red-02 {--chip-bd-c:#a6165f; --chip-ft-c:#a6165f;}
 	.chip-type-01-ygrn {--chip-bg-c:var(--cr-ygrn); --chip-bd-c:var(--cr-ygrn); --chip-ft-c:white;}
 	.chip-type-01-grn {--chip-bg-c:var(--cr-grn); --chip-bd-c:var(--cr-grn); --chip-ft-c:white;}
 	.chip-type-01-pur {--chip-bg-c:var(--cr-pur); --chip-bd-c:var(--cr-pur); --chip-ft-c:white;}
 	.chip-type-01-pur-02 {--chip-bg-c:var(--cr-pur-02); --chip-bd-c:var(--cr-pur-02); --chip-ft-c:white;}
 	.chip-type-01-gry {--chip-bg-c:#645d66; --chip-bd-c:#645d66; --chip-ft-c:white;}
+
+	/*
+	1a6beb, 18bba9, f95289, 99ca04, 2738ba,
+
+fa331e, fdd726, c9196c, ac4720, fc5c30,
+
+932ed3, 39bdde, 24bd65, f9a015, 79940d
+*/
 
 	[class*="chip-type-02"] {
 		--chip-bg-c:#ffffff;
@@ -262,12 +271,13 @@
 		/* Button */
 			.form-opt-btn-01 {
 				--form-opt-btn-bd-c: #e2e2e2;
-				--form-opt-btn-bd-r: 10px;
+				--form-opt-btn-bd-r: 20px;
 				--form-opt-btn-ft-c: black;
 				--form-opt-btn-ft-s: 18px;
 				--form-opt-btn-ft-w: 500;
 				--form-opt-btn-h: 60px;
 				--form-opt-btn-pd-x: 24px;
+				--form-opt-btn-pd-y: 28px;
 
 				--form-opt-btn-chk-bg-c:#f3f6ff;
 				--form-opt-btn-chk-bd-c:var(--mc);
