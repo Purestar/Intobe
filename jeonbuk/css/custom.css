@@ -731,7 +731,7 @@ fa331e, fdd726, c9196c, ac4720, fc5c30,
 		.main-aijob-lst > *:nth-child(6) {background:#319d7b;}
 
 	/* 진입 */
-		.set-preffer {overflow:hidden; display:flex; flex-direction:column; height:80%; text-align:center;}
+		.set-preffer {overflow:hidden; display:flex; flex-direction:column; height:80%;}
 		.set-preffer-lst {display:flex; flex-direction:column; flex:1; gap:14px; margin-top:25px;}
 
 		.favor-job-list-wrap {overflow:hidden; display:flex; flex-direction:column; flex:1; border-top:1px solid #e7e7e7; border-bottom:1px solid #e7e7e7; height:36dvh; margin-top:30px; margin-inline:calc(var(--box-pd) * -1);}
