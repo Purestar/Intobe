@@ -48,12 +48,19 @@
 		--mdc: #440000; /* 메인 어두운 컬러 */
 		--mic: #f65555; /* 강조 컬러 */
 
-		--cr-red:#bb1e55;
-		--cr-ygrn:#7b9904;
-		--cr-grn:#00866b;
 		--cr-blu:#004386;
+		--cr-blu-02:#1a6beb;
+		--cr-brw:#ac4720;
+		--cr-org:#f9a015;
+		--cr-red:#bb1e55;
+		--cr-red-02:#a6165f;
+		--cr-grn:#00866b;
+		--cr-grn-02:#18bba9;
+		--cr-gry:#645d66;
 		--cr-pur:#a6165f;
 		--cr-pur-02:#771ebb;
+		--cr-pur-03:#932ed3;
+		--cr-ygrn:#7b9904;
 
 		--dis-bg: #f5f5f5; /* Disabled 배경 */
 		--dis-bdr: #e2e2e2; /* Disabled 테두리 색상 */

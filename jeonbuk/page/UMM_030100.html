@@ -32,7 +32,7 @@
 				</div>
 				<div class="brd-wrap">
 					<div id="majorMapTop-02" style="--pos:sticky; --left:0; --top:0;">
-						<div class="majormap-top-form" style="--gap:40px; --content:space-between; --mg-t:36px; --m-flex-d:column; --m-gap:18px; --m-mg-t:4.17vw; --m-items:flex-end;">
+						<div class="majormap-top-form" style="--gap:40px; --content:space-between; --mg-t:36px; --m-flex-d:column; --m-gap:2.5vw; --m-mg-t:4.17vw; --m-items:flex-end;">
 							<div class="flex-1" style="--m-w:100%;">
 								<div class="form-txt">
 									<p-input placeholder="메이저맵 제목을 입력해주세요"></p-input>
@@ -43,7 +43,7 @@
 									<input type="checkbox">
 									<span class="opt-txt">기본 Map설정</span>
 								</label>
-								<button type="button" class="btn-type" style="--btn-w:122px; --m-btn-w:22.22vw;">검색</button>
+								<button type="button" class="btn-type" style="--btn-w:122px; --m-btn-w:22.22vw; --m-btn-h:10vw;">저장</button>
 							</div>
 						</div>
 						<ul class="brd-lst-03" >
@@ -82,13 +82,12 @@
 					</div>
 					<h4 class="chip-type-03" style="--mg-t:24px; --m-mg-t:5.56vw;">교과</h4>
 					<ul class="brd-lst-02" style="--grid-t-col:3; --m-grid-t-col:1; --mg-t:16px; --m-mg-t:3.33vw;">
-						<!-- 미이수일 경우 stat -->
 						<li class="stat" style="--gap:4px; --flex-d:column; --m-gap:1.11vw;">
 							<div style="--gap:16px; --items:center; --m-gap:3.33vw;">
-								<span class="chip-type-01-red">미이수</span>
+								<span class="chip-type-01-blu-03">전공필수</span>
 								<div class="txt-14-24 stat-ind" style="--gap:4px; --m-gap:1.11vw;"><i class="ic-plan"></i>계획</div>
 							</div>
-							<h3 class="brd-tit layout-ellipsis">과정명이 한줄로 노출됩니다과정명이 한줄로 노출됩니다</h3>
+							<h3 class="brd-tit layout-ellipsis stat-ind">과정명이 한줄로 노출됩니다과정명이 한줄로 노출됩니다</h3>
 							<div class="div-v-03 txt-14-24 stat-ind">
 								<span>컴퓨터공학전공</span>
 								<span>2-2</span>
@@ -97,7 +96,7 @@
 						</li>
 						<li style="--gap:4px; --flex-d:column; --m-gap:1.11vw;">
 							<div style="--gap:16px; --items:center; --m-gap:3.33vw;">
-								<span class="chip-type-01-gry">이수</span>
+								<span class="chip-type-01-red">전공선택</span>
 							</div>
 							<h3 class="brd-tit layout-ellipsis">과정명이 한줄로 노출됩니다</h3>
 							<div class="div-v-03 txt-14-24 stat-ind">
@@ -108,7 +107,7 @@
 						</li>
 						<li style="--gap:4px; --flex-d:column; --m-gap:1.11vw;">
 							<div style="--gap:16px; --items:center; --m-gap:3.33vw;">
-								<span class="chip-type-01-gry">이수</span>
+								<span class="chip-type-01-pur-03">전공핵심</span>
 								<div class="txt-14-24 stat-ind" style="--gap:4px; --m-gap:1.11vw;"><i class="ic-plan"></i>계획</div>
 							</div>
 							<h3 class="brd-tit layout-ellipsis">과정명이 한줄로 노출됩니다</h3>
@@ -130,14 +129,20 @@
 							<div style="--dp:flex; --content:space-between;">
 								<div class="txt-14-24" style="--gap:4px; --m-gap:1.11vw;"><i class="ic-plan"></i>계획</div>
 								<div style="--gap:20px; --m-gap:5.56vw;">
-									<button type="button" class="ic-pencle-02"></button>
-									<button type="button" class="ic-delete-03"></button>
+									<button type="button"><i class="ic-pencle-02"></i></button>
+									<button type="button"><i class="ic-delete-03"></i></button>
 								</div>
 							</div>
 							<h3 class="brd-tit layout-ellipsis">과정명이 한줄로 노출됩니다</h3>
 							<p>과학기술정보통신부</p>
 						</li>
 					</ul>
+
+					<!-- 1학년 여름학기 -->
+					<div class="cr-blk" style="--gap:20px; --items:center; --mg-t:80px; --m-gap:2.78vw; --m-mg-t:11.11vw;">
+						<h3 class="txt-24-32"><b>1학년 여름학기</b></h3>
+						<p>종료</p>
+					</div>
 
 					<!-- 1학년 2학기 -->
 					<div style="--gap:20px; --items:center; --mg-t:80px; --m-gap:2.78vw; --m-mg-t:11.11vw;">
@@ -149,13 +154,12 @@
 						<button type="button" class="btn-type-b-lgry btn-sz-34-r">계획추가</button>
 					</div>
 					<ul class="brd-lst-02" style="--grid-t-col:3; --m-grid-t-col:1; --mg-t:16px; --m-mg-t:3.33vw;">
-						<!-- 미이수일 경우 stat -->
 						<li class="stat" style="--gap:4px; --flex-d:column; --m-gap:1.11vw;">
 							<div style="--gap:16px; --items:center; --m-gap:3.33vw;">
-								<span class="chip-type-01-red">미이수</span>
+								<span class="chip-type-01-brw">전공필수</span>
 								<div class="txt-14-24 stat-ind" style="--gap:4px; --m-gap:1.11vw;"><i class="ic-plan"></i>계획</div>
 							</div>
-							<h3 class="brd-tit layout-ellipsis">과정명이 한줄로 노출됩니다과정명이 한줄로 노출됩니다</h3>
+							<h3 class="brd-tit layout-ellipsis stat-ind">과정명이 한줄로 노출됩니다과정명이 한줄로 노출됩니다</h3>
 							<div class="div-v-03 txt-14-24 stat-ind">
 								<span>컴퓨터공학전공</span>
 								<span>2-2</span>
@@ -164,7 +168,7 @@
 						</li>
 						<li style="--gap:4px; --flex-d:column; --m-gap:1.11vw;">
 							<div style="--gap:16px; --items:center; --m-gap:3.33vw;">
-								<span class="chip-type-01-gry">이수</span>
+								<span class="chip-type-01-grn-02">교양필수</span>
 							</div>
 							<h3 class="brd-tit layout-ellipsis">과정명이 한줄로 노출됩니다</h3>
 							<div class="div-v-03 txt-14-24 stat-ind">
@@ -175,7 +179,7 @@
 						</li>
 						<li style="--gap:4px; --flex-d:column; --m-gap:1.11vw;">
 							<div style="--gap:16px; --items:center; --m-gap:3.33vw;">
-								<span class="chip-type-01-gry">이수</span>
+								<span class="chip-type-01-pur-03">전공핵심</span>
 								<div class="txt-14-24 stat-ind" style="--gap:4px; --m-gap:1.11vw;"><i class="ic-plan"></i>계획</div>
 							</div>
 							<h3 class="brd-tit layout-ellipsis">과정명이 한줄로 노출됩니다</h3>
@@ -205,21 +209,23 @@
 						<h3 class="txt-24-32"><b>1학년 겨울학기</b></h3>
 						<p>예정</p>
 					</div>
-					<h4 class="chip-type-03" style="--mg-t:24px; --m-mg-t:5.56vw;">교과</h4>
+					<div style="--gap:12px; --mg-t:24px; --m-mg-t:5.56vw; --m-gap:3.33vw;">
+						<h4 class="chip-type-03">교과</h4>
+						<button type="button" class="btn-type-b-lgry btn-sz-34-r">계획추가</button>
+					</div>
 					<ul class="brd-lst-02" style="--grid-t-col:3; --m-grid-t-col:1; --mg-t:16px; --m-mg-t:3.33vw;">
-						<!-- 미이수일 경우 stat -->
 						<li class="stat" style="--gap:4px; --flex-d:column; --m-gap:1.11vw;">
 							<div style="--dp:flex; --content:space-between;">
 								<div style="--gap:16px; --items:center; --m-gap:3.33vw;">
-									<span class="chip-type-01-red">미이수</span>
+									<span class="chip-type-01-org">전공핵심</span>
 									<div class="txt-14-24 stat-ind" style="--gap:4px; --m-gap:1.11vw;"><i class="ic-plan"></i>계획</div>
 								</div>
 								<div style="--gap:20px; --m-gap:5.56vw;">
-									<button type="button" class="ic-pencle-02"></button>
-									<button type="button" class="ic-delete-03"></button>
+									<button type="button"><i class="ic-pencle-02"></i></button>
+									<button type="button"><i class="ic-delete-03"></i></button>
 								</div>
 							</div>
-							<h3 class="brd-tit layout-ellipsis">과정명이 한줄로 노출됩니다과정명이 한줄로 노출됩니다</h3>
+							<h3 class="brd-tit layout-ellipsis stat-ind">과정명이 한줄로 노출됩니다과정명이 한줄로 노출됩니다</h3>
 							<div class="div-v-03 txt-14-24 stat-ind">
 								<span>컴퓨터공학전공</span>
 								<span>2-2</span>
@@ -227,16 +233,19 @@
 							</div>
 						</li>
 					</ul>
-					<h4 class="chip-type-03" style="--mg-t:40px; --m-mg-t:8.33vw;">자격증</h4>
+					<div style="--gap:12px; --mg-t:24px; --m-mg-t:5.56vw; --m-gap:3.33vw;">
+						<h4 class="chip-type-03">자격증</h4>
+						<button type="button" class="btn-type-b-lgry btn-sz-34-r">계획추가</button>
+					</div>
 					<ul class="brd-lst-02" style="--grid-t-col:3; --m-grid-t-col:1; --mg-t:16px; --m-mg-t:3.33vw;">
 						<li style="--gap:4px; --flex-d:column; --m-gap:1.11vw;">
 							<div style="--dp:flex; --content:space-between;">
 								<div style="--gap:16px; --items:center; --m-gap:3.33vw;">
-									<div class="txt-14-24 stat-ind" style="--gap:4px; --m-gap:1.11vw;"><i class="ic-plan"></i>계획</div>
+									<div class="txt-14-24" style="--gap:4px; --m-gap:1.11vw;"><i class="ic-plan"></i>계획</div>
 								</div>
 								<div style="--gap:20px; --m-gap:5.56vw;">
-									<button type="button" class="ic-pencle-02"></button>
-									<button type="button" class="ic-delete-03"></button>
+									<button type="button"><i class="ic-pencle-02"></i></button>
+									<button type="button"><i class="ic-delete-03"></i></button>
 								</div>
 							</div>
 							<h3 class="brd-tit layout-ellipsis">과정명이 한줄로 노출됩니다</h3>
