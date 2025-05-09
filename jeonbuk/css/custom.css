@@ -658,7 +658,7 @@
 			.h-gnb > *:nth-child(5) .h-sub-gnb {padding-left:570px;}
 			.h-gnb > *:nth-child(6) .h-sub-gnb {padding-left:750px;}
 
-			.sub-header .h-wrap {border-bottom:1px solid #e2e2e2; color:black;}
+			.sub-header .h-wrap {background:white; border-bottom:1px solid #e2e2e2; color:black;}
 			.sub-header .h-gnb > *:first-child {background:url("../images/img/img_gnb_menu_02.png") no-repeat;}
 			.sub-header .h-lang-wrap .h-lang-select:after {background-position:var(--bp-50) -6px;}
 
