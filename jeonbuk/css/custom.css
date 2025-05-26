@@ -50,6 +50,7 @@
 
 /* Background Image */
 	.bi-chara-01:before {background-position:var(--bp-250) 0; width:119px; height:129px;}
+	.bi-chara-02:before {background-position:var(--bp-400) 0; width:135px; height:130px;}
 
 /* Board */
 	/* General */
@@ -182,6 +183,7 @@
 	.chip-type-01-org {--chip-bg-c:var(--cr-org); --chip-bd-c:var(--cr-org); --chip-ft-c:white;}
 	.chip-type-01-red {--chip-bg-c:var(--cr-red); --chip-bd-c:var(--cr-red); --chip-ft-c:white;}
 	.chip-type-01-red-02 {--chip-bg-c:var(--cr-red-02); --chip-bd-c:var(--cr-red-02); --chip-ft-c:white;}
+	.chip-type-01-red-03 {--chip-bd-c:var(--cr-red-02); --chip-ft-c:var(--cr-red-02);}
 	.chip-type-01-ygrn {--chip-bg-c:var(--cr-ygrn); --chip-bd-c:var(--cr-ygrn); --chip-ft-c:white;}
 	.chip-type-01-grn {--chip-bg-c:var(--cr-grn); --chip-bd-c:var(--cr-grn); --chip-ft-c:white;}
 	.chip-type-01-grn-02 {--chip-bg-c:var(--cr-grn-02); --chip-bd-c:var(--cr-grn-02); --chip-ft-c:white;}
@@ -259,6 +261,8 @@
 			--form-focus-bd-c:transparent;
 			--form-w: auto;
 		}
+
+		.form-sel-02 > .p-select-dropdown:after {background-position: var(--bp-200) var(--bp-200); width:10px; height:8px;}
 
 	/* Picker */
 		.form-txt-file-01 {position:relative; overflow:hidden; --form-pd-x:0;}
@@ -426,6 +430,7 @@
 		.ic-delete-03:before {background-position:var(--bp-600) var(--bp-50); width:12px; height:12px;}
 		.ic-download:before {background-position:var(--bp-650) 0; width:14px; height:14px;}
 		.ic-file:before {background-position:var(--bp-800) 0; width:18px; height:18px;}
+		.ic-filter:before {background-position:var(--bp-550) var(--bp-100); width:20px; height:18px;}
 		.ic-info:before {background-position:var(--bp-100) var(--bp-50); width:18px; height:18px;}
 		.ic-link:before {background-position:0 0; width:12px; height:12px;}
 		.sub-header .ic-link:before {background-position:0 -12px; width:12px; height:12px;}
@@ -566,6 +571,9 @@
 		.swi-type-02 .swiper-button-next {margin-right:-25px;}
 		.swi-type-03 .swiper-button-prev {margin-left:-25px;}
 		.swi-type-03 .swiper-button-next {margin-right:-25px;}
+		.swi-type-04 .swiper-nav-wrap {margin-top:-40px;}
+		.swi-type-04 .swiper-button-prev {margin-left:-25px;}
+		.swi-type-04 .swiper-button-next {margin-right:-25px;}
 
 /* Tabs */
 	/* Menu */

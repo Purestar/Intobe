@@ -30,8 +30,8 @@
 					<div style="--gap:24px; --items:center; --m-gap:3.89vw;">
 						<h2 class="txt-28-36"><strong>희망 진로</strong></h2>
 						<div style="--gap:12px; --m-gap:2.22vw;">
-							<button type="button" class="btn-type btn-sz-34">희망직무<i class="ic-setting"></i></button>
 							<button type="button" class="btn-type-pur btn-sz-34">희망기업<i class="ic-setting"></i></button>
+							<button type="button" class="btn-type btn-sz-34">희망직무<i class="ic-setting"></i></button>
 						</div>
 					</div>
 					<p style="--gap:12px; --items:center; --m-gap:1.67vw;"><i class="ic-info"></i>희망진로를 클릭해 나의 취업스펙 분석결과를 확인할 수 있습니다.</p>
@@ -41,7 +41,7 @@
 						<li>
 							<div style="--dp:grid; --gap:16px; --m-gap:3.33vw;">
 								<div style="--dp:flex; --gap:4px; --m-gap:1.11vw;">
-									<span class="chip-type-01-red-02">동문취업</span>
+									<span class="chip-type-01-red-03">동문취업</span>
 									<span class="chip-type-01-blu">국내기업</span>
 								</div>
 								<h3 class="brd-tit">삼성전자</h3>
@@ -50,7 +50,7 @@
 						<li>
 							<div style="--dp:grid; --gap:16px; --m-gap:3.33vw;">
 								<div style="--dp:flex; --gap:4px; --m-gap:1.11vw;">
-									<span class="chip-type-01-red-02">동문취업</span>
+									<span class="chip-type-01-red-03">동문취업</span>
 									<span class="chip-type-01-blu">국내기업</span>
 								</div>
 								<h3 class="brd-tit">컴퓨터 하드웨어 기술자 및 연구원</h3>
@@ -59,7 +59,7 @@
 						<li>
 							<div style="--dp:grid; --gap:16px; --m-gap:3.33vw;">
 								<div style="--dp:flex; --gap:4px; --m-gap:1.11vw;">
-									<span class="chip-type-01-red-02">동문취업</span>
+									<span class="chip-type-01-red-03">동문취업</span>
 									<span class="chip-type-01-blu">국내기업</span>
 								</div>
 								<h3 class="brd-tit">컴퓨터시스템 전문가</h3>
@@ -84,7 +84,7 @@
 						<li>
 							<div style="--dp:grid; --gap:16px; --m-gap:3.33vw;">
 								<div style="--dp:flex; --gap:4px; --m-gap:1.11vw;">
-									<span class="chip-type-01-red-02">동문취업</span>
+									<span class="chip-type-01-red-03">동문취업</span>
 								</div>
 								<h3 class="brd-tit">컴퓨터시스템 전문가</h3>
 							</div>
@@ -212,14 +212,43 @@
 				</div>
 
 				<h3 class="txt-20-32" style="--mg-t:60px; --m-mg-t:8.33vw;"><b>AI Job 추천기업</b></h3>
-				<p-aco class="aco-type-02" style="--aco-cont-pd-a:30px; --mg-t:24px; --m-aco-cont-pd-a:5.56vw; --m-mg-t:3.33vw;">
+				<p-aco class="aco-type-02" value="0" style="--aco-cont-pd-a:30px; --mg-t:24px; --m-aco-cont-pd-a:5.56vw; --m-mg-t:3.33vw;">
 					<p-aco-item class="aco-item" value="0">
 						<p-aco-head class="aco-head">
-							<div style="--gap:20px; --items:center; --m-flex-d:column; --m-items:flex-start; --m-gap:1.67vw;">
-								<h4 class="txt-20-28"><b>삼성전자</b></h4>
-								<span style="--ft-c:#666;">경기도 수원시 영통구 삼성로 129(매탄동)</span>
+							<!-- PC 아코디언 헤드 -->
+							<div class="pc" style="--w:100%;">
+								<div style="--content:space-between; --gap:0;">
+									<div style="--gap:20px; --items:center; --m-flex-d:column; --m-items:flex-start; --m-gap:1.67vw;">
+										<h4 class="txt-20-28"><b>삼성전자</b></h4>
+										<span style="--ft-s:16px; --ft-c:#666;">경기도 수원시 영통구 삼성로 129(매탄동)</span>
+									</div>
+									<div style="--gap:40px; --ft-s:16px;">
+										<div style="--gap:16px; --items:center;">
+											<b>AI 추천율</b>
+											<strong><q>100%</q></strong>
+										</div>
+										<div style="--gap:20px; --items:center;">
+											<p class="pc" style="--ft-s:14px;">취업자 평균 스펙</p>
+											<i class="aco-icon"></i>
+										</div>
+									</div>
+								</div>
 							</div>
-							<div style="--gap:20px;"><p class="pc" style="--ft-s:14px;">취업자 평균 스펙</p><i class="aco-icon"></i></div>
+
+							<!-- 모바일 아코디언 헤드 -->
+							<div class="mobile" style="--w:100%;">
+								<div style="--content:space-between; --gap:0;">
+									<h4 class="txt-20-28"><b>삼성전자</b></h4>
+									<div style="--gap:4.44vw; --items:center;">
+										<div style="--gap:1.67vw; --items:center;">
+											<b>AI 추천율</b>
+											<strong><q>100%</q></strong>
+										</div>
+										<i class="aco-icon"></i>
+									</div>
+								</div>
+								<p style="--mg-t:2.22vw; --ft-s:3.33vw; --ft-c:#666;">경기도 수원시 영통구 삼성로 129(매탄동)</p>
+							</div>
 						</p-aco-head>
 						<p-aco-cont class="aco-cont">
 							<div style="--gap:10px; --mg-t:60px; --m-mg-t:11.11vw; --content:space-between; --items:center; --m-flex-d:column;">
@@ -266,11 +295,40 @@
 					</p-aco-item>
 					<p-aco-item class="aco-item" value="1">
 						<p-aco-head class="aco-head">
-							<div style="--gap:20px; --items:center; --m-flex-d:column; --m-items:flex-start; --m-gap:1.67vw;">
-								<h4 class="txt-20-28"><b>광동제약</b></h4>
-								<span style="--ft-c:#666;">전주광역시 달서구 달구벌대로309길 13 광동빌딩 3층</span>
+							<!-- PC 아코디언 헤드 -->
+							<div class="pc" style="--w:100%;">
+								<div style="--content:space-between; --gap:0;">
+									<div style="--gap:20px; --items:center; --m-flex-d:column; --m-items:flex-start; --m-gap:1.67vw;">
+										<h4 class="txt-20-28"><b>광동제약</b></h4>
+										<span style="--ft-s:16px; --ft-c:#666;">전주광역시 달서구 달구벌대로309길 13 광동빌딩 3층</span>
+									</div>
+									<div style="--gap:40px; --ft-s:16px;">
+										<div style="--gap:16px; --items:center;">
+											<b>AI 추천율</b>
+											<strong><q>100%</q></strong>
+										</div>
+										<div style="--gap:20px; --items:center;">
+											<p class="pc" style="--ft-s:14px;">취업자 평균 스펙</p>
+											<i class="aco-icon"></i>
+										</div>
+									</div>
+								</div>
 							</div>
-							<div style="--gap:20px;"><p class="pc" style="--ft-s:14px;">취업자 평균 스펙</p><i class="aco-icon"></i></div>
+
+							<!-- 모바일 아코디언 헤드 -->
+							<div class="mobile" style="--w:100%;">
+								<div style="--content:space-between; --gap:0;">
+									<h4 class="txt-20-28"><b>광동제약</b></h4>
+									<div style="--gap:4.44vw; --items:center;">
+										<div style="--gap:1.67vw; --items:center;">
+											<b>AI 추천율</b>
+											<strong><q>100%</q></strong>
+										</div>
+										<i class="aco-icon"></i>
+									</div>
+								</div>
+								<p style="--mg-t:2.22vw; --ft-s:3.33vw; --ft-c:#666;">전주광역시 달서구 달구벌대로309길 13 광동빌딩 3층</p>
+							</div>
 						</p-aco-head>
 						<p-aco-cont class="aco-cont">
 						</p-aco-cont>
