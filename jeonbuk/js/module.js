@@ -2,12 +2,60 @@
 
 // primeVue Component
 document.addEventListener('DOMContentLoaded', function() {
-	const { createApp, ref, reactive } = Vue;
+	const { createApp, ref, reactive, computed } = Vue;
 
 	const app = createApp({
 		setup() {
 			const popups = reactive({ popup: false });
 			const toast = PrimeVue.useToast();
+
+			const departmentOptions = ref([
+				{ name: '경영기획', code: 'PLAN' },
+				{ name: '회계', code: 'ACC' },
+				{ name: '마케팅', code: 'MKT' }
+			]);
+
+			const selectedDepartments = ref([]);
+
+			// 체크 여부 확인
+			const isSelected = (option) => {
+				return selectedDepartments.value.includes(option.code);
+			};
+
+			// 개별 토글
+			const toggleSelection = (option) => {
+				const index = selectedDepartments.value.indexOf(option.code);
+				if (index > -1) {
+					selectedDepartments.value.splice(index, 1);
+				} else {
+					selectedDepartments.value.push(option.code);
+				}
+			};
+
+			// 전체 선택 상태
+			const areAllSelected = computed(() => {
+				return departmentOptions.value.length > 0 &&
+					departmentOptions.value.every(opt => selectedDepartments.value.includes(opt.code));
+			});
+
+			// 전체 선택/해제
+			const toggleAllSelection = () => {
+				if (areAllSelected.value) {
+					selectedDepartments.value = [];
+				} else {
+					selectedDepartments.value = departmentOptions.value.map(opt => opt.code);
+				}
+			};
+
+			const filterKeyword = ref('');
+
+			const filteredOptions = computed(() => {
+				const keyword = filterKeyword.value.trim().toLowerCase();
+				if (!keyword) return departmentOptions.value;
+				return departmentOptions.value.filter(opt =>
+					opt.name.toLowerCase().includes(keyword)
+				);
+			});
 
 			function togglePopup(id) {
 				popups[id] = !popups[id];
@@ -15,7 +63,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
 			return {
 				popups,
-				togglePopup
+				togglePopup,
+				departmentOptions,
+				selectedDepartments,
+				isSelected,
+				toggleSelection,
+				toggleAllSelection,
+				areAllSelected,
+				filterKeyword,
+				filteredOptions
 			};
 		},
         mounted() {
@@ -55,6 +111,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	app.component('p-input', PrimeVue.InputText);
 	app.component('p-msg', PrimeVue.Message);
 	app.component('p-select', PrimeVue.Select);
+	app.component('p-multi-select', PrimeVue.MultiSelect);
 	app.component('p-tarea', PrimeVue.Textarea);
 
 	// Popup

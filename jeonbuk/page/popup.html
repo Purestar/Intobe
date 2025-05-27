@@ -749,7 +749,7 @@
 							<h1 class="pop-title">교과 계획추가</h1>
 						</template>
 						<div class="pop-cont" style="display:flex; flex-direction:column;">
-							<p-tabs class="tab-wrap-01" scrollable value="2" style="--tab-cont-pd-y:24px; --m-tab-cont-pd-y:6.67vw;">
+							<p-tabs class="tab-wrap-01" scrollable value="0" style="--tab-cont-pd-y:24px; --m-tab-cont-pd-y:6.67vw;">
 								<p-tab-list class="tab-menu-01">
 									<p-tab value="0">내보관함</p-tab>
 									<p-tab value="1">교과검색</p-tab>
@@ -764,8 +764,62 @@
 												<p-date-picker class="form-txt-date" show-icon></p-date-picker>
 											</div>
 											<div style="--gap:20px; --m-gap:3.33vw;">
-												<p-select class="form-sel" panel-class="form-panel-sel" placeholder="학과/전공" :options="['Test 1']"></p-select>
-												<p-select class="form-sel" panel-class="form-panel-sel" placeholder="이수구분" :options="['Test 1']"></p-select>
+												<p-multi-select v-model="selectedDepartments" class="form-sel" panel-class="form-panel-sel" placeholder="학과/전공" option-label="name" option-value="code" :options="filteredOptions" filter>
+													<!-- 필터 검색 -->
+													<template #header>
+														<div class="p-multiselect-list">
+															<div class="p-multiselect-option">
+																<div class="form-opt-chk">
+																	<label>
+																		<input type="checkbox" :checked="areAllSelected" @change="toggleAllSelection" />
+																		<span class="opt-txt"></span>
+																	</label>
+																</div>
+																<div class="form-txt">
+																	<p-input type="text" placeholder="검색" v-model="filterKeyword"></p-input>
+																</div>
+															</div>
+														</div>
+													</template>
+
+													<!-- 목록 -->
+													<template #option="slotProps">
+														<div class="form-opt-chk">
+															<label>
+																<input type="checkbox" :checked="isSelected(slotProps.option)" @change="toggleSelection(slotProps.option)" />
+																<span class="opt-txt">{{ slotProps.option.name }}</span>
+															</label>
+														</div>
+													</template>
+												</p-multi-select>
+												<p-multi-select v-model="selectedDepartments" class="form-sel" panel-class="form-panel-sel" placeholder="이수구분" option-label="name" option-value="code" :options="filteredOptions" filter>
+													<!-- 필터 검색 -->
+													<template #header>
+														<div class="p-multiselect-list">
+															<div class="p-multiselect-option">
+																<div class="form-opt-chk">
+																	<label>
+																		<input type="checkbox" :checked="areAllSelected" @change="toggleAllSelection" />
+																		<span class="opt-txt"></span>
+																	</label>
+																</div>
+																<div class="form-txt">
+																	<p-input type="text" placeholder="검색" v-model="filterKeyword"></p-input>
+																</div>
+															</div>
+														</div>
+													</template>
+
+													<!-- 목록 -->
+													<template #option="slotProps">
+														<div class="form-opt-chk">
+															<label>
+																<input type="checkbox" :checked="isSelected(slotProps.option)" @change="toggleSelection(slotProps.option)" />
+																<span class="opt-txt">{{ slotProps.option.name }}</span>
+															</label>
+														</div>
+													</template>
+												</p-multi-select>
 											</div>
 											<div style="--gap:20px; --m-gap:3.33vw;">
 												<p-select class="form-sel" panel-class="form-panel-sel" placeholder="학년" :options="['1학년', '2학년','3학년','4학년']"></p-select>
@@ -782,8 +836,62 @@
 									<p-tab-panel value="1">
 										<div class="box-type-03" style="--grid-t-col:1; --gap:12px; --m-gap:2.22vw; --m-grid-t-col:1;">
 											<div style="--gap:20px; --m-gap:3.33vw;">
-												<p-select class="form-sel" panel-class="form-panel-sel" placeholder="학과/전공" :options="['Test 1']"></p-select>
-												<p-select class="form-sel" panel-class="form-panel-sel" placeholder="이수구분" :options="['Test 1']"></p-select>
+												<p-multi-select v-model="selectedDepartments" class="form-sel" panel-class="form-panel-sel" placeholder="학과/전공" option-label="name" option-value="code" :options="filteredOptions" filter>
+													<!-- 필터 검색 -->
+													<template #header>
+														<div class="p-multiselect-list">
+															<div class="p-multiselect-option">
+																<div class="form-opt-chk">
+																	<label>
+																		<input type="checkbox" :checked="areAllSelected" @change="toggleAllSelection" />
+																		<span class="opt-txt"></span>
+																	</label>
+																</div>
+																<div class="form-txt">
+																	<p-input type="text" placeholder="검색" v-model="filterKeyword"></p-input>
+																</div>
+															</div>
+														</div>
+													</template>
+
+													<!-- 목록 -->
+													<template #option="slotProps">
+														<div class="form-opt-chk">
+															<label>
+																<input type="checkbox" :checked="isSelected(slotProps.option)" @change="toggleSelection(slotProps.option)" />
+																<span class="opt-txt">{{ slotProps.option.name }}</span>
+															</label>
+														</div>
+													</template>
+												</p-multi-select>
+												<p-multi-select v-model="selectedDepartments" class="form-sel" panel-class="form-panel-sel" placeholder="이수구분" option-label="name" option-value="code" :options="filteredOptions" filter>
+													<!-- 필터 검색 -->
+													<template #header>
+														<div class="p-multiselect-list">
+															<div class="p-multiselect-option">
+																<div class="form-opt-chk">
+																	<label>
+																		<input type="checkbox" :checked="areAllSelected" @change="toggleAllSelection" />
+																		<span class="opt-txt"></span>
+																	</label>
+																</div>
+																<div class="form-txt">
+																	<p-input type="text" placeholder="검색" v-model="filterKeyword"></p-input>
+																</div>
+															</div>
+														</div>
+													</template>
+
+													<!-- 목록 -->
+													<template #option="slotProps">
+														<div class="form-opt-chk">
+															<label>
+																<input type="checkbox" :checked="isSelected(slotProps.option)" @change="toggleSelection(slotProps.option)" />
+																<span class="opt-txt">{{ slotProps.option.name }}</span>
+															</label>
+														</div>
+													</template>
+												</p-multi-select>
 											</div>
 											<div style="--gap:20px; --m-gap:3.33vw;">
 												<p-select class="form-sel" panel-class="form-panel-sel" placeholder="학년" :options="['1학년', '2학년','3학년','4학년']"></p-select>
@@ -804,8 +912,62 @@
 										</div>
 										<div class="box-type-03" style="--grid-t-col:1; --gap:12px; --mg-t:12px; --m-mg-t:3.33vw; --m-gap:2.22vw; --m-grid-t-col:1;">
 											<div style="--gap:20px; --m-gap:3.33vw;">
-												<p-select class="form-sel" panel-class="form-panel-sel" placeholder="학과/전공" :options="['Test 1']"></p-select>
-												<p-select class="form-sel" panel-class="form-panel-sel" placeholder="이수구분" :options="['Test 1']"></p-select>
+												<p-multi-select v-model="selectedDepartments" class="form-sel" panel-class="form-panel-sel" placeholder="학과/전공" option-label="name" option-value="code" :options="filteredOptions" filter>
+													<!-- 필터 검색 -->
+													<template #header>
+														<div class="p-multiselect-list">
+															<div class="p-multiselect-option">
+																<div class="form-opt-chk">
+																	<label>
+																		<input type="checkbox" :checked="areAllSelected" @change="toggleAllSelection" />
+																		<span class="opt-txt"></span>
+																	</label>
+																</div>
+																<div class="form-txt">
+																	<p-input type="text" placeholder="검색" v-model="filterKeyword"></p-input>
+																</div>
+															</div>
+														</div>
+													</template>
+
+													<!-- 목록 -->
+													<template #option="slotProps">
+														<div class="form-opt-chk">
+															<label>
+																<input type="checkbox" :checked="isSelected(slotProps.option)" @change="toggleSelection(slotProps.option)" />
+																<span class="opt-txt">{{ slotProps.option.name }}</span>
+															</label>
+														</div>
+													</template>
+												</p-multi-select>
+												<p-multi-select v-model="selectedDepartments" class="form-sel" panel-class="form-panel-sel" placeholder="이수구분" option-label="name" option-value="code" :options="filteredOptions" filter>
+													<!-- 필터 검색 -->
+													<template #header>
+														<div class="p-multiselect-list">
+															<div class="p-multiselect-option">
+																<div class="form-opt-chk">
+																	<label>
+																		<input type="checkbox" :checked="areAllSelected" @change="toggleAllSelection" />
+																		<span class="opt-txt"></span>
+																	</label>
+																</div>
+																<div class="form-txt">
+																	<p-input type="text" placeholder="검색" v-model="filterKeyword"></p-input>
+																</div>
+															</div>
+														</div>
+													</template>
+
+													<!-- 목록 -->
+													<template #option="slotProps">
+														<div class="form-opt-chk">
+															<label>
+																<input type="checkbox" :checked="isSelected(slotProps.option)" @change="toggleSelection(slotProps.option)" />
+																<span class="opt-txt">{{ slotProps.option.name }}</span>
+															</label>
+														</div>
+													</template>
+												</p-multi-select>
 											</div>
 											<div style="--gap:20px; --m-gap:3.33vw;">
 												<p-select class="form-sel" panel-class="form-panel-sel" placeholder="학년" :options="['1학년', '2학년','3학년','4학년']"></p-select>
