@@ -10,6 +10,15 @@ document.addEventListener('DOMContentLoaded', function() {
 			const toast = PrimeVue.useToast();
 
 			const departmentOptions = ref([
+				{ name: '경영기획경영기획경영기획경영기획경영기획경영기획', code: 'PLAN' },
+				{ name: '회계', code: 'ACC' },
+				{ name: '마케팅', code: 'MKT' },
+				{ name: '경영기획', code: 'PLAN' },
+				{ name: '회계', code: 'ACC' },
+				{ name: '마케팅', code: 'MKT' },
+				{ name: '경영기획', code: 'PLAN' },
+				{ name: '회계', code: 'ACC' },
+				{ name: '마케팅', code: 'MKT' },
 				{ name: '경영기획', code: 'PLAN' },
 				{ name: '회계', code: 'ACC' },
 				{ name: '마케팅', code: 'MKT' }

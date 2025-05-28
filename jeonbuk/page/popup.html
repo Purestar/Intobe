@@ -764,7 +764,7 @@
 												<p-date-picker class="form-txt-date" show-icon></p-date-picker>
 											</div>
 											<div style="--gap:20px; --m-gap:3.33vw;">
-												<p-multi-select v-model="selectedDepartments" class="form-sel" panel-class="form-panel-sel" placeholder="학과/전공" option-label="name" option-value="code" :options="filteredOptions" filter>
+												<p-multi-select v-model="selectedDepartments" append-to="self" class="form-sel" panel-class="form-panel-sel" placeholder="학과/전공" option-label="name" option-value="code" :options="filteredOptions" filter>
 													<!-- 필터 검색 -->
 													<template #header>
 														<div class="p-multiselect-list">
@@ -822,7 +822,7 @@
 												</p-multi-select>
 											</div>
 											<div style="--gap:20px; --m-gap:3.33vw;">
-												<p-select class="form-sel" panel-class="form-panel-sel" placeholder="학년" :options="['1학년', '2학년','3학년','4학년']"></p-select>
+												<p-select class="form-sel" panel-class="form-panel-sel" placeholder="학년" :options="['1학년', '2학년','3학년','4학년', '1학년', '2학년','3학년','4학년']"></p-select>
 												<p-select class="form-sel" panel-class="form-panel-sel" placeholder="학기" :options="['1학기','2학기','여름학기','겨울학기']"></p-select>
 											</div>
 											<div style="--gap:12px; --m-gap:1.67vw;">

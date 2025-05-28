@@ -49,8 +49,10 @@
 		[class*="form-panel-sel"],
 		[class*="form-panel-cascade"] .p-cascadeselect-list {overflow:hidden; background:white; border:1px solid var(--form-focus-bd-c, var(--fom-fcs-brd-c)); border-radius:0 0 var(--form-bd-r, var(--fom-br)) var(--form-bd-r, var(--fom-br));}
 		[class*="form-panel-sel"][style*="margin-top"] {border-radius:var(--form-bd-r, var(--fom-br)) var(--form-bd-r, var(--fom-br)) 0 0;}
-		[class*="form-panel-sel"] .p-select-list-container {width:100%; cursor:pointer;}
-		[class*="form-panel-sel"] .p-select-list {overflow-y:auto; max-height:calc(var(--form-dropitem, var(--fom-dropitem)) * var(--form-h, var(--fom-h)));}
+		[class*="form-panel-sel"] .p-select-list-container,
+		[class*="form-panel-sel"] .p-multiselect-list-container {width:100%; cursor:pointer;}
+		[class*="form-panel-sel"] .p-select-list,
+		[class*="form-panel-sel"] .p-multiselect-list {overflow-y:auto; max-height:calc(var(--form-dropitem, var(--fom-dropitem)) * var(--form-h, var(--fom-h)));}
 		[class*="form-panel-sel"] .p-select-list > *,
 		[class*="form-panel-sel"] .p-multiselect-list > *,
 		[class*="form-panel-sel"] .p-multiselect-header {display:flex; gap:12px; place-items:center; width:100%; min-height:var(--form-h, var(--fom-h)); padding:var(--fom-pad);}
@@ -77,7 +79,7 @@
 	/* List - Multi Select */
 		[class*="form-panel-sel"] .p-multiselect-header,
 		[class*="form-panel-sel"] .p-checkbox {display:none;}
-		[class*="form-panel-sel"] .p-multiselect-list-container {width:100%;}
+		[class*="form-panel-sel"] .p-multiselect-list .form-opt-chk {display:inline;}
 
 @media all and (max-width:720px) {
 	[class*="form-sel"] > .p-select-dropdown:after,
