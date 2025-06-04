@@ -52,19 +52,19 @@
 		[class*="form-opt-rdo"] input:checked:disabled + .opt-txt:after {background:var(--dis-bdr);}
 
 	/* Rating */
-		[class*="form-opt-rt"] {user-select:none;}
+		[class*="form-opt-rt"] {display:flex; gap:4px; width: max-content; direction: rtl; user-select: none;}
 		[class*="form-opt-rt"] .opt-txt {font-size:0;}
-		[class*="form-opt-rt"] .opt-txt:before {content:""; background-image:var(--ic-c); background-size:var(--bg-sz); background-position:var(--bp-150) 0; width:21px; height:20px; transition:none;}
-		[class*="form-opt-rt"] input:disabled + .opt-txt:before {background-image:var(--ic-c); background-position:var(--bp-150) 0; opacity:0.2;}
-		[class*="form-opt-rt"] input:focus + .opt-txt:before,
-		[class*="form-opt-rt"] input:checked:focus + .opt-txt:before {border:0;}
-		[class*="form-opt-rt"] .active .opt-txt:before {background-position:var(--bp-200) 0; transition:none;}
-		[class*="form-opt-rt"] .active input:disabled + .opt-txt:before {opacity:0.4; background-image:var(--ic-c); background-position:var(--bp-150) 0;}
+		[class*="form-opt-rt"] .opt-txt:before {content:""; background-color:transparent; background-image:var(--ic-c); background-size:var(--bg-sz); background-position:var(--bp-150) 0; width:17px; height:16px; transition:none;}
+		[class*="form-opt-rt"] input:focus ~ .opt-txt:before,
+		[class*="form-opt-rt"] input:focus:checked ~ .opt-txt:before {border:0;}
+		[class*="form-opt-rt"] input:checked ~ .opt-txt:before,
+		[class*="form-opt-rt"] .opt-txt:hover:before,
+		[class*="form-opt-rt"] .opt-txt:hover ~ .opt-txt:before {background-position:var(--bp-200) 0; transition:none;}
+		/*[class*="form-opt-rt"] input:disabled ~ .opt-txt:before {background-image:var(--ic-c); background-position:var(--bp-150) 0; opacity:0.2;}*/
 
 	/* Switch */
 		[class*="form-opt-swh"] .opt-txt:after {visibility:visible; border-radius:50%; transition:right var(--trans-dft);}
 		[class*="form-opt-swh"] input:checked + .opt-txt:after {transition:right var(--trans-dft);}
-
 
 /* Group */
 	[class*="form-opt-group"] {overflow:hidden; display:inline-flex;}
@@ -136,3 +136,8 @@
 		[class*="form-opt-swh"] input:disabled + .opt-txt:after {
 			background-color:var(--form-opt-swh-dis-point-bg-c, var(--dis-bdr));
 		}
+
+@media all and (max-width:720px) {
+	/* Rating */
+	[class*="form-opt-rt"] .opt-txt:before {width:4.44vw; height:4.17vw;}
+}

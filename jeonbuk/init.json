@@ -65,86 +65,15 @@
 						], "state": "comp" }
 					], "state": "comp" },
 					{ "id": "멘티", "submenu": [
-						{ "menu": "신청", "src": "./page/UME_030100.html", "state": "" }
-					], "state": "work" },
-					{ "id": "멘티모집", "submenu": [
-						{ "menu": "목록", "src": "./page/.html", "state": "" },
-						{ "id": "상세/신청하기", "submenu": [
-							{ "menu": "신청서 작성", "src": "./page/.html", "state": "" },
-							{ "menu": "신청 완료", "src": "./page/.html", "state": "" }
-						], "state": "" }
-					], "state": "" },
-					{ "id": "멘토 지원", "submenu": [
-						{ "menu": "목록", "src": "./page/.html", "state": "" },
-						{ "id": "상세/신청하기", "submenu": [
-							{ "menu": "지원하기/개인정보 제공/이용 동의", "src": "./page/.html", "state": "" },
-							{ "menu": "기본정보 입력", "src": "./page/.html", "state": "" },
-							{ "menu": "멘토정보 입력", "src": "./page/.html", "state": "" },
-							{ "menu": "자기소개서", "src": "./page/.html", "state": "" },
-							{ "menu": "증빙자료 첨부", "src": "./page/.html", "state": "" },
-							{ "menu": "신청 완료", "src": "./page/.html", "state": "" }
-						], "state": "" }
-					], "state": "" },
-					{ "id": "공지사항", "submenu": [
-						{ "menu": "목록", "src": "./page/.html", "state": "" },
-						{ "menu": "상세", "src": "./page/.html", "state": "" }
-					], "state": "" },
-					{ "id": "나의 멘토링(멘티 권한)", "submenu": [
-						{ "menu": "목록", "src": "./page/.html", "state": "" },
-						{ "menu": "멘토링 홈", "src": "./page/.html", "state": "" },
-						{ "id": "멘토링 활동/보고", "submenu": [
-							{ "menu": "목록", "src": "./page/.html", "state": "" },
-							{ "menu": "활동보고서 등록/수정", "src": "./page/.html", "state": "" },
-							{ "menu": "활동보고서 상세", "src": "./page/.html", "state": "" },
-							{ "menu": "최종보고서 등록 - 활동 등록", "src": "./page/.html", "state": "" },
-							{ "menu": "최종보고서 등록 - 만족도 및 소감 등록", "src": "./page/.html", "state": "" },
-							{ "menu": "최종보고서 등록 - 핵심역량 자가진단", "src": "./page/.html", "state": "" },
-							{ "menu": "최종보고서 등록 - 보고완료", "src": "./page/.html", "state": "" }
-						], "state": "" },
-						{ "menu": "멘토링 캘린더", "src": "./page/.html", "state": "" },
-						{ "id": "질의/응답", "submenu": [
-							{ "menu": "목록", "src": "./page/.html", "state": "" },
-							{ "menu": "상세", "src": "./page/.html", "state": "" },
-							{ "menu": "등록/수정", "src": "./page/.html", "state": "" }
-						], "state": "" },
-						{ "id": "학습자료", "submenu": [
-							{ "menu": "목록", "src": "./page/.html", "state": "" },
-							{ "menu": "등록/수정", "src": "./page/.html", "state": "" },
-							{ "menu": "상세", "src": "./page/.html", "state": "" }
-						], "state": "" },
-						{ "menu": "설문조사", "src": "./page/.html", "state": "" }
-					], "state": "" },
-					{ "id": "나의 멘토링(멘토 권한)", "submenu": [
-						{ "menu": "목록", "src": "./page/.html", "state": "" },
-						{ "menu": "멘토링 홈", "src": "./page/.html", "state": "" },
-						{ "id": "멘토링 계획/보고", "submenu": [
-							{ "menu": "목록", "src": "./page/.html", "state": "" },
-							{ "menu": "활동보고서 등록/수정", "src": "./page/.html", "state": "" },
-							{ "menu": "활동보고서 상세", "src": "./page/.html", "state": "" },
-							{ "menu": "최종보고서 등록 - 기본 정보 확인", "src": "./page/.html", "state": "" },
-							{ "menu": "최종보고서 등록 - 멘토링 활동", "src": "./page/.html", "state": "" },
-							{ "menu": "최종보고서 등록 - 주요 성과/선택 활동", "src": "./page/.html", "state": "" },
-							{ "menu": "최종보고서 등록 - 활동소감 작성", "src": "./page/.html", "state": "" },
-							{ "menu": "최종보고서 등록 - 보고완료", "src": "./page/.html", "state": "" }
-						], "state": "" },
-						{ "menu": "멘토링 캘린더", "src": "./page/.html", "state": "" },
-						{ "id": "질의/응답", "submenu": [
-							{ "menu": "목록", "src": "./page/.html", "state": "" },
-							{ "menu": "상세", "src": "./page/.html", "state": "" },
-							{ "menu": "등록/수정", "src": "./page/.html", "state": "" }
-						], "state": "" },
-						{ "id": "학습자료", "submenu": [
-							{ "menu": "목록", "src": "./page/.html", "state": "" },
-							{ "menu": "등록/수정", "src": "./page/.html", "state": "" },
-							{ "menu": "상세", "src": "./page/.html", "state": "" }
-						], "state": "" },
-						{ "id": "멘티 학습지도", "submenu": [
-							{ "menu": "목록", "src": "./page/.html", "state": "" },
-							{ "menu": "상세", "src": "./page/.html", "state": "" }
-						], "state": "" },
-						{ "menu": "설문조사", "src": "./page/.html", "state": "" }
-					], "state": "" }
-				], "state": "work"},
+						{ "menu": "멘티 신청", "src": "./page/UME_030100.html", "state": "comp" },
+						{ "id": "나의 멘토링", "submenu": [
+							{ "menu": "목록", "src": "./page/UME_040101.html", "state": "comp" },
+							{ "menu": "멘토 홈", "src": "./page/UME_040102.html", "state": "comp" },
+							{ "menu": "작성", "src": "./page/UME_040103.html", "state": "comp" },
+							{ "menu": "상세", "src": "./page/UME_040104.html", "state": "comp" }
+						], "state": "comp" }
+					], "state": "comp" }
+				], "state": "comp"},
 				{ "menu": "챗봇", "src": "./page/UCH_010000.html", "state": "comp" },
 				{ "id": "e-Notice", "submenu": [
 					{ "id": "공지사항", "submenu": [

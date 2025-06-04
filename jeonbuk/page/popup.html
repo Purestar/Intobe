@@ -1742,16 +1742,37 @@
 							<button type="button" class="btn-type">저장</button>
 						</template>
 					</p-popup>
-					<button class="btn-type" disabled>멘토 선택 / 멘토 프로필 보기</button>
-					<button class="btn-type" disabled>교내 활동 및 수상내역 등록</button>
-					<button class="btn-type" disabled>대외 활동 및 수상내역 등록</button>
-					<button class="btn-type" disabled>멘토 프로필</button>
-					<button class="btn-type" disabled>멘토링 캘린더 등록/수정</button>
-					<button class="btn-type" disabled>멘토링 캘린더 보기</button>
-					<button class="btn-type" disabled>멘토링 활동 계획 등록</button>
-					<button class="btn-type" disabled>멘토링 활동 계획 보기</button>
-					<button class="btn-type" disabled>멘토링 캘린더 등록/수정</button>
-					<button class="btn-type" disabled>멘토링 캘린더 보기</button>
+
+					<!-- 멘토 프로필 -->
+					<button type="button" class="btn-type" @click="togglePopup('mentor-03')">멘토 프로필</button>
+					<p-popup class="pop-type-01" modal :style="{ width: '580px' }" v-model:visible="popups['mentor-03']">
+						<template #header>
+							<h1 class="pop-title">멘토 프로필</h1>
+						</template>
+						<div class="pop-cont">
+							<div class="box-type-02-01">
+								<div style="--dp:flex; --flex-d:column; --gap:4px;">
+									<p style="--gap: 10px; --items: center; --m-gap: 2.22vw;">활동명<span class="cr-blk">오아시스</span><span class="chip-type-01-pur-04">매칭중</span></p>
+									<p style="--gap: 10px; --items: center; --m-gap: 2.22vw;">졸업학과<span class="cr-blk">경제학과</span></p>
+									<p style="--gap: 10px; --items: center; --m-gap: 2.22vw;">취업기업<span class="cr-blk">삼성전자</span></p>
+									<p style="--gap: 10px; --items: center; --m-gap: 2.22vw;">담당직무<span class="cr-blk">반도체 공정 설계</span></p>
+									<p style="--gap: 10px; --m-gap: 2.22vw;"><span class="ws-nw">자기소개서</span><span class="cr-blk">안녕하세요, 반도체 공정 최적화에 열정을 가진 공정 설계 인재입니다. 빠르게 변화하는 반도체 산업 속에서공정개선과 수율 향상에 기여하는 엔지니어가 되겠습니다.</span></p>
+								</div>
+							</div>
+							<div class="box-type-03" style="--mg-t:20px; --m-box-pd-x:2.78vw; --m-mg-t:3.33vw;">
+								<ul class="div-v-03-02 div-grid" style="--div-item-w:100%; --div-dp:grid; --div-grid-t-col: 2;">
+									<li><p class="flex-1" style="--dp:flex; --content:space-between; --items:center;"><b>팔로우 신청</b><span><strong class="txt-18-26">29</strong>명</span></p></li>
+									<li><p class="flex-1" style="--dp:flex; --content:space-between; --items:center;"><b>팔로우 수락</b><span><strong class="txt-18-26">22</strong><span class="txt-18-26 cr-blk">명</span><b style="--ft-s:14px; --m-ft-s:2.5vw;">/<em>99명제한</em></b></span></p></li>
+									<li><p class="flex-1" style="--dp:flex; --content:space-between; --items:center;"><b>상담 접수 건</b><span><strong class="txt-18-26">10</strong>건</span></p></li>
+									<li><p class="flex-1" style="--dp:flex; --content:space-between; --items:center;"><b>상담 완료 건</b><span><strong class="txt-18-26">10</strong>건</span></p></li>
+								</ul>
+							</div>
+						</div>
+						<template #footer>
+							<button type="button" class="btn-type-b-blk">닫기</button>
+							<button type="button" class="btn-type">팔로우 신청</button>
+						</template>
+					</p-popup>
 				</div>
 			</div>
 		</div>

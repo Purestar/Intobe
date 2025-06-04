@@ -67,6 +67,8 @@
 	/* Disabled */
 		[class*="btn-type"]:disabled,
 		[class*="btn-type"][data-disabled] {background:var(--btn-dis-bg-c, var(--dis-bg)); border-color:var(--btn-dis-bd-c, var(--dis-bg)); color:var(--btn-dis-ft-c, var(--dis-bdr));}
+		[class*="btn-type-b"]:disabled,
+		[class*="btn-type-b"][data-disabled] {--btn-dis-bg-c:white; --btn-dis-bd-c:#ececec; --btn-dis-ft-c:#bbb;}
 
 	/* Group */
 		[class*="btn-grp-type"] {border-radius:var(--btn-bd-r, var(--fom-br)); min-height:var(--btn-h, var(--fom-h));}

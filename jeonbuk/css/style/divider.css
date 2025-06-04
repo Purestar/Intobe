@@ -1,6 +1,6 @@
 /* Divider */
 	/* Default */
-		[class*="div-"] {display:flex;}
+		[class*="div-"] {display: var(--div-dp, flex);}
 		[class*="div-"] > * {display:flex;}
 		[class*="div-"] > * + *:before {content:""; background-color:var(--div-bg-c, black); animation-name:attr(data-ani); rotate:var(--div-rotate, 0deg);}
 
@@ -34,7 +34,7 @@
 
 	/* Vertical Bar */
 		[class*="div-v"], [class*="div-v"] > * {place-items:center; column-gap:var(--div-gap, 0);}
-		[class*="div-v"] > * + *:before {width:var(--div-w, 1px); height:var(--div-h, var(--ft-s, var(--init-font-size)));}
+		[class*="div-v"] > * + *:before {flex:0 0 var(--div-w, 1px); width:var(--div-w, 1px); height:var(--div-h, var(--ft-s, var(--init-font-size)));}
 
 	/* Arrow */
 		[class*="div-h-arrow"] > * + *:before,

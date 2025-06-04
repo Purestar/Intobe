@@ -109,6 +109,9 @@
 		/* Number */
 			.bul-num-01 {--bul-gap:2.22vw; --bul-w:4.58vw; --bul-ft-s:3.06vw;}
 
+		/* Hyphen */
+			.bul-hyp-01 {--bul-gap:0.69vw; --bul-w:0.83vw; --bul-gap-y:1.67vw;}
+
 	/* Button */
 		/* Size */
 			.btn-sz-24 {--btn-h:5.56vw; --btn-bd-r:1.11vw;}

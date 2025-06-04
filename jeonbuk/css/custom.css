@@ -144,11 +144,14 @@
 /* Bullet */
 	/* Circle */
 		.bul-cir-01 {--bul-gap:5px; --bul-w:2px; --bul-ft-c:#666; --bul-gap-y:12px;}
-		.bul-cir-02 {--bul-gap:12px; --bul-w:12px; --bul-gap-y:18px;}
+		.bul-cir-02 {--bul-gap:12px; --bul-w:12px; --bul-gap-y:16px;}
 
 	/* Number */
 		.bul-num-01 {--bul-bg-c:black; --bul-bd-r:50%; --bul-gap:13px; --bul-w:20px; --bul-ft-s:14px; --bul-sur:''; --bul-ft-c:white;}
 		.bul-num-01 > *:before {place-items:center; place-content:center;}
+
+	/* Hyphen */
+		.bul-hyp-01 {--bul-gap:3px; --bul-w:4px; --bul-gap-y:11px;}
 
 /* Button */
 	/* Color */
@@ -185,6 +188,7 @@
 	.chip-type-01-blu-03 {--chip-bg-c:var(--cr-blu-02); --chip-bd-c:var(--cr-blu-02); --chip-ft-c:white;}
 	.chip-type-01-brw {--chip-bg-c:var(--cr-brw); --chip-bd-c:var(--cr-brw); --chip-ft-c:white;}
 	.chip-type-01-org {--chip-bg-c:var(--cr-org); --chip-bd-c:var(--cr-org); --chip-ft-c:white;}
+	.chip-type-01-org-02 {--chip-bg-c:#fdf3d6; --chip-bd-c:#fdf3d6; --chip-ft-c:#e08900;}
 	.chip-type-01-red {--chip-bg-c:var(--cr-red); --chip-bd-c:var(--cr-red); --chip-ft-c:white;}
 	.chip-type-01-red-02 {--chip-bg-c:var(--cr-red-02); --chip-bd-c:var(--cr-red-02); --chip-ft-c:white;}
 	.chip-type-01-red-03 {--chip-bd-c:var(--cr-red-02); --chip-ft-c:var(--cr-red-02);}
@@ -192,9 +196,11 @@
 	.chip-type-01-grn {--chip-bg-c:var(--cr-grn); --chip-bd-c:var(--cr-grn); --chip-ft-c:white;}
 	.chip-type-01-grn-02 {--chip-bg-c:var(--cr-grn-02); --chip-bd-c:var(--cr-grn-02); --chip-ft-c:white;}
 	.chip-type-01-grn-03 {--chip-bg-c:#e1fad9; --chip-bd-c:#e1fad9; --chip-ft-c:#35e000;}
+	.chip-type-01-pnk {--chip-bg-c:#fce8eb; --chip-bd-c:#fce8eb; --chip-ft-c:#e0009e;}
 	.chip-type-01-pur {--chip-bg-c:var(--cr-pur); --chip-bd-c:var(--cr-pur); --chip-ft-c:white;}
 	.chip-type-01-pur-02 {--chip-bg-c:var(--cr-pur-02); --chip-bd-c:var(--cr-pur-02); --chip-ft-c:white;}
 	.chip-type-01-pur-03 {--chip-bg-c:var(--cr-pur-03); --chip-bd-c:var(--cr-pur-03); --chip-ft-c:white;}
+	.chip-type-01-pur-04 {--chip-bg-c:#f4e8fc; --chip-bd-c:#f4e8fc; --chip-ft-c:#8400e0;}
 	.chip-type-01-gry {--chip-bg-c:var(--cr-gry); --chip-bd-c:var(--cr-gry); --chip-ft-c:white;}
 
 	[class*="chip-type-02"] {
@@ -274,6 +280,11 @@
 		.form-txt-file-01 input {position:absolute; left:-1000em;}
 		.form-txt-file-01 [class*="btn-type"] {--btn-bd-r:0; --btn-w:112px; border-right:0;}
 		.form-txt-file-01 .file-name {display:flex; place-items:center; flex:1; height:100%; padding-left:var(--fom-pad);}
+
+	/* Rating */
+
+
+
 
 	/* Selction */
 		/* Button */
