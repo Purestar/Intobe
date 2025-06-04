@@ -82,6 +82,19 @@
 		[class*="form-panel-sel"] .p-multiselect-list .form-opt-chk {display:inline;}
 
 @media all and (max-width:720px) {
+	[class*="form-sel"],
+	[class*="form-float-sel"] .p-select {
+		background: var(--m-form-bg-c, var(--form-bg-c, var(--fom-bg)));
+		border:1px solid var(--m-form-bd-c, var(--form-bd-c, var(--fom-bdr-c)));
+		border-radius:var(--m-form-bd-r, var(--form-bd-r, var(--fom-br)));
+		width:var(--m-form-w, var(--form-w));
+		height:var(--m-form-h, var(--form-h, var(--fom-h)));
+		padding-left:var(--m-form-pd-l, var(--form-pd-l, var(--fom-pad)));
+		padding-right:var(--m-form-pd-r, var(--form-pd-r, var(--fom-pad)));
+		font-size:var(--m-form-ft-s, var(--form-ft-s, var(--fom-fs)));
+		color:var(--m-form-ft-c, var(--form-ft-c, var(--fom-fc)));
+	}
+
 	[class*="form-sel"] > .p-select-dropdown:after,
 	[class*="form-sel"] > .p-cascadeselect-dropdown:after,
 	[class*="form-panel-cascade"] .p-cascadeselect-group-icon-container:after {width:2.92vw; height:1.67vw;}

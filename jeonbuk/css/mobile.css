@@ -98,7 +98,8 @@
 		.box-type-02-01 {--box-pd:4.72vw;}
 		[class*="box-type-03"] {--box-bd-r:2.5vw; --box-pd-x:5.56vw; --box-pd-y:5.56vw;}
 		.box-type-03-01 {--box-pd-y:2.78vw; --box-bd-r:8.33vw;}
-		.box-type-04 {--box-pd-y:3.61vw; --box-pd-r:10vw;}
+		[class*="box-type-04"] {--box-pd-y:3.61vw; --box-pd-r:10vw;}
+		.box-type-04-01 {--box-bd-r:2.78vw; --box-pd-x:5.56vw; --box-pd-y:5.56vw;}
 
 	/* Bullet */
 		/* Circle */
@@ -114,6 +115,8 @@
 
 			[class*="btn-sz-34"] {--btn-h:6.67vw; --btn-bd-r:6.67vw; --btn-pad-x:3.33vw; --btn-ft-s:2.78vw;}
 			.btn-sz-34-r {--btn-bd-r:2.22vw;}
+
+			.btn-sz-56 {--btn-bd-r:2.22vw; --btn-h:12.64vw; --btn-ft-s:3.89vw;}
 
 	/* Chip */
 		[class*="chip-type-01"] {

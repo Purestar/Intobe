@@ -54,7 +54,19 @@
 					], "state": "comp" }
 				], "state": "comp"},
 				{ "id": "멘토링", "submenu": [
-					{ "menu": "멘토링 프로그램 소개", "src": "./page/.html", "state": "" },
+					{ "id": "멘토", "submenu": [
+						{ "id": "멘토 신청 안내", "submenu": [
+							{ "menu": "멘토 신청 안내", "src": "./page/UME_010100.html", "state": "comp" },
+							{ "menu": "신청서 작성", "src": "./page/UME_010200.html", "state": "comp" }
+						], "state": "comp" },
+						{ "id": "나의 멘토링", "submenu": [
+							{ "menu": "목록", "src": "./page/UME_020101.html", "state": "comp" },
+							{ "menu": "상세", "src": "./page/UME_020102.html", "state": "comp" }
+						], "state": "comp" }
+					], "state": "comp" },
+					{ "id": "멘티", "submenu": [
+						{ "menu": "신청", "src": "./page/UME_030100.html", "state": "" }
+					], "state": "work" },
 					{ "id": "멘티모집", "submenu": [
 						{ "menu": "목록", "src": "./page/.html", "state": "" },
 						{ "id": "상세/신청하기", "submenu": [
@@ -132,7 +144,7 @@
 						], "state": "" },
 						{ "menu": "설문조사", "src": "./page/.html", "state": "" }
 					], "state": "" }
-				], "state": ""},
+				], "state": "work"},
 				{ "menu": "챗봇", "src": "./page/UCH_010000.html", "state": "comp" },
 				{ "id": "e-Notice", "submenu": [
 					{ "id": "공지사항", "submenu": [

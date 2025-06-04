@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="Management">
+		<meta name="description" content="Management">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script type="module" src="../js/index.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
+		<script type="module" src="../js/module.js"></script>
+		<script src="../js/pub.js"></script>
+		<link rel="icon" href="../favicon.ico" sizes="any">
+		<link rel="stylesheet" href="../css/global.css">
+	</head>
+	<body>
+		<!-- 헤더 -->
+		<div class="sub-header">
+			<div data-include="../include/header.html"></div>
+		</div>
+
+		<!-- 본문 -->
+		<div id="container">
+			<div class="layout-inner sub-layout">
+				<h2 class="sub-tit">나의 멘토링</h2>
+				<div class="box-type-02">
+					<div style="--dp:flex; --content:space-between; --gap-x:76px; --m-flex-d:column; --m-gap-y:5.56vw;">
+						<div style="--dp:flex; --flex-d:column; --gap:4px;">
+							<p style="--gap: 10px; --items: center; --m-gap: 2.22vw;">활동명<span class="cr-blk">오아시스</span><span class="chip-type-01-grn-03">활동중</span></p>
+							<p style="--gap: 10px; --items: center; --m-gap: 2.22vw;">졸업학과<span class="cr-blk">경제학과</span></p>
+							<p style="--gap: 10px; --items: center; --m-gap: 2.22vw;">취업기업<span class="cr-blk">삼성전자</span></p>
+							<p style="--gap: 10px; --items: center; --m-gap: 2.22vw;">담당직무<span class="cr-blk">반도체 공정 설계</span></p>
+							<p style="--gap: 10px; --m-gap: 2.22vw;"><span class="ws-nw">자기소개서</span><span class="cr-blk">안녕하세요, 반도체 공정 최적화에 열정을 가진 공정 설계 인재입니다. 빠르게 변화하는 반도체 산업 속에서공정개선과 수율 향상에 기여하는 엔지니어가 되겠습니다.</span></p>
+						</div>
+						<div style="--dp:flex; --flex-d:column; --items:flex-end; --m-items:flex-start; --w:434px; --m-w:100%;">
+							<div class="box-type-03" style="--box-pd-x:0; --box-pd-y:32px;">
+								<ul class="div-v-03-02 div-grid" style="--div-grid-t-col: 2;">
+									<li><b>팔로우 신청</b><span><strong class="txt-18-26">29</strong>명</span></li>
+									<li style="--div-item-w:230px; --m-div-item-w:42dvw;"><b>팔로우 수락</b><span><strong class="txt-18-26">22</strong>명<b style="--ft-s:14px; --m-ft-s:2.5vw;">/<em>99명제한</em></b></span></li>
+									<li><b>상담 접수 건</b><span><strong class="txt-18-26">10</strong>건</span></li>
+									<li style="--div-item-w:230px; --m-div-item-w:42dvw;"><b>상담 완료 건</b><span><strong class="txt-18-26">10</strong>건</span></li>
+								</ul>
+							</div>
+							<p class="txt-14-24" style="--mg-t:10px; --m-mg-t:2.22vw;">팔로우 수락 대기자는 <q>1</q>명 이며, 미완료 상담은 2건이 있습니다.</p>
+						</div>
+					</div>
+				</div>
+
+				<p-tabs class="tab-wrap" style="--mg-t:80px; --m-mg-t:11.11vw;" value="1">
+					<p-tab-list class="tab-menu-01">
+						<p-tab value="0">질의/응답</p-tab>
+						<p-tab value="1">멘티관리</p-tab>
+					</p-tab-list>
+					<p-tab-panels>
+						<p-tab-panel value="0">
+							<div class="brd-wrap">
+								<div class="brd-top">
+									<div style="--gap:9px;">
+										<label class="form-opt-btn-02">
+											<input type="radio" checked>
+											<span class="opt-txt">전체</span>
+										</label>
+										<label class="form-opt-btn-02">
+											<input type="radio">
+											<span class="opt-txt">답변완료</span>
+										</label>
+										<label class="form-opt-btn-02">
+											<input type="radio">
+											<span class="opt-txt">답변대기</span>
+										</label>
+									</div>
+									<div class="brd-filter">
+										<p-select class="form-sel" panel-class="form-panel-sel" :options="['전체', '제목', '내용', '제목+내용', '작성자']"></p-select>
+										<div class="form-txt form-icon">
+											<p-input placeholder="검색어를 입력하세요."></p-input>
+											<a href="#" class="form-icon-btn pc"><i class="ic-search"></i></a>
+										</div>
+									</div>
+								</div>
+								<ul class="brd-lst-03" style="--mg-t:24px;">
+									<li>
+										<div class="brd-lst-tit">
+											<span class="brd-num">10</span>
+											<div class="brd-lst-tit-inner">
+												<span class="chip-type-01-pur">답변대기</span>
+												<a href="#" class="layout-ellipsis">
+													2025학년도 1학기 주거안정장학금 신청 안내[2.4.(화) - 3.18.(화)]
+												</a>
+											</div>
+										</div>
+										<div class="div-v-03">
+											<span>홍길동</span>
+											<span>2024.08.19</span>
+											<span>조회수 00</span>
+										</div>
+									</li>
+									<li>
+										<div class="brd-lst-tit">
+											<span class="brd-num">9</span>
+											<div class="brd-lst-tit-inner">
+												<span class="chip-type-01-gry">답변완료</span>
+												<i class="ic-lock"></i>
+												<a href="#" class="layout-ellipsis">
+													2025학년도 1학기 주거안정장학금 신청 안내[2.4.(화) - 3.18.(화)]
+												</a>
+											</div>
+										</div>
+										<div class="div-v-03">
+											<span>홍길동</span>
+											<span>2024.08.19</span>
+											<span>조회수 00</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</p-tab-panel>
+						<p-tab-panel value="1">
+							<div class="brd-wrap">
+								<div class="brd-top">
+									<div style="--gap:9px;">
+										<label class="form-opt-btn-02">
+											<input type="radio" checked>
+											<span class="opt-txt">전체</span>
+										</label>
+										<label class="form-opt-btn-02">
+											<input type="radio">
+											<span class="opt-txt">나의멘티</span>
+										</label>
+										<label class="form-opt-btn-02">
+											<input type="radio">
+											<span class="opt-txt">수락대기</span>
+										</label>
+									</div>
+								</div>
+								<div style="--dp:flex; --content:space-between; --items:center; --mg-t:20px;">
+									<div class="div-v-03">
+										<div><p><q>22</q>명 수락 / <em>99</em>명 인원 제한</p></div>
+										<div><p>수락 대기 <q>2</q>명</p></div>
+									</div>
+									<div>
+										<button type="button" class="btn-type-b-lgry btn-sz-34-r">멘토활동 중지 요청</button>
+									</div>
+								</div>
+								<ul class="brd-lst-03" style="--mg-t:16px;">
+									<li>
+										<div style="--dp:flex; --content:space-between; --items:center; --w:100%; --m-flex-d:column; --m-items:flex-start;">
+											<div style="--dp:grid; --gap:4px;">
+												<div style="--dp:flex; --gap:16px;">
+													<span class="chip-type-01-gry ws-nw">수락대기</span>
+													<div class="div-v-03">
+														<span>홍길동</span>
+														<span>1학년</span>
+														<span>경제학부</span>
+													</div>
+												</div>
+												<p><span style="--ft-c:#666;">신청일시</span> 2024.06.19 : 18:22:01</p>
+											</div>
+											<div style="--dp:flex; --gap:40px; --items:center; --m-w:100%; --m-flex-d:column-reverse; --m-gap:0;">
+												<div style="--dp:flex; --gap:12px; --m-w:100%; --m-mg-t:5.56vw;">
+													<a href="#" class="btn-type-b flex-1">팔로우 수락</a>
+													<a href="#" class="btn-type-b-blk flex-1">팔로우 거절</a>
+												</div>
+												<span class="pc" style="--w:130px; --txt-a:center;">-</span>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div style="--dp:flex; --content:space-between; --items:center; --w:100%; --m-flex-d:column; --m-items:flex-start;">
+											<div style="--dp:grid; --gap:4px;">
+												<div style="--dp:flex; --gap:16px;">
+													<span class="chip-type-01-blu-02 ws-nw">나의멘티</span>
+													<div class="div-v-03">
+														<span>홍길동</span>
+														<span>1학년</span>
+														<span>경제학부</span>
+													</div>
+												</div>
+												<p><span style="--ft-c:#666;">신청일시</span> 2024.06.19 : 18:22:01</p>
+											</div>
+											<div style="--dp:flex; --gap:40px; --items:center; --m-w:100%; --m-flex-d:column-reverse; --m-gap:0;">
+												<div style="--dp:flex; --gap:12px; --m-w:100%; --m-mg-t:5.56vw;">
+													<a href="#" class="btn-type-b-lgry flex-1">팔로우 취소</a>
+												</div>
+												<span style="--w:130px; --txt-a:center; --m-w:100%; --m-txt-a:left;">
+													<p><span style="--ft-c:#666;">수락일</span> 2024.06.19</p>
+												</span>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</p-tab-panel>
+					</p-tab-panels>
+				</p-tabs>
+
+
+			</div>
+		</div>
+
+		<!-- 푸터 -->
+		<div data-include="../include/footer.html"></div>
+	</body>
+</html>

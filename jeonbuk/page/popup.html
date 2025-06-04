@@ -1707,6 +1707,41 @@
 			<div style="--flex-d:column; --gap:10px;">
 				<h1 style="--ft-s:20px; --ft-w:bold;">멘토링</h1>
 				<div style="--dp:grid; --grid-t-col:7; --gap:10px;">
+					<!-- 팔로우 거절 사유 등록하기 -->
+					<button type="button" class="btn-type" @click="togglePopup('mentor-01')">팔로우 거절 사유 등록하기</button>
+					<p-popup class="pop-type-alert-01" modal :style="{ width: '580px' }" v-model:visible="popups['mentor-01']">
+						<div class="pop-cont">
+							<div style="--dp:flex; --flex-d:column; --items:center; --txt-a:center;">
+								<h2 class="txt-01"><strong>팔로우 거절 사유 등록하기</strong></h2>
+								<p style="--mg-t:16px; --m-mg-t:3.33vw;">취소 사유를 입력하신 후, [저장] 버튼을 클릭해 주세요.<br>(※ 취소 후 1회에 한해 재신청이 가능합니다.)</p>
+								<div class="form-txt" style="--mg-t:40px; --m-mg-t:8.33vw;">
+									<p-input placeholder="취소사유입력"></p-input>
+								</div>
+							</div>
+						</div>
+						<template #footer>
+							<button type="button" class="btn-type-b-blk">취소</button>
+							<button type="button" class="btn-type">저장</button>
+						</template>
+					</p-popup>
+
+					<!-- 멘토 활동 중지 요청 -->
+					<button type="button" class="btn-type" @click="togglePopup('mentor-02')">멘토 활동 중지 요청</button>
+					<p-popup class="pop-type-alert-01" modal :style="{ width: '580px' }" v-model:visible="popups['mentor-02']">
+						<div class="pop-cont">
+							<div style="--dp:flex; --flex-d:column; --items:center; --txt-a:center;">
+								<h2 class="txt-01"><strong>멘토 활동 중지 요청</strong></h2>
+								<p style="--mg-t:16px; --m-mg-t:3.33vw;">멘토 활동 유지가 어려우시면, 활동 중지를 요청할 수<br class="mobile"> 있습니다.<br class="pc">활동 중지시, 신규 멘티 유입 제한, 기존<br class="mobile"> 멘티와의 팔로우는 유지됩니다.<br class="pc">팔로우 유지를 원치<br class="mobile"> 않으시면 팔로우 취소 후 ＇활동 중지 요청＇을 해주세요.</p>
+								<div class="form-txt" style="--mg-t:40px; --m-mg-t:8.33vw;">
+									<p-input placeholder="활동 중지 사유 입력"></p-input>
+								</div>
+							</div>
+						</div>
+						<template #footer>
+							<button type="button" class="btn-type-b-blk">취소</button>
+							<button type="button" class="btn-type">저장</button>
+						</template>
+					</p-popup>
 					<button class="btn-type" disabled>멘토 선택 / 멘토 프로필 보기</button>
 					<button class="btn-type" disabled>교내 활동 및 수상내역 등록</button>
 					<button class="btn-type" disabled>대외 활동 및 수상내역 등록</button>
