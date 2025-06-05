@@ -522,13 +522,12 @@
 			.job-type-rst-wrap {max-height:89.58vw; padding:5.56vw;}
 			.job-type-rst-wrap .brd-paging {margin-top:5vw;}
 			.job-type-ctrl {padding:5.56vw 3.89vw;}
-			.job-type-tbl {border:0; margin-top:3.61vw;}
+			.job-type-tbl {border:0; border-spacing:0; margin-top:3.61vw;}
 			.job-type-tbl colgroup {display:none;}
 			.job-type-tbl tbody {display:flex; flex-direction:column; gap:5.56vw;}
 			.job-type-tbl tr {display:flex; flex-direction:column;}
-			.job-type-tbl th {border:0; font-size:4.72vw; text-align:left;}
-			.job-type-tbl td {border:1px solid #e2e2e2; border-radius:2.50vw; margin-top:3.61vw;}
-			.job-type-tbl tr:first-child td {border-top:1px solid #e2e2e2;}
+			.job-type-tbl th {display:flex; place-items:center; border:0; height:13.89vw; padding:0 5.56vw; font-size:4.72vw; text-align:left; vertical-align:middle;}
+			.job-type-tbl td {border-radius:2.50vw; margin-top:3.61vw;}
 
 		/* 메이저맵 */
 			.major-map-stat {padding:5.83vw 5.56vw 5vw; font-size:2.5vw;}
@@ -583,5 +582,5 @@
 
 		/* 팝업 */
 			.pop-type-01 .set-preffer {height:auto; margin-left:calc(var(--pop-pd-x) * -1);}
-			.pop-type-01 .favor-job-list-wrap {height:calc(100dvh - 70dvw); margin-top:8.33vw;}
+			.pop-type-01 .favor-job-list-wrap {height:calc(100dvh - 83dvw); margin-top:8.33vw;}
 }

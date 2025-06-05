@@ -99,9 +99,9 @@
 
 				<div style="--dp:flex; --content:space-between; --mg-t:80px; --m-mg-t:11.11vw; --items:center; --m-items:flex-start; --m-gap:5.56vw; --m-flex-d:column;">
 					<h2 class="txt-28-36"><strong>알아보고 싶은 전공을 탐색해보세요!</strong></h2>
-					<div style="--gap:10px; --m-flex-d:row-reverse; --m-w:100%;">
-						<button type="button" class="btn-type-b-lgry btn-sz-34">전체열기<i class="ic-u-arr-02"></i></button>
-						<button type="button" class="btn-type-b-lgry btn-sz-34">전체닫기<i class="ic-u-arr-02" style="rotate:180deg;"></i></button>
+					<div style="--gap:10px; --m-gap:12px; --m-w:100%; --m-content:flex-end;">
+						<button type="button" class="btn-type-b-lgry btn-sz-34"><i class="ic-u-arr-02"></i>전체닫기</button>
+						<button type="button" class="btn-type-b-lgry btn-sz-34"><i class="ic-u-arr-02" style="rotate:180deg;"></i>전체펼치기</button>
 					</div>
 				</div>
 				<table class="job-type-tbl">
@@ -113,91 +113,120 @@
 						<tr>
 							<th>간호대학</th>
 							<td>
-								<p-aco class="aco-type-01">
-									<p-aco-item class="aco-item" value="0">
-										<p-aco-head class="aco-head">간호대학<i class="aco-icon"></i></p-aco-head>
-										<p-aco-cont class="aco-cont" style="--bg-c:#f9f9f9;">
-											<ul class="lst-item-03-01" style="--grid-t-col:2; --m-grid-t-col:1;">
-												<li>
-													<p class="lst-tit">간호학과</p>
-													<label class="form-opt-chk-01">
-														<input type="checkbox">
-														<span class="opt-txt"></span>
-													</label>
-												</li>
-											</ul>
-										</p-aco-cont>
-									</p-aco-item>
-								</p-aco>
+								<ul class="lst-item-03-01" style="--grid-t-col:2; --m-grid-t-col:1;">
+									<li>
+										<p class="lst-tit">간호학</p>
+										<label class="form-opt-chk-01">
+											<input type="checkbox">
+											<span class="opt-txt"></span>
+										</label>
+									</li>
+								</ul>
 							</td>
 						</tr>
 						<tr>
 							<th>경상대학</th>
 							<td>
-								<p-aco class="aco-type-01">
-									<p-aco-item class="aco-item" value="0">
-										<p-aco-head class="aco-head">경상대학<i class="aco-icon"></i></p-aco-head>
-										<p-aco-cont class="aco-cont" style="--bg-c:#f9f9f9;">
-											<ul class="lst-item-03-01" style="--grid-t-col:2; --m-grid-t-col:1;">
-												<li>
-													<p class="lst-tit">경영학과</p>
-													<label class="form-opt-chk-01">
-														<input type="checkbox">
-														<span class="opt-txt"></span>
-													</label>
-												</li>
-												<li>
-													<p class="lst-tit">경제학과</p>
-													<label class="form-opt-chk-01">
-														<input type="checkbox">
-														<span class="opt-txt"></span>
-													</label>
-												</li>
-												<li>
-													<p class="lst-tit">무형학과</p>
-													<label class="form-opt-chk-01">
-														<input type="checkbox">
-														<span class="opt-txt"></span>
-													</label>
-												</li>
-												<li>
-													<p class="lst-tit">회계학과</p>
-													<label class="form-opt-chk-01">
-														<input type="checkbox">
-														<span class="opt-txt"></span>
-													</label>
-												</li>
-											</ul>
-										</p-aco-cont>
-									</p-aco-item>
-								</p-aco>
+								<ul class="lst-item-03-01" style="--grid-t-col:2; --m-grid-t-col:1;">
+									<li>
+										<p class="lst-tit">경영학</p>
+										<label class="form-opt-chk-01">
+											<input type="checkbox">
+											<span class="opt-txt"></span>
+										</label>
+									</li>
+									<li>
+										<p class="lst-tit">경제학</p>
+										<label class="form-opt-chk-01">
+											<input type="checkbox">
+											<span class="opt-txt"></span>
+										</label>
+									</li>
+									<li>
+										<p class="lst-tit">무형학</p>
+										<label class="form-opt-chk-01">
+											<input type="checkbox">
+											<span class="opt-txt"></span>
+										</label>
+									</li>
+									<li>
+										<p class="lst-tit">회계학</p>
+										<label class="form-opt-chk-01">
+											<input type="checkbox">
+											<span class="opt-txt"></span>
+										</label>
+									</li>
+								</ul>
 							</td>
 						</tr>
 						<tr>
 							<th>공과대학</th>
 							<td>
-								<p-aco class="aco-type-01">
-									<p-aco-item class="aco-item" value="0">
-										<p-aco-head class="aco-head">건축공학과<i class="aco-icon"></i></p-aco-head>
-										<p-aco-cont class="aco-cont" style="--bg-c:#f9f9f9;"></p-aco-cont>
-									</p-aco-item>
-									<p-aco-item class="aco-item" value="1">
-										<p-aco-head class="aco-head">고분자섬유나노공학부 고분자·나노공학<i class="aco-icon"></i></p-aco-head>
-										<p-aco-cont class="aco-cont" style="--bg-c:#f9f9f9;"></p-aco-cont>
-									</p-aco-item>
-									<p-aco-item class="aco-item" value="2">
-										<p-aco-head class="aco-head">고분자섬유나노공학부 유기소재섬유공학<i class="aco-icon"></i></p-aco-head>
-										<p-aco-cont class="aco-cont" style="--bg-c:#f9f9f9;"></p-aco-cont>
-									</p-aco-item>
-									<p-aco-item class="aco-item" value="3">
-										<p-aco-head class="aco-head">기계공학과<i class="aco-icon"></i></p-aco-head>
-										<p-aco-cont class="aco-cont" style="--bg-c:#f9f9f9;"></p-aco-cont>
-									</p-aco-item>
-									<p-aco-item class="aco-item" value="4">
-										<p-aco-head class="aco-head">기계설계공학부 기계설계공학전공<i class="aco-icon"></i></p-aco-head>
-										<p-aco-cont class="aco-cont" style="--bg-c:#f9f9f9;"></p-aco-cont>
-									</p-aco-item>
-								</p-aco>
+								<ul class="lst-item-03-01" style="--grid-t-col:2; --m-grid-t-col:1;">
+									<li>
+										<p class="lst-tit">건축공학</p>
+										<label class="form-opt-chk-01">
+											<input type="checkbox">
+											<span class="opt-txt"></span>
+										</label>
+									</li>
+									<li>
+										<p class="lst-tit">고분자나노공학</p>
+										<label class="form-opt-chk-01">
+											<input type="checkbox">
+											<span class="opt-txt"></span>
+										</label>
+									</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<th>농업생명과학대학</th>
+							<td>
+								<ul class="lst-item-03-01" style="--grid-t-col:2; --m-grid-t-col:1;">
+									<li>
+										<p class="lst-tit">농경제유통학부(농업경제학)</p>
+										<label class="form-opt-chk-01">
+											<input type="checkbox">
+											<span class="opt-txt"></span>
+										</label>
+									</li>
+									<li>
+										<p class="lst-tit">농경제유통학부(삭품유통학)</p>
+										<label class="form-opt-chk-01">
+											<input type="checkbox">
+											<span class="opt-txt"></span>
+										</label>
+									</li>
+									<li>
+										<p class="lst-tit">동물생명공학</p>
+										<label class="form-opt-chk-01">
+											<input type="checkbox">
+											<span class="opt-txt"></span>
+										</label>
+									</li>
+									<li>
+										<p class="lst-tit">동물자원과학</p>
+										<label class="form-opt-chk-01">
+											<input type="checkbox">
+											<span class="opt-txt"></span>
+										</label>
+									</li>
+									<li>
+										<p class="lst-tit">목재응용과학</p>
+										<label class="form-opt-chk-01">
+											<input type="checkbox">
+											<span class="opt-txt"></span>
+										</label>
+									</li>
+									<li>
+										<p class="lst-tit">산림환경과학</p>
+										<label class="form-opt-chk-01">
+											<input type="checkbox">
+											<span class="opt-txt"></span>
+										</label>
+									</li>
+								</ul>
 							</td>
 						</tr>
 					</tbody>

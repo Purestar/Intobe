@@ -35,7 +35,7 @@
 
 				<!-- PC 이력서 상단 -->
 				<div class="pc">
-					<div class="box-type-02" style="--box-pd:30px; --gap:40px; --items:center; --mg-t:12px;">
+					<div class="box-type-02" style="--box-pd:30px; --gap:40px; --mg-t:12px;">
 						<div style="--flex-d:column; --items:center; --gap:12px;">
 							<label class="form-file-01">
 								<input type="file">
@@ -48,31 +48,64 @@
 						<div class="flex-1">
 							<div style="--gap:24px; --items:center;">
 								<h3 style="--ft-s:38px;"><strong>김전북</strong></h3>
-								<p>2003-06-13</p>
-								<label class="form-opt-chk">
-									<input type="checkbox">
-									<span class="opt-txt">생년월일 비공개</span>
-								</label>
 							</div>
-							<div style="--flex-d:column; --gap:16px; --mg-t:36px;">
-								<label class="form-opt-swh-01">
-									<input type="checkbox">
-									<span class="opt-txt">
-										 <div style="--gap:16px;">휴대폰번호<span class="cr-blk">010-1234-5678</span></div>
-									</span>
-								</label>
-								<label class="form-opt-swh-01">
-									<input type="checkbox">
-									<span class="opt-txt">
-										 <div style="--gap:16px;">이메일<span class="cr-blk">jbnu@jbnu.ac.kr</span></div>
-									</span>
-								</label>
-								<label class="form-opt-swh-01">
-									<input type="checkbox">
-									<span class="opt-txt">
-										 <div style="--gap:16px;">주소<span class="cr-blk">전북특별자치도 전주시 덕진구 백제대로567 전북대학교</span></div>
-									</span>
-								</label>
+							<div style="--flex-d:column; --gap:16px; --mg-t:24px;">
+								<div style="--dp:flex; --content:space-between; --items:center; --gap:120px;">
+									<div class="flex-1" style="--dp:flex; --items:center;">
+										<p style="--w:110px;">생년월일</p>
+										<div class="form-txt">
+											<p-input value="20020602"></p-input>
+										</div>
+									</div>
+									<div>
+										<label class="form-opt-swh-01">
+											<input type="checkbox" checked>
+											<span class="opt-txt"></span>
+										</label>
+									</div>
+								</div>
+								<div style="--dp:flex; --content:space-between; --items:center; --gap:120px;">
+									<div class="flex-1" style="--dp:flex; --items:center;">
+										<p style="--w:110px;">휴대폰번호</p>
+										<div class="form-txt">
+											<p-input value="010-1234-5678"></p-input>
+										</div>
+									</div>
+									<div>
+										<label class="form-opt-swh-01">
+											<input type="checkbox" checked>
+											<span class="opt-txt"></span>
+										</label>
+									</div>
+								</div>
+								<div style="--dp:flex; --content:space-between; --items:center; --gap:120px;">
+									<div class="flex-1" style="--dp:flex; --items:center;">
+										<p style="--w:110px;">이메일</p>
+										<div class="form-txt">
+											<p-input disabled value="jbnu@jbnu.ac.kr"></p-input>
+										</div>
+									</div>
+									<div>
+										<label class="form-opt-swh-01">
+											<input type="checkbox">
+											<span class="opt-txt"></span>
+										</label>
+									</div>
+								</div>
+								<div style="--dp:flex; --content:space-between; --items:center; --gap:120px;">
+									<div class="flex-1" style="--dp:flex; --items:center;">
+										<p style="--w:110px;">주소</p>
+										<div class="form-txt">
+											<p-input value="전북특별자치도 전주시 덕진구 백제대로567 전북대학교"></p-input>
+										</div>
+									</div>
+									<div>
+										<label class="form-opt-swh-01">
+											<input type="checkbox" checked>
+											<span class="opt-txt"></span>
+										</label>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -89,36 +122,67 @@
 								</span>
 							</label>
 							<div class="flex-1" style="--flex-d:column; --gap:3.89vw;">
-								<div style="--gap:3.33vw; --items:center;">
-									<h3 style="--ft-s:6.67vw;"><strong>김전북</strong></h3>
-									<p>2003-06-13</p>
-								</div>
-								<label class="form-opt-chk">
-									<input type="checkbox">
-									<span class="opt-txt">생년월일 비공개</span>
-								</label>
+								<h3 style="--ft-s:6.67vw;"><strong>김전북</strong></h3>
 							</div>
 						</div>
 						<p class="txt-14-24" style="--mg-t:2.22vw;">권장사이즈  150px * 200px</p>
-						<div style="--flex-d:column; --gap:5.56vw; --mg-t:5.56vw;">
-							<label class="form-opt-swh-01">
-								<input type="checkbox">
-								<span class="opt-txt">
-									 <div style="--gap:2.78vw; --flex-d:column;">휴대폰번호<span class="cr-blk">010-1234-5678</span></div>
-								</span>
-							</label>
-							<label class="form-opt-swh-01">
-								<input type="checkbox">
-								<span class="opt-txt">
-									<div style="--gap:2.78vw; --flex-d:column;">이메일<span class="cr-blk">jbnu@jbnu.ac.kr</span></div>
-								</span>
-							</label>
-							<label class="form-opt-swh-01">
-								<input type="checkbox">
-								<span class="opt-txt">
-									<div style="--gap:2.78vw; --flex-d:column;">주소<span class="cr-blk">전북특별자치도 전주시 덕진구 백제대로567 전북대학교</span></div>
-								</span>
-							</label>
+						<div style="--mg-t:3.33vw;">
+							<div style="--flex-d:column; --gap:3.33vw; --mg-t:5vw;">
+								<b>생년월일</b>
+								<div style="--dp:flex; --content:space-between; --items:center; --gap:5.56vw;">
+									<div class="form-txt">
+										<p-input value="20020602"></p-input>
+									</div>
+									<div>
+										<label class="form-opt-swh-01">
+											<input type="checkbox" checked>
+											<span class="opt-txt"></span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div style="--flex-d:column; --gap:3.33vw; --mg-t:5vw;">
+								<b>휴대폰번호</b>
+								<div style="--dp:flex; --content:space-between; --items:center; --gap:5.56vw;">
+									<div class="form-txt">
+										<p-input value="010-1234-5678" disabled></p-input>
+									</div>
+									<div>
+										<label class="form-opt-swh-01">
+											<input type="checkbox">
+											<span class="opt-txt"></span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div style="--flex-d:column; --gap:3.33vw; --mg-t:5vw;">
+								<b>이메일</b>
+								<div style="--dp:flex; --content:space-between; --items:center; --gap:5.56vw;">
+									<div class="form-txt">
+										<p-input value="korea@Jbnu.ac.kr"></p-input>
+									</div>
+									<div>
+										<label class="form-opt-swh-01">
+											<input type="checkbox" checked>
+											<span class="opt-txt"></span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div style="--flex-d:column; --gap:3.33vw; --mg-t:5vw;">
+								<b>주소</b>
+								<div style="--dp:flex; --content:space-between; --items:center; --gap:5.56vw;">
+									<div class="form-txt">
+										<p-input value="전북특별자치도 전주시 덕진구 백제"></p-input>
+									</div>
+									<div>
+										<label class="form-opt-swh-01">
+											<input type="checkbox" checked>
+											<span class="opt-txt"></span>
+										</label>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -134,7 +198,7 @@
 						<div class="form-opt-group-01">
 							<div class="form-opt-btn-04">
 								<label>
-									<input type="radio" name="comp" checked="">
+									<input type="radio" name="comp" checked>
 									<span class="opt-txt">구성</span>
 								</label>
 							</div>
@@ -179,7 +243,7 @@
 						<div class="form-opt-group-01">
 							<div class="form-opt-btn-04">
 								<label>
-									<input type="radio" name="comp" checked="">
+									<input type="radio" name="comp" checked>
 									<span class="opt-txt">구성</span>
 								</label>
 							</div>
@@ -243,7 +307,7 @@
 						<div class="form-opt-group-01">
 							<div class="form-opt-btn-04">
 								<label>
-									<input type="radio" name="comp" checked="">
+									<input type="radio" name="comp" checked>
 									<span class="opt-txt">구성</span>
 								</label>
 							</div>
@@ -256,7 +320,7 @@
 						</div>
 					</div>
 				</div>
-				<div style="--gap:20px; --mg-t:24px;">
+				<div style="--gap:20px; --mg-t:24px; --m-mg-t:5.56vw;">
 					<label class="form-opt-chk">
 						<input type="checkbox">
 						<span class="opt-txt">글자수 표시하기</span>
@@ -271,10 +335,8 @@
 					</label>
 				</div>
 				<div class="box-type-02" style="--ovf:hidden; --box-pd:0; --mg-t:24px; --m-mg-t:2.78vw;">
-					<div style="--dp:flex;">
-						<div class="form-txt flex-1" style="--form-bd-w:0;">
-							<p-input placeholder="성격의 장단점" readonly value="지원동기"></p-input>
-						</div>
+					<div style="--dp:flex; --h:46px; --items:center; --pd-l:24px; --m-h:12.22vw; --m-pd-l:4.17vw;">
+						<b class="txt-18-28">지원동기</b>
 					</div>
 					<div style="--bd-w:1px 0 0 0; --bd-c:#e2e2e2; --pd-x:28px; --pd-y:24px; --m-pd-x:4.17vw; --m-pd-y:4.17vw;">
 						<p class="txt-14-24" style="--txt-a:right;"><b>공백포함 <q>0</q>자, 공백제외 <q>0</q>자</b></p>
@@ -282,10 +344,8 @@
 					</div>
 				</div>
 				<div class="box-type-02" style="--ovf:hidden; --box-pd:0; --mg-t:24px; --m-mg-t:2.78vw;">
-					<div style="--dp:flex;">
-						<div class="form-txt flex-1" style="--form-bd-w:0;">
-							<p-input placeholder="성격의 장단점" readonly value="성격의 장단점"></p-input>
-						</div>
+					<div style="--dp:flex; --h:46px; --items:center; --pd-l:24px; --m-h:12.22vw; --m-pd-l:4.17vw;">
+						<b>성격의 장단점</b>
 					</div>
 					<div style="--bd-w:1px 0 0 0; --bd-c:#e2e2e2; --pd-x:28px; --pd-y:24px; --m-pd-x:4.17vw; --m-pd-y:4.17vw;">
 						<p class="txt-14-24" style="--txt-a:right;"><b>공백포함 <q>0</q>자, 공백제외 <q>0</q>자</b></p>
@@ -304,7 +364,7 @@
 						<div class="form-opt-group-01">
 							<div class="form-opt-btn-04">
 								<label>
-									<input type="radio" name="comp" checked="">
+									<input type="radio" name="comp" checked>
 									<span class="opt-txt">구성</span>
 								</label>
 							</div>
@@ -319,7 +379,7 @@
 				</div>
 				<div style="--gap:16px; --flex-d:column; --mg-t:20px; --m-gap:2.22vw; --m-mg-t:3.33vw;">
 					<label class="form-opt-swh-01-01">
-						<input type="checkbox">
+						<input type="checkbox" checked>
 						<span class="opt-txt"></span>
 						<div class="box-type-02">
 							<div style="--content:space-between; --items:center; --m-flex-d:column; --m-items:flex-start; --m-gap:2.22vw;">
@@ -355,7 +415,7 @@
 						<div class="form-opt-group-01">
 							<div class="form-opt-btn-04">
 								<label>
-									<input type="radio" name="comp" checked="">
+									<input type="radio" name="comp" checked>
 									<span class="opt-txt">구성</span>
 								</label>
 							</div>
@@ -370,7 +430,7 @@
 				</div>
 				<div style="--gap:16px; --flex-d:column; --mg-t:20px; --m-gap:2.22vw; --m-mg-t:3.33vw;">
 					<label class="form-opt-swh-01-01">
-						<input type="checkbox">
+						<input type="checkbox" checked>
 						<span class="opt-txt"></span>
 						<div class="box-type-02">
 							<div style="--content:space-between; --items:center; --m-flex-d:column; --m-items:flex-start; --m-gap:2.22vw;">
@@ -383,7 +443,7 @@
 						</div>
 					</label>
 					<label class="form-opt-swh-01-01">
-						<input type="checkbox">
+						<input type="checkbox" checked>
 						<span class="opt-txt"></span>
 						<div class="box-type-02">
 							<div style="--content:space-between; --items:center; --m-flex-d:column; --m-items:flex-start; --m-gap:2.22vw;">
@@ -408,7 +468,7 @@
 						<div class="form-opt-group-01">
 							<div class="form-opt-btn-04">
 								<label>
-									<input type="radio" name="comp" checked="">
+									<input type="radio" name="comp" checked>
 									<span class="opt-txt">구성</span>
 								</label>
 							</div>
@@ -423,7 +483,7 @@
 				</div>
 				<div style="--gap:16px; --flex-d:column; --mg-t:20px; --m-gap:2.22vw; --m-mg-t:3.33vw;">
 					<label class="form-opt-swh-01-01">
-						<input type="checkbox">
+						<input type="checkbox" checked>
 						<span class="opt-txt"></span>
 						<div class="box-type-02">
 							<div style="--content:space-between; --items:center; --m-flex-d:column; --m-items:flex-start; --m-gap:2.22vw;">
@@ -437,7 +497,7 @@
 						</div>
 					</label>
 					<label class="form-opt-swh-01-01">
-						<input type="checkbox">
+						<input type="checkbox" checked>
 						<span class="opt-txt"></span>
 						<div class="box-type-02">
 							<div style="--content:space-between; --items:center; --m-flex-d:column; --m-items:flex-start; --m-gap:2.22vw;">
@@ -462,7 +522,7 @@
 						<div class="form-opt-group-01">
 							<div class="form-opt-btn-04">
 								<label>
-									<input type="radio" name="comp" checked="">
+									<input type="radio" name="comp" checked>
 									<span class="opt-txt">구성</span>
 								</label>
 							</div>
@@ -477,7 +537,7 @@
 				</div>
 				<div style="--gap:16px; --flex-d:column; --mg-t:20px; --m-gap:2.22vw; --m-mg-t:3.33vw;">
 					<label class="form-opt-swh-01-01">
-						<input type="checkbox">
+						<input type="checkbox" checked>
 						<span class="opt-txt"></span>
 						<div class="box-type-02">
 							<div style="--content:space-between; --items:center; --m-flex-d:column; --m-items:flex-start; --m-gap:2.22vw;">
@@ -493,7 +553,7 @@
 						</div>
 					</label>
 					<label class="form-opt-swh-01-01">
-						<input type="checkbox">
+						<input type="checkbox" checked>
 						<span class="opt-txt"></span>
 						<div class="box-type-02">
 							<div style="--content:space-between; --items:center; --m-flex-d:column; --m-items:flex-start; --m-gap:2.22vw;">
@@ -520,7 +580,7 @@
 						<div class="form-opt-group-01">
 							<div class="form-opt-btn-04">
 								<label>
-									<input type="radio" name="comp" checked="">
+									<input type="radio" name="comp" checked>
 									<span class="opt-txt">구성</span>
 								</label>
 							</div>
@@ -535,7 +595,7 @@
 				</div>
 				<div style="--gap:16px; --flex-d:column; --mg-t:20px; --m-gap:2.22vw; --m-mg-t:3.33vw;">
 					<label class="form-opt-swh-01-01">
-						<input type="checkbox">
+						<input type="checkbox" checked>
 						<span class="opt-txt"></span>
 						<div class="box-type-02">
 							<div style="--content:space-between; --items:center; --m-flex-d:column; --m-items:flex-start; --m-gap:2.22vw;">
@@ -578,7 +638,7 @@
 						<div class="form-opt-group-01">
 							<div class="form-opt-btn-04">
 								<label>
-									<input type="radio" name="comp" checked="">
+									<input type="radio" name="comp" checked>
 									<span class="opt-txt">구성</span>
 								</label>
 							</div>
@@ -593,7 +653,7 @@
 				</div>
 				<div style="--gap:16px; --flex-d:column; --mg-t:20px; --m-gap:2.22vw; --m-mg-t:3.33vw;">
 					<label class="form-opt-swh-01-01">
-						<input type="checkbox">
+						<input type="checkbox" checked>
 						<span class="opt-txt"></span>
 						<div class="box-type-02">
 							<div style="--content:space-between; --items:center; --m-flex-d:column; --m-items:flex-start;">
@@ -607,7 +667,7 @@
 						</div>
 					</label>
 					<label class="form-opt-swh-01-01">
-						<input type="checkbox">
+						<input type="checkbox" checked>
 						<span class="opt-txt"></span>
 						<div class="box-type-02">
 							<div style="--content:space-between; --items:center; --m-flex-d:column; --m-items:flex-start;">
@@ -633,7 +693,7 @@
 						<div class="form-opt-group-01">
 							<div class="form-opt-btn-04">
 								<label>
-									<input type="radio" name="comp" checked="">
+									<input type="radio" name="comp" checked>
 									<span class="opt-txt">구성</span>
 								</label>
 							</div>
