@@ -11,8 +11,8 @@
 		[class*="swi-type"] .swiper-slide {overflow:hidden; height:auto;}*/
 
 	/* Navigation */
-		[class*="swi-type"] .swiper-nav-wrap {display:flex; place-content:space-between; position:absolute; left:0; top:50%; width:100%; font-size:0; translate:0 -50%; z-index:1;}
-		[class*="swi-type"] .swiper-nav-wrap > * {position:static; margin:0;}
+		[class*="swi-type"] .swiper-nav-wrap {display:flex; place-content:space-between; position:absolute; left:0; top:50%; width:100%; height:0; font-size:0; translate:0 -50%; z-index:1;}
+		[class*="swi-type"] .swiper-nav-wrap > * {position:static; margin:0; translate:0 -50%;}
 		[class*="swi-type"] .swiper-nav-wrap > *:after {content:""; background-image:var(--ic-c); background-size:var(--bg-sz);}
 		[class*="swi-type"] .swiper-nav-wrap > .swiper-button-next:after {rotate:180deg;}
 		/**/
