@@ -261,7 +261,8 @@
 			.ic-file:before {width:3.06vw; height:2.78vw;}
 			.ic-filter:before {width:3.61vw; height:3.06vw;}
 			.ic-info:before {width:3.33vw; height:3.33vw;}
-			.ic-link:before {width:2.78vw; height:2.78vw;}
+			.ic-link:before {width:2.5vw; height:2.5vw;}
+			.sub-header .ic-link:before {background-position:0 -2.78vw; width:2.5vw; height:2.5vw;}
 			.ic-lock:before {width:2.78vw; height:3.47vw;}
 			.ic-mascot:before {width:5.56vw; height:5.56vw;}
 			.ic-minus:before {width:2.5vw; height:0.56vw;}
@@ -449,7 +450,34 @@
 				.h-m-head {display:flex; width:100%; place-content:space-between; place-items:center;}
 				.h-button {display:flex;}
 				.h-m-logo {background:url("../images/img/img_m_logo.png") no-repeat; background-size:100% 100%; width:29.44vw; height:7.92vw;}
+				.sub-header {position:relative; z-index:1000;}
 				.sub-header .h-m-logo {background:url("../images/img/img_m_logo_02.png") no-repeat; background-size:100% 100%;}
+
+			/* Header Panel */
+				.h-panel {display:none; position:fixed; left:0; top:0; background:rgba(0, 0, 0, 0.5); width:100dvw; height:100dvh; padding-left:10.27vw;}
+				.h-panel.active {display:block; z-index:100;}
+				.h-panel-inner {display:flex; flex-direction:column; place-content:space-between; background:white; width:100%; height:100dvh;}
+				.h-panel-info {display:flex; flex-direction:column; justify-content:center; border-bottom:1.39vw solid #f9f9f9; padding:9.44vw 5.55vw 4.17vw;}
+				.h-panel-menu {flex:1;}
+				.h-usr-nm {font-size:6.39vw; font-weight:700;}
+				.h-panel-bottom {display:flex; place-content:space-between; height:29.86vw; padding:5vw 5vw; place-items:flex-start;}
+				.h-panel-cont .n-tabs {overflow:hidden; height:100%;}
+				.h-panel-cont .n-tab-pane {overflow-y:auto;}
+				.h-panel .form-type-opt-chk-02 {flex:1; width:100%;}
+				.h-panel .form-type-opt-chk-02 .opt-txt {word-break:break-all;}
+				/*.h-btn-logout {height:21.38vw;}*/
+				.h-m-menu > * {display:flex; flex-direction:column; gap:5.27vw; padding:5.27vw 0;}
+				.h-m-menu > *:first-child {padding-top:0;}
+				.h-m-menu > * + * {border-top:1px solid #ededed;}
+				.h-m-menu > * > a {font-size:3.33vw; font-weight:700;}
+				.h-m-submenu {display:flex; flex-direction:column; font-size:3.89vw;}
+				.h-m-submenu > * {padding:3.89vw 0;}
+				.h-m-submenu > * + * {border-top:1px solid #f1f1f1;}
+				.h-panel .h-lang-wrap .h-lang-select:after {background-position: var(--bp-50) 0; width:2.22vw; height:1.25vw;}
+				.h-panel .h-lang-wrap .h-lang-menu {gap:2vw; top:-29vw; padding:1.39vw; width:max-content; border-radius:1.39vw;}
+				.h-panel .h-lang-wrap .h-lang-menu button {place-items:flex-start;}
+				.h-btn-hamburger-close {display:flex; align-items:center; justify-content:center; position:absolute; right:0; top:0; width:13.89vw; height:13.89vw;}
+				.h-btn-hamburger-close:before {content:""; background-position:var(--bp-100) var(--bp-500); background-image:var(--ic); background-size:var(--bg-sz); width:4.17vw; height:4.17vw;}
 
 			/* Footer */
 				.f-wrap {padding:5.56vw 0 0; font-size:2.78vw;}
@@ -488,7 +516,7 @@
 			#personalized .personalized-lnk {gap:2.22vw; margin-top:6.94vw; font-size:3.61vw;}
 			#personalized .lst-item {margin-top:8.33vw;}
 
-			.main-aijob-lst {gap:3.89vw; margin-top:5.56vw; font-size:3.89vw; line-height:5vw;}
+			.main-aijob-lst {place-content:flex-start; gap:3.89vw; margin-top:5.56vw; font-size:3.89vw; line-height:5vw;}
 			.main-aijob-lst > * {width:25vw; height:25vw;}
 			.main-aijob-lst > *.active {font-size:3.33vw;}
 			.main-aijob-lst > *.active:before {width:4.17vw; height:3.06vw;}
