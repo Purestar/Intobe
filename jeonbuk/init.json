@@ -11,9 +11,9 @@
 			"id": "Path",
 			"submenu": [
 				{ "id": "공통", "submenu": [
-					{ "menu": "레이아웃", "src": "./page/layout.html", "state": "work" },
+					{ "menu": "레이아웃", "src": "./page/layout.html", "state": "comp" },
 					{ "menu": "팝업", "src": "./page/popup.html", "state": "comp" }
-				], "state": "work"},
+				], "state": "comp"},
 				{ "menu": "로그인", "src": "./page/ULO_010000.html", "state": "comp" },
 				{ "id": "진입", "submenu": [
 					{ "menu": "희망기업설정", "src": "./page/UFE_010000.html", "state": "comp" },
@@ -97,7 +97,7 @@
 				], "state": "comp"},
 				{ "menu": "보관함", "src": "./page/UST_010000.html", "state": "comp" }
 			],
-			"state": "work"
+			"state": "comp"
 		},
 		{
 			"id": "Guide",
