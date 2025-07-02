@@ -520,7 +520,7 @@
 			.main-aijob-lst > * {width:25vw; height:25vw;}
 			.main-aijob-lst > *.active {font-size:3.33vw;}
 			.main-aijob-lst > *.active:before {width:4.17vw; height:3.06vw;}
-			.main-aijob-lst > *.active:after {font-size:3.89vw;}
+			.main-aijob-lst > *.active strong {font-size:3.89vw;}
 			.main-aijob-lst > *.active .main-aijob-lst-txt {margin-top:2.22vw;}
 
 		/* 진입 */

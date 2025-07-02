@@ -747,7 +747,8 @@
 		.main-aijob-lst > * {display:flex; flex-shrink:0; flex-direction:column; place-items:center; place-content:center; background:black; border-radius:50%; width:160px; height:160px;}
 		.main-aijob-lst > *.active {font-size:18px;}
 		.main-aijob-lst > *.active:before {content:""; background-image:var(--ic); background-size:var(--bg-sz); background-position:var(--bp-450) 0; mix-blend-mode:plus-lighter; width:30px; height:22px;}
-		.main-aijob-lst > *.active:after {content:"완료!"; mix-blend-mode:soft-light; font-size:20px; font-weight:700;}
+		.main-aijob-lst strong {display:none; mix-blend-mode:soft-light; font-size:20px; font-weight:700; color:white;}
+		.main-aijob-lst > *.active strong {display:block;}
 		.main-aijob-lst > *.active .main-aijob-lst-txt {margin-top:14px; mix-blend-mode:soft-light;}
 		.main-aijob-lst > *:nth-child(1) {background:#af3c78;}
 		.main-aijob-lst > *:nth-child(2) {background:#853687;}
