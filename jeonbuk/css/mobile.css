@@ -515,6 +515,7 @@
 			#personalized .personalized-txt:after {right:0.97vw; bottom:-0.56vw; border-left:1.11vw solid transparent; border-right:1.11vw solid transparent; border-bottom:2.22vw solid var(--personalized-ft-c);}
 			#personalized .personalized-lnk {gap:2.22vw; margin-top:6.94vw; font-size:3.61vw;}
 			#personalized .lst-item {margin-top:8.33vw;}
+			#personalized .lst-item > * {height:16.93vw;}
 
 			.main-aijob-lst {place-content:flex-start; gap:3.89vw; margin-top:5.56vw; font-size:3.89vw; line-height:5vw;}
 			.main-aijob-lst > * {width:25vw; height:25vw;}

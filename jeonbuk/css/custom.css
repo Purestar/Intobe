@@ -738,6 +738,7 @@
 		#personalized .personalized-txt:after {content:""; position:absolute; right:7px; bottom:-4px; border-left:5px solid transparent; border-right:5px solid transparent; border-bottom:10px solid var(--personalized-ft-c); rotate:90deg;}
 		#personalized .personalized-lnk {display:flex; gap:12px; place-items:center; margin-top:40px; font-size:14px;}
 		#personalized .lst-item {margin-top:36px;}
+		#personalized .lst-item > * {height:78px;}
 
 		#personalized .personalized-wrap-pnk {--personalized-bg-c:#ffd6d6; --personalized-ft-c:#a6165f;}
 		#personalized .personalized-wrap-pur {--personalized-bg-c:#dfd5f1; --personalized-ft-c:#482f8d;}
