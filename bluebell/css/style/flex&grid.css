@@ -29,7 +29,7 @@
 	place-items: var(--items-y, var(--items-a)) var(--items-x, var(--items-a));
 }
 
-@media (max-width: 720px) {
+@media (max-width: 768px) {
 	[style*="--gap"] {
 		--m-gap-a: var(--gap-a);
 		--m-gap-x: var(--m-gap-a);

@@ -1,5 +1,5 @@
 [style*="--dp"] { display: var(--dp); }
 
-@media (max-width: 720px) {
+@media (max-width: 768px) {
 	[style*="--m-dp"] { display: var(--m-dp); }
 }
