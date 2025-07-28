@@ -4,8 +4,8 @@
 		--init-font-color: black; /* 글자색 */
 		--init-font-family: Poppins, Noto Sans KR; /* 글자체 */
 		--init-font-size: 16px; /* 글자 크기 */
-		--init-footer-height: 232px; /* 푸터 높이 */
-		--init-header-height: 148px; /* 헤더 높이 */
+		--init-footer-height: 195px; /* 푸터 높이 */
+		--init-header-height: 120px; /* 헤더 높이 */
 		--init-line-height: 1.2; /* 행간 */
 		--init-letter-spacing: -0.02em; /* 자간 */
 		--init-layout-width: 1200px; /* 페이지 넓이 */
@@ -50,10 +50,13 @@
 		--bp-paging: var(--bp-550);
 		--bp-tooltip: var(--bp-600);
 
+		--bg-type01:linear-gradient(90deg, rgba(224,35,43,1) 0%, rgba(189,80,119,1) 46%, rgba(94,122,214,1) 100%);
+		--bg-type03:rgba(0, 0, 0, 0.5);
+
 	/* Color */
-		--mc: #9e9e9e; /* 메인 컬러 */
-		--moc: #424242; /* 메인 오버 컬러 */
-		--mlc: #c0c0c0; /* 메인 밝은 컬러 */
+		--mc: #cc000c; /* 메인 컬러 */
+		--moc: #bb000a; /* 메인 오버 컬러 */
+		--mlc: #fff6f8; /* 메인 밝은 컬러 */
 		--mdc: #222222; /* 메인 어두운 컬러 */
 		--mic: #f65555; /* 강조 컬러 */
 

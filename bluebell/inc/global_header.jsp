@@ -10,11 +10,7 @@
 		<title>캐논코리아</title>
 
 		<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
-		<link rel="stylesheet" href="../css/common.css" type="text/css">
-		<link rel="stylesheet" href="../css/plugin.css" type="text/css">
-		<link rel="stylesheet" href="../css/layout.css" type="text/css">
-		<link rel="stylesheet" href="../css/style.css" type="text/css">
-		<link rel="stylesheet" href="../css/custom.css" type="text/css">
+		<link rel="stylesheet" href="../css/global.css" type="text/css">
 
 		<script src="../js/common.js"></script>
 		<script src="../js/front.js"></script>

@@ -24,22 +24,12 @@ $.datepicker.setDefaults($.datepicker.regional["ko"]);
 
 $(window).on("load", function () {
 	$(document).slt(); // 셀렉트박스
-	
 });
-// Has Attribute (Required)
-$.fn.hasAttr = function ($obj, atr) {
-	$obj.each(function () {
-		attr = $(this).attr(atr);
-		hasAttr = typeof attr !== typeof undefined && attr !== false;
-	});
 
-	return hasAttr;
-};
-
-  
-  
 $(function () {
-	$(document).datep(); // 데이트피커
+	$("header").gnb(); // 헤더
+
+	/*$(document).datep(); // 데이트피커
 	$(document).tta(); // 활성화 토글
 	$(document).popUI(); // 팝업
 	$(document).acoUI(); // 아코디언
@@ -62,25 +52,51 @@ $(function () {
 	$(document).txtAr(); // 텍스트에어리어
 	$(".btn-df-ic-btntop").topBtn(); // 탑버튼
 	$(window, document, "body").scrUI(); // 스크롤 관련 기능 모두 포함
-	$("header").hUI(); // 헤더
+
 	// 메뉴
 	$(".sub-h-menu-od").menu();
-	$(".lnb-menu-od").menu();
-	
+	$(".lnb-menu-od").menu();*/
+
 });
+
+// Has Attribute (Required)
+$.fn.hasAttr = function ($obj, atr) {
+	$obj.each(function () {
+		attr = $(this).attr(atr);
+		hasAttr = typeof attr !== typeof undefined && attr !== false;
+	});
+
+	return hasAttr;
+};
+
+/* Header GNB */
+$.fn.gnb = function () {
+	var $obj = $(this),
+		$hSubMenu = $obj.find(".h-sub-menu-wrap")
+		$gnb = $obj.find(".h-gnb-wrap")
+	;
+
+	$gnb.on("mouseenter", function () {
+		$hSubMenu.addClass("active");
+	});
+
+	$gnb.on("mouseleave", function () {
+		$hSubMenu.removeClass("active");
+	});
+};
 
 /*$(document).ready(function() {
     $.addMainHeader();
 });*/
 $(document).scroll(function() {
-    if ($(".main-page").length && $(this).scrollTop() > 0) {
+    /*if ($(".main-page").length && $(this).scrollTop() > 0) {
         $("header").removeClass("main-header");
         $("header").addClass("sb-header");
 		$(".h-logo img").attr("src","../images/img/img_logo_w.png");
     } else if ($(".main-page").length) {
         $("header").addClass("main-header");
 		$(".h-logo img").attr("src","../images/img/img_logo.png");
-    }
+    }*/
 });
 $(document).ready(function() {
 	if ($('.main-page').length > 0) {
@@ -247,7 +263,7 @@ $.fn.acoUI = function (options) {
   };
 
 // Global Navigation
-/*$.fn.gnb = function () {
+$.fn.gnb = function () {
 	var $obj = $(this);
 
 	$obj.find(".h-gnb-wrap").on("mouseover", function () {
@@ -273,20 +289,7 @@ $.fn.acoUI = function (options) {
 	});
 };*/
 
-$.fn.hUI = function () {
-	var $obj = $(this),
-		$hSubMenu = $obj.find(".h-sub-menu-wrap")
-		$gnb = $obj.find(".h-gnb-wrap")
-	;
 
-	$gnb.on("mouseenter", function () {
-		$hSubMenu.addClass("active");
-	});
-
-	$gnb.on("mouseleave", function () {
-		$hSubMenu.removeClass("active");
-	});
-};
 
 // Self Toggle
 $.fn.selfTg = function () {
@@ -590,7 +593,7 @@ $.fn.swiperInit = function () {
 		});
 	});
 
-	
+
 	$(".swi-type03").each(function () {
 		swiperTG = this;
 		new Swiper(swiperTG.querySelector(".swiper"), {

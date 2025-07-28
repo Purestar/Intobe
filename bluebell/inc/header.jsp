@@ -1,8 +1,7 @@
 <%@ page contentType = "text/html; charset=UTF-8" %>
 <%@ include file="../inc/global_header.jsp" %>
-<header class="sb-header">
-	<div class="h-top-bg"></div>
-	<div class="inner">
+<header class="sb-header h-wrap">
+	<div class="layout-inner">
 		<div class="h-bot">
 			<h1 class="h-logo"><a href="#"><img src="../images/img/img_logo_w.png"></a></h1>
 			<nav class="h-gnb-wrap">
