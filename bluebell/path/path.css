@@ -7,7 +7,7 @@
 .path header .prj-proc {position:fixed; right:-100%; top:0; line-height:11.114vw; font-size:3vw;}
 .path header .btn-panel {position:absolute; right:0; top:0; justify-content: center; background:none; border:none; border-left:1px solid #2b2b2b; width:11.114vw; max-width:50px; height:100%; font-size:4vw;}
 .path .this-address {position:absolute; left:50%;  transform:translate(-50%, 0); z-index:10;}
-.path .this-address a {display:inline-block; background:black; border-bottom-left-radius:10px; border-bottom-right-radius:10px; padding:0 10px; line-height:30px;}
+.path .this-address a {display:inline-block; background:black; border-bottom-left-radius:10px; border-bottom-right-radius:10px; padding:0 10px; line-height:30px; color:white;}
 .path .bg-w {background:white;}
 
 .path #container {position:fixed; left:0; top:11.114vw; right:0; bottom:8.8vw; padding:0; transition:right .3s, top .3s, bottom .3s;}
