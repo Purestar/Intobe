@@ -5,7 +5,7 @@
 		<meta charset="UTF-8">
 		<meta name="keywords" content="캐논코리아">
 		<meta name="description" content="캐논코리아">
-		<meta name="viewport" content="width=1240, initial-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover">
 
 		<title>캐논코리아</title>
 

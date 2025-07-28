@@ -12,8 +12,8 @@
 	</div>
 	<div class="layout-inner sub-inner">
 		<div class="contents">
-			<div class="fx-gap-01 fx-jcc brd-form" >
-				<div class="sel-type" >
+			<div class="fx-gap-01 fx-jcc brd-form">
+				<div class="sel-type">
 					<select>
 						<option>전체</option>
 					</select>

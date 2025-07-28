@@ -73,13 +73,15 @@
 	}
 
 /* Marker */
-	[class*="mark-"] > * > .part-marker {
+	[class*="mark-"] > * > .part-marker,
+	[class*="mark-"] > *:before {
 		width: var(--mark-w);
 		min-height: var(--mark-txt-lh);
 		height: var(--mark-h);
 	}
 
-	[class*="mark-"] > * > .part-marker:before {
+	[class*="mark-"] > * > .part-marker:before,
+	[class*="mark-"] > *:before {
 		background-color: var(--mark-bg-c);
 		border-radius: var(--mark-bd-r);
 		width: var(--mark-w);

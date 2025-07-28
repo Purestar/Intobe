@@ -67,19 +67,45 @@ body, #app {display:flex; flex-direction:column; justify-content:space-between; 
 	.h-sub-menu-wrap .h-sub-menu a {color: #666;}
 	.h-sub-menu-wrap .h-sub-menu a:hover, .h-sub-menu-wrap .h-sub-menu .active a {color: #df242c;}
 
-.f-wrap {height:var(--init-footer-height);}
+/* Container */
+	#container {flex:1;}
+	.inner {width:var(--init-cont-w); margin:0 auto;}
+	.sub-layout {padding:0 0 140px;}
+	.sub-layout .sub-top + .sub-inner{padding-top: 20px;}
+	.sub-layout .sub-inner {display:flex; justify-content: space-between; align-items: flex-start; gap:40px;padding-top:70px;}
+	.sub-layout .sub-top-bg01 {height: 200px;background: url(../images/temp/sub-top-bg01.png);background-position: bottom;}
+	.sub-layout .sub-mid {min-height: 260px;background:#f9f9f9;padding:55px 0;}
+	[class*="sub-top"] {display: flex;align-items: center;height: 200px;}
+	[class*="sub-top"] .sub-inner{justify-content: center;padding:70px 0; text-align:center;position: relative;}
+	[class*="sub-top"] .sub-tit{font-size: 40px;font-weight: bold;color: #2f2f2f;text-align: center;justify-content: center;}
+	[class*="sub-top"] .page-loc {display:flex; position:absolute; right:0; top:0; font-size:14px;}
+	[class*="sub-top"] .page-loc li {display:flex; align-items:center; color:#2f2f2f;}
+	[class*="sub-top"] .page-loc li + li {margin-left:8px;}
+	[class*="sub-top"] .page-loc li + li:before {content:""; display:inline-block; background:url("../images/icon.png") -350px 0px no-repeat; margin-right:9px; width:6px; height:11px;}
+	.sub-layout .lnb-wrap + .contents {flex:0 0 891px;}
+	.sub-layout .lnb-wrap02 {flex:0 0 220px; background:white; border:1px solid #e2e2e2; border-radius:12px; padding:28px 20px;}
+	.sub-layout .lnb-wrap02 .lnb-menu {display:flex; flex-direction: column; gap:25px; border-top:1px solid #e2e2e2; margin-top:28px; padding-top:28px; font-size:18px; color:black;}
+	.sub-layout .lnb-wrap02 .lnb-menu a {position:relative;}
+	.sub-layout .lnb-wrap02 .lnb-menu a:hover {color:var(--main-color-pur);}
+	.sub-layout .lnb-wrap02 .lnb-menu [class*="new"] {position:absolute; right:-6px; top:0; border-radius:50%; width:5px; height:5px;}
+	.sub-layout .lnb-wrap02 .lnb-menu strong,
+	.sub-layout .lnb-wrap02 .lnb-menu .fw-r {color:#aaa;}
+	.sub-layout .lnb-wrap02 .lnb-menu strong span {color:#666;}
+	.sub-layout .lnb-wrap02 .lnb-info {margin-top:24px; font-size:14px; line-height:24px;}
+	.sub-layout .lnb-wrap02 .lnb-info > * {display:flex; gap:10px; justify-content: space-between;}
+	/* .sub-layout .lnb-wrap02 .lnb-info span:after {content:"명";} */
+	.sub-layout .lnb-wrap02 + .contents {width:930px; margin-top:20px;}
+
+	.sub-layout .lnb-tc-name {font-size:22px; color:black;}
+	.sub-layout .contents {width:100%;}
+
 
 /* Footer */
-	footer { height:var(--init-fh); padding-top:65px;background: #333333;}
-	footer .f-logo {margin-right:51px;}
-	footer .f-menu {display:flex; font-weight:700;}
-	footer .f-copy { font-size:14px; color:var(--fc-c03);}
-	footer .f-site {width:168px;}
+	.f-wrap {display: flex; place-items: center; background: #333333; height:var(--init-footer-height);}
+	.f-wrap .f-menu {font-weight:700;}
+	.f-wrap .f-copy {margin-top:10px; font-size:14px; color: #999;}
 
-	footer .vbar-01 span{font-size: 14px;color:var(--fc-c03);}
-
-#container {flex:1;}
 
 @media all and (max-width:720px) {
-
+	.f-wrap .f-copy { margin-top: 4.86vw; }
 }

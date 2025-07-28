@@ -118,11 +118,11 @@
 @media all and (max-width:720px) {
 	:root {
 		/* Initialize */
-			--init-font-size: 3.33vw; /* 글자 크기 */
-			--init-footer-height: 47.36vw; /* 푸터 높이 */
-			--init-header-height: 16.66vw; /* 헤더 높이 */
-			--init-layout-width: 100dvw; /* 페이지 넓이 */
-			--init-layout-padding: 5vw; /* 레이아웃 안쪽 좌우 여백 */
+			--init-font-size: 3.33dvw; /* 글자 크기 */
+			--init-footer-height: 51.39dvw; /* 푸터 높이 */
+			--init-header-height: 16.66dvw; /* 헤더 높이 */
+			--init-layout-width: 100%; /* 페이지 넓이 */
+			--init-layout-padding: 5dvw; /* 레이아웃 안쪽 좌우 여백 */
 
 		/* Background */
 			--bg-img: url('/images/m_bg.png'); /* 배경 이미지 경로 */

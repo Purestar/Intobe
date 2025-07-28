@@ -5,8 +5,11 @@
 	[class*="mark-"].mark-direction > * { width: 100%; }
 
 /* Marker */
-	[class*="mark-"] > * > .part-marker { display: flex; place-items: center; }
-	[class*="mark-"] > * > .part-marker:before { content:""; }
+	[class*="mark-"] > * > .part-marker,
+	[class*="mark-"] > * { display: flex; place-items: center; }
+	[class*="mark-"] > * > .part-marker:before,
+	[class*="mark-"] > *:before { content:""; }
+	[class*="mark-"] > *:first-child:before { content: none; }
 	[class*="mark-"] > .part-no-marker > .part-marker { display:none; }
 
 /* Type */

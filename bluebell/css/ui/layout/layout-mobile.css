@@ -17,7 +17,7 @@
 
 	[class*="layout-inner"] {
 		--m-lay-dp: var(--lay-dp);
-		--m-lay-w: 100%;
+		--m-lay-w: var(--init-layout-width);
 		--m-lay-mg-x: var(--lay-mg-x);
 		--m-lay-pd-x: var(--init-layout-padding);
 	}
