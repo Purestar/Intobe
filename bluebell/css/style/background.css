@@ -1,0 +1,5 @@
+[style*="--bg-c"] { background-color: var(--bg-c); }
+
+@media (max-width: 720px) {
+	[style*="--m-bg-c"] { background-color: var(--m-bg-c); }
+}

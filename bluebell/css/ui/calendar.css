@@ -1,0 +1,37 @@
+/* Default */
+[class*="calendar-type"] { background-color: white; }
+
+/* Header */
+[class*="calendar-type"] .part-header { display: flex; place-content: space-between; }
+
+/* Page Arrow */
+[class*="calendar-type"] .part-prev-year:before,
+[class*="calendar-type"] .part-prev:before,
+[class*="calendar-type"] .part-next:before,
+[class*="calendar-type"] .part-next-year:before { content: ''; display: block; background-image: var(--ic-c); background-size: var(--bg-sz); }
+[class*="calendar-type"] .part-prev-year:before,
+[class*="calendar-type"] .part-next-year:before { background-position: var(--bp-150) var(--bp-calendar); width: 16px; height: 14px; }
+[class*="calendar-type"] .part-prev:before,
+[class*="calendar-type"] .part-next:before { background-position: var(--bp-200) var(--bp-calendar); width: 9px; height: 14px; }
+[class*="calendar-type"] .part-next:before,
+[class*="calendar-type"] .part-next-year:before { rotate: 180deg; }
+
+/* DateTable */
+[class*="calendar-type"] .part-table-wrap { display: flex; }
+[class*="calendar-type"] .part-date-cell { text-align: center; }
+[class*="calendar-type"] .part-date { display: inline-flex; border-radius: 50%; place-content: center; place-items: center; align-self: center; width: 30px; height: 30px; cursor: pointer; }
+[class*="calendar-type"] [data-today] { background-color: var(--mc); color: white; }
+[class*="calendar-type"] [data-selected] { background-color: var(--moc); color: white; }
+
+/* Disabled */
+[class*="calendar-type"][data-disabled] { opacity: 0.5; }
+[class*="calendar-type"][data-disabled] .part-date { cursor: default; }
+
+/* Readonly */
+[class*="calendar-type"][data-readonly] .part-date { cursor: default; }
+
+/* Unavailable */
+[class*="calendar-type"] [data-unavailable] { text-decoration: line-through; color: var(--mic); cursor: default; }
+
+/* Out Month Day */
+[class*="calendar-type"] [data-outside-view] { opacity: 0.5; }

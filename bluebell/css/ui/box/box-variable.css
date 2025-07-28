@@ -1,0 +1,23 @@
+/* Initialize */
+	[class*="box-type"] {
+		--box-bd-s: solid;
+		--box-bd-w: 1px;
+		--box-sha-c-r: 0;
+		--box-sha-c-g: 0;
+		--box-sha-c-b: 0;
+		--box-sha-opa: 0.5;
+	}
+
+/* Default */
+	[class*="box-type"] {
+		background-color: var(--box-bg-c);
+		border-color: var(--box-bd-c);
+		border-style: var(--box-bd-s);
+		border-width: var(--box-bd-w);
+		border-radius:  var(--box-bd-r);
+		box-shadow: 0 0 var(--box-sha-size) rgba(var(--box-sha-c-r), var(--box-sha-c-g), var(--box-sha-c-b), var(--box-sha-opa));
+		padding: var(--box-pd-t, var(--box-pd-y, var(--box-pd-a, var(--box-bd-r))))
+				var(--box-pd-r, var(--box-pd-x, var(--box-pd-a, var(--box-bd-r))))
+				var(--box-pd-b, var(--box-pd-y, var(--box-pd-a, var(--box-bd-r))))
+				var(--box-pd-l, var(--box-pd-x, var(--box-pd-a, var(--box-bd-r))));
+	}

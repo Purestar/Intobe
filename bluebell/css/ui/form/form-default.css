@@ -1,0 +1,34 @@
+/* Default */
+	[class*="form-"] { display: flex; place-items: center; position: relative; }
+	[class*="form-"] > * { flex-shrink: 0; }
+	[class*="form-"] input { background: none; }
+
+/* Date Indicator */
+	input[type="date"]::-webkit-calendar-picker-indicator,
+	input[type="datetime-local"]::-webkit-calendar-picker-indicator,
+	input[type="month"]::-webkit-calendar-picker-indicator,
+	input[type="time"]::-webkit-calendar-picker-indicator,
+	input[type="week"]::-webkit-calendar-picker-indicator { position: absolute; padding: 0; cursor: pointer; }
+
+/* Float Label */
+	[class*="form-"] .part-label { position: absolute; left: var(--form-pd-x); top: var(--form-pd-x); line-height: 1; transition: var(--trans-dft); font-size: 0.7em; cursor: auto; }
+
+	[class*="form-"] input:focus + .part-label,
+	[class*="form-"].form-filled .part-label,
+	[class*="form-"] [data-state="open"] .part-label,
+	[class*="form-"] textarea:focus + .part-label { top: 0; }
+
+	[class*="form-"] input:focus + .part-label[data-floatlabel="over"],
+	[class*="form-"].form-filled .part-label[data-floatlabel="over"],
+	[class*="form-"] [data-state="open"] .part-label[data-floatlabel="over"],
+	[class*="form-"] textarea:focus + .part-label[data-floatlabel="over"] { transform: translateY(-1.2em); }
+
+	[class*="form-"] input:focus + .part-label[data-floatlabel="in"],
+	[class*="form-"].form-filled .part-label[data-floatlabel="in"],
+	[class*="form-"] [data-state="open"] .part-label[data-floatlabel="in"],
+	[class*="form-"] textarea:focus + .part-label[data-floatlabel="in"] { transform: translateY(0.2em); }
+
+	[class*="form-"] input:focus + .part-label[data-floatlabel="on"],
+	[class*="form-"].form-filled .part-label[data-floatlabel="on"],
+	[class*="form-"] [data-state="open"] .part-label[data-floatlabel="on"],
+	[class*="form-"] textarea:focus + .part-label[data-floatlabel="on"] { transform: translateY(-0.5em); }

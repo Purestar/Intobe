@@ -1,0 +1,10 @@
+/* Tree Menu */
+	[class*="tree-inner"] { display: flex; flex-direction: column; }
+	[class*="tree-inner"] summary { display: flex; flex-wrap: nowrap; gap: 4px; align-items: center; padding: 0 0 0 18px; }
+	[class*="tree-inner"].tree-sub-item > summary { padding: 0; }
+	[class*="tree-inner"] button { text-align: left; }
+	[class*="tree-inner"] .tree-arrow { display: flex; justify-content: center; width: 14px; height: 14px; }
+	[class*="tree-inner"] .tree-arrow:before { content: ""; background-image: var(--ic-c); background-size: var(--bg-sz); background-position: var(--bp-150) var(--bp-500); width: 8px; height: 14px; transition: transform .3s ease; }
+	[class*="tree-inner"] [class*="tree-inner"],
+	[class*="tree-inner"] > * { padding-left: 18px; }
+	[class*="tree-inner"][open] > summary > .tree-arrow:before { transform: rotate(90deg); transition: transform .3s ease; }

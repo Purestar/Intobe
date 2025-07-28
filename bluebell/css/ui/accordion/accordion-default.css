@@ -1,0 +1,45 @@
+/* Default */
+[class*="aco-type"] { overflow-x: hidden; overflow-y: auto; display: grid; grid-auto-rows: max-content; }
+[class*="aco-type"] > .aco-item > .aco-head-wrap .aco-head { display: flex; align-items: center; justify-content: space-between; width: 100%; height: auto; text-align: left; }
+[class*="aco-type"] > .aco-item > .aco-head-wrap .aco-head .aco-head-in { display: flex; width: 100%; }
+[class*="aco-type"] > .aco-item > .aco-head-wrap .aco-toggle { white-space: nowrap; }
+[class*="aco-type"] > .aco-item > .aco-head-wrap .aco-toggle-btn { display: flex; align-items: center; justify-content: center; transition: rotate var(--trans-dft); }
+[class*="aco-type"] > .aco-item > .aco-head-wrap .aco-toggle-btn::after { content:""; background-image: var(--ic-c); background-repeat: no-repeat; background-size: var(--bg-sz); }
+[class*="aco-type"] > .aco-item > .aco-cont > .aco-cont-in { overflow: hidden; }
+
+/* Active */
+[class*="aco-type"] > .aco-item[data-state="open"] > .aco-head-wrap .aco-head { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+[class*="aco-type"] > .aco-item[data-state="open"] > .aco-head-wrap .aco-toggle-btn { rotate: 180deg; }
+
+/* Disabled */
+[class*="aco-type"] > .aco-item[data-disabled] { opacity: 0.5; }
+
+/* Orientation */
+[class*="aco-type"] > .aco-item[data-orientation="horizontal"] { display: flex; }
+[class*="aco-type"] > .aco-item[data-orientation="horizontal"] > .aco-head-wrap .aco-head { width: max-content; }
+[class*="aco-type"] > .aco-item[data-orientation="horizontal"] > .aco-cont { width: 100%; }
+
+/* QnA */
+[class*="aco-type"].aco-qna .aco-cont { display: flex; }
+
+/* Reverse */
+[class*="aco-type"].aco-head-reverse > .aco-item > .aco-head-wrap .aco-head { flex-direction: row-reverse; justify-content: flex-end; }
+
+/* Scroll Fix */
+[class*="aco-type"].aco-scroll-fix > .aco-item > .aco-head-wrap { position: sticky; left: 0; top: 0; height: max-content; }
+
+/* Slide */
+[class*="aco-type"].aco-slide > .aco-item > .aco-cont { overflow:hidden; }
+[class*="aco-type"].aco-slide > .aco-item > .aco-cont[data-state="open"] { animation: acoSlideDown 300ms ease-out; }
+[class*="aco-type"].aco-slide > .aco-item > .aco-cont[data-state="closed"] { animation: acoSlideUp 300ms ease-out; }
+
+/* Animation */
+@keyframes acoSlideDown {
+	from { height: 0; }
+	to { height: var(--reka-accordion-content-height); }
+}
+
+@keyframes acoSlideUp {
+	from { height: var(--reka-accordion-content-height); }
+	to { height: 0; }
+}

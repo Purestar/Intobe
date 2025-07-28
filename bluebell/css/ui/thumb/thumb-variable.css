@@ -1,0 +1,26 @@
+/* Initialize */
+	[class*="thumb-type"] {
+		--thumb-ratio: 4 / 3;
+		--thumb-bg-c: var(--thmb-bg);
+		--thumb-w: 100%;
+		--thumb-pd-x: var(--thumb-pd-a);
+		--thumb-pd-y: var(--thumb-pd-a);
+	}
+
+/* Variation */
+	[class*="thumb-type"] {
+		aspect-ratio: var(--thumb-ratio);
+		background-color: var(--thumb-bg-c);
+		border-radius: var(--thumb-bd-r);
+		width: var(--thumb-w);
+		height: var(--thumb-h);
+	}
+
+	[class*="thumb-type"] > *:is(img, video) {
+		border-radius: var(--thumb-bd-r);
+	}
+
+	[class*="thumb-type"] > *:not(img, video) {
+		padding-inline: var(--thumb-pd-x);
+		padding-block: var(--thumb-pd-y);
+	}

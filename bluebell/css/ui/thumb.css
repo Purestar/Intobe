@@ -1,0 +1,6 @@
+/* Thumb - Default */
+@import "./thumb/thumb-default.css";
+/* Thumb - Variable */
+@import "./thumb/thumb-variable.css";
+/* Thumb - Mobile */
+@import "./thumb/thumb-mobile.css";

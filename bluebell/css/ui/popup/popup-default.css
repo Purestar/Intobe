@@ -1,0 +1,27 @@
+/* Wrap */
+	[class*="pop-type"] .part-wrap { overflow: hidden; position:fixed; left:50%; top:50%; background-color: white; translate: -50% -50%; }
+	[class*="pop-type"] .part-wrap > * { flex-shrink: 0; }
+
+/* Header */
+	[class*="pop-type"] .part-head { position: sticky; left: 0; top: 0; display: flex; place-content: space-between; place-items: center; }
+	[class*="pop-type"] .part-head .part-title { flex: 1; text-wrap: wrap; }
+	/*[class*="pop-type"] .part-head-actions { display: flex; place-items: center; }
+	[class*="pop-type"] .part-head-actions:first-child { position: absolute; right: 0; top: 0; }*/
+
+/* Footer */
+	[class*="pop-type"] .part-foot { display: flex; place-content: center; place-items: center; }
+	[class*="pop-type"] .part-foot [class*="btn-type"] { height: auto; }
+
+/* Content */
+	[class*="pop-type"] .part-cont { flex: 1; }
+	[class*="pop-type"] .part-cont { overflow-x: hidden; overflow-y: auto; }
+	[class*="pop-type"] .part-cont > *:first-child { margin-top: 0; }
+
+/* Backdrop */
+	[class*="pop-type"] .part-overlay { display: none; position: fixed; left: 0; top: 0; background-color: rgba(0, 0, 0, .5); width: 100dvw; height: 100dvh; }
+	[class*="pop-type"] .part-overlay[data-aria-hidden] { display: block; }
+
+/* Close */
+	[class*="pop-type"] .part-close { position: absolute; right: 0; top: 0; display: flex; place-items: center; place-content: center; text-indent: -1000em; }
+	[class*="pop-type"] .part-close:before { content: ""; background-image: var(--ic-c); background-position: var(--bp-150) var(--bp-popup); background-size: var(--bg-sz); }
+	[class*="pop-type"]:not([data-head]) .part-close:before { background-position: var(--bp-200) var(--bp-popup); }

@@ -1,0 +1,57 @@
+/* Initialize */
+	[class*="tab-wrap"] {
+		/* Menu */
+		--tab-bd-c: black;
+		--tab-menu-bd-b-c: black;
+		--tab-menu-bd-b-s: solid;
+		--tab-menu-bd-b-w: 0;
+		--tab-menu-gap-a: 0;
+		--tab-menu-gap-x: var(--tab-menu-gap-a);
+		--tab-menu-gap-y: var(--tab-menu-gap-a);
+
+		/* Menu Over */
+		--tab-btn-over-bg-c: var(--mc);
+		--tab-btn-over-ft-c: white;
+		--tab-btn-active-bg-c: var(--tab-btn-over-bg-c);
+		--tab-btn-active-ft-c: var(--tab-btn-over-ft-c);
+
+		/* Contents */
+		--tab-cont-pd-x: var(--tab-cont-pd-a);
+		--tab-cont-pd-y: var(--tab-cont-pd-a);
+	}
+
+/* Menu */
+	[class*="tab-menu"] {
+		border-bottom: var(--tab-menu-bd-b-w) var(--tab-menu-bd-b-s) var(--tab-menu-bd-b-c);
+		column-gap: var(--tab-menu-gap-x);
+		row-gap: var(--tab-menu-gap-y);
+	}
+
+/* Button */
+	[class*="tab-menu"] > * > * {
+		background-color: var(--tab-btn-bg-c);
+		border-radius: var(--tab-btn-bd-r);
+		height: var(--tab-btn-h);
+		padding-inline:var(--tab-btn-pd-x);
+		font-size: var(--tab-btn-ft-s);
+		font-weight: var(--tab-btn-ft-w);
+		color: var(--tab-btn-ft-c);
+	}
+
+/* Menu Over */
+	[class*="tab-menu"] > * > *:hover {
+		background-color: var(--tab-btn-over-bg-c);
+		color: var(--tab-btn-over-ft-c);
+	}
+
+/* Menu Active */
+	[class*="tab-menu"] > *[data-state="active"] > * {
+		background-color: var(--tab-btn-active-bg-c);
+		color: var(--tab-btn-active-ft-c);
+	}
+
+/* Contents */
+	[class*="tab-wrap"] .tab-cont {
+		padding-inline: var(--tab-cont-pd-x);
+		padding-block: var(--tab-cont-pd-y);
+	}

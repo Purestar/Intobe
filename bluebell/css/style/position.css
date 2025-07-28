@@ -1,0 +1,15 @@
+[style*="--pos"] { position: var(--pos); }
+[style*="--left"] { left: var(--left); }
+[style*="--top"] { top: var(--top); }
+[style*="--bottom"] { bottom: var(--bottom); }
+[style*="--right"] { right: var(--right); }
+[style*="--z-idx"] { z-index: var(--z-idx); }
+
+@media (max-width: 720px) {
+	[style*="--m-pos"] { position: var(--m-pos); }
+	[style*="--m-left"] { left: var(--m-left); }
+	[style*="--m-top"] { top: var(--m-top); }
+	[style*="--m-bottom"] { bottom: var(--m-bottom); }
+	[style*="--m-right"] { right: var(--m-right); }
+	[style*="--m-z-idx"] { z-index: var(--m-z-idx); }
+}

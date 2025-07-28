@@ -1,0 +1,71 @@
+@media all and (max-width: 720px) {
+	/* Initialize */
+	[class*="tab-wrap"] {
+		/* Menu */
+		--m-tab-bd-c: var(--tab-bd-c);
+		--m-tab-menu-bd-b-c: var(--tab-menu-bd-b-c);
+		--m-tab-menu-bd-b-s: var(--tab-menu-bd-b-s);
+		--m-tab-menu-bd-b-w: var(--tab-menu-bd-b-w);
+		--m-tab-menu-gap-a: var(--tab-menu-gap-a);
+		--m-tab-menu-gap-x: var(--m-tab-menu-gap-a);
+		--m-tab-menu-gap-y: var(--m-tab-menu-gap-a);
+
+		/* Button */
+		--m-tab-btn-bg-c: var(--tab-btn-bg-c);
+		--m-tab-btn-bd-r: var(--tab-btn-bd-r);
+		--m-tab-btn-h: var(--tab-btn-h);
+		--m-tab-btn-pd-x: var(--tab-btn-pd-x);
+		--m-tab-btn-ft-s: var(--tab-btn-ft-s);
+		--m-tab-btn-ft-w: var(--tab-btn-ft-w);
+		--m-tab-btn-ft-c: var(--tab-btn-ft-c);
+
+		/* Menu Over */
+		--m-tab-btn-over-bg-c: var(--tab-btn-over-bg-c);
+		--m-tab-btn-over-ft-c: var(--tab-btn-over-ft-c);
+		--m-tab-btn-active-bg-c: var(--m-tab-btn-over-bg-c);
+		--m-tab-btn-active-ft-c: var(--m-tab-btn-over-ft-c);
+
+		/* Contents */
+		--m-tab-cont-pd-a: var(--tab-cont-pd-a);
+		--m-tab-cont-pd-x: var(--m-tab-cont-pd-a);
+		--m-tab-cont-pd-y: var(--m-tab-cont-pd-a);
+	}
+
+/* Menu */
+	[class*="tab-menu"] {
+		border-bottom: var(--m-tab-menu-bd-b-w) var(--m-tab-menu-bd-b-s) var(--m-tab-menu-bd-b-c);
+		column-gap: var(--m-tab-menu-gap-x);
+		row-gap: var(--m-tab-menu-gap-y);
+	}
+
+/* Button */
+	[class*="tab-menu"] > * > * {
+		background-color: var(--m-tab-btn-bg-c);
+		border-radius: var(--m-tab-btn-bd-r);
+		height: var(--m-tab-btn-h);
+		padding-inline:var(--m-tab-btn-pd-x);
+		font-size: var(--m-tab-btn-ft-s);
+		font-weight: var(--m-tab-btn-ft-w);
+		color: var(--m-tab-btn-ft-c);
+	}
+
+/* Menu Over */
+	[class*="tab-menu"] .p-tablist-tab-list .p-tab:hover,
+	ul[class*="tab-menu"] > * > *:hover {
+		background-color: var(--m-tab-btn-over-bg-c);
+		color: var(--m-tab-btn-over-ft-c);
+	}
+
+/* Menu Active */
+	[class*="tab-menu"] .p-tablist-tab-list .p-tab.p-tab-active,
+	ul[class*="tab-menu"] > *.active > * {
+		background-color: var(--m-tab-btn-active-bg-c);
+		color: var(--m-tab-btn-active-ft-c);
+	}
+
+/* Contents */
+	[class*="tab-wrap"] .p-tabpanel {
+		padding-inline: var(--m-tab-cont-pd-x);
+		padding-block: var(--m-tab-cont-pd-y);
+	}
+}

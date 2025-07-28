@@ -1,0 +1,16 @@
+@media all and (max-width: 720px) {
+	/* Initialize */
+		[class*="ellipsis"] {
+			--m-line: var(--line);
+		}
+
+	/* Default */
+		[class*="ellipsis"] {
+			-webkit-line-clamp: var(--m-line);
+		}
+
+	/* Disabled */
+		[class*="ellipsis"][data-disabled] {
+			--m-line: 0
+		}
+}

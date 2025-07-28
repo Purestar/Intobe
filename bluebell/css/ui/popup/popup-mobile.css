@@ -1,0 +1,81 @@
+@media all and (max-width: 720px) {
+	/* Initialize */
+		[class*="pop-type"] {
+			/* Wrap */
+			--m-pop-bd-c: var(--pop-bd-c);
+			--m-pop-bd-w: var(--pop-bd-w);
+			--m-pop-bd-s: var(--pop-bd-s);
+			--m-pop-bd-r: var(--pop-bd-r);
+			--m-pop-w: var(--pop-w);
+			--m-pop-max-h: var(--pop-max-h);
+
+			/* Header */
+			--m-pop-head-bg-c: var(--pop-head-bg-c);
+			--m-pop-head-h: var(--pop-head-h);
+			--m-pop-head-pd-l: var(--pop-head-pd-l);
+			--m-pop-head-ft-c: var(--pop-head-ft-c);
+			--m-pop-head-ft-s: 2.78vw;
+
+			/* Footer */
+			--m-pop-foot-gap: 1.67vw;
+			--m-pop-foot-h: var(--pop-foot-h);
+			--m-pop-foot-pd-x: var(--pop-foot-pd-x);
+
+			/* Content */
+			--m-pop-cont-ft-c: var(--pop-cont-ft-c);
+			--m-pop-cont-ft-s: var(--pop-cont-ft-s);
+			--m-pop-cont-pd-x: var(--pop-cont-pd-x);
+			--m-pop-cont-pd-y: var(--pop-cont-pd-y);
+
+			/* Close */
+			--m-pop-close-w: 4.2vw;
+			--m-pop-close-h: 4.2vw;
+		}
+
+	/* Wrap */
+		[class*="pop-type"] .part-wrap {
+			border: 1px solid var(--m-pop-bd-c);
+			border-radius: var(--m-pop-bd-r);
+			width: var(--m-pop-w);
+			max-height: var(--m-pop-max-h);
+		}
+
+	/* Header */
+		[class*="pop-type"] .part-head {
+			background: var(--m-pop-head-bg-c);
+			min-height: var(--m-pop-head-h);
+			padding: 0 0 0 var(--m-pop-head-pd-l);
+		}
+		[class*="pop-type"] .part-head .pop-title {
+			color: var(--m-pop-head-ft-c);
+			font-size: var(--m-pop-head-ft-s);
+		}
+
+	/* Footer */
+		[class*="pop-type"] .part-foot {
+			gap: var(--m-pop-foot-gap);
+			height: var(--m-pop-foot-h, var(--m-pop-fh));
+			padding-inline: var(--m-pop-foot-pd-x);
+		}
+
+	/* Content */
+		[class*="pop-type"] .part-cont [class*="pop-cont"] {
+			max-height: calc(var(--m-pop-max-h) - var(--m-pop-head-h) - var(--m-pop-foot-h));
+			padding: var(--m-pop-cont-pd-y, var(--m-pop-cont-top-pad)) var(--m-pop-cont-pd-x) var(--m-pop-cont-pd-y, var(--m-pop-cont-bot-pad));
+			font-size: var(--m-pop-cont-ft-s);
+			color: var(--m-pop-cont-ft-c);
+		}
+
+	/* Close */
+		[class*="pop-type"] .part-close {
+			flex: 0 0 var(--m-pop-head-h);
+			width: var(--m-pop-head-h);
+			height: var(--m-pop-head-h);
+		}
+
+		[class*="pop-type"] .part-close:before {
+			width: var(--m-pop-close-w);
+			height: var(--m-pop-close-h);
+		}
+
+}

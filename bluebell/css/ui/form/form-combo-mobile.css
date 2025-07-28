@@ -1,0 +1,118 @@
+@media all and (max-width:720px) {
+	/* Initialize */
+		[class*="form-sel"] {
+			--m-form-bd-c: var(--form-bd-c);
+			--m-form-bd-s: var(--form-bd-s);
+			--m-form-bd-r: var(--form-bd-r);
+			--m-form-bd-w: var(--form-bd-w);
+			--m-form-bg-c: var(--form-bg-c);
+			--m-form-ft-c: var(--form-ft-c);
+			--m-form-ft-s: var(--form-ft-s);
+			--m-form-gap-x: var(--form-gap-x);
+			--m-form-w: var(--form-w);
+			--m-form-h: var(--form-h);
+			--m-form-pd-x: var(--form-pd-x);
+			--m-form-pd-l: var(--form-pd-l);
+			--m-form-pd-r: var(--form-pd-r);
+			--m-form-ph-c: var(--form-ph-c);
+
+			--m-form-icon-w: var(--form-icon-w);
+			--m-form-icon-h: var(--form-icon-h);
+
+			--m-form-focus-bd-c: var(--form-focus-bd-c);
+			--m-form-focus-bg-c: var(--form-focus-bg-c);
+			--m-form-focus-ft-c: var(--form-focus-ft-c);
+
+			--m-form-over-bg-c: var(--form-over-bg-c);
+			--m-form-over-ft-c: var(--form-over-ft-c);
+
+			--m-form-dis-bd-c: var(--form-dis-bd-c);
+			--m-form-dis-bg-c: var(--form-dis-bg-c);
+			--m-form-dis-ft-c: var(--form-dis-ft-c);
+
+			--m-form-list-max: var(--form-list-max);
+			--m-form-list-max-h: calc(var(--form-h) * var(--m-form-list-max));
+		}
+
+	/* Default */
+		[class*="form-sel"] {
+			background-color: var(--m-form-bg-c);
+			width: var(--m-form-w);
+			height: var(--m-form-h);
+			font-size: var(--m-form-ft-s);
+			color:var(--m-form-ft-c);
+		}
+
+		[class*="form-sel"] > .part-btn {
+			border: var(--m-form-bd-w) var(--m-form-bd-s) var(--m-form-bd-c);
+			border-radius: var(--m-form-bd-r);
+			padding-inline: var(--m-form-pd-l) var(--m-form-pd-r);
+		}
+
+	/* Filter */
+		[class*="form-sel"] .part-search {
+			padding: var(--m-form-pd-x);
+		}
+
+	/* Placeholder */
+		[class*="form-sel"] .part-placeholder {
+			color: var(--m-form-ph-c);
+		}
+
+		[class*="form-sel"].form-filled .part-placeholder {
+			color: var(--m-form-ft-c);
+		}
+
+	/* Icon */
+		[class*="form-sel"] .part-icon-up,
+		[class*="form-sel"] .part-icon-down {
+			height: var(--m-form-h);
+		}
+
+		[class*="form-sel"] [class*="part-icon"]:after {
+			width: var(--m-form-icon-w);
+			height: var(--m-form-icon-h);
+		}
+
+	/* Open */
+		[class*="form-sel"] .part-btn[data-state="open"] {
+			border-color:var(--m-form-focus-bd-c);
+			border-radius:var(--m-form-bd-r) var(--m-form-bd-r) 0 0;
+		}
+
+	/* Disabled */
+		[class*="form-sel"].form-disabled .part-btn {
+			background: var(--m-form-dis-bg-c);
+			border-color: var(--m-form-dis-bd-c);
+			color: var(--m-form-dis-ft-c);
+		}
+
+	/* List */
+		[class*="form-sel"] .part-list-wrap {
+			border: var(--m-form-bd-w) var(--m-form-bd-s) var(--m-form-focus-bd-c);
+			border-radius:0 0 var(--m-form-bd-r) var(--m-form-bd-r);
+			margin-top: calc(var(--m-form-bd-w) * -1);
+		}
+
+		[class*="form-sel"] .part-list {
+			max-height: var(--m-form-list-max-h);
+		}
+
+		[class*="form-sel"] .part-item-label {
+			height: var(--m-form-h);
+			padding-inline: var(--m-form-pd-l) var(--m-form-pd-r);
+		}
+
+		[class*="form-sel"] .part-item {
+			column-gap: var(--m-form-gap-x);
+			min-height: var(--m-form-h);
+			padding-inline: var(--m-form-pd-l) var(--m-form-pd-r);
+		}
+
+	/* List - :hover, Active */
+		[class*="form-sel"] .part-item:hover,
+		[class*="form-sel"] .part-item[data-state="checked"] {
+			background-color: var(--m-form-over-bg-c);
+			color: var(--m-form-over-ft-c);
+		}
+}

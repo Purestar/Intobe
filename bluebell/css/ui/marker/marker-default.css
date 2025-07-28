@@ -1,0 +1,19 @@
+/* Default */
+	[class*="mark-"] { display: grid; grid-auto-rows: max-content; grid-auto-flow: column; grid-auto-columns: minmax(0, max-content); }
+	[class*="mark-"] > * { display: flex; place-items: flex-start; word-break: break-all; }
+	[class*="mark-"].mark-direction { grid-auto-flow: row; grid-auto-columns: 1fr; }
+	[class*="mark-"].mark-direction > * { width: 100%; }
+
+/* Marker */
+	[class*="mark-"] > * > .part-marker { display: flex; place-items: center; }
+	[class*="mark-"] > * > .part-marker:before { content:""; }
+	[class*="mark-"] > .part-no-marker > .part-marker { display:none; }
+
+/* Type */
+	[class*="mark-h-bar"] > * { flex-direction: column; align-items: center; }
+	[class*="mark-num"] { counter-reset: item-num; }
+	[class*="mark-num"] > * { counter-increment: item-num; }
+	[class*="mark-num"] > * .part-marker:before { place-items: center; place-content: center; white-space: nowrap; text-align: center; }
+
+/* Content */
+	[class*="mark-"] > * > .part-content { width: 100%; }

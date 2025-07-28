@@ -1,0 +1,10 @@
+/* Default */
+	[class*="form-tarea"] {display: flex; font-weight: 400; transition: border-color .3s ease; }
+	[class*="form-tarea"]:hover {transition: border-color .3s ease;}
+	[class*="form-tarea"] textarea { resize: none; }
+
+/* Disabled */
+	[class*="form-tarea"].form-disabled {pointer-events: none; cursor: auto;}
+
+/* Resize */
+	[class*="form-tarea"].form-tarea-resize textarea { resize: both; }

@@ -1,0 +1,70 @@
+/* Initialize */
+	[class*="form-color"] {
+		--form-bd-s: solid;
+		--form-bd-w: 1px;
+		--form-bd-c: var(--fom-bdr-c);
+		--form-bd-r: var(--fom-br);
+		--form-h: var(--fom-h);
+		--form-dis-bg-c: var(--dis-bg);
+	}
+
+	[class*="form-txt-date"] {
+		--form-h: var(--fom-h);
+		--form-pad-x: var(--fom-pad);
+		--form-icon-w: 18px;
+		--form-icon-h: 20px;
+	}
+
+	[class*="form-txt-date"] [class*="calendar-type"] { margin-top: var(--form-bd-w); }
+
+	[class*="form-range"] {
+		--form-rg-bg-c: var(--mc);
+		--form-rg-size: var(--fom-rg-h);
+		--form-rg-icon-bg-c: var(--moc);
+		--form-rg-icon-size: var(--fom-rg-thb-sz);
+
+		--form-dis-bg-c: var(--dis-bg);
+		--form-dis-bd-r: var(--dis-bdr);
+	}
+
+/* Color */
+	[class*="form-color"] input {
+		border: var(--form-bd-w) var(--form-bd-s) var(--form-bd-c);
+		border-radius: var(--form-bd-r);
+		width: var(--form-h);
+		height: var(--form-h);
+	}
+
+	[class*="form-color"] .p-colorpicker-preview:disabled {
+		background-color: var(--form-dis-bg-c) !important;
+	}
+
+/* Datepicker */
+	[class*="form-txt-date"] {
+		min-height: var(--form-h);
+	}
+
+	[class*="form-txt-date"] input {
+		padding-inline: var(--form-pad-x);
+	}
+
+/* Range */
+	[class*="form-range"] input[type="range"]::-webkit-slider-runnable-track {
+		background: var(--form-rg-bg-c);
+		height: var(--form-rg-size);
+	}
+
+	[class*="form-range"] input[type="range"]::-webkit-slider-thumb {
+		background: var(--form-rg-icon-bg-c);
+		width: var(--form-rg-icon-size);
+		height: var(--form-rg-icon-size);
+		transform: translate(0, calc(-50% + calc(var(--form-rg-size) / 2)));
+	}
+
+	[class*="form-range"] input[type="range"]:disabled::-webkit-slider-runnable-track {
+		background: var(--form-dis-bg-c);
+	}
+
+	[class*="form-range"] input[type="range"]:disabled::-webkit-slider-thumb {
+		background: var(--form-dis-bd-r);
+	}

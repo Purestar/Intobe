@@ -1,0 +1,122 @@
+@media all and (max-width: 720px) {
+	/* Initialize */
+		[class*="mark-"] {
+			--m-mark-bd-r: var(--mark-bd-r);
+			--m-mark-bg-c: var(--mark-bg-c);
+			--m-mark-c: var(--mark-c);
+			--m-mark-ft-c: var(--mark-ft-c);
+			--m-mark-ft-s: var(--mark-ft-s);
+			--m-mark-gap-a: var(--mark-gap-a);
+			--m-mark-gap-x: var(--mark-gap-x);
+			--m-mark-gap-y: var(--mark-gap-y);
+			--m-mark-grid-t-col: var(--mark-grid-t-col);
+			--m-mark-item-gap-a: var(--m-mark-gap-a);
+			--m-mark-item-gap-x: var(--m-mark-gap-x);
+			--m-mark-item-gap-y: var(--m-mark-gap-y);
+			--m-mark-rotate: var(--mark-rotate);
+			--m-mark-txt-lh: var(--mark-txt-lh);
+			--m-mark-suffix: var(--mark-suffix);
+			--m-mark-w: var(--mark-w);
+			--m-mark-h: var(--mark-h);
+		}
+
+		[class*="mark-"] > * {
+			--m-mark-bg-c: var(--mark-bg-c);
+		}
+
+		[class*="mark-v-bar"] {
+			--mark-w: 1px;
+			--mark-h: 2.5vw;
+		}
+
+		[class*="mark-h-bar"] {
+			--mark-w: 100%;
+			--mark-h: 1px;
+		}
+
+		[class*="mark-cir"] {
+			--mark-bd-r: 50%;
+			--mark-w: 2.5vw;
+			--mark-h: 2.5vw;
+		}
+
+		[class*="mark-squ"] {
+			--mark-w: 2.5vw;
+			--mark-h: 2.5vw;
+		}
+
+		[class*="mark-hyp"] {
+			--mark-w: 1.5vw;
+			--mark-h: 1px;
+		}
+
+		[class*="mark-num"] {
+			--mark-bg-c: transparent;
+			--mark-suffix: '.'
+		}
+
+		[class*="mark-arrow"] {
+			--mark-w: 1.5vw;
+			--mark-h: 1.5vw;
+			--mark-rotate: 135deg;
+		}
+
+		[class*="mark-slash"] {
+			--mark-w: 1px;
+			--mark-h: 2.5vw;
+			--mark-rotate: 135deg;
+		}
+
+		[class*="mark-dia"] {
+			--mark-w: 2.5vw;
+			--mark-h: 2.5vw;
+			--mark-rotate: 45deg;
+		}
+
+	/* Default */
+		[class*="mark-"] {
+			column-gap: var(--m-mark-gap-x, var(--m-mark-gap-a));
+			row-gap: var(--m-mark-gap-y, var(--m-mark-gap-a));
+			grid-template-columns: repeat(var(--m-mark-grid-t-col), 1fr);
+			font-size: var(--m-mark-ft-s);
+			line-height: var(--m-mark-txt-lh);
+			color: var(--m-mark-ft-c);
+		}
+
+		[class*="mark-"] > * {
+			column-gap: var(--m-mark-item-gap-x, var(--m-mark-item-gap-a));
+			row-gap: var(--m-mark-item-gap-y, var(--m-mark-item-gap-a));
+		}
+
+	/* Marker */
+		[class*="mark-"] > * > .part-marker {
+			width: var(--m-mark-w);
+			min-height: var(--m-mark-txt-lh);
+			height: var(--m-mark-h);
+		}
+
+		[class*="mark-"] > * > .part-marker:before {
+			background-color: var(--m-mark-bg-c);
+			border-radius: var(--m-mark-bd-r);
+			width: var(--m-mark-w);
+			height: var(--m-mark-h);
+			rotate: var(--m-mark-rotate);
+		}
+
+	/* Type */
+		[class*="mark-h-bar"] > * > .part-marker {
+			width: var(--m-mark-w);
+			height: var(--m-mark-h);
+		}
+
+		[class*="mark-num"] > * > .part-marker:before {
+			content: counter(item-num) var(--m-mark-suffix);
+			color: var(--m-mark-c, var(--m-mark-ft-c));
+		}
+
+		[class*="mark-arrow"] > * > .part-marker:before {
+			background: transparent;
+			border-left: 1px solid var(--mark-bg-c);
+			border-top: 1px solid var(--mark-bg-c);
+		}
+}

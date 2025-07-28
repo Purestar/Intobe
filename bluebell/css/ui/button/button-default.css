@@ -1,0 +1,22 @@
+/* Default */
+	[class*="btn-type"] { overflow: hidden; display: flex; flex-wrap: wrap; place-items: center; place-content: center; height: auto; word-break: keep-all; text-align: center; transition: background var(--trans-dft), border-color var(--trans-dft), color var(--trans-dft); word-break: break-all; }
+	[class*="btn-type"]:hover { transition: background var(--trans-dft), border-color var(--trans-dft), color var(--trans-dft); }
+	[class*="btn-type"][data-ellipsis-over]:hover { width: max-content; }
+
+/* Disabled */
+	[class*="btn-type"]:disabled,
+	[class*="btn-type"][data-disabled] { cursor: default; pointer-events: none; user-select: none; }
+	[class*="btn-type"]:disabled [class*="ic-"],
+	[class*="btn-type"][data-disabled] [class*="ic-"] { opacity: 0.5; }
+
+/* Ellipsis */
+	[class*="btn-type"].btn-elps { flex-shrink: 0; flex-wrap: nowrap; }
+	[class*="btn-type"].btn-elps-over:hover { width: auto; }
+
+/* Group */
+	[class*="btn-grp-type"] { --scr-w: 4px; --scr-br: 4px; overflow-y: hidden; overflow-x: auto; position: relative; display: flex; flex-wrap: wrap; max-width: 100%; }
+	[class*="btn-grp-type"] > * { flex: 1 1 auto; }
+	[class*="btn-grp-type"] [class*="btn-type"] { border-radius: 0; max-width: 100%; height: auto; white-space: nowrap; }
+	[class*="btn-grp-type"].btn-grp-equal,
+	[class*="btn-grp-type"].btn-grp-elps { flex-wrap: nowrap; }
+	[class*="btn-grp-type"].btn-grp-equal > * { flex: 1; white-space: nowrap; }

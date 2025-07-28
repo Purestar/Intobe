@@ -1,0 +1,6 @@
+/* Tabs - Default */
+@import "./tabs/tabs-default.css";
+/* Tabs - Variable */
+@import "./tabs/tabs-variable.css";
+/* Tabs - Mobile */
+@import "./tabs/tabs-mobile.css";

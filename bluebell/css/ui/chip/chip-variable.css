@@ -1,0 +1,25 @@
+/* Initialize */
+	[class*="chip-type"] {
+		--chip-bg-c: var(--mc);
+		--chip-bd-c: var(--mc);
+		--chip-bd-r: 16px;
+		--chip-w: fit-content;
+		--chip-h: fit-content;
+		--chip-pd-x: 8px;
+		--chip-ft-s: 14px;
+		--chip-ft-w: 400;
+		--chip-ft-c: white;
+	}
+
+/* Default */
+	[class*="chip-type"] {
+		background-color:var(--chip-bg-c);
+		border:1px solid var(--chip-bd-c);
+		border-radius:var(--chip-bd-r);
+		width:var(--chip-w);
+		height:var(--chip-h);
+		padding-inline:var(--chip-pd-x);
+		font-size:var(--chip-ft-s);
+		font-weight:var(--chip-ft-w);
+		color:var(--chip-ft-c);
+	}

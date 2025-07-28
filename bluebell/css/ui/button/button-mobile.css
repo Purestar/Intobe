@@ -1,0 +1,86 @@
+@media all and (max-width: 720px) {
+	/* Initialize */
+		[class*="btn-type"] {
+			--m-btn-bg-c: var(--btn-bg-c);
+			--m-btn-bd-w: var(--btn-bd-w);
+			--m-btn-bd-s: var(--btn-bd-s);
+			--m-btn-bd-c: var(--btn-bd-c);
+			--m-btn-bd-r: var(--btn-bd-r);
+			--m-btn-dis-bg-c: var(--btn-dis-bg-c);
+			--m-btn-dis-bd-c: var(--btn-dis-bd-c);
+			--m-btn-dis-ft-c: var(--btn-dis-ft-c);
+			--m-btn-ft-s: var(--btn-ft-s);
+			--m-btn-ft-c: var(--btn-ft-c);
+			--m-btn-gap: 3.33vw;
+			--m-btn-min-w: var(--btn-min-w);
+			--m-btn-over-bg-c: var(--btn-over-bg-c);
+			--m-btn-over-bd-c: var(--btn-over-bd-c);
+			--m-btn-over-ft-c: var(--btn-over-ft-c);
+			--m-btn-pad-x: var(--btn-pad-x);
+			--m-btn-w: var(--btn-w);
+			--m-btn-h: var(--btn-h);
+		}
+
+		[class*="btn-type-b"] {
+			--m-btn-bg-c: var(--btn-bg-c);
+			--m-btn-bd-c: var(--btn-bd-c);
+			--m-btn-ft-c: var(--btn-ft-c);
+			--m-btn-over-bg-c: var(--btn-over-bg-c);
+			--m-btn-over-bd-c: var(--btn-over-bd-c);
+			--m-btn-over-ft-c: var(--btn-over-ft-c);
+		}
+
+		[class*="btn-type-tran"] {
+			--m-btn-bg-c: var(--btn-bg-c);
+			--m-btn-bd-c: var(--btn-bd-c);
+			--m-btn-ft-c: var(--btn-ft-c);
+			--m-btn-over-ft-c: var(--btn-over-ft-c);
+		}
+
+		[class*="btn-grp-type"] {
+			--m-btn-grp-bd-r: var(--btn-grp-bd-r);
+			--m-btn-grp-w: var(--btn-grp-w);
+			--m-btn-grp-h: var(--btn-grp-h);
+		}
+
+	/* Default */
+		[class*="btn-type"] {
+			gap: var(--m-btn-gap);
+			background-color: var(--m-btn-bg-c);
+			border: var(--m-btn-bd-w) var(--m-btn-bd-s) var(--m-btn-bd-c);
+			border-radius: var(--m-btn-bd-r);
+			width: var(--m-btn-w);
+			min-width:  var(--m-btn-min-w);
+			min-height: var(--m-btn-h);
+			padding: 0 var(--m-btn-pad-x);
+			font-size: var(--m-btn-ft-s);
+			color: var(--m-btn-ft-c);
+		}
+
+		[class*="btn-type"]:hover {
+			background-color: var(--m-btn-over-bg-c);
+			border-color: var(--m-btn-over-bd-c);
+			color: var(--m-btn-over-ft-c);
+		}
+
+	/* Border Button */
+		[class*="btn-type-b"] {
+			background-color: var(--m-btn-bg-c);
+			border-color: var(--m-btn-bd-c);
+			color: var(--m-btn-ft-c);
+		}
+
+	/* Transparent Button */
+		[class*="btn-type-tran"] {
+			background-color: var(--m-btn-bg-c);
+			border-color: var(--m-btn-bd-c);
+			color: var(--m-btn-ft-c);
+		}
+
+	/* Group */
+		[class*="btn-grp-type"] {
+			border-radius: var(--m-btn-grp-bd-r);
+			width: var(--m-btn-grp-w);
+			min-height: var(--m-btn-grp-h);
+		}
+}

@@ -1,0 +1,38 @@
+[style*="--flex"],
+[class*="flex"] {
+	--flex-g: 0;
+	--flex-sh: 1;
+	--flex-b: auto;
+	--flex-d: row;
+	--flex-w: nowrap;
+}
+[style*="--flex"],
+[class*="flex"] {
+	flex: var(--flex-g) var(--flex-sh) var(--flex-b);
+	flex-flow: var(--flex-d, row) var(--flex-w, nowrap);
+}
+[style*="--order"] { order: var(--order); }
+
+.flex-1 {
+	--flex-g: 1;
+	--flex-sh: 1;
+	--flex-b: 0;
+}
+
+@media (max-width: 720px) {
+	[style*="--m-flex"],
+	[class*="flex"] {
+		--m-flex-g: var(--flex-g);
+		--m-flex-sh: var(--flex-sh);
+		--m-flex-b: var(--flex-b);
+		--m-flex-d: var(--flex-d);
+		--m-flex-w: var(--flex-w);
+	}
+
+	[style*="--m-flex"],
+	[class*="flex"]  {
+		flex: var(--m-flex-g) var(--m-flex-sh) var(--m-flex-b);
+		flex-flow: var(--m-flex-d, row) var(--m-flex-w, nowrap);
+	}
+	[style*="--m-order"] { order: var(--m-order); }
+}

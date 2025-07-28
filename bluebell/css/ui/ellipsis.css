@@ -1,0 +1,6 @@
+/* Ellipsis - Default */
+@import "./ellipsis/ellipsis-default.css";
+/* Ellipsis - Variable */
+@import "./ellipsis/ellipsis-variable.css";
+/* Ellipsis - Mobile */
+@import "./ellipsis/ellipsis-mobile.css";

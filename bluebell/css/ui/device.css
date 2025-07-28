@@ -1,0 +1,25 @@
+[class*="device-"] { width: 100%; }
+
+.device-tablet,
+.device-mobile,
+.tablet,
+.mobile { display: none; }
+
+.device-pc.device-tablet,
+.pc.tablet { display: block; }
+
+@media all and (max-width:1024px) {
+	.device-pc,
+	.pc { display: none; }
+	.device-tablet,
+	.tablet { display: block; }
+}
+
+@media all and (max-width:720px) {
+	.device-tablet,
+	.device-pc.device-tablet,
+	.tablet,
+	.pc.tablet { display: none; }
+	.device-mobile,
+	.mobile { display: block; }
+}

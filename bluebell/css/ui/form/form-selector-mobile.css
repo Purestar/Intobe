@@ -1,0 +1,203 @@
+@media all and (max-width: 720px) {
+	/* Initialize */
+		[class*="form-slt"] {
+			--m-form-bd-c: var(--form-bd-c);
+			--m-form-bd-r: var(--form-bd-r);
+			--m-form-bd-s: var(--form-bd-s);
+			--m-form-bd-w: var(--form-bd-w);
+			--m-form-bg-c: var(--form-bg-c);
+			--m-form-flex-d: var(--form-flex-d);
+			--m-form-ft-c: var(--form-ft-c);
+			--m-form-ft-s: var(--form-ft-s);
+			--m-form-ft-w: var(--form-ft-w);
+			--m-form-gap-x: 2.78vw;
+			--m-form-pd-x: var(--form-pd-x);
+			--m-form-pd-y: var(--form-pd-y);
+			--m-form-txt-lh: var(--form-txt-lh);
+			--m-form-w: var(--form-w);
+			--m-form-h: var(--form-h);
+
+			--m-form-fcs-bd-c: var(--form-fcs-bd-c);
+
+			--m-form-chk-bg-c: var(--form-chk-bg-c);
+			--m-form-chk-point-bg-c: var(--form-chk-point-bg-c);
+			--m-form-chk-bd-c: var(--form-chk-bd-c);
+			--m-form-chk-ft-c: var(--form-chk-ft-c);
+			--m-form-chk-w: var(--form-chk-w);
+			--m-form-chk-h: var(--form-chk-h);
+
+			--m-form-dis-ft-c: var(--form-dis-ft-c);
+			--m-form-dis-bg-c: var(--form-dis-bg-c);
+			--m-form-dis-bd-c: var(--form-dis-bd-c);
+		}
+
+	/* Default */
+		[class*="form-slt"] {
+			font-size: var(--m-form-ft-s);
+			font-weight: var(--m-form-ft-w);
+			line-height: var(--m-form-txt-lh);
+			color: var(--m-form-ft-c);
+		}
+
+		[class*="form-slt"] .part-slt-txt {
+			column-gap: var(--m-form-gap-x);
+			flex-direction: var(--m-form-flex-d);
+			min-height: var(--m-form-h);
+		}
+
+		[class*="form-slt"] .part-icon {
+			width: var(--m-form-w);
+			height: var(--m-form-txt-lh);
+		}
+
+		[class*="form-slt"] .part-icon:before {
+			background-color: var(--m-form-bg-c);
+			border-color: var(--m-form-bd-c);
+		}
+
+		[class*="form-slt"] .part-icon:after {
+			border-radius: var(--m-form-bd-r);
+			width: var(--m-form-chk-w);
+			height: var(--m-form-chk-h);
+		}
+
+	/* Focus */
+		[class*="form-slt"] input:focus + .part-slt-txt .part-icon:before,
+		[class*="form-slt"] input:focus:checked + .part-slt-txt .part-icon:before {
+			border-color: var(--m-form-fcs-bd-c);
+		}
+
+	/* Checked */
+		[class*="form-slt"] input:checked + .part-slt-txt {
+			color: var(--m-form-chk-ft-c);
+		}
+
+		[class*="form-slt"] input:checked + .part-slt-txt .part-icon:before {
+			background-color: var(--m-form-chk-bg-c);
+			border-color: var(--m-form-chk-bd-c);
+		}
+
+	/* Disabled */
+		[class*="form-slt"] input:disabled + .part-slt-txt {
+			color: var(--m-form-dis-ft-c);
+		}
+
+		[class*="form-slt"] input:disabled + .part-slt-txt .part-icon:before,
+		[class*="form-slt"] input:checked:disabled + .part-slt-txt .part-icon:before {
+			background-color: var(--m-form-dis-bg-c);
+			border-color:var(--m-form-dis-bd-c);
+		}
+
+	/* Button */
+		[class*="form-slt-btn"] {
+			line-height: var(--m-form-txt-lh);
+		}
+
+		[class*="form-slt-btn"] .part-slt-txt {
+			border: var(--m-form-bd-w) var(--m-form-bd-s) var(--m-form-bd-c);
+			border-radius: var(--m-form-bd-r);
+			padding-inline: var(--m-form-pd-x);
+			padding-block: var(--m-form-pd-y);
+		}
+
+		[class*="form-slt-btn"] .part-slt-txt:hover,
+		[class*="form-slt-btn"] input:focus + .part-slt-txt,
+		[class*="form-slt-btn"] input:checked:focus + .part-slt-txt,
+		[class*="form-slt-btn"] input:checked:hover + .part-slt-txt {
+			border-color: var(--m-form-fcs-bd-c);
+		}
+
+		[class*="form-slt-btn"] input:checked + .part-slt-txt {
+			background-color: var(--m-form-chk-bg-c);
+			border-color: var(--m-form-chk-bd-c);
+		}
+
+		[class*="form-slt-btn"] input:disabled + .part-slt-txt {
+			background: var(--m-form-dis-bg-c);
+			border-color:var(--m-form-dis-bd-c);
+			color: var(--m-form-dis-bd-c);
+		}
+
+		[class*="form-slt-btn"] input:checked:disabled + .part-slt-txt {
+			color: var(--m-form-dis-ft-c);
+		}
+
+	/* Checkbox, Radio, Switch */
+		[class*="form-slt-chk"] .part-slt-txt,
+		[class*="form-slt-rdo"] .part-slt-txt,
+		[class*="form-slt-swh"] .part-slt-txt {
+			column-gap: var(--m-form-gap-x);
+		}
+
+		[class*="form-slt-chk"] .part-icon,
+		[class*="form-slt-rdo"] .part-icon,
+		[class*="form-slt-swh"] .part-icon {
+			min-height: var(--m-form-h);
+		}
+
+		[class*="form-slt-chk"] .part-icon:before,
+		[class*="form-slt-rdo"] .part-icon:before,
+		[class*="form-slt-swh"] .part-icon:before {
+			background-color: var(--m-form-bg-c);
+			border: var(--m-form-bd-w) var(--m-form-bd-s) var(--m-form-bd-c);
+			border-radius: var(--m-form-bd-r);
+			width: var(--m-form-w);
+			height: var(--m-form-h);
+		}
+
+	/* Radio */
+		[class*="form-slt-rdo"] input:checked + .part-slt-txt .part-icon:before {
+			background-color: var(--m-form-bg-c);
+			border-color: var(--m-form-chk-bd-c);
+		}
+
+		[class*="form-slt-rdo"] input:checked + .part-slt-txt .part-icon:after {
+			background-color: var(--m-form-chk-bg-c);
+			border-color: var(--m-form-chk-bd-c);
+		}
+
+		[class*="form-slt-rdo"] input:checked:disabled + .part-slt-txt .part-icon:after {
+			background-color: var(--m-form-dis-bd-c);
+		}
+
+	/* Rating */
+		[class*="form-slt-rt"] .part-icon:before {
+			width: var(--m-form-w);
+			height: var(--m-form-h);
+		}
+
+		[class*="form-slt-rt"] .part-slt-txt {
+			padding-right: var(--m-form-gap-x);
+		}
+
+	/* Switch */
+		[class*="form-slt-swh"] .part-icon {
+			padding: 0 calc(var(--m-form-pd-x) / 2);
+		}
+
+		[class*="form-slt-swh"] .part-icon:before {
+			background: var(--m-form-bg-c);
+			border-color:var(--m-form-bd-c);
+			border-radius: var(--m-form-bd-r);
+			height: var(--m-form-h);
+		}
+
+		[class*="form-slt-swh"] .part-icon:after {
+			background-color: var(--m-form-chk-bg-c);
+			border-color: var(--m-form-chk-bd-c);
+		}
+
+		[class*="form-slt-swh"] input:checked + .part-slt-txt .part-icon:before {
+			background-color: var(--m-form-chk-bg-c);
+			border-color: var(--m-form-chk-bd-c);
+		}
+
+		[class*="form-slt-swh"] input:checked + .part-slt-txt .part-icon:after {
+			background-color: var(--m-form-chk-point-bg-c);
+			right: calc(-100% + var(--m-form-chk-w));
+		}
+
+		[class*="form-slt-swh"] input:disabled + .part-slt-txt .part-icon:after {
+			background-color: var(--m-form-dis-bd-c);
+		}
+}

@@ -1,0 +1,27 @@
+@media all and (max-width: 720px) {
+	/* Initialize */
+	[class*="chip-type"] {
+		--m-chip-bg-c: var(--chip-bg-c);
+		--m-chip-bd-c: var(--chip-bd-c);
+		--m-chip-bd-r: 2.22vw;
+		--m-chip-w: var(--chip-w);
+		--m-chip-h: var(--chip-h);
+		--m-chip-pd-x: 2.22vw;
+		--m-chip-ft-s: 2.22vw;
+		--m-chip-ft-w: var(--chip-ft-w);
+		--m-chip-ft-c: var(--chip-ft-c);
+	}
+
+	/* Default */
+	[class*="chip-type"] {
+		background-color:var(--m-chip-bg-c);
+		border:1px solid var(--m-chip-bd-c);
+		border-radius:var(--m-chip-bd-r);
+		width:var(--m-chip-w);
+		height:var(--m-chip-h);
+		padding-inline:var(--m-chip-pd-x);
+		font-size:var(--m-chip-ft-s);
+		font-weight:var(--m-chip-ft-w);
+		color:var(--m-chip-ft-c);
+	}
+}

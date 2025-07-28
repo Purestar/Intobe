@@ -1,0 +1,14 @@
+/* Initialize */
+	[class*="ellipsis"] {
+		--line: 1
+	}
+
+/* Default */
+	[class*="ellipsis"] {
+		-webkit-line-clamp: var(--line);
+	}
+
+/* Disabled */
+	[class*="ellipsis"][data-disabled] {
+		--line: 0
+	}

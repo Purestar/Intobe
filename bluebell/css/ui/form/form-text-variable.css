@@ -1,0 +1,68 @@
+/* Initialize */
+	[class*="form-txt"] {
+		--form-bg-c: var(--fom-bg);
+		--form-bd-s: solid;
+		--form-bd-w: 1px;
+		--form-bd-c: var(--fom-bdr-c);
+		--form-bd-r: var(--fom-br);
+		--form-ft-c: var(--fom-fc);
+		--form-ft-s: var(--fom-fs);
+		--form-ft-w: 400;
+		--form-w: 100%;
+		--form-h: var(--fom-h);
+		--form-pd-x: var(--fom-pad);
+
+		/* Focus */
+		--form-focus-bd-c: var(--fom-fcs-brd-c);
+
+		/* Disabled */
+		--form-dis-bg-c: var(--dis-bg);
+		--form-dis-bd-r: var(--dis-bdr);
+		--form-dis-ft-c: var(--fom-ph);
+	}
+
+/* Default */
+	[class*="form-txt"] {
+		background: var(--form-bg-c);
+		border: var(--form-bd-w) var(--form-bd-s) var(--form-bd-c);
+		border-radius: var(--form-bd-r);
+		width: var(--form-w);
+		height: var(--form-h);
+		padding: 0 var(--form-pd-x);
+		font-size: var(--form-ft-s);
+		font-weight: var(--form-ft-w);
+		color: var(--form-ft-c);
+	}
+
+	[class*="form-txt"] .part-wrap {
+		height: var(--form-h);
+	}
+
+/* Focus */
+	[class*="form-txt"]:has(input:focus) {
+		border-color: var(--form-focus-bd-c);
+	}
+
+/* Hover */
+	[class*="form-txt"]:hover {
+		border-color: var(--form-focus-bd-c);
+	}
+
+/* Disabled */
+	[class*="form-txt"]:has(input:disabled) {
+		background-color: var(--form-dis-bg-c);
+		border-color: var(--form-dis-bd-r);
+		color: var(--form-dis-ft-c);
+	}
+
+/* Icon */
+	[class*="form-txt"] .part-icon {
+		flex: 0 0 var(--form-h);
+		width: var(--form-h);
+		height: calc(var(--form-h) - (var(--form-bd-w) * 2));
+	}
+
+	[class*="form-txt"] .part-icon:after {
+		width: var(--form-icon-w);
+		height: var(--form-icon-h);
+	}

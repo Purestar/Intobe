@@ -1,0 +1,9 @@
+/* Default */
+[class*="popover-type"] { max-width: 100dvw; }
+
+/* Arrow */
+[class*="popover-type"] .part-arrow:before { content: ''; display: block; background-image: var(--ic-c); background-position: var(--bp-150) var(--bp-tooltip); background-size: var(--bg-sz); width: 18px; height: 14px; }
+
+/* Close */
+[class*="popover-type"] .part-close { position: absolute; right: 0; top: 0; height: auto; }
+[class*="popover-type"] .part-close:before { content: ''; display: block; background-image: var(--ic-c); background-position: var(--bp-200) var(--bp-tooltip); background-size: var(--bg-sz); width: 14px; height: 14px; }

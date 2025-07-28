@@ -1,0 +1,18 @@
+/* Default */
+	[class*="form-txt"] { transition: border-color var(--trans-dft); }
+	[class*="form-txt"] input,
+	[class*="form-txt"] .part-wrap { display: flex; place-content: space-between; flex: 1; }
+	[class*="form-txt"] .part-icon { height: 100%; }
+
+/* Open */
+	[class*="form-txt"]:has(input:focus) { transition: border-color var(--trans-dft); }
+	[class*="form-sel"] .part-btn[data-state="open"] + * { z-index: 1 !important; }
+
+/* Disabled */
+	[class*="form-txt"]:has(input:disabled) { pointer-events: none; cursor: auto; }
+
+/* File */
+	[class*="form-txt"] input[type="file"] { height: auto; }
+
+/* Icon */
+	[class*="form-txt"] .part-icon { display: flex; place-items: center; place-content: center; }

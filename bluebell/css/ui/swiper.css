@@ -1,0 +1,37 @@
+/* Swiper */
+	/* Default */
+		[class*="swiper-type"] { position: relative; }
+		[class*="swiper-type"] .swiper { width: 100%; height: 100%; }
+		[class*="swiper-type"] .swiper,
+		[class*="swiper-type"] .swiper-thumbs { overflow: hidden; max-height: 100dvh; }
+		[class*="swiper-type"] .swiper-wrapper { flex-wrap: nowrap; }
+		[class*="swiper-type"] .swiper.swiper-grid { max-width: none; max-height: none; }
+		[class*="swiper-type"] .swiper-slide { overflow: hidden; height: auto; }
+
+		/* Navigation */
+			[class*="swiper-type"] .swiper-nav-wrap { display: flex; place-content: space-between; position: absolute; left: 0; top: 50%; width: 100%; height: 0; font-size: 0; translate: 0 -50%; z-index: 1; }
+			[class*="swiper-type"] .swiper-nav-wrap > * { position: static; margin: 0; translate: 0 -50%; }
+			[class*="swiper-type"] .swiper-nav-wrap > *:after { background-image: var(--ic-c); background-size: var(--bg-sz); }
+			[class*="swiper-type"] .swiper-nav-wrap > .swiper-button-next:after { rotate: 180deg; }
+			/**/
+			/*
+			[class*="swiper-type"] .swiper-button-disabled { opacity: 0.5; }*/
+
+		/* Pagenation */
+			/*[class*="swiper-type"] .swiper-pagination { display: flex; justify-content: center; gap: 4px; position: absolute; z-index: 1; }
+			[class*="swiper-type"] .swiper-pagination-vertical { flex-direction: column; left: auto; }
+			[class*="swiper-type"] .swiper-pagination .swiper-pagination-bullet { opacity: 0.5; position: static; display: inline-block; margin: 0; }
+			[class*="swiper-type"] .swiper-pagination .swiper-pagination-bullet-active { opacity: 1; }
+			[class*="swiper-type"] .swiper-pagination-bullets-dynamic { display: block; }*/
+
+		/* Scrollbar */
+			/*[class*="swiper-type"] .swiper-scrollbar-vertical { left: auto; }*/
+
+		/* ETC */
+			/*[class*="swiper-type"] .swiper-cube { overflow: visible; }
+			[class*="swiper-type"] .swiper-cube .swiper-slide { overflow: visible; }*/
+
+	/* Variation */
+		[class*="swiper-type"] { width: var(--swiper-w, 100%); height: var(--swiper-h, auto); }
+
+/* Temp */

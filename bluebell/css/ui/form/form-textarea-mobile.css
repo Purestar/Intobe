@@ -1,0 +1,50 @@
+@media all and (max-width: 720px) {
+	/* Initialize */
+		[class*="form-tarea"] {
+			--m-form-bg-c: var(--form-bg-c);
+			--m-form-bd-s: var(--form-bd-s);
+			--m-form-bd-w: var(--form-bd-w);
+			--m-form-bd-c: var(--form-bd-c);
+			--m-form-bd-r: var(--form-bd-r);
+			--m-form-ft-c: var(--form-ft-c);
+			--m-form-ft-s: var(--form-ft-s);
+			--m-form-w: var(--form-w);
+			--m-form-h: var(--fom-ta-h);
+			--m-form-pd-x: var(--form-pd-x);
+			--m-form-pd-y: var(--form-pd-y);
+			--m-form-txt-lh: var(--form-txt-lh);
+
+			--m-form-focus-bd-c: var(--form-focus-bd-c);
+
+			--m-form-dis-bg-c: var(--form-dis-bg-c);
+			--m-form-dis-bd-c: var(--form-dis-bd-c);
+			--m-form-dis-ft-c: var(--form-dis-ft-c);
+		}
+
+	/* Default */
+		[class*="form-tarea"] {
+			background-color: var(--m-form-bg-c);
+			border: var(--m-form-bd-w) var(--m-form-bd-s) var(--m-form-bd-c);
+			border-radius: var(--m-form-bd-r);
+			width: var(--m-form-w);
+			min-height: var(--m-form-h);
+			padding: var(--m-form-pd-y) var(--m-form-pd-x);
+			font-size: var(--m-form-ft-s);
+			line-height: var(--m-form-txt-lh);
+			color: var(--m-form-ft-c);
+		}
+
+		[class*="form-tarea"] textarea {
+			min-height: calc(var(--m-form-h, var(--m-fom-ta-h)) - (var(--m-form-pd-x) * 2));
+		}
+
+		[class*="form-tarea"]:hover {
+			border-color: var(--m-form-focus-bd-c);
+		}
+
+		[class*="form-tarea"].form-disabled {
+			background-color: var(--m-form-dis-bg-c);
+			border-color: var(--m-form-dis-bd-c);
+			color: var(--m-form-dis-ft-c);
+		}
+}

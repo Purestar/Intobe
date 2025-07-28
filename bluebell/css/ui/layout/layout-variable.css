@@ -1,0 +1,36 @@
+/* Initialize */
+	[class*="layout-"] {
+		--lay-dp: block;
+	}
+
+	[class*="layout-center"] {
+		--lay-ovf: auto;
+		--lay-dp: flex;
+		--lay-w: 100%;
+		--lay-h: 100dvh;
+	}
+
+	[class*="layout-flex"] {
+		--lay-dp: flex;
+	}
+
+	[class*="layout-grid"] {
+		--lay-dp: grid;
+	}
+
+	[class*="layout-inner"] {
+		--lay-dp: block;
+		--lay-w: var(--init-layout-width);
+		--lay-mg-x: auto;
+		--lay-pd-x: var(--init-layout-padding);
+	}
+
+/* Default */
+	[class*="layout-"] {
+		overflow: var(--lay-ovf);
+		display: var(--lay-dp);
+		width: var(--lay-w);
+		height: var(--lay-h);
+		margin-inline: var(--lay-mg-x);
+		padding-inline: var(--lay-pd-x);
+	}

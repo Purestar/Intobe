@@ -1,0 +1,105 @@
+/* Initialize */
+	[class*="mark-"] {
+		--mark-bg-c: black;
+		--mark-ft-s: var(--init-font-size);
+		--mark-txt-lh: calc(var(--init-line-height) * 1em);
+		--mark-item-gap-a: var(--mark-gap-a);
+		--mark-item-gap-x: var(--mark-gap-x);
+		--mark-item-gap-y: var(--mark-gap-y);
+	}
+
+	[class*="mark-v-bar"] {
+		--mark-w: 1px;
+		--mark-h: 10px;
+	}
+
+	[class*="mark-h-bar"] {
+		--mark-w: 100%;
+		--mark-h: 1px;
+	}
+
+	[class*="mark-cir"] {
+		--mark-bd-r: 50%;
+		--mark-w: 10px;
+		--mark-h: 10px;
+	}
+
+	[class*="mark-squ"] {
+		--mark-w: 10px;
+		--mark-h: 10px;
+	}
+
+	[class*="mark-hyp"] {
+		--mark-w: 6px;
+		--mark-h: 1px;
+	}
+
+	[class*="mark-num"] {
+		--mark-bg-c: transparent;
+		--mark-suffix: '.'
+	}
+
+	[class*="mark-arrow"] {
+		--mark-w: 4px;
+		--mark-h: 4px;
+		--mark-rotate: 135deg;
+	}
+
+	[class*="mark-slash"] {
+		--mark-w: 1px;
+		--mark-h: 10px;
+		--mark-rotate: 135deg;
+	}
+
+	[class*="mark-dia"] {
+		--mark-w: 10px;
+		--mark-h: 10px;
+		--mark-rotate: 45deg;
+	}
+
+/* Default */
+	[class*="mark-"] {
+		column-gap: var(--mark-gap-x, var(--mark-gap-a));
+		row-gap: var(--mark-gap-y, var(--mark-gap-a));
+		grid-template-columns: repeat(var(--mark-grid-t-col), 1fr);
+		font-size: var(--mark-ft-s);
+		line-height: var(--mark-txt-lh);
+		color: var(--mark-ft-c);
+	}
+
+	[class*="mark-"] > * {
+		column-gap: var(--mark-item-gap-x, var(--mark-item-gap-a));
+		row-gap: var(--mark-item-gap-y, var(--mark-item-gap-a));
+	}
+
+/* Marker */
+	[class*="mark-"] > * > .part-marker {
+		width: var(--mark-w);
+		min-height: var(--mark-txt-lh);
+		height: var(--mark-h);
+	}
+
+	[class*="mark-"] > * > .part-marker:before {
+		background-color: var(--mark-bg-c);
+		border-radius: var(--mark-bd-r);
+		width: var(--mark-w);
+		height: var(--mark-h);
+		rotate: var(--mark-rotate);
+	}
+
+/* Type */
+	[class*="mark-h-bar"] > * > .part-marker {
+		width: var(--mark-w);
+		height: var(--mark-h);
+	}
+
+	[class*="mark-num"] > * > .part-marker:before {
+		content: counter(item-num) var(--mark-suffix);
+		color: var(--mark-c, var(--mark-ft-c));
+	}
+
+	[class*="mark-arrow"] > * > .part-marker:before {
+		background: transparent;
+		border-left: 1px solid var(--mark-bg-c);
+		border-top: 1px solid var(--mark-bg-c);
+	}

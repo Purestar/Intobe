@@ -1,0 +1,238 @@
+/* Initialize */
+	[class*="form-slt"] {
+		--form-bg-c: var(--fom-bg);
+		--form-bd-c: var(--fom-bdr-c);
+		--form-bd-s: solid;
+		--form-bd-w: 1px;
+		--form-ft-s: var(--fom-fs);
+		--form-gap-x: 10px;
+		--form-txt-lh: calc(var(--init-line-height) * 1em);
+
+		--form-fcs-bd-c: var(--moc);
+
+		--form-chk-bg-c: var(--mc);
+		--form-chk-bd-c: var(--mc);
+
+		--form-dis-ft-c: var(--dis-c);
+		--form-dis-bg-c: var(--dis-bg);
+		--form-dis-bd-c: var(--dis-bdr);
+	}
+
+	[class*="form-slt-btn"] {
+		--form-bd-r: var(--fom-br);
+		--form-h: var(--fom-h);
+		--form-pd-x: var(--fom-pad);
+		--form-ft-c: var(--mc);
+
+		--form-chk-ft-c: white;
+	}
+
+	[class*="form-slt-chk"] {
+		--form-bd-r: 4px;
+		--form-chk-w: 12px;
+		--form-chk-h: 10px;
+		--form-w: 20px;
+		--form-h: 20px;
+	}
+
+	[class*="form-slt-rdo"] {
+		--form-bd-r: 50%;
+		--form-chk-bg-c: var(--mc);
+		--form-chk-w: calc(var(--form-w) - var(--form-pd-x));
+		--form-chk-h: calc(var(--form-h) - var(--form-pd-x));
+		--form-chk-r: 50%;
+		--form-pd-x: 8px;
+		--form-w: 20px;
+		--form-h: var(--form-w);
+	}
+
+	[class*="form-slt-swh"] {
+		--form-bd-c: var(--mc);
+		--form-bd-r: var(--form-h);
+		--form-chk-w: calc(var(--form-h) - var(--form-pd-x));
+		--form-chk-h: calc(var(--form-h) - var(--form-pd-x));
+		--form-chk-r: 50%;
+		--form-chk-point-bg-c: var(--moc);
+		--form-flex-d: row-reverse;
+		--form-pd-x: 8px;
+		--form-w: 40px;
+		--form-h: 20px;
+	}
+
+	[class*="form-slt-rt"] {
+		--form-chk-bg-c: transparent;
+		--form-dis-bg-c: transparent;
+		--form-w: 20px;
+		--form-h: 20px;
+		--form-gap-x: 4px;
+	}
+
+/* Default */
+	[class*="form-slt"] {
+		font-size: var(--form-ft-s);
+		font-weight: var(--form-ft-w);
+		line-height: var(--form-txt-lh);
+		color: var(--form-ft-c);
+	}
+
+	[class*="form-slt"] .part-slt-txt {
+		column-gap: var(--form-gap-x);
+		flex-direction: var(--form-flex-d);
+		min-height: var(--form-h);
+	}
+
+	[class*="form-slt"] .part-icon {
+		width: var(--form-w);
+		height: var(--form-txt-lh);
+	}
+
+	[class*="form-slt"] .part-icon:before {
+		background-color: var(--form-bg-c);
+		border-color: var(--form-bd-c);
+	}
+
+	[class*="form-slt"] .part-icon:after {
+		border-radius: var(--form-bd-r);
+		width: var(--form-chk-w);
+		height: var(--form-chk-h);
+	}
+
+/* Focus */
+	[class*="form-slt"] input:focus + .part-slt-txt .part-icon:before,
+	[class*="form-slt"] input:focus:checked + .part-slt-txt .part-icon:before {
+		border-color: var(--form-fcs-bd-c);
+	}
+
+/* Checked */
+	[class*="form-slt"] input:checked + .part-slt-txt {
+		color: var(--form-chk-ft-c);
+	}
+
+	[class*="form-slt"] input:checked + .part-slt-txt .part-icon:before {
+		background-color: var(--form-chk-bg-c);
+		border-color: var(--form-chk-bd-c);
+	}
+
+/* Disabled */
+	[class*="form-slt"] input:disabled + .part-slt-txt {
+		color: var(--form-dis-ft-c);
+	}
+
+	[class*="form-slt"] input:disabled + .part-slt-txt .part-icon:before,
+	[class*="form-slt"] input:checked:disabled + .part-slt-txt .part-icon:before {
+		background-color: var(--form-dis-bg-c);
+		border-color:var(--form-dis-bd-c);
+	}
+
+/* Button */
+	[class*="form-slt-btn"] {
+		line-height: var(--form-txt-lh);
+	}
+
+	[class*="form-slt-btn"] .part-slt-txt {
+		border: var(--form-bd-w) var(--form-bd-s) var(--form-bd-c);
+		border-radius: var(--form-bd-r);
+		padding-inline: var(--form-pd-x);
+		padding-block: var(--form-pd-y);
+	}
+
+	[class*="form-slt-btn"] .part-slt-txt:hover,
+	[class*="form-slt-btn"] input:focus + .part-slt-txt,
+	[class*="form-slt-btn"] input:checked:focus + .part-slt-txt,
+	[class*="form-slt-btn"] input:checked:hover + .part-slt-txt {
+		border-color: var(--form-fcs-bd-c);
+	}
+
+	[class*="form-slt-btn"] input:checked + .part-slt-txt {
+		background-color: var(--form-chk-bg-c);
+		border-color: var(--form-chk-bd-c);
+	}
+
+	[class*="form-slt-btn"] input:disabled + .part-slt-txt {
+		background: var(--form-dis-bg-c);
+		border-color:var(--form-dis-bd-c);
+		color: var(--form-dis-bd-c);
+	}
+
+	[class*="form-slt-btn"] input:checked:disabled + .part-slt-txt {
+		color: var(--form-dis-ft-c);
+	}
+
+/* Checkbox, Radio, Switch */
+	[class*="form-slt-chk"] .part-slt-txt,
+	[class*="form-slt-rdo"] .part-slt-txt,
+	[class*="form-slt-swh"] .part-slt-txt {
+		column-gap: var(--form-gap-x);
+	}
+
+	[class*="form-slt-chk"] .part-icon,
+	[class*="form-slt-rdo"] .part-icon,
+	[class*="form-slt-swh"] .part-icon {
+		min-height: var(--form-h);
+	}
+
+	[class*="form-slt-chk"] .part-icon:before,
+	[class*="form-slt-rdo"] .part-icon:before,
+	[class*="form-slt-swh"] .part-icon:before {
+		background-color: var(--form-bg-c);
+		border: var(--form-bd-w) var(--form-bd-s) var(--form-bd-c);
+		border-radius: var(--form-bd-r);
+		width: var(--form-w);
+		height: var(--form-h);
+	}
+
+/* Radio */
+	[class*="form-slt-rdo"] input:checked + .part-slt-txt .part-icon:before {
+		background-color: var(--form-bg-c);
+		border-color: var(--form-chk-bd-c);
+	}
+
+	[class*="form-slt-rdo"] input:checked + .part-slt-txt .part-icon:after {
+		background-color: var(--form-chk-bg-c);
+		border-color: var(--form-chk-bd-c);
+	}
+
+	[class*="form-slt-rdo"] input:checked:disabled + .part-slt-txt .part-icon:after {
+		background-color: var(--form-dis-bd-c);
+	}
+
+/* Rating */
+	[class*="form-slt-rt"] .part-icon:before {
+		width: var(--form-w);
+		height: var(--form-h);
+	}
+
+	[class*="form-slt-rt"] .part-slt-txt {
+		padding-right: var(--form-gap-x);
+	}
+
+/* Switch */
+	[class*="form-slt-swh"] .part-icon {
+		padding: 0 calc(var(--form-pd-x) / 2);
+	}
+
+	[class*="form-slt-swh"] .part-icon:before {
+		background: var(--form-bg-c);
+		border-color:var(--form-bd-c);
+		border-radius: var(--form-bd-r);
+		height: var(--form-h);
+	}
+
+	[class*="form-slt-swh"] .part-icon:after {
+		background-color: var(--form-chk-bg-c);
+		border-color: var(--form-chk-bd-c);
+	}
+
+	[class*="form-slt-swh"] input:checked + .part-slt-txt .part-icon:before {
+		background-color: var(--form-chk-bg-c);
+		border-color: var(--form-chk-bd-c);
+	}
+
+	[class*="form-slt-swh"] input:checked + .part-slt-txt .part-icon:after {
+		background-color: var(--form-chk-point-bg-c);
+		right: calc(-100% + var(--form-chk-w));
+	}
+
+	[class*="form-slt-swh"] input:disabled + .part-slt-txt .part-icon:after {
+		background-color: var(--form-dis-bd-c);
+	}

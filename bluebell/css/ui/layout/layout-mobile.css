@@ -1,0 +1,33 @@
+@media all and (max-width: 720px) {
+	/* Initialize */
+	[class*="layout-center"] {
+		--m-lay-ovf: var(--lay-ovf);
+		--m-lay-dp: var(--lay-dp);
+		--m-lay-w: var(--lay-w);
+		--m-lay-h: var(--lay-h);
+	}
+
+	[class*="layout-flex"] {
+		--m-lay-dp: var(--lay-dp);
+	}
+
+	[class*="layout-grid"] {
+		--m-lay-dp: var(--lay-dp);
+	}
+
+	[class*="layout-inner"] {
+		--m-lay-dp: var(--lay-dp);
+		--m-lay-w: 100%;
+		--m-lay-mg-x: var(--lay-mg-x);
+		--m-lay-pd-x: var(--init-layout-padding);
+	}
+
+	[class*="layout-"] {
+		overflow: var(--m-lay-ovf);
+		display: var(--m-lay-dp);
+		width: var(--m-lay-w);
+		height: var(--m-lay-h);
+		margin-inline: var(--m-lay-mg-x);
+		padding-inline: var(--m-lay-pd-x);
+	}
+}

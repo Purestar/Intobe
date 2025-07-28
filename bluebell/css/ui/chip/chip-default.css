@@ -1,0 +1,4 @@
+/* Default */
+	[class*="chip-type"] {
+		display:inline-flex; place-items:center; place-content:center;
+	}

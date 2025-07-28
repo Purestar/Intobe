@@ -1,0 +1,14 @@
+/* Default */
+	[class*="bi-"], [class*="ic-"] { position: relative; display: inline-flex; place-content: center; place-items: center; font-size: 0; cursor: inherit; }
+	[class*="bi-"]:before,
+	[class*="ic-"]:before,
+	[class*="bi-"]:after,
+	[class*="ic-"]:after { content:""; background-size: var(--bg-sz); background-position: var(--bp-pos-x) var(--bp-pos-y); }
+
+/* Background Image */
+	[class*="bi-"]:before,
+	[class*="bi-"]:after { background-image: var(--bg-img); }
+
+/* Icon */
+	[class*="ic-"]:before,
+	[class*="ic-"]:after { background-image:var(--ic); }

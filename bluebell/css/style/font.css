@@ -1,0 +1,47 @@
+[style*="--ft-c"] { color: var(--ft-c); }
+[style*="--ft-s"] { font-size: var(--ft-s); }
+[style*="--ft-w"] { font-weight: var(--ft-w); }
+[style*="--txt-a"] { text-align: var(--txt-a); }
+[style*="--txt-deco"] {
+	text-decoration: var(--txt-deco-l, underline) var(--txt-deco-s, solid) var(--txt-deco-c, var(--ft-c, currentcolor)) var(--txt-deco-t, 1px);
+	text-underline-offset: var(--txt-deco-uo, auto);
+}
+[style*="--txt-emp"] {
+	text-emphasis: var(--txt-emp-s, dot) var(--txt-emp-c, var(--ft-c, currentcolor));
+	text-emphasis-position: var(--txt-emp-p, over right);
+}
+[style*="--txt-lh"] { line-height: var(--txt-lh); }
+[style*="--txt-ls"] { letter-spacing: var(--txt-ls); }
+[style*="--txt-ori"] {
+	writing-mode: vertical-rl;
+	text-orientation: var(--txt-ori);
+}
+[style*="--txt-up"] {
+	writing-mode: vertical-rl;
+	text-combine-upright: var(--txt-up);
+}
+
+@media (max-width: 720px) {
+	[style*="--m-ft-c"] { color: var(--m-ft-c); }
+	[style*="--m-ft-s"] { font-size: var(--m-ft-s); }
+	[style*="--m-ft-w"] { font-weight: var(--m-ft-w); }
+	[style*="--m-txt-a"] { text-align: var(--m-txt-a); }
+	[style*="--m-txt-deco"] {
+		text-decoration: var(--m-txt-deco-l) var(--m-txt-deco-s) var(--m-txt-deco-c);
+		text-underline-offset: var(--m-txt-deco-uo);
+	}
+	[style*="--m-txt-emp"] {
+		text-emphasis: var(--m-txt-emp-s) var(--m-txt-emp-c);
+		text-emphasis-position: var(--m-txt-emp-p);
+	}
+	[style*="--m-txt-lh"] { line-height: var(--m-txt-lh); }
+	[style*="--m-txt-ls"] { letter-spacing: var(--m-txt-ls); }
+	[style*="--m-txt-ori"] {
+		writing-mode: vertical-rl;
+		text-orientation: var(--m-txt-ori);
+	}
+	[style*="--m-txt-up"] {
+		writing-mode: vertical-rl;
+		text-combine-upright: var(--m-txt-up);
+	}
+}

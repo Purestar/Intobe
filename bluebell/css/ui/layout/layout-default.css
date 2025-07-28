@@ -1,0 +1,9 @@
+/* Center */
+	[class*="layout-center"] { place-items: center; }
+	[class*="layout-center"] > * { flex-shrink: 0; margin: auto; }
+
+/* Flex */
+	[class*="layout-flex"] > * { flex-shrink: 0; }
+
+/* Inner */
+	[class*="layout-inner-max"] { max-width: 100%; }

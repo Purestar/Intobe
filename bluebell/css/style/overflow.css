@@ -1,0 +1,15 @@
+[style*="--ovf"] {
+	overflow-x: var(--ovf-x, var(--ovf-a, visible));
+	overflow-y: var(--ovf-y, var(--ovf-a, visible));
+}
+[style*="--ovf-x"] { white-space: nowrap; }
+[style*="--ovf-y"] { white-space: wrap; }
+
+@media (max-width: 720px) {
+	[style*="--m-ovf"] {
+		overflow-x: var(--m-ovf-x, var(--m-ovf-a, var(--ovf-x, var(--ovf-a, visible))));
+		overflow-y: var(--m-ovf-y, var(--m-ovf-a, var(--ovf-y, var(--ovf-a, visible))));
+	}
+	[style*="--m-ovf-x"] { white-space: nowrap; }
+	[style*="--m-ovf-y"] { white-space: wrap; }
+}

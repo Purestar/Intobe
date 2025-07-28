@@ -1,0 +1,7 @@
+[style*="--w"] { width: var(--w); }
+[style*="--h"] { height: var(--h); }
+
+@media (max-width: 720px) {
+	[style*="--m-w"] { width: var(--m-w); }
+	[style*="--m-h"] { height: var(--m-h); }
+}

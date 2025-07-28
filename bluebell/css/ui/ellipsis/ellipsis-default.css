@@ -1,0 +1,5 @@
+/* Default */
+	[class*="ellipsis"] { overflow: hidden; text-overflow: ellipsis; display: -webkit-box; height: max-content; -webkit-box-orient: vertical; text-align: left; word-break: break-all; }
+
+/* Disabled */
+	[class*="ellipsis"][data-disabled] { white-space: normal; -webkit-box-orient: unset; }
