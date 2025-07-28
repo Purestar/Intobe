@@ -1,0 +1,5 @@
+header .h-gnb-bg {height:660px;}
+
+[class*="brd-lst02"] .brd-btn > [class*="btn-"] {width:230px;}
+[class*="inp-file"] label {flex:0 0 125px;}
+[class*="bage-04"] {width:70px; height:70px; font-size:12px;}
