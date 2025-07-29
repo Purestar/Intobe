@@ -27,6 +27,7 @@
 		</div>
 		<div class="brd-wrap" style="--mg-t: 90px; --m-mg-t: 0;">
 			<div class="no-data" style="--h: 280px; --m-h: 45.56vw;">게시글이 없습니다.</div>
+			<p class="brd-tot">총 <q>24</q>건</p>
 			<ul class="aco-type-01 aco-qna">
 				<li class="aco-item">
 					<h3 class="aco-head-wrap">
