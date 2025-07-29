@@ -28,16 +28,16 @@ $(window).on("load", function () {
 
 $(function () {
 	$("header").gnb(); // 헤더
+	$(document).acoUI(); // 아코디언
 	$(document).tta(); // 활성화 토글
 	$(document).selfTg(); // 셀프 활성화
 
 	/*$(document).datep(); // 데이트피커
 
 	$(document).popUI(); // 팝업
-	$(document).acoUI(); // 아코디언
+
 	//$(document).prevttg(); // 이전 활성화 제거
 	$("[data-self]").selfTg();
-	//$("header").gnb(); // 글로벌 네비게이션
 	//$(".lnb-wrap").lnb(); // 로컬 네비게이션
 	$("[data-scr-fix]").scrFix();
 	$(".tab-wrap").tabUI(); // 탭메뉴
@@ -237,13 +237,13 @@ $.fn.acoUI = function (options) {
 
 			$(this).attr("data-acting", "");
 			$(this).on("click", ".aco-head", function () {
-				idx = $(this).closest(".aco-wrap").index();
+				idx = $(this).closest(".aco-item").index();
 
 				if (idx != prevIdx) {
-					$(this).closest("[class*='aco-type']").find(".aco-wrap").removeClass("active");
-					$(this).closest(".aco-wrap").addClass("active");
+					$(this).closest("[class*='aco-type']").find(".aco-item").removeClass("active");
+					$(this).closest(".aco-item").addClass("active");
 				} else {
-					$(this).closest(".aco-wrap").toggleClass("active");
+					$(this).closest(".aco-item").toggleClass("active");
 				};
 				prevIdx = idx;
 			});

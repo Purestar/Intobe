@@ -13,9 +13,9 @@
 		--init-layout-padding: 0; /* 레이아웃 안쪽 좌우 여백 */
 
 	/* Background */
-		--bg-img: url('../../images/bg.png'); /* 배경 이미지 경로 */
-		--ic-c: url('../../images/common_icon.png'); /* 공통 아이콘 이미지 경로 */
-		--ic: url('../../images/icon.png'); /* 아이콘 이미지 경로 */
+		--bg-img: url('/bluebell/images/bg.png'); /* 배경 이미지 경로 */
+		--ic-c: url('/bluebell/images/common_icon.png'); /* 공통 아이콘 이미지 경로 */
+		--ic: url('/bluebell/images/icon.png'); /* 아이콘 이미지 경로 */
 		--bg-sz: 1000px; /* 이미지 스프라이트 크기 */
 		--bp-50: -50px; /* 50 */
 		--bp-100: -100px; /* 100 */
@@ -120,7 +120,7 @@
 		/* Initialize */
 			--init-font-size: 3.33dvw; /* 글자 크기 */
 			--init-footer-height: 51.39dvw; /* 푸터 높이 */
-			--init-header-height: 16.66dvw; /* 헤더 높이 */
+			--init-header-height: 15.56dvw; /* 헤더 높이 */
 			--init-layout-width: 100%; /* 페이지 넓이 */
 			--init-layout-padding: 5dvw; /* 레이아웃 안쪽 좌우 여백 */
 

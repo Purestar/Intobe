@@ -1,7 +1,7 @@
 <%@ page contentType = "text/html; charset=UTF-8" %>
 <%@ include file="../inc/header.jsp" %>
 <div class="sub-layout">
-	<div class="sub-top-bg01">
+	<div class="sub-top-bg-01">
 		<div class="layout-inner">
 			<h2 class="sub-tit">공지사항</h2>
 			<ol class="page-loc">
@@ -12,36 +12,36 @@
 	</div>
 	<div class="layout-inner sub-inner">
 		<div class="contents">
-			<div class="fx-gap-01 fx-jcc brd-form">
+			<div class="brd-form" style="--dp: flex; --content-a: center; --gap-a: 10px;">
 				<div class="sel-type">
 					<select>
 						<option>전체</option>
 					</select>
 				</div>
-				<div class="inp-sch">
+				<div class="form-txt-type-01" style="--max-w: 700px; --form-pd-r: 0;">
 					<input type="text" placeholder="키워드로 검색해 보세요.">
-					<a href="#" class="ic-ct-close">지우기</a>
-					<a href="#" class="ic-ct-sch">검색</a>
+					<button type="button" class="part-icon"><i class="ic-del-02">지우기</i></button>
+					<a href="#" class="part-icon"><i class="ic-zoom">검색</i></a>
 				</div>
 			</div>
-			<div class="brd-wrap mt90">
-				<div class="no-data">
-					게시글이 없습니다.
-				</div>
-				<div class="aco-type0101">
-					<div class="aco-wrap qna-wrap">
-						<div class="aco-head">
-							<div class="aco-head-cont">
-								<p class="qna-q"><span class="bage-01 bage-b-red mr10">필독</span>홈페이지 오류, 점검 일로 인하여 수강이 어려우실 수 있습니다.</p>
-							</div>
-							<div class="fx-aic gx-gap-10 ">
-								<div class="vbar-01 fx-fix">
-									<span>2023.10.24</span>
-									<span>관리자</span>
+			<div class="brd-wrap" style="--mg-t: 90px;">
+				<div class="no-data" style="--h: 280px;">게시글이 없습니다.</div>
+				<ul class="aco-type-01">
+					<li class="aco-item">
+						<h3 class="aco-head-wrap">
+							<button class="aco-head">
+								<div class="aco-head-in">
+									<div style="--dp: flex; --content-x: space-between; --items-y: center; --w: 100%;">
+										<p style="--dp: flex; --gap-x: 10px;"><span class="chip-type-01-red">필독</span>홈페이지 오류, 점검 일로 인하여 수강이 어려우실 수 있습니다.</p>
+										<div class="mark-v-bar-01">
+											<span>2023.10.24</span>
+											<span>관리자</span>
+										</div>
+									</div>
 								</div>
-								<button type="button" class="aco-ic-ct-btn">내용보기</button>
-							</div>
-						</div>
+								<span class="aco-toggle"><i class="aco-toggle-btn"></i></span>
+							</button>
+						</h3>
 						<div class="aco-cont">
 							<div class="qna-a">
 								<p>학습을 기간내 꼭 완료해 주셔야 합니다.<br/>
@@ -54,113 +54,8 @@
 								</ul>
 							</div>
 						</div>
-					</div>
-					<div class="aco-wrap qna-wrap">
-						<div class="aco-head">
-							<div class="aco-head-cont">
-								<p class="qna-q"><span class="bage-01 bage-b-red mr10">필독</span>홈페이지 오류, 점검 일로 인하여 수강이 어려우실 수 있습니다.</p>
-							</div>
-							<div class="fx-aic gx-gap-10 ">
-								<div class="vbar-01 fx-fix">
-									<span>2023.10.24</span>
-									<span>관리자</span>
-								</div>
-								<button type="button" class="aco-ic-ct-btn">내용보기</button>
-							</div>
-						</div>
-						<div class="aco-cont">
-							<div class="qna-a">
-								<p>학습을 기간내 꼭 완료해 주셔야 합니다.<br/>
-									과제도 꼬옥 제출해 주세요.</p>
-							</div>
-							<div class="inp-file">
-								<ul class="inp-file-lst">
-									<li><a href="#"><i class="ic-file"></i>참고자료.pdf</a></li>
-									<li><a href="#"><i class="ic-file"></i>참고자료.pdf</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="aco-wrap qna-wrap">
-						<div class="aco-head">
-							<div class="aco-head-cont">
-								<p class="qna-q">홈페이지 오류, 점검 일로 인하여 수강이 어려우실 수 있습니다.</p>
-							</div>
-							<div class="fx-aic gx-gap-10 ">
-								<div class="vbar-01 fx-fix">
-									<span>2023.10.24</span>
-									<span>관리자</span>
-								</div>
-								<button type="button" class="aco-ic-ct-btn">내용보기</button>
-							</div>
-						</div>
-						<div class="aco-cont">
-							<div class="qna-a">
-								<p>학습을 기간내 꼭 완료해 주셔야 합니다.<br/>
-									과제도 꼬옥 제출해 주세요.</p>
-							</div>
-							<div class="inp-file">
-								<ul class="inp-file-lst">
-									<li><a href="#"><i class="ic-file"></i>참고자료.pdf</a></li>
-									<li><a href="#"><i class="ic-file"></i>참고자료.pdf</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="aco-wrap qna-wrap">
-						<div class="aco-head">
-							<div class="aco-head-cont">
-								<p class="qna-q">홈페이지 오류, 점검 일로 인하여 수강이 어려우실 수 있습니다.</p>
-							</div>
-							<div class="fx-aic gx-gap-10 ">
-								<div class="vbar-01 fx-fix">
-									<span>2023.10.24</span>
-									<span>관리자</span>
-								</div>
-								<button type="button" class="aco-ic-ct-btn">내용보기</button>
-							</div>
-						</div>
-						<div class="aco-cont">
-							<div class="qna-a">
-								<p>학습을 기간내 꼭 완료해 주셔야 합니다.<br/>
-									과제도 꼬옥 제출해 주세요.</p>
-							</div>
-							<div class="inp-file">
-								<ul class="inp-file-lst">
-									<li><a href="#"><i class="ic-file"></i>참고자료.pdf</a></li>
-									<li><a href="#"><i class="ic-file"></i>참고자료.pdf</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="aco-wrap qna-wrap">
-						<div class="aco-head">
-							<div class="aco-head-cont">
-								<p class="qna-q">홈페이지 오류, 점검 일로 인하여 수강이 어려우실 수 있습니다.</p>
-							</div>
-							<div class="fx-aic gx-gap-10 ">
-								<div class="vbar-01 fx-fix">
-									<span>2023.10.24</span>
-									<span>관리자</span>
-								</div>
-								<button type="button" class="aco-ic-ct-btn">내용보기</button>
-							</div>
-						</div>
-						<div class="aco-cont">
-							<div class="qna-a">
-								<p>학습을 기간내 꼭 완료해 주셔야 합니다.<br/>
-									과제도 꼬옥 제출해 주세요.</p>
-							</div>
-							<div class="inp-file">
-								<ul class="inp-file-lst">
-									<li><a href="#"><i class="ic-file"></i>참고자료.pdf</a></li>
-									<li><a href="#"><i class="ic-file"></i>참고자료.pdf</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-
+					</li>
+				</ul>
 				<%@ include file="../inc/brd_paging.jsp" %>
 			</div>
 		</div>
