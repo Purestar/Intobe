@@ -16,7 +16,7 @@
 			--m-btn-over-bg-c: var(--btn-over-bg-c);
 			--m-btn-over-bd-c: var(--btn-over-bd-c);
 			--m-btn-over-ft-c: var(--btn-over-ft-c);
-			--m-btn-pad-x: var(--btn-pad-x);
+			--m-btn-pd-x: var(--btn-pd-x);
 			--m-btn-w: var(--btn-w);
 			--m-btn-h: var(--btn-h);
 		}
@@ -52,7 +52,7 @@
 			width: var(--m-btn-w);
 			min-width:  var(--m-btn-min-w);
 			min-height: var(--m-btn-h);
-			padding: 0 var(--m-btn-pad-x);
+			padding: 0 var(--m-btn-pd-x);
 			font-size: var(--m-btn-ft-s);
 			color: var(--m-btn-ft-c);
 		}

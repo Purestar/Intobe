@@ -1,7 +1,7 @@
 <%@ page contentType = "text/html; charset=UTF-8" %>
 <%@ include file="../inc/global_header.jsp" %>
-<header class="sb-header h-wrap">
-	<div class="layout-inner">
+<header class="h-wrap">
+	<div class="layout-inner layout-flex">
 		<h1 class="h-logo"><a href="#"><img src="../images/img/img_logo_w.png"></a></h1>
 		<nav class="h-gnb-wrap">
 			<ul class="h-gnb">
@@ -13,114 +13,87 @@
 				<li><a href="#">결재 / 이력관리<i>3</i></a></li>
 			</ul>
 			<div class="h-sub-menu-wrap">
-				<div class="fx-jcsb inner" style="width: 1200px;margin: 0 auto;">
-					<div style="width: 160px;"></div>
-					<div class="inner">
-						<div class="h-sub-menu">
-							<ul>
-								<li class="active"><a href="#">교육체계도</a></li>
-								<li><a href="#">교육제도</a></li>
-							</ul>
-						</div>
-						<div class="h-sub-menu">
-							<ul>
-								<li><a href="#">수강신청</a></li>
-							</ul>
-						</div>
-						<div class="h-sub-menu">
-							<ul>
-								<li><a href="#">전체보기</a></li>
-							</ul>
-						</div>
-						<div class="h-sub-menu">
-							<ul>
-								<li><a href="#">러닝로드맵</a></li>
-								<li><a href="#">수강현황</a></li>
-								<li><a href="#">사외교육신청</a></li>
-							</ul>
-						</div>
-						<div class="h-sub-menu">
-							<ul>
-								<li><a href="#">Cell/학습동아리</a></li>
-								<li><a href="#">コンテンツ学習履歴</a></li>
-								<li><a href="#">ラーニングロードマップ</a></li>
-							</ul>
-						</div>
-						<div class="h-sub-menu">
-							<ul>
-								<li><a href="#">교육과정 학습 이력</a></li>
-								<li><a href="#">콘텐츠 학습 이력</a></li>
-							</ul>
-						</div>
-						<!-- <div class="h-sub-menu">
-							<h2>Help Desk</h2>
-							<ul>
-								<li><a href="#">공지사항</a></li>
-								<li><a href="#">Q&amp;A</a></li>
-								<li><a href="#">FAQ</a></li>
-							</ul>
-						</div> -->
-					</div>
-					<div style="width:124px"></div>
+				<div class="h-sub-menu layout-inner">
+					<ul>
+						<li class="active"><a href="#">교육체계도</a></li>
+						<li><a href="#">교육제도</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">수강신청</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">전체보기</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">러닝로드맵</a></li>
+						<li><a href="#">수강현황</a></li>
+						<li><a href="#">사외교육신청</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">Cell/학습동아리</a></li>
+						<li><a href="#">コンテンツ学習履歴</a></li>
+						<li><a href="#">ラーニングロードマップ</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">교육과정 학습 이력</a></li>
+						<li><a href="#">콘텐츠 학습 이력</a></li>
+					</ul>
 				</div>
 			</div>
 		</nav>
 		<div class="h-util">
-			<div class="h-alert" data-ttatg="simplealert">
-				<button type="button" class="on" data-tta="simplealert">
-					<i class="ic-alert"></i><i>19</i>
+			<div data-ttatg="simplealert">
+				<button type="button" data-tta="simplealert" style="--pos: relative;">
+					<i class="ic-bell"></i>
+					<span class="txt-alarm">19</span>
 				</button>
-				<div class="h-glo-menu mobile">
-					<h3 class="mt20">알림</h3>
-					<div class="h-top fx-jcsb mt10">
-						<p>전체<em>16</em></p>
-						<a href="">전체삭제</a>
+				<div class="h-pop h-alarm">
+					<h3 class="h-pop-tit">알림</h3>
+					<div class="h-top">
+						<p>전체 <em>16</em></p>
+						<button>전체삭제</button>
 					</div>
-					<ul>
-						<li class="read">
-							<dl>
-								<dt class="fx-jcsb fx-aic">‘마케팅잘하기’ 수강신청이 완료되었습니다.<button class="btn-df-ic-ct-del"></button></dt>
-								<dd>1월20일 11:00</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt class="fx-jcsb fx-aic">‘마케팅잘하기’ 수강신청이 완료되었습니다.<button class="btn-df-ic-ct-del"></button></dt>
-								<dd>1월20일 11:00</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt class="fx-jcsb fx-aic">‘마케팅잘하기’ 수강신청이 완료되었습니다.<button class="btn-df-ic-ct-del"></button></dt>
-								<dd>1월20일 11:00</dd>
-							</dl>
-						</li>
-					</ul>
-					<button type="button" class="h-alarm-close pop-close">닫기</button>
+					<div data-scroll="y" style="--max-h: 315px; --mg-t: 20px; --pd-r: 5px;">
+						<ul class="h-alarm-list">
+							<li class="read">
+								<div style="--dp: flex; --content-a: space-between; --items-a: center;">
+									‘마케팅잘하기’ 수강신청이 완료되었습니다.
+									<button><i class="ic-del"></i></button>
+								</div>
+								<p class="txt-date">1월20일 11:00</p>
+							</li>
+							<li>
+								<div style="--dp: flex; --content-a: space-between; --items-a: center;">
+									‘마케팅잘하기’ 수강신청이 완료되었습니다.
+									<button><i class="ic-del"></i></button>
+								</div>
+								<p class="txt-date">1월20일 11:00</p>
+							</li>
+						</ul>
+					</div>
+					<button type="button" class="h-pop-close" data-tta="simplealert"><i class="ic-close"></i></button>
 				</div>
 			</div>
-			<!--<div class="h-usrnm" data-ttatg="adminmenu">
-				<button type="button" class="h-ic-info" data-tta="adminmenu">intobetutor</button>
-				<div class="h-glo-menu">
-					<div class="user-info">
-						<div class="tooltip-wrap tips mt5" style=" align-self: baseline;">
-							<i class="ic-tooltip"></i>
-							<div class="ttip-wrap">
-								<ul class="bul-cir">
-									<li>프로필 사진을 변경 하려면 ‘카메라＇아이콘을 클릭하세요.</li>
-								</ul>
-							</div>
+			<div data-ttatg="adminmenu">
+				<button type="button" data-tta="adminmenu"><i class="ic-usr"></i></button>
+				<div class="h-pop h-usr">
+					<div class="tooltip-wrap tips">
+						<i class="ic-quest"></i>
+						<div class="ttip-wrap">
+							<p>프로필 사진을 변경 하려면 ‘카메라＇아이콘을 클릭하세요.</p>
 						</div>
-						<div class="user-thumb mt30" >
-							<button class="ic-photo"></button>
-							<ul class="h-glo-menu photo-menu">
+					</div>
+					<div class="user-info">
+						<div class="user-thumb">
+							<button class="user-camera-btn" data-self><i class="ic-camera"></i></button>
+							<ul class="h-menu photo-menu">
 								<li><a href="">사진선택</a></li>
 								<li><a href="">사진초기화</a></li>
 							</ul>
-							<img src="../images/user_default.png" alt="">
+							<img src="../images/img/user_default.png" alt="">
 						</div>
 						<div>
-							<h4>김캐논</h4>
+							<h4 class="user-nm">김캐논</h4>
 							<p>IT기획파트</p>
 						</div>
 						<div class="sel-type">
@@ -128,22 +101,22 @@
 								<option>Option / 옵션</option>
 							</select>
 						</div>
-						<div class="sel-type">
-							<a href="" class="btn-sz02 btn-b-blk">취소</a>
-							<a href="" class="btn-sz02 btn-b-">저장</a>
+						<div style="--dp: flex; --gap-a: 4px;">
+							<a href="" class="btn-sz-02 btn-type-b-blk">취소</a>
+							<a href="" class="btn-sz-02 btn-type-b">저장</a>
 						</div>
-						<a href="" class="">로그아웃</a>
+						<a href="">로그아웃</a>
 					</div>
-					<button type="button" class="h-user-close pop-close">닫기</button>
+					<button type="button" class="h-pop-close" data-tta="adminmenu" style="--z-idx: 100;"><i class="ic-close"></i></button>
 				</div>
 			</div>
 			<div class="h-glo-wrap">
-				<button class="h-glo-ic-btn" data-tta="glomenu"></button>
-				<ul class="h-glo-menu" data-ttatg="glomenu">
+				<button data-tta="glomenu" data-self><i class="ic-globe"></i></button>
+				<ul class="h-menu">
 					<li class="active"><a href="../page/main.jsp">KOR</a></li>
 					<li><a href="../page/layout_e.jsp">JPN</a></li>
 				</ul>
-			</div>-->
+			</div>
 		</div>
 	</div>
 	<script>

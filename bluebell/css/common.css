@@ -47,7 +47,7 @@
 	input[type="time"],
 	input[type="password"],
 	input[type="url"],
-	input[type="week"] {appearance:none; background:none; border:0; height:100%; padding:0; font-family:var(--init-font-family); font-size:inherit; font-weight:inherit; letter-spacing:var(--init-line-height); color:inherit; outline:0;}
+	input[type="week"] {appearance:none; background:none; border:0; height:100%; padding:0; font-family:var(--init-font-family); font-size:inherit; font-weight:inherit; letter-spacing:var(--init-letter-spacing); color:inherit; outline:0;}
 
 	select,
 	textarea,

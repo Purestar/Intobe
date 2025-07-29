@@ -62,3 +62,16 @@
 
 	[class*="t-tip"] .p-tooltip-arrow { display: none; }
 }
+
+/* Old */
+[class*="tooltip-"] { opacity:1;  text-align:left; position: relative; word-break:break-all; z-index:50; line-height: 1.5;word-break: keep-all;height: 22px;}
+[class*="tooltip-"] .ttip-wrap {display:none;background:white;position: absolute;width: 370px;border: 1px solid #999;padding: 20px;border-radius: 10px; left: -173px; letter-spacing: -0.04em;font-size: 16px;font-weight: 400;color: #999;box-shadow: 0 0 10px  rgba(0,0,0,.13);}
+[class*="tooltip-"] i:hover + .ttip-wrap{display: block;}
+[class*="tooltip-"] .ttip-wrap::before{content: "";width: 18px;height: 13px;background: var(--ic-c);background-position: var(--bp-150) var(--bp-600);position: absolute;top: -13px; left: 50%;transform: translate(-50%);}
+[class*="tooltip-"] .ttip-wrap > * {position:relative; word-break: normal; word-break: auto-phrase;}
+[class*="tooltip-"].tipfe .ttip-wrap {left: revert;right: -20px;}
+[class*="tooltip-"].tipfe .ttip-wrap::before {right: 10px;transform: 0;left: revert;}
+[class*="tooltip-"].tips .ttip-wrap {left: -20px;}
+[class*="tooltip-"].tips .ttip-wrap::before {transform: none;left: 20px;}
+[class*="tooltip-"].tire .ttip-wrap { left: -30px;bottom: 40px;}
+[class*="tooltip-"].tire .ttip-wrap::before {transform: rotate(180deg);left: 30px;top: unset;bottom: -13px;;}

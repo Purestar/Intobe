@@ -1,7 +1,11 @@
 [style*="--w"] { width: var(--w); }
 [style*="--h"] { height: var(--h); }
+[style*="--max-w"] { max-width: var(--max-w); }
+[style*="--max-h"] { max-height: var(--max-h); }
 
 @media (max-width: 768px) {
 	[style*="--m-w"] { width: var(--m-w); }
 	[style*="--m-h"] { height: var(--m-h); }
+	[style*="--m-max-w"] { max-width: var(--m-max-w); }
+	[style*="--m-max-h"] { max-height: var(--m-max-h); }
 }

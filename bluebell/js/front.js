@@ -28,9 +28,11 @@ $(window).on("load", function () {
 
 $(function () {
 	$("header").gnb(); // 헤더
+	$(document).tta(); // 활성화 토글
+	$(document).selfTg(); // 셀프 활성화
 
 	/*$(document).datep(); // 데이트피커
-	$(document).tta(); // 활성화 토글
+
 	$(document).popUI(); // 팝업
 	$(document).acoUI(); // 아코디언
 	//$(document).prevttg(); // 이전 활성화 제거
@@ -40,7 +42,7 @@ $(function () {
 	$("[data-scr-fix]").scrFix();
 	$(".tab-wrap").tabUI(); // 탭메뉴
 	$("[class*='swi-type']").swiperInit(); // 스와이퍼
-	$(document).selfTg(); // 셀프 활성화
+
 	//$(".vdo-wrap").vdoPlyer(); // 비디오
 	$(document).tooltipUI(); // 툴팁
 	$(document).selfTg(); // 셀프 활성화

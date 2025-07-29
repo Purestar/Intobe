@@ -6,16 +6,16 @@
 		--init-font-size: 16px; /* 글자 크기 */
 		--init-footer-height: 195px; /* 푸터 높이 */
 		--init-header-height: 120px; /* 헤더 높이 */
-		--init-line-height: 1.2; /* 행간 */
+		--init-line-height: 20px; /* 행간 */
 		--init-letter-spacing: -0.02em; /* 자간 */
 		--init-layout-width: 1200px; /* 페이지 넓이 */
 		--init-mobile-design-width: 720; /* 모바일 디자인 넓이 */
 		--init-layout-padding: 0; /* 레이아웃 안쪽 좌우 여백 */
 
 	/* Background */
-		--bg-img: url('/images/bg.png'); /* 배경 이미지 경로 */
-		--ic-c: url('/images/common_icon.png'); /* 공통 아이콘 이미지 경로 */
-		--ic: url('/images/icon.png'); /* 아이콘 이미지 경로 */
+		--bg-img: url('../../images/bg.png'); /* 배경 이미지 경로 */
+		--ic-c: url('../../images/common_icon.png'); /* 공통 아이콘 이미지 경로 */
+		--ic: url('../../images/icon.png'); /* 아이콘 이미지 경로 */
 		--bg-sz: 1000px; /* 이미지 스프라이트 크기 */
 		--bp-50: -50px; /* 50 */
 		--bp-100: -100px; /* 100 */
