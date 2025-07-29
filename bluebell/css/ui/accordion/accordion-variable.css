@@ -75,10 +75,6 @@
 	color: var(--aco-cont-ft-c);
 }
 
-[class*="aco-type"] > .aco-item > .aco-cont .aco-cont-in {
-	padding: var(--aco-cont-pd-y, var(--aco-cont-pd-a)) var(--aco-cont-pd-x, var(--aco-cont-pd-a));
-}
-
 /* QnA */
 [class*="aco-type"].aco-qna .aco-head-in:before {
 	content: var(--aco-faq-q);

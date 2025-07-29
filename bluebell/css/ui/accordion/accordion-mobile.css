@@ -113,10 +113,6 @@
 			color: var(--m-aco-cont-ft-c);
 		}
 
-		[class*="aco-type"] > .aco-item > .aco-cont .aco-cont-in {
-			padding: var(--m-aco-cont-pd-y, var(--m-aco-cont-pd-a)) var(--m-aco-cont-pd-x, var(--m-aco-cont-pd-a));
-		}
-
 	/* QnA */
 		[class*="aco-type"].aco-qna .aco-head-in:before {
 			content: var(--m-aco-faq-q);

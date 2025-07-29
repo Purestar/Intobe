@@ -91,7 +91,6 @@
 	/* Marker */
 		[class*="mark-"] > * > .part-marker {
 			width: var(--m-mark-w);
-			min-height: var(--m-mark-txt-lh);
 			height: var(--m-mark-h);
 		}
 

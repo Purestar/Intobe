@@ -76,7 +76,6 @@
 	[class*="mark-"] > * > .part-marker,
 	[class*="mark-"] > *:before {
 		width: var(--mark-w);
-		min-height: var(--mark-txt-lh);
 		height: var(--mark-h);
 	}
 

@@ -18,6 +18,10 @@
 			margin-top: 4.17vw;
 		}
 
+		[class*="aco-type-01"].aco-qna .aco-head-in:before{ display: none; }
+		[class*="aco-type-01"].aco-qna .aco-cont { gap: 2.78vw; }
+		[class*="aco-type-01"] .txt-a { font-size: 3.33vw; }
+
 	/* Chip */
 		[class*="chip-type-01"] {
 			--chip-h: 5.28vw;
@@ -28,6 +32,11 @@
 		}
 
 	/* Marker */
+		/* Horizontal Bar */
+			[class*="mark-h-bar-01"] {
+				--mark-gap-a: 5vw;
+			}
+
 		/* Vertical Bar */
 			[class*="mark-v-bar-01"] {
 				--mark-gap-a: 1.3vw;

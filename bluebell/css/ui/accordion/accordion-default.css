@@ -37,7 +37,8 @@
 
 /* Content */
 [class*="aco-type"] > .aco-item > .aco-cont { display: none; }
-[class*="aco-type"] > .aco-item.active > .aco-cont { display: block; }
+[class*="aco-type"] > .aco-item.active > .aco-cont { display: flex; }
+[class*="aco-type"] > .aco-item > .aco-cont .aco-cont-in { width: 100%; }
 
 /* Animation */
 @keyframes acoSlideDown {
