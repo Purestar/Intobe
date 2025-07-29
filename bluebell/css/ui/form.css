@@ -39,22 +39,3 @@
 @import "./form/form-textarea-variable.css";
 /* Form - Textarea - Mobile */
 @import "./form/form-textarea-mobile.css";
-
-/* Old */
-/* Select (Nice Select Base) */
-	[class*="sel-type"] .nice-select {overflow:hidden; float:none; position:relative; border-radius:var(--fom-br); width:100%; height:var(--fom-h); padding:0 38px 0 19px;}
-	[class*="sel-type"] .nice-select .list {overflow-y:auto; border-radius:0 0 var(--fom-br) var(--fom-br); border:1px solid var(--fc-c01); min-width:calc(100% + 2px); max-height:290px; margin:0 -1px; font-size:var(--fom-fs); z-index:100;}
-	[class*="sel-type"] .nice-select .list [class*="chk-rdo"] {width:100%; line-height:var(--fom-h);}
-	[class*="sel-type"] .nice-select .list [class*="chk-rdo"] input:checked + span:after {top:19px;}
-	[class*="sel-type"] .nice-select .option {padding:0 var(--fom-pad); line-height:var(--fom-h);}
-	[class*="sel-type"] .nice-select .option:hover,
-	[class*="sel-type"] .nice-select .option.selected {background:#f9f9f9; font-weight:400; color:var(--fc-c01);}
-	[class*="sel-type"] .nice-select:after {right:15px; background:var(--ic-c); background-position:var(--bp-150) var(--bp-200); border:none; width:12px; height:7px; margin:0; transform:translate(0, -50%) rotate(0); transform-origin:center;}
-	[class*="sel-type"] .nice-select .current {overflow:hidden; display:inline-block; text-overflow:ellipsis; white-space:nowrap; word-break:break-all; width:100%; height:100%; font-size:var(--fom-fs); line-height:calc(var(--fom-h) - 2px);}
-	[class*="sel-type"] .nice-select.open {overflow:visible; border-color:var(--fc-c01); border-radius:var(--fom-br) var(--fom-br) 0 0;}
-	[class*="sel-type"] .nice-select.open:after {transform:translate(0, -50%) rotate(180deg);}
-	[class*="sel-type"] select[disabled] + .nice-select {background:#eee;}
-	span[class*="sel-type"] .nice-select {float:left; width:auto;}
-
-	[class*="sel-type"].sel-revert .nice-select .list {top:auto; bottom:100%; border-radius:var(--fom-br) var(--fom-br) 0 0;}
-	[class*="sel-type"].sel-revert .nice-select.open {border-radius:0 0 var(--fom-br) var(--fom-br);}

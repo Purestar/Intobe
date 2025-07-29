@@ -54,19 +54,21 @@ body, #app {display:flex; flex-direction:column; place-content:space-between; fl
 
 /* Container */
 	#container {flex:1;}
-	.sub-layout {padding:0 0 140px;}
+	[class*="sub-top"] .layout-inner { position: relative; display: flex; place-content: center;place-items: center; height: 200px; }
+	.sub-top-bg-01 { background: url(../images/img/sub-top-bg01.png); }
+	[class*="sub-top"] .sub-tit { font-size: 40px; font-weight: bold; color: #2f2f2f; }
+	[class*="sub-top"] .page-loc { display: flex; gap: 8px; position: absolute; right: 0; top: 18px; font-size: 14px; }
+	[class*="sub-top"] .page-loc li { display: flex; place-items: center; gap: 9px; color: #2f2f2f; }
+	[class*="sub-top"] .page-loc li + li:before {content: ""; background-image: var(--ic); background-position:var(--bp-500) 0; width:6px; height:11px;}
+	.sub-contents { padding: 70px 0 140px; }
+
+	/*.sub-layout {padding:0 0 140px;}
 	.sub-layout .sub-top + .sub-inner{padding-top: 20px;}
 	.sub-layout .sub-inner {display:flex; place-content: space-between; place-items: flex-start; gap:40px;padding-top:70px;}
-	.sub-layout .sub-top-bg-01 {height: 200px;background: url(../images/img/sub-top-bg01.png);background-position: bottom;}
-	.sub-layout .sub-mid {min-height: 260px;background:#f9f9f9;padding:55px 0;}
-	[class*="sub-top"] {display: flex;place-items: center;height: 200px;}
-	[class*="sub-top"] .sub-inner{place-content: center;padding:70px 0; text-align:center;position: relative;}
-	[class*="sub-top"] .sub-tit{font-size: 40px;font-weight: bold;color: #2f2f2f;text-align: center;place-content: center;}
-	[class*="sub-top"] .page-loc {display:flex; position:absolute; right:0; top:0; font-size:14px;}
-	[class*="sub-top"] .page-loc li {display:flex; place-items:center; color:#2f2f2f;}
-	[class*="sub-top"] .page-loc li + li {margin-left:8px;}
-	[class*="sub-top"] .page-loc li + li:before {content:""; display:inline-block; background:url("../images/icon.png") -350px 0px no-repeat; margin-right:9px; width:6px; height:11px;}
-	.sub-layout .lnb-wrap + .contents {flex:0 0 891px;}
+
+	.sub-layout .sub-mid {min-height: 260px;background:#f9f9f9;padding:55px 0;}*/
+
+	/*.sub-layout .lnb-wrap + .contents {flex:0 0 891px;}
 	.sub-layout .lnb-wrap02 {flex:0 0 220px; background:white; border:1px solid #e2e2e2; border-radius:12px; padding:28px 20px;}
 	.sub-layout .lnb-wrap02 .lnb-menu {display:flex; flex-direction: column; gap:25px; border-top:1px solid #e2e2e2; margin-top:28px; padding-top:28px; font-size:18px; color:black;}
 	.sub-layout .lnb-wrap02 .lnb-menu a {position:relative;}
@@ -79,7 +81,7 @@ body, #app {display:flex; flex-direction:column; place-content:space-between; fl
 	.sub-layout .lnb-wrap02 .lnb-info > * {display:flex; gap:10px; place-content: space-between;}
 	.sub-layout .lnb-wrap02 + .contents {width:930px; margin-top:20px;}
 	.sub-layout .lnb-tc-name {font-size:22px; color:black;}
-	.sub-layout .contents {width:100%;}
+	.sub-layout .contents {width:100%;}*/
 
 /* Footer */
 	.f-wrap {display: flex; place-items: center; background: #333333; height:var(--init-footer-height);}
@@ -88,8 +90,11 @@ body, #app {display:flex; flex-direction:column; place-content:space-between; fl
 
 @media all and (max-width:768px) {
 	/* Header */
-		.h-wrap { background: none; }
+		.h-wrap { background: red; }
 		.h-wrap .h-logo img { width: 30vw; }
+
+	/* Container */
+		.sub-contents { padding: 8.33vw 0 13.89vw; }
 
 	/* Footer */
 		.f-wrap .f-copy { margin-top: 4.86vw; }

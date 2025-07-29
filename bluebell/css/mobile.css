@@ -1,3 +1,40 @@
 @media all and (max-width:768px) {
+	/* Accordion */
+		[class*="aco-type-01"] {
+			--aco-item-gap-a: 3.47vw;
+			--aco-item-bd-r: 3.33vw;
 
+			--aco-head-pd-x: 5vw;
+			--aco-head-pd-y: 5vw;
+			--aco-head-ft-s: 3.89vw;
+			--aco-head-gap-x: 3.89vw;
+
+			--aco-cont-pd-a: 4.58vw;
+
+			--aco-bp-x: var(--bp-150);
+			--aco-icon-w: 3.33vw;
+			--aco-icon-h: 1.94vw;
+
+			margin-top: 4.17vw;
+		}
+
+	/* Chip */
+		[class*="chip-type-01"] {
+			--chip-h: 5.28vw;
+
+			--chip-bd-r: 5.28vw;
+			--chip-ft-s: 2.78vw;
+			--chip-pd-x: 2.25vw;
+		}
+
+	/* Marker */
+		/* Vertical Bar */
+			[class*="mark-v-bar-01"] {
+				--mark-gap-a: 1.3vw;
+				--mark-h: 1.94vw;
+			}
+
+	/* Icon */
+		.ic-file:before { width: 3.61vw; height: 3.61vw; }
+		.ic-zoom:before { width: 3.75vw; height: 3.75vw; }
 }

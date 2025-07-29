@@ -3,11 +3,11 @@
 	[class*="chip-type"] {
 		--m-chip-bg-c: var(--chip-bg-c);
 		--m-chip-bd-c: var(--chip-bd-c);
-		--m-chip-bd-r: 2.22vw;
+		--m-chip-bd-r: var(--chip-bd-r);
 		--m-chip-w: var(--chip-w);
 		--m-chip-h: var(--chip-h);
-		--m-chip-pd-x: 2.22vw;
-		--m-chip-ft-s: 2.22vw;
+		--m-chip-pd-x: var(--chip-pd-x);
+		--m-chip-ft-s: var(--chip-ft-s);
 		--m-chip-ft-w: var(--chip-ft-w);
 		--m-chip-ft-c: var(--chip-ft-c);
 	}

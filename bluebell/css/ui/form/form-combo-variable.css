@@ -1,5 +1,6 @@
 /* Initialize */
-	[class*="form-sel"] {
+	[class*="form-sel"],
+	[class*="sel-type"] {
 		--form-bd-c: var(--fom-bdr-c);
 		--form-bd-s: solid;
 		--form-bd-r: var(--fom-br);
@@ -15,8 +16,8 @@
 		--form-pd-r: var(--fom-pad);
 		--form-ph-c: var(--fom-ph);
 
-		--form-icon-w: 12px;
-		--form-icon-h: 7px;
+		--form-icon-w: 9px;
+		--form-icon-h: 6px;
 
 		--form-focus-bd-c: var(--fom-fcs-brd-c);
 		--form-focus-bg-c: var(--fom-fcs-bg-c);
@@ -113,4 +114,63 @@
 	[class*="form-sel"] .part-item[data-state="checked"] {
 		background-color: var(--form-over-bg-c);
 		color: var(--form-over-ft-c);
+	}
+
+/* Old (Nice Select) */
+	[class*="sel-type"] .nice-select {
+		border-radius: var(--form-bd-r);
+		height: var(--form-h);
+		padding: 0 calc(var(--form-pd-x) * 2) 0 var(--form-pd-x);
+	}
+
+	[class*="sel-type"] .nice-select .list {
+		border-radius: 0 0 var(--form-bd-r) var(--form-bd-r);
+		border: 1px solid var(--form-focus-bd-c);
+		max-height: var(--form-list-max-h);
+		font-size: var(--form-ft-s);
+	}
+
+	[class*="sel-type"] .nice-select .option {
+		padding: 0 var(--form-pd-x);
+		line-height: var(--form-h);
+	}
+
+	[class*="sel-type"] .nice-select .option:hover,
+	[class*="sel-type"] .nice-select .option.selected,
+	[class*="sel-type"] .nice-select .option.focus {
+		background-color: var(--form-over-bg-c);
+		color: var(--form-over-ft-c);
+	}
+
+	[class*="sel-type"] .nice-select .list:hover .option:not(:hover) {
+		background-color: var(--form-bg-c) !important;
+		color: var(--form-ft-c);
+	}
+
+	[class*="sel-type"] .nice-select:after {
+		right: calc(var(--form-pd-x) - (var(--form-icon-w) / 2));
+		width: var(--form-icon-w);
+		height: var(--form-icon-h);
+	}
+
+	[class*="sel-type"] .nice-select .current {
+		font-size: var(--form-ft-s);
+		line-height: calc(var(--form-h) - 2px);
+	}
+
+	[class*="sel-type"] .nice-select.open {
+		border-color: var(--form-focus-bd-c);
+		border-radius: var(--form-bd-r) var(--form-bd-r) 0 0;
+	}
+
+	[class*="sel-type"] select[disabled] + .nice-select {
+		background: var(--form-dis-bg-c);
+	}
+
+	[class*="sel-type"].sel-revert .nice-select .list {
+		border-radius: var(--form-bd-r) var(--form-bd-r) 0 0;
+	}
+
+	[class*="sel-type"].sel-revert .nice-select.open {
+		border-radius: 0 0 var(--form-bd-r) var(--form-bd-r);
 	}

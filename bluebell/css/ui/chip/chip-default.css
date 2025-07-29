@@ -1,4 +1,2 @@
 /* Default */
-	[class*="chip-type"] {
-		display:inline-flex; place-items:center; place-content:center;
-	}
+	[class*="chip-type"] { display:inline-flex; place-items:center; place-content:center; word-break: keep-all; }

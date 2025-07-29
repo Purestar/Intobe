@@ -70,6 +70,7 @@
 	background-color: var(--aco-cont-bg-c);
 	border-top: var(--aco-cont-bd-t-w, var(--aco-item-bd-w)) var(--aco-cont-bd-t-s, var(--aco-item-bd-s)) var(--aco-cont-bd-t-c, var(--aco-item-bd-c));
 	border-left: var(--aco-cont-bd-l-w, var(--aco-item-bd-w)) var(--aco-cont-bd-l-s, var(--aco-item-bd-s)) var(--aco-cont-bd-l-c, var(--aco-item-bd-c));
+	border-radius: 0 0 var(--aco-item-bd-r) var(--aco-item-bd-r);
 	padding: var(--aco-cont-pd-y, var(--aco-cont-pd-a)) var(--aco-cont-pd-x, var(--aco-cont-pd-a));
 	color: var(--aco-cont-ft-c);
 }

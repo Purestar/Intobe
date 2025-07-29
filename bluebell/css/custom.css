@@ -61,6 +61,7 @@
 	.ic-close:before { background-position: var(--bp-150) 0; width: 18px; height: 18px; }
 	.ic-del:before { background-position: var(--bp-200) 0; width: 13px; height: 12px; }
 	.ic-del-02:before { background-position: var(--bp-400) 0; width: 18px; height: 18px; }
+	.ic-file:before { background-position: var(--bp-450) 0; width: 18px; height: 18px; }
 	.ic-globe:before { background-position: var(--bp-100) 0; width: 24px; height: 24px; }
 	.ic-quest:before { background-position: var(--bp-250) 0; width: 22px; height: 22px; }
 	.ic-usr:before { background-position: var(--bp-50) 0; width: 20px; height: 23px; }

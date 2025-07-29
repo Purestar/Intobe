@@ -108,6 +108,7 @@
 			background-color: var(--m-aco-cont-bg-c);
 			border-top: var(--m-aco-cont-bd-t-w, var(--m-aco-item-bd-w)) var(--m-aco-cont-bd-t-s, var(--m-aco-item-bd-s)) var(--m-aco-cont-bd-t-c, var(--m-aco-item-bd-c));
 			border-left: var(--m-aco-cont-bd-l-w, var(--m-aco-item-bd-w)) var(--m-aco-cont-bd-l-s, var(--m-aco-item-bd-s)) var(--m-aco-cont-bd-l-c, var(--m-aco-item-bd-c));
+			border-radius: 0 0 var(--m-aco-item-bd-r) var(--m-aco-item-bd-r);
 			padding: var(--m-aco-cont-pd-y, var(--m-aco-cont-pd-a)) var(--m-aco-cont-pd-x, var(--m-aco-cont-pd-a));
 			color: var(--m-aco-cont-ft-c);
 		}
