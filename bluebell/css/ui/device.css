@@ -21,7 +21,7 @@
 	.device-pc.device-tablet,
 	.tablet,
 	.pc.tablet,
-	.pc { display: none; }
+	.pc { display: none !important; }
 	.device-mobile,
 	.mobile { display: block; }
 	.mobile-inline { display: inline; }

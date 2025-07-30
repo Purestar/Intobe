@@ -123,6 +123,11 @@
 			--btn-bd-c: black;
 		}
 
+		.btn-type-b-lgry {
+			--btn-bd-c: #e7e7e7;
+			--btn-over-bd-c: #e7e7e7;
+		}
+
 	/* Size */
 		.btn-sz-02 {
 			--btn-h: 34px;
@@ -168,7 +173,20 @@
 	.chip-type-02-lpnk { --chip-bg-c: #ffe8f9; --chip-bd-c: #ffe8f9; --chip-ft-c: #dc00a0; }
 	.chip-type-02-lpur { --chip-bg-c: #efeaff; --chip-bd-c: #efeaff; --chip-ft-c: #7f2bb0; }
 
+	.chip-type-02-gry { --chip-bg-c: rgba(0, 0, 0, 0.5); --chip-bd-c: rgba(0, 0, 0, 0.5); --chip-ft-c: white; }
+
 	.chip-type-02-b-red { --chip-bd-c: #cc000c; --chip-ft-c: #cc000c; }
+
+	[class*="chip-type-03"] {
+		--chip-bg-c: lightgray;
+		--chip-bd-r: 34px;
+		--chip-pd-x: 12px;
+		--chip-ft-c: black;
+		--chip-ft-s: 14px;
+		--chip-h: 32px;
+	}
+
+	.chip-type-03-pnk { --chip-bg-c: #fff6f8; --chip-bd-c: #fff6f8; --chip-ft-c: #cc000c;}
 
 /* Float Menu */
 	.float-menu-wrap { position: relative; }
@@ -225,6 +243,7 @@
 	.ic-file:before { background-position: var(--bp-450) 0; width: 18px; height: 18px; }
 	.ic-globe:before { background-position: var(--bp-100) 0; width: 24px; height: 24px; }
 	.ic-plus:before { background-position: var(--bp-600) 0; width: 10px; height: 10px; }
+	.ic-plus-02:before { background-position: var(--bp-650) 0; width: 14px; height: 14px; }
 	.ic-quest:before { background-position: var(--bp-250) 0; width: 22px; height: 22px; }
 	.ic-ribbon:before { background-position: 0 var(--bp-500); width: 42px; height: 44px; }
 	.ic-three-dot:before { background-position: var(--bp-550) 0; width: 3px; height: 17px; }
@@ -274,9 +293,15 @@
 /* Swiper */
 	.swiper-type-01 .swiper-pagination-01 { position: absolute; right: 36px; top: 0; }
 
+	.swiper-type-02 .brd-lst-01 { display: flex; }
+	.swiper-type-02 .swiper-nav-wrap { width: auto; left: auto; top: -58px; right: 58px; }
+
 	.swiper-pagination-01 { gap: 8px; }
 	.swiper-pagination-01 > * { background-color: #dee1e4; border-radius: 12px; width: 12px; height: 12px; }
 	.swiper-pagination-01 .swiper-pagination-bullet-active { background-color: var(--mc); width: 38px; }
+
+	.swiper-nav-01 { gap: 10px; }
+	.swiper-nav-01 > *:after { background-position: var(--bp-150) var(--bp-swiper); width: 9px; height: 14px; }
 
 /* Tab */
 	.tab-menu-01 {
@@ -319,6 +344,9 @@
 		--thumb-pd-x: 15px;
 		--thumb-pd-y: 15px;
 	}
+
+/* Title */
+	.tit-01 { font-size: 30px; }
 
 /* Page */
 	/* 수강신청 */

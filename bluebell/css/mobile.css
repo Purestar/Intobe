@@ -59,6 +59,13 @@
 			--chip-pd-x: 1.25vw;
 		}
 
+		[class*="chip-type-03"] {
+			--chip-bd-r: 7.78vw;
+			--chip-pd-x: 3.33vw;
+			--chip-ft-s: 14px;
+			--chip-h: 7.78vw;
+		}
+
 	/* Form */
 		/* Checkbox */
 			.form-slt-chk {
@@ -84,6 +91,9 @@
 		.ic-file:before { width: 3.61vw; height: 3.61vw; }
 		.ic-ribbon:before { width: 7.78vw; height: 8.19vw; }
 		.ic-zoom:before { width: 3.75vw; height: 3.75vw; }
+
+		/* Only Mobile */
+		.ic-m-r-arrow:before { background-position: 0 var(--bp-950); width: 1.39vw; height: 2.22vw; }
 
 	/* Marker */
 		/* Arrow */

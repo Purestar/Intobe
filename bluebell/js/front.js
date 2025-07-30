@@ -31,7 +31,7 @@ $(function () {
 	$(document).acoUI(); // 아코디언
 	$(document).tta(); // 활성화 토글
 	$(document).selfTg(); // 셀프 활성화
-	//$("[class*='swi-type']").swiperInit(); // 스와이퍼
+	$("[class*='swi-type']").swiperInit(); // 스와이퍼
 
 	/*$(document).datep(); // 데이트피커
 
@@ -566,59 +566,38 @@ $.fn.tabUI = function (options) {
 
 // Swiper
 $.fn.swiperInit = function () {
-	var swiperTG;
+	$(".swiper-type-01").each(function () {
+		const swiperTG = this;
 
-	/*$(".swi-type01").each(function () {
-		swiperTG = this;
 		new Swiper(swiperTG.querySelector(".swiper"), {
 			loop: false,
 			slidesPerView: 1,
 			spaceBetween: 25,
-			navigation: {
-				nextEl: swiperTG.querySelector(".swiper-button-next"),
-				prevEl: swiperTG.querySelector(".swiper-button-prev"),
-			},
-		});
-	});*/
-
-	$(".swi-type01").each(function () {
-		swiperTG = this;
-		new Swiper(swiperTG.querySelector(".swiper"), {
-			loop: false,
-			slidesPerView: 1,
-			spaceBetween: 25,
-			navigation: {
-				nextEl: swiperTG.querySelector(".swiper-button-next"),
-				prevEl: swiperTG.querySelector(".swiper-button-prev"),
-			},
-			pagination: {
-				el: ".swiper-pagination",
-				clickable: true,
-			},
+			pagination: { el: swiperTG.querySelector("[class*='swiper-pagination']"), clickable: true },
 			breakpoints: {
-				768: {
-					slidesPerView: 2,
-				}
+				768: { slidesPerView: 2 }
 			}
 		});
 	});
 
-	$(".swi-type02").each(function () {
-		swiperTG = this;
+	$(".swiper-type-02").each(function () {
+		const swiperTG = this;
+
 		new Swiper(swiperTG.querySelector(".swiper"), {
 			loop: false,
-			slidesPerView: 4,
-			slidesPerGroup:4,
+			slidesPerView: 1.2,
 			spaceBetween: 39,
 			navigation: {
 				nextEl: swiperTG.querySelector(".swiper-button-next"),
 				prevEl: swiperTG.querySelector(".swiper-button-prev"),
 			},
-			clickable: true
+			breakpoints: {
+				768: { slidesPerView: 4, slidesPerGroup: 4 }
+			}
 		});
 	});
 
-
+/*
 	$(".swi-type03").each(function () {
 		swiperTG = this;
 		new Swiper(swiperTG.querySelector(".swiper"), {
@@ -692,7 +671,7 @@ $.fn.swiperInit = function () {
 				disableOnInteraction: false,
 			  },
 		});
-	});
+	});*/
 };
 
 // Tooltip

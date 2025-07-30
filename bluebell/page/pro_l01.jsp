@@ -259,19 +259,4 @@
 		</div>
 	</div>
 </div>
-<script>
-	$(".swiper-type-01").each(function () {
-		const swiperTG = this;
-		console.log($(swiperTG).find("[class*='swiper-pagination']"));
-		new Swiper(swiperTG.querySelector(".swiper"), {
-			loop: false,
-			slidesPerView: 1,
-			spaceBetween: 25,
-			pagination: { el: '.swiper-pagination-01', clickable: true },
-			breakpoints: {
-				768: { slidesPerView: 2 }
-			}
-		});
-	});
-</script>
 <%@ include file="../inc/footer.jsp" %>

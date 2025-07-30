@@ -36,6 +36,19 @@
 		--btn-over-ft-c: white;
 	}
 
+	[class*="btn-type-circle"] {
+		--btn-bg-c: white;
+		--btn-bd-c: var(--mc);
+		--btn-bd-r: 50%;
+		--btn-ft-c: var(--mc);
+		--btn-w: var(--fom-h);
+		--btn-over-bg-c: white;
+		--btn-over-bd-c: var(--moc);
+		--btn-over-ft-c: var(--moc);
+
+		height: var(--btn-h);
+	}
+
 	[class*="btn-grp-type"] {
 		--btn-grp-bd-r: var(--fom-br);
 		--btn-grp-w: fit-content;
