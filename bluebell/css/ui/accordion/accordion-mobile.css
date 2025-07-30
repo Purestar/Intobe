@@ -85,7 +85,8 @@
 			background-color: var(--m-aco-head-bg-c);
 			border-radius: calc(var(--m-aco-item-bd-r) - var(--m-aco-item-bd-w));
 			min-height: var(--m-aco-head-h);
-			padding: var(--m-aco-head-pd-y, var(--m-aco-head-pd-a)) var(--m-aco-head-pd-x, var(--m-aco-head-pd-a));
+			padding-inline: var(--m-aco-head-pd-x, var(--m-aco-head-pd-a));
+			padding-block: var(--m-aco-head-pd-y, var(--m-aco-head-pd-a));
 			font-size: var(--m-aco-head-ft-s);
 			font-weight: var(--m-aco-head-ft-w);
 			color: var(--m-aco-head-ft-c);

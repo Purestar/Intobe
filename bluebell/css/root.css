@@ -1,7 +1,7 @@
 :root {
 	/* Initialize */
 		--init-background-color: white; /* 배경색 */
-		--init-font-color: black; /* 글자색 */
+		--init-font-color: #666; /* 글자색 */
 		--init-font-family: Poppins, Noto Sans KR; /* 글자체 */
 		--init-font-size: 16px; /* 글자 크기 */
 		--init-footer-height: 195px; /* 푸터 높이 */

@@ -47,7 +47,8 @@
 	background-color: var(--aco-head-bg-c);
 	border-radius: calc(var(--aco-item-bd-r) - var(--aco-item-bd-w));
 	min-height: var(--aco-head-h);
-	padding: var(--aco-head-pd-y, var(--aco-head-pd-a)) var(--aco-head-pd-x, var(--aco-head-pd-a));
+	padding-inline: var(--aco-head-pd-x, var(--aco-head-pd-a));
+	padding-block: var(--aco-head-pd-y, var(--aco-head-pd-a));
 	font-size: var(--aco-head-ft-s);
 	font-weight: var(--aco-head-ft-w);
 	color: var(--aco-head-ft-c);
