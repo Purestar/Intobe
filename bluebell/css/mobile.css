@@ -35,6 +35,14 @@
 
 		.brd-lst-01-01 .brd-cont { margin-top: 0; }
 
+	/* Button */
+		/* Size */
+			.btn-sz-02 {
+				--btn-h: 7.78vw;
+				--btn-ft-s: 3.33vw;
+				--btn-pd-x: 4.17vw;
+			}
+
 	/* Chip */
 		[class*="chip-type-01"] {
 			--chip-h: 5.28vw;
@@ -51,29 +59,14 @@
 			--chip-pd-x: 1.25vw;
 		}
 
-	/* Marker */
-		/* Horizontal Bar */
-			[class*="mark-h-bar-01"] {
-				--mark-gap-a: 5vw;
-			}
-
-		/* Vertical Bar */
-			[class*="mark-v-bar-01"] {
-				--mark-gap-a: 1.3vw;
-				--mark-h: 1.94vw;
-			}
-
-	/* Icon */
-		.ic-file:before { width: 3.61vw; height: 3.61vw; }
-		.ic-ribbon:before { width: 7.78vw; height: 8.19vw; }
-		.ic-zoom:before { width: 3.75vw; height: 3.75vw; }
-
 	/* Form */
-		/* Arrow */
-			.mark-arrow-01 {
-				--mark-w: 1.67vw;
-				--mark-h: 1.67vw;
-				--mark-gap-x: 1.11vw;
+		/* Checkbox */
+			.form-slt-chk {
+				--form-w: 5.56vw;
+				--form-h: 5.56vw;
+
+				--form-chk-w: 3.06vw;
+				--form-chk-h: 2.36vw;
 			}
 
 		/* Switch */
@@ -86,6 +79,31 @@
 				--form-chk-h: 3.33vw;
 			}
 
+
+	/* Icon */
+		.ic-file:before { width: 3.61vw; height: 3.61vw; }
+		.ic-ribbon:before { width: 7.78vw; height: 8.19vw; }
+		.ic-zoom:before { width: 3.75vw; height: 3.75vw; }
+
+	/* Marker */
+		/* Arrow */
+			.mark-arrow-01 {
+				--mark-w: 1.67vw;
+				--mark-h: 1.67vw;
+				--mark-gap-x: 1.11vw;
+			}
+
+		/* Horizontal Bar */
+			[class*="mark-h-bar-01"] {
+				--mark-gap-a: 5vw;
+			}
+
+		/* Vertical Bar */
+			[class*="mark-v-bar-01"] {
+				--mark-gap-a: 1.3vw;
+				--mark-h: 1.94vw;
+			}
+
 	/* Swiper */
 		.swiper-type-01 .swiper-pagination-01 { right: 5vw; }
 
@@ -93,10 +111,28 @@
 		.swiper-pagination-01 > * { border-radius: 1.67vw; width: 1.67vw; height: 1.67vw; }
 		.swiper-pagination-01 .swiper-pagination-bullet-active { width: 5.28vw; }
 
+	/* Tab */
+		.tab-menu-01 {
+			--tab-menu-gap-x: 5.56vw;
+
+			--tab-btn-h: auto;
+			--tab-btn-pd-x: 0;
+			--tab-btn-ft-s: 3.89vw;
+
+			padding-inline: 5vw;
+		}
+
+		.tab-menu-01 > * > * { padding: 3.33vw 0; }
+
 	/* Thumbnail */
 		[class*="thumb-type-01"] {
 			--thumb-bd-r: 2.78vw;
 			--thumb-pd-x: 3.61vw;
+		}
+
+		.thumb-type-01-02 {
+			--thumb-pd-x: 2.78vw;
+			--thumb-pd-y: 2.78vw;
 		}
 
 	/* Page */

@@ -95,6 +95,7 @@ body, #app {display:flex; flex-direction:column; place-content:space-between; fl
 
 	/* Container */
 		.sub-contents { padding: 8.33vw 0 13.89vw; }
+		.sub-top-bg-01 { display: none; }
 
 	/* Footer */
 		.f-wrap .f-copy { margin-top: 4.86vw; }

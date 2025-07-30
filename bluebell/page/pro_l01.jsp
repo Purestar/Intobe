@@ -2,7 +2,7 @@
 <%@ include file="../inc/header.jsp" %>
 <div class="sub-top-bg-01">
 	<div class="layout-inner">
-		<h2 class="sub-tit">조회/신청</h2>
+		<h2 class="sub-tit">조회/학습</h2>
 		<ol class="page-loc">
 			<li>Home</li>
 			<li>Sub</li>

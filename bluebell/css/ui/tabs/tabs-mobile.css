@@ -1,14 +1,21 @@
 @media all and (max-width: 768px) {
 	/* Initialize */
 	[class*="tab-wrap"] {
+		/* Contents */
+		--m-tab-cont-pd-a: var(--tab-cont-pd-a);
+		--m-tab-cont-pd-x: var(--m-tab-cont-pd-a);
+		--m-tab-cont-pd-y: var(--m-tab-cont-pd-a);
+	}
+
+	[class*="tab-menu"] {
 		/* Menu */
 		--m-tab-bd-c: var(--tab-bd-c);
 		--m-tab-menu-bd-b-c: var(--tab-menu-bd-b-c);
 		--m-tab-menu-bd-b-s: var(--tab-menu-bd-b-s);
 		--m-tab-menu-bd-b-w: var(--tab-menu-bd-b-w);
 		--m-tab-menu-gap-a: var(--tab-menu-gap-a);
-		--m-tab-menu-gap-x: var(--m-tab-menu-gap-a);
-		--m-tab-menu-gap-y: var(--m-tab-menu-gap-a);
+		--m-tab-menu-gap-x: var(--tab-menu-gap-x, var(--m-tab-menu-gap-a));
+		--m-tab-menu-gap-y: var(--tab-menu-gap-y, var(--m-tab-menu-gap-a));
 
 		/* Button */
 		--m-tab-btn-bg-c: var(--tab-btn-bg-c);
@@ -24,11 +31,6 @@
 		--m-tab-btn-over-ft-c: var(--tab-btn-over-ft-c);
 		--m-tab-btn-active-bg-c: var(--m-tab-btn-over-bg-c);
 		--m-tab-btn-active-ft-c: var(--m-tab-btn-over-ft-c);
-
-		/* Contents */
-		--m-tab-cont-pd-a: var(--tab-cont-pd-a);
-		--m-tab-cont-pd-x: var(--m-tab-cont-pd-a);
-		--m-tab-cont-pd-y: var(--m-tab-cont-pd-a);
 	}
 
 /* Menu */

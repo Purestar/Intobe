@@ -3,7 +3,10 @@
 
 /* Menu */
 	[class*="tab-menu"] { overflow-x: auto; overflow-y: hidden; scroll-behavior: smooth; scrollbar-width: none; display: flex; position: relative; place-items: center; flex-wrap: wrap; }
-	[class*="tab-menu"] > * > * { display: flex; flex-shrink: 0; place-items: center; white-space: nowrap; }
+	[class*="tab-menu"] > * > * { display: flex; flex-shrink: 0; place-items: center; text-align: center; white-space: nowrap; }
 
 /* Menu Scroll */
 	[class*="tab-wrap"].tab-scroll-menu [class*="tab-menu"] { flex-wrap: nowrap; }
+
+/* Equal Menu */
+	[class*="tab-wrap"].tab-equal [class*="tab-menu"] > * { flex: 1; }

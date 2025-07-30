@@ -3,7 +3,8 @@
 .device-tablet,
 .device-mobile,
 .tablet,
-.mobile { display: none; }
+.mobile,
+.mobile-inline { display: none; }
 
 .device-pc.device-tablet,
 .pc.tablet { display: block; }
@@ -23,4 +24,5 @@
 	.pc { display: none; }
 	.device-mobile,
 	.mobile { display: block; }
+	.mobile-inline { display: inline; }
 }

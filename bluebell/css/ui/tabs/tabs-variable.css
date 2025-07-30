@@ -1,5 +1,11 @@
 /* Initialize */
 	[class*="tab-wrap"] {
+		/* Contents */
+		--tab-cont-pd-x: var(--tab-cont-pd-a);
+		--tab-cont-pd-y: var(--tab-cont-pd-a);
+	}
+
+	[class*="tab-menu"] {
 		/* Menu */
 		--tab-bd-c: black;
 		--tab-menu-bd-b-c: black;
@@ -14,10 +20,6 @@
 		--tab-btn-over-ft-c: white;
 		--tab-btn-active-bg-c: var(--tab-btn-over-bg-c);
 		--tab-btn-active-ft-c: var(--tab-btn-over-ft-c);
-
-		/* Contents */
-		--tab-cont-pd-x: var(--tab-cont-pd-a);
-		--tab-cont-pd-y: var(--tab-cont-pd-a);
 	}
 
 /* Menu */
@@ -45,7 +47,8 @@
 	}
 
 /* Menu Active */
-	[class*="tab-menu"] > *[data-state="active"] > * {
+	[class*="tab-menu"] > *[data-state="active"] > *,
+	[class*="tab-menu"] > *.active > * {
 		background-color: var(--tab-btn-active-bg-c);
 		color: var(--tab-btn-active-ft-c);
 	}
