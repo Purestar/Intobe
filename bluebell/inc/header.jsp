@@ -4,7 +4,7 @@
 	<div class="pc">
 		<div class="layout-inner h-wrap-pc">
 			<h1 class="h-logo"><a href="#"><img src="../images/img/img_logo_w.png"></a></h1>
-			<nav class="h-gnb-wrap pc">
+			<nav class="h-gnb-wrap">
 				<ul class="h-gnb">
 					<li><a href="#">教育体系／制度</a></li>
 					<li class="active"><a href="#">교육과정</a></li>

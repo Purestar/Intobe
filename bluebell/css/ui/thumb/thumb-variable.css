@@ -11,6 +11,8 @@
 	[class*="thumb-type"] {
 		aspect-ratio: var(--thumb-ratio);
 		background-color: var(--thumb-bg-c);
+		background-image: var(--thumb-bg-img);
+		background-position: center;
 		border-radius: var(--thumb-bd-r);
 		width: var(--thumb-w);
 		height: var(--thumb-h);

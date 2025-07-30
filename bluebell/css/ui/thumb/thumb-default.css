@@ -1,5 +1,5 @@
 /* Default */
-	[class*="thumb-type"] { position: relative; display: flex; flex-wrap: nowrap; justify-content: center; align-items: center; background-position: center; background-repeat: no-repeat; background-size: 50% auto; }
+	[class*="thumb-type"] { position: relative; display: flex; flex-wrap: nowrap; place-content: center; place-items: center; background-position: center; background-repeat: no-repeat; background-size: 100%; }
 	[class*="thumb-type"] > *:is(img, video) { width: 100%; height: 100%; }
 	[class*="thumb-type"] video { object-fit: cover; }
 	[class*="thumb-type"]:before,

@@ -36,7 +36,8 @@
 								<div style="--dp: flex; --content-x: space-between; --items-y: center; --w: 100%; --m-flex-d: column; --m-items-a: flex-start; --m-gap-y: 3vw;">
 									<p style="--dp: flex; --gap-x: 10px; --m-gap-x: 1.39vw;">
 										<span class="chip-type-01-red">필독</span>
-										홈페이지 오류, 점검 일로 인하여 수강이 어려우실 수 있습니다.</p>
+										홈페이지 오류, 점검 일로 인하여 수강이 어려우실 수 있습니다.
+									</p>
 									<div class="mark-v-bar-01" style="--mark-ft-c: #666;">
 										<span>2023.10.24</span>
 										<span>관리자</span>

@@ -8,18 +8,19 @@
 .device-pc.device-tablet,
 .pc.tablet { display: block; }
 
-@media all and (max-width:1024px) {
+/*@media all and (max-width:1024px) {
 	.device-pc,
 	.pc { display: none; }
 	.device-tablet,
 	.tablet { display: block; }
-}
+}*/
 
-@media all and (max-width:720px) {
+@media all and (max-width:768px) {
 	.device-tablet,
 	.device-pc.device-tablet,
 	.tablet,
-	.pc.tablet { display: none; }
+	.pc.tablet,
+	.pc { display: none; }
 	.device-mobile,
 	.mobile { display: block; }
 }

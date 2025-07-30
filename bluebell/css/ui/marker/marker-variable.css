@@ -99,7 +99,8 @@
 		color: var(--mark-c, var(--mark-ft-c));
 	}
 
-	[class*="mark-arrow"] > * > .part-marker:before {
+	[class*="mark-arrow"] > * > .part-marker:before,
+	[class*="mark-arrow"] > *:before {
 		background: transparent;
 		border-left: 1px solid var(--mark-bg-c);
 		border-top: 1px solid var(--mark-bg-c);

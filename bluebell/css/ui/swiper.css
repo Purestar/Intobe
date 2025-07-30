@@ -18,11 +18,11 @@
 			[class*="swiper-type"] .swiper-button-disabled { opacity: 0.5; }*/
 
 		/* Pagenation */
-			/*[class*="swiper-type"] .swiper-pagination { display: flex; justify-content: center; gap: 4px; position: absolute; z-index: 1; }
-			[class*="swiper-type"] .swiper-pagination-vertical { flex-direction: column; left: auto; }
-			[class*="swiper-type"] .swiper-pagination .swiper-pagination-bullet { opacity: 0.5; position: static; display: inline-block; margin: 0; }
-			[class*="swiper-type"] .swiper-pagination .swiper-pagination-bullet-active { opacity: 1; }
-			[class*="swiper-type"] .swiper-pagination-bullets-dynamic { display: block; }*/
+			.swiper-pagination { display: flex; justify-content: center; gap: 4px; position: absolute; z-index: 1; }
+			.swiper-pagination .swiper-pagination-vertical { flex-direction: column; left: auto; }
+			.swiper-pagination .swiper-pagination-bullet { opacity: 0.5; position: static; display: inline-block; margin: 0; }
+			.swiper-pagination .swiper-pagination-bullet-active { opacity: 1; }
+			.swiper-pagination .swiper-pagination-bullets-dynamic { display: block; }
 
 		/* Scrollbar */
 			/*[class*="swiper-type"] .swiper-scrollbar-vertical { left: auto; }*/

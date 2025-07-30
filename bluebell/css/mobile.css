@@ -22,6 +22,19 @@
 		[class*="aco-type-01"].aco-qna .aco-cont { gap: 2.78vw; }
 		[class*="aco-type-01"] .txt-a { font-size: 3.33vw; }
 
+	/* Board Default */
+		.brd-wrap .brd-tit { font-size: 3.89vw; }
+		.brd-wrap .brd-ctgy { font-size: 3.33vw; }
+
+	/* Board List */
+		[class*="brd-lst-01"] { grid-template-columns: repeat(2, 41.22vw); row-gap: 5.56vw; }
+		[class*="brd-lst-01"] .brd-cont { margin-top: 3.33vw; }
+		[class*="brd-lst-01"] .brd-ctgy { margin-top: 0.69vw; }
+		[class*="brd-lst-01"] .brd-tit { margin-top: 1.39vw; }
+		[class*="brd-lst-01"] .brd-meta { margin-top: 2.08vw; }
+
+		.brd-lst-01-01 .brd-cont { margin-top: 0; }
+
 	/* Chip */
 		[class*="chip-type-01"] {
 			--chip-h: 5.28vw;
@@ -29,6 +42,13 @@
 			--chip-bd-r: 5.28vw;
 			--chip-ft-s: 2.78vw;
 			--chip-pd-x: 2.25vw;
+		}
+
+		[class*="chip-type-02"] {
+			--chip-h: 5.28vw;
+			--chip-bd-r: 1.11vw;
+			--chip-ft-s: 2.78vw;
+			--chip-pd-x: 1.25vw;
 		}
 
 	/* Marker */
@@ -45,5 +65,41 @@
 
 	/* Icon */
 		.ic-file:before { width: 3.61vw; height: 3.61vw; }
+		.ic-ribbon:before { width: 7.78vw; height: 8.19vw; }
 		.ic-zoom:before { width: 3.75vw; height: 3.75vw; }
+
+	/* Form */
+		/* Arrow */
+			.mark-arrow-01 {
+				--mark-w: 1.67vw;
+				--mark-h: 1.67vw;
+				--mark-gap-x: 1.11vw;
+			}
+
+		/* Switch */
+			.form-slt-swh-01 {
+				--form-bd-r: 1.39vw;
+				--form-w: 6.53vw;
+				--form-h: 1.39vw;
+
+				--form-chk-w: 3.33vw;
+				--form-chk-h: 3.33vw;
+			}
+
+	/* Swiper */
+		.swiper-type-01 .swiper-pagination-01 { right: 5vw; }
+
+		.swiper-pagination-01 { gap: 1.11vw; }
+		.swiper-pagination-01 > * { border-radius: 1.67vw; width: 1.67vw; height: 1.67vw; }
+		.swiper-pagination-01 .swiper-pagination-bullet-active { width: 5.28vw; }
+
+	/* Thumbnail */
+		[class*="thumb-type-01"] {
+			--thumb-bd-r: 2.78vw;
+			--thumb-pd-x: 3.61vw;
+		}
+
+	/* Page */
+		/* 수강신청 */
+			.reg-cour-dtl-btn.active + .reg-cour-dtl-form { display: grid; }
 }

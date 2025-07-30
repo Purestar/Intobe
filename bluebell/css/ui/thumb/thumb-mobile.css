@@ -3,22 +3,29 @@
 		[class*="thumb-type"] {
 			--m-thumb-ratio: var(--thumb-ratio);
 			--m-thumb-bg-c: var(--thumb-bg-c);
+			--m-thumb-bg-img: var(--thumb-bg-img);
 			--m-thumb-bd-r: var(--thumb-bd-r);
 			--m-thumb-w: var(--thumb-w);
 			--m-thumb-h: var(--thumb-h);
 			--m-thumb-pd-a: var(--thumb-pd-a);
-			--m-thumb-pd-x: var(--m-thumb-pd-a);
-			--m-thumb-pd-y: var(--m-thumb-pd-a);
+			--m-thumb-pd-x: var(--thumb-pd-x, var(--m-thumb-pd-a));
+			--m-thumb-pd-y: var(--thumb-pd-y, var(--m-thumb-pd-a));
 		}
 
 	/* Variation */
 		[class*="thumb-type"] {
 			aspect-ratio: var(--m-thumb-ratio);
 			background-color: var(--m-thumb-bg-c);
+			background-image: var(--m-thumb-bg-img);
 			border-radius: var(--m-thumb-bd-r);
 			width: var(--m-thumb-w);
 			height: var(--m-thumb-h);
 		}
+
+		[class*="thumb-type"] > *:is(img, video) {
+			border-radius: var(--m-thumb-bd-r);
+		}
+
 		[class*="thumb-type"] > *:not(img, video) {
 			padding-inline: var(--m-thumb-pd-x);
 			padding-block: var(--m-thumb-pd-y);

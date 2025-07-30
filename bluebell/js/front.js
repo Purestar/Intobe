@@ -31,6 +31,7 @@ $(function () {
 	$(document).acoUI(); // 아코디언
 	$(document).tta(); // 활성화 토글
 	$(document).selfTg(); // 셀프 활성화
+	//$("[class*='swi-type']").swiperInit(); // 스와이퍼
 
 	/*$(document).datep(); // 데이트피커
 
@@ -41,7 +42,7 @@ $(function () {
 	//$(".lnb-wrap").lnb(); // 로컬 네비게이션
 	$("[data-scr-fix]").scrFix();
 	$(".tab-wrap").tabUI(); // 탭메뉴
-	$("[class*='swi-type']").swiperInit(); // 스와이퍼
+
 
 	//$(".vdo-wrap").vdoPlyer(); // 비디오
 	$(document).tooltipUI(); // 툴팁
@@ -567,6 +568,19 @@ $.fn.tabUI = function (options) {
 $.fn.swiperInit = function () {
 	var swiperTG;
 
+	/*$(".swi-type01").each(function () {
+		swiperTG = this;
+		new Swiper(swiperTG.querySelector(".swiper"), {
+			loop: false,
+			slidesPerView: 1,
+			spaceBetween: 25,
+			navigation: {
+				nextEl: swiperTG.querySelector(".swiper-button-next"),
+				prevEl: swiperTG.querySelector(".swiper-button-prev"),
+			},
+		});
+	});*/
+
 	$(".swi-type01").each(function () {
 		swiperTG = this;
 		new Swiper(swiperTG.querySelector(".swiper"), {
@@ -577,6 +591,15 @@ $.fn.swiperInit = function () {
 				nextEl: swiperTG.querySelector(".swiper-button-next"),
 				prevEl: swiperTG.querySelector(".swiper-button-prev"),
 			},
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+			breakpoints: {
+				768: {
+					slidesPerView: 2,
+				}
+			}
 		});
 	});
 

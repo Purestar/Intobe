@@ -18,7 +18,7 @@
 .path nav > ul {display:none;}
 .path nav ul {counter-reset:menunum; list-style:none; padding:3vw;}
 .path nav ul ul {position:relative; left: calc(100% + 10%); height:0px; padding:0;}
-.path nav ul ul:before {content:"+"; position:absolute; right: calc(100% + 10%); top:-4.6vw; font-size:2.5vw;}
+.path nav ul ul:before {content:"+"; position:absolute; right: calc(100% + 10%); top:-4.6vw; font-size:2.5vw; color:white;}
 .path nav button {width:100%; padding:1vw; font-size:2.5vw; text-align:left; color:#d54e4b; outline:0;}
 .path nav button:before {content:"✗ "counters(menunum, "."); counter-increment:menunum; margin-right:1vw;}
 .path nav button:focus {background:rgba(0, 0, 0, .7); border:1px solid #f7ca18;}

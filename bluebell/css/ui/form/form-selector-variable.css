@@ -146,6 +146,7 @@
 	[class*="form-slt-btn"] input:checked + .part-slt-txt {
 		background-color: var(--form-chk-bg-c);
 		border-color: var(--form-chk-bd-c);
+		font-weight: var(--form-chk-ft-w);
 	}
 
 	[class*="form-slt-btn"] input:disabled + .part-slt-txt {
@@ -219,7 +220,7 @@
 	}
 
 	[class*="form-slt-swh"] .part-icon:after {
-		background-color: var(--form-chk-bg-c);
+		background-color: var(--form-chk-point-bg-c);
 		border-color: var(--form-chk-bd-c);
 	}
 
@@ -229,7 +230,7 @@
 	}
 
 	[class*="form-slt-swh"] input:checked + .part-slt-txt .part-icon:after {
-		background-color: var(--form-chk-point-bg-c);
+		background-color: var(--form-chk-point-chk-bg-c);
 		right: calc(-100% + var(--form-chk-w));
 	}
 

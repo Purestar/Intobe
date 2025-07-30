@@ -23,8 +23,10 @@
 			--m-form-chk-point-bg-c: var(--form-chk-point-bg-c);
 			--m-form-chk-bd-c: var(--form-chk-bd-c);
 			--m-form-chk-ft-c: var(--form-chk-ft-c);
+			--m-form-chk-ft-w: var(--form-chk-ft-w);
 			--m-form-chk-w: var(--form-chk-w);
 			--m-form-chk-h: var(--form-chk-h);
+			--m-form-chk-point-chk-bg-c: var(--form-chk-point-chk-bg-c);
 
 			--m-form-dis-ft-c: var(--form-dis-ft-c);
 			--m-form-dis-bg-c: var(--form-dis-bg-c);
@@ -110,6 +112,7 @@
 		[class*="form-slt-btn"] input:checked + .part-slt-txt {
 			background-color: var(--m-form-chk-bg-c);
 			border-color: var(--m-form-chk-bd-c);
+			font-weight: var(--m-form-chk-ft-w);
 		}
 
 		[class*="form-slt-btn"] input:disabled + .part-slt-txt {
@@ -183,7 +186,7 @@
 		}
 
 		[class*="form-slt-swh"] .part-icon:after {
-			background-color: var(--m-form-chk-bg-c);
+			background-color: var(--m-form-chk-point-bg-c);
 			border-color: var(--m-form-chk-bd-c);
 		}
 
@@ -193,7 +196,7 @@
 		}
 
 		[class*="form-slt-swh"] input:checked + .part-slt-txt .part-icon:after {
-			background-color: var(--m-form-chk-point-bg-c);
+			background-color: var(--m-form-chk-point-chk-bg-c);
 			right: calc(-100% + var(--m-form-chk-w));
 		}
 
