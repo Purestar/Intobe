@@ -32,6 +32,7 @@ $(function () {
 	$(document).tta(); // 활성화 토글
 	$(document).selfTg(); // 셀프 활성화
 	$("[class*='swi-type']").swiperInit(); // 스와이퍼
+	$(document).inpPswd(); // 비밀번호 보이기 토글
 
 	/*$(document).datep(); // 데이트피커
 
@@ -48,7 +49,7 @@ $(function () {
 	$(document).tooltipUI(); // 툴팁
 	$(document).selfTg(); // 셀프 활성화
 	$(document).starscore(); // 별점
-	$(document).inpPswd(); // 비밀번호 보이기 토글
+
 	$(document).inpVal(); // 인풋 밸리데이션 문구
 	$("[class*='inp-file']").inpFile(); // 파일 업로드
 	$("[class*='inp-img']").inpImg(); // 이미지 업로드
@@ -708,7 +709,7 @@ $.fn.starscore = function () {
 $.fn.inpPswd = function () {
 	var $obj = $(this);
 
-	$obj.on("click", ".inp-pswd .ic-ct-eye", function () {
+	$obj.on("click", ".tgl-pswd .part-icon", function () {
 		if (!$(this).hasClass("active")) {
 			$(this).addClass("active");
 			$(this).prev().attr("type", "text");

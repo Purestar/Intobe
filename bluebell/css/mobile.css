@@ -111,7 +111,9 @@
 
 	/* Icon */
 		.ic-calendar:before { width: 3.06vw; height: 3.33vw; }
+		.ic-eye:before { width: 4.44vw; height: 3.75vw; }
 		.ic-file:before { width: 3.61vw; height: 3.61vw; }
+		.ic-globe-02:before { width: 5.56vw; height: 5.56vw; }
 		.ic-ribbon:before { width: 7.78vw; height: 8.19vw; }
 		.ic-stack:before { width: 3.89vw; height: 3.47vw; }
 		.ic-zoom:before { width: 3.75vw; height: 3.75vw; }
@@ -172,4 +174,8 @@
 	/* Page */
 		/* 수강신청 */
 			.reg-cour-dtl-btn.active + .reg-cour-dtl-form { display: grid; }
+
+		/* 로그인 */
+			.login-wrap { grid-template-columns: repeat(1, 1fr); background-image :url("/bluebell/images/img/m_login_bnr.png"); background-size: 100% 100%; width: 100dvw; height: 100dvh; }
+			.login-wrap .login-tit { font-size: 7.22vw; }
 }

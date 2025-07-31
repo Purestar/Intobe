@@ -217,6 +217,9 @@
 	.float-menu-01 button:hover { background-color: #f5f5f5; color: #000; }
 
 /* Form */
+	/* Password Toggle */
+		[class*="form-txt"] .part-icon.active .ic-eye:before { background-position: var(--bp-950) 0; }
+
 	/* Select Button */
 		.form-slt-btn-tran {
 			--form-bd-w: 0;
@@ -259,8 +262,10 @@
 	.ic-close:before { background-position: var(--bp-150) 0; width: 18px; height: 18px; }
 	.ic-del:before { background-position: var(--bp-200) 0; width: 13px; height: 12px; }
 	.ic-del-02:before { background-position: var(--bp-400) 0; width: 18px; height: 18px; }
+	.ic-eye:before { background-position: var(--bp-900) 0; width: 18px; height: 14px; }
 	.ic-file:before { background-position: var(--bp-450) 0; width: 18px; height: 18px; }
 	.ic-globe:before { background-position: var(--bp-100) 0; width: 24px; height: 24px; }
+	.ic-globe-02:before { background-position: var(--bp-850) 0; width: 24px; height: 24px; }
 	.ic-plus:before { background-position: var(--bp-600) 0; width: 10px; height: 10px; }
 	.ic-plus-02:before { background-position: var(--bp-650) 0; width: 14px; height: 14px; }
 	.ic-quest:before { background-position: var(--bp-250) 0; width: 22px; height: 22px; }
@@ -373,3 +378,7 @@
 /* Page */
 	/* 수강신청 */
 		.reg-cour-dtl-btn.active + .reg-cour-dtl-form { display: flex; }
+
+	/* 로그인 */
+		.login-wrap { display: grid; grid-template-columns: repeat(2, 1fr); background-image :url("/bluebell/images/img/login_bnr.png"); width: 900px; height: 479px; }
+		.login-wrap .login-tit { font-size: 40px; font-weight: 700; color: black; }
