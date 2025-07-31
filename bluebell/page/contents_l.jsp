@@ -42,7 +42,7 @@
 
 		<div style="--dp: flex; --content-a: center; --mg-t: 10px; --m-mg-t: 1.39vw;">
 			<div style="--dp: flex; --gap-x: 30px; --items-y: center; --max-w: 100%; --m-gap-x: 4.17vw;">
-				<strong class="ws-nw">인기검색어</strong>
+				<strong class="ws-nw" style="--ft-c: black;">인기검색어</strong>
 				<div data-scroll="x">
 					<button class="chip-type-03-pnk">#선박엔진</button>
 					<button class="chip-type-03-pnk">#자격증</button>

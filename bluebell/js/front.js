@@ -598,6 +598,27 @@ $.fn.swiperInit = function () {
 		});
 	});
 
+	$(".swiper-type-03").each(function () {
+		const swiperTG = this;
+
+		new Swiper(swiperTG.querySelector(".swiper"), {
+			loop: false,
+			slidesPerView: 3.3,
+			slidesPerGroup: 3,
+			spaceBetween: 1600 / 720 + "%",
+			navigation: {
+				nextEl: swiperTG.querySelector(".swiper-button-next"),
+				prevEl: swiperTG.querySelector(".swiper-button-prev"),
+			},
+			breakpoints: {
+				768: {
+					slidesPerView: 5,
+					spaceBetween: 28,
+				}
+			}
+		});
+	});
+
 /*
 	$(".swi-type03").each(function () {
 		swiperTG = this;

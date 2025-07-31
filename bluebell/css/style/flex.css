@@ -1,7 +1,7 @@
 [style*="--flex"],
 [class*="flex"] {
 	--flex-g: 0;
-	--flex-sh: 1;
+	--flex-sh: 0;
 	--flex-b: auto;
 	--flex-d: row;
 	--flex-w: nowrap;

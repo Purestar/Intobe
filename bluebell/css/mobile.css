@@ -57,6 +57,13 @@
 		.class-mid .detaile-info p .num { margin-right: 2.78vw; }
 		.class-mid .detaile-info p + p { margin-top: 7px; }
 
+	/* Box */
+		.box-type-01 {
+			--box-bd-r: 2.78vw;
+			--box-pd-x: 3.8vw;
+			--box-pd-y: 5vw;
+		}
+
 	/* Button */
 		/* Size */
 			.btn-sz-02 {
@@ -108,6 +115,25 @@
 				--form-chk-h: 3.33vw;
 			}
 
+	/* Graph */
+		/* Horizontal */
+			.grp-h-01-wrap { gap: 0; }
+			.grp-h-01-wrap .part-label { width: 17.28vw; text-align: left; }
+
+			[class*="grp-type-h-01"] {
+				--grp-h: 3.33vw;
+			}
+			[class*="grp-type-h-01"] .part-num { right: -5vw; border-radius: 5.2vw; width: 10vw; height: 5.2vw; font-size: 2.78vw; }
+
+		/* Pie */
+			.grp-pie-01-wrap .part-label { margin-top: 2.08vw; font-size: 3.89vw; }
+
+			[class*="grp-type-pie-01"] {
+				--grp-w: 22.08vw;
+				--grp-size: 2.5vw;
+			}
+			[class*="grp-type-pie-01"] .part-num { gap: 0.28vw; font-size: 5vw; width: 17vw; height: 17vw; }
+			[class*="grp-type-pie-01"] .part-num span { font-size: 1.94vw; translate: 0 0.56vw; }
 
 	/* Icon */
 		.ic-calendar:before { width: 3.06vw; height: 3.33vw; }
@@ -120,6 +146,11 @@
 
 		/* Only Mobile */
 		.ic-m-r-arrow:before { background-position: 0 var(--bp-950); width: 1.39vw; height: 2.22vw; }
+
+	/* List */
+		.lst-type-01 { gap: 2.22vw; }
+		.lst-type-01 > * { border-radius: 2.78vw; gap: 1.39vw; height: 22.64vw; font-size: 3.33vw; }
+		.lst-type-01 strong { font-size: 5.56vw; }
 
 	/* Marker */
 		/* Arrow */
@@ -170,6 +201,16 @@
 			--thumb-pd-x: 2.78vw;
 			--thumb-pd-y: 2.78vw;
 		}
+
+	/* Table */
+		.tbl-type-01 { margin-top: 5.56vw; font-size: 3.89vw; }
+		.tbl-type-01 thead th { padding: 3.89vw 0; height: auto; }
+		.tbl-type-01 tbody th { padding:2.92vw 2.78vw; font-size:3.89vw; }
+		.tbl-type-01 tbody td { padding: 3.89vw 0; }
+
+	/* Title */
+		.tit-01 { font-size: 5vw; }
+		.tit-02 { font-size: 4.44vw; }
 
 	/* Page */
 		/* 수강신청 */

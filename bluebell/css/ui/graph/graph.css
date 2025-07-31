@@ -1,30 +1,108 @@
-/* Graph */
+/* Default */
 	/* Horizontal */
+		[class*="grp-type-h"] .part-inner { position: relative; height: 100%; }
+		[class*="grp-type-h"] .part-num { display: flex; place-items: center; place-content: center; position: absolute; }
+
+	/* Pie */
+		[class*="grp-type-pie"] { display: inline-grid; place-content: center; position: relative; aspect-ratio: 1; background: #f5f5f5; border-radius: 50%; box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.14); font-size: 24px; font-weight: 800; }
+		[class*="grp-type-pie"]:before,
+		[class*="grp-type-pie"]:after { content: ""; position: absolute; border-radius: 50%; }
+		[class*="grp-type-pie"]:before { inset: 0; }
+
+		[class*="grp-type-pie"] .part-num { display:flex; place-content: center; place-items: center; background: white; border-radius: 50%; box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.05); width: 80px; height: 80px; }
+
+/* Variation */
+	/* Initialize */
 		[class*="grp-type-h"] {
-			background-color: var(--grp-back-bg-c, #e4e4e4);
-			border-radius: var(--grp-bd-r, var(--grp-h, 12px));
-			height: var(--grp-h, 12px);
+			--grp-back-bg-c: #e4e4e4;
+			--grp-bd-r: var(--grp-h);
+			--grp-bg-c: var(--mc);
+			--grp-h: 12px;
+			--grp-val: 20%;
 		}
 
-		[class*="grp-type-h"] .grp-inner {
-			background-color: var(--grp-bg-c, var(--mc));
-			border-radius: var(--grp-bd-r, var(--grp-h, 12px));
-			width: var(--grp-w, 20%);
-			height: 100%;
+		[class*="grp-type-pie"] {
+			--grp-bg-c: var(--mc);
+			--grp-w: 105px;
+			--grp-val: 20;
+			--grp-size: 12px;
+		}
+
+	/* Horizontal */
+		[class*="grp-type-h"] {
+			background-color: var(--grp-back-bg-c);
+			border-radius: var(--grp-bd-r);
+			height: var(--grp-h);
+		}
+
+		[class*="grp-type-h"] .part-inner {
+			background-color: var(--grp-bg-c);
+			border-radius: var(--grp-bd-r);
+			width: var(--grp-val);
+		}
+
+	/* Pie */
+		[class*="grp-type-pie"] {
+			width: var(--grp-w);
+		}
+
+		[class*="grp-type-pie"]:before {
+			background: radial-gradient(farthest-side, var(--grp-bg-c) 98%,#0000) top/var(--grp-size) var(--grp-size) no-repeat, conic-gradient(var(--grp-bg-c) calc(var(--grp-val)*1%),#0000 0);
+			mask: radial-gradient(farthest-side,#0000 calc(99% - var(--grp-size)),#000 calc(100% - var(--grp-size)));
+		}
+
+		[class*="grp-type-pie"]:after {
+			inset: calc(50% - var(--grp-size) / 2);
+			background: var(--grp-bg-c);
+			rotate: calc(var(--grp-val) * 3.6deg);
+			transform: translateY(calc(50% - var(--grp-w) / 2));
 		}
 
 @media all and (max-width: 768px) {
-	/* Graph */
-		/* Horizontal */
-			[class*="grp-type-h"] {
-				background-color: var(--m-grp-back-bg-c, var(--grp-back-bg-c, #e4e4e4));
-				border-radius: var(--m-grp-bd-r, var(--grp-bd-r, var(--grp-h, 3.33vw)));
-				height: var(--m-grp-h, var(--grp-h, 3.33vw));
-			}
+	/* Initialize */
+		[class*="grp-type-h"] {
+			--m-grp-back-bg-c: var(--grp-back-bg-c);
+			--m-grp-bg-c: var(--grp-bg-c);
+			--m-grp-w: var(--grp-w);
+			--m-grp-h: var(--grp-h);
+			--m-grp-bd-r: var(--m-grp-h);
+			--m-grp-val: var(--grp-val);
+		}
 
-			[class*="grp-type-h"] .grp-inner {
-				background-color: var(--m-grp-back-bg-c, var(--grp-back-bg-c, var(--mc)));
-				border-radius: var(--m-grp-bd-r, var(--grp-bd-r, var(--grp-h, 3.33vw)));
-				width: var(--m-grp-w, var(--grp-w, 20%));
-			}
+		[class*="grp-type-pie"] {
+			--m-grp-bg-c: var(--grp-bg-c);
+			--m-grp-w: var(--grp-w);
+			--m-grp-val: var(--grp-val);
+			--m-grp-size: var(--grp-size);
+		}
+
+	/* Horizontal */
+		[class*="grp-type-h"] {
+			background-color: var(--m-grp-back-bg-c);
+			border-radius: var(--m-grp-bd-r);
+			height: var(--m-grp-h);
+		}
+
+		[class*="grp-type-h"] .part-inner {
+			background-color: var(--m-grp-bg-c);
+			border-radius: var(--m-grp-bd-r);
+			width: var(--m-grp-val);
+		}
+
+	/* Pie */
+		[class*="grp-type-pie"] {
+			width: var(--m-grp-w);
+		}
+
+		[class*="grp-type-pie"]:before {
+			background: radial-gradient(farthest-side, var(--m-grp-bg-c) 98%,#0000) top/var(--m-grp-size) var(--m-grp-size) no-repeat, conic-gradient(var(--m-grp-bg-c) calc(var(--m-grp-val)*1%),#0000 0);
+			mask: radial-gradient(farthest-side,#0000 calc(99% - var(--m-grp-size)),#000 calc(100% - var(--m-grp-size)));
+		}
+
+		[class*="grp-type-pie"]:after {
+			inset: calc(50% - var(--m-grp-size) / 2);
+			background: var(--m-grp-bg-c);
+			rotate: calc(var(--m-grp-val) * 3.6deg);
+			transform: translateY(calc(50% - var(--m-grp-w) / 2));
+		}
 }
