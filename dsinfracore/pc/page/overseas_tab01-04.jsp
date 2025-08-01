@@ -1,0 +1,155 @@
+<%@ page contentType = "text/html; charset=UTF-8" %>
+<%@ include file="../inc/header.jsp" %>
+	<div id="container">
+		<div class="sub-top">
+			<div class="inner">
+				<ol class="page-location">
+					<li>홈</li>
+					<li>커뮤니티</li>
+					<li>해외선진문화 탐방</li>
+				</ol>
+				<h2 class="sub-tit ">해외선진문화탐방 계획서 작성하기</h2>
+			</div>
+		</div>
+		<div class="sub-bot inner mt0">
+            <div class="form_style01 border view">
+                <div class="tit-area clfix">
+                    <div class="bar fl">
+                        <p><strong>신청지역 : </strong> 미국 - 미국</p>
+                        <p><strong>신청일정 :</strong> 2021.05.17 - 2021.06.16 </p>
+                    </div>
+                    <div class="bar fr">
+                        <p><strong>마스터</strong></p>
+                        <p>2021.04.12 </p>
+                        <p>조회수 :  3</p>
+                    </div>
+                </div>
+                <table>
+                    <colgroup>
+                        <col style="width: 130px;">
+                        <col>
+                        <col style="width: 130px;">
+                        <col>
+                    </colgroup>
+                    <tr>
+                        <th>방문지역</th>
+                        <td>동아리 학습 방법 및 시간 토의</td>
+                        <th>방문일정</th>
+                        <td>2021.02.05  10:00 - 11:00</td>
+                    </tr>
+                    <tr>
+                        <th>탐방내용</th>
+                        <td colspan="3">
+                            방문지 1. LA - 주요 탐방처 : 파머스 마켓, 헐리우드 스타의 거리, 비버리힐즈, 게티센터, 그리피스천문대, 디즈니랜드 등.<br/> -
+탐방 내용 : 파머스 마켓은 우리나라 전통시장과 비슷한 곳으로 다양한 음식을 맛볼 수 있음. 파파스 그릴 추천. <br/>
+한국인 많음 : 헐리우드 스타의 거리 - 명성만큼 다양한 인종의 사람들로 붐빔. 기대만큼 큰 감동은 없음 : 비버리힐즈 - 깨끗한 거리, 
+고급스러운 주택, 다양한 명품 브랜드. LA내에서도 빈부 격차에 따라 주거지 환경이 극명하게 갈리는 것을…
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>소감</th>
+                        <td colspan="3" class="register-write bd0">
+                        1. 운전 시 보행자 보호, 안전 운전의식이 매우 높음. 차선을 잘 못 들어 깜박이 켜고 급하게 차선을 변경할 경우라도 뒷 차가 양보해주고, 경적을 
+                        울려 앞 차를 재촉하는 경우가 거의 없음. 보행자가 있을 경우 차량 운전자는 우선 양보함 <br/>
+                        2. LA-라스베가스를 자차로 왕복하면서 끝없이 펼쳐진 광활한 대륙, 지평선 너머까지 일직선으로 곧게 뻗은 고속도로, 지금 껏 사람의 발길이 
+                        한 번도 닿지 않았을 것 같은 대지를 보며 미국이 어떻게 세계 1위 강대국이 되었을지…
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>결과보고</th>
+                        <td colspan="3">
+                            <ul class="file-list">
+                                <li><a href="">첨부 파일.xls</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="quick-btn">
+                <button class="btn-org">수정</button>
+                <button class="btn-dgray">삭제</button>
+                <button class="btn-bwh">목록</button>
+            </div>
+            <h2 class="tit04 mt40 mb20">탐방계획보기</h2>
+            <div class="collapse-wrap board-view">
+                <div class="collapse-header collapse-link">
+                    <div class="bar">
+                        <p><strong>신청지역 : </strong> 미국 - 미국</p>
+                        <p><strong>신청일시 :</strong> 2021.05.17 - 2021.06.16 </p>
+                        <p><strong>신청자 : </strong> 홍길동</p>
+                    </div>
+                    <button><i class="icon-downarrow"></i></button>
+                </div>
+                <div class="collapse">
+                    <table>
+                        <colgroup>
+                            <col style="width: 160px;">
+                            <col>
+                            <col style="width: 160px;">
+                            <col>
+                        </colgroup>
+                        <tbody><tr>
+                            <th>작성자</th>
+                            <td colspan="3">
+                                홍길동
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>신청지역 </th>
+                            <td colspan="3">
+                                유럽 - 스위스, 이탈리아, 체코
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>신청일정</th>
+                            <td colspan="3">
+                                2021.07.08 ~20210.07.12
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>항공번호</th>
+                            <td>-</td>
+                            <th>U-Rail 번호
+                            </th>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <th>항공료</th>
+                            <td>-</td>
+                            <th>교통비</th>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <th>세부일정<em>*</em></th>
+                            <td colspan="3" class="register-write bd0">
+                                9/27 미국 LA 도착 및 휴식<br>
+                                9/28 게티센터, 산타모니카 해변 관광<br>
+                                9/29 그리피스 천문대, 베버리 힐스 관광<br>
+                                9/30 파머스 마켓<br>
+                                10/1 헐리우드 관광<br>
+                                10/2 디즈니랜드<br>
+                                10/3 산타카날리아 섬<br>
+                                10/4 LA 자연사 박물관, 카운티 미술관<br>
+                                10/5 유니버셜 스튜디오<br>
+                                10/6 베니스비치<br>
+                                10/7 라스베거스 이동<br>
+                                10/8 라스베거스 관광<br>
+                                10/9 라스베거스 관광<br>
+                                10/10 LA 이동 및 귀국
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>목표<em>*</em></th>
+                            <td colspan="3" class="register-write bd0">
+                                미국 서부여행을 통해 선진 문화경험
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+        </div>
+	</div>
+<%@ include file="../inc/footer.jsp" %>

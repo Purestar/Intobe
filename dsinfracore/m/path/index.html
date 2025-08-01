@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko" class="path">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta charset="utf-8">
+		<meta name="description" content="설명">
+		<meta name="viewport" content="width=device-width">
+		<title>두산인프라코어</title>
+
+		<!-- 실제 프로젝트 시 사용될 Resource -->
+		<link rel="stylesheet" href="../css/common.css" type="text/css" />
+		<link rel="stylesheet" href="../css/plugin.css" type="text/css" />
+		<link rel="stylesheet" href="../css/layout.css" type="text/css" />
+		<link rel="stylesheet" href="../css/style.css" type="text/css" />
+		<link rel="stylesheet" href="../css/custom.css" type="text/css" />
+		<script src="../js/common.js"></script>
+
+		<!-- Path에서만 사용되는 Resource -->
+		<link rel="stylesheet" href="path.css" type="text/css" media="screen" />
+		<script src="path.js"></script>
+	</head>
+	<body class="fixed bg">
+		<header>
+			<h1><a href="index.html"></a></h1>
+			<button type="button" class="btn-panel">☰</button>
+			<!-- <p class="prj-proc">진행률 (<span class="prj-proc-num">0</span>%)</p> -->
+		</header>
+		<nav id="menu">
+			<ul>
+				<li class="com">
+					<button>로그인</button>
+					<ul>
+						<li class="com"><button data-src="../page/appsetup.jsp">앱설치</button></li>
+						<li class="com"><button data-src="../page/login.jsp">로그인</button></li>
+						<li class="com"><button data-src="../page/login_popup.jsp">팝업</button></li>
+					</ul>
+				</li>
+				<li class="com">
+					<button data-src="../page/.jsp">메인</button>
+					<ul>
+						<li class="com"><button data-src="../page/main.jsp">메인화면</button></li>
+						<li class="com"><button data-src="../page/main_popup.jsp">팝업</button></li>
+					</ul>
+				</li>
+				<li class="com">
+					<button data-src="../page/.jsp">Help Desk</button>
+					<ul>
+						<li class="com"><button data-src="../page/notice.jsp">공지사항</button></li>
+						<li class="com"><button data-src="../page/noticev.jsp">공지사항 상세</button></li>
+						<li class="com"><button data-src="../page/qna.jsp">Q&amp;A</button></li>
+						<li class="com"><button data-src="../page/faq.jsp">FAQ</button></li>
+					</ul>
+				</li>
+				<li class="com">
+					<button data-src="../page/.jsp">FC진단</button>
+					<ul>
+						<li class="com"><button data-src="../page/fc_info.jsp">[기술직] 진단안내</button></li>
+						<li class="com"><button data-src="../page/fc_info02.jsp">[사무직] 진단안내</button></li>
+						<li class="com"><button data-src="../page/technical_03.jsp">[기술직] 본인진단</button></li>
+						<li class="com"><button data-src="../page/fc_popup.jsp">팝업</button></li>
+					</ul>
+				</li>
+				<li class="com"><button data-src="../page/schematic_01.jsp">교육체계도</button></li>
+				<li class="com">
+					<button data-src="">수강신청/결과</button>
+					<ul>
+						<li class="com"><button data-src="../page/appform.jsp">수강신청 목록</button></li>
+						<li class="com"><button data-src="../page/appview.jsp">수강신청 상세</button></li>
+						<li class="com"><button data-src="../page/applylist.jsp">사외교육 결과보고</button></li>
+						<li class="com"><button data-src="../page/classreview.jsp">사외교육 후기</button></li>
+						<li class="com"><button data-src="../page/classview.jsp">사외교육 후기보기</button></li>
+						<li class="com"><button data-src="../page/app_popup.jsp">팝업</button></li>
+					</ul>
+				</li>
+				<li class="com">
+					<button data-src="../page/.jsp">콘텐츠 학습</button>
+					<ul>
+						<li class="com"><button data-src="../page/contentslist.jsp">콘텐츠학습목록</button></li>
+						<li class="com"><button data-src="../page/contentslistsch.jsp">콘텐츠검색</button></li>
+						<li class="com"><button data-src="../page/chlist.jsp">채널보기</button></li>
+						<li class="com"><button data-src="../page/cont_popup.jsp">팝업</button></li>
+						<!--<li class=""><button data-src="../page/contents_view.jsp">콘텐츠상세(퀴즈팝업)</button></li>
+						<li class=""><button data-src="../page/chset01.jsp">콘텐츠관리(리스트)</button></li>
+						<li class=""><button data-src="../page/chregister.jsp">콘텐츠관리(작성페이지)(동영상업로드 팝업, 퀴즈등록팝업)</button></li>
+						<li class=""><button data-src="../page/chset02.jsp">채널관리_채널설정</button></li>
+						<li class=""><button data-src="../page/chset03.jsp">크리에이터관리</button></li>-->
+					</ul>
+				</li>
+				<li class="com">
+					<button data-src="../page/.jsp">My Learning</button>
+					<ul>
+						<li class="com">
+							<button data-src="">교육과정 학습</button>
+							<ul>
+								<li class="com"><button data-src="../page/curriculum01.jsp">학습과정</button></li>
+								<li class="com"><button data-src="../page/curriculum02.jsp">완료과정</button></li>
+								<li class="com"><button data-src="../page/curriculum03.jsp">설문</button></li>
+							</ul>
+						</li>
+						<li class="com">
+							<button data-src="">콘텐츠 학습이력</button>
+							<ul>
+								<li class="com"><button data-src="../page/resume_list.jsp">시청중 콘텐츠</button></li>
+								<li class="com"><button data-src="../page/resume_list02.jsp">완료한 콘텐츠</button></li>
+								<li class="com"><button data-src="../page/resume_list03.jsp">스크랩한 콘텐츠</button></li>
+								<li class="com"><button data-src="../page/resume_list04.jsp">좋아요 콘텐츠</button></li>
+							</ul>
+						</li>
+						<li class="com"><button data-src="../page/learn_popup.jsp">팝업</button></li>
+					</ul>
+				</li>
+				<li class="com">
+					<button data-src="../page/.jsp">커뮤니티</button>
+					<ul>
+						<li class="com">
+							<button data-src="../page/.jsp">Cell/학습동아리 메인</button>
+							<ul>
+								<li class="com"><button data-src="../page/circles_menu_00.jsp">Cell/학습동아리 메인</button></li>
+								<li class="com"><button data-src="../page/circles_menu_01.jsp">공지사항</button></li>
+								<li class="com"><button data-src="../page/circles_menu_01-01.jsp">공지사항 상세</button></li>
+								<li class="com"><button data-src="../page/circles_menu_02.jsp">최근게시글</button></li>
+								<li class="com"><button data-src="../page/circles_menu_03.jsp">학습활동</button></li>
+								<li class="com"><button data-src="../page/circles_menu_04.jsp">활동보고서</button></li>
+							</ul>
+						</li>
+						<li class="com">
+							<button data-src="../page/expert-00.jsp">전문가 라운지</button>
+							<ul>
+								<li class="com"><button data-src="../page/expert-00.jsp">최근게시글</button></li>
+								<li class="com"><button data-src="../page/expert-01.jsp">전문가 목록</button></li>
+								<li class="com"><button data-src="../page/expert-02.jsp">프로필</button></li>
+								<li class="com"><button data-src="../page/expert-02-01.jsp">질의응답</button></li>
+								<li class="com"><button data-src="../page/expert-02-02.jsp">질의응답 상세</button></li>
+								<li class="com"><button data-src="../page/expert-02-03.jsp">질의응답 후 상세</button></li>
+								<li class="com"><button data-src="../page/expert-02-04.jsp">자료실</button></li>
+							</ul>
+						</li>
+						<li class="com"><button data-src="../page/comu_popup.jsp">팝업</button></li>
+					</ul>
+				</li>
+			</ul>
+			<ul>
+				<li class=""><button data-src="../page/layout.jsp">Layout</button></li>
+				<li class=""><button data-src="../page/sublayout.jsp">Sub Layout Type01</button></li>
+				<li class=""><button data-src="../page/sublayout02.jsp">Sub Layout Type02</button></li>
+				<li class=""><button type="button" data-src="./guide/align.html">Align</button></li>
+				<li class=""><button data-src="./guide/badge.html">Badge</button></li>
+				<li class=""><button type="button" data-src="./guide/button.html">Button</button></li>
+				<li class=""><button type="button" data-src="./guide/form.html">Form</button></li>
+				<li class=""><button type="button" data-src="./guide/icon.html">Icon</button></li>
+				<li class=""><button type="button" data-src="./guide/popup.jsp">Popup</button></li>
+				<li class=""><button data-src="./guide/tab-menu.html">Tab Menu</button></li>
+				<li class=""><button type="button" data-src="./guide/thumb.html">Thumbnail</button></li>
+				<li class=""><button type="button" data-src="./guide/text.html">Title / Paragraph</button></li>
+				<li class=""><button type="button" data-src="./guide/etc.html">기타</button></li>
+			</ul>
+		</nav>
+		<section id="container">
+			<p class="this-address"><a href="#" target="blank"></a></p>
+			<iframe src="" title="작업 화면">화면 (Ajax처리)</iframe>
+		</section>
+		<footer>
+			<div class="footer-in">
+				<span class="footer-btn-group">
+					<button type="button" data-btn="menu">Mobile</button>
+					<!--<button type="button" data-btn="menu">Guide</button>-->
+				</span>
+				<span class="footer-btn-group">
+					<button type="button" data-btn="size">320</button>
+					<button type="button" data-btn="size">768</button>
+					<button type="button" data-btn="size">1280</button>
+					<button type="button" data-btn="size">100%</button>
+				</span>
+				<span class="footer-btn-group">
+					<button type="button" data-btn="chk" class="active">레이아웃 고정</button>
+				</span>
+			</div>
+		</footer>
+	</body>
+</html>

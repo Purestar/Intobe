@@ -1,0 +1,63 @@
+/* Header */
+	body > header {position:fixed; background:white; border-bottom:0.14vw solid #e0e0e0; width:100vw; height:15.56vw; z-index:20;}
+	header .h-right {position:absolute; right:0; top:0; height:100%;}
+	header .h-logo {padding:3.4vw 0 0 5.28vw;}
+	header .h-logo img {width:17.64vw;}
+	header .h-tit {padding-left:11.11vw; font-size:5vw; font-weight:700; line-height:15.56vw;}
+	header .h-menu {display:inline-block; position:relative; width:11vw; height:100%; vertical-align:top;}
+	header .h-menu [class*="icon-"] {position:absolute; left:50%; top:50%; transform:translate(-50%, -50%);}
+	header .h-alm-num {position:absolute; left:0; top:3.19vw; background:#ff6d23; border-radius:4.72vw; padding:0 1.39vw; line-height:4.72vw; color:white;}
+
+/* Panel */
+	#panel {position:fixed; left:0; top:0; background:white; width:100vw; height:100vh; transform:translate(100%, 0); transition:transform 0.3s ease;}
+	#panel .pn-head {position:absolute; left:0; top:0; background:white; border-bottom:0.14vw solid #e0e0e0; width:100vw; height:45.42vw;}
+	#panel .pn-head > *:first-child {border-right:0.14vw solid #e0e0e0;}
+	#panel .pn-usrpic {overflow:visible;}
+	#panel .pn-usrpic img {border-radius:50%;}
+	#panel .pn-usrnm {margin-top:2.78vw; font-size:4.17vw; font-weight:500; color:#222;}
+	#panel .pn-usrtm {margin-top:1.94vw; font-size:3.06vw; font-weight:500; color:#666;}
+	#panel .btn-authchg {width:auto; margin-top:3.47vw;}
+	#panel .pn-badge {position:relative; display:inline-block; width:14.72vw; height:14.17vw;}
+	#panel .pn-badge img {width:100%; height:100%;}
+	#panel .pn-badge-tit {display:block; margin-top:2.5vw; font-size:3.89vw; font-weight:500; color:#222;}
+	#panel .pn-badge-txt {display:block; margin-top:1.94vw; font-size:3.06vw; font-weight:500; color:#666;}
+	#panel .pn-alarm {border-top:0.14vw solid #e0e0e0; height:10.28vw; margin-top:2.92vw; padding:0 5.83vw; font-size:3.33vw;}
+	#panel .pn-cls {position:absolute; right:0; top:0; width:15.56vw; height:15.56vw; text-indent:-1000vw;}
+	#panel .pn-cls:before {content:""; position:absolute; left:50%; top:50%; background:url("../images/icon.png") -13.89vw 0 no-repeat; background-size:138.89vw 138.89vw; width:4.17vw; height:4.17vw; transform:translate(-50%, -50%);}
+	#panel .pn-foot {position:absolute; left:0; bottom:0; background:#fafafa; border-top:0.14vw solid #e2e2e2; width:100%; height:30.83vw; padding:5.42vw 5.56vw 0; text-align:center;}
+	#panel .pn-foot .pn-copy {margin-top:3.75vw; font-size:3.33vw; color:#666;}
+
+	/* Panel Active */
+	#panel.active {transform:translate(0, 0); transition:transform 0.3s ease;}
+
+/* Navigation */
+	#gnb {background:#fafafa; border-top:0.14vw solid #e0e0e0; height:100vh; padding:48.33vw 0 30.83vw;}
+	#gnb .pn-od {overflow-y:auto; background:white; height:100%;}
+	#gnb .pn-od a {position:relative; display:block;}
+	#gnb .pn-od > li {border-bottom:0.14vw solid #e2e2e2;}
+	#gnb .pn-od > li > a {padding-left:5.69vw; font-size:4.17vw; line-height:11.11vw; color:#666;}
+	#gnb .pn-od > li > a:before {content:""; position:absolute; right:5.69vw; top:50%; background:url("../images/icon.png") -27.78vw 0 no-repeat; background-size:138.89vw 138.89vw; width:3.61vw; height:2.08vw; transform:translate(0, -50%); transition:transform 0.3s ease;}
+	#gnb .pn-td {display:none; background:#fafafa; border-top:0.14vw solid #e0e0e0; padding:3.89vw 0; line-height:10vw;}
+	#gnb .pn-td a {padding:0 8.06vw; font-size:3.89vw; color:#666;}
+
+	/* Navigation Active */
+	#gnb .pn-od > li.active > a {color:#333;}
+	#gnb .pn-od > li.active > a:before {background-position:-34.72vw 0; transform:translate(0, -50%) rotate(180deg); transition:transform 0.3s ease;}
+	#gnb .pn-od > li.active .pn-td {display:block;}
+	#gnb .pn-td li.active a {color:#ff6d23;}
+
+/* Container */
+	body {overflow:hidden; background:white; height:100vh;}
+	.container {overflow-y:auto; height:100vh; padding-top:15.56vw;}
+
+	[class*="inner"] {border-top:0.14vw solid #e2e2e2;}
+	[class*="inner"]:first-child {border-top:0;}
+	[class*="inner"] > *:first-child {margin-top:0 !important;}
+	.inner {padding:5.28vw;}
+	.inner02 {padding:2.08vw 5.28vw;} /* 15 / 40 */
+	.inner03 {padding:4.17vw 5.28vw;} /* 30 / 40 */
+	.inner04 {padding:3.89vw 0;} /* 28 / 0 */
+	.inner04:first-child {border-top:0; padding-top:0;}
+
+	#gl-container {overflow-y:auto; position:fixed; width:100%; height:100vh;}
+	#gl-container .contents {position:absolute; left:0; top:50%; width:100%; padding:0 4.86vw; transform:translate(0, -50%);}

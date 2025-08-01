@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko" class="path">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta charset="utf-8">
+		<meta name="description" content="설명">
+		<meta name="viewport" content="width=device-width">
+		<title>프로젝트 명</title>
+
+		<!-- 실제 프로젝트 시 사용될 Resource -->
+		<link rel="stylesheet" href="../../css/common.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="../../css/plugin.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="../../css/layout.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="../../css/style.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="../../css/custom.css" type="text/css" media="screen" />
+		<script src="../../js/common.js"></script>
+		<script src="../../js/front.js"></script>
+
+		<!-- Path에서만 사용되는 Resource -->
+		<link rel="stylesheet" href="../common.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="../path.css" type="text/css" media="screen" />
+		<script src="../common.js"></script>
+		<script src="../path.js"></script>
+	</head>
+	<body class="bg sg-code-wrap">
+		<!--<div class="sg-code">
+			<div class="sg-html">
+				<h1>Markup</h1>
+				<code>
+					<script type="text/plain" class="language-markup">
+						<h1 class="tit01">제목</h1>
+						<h1 class="para01">문단</h1>
+					</script>
+				</code>
+			</div>
+			<div class="sg-css">
+				<h1>custom.css</h1>
+				<pre><code class="language-css">
+					/* Paragraph */
+						.para01 {font-family:"Roboto", sans-serif; font-size:14px; color:#b9b9b9;}
+
+					/* Title */
+						.tit01 {line-height:20px; font-weight:700; color:#222;}
+						.tit02 {font-size:22px; font-weight:700; color:#222;}
+						.tit03 {font-size:20px; font-weight:700; color:#333;}
+				</code></pre>
+			</div>
+		</div>-->
+		<hr>
+
+		<h1>Form Box</h1>
+		<code>
+			<script type="text/plain" class="language-markup">
+				<div class="form-box"></div>
+			</script>
+		</code>
+		<div class="sg-code-block bg-w">
+			<div class="form-box">
+				<div class="tbl-col02">
+					<div>
+						<div class="sel-type01">
+							<select>
+								<option>교육유형</option>
+							</select>
+						</div>
+					</div>
+					<div>
+						<input type="text" placeholder="텍스트">
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+
+		<h1>Check Box / Radio</h1>
+		<code>
+			<script type="text/plain" class="language-markup">
+				<label class="chk-rdo01">
+					<input type="checkbox" name=""><span>수강신청 과정만</span>
+				</label>
+			</script>
+		</code>
+		<div class="sg-code-block bg-w">
+			<div class="tbl-col">
+				<div>
+					<label class="chk-rdo01">
+						<input type="checkbox" name=""><span>수강신청 과정만</span>
+					</label>
+				</div>
+				<div>
+					<label class="chk-rdo02">
+						<input type="checkbox" name=""><span></span>
+					</label>
+				</div>
+				<div>
+					<label class="chk-rdo03">
+						<input type="checkbox" name=""><span>서울</span>
+					</label>
+				</div>
+			</div>
+		</div>
+		<hr>
+
+		<h1>Input</h1>
+		<code>
+			<script type="text/plain" class="language-markup">
+				<!-- 일반 -->
+				<input type="text" placeholder="텍스트">
+
+				<!-- 비밀번호 -->
+				<input type="password" placeholder="비밀번호">
+
+				<!-- 검색 -->
+				<div class="inp-sch">
+					<input type="text" name="">
+					<a href="#" class="btn-gray btn-size01">검색</a>
+				</div>
+
+				<!-- 달력 -->
+				<div class="inp-date01"><input type="text"></div>
+
+				<!-- 첨부파일 -->
+				<label class="inp-file01">
+					<span class="file-name"></span>
+					<span class="btn-dgray btn-size01 btn-file">찾아보기</span>
+					<input type="file" name="">
+				</label>
+			</script>
+		</code>
+		<div class="sg-code-block bg-w">
+			<div class="fo rm-box">
+				<div class="tbl-row01">
+					<div>
+						<div class="tbl-col02">
+							<div><input type="text" placeholder="텍스트"></div>
+							<div><input type="password" placeholder="비밀번호"></div>
+							<div><div class="inp-date01"><input type="text"></div></div>
+							<div>
+								<label class="inp-file01">
+									<span class="file-name"></span>
+									<span class="btn-dgray btn-size01 btn-file">찾아보기</span>
+									<input type="file" name="">
+								</label>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="tbl-col02">
+							<div>
+								<div class="inp-sch">
+									<input type="text" name="">
+									<a href="#" class="btn-gray btn-size01">검색</a>
+								</div>
+							</div>
+							<div>
+								<div class="inp-sch01">
+									<input type="text" class="inp-type01" name="" placeholder="검색" data-ttatg="search">
+									<button type="button" class="btn-sch" data-tta="search" data-ttatg="search">검색</button>
+									<a href="#" class="btn-sch" data-ttatg="search">검색</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+
+		<h1>Select</h1>
+		<code>
+			<script type="text/plain" class="language-markup">
+				<div class="sel-type01">
+					<select>
+						<option>교육유형</option>
+					</select>
+				</div>
+			</script>
+		</code>
+		<div class="sg-code-block bg-w">
+			<div class="form-box">
+				<div class="tbl-col">
+					<div>
+						<div class="sel-type01">
+							<select>
+								<option>교육유형</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<h1>Textarea</h1>
+		<code>
+			<script type="text/plain" class="language-markup">
+				<textarea></textarea>
+			</script>
+		</code>
+		<div class="sg-code-block bg-w">
+			<div class="form-box">
+				<textarea></textarea>
+			</div>
+		</div>
+	</body>
+</html>

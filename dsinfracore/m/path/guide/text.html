@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko" class="path">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta charset="utf-8">
+		<meta name="description" content="설명">
+		<meta name="viewport" content="width=device-width">
+		<title>프로젝트 명</title>
+
+		<!-- 실제 프로젝트 시 사용될 Resource -->
+		<link rel="stylesheet" href="../../css/common.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="../../css/plugin.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="../../css/layout.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="../../css/style.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="../../css/custom.css" type="text/css" media="screen" />
+		<script src="../../js/common.js"></script>
+		<script src="../../js/front.js"></script>
+
+		<!-- Path에서만 사용되는 Resource -->
+		<link rel="stylesheet" href="../common.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="../path.css" type="text/css" media="screen" />
+		<script src="../common.js"></script>
+		<script src="../path.js"></script>
+	</head>
+	<body class="bg sg-code-wrap">
+		<div class="sg-code">
+			<div class="sg-html">
+				<h1>Markup</h1>
+				<code>
+					<script type="text/plain" class="language-markup">
+						<h1 class="tit01">제목</h1>
+						<h1 class="para01">문단</h1>
+					</script>
+				</code>
+			</div>
+			<div class="sg-css">
+				<h1>custom.css</h1>
+				<pre><code class="language-css">
+					/* Paragraph */
+						.para01 {font-family:"Roboto", sans-serif; font-size:14px; color:#b9b9b9;}
+
+					/* Title */
+						.tit01 {line-height:20px; font-weight:700; color:#222;}
+						.tit02 {font-size:22px; font-weight:700; color:#222;}
+						.tit03 {font-size:20px; font-weight:700; color:#333;}
+				</code></pre>
+			</div>
+		</div>
+		<hr>
+
+		<h1>Paragraph</h1>
+		<div class="sg-code-block bg-w">
+			<p class="para01">[para01] Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+			<p class="para02">[para02] Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		</div>
+
+		<h1>Title</h1>
+		<div class="sg-code-block bg-w">
+			<h1 class="tit01">[tit01] Title / 제목</p>
+			<h1 class="tit02">[tit02] Title / 제목</p>
+			<h1 class="tit03">[tit03] Title / 제목</p>
+		</div>
+	</body>
+</html>
