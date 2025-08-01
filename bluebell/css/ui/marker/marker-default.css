@@ -9,11 +9,11 @@
 	[class*="mark-"] > * { display: flex; place-items: center; }
 	[class*="mark-"] > * > .part-marker:before,
 	[class*="mark-"] > *:before { content:""; }
-	[class*="mark-"] > *:first-child:before { content: none; }
 	[class*="mark-"] > .part-no-marker > .part-marker { display:none; }
 
 /* Type */
 	[class*="mark-h-bar"] > * { flex-direction: column; align-items: center; }
+	[class*="mark-v-bar"] > *:first-child:before { content: none; }
 	[class*="mark-num"] { counter-reset: item-num; }
 	[class*="mark-num"] > * { counter-increment: item-num; }
 	[class*="mark-num"] > * .part-marker:before { place-items: center; place-content: center; white-space: nowrap; text-align: center; }

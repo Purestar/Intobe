@@ -115,6 +115,63 @@
 				--form-chk-h: 3.33vw;
 			}
 
+	/* Full Calendar */
+			.fc { height: 116.33vw; }
+
+		/* Header */
+			.fc .fc-header-toolbar { height: 7.78vw; }
+			.fc .fc-toolbar-title { position: absolute; width: 100%; font-size: 5vw; text-align: center; }
+
+		/* Header - Prev, Next Button */
+			.fc .fc-prev-button,
+			.fc .fc-next-button { position: absolute; border: 0; width: 1.94vw; height: 3.33vw; }
+			.fc .fc-prev-button { left: 30vw; margin-left: 0 !important; }
+			.fc .fc-next-button { right: 30vw; }
+			.fc .fc-prev-button .fc-icon:before,
+			.fc .fc-next-button .fc-icon:before { width: 1.94vw; height: 3.33vw; }
+
+		/* Header - Today Button */
+			.fc .fc-today-button { position: absolute; right: 0; height: 7.78vw; font-size: 3.33vw; width: 12.78vw; border-radius: 1.39vw; }
+
+		/* Header - Button Focus, Active */
+			.fc .fc-prev-button:hover, .fc .fc-next-button:hover, .fc .fc-button-primary:not(:disabled).fc-button-active, .fc .fc-button-primary:not(:disabled):active { border: 0; }
+
+		/* Table - Header */
+			.fc .fc-col-header th { background: none; border: 0; height: 7.64vw; font-size: 3.89vw; font-weight: 400; }
+			.fc .fc-col-header th:first-child { color: #000; }
+
+		/* Table - Day */
+			.fc .fc-daygrid-day-number { left: 50%; translate: -50%; width: 8.47vw; font-size: 3.89vw; font-weight: 500; height: 8.47vw; color: #999; }
+
+		/* Table - Radius */
+			.fc .fc-scrollgrid { height: 116.33vw; }
+			.fc .fc-scrollgrid-liquid { border: 0; border-radius: 4px; }
+			.fc .fc-scrollgrid-liquid thead > tr > th { border: 0; }
+			.fc .fc-scrollgrid-liquid tbody > tr > td { border: 0; }
+
+		/* Table - Body */
+			.fc .fc-daygrid-day { border: 0; }
+			.fc .fc-daygrid-day-frame { height: 9.11vw; }
+
+		/* Table - Event */
+			.fc .fc-daygrid-day-events { margin-top: 11.03vw; font-size: 2.78vw; line-height: 2.78vw; }
+			.fc .fc-daygrid-event-harness { padding: 1.5px 0; margin-top: 0 !important; }
+			.fc .fc-event-title { font-size: 2.78vw; padding-left: 0.69vw; }
+
+		/* Table - Event More */
+			.fc .fc-daygrid-more-link { margin-top: 0.69vw; padding-bottom: 0.69vw; }
+
+		/* Event Popup */
+			.fc .fc-popover { width: 80.56vw; border-radius: 2.78vw; border: 1px solid #e2e2e2; left: 50% !important; top: 50% !important; translate: -50% -50%;}
+
+		/* Event Popup - Header */
+			.fc .fc-popover .fc-popover-header { font-size: 3.89vw; }
+			.fc .fc-popover .fc-popover-close:before { width: 4.17vw; height: 4.17vw; }
+
+		/* Event Popup - Event */
+			.fc .fc-popover .fc-daygrid-event-dot { flex:0 0 1.11vw; border-radius: 50%; width: 2.22vw; height: 2.22vw; }
+			.fc .fc-popover-body { margin-top: 2.78vw; }
+
 	/* Graph */
 		/* Horizontal */
 			.grp-h-01-wrap { gap: 0; }
@@ -158,6 +215,12 @@
 				--mark-w: 1.67vw;
 				--mark-h: 1.67vw;
 				--mark-gap-x: 1.11vw;
+			}
+
+		/* Circle */
+			.mark-cir-01 {
+				--mark-gap-x: 2.08vw;
+				--mark-item-gap-x: 1.11vw;
 			}
 
 		/* Horizontal Bar */

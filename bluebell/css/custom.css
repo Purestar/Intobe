@@ -200,6 +200,89 @@
 	/* Text */
 		.form-txt-type-01 { padding-right: 0; }
 
+/* Full Calendar */
+	/* Header */
+		.fc .fc-header-toolbar .fc-toolbar-chunk { display: flex; place-items: center; }
+		.fc .fc-toolbar-title { font-size: 24px; font-weight: 700; color: #2d2d2d; }
+
+	/* Header - Prev, Next Button */
+		.fc .fc-prev-button,
+		.fc .fc-next-button { display: flex; place-items: center; background: none; position: relative; border: 1px solid #e2e2e2; width: 24px; height: 24px; padding: 0; border-radius: 0; }
+		.fc .fc-prev-button { margin-left: 20px !important; border-radius: 4px 0 0 4px; }
+		.fc .fc-next-button { margin-left: -1px !important; }
+		.fc .fc-prev-button .fc-icon,
+		.fc .fc-next-button .fc-icon { display: flex; place-items: center; place-content: center;}
+		.fc .fc-prev-button .fc-icon:before,
+		.fc .fc-next-button .fc-icon:before { content: ''; background-image: var(--ic-c); background-position: var(--bp-250) var(--bp-calendar); background-size: var(--bg-sz); width: 6px; height: 11px; }
+		.fc .fc-next-button .fc-icon:before { rotate: 180deg; }
+
+	/* Header - Today Button */
+		.fc .fc-today-button { height: 24px; line-height: 22px; font-size: 13px; padding: 0; width: 43px; margin-left: -1px !important;border-radius: 0 4px 4px 0; border: 1px solid #e2e2e2; background-color: #fff; color:#000; }
+		.fc .fc-today-button:disabled, .fc .fc-today-button:hover { background: #f9f9f9; color: #000; border:1px solid #e2e2e2; }
+
+	/* Header - Button Focus, Active */
+		.fc .fc-prev-button:hover, .fc .fc-next-button:hover,
+		.fc .fc-button-primary:not(:disabled).fc-button-active,
+		.fc .fc-button-primary:not(:disabled):active { background: #fff; border: 1px solid #e2e2e2; color: #000; }
+		.fc .fc-button-primary:focus,
+		.fc .fc-button-primary:not(:disabled).fc-button-active:focus,
+		.fc .fc-button-primary:not(:disabled):active:focus { box-shadow: none; }
+
+	/* Table - Header */
+		.fc .fc-col-header th { background: #f9f9f9; height: 40px; font-size: 14px; vertical-align: middle; color: #1e1e1e; border: 1px solid #e2e2e2; }
+		.fc .fc-col-header th:first-child { color: #e20000; }
+
+	/* Table - Day */
+		.fc .fc-daygrid-day-number { display: flex; place-items: center; place-content: center; position: absolute; left: 4px; top: 9px; border-radius: 50%; width: 24px; height: 24px; padding: 0; font-weight: 700;  color: #1e1e1e; }
+		.fc .fc-daygrid-day.fc-day-today { background: none; }
+		.fc .fc-daygrid-day.fc-day-today .fc-daygrid-day-number { background: #000; color: white; }
+
+	/* Table - Radius */
+		.fc .fc-scrollgrid-liquid { border-radius: 4px; }
+		.fc .fc-scrollgrid-liquid thead > tr > th { border-radius: 0 4px 0 0; }
+		.fc .fc-scrollgrid-liquid tbody > tr > td { border-radius: 0 0 4px 0; }
+		.fc .fc-scrollgrid-sync-table td:first-child .fc-daygrid-day-number { color: #e20000; }
+
+	/* Table - Body */
+		.fc .fc-daygrid-day-frame { height: 102px; }
+
+	/* Table - Event */
+		.fc .fc-daygrid-day-events { margin-top: 33px; font-size: 12px; color: #1e1e1e; }
+		.fc .fc-event-main-frame { width: 100%; }
+		.fc .fc-event-time { display: none; }
+		.fc .fc-daygrid-dot-event,
+		.fc .fc-daygrid-event { margin: 0 !important; padding: 0 !important; cursor: pointer; border: 0; border-radius: 0; }
+		.fc .fc-daygrid-event-harness { padding: 1.5px 0; }
+		.fc .fc-daygrid-event-dot { display: none; }
+		.fc .fc-event-title { display: inline-block; padding: 0; font-size: 14px; text-overflow: ellipsis; font-weight: 400; padding-left: 10px; }
+		.fc .fc-daygrid-dot-event[class*="sche-mark"] { color: white; }
+
+	/* Table - Event More */
+		.fc .fc-daygrid-day-bottom { display: flex; justify-content: flex-end; }
+		.fc .fc-daygrid-more-link { border-bottom: 1px solid #1e1e1e; margin-top: 5px; padding-bottom: 4px; line-height: 1; }
+
+	/* Event Popup */
+		.fc .fc-popover { width: 375px; border-radius: 20px; border: 0; box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.07); padding: 20px; }
+
+	/* Event Popup - Header */
+		.fc .fc-popover .fc-popover-header { background: none; padding: 0; font-size: 20px; }
+		.fc .fc-popover .fc-popover-title { margin: 0; color: black; }
+		.fc .fc-popover .fc-popover-close { display: flex; }
+		.fc .fc-popover .fc-popover-close:before { content: ""; background-image: var(--ic-c); background-position: var(--bp-300) var(--bp-calendar); background-size: var(--bg-sz); width: 18px; height: 18px; }
+
+	/* Event Popup - Event */
+		.fc .fc-popover .fc-popover-body { margin-top: 10px; padding: 0; font-size: 0; }
+		.fc .fc-popover .fc-daygrid-dot-event { background-color: transparent; color: #000; border: 0; }
+		.fc .fc-popover .fc-daygrid-event-dot {	display: block; border: 0; width: 8px; height: 8px; margin: 0; }
+
+	/* Event - Color */
+		.fc .sche-mark-grn,
+		.fc .sche-mark-grn .fc-daygrid-event-dot { background-color: #09af50; }
+		.fc .sche-mark-gry,
+		.fc .sche-mark-gry .fc-daygrid-event-dot { background-color: #7d8f9a; }
+		.fc .sche-mark-blu,
+		.fc .sche-mark-blu .fc-daygrid-event-dot { background-color: #5e7ad6; }
+
 /* Graph */
 	/* Horizontal */
 		.grp-h-01-wrap { display: flex; gap: 15px; place-items: center; }
@@ -254,6 +337,12 @@
 			--mark-w: 6px;
 			--mark-h: 6px;
 			--mark-gap-x: 4px;
+		}
+
+	/* Circle */
+		.mark-cir-01 {
+			--mark-gap-x: 15px;
+			--mark-item-gap-x: 4px;
 		}
 
 	/* Horizontal Bar */
