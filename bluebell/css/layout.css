@@ -106,6 +106,7 @@ body, #app {display:flex; flex-direction:column; place-content:space-between; fl
 
 	/* Container */
 		.sub-contents { padding: 8.33vw 0 13.89vw; }
+		[class*="sub-top"] { display: none; }
 		[class*="sub-top"] .layout-inner { height: auto; padding: 11.11vw 5.56vw; }
 		[class*="sub-top"] .sub-tit { font-size: 5.56vw; }
 		.sub-top-bg-01 { display: none; }

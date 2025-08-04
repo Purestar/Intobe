@@ -68,6 +68,13 @@
 		--box-pd-a: 40px;
 	}
 
+	.box-type-02 {
+		--box-bg-c: #f9f9f9;
+		--box-pd-a: 40px;
+		--box-bd-w: 0;
+		--box-bd-r: 20px;
+	}
+
 /* Button */
 	/* Color */
 		.btn-type-lgry {
@@ -296,7 +303,7 @@
 /* Graph */
 	/* Horizontal */
 		.grp-h-01-wrap { display: flex; gap: 15px; place-items: center; }
-		.grp-h-01-wrap .part-label { width: 75px; text-align: center; color: black; }
+		.grp-h-01-wrap .part-label { min-width: 75px; text-align: center; color: black; }
 
 		[class*="grp-type-h-01"] {
 			--grp-h: 18px;
@@ -305,6 +312,7 @@
 
 		.grp-type-h-01-blu { --grp-bg-c: #5e7ad6; }
 		.grp-type-h-01-blk { --grp-bg-c: black; }
+		.grp-type-h-01-gra .part-inner { background: var(--bg-type01); }
 
 	/* Pie */
 		.grp-pie-01-wrap { width: max-content; }
@@ -322,6 +330,7 @@
 	.ic-del-02:before { background-position: var(--bp-400) 0; width: 18px; height: 18px; }
 	.ic-eye:before { background-position: var(--bp-900) 0; width: 18px; height: 14px; }
 	.ic-file:before { background-position: var(--bp-450) 0; width: 18px; height: 18px; }
+	.ic-fire:before { background-position: 0 var(--bp-50); width: 18px; height: 28px; }
 	.ic-globe:before { background-position: var(--bp-100) 0; width: 24px; height: 24px; }
 	.ic-globe-02:before { background-position: var(--bp-850) 0; width: 24px; height: 24px; }
 	.ic-plus:before { background-position: var(--bp-600) 0; width: 10px; height: 10px; }
@@ -335,11 +344,15 @@
 
 	/* Arrow */
 		.ic-l-arrow:before { background-position: var(--bp-700) 0; width: 6px; height: 11px; }
+		.ic-r-arrow:before { background-position: var(--bp-50) var(--bp-50); width: 5px; height: 10px; }
 
 /* List */
 	.lst-type-01 { display: grid; gap: 20px; }
 	.lst-type-01 > * { display: flex; flex-direction: column; place-items: center; place-content: center; background: #f9f9f9; border-radius: 20px; gap: 10px; height: 120px; font-size: 14px; color:#000;}
 	.lst-type-01 strong { font-size: 28px; }
+
+	.lst-type-02 { display: grid; }
+	.lst-type-02 > * { display: flex; place-items: center; place-content: space-between; gap: 10px; }
 
 /* Marker */
 	/* Arrow */
@@ -481,6 +494,7 @@
 
 	.tit-01 { font-size: 30px; }
 	.tit-02 { font-size: 24px; font-weight: 700; }
+	.tit-03 { font-size: 20px; font-weight: 700; }
 
 /* Page */
 	/* 수강신청 */
@@ -489,3 +503,8 @@
 	/* 로그인 */
 		.login-wrap { display: grid; grid-template-columns: repeat(2, 1fr); background-image :url("/bluebell/images/img/login_bnr.png"); width: 900px; height: 479px; }
 		.login-wrap .login-tit { font-size: 40px; font-weight: 700; color: black; }
+
+	/* 학습방 */
+		.studyroom-stat { --mark-h: 100%; --mark-grid-t-col: 3; border-top: 1px solid #f5f5f5; margin: 40px calc(var(--box-pd-a) * -1) calc(var(--box-pd-a) * -1); }
+		.studyroom-stat .part-cont { display: flex; place-content: space-between; place-items: center; width: 100%; padding: 30px 40px; color: #aaa; }
+		.studyroom-stat .part-cont-in { display: flex; gap: 20px; font-weight: 700; font-size: 20px; }

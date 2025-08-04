@@ -34,6 +34,22 @@
 			--aco-cont-pd-a: 8.33vw 5vw;
 		}
 
+		.aco-type-m-02 {
+			overflow: visible;
+			--aco-item-bd-c: #e2e2e2;
+			--aco-item-bd-r: 3.33vw;
+
+			--aco-head-pd-x: 6.25vw;
+			--aco-head-pd-y: 5vw;
+
+			--aco-cont-pd-x: 6.25vw;
+			--aco-cont-pd-y: 5vw;
+		}
+
+		.aco-type-m-02 .aco-toggle { display: flex; place-items: center; place-content: center; position: absolute; left: 50%; top: 100%; background: white; border: 1px solid #e2e2e2; border-radius: 50%; width: 10vw; height: 10vw; translate: -50% -50%;}
+		.aco-type-m-02 > .aco-item { position: relative; }
+		.aco-type-m-02 > .aco-item > .aco-cont > .aco-cont-in { overflow: visible; }
+
 		.aco-type-m-panel-menu {
 			--aco-head-ft-c: #999;
 			--aco-head-ft-s: 3.89vw;
@@ -81,6 +97,12 @@
 			--box-bd-r: 2.78vw;
 			--box-pd-x: 3.8vw;
 			--box-pd-y: 5vw;
+		}
+
+		.box-type-02 {
+			--box-pd-x: 3.8vw;
+			--box-pd-y: 5vw;
+			--box-bd-r: 20px;
 		}
 
 	/* Button */
@@ -207,7 +229,7 @@
 	/* Graph */
 		/* Horizontal */
 			.grp-h-01-wrap { gap: 0; }
-			.grp-h-01-wrap .part-label { width: 17.28vw; text-align: left; }
+			.grp-h-01-wrap .part-label { min-width: 17.28vw; text-align: left; }
 
 			[class*="grp-type-h-01"] {
 				--grp-h: 3.33vw;
@@ -230,10 +252,14 @@
 		.ic-close:before { width: 4.17vw; height: 4.17vw; }
 		.ic-eye:before { width: 4.44vw; height: 3.75vw; }
 		.ic-file:before { width: 3.61vw; height: 3.61vw; }
+		.ic-fire:before { width: 3.33vw; height: 3.89vw; }
 		.ic-globe-02:before { width: 5.56vw; height: 5.56vw; }
 		.ic-ribbon:before { width: 7.78vw; height: 8.19vw; }
 		.ic-stack:before { width: 3.89vw; height: 3.47vw; }
 		.ic-zoom:before { width: 3.75vw; height: 3.75vw; }
+
+		/* Arrow */
+			.ic-r-arrow:before { width: 1.25vw; height: 1.94vw; }
 
 		/* Only Mobile */
 			.ic-m-hamburger:before { --bp-pos-x: var(--bp-100); --bp-pos-y: var(--bp-950); width: 5.56vw; height: 4.86vw; }
@@ -341,6 +367,7 @@
 	/* Title */
 		.tit-01 { font-size: 5vw; }
 		.tit-02 { font-size: 4.44vw; }
+		.tit-03 { font-size: 4.44vw; }
 
 	/* Page */
 		/* 수강신청 */
@@ -349,4 +376,10 @@
 		/* 로그인 */
 			.login-wrap { grid-template-columns: repeat(1, 1fr); background-image :url("/bluebell/images/img/m_login_bnr.png"); background-size: 100% 100%; width: 100dvw; height: 100dvh; }
 			.login-wrap .login-tit { font-size: 7.22vw; }
+
+		/* 학습방 */
+			.studyroom-stat { border-top: 0; margin: 8.33vw 0 0; }
+			.studyroom-stat .part-cont { flex-direction: column; gap: 2.78vw; padding: 0 2.08vw; }
+			.studyroom-stat .part-cont-in { flex-direction: column; gap: 2.78vw; font-size: 3.33vw; text-align: center; }
+			.studyroom-stat .part-cont-in span { font-size: 5.56vw; }
 }
