@@ -102,7 +102,7 @@
 						</div>
 					</div>
 					<div style="--dp: flex; --items-y: center; --mg-t: 60px; --gap-x: 80px; --m-flex-d: column; --m-gap-y: 5.56vw; --m-mg-t: 5.56vw;">
-						<div style="--w: 461px; --m-w: 100%;">
+						<div style="--w: 461px; --flex-g: 0; --m-w: 100%;">
 							<div class="grp-h-01-wrap">
 								<span class="part-label">나의 진도율</span>
 								<div class="grp-type-h-01-gra" style="--flex-g: 1; --grp-val: 99%;">
@@ -120,7 +120,7 @@
 								</div>
 							</div>
 						</div>
-						<button class="btn-type" style="--btn-w: 100%;">학습하기</button>
+						<button class="btn-type" style="--m-btn-w: 100%;">학습하기</button>
 					</div>
 				</div>
 				<div class="box-type-02" style="--w: 310px; --m-w: 100%; --m-mg-t: 8.33vw;">
