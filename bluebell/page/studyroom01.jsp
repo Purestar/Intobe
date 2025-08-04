@@ -92,7 +92,7 @@
 		<div class="box-type-01" style="--mg-t: 60px; --m-mg-t: 8.33vw;">
 			<h3 class="tit-02">학습진도</h3>
 			<div style="--dp: flex; --content-x: space-between; --m-flex-d: column; --m-mg-t: 5.56vw;">
-				<div style="--dp: flex; --flex-d: column; --w: 750px; --m-w: 100%;">
+				<div style="--dp: flex; --flex-d: column; --w: 750px; --mg-t: 13px; --m-w: 100%; --m-mg-t: 0;">
 					<div style="--dp: flex; --content-x: space-between; --items-y: center;">
 						<p style="--dp: flex; --items-y: center; --gap-x: 4px; --ft-s: 20px; --ft-c: black; --m-dp: block; --m-ft-s: 3.89vw;">전체과정 20건 중<br class="mobile"> 완료과정은 총 <em>6건</em> 입니다! <i class="ic-fire"></i></p>
 						<div style="--dp: flex; --items-y: center; --gap-x: 20px; --ft-s: 14px; --m-ft-s: 2.5vw;">
