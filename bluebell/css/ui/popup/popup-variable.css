@@ -5,6 +5,7 @@
 		--pop-bd-w: 0;
 		--pop-bd-s: solid;
 		--pop-bd-r: var(--pop-br);
+		--pop-h: auto;
 
 		/* Header */
 		--pop-head-bg-c: var(--mc);
@@ -30,6 +31,7 @@
 		border: var(--pop-bd-w) var(--pop-bd-s) var(--pop-bd-c);
 		border-radius: var(--pop-bd-r);
 		width: var(--pop-w);
+		height: var(--pop-h);
 		max-height: var(--pop-max-h);
 	}
 

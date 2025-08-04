@@ -273,7 +273,7 @@
 			}
 
 	/* Popup */
-		.pop-type-alert {
+		[class*="pop-type-alert"] {
 			--pop-w: 100dvw;
 			--pop-bd-r: 0;
 
@@ -290,11 +290,15 @@
 			--pop-close-h: 4.17vw;
 		}
 
-		.pop-type-alert .part-foot [class*="btn-type"] {
+		[class*="pop-type-alert"] .part-foot [class*="btn-type"] {
 			--btn-w: 100%;
 			--btn-h: 12.5vw;
 			--btn-ft-s: 3.33vw;
 			--btn-min-w: auto;
+		}
+
+		.pop-type-alert-01 {
+			--pop-h: 100dvh;
 		}
 
 	/* Swiper */

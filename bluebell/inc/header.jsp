@@ -148,7 +148,7 @@
 							<p class="pn-usrtm">인사팀</p>
 						</div>
 					</div>
-					<button class="btn-type-b-lgry btn-sz-m-01">알림<em>99+</em></button>
+					<button class="btn-type-b-lgry btn-sz-m-01" data-tta="alarm">알림<em>99+</em></button>
 				</div>
 			</div>
 			<nav class="h-gnb">
@@ -256,58 +256,6 @@
 			</div>
 			<button type="button" class="pn-cls" data-tta="panel"><i class="ic-close"></i></button>
 		</div>
-
-		<header style="display:none;">
-			<!-- [팝업] 알람 -->
-			<div class="pop-type01" data-ttatg="alarm">
-				<div class="pop-contain">
-					<div class="pop-head">
-						<h1>알림</h1>
-					</div>
-					<div class="pop-cont">
-						<div class="pop-cont-in">
-							<div class="pop_inner">
-								<div class=" list-top fx-jcsb fx-aife">
-									<div class="-fblk">전체 <b class="-fgry">47</b></div>
-									<div class="ar"><a href="#" class="btn-b-lgry btn-sz02">전체삭제</a></div>
-								</div>
-								<div class="alarm-wrap">
-									<div class="box-type-b-gry fx-jcsb fx-aic read">
-										<div>
-											<p class="list-desc">관심주제에 대한 삶의 스승이 된 이방인 콘텐츠가 등록 되었어요.</p>
-											<p class="list-time">20시간 전</p>
-										</div>
-										<button type="button" class="list-del btn-b-lgry btn-sz02">삭제</button>
-									</div>
-									<div class="box-type-b-gry fx-jcsb fx-aic">
-										<div>
-											<p class="list-desc">학습이 완료되었습니다.</p>
-											<p class="list-time">2월 1일  19:00</p>
-										</div>
-										<button type="button" class="list-del btn-b-lgry btn-sz02">삭제</button>
-									</div>
-									<div class="box-type-b-gry fx-jcsb fx-aic">
-										<div>
-											<p class="list-desc">관심주제에 대한 삶의 스승이 된 이방인 콘텐츠가 등록 되었어요.</p>
-											<p class="list-time">20시간 전</p>
-										</div>
-										<button type="button" class="list-del btn-b-lgry btn-sz02">삭제</button>
-									</div>
-									<div class="box-type-b-gry fx-jcsb fx-aic">
-										<div>
-											<p class="list-desc">관심주제에 대한 삶의 스승이 된 이방인 콘텐츠가 등록 되었어요.</p>
-											<p class="list-time">20시간 전</p>
-										</div>
-										<button type="button" class="list-del btn-b-lgry btn-sz02">삭제</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<button type="button" class="pop-close" data-tta="alarm">닫기</button>
-				</div>
-			</div>
-		</header>
 	</div>
 	<script>
 		/*$(".pop-close").on("click", function(){
@@ -327,6 +275,8 @@
 		});*/
 	</script>
 </header>
+
 <%@ include file="../page/popup/userPic.jsp" %>
+<%@ include file="../page/popup/m-alarm.jsp" %>
 
 <div id="container">

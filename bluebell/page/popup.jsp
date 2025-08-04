@@ -9,6 +9,12 @@
 					<button type="button" class="btn-type" data-tta="userPic">사진변경</button>
 				</div>
 			</div>
+			<div style="--dp:grid; --gap-y: 20px;">
+				<h1 class="tit-01" style="--ft-c: black; --ft-w: 700;">[모바일] 공통</h1>
+				<div style="--dp: flex; --flex-w: wrap; --gap-a: 20px;">
+					<button type="button" class="btn-type" data-tta="alarm">알림</button>
+				</div>
+			</div>
 		</div>
 
 		<h1 class="tit-01" style="--ft-c: black; --ft-w: 700;">메인</h1>
@@ -62,6 +68,7 @@
 	</div>
 </div>
 <%@ include file="./popup/userPic.jsp" %> <!-- 사진 변경 -->
+<%@ include file="./popup/m-alarm.jsp" %> <!-- [모바일] 알림 -->
 
 <%-- <%@ include file="pop_EduSchedule.jsp" %> --%> <!-- 교육일정 -->
 <%-- <%@ include file="pop_alert.jsp" %> --%> <!-- 교육과정 알림팝업 -->

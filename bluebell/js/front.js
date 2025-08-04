@@ -189,10 +189,10 @@ $.fn.tta = function () {
 		$obj.on("click", "[data-tta]", function (e) {
 			e.stopPropagation();
 
-			if (prevAct != $(this).data("tta")) {
+			/*if (prevAct != $(this).data("tta")) {
 				$("[data-tta='"+ prevAct +"']").removeClass("active");
 				$("[data-ttatg='"+ prevAct +"']").removeClass("active");
-			};
+			};*/
 
 			$tg = $("[data-ttatg='"+ $(this).data("tta") +"']");
 			prevAct = $(this).data("tta");

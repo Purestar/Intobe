@@ -7,6 +7,7 @@
 			--m-pop-bd-s: var(--pop-bd-s);
 			--m-pop-bd-r: var(--pop-bd-r);
 			--m-pop-w: var(--pop-w);
+			--m-pop-h: var(--pop-h);
 			--m-pop-max-h: var(--pop-max-h);
 
 			/* Header */
@@ -37,6 +38,7 @@
 			border: 1px solid var(--m-pop-bd-c);
 			border-radius: var(--m-pop-bd-r);
 			width: var(--m-pop-w);
+			height: var(--m-pop-h);
 			max-height: var(--m-pop-max-h);
 		}
 
