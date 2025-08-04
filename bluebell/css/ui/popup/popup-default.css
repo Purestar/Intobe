@@ -1,5 +1,6 @@
 /* Wrap */
-	[class*="pop-type"] .part-wrap { overflow: hidden; position:fixed; left:50%; top:50%; background-color: white; translate: -50% -50%; }
+	[class*="pop-type"] { position: fixed; background-color: rgba(0, 0, 0, .5); width: 100dvw; height: 100dvh; left: 100%; transition: left var(--trans-dft); z-index: 100; }
+	[class*="pop-type"] .part-wrap { overflow: hidden; position: absolute; left: 50%; top: 50%; background-color: white; translate: -50% -50%; }
 	[class*="pop-type"] .part-wrap > * { flex-shrink: 0; }
 
 /* Header */
@@ -24,4 +25,6 @@
 /* Close */
 	[class*="pop-type"] .part-close { position: absolute; right: 0; top: 0; display: flex; place-items: center; place-content: center; text-indent: -1000em; }
 	[class*="pop-type"] .part-close:before { content: ""; background-image: var(--ic-c); background-position: var(--bp-150) var(--bp-popup); background-size: var(--bg-sz); }
-	[class*="pop-type"]:not([data-head]) .part-close:before { background-position: var(--bp-200) var(--bp-popup); }
+
+/* Active */
+	[class*="pop-type"].active { left: 0; transition: left var(--trans-dft); }

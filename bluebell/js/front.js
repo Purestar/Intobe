@@ -620,23 +620,7 @@ $.fn.swiperInit = function () {
 	});
 
 /*
-	$(".swi-type03").each(function () {
-		swiperTG = this;
-		new Swiper(swiperTG.querySelector(".swiper"), {
-			loop: true,
-			direction: 'vertical',
-			slidesPerView: 1,
-			navigation: {
-				nextEl: swiperTG.querySelector(".swiper-button-next"),
-				prevEl: swiperTG.querySelector(".swiper-button-prev"),
-			},
-			pagination: {
-				el: ".swiper-pagination",
-				clickable: true,
-			  },
-			clickable: true
-		});
-	});
+
 
 	$(".swi-type04").each(function () {
 		swiperTG = this;

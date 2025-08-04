@@ -2,6 +2,15 @@
 <%@ include file="../inc/header.jsp" %>
 <div class="sub-contents">
 	<div class="layout-inner">
+		<div style="--dp:grid; --gap-y: 40px;">
+			<div style="--dp:grid; --gap-y: 20px;">
+				<h1 class="tit-01" style="--ft-c: black; --ft-w: 700;">공통</h1>
+				<div style="--dp: flex; --flex-w: wrap; --gap-a: 20px;">
+					<button type="button" class="btn-type" data-tta="userPic">사진변경</button>
+				</div>
+			</div>
+		</div>
+
 		<h1 class="tit-01" style="--ft-c: black; --ft-w: 700;">메인</h1>
 		<div style="--dp: flex; --flex-w: wrap; --gap-a: 20px; --mg-t: 20px">
 			<button type="button" class="btn-type" disabled data-tta="sample">오늘하루그만보기</button>
@@ -52,6 +61,8 @@
 		</div>
 	</div>
 </div>
+<%@ include file="./popup/userPic.jsp" %> <!-- 사진 변경 -->
+
 <%-- <%@ include file="pop_EduSchedule.jsp" %> --%> <!-- 교육일정 -->
 <%-- <%@ include file="pop_alert.jsp" %> --%> <!-- 교육과정 알림팝업 -->
 <%-- <%@ include file="pop_Enrollment.jsp" %> --%> <!-- 교육과정 알림팝업 -->

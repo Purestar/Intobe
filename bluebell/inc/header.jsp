@@ -1,4 +1,4 @@
-<%@ page contentType = "text/html; charset=UTF-8" %>
+<%@ page contentType ="text/html; charset=UTF-8" %>
 <%@ include file="../inc/global_header.jsp" %>
 <header class="h-wrap">
 	<div class="pc">
@@ -88,8 +88,8 @@
 							<div class="user-thumb">
 								<button class="user-camera-btn" data-self><i class="ic-camera"></i></button>
 								<ul class="h-menu photo-menu">
-									<li><a href="">사진선택</a></li>
-									<li><a href="">사진초기화</a></li>
+									<li><button type="button" data-tta="userPic">사진선택</button></li>
+									<li><button type="button">사진초기화</button></li>
 								</ul>
 								<img src="../images/img/user_default.png" alt="">
 							</div>
@@ -121,141 +121,145 @@
 			</div>
 		</div>
 	</div>
-	<div class="mobile">
+	<div class="mobile h-inner">
 		<div class="h-left">
-			<a href="#" class="h-menu"><i class="ic-back"></i></a>
+			<a href="#" class="h-btn"><i class="ic-m-l-arrow"></i></a>
 		</div>
 		<h1>타이틀</h1>
 		<div class="h-right">
-			<a href="#" class="h-menu"><i class="ic-home">홈</i></a>
-			<button type="button" class="h-menu" data-tta="panel"><i class="ic-hamburger"></i></button>
+			<a href="#" class="h-btn"><i class="ic-m-home">홈</i></a>
+			<button type="button" class="h-btn" data-tta="panel"><i class="ic-m-hamburger"></i></button>
 		</div>
-		<header style="display:none;">
-			<!-- [팝업] 패널 -->
-			<div id="panel" data-ttatg="panel">
-				<div class="pn-head ">
-					<div class="fx-jcsb fx-aic">
-						<div class="fx-aic fx-gap-06">
-							<div class="thumb-01 pn-usrpic ">
-								<button class="ic-photo"></button>
-								<ul class="h-glo-menu photo-menu ">
-									<li class="photo-btn"><button type="button">사진선택</button></li>
-									<li><button type="button">사진초기화</button></li>
+		<!-- 패널 -->
+		<div id="panel" data-ttatg="panel">
+			<div class="pn-head">
+				<div style="--dp: flex; --content-x: space-between; --items-y: center;">
+					<div style="--dp: flex; --items-y: center; --gap-x: 4.44vw;">
+						<div class="user-thumb">
+							<button class="user-camera-btn" data-self><i class="ic-camera"></i></button>
+							<ul class="h-menu">
+								<li><button type="button" data-tta="userPic">사진선택</button></li>
+								<li><button type="button">사진초기화</button></li>
+							</ul>
+							<img src="../images/img/user_default.png" alt="">
+						</div>
+						<div>
+							<p class="pn-usrnm">김캐논님</p>
+							<p class="pn-usrtm">인사팀</p>
+						</div>
+					</div>
+					<button class="btn-type-b-lgry btn-sz-m-01">알림<em>99+</em></button>
+				</div>
+			</div>
+			<nav class="h-gnb">
+				<ul class="aco-type-m-panel-menu h-od-menu">
+					<li class="aco-item">
+						<h2 class="aco-head-wrap">
+							<button type="button"class="aco-head">
+								<span class="aco-head-in">교육체계/제도</span>
+								<span class="aco-toggle"><i class="aco-toggle-btn"></i></span>
+							</button>
+						</h2>
+						<div class="aco-cont">
+							<div class="aco-cont-in">
+								<ul class="h-td-menu">
+									<li><a href="#">교육체계도</a></li>
+									<li><a href="#">교육제도</a></li>
 								</ul>
-								<img src="../images/user_default.png" alt="">
-							</div>
-							<div>
-								<p class="pn-usrnm">김캐논님</p>
-								<p class="pn-usrtm">인사팀</p>
 							</div>
 						</div>
-						<button class="btn-authchg btn-b-lgry ">알림<em>99+</em></button>
-					</div>
-				</div>
-				<nav class="h-gnb">
-					<ul class="h-od-menu">
-						<li>
-							<a href="#">교육체계/제도</a>
-							<ul class="h-td-menu">
-								<li>
-									<a href="#">교육체계도</a>
-								</li>
-								<li>
-									<a href="#">교육제도</a>
-								</li>
-							</ul>
-						</li>
-						<li class="">
-							<a href="#">교육과정</a>
-							<ul class="h-td-menu">
-								<li>
-									<a href="#">수강신청</a>
-								</li>
-							</ul>
-						</li>
-						<li class="">
-							<a href="#">콘텐츠학습</a>
-							<ul class="h-td-menu">
-								<li>
-									<a href="#">전체보기</a>
-								</li>
-							</ul>
-						</li>
-						<li class="">
-							<a href="#">나의학습</a>
-							<ul class="h-td-menu">
-								<li>
-									<a href="#">러닝로드맵</a>
-								</li>
-								<li>
-									<a href="#">수강현황</a>
-								</li>
-								<li>
-									<a href="#">사외교육신청</a>
-								</li>
-							</ul>
-						</li>
-						<li class="">
-							<a href="#">교육지원</a>
-							<ul class="h-td-menu">
-								<li>
-									<a href="#">Cell/학습동아리</a>
-								</li>
-								<li>
-									<a href="#">전문가 라운지</a>
-								</li>
-								<li>
-									<a href="#">해외선진 문화담방</a>
-								</li>
-							</ul>
-						</li>
-						<li class="">
-							<a href="#">결재 / 이력관리</a>
-							<ul class="h-td-menu">
-								<li>
-									<a href="#">교육과정 학습 이력</a>
-								</li>
-								<li>
-									<a href="#"></a>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</nav>
-				<div class="pn-foot">
-					<a href="#" class="btn-lgry btn-size01 w100">로그아웃</a>
-					<p class="pn-copy">Copyright © All Right Reserved.</p>
-				</div>
-				<button type="button" class="pn-cls" data-tta="panel">닫기</button>
-			</div>
-
-			<!-- [팝업] 프로필 변경 -->
-			<div class="pop-type-alarm profile-chg ">
-				<div class="pop-contain">
-					<div class="pop-head">
-						<h1>사진 변경</h1>
-					</div>
-					<div class="pop-cont">
-						<div class="pop-cont-in">
-							<p class="fw-s">프로필 사진을 변경하시겠습니까?</p>
-							<span class="thumb-01 pn-usrpic mt30">
-								<label class="inp-pic">
-									<input type="file" name="">
-									<img src="http://placehold.it/120">
-								</label>
-							</span>
-							<div class="pop-foot tbl-col01">
-								<div><button type="button" class="btn-b-blk btn-size04 " data-tta="profilechg">취소</button></div>
-								<div><button type="button" class="btn-b- btn-size04 " data-tta="profilechg">확인</button></div>
+					</li>
+					<li class="aco-item">
+						<h2 class="aco-head-wrap">
+							<button type="button"class="aco-head">
+								<span class="aco-head-in">교육과정</span>
+								<span class="aco-toggle"><i class="aco-toggle-btn"></i></span>
+							</button>
+						</h2>
+						<div class="aco-cont">
+							<div class="aco-cont-in">
+								<ul class="h-td-menu">
+									<li><a href="#">수강신청</a></li>
+								</ul>
 							</div>
 						</div>
-					</div>
-					<button type="button" class="pop-close">닫기</button>
-				</div>
+					</li>
+					<li class="aco-item">
+						<h2 class="aco-head-wrap">
+							<button type="button"class="aco-head">
+								<span class="aco-head-in">콘텐츠학습</span>
+								<span class="aco-toggle"><i class="aco-toggle-btn"></i></span>
+							</button>
+						</h2>
+						<div class="aco-cont">
+							<div class="aco-cont-in">
+								<ul class="h-td-menu">
+									<li><a href="#">전체보기</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="aco-item">
+						<h2 class="aco-head-wrap">
+							<button type="button"class="aco-head">
+								<span class="aco-head-in">나의학습</span>
+								<span class="aco-toggle"><i class="aco-toggle-btn"></i></span>
+							</button>
+						</h2>
+						<div class="aco-cont">
+							<div class="aco-cont-in">
+								<ul class="h-td-menu">
+									<li><a href="#">러닝로드맵</a></li>
+									<li><a href="#">수강현황</a></li>
+									<li><a href="#">사외교육신청</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="aco-item">
+						<h2 class="aco-head-wrap">
+							<button type="button"class="aco-head">
+								<span class="aco-head-in">교육지원</span>
+								<span class="aco-toggle"><i class="aco-toggle-btn"></i></span>
+							</button>
+						</h2>
+						<div class="aco-cont">
+							<div class="aco-cont-in">
+								<ul class="h-td-menu">
+									<li><a href="#">Cell/학습동아리</a></li>
+									<li><a href="#">전문가 라운지</a></li>
+									<li><a href="#">해외선진 문화담방</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="aco-item">
+						<h2 class="aco-head-wrap">
+							<button type="button"class="aco-head">
+								<span class="aco-head-in">결재 / 이력관리</span>
+								<span class="aco-toggle"><i class="aco-toggle-btn"></i></span>
+							</button>
+						</h2>
+						<div class="aco-cont">
+							<div class="aco-cont-in">
+								<ul class="h-td-menu">
+									<li><a href="#">교육과정 학습 이력</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</nav>
+			<div class="pn-foot">
+				<a href="#" class="btn-lgry btn-size01 w100">로그아웃</a>
+				<p class="pn-copy">Copyright © All Right Reserved.</p>
 			</div>
+			<button type="button" class="pn-cls" data-tta="panel"><i class="ic-close"></i></button>
+		</div>
 
+		<header style="display:none;">
 			<!-- [팝업] 알람 -->
-			<div class="pop-type01 " data-ttatg="alarm">
+			<div class="pop-type01" data-ttatg="alarm">
 				<div class="pop-contain">
 					<div class="pop-head">
 						<h1>알림</h1>
@@ -323,5 +327,6 @@
 		});*/
 	</script>
 </header>
+<%@ include file="../page/popup/userPic.jsp" %>
 
 <div id="container">

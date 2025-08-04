@@ -79,6 +79,7 @@
 
 		.btn-type-b-blk {
 			--btn-bd-c: black;
+			--btn-ft-c: black;
 		}
 
 		.btn-type-b-blk-02 {
@@ -88,6 +89,7 @@
 
 		.btn-type-b-lgry {
 			--btn-bd-c: #e7e7e7;
+			--btn-ft-c: #666;
 			--btn-over-bd-c: #e7e7e7;
 		}
 
@@ -162,6 +164,14 @@
 	.float-menu-01 button:hover { background-color: #f5f5f5; color: #000; }
 
 /* Form */
+	/* File */
+		.form-txt-file-01 {
+			--form-w: 80px;
+			--form-h: 80px;
+			--form-bd-r: 50%;
+			--form-pd-x: 0;
+		}
+
 	/* Password Toggle */
 		[class*="form-txt"] .part-icon.active .ic-eye:before { background-position: var(--bp-950) 0; }
 
@@ -376,6 +386,31 @@
 	.brd-paging .brd-paging-last:before,
 	.brd-paging .brd-paging-next:before { transform: rotate(180deg); }
 	.brd-paging-num { display: flex; }
+
+/* Popup */
+	.pop-type-alert {
+		--pop-bd-r: 12px;
+		--pop-bd-c: transparent;
+		--pop-w: 430px;
+
+		--pop-head-bg-c: white;
+		--pop-head-ft-s: 20px;
+		--pop-head-ft-c: black;
+		--pop-head-h: 90px;
+		--pop-head-pd-l: 40px;
+
+		--pop-foot-h: 126px;
+
+		--pop-close-w: 18px;
+		--pop-close-h: 18px;
+	}
+
+	.pop-type-alert .part-head .part-title { font-weight: 700; }
+	.pop-type-alert .part-foot [class*="btn-type"] {
+		--btn-h: 56px;
+		--btn-ft-s: 18px;
+		--btn-min-w: 180px;
+	}
 
 /* Swiper */
 	.swiper-type-01 .swiper-pagination-01 { position: absolute; right: 36px; top: 0; }
