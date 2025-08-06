@@ -45,10 +45,12 @@
 
 			--aco-cont-pd-x: 6.25vw;
 			--aco-cont-pd-y: 5vw;
+			--aco-cont-bd-t-w: 0;
 		}
 
 		.aco-type-m-02 .aco-toggle { display: flex; place-items: center; place-content: center; position: absolute; left: 50%; top: 100%; background: white; border: 1px solid #e2e2e2; border-radius: 50%; width: 10vw; height: 10vw; translate: -50% -50%;}
 		.aco-type-m-02 > .aco-item { position: relative; }
+		.aco-type-m-02 > .aco-item > .aco-cont { padding-top: 0; }
 		.aco-type-m-02 > .aco-item > .aco-cont > .aco-cont-in { overflow: visible; }
 
 		.aco-type-m-panel-menu {
@@ -142,6 +144,15 @@
 			--chip-pd-x: 3.33vw;
 			--chip-ft-s: 14px;
 			--chip-h: 7.78vw;
+		}
+
+		[class*="chip-type-04"] {
+			--chip-bd-r: 1.11vw;
+			--chip-ft-s: 3.89vw;
+			--chip-w: 13.89vw;
+			--chip-h: 13.89vw;
+
+			min-width: 13.89vw;
 		}
 
 	/* Form */

@@ -1,6 +1,7 @@
 @media all and (max-width: 768px) {
 	/* Initialize */
 		[class*="mark-"] {
+			--m-mark-dp: var(--mark-dp);
 			--m-mark-bd-r: var(--mark-bd-r);
 			--m-mark-bg-c: var(--mark-bg-c);
 			--m-mark-c: var(--mark-c);
@@ -75,6 +76,7 @@
 
 	/* Default */
 		[class*="mark-"] {
+			display: var(--m-mark-dp);
 			column-gap: var(--m-mark-gap-x, var(--m-mark-gap-a));
 			row-gap: var(--m-mark-gap-y, var(--m-mark-gap-a));
 			grid-template-columns: repeat(var(--m-mark-grid-t-col), 1fr);

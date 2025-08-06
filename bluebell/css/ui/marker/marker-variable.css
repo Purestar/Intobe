@@ -1,5 +1,6 @@
 /* Initialize */
 	[class*="mark-"] {
+		--mark-dp: grid;
 		--mark-bg-c: black;
 		--mark-ft-s: var(--init-font-size);
 		--mark-txt-lh: calc(var(--init-line-height) * 1em);
@@ -59,6 +60,7 @@
 
 /* Default */
 	[class*="mark-"] {
+		display: var(--mark-dp);
 		column-gap: var(--mark-gap-x, var(--mark-gap-a));
 		row-gap: var(--mark-gap-y, var(--mark-gap-a));
 		grid-template-columns: repeat(var(--mark-grid-t-col), 1fr);

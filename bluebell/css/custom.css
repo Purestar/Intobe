@@ -165,6 +165,8 @@
 		--chip-bd-r: 7px;
 		--chip-w: 64px;
 		--chip-h: 64px;
+		
+		min-width: 64px;
 	}
 
 	.chip-type-04-lpur { --chip-bg-c: #f8f7fc; --chip-bd-c: #f8f7fc; --chip-ft-c: #715cbd; }
