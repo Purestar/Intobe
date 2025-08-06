@@ -11,8 +11,8 @@
 
 		<div class="tab-wrap" style="--m-pos: sticky; --m-top: var(--init-header-height); --m-z-idx: 10;">
 			<ul class="tab-menu-01">
-				<li class="active"><a href="">미결재 3</a></li>
-				<li><a href="">결재완료 8</a></li>
+				<li><a href="">미결재 3</a></li>
+				<li class="active"><a href="">결재완료 8</a></li>
 			</ul>
 		</div>
 
@@ -60,14 +60,47 @@
 						<i class="ic-quest"></i>
 						<div class="ttip-wrap">
 							<ul class="bul-cir">
-								<li>결재 요청이 있습니다. 결재하기 버튼을 클릭하여, 상세 신청 내용을 확인 하시고, 결재 승인처리를 하실 수 있습니다.</li>
+								<li>건 별 ‘결과보기’를 클릭하시면, 결재 완료된 내역을 보실 수 있습니다.  </li>
 							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<ul style="--dp: grid; --mg-t: 20px; --gap-y: 20px; --m-mg-t: 2.78vw;">
+			<ul style="--dp: grid; --mg-t: 20px; --gap-y: 20px;">
+				<li class="box-type-01" style="--dp: flex; --content-x: space-between; --items-y: center;">
+					<div>
+						<div class="pc">
+							<h3 class="brd-tit ellipsis">글로벌 리더 양성과정 글로벌 양성과정 글로벌 양성과정 글로벌 양성과정 글로벌 양성과정 글로벌 양성과정 글로벌 리더 양성과정글로벌 리더 양성과정글로벌 리더 양성과정</h3>
+							<div class="mark-v-bar-01" style="--mg-t: 10px;">
+								<span>결재구분 <span style="--ft-c: black;">사외교육 과정개설</span> </span>
+								<span>결재요청자 <span style="--ft-c: black;">관리자</span></span>
+								<span>결재요청일시 <span style="--ft-c: black;">2025.07.23 15:19:58</span> </span>
+							</div>
+							<div class="mark-v-bar-01" style="--mg-t: 10px;">
+								<span>결재승인일시 <span style="--ft-c: black;">2025.07.23 15:19:58</span> </span>
+							</div>
+						</div>
+						<div class="mobile">
+							<div style="--dp: grid;">
+								<span>결재구분 <span style="--ft-c: black;">사외교육 과정개설</span> </span>
+								<span>결재요청자 <span style="--ft-c: black;">관리자</span></span>
+								<span>결재요청일시 <span style="--ft-c: black;">2025.07.23 15:19:58</span> </span>
+								<span>결재승인일시 <span style="--ft-c: black;">2025.07.23 15:19:58</span> </span>
+								<span>결재상태 <span style="--ft-c: black;">반려</span> </span>
+							</div>
+						</div>
+					</div>
+					<div style="--dp: flex; --gap-x: 20px; --items-y: center;">
+						<div class="pc" style="--w: 124px; --txt-a: center;">
+							<p>반려</p>
+						</div>
+						<div style="--w: 124px; --m-w: auto;">
+							<button type="button" class="btn-type-b-blk" style="--btn-w: 100%; --m-btn-h: 7.78vw; --m-btn-ft-s: 3.33vw; --m-btn-pd-x: 4.17vw;">결과보기</button>
+						</div>
+					</div>
+				</li>
+
 				<li class="box-type-01" style="--dp: flex; --content-x: space-between; --items-y: center;">
 					<div>
 						<div class="pc">
@@ -83,12 +116,17 @@
 								<span>결재구분 <span style="--ft-c: black;">사외교육 과정개설</span> </span>
 								<span>결재요청자 <span style="--ft-c: black;">관리자</span></span>
 								<span>결재요청일시 <span style="--ft-c: black;">2025.07.23 15:19:58</span> </span>
+								<span>결재승인일시 <span style="--ft-c: black;">2025.07.23 15:19:58</span> </span>
+								<span>결재상태 <span style="--ft-c: #5f7ad5;">처리완료</span> </span>
 							</div>
 						</div>
 					</div>
 					<div style="--dp: flex; --gap-x: 20px; --items-y: center;">
+						<div class="pc" style="--w: 124px; --txt-a: center;">
+							<p style="--ft-c: #5f7ad5;">처리완료</p>
+						</div>
 						<div style="--w: 124px; --m-w: auto;">
-							<button type="button" class="btn-type" style="--btn-w: 100%; --m-btn-h: 7.78vw; --m-btn-ft-s: 3.33vw; --m-btn-pd-x: 4.17vw;">결제하기</button>
+							<button type="button" class="btn-type-b-blk" style="--btn-w: 100%; --m-btn-h: 7.78vw; --m-btn-ft-s: 3.33vw; --m-btn-pd-x: 4.17vw;">결과보기</button>
 						</div>
 					</div>
 				</li>
