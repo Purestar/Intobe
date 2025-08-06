@@ -12,7 +12,7 @@
 	[class*="mark-"] > .part-no-marker > .part-marker { display:none; }
 
 /* Type */
-	[class*="mark-h-bar"] > * { flex-direction: column; align-items: center; }
+	[class*="mark-h-bar"] > * { flex-direction: column; }
 	[class*="mark-v-bar"] > *:first-child:before,
 	[class*="mark-arrow"] > *:first-child:before { content: none; }
 	[class*="mark-num"] { counter-reset: item-num; }
@@ -21,3 +21,9 @@
 
 /* Content */
 	[class*="mark-"] > * > .part-content { width: 100%; }
+
+/* Skip First */
+	[class*="mark-"].mark-skip-first > *:first-child::before { display: none; }
+
+/* Direction */
+	[class*="mark-h-bar"].mark-direction > * { place-items: flex-start; }

@@ -477,11 +477,13 @@
 /* Table */
 	[class*="tbl-type"] td > *:first-child { margin-top: 0; }
 
-	.tbl-type-01 { border-top: 1px solid #2d2d2d; margin-top: 20px; }
-	.tbl-type-01 thead th { border-bottom: 1px solid #e2e2e2; height: 67px; font-weight: 500; }
-	.tbl-type-01 tbody th { border-bottom: 1px solid #e2e2e2; padding: 21px 20px; font-weight: 500; vertical-align: middle; color: black; }
-	.tbl-type-01 tbody td { border-bottom: 1px solid #e2e2e2; padding: 9px 20px; vertical-align: middle; color: #666; }
+	[class*="tbl-type-01"] { border-top: 1px solid #2d2d2d; margin-top: 20px; }
+	[class*="tbl-type-01"] thead th { border-bottom: 1px solid #e2e2e2; height: 67px; font-weight: 500; }
+	[class*="tbl-type-01"] tbody th { border-bottom: 1px solid #e2e2e2; padding: 21px 20px; font-weight: 500; vertical-align: middle; color: black; }
+	[class*="tbl-type-01"] tbody td { border-bottom: 1px solid #e2e2e2; padding: 9px 20px; vertical-align: middle; color: #666; }
 
+	.tbl-type-02 { border-collapse: separate; border-spacing: 0 10px; }
+	.tbl-type-02 th { font-weight: 400; }
 
 /* Thumbnail */
 	[class*="thumb-type-01"] {
