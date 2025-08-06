@@ -15,8 +15,8 @@
 
 		<div class="tab-wrap" style="--m-pos: sticky; --m-top: var(--init-header-height); --m-z-idx: 10;">
 			<ul class="tab-menu-01">
-				<li class="active"><a href="">신청과정 3</a></li>
-				<li><a href="">완료과정 8</a></li>
+				<li><a href="">신청과정 3</a></li>
+				<li class="active"><a href="">완료과정 8</a></li>
 			</ul>
 		</div>
 
@@ -55,18 +55,16 @@
 					<div style="--dp: flex; --gap-x: 20px; --items-y: center;">
 						<div class="pc" style="--w: 124px; --txt-a: center;">
 							<p>대기</p>
-							<p style="--ft-c: #5f7ad5;">수강확정</p>
-							<p>반려</p>
+							<p style="--ft-c: #5f7ad5;">결과보고 승인완료</p>
 						</div>
 						<div style="--dp: grid; --gap-y: 10px; --w: 124px; --m-w: max-content;">
-							<button type="button" class="btn-type-b-blk ws-nw" style="--btn-w: 100%; --m-btn-h: 7.78vw; --m-btn-ft-s: 3.33vw; --m-btn-pd-x: 4.17vw;">수정</button>
-							<button type="button" class="btn-type-b-blk ws-nw" style="--btn-w: 100%; --m-btn-h: 7.78vw; --m-btn-ft-s: 3.33vw; --m-btn-pd-x: 4.17vw;">수강취소</button>
-							<button type="button" class="btn-type-b-blk ws-nw" style="--btn-w: 100%; --m-btn-h: 7.78vw; --m-btn-ft-s: 3.33vw; --m-btn-pd-x: 4.17vw;">반려정보</button>
-							<button type="button" class="btn-type-b-blk ws-nw" disabled style="--btn-w: 100%; --m-btn-h: 7.78vw; --m-btn-ft-s: 3.33vw; --m-btn-pd-x: 4.17vw;">기간종료</button>
+							<button type="button" class="btn-type-b-blk ws-nw" style="--btn-w: 100%; --m-btn-h: 7.78vw; --m-btn-ft-s: 3.33vw; --m-btn-pd-x: 4.17vw;">결과보고 수정</button>
+							<button type="button" class="btn-type-b-blk ws-nw" style="--btn-w: 100%; --m-btn-h: 7.78vw; --m-btn-ft-s: 3.33vw; --m-btn-pd-x: 4.17vw;">결과보고서 보기</button>
+							<button type="button" class="btn-type-b-blk ws-nw" style="--btn-w: 100%; --m-btn-h: 7.78vw; --m-btn-ft-s: 3.33vw; --m-btn-pd-x: 4.17vw;">결과보고</button>
 						</div>
 					</div>
 				</li>
-				
+
 				<li class="box-type-01" style="--dp: flex; --content-x: space-between; --items-y: center;">
 					<div>
 						<div>
@@ -94,10 +92,10 @@
 					<div style="--dp: flex; --gap-x: 20px; --items-y: center;">
 						<div class="pc" style="--w: 124px; --txt-a: center;">
 							<p>대기</p>
+							<p style="--ft-c: #5f7ad5;">결과보고 승인완료</p>
 						</div>
 						<div style="--dp: grid; --gap-y: 10px; --w: 124px; --m-w: max-content;">
-							<button type="button" class="btn-type-b-blk ws-nw" style="--btn-w: 100%; --m-btn-h: 7.78vw; --m-btn-ft-s: 3.33vw; --m-btn-pd-x: 4.17vw;">수정</button>
-							<button type="button" class="btn-type-b-blk ws-nw" style="--btn-w: 100%; --m-btn-h: 7.78vw; --m-btn-ft-s: 3.33vw; --m-btn-pd-x: 4.17vw;">수강취소</button>
+							<button type="button" class="btn-type-b-blk ws-nw" style="--btn-w: 100%; --m-btn-h: 7.78vw; --m-btn-ft-s: 3.33vw; --m-btn-pd-x: 4.17vw;">결과보고 수정</button>
 						</div>
 					</div>
 				</li>
@@ -122,48 +120,17 @@
 						<div class="mobile">
 							<div style="--dp: grid;">
 								<span>교육일수/시간 <span style="--ft-c: black;">8시간</span> </span>
-								<span>신청상태 <span style="--ft-c: #5f7ad5;">수강확정</span></span>
+								<span>신청상태 <span style="--ft-c: black;">대기</span></span>
 							</div>
 						</div>
 					</div>
 					<div style="--dp: flex; --gap-x: 20px; --items-y: center;">
 						<div class="pc" style="--w: 124px; --txt-a: center;">
-							<p style="--ft-c: #5f7ad5;">수강확정</p>
-						</div>
-						<div class="pc" style="--dp: grid; --gap-y: 10px; --w: 124px; --m-w: max-content;"></div>
-					</div>
-				</li>
-
-				<li class="box-type-01" style="--dp: flex; --content-x: space-between; --items-y: center;">
-					<div>
-						<div>
-							<span class="chip-type-02-lpnk">온라인라이브</span>
-						</div>
-						<h3 class="brd-tit ellipsis" style="--mg-t: 10px; --m-mg-t: 0;">글로벌 리더 양성과정 글로벌 양성과정 글로벌 양성과정 글로벌 양성과정 글로벌 양성과정 글로벌 양성과정 글로벌 리더 양성과정글로벌 리더 양성과정글로벌 리더 양성과정</h3>
-						<div class="pc">
-							<div class="mark-v-bar-01" style="--mg-t: 10px;">
-								<span>교육일수/시간 <span style="--ft-c: black;">8시간</span> </span>
-								<span>인정시간 <span style="--ft-c: black;">1일</span></span>
-								<span>교육비 <span style="--ft-c: black;">50,000원</span> </span>
-								<span>교육기관 <span style="--ft-c: black;">교육센터</span> </span>
-							</div>
-							<div class="mark-v-bar-01" style="--mg-t: 10px;">
-								<span>교육기간 <span style="--ft-c: black;">2025.07.28 - 2025.07.28</span> </span>
-							</div>
-						</div>
-						<div class="mobile">
-							<div style="--dp: grid;">
-								<span>교육일수/시간 <span style="--ft-c: black;">8시간</span> </span>
-								<span>신청상태 <span style="--ft-c: black;">반려</span></span>
-							</div>
-						</div>
-					</div>
-					<div style="--dp: flex; --gap-x: 20px; --items-y: center;">
-						<div class="pc" style="--w: 124px; --txt-a: center;">
-							<p>반려</p>
+							<p>대기</p>
+							<p style="--ft-c: #5f7ad5;">결과보고 승인완료</p>
 						</div>
 						<div style="--dp: grid; --gap-y: 10px; --w: 124px; --m-w: max-content;">
-							<button type="button" class="btn-type-b-blk ws-nw" style="--btn-w: 100%; --m-btn-h: 7.78vw; --m-btn-ft-s: 3.33vw; --m-btn-pd-x: 4.17vw;">반려정보</button>
+							<button type="button" class="btn-type-b-blk ws-nw" style="--btn-w: 100%; --m-btn-h: 7.78vw; --m-btn-ft-s: 3.33vw; --m-btn-pd-x: 4.17vw;">결과보고</button>
 						</div>
 					</div>
 				</li>
@@ -188,16 +155,17 @@
 						<div class="mobile">
 							<div style="--dp: grid;">
 								<span>교육일수/시간 <span style="--ft-c: black;">8시간</span> </span>
-								<span>신청상태 <span style="--ft-c: black;">대기</span></span>
+								<span>신청상태 <span style="--ft-c: #5f7ad5;">결과보고 승인완료</span></span>
 							</div>
 						</div>
 					</div>
 					<div style="--dp: flex; --gap-x: 20px; --items-y: center;">
 						<div class="pc" style="--w: 124px; --txt-a: center;">
 							<p>대기</p>
+							<p style="--ft-c: #5f7ad5;">결과보고 승인완료</p>
 						</div>
 						<div style="--dp: grid; --gap-y: 10px; --w: 124px; --m-w: max-content;">
-							<button type="button" class="btn-type-b-blk ws-nw" disabled style="--btn-w: 100%; --m-btn-h: 7.78vw; --m-btn-ft-s: 3.33vw; --m-btn-pd-x: 4.17vw;">기간종료</button>
+							<button type="button" class="btn-type-b-blk ws-nw" style="--btn-w: 100%; --m-btn-h: 7.78vw; --m-btn-ft-s: 3.33vw; --m-btn-pd-x: 4.17vw;">결과보고서 보기</button>
 						</div>
 					</div>
 				</li>
