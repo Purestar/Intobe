@@ -92,8 +92,8 @@
 		</div>
 
 		<div class="brd-wrap" style="--mg-t: 60px; --m-mg-t: 6.94vw;">
-			<div style="--dp: flex; --gap-x: 20px;">
-				<div class="pc">
+			<div class="pc">
+				<div style="--dp: flex; --gap-x: 20px;">
 					<div class="form-slt-rdo-01">
 						<input id="6h96bput15u" type="radio" name="filter" value="">
 						<label for="6h96bput15u" class="part-slt-txt"><span class="part-icon"></span>전체</label>
@@ -107,11 +107,11 @@
 						<label for="vxdnlttfghg" class="part-slt-txt"><span class="part-icon"></span>미응시</label>
 					</div>
 				</div>
-				<div class="mobile">
-					<div class="form-slt-swh-01">
-						<input id="r6ugard4ytm" type="checkbox" name="" value="">
-						<label for="r6ugard4ytm" class="part-slt-txt"><span class="part-icon"></span>참여가능 평가만</label>
-					</div>
+			</div>
+			<div class="mobile">
+				<div class="form-slt-swh-01">
+					<input id="r6ugard4ytm" type="checkbox" name="" value="">
+					<label for="r6ugard4ytm" class="part-slt-txt"><span class="part-icon"></span>참여가능 평가만</label>
 				</div>
 			</div>
 
