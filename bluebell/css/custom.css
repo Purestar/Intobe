@@ -88,6 +88,9 @@
 		.btn-type-b-blk {
 			--btn-bd-c: black;
 			--btn-ft-c: black;
+
+			--btn-dis-bg-c: white;
+			--btn-dis-ft-c: #bbb;
 		}
 
 		.btn-type-b-blk-02 {
