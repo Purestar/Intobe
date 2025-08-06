@@ -8,6 +8,8 @@
 		--form-gap-x: 10px;
 		--form-txt-lh: calc(var(--init-line-height) * 1em);
 
+		--form-icon-bp-y: var(--bp-selection);
+
 		--form-fcs-bd-c: var(--moc);
 
 		--form-chk-bg-c: var(--mc);
@@ -33,6 +35,8 @@
 		--form-chk-h: 10px;
 		--form-w: 20px;
 		--form-h: 20px;
+
+		--form-icon-bp-x: var(--bp-150);
 	}
 
 	[class*="form-slt-rdo"] {
@@ -182,7 +186,17 @@
 		height: var(--form-h);
 	}
 
+	[class*="form-slt-chk"] .part-icon:after,
+	[class*="form-slt-rdo"] .part-icon:after {
+		background-position: var(--form-icon-bp-x) var(--form-icon-bp-y);
+	}
+
 /* Radio */
+	[class*="form-slt-rdo"] .part-icon:after {
+		width: var(--form-chk-w);
+		height: var(--form-chk-h);
+	}
+
 	[class*="form-slt-rdo"] input:checked + .part-slt-txt .part-icon:before {
 		background-color: var(--form-bg-c);
 		border-color: var(--form-chk-bd-c);
@@ -190,6 +204,7 @@
 
 	[class*="form-slt-rdo"] input:checked + .part-slt-txt .part-icon:after {
 		background-color: var(--form-chk-bg-c);
+		background-position: var(--form-chk-icon-bp-x) var(--form-icon-bp-y);
 		border-color: var(--form-chk-bd-c);
 	}
 

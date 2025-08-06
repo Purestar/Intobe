@@ -98,7 +98,11 @@
 		.btn-type-b-lgry {
 			--btn-bd-c: #e7e7e7;
 			--btn-ft-c: #666;
+
 			--btn-over-bd-c: #e7e7e7;
+
+			--btn-dis-bg-c: white;
+			--btn-dis-ft-c: #bbb;
 		}
 
 	/* Size */
@@ -193,6 +197,23 @@
 
 	/* Password Toggle */
 		[class*="form-txt"] .part-icon.active .ic-eye:before { background-position: var(--bp-950) 0; }
+
+	/* Radio */
+		.form-slt-rdo-01 {
+			--form-ft-c: #999;
+			--form-gap-x: 6px;
+			--form-icon-bp-x: var(--bp-200);
+			--form-w: 14px;
+			--form-h: 11px;
+
+			--form-chk-w: 14px;
+			--form-chk-h: 11px;
+			--form-chk-bg-c: transparent;
+			--form-chk-icon-bp-x: var(--bp-250);
+		}
+
+		.form-slt-rdo-01 .part-icon:before { display: none; }
+		.form-slt-rdo-01 .part-icon:after { opacity: 1; }
 
 	/* Select Button */
 		.form-slt-btn-tran {

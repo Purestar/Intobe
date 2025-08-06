@@ -22,11 +22,12 @@
 
 /* Check Box */
 	[class*="form-slt-chk"] .part-icon { place-content: center; }
-	[class*="form-slt-chk"] .part-icon:after { background-image:var(--ic-c); background-size: var(--bg-sz); background-position:var(--bp-150) var(--bp-50); opacity: 0; }
+	[class*="form-slt-chk"] .part-icon:after { background-image:var(--ic-c); background-size: var(--bg-sz); opacity: 0; }
 	[class*="form-slt-chk"] input:checked + .part-slt-txt .part-icon:after { opacity: 1; }
 
 /* Radio */
 	[class*="form-slt-rdo"] .part-icon { place-content: center; }
+	[class*="form-slt-rdo"] .part-icon:after { background-image:var(--ic-c); background-size: var(--bg-sz); opacity: 0; }
 
 /* Rating */
 	[class*="form-slt-rt"] { display: flex; width: max-content; direction: rtl; user-select: none; }

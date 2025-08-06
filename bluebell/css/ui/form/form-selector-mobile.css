@@ -17,6 +17,9 @@
 			--m-form-w: var(--form-w);
 			--m-form-h: var(--form-h);
 
+			--m-form-icon-bp-x: var(--form-icon-bp-x);
+			--m-form-icon-bp-y: var(--form-icon-bp-y);
+
 			--m-form-fcs-bd-c: var(--form-fcs-bd-c);
 
 			--m-form-chk-bg-c: var(--form-chk-bg-c);
@@ -148,6 +151,11 @@
 			height: var(--m-form-h);
 		}
 
+		[class*="form-slt-chk"] .part-icon:after,
+		[class*="form-slt-rdo"] .part-icon:after {
+			background-position: var(--m-form-icon-bp-x) var(--m-form-icon-bp-y);
+		}
+
 	/* Radio */
 		[class*="form-slt-rdo"] input:checked + .part-slt-txt .part-icon:before {
 			background-color: var(--m-form-bg-c);
@@ -156,6 +164,7 @@
 
 		[class*="form-slt-rdo"] input:checked + .part-slt-txt .part-icon:after {
 			background-color: var(--m-form-chk-bg-c);
+			background-position: var(--m-form-chk-icon-bp-x) var(--m-form-icon-bp-y);
 			border-color: var(--m-form-chk-bd-c);
 		}
 

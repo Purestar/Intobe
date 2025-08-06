@@ -85,7 +85,7 @@
 				<li class="active"><a href="">학습하기</a></li>
 				<li><a href="">과정소개</a></li>
 				<li><a href="">공지사항</a></li>
-				<li><a href="">퀴즈( 2 / 3 )</a></li>
+				<li><a href="">평가( 2 / 3 )</a></li>
 				<li><a href="">설문( 2 / 3 )</a></li>
 				<li><a href="">Q&A</a></li>
 			</ul>
