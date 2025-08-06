@@ -18,8 +18,8 @@
 				<li><a href="">학습과정 4</a></li>
 				<li><a href="">신청과정 3</a></li>
 				<li><a href="">완료과정 6</a></li>
-				<li class="active"><a href="">평가 8</a></li>
-				<li><a href="">설문 1</a></li>
+				<li><a href="">평가 8</a></li>
+				<li class="active"><a href="">설문 1</a></li>
 			</ul>
 		</div>
 
@@ -47,18 +47,18 @@
 					</div>
 					<div class="form-slt-rdo-01">
 						<input id="oklxzo602m7" type="radio" name="filter" value="">
-						<label for="oklxzo602m7" class="part-slt-txt"><span class="part-icon"></span>응시</label>
+						<label for="oklxzo602m7" class="part-slt-txt"><span class="part-icon"></span>참여</label>
 					</div>
 					<div class="form-slt-rdo-01">
 						<input id="vxdnlttfghg" type="radio" name="filter" value="">
-						<label for="vxdnlttfghg" class="part-slt-txt"><span class="part-icon"></span>미응시</label>
+						<label for="vxdnlttfghg" class="part-slt-txt"><span class="part-icon"></span>미참여</label>
 					</div>
 				</div>
 			</div>
 			<div class="mobile">
 				<div class="form-slt-swh-01">
 					<input id="r6ugard4ytm" type="checkbox" name="" value="">
-					<label for="r6ugard4ytm" class="part-slt-txt"><span class="part-icon"></span>응시가능 평가만</label>
+					<label for="r6ugard4ytm" class="part-slt-txt"><span class="part-icon"></span>참여가능 과정만</label>
 				</div>
 			</div>
 
@@ -75,10 +75,10 @@
 					</div>
 					<div style="--dp: flex; --gap-x: 20px; --items-y: center;">
 						<div class="pc" style="--w: 124px; --txt-a: center;">
-							<p>미응시</p>
+							<p>미참여</p>
 						</div>
 						<div style="--w: 124px; --m-w: auto;">
-							<button type="button" class="btn-type-b" style="--btn-w: 100%; --m-btn-h: 7.78vw; --m-btn-ft-s: 3.33vw; --m-btn-pd-x: 4.17vw;">응시하기</button>
+							<button type="button" class="btn-type-b" style="--btn-w: 100%; --m-btn-h: 7.78vw; --m-btn-ft-s: 3.33vw; --m-btn-pd-x: 4.17vw;">참여하기</button>
 						</div>
 					</div>
 				</li>
@@ -105,7 +105,7 @@
 
 				<li class="box-type-01" style="--dp: flex; --content-x: space-between; --items-y: center;">
 					<div>
-						<p class="mobile" style="--ft-c: #5f7ad5">응시완료</p>
+						<p class="mobile" style="--ft-c: #5f7ad5">참여완료</p>
 						<h3 class="brd-tit">3차 종합 평가</h3>
 						<p>컨설팅 역량 과정 3차</p>
 						<div class="mark-v-bar-01">
@@ -115,7 +115,7 @@
 					</div>
 					<div style="--dp: flex; --gap-x: 20px; --items-y: center;">
 						<div class="pc" style="--w: 124px; --txt-a: center;">
-							<p style="--ft-c: #5f7ad5">응시완료</p>
+							<p style="--ft-c: #5f7ad5">참여완료</p>
 						</div>
 						<div class="pc" style="--w: 124px; --m-w: auto;"></div>
 					</div>
