@@ -382,6 +382,8 @@
 		.tbl-type-01-01 tr { gap: 2.08vw; }
 		.tbl-type-01-01 tbody th { font-weight: 700; text-align: left; }
 		.tbl-type-01-01 tbody th, .tbl-type-01-01 tbody td { border: 0; padding: 0; }
+
+		.tbl-type-01-02 th, .tbl-type-01-02 td { height: 9.31vw; }
 		
 		.tbl-type-02 { border-spacing: 0 2.78vw; }
 
