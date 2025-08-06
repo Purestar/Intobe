@@ -506,6 +506,14 @@
 	[class*="tbl-type-01"] tbody th { border-bottom: 1px solid #e2e2e2; padding: 21px 20px; font-weight: 500; vertical-align: middle; color: black; }
 	[class*="tbl-type-01"] tbody td { border-bottom: 1px solid #e2e2e2; padding: 9px 20px; vertical-align: middle; color: #666; }
 
+	.tbl-type-01-02 th, .tbl-type-01-02 td { height: 67px; } 
+
+	.tbl-type03 {border-top:1px solid #2d2d2d; margin-top:20px;}
+	.tbl-type03 thead th {border-bottom:1px solid #e2e2e2; height:67px; font-weight:500; text-align:center; vertical-align:middle;}
+	.tbl-type03 tbody th {border-bottom:1px solid #e2e2e2; height:67px; padding:21px 20px; font-size:16px; font-weight:500; text-align:center; vertical-align:middle; color:black;}
+	.tbl-type03 tbody td {border-bottom:1px solid #e2e2e2; height:67px; padding:9px 20px; vertical-align:middle; color:#666;text-align: center;}
+
+
 	.tbl-type-02 { border-collapse: separate; border-spacing: 0 10px; }
 	.tbl-type-02 th { font-weight: 400; }
 
