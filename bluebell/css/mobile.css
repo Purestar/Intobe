@@ -108,6 +108,20 @@
 			--box-bd-r: 20px;
 		}
 
+		.box-type-04 {
+			--box-bd-r: 4.17vw;
+			--box-pd-x: 7.64vw;
+			--box-pd-y: 6.25vw;
+		}
+
+		.box-type-m-01 {
+			--box-bg-c: #fff4f5;
+			--box-pd-x: 5.97vw;
+			--box-pd-y: 3.89vw;
+			--box-bd-r: 2.78vw;
+			--box-bd-w: 0;
+		}
+
 	/* Button */
 		/* Size */
 			.btn-sz-02 {
@@ -275,11 +289,16 @@
 
 		/* Arrow */
 			.ic-r-arrow:before { width: 1.25vw; height: 1.94vw; }
+			.ic-r-arrow-02:before { width: 1.39vw; height: 2.22vw; }
 
 		/* Header - Main */
 			.h-wrap.main-header .ic-globe:before,
 			.h-wrap.main-header .ic-usr:before,
 			.h-wrap.main-header .ic-bell:before { filter: invert(0); }
+
+			.h-wrap.main-header.active .ic-globe:before,
+			.h-wrap.main-header.active .ic-bell:before,
+			.h-wrap.main-header.active .ic-m-hamburger:before { filter: invert(100%); }
 
 		/* Only Mobile */
 			.ic-m-hamburger:before { --bp-pos-x: var(--bp-100); --bp-pos-y: var(--bp-950); width: 5.56vw; height: 4.86vw; }
@@ -287,6 +306,7 @@
 
 			.ic-m-l-arrow:before { --bp-pos-x: var(--bp-50); --bp-pos-y: var(--bp-950); width: 3.06vw; height: 5.28vw; }
 			.ic-m-r-arrow:before { background-position: 0 var(--bp-950); width: 1.39vw; height: 2.22vw; }
+			.ic-m-r-arrow-02:before { background-position: var(--bp-200)  var(--bp-950); width: 1.39vw; height: 2.22vw; }
 
 	/* List */
 		.lst-type-01 { gap: 2.22vw; }
@@ -307,6 +327,13 @@
 				--mark-item-gap-x: 1.11vw;
 			}
 
+			.mark-cir-02 {
+				--mark-w: 1.11vw;
+				--mark-h: 1.11vw;
+				--mark-gap-y: 1.39vw;
+				--mark-gap-x: 1.39vw;
+			}
+
 		/* Horizontal Bar */
 			[class*="mark-h-bar-01"] {
 				--mark-gap-a: 5vw;
@@ -317,6 +344,11 @@
 				--mark-gap-a: 1.3vw;
 				--mark-h: 1.94vw;
 			}
+
+	/* Moment Calendar */
+		.moment-week > *,
+		.moment-week-day > * > * { width: 8.33vw; height: 8.33vw; }
+		.moment-week-day > *.active { background: white; color: black; }
 
 	/* Popup */
 		[class*="pop-type-alert"] {
@@ -416,5 +448,6 @@
 
 		/* 메인 */
 			.main-wrap { margin-top: 0; }
-			.main-top { display: flex; place-items: center; place-content: space-between; background: url(../images/img/main_bnr01.png) center no-repeat; height: 629px; padding-top: var(--init-header-height); }
+			.main-top { background: var(--bg-type01); height: auto; padding-top: 0; }
+			.main-top .moment-week { margin-top: 6.94vw; font-size: 3.89vw; }
 }

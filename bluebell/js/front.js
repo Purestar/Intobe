@@ -102,6 +102,18 @@ $.fn.mainHeader = function () {
 		$header.toggleClass('main-header', !isScrolled);
 		$logoImg.attr('src', isScrolled ? '/bluebell/images/img/img_logo_w.png' : '/bluebell/images/img/img_logo.png');
 	}
+
+	$(this).on("scroll", function () {
+		if ($mainWrap.length) {
+			if ($(this).scrollTop() > 0) {
+				$header.addClass('active');
+				$logoImg.attr('src', '/bluebell/images/img/img_logo_w.png');
+			} else {
+				$header.removeClass('active');
+				$logoImg.attr('src', '/bluebell/images/img/img_logo.png');
+			}
+		}
+	})
 };
 
 // Select Box
@@ -209,7 +221,78 @@ $.fn.contRpt = function (dom, num, idx) {
 	};
 };
 
+// Swiper
+$.fn.swiperInit = function () {
+	$(".swiper-type-01").each(function () {
+		const swiperTG = this;
 
+		new Swiper(swiperTG.querySelector(".swiper"), {
+			loop: false,
+			slidesPerView: 1,
+			spaceBetween: 25,
+			pagination: { el: swiperTG.querySelector("[class*='swiper-pagination']"), clickable: true },
+			breakpoints: {
+				768: { slidesPerView: 2 }
+			}
+		});
+	});
+
+	$(".swiper-type-02").each(function () {
+		const swiperTG = this;
+
+		new Swiper(swiperTG.querySelector(".swiper"), {
+			loop: false,
+			slidesPerView: 1.2,
+			spaceBetween: 39,
+			navigation: {
+				nextEl: swiperTG.querySelector(".swiper-button-next"),
+				prevEl: swiperTG.querySelector(".swiper-button-prev"),
+			},
+			breakpoints: {
+				768: { slidesPerView: 4, slidesPerGroup: 4 }
+			}
+		});
+	});
+
+	$(".swiper-type-03").each(function () {
+		const swiperTG = this;
+
+		new Swiper(swiperTG.querySelector(".swiper"), {
+			loop: false,
+			slidesPerView: 3.3,
+			slidesPerGroup: 3,
+			spaceBetween: 1600 / 720 + "%",
+			navigation: {
+				nextEl: swiperTG.querySelector(".swiper-button-next"),
+				prevEl: swiperTG.querySelector(".swiper-button-prev"),
+			},
+			breakpoints: {
+				768: {
+					slidesPerView: 5,
+					spaceBetween: 28,
+				}
+			}
+		});
+	});
+
+	$(".swiper-type-04").each(function () {
+		swiperTG = this;
+		new Swiper(swiperTG.querySelector(".swiper"), {
+			loop: true,
+			direction: 'vertical',
+			slidesPerView: 1,
+			navigation: {
+				nextEl: swiperTG.querySelector(".swiper-button-next"),
+				prevEl: swiperTG.querySelector(".swiper-button-prev"),
+			},
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			  },
+			clickable: true
+		});
+	});
+};
 
 
 
@@ -503,139 +586,6 @@ $.fn.tabUI = function (options) {
 	});
 };*/
 
-// Swiper
-$.fn.swiperInit = function () {
-	$(".swiper-type-01").each(function () {
-		const swiperTG = this;
-
-		new Swiper(swiperTG.querySelector(".swiper"), {
-			loop: false,
-			slidesPerView: 1,
-			spaceBetween: 25,
-			pagination: { el: swiperTG.querySelector("[class*='swiper-pagination']"), clickable: true },
-			breakpoints: {
-				768: { slidesPerView: 2 }
-			}
-		});
-	});
-
-	$(".swiper-type-02").each(function () {
-		const swiperTG = this;
-
-		new Swiper(swiperTG.querySelector(".swiper"), {
-			loop: false,
-			slidesPerView: 1.2,
-			spaceBetween: 39,
-			navigation: {
-				nextEl: swiperTG.querySelector(".swiper-button-next"),
-				prevEl: swiperTG.querySelector(".swiper-button-prev"),
-			},
-			breakpoints: {
-				768: { slidesPerView: 4, slidesPerGroup: 4 }
-			}
-		});
-	});
-
-	$(".swiper-type-03").each(function () {
-		const swiperTG = this;
-
-		new Swiper(swiperTG.querySelector(".swiper"), {
-			loop: false,
-			slidesPerView: 3.3,
-			slidesPerGroup: 3,
-			spaceBetween: 1600 / 720 + "%",
-			navigation: {
-				nextEl: swiperTG.querySelector(".swiper-button-next"),
-				prevEl: swiperTG.querySelector(".swiper-button-prev"),
-			},
-			breakpoints: {
-				768: {
-					slidesPerView: 5,
-					spaceBetween: 28,
-				}
-			}
-		});
-	});
-
-	$(".swiper-type-04").each(function () {
-		swiperTG = this;
-		new Swiper(swiperTG.querySelector(".swiper"), {
-			loop: true,
-			direction: 'vertical',
-			slidesPerView: 1,
-			navigation: {
-				nextEl: swiperTG.querySelector(".swiper-button-next"),
-				prevEl: swiperTG.querySelector(".swiper-button-prev"),
-			},
-			pagination: {
-				el: ".swiper-pagination",
-				clickable: true,
-			  },
-			clickable: true
-		});
-	});
-
-/*
-
-
-	$(".swi-type04").each(function () {
-		swiperTG = this;
-		new Swiper(swiperTG.querySelector(".swiper"), {
-			loop: false,
-			slidesPerView: "3",
-			slidesPerGroup:3,
-			spaceBetween: 23,
-			navigation: {
-				nextEl: swiperTG.querySelector(".swiper-button-next"),
-				prevEl: swiperTG.querySelector(".swiper-button-prev"),
-			},
-			pagination: {
-				el: ".swiper-pagination",
-				clickable: true,
-			},
-		});
-	});
-	$(".swi-type06").each(function () {
-		swiperTG = this;
-		new Swiper(swiperTG.querySelector(".swiper"), {
-			loop: false,
-			slidesPerView: "auto",
-			pagination: {
-			  el: ".swiper-pagination",
-			  clickable: true,
-			},
-		});
-	});
-	$(".swi-type07").each(function () {
-		var swiper = new Swiper(".mySwiper", {
-			loop: true,
-			spaceBetween: 20,
-			slidesPerView: 4,
-			freeMode: false,
-			watchSlidesProgress: true,
-			autoplay: {
-				delay: 5000,
-				disableOnInteraction: false,
-			  },
-		});
-		var swiper2 = new Swiper(".mySwiper2", {
-			loop: true,
-			spaceBetween: 20,
-			navigation: {
-				nextEl: ".swiper-button-next",
-				prevEl: ".swiper-button-prev",
-			},
-			thumbs: {
-				swiper: swiper,
-			},
-			autoplay: {
-				delay: 5000,
-				disableOnInteraction: false,
-			  },
-		});
-	});*/
-};
-
 // Tooltip
 $.fn.tooltipUI = function () {
 	var $obj = $(this);
@@ -799,45 +749,7 @@ $.fn.scrUI = function () {
 		};
 	});
 };
-// Self Toggle
-$.fn.selfTg = function () {
-	var $obj = $(this);
 
-	$obj.on("click", "[data-self]", function () {
-		$(this).toggleClass("active");
-	});
-};
-var fn = (function () {
-	'use strict';
-
-	return {
-
-		//toggleClass
-		toggleClass: function (obj) {
-			$(obj).toggleClass('active');
-		},
-
-		//addClass
-		addClass: function (obj) {
-			$(obj).addClass('active');
-		},
-
-		//removeClass
-		removeClass: function (obj) {
-			$(obj).removeClass('active');
-		},
-		collapse: function () {
-			$('.collapse-link').each(function () {
-				var $this = $(this);
-
-				$this.click(function () {
-					$this.toggleClass("active");
-				})
-
-			});
-		}
-	}
-})();
 // Menu
 $.fn.menu = function () {
 	var $obj = $(this);
