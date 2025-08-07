@@ -1,6 +1,5 @@
 <%@ page contentType ="text/html; charset=UTF-8" %>
-<!-- [팝업] 알람 -->
-<div class="pop-type-alert-01" data-ttatg="alarm">
+<div class="pop-type-alert-01" data-ttatg="mobile-alarm">
 	<div class="part-wrap">
 		<div class="part-head">
 			<h1 class="part-title">알림</h1>
@@ -37,6 +36,6 @@
 				</ul>
 			</div>
 		</div>
-		<button type="button" class="part-close" data-tta="alarm">닫기</button>
+		<button type="button" class="part-close" data-tta="mobile-alarm">닫기</button>
 	</div>
 </div>

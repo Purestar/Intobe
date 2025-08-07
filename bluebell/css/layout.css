@@ -52,6 +52,9 @@ body, #app {display:flex; flex-direction:column; place-content:space-between; fl
 	.h-glo-wrap { position: relative; }
 	.h-glo-wrap .h-menu { left: 50%; translate: -50% 0; }
 
+	.h-wrap.main-header { background: none; }
+	.h-wrap.main-header .h-gnb { color: black; }
+
 /* Container */
 	#container {flex:1;}
 	[class*="sub-top"] .layout-inner { position: relative; display: flex; place-content: center;place-items: center; height: 200px; }
@@ -71,7 +74,7 @@ body, #app {display:flex; flex-direction:column; place-content:space-between; fl
 @media all and (max-width:768px) {
 	/* Header */
 		.h-wrap { background: white; }
-		.h-wrap h1 { position: absolute; left: 50%; translate: -50%; display: flex; justify-content: center; align-items: center; height: 100%; font-size: 5vw; font-weight: 700; color: black;}
+		.h-wrap .h-sub-tit { position: absolute; left: 50%; translate: -50%; display: flex; justify-content: center; align-items: center; height: 100%; font-size: 5vw; font-weight: 700; color: black;}
 		.h-wrap .h-logo img { width: 30vw; }
 		.h-wrap .h-inner { display: flex; place-items: center; place-content: space-between; }
 		.h-wrap .h-inner .h-left,
@@ -103,6 +106,13 @@ body, #app {display:flex; flex-direction:column; place-content:space-between; fl
 
 	/* Header - Panel Active */
 		#panel.active { translate: 0 0; transition: transform 0.3s ease; }
+
+	/* Header - Main */
+		.h-wrap.main-header .h-left { padding-left: var(--init-layout-padding); }
+		.h-wrap.main-header .h-logo {}
+		.h-wrap.main-header .h-sub-tit,
+		.h-wrap.main-header .h-btn-back,
+		.h-wrap.main-header .h-btn-home { display: none; }
 
 	/* Container */
 		.sub-contents { padding: 8.33vw 0 13.89vw; }

@@ -12,7 +12,7 @@
 			<div style="--dp:grid; --gap-y: 20px;">
 				<h1 class="tit-01" style="--ft-c: black; --ft-w: 700;">[모바일] 공통</h1>
 				<div style="--dp: flex; --flex-w: wrap; --gap-a: 20px;">
-					<button type="button" class="btn-type" data-tta="alarm">알림</button>
+					<button type="button" class="btn-type" data-tta="mobile-alarm">알림</button>
 				</div>
 			</div>
 		</div>

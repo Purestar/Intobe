@@ -11,7 +11,7 @@
 		/* Navigation */
 			[class*="swiper-type"] .swiper-nav-wrap { display: flex; place-content: space-between; position: absolute; left: 0; top: 50%; width: 100%; height: 0; font-size: 0; translate: 0 -50%; z-index: 1; }
 			[class*="swiper-type"] .swiper-nav-wrap > * { position: static; margin: 0; translate: 0 -50%; cursor: pointer; }
-			[class*="swiper-type"] .swiper-nav-wrap > *:after { content:""; background-image: var(--ic-c); background-size: var(--bg-sz); }
+			[class*="swiper-type"] .swiper-nav-wrap > *:after { content:""; display: block; background-image: var(--ic-c); background-size: var(--bg-sz); }
 			[class*="swiper-type"] .swiper-nav-wrap > .swiper-button-next:after { rotate: 180deg; }
 
 		/* Pagenation */

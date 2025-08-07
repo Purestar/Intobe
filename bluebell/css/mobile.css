@@ -259,12 +259,15 @@
 			[class*="grp-type-pie-01"] .part-num span { font-size: 1.94vw; translate: 0 0.56vw; }
 
 	/* Icon */
+		.ic-bell:before { width: 4.58vw; height: 5.83vw; }
+		.ic-bell.active:after { position: absolute; right: 0; top: 0; background-color: #e0242c; border-radius: 50%; width: 0.83vw; height: 0.83vw; }
 		.ic-calendar:before { width: 3.06vw; height: 3.33vw; }
 		.ic-camera:before { width: 6.94vw; height: 6.94vw; }
 		.ic-close:before { width: 4.17vw; height: 4.17vw; }
 		.ic-eye:before { width: 4.44vw; height: 3.75vw; }
 		.ic-file:before { width: 3.61vw; height: 3.61vw; }
 		.ic-fire:before { width: 3.33vw; height: 3.89vw; }
+		.ic-globe:before { width: 5.56vw; height: 5.56vw; }
 		.ic-globe-02:before { width: 5.56vw; height: 5.56vw; }
 		.ic-ribbon:before { width: 7.78vw; height: 8.19vw; }
 		.ic-stack:before { width: 3.89vw; height: 3.47vw; }
@@ -272,6 +275,11 @@
 
 		/* Arrow */
 			.ic-r-arrow:before { width: 1.25vw; height: 1.94vw; }
+
+		/* Header - Main */
+			.h-wrap.main-header .ic-globe:before,
+			.h-wrap.main-header .ic-usr:before,
+			.h-wrap.main-header .ic-bell:before { filter: invert(0); }
 
 		/* Only Mobile */
 			.ic-m-hamburger:before { --bp-pos-x: var(--bp-100); --bp-pos-y: var(--bp-950); width: 5.56vw; height: 4.86vw; }
@@ -384,7 +392,7 @@
 		.tbl-type-01-01 tbody th, .tbl-type-01-01 tbody td { border: 0; padding: 0; }
 
 		.tbl-type-01-02 th, .tbl-type-01-02 td { height: 9.31vw; }
-		
+
 		.tbl-type-02 { border-spacing: 0 2.78vw; }
 
 	/* Title */
@@ -405,4 +413,8 @@
 			.studyroom-stat .part-cont { flex-direction: column; gap: 2.78vw; padding: 0 2.08vw; }
 			.studyroom-stat .part-cont-in { flex-direction: column; gap: 2.78vw; font-size: 3.33vw; text-align: center; }
 			.studyroom-stat .part-cont-in span { font-size: 5.56vw; }
+
+		/* 메인 */
+			.main-wrap { margin-top: 0; }
+			.main-top { display: flex; place-items: center; place-content: space-between; background: url(../images/img/main_bnr01.png) center no-repeat; height: 629px; padding-top: var(--init-header-height); }
 }
