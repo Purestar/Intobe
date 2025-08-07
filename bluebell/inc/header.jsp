@@ -128,11 +128,11 @@
 		</div>
 		<h1 class="h-sub-tit">타이틀</h1>
 		<div class="h-right">
-			<button type="button" class="h-btn" data-tta="mobile-alarm">
+			<button type="button" class="h-btn h-btn-alarm" data-tta="mobile-alarm">
 				<i class="ic-bell active"></i> <!-- 알림이 있을 때 active 클래스 -->
 			</button>
 			<div style="--pos: relative;">
-				<button type="button" class="h-btn" data-tta="mobile-glomenu"><i class="ic-globe"></i></button>
+				<button type="button" class="h-btn h-btn-globe" data-tta="mobile-glomenu"><i class="ic-globe"></i></button>
 				<ul class="h-menu" data-ttatg="mobile-glomenu" style="position: absolute; --left: -4vw; --top: 15vw;">
 					<li class="active"><a href="../page/main.jsp">KOR</a></li>
 					<li><a href="../page/layout_e.jsp">JPN</a></li>
@@ -144,23 +144,6 @@
 		<!-- 모바일 패널 -->
 		<%@ include file="../page/popup/m-panel.jsp" %>
 	</div>
-	<script>
-		/*$(".pop-close").on("click", function(){
-			$(".h-usrnm").removeClass("active");
-			$(".h-alert").removeClass("active");
-		})
-		$('.ic-photo').click(function() {
-			$(this).parent().toggleClass('active');
-		});
-		$(document).ready(function() {
-			$('.h-user-close').click(function() {
-				$(this).parent().find('.user-thumb').removeClass('active');
-			});
-			$('.h-util button').click(function() {
-				$(this).parent().find('.user-thumb').removeClass('active');
-			});
-		});*/
-	</script>
 </header>
 
 <!-- 사용자 정보 -->

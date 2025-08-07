@@ -109,10 +109,15 @@ body, #app {display:flex; flex-direction:column; place-content:space-between; fl
 
 	/* Header - Main */
 		.h-wrap.main-header .h-left { padding-left: var(--init-layout-padding); }
-		.h-wrap.main-header .h-logo {}
+
+		.h-wrap .h-inner .h-btn-alarm,
+		.h-wrap .h-inner .h-btn-globe,
 		.h-wrap.main-header .h-sub-tit,
 		.h-wrap.main-header .h-btn-back,
 		.h-wrap.main-header .h-btn-home { display: none; }
+
+		.h-wrap.main-header .h-inner .h-btn-alarm,
+		.h-wrap.main-header .h-inner .h-btn-globe { display: flex; }
 
 	/* Container */
 		.sub-contents { padding: 8.33vw 0 13.89vw; }
