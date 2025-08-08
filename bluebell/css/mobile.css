@@ -283,6 +283,7 @@
 		.ic-fire:before { width: 3.33vw; height: 3.89vw; }
 		.ic-globe:before { width: 5.56vw; height: 5.56vw; }
 		.ic-globe-02:before { width: 5.56vw; height: 5.56vw; }
+		.ic-info:before { width: 3.33vw; height: 3.33vw; }
 		.ic-ribbon:before { width: 7.78vw; height: 8.19vw; }
 		.ic-stack:before { width: 3.89vw; height: 3.47vw; }
 		.ic-zoom:before { width: 3.75vw; height: 3.75vw; }
@@ -290,6 +291,9 @@
 		/* Arrow */
 			.ic-r-arrow:before { width: 1.25vw; height: 1.94vw; }
 			.ic-r-arrow-02:before { width: 1.39vw; height: 2.22vw; }
+
+			.ic-u-arrow:before,
+			.ic-d-arrow:before { width: 2.78vw; height: 2.22vw; }
 
 		/* Header - Main */
 			.h-wrap.main-header .ic-globe:before,
@@ -351,6 +355,31 @@
 		.moment-week-day > *.active { background: white; color: black; }
 
 	/* Popup */
+		.pop-type-01 {
+			--pop-w: 100dvw;
+			--pop-bd-r: 0;
+
+			--pop-head-ft-s: 4.17vw;
+			--pop-head-h: 13.89vw;
+			--pop-head-pd-l: 0;
+
+			--pop-cont-pd-x: 5vw;
+
+			--pop-foot-h: 23.06vw;
+			--pop-foot-pd-x: 5.56vw;
+
+			--pop-close-w: 4.17vw;
+			--pop-close-h: 4.17vw;
+		}
+
+		.pop-type-01 .part-title { text-align: center; }
+		.pop-type-01 .part-foot [class*="btn-type"] {
+			--btn-w: 100%;
+			--btn-h: 12.5vw;
+			--btn-ft-s: 3.33vw;
+			--btn-min-w: auto;
+		}
+
 		[class*="pop-type-alert"] {
 			--pop-w: 100dvw;
 			--pop-bd-r: 0;
@@ -387,7 +416,7 @@
 		.swiper-pagination-01 .swiper-pagination-bullet-active { width: 5.28vw; }
 
 	/* Tab */
-		.tab-menu-01 {
+		[class*="tab-menu-01"] {
 			--tab-menu-gap-x: 5.56vw;
 
 			--tab-btn-h: auto;
@@ -397,7 +426,17 @@
 			padding-inline: 5vw;
 		}
 
-		.tab-menu-01 > * > * { padding: 3.33vw 0; }
+		[class*="tab-menu-01"] > * > * { padding: 3.33vw 0; }
+
+		.tab-menu-01-01 {
+			--tab-menu-gap-x: 6.94vw;
+
+			padding-inline: 0;
+		}
+
+		.tab-cont-01 {
+			--tab-cont-pd-y: 5.56vw;
+		}
 
 	/* Thumbnail */
 		[class*="thumb-type-01"] {
@@ -425,12 +464,17 @@
 
 		.tbl-type-01-02 th, .tbl-type-01-02 td { height: 9.31vw; }
 
+		.tbl-type-01-03 { margin-top: 3.33vw; }
+		.tbl-type-01-03 thead th { height: 14.72vw; }
+		.tbl-type-01-03 td { height: 14.72vw; }
+
 		.tbl-type-02 { border-spacing: 0 2.78vw; }
 
 	/* Title */
 		.tit-01 { font-size: 5vw; }
 		.tit-02 { font-size: 4.44vw; }
 		.tit-03 { font-size: 4.44vw; }
+		.tit-04 { font-size: 3.89vw; }
 
 	/* Page */
 		/* 수강신청 */

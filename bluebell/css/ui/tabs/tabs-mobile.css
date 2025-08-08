@@ -1,10 +1,10 @@
 @media all and (max-width: 768px) {
 	/* Initialize */
-	[class*="tab-wrap"] {
+	[class*="tab-cont"] {
 		/* Contents */
 		--m-tab-cont-pd-a: var(--tab-cont-pd-a);
-		--m-tab-cont-pd-x: var(--m-tab-cont-pd-a);
-		--m-tab-cont-pd-y: var(--m-tab-cont-pd-a);
+		--m-tab-cont-pd-x: var(--tab-cont-pd-x, var(--m-tab-cont-pd-a));
+		--m-tab-cont-pd-y: var(--tab-cont-pd-y, var(--m-tab-cont-pd-a));
 	}
 
 	[class*="tab-menu"] {
@@ -52,21 +52,20 @@
 	}
 
 /* Menu Over */
-	[class*="tab-menu"] .p-tablist-tab-list .p-tab:hover,
-	ul[class*="tab-menu"] > * > *:hover {
+	[class*="tab-menu"] > * > *:hover {
 		background-color: var(--m-tab-btn-over-bg-c);
 		color: var(--m-tab-btn-over-ft-c);
 	}
 
 /* Menu Active */
-	[class*="tab-menu"] .p-tablist-tab-list .p-tab.p-tab-active,
-	ul[class*="tab-menu"] > *.active > * {
+	[class*="tab-menu"] > *[data-state="active"] > *,
+	[class*="tab-menu"] > *.active > * {
 		background-color: var(--m-tab-btn-active-bg-c);
 		color: var(--m-tab-btn-active-ft-c);
 	}
 
 /* Contents */
-	[class*="tab-wrap"] .p-tabpanel {
+	[class*="tab-wrap"] [class*="tab-cont"] {
 		padding-inline: var(--m-tab-cont-pd-x);
 		padding-block: var(--m-tab-cont-pd-y);
 	}

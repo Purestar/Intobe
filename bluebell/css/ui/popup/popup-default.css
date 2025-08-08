@@ -1,6 +1,6 @@
 /* Wrap */
 	[class*="pop-type"] { position: fixed; background-color: rgba(0, 0, 0, .5); width: 100dvw; height: 100dvh; left: 100%; transition: left var(--trans-dft); z-index: 100; }
-	[class*="pop-type"] .part-wrap { overflow: hidden; position: absolute; left: 50%; top: 50%; background-color: white; translate: -50% -50%; }
+	[class*="pop-type"] .part-wrap { overflow: hidden; position: absolute; left: 50%; top: 50%; background-color: white; max-width: 100dvw; translate: -50% -50%; }
 	[class*="pop-type"] .part-wrap > * { flex-shrink: 0; }
 
 /* Header */
@@ -27,4 +27,4 @@
 	[class*="pop-type"] .part-close:before { content: ""; background-image: var(--ic-c); background-position: var(--bp-150) var(--bp-popup); background-size: var(--bg-sz); }
 
 /* Active */
-	[class*="pop-type"].active { left: 0; transition: left var(--trans-dft); }
+	[class*="pop-type"].active { left: 0; top: 0; transition: left var(--trans-dft); }

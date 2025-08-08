@@ -10,3 +10,7 @@
 
 /* Equal Menu */
 	[class*="tab-wrap"].tab-equal [class*="tab-menu"] > * { flex: 1; }
+
+/* Content */
+	[class*="tab-wrap"] [class*="tab-cont"] > * { display: none; }
+	[class*="tab-wrap"] [class*="tab-cont"] > *.active { display: block; }

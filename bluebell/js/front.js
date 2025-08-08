@@ -34,6 +34,7 @@ $(function () {
 	$(document).selfTg(); // 셀프 활성화
 	$("[class*='swi-type']").swiperInit(); // 스와이퍼
 	$(document).inpPswd(); // 비밀번호 보이기 토글
+	$(".tab-wrap").tabUI(); // 탭메뉴
 
 	/*$(document).datep(); // 데이트피커
 
@@ -43,7 +44,7 @@ $(function () {
 	$("[data-self]").selfTg();
 	//$(".lnb-wrap").lnb(); // 로컬 네비게이션
 	$("[data-scr-fix]").scrFix();
-	$(".tab-wrap").tabUI(); // 탭메뉴
+
 
 
 	//$(".vdo-wrap").vdoPlyer(); // 비디오
@@ -294,6 +295,41 @@ $.fn.swiperInit = function () {
 	});
 };
 
+// Tab UI
+$.fn.tabUI = function (options) {
+	var $obj = $(this),
+		$wrap, $cont, $menu,
+
+		idx
+	;
+
+	// Init
+	var init = $.extend({
+		startTab: 1
+	}, options);
+
+	$obj.hasAttr($obj, "data-acting");
+
+	if (!hasAttr) {
+		$obj.attr("data-acting", "");
+		$obj.on("click", "[class*='tab-menu'] button", function () {
+			if ($(this).parent().hasClass("active")) {return false;};
+
+			$wrap = $(this).closest(".tab-wrap");
+			$cont = $wrap.find("> [class*='tab-cont']");
+			$menu = $(this).closest("ul");
+			idx = $(this).parent().index();
+
+			$menu.find("li").removeClass("active").eq(idx).addClass("active");
+			$cont.find("> *").removeClass("active").eq(idx).addClass("active");
+		});
+
+		$obj.find("[class*='tab-menu']").each(function () {
+			$("li", this).eq(init.startTab-1).find("button").trigger("click");
+		});
+	};
+};
+
 
 
 
@@ -363,40 +399,7 @@ $.fn.scrFix = function () {
 	});
 };
 
-// Tab UI
-$.fn.tabUI = function (options) {
-	var $obj = $(this),
-		$wrap, $cont, $menu,
 
-		idx
-	;
-
-	// Init
-	var init = $.extend({
-		startTab: 1
-	}, options);
-
-	$obj.hasAttr($obj, "data-acting");
-
-	if (!hasAttr) {
-		$obj.attr("data-acting", "");
-		$obj.on("click", "[class*='tab-menu'] button", function () {
-			if ($(this).parent().hasClass("active")) {return false;};
-
-			$wrap = $(this).closest(".tab-wrap");
-			$cont = $wrap.find("> .tab-cont");
-			$menu = $(this).closest("ul");
-			idx = $(this).parent().index();
-
-			$menu.find("li").removeClass("active").eq(idx).addClass("active");
-			$cont.find("> *").removeClass("active").eq(idx).addClass("active");
-		});
-
-		$obj.find("[class*='tab-menu']").each(function () {
-			$("li", this).eq(init.startTab-1).find("button").trigger("click");
-		});
-	};
-};
 
 // Video Player
 /*$.fn.vdoPlyer = function () {

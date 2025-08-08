@@ -1,5 +1,5 @@
 /* Initialize */
-	[class*="tab-wrap"] {
+	[class*="tab-cont"] {
 		/* Contents */
 		--tab-cont-pd-x: var(--tab-cont-pd-a);
 		--tab-cont-pd-y: var(--tab-cont-pd-a);
@@ -54,7 +54,7 @@
 	}
 
 /* Contents */
-	[class*="tab-wrap"] .tab-cont {
+	[class*="tab-wrap"] [class*="tab-cont"] {
 		padding-inline: var(--tab-cont-pd-x);
 		padding-block: var(--tab-cont-pd-y);
 	}

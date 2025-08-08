@@ -400,6 +400,7 @@
 	.ic-fire:before { background-position: 0 var(--bp-50); width: 18px; height: 28px; }
 	.ic-globe:before { background-position: var(--bp-100) 0; width: 24px; height: 24px; }
 	.ic-globe-02:before { background-position: var(--bp-850) 0; width: 24px; height: 24px; }
+	.ic-info:before { background-position: var(--bp-150) var(--bp-50); width: 20px; height: 20px; }
 	.ic-plus:before { background-position: var(--bp-600) 0; width: 10px; height: 10px; }
 	.ic-plus-02:before { background-position: var(--bp-650) 0; width: 14px; height: 14px; }
 	.ic-quest:before { background-position: var(--bp-250) 0; width: 22px; height: 22px; }
@@ -422,6 +423,10 @@
 		.ic-l-arrow:before { background-position: var(--bp-700) 0; width: 6px; height: 11px; }
 		.ic-r-arrow:before { background-position: var(--bp-50) var(--bp-50); width: 5px; height: 10px; }
 		.ic-r-arrow-02:before { background-position: var(--bp-100) var(--bp-50); width: 5px; height: 9px; }
+		.ic-u-arrow:before,
+		.ic-d-arrow:before { background-position: var(--bp-250) var(--bp-50); width: 10px; height: 8px; }
+		.ic-d-arrow:before { rotate: 180deg; }
+
 
 /* List */
 	.lst-type-01 { display: grid; gap: 20px; }
@@ -493,6 +498,34 @@
 	.brd-paging-num { display: flex; }
 
 /* Popup */
+	.pop-type-01 {
+		--pop-bd-r: 12px;
+		--pop-bd-c: transparent;
+		--pop-w: 680px;
+
+		--pop-head-bg-c: white;
+		--pop-head-ft-s: 20px;
+		--pop-head-ft-c: black;
+		--pop-head-h: 90px;
+		--pop-head-pd-l: 40px;
+
+		--pop-cont-pd-x: 40px;
+
+		--pop-foot-h: 126px;
+		--pop-foot-pd-x: 40px;
+
+		--pop-close-w: 18px;
+		--pop-close-h: 18px;
+	}
+
+	.pop-type-01 .part-head .part-title { font-weight: 700; }
+
+	.pop-type-01 .part-foot [class*="btn-type"] {
+		--btn-h: 56px;
+		--btn-ft-s: 18px;
+		--btn-min-w: 180px;
+	}
+
 	[class*="pop-type-alert"] {
 		--pop-bd-r: 12px;
 		--pop-bd-c: transparent;
@@ -503,6 +536,8 @@
 		--pop-head-ft-c: black;
 		--pop-head-h: 90px;
 		--pop-head-pd-l: 40px;
+
+		--pop-cont-pd-x: 40px;
 
 		--pop-foot-h: 126px;
 
@@ -535,7 +570,7 @@
 	.swiper-nav-02 > *:after { background-position: var(--bp-200) var(--bp-swiper); width: 6px; height: 11px; }
 
 /* Tab */
-	.tab-menu-01 {
+	[class*="tab-menu-01"] {
 		--tab-menu-bd-b-w: 1px;
 		--tab-menu-bd-b-c: #e2e2e2;
 		--tab-menu-gap-x: 52px;
@@ -553,20 +588,38 @@
 		background: white;
 	}
 
-	.tab-menu-01 > * { position: relative; }
-	.tab-menu-01 > * > * { display: block; padding-bottom: 24px; }
-	.tab-menu-01 > *:hover:after,
-	.tab-menu-01 > *.active:after { content: ""; position: absolute; left: 0; bottom: 0; background: var(--mc); width: 100%; height: 2px; }
+	[class*="tab-menu-01"] > * { position: relative; }
+	[class*="tab-menu-01"] > * > * { display: block; padding-bottom: 24px; }
+	[class*="tab-menu-01"] > *:hover:after,
+	[class*="tab-menu-01"] > *.active:after { content: ""; position: absolute; left: 0; bottom: 0; background: var(--mc); width: 100%; height: 2px; }
+
+	.tab-menu-01-01 {
+		--tab-menu-bd-b-w: 0;
+		--tab-btn-pd-x: 0;
+		--tab-menu-gap-x: 20px;
+	}
+
+	.tab-cont-01 {
+		--tab-cont-pd-y: 40px;
+	}
 
 /* Table */
+	[class*="tbl-type"] { background-color: white; word-break: break-all; }
 	[class*="tbl-type"] td > *:first-child { margin-top: 0; }
 
 	[class*="tbl-type-01"] { border-top: 1px solid #2d2d2d; margin-top: 20px; }
-	[class*="tbl-type-01"] thead th { border-bottom: 1px solid #e2e2e2; height: 67px; font-weight: 500; }
-	[class*="tbl-type-01"] tbody th { border-bottom: 1px solid #e2e2e2; padding: 21px 20px; font-weight: 500; vertical-align: middle; color: black; }
+	[class*="tbl-type-01"] thead { left: 0; top: 1px; background-color: white; z-index: 10; }
+	[class*="tbl-type-01"] thead th,
+	[class*="tbl-type-01"] tbody th { border-bottom: 1px solid #e2e2e2; height: 67px; font-weight: 500; vertical-align: middle; color: black; }
+	[class*="tbl-type-01"] thead th { border-top: 1px solid #2d2d2d; }
+	[class*="tbl-type-01"] tbody th { padding: 21px 20px; }
 	[class*="tbl-type-01"] tbody td { border-bottom: 1px solid #e2e2e2; padding: 9px 20px; vertical-align: middle; color: #666; }
 
 	.tbl-type-01-02 th, .tbl-type-01-02 td { height: 67px; }
+
+	.tbl-type-01-03 { margin-top: 12px; }
+	.tbl-type-01-03 thead th { height: 53px; padding-block: 0; }
+	.tbl-type-01-03 td { height: 53px; }
 
 	.tbl-type-02 { border-collapse: separate; border-spacing: 0 10px; }
 	.tbl-type-02 th { font-weight: 400; }
@@ -601,6 +654,10 @@
 	.tit-01 { font-size: 30px; }
 	.tit-02 { font-size: 24px; font-weight: 700; }
 	.tit-03 { font-size: 20px; font-weight: 700; }
+	.tit-04 { font-size: 18px; font-weight: 500; }
+
+/* Video */
+	.vdo-wrap video { display: block; width: 100%; max-height: 100dvh; }
 
 /* Page */
 	/* 수강신청 */
