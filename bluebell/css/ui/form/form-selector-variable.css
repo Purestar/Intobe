@@ -6,6 +6,7 @@
 		--form-bd-w: 1px;
 		--form-ft-s: var(--fom-fs);
 		--form-gap-x: 10px;
+		--form-gap-y: 10px;
 		--form-txt-lh: calc(var(--init-line-height) * 1em);
 
 		--form-icon-bp-y: var(--bp-selection);
@@ -81,6 +82,7 @@
 
 	[class*="form-slt"] .part-slt-txt {
 		column-gap: var(--form-gap-x);
+		row-gap: var(--form-gap-y);
 		flex-direction: var(--form-flex-d);
 		min-height: var(--form-h);
 	}

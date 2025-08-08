@@ -11,6 +11,7 @@
 			--m-form-ft-s: var(--form-ft-s);
 			--m-form-ft-w: var(--form-ft-w);
 			--m-form-gap-x: 2.78vw;
+			--m-form-gap-y: 2.78vw;
 			--m-form-pd-x: var(--form-pd-x);
 			--m-form-pd-y: var(--form-pd-y);
 			--m-form-txt-lh: var(--form-txt-lh);
@@ -46,6 +47,7 @@
 
 		[class*="form-slt"] .part-slt-txt {
 			column-gap: var(--m-form-gap-x);
+			row-gap: var(--m-form-gap-y);
 			flex-direction: var(--m-form-flex-d);
 			min-height: var(--m-form-h);
 		}

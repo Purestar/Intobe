@@ -179,6 +179,12 @@
 				--form-chk-h: 2.36vw;
 			}
 
+		/* Radio */
+			.form-slt-rdo-m-01 {
+				--form-flex-d: column;
+				--form-gap-x: 3.33vw
+			}
+
 		/* File */
 			.form-txt-file-01 {
 				--form-w: 16.67vw;
@@ -494,4 +500,10 @@
 			.main-wrap { margin-top: 0; }
 			.main-top { background: var(--bg-type01); height: auto; padding-top: 0; }
 			.main-top .moment-week { margin-top: 6.94vw; font-size: 3.89vw; }
+
+	/* 팝업 */
+		/* 힌트 */
+			.hint-wrap { border-radius: 11.11vw; width: 11.11vw; margin-top: 6.94vw; }
+			.hint-wrap .hint-btn { border-radius: 11.11vw; width: 11.11vw; height: 11.11vw; }
+			.hint-wrap .hint-txt { padding: 3.89vw; }
 }

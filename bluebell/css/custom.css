@@ -676,3 +676,11 @@
 		.main-wrap { margin-top: calc(var(--init-header-height) * -1); }
 		.main-top { display: flex; place-items: center; place-content: space-between; background: url(../images/img/main_bnr01.png) center no-repeat; height: 629px; padding-top: var(--init-header-height); }
 		.main-top .moment-week { margin-top: 15px; font-size: 12px; }
+
+/* 팝업 */
+	/* 힌트 */
+		.hint-wrap { display: flex; border-radius: 60px; place-items: center; background-color: #f9f9f9; width: 60px; margin-top: 50px; }
+		.hint-wrap .hint-btn { flex-shrink: 0; background: #fff; border: 1px solid #e2e2e2; border-radius: 60px; width: 60px; height: 60px; color: var(--mc); }
+		.hint-wrap .hint-txt { display: none; padding: 20px; }
+		.hint-wrap.active { width: 100%; }
+		.hint-wrap.active .hint-txt { display: block; }

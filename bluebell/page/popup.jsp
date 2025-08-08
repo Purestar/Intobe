@@ -33,22 +33,29 @@
 					<button type="button" class="btn-type" data-tta="video">맛보기</button>
 				</div>
 			</div>
-		</div>
-
-		<h1 class="tit-01" style="--mg-t: 40px; --ft-c: black; --ft-w: 700;">콘텐츠학습</h1>
-		<div style="--dp: flex; --flex-w: wrap; --gap-a: 20px; --mg-t: 20px">
-			<button type="button" class="btn-type" disabled data-tta="quiz01">퀴즈 객관식</button>
-			<button type="button" class="btn-type" disabled data-tta="quiz02">퀴즈 주관식</button>
-			<button type="button" class="btn-type" disabled data-tta="quiz03">퀴즈 ox</button>
-			<button type="button" class="btn-type" disabled data-tta="survey01">설문01</button>
-			<button type="button" class="btn-type" disabled data-tta="survey02">설문02</button>
-			<button type="button" class="btn-type" disabled data-tta="survey03">설문03</button>
-			<button type="button" class="btn-type" disabled data-tta="survey04">설문04</button>
+			<div style="--dp: grid; --gap-y: 20px;">
+				<h1 class="tit-01" style="--ft-c: black; --ft-w: 700;">콘텐츠학습</h1>
+				<div style="--dp: flex; --flex-w: wrap; --gap-a: 20px;">
+					<button type="button" class="btn-type" data-tta="quiz">평가</button>
+					<button type="button" class="btn-type" data-tta="survey">설문</button>
+				</div>
+			</div>
+			<div style="--dp: grid; --gap-y: 20px;">
+				<h1 class="tit-01" style="--ft-c: black; --ft-w: 700;">[모바일] 콘텐츠학습</h1>
+				<div style="--dp: flex; --flex-w: wrap; --gap-a: 20px;">
+					<button type="button" class="btn-type" disabled data-tta="">컨텐츠 상세</button>
+				</div>
+			</div>
+			<div style="--dp: grid; --gap-y: 20px;">
+				<h1 class="tit-01" style="--ft-c: black; --ft-w: 700;">나의학습</h1>
+				<div style="--dp: flex; --flex-w: wrap; --gap-a: 20px;">
+					<button type="button" class="btn-type" disabled data-tta="courseinfo">과정정보</button>
+				</div>
+			</div>
 		</div>
 
 		<h1 class="tit-01" style="--mg-t: 40px; --ft-c: black; --ft-w: 700;">나의학습</h1>
 		<div style="--dp: flex; --flex-w: wrap; --gap-a: 20px; --mg-t: 20px">
-			<button type="button" class="btn-type" disabled data-tta="courseinfo">과정정보</button>
 			<button type="button" class="btn-type" disabled data-tta="loadmap">단계별로드맵</button>
 			<button type="button" class="btn-type" disabled data-tta="quizalert">퀴즈설문알림</button>
 			<button type="button" class="btn-type" disabled data-tta="turnback">반려정보</button>
@@ -83,11 +90,19 @@
 <!-- 맛보기 -->
 <%@ include file="./popup/video.jsp" %>
 
+<!-- 돌발 평가 -->
+<%@ include file="./popup/quiz.jsp" %>
+<!-- 설문 -->
+<%@ include file="./popup/survey.jsp" %>
+
+<!-- 과정정보 -->
+<%@ include file="./popup/courseinfo.jsp" %>
+
 <!-- 경고창들 -->
 <%@ include file="./popup/alert.jsp" %>
 
 <%-- <%@ include file="pop_quiz.jsp" %> --%> <!-- 퀴즈예시01 -->
-<%-- <%@ include file="pop_courseinfo.jsp" %> --%> <!-- 과정정보 -->
+
 <%-- <%@ include file="pop_loadmap.jsp" %> --%> <!-- 단계별로드맵 -->
 <%-- <%@ include file="pop_paymentinfo.jsp" %> --%> <!-- 결재정보 -->
 <%-- <%@ include file="pop_paymentinfo02.jsp" %> --%> <!-- 결재정보 -->
