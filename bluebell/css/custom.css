@@ -392,6 +392,7 @@
 	.ic-bell:before { width: 20px; height: 26px; }
 	.ic-calendar:before { background-position: var(--bp-750) 0; width: 14px; height: 15px; }
 	.ic-camera:before { background-position: var(--bp-300) 0; width: 26px; height: 26px; }
+	.ic-clock:before { background-position: var(--bp-350) var(--bp-50); width: 20px; height: 20px; }
 	.ic-close:before { background-position: var(--bp-150) 0; width: 18px; height: 18px; }
 	.ic-del:before { background-position: var(--bp-200) 0; width: 13px; height: 12px; }
 	.ic-del-02:before { background-position: var(--bp-400) 0; width: 18px; height: 18px; }
@@ -401,6 +402,7 @@
 	.ic-globe:before { background-position: var(--bp-100) 0; width: 24px; height: 24px; }
 	.ic-globe-02:before { background-position: var(--bp-850) 0; width: 24px; height: 24px; }
 	.ic-info:before { background-position: var(--bp-150) var(--bp-50); width: 20px; height: 20px; }
+	.ic-link:before { background-position: var(--bp-300) var(--bp-50); width: 12px; height: 12px; }
 	.ic-plus:before { background-position: var(--bp-600) 0; width: 10px; height: 10px; }
 	.ic-plus-02:before { background-position: var(--bp-650) 0; width: 14px; height: 14px; }
 	.ic-quest:before { background-position: var(--bp-250) 0; width: 22px; height: 22px; }
@@ -684,3 +686,10 @@
 		.hint-wrap .hint-txt { display: none; padding: 20px; }
 		.hint-wrap.active { width: 100%; }
 		.hint-wrap.active .hint-txt { display: block; }
+
+	/* 시험 응시 현황표 */
+		.test-wrap { border: 1px solid #e2e2e2; border-radius: 20px; }
+		.test-wrap table thead th, .test-wrap table tbody td{ padding: 20px; border-bottom: 1px solid #e2e2e2; text-align: center; }
+		.test-wrap table thead th:last-child, .test-wrap table tbody td:last-child{ border-left: 1px solid #e2e2e2; }
+		.test-wrap table tbody td:last-child { text-align: left; }
+		.test-wrap table tbody tr:last-child td { border-bottom: 0; }

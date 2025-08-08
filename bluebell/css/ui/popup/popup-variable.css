@@ -56,7 +56,7 @@
 
 /* Content */
 	[class*="pop-type"] .part-cont {
-		max-height: calc(var(--pop-max-h) - var(--pop-head-h) - var(--pop-foot-h));
+		/*max-height: calc(var(--pop-max-h) - var(--pop-head-h) - var(--pop-foot-h));*/
 		padding: var(--pop-cont-pd-y, var(--pop-cont-top-pad)) var(--pop-cont-pd-x) var(--pop-cont-pd-y, var(--pop-cont-bot-pad));
 		font-size: var(--pop-cont-ft-s);
 		color: var(--pop-cont-ft-c);

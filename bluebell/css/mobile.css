@@ -283,6 +283,7 @@
 		.ic-bell.active:after { position: absolute; right: 0; top: 0; background-color: #e0242c; border-radius: 50%; width: 0.83vw; height: 0.83vw; }
 		.ic-calendar:before { width: 3.06vw; height: 3.33vw; }
 		.ic-camera:before { width: 6.94vw; height: 6.94vw; }
+		.ic-clock:before { width: 3.33vw; height: 3.33vw; }
 		.ic-close:before { width: 4.17vw; height: 4.17vw; }
 		.ic-eye:before { width: 4.44vw; height: 3.75vw; }
 		.ic-file:before { width: 3.61vw; height: 3.61vw; }

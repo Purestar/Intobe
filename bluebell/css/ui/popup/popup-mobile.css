@@ -62,7 +62,7 @@
 
 	/* Content */
 		[class*="pop-type"] .part-cont [class*="pop-cont"] {
-			max-height: calc(var(--m-pop-max-h) - var(--m-pop-head-h) - var(--m-pop-foot-h));
+			/*max-height: calc(var(--m-pop-max-h) - var(--m-pop-head-h) - var(--m-pop-foot-h));*/
 			padding: var(--m-pop-cont-pd-y, var(--m-pop-cont-top-pad)) var(--m-pop-cont-pd-x) var(--m-pop-cont-pd-y, var(--m-pop-cont-bot-pad));
 			font-size: var(--m-pop-cont-ft-s);
 			color: var(--m-pop-cont-ft-c);
