@@ -65,6 +65,7 @@
 			<div style="--dp: grid; --gap-y: 20px;">
 				<h1 class="tit-01" style="--ft-c: black; --ft-w: 700;">[모바일] 나의학습</h1>
 				<div style="--dp: flex; --flex-w: wrap; --gap-a: 20px;">
+					<button type="button" class="btn-type" data-tta="report">참조확인</button>
 					<button type="button" class="btn-type" disabled data-tta="">스케쥴</button>
 				</div>
 			</div>
@@ -110,6 +111,8 @@
 <%@ include file="./popup/searchuser.jsp" %>
 <!-- 반려정보 -->
 <%@ include file="./popup/reason.jsp" %>
+<!-- 참조확인 -->
+<%@ include file="./popup/report.jsp" %>
 
 <!-- 결재정보 -->
 <%@ include file="./popup/paymentinfo.jsp" %>
@@ -118,11 +121,5 @@
 <%@ include file="./popup/alert.jsp" %>
 
 <%-- <%@ include file="pop_loadmap.jsp" %> --%> <!-- 단계별로드맵 -->
-<%-- <%@ include file="pop_paymentinfo.jsp" %> --%> <!-- 결재정보 -->
-<%-- <%@ include file="pop_paymentinfo02.jsp" %> --%> <!-- 결재정보 -->
-<%-- <%@ include file="pop_turnback.jsp" %> --%> <!-- 반려정보 -->
-<%-- <%@ include file="pop_searchuser.jsp" %> --%> <!--  -->
-<%-- <%@ include file="pop_survey.jsp" %> --%> <!-- 설문 -->
-<%-- <%@ include file="pop_result.jsp" %> --%>
 
 <%@ include file="../inc/footer.jsp" %>
