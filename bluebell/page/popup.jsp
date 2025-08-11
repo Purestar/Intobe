@@ -57,22 +57,23 @@
 					<button type="button" class="btn-type" data-tta="alert01">사외교육 개설신청(과정수강신청동일)알림팝업</button>
 					<button type="button" class="btn-type" data-tta="alert02">사외교육 개설신청(과정수강신청동일) 알림팝업02</button>
 					<button type="button" class="btn-type" data-tta="test">시험응시하기</button>
+					<button type="button" class="btn-type" data-tta="result">시험응시결과</button>
+					<button type="button" class="btn-type" data-tta="searchuser">사용자검색</button>
+					<button type="button" class="btn-type" data-tta="reason">반려정보</button>
 				</div>
 			</div>
-		</div>
-
-		<h1 class="tit-01" style="--mg-t: 40px; --ft-c: black; --ft-w: 700;">나의학습</h1>
-		<div style="--dp: flex; --flex-w: wrap; --gap-a: 20px; --mg-t: 20px">
-			<button type="button" class="btn-type" disabled data-tta="result01">시험응시결과01</button>
-			<button type="button" class="btn-type" disabled data-tta="result02">시험응시결과02</button>
-			<button type="button" class="btn-type" disabled data-tta="searchuser">사용자검색</button>
-			<button type="button" class="btn-type" disabled data-tta="reason">처리사유</button>
-		</div>
-
-		<h1 class="tit-01" style="--mg-t: 40px; --ft-c: black; --ft-w: 700;">결재이력관리</h1>
-		<div style="--dp: flex; --flex-w: wrap; --gap-a: 20px; --mg-t: 20px">
-			<button type="button" class="btn-type" disabled data-tta="paymentinfo">결재정보</button>
-			<button type="button" class="btn-type" disabled data-tta="paymentinfo02">결재정보(일반정보)</button>
+			<div style="--dp: grid; --gap-y: 20px;">
+				<h1 class="tit-01" style="--ft-c: black; --ft-w: 700;">[모바일] 나의학습</h1>
+				<div style="--dp: flex; --flex-w: wrap; --gap-a: 20px;">
+					<button type="button" class="btn-type" disabled data-tta="">스케쥴</button>
+				</div>
+			</div>
+			<div style="--dp: grid; --gap-y: 20px;">
+				<h1 class="tit-01" style="--ft-c: black; --ft-w: 700;">결재이력관리</h1>
+				<div style="--dp: flex; --flex-w: wrap; --gap-a: 20px;">
+					<button type="button" class="btn-type" data-tta="paymentinfo">결재정보</button>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -103,6 +104,15 @@
 <%@ include file="./popup/turnback.jsp" %>
 <!-- 시험응시하기 -->
 <%@ include file="./popup/test.jsp" %>
+<!-- 시험결과 -->
+<%@ include file="./popup/result.jsp" %>
+<!-- 사용자검색 -->
+<%@ include file="./popup/searchuser.jsp" %>
+<!-- 반려정보 -->
+<%@ include file="./popup/reason.jsp" %>
+
+<!-- 결재정보 -->
+<%@ include file="./popup/paymentinfo.jsp" %>
 
 <!-- 경고창들 -->
 <%@ include file="./popup/alert.jsp" %>
@@ -111,9 +121,8 @@
 <%-- <%@ include file="pop_paymentinfo.jsp" %> --%> <!-- 결재정보 -->
 <%-- <%@ include file="pop_paymentinfo02.jsp" %> --%> <!-- 결재정보 -->
 <%-- <%@ include file="pop_turnback.jsp" %> --%> <!-- 반려정보 -->
-<%-- <%@ include file="pop_test.jsp" %> --%> <!-- 시험응시하기 -->
-<%-- <%@ include file="pop_searchuser.jsp" %> --%> <!-- 사용자검색 -->
+<%-- <%@ include file="pop_searchuser.jsp" %> --%> <!--  -->
 <%-- <%@ include file="pop_survey.jsp" %> --%> <!-- 설문 -->
-<%-- <%@ include file="pop_result.jsp" %> --%> <!-- 시험결과 -->
+<%-- <%@ include file="pop_result.jsp" %> --%>
 
 <%@ include file="../inc/footer.jsp" %>

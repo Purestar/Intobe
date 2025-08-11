@@ -25,10 +25,6 @@
 							</p>
 						</div>
 					</div>
-
-                    <div class="alert-txt">
-
-                    </div>
                 </div>
 			</div>
 		</div>
