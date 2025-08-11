@@ -195,8 +195,6 @@ $.fn.acoUI = function (options) {
 	$wrap.each(function () {
 		$(this).hasAttr($(this), "data-acting");
 		if (!hasAttr) {
-
-
 			$(this).attr("data-acting", "");
 			$(this).on("click", ".aco-head", function () {
 				idx = $(this).closest(".aco-item").index();

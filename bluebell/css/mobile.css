@@ -169,6 +169,16 @@
 			min-width: 13.89vw;
 		}
 
+		[class*="chip-type-06"] {
+			--chip-w: 12.78vw;
+			--chip-h: 12.78vw;
+			--chip-ft-s: 3.33vw;
+		}
+
+	/* Float Menu */
+		.float-menu-01 { border-radius: 0.69vw; width: 26.39vw; }
+		.float-menu-01 button { height: 6.94vw; }
+
 	/* Form */
 		/* Checkbox */
 			.form-slt-chk {
@@ -177,6 +187,22 @@
 
 				--form-chk-w: 3.06vw;
 				--form-chk-h: 2.36vw;
+			}
+
+			.form-slt-chk-01 {
+				--form-w: 12.78vw;
+				--form-h: 12.78vw;
+
+				--form-chk-w: 3.75vw;
+				--form-chk-h: 4.72vw;
+			}
+
+			.form-slt-chk-02 {
+				--form-w: 12.78vw;
+				--form-h: 12.78vw;
+
+				--form-chk-w: 5.42vw;
+				--form-chk-h: 4.44vw;
 			}
 
 		/* Radio */
@@ -293,6 +319,7 @@
 		.ic-info:before { width: 3.33vw; height: 3.33vw; }
 		.ic-ribbon:before { width: 7.78vw; height: 8.19vw; }
 		.ic-stack:before { width: 3.89vw; height: 3.47vw; }
+		.ic-three-dot:before { width: 0.97vw; height: 3.47vw; }
 		.ic-zoom:before { width: 3.75vw; height: 3.75vw; }
 
 		/* Arrow */
@@ -323,6 +350,8 @@
 		.lst-type-01 { gap: 2.22vw; }
 		.lst-type-01 > * { border-radius: 2.78vw; gap: 1.39vw; height: 22.64vw; font-size: 3.33vw; }
 		.lst-type-01 strong { font-size: 5.56vw; }
+
+		.lst-type-03 > * { padding: 2.78vw 0; }
 
 	/* Marker */
 		/* Arrow */

@@ -43,7 +43,7 @@
 			<div style="--dp: grid; --gap-y: 20px;">
 				<h1 class="tit-01" style="--ft-c: black; --ft-w: 700;">[모바일] 콘텐츠학습</h1>
 				<div style="--dp: flex; --flex-w: wrap; --gap-a: 20px;">
-					<button type="button" class="btn-type" disabled data-tta="">컨텐츠 상세</button>
+					<button type="button" class="btn-type" data-tta="contentsView">컨텐츠 상세</button>
 				</div>
 			</div>
 			<div style="--dp: grid; --gap-y: 20px;">
@@ -96,6 +96,9 @@
 <%@ include file="./popup/quiz.jsp" %>
 <!-- 설문 -->
 <%@ include file="./popup/survey.jsp" %>
+<!-- 컨텐츠 상세 -->
+<%@ include file="./popup/contentsView.jsp" %>
+
 
 <!-- 과정정보 -->
 <%@ include file="./popup/courseinfo.jsp" %>

@@ -210,6 +210,21 @@
 
 	.chip-type-05-wht { --chip-bd-c: white; }
 
+	[class*="chip-type-06"] {
+		--chip-bg-c: white;
+		--chip-bd-c: #e2e2e2;
+		--chip-bd-r: 50%;
+		--chip-w: 60px;
+		--chip-h: 60px;
+		--chip-ft-s: 14px;
+		--chip-pd-x: 0;
+
+		text-align: center;
+	}
+
+	.chip-type-06-red { --chip-ft-c: var(--mc); }
+	.chip-type-06-gry { --chip-ft-c: #7d8f9a; }
+
 /* Float Menu */
 	.float-menu-wrap { position: relative; }
 	.float-menu-wrap [class*="float-menu"] { overflow: hidden; display: none; position: absolute; }
@@ -221,6 +236,41 @@
 	.float-menu-01 button:hover { background-color: #f5f5f5; color: #000; }
 
 /* Form */
+	/* Checkbox */
+		.form-slt-chk-01 {
+			--form-w: 60px;
+			--form-h: 60px;
+			--form-bd-r: 50%;
+			--form-bd-c: #e2e2e2;
+
+			--form-chk-bg-c: #f9f9f9;
+			--form-chk-bd-c: #f9f9f9;
+
+			--form-chk-w: 19px;
+			--form-chk-h: 23px;
+			--form-icon-bp-x: var(--bp-300);
+		}
+
+		.form-slt-chk-01 .part-icon:after { opacity: 1;  border-radius: 0; }
+		.form-slt-chk-01 input:checked + .part-slt-txt .part-icon:after { background-position: var(--bp-350) var(--form-icon-bp-y); }
+
+		.form-slt-chk-02 {
+			--form-w: 60px;
+			--form-h: 60px;
+			--form-bd-r: 50%;
+			--form-bd-c: #e2e2e2;
+
+			--form-chk-bg-c: #f9f9f9;
+			--form-chk-bd-c: #f9f9f9;
+
+			--form-chk-w: 27px;
+			--form-chk-h: 22px;
+			--form-icon-bp-x: var(--bp-400);
+		}
+
+		.form-slt-chk-02 .part-icon:after { opacity: 1;  border-radius: 0; }
+		.form-slt-chk-02 input:checked + .part-slt-txt .part-icon:after { background-position: var(--bp-450) var(--form-icon-bp-y); }
+
 	/* File */
 		.form-txt-file-01 {
 			--form-w: 80px;
@@ -283,6 +333,12 @@
 
 	/* Text */
 		.form-txt-type-01 { padding-right: 0; }
+
+	/* Textarea */
+		.form-tarea-01 {
+			flex-direction: column;
+			place-items: flex-end;
+		}
 
 /* Full Calendar */
 	/* Header */
@@ -437,6 +493,10 @@
 
 	.lst-type-02 { display: grid; }
 	.lst-type-02 > * { display: flex; place-items: center; place-content: space-between; gap: 10px; }
+
+	.lst-type-03 { border-top: 1px solid #000; border-bottom: 1px solid #e2e2e2; }
+	.lst-type-03 > * { padding: 20px 0; }
+	.lst-type-03 > * + * { border-top:1px solid #e2e2e2; }
 
 /* Marker */
 	/* Arrow */

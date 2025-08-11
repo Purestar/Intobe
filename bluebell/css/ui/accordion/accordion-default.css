@@ -1,5 +1,5 @@
 /* Default */
-[class*="aco-type"] { overflow-x: hidden; overflow-y: auto; display: grid; grid-auto-rows: max-content; }
+[class*="aco-type"] { overflow-x: hidden; overflow-y: auto; display: grid; grid-auto-rows: max-content; max-width: 100dvw; }
 [class*="aco-type"] > .aco-item > .aco-head-wrap .aco-head { display: flex; align-items: center; justify-content: space-between; width: 100%; height: auto; text-align: left; }
 [class*="aco-type"] > .aco-item > .aco-head-wrap .aco-head .aco-head-in { display: flex; width: 100%; }
 [class*="aco-type"] > .aco-item > .aco-head-wrap .aco-toggle { white-space: nowrap; }
@@ -36,7 +36,7 @@
 [class*="aco-type"].aco-slide > .aco-item > .aco-cont[data-state="closed"] { animation: acoSlideUp 300ms ease-out; }
 
 /* Content */
-[class*="aco-type"] > .aco-item > .aco-cont { display: none; }
+[class*="aco-type"] > .aco-item > .aco-cont { display: none; max-width: 100dvw; }
 [class*="aco-type"] > .aco-item.active > .aco-cont { display: flex; }
 [class*="aco-type"] > .aco-item > .aco-cont .aco-cont-in { width: 100%; }
 
