@@ -9,8 +9,6 @@
 .device-pc.device-tablet,
 .pc.tablet { display: block; }
 
-.pc > *:first-child, .tablet > *:first-child, .mobile > *:first-child { margin-top: 0; }
-
 /*@media all and (max-width:1024px) {
 	.device-pc,
 	.pc { display: none; }
