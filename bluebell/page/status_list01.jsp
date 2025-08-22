@@ -12,7 +12,6 @@
 
 <div class="sub-contents">
 	<div class="layout-inner">
-
 		<div class="tab-wrap tab-equal tab-scroll-menu" style="--m-pos: sticky; --m-top: var(--init-header-height); --m-mg-t: 0; --m-z-idx: 10;">
 			<ul class="tab-menu-01">
 				<li class="active"><a href="">학습과정 4</a></li>
@@ -58,11 +57,10 @@
 							</div>
 							<h3 class="brd-tit ellipsis" style="--m-line: 2;">3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가</h3>
 							<p style="--mg-t: 10px; --m-mg-t: 1.39vw;">2021.05.30 - 2021.06.10</p>
-							<p class="mobile">학습상태 승인대기 <span style="--ft-c: black;">학습중</span></p>
 						</div>
 					</div>
-					<div style="--dp: flex; --gap-x: 20px; --items-y: center; --m-w: 100%; --m-mg-t: 2.56vw;">
-						<div class="pc" style="--w: 124px; --txt-a: center;">
+					<div style="--dp: flex; --gap-x: 20px; --items-y: center; --m-w: 100%; --m-mg-t: 2.56vw; --m-content-x: center;">
+						<div style="--w: 124px; --m-w: 100%; --txt-a: center;">
 							<p>승인대기</p>
 							<p style="--ft-c: black;">학습중</p>
 						</div>
@@ -87,14 +85,12 @@
 							</div>
 							<h3 class="brd-tit ellipsis" style="--m-line: 2;">3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가</h3>
 							<p style="--mg-t: 10px; --m-mg-t: 1.39vw;">2021.05.30 - 2021.06.10</p>
-							<p class="mobile">학습상태 승인대기</p>
 						</div>
 					</div>
-					<div style="--dp: flex; --gap-x: 20px; --items-y: center; --m-w: 100%; --m-mg-t: 2.56vw;">
-						<div class="pc" style="--w: 124px; --txt-a: center;">
+					<div style="--dp: flex; --gap-x: 20px; --items-y: center; --m-w: 100%; --m-mg-t: 2.56vw; --m-content-x: center;">
+						<div style="--w: 124px; --m-w: 100%; --txt-a: center;">
 							<p>승인대기</p>
 						</div>
-						<div class="pc" style="--w: 124px; --m-w: 100%;"></div>
 					</div>
 				</li>
 
@@ -113,11 +109,11 @@
 							</div>
 							<h3 class="brd-tit ellipsis" style="--m-line: 2;">3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가3차 종합 평가</h3>
 							<p style="--mg-t: 10px; --m-mg-t: 1.39vw;">2021.05.30 - 2021.06.10</p>
-							<p class="mobile">학습상태 승인대기 <span style="--ft-c: black;">학습중</span></p>
 						</div>
 					</div>
-					<div style="--dp: flex; --gap-x: 20px; --items-y: center; --m-w: 100%; --m-mg-t: 2.56vw;">
-						<div class="pc" style="--w: 124px; --txt-a: center;">
+					<div style="--dp: flex; --gap-x: 20px; --items-y: center; --m-w: 100%; --m-mg-t: 2.56vw; --m-content-x: center;">
+						<div style="--w: 124px; --m-w: 100%; --txt-a: center;">
+							<p>승인대기</p>
 							<p style="--ft-c: black;">학습중</p>
 						</div>
 						<div style="--w: 124px; --m-w: 100%;">

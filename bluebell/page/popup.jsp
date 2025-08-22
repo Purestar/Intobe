@@ -99,7 +99,6 @@
 <!-- 컨텐츠 상세 -->
 <%@ include file="./popup/contentsView.jsp" %>
 
-
 <!-- 과정정보 -->
 <%@ include file="./popup/courseinfo.jsp" %>
 <!-- 퀴즈설문알림 -->

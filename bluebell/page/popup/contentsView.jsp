@@ -1,5 +1,5 @@
 <%@ page contentType ="text/html; charset=UTF-8" %>
-<div class="pop-type-01 active" data-ttatg="contentsView" style="--m-pop-h: 100dvh;">
+<div class="pop-type-01" data-ttatg="contentsView" style="--m-pop-h: 100dvh;">
 	<div class="part-wrap">
 		<div class="part-head"></div>
 		<div class="part-cont">

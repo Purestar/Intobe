@@ -6,14 +6,6 @@
 		</div>
 		<div class="part-cont">
 			<div class="pop-cont-in">
-				<div class="mobile">
-					<div class="sel-type">
-						<select>
-							<option>1일차</option>
-							<option>2일차</option>
-						</select>
-					</div>
-				</div>
 				<h2 class="tit-04">1일차</h2>
 				<table class="tbl-type-01-03" style="--txt-a: center;">
 					<colgroup>
@@ -40,33 +32,31 @@
 					</tr>
 				</table>
 
-				<div class="pc">
-					<h2 class="tit-04" style="--mg-t: 40px;">2일차</h2>
-					<table class="tbl-type-01-03" style="--txt-a: center;">
-						<colgroup>
-							<col>
-							<col>
-							<col>
-						</colgroup>
-						<thead>
-							<tr>
-								<th>시간</th>
-								<th>모듈명</th>
-								<th>강사</th>
-							</tr>
-						</thead>
+				<h2 class="tit-04" style="--mg-t: 40px;">2일차</h2>
+				<table class="tbl-type-01-03" style="--txt-a: center;">
+					<colgroup>
+						<col>
+						<col>
+						<col>
+					</colgroup>
+					<thead>
 						<tr>
-							<td>1시간</td>
-							<td>오리엔테이션</td>
-							<td>이순신</td>
+							<th>시간</th>
+							<th>모듈명</th>
+							<th>강사</th>
 						</tr>
-						<tr>
-							<td>1시간</td>
-							<td>오리엔테이션</td>
-							<td>이순신</td>
-						</tr>
-					</table>
-				</div>
+					</thead>
+					<tr>
+						<td>1시간</td>
+						<td>오리엔테이션</td>
+						<td>이순신</td>
+					</tr>
+					<tr>
+						<td>1시간</td>
+						<td>오리엔테이션</td>
+						<td>이순신</td>
+					</tr>
+				</table>
 			</div>
 		</div>
 		<div class="part-foot">

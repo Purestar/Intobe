@@ -10,8 +10,8 @@
 			--m-form-ft-c: var(--form-ft-c);
 			--m-form-ft-s: var(--form-ft-s);
 			--m-form-ft-w: var(--form-ft-w);
-			--m-form-gap-x: 2.78vw;
-			--m-form-gap-y: 2.78vw;
+			--m-form-gap-x: var(--form-gap-x);
+			--m-form-gap-y: var(--form-gap-y);
 			--m-form-pd-x: var(--form-pd-x);
 			--m-form-pd-y: var(--form-pd-y);
 			--m-form-txt-lh: var(--form-txt-lh);
@@ -19,6 +19,7 @@
 			--m-form-h: var(--form-h);
 
 			--m-form-icon-bp-x: var(--form-icon-bp-x);
+			--m-form-chk-icon-bp-x: var(--form-chk-icon-bp-x);
 			--m-form-icon-bp-y: var(--form-icon-bp-y);
 
 			--m-form-fcs-bd-c: var(--form-fcs-bd-c);

@@ -89,7 +89,8 @@
 		[class*="view-type-01"] table th { font-size: 3.89vw; font-weight: 300; text-align: left; color: #666; }
 		[class*="view-type-01"] table td { padding: 0.65vw 0; font-size: 3.89vw; font-weight: 300; text-align: left; color: #000; }
 		.class-mid { margin-top: 0; }
-		.class-mid .detaile-info { gap: 6.94vw; }
+		.class-mid .section { flex-wrap: wrap; }
+		.class-mid .detaile-info { gap: 6.94vw; margin-top: 6.94vw; }
 		.class-mid .detaile-info h3 { font-size: inherit; color: black; }
 		.class-mid .detaile-info p { margin-top: 2.08vw; font-size: inherit; }
 		.class-mid .detaile-info p .num { margin-right: 2.78vw; }
@@ -206,6 +207,16 @@
 			}
 
 		/* Radio */
+			.form-slt-rdo-01 {
+				--form-gap-x: 0.83vw;
+				--form-w: 1.94vw;
+				--form-h: 1.53vw;
+
+				--form-chk-w: 1.94vw;
+				--form-chk-h: 1.53vw;
+				--form-chk-icon-bp-x: var(--bp-250);
+			}
+
 			.form-slt-rdo-m-01 {
 				--form-flex-d: column;
 				--form-gap-x: 3.33vw

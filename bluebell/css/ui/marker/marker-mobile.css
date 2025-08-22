@@ -96,7 +96,8 @@
 			height: var(--m-mark-h);
 		}
 
-		[class*="mark-"] > * > .part-marker:before {
+		[class*="mark-"] > * > .part-marker:before,
+		[class*="mark-"] > *:before {
 			background-color: var(--m-mark-bg-c);
 			border-radius: var(--m-mark-bd-r);
 			width: var(--m-mark-w);
