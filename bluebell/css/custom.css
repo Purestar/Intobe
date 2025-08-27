@@ -617,7 +617,7 @@
 /* Swiper */
 	.swiper-type-01 .swiper-pagination-01 { position: absolute; right: 36px; top: 0; }
 
-	.swiper-type-02 .brd-lst-01 { display: flex; }
+	.swiper-type-02 .brd-lst-01 { display: flex; place-content: flex-start; }
 	.swiper-type-02 .swiper-nav-wrap { width: auto; left: auto; top: -58px; right: 58px; }
 
 	.swiper-type-04 .swiper-nav-wrap { width: auto; left: auto; right: 0; top: 6px; translate: 0 -50%; }
