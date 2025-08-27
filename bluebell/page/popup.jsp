@@ -60,6 +60,7 @@
 					<button type="button" class="btn-type" data-tta="result">시험응시결과</button>
 					<button type="button" class="btn-type" data-tta="searchuser">사용자검색</button>
 					<button type="button" class="btn-type" data-tta="reason">반려정보</button>
+					<button type="button" class="btn-type" data-tta="resultDetail">결과상세보기</button>
 				</div>
 			</div>
 			<div style="--dp: grid; --gap-y: 20px;">
@@ -113,6 +114,8 @@
 <%@ include file="./popup/searchuser.jsp" %>
 <!-- 반려정보 -->
 <%@ include file="./popup/reason.jsp" %>
+<!-- 반려정보 -->
+<%@ include file="./popup/resultDetail.jsp" %>
 <!-- 참조확인 -->
 <%@ include file="./popup/report.jsp" %>
 
