@@ -58,7 +58,12 @@
 							<th>마이픽과정&nbsp;교육비</th><!-- 마이픽과정 교육비 -->
 						</tr>
 					</thead>
-					<tbody id="historyTbody"><tr> <td colspan="9" style="--txt-a: center;">조회된 데이터가 없습니다.</td></tr></tbody>
+					<tbody>
+						<tr>
+							<td colspan="9" style="--txt-a: center;">조회된 데이터가 없습니다.</td>
+						</tr>
+						<tr> <td>1</td> <td><a href="#" class="link-deco" onclick="goMemberHistory('K585','K511')">박*용</a></td> <td>K585</td> <td>FPA管理支援Group FPA安全Team</td> <td>책임(S1)</td> <td><em>74</em> / 76</td> <td>97%</td> <td><em>1</em> / 1</td> <td style="text-align: left;">신청&nbsp;253,000원<br>승인&nbsp;253,000원</td></tr>
+					</tbody>
 				</table>
 			</div>
 		</div>

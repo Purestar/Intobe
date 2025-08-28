@@ -666,7 +666,8 @@
 	}
 
 /* Table */
-	[class*="tbl-type"] { background-color: white; word-break: break-all; }
+	[class*="tbl-type"] { background-color: white; word-break: break-all; white-space: break-spaces; }
+	[class*="tbl-type"] td { word-break: break-all; }
 	[class*="tbl-type"] td > *:first-child { margin-top: 0; }
 
 	[class*="tbl-type-01"] { border-top: 1px solid #2d2d2d; margin-top: 20px; }
