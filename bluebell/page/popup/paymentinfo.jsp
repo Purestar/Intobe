@@ -1,5 +1,5 @@
 <%@ page contentType ="text/html; charset=UTF-8" %>
-<div class="pop-type-01 active" id="paymentinfo" data-ttatg="paymentinfo" style="--pop-w: 870px; --m-pop-h: 100dvh;">
+<div class="pop-type-01" id="paymentinfo" data-ttatg="paymentinfo" style="--pop-w: 870px; --m-pop-h: 100dvh;">
 	<div class="part-wrap">
 		<div class="part-head">
 			<h1 class="part-title">결재정보</h1>
