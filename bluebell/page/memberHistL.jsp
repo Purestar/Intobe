@@ -2,6 +2,7 @@
 <%@ include file="../inc/header.jsp" %>
 <div class="sub-top-bg-01">
 	<div class="layout-inner">
+		<a href="#" class="btn-back pc"><i class="ic-l-arrow"></i>목록가기</a>
 		<h2 class="sub-tit">마이팀 조회</h2>
 		<ol class="page-loc">
 			<li>Home</li>
@@ -69,9 +70,36 @@
 							</tr>
 							<tr>
 								<th>직무</th>
-								<td></td>
-								<td>조회된 데이터가 없습니다.</td>
-								<td></td>
+								<td>
+									<ul style="--dp: grid; --gap-y:10px;">
+										<li style="--dp: flex; --gap-x: 10px;">
+											<span class="chip-type-02-lblu">수료</span>직무인증과정(집합)
+										</li>
+										<li style="--dp: flex; --gap-x: 10px;">
+											<span class="chip-type-02-lgrn">미신청</span>직무인증과정(집합)
+										</li>
+										<li style="--dp: flex; --gap-x: 10px;">
+											<span class="chip-type-02-lpur">완료</span>직무인증과정(집합)
+										</li>
+									</ul>
+								</td>
+								<td class="vt">
+									<ul style="--dp: grid; --gap-y:10px;">
+										<li style="--dp: flex; --gap-x: 10px;">
+											<span class="chip-type-02-lblu">수료</span>직무인증과정(집합)
+										</li>
+									</ul>
+								</td>
+								<td>
+									<ul style="--dp: grid; --gap-y:10px;">
+										<li style="--dp: flex; --gap-x: 10px;">
+											<span class="chip-type-02-lblu">수료</span>직무인증과정(집합)
+										</li>
+										<li style="--dp: flex; --gap-x: 10px;">
+											<span class="chip-type-02-lgrn">미수료</span>직무인증과정(집합)
+										</li>
+									</ul>
+								</td>
 							</tr>
 							<tr>
 								<th>직책</th>

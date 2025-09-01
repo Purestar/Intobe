@@ -1,5 +1,5 @@
 <%@ page contentType ="text/html; charset=UTF-8" %>
-<div class="pop-type-01" data-ttatg="paymentinfo" style="--pop-w: 870px; --m-pop-h: 100dvh;">
+<div class="pop-type-01 active" id="paymentinfo" data-ttatg="paymentinfo" style="--pop-w: 870px; --m-pop-h: 100dvh;">
 	<div class="part-wrap">
 		<div class="part-head">
 			<h1 class="part-title">결재정보</h1>
@@ -21,7 +21,7 @@
 
 				<div style="--dp: flex; --content-x: space-between; --items-y: center; --mg-t: 40px; --m-mg-t: 8.33vw;">
 					<h2 class="tit-04">신청정보</h2>
-					<a href="#" class="btn-type btn-sz-02 pc">인쇄</a>
+					<a href="#" class="btn-type btn-sz-02 pc" onclick="window.print();">인쇄</a>
 				</div>
 				<div style="--mg-t: 10px; --m-mg-t: 2.78vw;">
 					<div class="pc">
