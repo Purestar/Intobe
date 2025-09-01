@@ -1,12 +1,53 @@
 <%@ page contentType ="text/html; charset=UTF-8" %>
-<div class="pop-type-01" data-ttatg="enrollment" style="--m-pop-h: 100dvh;">
+<div class="pop-type-01 active" data-ttatg="enrollment" style="--m-pop-h: 100dvh;">
 	<div class="part-wrap">
 		<div class="part-head">
 			<h1 class="part-title">과정수강신청</h1>
 		</div>
 		<div class="part-cont">
-			<div class="pop-cont-in">
-				<div style="--dp: flex; --content-x: space-between; --items-y: center;">
+			<div class="part-cont-in">
+				<table class="tbl-type-01">
+					<colgroup>
+						<col style="--w: 120px; --m-w: 22vw;">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>교육기간<em>*</em></th>
+							<td>
+								<div style="--dp: flex; --items-y: center; --gap-x: 8px; --m-gap-x: 1.11vw;">
+									<div class="form-txt-date">
+										<input type="text">
+									</div>
+									~
+									<div class="form-txt-date">
+										<input type="text">
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>교육비<em>*</em></th>
+							<td>
+								<div style="--dp: grid; --grid-t-col: 2; --items-y: center; --gap-x: 8px; --m-gap-x: 1.11vw;">
+									<div class="form-txt">
+										<input type="text">
+									</div>
+									원
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>비고</th>
+							<td>
+								<div class="form-txt">
+									<input type="text">
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div style="--dp: flex; --content-x: space-between; --items-y: center; --mg-t: 40px; --m-mg-t: 8.33vw; ">
 					<h2 class="tit-04">결재자정보</h2>
 					<div style="--dp: flex; --gap-x: 20px; --content-x: space-between; --items-y: center;">
 						<div class="tooltip-wrap tipfe pc">

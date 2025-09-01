@@ -23,6 +23,29 @@
 	[class*="form-txt-date"] .part-wrap + * { min-width: auto !important; width: 100%; }
 	[class*="form-txt-date"] .part-wrap[data-state="open"] + * { z-index: 1 !important; }
 
+	/* jQuery UI Datepicker */
+	[class*="form-txt-date"] .ui-datepicker-trigger { position: absolute; right: 0; bottom: 0; width: var(--form-h); height: var(--form-h); text-indent: -1000vw; }
+	[class*="form-txt-date"] .ui-datepicker-trigger:before { content: ""; opacity: 0.5; position: absolute; left: 50%; top: 50%; background: var(--ic-c); background-position: var(--bp-300) var(--bp-input); background-size: var(--bg-sz); width: 18px; height: 19px; transform: translate(-50%, -50%); }
+	[class*="form-txt-date"] input:focus + .ui-datepicker-trigger:before,
+	[class*="form-txt-date"] .ui-datepicker-trigger:focus:before { opacity: 1; }
+
+	.ui-datepicker { background:white; border:1px solid var(--mc);}
+	.ui-datepicker .ui-datepicker-header { padding: 0; }
+	.ui-datepicker .ui-datepicker-title { margin: 0; font-size: 16px; line-height: 48px; color: #2d2d2d; }
+	.ui-datepicker .ui-datepicker-prev,
+	.ui-datepicker .ui-datepicker-next { display: flex; place-items: center; place-content: center; top: 50%; border: 1px solid #e8e8e8; border-radius: 50%; width: 20px; height: 20px; translate: 0 -50%; cursor: pointer; }
+	.ui-datepicker .ui-datepicker-prev { left: 40px; }
+	.ui-datepicker .ui-datepicker-next { right: 40px; }
+	.ui-datepicker .ui-datepicker-prev:before,
+	.ui-datepicker .ui-datepicker-next:before { content:""; background-image: var(--ic-c); background-position: var(--bp-150) var(--bp-datepicker); background-size: var(--bg-sz); width: 6px; height: 10px; }
+	.ui-datepicker .ui-datepicker-next:before { rotate: 180deg; }
+	.ui-datepicker .ui-datepicker-calendar { height: 153px; color: #767676; }
+	.ui-datepicker .ui-datepicker-calendar th { height: 29px; padding: 0; font-weight: 400; }
+	.ui-datepicker .ui-datepicker-calendar td { padding: 0; }
+	.ui-datepicker .ui-datepicker-calendar td a { display: flex; place-items: center; place-content: center; width: 24px; line-height: 24px; margin: 0 auto; padding: 0; text-align: center; }
+	.ui-datepicker .ui-datepicker-calendar td a.ui-state-active { background: var(--moc); border-radius: 50%; color: white; }
+	.ui-datepicker th:first-child,
+	.ui-datepicker td:first-child { color: red; }
 
 /* File */
 	/*[class*="form-file"] { position: relative; }

@@ -35,9 +35,9 @@ $(function () {
 	$("[class*='swi-type']").swiperInit(); // 스와이퍼
 	$(document).inpPswd(); // 비밀번호 보이기 토글
 	$(".tab-wrap").tabUI(); // 탭메뉴
+	$(document).datep(); // 데이트피커
 
-	/*$(document).datep(); // 데이트피커
-
+	/*
 	$(document).popUI(); // 팝업
 
 	//$(document).prevttg(); // 이전 활성화 제거
@@ -328,14 +328,10 @@ $.fn.tabUI = function (options) {
 	};
 };
 
-
-
-
-
 // Date Picker
 $.fn.datep = function () {
 	var $obj = $(this),
-		$dp = $obj.find("[class*='inp-date']")
+		$dp = $obj.find("[class*='form-txt-date']")
 	;
 
 	$dp.each(function () {
@@ -351,6 +347,10 @@ $.fn.datep = function () {
 		};
 	});
 };
+
+
+
+
 
 // Popup
 $.fn.popUI = function () {
