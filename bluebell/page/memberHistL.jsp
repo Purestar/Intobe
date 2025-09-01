@@ -64,7 +64,7 @@
 						<tbody>
 							<tr>
 								<th>직급</th>
-								<td>조회된 데이터가 없습니다.</td>
+								<td style="--txt-a: center;">조회된 데이터가 없습니다.</td>
 							</tr>
 							<tr>
 								<th>직무</th>
@@ -101,19 +101,19 @@
 							</tr>
 							<tr>
 								<th>직책</th>
-								<td>조회된 데이터가 없습니다.</td>
+								<td style="--txt-a: center;">조회된 데이터가 없습니다.</td>
 							</tr>
 							<tr>
 								<th>의무</th>
-								<td>조회된 데이터가 없습니다.</td>
+								<td style="--txt-a: center;">조회된 데이터가 없습니다.</td>
 							</tr>
 							<tr>
 								<th>공통소양</th>
-								<td>조회된 데이터가 없습니다.</td>
+								<td style="--txt-a: center;">조회된 데이터가 없습니다.</td>
 							</tr>
 							<tr>
 								<th>조직문화</th>
-								<td>조회된 데이터가 없습니다.</td>
+								<td style="--txt-a: center;">조회된 데이터가 없습니다.</td>
 							</tr>
 						</tbody>
 					</table>
@@ -239,39 +239,56 @@
 						<tbody>
 							<tr>
 								<th>직급</th>
-								<td></td>
-								<td>조회된 데이터가 없습니다.</td>
-								<td></td>
+								<td style="--txt-a: center;">조회된 데이터가 없습니다.</td>
 							</tr>
 							<tr>
 								<th>직무</th>
-								<td></td>
-								<td>조회된 데이터가 없습니다.</td>
-								<td></td>
+								<td>
+									<div style="--dp: grid; --grid-t-col: 3; --m-grid-t-col: 1; --m-gap-y: 1.39vw;">
+										<div style="--dp: flex; --flex-d: column; --gap-y: 10px; --m-gap-y: 1.39vw;">
+											<div style="--dp: flex; --gap-x: 10px; --items-y: center; --m-gap-x: 1.67vw;">
+												<span class="chip-type-02-lblu">수료</span>
+												<a href="">직무인증과정(집합)</a>
+											</div>
+											<div style="--dp: flex; --gap-x: 10px; --items-y: center; --m-gap-x: 1.67vw;">
+												<span class="chip-type-02-lgrn">미신청</span>
+												<a href="">기초과정(온라인)</a>
+											</div>
+										</div>
+										<div style="--dp: flex; --flex-d: column; --gap-y: 10px; --m-gap-y: 1.39vw;">
+											<div style="--dp: flex; --gap-x: 10px; --items-y: center; --m-gap-x: 1.67vw;">
+												<span class="chip-type-02-lblu">수료</span>
+												<a href="">직무인증과정(집합)</a>
+											</div>
+										</div>
+										<div style="--dp: flex; --flex-d: column; --gap-y: 10px; --m-gap-y: 1.39vw;">
+											<div style="--dp: flex; --gap-x: 10px; --items-y: center; --m-gap-x: 1.67vw;">
+												<span class="chip-type-02-lblu">수료</span>
+												<a href="">직무인증과정(집합)</a>
+											</div>
+											<div style="--dp: flex; --gap-x: 10px; --items-y: center; --m-gap-x: 1.67vw;">
+												<span class="chip-type-02-lpur">완료</span>
+												<a href="">기초과정(온라인)</a>
+											</div>
+										</div>
+									</div>
+								</td>
 							</tr>
 							<tr>
 								<th>직책</th>
-								<td></td>
-								<td>조회된 데이터가 없습니다.</td>
-								<td></td>
+								<td style="--txt-a: center;">조회된 데이터가 없습니다.</td>
 							</tr>
 							<tr>
 								<th>의무</th>
-								<td></td>
-								<td>조회된 데이터가 없습니다.</td>
-								<td></td>
+								<td style="--txt-a: center;">조회된 데이터가 없습니다.</td>
 							</tr>
 							<tr>
 								<th>공통소양</th>
-								<td></td>
-								<td>조회된 데이터가 없습니다.</td>
-								<td></td>
+								<td style="--txt-a: center;">조회된 데이터가 없습니다.</td>
 							</tr>
 							<tr>
 								<th>조직문화</th>
-								<td></td>
-								<td>조회된 데이터가 없습니다.</td>
-								<td></td>
+								<td style="--txt-a: center;">조회된 데이터가 없습니다.</td>
 							</tr>
 						</tbody>
 					</table>
