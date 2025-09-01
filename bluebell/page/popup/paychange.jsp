@@ -1,5 +1,5 @@
 <%@ page contentType ="text/html; charset=UTF-8" %>
-<div class="pop-type-01" data-ttatg="paychange" style="--pop-w: 1100px;">
+<div class="pop-type-01 active" data-ttatg="paychange" style="--pop-w: 1100px;">
 	<div class="part-wrap">
 		<div class="part-head">
 			<h1 class="part-title">교육일정 보기</h1>
@@ -355,30 +355,20 @@
 								</div>
 							</div>
                         </div>
-                        <div>
-							<div style="--dp: flex; --gap-x: 10px; --m-dp: grid; --m-grid-t-col: 2; --m-gap-a: 1.67vw;">
-                                <div class="sel-type">
-                                    <select>
-                                        <option>CEO선택</option>
-                                    </select>
-                                </div>
-                                <div class="sel-type">
-                                    <select>
-                                        <option>본부선택</option>
-                                    </select>
-                                </div>
-                                <div class="sel-type">
-                                    <select>
-                                        <option>그룹선택</option>
-                                    </select>
-                                </div>
-                                <div class="sel-type">
-                                    <select>
-                                        <option>팀선택</option>
-                                    </select>
-                                </div>
-                                <button class="btn-type-lgry" style="--m-grid-col: 2; --m-btn-w: 100%;">검색</button>
-                            </div>
+						<div>
+							<div style="--dp: flex; --content-x: space-between; --gap-x: 10px; --m-dp: grid; --m-grid-t-col: 2; --m-gap-a: 1.67vw;">
+								<div style="--dp: flex; --gap-x: 10px; --m-gap-a: 1.67vw; --grid-col: 2;">
+									<div class="sel-type">
+										<select>
+											<option>CEO선택</option>
+										</select>
+									</div>
+									<div class="form-txt">
+										<input type="text">
+									</div>
+								</div>
+								<button class="btn-type-lgry" style="--m-grid-col: 2; --m-btn-w: 100%;">검색</button>
+							</div>
 							<div style="--dp: grid; --grid-t-col: 3; --gap-x: 22px; --mg-t: 40px; --m-mg-t: 5.56vw; --m-grid-t-col: 1; --m-gap-y: 8.33vw;">
 								<div style="--w: 336px; --m-w: 100%;">
 									<h2 class="tit-04">검색결과 <span style="--ft-c: #999;">3</span></h2>
@@ -606,12 +596,12 @@
 										<thead>
 											<tr>
 												<th>선택</th>
-                                                <th>소속</th>
-                                                <th>사번</th>
-                                                <th>성명</th>
-                                                <th>직위</th>
-                                                <th>관리</th>
-                                            </tr>
+												<th>소속</th>
+												<th>사번</th>
+												<th>성명</th>
+												<th>직위</th>
+												<th>관리</th>
+											</tr>
 										</thead>
 									</table>
 									<div data-scroll="y" style="--max-h: 274px; --m-max-h: 70.14vw; --m-mg-t: 2.78vw;">
@@ -802,7 +792,7 @@
 									</div>
 								</div>
 							</div>
-                        </div>
+						</div>
                     </div>
 					<p class="pc" style="--dp: flex; --items-y: center; --gap-x: 4px; --m-gap-x: 0.56vw;"><i class="ic-info"></i>결재선을 변경하려면 결재선을 선택한 후, 위 결재선 변경 버튼을 클릭하세요.</p>
                 </div>
