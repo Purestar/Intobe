@@ -64,66 +64,56 @@
 						<tbody>
 							<tr>
 								<th>직급</th>
-								<td></td>
 								<td>조회된 데이터가 없습니다.</td>
-								<td></td>
 							</tr>
 							<tr>
 								<th>직무</th>
 								<td>
-									<ul style="--dp: grid; --gap-y:10px;">
-										<li style="--dp: flex; --gap-x: 10px;">
-											<span class="chip-type-02-lblu">수료</span>직무인증과정(집합)
-										</li>
-										<li style="--dp: flex; --gap-x: 10px;">
-											<span class="chip-type-02-lgrn">미신청</span>직무인증과정(집합)
-										</li>
-										<li style="--dp: flex; --gap-x: 10px;">
-											<span class="chip-type-02-lpur">완료</span>직무인증과정(집합)
-										</li>
-									</ul>
-								</td>
-								<td class="vt">
-									<ul style="--dp: grid; --gap-y:10px;">
-										<li style="--dp: flex; --gap-x: 10px;">
-											<span class="chip-type-02-lblu">수료</span>직무인증과정(집합)
-										</li>
-									</ul>
-								</td>
-								<td>
-									<ul style="--dp: grid; --gap-y:10px;">
-										<li style="--dp: flex; --gap-x: 10px;">
-											<span class="chip-type-02-lblu">수료</span>직무인증과정(집합)
-										</li>
-										<li style="--dp: flex; --gap-x: 10px;">
-											<span class="chip-type-02-lgrn">미수료</span>직무인증과정(집합)
-										</li>
-									</ul>
+									<div style="--dp: grid; --grid-t-col: 3; --m-grid-t-col: 1; --m-gap-y: 1.39vw;">
+										<div style="--dp: flex; --flex-d: column; --gap-y: 10px; --m-gap-y: 1.39vw;">
+											<div style="--dp: flex; --gap-x: 10px; --items-y: center; --m-gap-x: 1.67vw;">
+												<span class="chip-type-02-lblu">수료</span>
+												<a href="">직무인증과정(집합)</a>
+											</div>
+											<div style="--dp: flex; --gap-x: 10px; --items-y: center; --m-gap-x: 1.67vw;">
+												<span class="chip-type-02-lgrn">미신청</span>
+												<a href="">기초과정(온라인)</a>
+											</div>
+										</div>
+										<div style="--dp: flex; --flex-d: column; --gap-y: 10px; --m-gap-y: 1.39vw;">
+											<div style="--dp: flex; --gap-x: 10px; --items-y: center; --m-gap-x: 1.67vw;">
+												<span class="chip-type-02-lblu">수료</span>
+												<a href="">직무인증과정(집합)</a>
+											</div>
+										</div>
+										<div style="--dp: flex; --flex-d: column; --gap-y: 10px; --m-gap-y: 1.39vw;">
+											<div style="--dp: flex; --gap-x: 10px; --items-y: center; --m-gap-x: 1.67vw;">
+												<span class="chip-type-02-lblu">수료</span>
+												<a href="">직무인증과정(집합)</a>
+											</div>
+											<div style="--dp: flex; --gap-x: 10px; --items-y: center; --m-gap-x: 1.67vw;">
+												<span class="chip-type-02-lpur">완료</span>
+												<a href="">기초과정(온라인)</a>
+											</div>
+										</div>
+									</div>
 								</td>
 							</tr>
 							<tr>
 								<th>직책</th>
-								<td></td>
 								<td>조회된 데이터가 없습니다.</td>
-								<td></td>
 							</tr>
 							<tr>
 								<th>의무</th>
-								<td></td>
 								<td>조회된 데이터가 없습니다.</td>
-								<td></td>
 							</tr>
 							<tr>
 								<th>공통소양</th>
-								<td></td>
 								<td>조회된 데이터가 없습니다.</td>
-								<td></td>
 							</tr>
 							<tr>
 								<th>조직문화</th>
-								<td></td>
 								<td>조회된 데이터가 없습니다.</td>
-								<td></td>
 							</tr>
 						</tbody>
 					</table>

@@ -86,7 +86,7 @@
 	::placeholder {color:var(--fom-ph);}
 
 /* Table */
-	table {width:100%; table-layout:fixed; border-collapse:collapse;}
+	table { min-width: 100%; table-layout: fixed; border-collapse: collapse; }
 
 /* Scroll */
 	*::-webkit-scrollbar {background:var(--scr-bg1); width:var(--scr-w); height:var(--scr-w); border-radius:var(--scr-br);}
