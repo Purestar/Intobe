@@ -1,5 +1,5 @@
 <%@ page contentType ="text/html; charset=UTF-8" %>
-<div class="pop-type-01 active" data-ttatg="enrollment" style="--m-pop-h: 100dvh;">
+<div class="pop-type-01" data-ttatg="enrollment" style="--m-pop-h: 100dvh;">
 	<div class="part-wrap">
 		<div class="part-head">
 			<h1 class="part-title">과정수강신청</h1>
