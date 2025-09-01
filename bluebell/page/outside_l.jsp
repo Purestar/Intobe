@@ -21,9 +21,15 @@
 		</div>
 
 		<div class="brd-wrap" style="--mg-t: 60px; --m-mg-t: 8.33vw;">
-			<div style="--dp: flex; --content-x: flex-end">
+			<div style="--dp: flex; --content-x: space-between; --items-y: center;">
+				<div class="sel-type">
+					<select>
+						<option>전체</option>
+					</select>
+				</div>
 				<button type="button" class="btn-type btn-sz-02">마이픽과정 개설 신청</button>
 			</div>
+			<div class="no-data" style="--h: 280px; --m-h: 45.56vw;">조회된 데이터가 없습니다.</div>
 			<ul style="--dp: grid; --mg-t: 20px; --gap-y: 20px; --m-mg-t: 2.78vw;">
 				<li class="box-type-01" style="--dp: flex; --content-x: space-between; --items-y: center;">
 					<div>
@@ -66,7 +72,7 @@
 						</div>
 					</div>
 				</li>
-				
+
 				<li class="box-type-01" style="--dp: flex; --content-x: space-between; --items-y: center;">
 					<div>
 						<div>
