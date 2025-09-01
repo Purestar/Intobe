@@ -235,9 +235,11 @@
 								</div>
 
 								<div class="mobile">
-									<span>반려자 <span style="--ft-c: black">박진영</span></span>
-									<span>처리일시 <span style="--ft-c: black">2023.10.25 13:12:12</span></span>
-									<span>사유 <span style="--ft-c: black">신청한 교육 일정에 문제가 있어 보입니다. 확인하시고 재신청해 주시기 바랍니다.</span></span>
+									<div style="--dp: grid; --gap-y: 1.39vw;">
+										<span>반려자 <span style="--ft-c: black">박진영</span></span>
+										<span>처리일시 <span style="--ft-c: black">2023.10.25 13:12:12</span></span>
+										<span>사유 <span style="--ft-c: black">신청한 교육 일정에 문제가 있어 보입니다. 확인하시고 재신청해 주시기 바랍니다.</span></span>
+									</div>
 								</div>
 							</td>
 						</tr>
