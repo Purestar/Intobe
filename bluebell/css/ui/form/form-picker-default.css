@@ -47,10 +47,6 @@
 	.ui-datepicker th:first-child,
 	.ui-datepicker td:first-child { color: red; }
 
-/* File */
-	/*[class*="form-file"] { position: relative; }
-	[class*="form-file"] input[type="file"] { position: absolute; left: -100em; }*/
-
 /* Range */
 	[class*="form-range"] { border: 0; }
 	[class*="form-range"][disabled] { background: none; }

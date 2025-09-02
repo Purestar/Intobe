@@ -36,3 +36,6 @@
 /* Form File List */
 	.form-file-lst { display: flex; gap: 20px; margin-top: 16px; }
 	.form-file-lst > * > * { display: flex; align-items: center; gap: 8px; }
+
+	.form-file-lst-02 > * { display: flex; place-items: center; gap: 20px; }
+	.form-file-lst-02 > * > button { display: block; }

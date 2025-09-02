@@ -279,6 +279,13 @@
 			--form-pd-x: 0;
 		}
 
+		.form-txt-file-02 {
+			--form-w: auto;
+			--form-bd-w: 0;
+			--form-bd-r: 0;
+			--form-pd-x: 0;
+		}
+
 	/* Password Toggle */
 		[class*="form-txt"] .part-icon.active .ic-eye:before { background-position: var(--bp-950) 0; }
 
@@ -533,6 +540,14 @@
 			--mark-bg-c: #eee;
 			--mark-h: 14px;
 			--mark-ft-c: #666;
+		}
+
+	/* Square */
+		.mark-squ-01 {
+			--mark-bg-c: #666;
+			--mark-w: 2px;
+			--mark-h: 2px;
+			--mark-gap-x: 5px;
 		}
 
 /* Moment Calendar */
