@@ -7,7 +7,7 @@
 				<div data-ttatg="simplealert">
 					<button type="button" data-tta="simplealert" style="--pos: relative;">
 						<i class="ic-bell"></i>
-						<span class="txt-alarm">19</span>
+						<span class="txt-alarm">99+</span>
 					</button>
 					<div class="h-pop h-alarm">
 						<h3 class="h-pop-tit">알림</h3>
