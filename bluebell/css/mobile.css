@@ -125,6 +125,12 @@
 
 	/* Button */
 		/* Size */
+			.btn-sz-01 {
+				--btn-h: 15.56vw;
+				--btn-ft-s: 5vw;
+				--btn-pd-x: 6.67vw;
+			}
+
 			.btn-sz-02 {
 				--btn-h: 7.78vw;
 				--btn-ft-s: 3.33vw;

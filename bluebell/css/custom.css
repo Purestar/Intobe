@@ -131,6 +131,12 @@
 		}
 
 	/* Size */
+		.btn-sz-01 {
+			--btn-h: 56px;
+			--btn-ft-s: 18px;
+			--btn-pd-x: 24px;
+		}
+
 		.btn-sz-02 {
 			--btn-h: 34px;
 			--btn-ft-s: 14px;
