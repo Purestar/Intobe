@@ -2,6 +2,7 @@
 <%@ include file="../inc/header.jsp" %>
 <div class="sub-top">
 	<div class="layout-inner">
+		<a href="#" class="btn-back pc"><i class="ic-l-arrow"></i>목록가기</a>
 		<h2 class="sub-tit">학습방</h2>
 	</div>
 </div>
