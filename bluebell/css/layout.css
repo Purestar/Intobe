@@ -7,7 +7,7 @@ body, #app {display:flex; flex-direction:column; place-content:space-between; fl
 	.h-wrap .h-gnb { display: flex; place-content: space-between; place-items: center; font-weight:500; font-size:19px; color:#aec0c8; }
 	.h-wrap .h-gnb > * { word-break: keep-all; text-align: center;}
 	.h-wrap .h-gnb li a { position: relative; }
-	.h-wrap .h-gnb .txt-alarm-02 { position: absolute; top: -20px; right: -27px; background: white; border-radius: 18px 18px 18px 0; width: 37px; height: 18px; font-size: 14px; text-align: center; color: var(--mc); }
+	.h-wrap .h-gnb .txt-alarm-02 { position: absolute; top: -20px; right: -27px; background: white; border-radius: 18px 18px 18px 0; width: 37px; height: 18px; font-size: 14px; text-align: center; color: var(--moc); }
 	.h-wrap .h-gnb > *:hover,
 	.h-wrap .h-gnb > *.active { color: white; }
 
@@ -20,7 +20,7 @@ body, #app {display:flex; flex-direction:column; place-content:space-between; fl
 
 	.h-wrap .h-util { position: relative; display: flex; place-items: center; place-content: flex-end; gap: 30px; padding-top: 28px; z-index: 10; }
 	.h-wrap .h-util > button { position: relative; }
-	.h-wrap .h-util .txt-alarm { position: absolute; top: -5px; right: -27px; background: white; border-radius: 18px 18px 18px 0; width: 37px; height: 18px;  font-size: 14px; text-align: center; color: var(--mc); }
+	.h-wrap .h-util .txt-alarm { position: absolute; top: -5px; right: -27px; background: white; border-radius: 18px 18px 18px 0; width: 37px; height: 18px;  font-size: 14px; text-align: center; color: var(--moc); }
 
 	.h-wrap .h-menu { display: none; position: absolute; background: white; border-radius: 10px; box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.07); padding: 20px; font-size: 14px; word-break: keep-all; color: #666; }
 	.h-wrap .h-menu.active,
