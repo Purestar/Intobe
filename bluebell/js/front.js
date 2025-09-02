@@ -28,7 +28,7 @@ $(window).on("load", function () {
 
 $(function () {
 	$("header").gnb(); // 헤더 메뉴
-	$(document).mainHeader(); // 메인 헤더 스크롤
+	//$(document).mainHeader(); // 메인 헤더 스크롤
 	$(document).acoUI(); // 아코디언
 	$(document).tta(); // 활성화 토글
 	$(document).selfTg(); // 셀프 활성화
@@ -86,7 +86,7 @@ $.fn.gnb = function () {
 		$hSubMenu.addClass("active");
 	});
 
-	$gnb.on("mouseleave", function () {
+	$(".h-wrap").on("mouseleave", function () {
 		$hSubMenu.removeClass("active");
 	});
 };

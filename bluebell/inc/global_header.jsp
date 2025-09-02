@@ -11,6 +11,7 @@
 
 		<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
 		<link rel="stylesheet" href="../css/global.css" type="text/css">
+		<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Nanum+Gothic&display=swap" rel="stylesheet">
 
 		<script src="../js/common.js"></script>
 		<script src="../js/front.js"></script>

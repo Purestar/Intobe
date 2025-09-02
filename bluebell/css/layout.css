@@ -4,8 +4,8 @@ body, #app {display:flex; flex-direction:column; place-content:space-between; fl
 	.h-wrap { position: sticky; left: 0; top: 0; background: var(--bg-type01); height: var(--init-header-height); z-index: 100; }
 	.h-wrap .h-wrap-pc { position: relative; display: flex; place-items: center; place-content: space-between; gap: 30px; height: 100%; z-index: 20; }
 	.h-wrap .h-gnb-wrap { flex: 1; }
-	.h-wrap .h-gnb { display: flex; height: var(--init-header-height); place-content: space-between; place-items: center; font-weight:500; font-size:19px; color:#fff; }
-	.h-wrap .h-gnb > * { flex: 1; word-break: keep-all; text-align: center;}
+	.h-wrap .h-gnb { display: flex; place-content: space-between; place-items: center; font-weight:500; font-size:19px; color:#fff; }
+	.h-wrap .h-gnb > * { word-break: keep-all; text-align: center;}
 	.h-wrap .h-gnb li a { position: relative; }
 	.h-wrap .h-gnb .txt-alarm-02 { position: absolute; top: -20px; right: -27px; background: #e0242c; border-radius: 18px 18px 18px 0; width: 34px; height: 18px; padding: 0 10px; font-size: 14px; color: #fff; }
 
@@ -16,7 +16,7 @@ body, #app {display:flex; flex-direction:column; place-content:space-between; fl
 	.h-sub-menu-wrap .h-sub-menu a { color: #666; }
 	.h-sub-menu-wrap .h-sub-menu a:hover, .h-sub-menu-wrap .h-sub-menu .active a { color: #df242c; }
 
-	.h-wrap .h-util { display: flex; place-items: center; gap: 30px; }
+	.h-wrap .h-util { position: relative; display: flex; place-items: center; place-content: flex-end; gap: 30px; padding-top: 28px; z-index: 10; }
 	.h-wrap .h-util > button { position: relative; }
 	.h-wrap .h-util .txt-alarm { position: absolute; top: -5px; right: -27px; background: #e0242c; border-radius: 18px 18px 18px 0; width: 34px; height: 18px; padding: 0 10px; font-size: 14px; color: #fff; }
 
@@ -71,9 +71,9 @@ body, #app {display:flex; flex-direction:column; place-content:space-between; fl
 	.sub-contents { padding: 70px 0 140px; }
 
 /* Footer */
-	.f-wrap { display: flex; place-items: center; background: #333; height:var(--init-footer-height); }
+	.f-wrap { display: flex; place-items: center; background: black; height:var(--init-footer-height); }
 	.f-wrap .f-menu { font-weight:700; }
-	.f-wrap .f-copy { margin-top: 10px; font-size: 14px; color: #999; }
+	.f-wrap .f-copy { font-size: 14px; color: #999; }
 
 @media all and (max-width:768px) {
 	/* Header */
