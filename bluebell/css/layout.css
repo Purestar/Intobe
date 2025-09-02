@@ -46,7 +46,7 @@ body, #app {display:flex; flex-direction:column; place-content:space-between; fl
 	.h-wrap .user-info .user-nm { font-size: 20px; font-weight: bold; text-align: center; color: #000;}
 	.h-wrap .user-info a { font-weight: 300; color: #999; }
 
-	.h-wrap .h-usr .photo-menu { top: 75px; left: 55px; }
+	.h-wrap .h-usr .photo-menu { top: 75px; left: 55px; z-index: 1; }
 	.h-wrap .h-usrnm .pop-close, .h-wrap .h-alarm .pop-close {position:absolute; right:20px; top:20px; width:40px; height:30px; text-indent:-1000em; z-index:20;}
 	.h-wrap .h-usrnm .pop-close:before, .h-wrap .h-alarm .pop-close:before {content:""; position:absolute; left:50%; top:50%; background:var(--icon); background-position:-250px 0px; width:18px; height:18px; transform:translate(-50%, -50%);}
 
