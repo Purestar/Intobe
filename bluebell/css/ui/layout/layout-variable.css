@@ -38,5 +38,4 @@
 	[class*="layout-inner"] {
 		width: 100%;
 		max-width: var(--init-layout-width);
-		min-width: 1024px;
 	}

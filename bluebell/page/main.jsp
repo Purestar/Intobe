@@ -1,6 +1,9 @@
 <%@ page contentType = "text/html; charset=UTF-8" %>
 <%@ include file="../inc/header.jsp" %>
 <main class="main-wrap">
+	<div style="--dp: flex; --content-a: center; --items-a: center; --h: 100dvh; --bg-c: rgb(255, 109, 109); --ft-c: white; --ft-s: 36px;">
+		메인 재작업
+	</div>
 	<div class="main-top">
 		<div class="layout-inner">
 			<div style="--dp: flex; --items-y: center; --content-x: space-between;">

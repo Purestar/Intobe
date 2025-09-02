@@ -28,7 +28,7 @@ body, #app {display:flex; flex-direction:column; place-content:space-between; fl
 
 	.h-wrap [data-ttatg] { position: relative; }
 	.h-wrap [data-ttatg].active .h-pop { display: block; }
-	.h-wrap .h-pop { display: none; position: absolute; left: 50%; top: 33px; background: white; border-radius: 10px;  box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.07); padding: 19px 21px; font-size: 14px; word-break: keep-all; transform: translate(-50%, 0); color: #666;}
+	.h-wrap .h-pop { display: none; position: absolute; left: 50%; top: 33px; background: white; border-radius: 10px; box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.07); padding: 19px 21px; font-size: 14px; word-break: keep-all; transform: translate(-50%, 0); color: #666;}
 	.h-wrap .h-pop-close { position: absolute; right: 20px; top: 20px; height: auto; }
 	.h-wrap .h-pop-tit { font-size: 20px; font-weight: bold; }
 
@@ -63,8 +63,8 @@ body, #app {display:flex; flex-direction:column; place-content:space-between; fl
 
 /* Container */
 	#container {flex:1;}
-	[class*="sub-top"] .layout-inner { position: relative; display: flex; place-content: center;place-items: center; height: 200px; }
-	.sub-top-bg-01 { background: url(../images/img/sub-top-bg01.png); }
+	[class*="sub-top"] .layout-inner { position: relative; display: flex; place-content: center; place-items: center; height: 200px; }
+	.sub-top-bg-01 { background: url(../images/img/sub-top-bg01.png) center no-repeat; }
 	[class*="sub-top"] .sub-tit { font-family: 'Nanum Myeongjo'; font-size: 40px; font-weight: bold; color: #2f2f2f; }
 	[class*="sub-top"] .page-loc { display: flex; gap: 8px; position: absolute; right: 0; top: 18px; font-size: 14px; }
 	[class*="sub-top"] .page-loc li { display: flex; place-items: center; gap: 9px; color: #2f2f2f; }
