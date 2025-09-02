@@ -11,7 +11,7 @@
 					<li><a href="#">콘텐츠학습</a></li>
 					<li><a href="#">나의학습</a></li>
 					<li><a href="#">교육지원</a></li>
-					<li><a href="#">결재 / 이력관리<i>3</i></a></li>
+					<li><a href="#">결재 / 이력관리<span class="txt-alarm-02">19</span></a></li>
 				</ul>
 				<div class="h-sub-menu-wrap">
 					<div class="h-sub-menu layout-inner">
