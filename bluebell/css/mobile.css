@@ -21,6 +21,7 @@
 
 		[class*="aco-type-01"].aco-qna .aco-head-in:before{ display: none; }
 		[class*="aco-type-01"].aco-qna .aco-cont { gap: 2.78vw; }
+		[class*="aco-type-01"].aco-qna .aco-cont-in { min-height: 20vw; }
 		[class*="aco-type-01"] .txt-a { font-size: 3.33vw; }
 
 		.aco-type-m-01 {

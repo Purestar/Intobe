@@ -34,6 +34,7 @@
 
 	[class*="aco-type-01"].aco-qna .aco-cont:before { display: none; }
 	[class*="aco-type-01"].aco-qna .aco-cont { gap: 20px; }
+	[class*="aco-type-01"].aco-qna .aco-cont-in { min-height: 130px; }
 	[class*="aco-type-01"] .txt-a { font-size: 18px; }
 
 /* Board Default */
