@@ -523,6 +523,7 @@
 			.main-aijob-lst > *.active:before {width:4.17vw; height:3.06vw;}
 			.main-aijob-lst > *.active strong {font-size:3.89vw;}
 			.main-aijob-lst > *.active .main-aijob-lst-txt {margin-top:2.22vw;}
+			.main-aijob-lst > * + *:after {left:-3.5vw; width:3.06vw; height:2.22vw;}
 
 		/* 진입 */
 			.set-preffer {border:0; border-radius:0; width:100dvw; height:100dvh; padding-top:16.67vw;}
