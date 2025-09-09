@@ -356,18 +356,35 @@
 							</div>
                         </div>
 						<div>
-							<div style="--dp: flex; --content-x: space-between; --gap-x: 10px; --m-dp: grid; --m-grid-t-col: 2; --m-gap-a: 1.67vw;">
-								<div style="--dp: flex; --gap-x: 10px; --m-gap-a: 1.67vw; --grid-col: 2;">
+							<div style="--dp: flex; --content-x: space-between; --gap-x: 10px; --m-dp: grid; --m-gap-a: 1.67vw;">
+								<div style="--dp: grid; --grid-t-col: 4; --gap-x: 10px; --w: 700px; --m-grid-t-col: 2; --m-w: 100%; --m-gap-a: 1.67vw;">
 									<div class="sel-type">
 										<select>
 											<option>CEO선택</option>
 										</select>
 									</div>
+									<div class="sel-type">
+										<select>
+											<option>CEO선택CEO선택CEO선택CEO선택CEO선택CEO선택CEO선택</option>
+										</select>
+									</div>
+									<div class="sel-type">
+										<select>
+											<option>CEO선택CEO선택CEO선택CEO선택CEO선택CEO선택CEO선택</option>
+										</select>
+									</div>
+									<div class="sel-type">
+										<select>
+											<option>CEO선택CEO선택CEO선택CEO선택CEO선택CEO선택CEO선택</option>
+										</select>
+									</div>
+								</div>
+								<div style="--dp: flex; --gap-x: 10px; --m-dp: grid; --m-gap-a: 1.67vw;">
 									<div class="form-txt">
 										<input type="text">
 									</div>
+									<button class="btn-type-lgry ws-nw" style="--m-btn-w: 100%;">검색</button>
 								</div>
-								<button class="btn-type-lgry" style="--m-grid-col: 2; --m-btn-w: 100%;">검색</button>
 							</div>
 							<div style="--dp: grid; --grid-t-col: 3; --gap-x: 22px; --mg-t: 40px; --m-mg-t: 5.56vw; --m-grid-t-col: 1; --m-gap-y: 8.33vw;">
 								<div style="--w: 336px; --m-w: 100%;">
