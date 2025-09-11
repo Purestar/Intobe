@@ -82,7 +82,7 @@
 			</div>
 			<div style="--dp: flex; --mg-t: 28px; --gap-x: 54px;">
 				<h1 class="h-logo"><a href="#"><img src="../images/img/img_logo_w.png"></a></h1>
-				<nav class="h-gnb-wrap">
+				<nav class="h-gnb-wrap" style="--menu-length: 6;">
 					<ul class="h-gnb">
 						<li><a href="#">教育体系／制度</a></li>
 						<li class="active"><a href="#">교육과정</a></li>
@@ -91,32 +91,34 @@
 						<li><a href="#">FC진단</a></li>
 						<li><a href="#">결재 / 이력관리<span class="txt-alarm-02">19</span></a></li>
 					</ul>
-					<div class="h-sub-menu-wrap">
-						<div class="h-sub-menu layout-inner">
-							<ul>
-								<li class="active"><a href="#">교육체계도</a></li>
-								<li><a href="#">교육제도</a></li>
-							</ul>
-							<ul>
-								<li><a href="#">수강신청</a></li>
-							</ul>
-							<ul>
-								<li><a href="#">전체보기</a></li>
-							</ul>
-							<ul>
-								<li><a href="#">러닝로드맵</a></li>
-								<li><a href="#">수강현황</a></li>
-								<li><a href="#">사외교육신청</a></li>
-							</ul>
-							<ul>
-								<li><a href="#">Cell/학습동아리</a></li>
-								<li><a href="#">コンテンツ学習履歴</a></li>
-								<li><a href="#">ラーニングロードマップ</a></li>
-							</ul>
-							<ul>
-								<li><a href="#">교육과정 학습 이력</a></li>
-								<li><a href="#">콘텐츠 학습 이력</a></li>
-							</ul>
+					<div class="h-sub-menu-wrap active">
+						<div class="layout-inner">
+							<div class="h-sub-menu">
+								<ul>
+									<li class="active"><a href="#">교육체계도</a></li>
+									<li><a href="#">교육제도</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">수강신청</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">전체보기</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">러닝로드맵</a></li>
+									<li><a href="#">수강현황</a></li>
+									<li><a href="#">사외교육신청</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">Cell/학습동아리</a></li>
+									<li><a href="#">コンテンツ学習履歴</a></li>
+									<li><a href="#">ラーニングロードマップ</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">교육과정 학습 이력</a></li>
+									<li><a href="#">콘텐츠 학습 이력</a></li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</nav>

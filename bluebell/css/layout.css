@@ -4,7 +4,11 @@ body, #app {display:flex; flex-direction:column; place-content:space-between; fl
 	.h-wrap { position: sticky; left: 0; top: 0; background: var(--bg-type01); height: var(--init-header-height); z-index: 100; }
 	.h-wrap .h-wrap-pc { position: relative; display: flex; place-items: center; place-content: space-between; gap: 30px; height: 100%; z-index: 20; }
 	.h-wrap .h-gnb-wrap { flex: 1; }
-	.h-wrap .h-gnb { display: flex; place-content: space-between; place-items: center; font-weight:500; font-size:19px; color:#aec0c8; }
+
+	.h-wrap .h-gnb-wrap .h-gnb,
+	.h-wrap .h-gnb-wrap .h-sub-menu { grid-template-columns: repeat(var(--menu-length), 1fr); }
+
+	.h-wrap .h-gnb { display: grid; place-content: space-between; place-items: center; font-weight:500; font-size:19px; color:#aec0c8; }
 	.h-wrap .h-gnb > * { word-break: keep-all; text-align: center;}
 	.h-wrap .h-gnb li a { position: relative; }
 	.h-wrap .h-gnb .txt-alarm-02 { position: absolute; top: -20px; right: -27px; background: white; border-radius: 18px 18px 18px 0; width: 37px; height: 18px; font-size: 14px; text-align: center; color: var(--moc); }
@@ -13,7 +17,7 @@ body, #app {display:flex; flex-direction:column; place-content:space-between; fl
 
 	.h-sub-menu-wrap { overflow: hidden; position: absolute; left: 50%; top: var(--init-header-height); place-content: center; background: white; width: 100dvw; height: 0; font-weight: 500; text-align: center; transform: translate(-50%, 0); transition: transform 0.3s ease, height .3s;}
 	.h-sub-menu-wrap.active { box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.15); height: auto; transform: translate(-50%, 0); transition: transform 0.3s ease, box-shadow 0.5s, height 0.3s; }
-	.h-sub-menu-wrap .h-sub-menu {display: flex; width: 800px; place-content: center; height: 100%; padding-top: 44px; font-size: 15px; line-height: 30px; flex: 1; place-content: space-between; padding-bottom: 44px;}
+	.h-sub-menu-wrap .h-sub-menu { display: grid; width: 968px; place-content: center; height: 100%; margin-left: auto; padding-top: 44px; font-size: 15px; line-height: 30px; flex: 1; place-content: space-between; padding-bottom: 44px;}
 	.h-sub-menu-wrap .h-sub-menu ul { display: flex; flex-direction: column; gap:30px; line-height: 1; }
 	.h-sub-menu-wrap .h-sub-menu a { color: #666; }
 	.h-sub-menu-wrap .h-sub-menu a:hover, .h-sub-menu-wrap .h-sub-menu .active a { color: var(--mc); }
