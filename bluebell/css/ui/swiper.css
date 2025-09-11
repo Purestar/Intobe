@@ -28,3 +28,6 @@
 		[class*="swiper-type"] { width: var(--swiper-w, 100%); height: var(--swiper-h, auto); }
 
 /* Temp */
+@media all and (max-width: 768px) {
+	[class*="swiper-type"] { width: var(--m-swiper-w, var(--swiper-w)); height: var(--m-swiper-h, var(--swiper-h)); }
+}

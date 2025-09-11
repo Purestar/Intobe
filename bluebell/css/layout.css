@@ -102,7 +102,7 @@ body, #app {display:flex; flex-direction:column; place-content:space-between; fl
 		#panel .user-thumb .h-menu * + * { margin-top: 1.39vw; }
 		#panel .pn-usrnm { font-size: 5vw; font-weight: bold; color: #000; }
 		#panel .pn-usrtm { margin-top: 1.94vw; font-size: 4.17vw; }
-		#panel .h-gnb { overflow: hidden; flex: 1; place-items: flex-start; height: auto; }
+		#panel .h-gnb { overflow: hidden; flex: 1; grid-template-columns: repeat(1, 1fr); place-items: flex-start; height: auto; }
 		#panel .h-gnb .h-od-menu { flex: unset; width: 100%; height: 100%; }
 		#panel .h-gnb .h-td-menu { display: grid; font-size: 3.33vw; padding: 0 2.78vw; }
 		#panel .h-gnb .h-td-menu > li > a { display: flex; align-items: center; height: 10vw; color: #767676; }

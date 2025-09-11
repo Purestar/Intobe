@@ -241,7 +241,7 @@ $.fn.swiperInit = function () {
 
 		new Swiper(swiperTG.querySelector(".swiper"), {
 			loop: false,
-			slidesPerView: 1.2,
+			slidesPerView: 1.5,
 			spaceBetween: 39,
 			navigation: {
 				nextEl: swiperTG.querySelector(".swiper-button-next"),
@@ -278,6 +278,11 @@ $.fn.swiperInit = function () {
 		swiperTG = this;
 		new Swiper(swiperTG.querySelector(".swiper"), {
 			loop: true,
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
+			},
+			spaceBetween: 10,
 			direction: 'vertical',
 			slidesPerView: 1,
 			navigation: {

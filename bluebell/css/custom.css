@@ -38,12 +38,12 @@
 	[class*="aco-type-01"] .txt-a { font-size: 18px; }
 
 /* Board Default */
-	.brd-wrap .brd-tit { font-size: 20px; font-weight: 700; color:black; }
+	.brd-wrap .brd-tit { font-size: 20px; color:black; }
 	.brd-wrap .brd-ctgy { font-size: 14px; color: #666; }
 
 /* Board List */
 	[class*="brd-lst-01"] { display: grid; grid-template-columns: repeat(4, 270px); place-content: space-between; row-gap: 80px; }
-	[class*="brd-lst-01"] .brd-cont { margin-top: 24px; }
+	[class*="brd-lst-01"] .brd-cont { display: grid; gap: 8px; margin-top: 24px; }
 	[class*="brd-lst-01"] .brd-ctgy { margin-top: 5px; }
 	[class*="brd-lst-01"] .brd-tit { margin-top: 10px; }
 	[class*="brd-lst-01"] .brd-meta { margin-top: 15px; }
@@ -92,8 +92,30 @@
 		--box-bd-w: 0;
 	}
 
+	.box-type-05 {
+		--box-bd-r: 4px;
+		--box-pd-x: 34px;
+		--box-pd-y: 40px;
+		--box-bg-c: white;
+		--box-bd-w: 0;
+	}
+
+	.box-type-06 {
+		--box-bd-r: 5px;
+		--box-bg-c: rgba(255, 255, 255, .3);
+		--box-bd-c: rgba(255, 255, 255, .3);
+		--box-pd-a: 40px;
+	}
+
 /* Button */
 	/* Color */
+		.btn-type-dblu {
+			--btn-bg-c: #003349;
+			--btn-ft-c: white;
+			--btn-over-bg-c: #003349;
+			--btn-over-ft-c: #white;
+		}
+
 		.btn-type-lgry {
 			--btn-bg-c: #f5f5f5;
 			--btn-ft-c: #666;
@@ -143,6 +165,17 @@
 			--btn-ft-s: 14px;
 			--btn-pd-x: 20px;
 		}
+
+		.btn-sz-03 {
+			--btn-h: 40px;
+			--btn-ft-s: 16px;
+			--btn-pd-x: 16px;
+			--btn-bd-r: 3px;
+		}
+
+	/* Other */
+		.btn-lnk { display: flex; gap: 8px; place-items: center; font-size: 14px; white-space: nowrap; color: #666; }
+		.btn-lnk:after { content: ''; background-image: var(--ic); background-position: var(--bp-400) var(--bp-50); background-size: var(--bg-sz); width: 5px; height: 8px; }
 
 /* Chip */
 	[class*="chip-type-01"] {
@@ -241,6 +274,10 @@
 	.float-menu-01 { background: white; box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.06); border-radius: 5px; border: 1px solid #000; width: 100px; }
 	.float-menu-01 button { width: 100%; height: 50px; }
 	.float-menu-01 button:hover { background-color: #f5f5f5; color: #000; }
+
+/* Font */
+	.ft-nnmj { font-family: 'Nanum Myeongjo'; }
+	.ws-nw { white-space: nowrap; }
 
 /* Form */
 	/* Checkbox */
@@ -482,22 +519,15 @@
 	.ic-usr:before { background-position: var(--bp-50) 0; width: 20px; height: 23px; }
 	.ic-zoom:before { background-position: var(--bp-350) 0; width: 16px; height: 16px; }
 
-	/* Header - Main */
-		.h-wrap.main-header .ic-globe:before,
-		.h-wrap.main-header .ic-usr:before,
-		.h-wrap.main-header .ic-bell:before { filter: invert(100%); }
-
-		.h-wrap.main-header.active .ic-globe:before,
-		.h-wrap.main-header.active .ic-usr:before,
-		.h-wrap.main-header.active .ic-bell:before { filter: invert(0); }
-
 	/* Arrow */
 		.ic-l-arrow:before { background-position: var(--bp-700) 0; width: 6px; height: 11px; }
 		.ic-r-arrow:before { background-position: var(--bp-50) var(--bp-50); width: 5px; height: 10px; }
 		.ic-r-arrow-02:before { background-position: var(--bp-100) var(--bp-50); width: 5px; height: 9px; }
+		.ic-r-arrow-03:before { --bp-pos-x: var(--bp-400); --bp-pos-y: var(--bp-50); width: 5px; height: 8px; }
 		.ic-u-arrow:before,
 		.ic-d-arrow:before { background-position: var(--bp-250) var(--bp-50); width: 10px; height: 8px; }
 		.ic-d-arrow:before { rotate: 180deg; }
+		.ic-ur-arrow:before { background-position: var(--bp-450) var(--bp-50); width: 11px; height: 11px; }
 
 
 /* List */
@@ -547,6 +577,11 @@
 			--mark-bg-c: #eee;
 			--mark-h: 14px;
 			--mark-ft-c: #666;
+		}
+
+		.mark-v-bar-01-02 {
+			--mark-bg-c: #ccc;
+			--mark-ft-c: black;
 		}
 
 	/* Square */
@@ -714,7 +749,7 @@
 		--thumb-bg-c: #f5f5f5;
 		--thumb-bg-img: url("/bluebell/images/img/img_thumb01.png");
 		--thumb-ratio: 16 / 9;
-		--thumb-bd-r: 20px;
+		--thumb-bd-r: 5px;
 		--thumb-pd-x: 13px;
 	}
 
@@ -733,6 +768,15 @@
 		--thumb-pd-y: 5px;
 	}
 
+	.thumb-type-02 {
+		--thumb-bg-c: #f5f5f5;
+		--thumb-bg-img: url("/bluebell/images/img/img_thumb02.png");
+		--thumb-ratio: 1 / 1;
+		--thumb-w: 90px;
+		--thumb-h: 90px;
+		--thumb-bd-r: 50%;
+	}
+
 /* Title */
 	[class*="tit-"] { color: black; }
 
@@ -740,6 +784,7 @@
 	.tit-02 { font-size: 24px; font-weight: 700; }
 	.tit-03 { font-size: 20px; font-weight: 700; }
 	.tit-04 { font-size: 18px; font-weight: 500; }
+	.tit-05 { font-family: 'Nanum Myeongjo'; font-size: 24px; }
 
 /* Tree Menu */
 	.tree-wrap summary { display: flex; gap: 7px; place-items: center; }
@@ -767,9 +812,7 @@
 		.studyroom-stat .part-cont-in { display: flex; gap: 20px; font-weight: 700; font-size: 20px; }
 
 	/* 메인 */
-		.main-wrap { margin-top: calc(var(--init-header-height) * -1); }
-		.main-top { display: flex; place-items: center; place-content: space-between; background: url(../images/img/main_bnr01.png) center no-repeat; height: 629px; padding-top: var(--init-header-height); }
-		.main-top .moment-week { margin-top: 15px; font-size: 12px; }
+		.main-bottom { background: url("../images/img/bg_main_bottom.png") center no-repeat; background-size: cover; padding: 45px 0; }
 
 /* 팝업 */
 	/* 힌트 */

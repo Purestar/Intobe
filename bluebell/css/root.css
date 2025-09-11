@@ -2,7 +2,7 @@
 	/* Initialize */
 		--init-background-color: white; /* 배경색 */
 		--init-font-color: #666; /* 글자색 */
-		--init-font-family: Poppins, Nanum Gothic; /* 글자체 */
+		--init-font-family: Nanum Gothic; /* 글자체 */
 		--init-font-size: 16px; /* 글자 크기 */
 		--init-footer-height: 127px; /* 푸터 높이 */
 		--init-header-height: 143px; /* 헤더 높이 */

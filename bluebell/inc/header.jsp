@@ -91,7 +91,7 @@
 						<li><a href="#">FC진단</a></li>
 						<li><a href="#">결재 / 이력관리<span class="txt-alarm-02">19</span></a></li>
 					</ul>
-					<div class="h-sub-menu-wrap active">
+					<div class="h-sub-menu-wrap">
 						<div class="layout-inner">
 							<div class="h-sub-menu">
 								<ul>

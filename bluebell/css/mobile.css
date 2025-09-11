@@ -79,7 +79,7 @@
 
 	/* Board List */
 		[class*="brd-lst-01"] { grid-template-columns: repeat(2, 41.22vw); row-gap: 5.56vw; }
-		[class*="brd-lst-01"] .brd-cont { margin-top: 3.33vw; }
+		[class*="brd-lst-01"] .brd-cont { gap: 2.78vw; margin-top: 3.33vw; }
 		[class*="brd-lst-01"] .brd-ctgy { margin-top: 0.69vw; }
 		[class*="brd-lst-01"] .brd-tit { margin-top: 1.39vw; }
 		[class*="brd-lst-01"] .brd-meta { margin-top: 2.08vw; }
@@ -116,6 +116,19 @@
 			--box-pd-y: 6.25vw;
 		}
 
+		.box-type-05 {
+			--box-bd-c: #e2e2e2;
+			--box-bd-r: 0.69vw;
+			--box-pd-x: 8.33vw;
+			--box-pd-y: 6.94vw;
+			--box-bd-w: 1px;
+		}
+
+		.box-type-06 {
+			--box-bd-r: 0.69vw;
+			--box-pd-a: 5.56vw;
+		}
+
 		.box-type-m-01 {
 			--box-bg-c: #fff4f5;
 			--box-pd-x: 5.97vw;
@@ -138,12 +151,23 @@
 				--btn-pd-x: 4.17vw;
 			}
 
+			.btn-sz-03 {
+				--btn-h: 7.78vw;
+				--btn-ft-s: 3.06vw;
+				--btn-pd-x: 3.47vw;
+				--btn-bd-r: 0.69vw;
+			}
+
 			.btn-sz-m-01 {
 				--btn-h: 7.78vw;
 				--btn-bd-r: 7.78vw;
 				--btn-ft-s: 3.33vw;
 				--btn-pd-x: 2.78vw;
 			}
+
+		/* Other */
+			.btn-lnk { font-size: 3.33vw; }
+			.btn-lnk:after { width: 1.11vw; height: 1.94vw; }
 
 	/* Chip */
 		[class*="chip-type-01"] {
@@ -348,6 +372,8 @@
 			.ic-u-arrow:before,
 			.ic-d-arrow:before { width: 2.78vw; height: 2.22vw; }
 
+			.ic-ur-arrow:before { width: 1.81vw; height: 1.81vw; }
+
 		/* Header - Main */
 			.h-wrap.main-header .ic-globe:before,
 			.h-wrap.main-header .ic-usr:before,
@@ -495,13 +521,18 @@
 
 	/* Thumbnail */
 		[class*="thumb-type-01"] {
-			--thumb-bd-r: 2.78vw;
+			--thumb-bd-r: 1.39vw;
 			--thumb-pd-x: 3.61vw;
 		}
 
 		.thumb-type-01-02 {
 			--thumb-pd-x: 2.78vw;
 			--thumb-pd-y: 2.78vw;
+		}
+
+		.thumb-type-02 {
+			--thumb-w: 14.44vw;
+			--thumb-h: 14.44vw;
 		}
 
 	/* Table */
@@ -530,6 +561,7 @@
 		.tit-02 { font-size: 4.44vw; }
 		.tit-03 { font-size: 4.44vw; }
 		.tit-04 { font-size: 3.89vw; }
+		.tit-05 { font-size: 4.44vw; }
 
 	/* Page */
 		/* 수강신청 */
@@ -546,9 +578,12 @@
 			.studyroom-stat .part-cont-in span { font-size: 5.56vw; }
 
 		/* 메인 */
-			.main-wrap { margin-top: 0; }
-			.main-top { background: var(--bg-type01); height: auto; padding-top: 0; }
-			.main-top .moment-week { margin-top: 6.94vw; font-size: 3.89vw; }
+			.main-learning-stat { grid-auto-flow: row; }
+			.main-learning-stat > *:nth-child(odd):before { display: none; }
+			.main-learning-stat .part-content { display: flex; place-content: space-between; }
+			.main-notice-faq { grid-auto-flow: row; gap: 3.33vw; }
+			.main-notice-faq > *:before { display: none; }
+			.main-bottom { background: url("../images/img/bg_main_bottom_m.png") center no-repeat; background-size: cover;  padding: 45px 0; }
 
 	/* 팝업 */
 		/* 힌트 */
