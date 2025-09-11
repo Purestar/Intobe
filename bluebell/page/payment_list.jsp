@@ -53,17 +53,33 @@
 
 		<div class="brd-wrap" style="--mg-t: 60px; --m-mg-t: 8.33vw;">
 			<div class="brd-top">
-				<div style="--dp: flex; --gap-x: 20px;">
-					<p class="brd-tot pc">전체 <strong>167</strong></p>
-					<h3 class="tit-02 mobile">조회결과 <span style="--ft-c: #999;">167</span></h3>
-					<div class="tooltip-wrap pc">
-						<i class="ic-quest"></i>
-						<div class="ttip-wrap">
-							<ul class="bul-cir">
-								<li>결재 요청이 있습니다. 결재하기 버튼을 클릭하여, 상세 신청 내용을 확인 하시고, 결재 승인처리를 하실 수 있습니다.</li>
-							</ul>
+				<div style="--dp: flex; --items-a: center; --content-a: space-between; --m-flex-d: column; --m-items-a: flex-start; --m-gap-y: 3.33vw;">
+					<div style="--dp: flex; --gap-x: 20px;">
+						<p class="brd-tot pc">전체 <strong>167</strong></p>
+						<h3 class="tit-02 mobile">조회결과 <span style="--ft-c: #999;">167</span></h3>
+						<div class="tooltip-wrap pc">
+							<i class="ic-quest"></i>
+							<div class="ttip-wrap">
+								<ul class="bul-cir">
+									<li>결재 요청이 있습니다. 결재하기 버튼을 클릭하여, 상세 신청 내용을 확인 하시고, 결재 승인처리를 하실 수 있습니다.</li>
+								</ul>
+							</div>
 						</div>
 					</div>
+					<ul class="mark-v-bar-01">
+						<li>
+							<div class="form-slt-btn-tran">
+								<input id="93c7lted8z" type="radio" name="boardFlt" checked>
+								<label for="93c7lted8z" class="part-slt-txt">신청 날짜 빠른순</label>
+							</div>
+						</li>
+						<li>
+							<div class="form-slt-btn-tran">
+								<input id="emgulu5en5s" type="radio" name="boardFlt">
+								<label for="emgulu5en5s" class="part-slt-txt">신청 날짜 늦은순</label>
+							</div>
+						</li>
+					</ul>
 				</div>
 			</div>
 
