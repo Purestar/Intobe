@@ -11,7 +11,7 @@
 </div>
 <div class="sub-contents">
 	<div class="layout-inner">
-		<div class="tab-wrap tab-equal" style="--m-pos: sticky; --m-top: var(--init-header-height); --m-z-idx: 10;">
+		<div class="tab-wrap tab-scroll-menu" style="--m-pos: sticky; --m-top: var(--init-header-height); --m-z-idx: 10;">
 			<ul class="tab-menu-01">
 				<li><a href="#">시청중 <span class="pc">콘텐츠</span> 3</a></li>
 				<li class="active"><a href="#"><span class="mobile-inline">시청완료</span> <span class="pc">완료한 콘텐츠</span> 8</a></li>
