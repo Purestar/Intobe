@@ -8,7 +8,7 @@
 					<div class="mark-h-bar-01 mark-direction mark-skip-first" style="--mark-gap-a: 30px; --m-mark-gap-a: 6.11vw;">
 						<div>
 							<div class="part-content">
-								<div style="--dp: flex; --flex-d: column; --gap-x: 12px; --content-x: center; --txt-a: center;--items-y: center; --m-flex-d: row; --m-content-x: flex-start;--m-gap-x: 5vw;--m-txt-a: left;">
+								<div style="--dp: flex; --flex-d: column; --gap-x: 12px; --content-x: center; --txt-a: center;--items-y: center; --m-flex-d: row; --m-content-x: flex-start; --m-gap-x: 5vw; --m-txt-a: left;">
 									<div class="thumb-type-02">
 										<img src="https://placehold.co/90x90" alt="사용자 프로필 이미지">
 									</div>
