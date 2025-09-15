@@ -8,13 +8,13 @@
 					<div class="mark-h-bar-01 mark-direction mark-skip-first" style="--mark-gap-a: 30px; --m-mark-gap-a: 6.11vw;">
 						<div>
 							<div class="part-content">
-								<div style="--dp: grid; --gap-x: 12px; --content-x: center; --txt-a: center; --items-y: center; --m-dp: flex; --m-content-x: flex-start; --m-gap-x: 5vw; --m-txt-a: left;">
+								<div style="--dp: flex; --flex-d: column; --gap-x: 12px; --content-x: center; --txt-a: center;--items-y: center; --m-flex-d: row; --m-content-x: flex-start;--m-gap-x: 5vw;--m-txt-a: left;">
 									<div class="thumb-type-02">
 										<img src="https://placehold.co/90x90" alt="사용자 프로필 이미지">
 									</div>
 									<div>
 										<h2 class="ft-nnmj" style="--mg-t: 20px; --ft-s: 24px; --ft-c: black; --m-mg-t: 0; --m-ft-s: 4.44vw;">블루벨님</h2>
-										<p style="--ft-s: 20px; --m-ft-s: 3.89vw; --m-mg-t: 1.94vw;">HR팀</p>
+										<p style="--ft-s: 20px; --m-ft-s: 3.89vw; --m-mg-t: 1.94vw;">General Management</p>
 									</div>
 								</div>
 							</div>
