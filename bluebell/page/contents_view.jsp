@@ -13,13 +13,13 @@
 		<div class="vdo-wrap">
 			<video src="../video/sample_long.mp4" controls></video>
 		</div>
-		<div style="--dp: flex; --content-x: space-between; --items-y: center; --mg-t: 10px;">
+		<div style="--dp: flex; --content-x: space-between; --m-dp: grid; --items-y: center; --m-content-x: center; --mg-t: 10px; --m-gap-a: 2.78vw; --m-mg-t: 2.78vw;">
 			<div class="mark-v-bar-01">
 				<span>조회수<span>0</span></span>
 				<span>등록자<span>롱길동</span></span>
 				<span>2020.12.23  19:25 </span>
 			</div>
-			<div style="--dp: flex; --gap-x: 10px;">
+			<div style="--dp: flex; --gap-x: 10px; --m-content-x: center;">
 				<span class="chip-type-06-red"><em>진행중</em></span>
 				<span class="chip-type-06-gry">평가<br>미응시</span>
 				<div class="form-slt-chk-01">
