@@ -81,25 +81,25 @@
 						<i class="ic-plus"></i>
 					</button>
 				</div>
-				<div class="reg-cour-dtl-form" style="--dp: none; --gap-x: 10px; --m-dp: grid; --grid-t-col: 2; --m-gap-a: 1.67vw;">
+				<div class="reg-cour-dtl-form" style="--dp: none; --max-w: 700px; --gap-x: 10px; --flex-g: 0; --m-dp: grid; --grid-t-col: 2; --m-gap-a: 1.67vw;">
 					<div class="sel-type">
 						<select>
-							<option>교육유형</option>
+							<option>RT&Q DomesticRT&Q DomesticRT&Q DomesticRT&Q DomesticRT&Q DomesticRT&Q Domestic</option>
 						</select>
 					</div>
 					<div class="sel-type">
 						<select>
-							<option>교육유형</option>
+							<option>RT&Q DomesticRT&Q DomesticRT&Q DomesticRT&Q DomesticRT&Q DomesticRT&Q Domestic</option>
 						</select>
 					</div>
 					<div class="sel-type">
 						<select>
-							<option>교육유형</option>
+							<option>RT&Q DomesticRT&Q DomesticRT&Q DomesticRT&Q DomesticRT&Q DomesticRT&Q Domestic</option>
 						</select>
 					</div>
 					<div class="sel-type">
 						<select>
-							<option>교육유형</option>
+							<option>RT&Q DomesticRT&Q DomesticRT&Q DomesticRT&Q DomesticRT&Q DomesticRT&Q Domestic</option>
 						</select>
 					</div>
 				</div>
