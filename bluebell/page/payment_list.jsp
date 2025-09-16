@@ -13,12 +13,13 @@
 			<ul class="tab-menu-01">
 				<li class="active"><a href="">미결재 3</a></li>
 				<li><a href="">결재완료 8</a></li>
+				<li><a href="">참조자 8</a></li>
 			</ul>
 		</div>
 
 		<form style="--mg-t: 80px; --m-mg-t: 8.33vw;">
 			<div style="--dp: flex; --gap-x: 10px; --m-flex-d: column; --m-gap-y: 1.67vw;">
-				<div style="--dp: flex; --gap-x: 10px; --m-dp: grid; --grid-t-col: 2; --m-gap-a: 1.67vw;">
+				<div style="--dp: flex; --gap-x: 10px; --max-w: 700px; --flex-g: 0; --m-dp: grid; --grid-t-col: 2; --m-gap-a: 1.67vw;">
 					<div class="sel-type">
 						<select>
 							<option>결재구분</option>
@@ -40,14 +41,16 @@
 						</select>
 					</div>
 				</div>
-				<div class="form-txt-type-01" style="--form-pd-r: 0;">
-					<input type="text" placeholder="키워드로 검색해 보세요.">
-					<div class="pc">
-						<button type="button" class="part-icon"><i class="ic-del-02">지우기</i></button>
+				<div style="--dp: flex; --gap-x: 10px; --flex-g: 1; --m-dp: grid; --m-grid-t-col: 4; --m-gap-a: 1.67vw;">
+					<div class="form-txt-type-01" style="--form-pd-r: 0; --m-grid-col: 3;">
+						<input type="text" placeholder="키워드로 검색해 보세요.">
+						<div class="pc">
+							<button type="button" class="part-icon"><i class="ic-del-02">지우기</i></button>
+						</div>
+						<a href="#" class="part-icon"><i class="ic-zoom">검색</i></a>
 					</div>
-					<a href="#" class="part-icon"><i class="ic-zoom">검색</i></a>
+					<button type="button" class="btn-type mobile" style="--btn-w: 100%;">검색</button>
 				</div>
-				<button type="button" class="btn-type-lgry mobile" style="--btn-w: 100%;">검색</button>
 			</div>
 		</form>
 
@@ -104,14 +107,12 @@
 					</div>
 					<div style="--dp: flex; --gap-x: 20px; --items-y: center;">
 						<div style="--w: 124px; --m-w: auto;">
-							<button type="button" class="btn-type" style="--btn-w: 100%; --m-btn-h: 7.78vw; --m-btn-ft-s: 3.33vw; --m-btn-pd-x: 4.17vw;">결제하기</button>
+							<button type="button" class="btn-type-dblu" style="--btn-w: 100%; --m-btn-h: 7.78vw; --m-btn-ft-s: 3.33vw; --m-btn-pd-x: 4.17vw;">결제하기</button>
 						</div>
 					</div>
 				</li>
 			</ul>
-			<div class="pc">
-				<%@ include file="../inc/brd_paging.jsp" %>
-			</div>
+			<%@ include file="../inc/brd_paging.jsp" %>
 		</div>
 	</div>
 </div>

@@ -435,6 +435,16 @@
 		.moment-week-day > * > * { width: 8.33vw; height: 8.33vw; }
 		.moment-week-day > *.active { background: white; color: black; }
 
+	/* Paging */
+		.brd-paging { gap: 6.67vw; margin-top: var(--m-mg-t, 8.33vw); }
+		.brd-paging a { width: 6.67vw; height: 6.67vw; }
+		.brd-paging > * { gap: 0.56vw; }
+		.brd-paging .brd-paging-ctrl a { border-radius: 1.11vw; }
+		.brd-paging .brd-paging-first:before,
+		.brd-paging .brd-paging-last:before { width: 2.5vw; height: 2.22vw; }
+		.brd-paging .brd-paging-prev:before,
+		.brd-paging .brd-paging-next:before { width: 1.53vw; height: 2.22vw; }
+
 	/* Popup */
 		.pop-type-01 {
 			--pop-w: 100dvw;
