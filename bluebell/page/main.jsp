@@ -35,7 +35,110 @@
 				<div class="box-type-05" style="--grid-col: 3; --m-grid-col: 1;">
 					<div style="--dp: flex; --content-x: space-between;">
 						<h2 class="tit-05">My 학습현황</h2>
-						<span style="--ft-s: 14px;">* 2025년 7월 기준</span>
+						<a href="#" class="btn-lnk">자세히보기</a>
+					</div>
+					<div style="--mg-t: 40px;">
+						<canvas id="learningStatusChart" style="--w: 100%; --h: 230px; --m-h: 44.86vw;"></canvas>
+
+						<script>
+							let learningStatusChart = null;
+
+							function createLearningStatusChart() {
+								const ctx = document.getElementById('learningStatusChart').getContext('2d');
+
+								if (learningStatusChart) {
+									learningStatusChart.destroy();
+								}
+
+								learningStatusChart = new Chart(ctx, {
+									type: 'bar',
+									data: {
+										labels: ['전체', '공통', '법정의무', '리더십', '직무', '어학'],
+										datasets: [
+											{
+												label: '온라인',
+												data: [22, 5, 2, 1, 8, 6],
+												backgroundColor: '#95c0cf',
+												borderRadius: 2,
+												barPercentage: 0.5,
+												categoryPercentage: 0.6
+											},
+											{
+												label: '집합',
+												data: [14, 2, 4, 2, 4, 2],
+												backgroundColor: '#e1698a',
+												borderRadius: 2,
+												barPercentage: 0.5,
+												categoryPercentage: 0.6
+											}
+										]
+									},
+									options: {
+										animation: {
+											duration: 0, // 애니메이션 완전 비활성화
+											animateRotate: false,
+											animateScale: false
+										},
+										height: getResponsiveSize(325, 230),
+										responsive: true,
+										maintainAspectRatio: false,
+										plugins: {
+											legend: {
+												display: true,
+												position: 'top',
+												labels: {
+													boxWidth: getResponsiveSize(12, 8),
+													boxHeight: getResponsiveSize(12, 8),
+													color: 'black',
+													font: { size: getResponsiveSize(20, 14) }
+												}
+											},
+											title: {
+												display: true,
+												text: '교육 유형별 이수 현황(수료 과정 수)',
+												font: { size: getResponsiveSize(26, 18) },
+												color: 'black',
+												padding: { bottom: getResponsiveSize(20, 14) }
+											},
+											subtitle: {
+												display: true,
+												text: '* 기준 : Year to Date',
+												align: 'end',
+												font: { size: getResponsiveSize(20, 14) },
+												color: '#888',
+												padding: { top: 0, bottom: 0 }
+											},
+											datalabels: {
+												anchor: 'end',
+												align: 'end',
+												font: { size: getResponsiveSize(18, 12) },
+												color: '#333'
+											},
+											tooltip: { enabled: false }
+										},
+										scales: {
+											x: {
+												grid: { display: false },
+												ticks: { color: 'black', font: { size: getResponsiveSize(24, 15) } }
+											},
+											y: {
+												beginAtZero: true,
+												max: 35,
+												ticks: { color: 'black', stepSize: 5, font: { size: getResponsiveSize(24, 15) } },
+												grid: { color: '#ddd' }
+											}
+										}
+									},
+									plugins: [ChartDataLabels]
+								});
+							}
+
+							createLearningStatusChart();
+
+							const resizeObserver = new ResizeObserver(() => { createLearningStatusChart(); });
+
+							resizeObserver.observe(document.getElementById('learningStatusChart'));
+						</script>
 					</div>
 				</div>
 				<div class="box-type-05" style="--box-pd-y: 22px; --grid-col: 4; --m-grid-col: 1;">

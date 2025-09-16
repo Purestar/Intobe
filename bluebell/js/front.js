@@ -353,6 +353,19 @@ $.fn.datep = function () {
 	});
 };
 
+function getResponsiveSize(mobilePx, pcPx) {
+    // mobilePx: 720px 기준 px값(예: 26), pcPx: PC에서 사용할 px값(예: 18)
+    if (window.innerWidth <= 720) {
+        // 720px 기준 px값을 현재 해상도에 맞게 비례 환산
+        return +(window.innerWidth * (mobilePx / 720)).toFixed(2);
+    }
+    return pcPx;
+}
+
+
+
+
+
 
 
 

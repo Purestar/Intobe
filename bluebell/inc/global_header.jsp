@@ -14,6 +14,8 @@
 		<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Nanum+Gothic&display=swap" rel="stylesheet">
 
 		<script src="../js/common.js"></script>
+		<script src="../js/chart.js"></script>
+		<script src="../js/chartjs-plugin-datalabels.js"></script>
 		<script src="../js/front.js"></script>
 	</head>
 	<body>
