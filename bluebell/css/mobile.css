@@ -165,6 +165,12 @@
 				--btn-pd-x: 2.78vw;
 			}
 
+			.btn-sz-m-02 {
+				--btn-h: 7.78vw;
+				--btn-ft-s: 3.33vw;
+				--btn-pd-x: 2.78vw;
+			}
+
 		/* Other */
 			.btn-lnk { font-size: 3.33vw; }
 			.btn-lnk:after { width: 1.11vw; height: 1.94vw; }
@@ -258,6 +264,16 @@
 				--form-w: 16.67vw;
 				--form-h: 16.67vw;
 			}
+
+		/* Select Button */
+			.form-slt-btn-01 {
+				--form-bd-r: 1.39vw;
+				--form-h: 54.03vw;
+				--form-gap-y: 2.08vw;
+			}
+
+			.form-slt-btn-01 .part-slt-txt:before { right: 3.06vw; top: 3.06vw; width: 6.94vw; height: 6.94vw; }
+			.form-slt-btn-01 .part-slt-txt:after { right: 4.86vw; top: 5.42vw; width: 3.33vw; height: 2.5vw; }
 
 		/* Switch */
 			.form-slt-swh-01 {
@@ -529,6 +545,13 @@
 			--tab-cont-pd-y: 5.56vw;
 		}
 
+		.tab-menu-02 {
+			--tab-btn-bd-r: 1.11vw;
+			--tab-btn-h: 10.14vw;
+			--tab-menu-gap-x: 1.81vw;
+			--tab-btn-pd-x: 4.17vw;
+		}
+
 	/* Thumbnail */
 		[class*="thumb-type-01"] {
 			--thumb-bd-r: 1.39vw;
@@ -565,6 +588,9 @@
 		.tbl-type-01-03 td { height: 14.72vw; }
 
 		.tbl-type-02 { border-spacing: 0 2.78vw; }
+
+		.tbl-type-03 thead th { border-right: 0; height: 11.39vw; }
+		.tbl-type-03 tbody td { border-right: 0; padding: 0; }
 
 	/* Title */
 		.tit-01 { font-size: 5vw; }

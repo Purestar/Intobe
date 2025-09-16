@@ -7,6 +7,7 @@
 				<h1 class="tit-01" style="--ft-c: black; --ft-w: 700;">공통</h1>
 				<div style="--dp: flex; --flex-w: wrap; --gap-a: 20px;">
 					<button type="button" class="btn-type" data-tta="userPic">사진변경</button>
+					<button type="button" class="btn-type" data-tta="actBadge">활동배지</button>
 				</div>
 			</div>
 			<div style="--dp: grid; --gap-y: 20px;">
@@ -82,6 +83,7 @@
 
 <!-- 메인팝업 -->
 <%@ include file="./popup/main-popup.jsp" %>
+<%@ include file="./popup/actBadge.jsp" %>
 
 <!-- 교육일정 -->
 <%@ include file="./popup/eduSchedule.jsp" %>
