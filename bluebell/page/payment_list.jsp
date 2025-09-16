@@ -97,7 +97,7 @@
 							</div>
 						</div>
 						<div class="mobile">
-							<div style="--dp: grid;">
+							<div style="--dp: grid; --gap-y: 1.39vw;">
 								<span>결재구분 <span style="--ft-c: black;">사외교육 과정개설</span> </span>
 								<span>결재요청자 <span style="--ft-c: black;">관리자</span></span>
 								<span>결재요청일시 <span style="--ft-c: black;">2025.07.23 15:19:58</span> </span>
