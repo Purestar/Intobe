@@ -56,10 +56,9 @@
 
 		<div class="brd-wrap" style="--mg-t: 60px; --m-mg-t: 8.33vw;">
 			<div class="brd-top">
-				<div style="--dp: flex; --items-a: center; --content-a: space-between; --m-flex-d: column; --m-items-a: flex-start; --m-gap-y: 3.33vw;">
+				<div style="--dp: flex; --items-a: center; --content-a: space-between; --m-gap-y: 3.33vw;">
 					<div style="--dp: flex; --gap-x: 20px;">
-						<p class="brd-tot pc">전체 <strong>167</strong></p>
-						<h3 class="tit-02 mobile">조회결과 <span style="--ft-c: #999;">167</span></h3>
+						<p class="brd-tot">전체 <strong>167</strong></p>
 						<div class="tooltip-wrap pc">
 							<i class="ic-quest"></i>
 							<div class="ttip-wrap">

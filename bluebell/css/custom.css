@@ -361,7 +361,7 @@
 			--form-h: auto;
 
 			--form-chk-bg-c: transparent;
-			--form-chk-ft-c: inherit;
+			--form-chk-ft-c: black;
 			--form-chk-ft-w: 500;
 		}
 
