@@ -98,16 +98,21 @@
 		.class-mid .detaile-info p + p { margin-top: 7px; }
 
 	/* Box */
-		.box-type-01 {
+		[class*="box-type-01"] {
 			--box-bd-r: 2.78vw;
 			--box-pd-x: 3.8vw;
 			--box-pd-y: 5vw;
 		}
 
-		.box-type-02 {
+		[class*="box-type-02"] {
 			--box-pd-x: 3.8vw;
 			--box-pd-y: 5vw;
 			--box-bd-r: 20px;
+		}
+
+		.box-type-02-01 {
+			--box-pd-y: 3.61vw;
+			--box-bd-r: 0.28vw;
 		}
 
 		.box-type-04 {
@@ -213,6 +218,14 @@
 			--chip-ft-s: 3.33vw;
 		}
 
+		[class*="chip-type-07"] {
+			--chip-bd-w: 0.28vw;
+			--chip-bd-r: 6.94vw;
+			--chip-h: 6.94vw;
+			--chip-ft-s: 3.33vw;
+			--chip-pd-x: 3.33vw;
+		}
+
 	/* Float Menu */
 		.float-menu-01 { border-radius: 0.69vw; width: 26.39vw; }
 		.float-menu-01 button { height: 6.94vw; }
@@ -244,6 +257,13 @@
 			}
 
 		/* Radio */
+			.form-slt-rdo {
+				--form-w: 5.56vw;
+				--form-h: 5.56vw;
+				--form-chk-w: 3.06vw;
+				--form-chk-h: 3.06vw;
+			}
+
 			.form-slt-rdo-01 {
 				--form-gap-x: 0.83vw;
 				--form-w: 1.94vw;
@@ -265,6 +285,12 @@
 				--form-h: 16.67vw;
 			}
 
+		/* Select */
+			.sel-type-01 {
+				--form-h: 8.33vw;
+				--form-ft-s: 3.33vw;
+			}
+
 		/* Select Button */
 			.form-slt-btn-01 {
 				--form-bd-r: 1.39vw;
@@ -283,6 +309,11 @@
 
 				--form-chk-w: 3.33vw;
 				--form-chk-h: 3.33vw;
+			}
+
+		/* Text */
+			.form-txt-02 {
+				--form-h: 8.33vw;
 			}
 
 	/* Full Calendar */
@@ -379,9 +410,14 @@
 		.ic-ribbon:before { width: 7.78vw; height: 8.19vw; }
 		.ic-stack:before { width: 3.89vw; height: 3.47vw; }
 		.ic-three-dot:before { width: 0.97vw; height: 3.47vw; }
+		.ic-trash:before { width: 3.61vw; height: 3.89vw; }
+		.ic-tri-blu:before { width: 1.67vw; height: 1.39vw; }
+		.ic-tri-red:before { width: 1.67vw; height: 1.39vw; }
 		.ic-zoom:before { width: 3.75vw; height: 3.75vw; }
 
 		/* Arrow */
+			.ic-l-arrow:before { width: 3.33vw; height: 2.92vw; }
+
 			.ic-r-arrow:before { width: 1.25vw; height: 1.94vw; }
 			.ic-r-arrow-02:before { width: 1.39vw; height: 2.22vw; }
 
@@ -400,6 +436,8 @@
 			.h-wrap.main-header.active .ic-m-hamburger:before { filter: invert(100%); }
 
 		/* Only Mobile */
+			.ic-m-bell:before { --bp-pos-x: var(--bp-300); --bp-pos-y: var(--bp-950); width: 4.58vw; height: 5.83vw; }
+			.ic-m-globe:before { --bp-pos-x: var(--bp-250); --bp-pos-y: var(--bp-950); width: 5.56vw; height: 5.56vw; }
 			.ic-m-hamburger:before { --bp-pos-x: var(--bp-100); --bp-pos-y: var(--bp-950); width: 5.56vw; height: 4.86vw; }
 			.ic-m-home:before { --bp-pos-x: var(--bp-150); --bp-pos-y: var(--bp-950); width: 5vw; height: 5.14vw; }
 
@@ -413,6 +451,22 @@
 		.lst-type-01 strong { font-size: 5.56vw; }
 
 		.lst-type-03 > * { padding: 2.78vw 0; }
+
+		.lst-step > * + *:before { left: 50%; top: -13.89vw; background-image: var(--bg-img); background-size: var(--bg-sz); width: 41.67vw; height: 12.64vw; translate: -50% 0; }
+
+		.lst-step-02 > * { gap: 5.83vw; }
+		.lst-step-02 .lst-step-cont { padding: 5.83vw 0; }
+		.lst-step-02 > * + * .lst-num { translate: 0 5.83vw; }
+		.lst-step-02 > *:before { left: 8.89vw; top: 6.94vw; width: 1.11vw; }
+		.lst-step-02 .lst-step-tit { font-size: 3.89vw; }
+
+		.lst-diagnosis > * { border-radius: 0.28vw; }
+		.lst-diagnosis > * + * { margin-top: 2.78vw; }
+		.lst-diagnosis .lst-diagnosis-inner { padding: 4.17vw; }
+		.lst-diagnosis .lst-diagnosis-tit { margin-top: 2.78vw; font-size: 3.89vw; }
+		.lst-diagnosis .lst-diagnosis-lvl > * { gap: 2.5vw; }
+		.lst-diagnosis .lst-diagnosis-lvl > * + * { margin-top: 2.78vw; }
+		.lst-diagnosis .tbl-type-04 { margin-top: 8.33vw; }
 
 	/* Marker */
 		/* Arrow */
@@ -434,6 +488,32 @@
 				--mark-gap-y: 1.39vw;
 				--mark-gap-x: 1.39vw;
 			}
+
+			.mark-cir-03 {
+				--mark-w: 1.11vw;
+				--mark-h: 1.11vw;
+				--mark-ft-s: 3.61vw;
+				--mark-gap-x: 1.94vw;
+				--mark-gap-y: 6.94vw;
+			}
+
+			.mark-cir-03 > *:before { translate: 0 2vw; }
+
+			.mark-cir-04 {
+				--mark-w: 0.56vw;
+				--mark-h: 0.56vw;
+				--mark-gap-y: 2.22vw;
+				--mark-gap-x: 1.94vw;
+			}
+
+			.mark-cir-04 > *:before { translate: 0 2vw; }
+
+		/* Hyphen */
+			.mark-hyp-01 {
+				--mark-gap-x: 0.83vw;
+			}
+
+			.mark-hyp-01 > *:before { translate: 0 2.5vw; }
 
 		/* Horizontal Bar */
 			[class*="mark-h-bar-01"] {
@@ -591,6 +671,10 @@
 
 		.tbl-type-03 thead th { border-right: 0; height: 11.39vw; }
 		.tbl-type-03 tbody td { border-right: 0; padding: 0; }
+
+		.tbl-type-04 thead th { height: 11.39vw; }
+		.tbl-type-04 tbody th { height: 11.39vw; padding: 1.39vw 1.67vw; }
+		.tbl-type-04 tbody td { height: 11.39vw; padding: 1.39vw 1.67vw; }
 
 	/* Title */
 		.tit-01 { font-size: 5vw; }

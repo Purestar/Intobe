@@ -3,6 +3,8 @@
 	[class*="chip-type"] {
 		--m-chip-bg-c: var(--chip-bg-c);
 		--m-chip-bd-c: var(--chip-bd-c);
+		--m-chip-bd-s: var(--chip-bd-s);
+		--m-chip-bd-w: var(--chip-bd-w);
 		--m-chip-bd-r: var(--chip-bd-r);
 		--m-chip-w: var(--chip-w);
 		--m-chip-h: var(--chip-h);
@@ -15,7 +17,7 @@
 	/* Default */
 	[class*="chip-type"] {
 		background-color:var(--m-chip-bg-c);
-		border:1px solid var(--m-chip-bd-c);
+		border: var(--m-chip-bd-w) var(--m-chip-bd-s) var(--m-chip-bd-c);
 		border-radius:var(--m-chip-bd-r);
 		width:var(--m-chip-w);
 		height:var(--m-chip-h);

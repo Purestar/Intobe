@@ -84,11 +84,11 @@
 				<h1 class="h-logo"><a href="#"><img src="../images/img/img_logo_w.png"></a></h1>
 				<nav class="h-gnb-wrap" style="--menu-length: 6;">
 					<ul class="h-gnb">
-						<li><a href="#">教育体系／制度</a></li>
+						<li><a href="#">교육체계 / 제도</a></li>
 						<li class="active"><a href="#">교육과정</a></li>
 						<li><a href="#">나의학습</a></li>
+						<li><a href="#">BBK역량진단</a></li>
 						<li><a href="#">교육지원</a></li>
-						<li><a href="#">FC진단</a></li>
 						<li><a href="#">결재 / 이력관리<span class="txt-alarm-02">19</span></a></li>
 					</ul>
 					<div class="h-sub-menu-wrap">
@@ -127,22 +127,21 @@
 	</div>
 	<div class="mobile h-inner">
 		<div class="h-left">
-			<a href="#" class="h-btn h-btn-back"><i class="ic-m-l-arrow"></i></a>
-			<h1 class="h-logo"><a href="#"><img src="../images/img/img_logo_w.png"></a></h1>
+			<!--<a href="#" class="h-btn h-btn-back"><i class="ic-m-l-arrow"></i></a>-->
+			<h1 class="h-logo"><a href="#"><img src="../images/img/img_logo_m.png"></a></h1>
 		</div>
-		<h1 class="h-sub-tit">타이틀</h1>
+
 		<div class="h-right">
 			<button type="button" class="h-btn h-btn-alarm" data-tta="mobile-alarm">
-				<i class="ic-bell active"></i> <!-- 알림이 있을 때 active 클래스 -->
+				<i class="ic-m-bell active"></i> <!-- 알림이 있을 때 active 클래스 -->
 			</button>
 			<div style="--pos: relative;">
-				<button type="button" class="h-btn h-btn-globe" data-tta="mobile-glomenu"><i class="ic-globe"></i></button>
+				<button type="button" class="h-btn h-btn-globe" data-tta="mobile-glomenu"><i class="ic-m-globe"></i></button>
 				<ul class="h-menu" data-ttatg="mobile-glomenu" style="position: absolute; --left: -4vw; --top: 15vw;">
 					<li class="active"><a href="../page/main.jsp">KOR</a></li>
 					<li><a href="../page/layout_e.jsp">JPN</a></li>
 				</ul>
 			</div>
-			<a href="#" class="h-btn h-btn-home"><i class="ic-m-home">홈</i></a>
 			<button type="button" class="h-btn" data-tta="mobile-panel"><i class="ic-m-hamburger"></i></button>
 		</div>
 		<!-- 모바일 패널 -->

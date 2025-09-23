@@ -80,7 +80,7 @@
 
 	/* Form */
 		--fom-h: 48px; /* 높이 */
-		--fom-br: 9px; /* 보더 라디우스 */
+		--fom-br: 4px; /* 보더 라디우스 */
 		--fom-pad: var(--init-font-size); /* 좌우 패딩 */
 		--fom-fs: var(--init-font-size); /* 폰트 크기 */
 		--fom-bg: white; /* 배경 */
@@ -154,7 +154,7 @@
 			--fom-h: 12.5vw; /* 높이 */
 			--fom-br: 1.11vw; /* 보더 라디우스 */
 			--fom-fs: 3.89vw; /* 폰트 크기 */
-			--fom-pad: 5vw; /* 좌우 패딩 */
+			--fom-pad: 3.33vw; /* 좌우 패딩 */
 			--fom-chk-ico-w: 3.06vw; /* 체크박스 아이콘 넓이 */
 			--fom-chk-ico-h: 2.36vw; /* 체크박스 아이콘 높이 */
 			--fom-rg-h: 0.56vw; /* Range Type 막대 크기 */
