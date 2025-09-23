@@ -2,7 +2,7 @@
 <%@ include file="../inc/header.jsp" %>
 <div class="sub-top-bg-01">
 	<div class="layout-inner">
-		<a href="#" class="btn-back pc"><i class="ic-l-arrow"></i>목록가기</a>
+		<a href="#" class="btn-back"><i class="ic-l-arrow"></i>목록가기</a>
 		<h2 class="sub-tit">마이팀 조회</h2>
 		<ol class="page-loc">
 			<li>Home</li>
@@ -57,63 +57,57 @@
 						</colgroup>
 						<thead>
 							<tr>
-								<th>과정유형</th>
-								<th colspan="3">대상과정</th>
+								<th rowspan="2">교육유형</th>
+								<th colspan="4">수강이력</th>
+							</tr>
+							<tr>
+								<th colspan="4">
+									<div class="sel-type">
+										<select>
+											<option>집합</option>
+											<option>이러닝</option>
+											<option>마이픽교육</option>
+											<option>마이픽 어학교육</option>
+										</select>
+									</div>
+								</th>
 							</tr>
 						</thead>
-						<tbody>
+						<tbody id="eduCateBody">
 							<tr>
-								<th>직급</th>
-								<td style="--txt-a: center;">조회된 데이터가 없습니다.</td>
+								<th>공통</th>
+								<td colspan="4" style="--txt-a: center;">조회된 데이터가 없습니다.</td>
 							</tr>
 							<tr>
-								<th>직무</th>
-								<td>
+								<th>법정의무</th>
+								<td colspan="4" style="--txt-a: center;">조회된 데이터가 없습니다.</td>
+							</tr>
+							<tr>
+								<th>리더십</th>
+								<td colspan="4">
 									<div style="--dp: grid; --grid-t-col: 3; --m-grid-t-col: 1; --m-gap-y: 1.39vw;">
-										<div style="--dp: flex; --flex-d: column; --gap-y: 10px; --m-gap-y: 1.39vw;">
-											<div style="--dp: flex; --gap-x: 10px; --items-y: center; --m-gap-x: 1.67vw;">
-												<span class="chip-type-02-lblu">수료</span>
-												<a href="">직무인증과정(집합)</a>
-											</div>
-											<div style="--dp: flex; --gap-x: 10px; --items-y: center; --m-gap-x: 1.67vw;">
-												<span class="chip-type-02-lgrn">미신청</span>
-												<a href="">기초과정(온라인)</a>
-											</div>
+										<div style="--dp: flex; --gap-x: 10px; --items-y: center; --m-gap-x: 1.67vw;">
+											<span class="chip-type-02-lpur">완료</span>
+											<a>마이픽 개설 신청</a>
 										</div>
-										<div style="--dp: flex; --flex-d: column; --gap-y: 10px; --m-gap-y: 1.39vw;">
-											<div style="--dp: flex; --gap-x: 10px; --items-y: center; --m-gap-x: 1.67vw;">
-												<span class="chip-type-02-lblu">수료</span>
-												<a href="">직무인증과정(집합)</a>
-											</div>
+										<div style="--dp: flex; --gap-x: 10px; --items-y: center; --m-gap-x: 1.67vw;">
+											<span class="chip-type-02-lblu">신청</span>
+											<a>TEST</a>
 										</div>
-										<div style="--dp: flex; --flex-d: column; --gap-y: 10px; --m-gap-y: 1.39vw;">
-											<div style="--dp: flex; --gap-x: 10px; --items-y: center; --m-gap-x: 1.67vw;">
-												<span class="chip-type-02-lblu">수료</span>
-												<a href="">직무인증과정(집합)</a>
-											</div>
-											<div style="--dp: flex; --gap-x: 10px; --items-y: center; --m-gap-x: 1.67vw;">
-												<span class="chip-type-02-lpur">완료</span>
-												<a href="">기초과정(온라인)</a>
-											</div>
+										<div style="--dp: flex; --gap-x: 10px; --items-y: center; --m-gap-x: 1.67vw;">
+											<span class="chip-type-02-lblu">신청</span>
+											<a>정보화교육</a>
 										</div>
 									</div>
 								</td>
 							</tr>
 							<tr>
-								<th>직책</th>
-								<td style="--txt-a: center;">조회된 데이터가 없습니다.</td>
+								<th>직무</th>
+								<td colspan="4" style="--txt-a: center;">조회된 데이터가 없습니다.</td>
 							</tr>
 							<tr>
-								<th>의무</th>
-								<td style="--txt-a: center;">조회된 데이터가 없습니다.</td>
-							</tr>
-							<tr>
-								<th>공통소양</th>
-								<td style="--txt-a: center;">조회된 데이터가 없습니다.</td>
-							</tr>
-							<tr>
-								<th>조직문화</th>
-								<td style="--txt-a: center;">조회된 데이터가 없습니다.</td>
+								<th>어학</th>
+								<td colspan="4" style="--txt-a: center;">조회된 데이터가 없습니다.</td>
 							</tr>
 						</tbody>
 					</table>
