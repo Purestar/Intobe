@@ -96,7 +96,8 @@
 		height: var(--mark-h);
 	}
 
-	[class*="mark-num"] > * > .part-marker:before {
+	[class*="mark-num"] > * > .part-marker:before,
+	[class*="mark-num"] > *:before {
 		content: counter(item-num) var(--mark-suffix);
 		color: var(--mark-c, var(--mark-ft-c));
 	}

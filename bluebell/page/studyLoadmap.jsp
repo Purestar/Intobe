@@ -1,65 +1,36 @@
 <%@ page contentType ="text/html; charset=UTF-8" %>
 <%@ include file="../inc/header.jsp" %>
-<div class="sub-top-bg-01">
+<div class="sub-top">
 	<div class="layout-inner">
-		<h2 class="sub-tit">교육체계도</h2>
+		<h2 class="sub-tit">Training Roadmap</h2>
 		<ol class="page-loc">
 			<li>Home</li>
-			<li>Sub</li>
+			<li>교육로드맵/제도/교육평가</li>
+			<li>Training Roadmap</li>
 		</ol>
 	</div>
 </div>
 <div class="sub-contents">
 	<div class="layout-inner">
-		<div class="tab-wrap tab-equal tab-scroll-menu" style="--m-pos: sticky; --m-top: var(--init-header-height); --m-z-idx: 10;">
-			<ul class="tab-menu-01">
-				<li class="active"><button type="button">전사원</button></li>
-				<li><button type="button">기술본부</button></li>
-				<li><button type="button">기술지원</button></li>
-				<li><button type="button">판매서포트</button></li>
-				<li><button type="button">사장실</button></li>
-				<li><button type="button">관리본부</button></li>
+		<div class="tab-wrap tab-scroll-menu" style="--m-pos: sticky; --m-top: var(--init-header-height); --m-z-idx: 10;">
+			<ul class="tab-menu-02" style="--content-x: center;">
+				<li class="active"><button type="button">집합교육</button></li>
+				<li><button type="button">이러닝</button></li>
 			</ul>
 			<div class="tab-cont">
-				<div>전사원</div>
-				<div>기술본부</div>
-				<div>
-					<div class="tab-wrap tab-equal" style="--m-pos: sticky; --m-top: var(--init-header-height); --m-z-idx: 10;">
-						<ul class="tab-menu">
-							<li class="active"><button type="button">공통/서무/안전/교육</button></li>
-							<li><button type="button">공구/IT</button></li>
-							<li><button type="button">이익확대/SQR</button></li>
-							<li><button type="button">설계</button></li>
-							<li><button type="button">추진/물류</button></li>
-						</ul>
-						<div class="tab-cont">
-							<div>공통/서무/안전/교육</div>
-							<div>공구/IT</div>
-							<div>이익확대/SQR</div>
-							<div>설계</div>
-							<div>추진/물류</div>
-						</div>
+				<div class="active">
+					<div style="--dp: flex; --content-x: space-between; --item-y: center; --mg-t: 60px;">
+						<h3 class="tit-02">In-Class</h3>
+						<p style="--ft-s: 14px;">2025.09</p>
 					</div>
+					<img src="../images/img/img_roadmap_01.png" style="--mg-t: 20px;">
 				</div>
-				<div>판매서포트</div>
-				<div>사장실</div>
 				<div>
-					<div class="tab-wrap tab-equal" style="--m-pos: sticky; --m-top: var(--init-header-height); --m-z-idx: 10;">
-						<ul class="tab-menu">
-							<li class="active"><button type="button">인사총무</button></li>
-							<li><button type="button">노무안전</button></li>
-							<li><button type="button">IT관리</button></li>
-							<li><button type="button">부품관리</button></li>
-							<li><button type="button">경리</button></li>
-						</ul>
-						<div class="tab-cont">
-							<div>인사총무</div>
-							<div>노무안전</div>
-							<div>IT관리</div>
-							<div>부품관리</div>
-							<div>경리</div>
-						</div>
+					<div style="--dp: flex; --content-x: space-between; --item-y: center; --mg-t: 60px;">
+						<h3 class="tit-02">e-Learning</h3>
+						<p style="--ft-s: 14px;">2025.09</p>
 					</div>
+					<img src="../images/img/img_roadmap_02.png" style="--mg-t: 20px;">
 				</div>
 			</div>
 		</div>

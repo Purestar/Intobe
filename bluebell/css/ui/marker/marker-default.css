@@ -17,7 +17,8 @@
 	[class*="mark-arrow"] > *:first-child:before { content: none; }
 	[class*="mark-num"] { counter-reset: item-num; }
 	[class*="mark-num"] > * { counter-increment: item-num; }
-	[class*="mark-num"] > * .part-marker:before { place-items: center; place-content: center; white-space: nowrap; text-align: center; }
+	[class*="mark-num"] > * .part-marker:before,
+	[class*="mark-num"] > *:before { place-items: center; place-content: center; white-space: nowrap; text-align: center; }
 
 /* Content */
 	[class*="mark-"] > * > .part-content { width: 100%; }

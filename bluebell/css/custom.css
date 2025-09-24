@@ -76,6 +76,12 @@
 		--box-pd-x: 30px;
 	}
 
+	.box-type-01-02 {
+		--box-bd-r: 4px;
+		--box-pd-y: 30px;
+		--box-pd-x: 30px;
+	}
+
 	[class*="box-type-02"] {
 		--box-bg-c: #f9f9f9;
 		--box-pd-a: 40px;
@@ -690,10 +696,23 @@
 			--mark-h: 3px;
 			--mark-gap-y: 5px;
 			--mark-gap-x: 5px;
+			--mark-ft-s: 16px;
+			--mark-ft-c: black;
 		}
 
 		.mark-cir-04 > * { place-items: flex-start; }
 		.mark-cir-04 > *:before { translate: 0 10px; }
+
+	/* Number */
+		.mark-num-01 {
+			--mark-suffix: ")";
+			--mark-ft-s: 16px;
+			--mark-gap-y: 0;
+			--mark-w: auto;
+			--mark-h: auto;
+		}
+
+		.mark-num-01 > * { place-items: flex-start; }
 
 	/* Hyphen */
 		.mark-hyp-01 {
