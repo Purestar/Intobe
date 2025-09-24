@@ -26,13 +26,13 @@ body, #app {display:flex; flex-direction:column; place-content:space-between; fl
 	.h-wrap .h-util > button { position: relative; }
 	.h-wrap .h-util .txt-alarm { position: absolute; top: -5px; right: -27px; background: white; border-radius: 18px 18px 18px 0; width: 37px; height: 18px;  font-size: 14px; text-align: center; color: var(--moc); }
 
-	.h-wrap .h-menu { display: none; position: absolute; background: white; border-radius: 10px; box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.07); padding: 20px; font-size: 14px; word-break: keep-all; color: #666; }
+	.h-wrap .h-menu { display: none; position: absolute; background: white; border-radius: 4px; box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.07); padding: 20px; font-size: 14px; word-break: keep-all; color: #666; }
 	.h-wrap .h-menu.active,
 	.h-wrap *.active + .h-menu { display: block; }
 
 	.h-wrap [data-ttatg] { position: relative; }
 	.h-wrap [data-ttatg].active .h-pop { display: block; }
-	.h-wrap .h-pop { display: none; position: absolute; left: 50%; top: 33px; background: white; border-radius: 10px; box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.07); padding: 19px 21px; font-size: 14px; word-break: keep-all; transform: translate(-50%, 0); color: #666;}
+	.h-wrap .h-pop { display: none; position: absolute; left: 50%; top: 33px; background: white; border-radius: 4px; box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.07); padding: 19px 21px; font-size: 14px; word-break: keep-all; transform: translate(-50%, 0); color: #666;}
 	.h-wrap .h-pop-close { position: absolute; right: 20px; top: 20px; height: auto; }
 	.h-wrap .h-pop-tit { font-size: 20px; font-weight: bold; }
 

@@ -7,7 +7,7 @@
 				<div class="tab-wrap">
 					<ul class="tab-menu-02">
 						<li class="active"><button type="button">My Badge</button></li>
-						<li><button type="button">Learning Badge</button></li>
+						<li><button type="button">Learning Badge 안내</button></li>
 					</ul>
 					<div class="tab-cont">
 						<div class="active">

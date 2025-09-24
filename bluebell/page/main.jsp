@@ -200,7 +200,7 @@
 			<h2 class="ft-nnmj" style="--ft-s: 32px; --ft-c: #6898ad; --m-ft-s: 5.83vw;">추천 집합교육 보기 <span style="--ft-c: #999;">4</span></h2>
 			<a href="#" class="btn-lnk">더보기</a>
 		</div>
-		<div class="swiper-type-02 brd-wrap" style="--mg-t: 34px; --mg-t: 5vw;">
+		<div class="swiper-type-02 brd-wrap" style="--mg-t: 34px; --m-mg-t: 5vw;">
 			<div class="swiper">
 				<ul class="swiper-wrapper brd-lst-01">
 					<li class="swiper-slide">
@@ -275,7 +275,7 @@
 				<h2 class="ft-nnmj" style="--ft-s: 32px; --ft-c: #6898ad; --m-ft-s: 5.83vw;">추천 이러닝 보기 <span style="--ft-c: #999;">4</span></h2>
 				<a href="#" class="btn-lnk">더보기</a>
 			</div>
-			<div class="swiper-type-02 brd-wrap" style="--mg-t: 34px; --mg-t: 5vw;">
+			<div class="swiper-type-02 brd-wrap" style="--mg-t: 34px; --m-mg-t: 5vw;">
 				<div class="swiper">
 					<ul class="swiper-wrapper brd-lst-01">
 						<li class="swiper-slide">

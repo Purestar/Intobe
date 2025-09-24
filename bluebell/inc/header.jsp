@@ -10,7 +10,7 @@
 						<span class="txt-alarm">99+</span>
 					</button>
 					<div class="h-pop h-alarm">
-						<h3 class="h-pop-tit">알림</h3>
+						<h3 class="h-pop-tit ft-nnmj">알림</h3>
 						<div class="h-top">
 							<p>전체 <em>16</em></p>
 							<button>전체삭제</button>
@@ -22,14 +22,14 @@
 										‘마케팅잘하기’ 수강신청이 완료되었습니다.
 										<button><i class="ic-del"></i></button>
 									</div>
-									<p class="txt-date">1월20일 11:00</p>
+									<p class="txt-date">2025-09-22 10:09:36</p>
 								</li>
 								<li>
 									<div style="--dp: flex; --content-a: space-between; --items-a: center;">
 										‘마케팅잘하기’ 수강신청이 완료되었습니다.
 										<button><i class="ic-del"></i></button>
 									</div>
-									<p class="txt-date">1월20일 11:00</p>
+									<p class="txt-date">2025-09-22 10:09:36</p>
 								</li>
 							</ul>
 						</div>
@@ -39,33 +39,18 @@
 				<div data-ttatg="adminmenu">
 					<button type="button" data-tta="adminmenu"><i class="ic-usr"></i></button>
 					<div class="h-pop h-usr">
-						<div class="tooltip-wrap tips">
-							<i class="ic-quest"></i>
-							<div class="ttip-wrap">
-								<p>프로필 사진을 변경 하려면 ‘카메라＇아이콘을 클릭하세요.</p>
-							</div>
-						</div>
+						<a href="#" class="btn-lnk">비밀번호 변경</a>
 						<div class="user-info">
-							<div class="user-thumb">
-								<button class="user-camera-btn" data-self><i class="ic-camera"></i></button>
-								<ul class="h-menu photo-menu">
-									<li><button type="button" data-tta="userPic">사진선택</button></li>
-									<li><button type="button">사진초기화</button></li>
-								</ul>
-								<img src="../images/img/user_default.png" alt="">
+							<div class="thumb-type-02 user-thumb">
+								<img src="https://placehold.co/90x90" alt="사용자 프로필 이미지">
 							</div>
 							<div>
-								<h4 class="user-nm">김캐논</h4>
-								<p>IT기획파트</p>
+								<h4 class="user-nm ft-nnmj">김캐논</h4>
 							</div>
 							<div class="sel-type">
 								<select>
 									<option>Option / 옵션</option>
 								</select>
-							</div>
-							<div style="--dp: flex; --gap-a: 4px;">
-								<a href="" class="btn-sz-02 btn-type-b-blk">취소</a>
-								<a href="" class="btn-sz-02 btn-type-b">저장</a>
 							</div>
 							<a href="">로그아웃</a>
 						</div>
@@ -84,17 +69,17 @@
 				<h1 class="h-logo"><a href="#"><img src="../images/img/img_logo_w.png"></a></h1>
 				<nav class="h-gnb-wrap" style="--menu-length: 6;">
 					<ul class="h-gnb">
-						<li><a href="#">교육체계 / 제도</a></li>
+						<li style="--w: 250px;"><a href="#">교육체계 / 제도 / 교육평가</a></li>
 						<li class="active"><a href="#">교육과정</a></li>
 						<li><a href="#">나의학습</a></li>
-						<li><a href="#">BBK역량진단</a></li>
+						<li><a href="#">BBK진단</a></li>
 						<li><a href="#">교육지원</a></li>
 						<li><a href="#">결재 / 이력관리<span class="txt-alarm-02">19</span></a></li>
 					</ul>
 					<div class="h-sub-menu-wrap">
 						<div class="layout-inner">
 							<div class="h-sub-menu">
-								<ul>
+								<ul style="--w: 250px;">
 									<li class="active"><a href="#">교육체계도</a></li>
 									<li><a href="#">교육제도</a></li>
 								</ul>
