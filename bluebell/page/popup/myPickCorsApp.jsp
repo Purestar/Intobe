@@ -1,5 +1,5 @@
 <%@ page contentType ="text/html; charset=UTF-8" %>
-<div class="pop-type-01" data-ttatg="" style="--pop-w: 842px;">
+<div class="pop-type-01" data-ttatg="myPickCorsApp" style="--pop-w: 842px;">
 	<div class="part-wrap">
 		<div class="part-head">
 			<h1 class="part-title">마이픽과정 개설 신청</h1>
@@ -184,9 +184,9 @@
 			</div>
 		</div>
 		<div class="part-foot">
-			<button type="button" class="btn-type-b-blk" data-tta="">취소</button>
+			<button type="button" class="btn-type-b-blk" data-tta="myPickCorsApp">취소</button>
 			<button type="button" class="btn-type">다음</button>
 		</div>
-		<button type="button" class="part-close" data-tta="">닫기</button>
+		<button type="button" class="part-close" data-tta="myPickCorsApp">닫기</button>
 	</div>
 </div>

@@ -84,6 +84,9 @@
 
 					<button type="button" class="btn-type" data-tta="myPickCorsApp">마이픽과정 개설 신청</button>
 					<%@ include file="./popup/myPickCorsApp.jsp" %>
+
+					<button type="button" class="btn-type" data-tta="myPickCorsApp02">어학마이픽 과정 개설 신청</button>
+					<%@ include file="./popup/myPickCorsApp02.jsp" %>
 				</div>
 			</div>
 			<div style="--dp: grid; --gap-y: 20px;">
