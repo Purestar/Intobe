@@ -81,6 +81,9 @@
 
 					<button type="button" class="btn-type" data-tta="rstRpt">결과보고</button>
 					<%@ include file="./popup/rstRpt.jsp" %>
+
+					<button type="button" class="btn-type" data-tta="myPickCorsApp">마이픽과정 개설 신청</button>
+					<%@ include file="./popup/myPickCorsApp.jsp" %>
 				</div>
 			</div>
 			<div style="--dp: grid; --gap-y: 20px;">

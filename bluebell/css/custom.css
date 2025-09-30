@@ -816,6 +816,7 @@
 		--pop-close-h: 18px;
 	}
 
+	.pop-type-01 .part-head { place-items: flex-end; }
 	.pop-type-01 .part-head .part-title { font-weight: 700; }
 
 	.pop-type-01 .part-foot [class*="btn-type"] {
