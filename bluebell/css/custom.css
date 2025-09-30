@@ -809,7 +809,7 @@
 	.pop-type-01 .part-foot [class*="btn-type"] {
 		--btn-h: 56px;
 		--btn-ft-s: 18px;
-		--btn-w: 100%;
+		--btn-min-w: 180px;
 	}
 
 	[class*="pop-type-alert"] {
