@@ -79,10 +79,6 @@
 
 	/* Board List */
 		[class*="brd-lst-01"] { grid-template-columns: repeat(2, 41.22vw); row-gap: 5.56vw; }
-		[class*="brd-lst-01"] .brd-cont { gap: 2.78vw; margin-top: 3.33vw; }
-		[class*="brd-lst-01"] .brd-ctgy { margin-top: 0.69vw; }
-		[class*="brd-lst-01"] .brd-tit { margin-top: 1.39vw; }
-		[class*="brd-lst-01"] .brd-meta { margin-top: 2.08vw; }
 
 		.brd-lst-01-01 .brd-cont { margin-top: 0; }
 
@@ -296,12 +292,12 @@
 
 		/* Switch */
 			.form-slt-swh-01 {
-				--form-bd-r: 1.39vw;
-				--form-w: 6.53vw;
-				--form-h: 1.39vw;
+				--form-bd-r: 3.33vw;
+				--form-w: 6.25vw;
+				--form-h: 3.33vw;
 
-				--form-chk-w: 3.33vw;
-				--form-chk-h: 3.33vw;
+				--form-chk-w: 2.22vw;
+				--form-chk-h: 2.22vw;
 			}
 
 		/* Text */

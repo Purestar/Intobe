@@ -108,10 +108,10 @@
 				<div class="form-txt-type-01" style="--form-pd-r: 0;">
 					<input type="text" placeholder="키워드로 검색해 보세요.">
 				</div>
-				<a href="#" class="btn-type" style="--btn-min-w: 88px;">검색</a>
+				<a href="#" class="btn-type" style="--btn-min-w: 88px; --m-btn-w: 100%;">검색</a>
 			</div>
 		</form>
-		<div class="brd-wrap" style="--mg-t: 60px;">
+		<div class="brd-wrap" style="--mg-t: 60px; --m-mg-t: 8.33vw;">
 			<div style="--dp: flex; --content-a: space-between; --m-flex-d: column; --m-gap-y: 3.33vw;">
 				<div style="--dp: flex; --items-a: center; --gap-x: 40px; --m-flex-d: column; --m-items-a: flex-start; --m-gap-y: 3.33vw;">
 					<p class="brd-tot">전체 <strong class="brd-tot-num">24</strong></p>

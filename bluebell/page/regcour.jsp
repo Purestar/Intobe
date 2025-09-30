@@ -13,7 +13,7 @@
 	<div class="layout-inner">
 		<form id="saveForm" name="saveForm" method="post" enctype="multipart/form-data">
 			<input type="hidden" id="aprvSeq" name="aprvSeq">
-			<table class="tbl-type-01">
+			<table class="tbl-type-04">
 				<colgroup>
 					<col style="--w: 120px; --m-w: 25vw;">
 					<col>
@@ -228,7 +228,7 @@
 									</li>
 								</ul>
 							</div>
-							<ul class="mark-squ-01 mark-direction" style="--mg-t: 10px;">
+							<ul class="mark-squ-01 mark-direction" style="--mg-t: 10px; --txt-a: left;">
 								<li>'파일찾기'를 클릭 시에만 첨부파일이 업로드됩니다.</li>
 								<li>파일용량은 50MB를 넘을 수 없습니다.</li>
 							</ul>
