@@ -5,13 +5,7 @@
 <div class="sub-contents">
 	<div class="layout-inner">
 
-		<div class="tab-wrap" style="--m-pos: sticky; --m-top: var(--init-header-height); --m-z-idx: 10;">
-			<ul class="tab-menu-01">
-				<li class="active"><a href="">신청과정 3</a></li>
-				<li><a href="">완료과정 8</a></li>
-			</ul>
-		</div>
-
+		<%@ include file="./part/mypick_tab.jsp" %>
 		<div class="brd-wrap" style="--mg-t: 60px; --m-mg-t: 8.33vw;">
 			<div style="--dp: flex; --content-x: space-between; --items-y: center;">
 				<div></div>
@@ -32,13 +26,14 @@
 						<h3 class="brd-tit ellipsis" style="--mg-t: 10px; --m-mg-t: 0;">글로벌 리더 양성과정 글로벌 양성과정 글로벌 양성과정 글로벌 양성과정 글로벌 양성과정 글로벌 양성과정 글로벌 리더 양성과정글로벌 리더 양성과정글로벌 리더 양성과정</h3>
 						<div class="pc">
 							<div class="mark-v-bar-01" style="--mg-t: 10px;">
-								<span>교육일수/시간 <span style="--ft-c: black;">8시간</span> </span>
-								<span>인정시간 <span style="--ft-c: black;">1일</span></span>
-								<span>교육비 <span style="--ft-c: black;">50,000원</span> </span>
-								<span>교육기관 <span style="--ft-c: black;">교육센터</span> </span>
+								<span>교육구분 <span style="--ft-c: black;">국내</span> </span>
+								<span>교육유형 <span style="--ft-c: black;">리더십</span></span>
+								<span>교육일수/시간 <span style="--ft-c: black;">1일 2시간</span></span>
 							</div>
 							<div class="mark-v-bar-01" style="--mg-t: 10px;">
-								<span>교육기간 <span style="--ft-c: black;">2025.07.28 - 2025.07.28</span> </span>
+								<span>교육비 <span style="--ft-c: black;">0원</span> </span>
+								<span>교육기관 <span style="--ft-c: black;">ST Invictus</span></span>
+								<span>교육기간 <span style="--ft-c: black;">2025.09.28~2025.09.28</span></span>
 							</div>
 						</div>
 						<div class="mobile">
