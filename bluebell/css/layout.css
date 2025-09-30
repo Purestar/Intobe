@@ -136,6 +136,7 @@ body, #app {display:flex; flex-direction:column; place-content:space-between; fl
 		.sub-contents { padding: 8.33vw 0 13.89vw; }
 		[class*="sub-top"] .layout-inner { height: auto; padding: 5.56vw 5.56vw; }
 		[class*="sub-top"] .sub-tit { font-size: 5.56vw; }
+		[class*="sub-top"] .sub-tit-02 { font-size: 3.89vw; }
 		[class*="sub-top"] .page-loc { display: none; }
 		[class*="sub-top"] .btn-back { position: static; justify-self: flex-start; gap: 1.67vw; left: 0; top: 5.56vw; font-size: 3.33vw; }
 		.sub-top-bg-01 { display: none; }
