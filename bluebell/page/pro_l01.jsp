@@ -1,11 +1,12 @@
 <%@ page contentType ="text/html; charset=UTF-8" %>
 <%@ include file="../inc/header.jsp" %>
-<div class="sub-top-bg-01">
+<div class="sub-top">
 	<div class="layout-inner">
-		<h2 class="sub-tit">조회/신청</h2>
+		<h2 class="sub-tit">교육과정 조회</h2>
 		<ol class="page-loc">
 			<li>Home</li>
-			<li>Sub</li>
+			<li>교육과정</li>
+			<li>교육과정 조회</li>
 		</ol>
 	</div>
 </div>
@@ -17,15 +18,14 @@
 					<li class="swiper-slide">
 						<a href="#" style="--dp: flex; --items-a: flex-start; --gap-x: 27px; --m-gap-x: 4.44vw;">
 							<div class="thumb-type-01-01" style="--thumb-w: 236px;">
-								<div class="thumb-lt"><i class="ic-ribbon"></i></div>
+								<div class="thumb-lt">
+									<span class="chip-type-02-pnk">BEST</span>
+								</div>
 								<img src="https://placehold.co/236x152">
 							</div>
 							<div class="brd-cont">
-								<span class="chip-type-02-lblu">오프라인</span>
-								<span class="chip-type-02-lpur">블랜디드</span>
-								<span class="chip-type-02-lpnk">온라인라이브</span>
-								<span class="chip-type-02-lgrn">온라인</span>
-								<div class="mark-arrow-01 brd-ctgy">
+								<span class="chip-type-02-b-gry">오프라인</span>
+								<div class="brd-ctgy">
 									<span>1Dep</span>
 									<span>2Dep</span>
 								</div>
@@ -43,12 +43,14 @@
 					<li class="swiper-slide">
 						<a href="#" style="--dp: flex; --items-a: flex-start; --gap-x: 27px; --m-gap-x: 4.44vw;">
 							<div class="thumb-type-01-01" style="--thumb-w: 236px;">
-								<div class="thumb-lt"><i class="ic-ribbon"></i></div>
+								<div class="thumb-lt">
+									<span class="chip-type-02-pnk">BEST</span>
+								</div>
 								<img src="https://placehold.co/236x152">
 							</div>
 							<div class="brd-cont">
-								<span class="chip-type-02-lblu">오프라인</span>
-								<div class="mark-arrow-01 brd-ctgy">
+								<span class="chip-type-02-b-gry">온라인</span>
+								<div class="brd-ctgy">
 									<span>1Dep</span>
 									<span>2Dep</span>
 								</div>
@@ -76,7 +78,7 @@
 		<form>
 			<div style="--dp: flex; --gap-x: 10px; --m-flex-d: column; --m-gap-y: 1.67vw;">
 				<div class="pc reg-cour-dtl-btn" data-self>
-					<button type="button" class="btn-type-lgry" style="--btn-w: 140px;">
+					<button type="button" class="btn-type-lgry" style="--btn-w: 128px;">
 						상세검색
 						<i class="ic-plus"></i>
 					</button>
@@ -105,17 +107,14 @@
 				</div>
 				<div class="form-txt-type-01" style="--form-pd-r: 0;">
 					<input type="text" placeholder="키워드로 검색해 보세요.">
-					<div class="pc">
-						<button type="button" class="part-icon"><i class="ic-del-02">지우기</i></button>
-					</div>
-					<a href="#" class="part-icon"><i class="ic-zoom">검색</i></a>
 				</div>
+				<a href="#" class="btn-type" style="--btn-min-w: 88px;">검색</a>
 			</div>
 		</form>
 		<div class="brd-wrap" style="--mg-t: 60px;">
 			<div style="--dp: flex; --content-a: space-between; --m-flex-d: column; --m-gap-y: 3.33vw;">
 				<div style="--dp: flex; --items-a: center; --gap-x: 40px; --m-flex-d: column; --m-items-a: flex-start; --m-gap-y: 3.33vw;">
-					<p class="brd-tot">총 <strong><q>24</q></strong>건</p>
+					<p class="brd-tot">전체 <strong class="brd-tot-num">24</strong></p>
 					<div style="--dp: flex; --gap-x: 16px;">
 						<div class="form-slt-swh-01">
 							<input id="ejcw3obgja5" type="checkbox" name="" value="">
@@ -144,113 +143,129 @@
 			<div class="no-data" style="--h: 280px; --m-h: 45.56vw;">게시글이 없습니다.</div>
 			<ul class="brd-lst-01" style="--mg-t: 32px; --m-mg-t: 4.44vw;">
 				<li>
-					<a href="#">
-						<div class="thumb-type-01">
-							<img src="https://placehold.co/270x152">
+					<div class="thumb-type-01-02">
+						<div class="thumb-lb">
+							<i class="ic-play"></i>
 						</div>
-						<div class="brd-cont">
-							<span class="chip-type-02-lblu">오프라인</span>
-							<span class="chip-type-02-lpur">블랜디드</span>
-							<span class="chip-type-02-lpnk">온라인라이브</span>
-							<span class="chip-type-02-lgrn">온라인</span>
-							<div class="mark-arrow-01 brd-ctgy">
-								<span>1Dep</span>
-								<span>2Dep</span>
-							</div>
-							<h3 class="brd-tit ellipsis">[Python Basic] 14.while 14.while14.while</h3>
-							<div class="mark-v-bar-01 brd-meta">
-								<span>2023.10.24 ~ 2023.10.31</span>
-							</div>
+						<img src="https://placehold.co/270x152">
+					</div>
+					<div class="brd-cont">
+						<span class="chip-type-02-b-gry">오프라인</span>
+						<div class="brd-ctgy ellipsis">
+							<span>Language</span>
+							<span>Business English</span>
+							<span>Business English</span>
 						</div>
-					</a>
+						<h3 class="brd-tit ellipsis">[Python Basic] 14.while 14.while14.while</h3>
+						<div class="mark-v-bar-01 brd-meta">
+							<span>2023.10.24 ~ 2023.10.31</span>
+						</div>
+					</div>
+					<a href="#" class="brd-lnk">상세보기</a>
 				</li>
 				<li>
-					<a href="#">
-						<div class="thumb-type-01">
-							<img src="https://placehold.co/270x152">
+					<div class="thumb-type-01-02">
+						<div class="thumb-lb">
+							<i class="ic-play"></i>
 						</div>
-						<div class="brd-cont">
-							<span class="chip-type-02-lblu">오프라인</span>
-							<div class="mark-arrow-01 brd-ctgy">
-								<span>1Dep</span>
-								<span>2Dep</span>
-							</div>
-							<h3 class="brd-tit ellipsis">[Python Basic] 14.while 14.while14.while</h3>
-							<div class="mark-v-bar-01 brd-meta">
-								<span>2023.10.24 ~ 2023.10.31</span>
-							</div>
+						<img src="https://placehold.co/270x152">
+					</div>
+					<div class="brd-cont">
+						<span class="chip-type-02-b-gry">오프라인</span>
+						<div class="brd-ctgy ellipsis">
+							<span>Language</span>
+							<span>Business English</span>
+							<span>Business English</span>
 						</div>
-					</a>
+						<h3 class="brd-tit ellipsis">[Python Basic] 14.while 14.while14.while</h3>
+						<div class="mark-v-bar-01 brd-meta">
+							<span>2023.10.24 ~ 2023.10.31</span>
+						</div>
+					</div>
+					<a href="#" class="brd-lnk">상세보기</a>
 				</li>
 				<li>
-					<a href="#">
-						<div class="thumb-type-01">
-							<img src="https://placehold.co/270x152">
+					<div class="thumb-type-01-02">
+						<div class="thumb-lb">
+							<i class="ic-play"></i>
 						</div>
-						<div class="brd-cont">
-							<span class="chip-type-02-lpur">블랜디드</span>
-							<div class="mark-arrow-01 brd-ctgy">
-								<span>1Dep</span>
-								<span>2Dep</span>
-							</div>
-							<h3 class="brd-tit ellipsis">[Python Basic] 14.while 14.while14.while</h3>
-							<div class="mark-v-bar-01 brd-meta">
-								<span>2023.10.24 ~ 2023.10.31</span>
-							</div>
+						<img src="https://placehold.co/270x152">
+					</div>
+					<div class="brd-cont">
+						<span class="chip-type-02-b-gry">오프라인</span>
+						<div class="brd-ctgy ellipsis">
+							<span>Language</span>
+							<span>Business English</span>
+							<span>Business English</span>
 						</div>
-					</a>
+						<h3 class="brd-tit ellipsis">[Python Basic] 14.while 14.while14.while</h3>
+						<div class="mark-v-bar-01 brd-meta">
+							<span>2023.10.24 ~ 2023.10.31</span>
+						</div>
+					</div>
+					<a href="#" class="brd-lnk">상세보기</a>
 				</li>
 				<li>
-					<a href="#">
-						<div class="thumb-type-01">
-							<img src="https://placehold.co/270x152">
+					<div class="thumb-type-01-02">
+						<div class="thumb-lb">
+							<i class="ic-play"></i>
 						</div>
-						<div class="brd-cont">
-							<span class="chip-type-02-lpnk">온라인라이브</span>
-							<div class="mark-arrow-01 brd-ctgy">
-								<span>1Dep</span>
-								<span>2Dep</span>
-							</div>
-							<h3 class="brd-tit ellipsis">[Python Basic] 14.while 14.while14.while</h3>
-							<div class="mark-v-bar-01 brd-meta">
-								<span>2023.10.24 ~ 2023.10.31</span>
-							</div>
+						<img src="https://placehold.co/270x152">
+					</div>
+					<div class="brd-cont">
+						<span class="chip-type-02-b-gry">오프라인</span>
+						<div class="brd-ctgy ellipsis">
+							<span>Language</span>
+							<span>Business English</span>
+							<span>Business English</span>
 						</div>
-					</a>
+						<h3 class="brd-tit ellipsis">[Python Basic] 14.while 14.while14.while</h3>
+						<div class="mark-v-bar-01 brd-meta">
+							<span>2023.10.24 ~ 2023.10.31</span>
+						</div>
+					</div>
+					<a href="#" class="brd-lnk">상세보기</a>
 				</li>
 				<li>
-					<a href="#">
-						<div class="thumb-type-01">
-							<img src="https://placehold.co/270x152">
+					<div class="thumb-type-01-02">
+						<div class="thumb-lb">
+							<i class="ic-play"></i>
 						</div>
-						<div class="brd-cont">
-							<span class="chip-type-02-lgrn">온라인</span>
-							<div class="mark-arrow-01 brd-ctgy">
-								<span>1Dep</span>
-								<span>2Dep</span>
-							</div>
-							<h3 class="brd-tit ellipsis">[Python Basic] 14.while 14.while14.while</h3>
-							<div class="mark-v-bar-01 brd-meta">
-								<span>2023.10.24 ~ 2023.10.31</span>
-							</div>
+						<img src="https://placehold.co/270x152">
+					</div>
+					<div class="brd-cont">
+						<span class="chip-type-02-b-gry">온라인</span>
+						<div class="brd-ctgy ellipsis">
+							<span>Language</span>
+							<span>Business English</span>
+							<span>Business English</span>
 						</div>
-					</a>
+						<h3 class="brd-tit ellipsis">[Python Basic] 14.while 14.while14.while</h3>
+						<div class="mark-v-bar-01 brd-meta">
+							<span>2023.10.24 ~ 2023.10.31</span>
+						</div>
+					</div>
+					<a href="#" class="brd-lnk">상세보기</a>
 				</li>
 				<li>
-					<a href="#">
-						<div class="thumb-type-01"></div>
-						<div class="brd-cont">
-							<span class="chip-type-02-lgrn">온라인</span>
-							<div class="mark-arrow-01 brd-ctgy">
-								<span>1Dep</span>
-								<span>2Dep</span>
-							</div>
-							<h3 class="brd-tit ellipsis">[Python Basic] 14.while 14.while14.while</h3>
-							<div class="mark-v-bar-01 brd-meta">
-								<span>2023.10.24 ~ 2023.10.31</span>
-							</div>
+					<div class="thumb-type-01-02">
+						<div class="thumb-lb">
+							<i class="ic-play"></i>
 						</div>
-					</a>
+					</div>
+					<div class="brd-cont">
+						<span class="chip-type-02-b-gry">오프라인</span>
+						<div class="brd-ctgy ellipsis">
+							<span>Language</span>
+							<span>Business English</span>
+							<span>Business English</span>
+						</div>
+						<h3 class="brd-tit ellipsis">[Python Basic] 14.while 14.while14.while</h3>
+						<div class="mark-v-bar-01 brd-meta">
+							<span>2023.10.24 ~ 2023.10.31</span>
+						</div>
+					</div>
+					<a href="#" class="brd-lnk">상세보기</a>
 				</li>
 			</ul>
 			<div class="pc">

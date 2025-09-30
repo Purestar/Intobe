@@ -2,10 +2,14 @@
 [style*="--h"] { height: var(--h); }
 [style*="--max-w"] { max-width: var(--max-w); }
 [style*="--max-h"] { max-height: var(--max-h); }
+[style*="--min-w"] { min-width: var(--min-w); }
+[style*="--min-h"] { min-height: var(--min-h); }
 
 @media (max-width: 768px) {
 	[style*="--m-w"] { width: var(--m-w); }
 	[style*="--m-h"] { height: var(--m-h); }
 	[style*="--m-max-w"] { max-width: var(--m-max-w); }
 	[style*="--m-max-h"] { max-height: var(--m-max-h); }
+	[style*="--m-min-w"] { min-width: var(--m-min-w); }
+	[style*="--m-min-h"] { min-height: var(--m-min-h); }
 }
