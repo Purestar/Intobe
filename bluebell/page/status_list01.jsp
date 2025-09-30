@@ -14,6 +14,7 @@
 	<div class="layout-inner">
 		<div class="tab-wrap tab-equal tab-scroll-menu" style="--m-pos: sticky; --m-top: var(--init-header-height); --m-mg-t: 0; --m-z-idx: 10;">
 			<ul class="tab-menu-01">
+				<li><a href="">수강이력</a></li>
 				<li class="active"><a href="">학습과정 4</a></li>
 				<li><a href="">신청과정 3</a></li>
 				<li><a href="">완료과정 6</a></li>
@@ -21,6 +22,8 @@
 				<li><a href="">설문 1</a></li>
 			</ul>
 		</div>
+
+		<%@ include file="./part/status_search.jsp" %>
 
 		<div class="brd-form" style="--dp: flex; --content-a: center; --gap-a: 10px; --mg-t: 80px; --m-flex-d: column; --m-mg-t:8.33vw;">
 			<div class="sel-type">

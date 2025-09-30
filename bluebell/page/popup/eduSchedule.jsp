@@ -1,5 +1,5 @@
 <%@ page contentType ="text/html; charset=UTF-8" %>
-<div class="pop-type-01 active" data-ttatg="eduSchedule" style="--pop-w: 750px;">
+<div class="pop-type-01" data-ttatg="eduSchedule" style="--pop-w: 750px;">
 	<div class="part-wrap">
 		<div class="part-head">
 			<h1 class="part-title">교육일정 보기</h1>

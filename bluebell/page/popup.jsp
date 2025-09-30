@@ -8,8 +8,12 @@
 				<div style="--dp: flex; --flex-w: wrap; --gap-a: 20px;">
 					<button type="button" class="btn-type" data-tta="userPic">사진변경</button>
 					<button type="button" class="btn-type" data-tta="actBadge">활동배지</button>
+
 					<button type="button" class="btn-type" data-tta="pwChg">비밀번호변경</button>
+					<%@ include file="./popup/pwChg.jsp" %>
+
 					<button type="button" class="btn-type" data-tta="pwReset">비밀번호초기화</button>
+					<%@ include file="./popup/pwReset.jsp" %>
 				</div>
 			</div>
 			<div style="--dp: grid; --gap-y: 20px;">
@@ -64,6 +68,16 @@
 					<button type="button" class="btn-type" data-tta="searchuser">사용자검색</button>
 					<button type="button" class="btn-type" data-tta="reason">반려정보</button>
 					<button type="button" class="btn-type" data-tta="resultDetail">결과상세보기</button>
+
+					<button type="button" class="btn-type" data-tta="enrollmentCancle">과정 수강 취소 신청</button>
+					<%@ include file="./popup/enrollmentCancle.jsp" %>
+
+					<button type="button" class="btn-type" data-tta="alert04">과정 수강 취소 신청 알림</button>
+					<button type="button" class="btn-type" data-tta="alert05">과정 수강 취소 신청 알림 02</button>
+					<button type="button" class="btn-type" data-tta="alert06">과정 수강 취소 신청 알림 03</button>
+
+					<button type="button" class="btn-type" data-tta="courseCancle">취소 신청</button>
+					<%@ include file="./popup/courseCancle.jsp" %>
 				</div>
 			</div>
 			<div style="--dp: grid; --gap-y: 20px;">
@@ -82,10 +96,6 @@
 		</div>
 	</div>
 </div>
-
-<!-- 공통 -->
-<%@ include file="./popup/pwChg.jsp" %>
-<%@ include file="./popup/pwReset.jsp" %>
 
 <!-- 메인팝업 -->
 <%@ include file="./popup/main-popup.jsp" %>
@@ -126,6 +136,7 @@
 <%@ include file="./popup/resultDetail.jsp" %>
 <!-- 참조확인 -->
 <%@ include file="./popup/report.jsp" %>
+
 
 <!-- 결재정보 -->
 <%@ include file="./popup/paymentinfo.jsp" %>

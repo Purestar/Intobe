@@ -40,6 +40,7 @@
 /* Board Default */
 	.brd-wrap .brd-tit { font-size: 20px; color:black; }
 	.brd-wrap .brd-ctgy { font-size: 14px; color: #666; }
+	.brd-wrap .brd-ctgy > * + *:before { content: "> "; font-size: 10px; }
 	.brd-wrap .brd-tot { color: black; }
 	.brd-wrap .brd-tot-num { color: #999; }
 
@@ -47,7 +48,6 @@
 	[class*="brd-lst-01"] { display: grid; grid-template-columns: repeat(4, 270px); place-content: space-between; row-gap: 80px; }
 	[class*="brd-lst-01"] .brd-cont { display: grid; gap: 2px; margin-top: 24px; }
 	[class*="brd-lst-01"] .brd-ctgy { margin-top: 5px; color: var(--mc); }
-	[class*="brd-lst-01"] .brd-ctgy > * + *:before { content: "> "; font-size: 10px; }
 	[class*="brd-lst-01"] .brd-lnk { display: none; place-items: center; place-content: center; position: absolute; left: 0; top: 0; background-color: rgba(0, 0, 0, .5); width: 100%; height: 100%; font-size: 20px; text-shadow: 1px black; color: white; }
 	[class*="brd-lst-01"] > * { position: relative; }
 	[class*="brd-lst-01"] > *:hover .brd-lnk { display: flex; }
@@ -55,14 +55,20 @@
 	.brd-lst-01-01 { display: flex; }
 	.brd-lst-01-01 .brd-cont { margin-top: 0; }
 
+	.brd-lst-02 { display: grid; gap: 20px; }
+	.brd-lst-02 .brd-ctgy { margin-top: 5px; color: var(--mc); }
+	.brd-lst-02 .brd-stat { display: flex; gap: 20px; place-items: center; --m-w: 100%; --m-mg-t: 2.56vw; }
+	.brd-lst-02 .brd-btn { display: flex; flex-direction: column; gap: 10px; width: 124px; }
+	.brd-lst-02 .brd-btn [class*="btn-type"] { --btn-w: 100%; }
+
 /* Board View */
 
 /* Box */
 	[class*="box-type-01"] {
 		--box-bd-c: #e2e2e2;
-		--box-bd-r: 30px;
+		--box-bd-r: 10px;
 		--box-bg-c: white;
-		--box-pd-a: 40px;
+		--box-pd-a: 30px;
 	}
 
 	.box-type-01-01 {
@@ -587,7 +593,7 @@
 	.ic-clock:before { background-position: var(--bp-350) var(--bp-50); width: 20px; height: 20px; }
 	.ic-close:before { background-position: var(--bp-150) 0; width: 18px; height: 18px; }
 	.ic-del:before { background-position: var(--bp-200) 0; width: 13px; height: 12px; }
-	.ic-del-02:before { background-position: var(--bp-400) 0; width: 18px; height: 18px; }
+	.ic-del-02:before { background-position: var(--bp-400) 0; width: 8px; height: 8px; }
 	.ic-eye:before { background-position: var(--bp-900) 0; width: 18px; height: 14px; }
 	.ic-file:before { background-position: var(--bp-450) 0; width: 18px; height: 18px; }
 	.ic-fire:before { background-position: 0 var(--bp-50); width: 18px; height: 28px; }
@@ -859,17 +865,19 @@
 	[class*="tab-menu-01"] {
 		--tab-menu-bd-b-w: 1px;
 		--tab-menu-bd-b-c: #e2e2e2;
-		--tab-menu-gap-x: 52px;
+		--tab-menu-gap-x: 0;
 
-		--tab-btn-h: 43px;
+		--tab-btn-h: 50px;
 		--tab-btn-pd-x: 25px;
-		--tab-btn-ft-s: 18px;
+		--tab-btn-ft-c: #999;
+		--tab-btn-ft-s: 20px;
+		--tab-btn-ft-w: 700;
 
 		--tab-btn-active-bg-c: transparent;
-		--tab-btn-active-ft-c: var(--mc);
+		--tab-btn-active-ft-c: black;
 
 		--tab-btn-over-bg-c: transparent;
-		--tab-btn-over-ft-c: var(--mc);
+		--tab-btn-over-ft-c: black;
 
 		background: white;
 	}
@@ -877,7 +885,7 @@
 	[class*="tab-menu-01"] > * { position: relative; }
 	[class*="tab-menu-01"] > * > * { display: block; padding-bottom: 24px; }
 	[class*="tab-menu-01"] > *:hover:after,
-	[class*="tab-menu-01"] > *.active:after { content: ""; position: absolute; left: 0; bottom: 0; background: var(--mc); width: 100%; height: 2px; }
+	[class*="tab-menu-01"] > *.active:after { content: ""; position: absolute; left: 0; bottom: 0; background: black; width: 100%; height: 2px; }
 
 	.tab-menu-01-01 {
 		--tab-menu-bd-b-w: 0;
@@ -969,7 +977,10 @@
 	}
 
 	.thumb-type-01-04 {
+		flex-shrink: 0;
+
 		--thumb-ratio: 30 / 17;
+		--thumb-w: 270px;
 		--thumb-bd-r: 8px;
 		--thumb-pd-x: 5px;
 		--thumb-pd-y: 5px;

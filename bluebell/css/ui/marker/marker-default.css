@@ -8,7 +8,7 @@
 	[class*="mark-"] > * > .part-marker,
 	[class*="mark-"] > * { display: flex; place-items: center; }
 	[class*="mark-"] > * > .part-marker:before,
-	[class*="mark-"] > *:before { content:""; }
+	[class*="mark-"] > *:before { content:""; flex-shrink: 0; }
 	[class*="mark-"] > .part-no-marker > .part-marker { display:none; }
 
 /* Type */
