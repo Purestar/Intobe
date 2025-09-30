@@ -799,7 +799,7 @@
 	.pop-type-01 {
 		--pop-bd-r: 10px;
 		--pop-bd-c: transparent;
-		--pop-w: 680px;
+		--pop-w: 750px;
 
 		--pop-head-bg-c: white;
 		--pop-head-ft-s: 20px;
@@ -1011,6 +1011,7 @@
 	.tit-05 { font-family: 'Nanum Myeongjo'; font-size: 24px; }
 	.tit-06 { display: flex; gap: 8px; font-size: 18px; color:#003349; }
 	.tit-06:before { content: ""; background-color: #003349; border-radius: 50%; width: 6px; height: 6px; translate: 0 10px; }
+	.tit-07 { font-weight: 700; color: black;}
 
 /* Tree Menu */
 	.tree-wrap summary { display: flex; gap: 7px; place-items: center; }

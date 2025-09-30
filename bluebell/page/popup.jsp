@@ -78,6 +78,9 @@
 
 					<button type="button" class="btn-type" data-tta="courseCancle">취소 신청</button>
 					<%@ include file="./popup/courseCancle.jsp" %>
+
+					<button type="button" class="btn-type" data-tta="rstRpt">결과보고</button>
+					<%@ include file="./popup/rstRpt.jsp" %>
 				</div>
 			</div>
 			<div style="--dp: grid; --gap-y: 20px;">
