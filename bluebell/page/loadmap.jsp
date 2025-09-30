@@ -36,8 +36,8 @@
 				</div>
 			</div>
 		</div>
-		<div style="--dp: flex; --gap-x: 20px; --mg-t: 20px; --m-dp: grid; --m-mg-t: 2.78vw; --m-gap-y: 2.78vw;">
-			<div class="box-type-01" style="overflow: visible; --flex-b: 461px; --m-flex-b: 100%;">
+		<div style="--dp: flex; --gap-x: 20px; --mg-t: 20px; --m-flex-d: column; --m-mg-t: 2.78vw; --m-gap-y: 2.78vw;">
+			<div class="box-type-01" style="overflow: visible; --w: 461px; --m-w: 100%;">
 				<div style="--dp: flex; --content-x: space-between; --items-y: center;">
 					<h4 class="tit-02">연간 교육 이수 현황</h4>
 					<div class="pc">
@@ -82,7 +82,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="box-type-01">
+			<div class="box-type-01" style="--w: 719px; --m-w: 100%;">
 				<div style="--dp: flex; --gap-x: 20px; --items-y: center;">
 					<h4 class="tit-02">교육 유형별 이수 현황</h4>
 					<div class="pc">

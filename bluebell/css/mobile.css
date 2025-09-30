@@ -89,13 +89,6 @@
 	/* Board View */
 		[class*="view-type-01"] table th { font-size: 3.89vw; font-weight: 300; text-align: left; color: #666; }
 		[class*="view-type-01"] table td { padding: 0.65vw 0; font-size: 3.89vw; font-weight: 300; text-align: left; color: #000; }
-		.class-mid { margin-top: 0; }
-		.class-mid .section { flex-wrap: wrap; }
-		.class-mid .detaile-info { gap: 6.94vw; margin-top: 6.94vw; }
-		.class-mid .detaile-info h3 { font-size: inherit; color: black; }
-		.class-mid .detaile-info p { margin-top: 2.08vw; font-size: inherit; }
-		.class-mid .detaile-info p .num { margin-right: 2.78vw; }
-		.class-mid .detaile-info p + p { margin-top: 7px; }
 
 	/* Box */
 		[class*="box-type-01"] {
@@ -466,7 +459,7 @@
 		.lst-diagnosis .lst-diagnosis-tit { margin-top: 2.78vw; font-size: 3.89vw; }
 		.lst-diagnosis .lst-diagnosis-lvl > * { gap: 2.5vw; }
 		.lst-diagnosis .lst-diagnosis-lvl > * + * { margin-top: 2.78vw; }
-		.lst-diagnosis .tbl-type-04 { margin-top: 8.33vw; }
+		.lst-diagnosis [class*="tbl-type-04"] { margin-top: 8.33vw; }
 
 	/* Marker */
 		/* Arrow */
@@ -672,9 +665,9 @@
 		.tbl-type-03 thead th { border-right: 0; height: 11.39vw; }
 		.tbl-type-03 tbody td { border-right: 0; padding: 0; }
 
-		.tbl-type-04 thead th { height: 11.39vw; }
-		.tbl-type-04 tbody th { height: 11.39vw; padding: 1.39vw 1.67vw; }
-		.tbl-type-04 tbody td { height: 11.39vw; padding: 1.39vw 1.67vw; }
+		[class*="tbl-type-04"] thead th { height: 11.39vw; }
+		[class*="tbl-type-04"] tbody th { height: 11.39vw; padding: 1.39vw 1.67vw; }
+		[class*="tbl-type-04"] tbody td { height: 11.39vw; padding: 1.39vw 1.67vw; }
 
 	/* Title */
 		.tit-01 { font-size: 5vw; }
