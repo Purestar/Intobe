@@ -5,8 +5,7 @@
 			<h1 class="part-title"></h1>
 		</div>
 		<div class="part-cont">
-			<div class="pop-cont-in">
-			</div>
+			<div class="pop-cont-in"></div>
 		</div>
 		<div class="part-foot">
 			<button type="button" class="btn-type-b-blk" data-tta="">닫기</button>

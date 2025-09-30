@@ -8,6 +8,8 @@
 				<div style="--dp: flex; --flex-w: wrap; --gap-a: 20px;">
 					<button type="button" class="btn-type" data-tta="userPic">사진변경</button>
 					<button type="button" class="btn-type" data-tta="actBadge">활동배지</button>
+					<button type="button" class="btn-type" data-tta="pwChg">비밀번호변경</button>
+					<button type="button" class="btn-type" data-tta="pwReset">비밀번호초기화</button>
 				</div>
 			</div>
 			<div style="--dp: grid; --gap-y: 20px;">
@@ -80,6 +82,10 @@
 		</div>
 	</div>
 </div>
+
+<!-- 공통 -->
+<%@ include file="./popup/pwChg.jsp" %>
+<%@ include file="./popup/pwReset.jsp" %>
 
 <!-- 메인팝업 -->
 <%@ include file="./popup/main-popup.jsp" %>
