@@ -1,5 +1,5 @@
 <%@ page contentType ="text/html; charset=UTF-8" %>
-<div class="pop-type-01 active" data-ttatg="courseCancle" style="--pop-w: 500px;">
+<div class="pop-type-01" data-ttatg="courseCancle" style="--pop-w: 500px;">
 	<div class="part-wrap">
 		<div class="part-head">
 			<h1 class="part-title"></h1>
