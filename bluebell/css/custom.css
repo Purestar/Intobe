@@ -367,6 +367,16 @@
 		.form-slt-chk-02 .part-icon:after { opacity: 1;  border-radius: 0; }
 		.form-slt-chk-02 input:checked + .part-slt-txt .part-icon:after { background-position: var(--bp-450) var(--form-icon-bp-y); }
 
+		.form-slt-chk-03 {
+			--form-bd-r: 50%;
+			--form-w: 28px;
+			--form-h: 28px;
+		}
+
+		.form-slt-chk-03 .part-icon:after { opacity: 1;  border-radius: 0; }
+		.form-slt-chk-03 .part-slt-txt .part-icon:after { background-position: var(--bp-500) var(--form-icon-bp-y); }
+		.form-slt-chk-03 input:checked + .part-slt-txt .part-icon:after { background-position: var(--bp-550) var(--form-icon-bp-y); }
+
 	/* File */
 		.form-txt-file-01 {
 			--form-w: 80px;
@@ -1000,7 +1010,7 @@
 		.reg-cour-dtl-btn.active + .reg-cour-dtl-form { display: flex; }
 
 	/* 로그인 */
-		.login-wrap { display: grid; grid-template-columns: repeat(2, 1fr); background-image :url("/bluebell/images/img/login_bnr.png"); width: 900px; height: 479px; }
+		.login-wrap { display: grid; grid-template-columns: repeat(2, 1fr); width: 100dvw; height: 100dvh; }
 		.login-wrap .login-tit { font-size: 40px; font-weight: 700; color: black; }
 
 	/* 학습방 */
