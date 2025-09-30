@@ -13,7 +13,7 @@
 				</div>
 			</div>
 			<div style="--dp: grid; --gap-y: 20px;">
-				<h1 class="tit-01" style="--ft-c: black; --ft-w: 700;">[모바일] 공통</h1>
+				<h1  class="tit-01" style="--ft-c: black; --ft-w: 700;">[모바일] 공통</h1>
 				<div style="--dp: flex; --flex-w: wrap; --gap-a: 20px;">
 					<button type="button" class="btn-type" data-tta="mobile-alarm">알림</button>
 				</div>
@@ -28,9 +28,9 @@
 				<h1 class="tit-01" style="--ft-c: black; --ft-w: 700;">교육과정</h1>
 				<div style="--dp: flex; --flex-w: wrap; --gap-a: 20px;">
 					<button type="button" class="btn-type" data-tta="eduSchedule">교육일정</button>
-					<button type="button" class="btn-type" data-tta="alert01">교육과정알림</button>
-					<button type="button" class="btn-type" data-tta="alert02">교육과정알림 02</button>
 					<button type="button" class="btn-type" data-tta="enrollment">과정수강신청</button>
+					<button type="button" class="btn-type" data-tta="alert01">과정수강신청알림</button>
+					<button type="button" class="btn-type" data-tta="alert02">과정수강신청알림 02</button>
 					<button type="button" class="btn-type" data-tta="paychange">결재선 변경</button>
 					<button type="button" class="btn-type" data-tta="alert03">개인 결재선으로 저장</button>
 					<button type="button" class="btn-type" data-tta="video">맛보기</button>

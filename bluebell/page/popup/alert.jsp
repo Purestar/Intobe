@@ -4,7 +4,7 @@
 		<div class="part-head"></div>
 		<div class="part-cont">
 			<div class="pop-cont-in">
-				<p style="--txt-a: center; --ft-s: 18px; --m-ft-s: 3.89vw;">과정 수강 신청을 하시겠습니까?</p>
+				<p style="--txt-a: center; --ft-c: black;">과정 수강 신청을 하시겠습니까?</p>
 			</div>
 		</div>
 		<div class="part-foot">
@@ -20,12 +20,11 @@
 		<div class="part-head"></div>
 		<div class="part-cont">
 			<div class="pop-cont-in">
-				<p style="--txt-a: center; --ft-s: 18px; --m-ft-s: 3.89vw;">정상적으로 과정 수강신청이 되었습니다.<br>수강 신청은 승인자 결재 및 교육담당자 승인이<br>완료되어야 수강확정 상태가 됩니다.</p>
+				<p style="--txt-a: center; --ft-c: black;">정상적으로 과정 수강신청이 되었습니다.<br>수강 신청은 결재자 결재 및 교육담당자 승인이<br>완료되어야 수강확정 상태가 됩니다</p>
 			</div>
 		</div>
 		<div class="part-foot">
-			<button type="button" class="btn-type-b-blk" data-tta="alert02">취소</button>
-			<a href="#" class="btn-type">신청</a>
+			<button type="button" class="btn-type-b-blk" data-tta="alert02">확인</button>
 		</div>
 		<button type="button" class="part-close" data-tta="alert02">닫기</button>
 	</div>

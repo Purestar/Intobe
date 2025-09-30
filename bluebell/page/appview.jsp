@@ -40,11 +40,7 @@
 </div>
 <div class="sub-contents">
 	<div class="layout-inner">
-		<ul class="mark-cir-03 mark-direction" style="--mg-t: 32px; --m-mg-t: 5.56vw;">
-			<li>
-				<div class="part-content">차수정보</div>
-			</li>
-		</ul>
+		<h2 class="tit-06">차수정보</h2>
 		<div class="brd-wrap">
 			<ul style="--dp: grid; --mg-t: 20px; --gap-y: 20px;">
 				<li class="box-type-01-02" style="--dp: flex; --content-x: space-between; --items-y: center; --m-flex-d: column;">
@@ -65,11 +61,7 @@
 				</li>
 			</ul>
 		</div>
-		<ul class="mark-cir-03 mark-direction" style="--mg-t: 40px; --m-mg-t: 5.56vw;">
-			<li>
-				<div class="part-content">과정안내</div>
-			</li>
-		</ul>
+		<h2 class="tit-06" style="--mg-t: 40px; --m-mg-t: 5.56vw;">과정안내</h2>
 		<table class="tbl-type-04-01" style="--mg-t: 20px;">
 			<colgroup>
 				<col style="--w: 186px; --m-w: 20vw;">
