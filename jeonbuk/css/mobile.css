@@ -449,7 +449,7 @@
 				.h-wrap {display:flex; place-items:center; padding:0 5vw;}
 				.h-m-head {display:flex; width:100%; place-content:space-between; place-items:center;}
 				.h-button {display:flex;}
-				.h-m-logo {height:7.92vw; font-size:6.25vw; font-weight: 700;}
+				.h-wrap .h-m-logo {height:7.92vw; font-size:6.25vw; font-weight: 700;}
 				.sub-header {position:relative; z-index:1000;}
 
 			/* Header Panel */

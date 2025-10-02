@@ -666,6 +666,7 @@
 			.h-wrap .h-top {display:flex; place-content:space-between; font-size:14px;}
 			.h-wrap .h-bot {display:flex; place-content:space-between; place-items:center; margin-top:16px;}
 			.h-wrap .h-logo {font-size:26px; font-weight:700;}
+			.h-wrap .h-m-logo {font-size:0;}
 
 			.h-lang-wrap {position:relative;}
 			.h-lang-wrap .h-lang-select {display:flex; place-items:center; gap:11px; width:100%; height:auto;}
