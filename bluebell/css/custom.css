@@ -627,7 +627,7 @@
 	.ic-zoom:before { background-position: var(--bp-350) 0; width: 16px; height: 16px; }
 
 	/* Arrow */
-		.ic-l-arrow:before { background-position: var(--bp-700) 0; width: 14px; height: 10px; }
+		.ic-l-arrow:before { background-position: var(--bp-50) var(--bp-50); width: 5px; height: 10px; rotate: 180deg; }
 		.ic-r-arrow:before { background-position: var(--bp-50) var(--bp-50); width: 5px; height: 10px; }
 		.ic-r-arrow-02:before { background-position: var(--bp-100) var(--bp-50); width: 5px; height: 9px; }
 		.ic-r-arrow-03:before { --bp-pos-x: var(--bp-400); --bp-pos-y: var(--bp-50); width: 5px; height: 8px; }
