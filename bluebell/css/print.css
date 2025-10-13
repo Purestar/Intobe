@@ -6,6 +6,8 @@
 	#paymentinfo { position: static; height: auto; }
 	[class*="pop-type"] .part-wrap { position: static; border-radius: 0; box-shadow: none; width: 100dvw; height: auto; translate: 0 0; max-height: none; }
 
+	[class*="pop-type"] .part-close { display: none !important; }
+
 	:root {
 		--init-pc-w: 100%;
 	}
