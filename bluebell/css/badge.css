@@ -1,0 +1,111 @@
+[class*="badge-type"] {
+	--star: 1;
+
+	overflow: hidden;
+	position: relative;
+	display: inline-block;
+	background-image: var(--badge-img);
+	background-size: 1050px 1050px;
+	width: 350px;
+	height: 350px;
+
+	zoom: 0.243;
+}
+
+[class*="badge-type"][data-disabled] {
+	filter: grayscale();
+}
+
+[class*="badge-type"]:before,
+[class*="badge-type"]:after {
+	content: "";
+	position: absolute;
+
+	background-image: var(--badge-img);
+	background-size: 1050px 1050px;
+	height: 26px;
+}
+
+[class*="badge-type"]:before {
+	opacity: .5;
+	left: 50%;
+	background-position: 0 var(--bp-700);
+	width: 150px;
+	translate: -50% 0;
+}
+
+[class*="badge-type"]:after {
+	background-position: 0 var(--bp-750);
+	left: 100px;
+	width: calc((var(--star) / 5) * 150px);
+}
+
+.badge-type-01 { background-position: 0 0; }
+.badge-type-01:before,
+.badge-type-01:after { bottom: 85px; }
+
+.badge-type-02 { background-position: var(--bp-350) 0; }
+.badge-type-02:before,
+.badge-type-02:after { bottom: 95px; }
+
+.badge-type-03 { background-position: var(--bp-700) 0; }
+.badge-type-03:before,
+.badge-type-03:after { bottom: 85px; }
+
+.badge-type-04 { background-position: 0 var(--bp-350); }
+.badge-type-04:before,
+.badge-type-04:after { bottom: 85px; }
+
+.badge-type-05 { background-position: var(--bp-350) var(--bp-350); }
+.badge-type-05:before,
+.badge-type-05:after { bottom: 82px; }
+
+.badge-type-06 { background-position: var(--bp-700) var(--bp-350); }
+.badge-type-06:before,
+.badge-type-06:after { bottom: 98px; }
+
+@media screen and (max-width: 768px) {
+	[class*="badge-type"] {
+		background-image: var(--badge-img);
+		background-size: 145.83vw 145.83vw;
+
+		width: 48.61vw;
+		height: 48.61vw;
+
+		zoom: 0.571;
+	}
+
+	[class*="badge-type"]:before,
+	[class*="badge-type"]:after {
+
+		background-size: 145.83vw 145.83vw;
+		height: 3.61vw;
+	}
+
+	[class*="badge-type"]:before {
+		width: 20.83vw;
+	}
+
+	[class*="badge-type"]:after {
+		left: 13.89vw;
+		width: calc((var(--star) / 5) * 20.83vw);
+	}
+
+	.badge-type-01:before,
+	.badge-type-01:after { bottom: 11.81vw; }
+
+	.badge-type-02:before,
+	.badge-type-02:after { bottom: 13.19vw; }
+
+	.badge-type-03:before,
+	.badge-type-03:after { bottom: 11.81vw; }
+
+	.badge-type-04:before,
+	.badge-type-04:after { bottom: 11.81vw; }
+
+	.badge-type-05:before,
+	.badge-type-05:after { bottom: 11.39vw; }
+
+	.badge-type-06:before,
+	.badge-type-06:after { bottom: 13.61vw; }
+}

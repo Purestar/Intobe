@@ -4,7 +4,7 @@
 	<div style="--bg-c: #f5f7fa; --pd-y: 40px; --m-pd-y: 5.56vw;">
 		<div class="layout-inner">
 			<div style="--dp: grid; --gap-a: 15px; --grid-t-col: 4; --m-grid-t-col: 1;">
-				<div class="box-type-05">
+				<div class="box-type-05" style="--w: 290px; --m-w: 100%;">
 					<div class="mark-h-bar-01 mark-direction mark-skip-first" style="--mark-gap-a: 30px; --m-mark-gap-a: 6.11vw;">
 						<div>
 							<div class="part-content">
@@ -21,12 +21,17 @@
 						</div>
 						<div>
 							<div class="part-content">
-								<div style="--dp: flex;">
-									<div style="--dp: grid;">
-										<h3 style="--ft-c: black; --ft-w: 500;">Learning<br class="pc"> Badge</h3>
+								<div style="--dp: flex; --content-x: space-between; --item-y: center; --m-h: 18.89vw;">
+									<div style="--dp: flex; --flex-d: column; --content-x: center; --m-gap-y: 3.33vw;">
+										<h3 style="--ft-c: black; --ft-w: 600;">Learning<br class="pc"> Badge</h3>
 										<a href="#" class="btn-lnk">활동배지보기</a>
 									</div>
-									<div>배지영역</div>
+									<div class="main-badge-wrap">
+										<div class="badge-type-01"></div>
+										<div class="badge-type-02"></div>
+										<div class="badge-type-03"></div>
+										<div class="main-badge-opa"></div>
+									</div>
 								</div>
 							</div>
 						</div>

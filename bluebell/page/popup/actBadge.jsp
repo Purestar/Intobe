@@ -17,7 +17,7 @@
 									<div class="form-slt-btn-01">
 										<input id="4k24pwxe1ya" type="checkbox">
 										<label for="4k24pwxe1ya" class="part-slt-txt">
-											<div style="--dp: flex; --content-a: center; --items-a: center; --w: 85px; --h: 85px; --bg-c:rgba(255, 0, 0, 0.2);">배지영역</div>
+											<div class="badge-type-01"></div>
 											<h style="--ft-c: black;">출첵마스터</h>
 											<p style="--ft-c: #666; --ft-s: 14px; --m-ft-s: 3.33vw;">출석횟수</p>
 										</label>
@@ -27,7 +27,7 @@
 									<div class="form-slt-btn-01">
 										<input id="4k24pwxe1ya" type="checkbox">
 										<label for="4k24pwxe1ya" class="part-slt-txt">
-											<div style="--dp: flex; --content-a: center; --items-a: center; --w: 85px; --h: 85px; --bg-c:rgba(255, 0, 0, 0.2);">배지영역</div>
+											<div class="badge-type-01" style="--star: 2;"></div>
 											<h style="--ft-c: black;">출첵마스터</h>
 											<p style="--ft-c: #666; --ft-s: 14px; --m-ft-s: 3.33vw;">출석횟수</p>
 										</label>
@@ -37,7 +37,7 @@
 									<div class="form-slt-btn-01">
 										<input id="4k24pwxe1ya" type="checkbox">
 										<label for="4k24pwxe1ya" class="part-slt-txt">
-											<div style="--dp: flex; --content-a: center; --items-a: center; --w: 85px; --h: 85px; --bg-c:rgba(255, 0, 0, 0.2);">배지영역</div>
+											<div class="badge-type-01" style="--star: 3;"></div>
 											<h style="--ft-c: black;">출첵마스터</h>
 											<p style="--ft-c: #666; --ft-s: 14px; --m-ft-s: 3.33vw;">출석횟수</p>
 										</label>
@@ -47,7 +47,7 @@
 									<div class="form-slt-btn-01">
 										<input id="4k24pwxe1ya" type="checkbox">
 										<label for="4k24pwxe1ya" class="part-slt-txt">
-											<div style="--dp: flex; --content-a: center; --items-a: center; --w: 85px; --h: 85px; --bg-c:rgba(255, 0, 0, 0.2);">배지영역</div>
+											<div class="badge-type-01" style="--star: 4;"></div>
 											<h style="--ft-c: black;">출첵마스터</h>
 											<p style="--ft-c: #666; --ft-s: 14px; --m-ft-s: 3.33vw;">출석횟수</p>
 										</label>
@@ -57,7 +57,7 @@
 									<div class="form-slt-btn-01">
 										<input id="4k24pwxe1ya" type="checkbox">
 										<label for="4k24pwxe1ya" class="part-slt-txt">
-											<div style="--dp: flex; --content-a: center; --items-a: center; --w: 85px; --h: 85px; --bg-c:rgba(255, 0, 0, 0.2);">배지영역</div>
+											<div class="badge-type-01" style="--star: 5;"></div>
 											<h style="--ft-c: black;">출첵마스터</h>
 											<p style="--ft-c: #666; --ft-s: 14px; --m-ft-s: 3.33vw;">출석횟수</p>
 										</label>
@@ -67,7 +67,7 @@
 									<div class="form-slt-btn-01">
 										<input id="4k24pwxe1ya" type="checkbox">
 										<label for="4k24pwxe1ya" class="part-slt-txt">
-											<div style="--dp: flex; --content-a: center; --items-a: center; --w: 85px; --h: 85px; --bg-c:rgba(255, 0, 0, 0.2);">배지영역</div>
+											<div class="badge-type-02"></div>
 											<h style="--ft-c: black;">출첵마스터</h>
 											<p style="--ft-c: #666; --ft-s: 14px; --m-ft-s: 3.33vw;">출석횟수</p>
 										</label>
@@ -77,7 +77,7 @@
 									<div class="form-slt-btn-01">
 										<input id="4k24pwxe1ya" type="checkbox">
 										<label for="4k24pwxe1ya" class="part-slt-txt">
-											<div style="--dp: flex; --content-a: center; --items-a: center; --w: 85px; --h: 85px; --bg-c:rgba(255, 0, 0, 0.2);">배지영역</div>
+											<div class="badge-type-02" style="--star: 2;"></div>
 											<h style="--ft-c: black;">출첵마스터</h>
 											<p style="--ft-c: #666; --ft-s: 14px; --m-ft-s: 3.33vw;">출석횟수</p>
 										</label>
@@ -87,7 +87,7 @@
 									<div class="form-slt-btn-01">
 										<input id="4k24pwxe1ya" type="checkbox">
 										<label for="4k24pwxe1ya" class="part-slt-txt">
-											<div style="--dp: flex; --content-a: center; --items-a: center; --w: 85px; --h: 85px; --bg-c:rgba(255, 0, 0, 0.2);">배지영역</div>
+											<div class="badge-type-02" style="--star: 3;"></div>
 											<h style="--ft-c: black;">출첵마스터</h>
 											<p style="--ft-c: #666; --ft-s: 14px; --m-ft-s: 3.33vw;">출석횟수</p>
 										</label>
@@ -115,9 +115,7 @@
 								<tbody>
 									<tr>
 										<td>출첵마스터</td>
-										<td>
-											<div style="--dp: flex; --content-a: center; --items-a: center; --w: 85px; --h: 85px; --bg-c:rgba(255, 0, 0, 0.2); --mg-x: auto;">배지영역</div>
-										</td>
+										<td><div class="badge-type-02" style="--star: 4;"></div></td>
 										<td>방문횟수</td>
 										<td style="--txt-a: left;">
 											<p class="pc">

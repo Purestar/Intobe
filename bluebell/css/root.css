@@ -14,6 +14,7 @@
 
 	/* Background */
 		--bg-img: url('/bluebell/images/bg.png'); /* 배경 이미지 경로 */
+		--badge-img: url('/bluebell/images/badge.png'); /* 배지 이미지 경로 */
 		--ic-c: url('/bluebell/images/common_icon.png'); /* 공통 아이콘 이미지 경로 */
 		--ic: url('/bluebell/images/icon.png'); /* 아이콘 이미지 경로 */
 		--bg-sz: 1000px; /* 이미지 스프라이트 크기 */

@@ -696,6 +696,11 @@
 			.main-notice-faq > *:before { display: none; }
 			.main-bottom { background: url("../images/img/bg_main_bottom_m.png") center no-repeat; background-size: cover;  padding: 45px 0; }
 
+			.main-badge-wrap > *:nth-child(1) { right: calc(100% + 16.67vw); zoom: 0.5; }
+			.main-badge-wrap > *:nth-child(2) { right: calc(100% + 13.89vw); zoom: 0.35; }
+			.main-badge-wrap > *:nth-child(3) { zoom: 0.3; }
+			.main-badge-wrap .main-badge-opa { width: 13.89vw; height: 13.89vw; }
+
 	/* 팝업 */
 		/* 힌트 */
 			.hint-wrap { border-radius: 11.11vw; width: 11.11vw; margin-top: 6.94vw; }

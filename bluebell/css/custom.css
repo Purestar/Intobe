@@ -466,6 +466,9 @@
 		.form-slt-btn-01 input:checked + .part-slt-txt:before { background: var(--form-fcs-bd-c); }
 		.form-slt-btn-01 input:checked + .part-slt-txt:after { background-position: var(--bp-550) var(--bp-selection); }
 
+		.form-slt-btn-01 [class*="badge"] { filter: grayscale(); }
+		.form-slt-btn-01 input:checked + .part-slt-txt [class*="badge"] { filter: none; }
+
 	/* Switch */
 		.form-slt-swh-01 {
 			--form-bd-w: 0;
@@ -1050,6 +1053,13 @@
 
 	/* 메인 */
 		.main-bottom { background: url("../images/img/bg_main_bottom.png") center no-repeat; background-size: cover; padding: 45px 0; }
+
+		.main-badge-wrap { position: relative; }
+		.main-badge-wrap > * { position: absolute; top: 50%; translate: 0 -50%; }
+		.main-badge-wrap > *:nth-child(1) { z-index: 4; right: calc(100% + 120px); }
+		.main-badge-wrap > *:nth-child(2) { right: calc(100% + 100px); z-index: 2; zoom: 0.17; }
+		.main-badge-wrap > *:nth-child(3) { right: 100%; z-index: 1; zoom: 0.14; }
+		.main-badge-wrap .main-badge-opa { opacity: .5; right: 100%; background-color: white; width: 100px; height: 100px; z-index: 3; }
 
 /* 팝업 */
 	/* 힌트 */
