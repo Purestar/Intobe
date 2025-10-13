@@ -55,9 +55,9 @@
 						<h4 class="tit-03">수료기준</h4>
 						<a href="" style="--dp: flex; --gap-x: 5px; --items-y: center; --ft-s: 14px; --m-ft-s: 3.33vw;">과정정보보기<i class="ic-r-arrow"></i></a>
 					</div>
-					<ul style="--mg-t: 40px; --m-dp: grid; --m-grid-t-col: 3; --m-gap-x: 4.44vw; --m-mg-t: 5.56vw; --m-ft-s: 3.89vw;">
+					<ul style="--mg-t: 40px; --m-dp: grid; --m-grid-t-col: 1; --m-gap-x: 4.44vw; --m-mg-t: 5.56vw; --m-ft-s: 3.89vw;">
 						<li style="--dp: flex; --content-x: space-between;">출석<q>80점(80%)</q></li>
-						<li style="--dp: flex; --content-x: space-between;">학습<br class="mobile">(진도율)<q>80점(80%)</q></li>
+						<li style="--dp: flex; --content-x: space-between;">학습 (진도율)<q>80점(80%)</q></li>
 						<li style="--dp: flex; --content-x: space-between;">평가<q>80점(80%)</q></li>
 					</ul>
 				</div>
@@ -66,7 +66,7 @@
 				<div>
 					<div class="part-cont">
 						<p class="part-cont-in">
-							<span style="--ft-c: black;">평가</span> 
+							<span style="--ft-c: black;">평가</span>
 							<strong><span style="--ft-c: black">1</span> / 3</strong>
 						</p>
 						<button type="button" class="btn-sz-02 btn-type-b-blk ws-nw">응시하기</button>
@@ -75,7 +75,7 @@
 				<div>
 					<div class="part-cont">
 						<p class="part-cont-in">
-							<span style="--ft-c: black;">설문</span> 
+							<span style="--ft-c: black;">설문</span>
 							<strong><span style="--ft-c: black">1</span> / 3</strong>
 						</p>
 						<button type="button" class="btn-sz-02 btn-type-b-blk ws-nw">참여하기</button>
@@ -84,7 +84,7 @@
 				<div>
 					<div class="part-cont">
 						<p class="part-cont-in">
-							<span style="--ft-c: black;">Q&A</span> 
+							<span style="--ft-c: black;">Q&A</span>
 							<strong><span style="--ft-c: black">1</span> / 3</strong>
 						</p>
 						<button type="button" class="btn-sz-02 btn-type-b-blk ws-nw">질문하기</button>

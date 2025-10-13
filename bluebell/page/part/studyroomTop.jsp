@@ -6,7 +6,7 @@
 				<li>
 					<a href="#" style="--dp: flex; --items-a: center; --gap-x: 27px; --m-gap-x: 4.44vw;">
 						<div class="thumb-type-01-01" style="--flex-g: 0; --thumb-w: 236px; --m-thumb-w: 42.22vw;">
-							<div class="thumb-lt"><i class="ic-ribbon"></i></div>
+							<div class="thumb-lt"></div>
 							<img src="https://placehold.co/236x152">
 						</div>
 						<div class="brd-cont">
