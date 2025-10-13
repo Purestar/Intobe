@@ -1,4 +1,4 @@
-@media all and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 	/* Initialize */
 		[class*="mark-"] {
 			--m-mark-dp: var(--mark-dp);

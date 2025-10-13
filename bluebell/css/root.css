@@ -116,7 +116,7 @@
 		--trans-dft: .3s ease; /* 기본 트랜지션 */
 }
 
-@media all and (max-width:768px) {
+@media screen and (max-width: 768px) {
 	:root {
 		/* Initialize */
 			--init-font-size: 3.33dvw; /* 글자 크기 */

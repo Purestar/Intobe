@@ -19,7 +19,7 @@
 	--flex-b: 0;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 	[style*="--m-flex"],
 	[class*="flex"] {
 		--m-flex-g: var(--flex-g);

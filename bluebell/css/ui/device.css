@@ -16,7 +16,7 @@
 	.tablet { display: block; }
 }*/
 
-@media all and (max-width:768px) {
+@media screen and (max-width:768px) {
 	.device-tablet,
 	.device-pc.device-tablet,
 	.tablet,

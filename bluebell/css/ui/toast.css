@@ -15,7 +15,7 @@
 			color: var(--toast-ft-c);
 		}
 
-@media all and (max-width: 720px) {
+@media screen and (max-width: 720px) {
 	/* Default */
 		[class*="toast-type"] { --toast-w: 100dvw; --toast-pd-x: 5vw; left: 0 !important; translate: 0; }
 		[class*="toast-type"] .p-toast-message {
