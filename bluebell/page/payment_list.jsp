@@ -9,7 +9,7 @@
 <div class="sub-contents">
 	<div class="layout-inner">
 
-		<div class="tab-wrap" style="--m-pos: sticky; --m-top: var(--init-header-height); --m-z-idx: 10;">
+		<div class="tab-wrap tab-scroll-menu" style="--m-pos: sticky; --m-top: var(--init-header-height); --m-z-idx: 10;">
 			<ul class="tab-menu-01">
 				<li class="active"><a href="">미결재 3</a></li>
 				<li><a href="">결재완료 8</a></li>

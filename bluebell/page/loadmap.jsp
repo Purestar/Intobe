@@ -114,7 +114,7 @@
 				</div>
 			</div>
 			<div style="--dp: flex; --content-x: space-between; --m-dp: grid;">
-				<div style="--dp: flex; --flex-d: column; --gap-a: 40px; --mg-t: 40px; --m-gap-a: 3.47vw; --m-mg-t: 5.56vw; --w: 318px;">
+				<div style="--dp: flex; --flex-d: column; --gap-a: 40px; --mg-t: 40px; --m-gap-a: 3.47vw; --m-mg-t: 5.56vw; --w: 318px; --m-w: 100%;">
 					<div class="grp-h-01-wrap">
 						<span class="part-label">전체평균</span>
 						<div class="grp-type-h-01-blu" style="--flex-g: 1; --grp-val: 99%;">
