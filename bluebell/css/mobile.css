@@ -255,11 +255,12 @@
 
 			.form-slt-rdo-01 {
 				--form-gap-x: 0.83vw;
-				--form-w: 1.94vw;
+				--form-w: 3.75vw;
 				--form-h: 1.53vw;
+				--form-ft-s: 3.61vw;
 
-				--form-chk-w: 1.94vw;
-				--form-chk-h: 1.53vw;
+				--form-chk-w: 3.75vw;
+				--form-chk-h: 2.92vw;
 				--form-chk-icon-bp-x: var(--bp-250);
 			}
 

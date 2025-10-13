@@ -412,6 +412,9 @@
 			--form-chk-icon-bp-x: var(--bp-250);
 		}
 
+		.form-slt-rdo-01 .part-icon { display: none; }
+		.form-slt-rdo-01 input:checked + .part-slt-txt .part-icon { display: flex; }
+
 		.form-slt-rdo-01 .part-icon:before { display: none; }
 		.form-slt-rdo-01 .part-icon:after { opacity: .3; }
 
