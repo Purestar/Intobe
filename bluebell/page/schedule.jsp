@@ -11,7 +11,7 @@
 </div>
 <div class="sub-contents">
 	<div class="layout-inner">
-		<div class="tab-wrap" style="--m-pos: sticky; --m-top: var(--init-header-height); --m-z-idx: 10;">
+		<div class="tab-wrap tab-scroll-menu" style="--m-pos: sticky; --m-top: var(--init-header-height); --m-z-idx: 10;">
 			<ul class="tab-menu-01">
 				<li><a href="#">나의 교육체계</a></li>
 				<li class="active"><a href="#">학습캘린더</a></li>

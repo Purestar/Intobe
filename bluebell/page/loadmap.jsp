@@ -113,7 +113,7 @@
 					</div>
 				</div>
 			</div>
-			<div style="--dp: flex; --content-x: space-between;">
+			<div style="--dp: flex; --content-x: space-between; --m-dp: grid;">
 				<div style="--dp: flex; --flex-d: column; --gap-a: 40px; --mg-t: 40px; --m-gap-a: 3.47vw; --m-mg-t: 5.56vw; --w: 318px;">
 					<div class="grp-h-01-wrap">
 						<span class="part-label">전체평균</span>
@@ -140,7 +140,7 @@
 						</div>
 					</div>
 				</div>
-				<div style="--w: 764px;">
+				<div style="--w: 764px; --m-w: 100%; --m-mg-t: 5.56vw;">
 					<canvas id="learningStatusChart" style="--w: 100%; --h: 230px; --m-h: 44.86vw;"></canvas>
 
 					<script>
@@ -241,7 +241,7 @@
 
 		<h4 class="tit-02" style="--mg-t: 80px; --m-mg-t: 11.11vw;">교육과정 이수현황(00건)</h4>
 		<div class="box-type-01-01" style="--mg-t: 20px; --m-mg-t:2.78vw;">
-			<div style="--dp: flex; --gap-x: 40px;">
+			<div style="--dp: flex; --gap-x: 40px; --m-dp: grid; --m-gap-y: 5.56vw;">
 				<div style="--dp: flex; --gap-x: 10px; --m-gap-x: 1.39vw;">
 					<div class="sel-type">
 						<select>
@@ -254,7 +254,7 @@
 						</select>
 					</div>
 				</div>
-				<div style="--dp: flex; --items-y: center; --gap-x: 20px; --m-gap-x: 2.78vw;">
+				<div style="--dp: flex; --items-y: center; --gap-x: 20px; --m-dp: grid; --m-gap-x: 2.78vw; --m-gap-y: 2.78vw;">
 					<span style="--ft-c: black;">기간조회</span>
 					<div style="--dp: flex; --gap-x: 16px; --m-gap-x: 2.22vw; --items-y: center;">
 						<div style="--dp: flex; --gap-x: 10px; --m-gap-x: 1.39vw;">
@@ -281,9 +281,9 @@
 									<option>12월</option>
 								</select>
 							</div>
-							<button type="button" class="btn-type" style="--btn-w: 88px;">검색</button>
 						</div>
 					</div>
+					<button type="button" class="btn-type" style="--btn-w: 88px; --m-btn-w: 100%;">검색</button>
 				</div>
 			</div>
 		</div>
@@ -318,10 +318,10 @@
 				</tr>
 			</tbody>
 		</table>
-		
+
 		<h4 class="tit-02" style="--mg-t: 80px; --m-mg-t: 11.11vw;">마이픽교육과정 이수현황(00건)</h4>
 		<div class="box-type-01-01" style="--mg-t: 20px; --m-mg-t:2.78vw;">
-			<div style="--dp: flex; --gap-x: 40px;">
+			<div style="--dp: flex; --gap-x: 40px; --m-dp: grid; --m-gap-y: 5.56vw;">
 				<div style="--dp: flex; --gap-x: 10px; --m-gap-x: 1.39vw;">
 					<div class="sel-type">
 						<select>
@@ -334,7 +334,7 @@
 						</select>
 					</div>
 				</div>
-				<div style="--dp: flex; --items-y: center; --gap-x: 20px; --m-gap-x: 2.78vw;">
+				<div style="--dp: flex; --items-y: center; --gap-x: 20px; --m-dp: grid; --m-gap-x: 2.78vw; --m-gap-y: 2.78vw;">
 					<span style="--ft-c: black;">기간조회</span>
 					<div style="--dp: flex; --gap-x: 16px; --m-gap-x: 2.22vw; --items-y: center;">
 						<div style="--dp: flex; --gap-x: 10px; --m-gap-x: 1.39vw;">
@@ -361,9 +361,9 @@
 									<option>12월</option>
 								</select>
 							</div>
-							<button type="button" class="btn-type" style="--btn-w: 88px;">검색</button>
 						</div>
 					</div>
+					<button type="button" class="btn-type" style="--btn-w: 88px; --m-btn-w: 100%;">검색</button>
 				</div>
 			</div>
 		</div>

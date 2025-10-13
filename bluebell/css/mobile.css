@@ -603,6 +603,7 @@
 			padding-inline: 5vw;
 		}
 
+		[class*="tab-menu-01"] > * { min-width: 23.75vw; }
 		[class*="tab-menu-01"] > * > * { padding: 3.33vw 0; }
 
 		.tab-menu-01-01 {
