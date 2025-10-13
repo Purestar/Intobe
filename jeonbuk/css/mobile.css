@@ -449,9 +449,8 @@
 				.h-wrap {display:flex; place-items:center; padding:0 5vw;}
 				.h-m-head {display:flex; width:100%; place-content:space-between; place-items:center;}
 				.h-button {display:flex;}
-				.h-m-logo {background:url("../images/img/img_m_logo.png") no-repeat; background-size:100% 100%; width:29.44vw; height:7.92vw;}
+				.h-wrap .h-m-logo {height:7.92vw; font-size:6.25vw; font-weight: 700;}
 				.sub-header {position:relative; z-index:1000;}
-				.sub-header .h-m-logo {background:url("../images/img/img_m_logo_02.png") no-repeat; background-size:100% 100%;}
 
 			/* Header Panel */
 				.h-panel {display:none; position:fixed; left:0; top:0; background:rgba(0, 0, 0, 0.5); width:100dvw; height:100dvh; padding-left:10.27vw;}
@@ -500,7 +499,7 @@
 			.login-wrap {box-shadow:none; border-radius:0;}
 
 		/* 메인 */
-			.main-wrap {background:url("../images/img/bg_m_visual.png") center top no-repeat; background-size:100%; min-height:39.58vw; padding-top:28.61vw;}
+			.main-wrap {background:url("../images/img/bg_m_visual.png") center top no-repeat; background-size:100%; min-height:43.75vw; padding-top:28.61vw;}
 			.main-alarm {width:6.94vw; height:6.94vw;}
 			.main-alarm:before {width:2.92vw; height:3.33vw;}
 			.main-alarm.active:after {border:0.42vw solid white; width:1.94vw; height:1.94vw;}
