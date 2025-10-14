@@ -52,13 +52,13 @@
 .badge-type-03:before,
 .badge-type-03:after { bottom: 85px; }
 
-.badge-type-04 { background-position: 0 var(--bp-350); }
-.badge-type-04:before,
-.badge-type-04:after { bottom: 85px; }
-
-.badge-type-05 { background-position: var(--bp-350) var(--bp-350); }
+.badge-type-05 { background-position: 0 var(--bp-350); }
 .badge-type-05:before,
-.badge-type-05:after { bottom: 82px; }
+.badge-type-05:after { bottom: 85px; }
+
+.badge-type-04 { background-position: var(--bp-350) var(--bp-350); }
+.badge-type-04:before,
+.badge-type-04:after { bottom: 82px; }
 
 .badge-type-06 { background-position: var(--bp-700) var(--bp-350); }
 .badge-type-06:before,
@@ -100,11 +100,11 @@
 	.badge-type-03:before,
 	.badge-type-03:after { bottom: 11.81vw; }
 
-	.badge-type-04:before,
-	.badge-type-04:after { bottom: 11.81vw; }
-
 	.badge-type-05:before,
-	.badge-type-05:after { bottom: 11.39vw; }
+	.badge-type-05:after { bottom: 11.81vw; }
+
+	.badge-type-04:before,
+	.badge-type-04:after { bottom: 11.39vw; }
 
 	.badge-type-06:before,
 	.badge-type-06:after { bottom: 13.61vw; }
