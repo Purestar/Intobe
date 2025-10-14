@@ -473,13 +473,13 @@
 		.form-slt-swh-01 {
 			--form-bd-w: 0;
 			--form-bd-r: 24px;
-			--form-bg-c: var(--mc);
+			--form-bg-c: #e0e0e0;
 			--form-w: 45px;
 			--form-h: 24px;
 			--form-flex-d: row;
 			--form-ft-c: black;
 
-			--form-chk-point-bg-c: white;
+			--form-chk-point-bg-c: #c9c9c9;
 			--form-chk-point-chk-bg-c: white;
 		}
 
