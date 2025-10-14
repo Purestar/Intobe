@@ -455,6 +455,7 @@
 		.lst-diagnosis .lst-diagnosis-inner { padding: 4.17vw; }
 		.lst-diagnosis .lst-diagnosis-tit { margin-top: 2.78vw; font-size: 3.89vw; }
 		.lst-diagnosis .lst-diagnosis-lvl > * { gap: 2.5vw; }
+		.lst-diagnosis .lst-diagnosis-lvl > * > *:first-child { min-width: 14.33vw; }
 		.lst-diagnosis .lst-diagnosis-lvl > * + * { margin-top: 2.78vw; }
 		.lst-diagnosis [class*="tbl-type-04"] { margin-top: 8.33vw; }
 

@@ -34,12 +34,12 @@
 				</div>
 				<div class="lst-diagnosis-inner">
 					<ul class="lst-diagnosis-lvl">
-						<li><span class="chip-type-02-b-gry">LEVEL</span>동료들과 필요한 정보를 정확하고 간단히 주고받으며, 필요 시 지도를 받아 조율할 수 있다.</li>
-						<li><span class="chip-type-02-b-gry">LEVEL</span>업무 목적에 맞는 커뮤니케이션을 구사할 수 있다.</li>
-						<li><span class="chip-type-02-b-gry">LEVEL</span>상황에 맞게 다양한 방식으로 명확하게 전달할 수 있다/</li>
-						<li><span class="chip-type-02-b-gry">LEVEL</span>조직적 메시지를 설계하고 팀원 간 커뮤니케이션을 조율할 수 있다.</li>
-						<li><span class="chip-type-02-b-gry">LEVEL</span>전략적 메시지를 조직 전체에 전달할 수 있다.</li>
-						<li><span class="chip-type-02-b-gry">LEVEL</span>대내외 커뮤니케이션에서 일관되고 명확한 리더십 메시지를 이끈다.</li>
+						<li><span></span>동료들과 필요한 정보를 정확하고 간단히 주고받으며, 필요 시 지도를 받아 조율할 수 있다.</li>
+						<li><span class="chip-type-02-b-gry">LEVEL 1</span>업무 목적에 맞는 커뮤니케이션을 구사할 수 있다.</li>
+						<li><span class="chip-type-02-b-gry">LEVEL 2</span>상황에 맞게 다양한 방식으로 명확하게 전달할 수 있다/</li>
+						<li><span class="chip-type-02-b-gry">LEVEL 3</span>조직적 메시지를 설계하고 팀원 간 커뮤니케이션을 조율할 수 있다.</li>
+						<li><span class="chip-type-02-b-gry">LEVEL 4</span>전략적 메시지를 조직 전체에 전달할 수 있다.</li>
+						<li><span class="chip-type-02-b-gry">LEVEL 5</span>대내외 커뮤니케이션에서 일관되고 명확한 리더십 메시지를 이끈다.</li>
 					</ul>
 					<table class="tbl-type-04">
 						<colgroup>
@@ -47,12 +47,12 @@
 						</colgroup>
 						<thead>
 							<tr>
-								<th>LEVEL</th>
-								<th>LEVEL</th>
-								<th>LEVEL</th>
-								<th>LEVEL</th>
-								<th>LEVEL</th>
-								<th>LEVEL</th>
+								<th></th>
+								<th>LEVEL 1</th>
+								<th>LEVEL 2</th>
+								<th>LEVEL 3</th>
+								<th>LEVEL 4</th>
+								<th>LEVEL 5</th>
 							</tr>
 						</thead>
 						<tbody>

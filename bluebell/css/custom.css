@@ -683,6 +683,7 @@
 	.lst-diagnosis .lst-diagnosis-lvl { counter-reset: lvl-counter; color: black; }
 	/*.lst-diagnosis .lst-diagnosis-lvl [class*="chip-type-02"]:after { content: "\00a0" counter(lvl-counter); counter-increment: lvl-counter; }*/
 	.lst-diagnosis .lst-diagnosis-lvl > * { display: flex; gap: 12px; }
+	.lst-diagnosis .lst-diagnosis-lvl > * > *:first-child { min-width: 60px; }
 	.lst-diagnosis .lst-diagnosis-lvl > * + * { margin-top: 12px; }
 	.lst-diagnosis [class*="tbl-type-04"] { margin-top: 32px; counter-reset: lvl-counter; }
 	/*.lst-diagnosis [class*="tbl-type-04"] thead th:after { content: "\00a0" counter(lvl-counter); counter-increment: lvl-counter; }*/
