@@ -13,11 +13,61 @@
 	</div>
 </div>
 <div class="layout-inner">
-	<p class="box-type-02-01" style="--txt-a: center; --ft-c: black;">역량진단 안내는 상시 확인 가능하며,<br class="mobile"> BBK역량진단은 별도의 진단 기간에만 활성화됩니다.</p>
+	<div class="tab-wrap">
+		<ul class="tab-menu-02" style="--content-x: center;">
+			<li class="active"><button type="button">BBK 역량진단</button></li>
+			<li><button type="button">행동 변화 진단</button></li>
+		</ul>
+		<div class="tab-cont" style="--tab-cont-pd-y: 20px;">
+			<div class="active">
+				<p class="box-type-02-01" style="--txt-a: center; --ft-c: black;">역량진단 안내는 상시 확인 가능하며, [BBK역량진단 시작하기] 버튼은 별도의 진단 기간에만 활성화됩니다.</p>
+				<div style="--dp: flex; --content-x: center; --items-y: center; --mg-t: 40px; --gap-x: 10px;">
+					<div class="sel-type">
+						<select>
+							<option>2025 BBK 역량진단 (2025.09.01-2025.09.30)</option>
+						</select>
+					</div>
+					<button type="button" class="btn-type">시작하기</button>
+				</div>
+
+				<h3 class="tit-02" style="--mg-t: 60px; --m-mg-t: 13.89vw; --ft-s: 18px;">BBK 역량모델 개요</h3>
+				<div style="--dp: flex; --mg-t: 28px; --m-dp: grid;">
+					<div class="bbk-capa-01">
+						<img src="../images/img/img_bbk_capability_01.png" style="--m-max-w: none; --m-w: 100%;">
+						<h3 class="bbk-capa-01-tit">BBK 역량</h3>
+						<strong style="--left: 180px; --top: 0; --m-left: 36.9vw;">조직 핵심<br>역량</strong>
+						<strong style="--left: 25px; --bottom: 50px; --m-left: 15.28vw; --m-bottom: 7.22vw;">리더십<br>역량</strong>
+						<strong style="--right: 22px; --bottom: 50px; --m-right: 14.9vw; --m-bottom: 7.22vw;">직무<br>역량</strong>
+					</div>
+				</div>
+
+				<h3 class="tit-02" style="--mg-t: 60px; --m-mg-t: 13.89vw;">BBK 역량모델 세부</h3>
+				<div data-scroll="x" style="--mg-t: 40px; --m-mg-t: 5.56vw;">
+					<img src="../images/img/img_bbk_capability_02.png" style="--max-w: auto; --w: 100%; --m-w: 180%;">
+				</div>
+
+				<h3 class="tit-02" style="--mg-t: 120px; --m-mg-t: 13.89vw;">역량 진단 절차</h3>
+
+				<div style="--dp: flex; --content-x: center; --items-y: center; --mg-t: 60px; --gap-x: 10px;">
+					<div class="sel-type">
+						<select>
+							<option>2025 BBK 역량진단 (2025.09.01-2025.09.30)</option>
+						</select>
+					</div>
+					<button type="button" class="btn-type">시작하기</button>
+				</div>
+			</div>
+			<div>
+				<h3 class="tit-02">행동 변화 진단 안내</h3>
+			</div>
+		</div>
+	</div>
 </div>
 <div class="sub-contents">
 	<div class="layout-inner">
-		<h3 class="tit-02">BBK 역량진단 안내</h3>
+		
+
+		
 		<ul class="mark-cir-03 mark-direction" style="--mg-t: 32px; --m-mg-t: 5.56vw;">
 			<li>
 				<div class="part-content">BBK역량진단 목적</div>

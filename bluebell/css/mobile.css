@@ -702,6 +702,11 @@
 			.main-badge-wrap > *:nth-child(3) { zoom: 0.3; }
 			.main-badge-wrap .main-badge-opa { width: 13.89vw; height: 13.89vw; }
 
+		/* BBK 역량 */
+			.bbk-capa-01 { padding: 0 11.67vw; font-size: 2.5vw; }
+			.bbk-capa-01-tit { translate: -50% calc(-50% + 8vw); font-size: 2.78vw; }
+			.bbk-capa-01 strong { width: 16.39vw; height: 16.39vw; }
+
 	/* 팝업 */
 		/* 힌트 */
 			.hint-wrap { border-radius: 11.11vw; width: 11.11vw; margin-top: 6.94vw; }

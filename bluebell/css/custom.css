@@ -1062,6 +1062,11 @@
 		.main-badge-wrap > *:nth-child(3) { right: 100%; z-index: 1; zoom: 0.14; }
 		.main-badge-wrap .main-badge-opa { opacity: .5; right: 100%; background-color: white; width: 100px; height: 100px; z-index: 3; }
 
+	/* BBK 역량 */
+		.bbk-capa-01 { position: relative; font-weight: 700; color: var(--mdc); }
+		.bbk-capa-01-tit { position: absolute; left: 50%; top: 50%; translate: -50% calc(-50% + 36px); font-size: 20px; color: white; }
+		.bbk-capa-01 strong { position: absolute; display: flex; place-content: center; place-items: center; width: 118px; height: 118px; text-align: center; }
+
 /* 팝업 */
 	/* 힌트 */
 		.hint-wrap { display: flex; border-radius: 60px; place-items: center; background-color: #f9f9f9; width: 60px; margin-top: 50px; }
