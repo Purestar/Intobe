@@ -95,6 +95,12 @@
 		--box-bd-r: 4px;
 	}
 
+	.box-type-02-02 {
+		--box-pd-x: 30px;
+		--box-pd-y: 30px;
+		--box-bd-r: 4px;
+	}
+
 	.box-type-03 {
 		--box-bd-r: 20px;
 		--box-pd-a: 25px;
@@ -129,6 +135,12 @@
 		--box-bd-c: #e3e3e3;
 		--box-bd-r: 5px;
 		--box-bg-c: white;
+		--box-pd-a: 9px;
+	}
+
+	.box-type-08 {
+		--box-bg-c: var(--mdc);
+		--box-bd-r: 5px;
 		--box-pd-a: 9px;
 	}
 
@@ -654,8 +666,9 @@
 	.lst-type-03 > * { padding: 20px 0; }
 	.lst-type-03 > * + * { border-top:1px solid #e2e2e2; }
 
+	.lst-step { column-gap: var(--lst-gap-x, 72px); row-gap: var(--lst-gap-y, 72px); }
 	.lst-step > * { overflow: visible; position: relative; }
-	.lst-step > * + *:before { content: ""; position: absolute; left: -74px; top: 50%; background-image: var(--bg-img); background-size: var(--bg-sz); width: 72px; height: 234px; translate: 0 -50%; }
+	.lst-step > * + *:before { content: ""; position: absolute; left: calc((var(--lst-gap-x) - 72px) * -1); top: 50%; background-image: var(--bg-img); background-size: var(--bg-sz); width: 72px; height: 234px; translate: 0 -50%; }
 
 	.lst-step-02 { counter-reset: step-counter; color: black; }
 	.lst-step-02 > * { position: relative; display: flex; gap: 30px; }
@@ -672,6 +685,14 @@
 	.lst-step-02 > *.complete .lst-num { --chip-bg-c: #003349; --chip-bd-c: #003349; --chip-ft-c: white; }
 	.lst-step-02 > *.complete:before { background: #003349; }
 	.lst-step-02 > *.active .lst-num { --chip-bg-c: white; --chip-bd-c: #003349; --chip-ft-c: #003349; }
+
+	.lst-step-03 { counter-reset: step-counter; padding-left: 56px; color: black; }
+	.lst-step-03 > * { position: relative; padding: 5px 0 40px; }
+	.lst-step-03 > *:before { content: counter(step-counter); counter-increment: step-counter; display: flex; place-content: center; place-items: center; position: absolute; left: -56px; top: 0; background-color: var(--mdc); border-radius: 50%; width: 34px; height: 34px; font-size: 18px; color: white; z-index: 1;}
+	.lst-step-03 > *:after { content: ""; position: absolute; left: -40px; top: 0; background-color: var(--mdc); width: 2px; height: 100%; }
+	.lst-step-03 > *:last-child:after { display: none; }
+	.lst-step-03 .lst-step-tit { font-weight: 700; }
+	.lst-step-03 p { margin-top: 12px; }
 
 	.lst-diagnosis { counter-reset: diagnosis-counter; }
 	.lst-diagnosis > * { border: 1px solid #e7e7e7; border-radius: 4px; }
@@ -1025,7 +1046,10 @@
 	.tit-05 { font-family: 'Nanum Myeongjo'; font-size: 24px; }
 	.tit-06 { display: flex; gap: 8px; font-size: 18px; color:#003349; }
 	.tit-06:before { content: ""; background-color: #003349; border-radius: 50%; width: 6px; height: 6px; translate: 0 10px; }
-	.tit-07 { font-weight: 700; color: black;}
+	.tit-07 { font-weight: 700; color: black; }
+	.tit-08 { font-size: 18px; font-weight: 700; color: var(--mdc); }
+	.tit-09 { font-size: 18px; color: white; text-align: center; font-weight: 700; }
+	.tit-10 { font-size: 20px; font-weight: 700; }
 
 /* Tree Menu */
 	.tree-wrap summary { display: flex; gap: 7px; place-items: center; }
@@ -1034,7 +1058,6 @@
 	.tree-wrap details details { padding-left: 20px; }
 	.tree-wrap details button { display: flex; gap: 7px; place-items: center; padding-left: 20px; }
 	.tree-wrap details button::before {content:""; background: var(--ic-c); width: 7px; height: 7px; background-position: var(--bp-200) var(--bp-tree); }
-
 
 /* Video */
 	.vdo-wrap video { display: block; width: 100%; max-height: 100dvh; }
@@ -1066,6 +1089,14 @@
 		.bbk-capa-01 { position: relative; font-weight: 700; color: var(--mdc); }
 		.bbk-capa-01-tit { position: absolute; left: 50%; top: 50%; translate: -50% calc(-50% + 36px); font-size: 20px; color: white; }
 		.bbk-capa-01 strong { position: absolute; display: flex; place-content: center; place-items: center; width: 118px; height: 118px; text-align: center; }
+
+		.bbk-capa-02 { display: grid; gap: 23px; }
+		.bbk-capa-02 .capa-diag { position: relative; margin-bottom: 36px; text-align: center; }
+		.bbk-capa-02 .capa-diag img { display: inline-block; translate: 30px 0; }
+		.bbk-capa-02 .capa-diag .tit-10 { position: absolute; left: 149px; top: 186px; }
+		.bbk-capa-02 > *:last-child .capa-diag img { translate: 0 0; }
+		.bbk-capa-02 .box-type-02-02 { min-height: 227px; }
+		.bbk-capa-02 .mark-cir-04 strong { white-space: nowrap; }
 
 /* 팝업 */
 	/* 힌트 */
