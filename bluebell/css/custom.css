@@ -700,7 +700,7 @@
 	.lst-diagnosis .lst-diagnosis-inner { padding: 30px; }
 	.lst-diagnosis .lst-diagnosis-inner + .lst-diagnosis-inner { border-top: 1px solid #e7e7e7; }
 	.lst-diagnosis .lst-diagnosis-tit { margin-top: 12px; font-size: 20px; color: black; }
-	.lst-diagnosis .lst-diagnosis-tit:before { content: counter(diagnosis-counter) ". "; counter-increment: diagnosis-counter; }
+	/*.lst-diagnosis .lst-diagnosis-tit:before { content: counter(diagnosis-counter) ". "; counter-increment: diagnosis-counter; }*/
 	.lst-diagnosis .lst-diagnosis-lvl { counter-reset: lvl-counter; color: black; }
 	/*.lst-diagnosis .lst-diagnosis-lvl [class*="chip-type-02"]:after { content: "\00a0" counter(lvl-counter); counter-increment: lvl-counter; }*/
 	.lst-diagnosis .lst-diagnosis-lvl > * { display: flex; gap: 12px; }
