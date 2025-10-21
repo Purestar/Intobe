@@ -177,7 +177,106 @@
 						</template>
 					</p-popup>
 
-					<button class="btn-type" disabled>메인팝업</button>
+					<!-- 메인팝업(이미지) -->
+					<button type="button" class="btn-type" @click="togglePopup('main-02')">메인팝업 (이미지)</button>
+					<p-popup class="pop-type-today" modal v-model:visible="popups['main-02']">
+						<div class="pop-cont">
+							<img src="../images/dummy/main_popup.png">
+						</div>
+						<template #footer>
+							<label class="form-opt-chk">
+								<input type="checkbox">
+								<span class="opt-txt">오늘하루 그만보기</span>
+							</label>
+							<button class="p-dialog-close-button" type="button">닫기</button>
+						</template>
+					</p-popup>
+
+					<!-- 메인팝업(텍스트) -->
+					<button type="button" class="btn-type" @click="togglePopup('main-03')">메인팝업 (텍스트)</button>
+					<p-popup class="pop-type-today-02" modal v-model:visible="popups['main-03']" style="--pop-w: 550px;">
+						<div class="pop-cont" style="--pop-ft-c: black;">
+							<h2><strong><q>국립대학육성사업</q></strong></h2>
+							<h3 class="txt-20-30" style="--mg-t: 20px;">전북.제주 공동교육혁신센터</h3>
+							<h4 style="--ft-s: 40px; --ft-w: 700;">웹 애플리케이션 개발특강</h4>
+							<h2 class="txt-20-30" style="--mg-t: 40px; --ft-w: 500;">신청안내</h2>
+							<table class="tbl-type-01" style="--mg-t: 24px; --txt-a: left;">
+								<colgroup>
+									<col style="--w: 60px;">
+									<col style="--pd-l: 16px;">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>
+											<div style="--dp: flex; --content-x: space-between;">
+												<span>대</span>
+												<span>상</span>
+											</div>
+										</th>
+										<td>참여대학(전북대, 국립군산대, 전주교대, 제주대)재학생</td>
+									</tr>
+									<tr>
+										<th>
+											<div style="--dp: flex; --content-x: space-between;">
+												<span>신</span>
+												<span>청</span>
+												<span>기</span>
+												<span>간</span>
+											</div>
+										</th>
+										<td>~ 2025. 11. 6 (목)</td>
+									</tr>
+									<tr>
+										<th>
+											<div style="--dp: flex; --content-x: space-between;">
+												<span>강</span>
+												<span>사</span>
+											</div>
+										</th>
+										<td>윤인숙 교수(전북대 SW사업단)</td>
+									</tr>
+									<tr>
+										<th>
+											<div style="--dp: flex; --content-x: space-between;">
+												<span>운</span>
+												<span>영</span>
+												<span>방</span>
+												<span>법</span>
+											</div>
+										</th>
+										<td>실시간 화상 ZOOM</td>
+									</tr>
+									<tr>
+										<th>
+											<div style="--dp: flex; --content-x: space-between;">
+												<span>참</span>
+												<span>여</span>
+												<span>혜</span>
+												<span>택</span>
+											</div>
+										</th>
+										<td>전북대 큰사람포인트 국립 군산대 장학마일리지, 전주교대 참스승인증제, 제주대 비교과 마일리지 지급)</td>
+									</tr>
+									<tr>
+										<th>
+											<div style="--dp: flex; --content-x: space-between;">
+												<span>문</span>
+												<span>의</span>
+											</div>
+										</th>
+										<td>063-270-4280 전북, 제주 공동교육혁신센터</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<template #footer>
+							<label class="form-opt-chk">
+								<input type="checkbox">
+								<span class="opt-txt">오늘하루 그만보기</span>
+							</label>
+							<button class="p-dialog-close-button" type="button">닫기</button>
+						</template>
+					</p-popup>
 				</div>
 			</div>
 			<div style="--flex-d:column; --gap:10px;">
