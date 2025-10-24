@@ -1,9 +1,8 @@
 @media print {
-	* {-webkit-print-color-adjust:exact; print-color-adjust:exact; box-sizing: border-box; }
+	* {-webkit-print-color-adjust:exact; print-color-adjust:exact;}
 
-	html, body { max-width: none; height: fit-content; padding: 0; }
-	body { width: 100%; max-width: 100%; zoom: 100%; transform: scale(1); padding: 30px; }
-	.h-wrap, .f-wrap, .no-print { display: none; }
+	html, body { height: fit-content; padding: 0; }
+	.h-wrap, .f-wrap, .no-print, .sub-contents { display: none; }
 	#paymentinfo { position: static; height: auto; }
 	[class*="pop-type"] .part-wrap { position: static; border-radius: 0; box-shadow: none; width: 100dvw; height: auto; translate: 0 0; max-height: none; }
 
@@ -16,7 +15,7 @@
 }
 
 @page {
-    size: A4 portrait;
+    size: A4;
     margin:0;
 	padding:0;
 }

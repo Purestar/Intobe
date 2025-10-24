@@ -25,7 +25,7 @@
 					<li><div class="part-content">역량별 평균 진단 점수를 나타낸 그래프 입니다.</div></li>
 				</ul>
 			</div>
-			<a href="#" class="btn-type-b-lgry btn-sz-02">다운로드</a>
+			<a href="#" class="btn-type-b-lgry btn-sz-02" onclick="window.print()">인쇄</a>
 		</div>
 		<div class="box-type-01-01" style="--mg-t: 20px;">
 			<div style="--w: 800px; --mg-x: auto; --m-w: 100%;">

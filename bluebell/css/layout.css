@@ -84,7 +84,7 @@ body, #app {display:flex; flex-direction:column; place-content:space-between; fl
 	.f-wrap .f-menu { font-weight:700; }
 	.f-wrap .f-copy { font-size: 14px; color: #999; }
 
-@media all and (max-width:768px) {
+@media screen and (max-width:768px) {
 	/* Header */
 		.h-wrap { background: var(--bg-type01); }
 		.h-wrap .h-sub-tit { position: absolute; left: 50%; translate: -50%; display: flex; justify-content: center; align-items: center; height: 100%; font-size: 5vw; font-weight: 700; color: black;}
