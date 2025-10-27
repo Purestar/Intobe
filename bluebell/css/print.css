@@ -2,12 +2,9 @@
 	* {-webkit-print-color-adjust:exact; print-color-adjust:exact; box-sizing: border-box; }
 
 	html, body { max-width: none; height: fit-content; padding: 0; }
-	body { width: 100%; max-width: 100%; zoom: 100%; transform: scale(1); padding: 30px; }
+	body { width: 100%; max-width: 100%; zoom: 67%; transform: scale(1); padding: 30px; }
 	.h-wrap, .f-wrap, .no-print { display: none; }
-	#paymentinfo { position: static; height: auto; }
-	[class*="pop-type"] .part-wrap { position: static; border-radius: 0; box-shadow: none; width: 100dvw; height: auto; translate: 0 0; max-height: none; }
-
-	[class*="pop-type"] .part-close,
+    [class*="pop-type"] { display: none; }
 	.no-print { display: none !important; }
 
 	:root {

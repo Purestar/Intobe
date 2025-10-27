@@ -2,8 +2,9 @@
 	* {-webkit-print-color-adjust:exact; print-color-adjust:exact;}
 
 	html, body { height: fit-content; padding: 0; }
-	.h-wrap, .f-wrap, .no-print, .sub-contents { display: none; }
-	#paymentinfo { position: static; height: auto; }
+	.h-wrap, .f-wrap, .no-print, .sub-contents, .layout-inner { display: none; }
+    [class*="pop-type"] { display: none; }
+	.pop-prt { display: block; position: static; height: auto; }
 	[class*="pop-type"] .part-wrap { position: static; border-radius: 0; box-shadow: none; width: 100dvw; height: auto; translate: 0 0; max-height: none; }
 
 	[class*="pop-type"] .part-close,
