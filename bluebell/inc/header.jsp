@@ -72,7 +72,7 @@
 
 				<nav class="h-gnb-wrap ft-nnmj">
 					<ul class="h-gnb">
-						<li><a href="#">Roadmap / Work / Evalution</a></li>
+						<li><a href="#">Roadmap / Framework / Evalution</a></li>
 						<li class="active"><a href="#">BBK Competency</a></li>
 						<li><a href="#">Training</a></li>
 						<li><a href="#">My Learning</a></li>
@@ -82,7 +82,7 @@
 					<div class="h-sub-menu-wrap">
 						<div class="layout-inner">
 							<div class="h-sub-menu">
-								<ul style="--w: 235px;">
+								<ul style="--w: 283px;">
 									<li class="active"><a href="#">교육체계도</a></li>
 									<li><a href="#">교육제도</a></li>
 								</ul>
