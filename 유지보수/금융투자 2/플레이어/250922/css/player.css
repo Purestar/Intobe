@@ -1,0 +1,139 @@
+.media_l_wrap { height: calc(100% - 47px) }
+
+/* 플레이어 컨트롤 컨테이너 */
+.player-ctrl-wrap { display: flex; gap: 10px; place-content: space-between; background-color: #222; height: 47px; position: absolute; bottom: 0; left: 0; width: 100%; }
+.player-ctrl-wrap > * { display: flex; }
+.player-ctrl-wrap [class*="btn-"] { position: relative; display: flex; place-content: center; place-items: center; background-color: transparent; min-width: 50px; height: 100%; padding: 0; font-size: 12px; color: white; }
+.player-ctrl-wrap [class*="btn-"]:before { content: ''; background-image: url(../images/front/player.png); }
+.player-ctrl-wrap [class*="btn-"] .tooltip-txt { display: none; position: absolute; top: -40px; }
+.player-ctrl-wrap [class*="btn-"]:hover .tooltip-txt { display: flex; }
+.player-ctrl-wrap [class*="btn-"] .tooltip-txt .txt-after { display: none; }
+.player-ctrl-wrap [class*="btn-"].active .tooltip-txt .txt-before { display: none; }
+.player-ctrl-wrap [class*="btn-"].active .tooltip-txt .txt-after { display: block; }
+.player-ctrl-wrap .player-ctrl-ended { position: fixed; top: 0; left: 0; display: none; }
+.player-ctrl-wrap .player-ctrl-ended.active { display: block; }
+
+/* 버튼 스타일 */
+.player-ctrl-wrap .btn-playlist { background-color: black; width: 62px; }
+
+/* 버튼 아이콘 */
+.btn-playlist:before { width: 28px; height: 20px; }
+.btn-rewind-10:before { background-position: -50px 0; width: 23px; height: 27px; }
+.btn-play:before { background-position: -100px 0; width: 14px; height: 18px; }
+.btn-play.active:before { background-position: -50px -50px; width: 12px; height: 19px; }
+.btn-rewind:before { background-position: -150px 0; width: 17px; height: 18px; }
+.btn-volume:before { background-position: -200px 0; width: 19px; height: 17px; }
+.btn-volume.active:before { background-position: -100px -50px; width: 20px; height: 17px; }
+.btn-fullscreen:before { background-position: -250px 0; width: 18px; height: 18px; }
+.btn-fullscreen.active:before { background-position: -150px -50px; }
+
+/* 바 */
+.player-ctrl-wrap [class*="bar-"] { position: relative; cursor: pointer; background-color: #c0c0c0; border-radius: 3px; overflow: hidden; }
+.player-ctrl-wrap [class*="bar-"] > * { display: block; position: absolute; left: 0; bottom: 0; z-index: 10; background-color:#9086d6; border-radius: 3px; }
+
+/* 볼륨 바 */
+.volume-wrap { position: relative; }
+.volume-wrap .tooltip-txt { z-index: 100; }
+.volume-box { display: none; background: black; border-radius: 5px; width: 46px; padding: 20px; position: absolute; bottom: 58px; }
+.volume-wrap.active .volume-box { display: block; }
+.volume-wrap:hover .volume-box { bottom: 58px; }
+.volume-ctrl-wrap { position: relative; display: inline-block; background: #c0c0c0; box-shadow: inset 0 1px 0 rgba(169,168,164,1); border-radius: 8px; width: 6px; height: 106px; }
+.volume-bar {display: block; height: 106px; position: absolute; left: 0; bottom: 0; background-color: #9086d6; z-index: 10; width: 100%; border-radius: 3px; }
+#volume-draggable-point { margin: 0; }
+#volume-handle { background: #fff; border-radius: 50%; width: 12px; height: 12px; position: absolute; z-index: 20; margin-left: -3px; box-shadow: 0 0 5px rgba(0,0,0,.2); translate: 0 -6px; }
+
+/* 툴팁 */
+.tooltip-txt { display: flex; place-content: center; place-items: center; background-color: rgba(112, 112, 112, 0.8); border-radius: 30px; height: 30px; padding: 0 13px; font-size: 15px; line-height: 1; color: white; white-space: nowrap; }
+.tooltip-txt:before { content: ''; position: absolute; left: 50%; bottom: -6px; background-image: url(../images/front/player.png); background-position: 0 -250px; width: 12px; height: 6px; translate: -50% 0; }
+
+.tooltip-txt-02 { position: fixed; display: flex; place-content: center; place-items: center; background: #5794ef; border-radius: 42px; min-height: 42px; padding: 0 20px; color: white; }
+.tooltip-txt-02:before { content: ""; position: absolute; right: 18px; bottom: -3px; background: #5794ef; width: 8px; height: 8px; transform: rotate(45deg); }
+
+/* 기타 텍스트 */
+.txt-video-end { right: 22px; bottom: 42px; }
+
+/* 볼륨 컨트롤 */
+/*.ctrl-volume-wrap { position: relative; }
+.ctrl-volume { display: none;background: #000; border-radius: 5px; width: 46px; height: 146px; padding: 20px; position: absolute; left: 0; bottom: 58px; }
+.ctrl-volume-wrap.muted .btn-volume:before { background-position: -100px -50px; width: 20px; height: 17px; }
+.ctrl-volume-wrap.active .ctrl-volume { display: block; }*/
+
+/* 재생속도 컨트롤 */
+.ctrl-speed-wrap { position: relative; }
+.ctrl-speed-wrap.active .lst-speed { display: block; }
+.lst-speed { position: absolute; left: 50%; bottom: 58px; background: #000; border-radius: 5px; padding: 10px; display: none; translate: -50% 0; }
+.lst-speed li { line-height: 1.5; }
+.lst-speed li button { background: transparent; padding: 0; width: 100%; height: auto; color: #999; font-size: 13px; font-weight: 500; white-space: nowrap; }
+.lst-speed li button:hover,.lst-speed li.active button { color: #fff; font-weight: 700; }
+
+/* 플레이어 길이 */
+.player-duration { display: flex; place-items: center; gap: 10px;margin: 0; padding: 0; width: 100%; }
+.player-duration .play_time { opacity: 1; margin: 0;}
+
+/* 플레이어 포스터 */
+#player-poster {
+	background: transparent url(https://web.kifin.or.kr/images/front/bg_media_play.png) no-repeat center center;
+	background-size: contain;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 50;
+}
+
+#audio-player-container { flex: 1; }
+.audio-progress { width: 100%; }
+.play_paging { position: static; display: flex; place-items: center; }
+.play_paging div { white-space: nowrap; }
+
+/* 레이더 차트 스타일 */
+.radar-chart-container {
+	background: #f8f9fa;
+	border-radius: 8px;
+	margin-top: 20px;
+	padding: 20px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.radar-chart-container h3 {
+	text-align: center;
+	margin-bottom: 20px;
+	color: #333;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.chart-wrapper {
+	position: relative;
+	width: 100%;
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+#radarChart {
+	max-width: 100%;
+	height: 400px;
+}
+
+@media only screen and (orientation: portrait) {
+	.media_l_wrap {height:calc(100% - 120px);}
+	.player-ctrl-wrap { display: grid; gap: 0; place-content: normal; height: auto; padding: 10px; }
+	.player-ctrl-wrap > * { height: 47px; }
+	.player-ctrl-wrap .player-ctrl-left { place-content: space-between; }
+	.play_paging { place-content: center; }
+	.play_time { position: static !important; }
+
+	/* 모바일에서 차트 크기 조정 */
+	.radar-chart-container {
+		margin-top: 15px;
+		padding: 15px;
+	}
+
+	#radarChart {
+		height: 300px;
+	}
+}
