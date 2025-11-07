@@ -738,7 +738,7 @@
 
 		/* Float Menu */
 			.float-menu {position:relative; display:flex; flex-direction:column; gap:10px; position:fixed; right:12px; top:50%; translate:0 -50%; z-index:10;}
-			.float-menu .float-btn-top {display:flex; place-items:center; place-content:center; background:#a6165f; border-radius:50%; width:76px; height:76px;}
+			.float-menu .float-btn-top {display:flex; place-items:center; place-content:center; background:#353b91; border-radius:50%; width:76px; height:76px;}
 
 		/* Container */
 			#container {flex:1;}
