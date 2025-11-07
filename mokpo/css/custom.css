@@ -157,6 +157,7 @@
 	/* Color */
 		.btn-type-pur {--btn-bg-c:var(--cr-pur); --btn-bd-c:var(--cr-pur); --btn-ft-c:white;}
 		.btn-type-lgry {--btn-bg-c:#f1f1f1; --btn-bd-c:#f1f1f1; --btn-over-bg-c:#f1f1f1; --btn-ft-c:black;}
+		.btn-type-blu {--btn-bg-c:var(--cr-blu); --btn-bd-c:var(--cr-blu); --btn-ft-c:white;}
 
 		.btn-type-b-lgry {--btn-bd-c:#dbdbdb; --btn-ft-c:#666; --btn-dis-bg-c:#f6f6f6; --btn-dis-bd-c:#e2e2e2; --btn-dis-ft-c:#666;}
 		.btn-type-b-lgry:hover {--btn-bd-c:black;}
@@ -705,7 +706,7 @@
 
 			.h-lang-wrap.active .h-lang-menu {display:flex;}
 
-			.h-gnb {display:flex; place-content:space-between; place-items:center; width:916px; font-size:22px;}
+			.h-gnb {display:flex; place-content:space-between; place-items:center; width:728px; font-size:22px;}
 			.h-gnb a {display:flex; position:relative; place-items:center;}
 			.h-gnb > * > a:hover,
 			.h-gnb > *.active > a {color:var(--mc);}
@@ -748,7 +749,7 @@
 		.login-wrap {box-shadow:0 0 57px rgba(0, 0, 0, 0.06); border-radius:40px;}
 
 	/* 메인 */
-		.main-wrap {background:url("../images/img/bg_visual.png") center top no-repeat; min-height:493px; padding-top:400px;}
+		.main-wrap {background:url("../images/img/bg_visual.png") center top no-repeat; min-height:493px; padding-top:300px;}
 		.main-alarm {position:relative; display:flex; place-items:center; place-content:center; background:#f5f5f5; border-radius:50%; width:40px; height:40px;}
 		.main-alarm:before {content:""; background-image:var(--ic); background-size:var(--bg-sz); background-position:var(--bp-400) 0; width:16px; height:20px;}
 		.main-alarm.active {background:#ffeaea;}
@@ -763,7 +764,7 @@
 		.main-stu-badge:hover .main-stu-badge-chg {opacity:1; transition:opacity .3s ease;}
 
 		#personalized [class*="personalized-wrap"] {display:flex; flex-direction:column; place-items:center; background:var(--personalized-bg-c); border-radius:24px; padding:48px 30px;}
-		#personalized .personalized-tit {display:flex; place-items:flex-end; font-weight:bold; font-size:20px; color:var(--personalized-ft-c);}
+		#personalized .personalized-tit {display:flex; place-items:flex-end; font-weight:bold; font-size:24px; color:var(--personalized-ft-c);}
 		#personalized .personalized-txt {display:flex; place-items:center; position:relative; background:var(--personalized-ft-c); border-radius:26px; height:26px; margin-bottom:28px; padding:0 12px; font-size:12px; color:white;}
 		#personalized .personalized-txt:after {content:""; position:absolute; right:7px; bottom:-4px; border-left:5px solid transparent; border-right:5px solid transparent; border-bottom:10px solid var(--personalized-ft-c); rotate:90deg;}
 		#personalized .personalized-lnk {display:flex; gap:12px; place-items:center; margin-top:40px; font-size:14px;}
@@ -773,6 +774,7 @@
 		#personalized .personalized-wrap-pnk {--personalized-bg-c:#ffd6d6; --personalized-ft-c:#a6165f;}
 		#personalized .personalized-wrap-pur {--personalized-bg-c:#dfd5f1; --personalized-ft-c:#482f8d;}
 		#personalized .personalized-wrap-blu {--personalized-bg-c:#d7e5fb; --personalized-ft-c:#004386;}
+		#personalized .personalized-wrap-grn {--personalized-bg-c:#baecea; --personalized-ft-c:#009d96;}
 
 		.main-aijob-lst {display:flex; place-content:center; gap:47px; margin-top:40px; font-size:20px; font-weight:500; line-height:26px; text-align:center; color:white;}
 		.main-aijob-lst > * {position:relative; display:flex; flex-shrink:0; flex-direction:column; place-items:center; place-content:center; background:black; border-radius:50%; width:160px; height:160px;}
@@ -782,11 +784,11 @@
 		.main-aijob-lst > *.active strong {display:block;}
 		.main-aijob-lst > *.active .main-aijob-lst-txt {margin-top:14px; mix-blend-mode:soft-light;}
 		.main-aijob-lst > * + *:after {content:""; position:absolute; left:-30px; top:50%; background-image:var(--ic); background-size:var(--bg-sz); background-position:var(--bp-650) var(--bp-100); width:16px; height:12px; translate: 0 -50%;}
-		.main-aijob-lst > *:nth-child(1) {background:#af3c78;}
-		.main-aijob-lst > *:nth-child(2) {background:#853687;}
-		.main-aijob-lst > *:nth-child(3) {background:#6a51af;}
-		.main-aijob-lst > *:nth-child(4) {background:#31439d;}
-		.main-aijob-lst > *:nth-child(5) {background:#31859d;}
+		.main-aijob-lst > *:nth-child(1) {background:#009d96;}
+		.main-aijob-lst > *:nth-child(2) {background:#353b91;}
+		.main-aijob-lst > *:nth-child(3) {background:#5a146c;}
+		.main-aijob-lst > *:nth-child(4) {background:#a6876b;}
+		.main-aijob-lst > *:nth-child(5) {background:#e19c00;}
 		.main-aijob-lst > *:nth-child(6) {background:#319d7b;}
 
 	/* 진입 */

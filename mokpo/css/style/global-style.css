@@ -74,7 +74,7 @@
 	[style*="--h"] { height: var(--h); }
 
 /* Style Initialize */
-	[style] [style] {}
+	/*[style] [style] {}*/
 
 @media all and (max-width:720px) {
 	/* Background */
