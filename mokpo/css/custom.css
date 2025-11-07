@@ -133,7 +133,8 @@
 		.brd-paging-num {display:flex;}
 
 /* Box */
-	.box-type-01 {--box-bg-c:white; --box-sha-size:33px; --box-sha-opa:0.06; --box-bd-r:30px;}
+	[class*="box-type-01"] {--box-bg-c:white; --box-sha-size:33px; --box-sha-opa:0.06; --box-bd-r:30px;}
+	.box-type-01-01 {--box-bd-r:12px;}
 	[class*="box-type-02"] {--box-bg-c:white; --box-bd-c:#e2e2e2; --box-bd-r:20px; --box-pd:40px;}
 	.box-type-02-01 {--box-pd:30px;}
 	[class*="box-type-03"] {--box-bg-c:#f5f5f5; --box-bd-c:transparent; --box-bd-r:18px; --box-pd:initial; --box-pd-x:30px; --box-pd-y:22px;}

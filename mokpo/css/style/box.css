@@ -11,7 +11,7 @@
 				var(--box-pd-l, var(--box-pd-x, var(--box-pd)));
 	}
 
-	/*[class*="box-type"] [class*="box-type"] {}*/
+	[class*="box-type"] [class*="box-type"] {}
 
 	@media all and (max-width:720px) {
 		[class*="box-type"] {
