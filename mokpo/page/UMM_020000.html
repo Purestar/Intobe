@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="Management">
+		<meta name="description" content="Management">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script type="module" src="../js/index.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
+		<script type="module" src="../js/module.js"></script>
+		<script src="../js/pub.js"></script>
+		<link rel="icon" href="../favicon.ico" sizes="any">
+		<link rel="stylesheet" href="../css/global.css">
+	</head>
+	<body>
+		<!-- 헤더 -->
+		<div class="sub-header">
+			<div data-include="../include/header.html"></div>
+		</div>
+
+		<!-- 본문 -->
+		<div id="container">
+			<div class="layout-inner sub-layout">
+				<h2 class="sub-tit-02"><a href="#"><i class="ic-l-arr-01"></i></a>메이저맵</h2>
+				<div class="brd-wrap">
+					<ul id="majorMapTop" class="brd-lst-03" style="--pos:sticky; --left:0; --top:0;">
+						<li style="--ovf:hidden;">
+							<div style="--dp:grid; --w:100%;">
+								<div style="--dp:flex; --content:space-between; --items:center; --w:100%; --m-gap:2.22vw; --m-grid-t-col:1; --m-items:flex-start; ">
+									<div style="--flex-d:column; --gap:20px; --m-gap:2.22vw;">
+										<div style="--gap:16px; --items:center; --m-gap:2.5vw;">
+											<span class="chip-type-01">기본 MAP</span>
+											<div class="brd-lst-tit-inner">
+												<a href="#" class="layout-ellipsis">김전북님의 메이저</a>
+											</div>
+										</div>
+										<p>#첫 설계  #2학년 1학기  #2024.03.05</p>
+									</div>
+									<div style="--gap:40px; --m-content:space-between; --m-gap:0; --m-w:100%;">
+										<p>최종수정일 2024.06.19</p>
+										<div style="--gap:24px; --m-gap:4.72vw;">
+											<button type="button"><i class="ic-pencle"></i></button>
+											<button type="button"><i class="ic-copy"></i></button>
+											<button type="button"><i class="ic-trash"></i></button>
+										</div>
+									</div>
+								</div>
+								<div class="brd-lst-bottom">
+									<ul class="major-map-stat">
+										<li class="complete">1학년</li>
+										<li class="complete"></li>
+										<li class="active"><i class="ic-mascot"></i></li>
+										<li class="current"></li>
+										<li>2학년</li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li>3학년</li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li>4학년</li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li>졸업</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+
+					<!-- 1학년 1학기 -->
+					<div class="cr-blk" style="--gap:20px; --items:center; --mg-t:80px; --m-gap:2.78vw; --m-mg-t:11.11vw;">
+						<h3 class="txt-24-32"><b>1학년 1학기</b></h3>
+						<p>종료</p>
+					</div>
+					<h4 class="chip-type-03" style="--mg-t:24px; --m-mg-t:5.56vw;">교과</h4>
+					<ul class="brd-lst-02" style="--grid-t-col:3; --m-grid-t-col:1; --mg-t:16px; --m-mg-t:3.33vw;">
+						<li class="stat" style="--gap:4px; --flex-d:column; --m-gap:1.11vw;">
+							<div style="--gap:16px; --items:center; --m-gap:3.33vw;">
+								<span class="chip-type-01-blu-03">전공필수</span>
+								<div class="txt-14-24 stat-ind" style="--gap:4px; --m-gap:1.11vw;"><i class="ic-plan"></i>계획</div>
+							</div>
+							<h3 class="brd-tit layout-ellipsis stat-ind">과정명이 한줄로 노출됩니다과정명이 한줄로 노출됩니다</h3>
+							<div class="div-v-03 txt-14-24 stat-ind">
+								<span>컴퓨터공학전공</span>
+								<span>2-2</span>
+								<span>2학점 (2시간)</span>
+							</div>
+						</li>
+						<li style="--gap:4px; --flex-d:column; --m-gap:1.11vw;">
+							<div style="--gap:16px; --items:center; --m-gap:3.33vw;">
+								<span class="chip-type-01-red">전공선택</span>
+							</div>
+							<h3 class="brd-tit layout-ellipsis">과정명이 한줄로 노출됩니다</h3>
+							<div class="div-v-03 txt-14-24 stat-ind">
+								<span>컴퓨터공학전공</span>
+								<span>2-2</span>
+								<span>2학점 (2시간)</span>
+							</div>
+						</li>
+						<li style="--gap:4px; --flex-d:column; --m-gap:1.11vw;">
+							<div style="--gap:16px; --items:center; --m-gap:3.33vw;">
+								<span class="chip-type-01-pur-03">전공핵심</span>
+								<div class="txt-14-24 stat-ind" style="--gap:4px; --m-gap:1.11vw;"><i class="ic-plan"></i>계획</div>
+							</div>
+							<h3 class="brd-tit layout-ellipsis">과정명이 한줄로 노출됩니다</h3>
+							<div class="div-v-03 txt-14-24 stat-ind">
+								<span>컴퓨터공학전공</span>
+								<span>2-2</span>
+								<span>2학점 (2시간)</span>
+							</div>
+						</li>
+					</ul>
+					<h4 class="chip-type-03" style="--mg-t:40px; --m-mg-t:8.33vw;">자격증</h4>
+					<ul class="brd-lst-02" style="--grid-t-col:3; --m-grid-t-col:1; --mg-t:16px; --m-mg-t:3.33vw;">
+						<li style="--gap:4px; --flex-d:column; --m-gap:1.11vw;">
+							<h3 class="brd-tit layout-ellipsis">정보처리기사</h3>
+							<p>과학기술정보통신부</p>
+							<p>취득일2024.08.19</p>
+						</li>
+						<li style="--gap:4px; --flex-d:column; --m-gap:1.11vw;">
+							<div class="txt-14-24" style="--gap:4px; --m-gap:1.11vw;"><i class="ic-plan"></i>계획</div>
+							<h3 class="brd-tit layout-ellipsis">과정명이 한줄로 노출됩니다</h3>
+							<p>과학기술정보통신부</p>
+						</li>
+					</ul>
+
+					<!-- 1학년 여름학기 -->
+					<div class="cr-blk" style="--gap:20px; --items:center; --mg-t:80px; --m-gap:2.78vw; --m-mg-t:11.11vw;">
+						<h3 class="txt-24-32"><b>1학년 여름학기</b></h3>
+						<p>종료</p>
+					</div>
+
+					<!-- 1학년 2학기 -->
+					<div style="--gap:20px; --items:center; --mg-t:80px; --m-gap:2.78vw; --m-mg-t:11.11vw;">
+						<h3 class="txt-24-32"><b><q>1학년 2학기</q></b></h3>
+						<p><q>진행</q></p>
+					</div>
+					<h4 class="chip-type-03" style="--mg-t:24px; --m-mg-t:5.56vw;">교과</h4>
+					<ul class="brd-lst-02" style="--grid-t-col:3; --m-grid-t-col:1; --mg-t:16px; --m-mg-t:3.33vw;">
+						<li class="stat" style="--gap:4px; --flex-d:column; --m-gap:1.11vw;">
+							<div style="--gap:16px; --items:center; --m-gap:3.33vw;">
+								<span class="chip-type-01-brw">전공필수</span>
+								<div class="txt-14-24 stat-ind" style="--gap:4px; --m-gap:1.11vw;"><i class="ic-plan"></i>계획</div>
+							</div>
+							<h3 class="brd-tit layout-ellipsis stat-ind">과정명이 한줄로 노출됩니다과정명이 한줄로 노출됩니다</h3>
+							<div class="div-v-03 txt-14-24 stat-ind">
+								<span>컴퓨터공학전공</span>
+								<span>2-2</span>
+								<span>2학점 (2시간)</span>
+							</div>
+						</li>
+						<li style="--gap:4px; --flex-d:column; --m-gap:1.11vw;">
+							<div style="--gap:16px; --items:center; --m-gap:3.33vw;">
+								<span class="chip-type-01-grn-02">교양필수</span>
+							</div>
+							<h3 class="brd-tit layout-ellipsis">과정명이 한줄로 노출됩니다</h3>
+							<div class="div-v-03 txt-14-24 stat-ind">
+								<span>컴퓨터공학전공</span>
+								<span>2-2</span>
+								<span>2학점 (2시간)</span>
+							</div>
+						</li>
+						<li style="--gap:4px; --flex-d:column; --m-gap:1.11vw;">
+							<div style="--gap:16px; --items:center; --m-gap:3.33vw;">
+								<span class="chip-type-01-pur-03">전공핵심</span>
+								<div class="txt-14-24 stat-ind" style="--gap:4px; --m-gap:1.11vw;"><i class="ic-plan"></i>계획</div>
+							</div>
+							<h3 class="brd-tit layout-ellipsis">과정명이 한줄로 노출됩니다</h3>
+							<div class="div-v-03 txt-14-24 stat-ind">
+								<span>컴퓨터공학전공</span>
+								<span>2-2</span>
+								<span>2학점 (2시간)</span>
+							</div>
+						</li>
+					</ul>
+					<h4 class="chip-type-03" style="--mg-t:40px; --m-mg-t:8.33vw;">자격증</h4>
+					<ul class="brd-lst-02" style="--grid-t-col:3; --m-grid-t-col:1; --mg-t:16px; --m-mg-t:3.33vw;">
+						<li style="--gap:4px; --flex-d:column; --m-gap:1.11vw;">
+							<h3 class="brd-tit layout-ellipsis">정보처리기사</h3>
+							<p>과학기술정보통신부</p>
+							<p>취득일2024.08.19</p>
+						</li>
+						<li style="--gap:4px; --flex-d:column; --m-gap:1.11vw;">
+							<div class="txt-14-24" style="--gap:4px; --m-gap:1.11vw;"><i class="ic-plan"></i>계획</div>
+							<h3 class="brd-tit layout-ellipsis">과정명이 한줄로 노출됩니다</h3>
+							<p>과학기술정보통신부</p>
+						</li>
+					</ul>
+
+					<!-- 1학년 겨울학기 -->
+					<div class="cr-blk" style="--gap:20px; --items:center; --mg-t:80px; --m-gap:2.78vw; --m-mg-t:11.11vw;">
+						<h3 class="txt-24-32"><b>1학년 겨울학기</b></h3>
+						<p>예정</p>
+					</div>
+					<h4 class="chip-type-03" style="--mg-t:24px; --m-mg-t:5.56vw;">교과</h4>
+					<ul class="brd-lst-02" style="--grid-t-col:3; --m-grid-t-col:1; --mg-t:16px; --m-mg-t:3.33vw;">
+						<li class="stat" style="--gap:4px; --flex-d:column; --m-gap:1.11vw;">
+							<div style="--gap:16px; --items:center; --m-gap:3.33vw;">
+								<span class="chip-type-01-org">전공핵심</span>
+								<div class="txt-14-24 stat-ind" style="--gap:4px; --m-gap:1.11vw;"><i class="ic-plan"></i>계획</div>
+							</div>
+							<h3 class="brd-tit layout-ellipsis stat-ind">과정명이 한줄로 노출됩니다과정명이 한줄로 노출됩니다</h3>
+							<div class="div-v-03 txt-14-24 stat-ind">
+								<span>컴퓨터공학전공</span>
+								<span>2-2</span>
+								<span>2학점 (2시간)</span>
+							</div>
+						</li>
+					</ul>
+					<h4 class="chip-type-03" style="--mg-t:40px; --m-mg-t:8.33vw;">자격증</h4>
+					<ul class="brd-lst-02" style="--grid-t-col:3; --m-grid-t-col:1; --mg-t:16px; --m-mg-t:3.33vw;">
+						<li style="--gap:4px; --flex-d:column; --m-gap:1.11vw;">
+							<div class="txt-14-24" style="--gap:4px; --m-gap:1.11vw;"><i class="ic-plan"></i>계획</div>
+							<h3 class="brd-tit layout-ellipsis">과정명이 한줄로 노출됩니다</h3>
+							<p>과학기술정보통신부</p>
+						</li>
+					</ul>
+
+					<!-- 4학년 2학기 -->
+					<div class="cr-blk" style="--gap:20px; --items:center; --mg-t:80px; --m-gap:2.78vw; --m-mg-t:11.11vw;">
+						<h3 class="txt-24-32"><b>4학년 2학기</b></h3>
+						<p>예정</p>
+					</div>
+					<div style="--gap:20px; --mg-t:24px; --m-mg-t:5.56vw; --items:center;">
+						<h4 class="chip-type-03">교과</h4>
+						<p class="cr-blk">계획된 교과가 없습니다.</p>
+					</div>
+					<div style="--gap:20px; --mg-t:24px; --m-mg-t:5.56vw; --items:center;">
+						<h4 class="chip-type-03">자격증</h4>
+						<p class="cr-blk">계획된 자격증이 없습니다.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 푸터 -->
+		<div data-include="../include/footer.html"></div>
+		<script type="module">
+			document.addEventListener('DOMContentLoaded', () => {
+				const target = document.getElementById('majorMapTop');
+				if (!target) return;
+
+				let lastSticky = false;
+
+				window.addEventListener('scroll', () => {
+					const { top } = target.getBoundingClientRect();
+					const isNowSticky = top <= 0;
+
+					if (isNowSticky !== lastSticky) {
+						target.classList.toggle('sticky-active', isNowSticky);
+						lastSticky = isNowSticky;
+					}
+				});
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="Management">
+		<meta name="description" content="Management">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script type="module" src="../js/index.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
+		<script type="module" src="../js/module.js"></script>
+		<script src="../js/pub.js"></script>
+		<link rel="icon" href="../favicon.ico" sizes="any">
+		<link rel="stylesheet" href="../css/global.css">
+	</head>
+	<body>
+		<!-- 헤더 -->
+		<div class="sub-header">
+			<div data-include="../include/header.html"></div>
+		</div>
+
+		<!-- 본문 -->
+		<div id="container">
+			<div class="layout-inner sub-layout">
+				<h2 class="sub-tit">보관함</h2>
+				<p-tabs class="tab-wrap-01" style="--mg-t:40px; --m-mg-t:8.33vw;" value="0">
+					<p-tab-list class="tab-menu-01" data-scroll="xh">
+						<p-tab value="0">직업</p-tab>
+						<p-tab value="1">전공</p-tab>
+						<p-tab value="2">교과</p-tab>
+						<p-tab value="3">비교과</p-tab>
+						<p-tab value="4">자격증</p-tab>
+					</p-tab-list>
+					<p-tab-panels>
+						<p-tab-panel value="0">
+							<div class="box-type-03">
+								<div style="--gap:30px; --m-flex-d:column; --m-gap:5.56vw;">
+									<div>
+										<b>보관일</b>
+										<div style="--gap:4px; --items:center; --mg-t:16px; --m-mg-t:3.33vw; --m-gap:0.69vw;">
+											<p-date-picker class="form-txt-date" placeholder="YYYY.MM.DD" show-icon></p-date-picker>
+											~
+											<p-date-picker class="form-txt-date" placeholder="YYYY.MM.DD" show-icon></p-date-picker>
+										</div>
+									</div>
+									<div class="flex-1">
+										<b>직업명</b>
+										<div style="--gap:12px; --items:center; --mg-t:16px; --m-mg-t:3.33vw; --m-gap:1.67vw;">
+											<div class="form-txt">
+												<p-input placeholder="직업명"></p-input>
+											</div>
+											<a href="#" class="btn-type-b" style="--btn-w:92px; --m-btn-w:23.19vw;">검색</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div style="--content:space-between; --items:center; --mg-t:24px; --m-mg-t:5.56vw;">
+								<p class="brd-tot">총 <q>10</q>개</p>
+								<p-select class="form-sel-01" placeholder="최근 등록순" panel-class="form-panel-sel" :options="['전체', '제목', '내용', '제목+내용', '작성자']"></p-select>
+							</div>
+
+							<div style="--flex-d:column; --gap:60px; --mg-t:24px; --m-gap:8.33vw; --m-mg-t:3.33vw;">
+								<div>
+									<p><b>2024.09.29</b></p>
+									<ul class="lst-item-03-01" style="--mg-t:14px; --m-mg-t:3.33vw; --grid-t-col:3; --m-grid-t-col:1;">
+										<li>
+											<p class="lst-tit">정보통신컨설턴트 및 감리원</p>
+											<label class="form-opt-chk-01">
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</li>
+										<li>
+											<p class="lst-tit">정보통신컨설턴트 및 감리원</p>
+											<label class="form-opt-chk-01">
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</li>
+										<li>
+											<p class="lst-tit">정보통신컨설턴트 및 감리원</p>
+											<label class="form-opt-chk-01">
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</li>
+									</ul>
+								</div>
+								<div>
+									<p><b>2024.09.29</b></p>
+									<ul class="lst-item-03-01" style="--mg-t:14px; --m-mg-t:3.33vw; --grid-t-col:3; --m-grid-t-col:1;">
+										<li>
+											<p class="lst-tit">정보통신컨설턴트 및 감리원</p>
+											<label class="form-opt-chk-01">
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</li>
+										<li>
+											<p class="lst-tit">정보통신컨설턴트 및 감리원</p>
+											<label class="form-opt-chk-01">
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</li>
+										<li>
+											<p class="lst-tit">정보통신컨설턴트 및 감리원</p>
+											<label class="form-opt-chk-01">
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div data-include="../include/paging.html"></div>
+						</p-tab-panel>
+						<p-tab-panel value="1">
+							<div class="box-type-03">
+								<div style="--gap:30px; --m-flex-d:column; --m-gap:5.56vw;">
+									<div>
+										<b>보관일</b>
+										<div style="--gap:4px; --items:center; --mg-t:16px; --m-mg-t:3.33vw; --m-gap:0.69vw;">
+											<p-date-picker class="form-txt-date" placeholder="YYYY.MM.DD" show-icon></p-date-picker>
+											~
+											<p-date-picker class="form-txt-date" placeholder="YYYY.MM.DD" show-icon></p-date-picker>
+										</div>
+									</div>
+									<div class="flex-1">
+										<b>전공명</b>
+										<div style="--gap:12px; --items:center; --mg-t:16px; --m-mg-t:3.33vw; --m-gap:1.67vw;">
+											<div class="form-txt">
+												<p-input placeholder="전공명"></p-input>
+											</div>
+											<a href="#" class="btn-type-b" style="--btn-w:92px; --m-btn-w:23.19vw;">검색</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div style="--content:space-between; --items:center; --mg-t:24px; --m-mg-t:5.56vw;">
+								<p class="brd-tot">총 <q>10</q>개</p>
+								<p-select class="form-sel-01" placeholder="최근 등록순" panel-class="form-panel-sel" :options="['전체', '제목', '내용', '제목+내용', '작성자']"></p-select>
+							</div>
+
+							<div style="--flex-d:column; --gap:60px; --mg-t:24px; --m-gap:8.33vw; --m-mg-t:3.33vw;">
+								<div>
+									<p><b>2024.09.29</b></p>
+									<ul class="lst-item-03-01" style="--mg-t:14px; --m-mg-t:3.33vw; --grid-t-col:3; --m-grid-t-col:1;">
+										<li>
+											<p class="lst-tit">정보통신컨설턴트 및 감리원</p>
+											<label class="form-opt-chk-01">
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</li>
+										<li>
+											<p class="lst-tit">정보통신컨설턴트 및 감리원</p>
+											<label class="form-opt-chk-01">
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</li>
+										<li>
+											<p class="lst-tit">정보통신컨설턴트 및 감리원</p>
+											<label class="form-opt-chk-01">
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</li>
+									</ul>
+								</div>
+								<div>
+									<p><b>2024.09.29</b></p>
+									<ul class="lst-item-03-01" style="--mg-t:14px; --m-mg-t:3.33vw; --grid-t-col:3; --m-grid-t-col:1;">
+										<li>
+											<p class="lst-tit">정보통신컨설턴트 및 감리원</p>
+											<label class="form-opt-chk-01">
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</li>
+										<li>
+											<p class="lst-tit">정보통신컨설턴트 및 감리원</p>
+											<label class="form-opt-chk-01">
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</li>
+										<li>
+											<p class="lst-tit">정보통신컨설턴트 및 감리원</p>
+											<label class="form-opt-chk-01">
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div data-include="../include/paging.html"></div>
+						</p-tab-panel>
+						<p-tab-panel value="2">
+							<div class="box-type-03">
+								<div style="--gap:30px; --m-flex-d:column; --m-gap:5.56vw;">
+									<div>
+										<b>보관일</b>
+										<div style="--gap:4px; --items:center; --mg-t:16px; --m-mg-t:3.33vw; --m-gap:0.69vw;">
+											<p-date-picker class="form-txt-date" placeholder="YYYY.MM.DD" show-icon></p-date-picker>
+											~
+											<p-date-picker class="form-txt-date" placeholder="YYYY.MM.DD" show-icon></p-date-picker>
+										</div>
+									</div>
+									<div class="flex-1">
+										<b>교과명</b>
+										<div style="--gap:12px; --items:center; --mg-t:16px; --m-mg-t:3.33vw; --m-gap:1.67vw;">
+											<div class="form-txt">
+												<p-input placeholder="교과명"></p-input>
+											</div>
+											<a href="#" class="btn-type-b" style="--btn-w:92px; --m-btn-w:23.19vw;">검색</a>
+										</div>
+									</div>
+								</div>
+								<div style="--flex-d:column; --gap:20px; --mg-t:24px; --m-gap:5.56vw; --m-mg-t:5.56vw;">
+									<div style="--gap:40px; --items:center; --m-gap:3.33vw; --m-flex-d:column; --m-items:flex-start;">
+										<b class="ws-nw">이수구분</b>
+										<div data-scroll="xh">
+											<div style="--gap:12px; --m-gap:1.67vw;">
+												<label class="form-opt-btn-02">
+													<input type="radio">
+													<span class="opt-txt">전체</span>
+												</label>
+												<label class="form-opt-btn-02">
+													<input type="radio">
+													<span class="opt-txt">이수구분1</span>
+												</label>
+												<label class="form-opt-btn-02">
+													<input type="radio">
+													<span class="opt-txt">이수구분2</span>
+												</label>
+												<label class="form-opt-btn-02">
+													<input type="radio">
+													<span class="opt-txt">이수구분3</span>
+												</label>
+												<label class="form-opt-btn-02">
+													<input type="radio">
+													<span class="opt-txt">이수구분4</span>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div style="--gap:40px; --items:center; --m-gap:3.33vw; --m-flex-d:column; --m-items:flex-start;">
+										<b class="ws-nw">개설학년</b>
+										<div data-scroll="xh">
+											<div style="--gap:12px; --m-gap:1.67vw;">
+												<label class="form-opt-btn-02">
+													<input type="radio">
+													<span class="opt-txt">전체</span>
+												</label>
+												<label class="form-opt-btn-02">
+													<input type="radio">
+													<span class="opt-txt">1학년</span>
+												</label>
+												<label class="form-opt-btn-02">
+													<input type="radio">
+													<span class="opt-txt">2학년</span>
+												</label>
+												<label class="form-opt-btn-02">
+													<input type="radio">
+													<span class="opt-txt">3학년</span>
+												</label>
+												<label class="form-opt-btn-02">
+													<input type="radio">
+													<span class="opt-txt">4학년</span>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div style="--gap:40px; --items:center; --m-gap:3.33vw; --m-flex-d:column; --m-items:flex-start;">
+										<b class="ws-nw">개설학기</b>
+										<div data-scroll="xh">
+											<div style="--gap:12px; --m-gap:1.67vw;">
+												<label class="form-opt-btn-02">
+													<input type="radio">
+													<span class="opt-txt">전체</span>
+												</label>
+												<label class="form-opt-btn-02">
+													<input type="radio">
+													<span class="opt-txt">1학기</span>
+												</label>
+												<label class="form-opt-btn-02">
+													<input type="radio">
+													<span class="opt-txt">2학기</span>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div style="--content:space-between; --items:center; --mg-t:24px; --m-mg-t:5.56vw;">
+								<p class="brd-tot">총 <q>10</q>개</p>
+								<p-select class="form-sel-01" placeholder="최근 등록순" panel-class="form-panel-sel" :options="['전체', '제목', '내용', '제목+내용', '작성자']"></p-select>
+							</div>
+
+							<div style="--flex-d:column; --gap:60px; --mg-t:24px; --m-gap:8.33vw; --m-mg-t:3.33vw;">
+								<div>
+									<p><b>2024.09.29</b></p>
+									<ul class="brd-lst-02" style="--grid-t-col:3; --m-grid-t-col:1; --mg-t:20px; --m-mg-t:5.56vw;">
+										<li>
+											<div style="--dp:flex; --content:space-between; --items:center;">
+												<span class="chip-type-01-red">미이수</span>
+												<label class="form-opt-chk-01">
+													<input type="checkbox">
+													<span class="opt-txt"></span>
+												</label>
+											</div>
+											<h3 class="txt-18-28 layout-ellipsis"><b>과정명이 한줄로 노출됩니다과정명이 한줄로 노출됩니다</b></h3>
+											<div class="div-v-03 txt-14-24">
+												<span>컴퓨터공학전공</span>
+												<span>2-2</span>
+												<span>2학점 (2시간)</span>
+											</div>
+										</li>
+										<li>
+											<div style="--dp:flex; --content:space-between; --items:center;">
+												<span class="chip-type-01-gry">이수</span>
+												<label class="form-opt-chk-01">
+													<input type="checkbox">
+													<span class="opt-txt"></span>
+												</label>
+											</div>
+											<h3 class="txt-18-28 layout-ellipsis"><b>과정명이 한줄로 노출됩니다과정명이 한줄로 노출됩니다</b></h3>
+											<div class="div-v-03 txt-14-24">
+												<span>컴퓨터공학전공</span>
+												<span>2-2</span>
+												<span>2학점 (2시간)</span>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div>
+									<p><b>2024.09.29</b></p>
+									<ul class="brd-lst-02" style="--grid-t-col:3; --m-grid-t-col:1; --mg-t:20px; --m-mg-t:5.56vw;">
+										<li>
+											<div style="--dp:flex; --content:space-between; --items:center;">
+												<span class="chip-type-01-red">미이수</span>
+												<label class="form-opt-chk-01">
+													<input type="checkbox">
+													<span class="opt-txt"></span>
+												</label>
+											</div>
+											<h3 class="txt-18-28 layout-ellipsis"><b>과정명이 한줄로 노출됩니다과정명이 한줄로 노출됩니다</b></h3>
+											<div class="div-v-03 txt-14-24">
+												<span>컴퓨터공학전공</span>
+												<span>2-2</span>
+												<span>2학점 (2시간)</span>
+											</div>
+										</li>
+										<li>
+											<div style="--dp:flex; --content:space-between; --items:center;">
+												<span class="chip-type-01-gry">이수</span>
+												<label class="form-opt-chk-01">
+													<input type="checkbox">
+													<span class="opt-txt"></span>
+												</label>
+											</div>
+											<h3 class="txt-18-28 layout-ellipsis"><b>과정명이 한줄로 노출됩니다과정명이 한줄로 노출됩니다</b></h3>
+											<div class="div-v-03 txt-14-24">
+												<span>컴퓨터공학전공</span>
+												<span>2-2</span>
+												<span>2학점 (2시간)</span>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div data-include="../include/paging.html"></div>
+						</p-tab-panel>
+						<p-tab-panel value="3">
+							<div class="box-type-03">
+								<div style="--gap:30px; --m-flex-d:column; --m-gap:5.56vw;">
+									<div>
+										<b>보관일</b>
+										<div style="--gap:4px; --items:center; --mg-t:16px; --m-mg-t:3.33vw; --m-gap:0.69vw;">
+											<p-date-picker class="form-txt-date" placeholder="YYYY.MM.DD" show-icon></p-date-picker>
+											~
+											<p-date-picker class="form-txt-date" placeholder="YYYY.MM.DD" show-icon></p-date-picker>
+										</div>
+									</div>
+									<div class="flex-1">
+										<b>비교과프로그램명</b>
+										<div style="--gap:12px; --items:center; --mg-t:16px; --m-mg-t:3.33vw; --m-gap:1.67vw;">
+											<div class="form-txt">
+												<p-input placeholder="비교과프로그램명"></p-input>
+											</div>
+											<a href="#" class="btn-type-b" style="--btn-w:92px; --m-btn-w:23.19vw;">검색</a>
+										</div>
+									</div>
+								</div>
+								<div style="--flex-d:column; --gap:20px; --mg-t:24px; --m-gap:5.56vw; --m-mg-t:5.56vw;">
+									<div style="--gap:40px; --items:center; --m-gap:3.33vw; --m-flex-d:column; --m-items:flex-start;">
+										<b class="ws-nw">상태</b>
+										<div data-scroll="xh">
+											<div style="--gap:12px; --m-gap:1.67vw;">
+												<label class="form-opt-btn-02">
+													<input type="radio">
+													<span class="opt-txt">전체</span>
+												</label>
+												<label class="form-opt-btn-02">
+													<input type="radio">
+													<span class="opt-txt">오픈예정</span>
+												</label>
+												<label class="form-opt-btn-02">
+													<input type="radio">
+													<span class="opt-txt">신청중</span>
+												</label>
+												<label class="form-opt-btn-02">
+													<input type="radio">
+													<span class="opt-txt">신청마감</span>
+												</label>
+												<label class="form-opt-btn-02">
+													<input type="radio">
+													<span class="opt-txt">종료</span>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div style="--content:space-between; --items:center; --mg-t:24px; --m-mg-t:5.56vw;">
+								<p class="brd-tot">총 <q>10</q>개</p>
+								<p-select class="form-sel-01" placeholder="최근 등록순" panel-class="form-panel-sel" :options="['전체', '제목', '내용', '제목+내용', '작성자']"></p-select>
+							</div>
+
+							<div style="--flex-d:column; --gap:60px; --mg-t:24px; --m-gap:8.33vw; --m-mg-t:3.33vw;">
+								<div>
+									<p><b>2024.09.29</b></p>
+									<ul class="brd-lst-02" style="--grid-t-col:3; --m-grid-t-col:1; --mg-t:40px; --m-mg-t:5.56vw;">
+										<li>
+											<div style="--dp:flex; --content:space-between; --items:center;">
+												<div style="--dp:flex; --items:center; --gap:12px; --m-gap:2.78vw; --ft-c:#666;">
+													<span class="chip-type-01-red">예정</span>
+													<span style="--ft-s:14px; --m-ft-s:3.33vw;">취업지원처</span>
+												</div>
+												<label class="form-opt-chk-01">
+													<input type="checkbox">
+													<span class="opt-txt"></span>
+												</label>
+											</div>
+
+											<h3 class="txt-18-28 layout-ellipsis"><b>비교과명이 노출됩니다.비교과명이 노출됩니다.</b></h3>
+											<div style="--mg-t:10px; --m-mg-t:2.5vw;">
+												<p><span style="--ft-c:#666;">신청기간</span> <b>2024.08.19(수) ~ 2024.08.23(금)</b></p>
+												<p><span style="--ft-c:#666;">운영기간</span> <b>2024.08.19(수) ~ 2024.08.23(금)</b></p>
+											</div>
+										</li>
+										<li>
+											<div style="--dp:flex; --content:space-between; --items:center;">
+												<div style="--dp:flex; --items:center; --gap:12px; --m-gap:2.78vw; --ft-c:#666;">
+													<span class="chip-type-01-gry">종료</span>
+													<span style="--ft-s:14px; --m-ft-s:3.33vw;">취업지원처</span>
+												</div>
+												<label class="form-opt-chk-01">
+													<input type="checkbox">
+													<span class="opt-txt"></span>
+												</label>
+											</div>
+											<h3 class="txt-18-28 layout-ellipsis"><b>비교과명이 노출됩니다.비교과명이 노출됩니다.</b></h3>
+											<div style="--mg-t:10px; --m-mg-t:2.5vw;">
+												<p><span style="--ft-c:#666;">신청기간</span> <b>2024.08.19(수) ~ 2024.08.23(금)</b></p>
+												<p><span style="--ft-c:#666;">운영기간</span> <b>2024.08.19(수) ~ 2024.08.23(금)</b></p>
+											</div>
+										</li>
+										<li>
+											<div style="--dp:flex; --content:space-between; --items:center;">
+												<div style="--dp:flex; --items:center; --gap:12px; --m-gap:2.78vw; --ft-c:#666;">
+													<span class="chip-type-01-pur-02">진행</span>
+													<span style="--ft-s:14px; --m-ft-s:3.33vw;">취업지원처</span>
+												</div>
+												<label class="form-opt-chk-01">
+													<input type="checkbox">
+													<span class="opt-txt"></span>
+												</label>
+											</div>
+											<h3 class="txt-18-28 layout-ellipsis"><b>비교과명이 노출됩니다.비교과명이 노출됩니다.</b></h3>
+											<div style="--mg-t:10px; --m-mg-t:2.5vw;">
+												<p><span style="--ft-c:#666;">신청기간</span> <b>2024.08.19(수) ~ 2024.08.23(금)</b></p>
+												<p><span style="--ft-c:#666;">운영기간</span> <b>2024.08.19(수) ~ 2024.08.23(금)</b></p>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div>
+									<p><b>2024.09.29</b></p>
+									<ul class="brd-lst-02" style="--grid-t-col:3; --m-grid-t-col:1; --mg-t:40px; --m-mg-t:5.56vw;">
+										<li>
+											<div style="--dp:flex; --content:space-between; --items:center;">
+												<div style="--dp:flex; --items:center; --gap:12px; --m-gap:2.78vw; --ft-c:#666;">
+													<span class="chip-type-01-red">예정</span>
+													<span style="--ft-s:14px; --m-ft-s:3.33vw;">취업지원처</span>
+												</div>
+												<label class="form-opt-chk-01">
+													<input type="checkbox">
+													<span class="opt-txt"></span>
+												</label>
+											</div>
+
+											<h3 class="txt-18-28 layout-ellipsis"><b>비교과명이 노출됩니다.비교과명이 노출됩니다.</b></h3>
+											<div style="--mg-t:10px; --m-mg-t:2.5vw;">
+												<p><span style="--ft-c:#666;">신청기간</span> <b>2024.08.19(수) ~ 2024.08.23(금)</b></p>
+												<p><span style="--ft-c:#666;">운영기간</span> <b>2024.08.19(수) ~ 2024.08.23(금)</b></p>
+											</div>
+										</li>
+										<li>
+											<div style="--dp:flex; --content:space-between; --items:center;">
+												<div style="--dp:flex; --items:center; --gap:12px; --m-gap:2.78vw; --ft-c:#666;">
+													<span class="chip-type-01-gry">종료</span>
+													<span style="--ft-s:14px; --m-ft-s:3.33vw;">취업지원처</span>
+												</div>
+												<label class="form-opt-chk-01">
+													<input type="checkbox">
+													<span class="opt-txt"></span>
+												</label>
+											</div>
+											<h3 class="txt-18-28 layout-ellipsis"><b>비교과명이 노출됩니다.비교과명이 노출됩니다.</b></h3>
+											<div style="--mg-t:10px; --m-mg-t:2.5vw;">
+												<p><span style="--ft-c:#666;">신청기간</span> <b>2024.08.19(수) ~ 2024.08.23(금)</b></p>
+												<p><span style="--ft-c:#666;">운영기간</span> <b>2024.08.19(수) ~ 2024.08.23(금)</b></p>
+											</div>
+										</li>
+										<li>
+											<div style="--dp:flex; --content:space-between; --items:center;">
+												<div style="--dp:flex; --items:center; --gap:12px; --m-gap:2.78vw; --ft-c:#666;">
+													<span class="chip-type-01-pur-02">진행</span>
+													<span style="--ft-s:14px; --m-ft-s:3.33vw;">취업지원처</span>
+												</div>
+												<label class="form-opt-chk-01">
+													<input type="checkbox">
+													<span class="opt-txt"></span>
+												</label>
+											</div>
+											<h3 class="txt-18-28 layout-ellipsis"><b>비교과명이 노출됩니다.비교과명이 노출됩니다.</b></h3>
+											<div style="--mg-t:10px; --m-mg-t:2.5vw;">
+												<p><span style="--ft-c:#666;">신청기간</span> <b>2024.08.19(수) ~ 2024.08.23(금)</b></p>
+												<p><span style="--ft-c:#666;">운영기간</span> <b>2024.08.19(수) ~ 2024.08.23(금)</b></p>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div data-include="../include/paging.html"></div>
+						</p-tab-panel>
+						<p-tab-panel value="4">
+							<div class="box-type-03">
+								<div style="--gap:30px; --m-flex-d:column; --m-gap:5.56vw;">
+									<div>
+										<b>보관일</b>
+										<div style="--gap:4px; --items:center; --mg-t:16px; --m-mg-t:3.33vw; --m-gap:0.69vw;">
+											<p-date-picker class="form-txt-date" placeholder="YYYY.MM.DD" show-icon></p-date-picker>
+											~
+											<p-date-picker class="form-txt-date" placeholder="YYYY.MM.DD" show-icon></p-date-picker>
+										</div>
+									</div>
+									<div class="flex-1">
+										<b>자격명/발급기관</b>
+										<div style="--gap:12px; --items:center; --mg-t:16px; --m-mg-t:3.33vw; --m-gap:1.67vw;">
+											<div class="form-txt">
+												<p-input placeholder="자격명 또는 발급기관"></p-input>
+											</div>
+											<a href="#" class="btn-type-b" style="--btn-w:92px; --m-btn-w:23.19vw;">검색</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div style="--content:space-between; --items:center; --mg-t:24px; --m-mg-t:5.56vw;">
+								<p class="brd-tot">총 <q>10</q>개</p>
+								<p-select class="form-sel-01" placeholder="최근 등록순" panel-class="form-panel-sel" :options="['전체', '제목', '내용', '제목+내용', '작성자']"></p-select>
+							</div>
+
+							<div style="--flex-d:column; --gap:60px; --mg-t:24px; --m-gap:8.33vw; --m-mg-t:3.33vw;">
+								<div>
+									<p><b>2024.09.29</b></p>
+									<ul class="brd-lst-02" style="--grid-t-col:3; --m-grid-t-col:1; --mg-t:20px; --m-mg-t:5.56vw;">
+										<li>
+											<div style="--dp:flex; --content:space-between; --items:center;">
+												<h3 class="txt-18-28 layout-ellipsis"><b>과정명이 한줄로 노출됩니다과정명이 한줄로 노출됩니다</b></h3>
+												<label class="form-opt-chk-01">
+													<input type="checkbox">
+													<span class="opt-txt"></span>
+												</label>
+											</div>
+											<p>자격증 발행처가 노출됩니다.</p>
+										</li>
+										<li>
+											<div style="--dp:flex; --content:space-between; --items:center;">
+												<h3 class="txt-18-28 layout-ellipsis"><b>과정명이 한줄로 노출됩니다과정명이 한줄로 노출됩니다</b></h3>
+												<label class="form-opt-chk-01">
+													<input type="checkbox">
+													<span class="opt-txt"></span>
+												</label>
+											</div>
+											<p>자격증 발행처가 노출됩니다.</p>
+										</li>
+									</ul>
+								</div>
+								<div>
+									<p><b>2024.09.29</b></p>
+									<ul class="brd-lst-02" style="--grid-t-col:3; --m-grid-t-col:1; --mg-t:20px; --m-mg-t:5.56vw;">
+										<li>
+											<div style="--dp:flex; --content:space-between; --items:center;">
+												<h3 class="txt-18-28 layout-ellipsis"><b>과정명이 한줄로 노출됩니다과정명이 한줄로 노출됩니다</b></h3>
+												<label class="form-opt-chk-01">
+													<input type="checkbox">
+													<span class="opt-txt"></span>
+												</label>
+											</div>
+											<p>자격증 발행처가 노출됩니다.</p>
+										</li>
+										<li>
+											<div style="--dp:flex; --content:space-between; --items:center;">
+												<h3 class="txt-18-28 layout-ellipsis"><b>과정명이 한줄로 노출됩니다과정명이 한줄로 노출됩니다</b></h3>
+												<label class="form-opt-chk-01">
+													<input type="checkbox">
+													<span class="opt-txt"></span>
+												</label>
+											</div>
+											<p>자격증 발행처가 노출됩니다.</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div data-include="../include/paging.html"></div>
+						</p-tab-panel>
+					</p-tab-panels>
+				</p-tabs>
+			</div>
+		</div>
+
+		<!-- 푸터 -->
+		<div data-include="../include/footer.html"></div>
+	</body>
+</html>

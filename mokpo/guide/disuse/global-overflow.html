@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="대구가톨릭">
+		<meta name="description" content="대구가톨릭">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script type="module" src="../js/pub.js"></script>
+		<link rel="stylesheet" href="../css/global.css">
+		<link rel="stylesheet" href="../css/workspace.css">
+		<style>
+			.workspace-guide-inner div {border:1px solid red;}
+		</style>
+	</head>
+	<body>
+		<div class="workspace-guide">
+			<!-- Information -->
+			<div class="workspace-guide-case">
+				<h1>Information</h1>
+				<ul class="workspace-guide-prop">
+					<li>
+						<div style="--dp:grid; --grid-t-col:3;">
+							<p class="workspace-guide-prop-desc">overflow</p>
+							<p class="workspace-guide-prop-desc">overflow-x</p>
+							<p class="workspace-guide-prop-desc">overflow-y</p>
+						</div>
+						<div style="--dp:grid; --grid-t-col:3;">
+							<p class="workspace-guide-prop-name">ovf</p>
+							<p class="workspace-guide-prop-name">ovf-x</p>
+							<p class="workspace-guide-prop-name">ovf-y</p>
+						</div>
+						<div style="--dp:grid; --grid-t-col:4;">
+							<p class="workspace-guide-prop-value">visible</p>
+							<p class="workspace-guide-prop-value">hidden</p>
+							<p class="workspace-guide-prop-value">clip</p>
+							<p class="workspace-guide-prop-value">scroll</p>
+							<p class="workspace-guide-prop-value">auto</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<hr> <!-- Scroll -->
+			<div class="workspace-guide-case">
+				<h1>Scroll</h1>
+				<div style="--dp:grid; --grid-t-col:3; --items-y:flex-start; --gap-a:20px;">
+					<div class="workspace-guide-inner">
+						<div style="--w:100px; --h:100px; --ovf:auto;">
+							<div style="--w:300px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div style="--w:100px; --ovf-x:auto;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<div style="--h:50px; --ovf-y:auto;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+					</div>
+					<div class="workspace-guide-inner" style="--grid-col:3;">
+						<xmp>
+							<div style="--w:100px; --h:100px; --ovf:auto;">
+								<div style="--w:300px;"></div>
+							</div>
+						</xmp>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

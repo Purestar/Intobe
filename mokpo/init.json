@@ -1,0 +1,112 @@
+{
+	"Setting": {
+		"breakPoint": [1200, 1024],
+		"breakPointUnit": ["px", "vw"],
+		"device": ["360px", "768px", "1024px", "1200px", "100%"],
+		"project": "Intobe Project"
+	},
+
+	"MenuList": [
+		{
+			"id": "Path",
+			"submenu": [
+				{ "id": "공통", "submenu": [
+					{ "menu": "레이아웃", "src": "./page/layout.html", "state": "comp" },
+					{ "menu": "팝업", "src": "./page/popup.html", "state": "comp" }
+				], "state": "comp"},
+				{ "menu": "로그인", "src": "./page/ULO_010000.html", "state": "comp" },
+				{ "id": "진입", "submenu": [
+					{ "menu": "희망기업설정", "src": "./page/UFE_010000.html", "state": "comp" },
+					{ "menu": "희망직업설정", "src": "./page/UFE_020000.html", "state": "comp" }
+				], "state": "comp"},
+				{ "menu": "메인", "src": "./page/UMA_010000.html", "state": "comp" },
+				{ "id": "진로탐색", "submenu": [
+					{ "id": "직업", "submenu": [
+						{ "menu": "목록", "src": "./page/UCE_010100.html", "state": "comp" },
+						{ "menu": "상세", "src": "./page/UCE_010201.html", "state": "comp" }
+					], "state": "comp" },
+					{ "id": "AI선배", "submenu": [
+						{ "menu": "목록", "src": "./page/UCE_020100_02.html", "state": "comp" },
+						{ "menu": "찾기결과", "src": "./page/UCE_020200.html", "state": "comp" },
+						{ "menu": "상세", "src": "./page/UCE_020301.html", "state": "comp" }
+					], "state": "comp" },
+					{ "menu": "학과탐색", "src": "./page/UCE_030100.html", "state": "comp" }
+				], "state": "comp"},
+				{ "id": "메이저맵", "submenu": [
+					{ "menu": "목록", "src": "./page/UMM_010000.html", "state": "comp" },
+					{ "menu": "상세", "src": "./page/UMM_020000.html", "state": "comp" },
+					{ "menu": "등록/수정", "src": "./page/UMM_030100.html", "state": "comp" }
+				], "state": "comp"},
+				{ "id": "커리어관리", "submenu": [
+					{ "menu": "홈", "src": "./page/UCA_010100.html", "state": "comp" },
+					{ "menu": "취업스펙분석", "src": "./page/UCA_020000_02.html", "state": "comp" },
+					{ "menu": "스펙정보", "src": "./page/UCA_030000.html", "state": "comp" },
+					{ "id": "자기소개서", "submenu": [
+						{ "menu": "목록", "src": "./page/UCA_030100.html", "state": "comp" },
+						{ "menu": "등록/수정", "src": "./page/UCA_030200.html", "state": "comp" },
+						{ "menu": "상세", "src": "./page/UCA_030300.html", "state": "comp" }
+					], "state": "comp" },
+					{ "menu": "포트폴리오", "src": "./page/UCA_040100.html", "state": "comp" },
+					{ "id": "이력서", "submenu": [
+						{ "menu": "목록", "src": "./page/UCA_050100.html", "state": "comp" },
+						{ "menu": "등록/수정", "src": "./page/UCA_050201.html", "state": "comp" },
+						{ "menu": "상세", "src": "./page/UCA_050300.html", "state": "comp" }
+					], "state": "comp" }
+				], "state": "comp"},
+				{ "id": "멘토링", "submenu": [
+					{ "id": "멘토", "submenu": [
+						{ "id": "멘토 신청 안내", "submenu": [
+							{ "menu": "멘토 신청 안내", "src": "./page/UME_010100.html", "state": "comp" },
+							{ "menu": "신청서 작성", "src": "./page/UME_010200.html", "state": "comp" }
+						], "state": "comp" },
+						{ "id": "나의 멘토링", "submenu": [
+							{ "menu": "목록", "src": "./page/UME_020101.html", "state": "comp" },
+							{ "menu": "상세", "src": "./page/UME_020102.html", "state": "comp" }
+						], "state": "comp" }
+					], "state": "comp" },
+					{ "id": "멘티", "submenu": [
+						{ "menu": "멘티 신청", "src": "./page/UME_030100.html", "state": "comp" },
+						{ "id": "나의 멘토링", "submenu": [
+							{ "menu": "목록", "src": "./page/UME_040101.html", "state": "comp" },
+							{ "menu": "멘토 홈", "src": "./page/UME_040102.html", "state": "comp" },
+							{ "menu": "작성", "src": "./page/UME_040103.html", "state": "comp" },
+							{ "menu": "상세", "src": "./page/UME_040104.html", "state": "comp" }
+						], "state": "comp" }
+					], "state": "comp" }
+				], "state": "comp"},
+				{ "menu": "챗봇", "src": "./page/UCH_010000.html", "state": "comp" },
+				{ "id": "e-Notice", "submenu": [
+					{ "id": "공지사항", "submenu": [
+						{ "menu": "목록", "src": "./page/UEN_010100.html", "state": "comp" },
+						{ "menu": "상세", "src": "./page/UEN_010200.html", "state": "comp" }
+					], "state": "comp" },
+					{ "menu": "FAQ", "src": "./page/UEN_050000.html", "state": "comp" },
+					{ "id": "유학생 지원 정보", "submenu": [
+						{ "menu": "목록", "src": "./page/UEN_020100.html", "state": "comp" },
+						{ "menu": "상세", "src": "./page/UEN_020200.html", "state": "comp" }
+					], "state": "comp" },
+					{ "id": "설문조사", "submenu": [
+						{ "menu": "목록", "src": "./page/UEN_030100.html", "state": "comp" },
+						{ "menu": "상세", "src": "./page/UEN_030200.html", "state": "comp" }
+					], "state": "comp" },
+					{ "id": "Q&A", "submenu": [
+						{ "menu": "목록", "src": "./page/UEN_040100.html", "state": "comp" },
+						{ "menu": "등록/수정", "src": "./page/UEN_040200.html", "state": "comp" },
+						{ "menu": "상세", "src": "./page/UEN_040300.html", "state": "comp" }
+					], "state": "comp" }
+				], "state": "comp"},
+				{ "menu": "보관함", "src": "./page/UST_010000.html", "state": "comp" }
+			],
+			"state": "comp"
+		},
+		{
+			"id": "Guide",
+			"submenu": [
+				{ "menu": "primeVue", "src": "https://primevue.org/", "state": "comp" },
+				{ "menu": "vw calculator", "src": "http://publishing.kr/vw/", "state": "comp" },
+				{ "menu": "UI Guide", "src": "./storybook-static/", "state": "comp" }
+			],
+			"state": "comp"
+		}
+	]
+}

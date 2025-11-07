@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="Management">
+		<meta name="description" content="Management">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script type="module" src="../js/index.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
+		<script type="module" src="../js/module.js"></script>
+		<script src="../js/pub.js"></script>
+		<link rel="icon" href="../favicon.ico" sizes="any">
+		<link rel="stylesheet" href="../css/global.css">
+	</head>
+	<body>
+		<!-- 헤더 -->
+		<div class="sub-header">
+			<div data-include="../include/header.html"></div>
+		</div>
+
+		<!-- 본문 -->
+		<div id="container">
+			<div class="layout-inner sub-layout">
+				<div style="--content:space-between; --m-flex-d:column; --m-gap:4.44vw;">
+					<div style="--gap:24px; --items:center; --m-gap:3.89vw;">
+						<h2 class="txt-28-36"><strong>희망 진로</strong></h2>
+						<div style="--gap:12px; --m-gap:2.22vw;">
+							<button type="button" class="btn-type-pur btn-sz-34">희망기업<i class="ic-setting"></i></button>
+							<button type="button" class="btn-type btn-sz-34">희망직무<i class="ic-setting"></i></button>
+						</div>
+					</div>
+					<p style="--gap:12px; --items:center; --m-gap:1.67vw;"><i class="ic-info"></i>희망진로를 클릭해 나의 취업스펙 분석결과를 확인할 수 있습니다.</p>
+				</div>
+
+				<!-- 동문취업 -->
+				<p class="txt-24-32" style="--ft-c:black; --mg-t:80px; --m-mg-t:11.11vw;"><strong><span style="--ft-c:#a6165f;">동문취업</span></strong> 데이터를 기반으로 취업스펙을 분석했어요!</p>
+				<div style="--gap:10px; --mg-t:40px; --m-mg-t:5.56vw; --items:center; --m-flex-d:column;">
+					<div style="--w:808px; --m-w:100%;">
+						<h3 class="txt-20-32"><b>평균 취업 스펙</b></h3>
+						<div class="box-type-02" style="--box-pd-x:0; --box-pd-y:28px; --mg-t:24px; --m-mg-t:3.33vw; --m-box-pd-y:5.56vw;">
+							<ul class="div-v-03-03 div-grid cr-blk" style="--div-grid-t-col:8; --m-div-grid-t-col:4;">
+								<li><p><b>평균평점</b><br><strong class="txt-18-26">0.19</strong></p></li>
+								<li><p><b>TOEIC</b><br><strong class="txt-18-26">110</strong>점</p></li>
+								<li><p><b>어학성적</b><br><strong class="txt-18-26">2</strong>개</p></li>
+								<li><p><b>자격증</b><br><strong class="txt-18-26">2</strong>개</p></li>
+								<li><p><b>교육이수</b><br><strong class="txt-18-26">0</strong>회</p></li>
+								<li><p><b>대회활동</b><br><strong class="txt-18-26">0</strong>회</p></li>
+								<li><p><b>해외경험</b><br><strong class="txt-18-26">1</strong>회</p></li>
+								<li><p><b>수상이력</b><br><strong class="txt-18-26">0</strong>회</p></li>
+							</ul>
+						</div>
+						<h3 class="txt-20-32" style="--mg-t:60px; --m-mg-t:8.33vw;"><b>스펙 진단 결과</b></h3>
+						<div class="box-type-02" style="--ovf:hidden; --box-pd-x:0; --box-pd-y:28px; --mg-t:24px; --m-mg-t:3.33vw; --m-box-pd-y:5.56vw;">
+							<ul class="div-v-03-03 div-grid cr-blk" style="--div-grid-t-col:8; --m-div-grid-t-col:4;">
+								<li><p><b>평균평점</b><br><strong class="txt-18-26"><span style="--ft-c:#326ee9;">0.19</span></strong><span style="--ft-c:#326ee9;">점</span> <i class="ic-d-arr-01"></i></p></li>
+								<li><p><b>TOEIC</b><br><strong class="txt-18-26"><em>110</em></strong><em>점</em> <i class="ic-u-arr-03"></i></p></li>
+								<li><p><b>어학성적</b><br><strong class="txt-18-26"><em>2</em></strong><em>개</em> <i class="ic-u-arr-03"></i></p></li>
+								<li><p><b>자격증</b><br><strong class="txt-18-26"><em>2</em></strong><em>개</em> <i class="ic-u-arr-03"></i></p></li>
+								<li><p><b>교육이수</b><br><strong class="txt-18-26">-</strong></p></li>
+								<li><p><b>대회활동</b><br><strong class="txt-18-26">-</strong></p></li>
+								<li><p><b>해외경험</b><br><strong class="txt-18-26">-</strong></p></li>
+								<li><p><b>수상이력</b><br><strong class="txt-18-26">-</strong></p></li>
+							</ul>
+							<div class="box-type-03" style="--box-bd-r:0; --txt-a:center; --mg-t:24px; --m-mg-t:5.56vw; --mg-b:-28px; --m-mg-b:-5.56vw;">
+								<b>홍길동</b>님이 취업을 희망하는 <b>삼성전자</b> 취업자의<br class="mobile"> 평균 스펙과 비교했을 때<br class="pc"> <b>평균평점, TOEIC점수</b> 상승과<br class="mobile"> <b>어학성적, 자격증, 교육이수</b> 경험이 더욱 필요합니다.
+							</div>
+						</div>
+					</div>
+					<div class="flex-1" style="--m-w:100%; --m-mg-t:8.33vw;">
+						<div id="avgSpecStat" class="e-chart-wrap" style="--w:172px; --h:236px; --m-w:100%; --m-h:63.47vw;"></div>
+						<ul class="bul-cir-02 cr-blk txt-14-24" style="--flex-d:row; --content:center; --mg-t:36px; --m-mg-t:5.56vw; --m-flex-d:row;">
+							<li style="--bul-c:#b3dd63;">나</li>
+							<li style="--bul-c:#26abd0;">전체평균</li>
+						</ul>
+					</div>
+				</div>
+				<h3 class="txt-20-32" style="--mg-t:60px; --m-mg-t:8.33vw;"><b>해당 기업에 합격한<br class="mobile"> 선배들의 전공을 확인해보세요!</b></h3>
+				<ul class="lst-item-03-01" style="--mg-t:24px; --m-mg-t:3.33vw; --gap-x:40px; --grid-t-col:3; --m-grid-t-col:1; --m-gap-y:2.22vw;">
+					<li>
+						<p class="lst-tit">경제학과</p>
+						<div style="--gap:16px; --m-gap:3.89vw; --items:center;">
+							<strong class="txt-18-28">60%</strong>
+							<label class="form-opt-chk-01">
+								<input type="checkbox">
+								<span class="opt-txt"></span>
+							</label>
+						</div>
+					</li>
+					<li>
+						<p class="lst-tit">컴퓨터 인공지능 학부</p>
+						<div style="--gap:16px; --m-gap:3.89vw; --items:center;">
+							<strong class="txt-18-28">30%</strong>
+							<label class="form-opt-chk-01">
+								<input type="checkbox">
+								<span class="opt-txt"></span>
+							</label>
+						</div>
+					</li>
+					<li>
+						<p class="lst-tit">고분자나노공학</p>
+						<div style="--gap:16px; --m-gap:3.89vw; --items:center;">
+							<strong class="txt-18-28">10%</strong>
+							<label class="form-opt-chk-01">
+								<input type="checkbox">
+								<span class="opt-txt"></span>
+							</label>
+						</div>
+					</li>
+				</ul>
+
+				<!-- 국내기업 -->
+				<p class="txt-24-32" style="--ft-c:black; --mg-t:80px; --m-mg-t:11.11vw;"><strong><span style="--ft-c:var(--mc);">국내기업</span></strong> 데이터를 기반으로 취업스펙을 분석했어요!</p>
+				<div style="--gap:10px; --mg-t:40px; --m-mg-t:5.56vw; --items:center; --m-flex-d:column;">
+					<div style="--w:808px; --m-w:100%;">
+						<h3 class="txt-20-32"><b>평균 취업 스펙</b></h3>
+						<div class="box-type-02" style="--box-pd-x:0; --box-pd-y:28px; --mg-t:24px; --m-mg-t:3.33vw; --m-box-pd-y:5.56vw;">
+							<ul class="div-v-03-03 div-grid cr-blk" style="--div-grid-t-col:8; --m-div-grid-t-col:4;">
+								<li><p><b>평균평점</b><br><strong class="txt-18-26">0.19</strong></p></li>
+								<li><p><b>TOEIC</b><br><strong class="txt-18-26">110</strong>점</p></li>
+								<li><p><b>어학성적</b><br><strong class="txt-18-26">2</strong>개</p></li>
+								<li><p><b>자격증</b><br><strong class="txt-18-26">2</strong>개</p></li>
+								<li><p><b>교육이수</b><br><strong class="txt-18-26">0</strong>회</p></li>
+								<li><p><b>대회활동</b><br><strong class="txt-18-26">0</strong>회</p></li>
+								<li><p><b>해외경험</b><br><strong class="txt-18-26">1</strong>회</p></li>
+								<li><p><b>수상이력</b><br><strong class="txt-18-26">0</strong>회</p></li>
+							</ul>
+						</div>
+						<h3 class="txt-20-32" style="--mg-t:60px; --m-mg-t:8.33vw;"><b>스펙 진단 결과</b></h3>
+						<div class="box-type-02" style="--ovf:hidden; --box-pd-x:0; --box-pd-y:28px; --mg-t:24px; --m-mg-t:3.33vw; --m-box-pd-y:5.56vw;">
+							<ul class="div-v-03-03 div-grid cr-blk" style="--div-grid-t-col:8; --m-div-grid-t-col:4;">
+								<li><p><b>평균평점</b><br><strong class="txt-18-26"><em>0.19</em></strong><em>점</em> <i class="ic-u-arr-03"></i></p></li>
+								<li><p><b>TOEIC</b><br><strong class="txt-18-26"><em>110</em></strong><em>점</em> <i class="ic-u-arr-03"></i></p></li>
+								<li><p><b>어학성적</b><br><strong class="txt-18-26"><em>2</em></strong><em>개</em> <i class="ic-u-arr-03"></i></p></li>
+								<li><p><b>자격증</b><br><strong class="txt-18-26"><em>2</em></strong><em>개</em> <i class="ic-u-arr-03"></i></p></li>
+								<li><p><b>교육이수</b><br><strong class="txt-18-26">-</strong></p></li>
+								<li><p><b>대회활동</b><br><strong class="txt-18-26">-</strong></p></li>
+								<li><p><b>해외경험</b><br><strong class="txt-18-26">-</strong></p></li>
+								<li><p><b>수상이력</b><br><strong class="txt-18-26">-</strong></p></li>
+							</ul>
+							<div class="box-type-03" style="--box-bd-r:0; --txt-a:center; --mg-t:24px; --m-mg-t:5.56vw; --mg-b:-28px; --m-mg-b:-5.56vw;">
+								<b>홍길동</b>님이 취업을 희망하는 <b>삼성전자</b> 취업자의<br class="mobile"> 평균 스펙과 비교했을 때<br class="pc"> <b>평균평점, TOEIC점수</b> 상승과<br class="mobile"> <b>어학성적, 자격증, 교육이수</b> 경험이 더욱 필요합니다.
+							</div>
+						</div>
+					</div>
+					<div class="flex-1" style="--m-w:100%; --m-mg-t:8.33vw;">
+						<div id="avgSpecStat02" class="e-chart-wrap" style="--w:172px; --h:236px; --m-w:100%; --m-h:63.47vw;"></div>
+						<ul class="bul-cir-02 cr-blk txt-14-24" style="--flex-d:row; --content:center; --mg-t:36px; --m-mg-t:5.56vw; --m-flex-d:row;">
+							<li style="--bul-c:#b3dd63;">나</li>
+							<li style="--bul-c:#26abd0;">전체평균</li>
+						</ul>
+					</div>
+				</div>
+
+				<h3 class="txt-20-32" style="--mg-t:60px; --m-mg-t:8.33vw;"><b>AI Job 추천기업</b></h3>
+				<p-aco class="aco-type-02" value="0" style="--aco-cont-pd-a:30px; --mg-t:24px; --m-aco-cont-pd-a:5.56vw; --m-mg-t:3.33vw;">
+					<p-aco-item class="aco-item" value="0">
+						<p-aco-head class="aco-head">
+							<!-- PC 아코디언 헤드 -->
+							<div class="pc" style="--w:100%;">
+								<div style="--content:space-between; --gap:0;">
+									<div style="--gap:20px; --items:center; --m-flex-d:column; --m-items:flex-start; --m-gap:1.67vw;">
+										<h4 class="txt-20-28"><b>삼성전자</b></h4>
+										<span style="--ft-s:16px; --ft-c:#666;">경기도 수원시 영통구 삼성로 129(매탄동)</span>
+									</div>
+									<div style="--gap:40px; --ft-s:16px;">
+										<div style="--gap:16px; --items:center;">
+											<b>AI 추천율</b>
+											<strong><q>100%</q></strong>
+										</div>
+										<div style="--gap:20px; --items:center;">
+											<p class="pc" style="--ft-s:14px;">취업자 평균 스펙</p>
+											<i class="aco-icon"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- 모바일 아코디언 헤드 -->
+							<div class="mobile" style="--w:100%;">
+								<div style="--content:space-between; --gap:0;">
+									<h4 class="txt-20-28"><b>삼성전자</b></h4>
+									<div style="--gap:4.44vw; --items:center;">
+										<div style="--gap:1.67vw; --items:center;">
+											<b>AI 추천율</b>
+											<strong><q>100%</q></strong>
+										</div>
+										<i class="aco-icon"></i>
+									</div>
+								</div>
+								<p style="--mg-t:2.22vw; --ft-s:3.33vw; --ft-c:#666;">경기도 수원시 영통구 삼성로 129(매탄동)</p>
+							</div>
+						</p-aco-head>
+						<p-aco-cont class="aco-cont">
+							<div style="--gap:10px; --mg-t:60px; --m-mg-t:11.11vw; --content:space-between; --items:center; --m-flex-d:column;">
+								<div style="--w:808px; --m-w:100%;">
+									<h3 class="txt-20-32"><b>평균 취업 스펙​</b></h3>
+									<div class="box-type-02" style="--box-pd-x:0; --box-pd-y:28px; --mg-t:24px; --m-mg-t:3.33vw; --m-box-pd-y:5.56vw;">
+										<ul class="div-v-03-03 div-grid cr-blk" style="--div-grid-t-col:8; --m-div-grid-t-col:4;">
+											<li><p><b>평균평점</b><br><strong class="txt-18-26">0.19</strong></p></li>
+											<li><p><b>TOEIC</b><br><strong class="txt-18-26">110</strong>점</p></li>
+											<li><p><b>어학성적</b><br><strong class="txt-18-26">2</strong>개</p></li>
+											<li><p><b>자격증</b><br><strong class="txt-18-26">2</strong>개</p></li>
+											<li><p><b>교육이수</b><br><strong class="txt-18-26">0</strong>회</p></li>
+											<li><p><b>대회활동</b><br><strong class="txt-18-26">0</strong>회</p></li>
+											<li><p><b>해외경험</b><br><strong class="txt-18-26">1</strong>회</p></li>
+											<li><p><b>수상이력</b><br><strong class="txt-18-26">0</strong>회</p></li>
+										</ul>
+									</div>
+									<h3 class="txt-20-32" style="--mg-t:60px; --m-mg-t:8.33vw;"><b>스펙 진단 결과</b></h3>
+									<div class="box-type-02" style="--ovf:hidden; --box-pd-x:0; --box-pd-y:28px; --mg-t:24px; --m-mg-t:3.33vw; --m-box-pd-y:5.56vw;">
+										<ul class="div-v-03-03 div-grid cr-blk" style="--div-grid-t-col:8; --m-div-grid-t-col:4;">
+											<li><p><b>평균평점</b><br><strong class="txt-18-26"><em>0.19</em></strong><em>점</em> <i class="ic-u-arr-03"></i></p></li>
+											<li><p><b>TOEIC</b><br><strong class="txt-18-26"><em>110</em></strong><em>점</em> <i class="ic-u-arr-03"></i></p></li>
+											<li><p><b>어학성적</b><br><strong class="txt-18-26"><em>2</em></strong><em>개</em> <i class="ic-u-arr-03"></i></p></li>
+											<li><p><b>자격증</b><br><strong class="txt-18-26"><em>2</em></strong><em>개</em> <i class="ic-u-arr-03"></i></p></li>
+											<li><p><b>교육이수</b><br><strong class="txt-18-26">-</strong></p></li>
+											<li><p><b>대회활동</b><br><strong class="txt-18-26">-</strong></p></li>
+											<li><p><b>해외경험</b><br><strong class="txt-18-26">-</strong></p></li>
+											<li><p><b>수상이력</b><br><strong class="txt-18-26">-</strong></p></li>
+										</ul>
+										<div class="box-type-03" style="--box-bd-r:0; --txt-a:center; --mg-t:24px; --m-mg-t:5.56vw; --mg-b:-28px; --m-mg-b:-5.56vw;">
+											<b>홍길동</b>님이 취업을 희망하는 <b>삼성전자</b> 취업자의<br class="mobile"> 평균 스펙과 비교했을 때<br class="pc"> <b>평균평점, TOEIC점수</b> 상승과<br class="mobile"> <b>어학성적, 자격증, 교육이수</b> 경험이 더욱 필요합니다.
+										</div>
+									</div>
+								</div>
+								<div class="flex-1" style="--m-w:100%; --m-mg-t:8.33vw;">
+									<div id="avgSpecStat03" class="e-chart-wrap" style="--w:172px; --h:236px; --m-w:100%; --m-h:63.47vw;"></div>
+									<ul class="bul-cir-02 cr-blk txt-14-24" style="--flex-d:row; --content:center; --mg-t:36px; --m-mg-t:5.56vw; --m-flex-d:row;">
+										<li style="--bul-c:#b3dd63;">나</li>
+										<li style="--bul-c:#26abd0;">전체평균</li>
+									</ul>
+								</div>
+							</div>
+						</p-aco-cont>
+					</p-aco-item>
+					<p-aco-item class="aco-item" value="1">
+						<p-aco-head class="aco-head">
+							<!-- PC 아코디언 헤드 -->
+							<div class="pc" style="--w:100%;">
+								<div style="--content:space-between; --gap:0;">
+									<div style="--gap:20px; --items:center; --m-flex-d:column; --m-items:flex-start; --m-gap:1.67vw;">
+										<h4 class="txt-20-28"><b>광동제약</b></h4>
+										<span style="--ft-s:16px; --ft-c:#666;">전주광역시 달서구 달구벌대로309길 13 광동빌딩 3층</span>
+									</div>
+									<div style="--gap:40px; --ft-s:16px;">
+										<div style="--gap:16px; --items:center;">
+											<b>AI 추천율</b>
+											<strong><q>100%</q></strong>
+										</div>
+										<div style="--gap:20px; --items:center;">
+											<p class="pc" style="--ft-s:14px;">취업자 평균 스펙</p>
+											<i class="aco-icon"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- 모바일 아코디언 헤드 -->
+							<div class="mobile" style="--w:100%;">
+								<div style="--content:space-between; --gap:0;">
+									<h4 class="txt-20-28"><b>광동제약</b></h4>
+									<div style="--gap:4.44vw; --items:center;">
+										<div style="--gap:1.67vw; --items:center;">
+											<b>AI 추천율</b>
+											<strong><q>100%</q></strong>
+										</div>
+										<i class="aco-icon"></i>
+									</div>
+								</div>
+								<p style="--mg-t:2.22vw; --ft-s:3.33vw; --ft-c:#666;">전주광역시 달서구 달구벌대로309길 13 광동빌딩 3층</p>
+							</div>
+						</p-aco-head>
+						<p-aco-cont class="aco-cont">
+						</p-aco-cont>
+					</p-aco-item>
+				</p-aco>
+			</div>
+		</div>
+
+		<!-- 푸터 -->
+		<div data-include="../include/footer.html"></div>
+
+		<script>
+			window.addEventListener('load', () => {
+				let isMobile = window.innerWidth < 720;
+				let resizeTimeout = null;
+
+				const avgSpecStatItems = ['자격증', '어학성적', '교육이수', '대외활동', '해외경험', '수상이력'];
+
+				const createRadarOption = (items) => {
+					const reversedItems = [...items].reverse();
+
+					return {
+						color: ['#b3dd63', '#26abd0'], symbol: 'none',
+						radar: {
+							indicator: reversedItems.map(item => ({ name: item, max: 100 })),
+							name: { fontSize: isMobile ? calculatePercentage(24) : 14, textStyle: { color: '#666' } },
+							startAngle: 150
+						},
+						series: [{
+							name: '방사형 차트', type: 'radar', areaStyle: { opacity: 0.3 },
+							data: [
+								{ value: reversedItems.map(() => getRandomValue(100)), name: '나' },
+								{ value: reversedItems.map(() => getRandomValue(100)), name: '전체평균' }
+							]
+						}]
+					};
+				};
+
+				const careerPrepStatOption = {
+					grid: {
+						left: isMobile ? calculatePercentage(100) : 24,
+						right: isMobile ? calculatePercentage(100) : 24,
+						top: 0,
+						bottom: isMobile ? calculatePercentage(40) : 24,
+						containLabel: false
+					},
+					xAxis: {
+						type: 'category',
+						data: ['포트폴리오', '자기소개서', '이력서'],
+						axisLine: { show: true, lineStyle: { color: '#e2e2e2' } }, axisTick: { show: false },
+						axisLabel: {
+							interval: 0, overflow: 'break', color: '#666',
+							fontSize: isMobile ? calculatePercentage(24) : 14
+						}
+					},
+					yAxis: { type: 'value', show: false },
+					series: [
+						{
+							name: '나', type: 'bar',
+							data: [getRandomValue(100), getRandomValue(100), getRandomValue(100)],
+							barWidth: isMobile ? calculatePercentage(40) : 20,
+							barGap: 0,
+							itemStyle: {
+								color: '#b3dd63',
+								borderRadius: [isMobile ? calculatePercentage(40) : 20, isMobile ? calculatePercentage(40) : 20, 0, 0]
+							}
+						},
+						{
+							name: '전체평균', type: 'bar',
+							data: [getRandomValue(100), getRandomValue(100), getRandomValue(100)],
+							barWidth: isMobile ? calculatePercentage(40) : 20,
+							barGap: 0,
+							itemStyle: {
+								color: '#26abd0',
+								borderRadius: [isMobile ? calculatePercentage(40) : 20, isMobile ? calculatePercentage(40) : 20, 0, 0]
+							}
+						}
+					]
+				};
+
+				const avgSpecStatScore = echarts.init(document.getElementById('avgSpecStat'));
+				const avgSpecStatScore02 = echarts.init(document.getElementById('avgSpecStat02'));
+				const avgSpecStatScore03 = echarts.init(document.getElementById('avgSpecStat03'));
+
+				avgSpecStatScore.setOption(createRadarOption(avgSpecStatItems));
+				avgSpecStatScore02.setOption(createRadarOption(avgSpecStatItems));
+				avgSpecStatScore03.setOption(createRadarOption(avgSpecStatItems));
+
+				window.addEventListener('resize', () => {
+					if (resizeTimeout) clearTimeout(resizeTimeout);
+
+					resizeTimeout = setTimeout(() => {
+						isMobile = window.innerWidth < 720;
+
+						avgSpecStatScore.setOption({
+							radar: { name: { fontSize: isMobile ? calculatePercentage(24) : 14 } }
+						});
+
+						avgSpecStatScore02.setOption({
+							radar: { name: { fontSize: isMobile ? calculatePercentage(24) : 14 } }
+						});
+
+						avgSpecStatScore.resize();
+						avgSpecStatScore02.resize();
+					}, 50);
+				});
+
+				document.querySelectorAll('.aco-head').forEach(head => {
+					head.addEventListener('click', () => {
+						const item = head.closest('.aco-item');
+						setTimeout(() => {
+						if (item.classList.contains('p-accordionpanel-active')) {
+							const chartEl = item.querySelector('#avgSpecStat03');
+							if (chartEl) {
+								const instance = echarts.getInstanceByDom(chartEl);
+								if (instance) {
+									instance.dispose();
+								}
+								const newChart = echarts.init(chartEl);
+								newChart.setOption(createRadarOption(avgSpecStatItems));
+							}
+						}
+					}, 30);
+					});
+				});
+			});
+		</script>
+	</body>
+</html>

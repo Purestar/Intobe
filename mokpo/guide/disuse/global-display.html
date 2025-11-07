@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="대구가톨릭">
+		<meta name="description" content="대구가톨릭">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script type="module" src="../js/pub.js"></script>
+		<link rel="stylesheet" href="../css/global.css">
+		<link rel="stylesheet" href="../css/workspace.css">
+		<style>
+			.workspace-guide-inner div {border:1px solid red;}
+		</style>
+	</head>
+	<body>
+		<div class="workspace-guide">
+			<!-- Information -->
+			<div class="workspace-guide-case">
+				<h1>Information</h1>
+				<ul class="workspace-guide-prop">
+					<li>
+						<span class="workspace-guide-prop-desc">display</span>
+						<span class="workspace-guide-prop-name">dp</span>
+						<div style="--dp:grid; --grid-t-col:4;">
+							<p class="workspace-guide-prop-value">none</p>
+							<p class="workspace-guide-prop-value">block</p>
+							<p class="workspace-guide-prop-value">inline</p>
+							<p class="workspace-guide-prop-value">inline-block</p>
+							<p class="workspace-guide-prop-value">list-item</p>
+							<p class="workspace-guide-prop-value">run-in</p>
+							<p class="workspace-guide-prop-value">table</p>
+							<p class="workspace-guide-prop-value">inline-table</p>
+							<p class="workspace-guide-prop-value">table-caption</p>
+							<p class="workspace-guide-prop-value">table-column-group</p>
+							<p class="workspace-guide-prop-value">table-header-group</p>
+							<p class="workspace-guide-prop-value">table-footer-group</p>
+							<p class="workspace-guide-prop-value">table-row-group</p>
+							<p class="workspace-guide-prop-value">table-row</p>
+							<p class="workspace-guide-prop-value">table-column</p>
+							<p class="workspace-guide-prop-value">table-cell</p>
+							<p class="workspace-guide-prop-value">flex</p>
+							<p class="workspace-guide-prop-value">inline-flex</p>
+							<p class="workspace-guide-prop-value">grid</p>
+							<p class="workspace-guide-prop-value">inline-grid</p>
+							<p class="workspace-guide-prop-value">block flex</p>
+							<p class="workspace-guide-prop-value">block flow</p>
+							<p class="workspace-guide-prop-value">block flow-root</p>
+							<p class="workspace-guide-prop-value">block grid</p>
+							<p class="workspace-guide-prop-value">inline flex</p>
+							<p class="workspace-guide-prop-value">inline flow</p>
+							<p class="workspace-guide-prop-value">inline flow-root</p>
+							<p class="workspace-guide-prop-value">inline grid</p>
+							<p class="workspace-guide-prop-value">ruby</p>
+							<p class="workspace-guide-prop-value">ruby-base</p>
+							<p class="workspace-guide-prop-value">ruby-text</p>
+							<p class="workspace-guide-prop-value">ruby-base-container</p>
+							<p class="workspace-guide-prop-value">ruby-text-container</p>
+							<p class="workspace-guide-prop-value">flow-root</p>
+							<p class="workspace-guide-prop-value">contents</p>
+							<p class="workspace-guide-prop-value">subgrid</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<hr> <!-- Display -->
+			<div style="--dp:grid; --grid-t-col:1; --gap-a:20px;">
+				<div class="workspace-guide-case">
+					<h1>Display</h1>
+
+					<div class="workspace-guide-inner">
+						<div style="--dp:inline-block; --m-dp:flex;">
+							<div>Box</div>
+							<div>Box</div>
+							<div>Box</div>
+							<div>Box</div>
+							<div>Box</div>
+							<div>Box</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<xmp>
+							<div style="--dp:inline-block; --m-dp:flex;"></div>
+						</xmp>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

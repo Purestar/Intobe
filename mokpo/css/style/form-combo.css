@@ -1,0 +1,101 @@
+/* Select */
+	/* Default */
+		[class*="form-sel"],
+		[class*="form-float-sel"] .p-select {
+			gap:12px;
+			background: var(--form-bg-c, var(--fom-bg));
+			border:1px solid var(--form-bd-c, var(--fom-bdr-c));
+			border-radius:var(--form-bd-r, var(--fom-br));
+			width:var(--form-w, 100%);
+			height:var(--form-h, var(--fom-h));
+			padding-left:var(--form-pd-l, var(--fom-pad));
+			padding-right:var(--form-pd-r, var(--fom-pad));
+			font-size:var(--form-ft-s, var(--fom-fs));
+			color:var(--form-ft-c, var(--fom-fc));
+			transition:border-color var(--trans-dft), border-radius var(--trans-dft);
+			cursor:pointer;
+		}
+		[class*="form-sel"] > * {flex-shrink:1;}
+		[class*="form-sel"] > .p-select-label,
+		[class*="form-sel"] > .p-multiselect-label-container,
+		[class*="form-sel"] > .p-cascadeselect-label,
+		[class*="form-float-sel"] .p-select-label {overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:var(--line, 1); word-break:break-all; width:100%; outline:0;}
+		[class*="form-sel"] > .p-select-dropdown,
+		[class*="form-sel"] > .p-cascadeselect-dropdown,
+		[class*="form-float-sel"] .p-select-dropdown {display:flex;}
+		[class*="form-sel"] > .p-select-dropdown svg,
+		[class*="form-sel"] > .p-cascadeselect-dropdown svg,
+		[class*="form-float-sel"] .p-select-dropdown svg {display:none;}
+
+	/* Icon */
+		[class*="form-sel"] > .p-select-dropdown:after,
+		[class*="form-sel"] > .p-cascadeselect-dropdown:after,
+		[class*="form-panel-cascade"] .p-cascadeselect-group-icon-container:after {content:""; flex-shrink:0; background-image:var(--ic-c); background-size:var(--bg-sz); background-position:var(--bp-150) var(--bp-200); width:12px; height:7px; transition:rotate var(--trans-dft); z-index:0; cursor:pointer;}
+		[class*="form-sel"].p-select-open .p-select-dropdown:after,
+		[class*="form-sel"].p-cascadeselect-open .p-cascadeselect-dropdown:after {rotate:180deg;}
+
+	/* Focus */
+		[class*="form-sel"].p-select-open,
+		[class*="form-sel"].p-cascadeselect-open {border-color:var(--form-focus-bd-c, var(--fom-fcs-brd-c)); border-radius:var(--form-bd-r, var(--fom-br)) var(--form-bd-r, var(--fom-br)) 0 0; transition:border-color var(--trans-dft), border-radius var(--trans-dft);}
+
+	/* Disabled */
+		[class*="form-sel"].p-disabled {opacity:1; background:var(--form-dis-bg-c, var(--dis-bg)); border-color:var(--form-dis-bd-c, var(--dis-bdr)); color:var(--form-dis-ft-c, var(--fom-ph)); pointer-events:none; cursor:auto;}
+		[class*="form-sel"] select:disabled + .form-icon {background:var(--form-dis-bg-c, var(--dis-bg));}
+		[class*="form-sel"] select:disabled + .form-icon:after {opacity:0.3;}
+
+	/* List */
+		[class*="form-panel-sel"],
+		[class*="form-panel-cascade"] {display:block;}
+		[class*="form-panel-sel"],
+		[class*="form-panel-cascade"] .p-cascadeselect-list {overflow:hidden; background:white; border:1px solid var(--form-focus-bd-c, var(--fom-fcs-brd-c)); border-radius:0 0 var(--form-bd-r, var(--fom-br)) var(--form-bd-r, var(--fom-br));}
+		[class*="form-panel-sel"][style*="margin-top"] {border-radius:var(--form-bd-r, var(--fom-br)) var(--form-bd-r, var(--fom-br)) 0 0;}
+		[class*="form-panel-sel"] .p-select-list-container,
+		[class*="form-panel-sel"] .p-multiselect-list-container {width:100%; cursor:pointer;}
+		[class*="form-panel-sel"] .p-select-list,
+		[class*="form-panel-sel"] .p-multiselect-list {overflow-y:auto; max-height:calc(var(--form-dropitem, var(--fom-dropitem)) * var(--form-h, var(--fom-h)));}
+		[class*="form-panel-sel"] .p-select-list > *,
+		[class*="form-panel-sel"] .p-multiselect-list > *,
+		[class*="form-panel-sel"] .p-multiselect-header {display:flex; gap:12px; place-items:center; width:100%; min-height:var(--form-h, var(--fom-h)); padding:var(--fom-pad);}
+		[class*="form-panel-sel"] .p-select-list > * > svg {flex-shrink:0;}
+
+	/* Filter */
+		[class*="form-panel-sel"] .p-select-header {width:100%; padding:var(--fom-pad);}
+		[class*="form-panel-sel"] .p-iconfield {display:flex; place-items:center; border:1px solid var(--form-bd-c, var(--fom-bdr-c)); border-radius:var(--form-bd-r, var(--fom-br)); width:var(--form-w, 100%); height:var(--form-h, var(--fom-h)); padding:0 var(--fom-pad); font-size:var(--form-ft-s, var(--fom-fs));}
+
+	/* List - Focus, :hover, Active */
+		[class*="form-panel-sel"] .p-select-list > .p-focus,
+		[class*="form-panel-cascade"] .p-cascadeselect-option.p-focus > .p-cascadeselect-option-content,
+		[class*="form-panel-cascade"] .p-cascadeselect-option.p-cascadeselect-option-active > .p-cascadeselect-option-content {background-color:var(--form-focus-bd-c, var(--fom-fcs-brd-c)); color:white;}
+
+	/* List - Cascade Select */
+		[class*="form-panel-cascade"] {cursor:pointer;}
+		[class*="form-panel-cascade"] .p-cascadeselect-list {overflow:visible; position:relative;}
+		[class*="form-panel-cascade"] .p-cascadeselect-list .p-cascadeselect-list {position:absolute; left:100%; top:-1px; width:max-content;}
+		[class*="form-panel-cascade"] .p-cascadeselect-option-content {display:flex; gap:4px; place-content:space-between; place-items:center; height:var(--form-h, var(--fom-h)); padding:0 var(--fom-pad);}
+		[class*="form-panel-cascade"] .p-cascadeselect-group-icon-container {display:flex;}
+		[class*="form-panel-cascade"] .p-cascadeselect-group-icon-container:after {content:""; rotate:270deg;}
+		[class*="form-panel-cascade"] .p-cascadeselect-group-icon-container svg {display:none;}
+
+	/* List - Multi Select */
+		[class*="form-panel-sel"] .p-multiselect-header,
+		[class*="form-panel-sel"] .p-checkbox {display:none;}
+		[class*="form-panel-sel"] .p-multiselect-list .form-opt-chk {display:inline;}
+
+@media all and (max-width:720px) {
+	[class*="form-sel"],
+	[class*="form-float-sel"] .p-select {
+		background: var(--m-form-bg-c, var(--form-bg-c, var(--fom-bg)));
+		border:1px solid var(--m-form-bd-c, var(--form-bd-c, var(--fom-bdr-c)));
+		border-radius:var(--m-form-bd-r, var(--form-bd-r, var(--fom-br)));
+		width:var(--m-form-w, var(--form-w));
+		height:var(--m-form-h, var(--form-h, var(--fom-h)));
+		padding-left:var(--m-form-pd-l, var(--form-pd-l, var(--fom-pad)));
+		padding-right:var(--m-form-pd-r, var(--form-pd-r, var(--fom-pad)));
+		font-size:var(--m-form-ft-s, var(--form-ft-s, var(--fom-fs)));
+		color:var(--m-form-ft-c, var(--form-ft-c, var(--fom-fc)));
+	}
+
+	[class*="form-sel"] > .p-select-dropdown:after,
+	[class*="form-sel"] > .p-cascadeselect-dropdown:after,
+	[class*="form-panel-cascade"] .p-cascadeselect-group-icon-container:after {width:2.92vw; height:1.67vw;}
+}

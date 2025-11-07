@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="Management">
+		<meta name="description" content="Management">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script type="module" src="../js/index.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
+		<script type="module" src="../js/module.js"></script>
+		<script src="../js/pub.js"></script>
+		<link rel="icon" href="../favicon.ico" sizes="any">
+		<link rel="stylesheet" href="../css/global.css">
+	</head>
+	<body>
+		<!-- 헤더 -->
+		<div class="sub-header">
+			<div data-include="../include/header.html"></div>
+		</div>
+
+		<!-- 본문 -->
+		<div id="container">
+			<div class="layout-inner sub-layout">
+				<h2 class="sub-tit">나의 멘토링</h2>
+				<div class="box-type-02">
+					<div style="--dp:flex; --content:space-between; --gap-x:76px; --m-flex-d:column; --m-gap-y:5.56vw;">
+						<div style="--dp:flex; --flex-d:column; --gap:4px;">
+							<p style="--gap: 10px; --items: center; --m-gap: 2.22vw;">활동명<span class="cr-blk">오아시스</span><span class="chip-type-01-grn-03">활동중</span></p>
+							<p style="--gap: 10px; --items: center; --m-gap: 2.22vw;">졸업학과<span class="cr-blk">경제학과</span></p>
+							<p style="--gap: 10px; --items: center; --m-gap: 2.22vw;">취업기업<span class="cr-blk">삼성전자</span></p>
+							<p style="--gap: 10px; --items: center; --m-gap: 2.22vw;">담당직무<span class="cr-blk">반도체 공정 설계</span></p>
+							<p style="--gap: 10px; --m-gap: 2.22vw;"><span class="ws-nw">자기소개서</span><span class="cr-blk">안녕하세요, 반도체 공정 최적화에 열정을 가진 공정 설계 인재입니다. 빠르게 변화하는 반도체 산업 속에서공정개선과 수율 향상에 기여하는 엔지니어가 되겠습니다.</span></p>
+						</div>
+						<div style="--dp:flex; --flex-d:column; --items:flex-end; --m-items:flex-start; --w:470px; --m-w:100%;">
+							<div class="box-type-03" style="width:100%; --m-box-pd-x:0;">
+								<ul class="div-v-03-02 div-grid" style="--div-grid-t-col: 2; --div-item-w:100%;">
+									<li><p class="flex-1" style="--dp:flex; --content:space-between; --items:center;"><b>팔로우 신청일</b><span class="cr-blk" style="--m-ft-s:2.22vw;">2025.05.20</span></p></li>
+									<li><p class="flex-1" style="--dp:flex; --content:space-between; --items:center;"><b>팔로우 수락일</b><span class="cr-blk" style="--m-ft-s:2.22vw;">2025.05.20</span></p></li>
+									<li><p class="flex-1" style="--dp:flex; --content:space-between; --items:center;"><b>상담 접수 건</b><span><strong class="txt-18-26">10</strong>건</span></p></li>
+									<li><p class="flex-1" style="--dp:flex; --content:space-between; --items:center;"><b>상담 완료 건</b><span><strong class="txt-18-26">10</strong>건</span></p></li>
+								</ul>
+							</div>
+							<p class="txt-14-24" style="--mg-t:10px; --m-mg-t:2.22vw;">나의 상담 요청  <q>2</q>건 중,  미답변은  <q>1</q> 건 있습니다.</p>
+						</div>
+					</div>
+				</div>
+
+				<ul class="tab-menu-01" style="--mg-t:80px; --m-mg-t:11.11vw;">
+					<li class="active"><button type="button">질의/응답</button></li>
+					<li><button type="button">설정</button></li>
+				</ul>
+				<div class="brd-wrap">
+					<div class="brd-form-01">
+						<div style="--gap:16px; --flex-d:column; --w:100%; --m-gap:2.78vw;">
+							<div class="form-txt">
+								<p-input placeholder="제목을 입력해주세요"></p-input>
+							</div>
+							<div class="form-tarea">
+								<p-tarea placeholder="내용을 입력해주세요"></p-tarea>
+							</div>
+							<div>
+								<div style="--gap:40px; --items:center; --m-gap:5vw;">
+									<b>첨부파일</b>
+									<label class="btn-type-b-lgry btn-sz-34-r form-file"><input type="file">첨부파일</label>
+								</div>
+								<div class="brd-file" style="--mg-t:20px; --m-mg-t:3.33vw; --pd-l:100px; --m-pd-l:0;">
+									<div class="brd-file-add pc">+ 파일을 마우스로 끌어오세요.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div style="--gap:12px; --content:flex-end; --mg-t:24px; --m-mg-t:8.33vw; --m-gap:3.33vw;">
+						<a href="#" class="btn-type-b" style="--btn-w:122px; --m-btn-w:100%;">취소</a>
+						<a href="#" class="btn-type" style="--btn-w:122px; --m-btn-w:100%;">저장</a>
+					</div>
+
+					<!-- 답변 작성 후 -->
+					<ul class="brd-lst-03 brd-answer">
+						<li>
+							<div class="brd-lst-tit">
+								<span>답변</span>
+							</div>
+							<div class="div-v-03">
+								<span>관리자</span>
+								<span>2024.08.19</span>
+							</div>
+						</li>
+						<li>
+							<div>
+								관리자 작성한 Q&A 답변 내용이 노출됩니다. 관리자 작성한 Q&A 답변 내용이 노출됩니다.<br>답변 내용이 노출됩니다용이 노출됩니다. 관리자 작성자 작성한 Q&A 답변 내용이 노출됩니다. 관리자 작성한 Q&A<br>됩니다. 관리자 작성이 노출됩니다용이 노출됩니다. 관리자 작성자 작성한 Q&A 답변 내용이 노출됩니다<br>관리자 작성한 Q&A 답변 내용이 노출됩니다. 관리자 작성한 Q&A 답변 내용이 노출됩니다.<br>답변 내용이 노출됩니다용이 노출됩니다. 관리자 작성자 작성한 Q&A 답변 내용이 노출됩니다. 관리자 작
+								<div class="brd-file">
+									<b>첨부파일</b>
+									<ul class="brd-file-lst">
+										<li>
+											<i class="ic-file"></i>
+											<a href="#" class="cr-blk">2025-1 글로벌스터디그룹 안내.pdf</a>
+											<span class="brd-file-size">542.3KB</span>
+										</li>
+										<li>
+											<i class="ic-file"></i>
+											<a href="#" class="cr-blk">2025-1 글로벌스터디그룹 안내.pdf</a>
+											<span class="brd-file-size">542.3KB</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div style="--gap:12px; --content:flex-end; --mg-t:60px; --m-mg-t:8.33vw; --m-gap:3.33vw;">
+						<a href="#" class="btn-type" style="--btn-w:122px; --m-btn-w:100%;">수정</a>
+						<a href="#" class="btn-type-b" style="--btn-w:122px; --m-btn-w:100%;">목록</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 푸터 -->
+		<div data-include="../include/footer.html"></div>
+	</body>
+</html>

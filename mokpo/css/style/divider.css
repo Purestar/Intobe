@@ -1,0 +1,118 @@
+/* Divider */
+	/* Default */
+		[class*="div-"] {display: var(--div-dp, flex);}
+		[class*="div-"] > * {display:flex;}
+		[class*="div-"] > * + *:before {content:""; background-color:var(--div-bg-c, black); animation-name:attr(data-ani); rotate:var(--div-rotate, 0deg);}
+
+	/* Equal */
+		[class*="div-"].div-equal > * {flex:1;}
+
+	/* Grid */
+		[class*="div-"].div-grid {margin-inline:-1px;}
+		[class*="div-"].div-grid,
+		[class*="div-"].div-grid > * {column-gap:var(--div-gap-x, var(--div-gap, 0)); row-gap:var(--div-gap-y, var(--div-gap, 0));}
+		[class*="div-"].div-grid {display:grid; grid-template-columns: repeat(var(--div-grid-t-col), 1fr);}
+		[class*="div-"].div-grid > * {place-content:space-between; width: var(--div-item-w, 100%); text-align:center;}
+		[class*="div-"].div-grid > *:first-child:before {content:"";}
+		[class*="div-"].div-grid > *:after {content:"";}
+
+	/* Animation */
+		[class*="div-"][data-ani]:hover > * + *:before,
+		[class*="div-"][data-ani-auto] > * + *:before {
+			animation-fill-mode: both;
+			animation-duration: var(--ani-dur, .5s);
+			animation-delay: var(--ani-dly, 0s);
+			animation-timing-function: var(--ani-ease, linear);
+			animation-name:var(--ani-n, bounce);
+			animation-iteration-count:var(--ani-rpt, infinite);
+		}
+
+	/* Horizontal Bar */
+		[class*="div-h"] {width:var(--div-w, 100%);}
+		[class*="div-h"], [class*="div-h"] > * {flex-direction:column; row-gap:var(--div-gap, 0);}
+		[class*="div-h"] > * + *:before {place-self:center; width:100%; height:var(--div-h, 1px);}
+		[class*="div-h-"] {width:100%;}
+
+	/* Vertical Bar */
+		[class*="div-v"], [class*="div-v"] > * {place-items:center; column-gap:var(--div-gap, 0);}
+		[class*="div-v"] > * + *:before {flex:0 0 var(--div-w, 1px); width:var(--div-w, 1px); height:var(--div-h, var(--ft-s, var(--init-font-size)));}
+
+	/* Arrow */
+		[class*="div-h-arrow"] > * + *:before,
+		[class*="div-v-arrow"] > * + *:before {background:none; border-left:1px solid var(--div-bg-c, black); border-top:1px solid var(--div-bg-c, black); width:var(--div-w, 4px); height:var(--div-w, 4px);}
+		[class*="div-h-arrow"] > * + *:before {rotate:var(--div-rotate, 225deg); translate:0 -35%;}
+		[class*="div-v-arrow"] > * + *:before {rotate:var(--div-rotate, 135deg); translate:-35% 0;}
+
+	/* Slash */
+		[class*="div-h-slash"] > * + *:before,
+		[class*="div-v-slash"] > * + *:before {rotate:var(--div-rotate, 10deg);}
+
+	/* Circle & Square */
+		[class*="div-h-cir"] > * + *:before,
+		[class*="div-v-cir"] > * + *:before,
+		[class*="div-h-squ"] > * + *:before,
+		[class*="div-v-squ"] > * + *:before,
+		[class*="div-h-dia"] > * + *:before,
+		[class*="div-v-dia"] > * + *:before {width:var(--div-w, 8px); height:var(--div-w, 8px); rotate:var(--div-rotate, 0);}
+
+		[class*="div-h-cir"] > * + *:before,
+		[class*="div-v-cir"] > * + *:before {border-radius:50%;}
+
+		[class*="div-h-dia"] > * + *:before,
+		[class*="div-v-dia"] > * + *:before {rotate:var(--div-rotate, 45deg);}
+
+	/* Add Style */
+		[class*="div-v"], [class*="div-v"] > * {flex-shrink:0;}
+
+/* Style Initialize */
+	[class*="div-v"] [class*="div-v"] {}
+
+@media all and (max-width:720px) {
+	/* Default */
+		[class*="div-"] > * + *:before {content:""; background-color:var(--m-div-bg-c, var(--div-bg-c)); animation-name:attr(data-ani); rotate:var(--m-div-rotate, var(--div-rotate));}
+
+	/* Grid */
+		[class*="div-"].div-grid,
+		[class*="div-"].div-grid > * {column-gap:var(--m-div-gap-x, var(--div-gap-x, var(--div-gap, 0))); row-gap:var(--m-div-gap-y, var(--div-gap-y, var(--div-gap, 0)));}
+		[class*="div-"].div-grid {grid-template-columns: repeat(var(--m-div-grid-t-col, var(--div-grid-t-col)), 1fr);}
+
+	/* Animation */
+		[class*="div-"][data-ani]:hover > * + *:before,
+		[class*="div-"][data-ani-auto] > * + *:before {
+			animation-duration: var(--m-ani-dur, var(--ani-dur));
+			animation-delay: var(--m-ani-dly, var(--ani-dly));
+			animation-timing-function: var(--m-ani-ease, var(--ani-ease));
+			animation-name:var(--m-ani-n, var(--ani-n));
+			animation-iteration-count:var(--m-ani-rpt, var(--ani-rpt));
+		}
+
+	/* Horizontal Bar */
+		[class*="div-h"] {width:var(--m-div-w, var(--div-w));}
+		[class*="div-h"], [class*="div-h"] > * {row-gap:var(--m-div-gap, var(--div-gap));}
+		[class*="div-h"] > * + *:before {height:var(--m-div-h, var(--div-h));}
+
+	/* Vertical Bar */
+		[class*="div-v"], [class*="div-v"] > * {column-gap:var(--m-div-gap, var(--div-gap));}
+		[class*="div-v"] > * + *:before {width:var(--m-div-w, var(--div-w, 1px)); height:var(--m-div-h, var(--div-h, var(--ft-s)));}
+
+	/* Arrow */
+		[class*="div-h-arrow"] > * + *:before,
+		[class*="div-v-arrow"] > * + *:before {background:none; border-left:1px solid var(--m-div-bg-c, var(--div-bg-c)); border-top:1px solid var(--m-div-bg-c, var(--div-bg-c)); width:var(--m-div-w, var(--div-w)); height:var(--m-div-w, var(--div-w));}
+		[class*="div-h-arrow"] > * + *:before,
+		[class*="div-v-arrow"] > * + *:before {rotate:var(--m-div-rotate, var(--div-rotate, 135deg));}
+
+	/* Slash */
+		[class*="div-h-slash"] > * + *:before,
+		[class*="div-v-slash"] > * + *:before {rotate:var(--m-div-rotate, var(--div-rotate));}
+
+	/* Circle & Square */
+		[class*="div-h-cir"] > * + *:before,
+		[class*="div-v-cir"] > * + *:before,
+		[class*="div-h-squ"] > * + *:before,
+		[class*="div-v-squ"] > * + *:before,
+		[class*="div-h-dia"] > * + *:before,
+		[class*="div-v-dia"] > * + *:before {width:var(--m-div-w, var(--div-w)); height:var(--m-div-w, var(--div-w)); rotate:var(--m-div-rotate, var(--div-rotate));}
+
+		[class*="div-h-dia"] > * + *:before,
+		[class*="div-v-dia"] > * + *:before {rotate:var(--m-div-rotate, var(--div-rotate));}
+}

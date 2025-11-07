@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="Management">
+		<meta name="description" content="Management">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script type="module" src="../js/index.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
+		<script type="module" src="../js/module.js"></script>
+		<script src="../js/pub.js"></script>
+		<link rel="icon" href="../favicon.ico" sizes="any">
+		<link rel="stylesheet" href="../css/global.css">
+	</head>
+	<body>
+		<!-- 헤더 -->
+		<div class="sub-header">
+			<div data-include="../include/header.html"></div>
+		</div>
+
+		<!-- 본문 -->
+		<div id="container">
+			<div class="layout-inner sub-layout">
+				<h2 class="txt-28-36"><strong>AI Job가 추천하는 직업을 확인해보세요!</strong></h2>
+
+				<div id="job" class="job-slide-wrap">
+					<div class="swi-type-03 swi-navigation-01 m-full">
+						<div class="swiper brd-wrap">
+							<ul class="swiper-wrapper">
+								<li class="swiper-slide">
+									<div>
+										<h3 class="txt-20-30"><b>시스템소프트웨어엔지니어</b></h3>
+										<p class="job-desc">컴퓨터시스템의동작, 제어 및 관리와 관련된 시스템소프트웨어를 개발한다. </p>
+									</div>
+									<p style="--ft-s:14px; --m-ft-s:3.33vw;"><q>16명</q> 학생이 관심있는 직업이에요!</p>
+									<p class="job-recom"><strong class="txt-24-32"><q>98%</q></strong>추천도</p>
+								</li>
+								<li class="swiper-slide">
+									<div>
+										<h3 class="txt-20-30"><b>시스템소프트웨어엔지니어</b></h3>
+										<p class="job-desc">컴퓨터시스템의동작, 제어 및 관리와 관련된 시스템소프트웨어를 개발한다. </p>
+									</div>
+									<p style="--ft-s:14px; --m-ft-s:3.33vw;"><q>16명</q> 학생이 관심있는 직업이에요!</p>
+									<p class="job-recom"><strong class="txt-24-32"><q>98%</q></strong>추천도</p>
+								</li>
+								<li class="swiper-slide">
+									<div>
+										<h3 class="txt-20-30"><b>시스템소프트웨어엔지니어</b></h3>
+										<p class="job-desc">컴퓨터시스템의동작, 제어 및 관리와 관련된 시스템소프트웨어를 개발한다. </p>
+									</div>
+									<p style="--ft-s:14px; --m-ft-s:3.33vw;"><q>16명</q> 학생이 관심있는 직업이에요!</p>
+									<p class="job-recom"><strong class="txt-24-32"><q>98%</q></strong>추천도</p>
+								</li>
+								<li class="swiper-slide">
+									<div>
+										<h3 class="txt-20-30"><b>시스템소프트웨어엔지니어</b></h3>
+										<p class="job-desc">컴퓨터시스템의동작, 제어 및 관리와 관련된 시스템소프트웨어를 개발한다. </p>
+									</div>
+									<p style="--ft-s:14px; --m-ft-s:3.33vw;"><q>16명</q> 학생이 관심있는 직업이에요!</p>
+									<p class="job-recom"><strong class="txt-24-32"><q>98%</q></strong>추천도</p>
+								</li>
+							</ul>
+						</div>
+						<div class="swiper-nav-wrap swi-nav-01">
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+					</div>
+				</div>
+
+				<h2 class="txt-28-36" style="--mg-t:80px; --m-mg-t:11.11vw;"><strong>궁금한 직업정보를 직접찾아보세요!</strong></h2>
+				<p-tabs class="tab-wrap-01" style="--tab-cont-pd-y:0; --mg-t:36px; --m-mg-t:5.56vw;" value="0">
+					<p-tab-list class="tab-menu-01">
+						<p-tab value="0">직업분류로 찾기</p-tab>
+						<p-tab value="1">직접검색</p-tab>
+					</p-tab-list>
+					<p-tab-panels>
+						<p-tab-panel value="0">
+							<div class="job-type-wrap">
+								<div class="job-type-ctrl" style="--txt-a:right;">
+									<buton type="button" class="btn-icon btn-refresh"><i class="ic-refresh"></i>선택초기화</buton>
+								</div>
+								<div class="job-type" style="--grid-t-col:2; --m-grid-t-col:1; --m-gap:3.89vw; --m-pd-a:5vw;">
+									<div>
+										<div class="pc">
+											<h3 class="job-type-tit">직업분류1차선택</h3>
+											<ul data-scroll="v" class="job-type-lst">
+												<li><button type="button">관리자</button></li>
+												<li class="active"><button type="button">전문가 및 관련 종사자</button></li>
+												<li><button type="button">사무종사자</button></li>
+												<li><button type="button">서비스종사자</button></li>
+												<li><button type="button">판매종사자</button></li>
+												<li><button type="button">농림 . 어업 숙련 종사자</button></li>
+												<li><button type="button">기능원 및 관련 기능 종사자</button></li>
+												<li><button type="button">장치. 기계 조작 및 조립종사자 </button></li>
+												<li><button type="button">단순노무 종사자</button></li>
+												<li><button type="button">군인</button></li>
+												<li><button type="button">관리자</button></li>
+											</ul>
+										</div>
+										<div class="mobile">
+											<div style="--flex-d:column; --gap:2.78vw;">
+												<b>직업분류1차선택</b>
+												<p-select class="form-sel" panel-class="form-panel-sel" placeholder="직업분류1차선택" :options="['관리자', '전문가 및 관련 종사자', '사무종사자', '서비스종사자', '판매종사자']">
+												</p-select>
+											</div>
+										</div>
+									</div>
+									<div>
+										<div class="pc">
+											<h3 class="job-type-tit">직업분류2차선택</h3>
+											<ul data-scroll="v" class="job-type-lst" style="--h:100%;">
+												<li class="job-type-lst no-data">1차 분류를 선택해주세요.</li>
+											</ul>
+										</div>
+										<div class="mobile">
+											<div style="--flex-d:column; --gap:2.78vw;">
+												<b>직업분류2차선택</b>
+												<p-select class="form-sel" panel-class="form-panel-sel" placeholder="직업분류2차선택" :options="['관리자', '전문가 및 관련 종사자', '사무종사자', '서비스종사자', '판매종사자']">
+												</p-select>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- DS -->
+								<div class="job-type-rst-wrap" data-scroll="v">
+									<ul class="lst-item-03-01" style="--grid-t-col:3; --m-grid-t-col:1;">
+										<li><button type="button" class="lst-tit">관리자</button></li>
+										<li><button type="button" class="lst-tit">전문가 및 관련 종사자</button></li>
+										<li><button type="button" class="lst-tit">사무종사자</button></li>
+										<li><button type="button" class="lst-tit">서비스종사자</button></li>
+										<li><button type="button" class="lst-tit">판매종사자</button></li>
+										<li><button type="button" class="lst-tit">농림 . 어업 숙련 종사자</button></li>
+										<li><button type="button" class="lst-tit">기능원 및 관련 기능 종사자</button></li>
+										<li><button type="button" class="lst-tit">장치. 기계 조작 및 조립종사자 </button></li>
+										<li><button type="button" class="lst-tit">단순노무 종사자</button></li>
+										<li><button type="button" class="lst-tit">군인</button></li>
+									</ul>
+									<div class="pc" data-include="../include/paging.html"></div>
+								</div>
+							</div>
+						</p-tab-panel>
+						<p-tab-panel value="1">
+							<div class="job-type-wrap">
+								<div class="job-type-ctrl">
+									<div style="--dp:grid; --gap:24px;">
+										<div style="--dp:flex; --gap:12px;">
+											<div class="form-txt">
+												<p-input placeholder="찾으시는 직업명을 입력하세요"></p-input>
+											</div>
+											<button type="button" class="btn-type-b" style="--btn-w:122px;">검색</button>
+										</div>
+										<div style="--dp:flex; --flex-w:nowrap; --items:center; --m-grid-t-col:1; --m-items:flex-start; --m-gap:3.33vw;">
+											<b style="--w:110px; --m-w:auto;">최근검색어</b>
+											<ul class="lst-tag-02 m-flex-nw m-ws-nw" data-scroll="xh">
+												<li>엔지니어<button type="button"><i class="ic-delete-02"></i></button></li>
+												<li>게임기획자<button type="button"><i class="ic-delete-02"></i></button></li>
+												<li>인공지능 엔지니어<button type="button"><i class="ic-delete-02"></i></button></li>
+												<li>엔지니어<button type="button"><i class="ic-delete-02"></i></button></li>
+												<li>게임기획자<button type="button"><i class="ic-delete-02"></i></button></li>
+												<li>인공지능 엔지니어<button type="button"><i class="ic-delete-02"></i></button></li>
+												<li>엔지니어<button type="button"><i class="ic-delete-02"></i></button></li>
+												<li>게임기획자<button type="button"><i class="ic-delete-02"></i></button></li>
+												<li>인공지능 엔지니어<button type="button"><i class="ic-delete-02"></i></button></li>
+												<li>엔지니어<button type="button"><i class="ic-delete-02"></i></button></li>
+												<li>게임기획자<button type="button"><i class="ic-delete-02"></i></button></li>
+												<li>인공지능 엔지니어<button type="button"><i class="ic-delete-02"></i></button></li>
+											</ul>
+										</div>
+										<div style="--dp:flex; --flex-w:nowrap; --items:center; --m-grid-t-col:1; --m-flex-d:column; --m-items:flex-start; --m-gap:3.33vw;">
+											<b style="--w:110px; --m-w:auto;">인기검색어</b>
+											<ul class="lst-tag-01 m-flex-nw m-ws-nw" data-scroll="xh">
+												<li>게임 개발자</li>
+												<li>인공지능</li>
+												<li>빅데이터</li>
+												<li>3D개발자</li>
+												<li>게임 개발자</li>
+												<li>인공지능</li>
+												<li>빅데이터</li>
+												<li>3D개발자</li>
+												<li>게임 개발자</li>
+												<li>인공지능</li>
+												<li>빅데이터</li>
+												<li>3D개발자</li>
+												<li>게임 개발자</li>
+												<li>인공지능</li>
+												<li>빅데이터</li>
+												<li>3D개발자</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<!-- DS -->
+								<div class="job-type-rst-wrap" data-scroll="v">
+									<ul class="lst-item-03-01" style="--grid-t-col:3; --m-grid-t-col:1;">
+										<li><button type="button" class="lst-tit">관리자</button></li>
+										<li><button type="button" class="lst-tit">전문가 및 관련 종사자</button></li>
+										<li><button type="button" class="lst-tit">사무종사자</button></li>
+										<li><button type="button" class="lst-tit">서비스종사자</button></li>
+										<li><button type="button" class="lst-tit">판매종사자</button></li>
+										<li><button type="button" class="lst-tit">농림 . 어업 숙련 종사자</button></li>
+										<li><button type="button" class="lst-tit">기능원 및 관련 기능 종사자</button></li>
+										<li><button type="button" class="lst-tit">장치. 기계 조작 및 조립종사자 </button></li>
+										<li><button type="button" class="lst-tit">단순노무 종사자</button></li>
+										<li><button type="button" class="lst-tit">군인</button></li>
+									</ul>
+									<div class="pc" data-include="../include/paging.html"></div>
+								</div>
+							</div>
+						</p-tab-panel>
+					</p-tab-panels>
+				</p-tabs>
+
+				<div style="--dp:grid; --grid-t-col:2; --mg-t:80px; --gap:36px; --m-grid-t-col:1; --m-mg-t:11.11vw; --m-gap:11.11vw;">
+					<div>
+						<h2 class="txt-28-36"><strong>AI 가 주목하는, 자주 추천한 직업순위!</strong></h2>
+						<p>개인의 관심과 적성까지 고려한 직업추천!<br class="mobile"> AI는 어떤 직업을 추천하고 있을까?</p>
+						<ul class="lst-item-03 bul-num-01" style="--mg-t:36px; --m-mg-t:5.56vw;">
+							<li>
+								<span class="lst-tit">아키텍쳐전문가</span>
+								<a href="#" class="lst-lnk"><i class="ic-r-arr-03"></i></a>
+							</li>
+							<li>
+								<span class="lst-tit">시스템개발자</span>
+								<a href="#" class="lst-lnk"><i class="ic-r-arr-03"></i></a>
+							</li>
+							<li>
+								<span class="lst-tit">보안 SW엔지니어</span>
+								<a href="#" class="lst-lnk"><i class="ic-r-arr-03"></i></a>
+							</li>
+							<li>
+								<span class="lst-tit">AI 기술 개발자</span>
+								<a href="#" class="lst-lnk"><i class="ic-r-arr-03"></i></a>
+							</li>
+							<li>
+								<span class="lst-tit">소프트웨어엔지니어</span>
+								<a href="#" class="lst-lnk"><i class="ic-r-arr-03"></i></a>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<h2 class="txt-28-36"><strong>재학생의 뜨거운 관심을 받고 있는 직업!</strong></h2>
+						<p>학생들이 가장 많이 관심있는 TOP5직업을 알아보세요</p>
+						<ul class="lst-item-03 bul-num-01" style="--mg-t:36px; --m-mg-t:5.56vw;">
+							<li>
+								<span class="lst-tit">아키텍쳐전문가</span>
+								<a href="#" class="lst-lnk">자세히 <i class="ic-r-arr-03"></i></a>
+							</li>
+							<li>
+								<span class="lst-tit">시스템개발자</span>
+								<a href="#" class="lst-lnk">자세히 <i class="ic-r-arr-03"></i></a>
+							</li>
+							<li>
+								<span class="lst-tit">보안 SW엔지니어</span>
+								<a href="#" class="lst-lnk">자세히 <i class="ic-r-arr-03"></i></a>
+							</li>
+							<li>
+								<span class="lst-tit">AI 기술 개발자</span>
+								<a href="#" class="lst-lnk">자세히 <i class="ic-r-arr-03"></i></a>
+							</li>
+							<li>
+								<span class="lst-tit">소프트웨어엔지니어</span>
+								<a href="#" class="lst-lnk">자세히 <i class="ic-r-arr-03"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 푸터 -->
+		<div data-include="../include/footer.html"></div>
+
+		<script>
+			let resizeTimeout;
+
+			function initSwipers() {
+				// 메인 상단 스테이터스 슬라이드
+				const jobSlide = new Swiper('#job .swiper', {
+					slidesPerView: 1.05,
+					spaceBetween: calculatePercentage(19),
+					navigation: {
+						nextEl: "#job .swiper-button-next",
+						prevEl: "#job .swiper-button-prev"
+					},
+					breakpoints: {
+						720: {
+							slidesPerView: 2.5,
+							spaceBetween: 42,
+						},
+					},
+				});
+			}
+
+			function updateSwiperSpace() {
+				clearTimeout(resizeTimeout);
+				resizeTimeout = setTimeout(() => {
+					if (window.jobSlide) window.jobSlide.destroy(true, true);
+					initSwipers();
+				}, 200);
+			}
+
+			window.addEventListener('DOMContentLoaded', () => { initSwipers() });
+			window.addEventListener('resize', updateSwiperSpace);
+		</script>
+	</body>
+</html>

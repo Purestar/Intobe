@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="대구가톨릭">
+		<meta name="description" content="대구가톨릭">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script type="module" src="../js/pub.js"></script>
+		<link rel="stylesheet" href="../css/global.css">
+		<link rel="stylesheet" href="../css/workspace.css">
+		<style>
+			.workspace-guide-inner div {border:1px solid red;}
+		</style>
+	</head>
+	<body>
+		<div class="workspace-guide">
+			<!-- Information -->
+			<div class="workspace-guide-case">
+				<h1>Information</h1>
+				<ul class="workspace-guide-prop">
+					<li>
+						<p class="workspace-guide-prop-attribute not-prefix">class</p>
+						<div style="--dp:grid; --grid-t-col:5; --grid-col:2;">
+							<p class="workspace-guide-prop-attribute-value">layout</p>
+							<p class="workspace-guide-prop-attribute-value">layout-center</p>
+							<p class="workspace-guide-prop-attribute-value">layout-ellipsis</p>
+							<p class="workspace-guide-prop-attribute-value">layout-flex</p>
+							<p class="workspace-guide-prop-attribute-value">layout-grid</p>
+							<p class="workspace-guide-prop-attribute-value">layout-inner</p>
+							<p class="workspace-guide-prop-attribute-value">layout-inner-max</p>
+						</div>
+					</li>
+					<li>
+						<p class="workspace-guide-prop-attribute">disabled</p>
+					</li>
+					<li>
+						<p class="workspace-guide-prop-desc">-webkit-line-clamp</p>
+						<p class="workspace-guide-prop-name">line</p>
+						<p class="workspace-guide-prop-value">&lt;Number&gt;</p>
+					</li>
+				</ul>
+			</div>
+
+			<div style="--dp:grid;">
+				<div class="workspace-guide-case">
+					<h1>Default</h1>
+					<div class="workspace-guide-inner">
+						<div class="layout">Full</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<xmp>
+							<div class="layout">Full</div>
+						</xmp>
+					</div>
+				</div>
+			</div>
+
+			<hr> <!-- Center -->
+			<div style="--dp:grid; --grid-t-col:3; --gap-a:20px;">
+				<div class="workspace-guide-case" style="--grid-col:3;">
+					<h1>Center</h1>
+					<div class="workspace-guide-inner">
+						<div class="layout-center" style="--h:400px;">
+							<div>Layout Center</div>
+						</div>
+					</div>
+				</div>
+				<div class="workspace-guide-case">
+					<h1>Center Horizontal Scroll Contents</h1>
+					<div class="workspace-guide-inner">
+						<div class="layout-center" style="--h:200px;">
+							<div class="layout-flex">
+								<p><em>내용 시작</em></p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<p><em>내용 끝</em></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="workspace-guide-case">
+					<h1>Center Vertical Scroll Contents</h1>
+					<div class="workspace-guide-inner">
+						<div class="layout-center" style="--h:200px;">
+							<div style="--w:200px; --txt-a:center;">
+								<p><em>내용 시작</em></p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<p><em>내용 끝</em></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="workspace-guide-case">
+					<h1>Center Both Scroll Contents</h1>
+					<div class="workspace-guide-inner">
+						<div class="layout-center" style="--w:200px; --h:200px;">
+							<div class="layout-flex" style="--content-x:center; --content-y:space-between; --w:500px; --h:500px; --txt-a:center;">
+								<p><em>내용 시작</em></p>
+								<div>
+									<p><em>내용 시작</em></p>
+									<p>Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit,<br>sed do eiusmod tempor incididunt ut<br> labore et dolore magna aliqua. <br>Ut enim ad minim veniam,<br> quis nostrud exercitation ullamco laboris nisi ut <br>aliquip ex ea commodo consequat. <br>Duis aute irure dolor in reprehenderit in voluptate velit esse<br> cillum dolore eu fugiat nulla pariatur. <br>Excepteur sint occaecat cupidatat non proident,<br> sunt in culpa qui officia deserunt<br> mollit anim id est laborum.</p>
+									<p><em>내용 끝</em></p>
+								</div>
+								<p><em>내용 끝</em></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="workspace-guide-case" style="--grid-col:3;">
+					<div class="workspace-guide-inner">
+						<xmp>
+							<div class="layout-center"></div>
+						</xmp>
+					</div>
+				</div>
+			</div>
+
+			<hr> <!-- Ellipsis -->
+			<div style="--dp:grid; --grid-t-col:3; --gap-a:20px;">
+				<div class="workspace-guide-case">
+					<h1>Ellipsis</h1>
+					<div class="workspace-guide-inner">
+						<div class="layout-ellipsis">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+					</div>
+				</div>
+				<div class="workspace-guide-case">
+					<h1>Multiline</h1>
+					<div class="workspace-guide-inner">
+						<div class="layout-ellipsis" style="--line:3; --m-line:2;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+					</div>
+				</div>
+				<div class="workspace-guide-case">
+					<h1>Disabled</h1>
+					<div class="workspace-guide-inner">
+						<div class="layout-ellipsis" data-disabled style="--line:3; --m-line:2;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+					</div>
+				</div>
+				<div class="workspace-guide-case">
+					<div class="workspace-guide-inner" style="--grid-col:3;">
+						<xmp>
+							<div class="layout-ellipsis"></div>
+						</xmp>
+					</div>
+				</div>
+			</div>
+
+			<hr> <!-- Inner -->
+			<div style="--dp:flex; --gap-a:20px;">
+				<div class="workspace-guide-case">
+					<h1>Inner</h1>
+					<div class="workspace-guide-inner">
+						<div class="layout-inner">Inner</div>
+					</div>
+				</div>
+				<div class="workspace-guide-case">
+					<h1>Inner Max</h1>
+					<div class="workspace-guide-inner">
+						<div class="layout-inner-max">Inner Max</div>
+					</div>
+				</div>
+				<div class="workspace-guide-case">
+					<div class="workspace-guide-inner">
+						<xmp>
+							<div class="layout-inner">Inner</div>
+						</xmp>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

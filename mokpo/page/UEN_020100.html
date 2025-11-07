@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="Management">
+		<meta name="description" content="Management">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script type="module" src="../js/index.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
+		<script type="module" src="../js/module.js"></script>
+		<script src="../js/pub.js"></script>
+		<link rel="icon" href="../favicon.ico" sizes="any">
+		<link rel="stylesheet" href="../css/global.css">
+	</head>
+	<body>
+		<!-- 헤더 -->
+		<div class="sub-header">
+			<div data-include="../include/header.html"></div>
+		</div>
+
+		<!-- 본문 -->
+		<div id="container">
+			<div class="layout-inner sub-layout">
+				<h2 class="sub-tit">유학생 지원정보</h2>
+
+				<ul class="tab-menu-01" data-scroll="h" style="--mg-t:40px; --m-mg-t:5.56vw;">
+					<li class="active"><button type="button">전체</button></li>
+					<li><button type="button">OutBound Exchange</button></li>
+					<li><button type="button">Academic</button></li>
+					<li><button type="button">General</button></li>
+				</ul>
+
+				<div class="brd-wrap">
+					<div class="brd-top">
+						<p class="brd-tot">총 <q>10</q>개</p>
+						<div class="brd-filter">
+							<p-select class="form-sel" panel-class="form-panel-sel" :options="['전체', '제목', '내용', '제목+내용', '작성자']"></p-select>
+							<div class="form-txt form-icon">
+								<p-input placeholder="내용을 입력하세요."></p-input>
+								<a href="#" class="form-icon-btn pc"><i class="ic-search"></i></a>
+							</div>
+						</div>
+					</div>
+					<ul class="brd-lst-03">
+						<li>
+							<div class="brd-lst-tit">
+								<i class="ic-notice"></i>
+								<div class="brd-lst-tit-inner">
+									<a href="#" class="layout-ellipsis">2025학년도 1학기 주거안정장학금 신청 안내[2.4.(화) - 3.18.(화)]2025학년도 1학기 주거안정장학금 신청 안내[2.4.(화) - 3.18.(화)]2025학년도 1학기 주거안정장학금 신청 안내[2.4.(화) - 3.18.(화)]</a>
+								</div>
+							</div>
+							<div class="div-v-03">
+								<span>홍길동</span>
+								<span>2024.08.19</span>
+								<span>조회수 00</span>
+							</div>
+						</li>
+						<li>
+							<div class="brd-lst-tit">
+								<span class="brd-num">10</span>
+								<div class="brd-lst-tit-inner">
+									<a href="#" class="layout-ellipsis">2025학년도 1학기 주거안정장학금 신청 안내[2.4.(화) - 3.18.(화)]</a>
+								</div>
+							</div>
+							<div class="div-v-03">
+								<span>홍길동</span>
+								<span>2024.08.19</span>
+								<span>조회수 00</span>
+							</div>
+						</li>
+						<li>
+							<div class="brd-lst-tit">
+								<span class="brd-num">9</span>
+								<div class="brd-lst-tit-inner">
+									<a href="#" class="layout-ellipsis">2025학년도 1학기 주거안정장학금 신청 안내[2.4.(화) - 3.18.(화)]</a>
+								</div>
+							</div>
+							<div class="div-v-03">
+								<span>홍길동</span>
+								<span>2024.08.19</span>
+								<span>조회수 00</span>
+							</div>
+						</li>
+					</ul>
+					<div data-include="../include/paging.html"></div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 푸터 -->
+		<div data-include="../include/footer.html"></div>
+	</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="대구가톨릭">
+		<meta name="description" content="대구가톨릭">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script type="module" src="../js/pub.js"></script>
+		<link rel="stylesheet" href="../css/global.css">
+		<link rel="stylesheet" href="../css/workspace.css">
+	</head>
+	<body>
+		<div id="container">
+			<div class="workspace-guide">
+				<!-- Information -->
+				<div class="workspace-guide-case">
+					<h1>Information</h1>
+					<ul class="workspace-guide-prop">
+						<li>
+							<p class="workspace-guide-prop-attribute not-prefix">class</p>
+							<div style="--grid-t-col:8; --grid-col:2;">
+								<p class="workspace-guide-prop-attribute-value">form-sel</p>
+							</div>
+						</li>
+						<li>
+							<p class="workspace-guide-prop-desc">Background Color</p>
+							<p class="workspace-guide-prop-name">form-bg</p>
+							<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+						</li>
+						<li>
+							<p class="workspace-guide-prop-desc">Border Color</p>
+							<p class="workspace-guide-prop-name">form-bd-c</p>
+							<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+						</li>
+						<li>
+							<p class="workspace-guide-prop-desc">Border Color (Focus)</p>
+							<p class="workspace-guide-prop-name">form-focus-bd-c</p>
+							<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+						</li>
+						<li>
+							<p class="workspace-guide-prop-desc">Border Radius</p>
+							<p class="workspace-guide-prop-name">form-bd-r</p>
+							<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+						</li>
+						<li>
+							<p class="workspace-guide-prop-desc">Color</p>
+							<p class="workspace-guide-prop-name">form-ft-c</p>
+							<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+						</li>
+						<li>
+							<p class="workspace-guide-prop-desc">Font Size</p>
+							<p class="workspace-guide-prop-name">form-ft-s</p>
+							<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+						</li>
+						<li>
+							<p class="workspace-guide-prop-desc">Max List</p>
+							<p class="workspace-guide-prop-name">form-dropitem</p>
+							<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+						</li>
+						<li>
+							<p class="workspace-guide-prop-desc">Padding Inline</p>
+							<p class="workspace-guide-prop-name">form-pad-x</p>
+							<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+						</li>
+						<li>
+							<p class="workspace-guide-prop-desc">Width</p>
+							<p class="workspace-guide-prop-name">form-w</p>
+							<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+						</li>
+						<li>
+							<p class="workspace-guide-prop-desc">Height</p>
+							<p class="workspace-guide-prop-name">form-h</p>
+							<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+						</li>
+					</ul>
+				</div>
+
+				<hr> <!-- Default -->
+				<div class="workspace-guide-case">
+					<h1>Default</h1>
+					<div style="--grid-t-col:3; --gap-a:20px;">
+						<div class="workspace-guide-inner">
+							<p-select class="form-sel" panel-class="form-panel-sel"></p-select>
+						</div>
+						<div class="workspace-guide-inner">
+							<p-select class="form-sel" placeholder="Placeholder" panel-class="form-panel-sel"></p-select>
+						</div>
+						<div class="workspace-guide-inner">
+							<p-select class="form-sel" placeholder="Disabled" panel-class="form-panel-sel" disabled></p-select>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<pre>
+							&lt;p-select class="form-sel" panel-class="form-panel-sel"&gt;&lt;/p-select&gt;
+						</pre>
+					</div>
+				</div>
+
+				<hr> <!-- Empty Text -->
+				<div class="workspace-guide-case">
+					<h1>Empty Text</h1>
+					<div class="workspace-guide-inner">
+						<p-select class="form-sel" panel-class="form-panel-sel" empty-message="선택 가능한 항목이 없습니다."></p-select>
+					</div>
+					<div class="workspace-guide-inner">
+						<pre>
+							&lt;p-select <em>empty-message="선택 가능한 항목이 없습니다."</em>&gt;&lt;/p-select&gt;
+						</pre>
+					</div>
+				</div>
+
+				<hr> <!-- Custom List -->
+				<div class="workspace-guide-case">
+					<h1>Custom List</h1>
+					<div class="workspace-guide-inner">
+						<p-select class="form-sel-test" panel-class="form-panel-sel-test"></p-select>
+					</div>
+					<div class="workspace-guide-inner">
+						<pre>
+							&lt;p-select <em>panel-class="form-panel-sel-test"</em>&gt;&lt;/p-select&gt;
+						</pre>
+					</div>
+				</div>
+
+				<hr> <!-- List Data -->
+				<div class="workspace-guide-case">
+					<h1>Select List Data</h1>
+					<div class="workspace-guide-inner">
+						<p-select class="form-sel" placeholder="List Data" panel-class="form-panel-sel" v-model="pubSelectList" :options="pubSelectListTest" option-label="test"></p-select>
+					</div>
+					<div class="workspace-guide-inner">
+						<pre>
+							&lt;p-select <em>v-model="pubSelectList" :options="pubSelectListTest" option-label="test"</em>&gt;&lt;/p-select&gt;
+						</pre>
+					</div>
+				</div>
+
+				<hr> <!-- Checkmark -->
+				<div class="workspace-guide-case">
+					<h1>Checkmark</h1>
+					<div class="workspace-guide-inner">
+						<p-select class="form-sel" placeholder="List Data" panel-class="form-panel-sel" v-model="pubSelectList" :options="pubSelectListTest" option-label="test" checkmark></p-select>
+					</div>
+					<div class="workspace-guide-inner">
+						<pre>
+							&lt;p-select <em>checkmark</em>&gt;&lt;/p-select&gt;
+						</pre>
+					</div>
+				</div>
+
+				<hr> <!-- Editable -->
+				<div class="workspace-guide-case">
+					<h1>Editable</h1>
+					<div class="workspace-guide-inner">
+						<p-select class="form-sel" placeholder="List Data" panel-class="form-panel-sel" v-model="pubSelectList" :options="pubSelectListTest" option-label="test" editable></p-select>
+					</div>
+					<div class="workspace-guide-inner">
+						<pre>
+							&lt;p-select <em>editable</em>&gt;&lt;/p-select&gt;
+						</pre>
+					</div>
+				</div>
+
+				<hr> <!-- Filter -->
+				<div class="workspace-guide-case">
+					<h1>Filter</h1>
+					<div class="workspace-guide-inner">
+						<p-select class="form-sel" placeholder="List Data" panel-class="form-panel-sel" v-model="pubSelectList" :options="pubSelectListTest" option-label="test" filter></p-select>
+					</div>
+					<div class="workspace-guide-inner">
+						<pre>
+							&lt;p-select <em>filter</em>&gt;&lt;/p-select&gt;
+						</pre>
+					</div>
+				</div>
+
+				<hr> <!-- Float Label -->
+				<div class="workspace-guide-case">
+					<h1>Float Label</h1>
+					<div style="--grid-t-col:3; --gap-a:20px;">
+						<div class="workspace-guide-inner">
+							<p-float-label class="form-float-sel">
+								<p-select input-id="over_label" class="form-sel" panel-class="form-panel-sel" v-model="pubSelectList" :options="pubSelectListTest"></p-select>
+								<label for="over_label">Over Label</label>
+							</p-float-label>
+						</div>
+						<div class="workspace-guide-inner">
+							<p-float-label class="form-float-sel" variant="in">
+								<p-select input-id="in_label" class="form-sel" panel-class="form-panel-sel" v-model="pubSelectList" :options="pubSelectListTest"></p-select>
+								<label for="in_label">In Label</label>
+							</p-float-label>
+						</div>
+						<div class="workspace-guide-inner">
+							<p-float-label class="form-float-sel" variant="on">
+								<p-select input-id="on_label" class="form-sel" panel-class="form-panel-sel" v-model="pubSelectList" :options="pubSelectListTest"></p-select>
+								<label for="on_label">On Label</label>
+							</p-float-label>
+						</div>
+						<div class="workspace-guide-inner" style="--form-ft-s:12px; --form-h:80px;">
+							<p-float-label class="form-float-sel">
+								<p-select input-id="over_label02" class="form-sel" panel-class="form-panel-sel" v-model="pubSelectList" :options="pubSelectListTest"></p-select>
+								<label for="over_label02">Over Label</label>
+							</p-float-label>
+						</div>
+						<div class="workspace-guide-inner">
+							<p-float-label class="form-float-sel" variant="in" style="--form-ft-s:14px;">
+								<p-select input-id="in_label02" class="form-sel" panel-class="form-panel-sel" v-model="pubSelectList" :options="pubSelectListTest"></p-select>
+								<label for="in_label02">In Label</label>
+							</p-float-label>
+						</div>
+						<div class="workspace-guide-inner">
+							<p-float-label class="form-float-sel" variant="on" style="--form-ft-s:18px;">
+								<p-select input-id="on_label02" class="form-sel" panel-class="form-panel-sel" v-model="pubSelectList" :options="pubSelectListTest"></p-select>
+								<label for="on_label02">On Label</label>
+							</p-float-label>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<pre>
+							&lt;p-float-label class="form-txt" data-float-label&gt;
+								&lt;p-input id="over_label" v-model="value1"&gt;&lt;/p-input&gt;
+								&lt;label for="over_label"&gt;Over Label&lt;/label&gt;
+							&lt;/p-float-label&gt;
+						</pre>
+					</div>
+				</div>
+
+				<hr> <!-- Cascade Select -->
+				<div class="workspace-guide-case">
+					<h1>Cascade Select</h1>
+					<div style="--grid-t-col:3; --gap-a:20px;">
+						<div class="workspace-guide-inner">
+							<p-cascade-select class="form-sel"></p-cascade-select>
+						</div>
+						<div class="workspace-guide-inner">
+							<p-cascade-select class="form-sel" v-model="pubSelectList" :options="pubSelectListTest02" option-label="cname" option-group-label="name" :option-group-children="['states', 'cities']" placeholder="Select a City" panel-class="form-panel-cascade"></p-cascade-select>
+						</div>
+						<div class="workspace-guide-inner">
+							<p-cascade-select class="form-sel" disabled></p-cascade-select>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<pre>
+							&lt;p-cascade-select class="form-sel"&gt;&lt;/p-cascade-select&gt;
+						</pre>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

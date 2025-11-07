@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="Management">
+		<meta name="description" content="Management">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script type="module" src="../js/index.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
+		<script type="module" src="../js/module.js"></script>
+		<script src="../js/pub.js"></script>
+		<link rel="icon" href="../favicon.ico" sizes="any">
+		<link rel="stylesheet" href="../css/global.css">
+	</head>
+	<body>
+		<!-- 헤더 -->
+		<div class="sub-header">
+			<div data-include="../include/header.html"></div>
+		</div>
+
+		<!-- 본문 -->
+		<div id="container">
+			<div class="layout-inner sub-layout">
+				<div style="--content:space-between; --items:center; --m-flex-d:column; --m-gap:4.17vw; --m-items:flex-start;">
+					<h2 class="sub-tit-02" style="margin-bottom:0;"><a href="#"><i class="ic-l-arr-01"></i></a>이력서</h2>
+				</div>
+				<div class="form-txt-01" style="--mg-t:40px; --m-mg-t:5.56vw;">
+					<p-input placeholder="이력서 제목을 입력해주세요."></p-input>
+				</div>
+
+				<!-- PC 이력서 상단 -->
+				<div class="pc">
+					<div class="box-type-02" style="--box-pd:30px; --gap:40px; --mg-t:12px;">
+						<div style="--flex-d:column; --items:center; --gap:12px;">
+							<label class="form-file-01">
+								<input type="file">
+								<span class="thumb-type-04" style="--w:150px;">
+									<q class="thumb-c txt-14-24" style="--flex-d:column; --gap:16px;"><i class="ic-plus-03"></i>사진 등록하기</q>
+								</span>
+							</label>
+							<p class="txt-14-24">권장사이즈  150px * 200px</p>
+						</div>
+						<div class="flex-1">
+							<div style="--gap:24px; --items:center;">
+								<h3 style="--ft-s:38px;"><strong>김전북</strong></h3>
+							</div>
+							<div style="--flex-d:column; --gap:16px; --mg-t:24px;">
+								<div style="--dp:flex; --content:space-between; --items:center; --gap:120px;">
+									<div class="flex-1" style="--dp:flex; --items:center;">
+										<p style="--w:110px;">생년월일</p>
+										<div class="form-txt">
+											<p-input value="20020602"></p-input>
+										</div>
+									</div>
+									<div>
+										<label class="form-opt-swh-01">
+											<input type="checkbox" checked>
+											<span class="opt-txt"></span>
+										</label>
+									</div>
+								</div>
+								<div style="--dp:flex; --content:space-between; --items:center; --gap:120px;">
+									<div class="flex-1" style="--dp:flex; --items:center;">
+										<p style="--w:110px;">휴대폰번호</p>
+										<div class="form-txt">
+											<p-input value="010-1234-5678"></p-input>
+										</div>
+									</div>
+									<div>
+										<label class="form-opt-swh-01">
+											<input type="checkbox" checked>
+											<span class="opt-txt"></span>
+										</label>
+									</div>
+								</div>
+								<div style="--dp:flex; --content:space-between; --items:center; --gap:120px;">
+									<div class="flex-1" style="--dp:flex; --items:center;">
+										<p style="--w:110px;">이메일</p>
+										<div class="form-txt">
+											<p-input disabled value="jbnu@jbnu.ac.kr"></p-input>
+										</div>
+									</div>
+									<div>
+										<label class="form-opt-swh-01">
+											<input type="checkbox">
+											<span class="opt-txt"></span>
+										</label>
+									</div>
+								</div>
+								<div style="--dp:flex; --content:space-between; --items:center; --gap:120px;">
+									<div class="flex-1" style="--dp:flex; --items:center;">
+										<p style="--w:110px;">주소</p>
+										<div class="form-txt">
+											<p-input value="전북특별자치도 전주시 덕진구 백제대로567 전북대학교"></p-input>
+										</div>
+									</div>
+									<div>
+										<label class="form-opt-swh-01">
+											<input type="checkbox" checked>
+											<span class="opt-txt"></span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Mobile 이력서 상단 -->
+				<div class="mobile">
+					<div class="box-type-02" style="--box-pd:5.56vw; --mg-t:2.78vw;">
+						<div style="--gap:5.56vw; --items:center;">
+							<label class="form-file-01">
+								<input type="file">
+								<span class="thumb-type-04" style="--w:20.83vw;">
+									<q class="thumb-c txt-14-24" style="--flex-d:column; --gap:3.33vw;"><i class="ic-plus-03"></i>사진<br>등록하기</q>
+								</span>
+							</label>
+							<div class="flex-1" style="--flex-d:column; --gap:3.89vw;">
+								<h3 style="--ft-s:6.67vw;"><strong>김전북</strong></h3>
+							</div>
+						</div>
+						<p class="txt-14-24" style="--mg-t:2.22vw;">권장사이즈  150px * 200px</p>
+						<div style="--mg-t:3.33vw;">
+							<div style="--flex-d:column; --gap:3.33vw; --mg-t:5vw;">
+								<b>생년월일</b>
+								<div style="--dp:flex; --content:space-between; --items:center; --gap:5.56vw;">
+									<div class="form-txt">
+										<p-input value="20020602"></p-input>
+									</div>
+									<div>
+										<label class="form-opt-swh-01">
+											<input type="checkbox" checked>
+											<span class="opt-txt"></span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div style="--flex-d:column; --gap:3.33vw; --mg-t:5vw;">
+								<b>휴대폰번호</b>
+								<div style="--dp:flex; --content:space-between; --items:center; --gap:5.56vw;">
+									<div class="form-txt">
+										<p-input value="010-1234-5678" disabled></p-input>
+									</div>
+									<div>
+										<label class="form-opt-swh-01">
+											<input type="checkbox">
+											<span class="opt-txt"></span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div style="--flex-d:column; --gap:3.33vw; --mg-t:5vw;">
+								<b>이메일</b>
+								<div style="--dp:flex; --content:space-between; --items:center; --gap:5.56vw;">
+									<div class="form-txt">
+										<p-input value="korea@Jbnu.ac.kr"></p-input>
+									</div>
+									<div>
+										<label class="form-opt-swh-01">
+											<input type="checkbox" checked>
+											<span class="opt-txt"></span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div style="--flex-d:column; --gap:3.33vw; --mg-t:5vw;">
+								<b>주소</b>
+								<div style="--dp:flex; --content:space-between; --items:center; --gap:5.56vw;">
+									<div class="form-txt">
+										<p-input value="전북특별자치도 전주시 덕진구 백제"></p-input>
+									</div>
+									<div>
+										<label class="form-opt-swh-01">
+											<input type="checkbox" checked>
+											<span class="opt-txt"></span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- 학력사항 -->
+				<div style="--content:space-between; --mg-t:60px; --m-mg-t:8.89vw;">
+					<h3 class="txt-20-32"><b>학력사항</b></h3>
+					<div style="--gap:12px; --m-gap:2.22vw; --items:center;">
+						<div style="--gap:4px; --m-gap:1.11vw;">
+							<button type="button" class="btn-type-b-lgry btn-sz-24" style="--fom-pad:0;"><i class="ic-u-arr-04 tr-180"></i></button>
+							<button type="button" class="btn-type-b-lgry btn-sz-24" style="--fom-pad:0;"><i class="ic-u-arr-04"></i></button>
+						</div>
+						<div class="form-opt-group-01">
+							<div class="form-opt-btn-04">
+								<label>
+									<input type="radio" name="comp" checked>
+									<span class="opt-txt">구성</span>
+								</label>
+							</div>
+							<div class="form-opt-btn-04">
+								<label>
+									<input type="radio" name="comp">
+									<span class="opt-txt">미구성</span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="box-type-02-01" style="--content:space-between; --items:center; --m-flex-d:column; --m-items:flex-start; --mg-t:20px; --m-mg-t:4.17vw; --m-gap:2.22vw;">
+					<div style="--flex-d:column; --gap:10px; --m-gap:2.22vw;">
+						<div style="--gap:20px; --m-gap:2.22vw;">
+							<h3 class="txt-18-28"><b>전북대학교</b></h3>
+							<div class="div-v-03">
+								<span>총 이수학점 <b>130점</b></span>
+								<span>평균평점 <b>3.80점</b></span>
+							</div>
+						</div>
+						<p>주전공 <b>컴퓨터공학전공</b></p>
+						<p>복수전공 <b>소프트웨어 융합전공</b></p>
+					</div>
+					<div style="--gap:20px; --m-flex-d:row-reverse; --m-gap:0;">
+						<span style="--ft-w:500;">졸업예정</span>
+						2021.03 ~
+					</div>
+				</div>
+
+				<!-- 포트폴리오 -->
+				<div style="--content:space-between; --mg-t:60px; --m-mg-t:8.89vw;">
+					<div style="--gap:20px; --m-gap:2.78vw;">
+						<h3 class="txt-20-32"><b>포트폴리오</b></h3>
+						<button type="button" class="btn-type-b-lgry btn-sz-34-r">불러오기</button>
+					</div>
+					<div style="--gap:12px; --m-gap:2.22vw; --items:center;">
+						<div style="--gap:4px; --m-gap:1.11vw;">
+							<button type="button" class="btn-type-b-lgry btn-sz-24" style="--fom-pad:0;"><i class="ic-u-arr-04 tr-180"></i></button>
+							<button type="button" class="btn-type-b-lgry btn-sz-24" style="--fom-pad:0;"><i class="ic-u-arr-04"></i></button>
+						</div>
+						<div class="form-opt-group-01">
+							<div class="form-opt-btn-04">
+								<label>
+									<input type="radio" name="comp" checked>
+									<span class="opt-txt">구성</span>
+								</label>
+							</div>
+							<div class="form-opt-btn-04">
+								<label>
+									<input type="radio" name="comp">
+									<span class="opt-txt">미구성</span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="brd-wrap">
+					<ul class="brd-lst-03-01">
+						<li>
+							<div style="--content:space-between; --items:center; --m-gap:2.22vw;">
+								<div style="--gap:24px; --items:center; --m-flex-d:column; --m-items:flex-start; --m-gap:1.67vw;">
+									<div style="--gap:12px; --m-gap:2.22vw; --items:center;">
+										<span class="chip-type-01-pur">URL</span>
+										<h3 class="txt-18-28"><a href="#" class="layout-ellipsis"><b>00기업 지원 자기소개서</b></a></h3>
+									</div>
+									<a href="https://www.jbnu.ac.kr/web/index.do" style="--ft-c:#666;" target="_blank">https://www.jbnu.ac.kr/web/index.do</a>
+								</div>
+								<div style="--gap:4px; --m-gap:1.11vw;">
+									<button type="button" class="btn-type-b-lgry btn-sz-24" style="--fom-pad:0;"><i class="ic-u-arr-04 tr-180"></i></button>
+									<button type="button" class="btn-type-b-lgry btn-sz-24" style="--fom-pad:0;"><i class="ic-u-arr-04"></i></button>
+									<button type="button" class="btn-type-b-lgry btn-sz-24" style="--fom-pad:0;"><i class="ic-minus"></i></button>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div style="--content:space-between; --items:center; --m-gap:2.22vw;">
+								<div style="--gap:24px; --items:center; --m-flex-d:column; --m-items:flex-start; --m-gap:1.67vw;">
+									<div style="--gap:12px; --m-gap:2.22vw; --items:center;">
+										<span class="chip-type-01-blu-02">파일</span>
+										<h3 class="txt-18-28"><a href="#" class="layout-ellipsis"><b>00기업 지원 자기소개서</b></a></h3>
+									</div>
+									<a href="2024학년 실습기록.zip" style="--ft-c:#666;">2024학년 실습기록.zip</a>
+								</div>
+								<div style="--gap:4px; --m-gap:1.11vw;">
+									<button type="button" class="btn-type-b-lgry btn-sz-24" style="--fom-pad:0;"><i class="ic-u-arr-04 tr-180"></i></button>
+									<button type="button" class="btn-type-b-lgry btn-sz-24" style="--fom-pad:0;"><i class="ic-u-arr-04"></i></button>
+									<button type="button" class="btn-type-b-lgry btn-sz-24" style="--fom-pad:0;"><i class="ic-minus"></i></button>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<!-- 자기소개서 -->
+				<div style="--content:space-between; --mg-t:60px; --m-mg-t:8.89vw;">
+					<div style="--gap:20px; --m-gap:2.78vw;">
+						<h3 class="txt-20-32"><b>자기소개서</b></h3>
+						<button type="button" class="btn-type-b-lgry btn-sz-34-r">불러오기</button>
+					</div>
+					<div style="--gap:12px; --m-gap:2.22vw; --items:center;">
+						<div style="--gap:4px; --m-gap:1.11vw;">
+							<button type="button" class="btn-type-b-lgry btn-sz-24" style="--fom-pad:0;"><i class="ic-u-arr-04 tr-180"></i></button>
+							<button type="button" class="btn-type-b-lgry btn-sz-24" style="--fom-pad:0;"><i class="ic-u-arr-04"></i></button>
+						</div>
+						<div class="form-opt-group-01">
+							<div class="form-opt-btn-04">
+								<label>
+									<input type="radio" name="comp" checked>
+									<span class="opt-txt">구성</span>
+								</label>
+							</div>
+							<div class="form-opt-btn-04">
+								<label>
+									<input type="radio" name="comp">
+									<span class="opt-txt">미구성</span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div style="--gap:20px; --mg-t:24px; --m-mg-t:5.56vw;">
+					<label class="form-opt-chk">
+						<input type="checkbox">
+						<span class="opt-txt">글자수 표시하기</span>
+					</label>
+					<label class="form-opt-chk">
+						<input type="checkbox">
+						<span class="opt-txt">공백포함</span>
+					</label>
+					<label class="form-opt-chk">
+						<input type="checkbox">
+						<span class="opt-txt">공백제외</span>
+					</label>
+				</div>
+				<div class="box-type-02" style="--ovf:hidden; --box-pd:0; --mg-t:24px; --m-mg-t:2.78vw;">
+					<div style="--dp:flex; --h:46px; --items:center; --pd-l:24px; --m-h:12.22vw; --m-pd-l:4.17vw;">
+						<b class="txt-18-28">지원동기</b>
+					</div>
+					<div style="--bd-w:1px 0 0 0; --bd-c:#e2e2e2; --pd-x:28px; --pd-y:24px; --m-pd-x:4.17vw; --m-pd-y:4.17vw;">
+						<p class="txt-14-24" style="--txt-a:right;"><b>공백포함 <q>0</q>자, 공백제외 <q>0</q>자</b></p>
+						<p class="cr-blk" style="--mg-t:20px; --m-mg-t:2.78vw;">데이터 사이언스는 데이터를 통해 인사이트를 발견하고 의사 결정을 지원하는 과학입니다. 이는 제가 가진 분석적 사고와 문제 해결 능력을 발휘할 수 있는 분야라고 생각합니다. 또한, 빅데이터 전공으로서 학습한 지식을 실전에서 활용하고자 합니다.  데이터 분석과 시각화에 대한 기술적 지식을 습득하기 위해 교내 활동은 물론 교외활동에 적극적으로 참여해 역량을 키우고 잇습니다. 데이터 사이언티스트로서 실무 경험을 쌓고, 혁신적이고 창의적인 솔루션을 개발하여 비즈니스와 사회에 기여하고 싶습니다.</p>
+					</div>
+				</div>
+				<div class="box-type-02" style="--ovf:hidden; --box-pd:0; --mg-t:24px; --m-mg-t:2.78vw;">
+					<div style="--dp:flex; --h:46px; --items:center; --pd-l:24px; --m-h:12.22vw; --m-pd-l:4.17vw;">
+						<b>성격의 장단점</b>
+					</div>
+					<div style="--bd-w:1px 0 0 0; --bd-c:#e2e2e2; --pd-x:28px; --pd-y:24px; --m-pd-x:4.17vw; --m-pd-y:4.17vw;">
+						<p class="txt-14-24" style="--txt-a:right;"><b>공백포함 <q>0</q>자, 공백제외 <q>0</q>자</b></p>
+						<p class="cr-blk" style="--mg-t:20px; --m-mg-t:2.78vw;">데이터 사이언스는 데이터를 통해 인사이트를 발견하고 의사 결정을 지원하는 과학입니다. 이는 제가 가진 분석적 사고와 문제 해결 능력을 발휘할 수 있는 분야라고 생각합니다. 또한, 빅데이터 전공으로서 학습한 지식을 실전에서 활용하고자 합니다.  데이터 분석과 시각화에 대한 기술적 지식을 습득하기 위해 교내 활동은 물론 교외활동에 적극적으로 참여해 역량을 키우고 잇습니다. 데이터 사이언티스트로서 실무 경험을 쌓고, 혁신적이고 창의적인 솔루션을 개발하여 비즈니스와 사회에 기여하고 싶습니다.</p>
+					</div>
+				</div>
+
+				<!-- 비교과 -->
+				<div style="--content:space-between; --mg-t:60px; --m-mg-t:8.89vw;">
+					<h3 class="txt-20-32"><b>비교과</b></h3>
+					<div style="--gap:12px; --m-gap:2.22vw; --items:center;">
+						<div style="--gap:4px; --m-gap:1.11vw;">
+							<button type="button" class="btn-type-b-lgry btn-sz-24" style="--fom-pad:0;"><i class="ic-u-arr-04 tr-180"></i></button>
+							<button type="button" class="btn-type-b-lgry btn-sz-24" style="--fom-pad:0;"><i class="ic-u-arr-04"></i></button>
+						</div>
+						<div class="form-opt-group-01">
+							<div class="form-opt-btn-04">
+								<label>
+									<input type="radio" name="comp" checked>
+									<span class="opt-txt">구성</span>
+								</label>
+							</div>
+							<div class="form-opt-btn-04">
+								<label>
+									<input type="radio" name="comp">
+									<span class="opt-txt">미구성</span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div style="--gap:16px; --flex-d:column; --mg-t:20px; --m-gap:2.22vw; --m-mg-t:3.33vw;">
+					<label class="form-opt-swh-01-01">
+						<input type="checkbox" checked>
+						<span class="opt-txt"></span>
+						<div class="box-type-02">
+							<div style="--content:space-between; --items:center; --m-flex-d:column; --m-items:flex-start; --m-gap:2.22vw;">
+								<div style="--flex-d:column; --gap:10px; --m-gap:2.22vw;">
+									<h4 class="txt-18-28"><b class="cr-blk">2024학년도 Learning Contents Award </b></h4>
+									<div>2024.06.03 ~ 2024.09.11</div>
+								</div>
+							</div>
+						</div>
+					</label>
+					<label class="form-opt-swh-01-01">
+						<input type="checkbox">
+						<span class="opt-txt"></span>
+						<div class="box-type-02">
+							<div style="--content:space-between; --items:center; --m-flex-d:column; --m-items:flex-start; --m-gap:2.22vw;">
+								<div style="--flex-d:column; --gap:10px; --m-gap:2.22vw;">
+									<h4 class="txt-18-28"><b class="cr-blk">[지방대학활성화사업(SW)] IT, 전산직 취업전략 그리고 합격사례</b></h4>
+									<div>2024.06.03 ~ 2024.09.11</div>
+								</div>
+							</div>
+						</div>
+					</label>
+				</div>
+
+				<!-- 자격증 -->
+				<div style="--content:space-between; --mg-t:60px; --m-mg-t:8.89vw;">
+					<h3 class="txt-20-32"><b>자격증</b></h3>
+					<div style="--gap:12px; --m-gap:2.22vw; --items:center;">
+						<div style="--gap:4px; --m-gap:1.11vw;">
+							<button type="button" class="btn-type-b-lgry btn-sz-24" style="--fom-pad:0;"><i class="ic-u-arr-04 tr-180"></i></button>
+							<button type="button" class="btn-type-b-lgry btn-sz-24" style="--fom-pad:0;"><i class="ic-u-arr-04"></i></button>
+						</div>
+						<div class="form-opt-group-01">
+							<div class="form-opt-btn-04">
+								<label>
+									<input type="radio" name="comp" checked>
+									<span class="opt-txt">구성</span>
+								</label>
+							</div>
+							<div class="form-opt-btn-04">
+								<label>
+									<input type="radio" name="comp">
+									<span class="opt-txt">미구성</span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div style="--gap:16px; --flex-d:column; --mg-t:20px; --m-gap:2.22vw; --m-mg-t:3.33vw;">
+					<label class="form-opt-swh-01-01">
+						<input type="checkbox" checked>
+						<span class="opt-txt"></span>
+						<div class="box-type-02">
+							<div style="--content:space-between; --items:center; --m-flex-d:column; --m-items:flex-start; --m-gap:2.22vw;">
+								<div style="--gap:10px; --items:center; --m-gap:2.22vw;">
+									<h4 class="txt-18-28"><b class="cr-blk">정보처리기사</b></h4>
+									<div>한국산업인력공단</div>
+								</div>
+								<div>2023.07.01</div>
+							</div>
+						</div>
+					</label>
+					<label class="form-opt-swh-01-01">
+						<input type="checkbox" checked>
+						<span class="opt-txt"></span>
+						<div class="box-type-02">
+							<div style="--content:space-between; --items:center; --m-flex-d:column; --m-items:flex-start; --m-gap:2.22vw;">
+								<div style="--gap:10px; --items:center; --m-gap:2.22vw;">
+									<h4 class="txt-18-28"><b class="cr-blk">정보처리기사</b></h4>
+									<div>한국산업인력공단</div>
+								</div>
+								<div>2023.07.01</div>
+							</div>
+						</div>
+					</label>
+				</div>
+
+				<!-- 해외경험 -->
+				<div style="--content:space-between; --mg-t:60px; --m-mg-t:8.89vw;">
+					<h3 class="txt-20-32"><b>해외경험</b></h3>
+					<div style="--gap:12px; --m-gap:2.22vw; --items:center;">
+						<div style="--gap:4px; --m-gap:1.11vw;">
+							<button type="button" class="btn-type-b-lgry btn-sz-24" style="--fom-pad:0;"><i class="ic-u-arr-04 tr-180"></i></button>
+							<button type="button" class="btn-type-b-lgry btn-sz-24" style="--fom-pad:0;"><i class="ic-u-arr-04"></i></button>
+						</div>
+						<div class="form-opt-group-01">
+							<div class="form-opt-btn-04">
+								<label>
+									<input type="radio" name="comp" checked>
+									<span class="opt-txt">구성</span>
+								</label>
+							</div>
+							<div class="form-opt-btn-04">
+								<label>
+									<input type="radio" name="comp">
+									<span class="opt-txt">미구성</span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div style="--gap:16px; --flex-d:column; --mg-t:20px; --m-gap:2.22vw; --m-mg-t:3.33vw;">
+					<label class="form-opt-swh-01-01">
+						<input type="checkbox" checked>
+						<span class="opt-txt"></span>
+						<div class="box-type-02">
+							<div style="--content:space-between; --items:center; --m-flex-d:column; --m-items:flex-start; --m-gap:2.22vw;">
+								<div style="--flex-d:column; --gap:10px; --m-gap:2.22vw;">
+									<span class="txt-14-24" style="--ft-c:#666;">어학연수</span>
+									<h4 class="txt-18-28"><b class="cr-blk">미국</b></h4>
+									<div>실리콘밸리 투어</div>
+								</div>
+								<div>2023.07 ~ 2023.08</div>
+							</div>
+						</div>
+					</label>
+					<label class="form-opt-swh-01-01">
+						<input type="checkbox" checked>
+						<span class="opt-txt"></span>
+						<div class="box-type-02">
+							<div style="--content:space-between; --items:center; --m-flex-d:column; --m-items:flex-start; --m-gap:2.22vw;">
+								<div style="--flex-d:column; --gap:10px; --m-gap:2.22vw;">
+									<span class="txt-14-24" style="--ft-c:#666;">어학연수</span>
+									<h4 class="txt-18-28"><b class="cr-blk">캐나다</b></h4>
+								</div>
+								<div>2023.07 ~ 2023.08</div>
+							</div>
+						</div>
+					</label>
+				</div>
+
+				<!-- 수상이력 -->
+				<div style="--content:space-between; --mg-t:60px; --m-mg-t:8.89vw;">
+					<h3 class="txt-20-32"><b>수상이력</b></h3>
+					<div style="--gap:12px; --m-gap:2.22vw; --items:center;">
+						<div style="--gap:4px; --m-gap:1.11vw;">
+							<button type="button" class="btn-type-b-lgry btn-sz-24" style="--fom-pad:0;"><i class="ic-u-arr-04 tr-180"></i></button>
+							<button type="button" class="btn-type-b-lgry btn-sz-24" style="--fom-pad:0;"><i class="ic-u-arr-04"></i></button>
+						</div>
+						<div class="form-opt-group-01">
+							<div class="form-opt-btn-04">
+								<label>
+									<input type="radio" name="comp" checked>
+									<span class="opt-txt">구성</span>
+								</label>
+							</div>
+							<div class="form-opt-btn-04">
+								<label>
+									<input type="radio" name="comp">
+									<span class="opt-txt">미구성</span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div style="--gap:16px; --flex-d:column; --mg-t:20px; --m-gap:2.22vw; --m-mg-t:3.33vw;">
+					<label class="form-opt-swh-01-01">
+						<input type="checkbox" checked>
+						<span class="opt-txt"></span>
+						<div class="box-type-02">
+							<div style="--content:space-between; --items:center; --m-flex-d:column; --m-items:flex-start; --m-gap:2.22vw;">
+								<div style="--content:space-between; --flex-d:column; --gap:10px; --m-gap:2.22vw;">
+									<div style="--gap:10px; --items:center; --m-gap:2.22vw;">
+										<h4 class="txt-18-28"><b class="cr-blk">대학생 프로그래밍 경진대회</b></h4>
+										<div>삼성전자</div>
+									</div>
+									<span class="txt-14-24" style="--ft-c:#666;">5등수상</span>
+								</div>
+								<div>2023.07</div>
+							</div>
+						</div>
+					</label>
+					<label class="form-opt-swh-01-01">
+						<input type="checkbox" checked>
+						<span class="opt-txt"></span>
+						<div class="box-type-02">
+							<div style="--content:space-between; --items:center; --m-flex-d:column; --m-items:flex-start; --m-gap:2.22vw;">
+								<div style="--content:space-between; --flex-d:column; --gap:10px; --m-gap:2.22vw;">
+									<div style="--gap:10px; --items:center; --m-gap:2.22vw;">
+										<h4 class="txt-18-28"><b class="cr-blk">대학생 프로그래밍 경진대회</b></h4>
+										<div>삼성전자</div>
+									</div>
+								</div>
+								<div>2023.07</div>
+							</div>
+						</div>
+					</label>
+				</div>
+
+				<!-- 교육이수 -->
+				<div style="--content:space-between; --mg-t:60px; --m-mg-t:8.89vw;">
+					<h3 class="txt-20-32"><b>교육이수</b></h3>
+					<div style="--gap:12px; --m-gap:2.22vw; --items:center;">
+						<div style="--gap:4px; --m-gap:1.11vw;">
+							<button type="button" class="btn-type-b-lgry btn-sz-24" style="--fom-pad:0;"><i class="ic-u-arr-04 tr-180"></i></button>
+							<button type="button" class="btn-type-b-lgry btn-sz-24" style="--fom-pad:0;"><i class="ic-u-arr-04"></i></button>
+						</div>
+						<div class="form-opt-group-01">
+							<div class="form-opt-btn-04">
+								<label>
+									<input type="radio" name="comp" checked>
+									<span class="opt-txt">구성</span>
+								</label>
+							</div>
+							<div class="form-opt-btn-04">
+								<label>
+									<input type="radio" name="comp">
+									<span class="opt-txt">미구성</span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div style="--gap:16px; --flex-d:column; --mg-t:20px; --m-gap:2.22vw; --m-mg-t:3.33vw;">
+					<label class="form-opt-swh-01-01">
+						<input type="checkbox" checked>
+						<span class="opt-txt"></span>
+						<div class="box-type-02">
+							<div style="--content:space-between; --items:center; --m-flex-d:column; --m-items:flex-start; --m-gap:2.22vw;">
+								<div style="--flex-d:column; --gap:4px; --m-gap:2.22vw;">
+									<div style="--gap:10px; --items:center; --m-flex-d:column; --m-items:flex-start; --m-gap:2.22vw;">
+										<h4 class="txt-18-28"><b class="cr-blk">소프트웨어 개발 방법론</b></h4>
+										<div style="--ft-c:#666;">포스텍 소프트웨어 공학 연구소</div>
+									</div>
+									<p style="--ft-c:#666;">소프트웨어 개발 생명주기, 애자일 및 스크럼, 버전 관리 시스템 (Git), 코드 리뷰 및 품질 보증</p>
+								</div>
+								<div>2023.10.15 ~ 2024.01.3</div>
+							</div>
+						</div>
+					</label>
+					<label class="form-opt-swh-01-01">
+						<input type="checkbox">
+						<span class="opt-txt"></span>
+						<div class="box-type-02">
+							<div style="--content:space-between; --items:center; --m-flex-d:column; --m-items:flex-start; --m-gap:2.22vw;">
+								<div style="--flex-d:column; --gap:4px; --m-gap:2.22vw;">
+									<div style="--gap:10px; --items:center; --m-flex-d:column; --m-items:flex-start; --m-gap:2.22vw;">
+										<h4 class="txt-18-28"><b class="cr-blk">클라우드 컴퓨팅 기초와 활용</b></h4>
+										<div style="--ft-c:#666;">AWS Training and Certification</div>
+									</div>
+								</div>
+								<div>2023.10.15 ~ 2024.01.3</div>
+							</div>
+						</div>
+					</label>
+				</div>
+
+				<!-- 교내/외 활동 -->
+				<div style="--content:space-between; --mg-t:60px; --m-mg-t:8.89vw;">
+					<h3 class="txt-20-32"><b>교내/외 활동</b></h3>
+					<div style="--gap:12px; --m-gap:2.22vw; --items:center;">
+						<div style="--gap:4px; --m-gap:1.11vw;">
+							<button type="button" class="btn-type-b-lgry btn-sz-24" style="--fom-pad:0;"><i class="ic-u-arr-04 tr-180"></i></button>
+							<button type="button" class="btn-type-b-lgry btn-sz-24" style="--fom-pad:0;"><i class="ic-u-arr-04"></i></button>
+						</div>
+						<div class="form-opt-group-01">
+							<div class="form-opt-btn-04">
+								<label>
+									<input type="radio" name="comp" checked>
+									<span class="opt-txt">구성</span>
+								</label>
+							</div>
+							<div class="form-opt-btn-04">
+								<label>
+									<input type="radio" name="comp">
+									<span class="opt-txt">미구성</span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div style="--gap:16px; --flex-d:column; --mg-t:20px; --m-gap:2.22vw; --m-mg-t:3.33vw;">
+					<label class="form-opt-swh-01-01">
+						<input type="checkbox" checked>
+						<span class="opt-txt"></span>
+						<div class="box-type-02">
+							<div style="--content:space-between; --items:center; --m-flex-d:column; --m-items:flex-start;">
+								<div style="--flex-d:column; --gap:4px; --m-gap:0;">
+									<span class="txt-14-24" style="--ft-c:#666;">동아리</span>
+									<h4 class="txt-18-28"><b class="cr-blk">YNU AI Lab</b></h4>
+									<p style="--ft-c:#666;">교내 인공지능 연구회</p>
+								</div>
+								<div>2023.07 ~</div>
+							</div>
+						</div>
+					</label>
+					<label class="form-opt-swh-01-01">
+						<input type="checkbox" checked>
+						<span class="opt-txt"></span>
+						<div class="box-type-02">
+							<div style="--content:space-between; --items:center; --m-flex-d:column; --m-items:flex-start;">
+								<div style="--flex-d:column; --gap:4px; --m-gap:0;">
+									<span class="txt-14-24" style="--ft-c:#666;">학생회</span>
+									<h4 class="txt-18-28"><b class="cr-blk">학술부장</b></h4>
+									<p style="--ft-c:#666;">학술 관련 활동과 프로그램을 기획하고 운영 및 세미나, 워크숍, 강연 등 학술 행사와 관련된 업무 담당</p>
+								</div>
+								<div>2023.07 ~</div>
+							</div>
+						</div>
+					</label>
+				</div>
+
+				<!-- 어학성적 -->
+				<div style="--content:space-between; --mg-t:60px; --m-mg-t:8.89vw;">
+					<h3 class="txt-20-32"><b>어학성적</b></h3>
+					<div style="--gap:12px; --m-gap:2.22vw; --items:center;">
+						<div style="--gap:4px; --m-gap:1.11vw;">
+							<button type="button" class="btn-type-b-lgry btn-sz-24" disabled style="--fom-pad:0;"><i class="ic-u-arr-04 tr-180"></i></button>
+							<button type="button" class="btn-type-b-lgry btn-sz-24" disabled style="--fom-pad:0;"><i class="ic-u-arr-04"></i></button>
+						</div>
+						<div class="form-opt-group-01">
+							<div class="form-opt-btn-04">
+								<label>
+									<input type="radio" name="comp" checked>
+									<span class="opt-txt">구성</span>
+								</label>
+							</div>
+							<div class="form-opt-btn-04">
+								<label>
+									<input type="radio" name="comp">
+									<span class="opt-txt">미구성</span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div style="--gap:16px; --flex-d:column; --mg-t:20px; --m-gap:2.22vw; --m-mg-t:3.33vw;">
+					<label class="form-opt-swh-01-01">
+						<input type="checkbox">
+						<span class="opt-txt"></span>
+						<div class="box-type-02">
+							<div style="--content:space-between; --items:center; --m-flex-d:column; --m-items:flex-start;">
+								<div style="--flex-d:column; --gap:4px; --m-gap:0;">
+									<span class="txt-14-24" style="--ft-c:#666;">영어</span>
+									<div style="--gap:10px; --items:center; --m-gap:2.22vw;">
+										<h4 class="txt-18-28"><b class="cr-blk">TEPS</b></h4>
+										<div style="--ft-c:#666;">747점</div>
+									</div>
+								</div>
+								<div>2023.08.29</div>
+							</div>
+						</div>
+					</label>
+				</div>
+
+				<div class="form-txt" style="--mg-t:20px; --m-mg-t:2.78vw;">
+					<p-input placeholder="태그를  쉼표( , )로 구분해 핵심을 기록해보세요! (최대 10개 등록 가능)"></p-input>
+				</div>
+
+				<div style="--gap:12px; --content:flex-end; --mg-t:40px; --m-grid-t-col:2; --m-gap:3.33vw; --m-mg-t:8.33vw;">
+					<button type="button" class="btn-type-b" style="--btn-w:122px; --m-btn-w:100%;">임시저장</button>
+					<a href="#" class="btn-type" style="--btn-w:122px; --m-btn-w:100%;">작성완료</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- 푸터 -->
+		<div data-include="../include/footer.html"></div>
+	</body>
+</html>

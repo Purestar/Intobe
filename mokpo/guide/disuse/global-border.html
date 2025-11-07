@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="대구가톨릭">
+		<meta name="description" content="대구가톨릭">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script type="module" src="../js/pub.js"></script>
+		<link rel="stylesheet" href="../css/global.css">
+		<link rel="stylesheet" href="../css/workspace.css">
+	</head>
+	<body>
+		<div class="workspace-guide">
+			<!-- Information -->
+			<div class="workspace-guide-case">
+				<h1>Information</h1>
+				<ul class="workspace-guide-prop">
+					<li>
+						<div style="--dp:grid; --grid-t-col:3;">
+							<p class="workspace-guide-prop-desc">border-color</p>
+							<p class="workspace-guide-prop-desc">border-top-color</p>
+							<p class="workspace-guide-prop-desc">border-right-color</p>
+							<p class="workspace-guide-prop-desc">border-bottom-color</p>
+							<p class="workspace-guide-prop-desc">border-left-color</p>
+						</div>
+						<p class="workspace-guide-prop-name">bd-c</p>
+						<div style="--dp:grid; --grid-t-col:2;">
+							<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+							<p class="workspace-guide-prop-value">&lt;Value&gt;...&lt;Value&gt;</p>
+						</div>
+					</li>
+					<li>
+						<div style="--dp:grid; --grid-t-col:3;">
+							<p class="workspace-guide-prop-desc">border-width</p>
+							<p class="workspace-guide-prop-desc">border-top-width</p>
+							<p class="workspace-guide-prop-desc">border-right-width</p>
+							<p class="workspace-guide-prop-desc">border-bottom-width</p>
+							<p class="workspace-guide-prop-desc">border-left-width</p>
+						</div>
+						<p class="workspace-guide-prop-name">bd-w</p>
+						<div>
+							<div style="--dp:grid; --grid-t-col:2;">
+								<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+								<p class="workspace-guide-prop-value">&lt;Value&gt;...&lt;Value&gt;</p>
+							</div>
+							<div style="--dp:grid; --grid-t-col:3;">
+								<p class="workspace-guide-prop-value">thin</p>
+								<p class="workspace-guide-prop-value">medium</p>
+								<p class="workspace-guide-prop-value">thick</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div style="--dp:grid; --grid-t-col:3;">
+							<p class="workspace-guide-prop-desc">border-style</p>
+							<p class="workspace-guide-prop-desc">border-top-style</p>
+							<p class="workspace-guide-prop-desc">border-right-style</p>
+							<p class="workspace-guide-prop-desc">border-bottom-style</p>
+							<p class="workspace-guide-prop-desc">border-left-style</p>
+						</div>
+						<p class="workspace-guide-prop-name">bd-s</p>
+						<div>
+							<div style="--dp:grid; --grid-t-col:2;">
+								<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+								<p class="workspace-guide-prop-value">&lt;Value&gt;...&lt;Value&gt;</p>
+							</div>
+							<div style="--dp:grid; --grid-t-col:4;">
+								<p class="workspace-guide-prop-value">solid (default)</p>
+								<p class="workspace-guide-prop-value">dashed</p>
+								<p class="workspace-guide-prop-value">dotted</p>
+								<p class="workspace-guide-prop-value">double</p>
+								<p class="workspace-guide-prop-value">groove</p>
+								<p class="workspace-guide-prop-value">inset</p>
+								<p class="workspace-guide-prop-value">outset</p>
+								<p class="workspace-guide-prop-value">ridge</p>
+								<p class="workspace-guide-prop-value">none</p>
+								<p class="workspace-guide-prop-value">hidden</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div style="--dp:grid; --grid-t-col:3;">
+							<p class="workspace-guide-prop-desc">border-radius</p>
+							<p class="workspace-guide-prop-desc">border-top-left-radius</p>
+							<p class="workspace-guide-prop-desc">border-top-right-radius</p>
+							<p class="workspace-guide-prop-desc">border-bottom-right-radius</p>
+							<p class="workspace-guide-prop-desc">border-bottom-left-radius</p>
+						</div>
+						<p class="workspace-guide-prop-name">bd-r</p>
+						<div style="--dp:grid; --grid-t-col:2;">
+							<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+							<p class="workspace-guide-prop-value">&lt;Value&gt;...&lt;Value&gt;</p>
+						</div>
+					</li>
+					<li>
+						<p class="workspace-guide-prop-desc">outline-color</p>
+						<p class="workspace-guide-prop-name">ol-c</p>
+						<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+					</li>
+					<li>
+						<p class="workspace-guide-prop-desc">outline-width</p>
+						<p class="workspace-guide-prop-name">ol-w</p>
+						<div>
+							<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+							<div style="--dp:grid; --grid-t-col:3;">
+								<p class="workspace-guide-prop-value">thin</p>
+								<p class="workspace-guide-prop-value">medium</p>
+								<p class="workspace-guide-prop-value">thick</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<p class="workspace-guide-prop-desc">outline-style</p>
+						<p class="workspace-guide-prop-name">ol-s</p>
+						<div>
+							<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+							<div style="--dp:grid; --grid-t-col:4;">
+								<p class="workspace-guide-prop-value">solid (default)</p>
+								<p class="workspace-guide-prop-value">dashed</p>
+								<p class="workspace-guide-prop-value">dotted</p>
+								<p class="workspace-guide-prop-value">double</p>
+								<p class="workspace-guide-prop-value">groove</p>
+								<p class="workspace-guide-prop-value">inset</p>
+								<p class="workspace-guide-prop-value">outset</p>
+								<p class="workspace-guide-prop-value">ridge</p>
+								<p class="workspace-guide-prop-value">none</p>
+								<p class="workspace-guide-prop-value">hidden</p>
+							</div>
+						</div>
+					</li>
+					<li style="--grid-t-col:10;">
+						<p class="workspace-guide-prop-desc"><s>border-block</s></p>
+						<p class="workspace-guide-prop-desc"><s>border-block-end</s></p>
+						<p class="workspace-guide-prop-desc"><s>border-block-end-color</s></p>
+						<p class="workspace-guide-prop-desc"><s>border-block-end-style</s></p>
+						<p class="workspace-guide-prop-desc"><s>border-block-end-width</s></p>
+						<p class="workspace-guide-prop-desc"><s>border-block-start</s></p>
+						<p class="workspace-guide-prop-desc"><s>border-block-start-color</s></p>
+						<p class="workspace-guide-prop-desc"><s>border-block-start-style</s></p>
+						<p class="workspace-guide-prop-desc"><s>border-block-start-width</s></p>
+						<p class="workspace-guide-prop-desc"><s>border-block-style</s></p>
+						<p class="workspace-guide-prop-desc"><s>border-block-width</s></p>
+						<p class="workspace-guide-prop-desc"><s>border-bottom</s></p>
+						<p class="workspace-guide-prop-desc"><s>border-collapse</s></p>
+						<p class="workspace-guide-prop-desc"><s>border-end-end-radius</s></p>
+						<p class="workspace-guide-prop-desc"><s>border-end-start-radius</s></p>
+						<p class="workspace-guide-prop-desc"><s>border-image</s></p>
+						<p class="workspace-guide-prop-desc"><s>border-image-outset</s></p>
+						<p class="workspace-guide-prop-desc"><s>border-image-repeat</s></p>
+						<p class="workspace-guide-prop-desc"><s>border-image-slice</s></p>
+						<p class="workspace-guide-prop-desc"><s>border-image-source</s></p>
+						<p class="workspace-guide-prop-desc"><s>border-image-width</s></p>
+						<p class="workspace-guide-prop-desc"><s>border-inline</s></p>
+						<p class="workspace-guide-prop-desc"><s>border-inline-color</s></p>
+						<p class="workspace-guide-prop-desc"><s>border-inline-end</s></p>
+						<p class="workspace-guide-prop-desc"><s>border-inline-end-color</s></p>
+						<p class="workspace-guide-prop-desc"><s>border-inline-end-style</s></p>
+						<p class="workspace-guide-prop-desc"><s>border-inline-end-width</s></p>
+						<p class="workspace-guide-prop-desc"><s>border-inline-start</s></p>
+						<p class="workspace-guide-prop-desc"><s>border-inline-start-color</s></p>
+						<p class="workspace-guide-prop-desc"><s>border-inline-start-style</s></p>
+						<p class="workspace-guide-prop-desc"><s>border-inline-start-width</s></p>
+						<p class="workspace-guide-prop-desc"><s>border-inline-style</s></p>
+						<p class="workspace-guide-prop-desc"><s>border-inline-width</s></p>
+						<p class="workspace-guide-prop-desc"><s>border-left</s></p>
+						<p class="workspace-guide-prop-desc"><s>border-right</s></p>
+						<p class="workspace-guide-prop-desc"><s>border-spacing</s></p>
+						<p class="workspace-guide-prop-desc"><s>border-top</s></p>
+					</li>
+				</ul>
+			</div>
+
+			<hr> <!-- Color -->
+			<div style="--dp:grid; --grid-t-col:2; --gap-a:20px;">
+				<div class="workspace-guide-case">
+					<h1>Color</h1>
+					<div class="workspace-guide-inner">
+						<div style="--bd-c:red; --h:30px;"></div>
+					</div>
+					<div class="workspace-guide-inner">
+						<xmp>
+							<div style="--bd-c:red;"></div>
+						</xmp>
+					</div>
+				</div>
+
+				<div class="workspace-guide-case">
+					<h1>Each Color</h1>
+					<div class="workspace-guide-inner">
+						<div style="--bd-c:red yellow green blue; --bd-w:5px; --h:30px;"></div>
+					</div>
+					<div class="workspace-guide-inner">
+						<xmp>
+							<div style="--bd-c:red yellow green blue;"></div>
+						</xmp>
+					</div>
+				</div>
+			</div>
+
+			<hr> <!-- Width -->
+			<div style="--dp:grid; --grid-t-col:2; --gap-a:20px;">
+				<div class="workspace-guide-case">
+					<h1>Width</h1>
+					<div class="workspace-guide-inner">
+						<div style="--bd-c:red; --bd-w:5px; --h:30px;"></div>
+					</div>
+					<div class="workspace-guide-inner">
+						<xmp>
+							<div style="--bd-w:5px;"></div>
+						</xmp>
+					</div>
+				</div>
+
+				<div class="workspace-guide-case">
+					<h1>Each Width</h1>
+					<div class="workspace-guide-inner">
+						<div style="--bd-c:red; --bd-w:5px 10px 1px medium; --h:30px;"></div>
+					</div>
+					<div class="workspace-guide-inner">
+						<xmp>
+							<div style="--bd-w:5px 10px 1px medium;"></div>
+						</xmp>
+					</div>
+				</div>
+			</div>
+
+			<hr> <!-- Style -->
+			<div style="--dp:grid; --grid-t-col:1; --gap-a:20px;">
+				<div class="workspace-guide-case">
+					<h1>Style</h1>
+					<div class="workspace-guide-inner">
+						<div style="--bd-c:red; --bd-s:dashed; --h:30px;"></div>
+					</div>
+					<div class="workspace-guide-inner">
+						<xmp>
+							<div style="--bd-c:red; --bd-s:dashed;"></div>
+						</xmp>
+					</div>
+				</div>
+			</div>
+
+			<hr>
+			<div style="--dp:grid; --grid-t-col:4; --gap-a:20px;">
+				<!-- Radius -->
+				<div class="workspace-guide-case">
+					<h1>Radius</h1>
+					<div class="workspace-guide-inner">
+						<div style="--bd-c:red; --bd-r:30px; --h:30px;"></div>
+					</div>
+					<div class="workspace-guide-inner">
+						<xmp>
+							<div style="--bd-r:30px;"></div>
+						</xmp>
+					</div>
+				</div>
+
+				<!-- Each Radius -->
+				<div class="workspace-guide-case">
+					<h1>Each Radius</h1>
+					<div class="workspace-guide-inner">
+						<div style="--bd-c:red; --bd-r:30px 20px 0px 10px; --h:30px;"></div>
+					</div>
+					<div class="workspace-guide-inner">
+						<xmp>
+							<div style="--bd-r:30px 20px 0px 10px;"></div>
+						</xmp>
+					</div>
+				</div>
+
+				<!-- Radius Percentage -->
+				<div class="workspace-guide-case">
+					<h1>Radius Percentage</h1>
+					<div class="workspace-guide-inner">
+						<div style="--bd-c:red; --bd-r:30%; --h:30px;"></div>
+					</div>
+					<div class="workspace-guide-inner">
+						<xmp>
+							<div style="--bd-r:30%;"></div>
+						</xmp>
+					</div>
+				</div>
+
+				<!-- Circle -->
+				<div class="workspace-guide-case">
+					<h1>Circle</h1>
+					<div class="workspace-guide-inner">
+						<div style="--bd-c:red; --bd-r:50%; --w:30px; --h:30px;"></div>
+					</div>
+					<div class="workspace-guide-inner">
+						<xmp>
+							<div style="--bd-r:50%;"></div>
+						</xmp>
+					</div>
+				</div>
+			</div>
+
+			<hr> <!-- Outline -->
+			<div style="--dp:grid; --grid-t-col:3; --gap-a:20px;">
+				<div class="workspace-guide-case">
+					<h1>Outline Color</h1>
+					<div class="workspace-guide-inner">
+						<div style="--bd-c:green; --ol-c:red; --h:30px;"></div>
+					</div>
+					<div class="workspace-guide-inner">
+						<xmp>
+							<div style="--ol-c:red;"></div>
+						</xmp>
+					</div>
+				</div>
+
+				<div class="workspace-guide-case">
+					<h1>Outline Width</h1>
+					<div class="workspace-guide-inner">
+						<div style="--bd-c:green; --bd-w:5px; --ol-c:red; --ol-w:5px; --h:30px;"></div>
+					</div>
+					<div class="workspace-guide-inner">
+						<xmp>
+							<div style="--ol-c:red; --ol-w:5px;"></div>
+						</xmp>
+					</div>
+				</div>
+
+				<div class="workspace-guide-case">
+					<h1>Outline Style</h1>
+					<div class="workspace-guide-inner">
+						<div style="--bd-c:green; --ol-c:red; --ol-s:dashed; --h:30px;"></div>
+					</div>
+					<div class="workspace-guide-inner">
+						<xmp>
+							<div style="--ol-c:red; --ol-s:dashed;"></div>
+						</xmp>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

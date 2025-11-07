@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="Management">
+		<meta name="description" content="Management">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script type="module" src="../js/index.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
+		<script type="module" src="../js/module.js"></script>
+		<script src="../js/pub.js"></script>
+		<link rel="icon" href="../favicon.ico" sizes="any">
+		<link rel="stylesheet" href="../css/global.css">
+	</head>
+	<body>
+		<!-- 헤더 -->
+		<div class="sub-header">
+			<div data-include="../include/header.html"></div>
+		</div>
+
+		<!-- 본문 -->
+		<div id="container">
+			<div class="layout-inner sub-layout">
+				<h2 class="sub-tit-02"><a href="#"><i class="ic-l-arr-01"></i></a>AI선배</h2>
+				<div class="box-type-02" style="--box-pd:30px; --m-box-pd:5.56vw;">
+					<div style="--dp:flex; --content:space-between; --flex-w:nowrap;">
+						<div>
+							<div style="--gap:24px;">
+								<div style="--gap:16px; --items:center; --m-gap:2.5vw;">
+									<h3 class="txt-18-28"><b>우아한강아지</b></h3>
+									<span class="chip-type-02">삼성전자</span>
+								</div>
+								<div class="div-v-03 pc">
+									<p>이수학점 <span class="cr-blk">130점</span></p>
+									<p>평균학점 <span class="cr-blk">3.80점</span></p>
+								</div>
+							</div>
+							<div style="--dp:grid; --gap:12px; --mg-t:12px; --m-gap:2.22vw; --m-mg-t:2.22vw;">
+								<p>주전공 <span class="cr-blk">컴퓨터공학전공</span></p>
+								<p>복수전공 <span class="cr-blk">소프트웨어 융합전공</span></p>
+								<div class="div-v-03 mobile-flex">
+									<p>총 이수학점 <span class="cr-blk">130점</span></p>
+									<p>평균학점 <span class="cr-blk">3.80점</span></p>
+								</div>
+							</div>
+						</div>
+						<label class="form-opt-btn-02-01">
+							<input type="checkbox">
+							<span class="opt-txt">AI 선배 설정</span>
+						</label>
+					</div>
+				</div>
+
+				<p-tabs class="tab-wrap-01" style="--mg-t:60px; --m-mg-t:11.67vw;" value="0">
+					<p-tab-list class="tab-menu-01">
+						<p-tab value="0">교과/비교과</p-tab>
+						<p-tab value="1">스펙</p-tab>
+					</p-tab-list>
+					<p-tab-panels>
+						<p-tab-panel value="0">
+							<h3 class="txt-20-32"><b>교과</b></h3>
+							<div class="box-type-03" style="--box-pd-x:0; --mg-t:20px; --m-mg-t:3.33vw;">
+								<ul class="div-v-03-01 div-grid" style="--div-grid-t-col: 6; --m-div-grid-t-col: 3;">
+									<li><p>전공필수<br><strong class="txt-18-26">4개</strong></p></li>
+									<li><p>전공핵심<br><strong class="txt-18-26">4개</strong></p></li>
+									<li><p>전공선택<br><strong class="txt-18-26">4개</strong></p></li>
+									<li><p>교양필수<br><strong class="txt-18-26">4개</strong></p></li>
+									<li><p>교양선택<br><strong class="txt-18-26">36점</strong></p></li>
+									<li><p>일반<br><strong class="txt-18-26">4.08점</strong></p></li>
+								</ul>
+							</div>
+
+							<div style="--dp: flex; --gap:10px; --mg-t: 40px;">
+								<button type="button" class="btn-type-b-blk btn-sz-34-r">전체</button>
+								<button type="button" class="btn-type-b-blk btn-sz-34-r">작물생명과학과</button>
+							</div>
+
+							<h3 class="txt-20-32" style="--mg-t:32px; --m-mg-t:11.11vw;"><b>학년 / 학기</b></h3>
+
+							<div class="brd-wrap" style="--mg-t:20px; --m-mg-t:8.33vw;">
+								<div style="--gap:10px; --m-gap:1.67vw;" data-scroll="xh">
+									<label class="form-opt-btn-02">
+										<input type="radio">
+										<span class="opt-txt">전체</span>
+									</label>
+									<label class="form-opt-btn-02">
+										<input type="radio">
+										<span class="opt-txt">1-1</span>
+									</label>
+									<label class="form-opt-btn-02">
+										<input type="radio">
+										<span class="opt-txt">1-2</span>
+									</label>
+									<label class="form-opt-btn-02">
+										<input type="radio">
+										<span class="opt-txt">2-1</span>
+									</label>
+									<label class="form-opt-btn-02">
+										<input type="radio">
+										<span class="opt-txt">2-2</span>
+									</label>
+									<label class="form-opt-btn-02">
+										<input type="radio">
+										<span class="opt-txt">3-1</span>
+									</label>
+									<label class="form-opt-btn-02">
+										<input type="radio">
+										<span class="opt-txt">3-2</span>
+									</label>
+									<label class="form-opt-btn-02">
+										<input type="radio">
+										<span class="opt-txt">4-1</span>
+									</label>
+									<label class="form-opt-btn-02">
+										<input type="radio">
+										<span class="opt-txt">4-2</span>
+									</label>
+								</div>
+								<ul class="brd-lst-02" style="--grid-t-col:3; --m-grid-t-col:1; --mg-t:20px; --m-mg-t:5.56vw;">
+									<li>
+										<div style="--dp:flex; --content:space-between; --items:center;">
+											<div style="--dp:flex; --gap:4px; --items:center; --m-gap:1.11vw;">
+												<span class="chip-type-01-red">미이수</span>
+												<p style="--ft-s:14px; --m-ft-s:3vw;">교과이수율 <em>25.0%</em>(5명중<em>1</em>명이수)</p>
+											</div>
+											<label class="form-opt-chk-01">
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</div>
+										<h3 class="brd-tit layout-ellipsis">과정명이 한줄로 노출됩니다과정명이 한줄로 노출됩니다</h3>
+										<div class="div-v-03 txt-14-24">
+											<span>컴퓨터공학전공</span>
+											<span>2-2</span>
+											<span>2학점 (2시간)</span>
+										</div>
+									</li>
+									<li>
+										<div style="--dp:flex; --content:space-between; --items:center;">
+											<span class="chip-type-01-gry">이수</span>
+											<label class="form-opt-chk-01">
+												<input type="checkbox">
+												<span class="opt-txt"></span>
+											</label>
+										</div>
+										<h3 class="brd-tit layout-ellipsis">과정명이 한줄로 노출됩니다</h3>
+										<div class="div-v-03 txt-14-24">
+											<span>컴퓨터공학전공</span>
+											<span>2-2</span>
+											<span>2학점 (2시간)</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+
+							<h3 class="txt-20-32" style="--mg-t:60px; --m-mg-t:11.11vw;"><b>비교과</b></h3>
+							<div class="box-type-03" style="--box-pd-x:0; --mg-t:20px; --m-mg-t:3.33vw;">
+								<ul class="div-v-03-01 div-grid" style="--div-grid-t-col: 5; --m-div-grid-t-col: 6;">
+									<li style="--m-grid-col:3;"><p>학습역량<br><strong class="txt-18-26">1개</strong></p></li>
+									<li style="--m-grid-col:3;"><p>진로/취업/창업지원<br><strong class="txt-18-26">4개</strong></p></li>
+									<li style="--m-grid-col:2;"><p>학생활동지원<br><strong class="txt-18-26">4개</strong></p></li>
+									<li style="--m-grid-col:2;"><p>글로벌 지원<br><strong class="txt-18-26">4개</strong></p></li>
+									<li style="--m-grid-col:2;"><p>법정의무교육<br><strong class="txt-18-26">36점</strong></p></li>
+								</ul>
+							</div>
+
+							<div class="brd-wrap" style="--mg-t:40px; --m-mg-t:8.33vw;">
+								<ul class="brd-lst-03" style="--grid-t-col:3; --m-grid-t-col:1; --mg-t:20px; --m-mg-t:5.56vw;">
+									<li>
+										<div style="--dp:grid; --gap:8px; --m-gap:2.22vw;">
+											<span class="txt-14-24" style="--ft-c:#666;">학습역량</span>
+											<h3 class="brd-tit">2024학년도 Learning Contents Award </h3>
+											<p>2024.06.03 ~ 2024.09.11</p>
+										</div>
+									</li>
+									<li>
+										<div style="--dp:grid; --gap:8px; --m-gap:2.22vw;">
+											<span class="txt-14-24" style="--ft-c:#666;">진로/취업/창업지원</span>
+											<h3 class="brd-tit">[지방대학활성화SW]IT, 전산직 취업전략 그리고 합격사례</h3>
+											<p>2024.06.03 ~ 2024.09.11</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</p-tab-panel>
+						<p-tab-panel value="1">
+							<h3 class="txt-20-32"><b>스펙요약</b></h3>
+							<div class="box-type-03" style="--box-pd-x:0; --mg-t:20px; --m-mg-t:3.33vw;">
+								<ul class="div-v-03-01 div-grid" style="--div-grid-t-col: 6; --m-div-grid-t-col: 3;">
+									<li><p>자격증<br><strong class="txt-18-26">1개</strong></p></li>
+									<li><p>해외경험<br><strong class="txt-18-26">2회</strong></p></li>
+									<li><p>수상이력<br><strong class="txt-18-26">1회</strong></p></li>
+									<li><p>어학성적<br><strong class="txt-18-26">1건</strong></p></li>
+									<li><p>교육이수<br><strong class="txt-18-26">1회</strong></p></li>
+									<li><p>인턴/대외활동<br><strong class="txt-18-26">1회</strong></p></li>
+								</ul>
+							</div>
+
+							<h3 class="txt-20-32" style="--mg-t:60px; --m-mg-t:11.11vw;"><b>자격증</b></h3>
+							<div style="--grid-t-col:1; --gap:20px; --m-gap:2.22vw; --mg-t:20px; --m-grid-t-col:1; --m-mg-t:2.22vw;">
+								<div class="box-type-02 cr-blk" style="--box-pd:30px; --m-box-pd:5.56vw;">
+									<div style="--dp:flex; --content:space-between; --m-flex-d:column;">
+										<div style="--gap:10px; --items:center; --m-gap:2.22vw;">
+											<h3 class="txt-18-28"><b>정보처리기사</b></h3>
+											<p>한국산업인력공단</p>
+										</div>
+										<p>2023.07.01</p>
+									</div>
+								</div>
+								<div class="box-type-02 cr-blk" style="--box-pd:30px; --m-box-pd:5.56vw;">
+									<div style="--dp:flex; --content:space-between; --m-flex-d:column;">
+										<div style="--gap:10px; --items:center; --m-gap:2.22vw;">
+											<h3 class="txt-18-28"><b>정보처리기사</b></h3>
+											<p>한국산업인력공단</p>
+										</div>
+										<p>2023.07.01</p>
+									</div>
+								</div>
+							</div>
+
+							<h3 class="txt-20-32" style="--mg-t:60px; --m-mg-t:11.11vw;"><b>해외경험</b></h3>
+							<div style="--grid-t-col:1; --gap:20px; --m-gap:2.22vw; --mg-t:20px; --m-grid-t-col:1; --m-mg-t:2.22vw;">
+								<div class="box-type-02 cr-blk" style="--box-pd:30px; --m-box-pd:5.56vw;">
+									<div style="--dp:flex; --content:space-between; --items:center; --m-flex-d:column; --m-items:flex-start; --m-gap:1.67vw;">
+										<div style="--dp:grid; --gap:10px; --m-gap:1.67vw;">
+											<p class="txt-14-24" style="--ft-c:#666;">어학연수</p>
+											<h3 class="txt-18-28"><b>미국</b></h3>
+											<p>실리콘벨리 투어</p>
+										</div>
+										<p>2023.07 ~ 2023.08</p>
+									</div>
+								</div>
+								<div class="box-type-02 cr-blk" style="--box-pd:30px; --m-box-pd:5.56vw;">
+									<div style="--dp:flex; --content:space-between; --items:center; --m-flex-d:column; --m-items:flex-start; --m-gap:1.67vw;">
+										<div style="--dp:grid; --gap:10px; --m-gap:1.67vw;">
+											<p class="txt-14-24" style="--ft-c:#666;">워킹홀리데이</p>
+											<h3 class="txt-18-28"><b>캐나다</b></h3>
+										</div>
+										<p>2023.07 ~ 2023.08</p>
+									</div>
+								</div>
+							</div>
+
+							<h3 class="txt-20-32" style="--mg-t:60px; --m-mg-t:11.11vw;"><b>수상이력</b></h3>
+							<div style="--grid-t-col:1; --gap:20px; --m-gap:2.22vw; --mg-t:20px; --m-grid-t-col:1; --m-mg-t:2.22vw;">
+								<div class="box-type-02 cr-blk" style="--box-pd:30px; --m-box-pd:5.56vw;">
+									<div style="--dp:flex; --content:space-between; --m-flex-d:column; --items:center; --m-items:flex-start; --m-gap:1.67vw;">
+										<div style="--dp:flex; --flex-d:column; --gap:10px;">
+											<div style="--gap:10px; --items:center; --m-gap:1.67vw;">
+												<h3 class="txt-18-28"><b>대학생프로그래밍 경진대회</b></h3>
+												<p>삼성전자</p>
+											</div>
+											<p class="txt-14-24" style="--ft-c:#666;">5등수상</p>
+										</div>
+										<p>2023.07</p>
+									</div>
+								</div>
+								<div class="box-type-02 cr-blk" style="--box-pd:30px; --m-box-pd:5.56vw;">
+									<div style="--dp:flex; --content:space-between; --m-flex-d:column; --items:center; --m-items:flex-start; --m-gap:1.67vw;">
+										<div style="--dp:flex; --flex-d:column; --gap:10px;">
+											<div style="--gap:10px; --items:center; --m-gap:1.67vw;">
+												<h3 class="txt-18-28"><b>대학생프로그래밍 경진대회</b></h3>
+												<p>삼상전자</p>
+											</div>
+										</div>
+										<p>2023.07</p>
+									</div>
+								</div>
+							</div>
+
+
+						</p-tab-panel>
+					</p-tab-panels>
+				</p-tabs>
+			</div>
+		</div>
+
+		<!-- 푸터 -->
+		<div data-include="../include/footer.html"></div>
+	</body>
+</html>

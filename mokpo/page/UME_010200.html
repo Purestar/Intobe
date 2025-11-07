@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="Management">
+		<meta name="description" content="Management">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script type="module" src="../js/index.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
+		<script type="module" src="../js/module.js"></script>
+		<script src="../js/pub.js"></script>
+		<link rel="icon" href="../favicon.ico" sizes="any">
+		<link rel="stylesheet" href="../css/global.css">
+	</head>
+	<body>
+		<!-- 헤더 -->
+		<div class="sub-header">
+			<div data-include="../include/header.html"></div>
+		</div>
+
+		<!-- 본문 -->
+		<div id="container">
+			<div class="layout-inner sub-layout">
+				<h2 class="sub-tit-02"><a href="#"><i class="ic-l-arr-01"></i></a>신청서 작성하기</h2>
+
+				<div class="brd-wrap">
+					<div class="form-txt-01" style="--mg-t:40px; --m-mg-t:5.56vw;">
+						<p-input readonly value="졸업생 멘토 신청서" style="font-weight:500;"></p-input>
+					</div>
+					<div style="--dp:grid; --grid-t-col:2; --gap-x:40px; --gap-y:24px; --mg-t:40px; --m-grid-t-col:1;">
+						<div>
+							<b>활동명(닉네임)</b>
+							<div style="--dp:flex; --mg-t:10px; --gap:12px;">
+								<div class="form-txt">
+									<p-input value="아산백호"></p-input>
+								</div>
+								<div class="flex-1">
+									<button type="button" class="btn-type-b" style="--btn-w:147px; --m-btn-w:37.08vw;">중복여부체크</button>
+								</div>
+							</div>
+						</div>
+						<div>
+							<b>연락처(휴대폰)</b>
+							<div class="form-txt" style="--mg-t:10px;">
+								<p-input value="010-1234-5678"></p-input>
+							</div>
+						</div>
+						<div>
+							<b>취업 기업</b>
+							<div class="form-txt" style="--mg-t:10px;">
+								<p-input value="삼성전자"></p-input>
+							</div>
+						</div>
+						<div>
+							<b>직무</b>
+							<div class="form-txt" style="--mg-t:10px;">
+								<p-input value="반도체 공정설계"></p-input>
+							</div>
+						</div>
+						<div>
+							<b>입사년도</b>
+							<div class="form-txt" style="--mg-t:10px;">
+								<p-input value="2025"></p-input>
+							</div>
+						</div>
+						<div>
+							<b>멘티 인원 제한 설정</b>
+							<div style="--dp:flex; --gap-x:10px; --mg-t:10px; --items:center; --ft-c:black;">
+								<p-select class="form-sel" panel-class="form-panel-sel" :options="['1','2','3','4','5','6','7','8']" style="--form-w:auto; --m-form-w:30.69vw;"></p-select>
+								명
+							</div>
+						</div>
+					</div>
+					<b style="--dp:block; --mg-t:24px;">자기소개(작성하신 내용은 멘토 프로필에 공개됩니다.) </b>
+					<div class="form-tarea" style='--mg-t:10px; --form-h:100px; --m-form-h:25.14vw;'>
+						<p-tarea value="반갑습니다 멘토홈에 노출시 최대 2줄까지만 노출 되도록 입력 글자수 제한 필요​ 반갑습최대 출되도록입력글자수 제한 필요대 2줄까지만 노출 되도록 입력 글자수 제대 2줄까지 도록입력글자수 제한 필요​반갑습니다 멘토홈에 노출시 최대 2줄까지만 노출 되도록 입력 글자수 제한 필요​반갑습니다 멘토홈에 노출시 최"></p-tarea>
+					</div>
+					<div class="brd-form-01">
+						<div style="--gap:16px; --flex-d:column; --w:100%; --m-gap:2.78vw;">
+							<div>
+								<div style="--gap:40px; --items:center; --m-gap:5vw;">
+									<b>명함등록</b>
+									<label class="btn-type-b-lgry btn-sz-34-r form-file"><input type="file">파일선택</label>
+								</div>
+								<div class="brd-file" style="--pd-l:100px; --m-pd-l:0;">
+									<div class="brd-file-add pc">+ 파일을 마우스로 끌어오세요.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div style="--gap:30px; --content:flex-end; --mg-t:24px; --m-gap:3.33vw;">
+						<a href="#" class="btn-type-b-blk" style="--btn-w:122px; --m-btn-w:100%;">취소</a>
+						<a href="#" class="btn-type" style="--btn-w:122px; --m-btn-w:100%;">저장</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 푸터 -->
+		<div data-include="../include/footer.html"></div>
+	</body>
+</html>

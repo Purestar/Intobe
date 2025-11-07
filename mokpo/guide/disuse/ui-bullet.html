@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="대구가톨릭">
+		<meta name="description" content="대구가톨릭">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script type="module" src="../js/pub.js"></script>
+		<link rel="stylesheet" href="../css/global.css">
+		<link rel="stylesheet" href="../css/workspace.css">
+	</head>
+	<body>
+		<div class="workspace-guide">
+			<!-- Information -->
+			<div class="workspace-guide-case">
+				<h1>Information</h1>
+				<ul class="workspace-guide-prop">
+					<li>
+						<p class="workspace-guide-prop-attribute not-prefix">class</p>
+						<div style="--grid-t-col:8; --grid-col:2;">
+							<p class="workspace-guide-prop-attribute-value">bul-cir</p>
+							<p class="workspace-guide-prop-attribute-value">bul-squ</p>
+							<p class="workspace-guide-prop-attribute-value">bul-hyp</p>
+							<p class="workspace-guide-prop-attribute-value">bul-num</p>
+						</div>
+					</li>
+					<li>
+						<p class="workspace-guide-prop-desc">Bullet Width</p>
+						<p class="workspace-guide-prop-name">bul-w</p>
+						<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+					</li>
+					<li>
+						<p class="workspace-guide-prop-desc">Bullet Height</p>
+						<p class="workspace-guide-prop-name">bul-h</p>
+						<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+					</li>
+					<li>
+						<p class="workspace-guide-prop-desc">Bullet Color</p>
+						<p class="workspace-guide-prop-name">bul-c</p>
+						<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+					</li>
+					<li>
+						<p class="workspace-guide-prop-desc">Bullet Gap</p>
+						<p class="workspace-guide-prop-name">bul-gap</p>
+						<p class="workspace-guide-prop-value">&lt;Value&gt;</p>
+					</li>
+				</ul>
+			</div>
+
+			<hr>
+			<div style="--grid-t-col:2; --gap-a:20px;">
+				<!-- Circle -->
+				<div class="workspace-guide-case">
+					<h1>Circle</h1>
+					<div class="workspace-guide-inner">
+						<div class="bul-cir">
+							<div>Item</div>
+							<div>Item</div>
+							<div>Item</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Square -->
+				<div class="workspace-guide-case">
+					<h1>Square</h1>
+					<div class="workspace-guide-inner">
+						<div class="bul-squ">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Hyphen -->
+				<div class="workspace-guide-case">
+					<h1>Hyphen</h1>
+					<div class="workspace-guide-inner">
+						<div class="bul-hyp">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Number -->
+				<div class="workspace-guide-case">
+					<h1>Number</h1>
+					<div class="workspace-guide-inner">
+						<div class="bul-num">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+					</div>
+				</div>
+				<div class="workspace-guide-case" style="--grid-col:2;">
+					<div class="workspace-guide-inner">
+						<xmp>
+							<div class="bul-"></div>
+						</xmp>
+					</div>
+				</div>
+			</div>
+
+			<hr>
+			<div style="--grid-t-col:4; --m-grid-t-col:1; --gap-a:20px;">
+				<!-- Color -->
+				<div class="workspace-guide-case">
+					<h1>Color</h1>
+					<div class="workspace-guide-inner">
+						<div class="bul-cir" style="--ft-c:red;">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+						<div class="bul-squ" style="--bul-c:red;">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<xmp>
+							<div class="bul-" style="--ft-c:red; --bul-c:red;"></div>
+						</xmp>
+					</div>
+				</div>
+
+				<!-- Gap -->
+				<div class="workspace-guide-case">
+					<h1>Gap</h1>
+					<div class="workspace-guide-inner">
+						<div class="bul-cir" style="--bul-gap:20px;">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<xmp>
+							<div class="bul-" style="--bul-gap:20px;"></div>
+						</xmp>
+					</div>
+				</div>
+
+				<!-- Size -->
+				<div class="workspace-guide-case">
+					<h1>Bullet Size</h1>
+					<div class="workspace-guide-inner">
+						<div class="bul-cir" style="--bul-w:4px;">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+						<div class="bul-squ" style="--bul-w:12px;">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+						<div class="bul-hyp" style="--bul-w:20px; --bul-h:2px;">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<xmp>
+							<div class="bul-" style="--bul-w:4px;"></div>
+						</xmp>
+					</div>
+				</div>
+
+				<!-- Font Size -->
+				<div class="workspace-guide-case">
+					<h1>Font Size</h1>
+					<div class="workspace-guide-inner">
+						<div class="bul-cir" style="--ft-s:10px;">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+						<div class="bul-squ" style="--ft-s:20px;">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+						<div class="bul-hyp" style="--ft-s:25px;">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+						<div class="bul-num" style="--ft-s:30px;">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<xmp>
+							<div class="bul-" style="--ft-s:10px;"></div>
+						</xmp>
+					</div>
+				</div>
+
+				<!-- Line Height -->
+				<div class="workspace-guide-case">
+					<h1>Line Height</h1>
+					<div class="workspace-guide-inner">
+						<div class="bul-cir" style="--txt-lh:1;">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+						<div class="bul-squ" style="--txt-lh:1.5;">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+						<div class="bul-hyp" style="--txt-lh:2;">
+							<div>Item</div><div>Item</div><div>Item</div>
+						</div>
+						<div class="bul-num" style="--txt-lh:2.5;">
+							<div>ItemItemItemItemItemItemItemItemItemItemItemItemItemItemItemItemItemItemItemItemItemItemItemItemItemItemItemItemItemItemItemItemItemItemItemItemItemItemItemItemItemItemItemItemItem</div><div>Item</div><div>Item</div>
+						</div>
+					</div>
+					<div class="workspace-guide-inner">
+						<xmp>
+							<div class="bul-" style="--txt-lh:2.5;"></div>
+						</xmp>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

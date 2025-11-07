@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="Management">
+		<meta name="description" content="Management">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Index</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script type="module" src="../js/index.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+		<script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
+		<script type="module" src="../js/module.js"></script>
+		<script src="../js/pub.js"></script>
+		<link rel="icon" href="../favicon.ico" sizes="any">
+		<link rel="stylesheet" href="../css/global.css">
+	</head>
+	<body>
+		<!-- 헤더 -->
+		<div class="sub-header">
+			<div data-include="../include/header.html"></div>
+		</div>
+
+		<!-- 본문 -->
+		<div id="container">
+			<div class="layout-inner sub-layout">
+				<h2 class="txt-28-36"><strong>AI 선배를 추천해드려요!</strong></h2>
+
+				<div id="job" class="job-slide-wrap">
+					<div class="swi-type-03 swi-navigation-01 m-full">
+						<div class="swiper brd-wrap">
+							<ul class="swiper-wrapper">
+								<li class="swiper-slide">
+									<div>
+										<div style="--gap:10px; --items:center;">
+											<h3 class="txt-20-30"><b>우아한강아지</b></h3>
+											<span class="chip-type-02">삼성전자</span>
+										</div>
+										<ul class="job-desc">
+											<li style="--gap:12px;">주전공<span style="--ft-c:black;">컴퓨터공학전공</span></li>
+											<li style="--gap:12px;">복수전공<span style="--ft-c:black;">소프트웨어 융합전공</span></li>
+										</ul>
+									</div>
+									<ul class="div-v-03-02">
+										<li>이수학점<span style="--ft-c:black;">130점</span></li>
+										<li>평균학점<span style="--ft-c:black;">3.80점</span></li>
+									</ul>
+									<p class="job-recom"><strong class="txt-24-32"><q>98%</q></strong>추천도</p>
+								</li>
+								<li class="swiper-slide">
+									<div>
+										<div style="--gap:10px; --items:center;">
+											<h3 class="txt-20-30"><b>우아한강아지</b></h3>
+											<span class="chip-type-02">삼성전자</span>
+										</div>
+										<ul class="job-desc">
+											<li style="--gap:12px;">주전공<span style="--ft-c:black;">컴퓨터공학전공</span></li>
+											<li style="--gap:12px;">복수전공<span style="--ft-c:black;">소프트웨어 융합전공</span></li>
+										</ul>
+									</div>
+									<ul class="div-v-03-02">
+										<li>이수학점<span style="--ft-c:black;">130점</span></li>
+										<li>평균학점<span style="--ft-c:black;">3.80점</span></li>
+									</ul>
+									<p class="job-recom"><strong class="txt-24-32"><q>98%</q></strong>추천도</p>
+								</li>
+								<li class="swiper-slide">
+									<div>
+										<div style="--gap:10px; --items:center;">
+											<h3 class="txt-20-30"><b>우아한강아지</b></h3>
+											<span class="chip-type-02">삼성전자</span>
+										</div>
+										<ul class="job-desc">
+											<li style="--gap:12px;">주전공<span style="--ft-c:black;">컴퓨터공학전공</span></li>
+											<li style="--gap:12px;">복수전공<span style="--ft-c:black;">소프트웨어 융합전공</span></li>
+										</ul>
+									</div>
+									<ul class="div-v-03-02">
+										<li>이수학점<span style="--ft-c:black;">130점</span></li>
+										<li>평균학점<span style="--ft-c:black;">3.80점</span></li>
+									</ul>
+									<p class="job-recom"><strong class="txt-24-32"><q>98%</q></strong>추천도</p>
+								</li>
+								<li class="swiper-slide">
+									<div>
+										<div style="--gap:10px; --items:center;">
+											<h3 class="txt-20-30"><b>우아한강아지</b></h3>
+											<span class="chip-type-02">삼성전자</span>
+										</div>
+										<ul class="job-desc">
+											<li style="--gap:12px;">주전공<span style="--ft-c:black;">컴퓨터공학전공</span></li>
+											<li style="--gap:12px;">복수전공<span style="--ft-c:black;">소프트웨어 융합전공</span></li>
+										</ul>
+									</div>
+									<ul class="div-v-03-02">
+										<li>이수학점<span style="--ft-c:black;">130점</span></li>
+										<li>평균학점<span style="--ft-c:black;">3.80점</span></li>
+									</ul>
+									<p class="job-recom"><strong class="txt-24-32"><q>98%</q></strong>추천도</p>
+								</li>
+							</ul>
+						</div>
+						<div class="swiper-nav-wrap swi-nav-01">
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+					</div>
+				</div>
+
+				<h2 class="txt-28-36" style="--mg-t:80px; --m-mg-t:11.11vw;"><strong>AI 선배를 직업찾아보세요!</strong></h2>
+				<p-tabs class="tab-wrap-01" style="--tab-cont-pd-y:0; --mg-t:36px; --m-mg-t:5.56vw;" value="0">
+					<p-tab-list class="tab-menu-01">
+						<p-tab value="0">취업기업으로 찾기</p-tab>
+						<p-tab value="1">직접검색</p-tab>
+					</p-tab-list>
+					<p-tab-panels>
+						<p-tab-panel value="0">
+							<div class="job-type-wrap">
+								<div class="job-type-rst-wrap" data-scroll="v">
+									<ul class="lst-item-03-01" style="--grid-t-col:3; --m-grid-t-col:1;">
+										<li><button type="button" class="lst-tit">관리자</button></li>
+										<li><button type="button" class="lst-tit">전문가 및 관련 종사자</button></li>
+										<li><button type="button" class="lst-tit">사무종사자</button></li>
+										<li><button type="button" class="lst-tit">서비스종사자</button></li>
+										<li><button type="button" class="lst-tit">판매종사자</button></li>
+										<li><button type="button" class="lst-tit">농림 . 어업 숙련 종사자</button></li>
+										<li><button type="button" class="lst-tit">기능원 및 관련 기능 종사자</button></li>
+										<li><button type="button" class="lst-tit">장치. 기계 조작 및 조립종사자 </button></li>
+										<li><button type="button" class="lst-tit">단순노무 종사자</button></li>
+										<li><button type="button" class="lst-tit">군인</button></li>
+									</ul>
+									<div class="pc" data-include="../include/paging.html"></div>
+								</div>
+							</div>
+						</p-tab-panel>
+						<p-tab-panel value="1">
+							<div class="job-type-wrap">
+								<div class="job-type-ctrl">
+									<div style="--dp:grid; --gap:24px; --m-gap:5.56vw;">
+										<div style="--dp:flex; --items:center; --m-grid-t-col:1; --m-items:flex-start; --m-gap:3.06vw;">
+											<b style="--w:110px; --m-w:18.06vw;">취업기업</b>
+											<div class="flex-1" style="--m-w:100%;">
+												<div class="form-txt">
+													<p-input placeholder="기업명을 입력해주세요"></p-input>
+												</div>
+											</div>
+										</div>
+
+										<!-- 주전공 -->
+										<div style="--dp: flex; --flex-w: nowrap; --items: center; --m-grid-t-col:1; --m-items: flex-start;--m-gap:3.06vw;">
+											<div style="--gap:0; --items:center;">
+												<b style="--w:110px; --m-w:18.06vw;">주전공</b>
+												<div style="--gap:24px;">
+													<button type="button" class="btn-type-b-lgry btn-sz-34-r" disabled>선택</button>
+													<ul class="lst-tag-02 pc">
+														<li>
+															<div class="div-v-arrow-01 txt-14-24">
+																<span>공과대학</span>
+																<span>바이오메티컬학부</span>
+																<span>헬스케어기기공학전공</span>
+															</div>
+															<button type="button"><i class="ic-delete-02"></i></button>
+														</li>
+														<li>
+															<div class="div-v-arrow-01 txt-14-24">
+																<span>공과대학</span>
+																<span>바이오메티컬학부</span>
+																<span>헬스케어기기공학전공</span>
+															</div>
+															<button type="button"><i class="ic-delete-02"></i></button>
+														</li>
+														<li>
+															<div class="div-v-arrow-01 txt-14-24">
+																<span>공과대학</span>
+																<span>바이오메티컬학부</span>
+																<span>헬스케어기기공학전공</span>
+															</div>
+															<button type="button"><i class="ic-delete-02"></i></button>
+														</li>
+														<li>
+															<div class="div-v-arrow-01 txt-14-24">
+																<span>공과대학</span>
+																<span>바이오메티컬학부</span>
+																<span>헬스케어기기공학전공</span>
+															</div>
+															<button type="button"><i class="ic-delete-02"></i></button>
+														</li>
+														<li>
+															<div class="div-v-arrow-01 txt-14-24">
+																<span>공과대학</span>
+																<span>바이오메티컬학부</span>
+																<span>헬스케어기기공학전공</span>
+															</div>
+															<button type="button"><i class="ic-delete-02"></i></button>
+														</li>
+														<li>
+															<div class="div-v-arrow-01 txt-14-24">
+																<span>공과대학</span>
+																<span>바이오메티컬학부</span>
+																<span>헬스케어기기공학전공</span>
+															</div>
+															<button type="button"><i class="ic-delete-02"></i></button>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<ul class="lst-tag-02 mobile-flex m-flex-nw m-ws-nw" data-scroll="xh">
+												<li>
+													<div class="div-v-arrow-01 txt-14-24">
+														<span>공과대학</span>
+														<span>바이오메티컬학부</span>
+														<span>헬스케어기기공학전공</span>
+													</div>
+													<button type="button"><i class="ic-delete-02"></i></button>
+												</li>
+												<li>
+													<div class="div-v-arrow-01 txt-14-24">
+														<span>공과대학</span>
+														<span>바이오메티컬학부</span>
+														<span>헬스케어기기공학전공</span>
+													</div>
+													<button type="button"><i class="ic-delete-02"></i></button>
+												</li>
+												<li>
+													<div class="div-v-arrow-01 txt-14-24">
+														<span>공과대학</span>
+														<span>바이오메티컬학부</span>
+														<span>헬스케어기기공학전공</span>
+													</div>
+													<button type="button"><i class="ic-delete-02"></i></button>
+												</li>
+												<li>
+													<div class="div-v-arrow-01 txt-14-24">
+														<span>공과대학</span>
+														<span>바이오메티컬학부</span>
+														<span>헬스케어기기공학전공</span>
+													</div>
+													<button type="button"><i class="ic-delete-02"></i></button>
+												</li>
+												<li>
+													<div class="div-v-arrow-01 txt-14-24">
+														<span>공과대학</span>
+														<span>바이오메티컬학부</span>
+														<span>헬스케어기기공학전공</span>
+													</div>
+													<button type="button"><i class="ic-delete-02"></i></button>
+												</li>
+												<li>
+													<div class="div-v-arrow-01 txt-14-24">
+														<span>공과대학</span>
+														<span>바이오메티컬학부</span>
+														<span>헬스케어기기공학전공</span>
+													</div>
+													<button type="button"><i class="ic-delete-02"></i></button>
+												</li>
+												<li>
+													<div class="div-v-arrow-01 txt-14-24">
+														<span>공과대학</span>
+														<span>바이오메티컬학부</span>
+														<span>헬스케어기기공학전공</span>
+													</div>
+													<button type="button"><i class="ic-delete-02"></i></button>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="job-type" style="--grid-t-col:3; --m-grid-t-col:1; --m-gap:3.89vw; --m-pd-a:5vw;">
+									<div>
+										<div class="pc">
+											<ul data-scroll="v" class="job-type-lst">
+												<li><button type="button">관리자</button></li>
+												<li class="active"><button type="button">전문가 및 관련 종사자</button></li>
+												<li><button type="button">사무종사자</button></li>
+												<li><button type="button">서비스종사자</button></li>
+												<li><button type="button">판매종사자</button></li>
+												<li><button type="button">농림 . 어업 숙련 종사자</button></li>
+												<li><button type="button">기능원 및 관련 기능 종사자</button></li>
+												<li><button type="button">장치. 기계 조작 및 조립종사자 </button></li>
+												<li><button type="button">단순노무 종사자</button></li>
+												<li><button type="button">군인</button></li>
+												<li><button type="button">관리자</button></li>
+											</ul>
+										</div>
+										<div class="mobile">
+											<div style="--flex-d:column; --gap:2.78vw;">
+												<b>대분류</b>
+												<p-select class="form-sel" panel-class="form-panel-sel" placeholder="" :options="['관리자', '전문가 및 관련 종사자', '사무종사자', '서비스종사자', '판매종사자']">
+												</p-select>
+											</div>
+										</div>
+									</div>
+									<div>
+										<div class="pc">
+											<ul data-scroll="v" class="job-type-lst">
+												<li><button type="button">관리자</button></li>
+												<li class="active"><button type="button">전문가 및 관련 종사자</button></li>
+												<li><button type="button">사무종사자</button></li>
+												<li><button type="button">서비스종사자</button></li>
+												<li><button type="button">판매종사자</button></li>
+												<li><button type="button">농림 . 어업 숙련 종사자</button></li>
+												<li><button type="button">기능원 및 관련 기능 종사자</button></li>
+												<li><button type="button">장치. 기계 조작 및 조립종사자 </button></li>
+												<li><button type="button">단순노무 종사자</button></li>
+												<li><button type="button">군인</button></li>
+												<li><button type="button">관리자</button></li>
+											</ul>
+										</div>
+										<div class="mobile">
+											<div style="--flex-d:column; --gap:2.78vw;">
+												<b>중분류</b>
+												<p-select class="form-sel" panel-class="form-panel-sel" placeholder="1차 분류를 선택해주세요." :options="['관리자', '전문가 및 관련 종사자', '사무종사자', '서비스종사자', '판매종사자']">
+												</p-select>
+											</div>
+										</div>
+									</div>
+									<div>
+										<div class="pc" style="--h:100%;">
+											<ul data-scroll="v" class="job-type-lst" style="--h:100%;">
+												<li class="job-type-lst no-data">2차 분류를 선택해주세요.</li>
+											</ul>
+										</div>
+										<div class="mobile">
+											<div style="--flex-d:column; --gap:2.78vw;">
+												<b>소분류</b>
+												<p-select class="form-sel" panel-class="form-panel-sel" placeholder="2차 분류를 선택해주세요." :options="['관리자', '전문가 및 관련 종사자', '사무종사자', '서비스종사자', '판매종사자']">
+												</p-select>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="job-type-ctrl">
+									<div style="--dp:grid; --gap:24px; --m-gap:5.56vw;">
+
+										<!-- 복수전공  -->
+										<div style="--dp: flex; --flex-w: nowrap; --items: center; --m-grid-t-col:1; --m-items: flex-start;--m-gap:3.06vw;">
+											<div style="--gap:0; --items:center;">
+												<b style="--w:110px; --m-w:18.06vw;">복수전공</b>
+												<div style="--gap:24px;">
+													<button type="button" class="btn-type-b-lgry btn-sz-34-r">선택</button>
+													<ul class="lst-tag-02 pc">
+														<li>
+															<div class="div-v-arrow-01 txt-14-24">
+																<span>공과대학</span>
+																<span>바이오메티컬학부</span>
+																<span>헬스케어기기공학전공</span>
+															</div>
+															<button type="button"><i class="ic-delete-02"></i></button>
+														</li>
+														<li>
+															<div class="div-v-arrow-01 txt-14-24">
+																<span>공과대학</span>
+																<span>바이오메티컬학부</span>
+																<span>헬스케어기기공학전공</span>
+															</div>
+															<button type="button"><i class="ic-delete-02"></i></button>
+														</li>
+														<li>
+															<div class="div-v-arrow-01 txt-14-24">
+																<span>공과대학</span>
+																<span>바이오메티컬학부</span>
+																<span>헬스케어기기공학전공</span>
+															</div>
+															<button type="button"><i class="ic-delete-02"></i></button>
+														</li>
+														<li>
+															<div class="div-v-arrow-01 txt-14-24">
+																<span>공과대학</span>
+																<span>바이오메티컬학부</span>
+																<span>헬스케어기기공학전공</span>
+															</div>
+															<button type="button"><i class="ic-delete-02"></i></button>
+														</li>
+														<li>
+															<div class="div-v-arrow-01 txt-14-24">
+																<span>공과대학</span>
+																<span>바이오메티컬학부</span>
+																<span>헬스케어기기공학전공</span>
+															</div>
+															<button type="button"><i class="ic-delete-02"></i></button>
+														</li>
+														<li>
+															<div class="div-v-arrow-01 txt-14-24">
+																<span>공과대학</span>
+																<span>바이오메티컬학부</span>
+																<span>헬스케어기기공학전공</span>
+															</div>
+															<button type="button"><i class="ic-delete-02"></i></button>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<ul class="lst-tag-02 mobile-flex m-flex-nw m-ws-nw" data-scroll="xh">
+												<li>
+													<div class="div-v-arrow-01 txt-14-24">
+														<span>공과대학</span>
+														<span>바이오메티컬학부</span>
+														<span>헬스케어기기공학전공</span>
+													</div>
+													<button type="button"><i class="ic-delete-02"></i></button>
+												</li>
+												<li>
+													<div class="div-v-arrow-01 txt-14-24">
+														<span>공과대학</span>
+														<span>바이오메티컬학부</span>
+														<span>헬스케어기기공학전공</span>
+													</div>
+													<button type="button"><i class="ic-delete-02"></i></button>
+												</li>
+												<li>
+													<div class="div-v-arrow-01 txt-14-24">
+														<span>공과대학</span>
+														<span>바이오메티컬학부</span>
+														<span>헬스케어기기공학전공</span>
+													</div>
+													<button type="button"><i class="ic-delete-02"></i></button>
+												</li>
+												<li>
+													<div class="div-v-arrow-01 txt-14-24">
+														<span>공과대학</span>
+														<span>바이오메티컬학부</span>
+														<span>헬스케어기기공학전공</span>
+													</div>
+													<button type="button"><i class="ic-delete-02"></i></button>
+												</li>
+												<li>
+													<div class="div-v-arrow-01 txt-14-24">
+														<span>공과대학</span>
+														<span>바이오메티컬학부</span>
+														<span>헬스케어기기공학전공</span>
+													</div>
+													<button type="button"><i class="ic-delete-02"></i></button>
+												</li>
+												<li>
+													<div class="div-v-arrow-01 txt-14-24">
+														<span>공과대학</span>
+														<span>바이오메티컬학부</span>
+														<span>헬스케어기기공학전공</span>
+													</div>
+													<button type="button"><i class="ic-delete-02"></i></button>
+												</li>
+												<li>
+													<div class="div-v-arrow-01 txt-14-24">
+														<span>공과대학</span>
+														<span>바이오메티컬학부</span>
+														<span>헬스케어기기공학전공</span>
+													</div>
+													<button type="button"><i class="ic-delete-02"></i></button>
+												</li>
+											</ul>
+										</div>
+
+										<!-- 부전공 -->
+										<div style="--dp: flex; --flex-w: nowrap; --items: center; --m-grid-t-col:1; --m-items: flex-start;--m-gap:3.06vw;">
+											<div style="--gap:0; --items:center;">
+												<b style="--w:110px; --m-w:18.06vw;">부전공</b>
+												<div style="--gap:24px;">
+													<button type="button" class="btn-type-b-lgry btn-sz-34-r">선택</button>
+													<ul class="lst-tag-02 pc">
+														<li>
+															<div class="div-v-arrow-01 txt-14-24">
+																<span>공과대학</span>
+																<span>바이오메티컬학부</span>
+																<span>헬스케어기기공학전공</span>
+															</div>
+															<button type="button"><i class="ic-delete-02"></i></button>
+														</li>
+														<li>
+															<div class="div-v-arrow-01 txt-14-24">
+																<span>공과대학</span>
+																<span>바이오메티컬학부</span>
+																<span>헬스케어기기공학전공</span>
+															</div>
+															<button type="button"><i class="ic-delete-02"></i></button>
+														</li>
+														<li>
+															<div class="div-v-arrow-01 txt-14-24">
+																<span>공과대학</span>
+																<span>바이오메티컬학부</span>
+																<span>헬스케어기기공학전공</span>
+															</div>
+															<button type="button"><i class="ic-delete-02"></i></button>
+														</li>
+														<li>
+															<div class="div-v-arrow-01 txt-14-24">
+																<span>공과대학</span>
+																<span>바이오메티컬학부</span>
+																<span>헬스케어기기공학전공</span>
+															</div>
+															<button type="button"><i class="ic-delete-02"></i></button>
+														</li>
+														<li>
+															<div class="div-v-arrow-01 txt-14-24">
+																<span>공과대학</span>
+																<span>바이오메티컬학부</span>
+																<span>헬스케어기기공학전공</span>
+															</div>
+															<button type="button"><i class="ic-delete-02"></i></button>
+														</li>
+														<li>
+															<div class="div-v-arrow-01 txt-14-24">
+																<span>공과대학</span>
+																<span>바이오메티컬학부</span>
+																<span>헬스케어기기공학전공</span>
+															</div>
+															<button type="button"><i class="ic-delete-02"></i></button>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<ul class="lst-tag-02 mobile-flex m-flex-nw m-ws-nw" data-scroll="xh">
+												<li>
+													<div class="div-v-arrow-01 txt-14-24">
+														<span>공과대학</span>
+														<span>바이오메티컬학부</span>
+														<span>헬스케어기기공학전공</span>
+													</div>
+													<button type="button"><i class="ic-delete-02"></i></button>
+												</li>
+												<li>
+													<div class="div-v-arrow-01 txt-14-24">
+														<span>공과대학</span>
+														<span>바이오메티컬학부</span>
+														<span>헬스케어기기공학전공</span>
+													</div>
+													<button type="button"><i class="ic-delete-02"></i></button>
+												</li>
+												<li>
+													<div class="div-v-arrow-01 txt-14-24">
+														<span>공과대학</span>
+														<span>바이오메티컬학부</span>
+														<span>헬스케어기기공학전공</span>
+													</div>
+													<button type="button"><i class="ic-delete-02"></i></button>
+												</li>
+												<li>
+													<div class="div-v-arrow-01 txt-14-24">
+														<span>공과대학</span>
+														<span>바이오메티컬학부</span>
+														<span>헬스케어기기공학전공</span>
+													</div>
+													<button type="button"><i class="ic-delete-02"></i></button>
+												</li>
+												<li>
+													<div class="div-v-arrow-01 txt-14-24">
+														<span>공과대학</span>
+														<span>바이오메티컬학부</span>
+														<span>헬스케어기기공학전공</span>
+													</div>
+													<button type="button"><i class="ic-delete-02"></i></button>
+												</li>
+												<li>
+													<div class="div-v-arrow-01 txt-14-24">
+														<span>공과대학</span>
+														<span>바이오메티컬학부</span>
+														<span>헬스케어기기공학전공</span>
+													</div>
+													<button type="button"><i class="ic-delete-02"></i></button>
+												</li>
+												<li>
+													<div class="div-v-arrow-01 txt-14-24">
+														<span>공과대학</span>
+														<span>바이오메티컬학부</span>
+														<span>헬스케어기기공학전공</span>
+													</div>
+													<button type="button"><i class="ic-delete-02"></i></button>
+												</li>
+											</ul>
+										</div>
+
+										<div style="--dp:flex; --content:space-between; --items:center; --m-dp:grid; --m-grid-t-col:1; --m-gap:8.33vw;">
+											<div style="--gap:50px; --m-flex-d:column; --m-gap:5.56vw; --m-w:100%;">
+												<div style="--dp:flex; --items:center; --flex-w:nowrap; --m-grid-t-col:1; --m-items:flex-start; --m-gap:3.33vw;">
+													<b style="--w:110px; --m-w:18.06vw;">이수학점</b>
+													<div style="--gap:16px; --items:center; --m-dp:flex; --m-w:100%; --m-gap:2.5vw;">
+														<div class="form-txt" style="--form-w:100px; --m-form-w:100%;">
+															<p-input placeholder="000" style="--txt-a:right;"></p-input>
+														</div>
+														<span class="ws-nw cr-blk">점 이상</span>
+													</div>
+												</div>
+												<div style="--dp:flex; --items:center; --flex-w:nowrap; --m-grid-t-col:1; --m-items:flex-start; --m-gap:3.33vw;">
+													<b style="--w:110px; --m-w:18.06vw;">평균평점</b>
+													<div style="--gap:16px; --items:center; --m-w:100%; --m-dp:flex; --m-gap:2.5vw;">
+														<div class="form-txt" style="--form-w:100px; --m-form-w:100%;">
+															<p-input placeholder="000" style="--txt-a:right;"></p-input>
+														</div>
+														<span class="ws-nw cr-blk">점 이상</span>
+													</div>
+												</div>
+											</div>
+											<div style="--gap:26px; --items:center; --m-w:100%;">
+												<button type="button" class="btn-icon"><i class="ic-refresh"></i>초기화</button>
+												<a href="#" class="btn-type-b m-flex-1" style="--btn-w:122px;">검색</a>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</p-tab-panel>
+					</p-tab-panels>
+				</p-tabs>
+
+				<div style="--dp:grid; --grid-t-col:2; --mg-t:80px; --gap:36px; --m-grid-t-col:1; --m-mg-t:11.11vw; --m-gap:11.11vw;">
+					<div>
+						<h2 class="txt-28-36"><strong>AI 선배에서 가장 중요하게 생각하는 요소는?</strong></h2>
+						<p>학생들이 롤 모델 선정에 가장 중요하게생각하는 요소를 알아보세요!</p>
+						<div class="box-type-02" style="--mg-t:36px; --m-mg-t:5.56vw;">
+							<ul class="bul-num-01">
+								<li><b>취업기업</b> <p class="txt-14-24">내가 원하는 기업에 취업한 선배를 찾아요</p></li>
+								<li><b>이수학점</b> <p class="txt-14-24">이수학점이 높은 선배를 찾아요</p></li>
+								<li><b>평균평점</b> <p class="txt-14-24">평균평점이 높은 선배를 찾아요</p></li>
+							</ul>
+							<div id="role-model-chart" style="--w:160px; --h:160px; --m-w:40.28vw; --m-h:40.28vw; --mg-t:38px; --mg-x:auto; --m-mg-t:8.33vw;"></div>
+						</div>
+					</div>
+					<div>
+						<h2 class="txt-28-36"><strong>학생들의 PICK! 인기쟁이 AI선배는?</strong></h2>
+						<p>학생들이 가장 많이 설정한 롤 모델을 확인해보세요!</p>
+						<ul class="lst-item-03 bul-num-01" style="--mg-t:36px; --m-mg-t:5.56vw;">
+							<li>
+								<span class="lst-tit" style="--dp:flex; --gap:12px; --items:center; --m-gap:2.78vw;">
+									아키텍쳐전문가
+									<span class="chip-type-02">삼성전자</span>
+								</span>
+								<a href="#" class="lst-lnk"><i class="ic-r-arr-03"></i></a>
+							</li>
+							<li>
+								<span class="lst-tit">시스템개발자</span>
+								<a href="#" class="lst-lnk"><i class="ic-r-arr-03"></i></a>
+							</li>
+							<li>
+								<span class="lst-tit">보안 SW엔지니어</span>
+								<a href="#" class="lst-lnk"><i class="ic-r-arr-03"></i></a>
+							</li>
+							<li>
+								<span class="lst-tit">AI 기술 개발자</span>
+								<a href="#" class="lst-lnk"><i class="ic-r-arr-03"></i></a>
+							</li>
+							<li>
+								<span class="lst-tit">소프트웨어엔지니어</span>
+								<a href="#" class="lst-lnk"><i class="ic-r-arr-03"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 푸터 -->
+		<div data-include="../include/footer.html"></div>
+
+		<script>
+			let resizeTimeout;
+
+			function initSwipers() {
+				// 메인 상단 스테이터스 슬라이드
+				const jobSlide = new Swiper('#job .swiper', {
+					slidesPerView: 1.05,
+					spaceBetween: calculatePercentage(19),
+					navigation: {
+						nextEl: "#job .swiper-button-next",
+						prevEl: "#job .swiper-button-prev"
+					},
+					breakpoints: {
+						720: {
+							slidesPerView: 2.5,
+							spaceBetween: 42,
+						},
+					},
+				});
+			}
+
+			function updateSwiperSpace() {
+				clearTimeout(resizeTimeout);
+				resizeTimeout = setTimeout(() => {
+					if (window.jobSlide) window.jobSlide.destroy(true, true);
+					initSwipers();
+				}, 200);
+			}
+
+			window.addEventListener('DOMContentLoaded', () => { initSwipers() });
+			window.addEventListener('resize', updateSwiperSpace);
+
+			window.addEventListener('load', () => {
+				const chartDom = document.getElementById('role-model-chart');
+				const roleModelChart = echarts.init(chartDom);
+				const roleModelChartOpt = {
+					tooltip: {
+						trigger: 'item',
+						formatter: function (params) {
+							return `<div class="e-chart-tooltip-01 txt-14-24">${params.name}<br>${params.value}%</div>`;
+						}
+					},
+					series: [{
+						type: 'pie',
+						radius: ['45%', '90%'],
+						label: { show: false },
+						data: [
+							{ value: 65, name: '취업기업', itemStyle: { color: '#26abd0' } },
+							{ value: 25, name: '이수학점', itemStyle: { color: '#20c897' } },
+							{ value: 12, name: '평균평점', itemStyle: { color: '#b3dd63' } },
+						]
+					}]
+				};
+
+				roleModelChart.setOption(roleModelChartOpt);
+
+				// 👇 이 부분이 자동 리사이즈 핵심
+				const resizeObserver = new ResizeObserver(() => {
+					roleModelChart.resize();
+				});
+				resizeObserver.observe(chartDom);
+			})
+		</script>
+	</body>
+</html>

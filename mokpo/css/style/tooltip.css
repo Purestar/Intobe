@@ -1,0 +1,54 @@
+/* Tooltip */
+	/* Default */
+		[class*="t-tip"] {position:absolute; cursor:pointer;}
+		[class*="t-tip"] .p-tooltip-arrow {position:absolute;}
+		[class*="t-tip"] .p-tooltip-arrow:before {content:""; position:absolute; background-image:var(--ic-c); background-size:var(--bg-sz); background-position:var(--bp-150) var(--bp-600);}
+
+	/* Left */
+		[class*="t-tip"].p-tooltip-left .p-tooltip-arrow {rotate:90deg;}
+
+	/* Right */
+		[class*="t-tip"].p-tooltip-right .p-tooltip-arrow {rotate:-90deg;}
+
+
+	/* Variation */
+		/* Wrap */
+			[class*="t-tip"] {
+				background-color:var(--tip-bg-c, white);
+				border:var(--tip-bd-w, 0) solid var(--tip-bd-c);
+				border-radius:var(--tip-bd-r, 0);
+				box-shadow:0 0 var(--tip-sha-size) rgba(0, 0, 0, var(--tip-sha-opa));
+				padding:var(--tip-pd-t, var(--tip-pd-y, var(--tip-pd)))
+					var(--tip-pd-r, var(--tip-pd-x, var(--tip-pd)))
+					var(--tip-pd-b, var(--tip-pd-y, var(--tip-pd)))
+					var(--tip-pd-l, var(--tip-pd-x, var(--tip-pd)));
+				font-size:var(--tip-ft-s);
+			}
+
+		/* Arrow */
+			[class*="t-tip"] .p-tooltip-arrow {width:var(--tip-arrow-w); height:var(--tip-arrow-h);}
+			[class*="t-tip"] .p-tooltip-arrow:before {background-color:transparent; width:var(--tip-arrow-w); height:var(--tip-arrow-h);}
+
+		/* Left */
+			[class*="t-tip"].p-tooltip-left {margin-left:calc(var(--tip-gap, 20px) * -1);}
+			[class*="t-tip"].p-tooltip-left .p-tooltip-arrow {translate:var(--tip-arrow-h) -50%;}
+
+		/* Right */
+			[class*="t-tip"].p-tooltip-right {margin-left:var(--tip-gap, 20px);}
+			[class*="t-tip"].p-tooltip-right .p-tooltip-arrow {translate:calc(var(--tip-arrow-h) * -1) -50%;}
+
+		/* Bottom */
+			[class*="t-tip"].p-tooltip-bottom {margin-top:var(--tip-gap, 20px);}
+			[class*="t-tip"].p-tooltip-bottom .p-tooltip-arrow {translate:-50% calc(var(--tip-arrow-h) * -1);}
+
+@media all and (max-width:720px) {
+	[class*="t-tip"] {
+		position: fixed;
+		left:50% !important;
+		top:50% !important;
+		width:calc(100dvw - (var(--m-init-layout-padding) + var(--m-init-layout-padding))) !important;
+		translate: -50% -50% !important;
+	}
+
+	[class*="t-tip"] .p-tooltip-arrow {display:none;}
+}

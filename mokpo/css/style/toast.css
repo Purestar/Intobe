@@ -1,0 +1,21 @@
+/* Toast */
+	/* Default */
+		[class*="toast-type"] {translate:-50% 0; text-align:center;}
+
+	/* Variation */
+		[class*="toast-type"] .p-toast-message {
+			background-color:var(--toast-bg-c);
+			border-radius: var(--toast-bd-r);
+			width: var(--toast-w);
+			padding:var(--toast-pd-t, var(--toast-pd-y, var(--toast-pd, 0)))
+				var(--toast-pd-r, var(--toast-pd-x, var(--toast-pd, 0)))
+				var(--toast-pd-b, var(--toast-pd-y, var(--toast-pd, 0)))
+				var(--toast-pd-l, var(--toast-pd-x, var(--toast-pd, 0)));
+			font-size:var(--toast-ft-s);
+			color:var(--toast-ft-c);
+		}
+
+@media all and (max-width:720px) {
+	/* Default */
+		[class*="toast-type"] {width:100dvw; left:0 !important; padding:0 5vw; translate:0;}
+}

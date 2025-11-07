@@ -1,0 +1,143 @@
+/* Checkbox & Radio Type */
+	/* Default */
+		[class*="form-opt"] {display:flex; cursor:default;}
+		[class*="form-opt"] input {position:absolute; left:0; top:50%; translate:0 -50%; width:1px; height:1px; z-index:-1;}
+		[class*="form-opt"] .opt-txt {position:relative; display:flex; cursor:pointer;}
+		[class*="form-opt"] .opt-txt:before,
+		[class*="form-opt"] .opt-txt:after {content:""; background:var(--ic-c); background-size:var(--bg-sz);}
+		[class*="form-opt"] .opt-txt:before {background:var(--fom-bg); border-color:var(--fom-bdr-c); transition:border-color .3s;}
+		[class*="form-opt"] .opt-txt:after {position:absolute; visibility:hidden; transition:border-color .3s;}
+
+		[class*="form-opt"] input:focus + .opt-txt:before,
+		[class*="form-opt"] input:focus:checked + .opt-txt:before {border:1px solid var(--moc);}
+		[class*="form-opt"] input:checked + .opt-txt:before {visibility:visible; border-color:var(--mc);}
+
+		[class*="form-opt"] input:disabled + .opt-txt {cursor:default; user-select:none; color:var(--fom-bdr-c);}
+		[class*="form-opt"] input:disabled + .opt-txt:before,
+		[class*="form-opt"] input:checked:disabled + .opt-txt:before {background:var(--dis-bg); border-color:var(--dis-bdr);}
+		label[class*="form-opt"] {cursor:pointer;}
+
+	/* Button */
+		[class*="form-opt-btn"] label {width:100%;}
+		[class*="form-opt-btn"] .opt-txt {justify-content:center; align-items:center; background:white; user-select:none;}
+		[class*="form-opt-btn"] .opt-txt:before {display:none;}
+		[class*="form-opt-btn"] .opt-txt:hover {transition:background var(--trans-dft), border-color var(--trans-dft);}
+		[class*="form-opt-btn"] input:disabled + .opt-txt {pointer-events:none;}
+
+	/* Check Box, Radio, Switch Default */
+		[class*="form-opt-chk"],
+		[class*="form-opt-rdo"],
+		[class*="form-opt-swh"] {min-height:var(--fom-opt-sz); font-size:var(--fom-fs); line-height:var(--fom-opt-sz);}
+		[class*="form-opt-chk"] .opt-txt,
+		[class*="form-opt-rdo"] .opt-txt,
+		[class*="form-opt-swh"] .opt-txt {gap:10px; line-height:var(--fom-opt-sz);}
+		[class*="form-opt-chk"] .opt-txt:before,
+		[class*="form-opt-rdo"] .opt-txt:before,
+		[class*="form-opt-swh"] .opt-txt:before {flex:0 0 var(--fom-opt-sz); background:white; border:1px solid #e2e2e2; width:var(--fom-opt-sz); height:var(--fom-opt-sz);}
+		[class*="form-opt-swh"] .opt-txt {flex-direction:var(--form-opt-swh-flex-d, row-reverse);}
+
+	/* Check Box */
+		[class*="form-opt-chk"] .opt-txt:before {border-radius:3px;}
+		[class*="form-opt-chk"] .opt-txt:after {left:calc((var(--fom-opt-sz) / 2) - (var(--fom-chk-ico-w) / 2)); top:calc((var(--fom-opt-sz) / 2) - (var(--fom-chk-ico-h) / 2)); background-image:var(--ic-c); background-position:var(--bp-150) var(--bp-50); width:var(--fom-chk-ico-w); height:var(--fom-chk-ico-h);}
+		[class*="form-opt-chk"] input:checked + .opt-txt:before {background:var(--mc);}
+		[class*="form-opt-chk"] input:checked + .opt-txt:after {visibility:visible;}
+		[class*="form-opt-chk"] input:disabled + .opt-txt:after {background-position:var(--bp-200) var(--bp-50);}
+
+	/* Radio */
+		[class*="form-opt-rdo"] .opt-txt:before,
+		[class*="form-opt-rdo"] .opt-txt:after {border-radius:50%;}
+		[class*="form-opt-rdo"] .opt-txt:after {left:calc(var(--fom-rdo-gap) / 2); top:calc(var(--fom-rdo-gap) / 2); width:calc(var(--fom-opt-sz) - var(--fom-rdo-gap)); height:calc(var(--fom-opt-sz) - var(--fom-rdo-gap));}
+
+		[class*="form-opt-rdo"] input:checked + .opt-txt:after {visibility:visible; background:var(--mc);}
+		[class*="form-opt-rdo"] input:checked:disabled + .opt-txt:after {background:var(--dis-bdr);}
+
+	/* Rating */
+		[class*="form-opt-rt"] {display:flex; gap:4px; width: max-content; direction: rtl; user-select: none;}
+		[class*="form-opt-rt"] .opt-txt {font-size:0;}
+		[class*="form-opt-rt"] .opt-txt:before {content:""; background-color:transparent; background-image:var(--ic-c); background-size:var(--bg-sz); background-position:var(--bp-150) 0; width:17px; height:16px; transition:none;}
+		[class*="form-opt-rt"] input:focus ~ .opt-txt:before,
+		[class*="form-opt-rt"] input:focus:checked ~ .opt-txt:before {border:0;}
+		[class*="form-opt-rt"] input:checked ~ .opt-txt:before,
+		[class*="form-opt-rt"] .opt-txt:hover:before,
+		[class*="form-opt-rt"] .opt-txt:hover ~ .opt-txt:before {background-position:var(--bp-200) 0; transition:none;}
+		/*[class*="form-opt-rt"] input:disabled ~ .opt-txt:before {background-image:var(--ic-c); background-position:var(--bp-150) 0; opacity:0.2;}*/
+
+	/* Switch */
+		[class*="form-opt-swh"] .opt-txt:after {visibility:visible; border-radius:50%; transition:right var(--trans-dft);}
+		[class*="form-opt-swh"] input:checked + .opt-txt:after {transition:right var(--trans-dft);}
+
+/* Group */
+	[class*="form-opt-group"] {overflow:hidden; display:inline-flex;}
+	[class*="form-opt-group"] [class*="form-opt-btn"]:first-child .opt-txt {border-radius:var(--form-opt-btn-bd-r, var(--fom-br)) 0 0 var(--form-opt-btn-bd-r, var(--fom-br));}
+	[class*="form-opt-group"] [class*="form-opt-btn"]:last-child .opt-txt {border-radius:0 var(--form-opt-btn-bd-r, var(--fom-br)) var(--form-opt-btn-bd-r, var(--fom-br)) 0;}
+
+/* Variation */
+	/* Button */
+		[class*="form-opt-btn"] .opt-txt {
+			gap: var(--form-opt-btn-gap);
+			border-color:var(--form-opt-btn-bd-c, var(--mc));
+			border-width:var(--form-opt-btn-bd-w, 1px);
+			border-radius:var(--form-opt-btn-bd-r, var(--fom-br));
+			min-height:var(--form-opt-btn-h, var(--fom-h));
+			padding:var(--form-opt-btn-pd-y, var(--form-opt-btn-pd-a, 0)) var(--form-opt-btn-pd-x, var(--form-opt-btn-pd-a, var(--fom-pad)));
+			font-size:var(--form-opt-btn-ft-s, var(--fom-fs));
+			font-weight: var(--form-opt-btn-ft-w);
+			color: var(--form-opt-btn-ft-c, var(--mc));
+		}
+
+		[class*="form-opt-btn"] .opt-txt:hover,
+		[class*="form-opt-btn"] input:focus + .opt-txt,
+		[class*="form-opt-btn"] input:checked:focus + .opt-txt {
+			border-color:var(--form-opt-btn-over-bd-c, var(--moc))
+		}
+
+		[class*="form-opt-btn"] input:checked + .opt-txt {
+			background-color:var(--form-opt-btn-chk-bg-c, var(--mc));
+			border-color:var(--form-opt-btn-chk-bd-c, var(--form-opt-btn-chk-bg-c, var(--mc)));
+			color: var(--form-opt-btn-chk-ft-c, var(--mc));
+		}
+
+		[class*="form-opt-btn"] input:disabled + .opt-txt {
+			background:var(--form-opt-btn-dis-bg-c, var(--dis-bg));
+			border-color:var(--form-opt-btn-dis-bd-c, var(--dis-bg));
+			color:var(--form-opt-btn-dis-ft-c, var(--fom-ph));
+		}
+
+	/* Switch */
+		[class*="form-opt-swh"] .opt-txt:before {
+			flex:0 0 var(--form-opt-swh-w, calc(var(--fom-fs) * 2));
+			background:var(--form-opt-swh-bg-c, white);
+			border-color:var(--form-opt-swh-bd-c, var(--form-opt-swh-bg-c, var(--mc)));
+			border-radius:var(--form-opt-swh-bd-r, var(--form-opt-swh-h, var(--fom-opt-sz)));
+			height:var(--form-opt-swh-h, var(--fom-opt-sz));
+		}
+
+		[class*="form-opt-swh"] .opt-txt:after {
+			right:calc(var(--form-opt-swh-w, (var(--fom-fs) * 2)) - var(--form-opt-swh-point-sz, var(--fom-opt-sz) + var(--fom-rdo-gap)) - var(--form-opt-swh-point-gap, var(--fom-rdo-gap) / 2));
+			top:calc((var(--form-opt-swh-h, var(--fom-opt-sz)) - var(--form-opt-swh-point-sz, var(--fom-opt-sz) + var(--fom-rdo-gap))) / 2);
+			background-color:var(--form-opt-swh-point-bg-c, var(--moc));
+			width:calc(var(--form-opt-swh-point-sz, var(--form-opt-swh-point-w, var(--fom-opt-sz) - var(--fom-rdo-gap))));
+			height:calc(var(--form-opt-swh-point-sz, var(--form-opt-swh-point-h, var(--fom-opt-sz) - var(--fom-rdo-gap))));
+		}
+
+		[class*="form-opt-swh"] input:checked + .opt-txt:before {
+			background-color:var(--form-opt-swh-chk-bg-c, var(--mc));
+		}
+
+		[class*="form-opt-swh"] input:checked + .opt-txt:after {
+			right:calc(var(--form-opt-swh-point-gap, var(--fom-rdo-gap) / 2));
+			background-color:var(--form-opt-swh-chk-point-bg-c, var(--moc));
+		}
+
+		[class*="form-opt-swh"] input:disabled + .opt-txt:before {
+			background-color:var(--form-opt-swh-dis-bg-c, var(--dis-bdr));
+		}
+
+		[class*="form-opt-swh"] input:disabled + .opt-txt:after {
+			background-color:var(--form-opt-swh-dis-point-bg-c, var(--dis-bdr));
+		}
+
+@media all and (max-width:720px) {
+	/* Rating */
+	[class*="form-opt-rt"] .opt-txt:before {width:4.44vw; height:4.17vw;}
+}
