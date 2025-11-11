@@ -11,7 +11,7 @@
 			--aco-icon-h:1.67vw;
 		}
 
-		.aco-type-02 {
+		[class*="aco-type-02"] {
 			--aco-gap:2.78vw;
 			--aco-bd-r:2.78vw;
 
@@ -24,6 +24,12 @@
 
 			--aco-icon-w:3.47vw;
 			--aco-icon-h:1.94vw;
+		}
+
+		.aco-type-02-01 {
+			--aco-bd-r:2.22vw;
+			--aco-gap:3.33vw;
+			--aco-head-h:14.72vw;
 		}
 
 		.aco-qna-01 {
@@ -414,6 +420,11 @@
 
 		/* Contents */
 			.tab-wrap-01 {--tab-cont-pd-y:5.56vw;}
+
+	/* Table */
+		.tbl-type-01-01 tr:first-child th {padding-top:0;}
+		.tbl-type-01-01 th { border-right:0; padding:0; padding-top: 8.33vw; font-size: 3.89vw; }
+		.tbl-type-01-01 td {padding:0; padding-top:2.78vw;}
 
 	/* Text */
 		.txt-01 {font-size:5.28vw; line-height:7.22vw;}
