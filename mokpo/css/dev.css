@@ -1,3 +1,7 @@
 /* 개발 파트에서 적용 하고 싶으면 여기다 추가 */
 /* 적용방법 */
 /* CSS 파일에서 선택자 그대로 복붙하고 고치고 싶은 속성 값을 변경 */
+
+.h-gnb > *:nth-child(1) .h-sub-gnb { padding-left: 420px; }
+.h-gnb > *:nth-child(3) .h-sub-gnb { padding-left: 430px; }
+.h-gnb > *:nth-child(4) .h-sub-gnb { padding-left: 950px; }
