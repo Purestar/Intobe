@@ -473,7 +473,7 @@
 		.ic-link:before {background-position:0 0; width:12px; height:12px;}
 		.sub-header .ic-link:before {background-position:0 -12px; width:12px; height:12px;}
 		.ic-lock:before {background-position:var(--bp-900) 0; width:16px; height:19px;}
-		.ic-mascot:before {background-position:var(--bp-450) var(--bp-50); width:50px; height:50px;}
+		.ic-mascot:before {background-position:var(--bp-700) var(--bp-100); width:60px; height:50px;}
 		.ic-minus:before {background-position:var(--bp-500) var(--bp-100); width:10px; height:2px;}
 		.ic-notice:before {background-position:var(--bp-750) 0; width:22px; height:20px;}
 		.ic-pencle:before {background-position:var(--bp-250) var(--bp-50); width:17px; height:18px;}
