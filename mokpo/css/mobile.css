@@ -39,7 +39,7 @@
 		}
 
 	/* Background Image */
-		.bi-chara-01:before {width:21.67vw; height:29.44vw;}
+		.bi-chara-01:before {width:16.53vw; height:19.86vw;}
 		.bi-chara-02:before {background-position:var(--bp-450) 0; width:18.75vw; height:18.06vw;}
 
 	/* Board */
@@ -72,7 +72,7 @@
 			[class*="brd-lst-03"] {column-gap:var(--m-gap-x, 2.78vw); row-gap:var(--m-gap-y, 2.78vw); margin-top:var(--m-mg-t, 2.78vw);}
 			[class*="brd-lst-03"] > * {flex-direction:column; gap:2.78vw; border-radius:2.78vw; padding:4.44vw 5.14vw;}
 			[class*="brd-lst-03"] .brd-lst-tit {gap:2.78vw; font-size:3.89vw;}
-			[class*="brd-lst-03"] .brd-lst-tit-inner {gap:2.5vw;}
+			[class*="brd-lst-03"] .brd-lst-tit-inner {gap:2.5vw; font-size:3.89vw;}
 			[class*="brd-lst-03"] .brd-num {display:none;}
 			[class*="brd-lst-03"].brd-answer .brd-lst-tit {gap:2.5vw;}
 			[class*="brd-lst-03"].brd-answer .brd-lst-tit:before {width:1.94vw; height:1.94vw;}

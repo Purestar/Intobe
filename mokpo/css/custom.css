@@ -59,7 +59,7 @@
 	}
 
 /* Background Image */
-	.bi-chara-01:before {background-position:var(--bp-250) 0; width:119px; height:129px;}
+	.bi-chara-01:before {background-position:var(--bp-250) 0; width:132px; height:127px;}
 	.bi-chara-02:before {background-position:var(--bp-400) 0; width:135px; height:130px;}
 
 /* Board */
@@ -104,7 +104,7 @@
 		[class*="brd-lst-03"] {display:var(--dp, flex); flex-direction:column; column-gap:var(--gap-x, 20px); row-gap:var(--gap-y, 20px); margin-top:var(--mg-t, 20px); font-weight:500; color:black;}
 		[class*="brd-lst-03"] > * {display:flex; gap:110px; border:1px solid #e2e2e2; border-radius:20px; padding:32px 40px;}
 		[class*="brd-lst-03"] .brd-lst-tit {display:flex; place-items:center; flex:1; gap:30px; font-size:18px;}
-		[class*="brd-lst-03"] .brd-lst-tit-inner {display:flex; gap:16px; place-items:center;}
+		[class*="brd-lst-03"] .brd-lst-tit-inner {display:flex; gap:16px; place-items:center; font-size: 18px; font-weight: 700;}
 		[class*="brd-lst-03"] .brd-lst-tit-inner [class*="chip-type"] {white-space:nowrap;}
 		[class*="brd-lst-03"] .brd-num {width:22px; font-size:20px; text-align:center;}
 		[class*="brd-lst-03"].brd-answer > * {background:#f5f5f5;}
@@ -160,7 +160,7 @@
 	.box-type-02-01 {--box-pd:30px;}
 	[class*="box-type-03"] {--box-bg-c:#f5f5f5; --box-bd-c:transparent; --box-bd-r:18px; --box-pd:initial; --box-pd-x:30px; --box-pd-y:22px;}
 	.box-type-03-01 {--box-pd-y:14px; --box-bd-r:44px;}
-	[class*="box-type-04"] {--box-bg-c:#eceeff; --box-pd-y:22px; --box-pd-x:0; --box-bd-r:9999px 9999px;}
+	[class*="box-type-04"] {--box-bg-c:#eef7f6; --box-pd-y:22px; --box-pd-x:0; --box-bd-r:9999px 9999px;}
 	.box-type-04-01 {--box-bd-r:20px; --box-pd-x:60px; --box-pd-y:50px;}
 
 /* Bullet */
