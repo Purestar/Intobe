@@ -503,7 +503,7 @@
 
 			.mark-cir-03 > *:before { translate: 0 2vw; }
 
-			.mark-cir-04 {
+			[class*="mark-cir-04"] {
 				--mark-w: 0.56vw;
 				--mark-h: 0.56vw;
 				--mark-gap-y: 2.22vw;
@@ -511,7 +511,7 @@
 				--mark-ft-s: 3.33vw;
 			}
 
-			.mark-cir-04 > *:before { translate: 0 2vw; }
+			[class*="mark-cir-04"] > *:before { translate: 0 2vw; }
 
 		/* Hyphen */
 			.mark-hyp-01 {

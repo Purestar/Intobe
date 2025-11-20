@@ -743,7 +743,7 @@
 		.mark-cir-03 > * { place-items: flex-start; }
 		.mark-cir-03 > *:before { translate: 0 10px; }
 
-		.mark-cir-04 {
+		[class*="mark-cir-04"] {
 			--mark-w: 3px;
 			--mark-h: 3px;
 			--mark-gap-y: 5px;
@@ -752,8 +752,13 @@
 			--mark-ft-c: black;
 		}
 
-		.mark-cir-04 > * { place-items: flex-start; }
-		.mark-cir-04 > *:before { translate: 0 10px; }
+		[class*="mark-cir-04"] > * { place-items: flex-start; }
+		[class*="mark-cir-04"] > *:before { translate: 0 10px; }
+
+		.mark-cir-04-02 {
+			--mark-bg-c: #003349;
+			--mark-ft-c: #003349;
+		}
 
 	/* Number */
 		.mark-num-01 {
@@ -1096,7 +1101,7 @@
 		.bbk-capa-02 .capa-diag .tit-10 { position: absolute; left: 149px; top: 186px; }
 		.bbk-capa-02 > *:last-child .capa-diag img { translate: 0 0; }
 		.bbk-capa-02 .box-type-02-02 { min-height: 227px; }
-		.bbk-capa-02 .mark-cir-04 strong { white-space: nowrap; }
+		.bbk-capa-02 [class*="mark-cir-04"] strong { white-space: nowrap; }
 
 /* 팝업 */
 	/* 힌트 */

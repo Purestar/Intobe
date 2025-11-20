@@ -66,7 +66,7 @@
 										<p><strong style="--mg-r: 16px;">대상</strong>전 직원</p>
 										<p><strong style="--mg-r: 16px;">목적</strong>법정 준수 및 조직 내 윤리 . 보안 기준 확립</p>
 										<p><strong>내용</strong></p>
-										<ul class="mark-cir-04 mark-direction">
+										<ul class="mark-cir-04-02 mark-direction">
 											<li>성희롱 예방</li>
 											<li>입사 6개월 내 온보딩 집합 교육 (부서별 역활 . 재무 구조 이해 포함)</li>
 											<li>장애인 인식 개선</li>
@@ -121,7 +121,7 @@
 										<p><strong style="--mg-r: 16px;">대상</strong>전 직원</p>
 										<p><strong style="--mg-r: 16px;">목적</strong>글로벌 고객 대응 및 업무 커뮤니케이션 역량 강화</p>
 										<p><strong>내용</strong></p>
-										<ul class="mark-cir-04 mark-direction">
+										<ul class="mark-cir-04-02 mark-direction">
 											<li>오피스 직원 대상 비즈니스 영어 능력 향상 과정</li>
 											<li>스토어 직원 대상 세일즈 회화 수업(영어.중국어), 고객 경험 향상 목적</li>
 										</ul>
@@ -141,7 +141,7 @@
 										<p><strong style="--mg-r: 16px;">대상</strong>전 직원</p>
 										<p><strong style="--mg-r: 16px;">목적</strong>자기주도 학습 및 실무 적용력 강화</p>
 										<p><strong>내용</strong></p>
-										<ul class="mark-cir-04 mark-direction">
+										<ul class="mark-cir-04-02 mark-direction">
 											<li>신규 입사자 이러닝 등 전사 공통교육, 리더십, 직무 역량, 어학 등 현장 중심 콘텐츠 제공</li>
 											<li>5개 카테고리 내 추천 큐레이션 콘텐츠 선택 학습</li>
 											<li>집합 교육과 연계한 사전 및 반복 학습</li>
