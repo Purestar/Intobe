@@ -38,12 +38,12 @@ body, #app {display:flex; flex-direction:column; place-content:space-between; fl
 	.h-wrap .h-pop-tit { font-size: 20px; font-weight: bold; }
 
 	.h-wrap .h-alarm { width: 325px; }
-	.h-wrap .h-alarm .h-top { display: flex; place-content: space-between; margin-top: 20px; color: #000;}
+	.h-wrap .h-alarm .h-top { display: flex; place-content: space-between; color: #000;}
 	.h-wrap .h-alarm .h-top em, .h-wrap .h-alarm .h-top a { color: #999; }
 	.h-wrap .h-alarm-list { display: flex; flex-direction: column; gap: 15px; }
 	.h-wrap .h-alarm-list > * { min-height: 42px; }
 	.h-wrap .h-alarm-list > * + * { border-top: 1px solid #e2e2e2; padding-top: 15px; }
-	.h-wrap .h-alarm-list > *.read { color: #000; }
+	.h-wrap .h-alarm-list > *.read { color: var(--mc); }
 	.h-wrap .h-alarm-list .txt-date { margin-top: 8px; font-size: 14px; color: #999;}
 
 	.h-wrap .h-usr { width: 282px; }
