@@ -49,6 +49,28 @@
 
 	.aco-type-02-01 .aco-cont {background-color: #f9f9f9;}
 
+	[class*="aco-type-03"] {
+		--aco-bd-r:16px;
+
+		--aco-head-h:52px;
+		--aco-head-pd-x:30px;
+		--aco-head-ft-c:black;
+		--aco-head-ft-w:500;
+
+		--aco-cont-bg-c: #f5f5f5;
+		--aco-cont-pd-x:30px;
+		--aco-cont-pd-y:16px;
+
+		--aco-bp-x:var(--bp-250);
+		--aco-icon-w:6px;
+		--aco-icon-h:4px;
+
+		overflow: visible;
+	}
+
+	.aco-type-03 > .aco-item {box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);}
+	.aco-type-03 .aco-icon {border: 1px solid #e2e2e2; border-radius: 50%; width: 16px; height: 16px;}
+
 	.aco-qna-01 {
 		--aco-txt-q:'Q';
 		--aco-txt-q-ft-s:26px;
@@ -276,6 +298,7 @@
 		.div-v-03-02 {--div-gap:8px;}
 		.div-v-03-03 {--div-h:48px; --div-gap-x:0; --div-gap-y:50px;}
 		.div-v-04 {--div-bg-c:black; --div-h:14px; --div-gap:9px;}
+		.div-v-05 {--div-bg-c:#d3d3d3; --div-h:11px; --div-gap:12px;}
 
 	/* Arrow */
 		.div-v-arrow-01 {
@@ -833,11 +856,13 @@
 		.favor-job-list > *.active > *:after {background-image:var(--ic); background-size:var(--bg-sz); background-position:var(--bp-550) 0;}
 
 	/* 진로탐색 */
-		.job-slide-wrap {margin-top:30px;}
-		.job-slide-wrap .swiper-slide {position:relative; display:flex; flex-direction:column; place-content:space-between; background-color:#e9f4ff; border-radius:20px; height:215px; padding:28px 170px 28px 28px;}
-		.job-slide-wrap .swiper-slide:before {content:""; position:absolute; right:0; bottom:0; background-image:var(--bg-img); background-size:var(--bg-sz); width:171px; height:174px;}
-		.job-slide-wrap .job-desc {margin-top:12px;}
-		.job-slide-wrap .job-recom {position:absolute; right:24px; top:62px; display:flex; flex-direction:column; justify-content:center; align-items:center; width:120px; height:66px;}
+		[class*="job-slide-wrap"] {margin-top:30px;}
+		[class*="job-slide-wrap"] .swiper-slide {position:relative; display:flex; flex-direction:column; place-content:space-between; background-color:#e9f4ff; border-radius:20px; height:215px; padding:28px 170px 28px 28px;}
+		[class*="job-slide-wrap"] .swiper-slide:before {content:""; position:absolute; right:0; bottom:0; background-image:var(--bg-img); background-size:var(--bg-sz); width:171px; height:174px;}
+		[class*="job-slide-wrap"] .job-desc {margin-top:12px;}
+		[class*="job-slide-wrap"] .job-recom {position:absolute; right:24px; top:62px; display:flex; flex-direction:column; justify-content:center; align-items:center; width:120px; height:66px;}
+
+		.job-slide-wrap-02 .swiper-slide:before {background-position:var(--bp-550) 0; width:144px; height:143px;}
 
 		.job-type-wrap {border:1px solid #e2e2e2;}
 		.job-type-wrap .job-type {display:grid; border-top:1px solid #e2e2e2;}
