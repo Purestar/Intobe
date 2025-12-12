@@ -61,9 +61,15 @@
 		}
 
 		[class*="aco-type"] > .p-accordionpanel-active > .aco-cont {
+			background-color:var(--aco-cont-bg-c);
 			border-top:var(--aco-cont-bd-w, var(--aco-bd-w, 0)) solid var(--aco-cont-bd-c, var(--aco-bd-c));
 			padding:var(--aco-cont-pd-y, var(--aco-cont-pd-a, 0)) var(--aco-cont-pd-x, var(--aco-cont-pd-a, 0));
 			color:var(--aco-cont-ft-c);
+		}
+
+		[class*="aco-type"] > .aco-item:last-child > .aco-cont {
+			border-bottom-left-radius:var(--aco-bd-r);
+			border-bottom-right-radius:var(--aco-bd-r);
 		}
 
 		/* QnA */

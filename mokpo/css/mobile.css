@@ -32,6 +32,24 @@
 			--aco-head-h:14.72vw;
 		}
 
+		[class*="aco-type-03"] {
+			--aco-bd-r:2.22vw;
+	
+			--aco-head-h:11.39vw;
+			--aco-head-pd-x:4.17vw;
+	
+			--aco-cont-pd-x:4.17vw;
+			--aco-cont-pd-y:2.22vw;
+	
+			--aco-icon-w:1.53vw;
+			--aco-icon-h:.69vw;
+	
+			overflow: visible;
+		}
+	
+		.aco-type-03 > .aco-item {box-shadow: 0 0 1.39vw 0 rgba(0, 0, 0, 0.1);}
+		.aco-type-03 .aco-icon {width: 4.17vw; height: 4.17vw;}
+
 		.aco-qna-01 {
 			--aco-txt-q-ft-s:3.89vw;
 
@@ -164,6 +182,7 @@
 			.div-v-03-01 {--div-h:8.89vw;}
 			.div-v-03-02 {--div-gap:2.22vw;}
 			.div-v-03-03 {--div-h:8.89vw; --m-div-gap-y:6.94vw;}
+			.div-v-05 {--div-h:2.22vw; --div-gap:1.67vw;}
 
 		/* Vertical */
 			.div-v-01 {--div-gap:1.67vw; --div-h:1.67vw;}
@@ -562,11 +581,13 @@
 			.favor-job-list > * > *:after  {display:none;}
 
 		/* 진로탐색 */
-			.job-slide-wrap {margin-top:5.56vw;}
-			.job-slide-wrap .swiper-slide {border-radius:2.22vw; height:41.67vw; padding:6.94vw 29.17vw 5.56vw 5.56vw;}
-			.job-slide-wrap .swiper-slide:before {width:31.39vw; height:29.86vw;}
-			.job-slide-wrap .job-desc {margin-top:3.33vw;}
-			.job-slide-wrap .job-recom {right:7.22vw; top:14.72vw; width:20.14vw; height:11.25vw;}
+			[class*="job-slide-wrap"] {margin-top:5.56vw;}
+			[class*="job-slide-wrap"] .swiper-slide {border-radius:2.22vw; height:41.67vw; padding:6.94vw 29.17vw 5.56vw 5.56vw;}
+			[class*="job-slide-wrap"] .swiper-slide:before {width:31.39vw; height:29.86vw;}
+			[class*="job-slide-wrap"] .job-desc {margin-top:3.33vw;}
+			[class*="job-slide-wrap"] .job-recom {right:7.22vw; top:14.72vw; width:20.14vw; height:11.25vw;}
+
+			.job-slide-wrap-02 .swiper-slide:before {background-position:var(--bp-600) 0; width:27.64vw; height:28.06vw;}
 
 			.job-type-wrap .job-type-tit {line-height:10vw;}
 			.job-type-wrap .job-type > * + * {border:0;}
