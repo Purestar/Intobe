@@ -61,6 +61,34 @@
 				</li>
 			</ul>
 		</div>
+		<div class="brd-wrap">
+			<ul style="--dp: grid; --mg-t: 20px; --gap-y: 20px;">
+				<li class="box-type-01-02" style="--dp: flex; --content-x: space-between; --items-y: center; --m-flex-d: column;">
+					<div style="--w: 100%;">
+						<h3 class="brd-tit ellipsis"><strong>차수 02</strong></h3>
+						<div class="mark-v-bar-01" style="--mg-t: 12px; --mark-grid-t-col: 4; --m-mark-dp: flex; --m-flex-d: column; --m-mark-gap-a: 0; --m-mark-w: 0; --txt-a: center;">
+							<p>
+								<span>Apply Period<br> <span style="--ft-c: black;">2023.04.25 ~ 2023.04.28</span></span>
+							</p>
+							<p>
+								<span>Cancel Period<br> <span style="--ft-c: black;">2023.04.25 ~ 2023.04.28</span></span>
+							</p>
+							<p>
+								<span>Training Period<br> <span style="--ft-c: black;">2023.04.25 ~ 2023.04.28</span></span>
+							</p>
+							<p>
+								<span>Applicants / Capacity<br> <span style="--ft-c: black;">1 / 3</span></span>
+							</p>
+						</div>
+					</div>
+					<div style="--dp: flex; --gap-x: 20px; --items-y: center; --m-w: 100%; --m-mg-t: 2.56vw; --m-content-x: center;">
+						<div style="--min-w: 122px; --m-w: 100%;">
+							<button type="button" class="btn-type" style="--btn-w: 100%;">Enroll Now</button>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
 		<h2 class="tit-06" style="--mg-t: 40px; --m-mg-t: 5.56vw;">과정안내</h2>
 		<table class="tbl-type-04-01" style="--mg-t: 20px;">
 			<colgroup>

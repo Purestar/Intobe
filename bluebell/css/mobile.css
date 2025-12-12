@@ -707,7 +707,7 @@
 			.studyroom-stat .part-cont-in span { font-size: 5.56vw; }
 
 		/* 메인 */
-			.main-learning-stat { grid-auto-flow: row; }
+			.main-learning-stat { --m-mark-gap-x: 6.94vw; --m-mark-ft-s: 3.61vw; grid-auto-flow: row; }
 			.main-learning-stat > *:nth-child(odd):before { display: none; }
 			.main-learning-stat .part-content { display: flex; place-content: space-between; }
 			.main-notice-faq { grid-auto-flow: row; gap: 3.33vw; }

@@ -25,6 +25,7 @@
 									<div style="--dp: flex; --flex-d: column; --content-x: center; --m-gap-y: 3.33vw;">
 										<h3 style="--ft-c: black; --ft-w: 600;">Learning<br class="pc"> Badge</h3>
 										<a href="#" class="btn-lnk">활동배지보기</a>
+										<!-- <a href="#" class="btn-lnk">View Badges</a> -->
 									</div>
 									<div class="main-badge-wrap">
 										<div class="badge-type-01"></div>
@@ -147,7 +148,7 @@
 					</div>
 				</div>
 				<div class="box-type-05" style="--box-pd-y: 22px; --grid-col: 4; --m-grid-col: 1;">
-					<ul class="mark-v-bar-01-02 main-learning-stat" style="--mark-grid-t-col: 5; --txt-a: center; --m-mark-grid-t-col: 2; --m-mark-gap-x: 6.94vw; --m-mark-ft-s: 3.61vw;">
+					<ul class="mark-v-bar-01-02 main-learning-stat" style="--mark-grid-t-col: 5; --txt-a: center; --m-mark-grid-t-col: 2;">
 						<li><div class="part-content">신청 대기 과정 <strong style="--mg-l: 18px; --ft-s: 20px; --ft-c: #003349; --m-ft-s: 3.61vw;">1</strong></div></li>
 						<li><div class="part-content">학습중 과정 <strong style="--mg-l: 18px; --ft-s: 20px; --ft-c: #003349; --m-ft-s: 3.61vw;">1</strong></div></li>
 						<li><div class="part-content">완료과정 <strong style="--mg-l: 18px; --ft-s: 20px; --ft-c: #003349; --m-ft-s: 3.61vw;">1</strong></div></li>
@@ -155,6 +156,17 @@
 						<li><div class="part-content">FC진단결과 <strong style="--mg-l: 18px; --ft-s: 20px; --ft-c: #003349; --m-ft-s: 3.61vw;">1</strong></div></li>
 					</ul>
 				</div>
+				<!-- 영문버전
+					<div class="box-type-05" style="--box-pd-y: 22px; --grid-col: 4; --m-grid-col: 1;">
+						<ul class="mark-v-bar-01-02 main-learning-stat" style="--mark-grid-t-col: 5; --txt-a: center; --m-mark-grid-t-col: 2;">
+							<li><div class="part-content">Learning Course <strong style="--mg-l: 18px; --ft-s: 20px; --ft-c: #003349; --m-ft-s: 3.61vw;">1</strong></div></li>
+							<li><div class="part-content">Applied Courses <strong style="--mg-l: 18px; --ft-s: 20px; --ft-c: #003349; --m-ft-s: 3.61vw;">1</strong></div></li>
+							<li><div class="part-content">Completed Course <strong style="--mg-l: 18px; --ft-s: 20px; --ft-c: #003349; --m-ft-s: 3.61vw;">1</strong></div></li>
+							<li><div class="part-content">Survey <strong style="--mg-l: 18px; --ft-s: 20px; --ft-c: #003349; --m-ft-s: 3.61vw;">1</strong></div></li>
+							<li><div class="part-content">Competency Diagnosis Result <strong style="--mg-l: 18px; --ft-s: 20px; --ft-c: #003349; --m-ft-s: 3.61vw;">1</strong></div></li>
+						</ul>
+					</div>
+				-->
 				<div style="--grid-col: 4; --mg-t: 25px; --m-grid-col: 1; --m-mg-t: 3.47vw;">
 					<ul class="mark-v-bar-01-02 main-notice-faq" style="--mark-grid-t-col: 2; --mark-gap-a: 30px; --m-mark-grid-t-col: 1; --m-mark-gap-a: 3.89vw; --m-mark-gap-a: 0;">
 						<li>

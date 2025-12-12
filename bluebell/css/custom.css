@@ -85,7 +85,7 @@
 
 	[class*="box-type-02"] {
 		--box-bg-c: #f9f9f9;
-		--box-pd-a: 40px;
+		--box-pd-a: 30px;
 		--box-bd-w: 0;
 		--box-bd-r: 20px;
 	}
@@ -914,7 +914,7 @@
 		--tab-menu-gap-x: 0;
 
 		--tab-btn-h: 50px;
-		--tab-btn-pd-x: 0;
+		--tab-btn-pd-x: 20px;
 		--tab-btn-ft-c: #999;
 		--tab-btn-ft-s: 20px;
 		--tab-btn-ft-w: 700;
@@ -1069,6 +1069,7 @@
 
 /* Page */
 	/* 수강신청 */
+		.reg-cour-dtl-btn .btn-type-lgry { flex-wrap: nowrap; }
 		.reg-cour-dtl-btn.active + .reg-cour-dtl-form { display: flex; }
 
 	/* 로그인 */
@@ -1089,6 +1090,8 @@
 		.main-badge-wrap > *:nth-child(2) { right: calc(100% + 100px); z-index: 2; zoom: 0.17; }
 		.main-badge-wrap > *:nth-child(3) { right: 100%; z-index: 1; zoom: 0.14; }
 		.main-badge-wrap .main-badge-opa { opacity: .5; right: 100%; background-color: white; width: 100px; height: 100px; z-index: 3; }
+
+		.main-learning-stat { --mark-ft-s: 15px; --mark-gap-a: 0; --mark-item-gap-a: 11px; letter-spacing: -1px; }
 
 	/* BBK 역량 */
 		.bbk-capa-01 { position: relative; font-weight: 700; color: var(--mdc); }

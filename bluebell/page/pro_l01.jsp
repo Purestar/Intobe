@@ -78,8 +78,42 @@
 		<form>
 			<div style="--dp: flex; --gap-x: 10px; --m-flex-d: column; --m-gap-y: 1.67vw;">
 				<div class="pc reg-cour-dtl-btn" data-self>
-					<button type="button" class="btn-type-lgry" style="--btn-w: 128px;">
+					<button type="button" class="btn-type-lgry" style="--btn-min-w: 128px;">
 						상세검색
+						<i class="ic-plus"></i>
+					</button>
+				</div>
+				<div class="reg-cour-dtl-form" style="--dp: none; --max-w: 700px; --gap-x: 10px; --flex-g: 0; --m-dp: grid; --grid-t-col: 2; --m-gap-a: 1.67vw;">
+					<div class="sel-type">
+						<select>
+							<option>RT&Q DomesticRT&Q DomesticRT&Q DomesticRT&Q DomesticRT&Q DomesticRT&Q Domestic</option>
+						</select>
+					</div>
+					<div class="sel-type">
+						<select>
+							<option>RT&Q DomesticRT&Q DomesticRT&Q DomesticRT&Q DomesticRT&Q DomesticRT&Q Domestic</option>
+						</select>
+					</div>
+					<div class="sel-type">
+						<select>
+							<option>RT&Q DomesticRT&Q DomesticRT&Q DomesticRT&Q DomesticRT&Q DomesticRT&Q Domestic</option>
+						</select>
+					</div>
+					<div class="sel-type">
+						<select>
+							<option>RT&Q DomesticRT&Q DomesticRT&Q DomesticRT&Q DomesticRT&Q DomesticRT&Q Domestic</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-txt-type-01" style="--form-pd-r: 0;">
+					<input type="text" placeholder="키워드로 검색해 보세요.">
+				</div>
+				<a href="#" class="btn-type" style="--btn-min-w: 88px; --m-btn-w: 100%;">검색</a>
+			</div>
+			<div style="--dp: flex; --gap-x: 10px; --m-flex-d: column; --m-gap-y: 1.67vw;">
+				<div class="pc reg-cour-dtl-btn" data-self>
+					<button type="button" class="btn-type-lgry" style="--btn-min-w: 128px;">
+						Advanced Search
 						<i class="ic-plus"></i>
 					</button>
 				</div>

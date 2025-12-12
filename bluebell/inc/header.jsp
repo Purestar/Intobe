@@ -72,7 +72,7 @@
 
 				<nav class="h-gnb-wrap ft-nnmj">
 					<ul class="h-gnb">
-						<li><a href="#">Roadmap / Framework / Evalution</a></li>
+						<li><a href="#">Roadmap/work/ution</a></li>
 						<li class="active"><a href="#">BBK Competency</a></li>
 						<li><a href="#">Training</a></li>
 						<li><a href="#">My Learning</a></li>
@@ -82,29 +82,33 @@
 					<div class="h-sub-menu-wrap">
 						<div class="layout-inner">
 							<div class="h-sub-menu">
-								<ul style="--w: 283px;">
-									<li class="active"><a href="#">교육체계도</a></li>
-									<li><a href="#">교육제도</a></li>
+								<ul style="--w: 178px;">
+									<li class="active"><a href="#">Training Roadmap</a></li>
+									<li><a href="#">Training Structure</a></li>
+									<li><a href="#">Training Evaluation</a></li>
 								</ul>
 								<ul style="--w: 141px;">
-									<li><a href="#">수강신청</a></li>
+									<li><a href="#">My Assessment</a></li>
+									<li><a href="#">View Assessment<br>Results</a></li>
 								</ul>
 								<ul style="--w: 67px;">
-									<li><a href="#">전체보기</a></li>
+									<li><a href="#">Search /<br>Apply</a></li>
+									<li><a href="#">Content<br>Learning</a></li>
+									<li><a href="#">Enrollment<br>History</a></li>
 								</ul>
 								<ul style="--w: 103.5px;">
-									<li><a href="#">러닝로드맵</a></li>
-									<li><a href="#">수강현황</a></li>
-									<li><a href="#">사외교육신청</a></li>
+									<li><a href="#">My Training<br>Framework</a></li>
+									<li><a href="#">Training Course<br>Enrollment</a></li>
+									<li><a href="#">MyPick Course</a></li>
 								</ul>
 								<ul style="--w: 139px;">
-									<li><a href="#">Cell/학습동아리</a></li>
-									<li><a href="#">コンテンツ学習履歴</a></li>
-									<li><a href="#">ラーニングロードマップ</a></li>
+									<li><a href="#">Notice</a></li>
+									<li><a href="#">FAQ</a></li>
+									<li><a href="#">Resources</a></li>
 								</ul>
 								<ul style="--w: 227px;">
-									<li><a href="#">교육과정 학습 이력</a></li>
-									<li><a href="#">콘텐츠 학습 이력</a></li>
+									<li><a href="#">Approval History</a></li>
+									<li><a href="#">View My Team</a></li>
 								</ul>
 							</div>
 						</div>

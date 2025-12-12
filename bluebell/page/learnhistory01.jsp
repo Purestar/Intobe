@@ -20,6 +20,15 @@
 			</ul>
 		</div>
 
+		<div class="tab-wrap tab-scroll-menu" style="--m-pos: sticky; --m-top: var(--init-header-height); --m-z-idx: 10;">
+			<ul class="tab-menu-01">
+				<li class="active"><a href="#">Watching <span class="pc">Content</span> 3</a></li>
+				<li><a href="#">Completed <span class="pc">Content</span> 8</a></li>
+				<li><a href="#">Scrapped<span class="pc">Content</span> 8</a></li>
+				<li><a href="#">Like <span class="pc">Content</span> 8</a></li>
+			</ul>
+		</div>
+
 		<div class="brd-wrap" style="--mg-t: 60px; --m-mg-t: 8.33vw;">
 			<div style="--dp: flex; --items-a: center; --content-a: space-between; --m-flex-d: column; --m-items-a: flex-start; --m-gap-y: 3.33vw;">
 				<button type="button" class="btn-type-lgry btn-sz-02">시청 목록 삭제</button>

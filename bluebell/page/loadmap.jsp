@@ -18,6 +18,13 @@
 				<li><a href="#">학습 캘린더</a></li>
 			</ul>
 		</div>
+
+		<div class="tab-wrap" style="--m-pos: sticky; --m-top: var(--init-header-height); --m-z-idx: 10;">
+			<ul class="tab-menu-01">
+				<li class="active"><a href="#">My Training Framework</a></li>
+				<li><a href="#">Learning Calendar</a></li>
+			</ul>
+		</div>
 		<!--<div style="--dp: flex; --gap-x: 20px; --mg-t: 60px; --items-y: center; --m-flex-d: column; --m-items: flex-start; --m-mg-t: 8.33vw; --m-gap-y: 1.39vw;">
 			<h3 style="--m-ft-s: 3.89vw; --m-ft-c: black;">기준년도</h3>
 			<div class="sel-type">
@@ -89,6 +96,32 @@
 					</li>
 					<li>
 						<p>설문</p>
+						<strong>0</strong>
+					</li>
+				</ul>
+				<ul class="lst-type-01" style="--mg-t: 30px; --grid-t-col: 6; --m-grid-t-col: 3; --txt-a: center;">
+					<li>
+						<p>Learning<br>Course</p>
+						<strong>1</strong>
+					</li>
+					<li>
+						<p>Applied<br>Courses</p>
+						<strong>9</strong>
+					</li>
+					<li>
+						<p>Completed<br>Course</p>
+						<strong>10</strong>
+					</li>
+					<li>
+						<p>MyPick Course<br>Application</p>
+						<strong>42</strong>
+					</li>
+					<li>
+						<p>Mypick Course<br>Completetion</p>
+						<strong>10</strong>
+					</li>
+					<li>
+						<p>Survey</p>
 						<strong>0</strong>
 					</li>
 				</ul>
