@@ -69,6 +69,32 @@
 	.ic-faq { --icon-bg-pos-x: var(--bp-50); --icon-bg-pos-y: var(--bp-100); --icon-w: 38; --icon-h: 38; }
 	.ic-time { --icon-bg-pos-x: var(--bp-100); --icon-bg-pos-y: var(--bp-100); --icon-w: 26; --icon-h: 34; }
 
+	.ic-chk {
+		--icon-bg-pos-x: 0; --icon-bg-pos-y: var(--bp-150); --icon-w: 150; --icon-h: 114;
+		background:#dee5ff; border-radius: 50%; width: 298px; height: 298px;
+	}
+	.ic-exc { background:#fbdbdb; border-radius: 50%; width: 298px; height: 298px; }
+	.ic-exc:before { content: "!"; background: none; line-height: 1; font-style: normal; font-size: 182px; font-weight: bold; color: #e20000; }
+
+/* Popup */
+	[class*="pop-type"] { display: none; }
+	[class*="pop-type"].active { display: block; }
+
+	.pop-type-alert {
+		--pop-w: 908;
+		--pop-br-a: 20;
+		--pop-cont-pd-x: 80;
+		--pop-cont-pd-y: 80;
+		--pop-foot-pd-x: 80;
+		--pop-foot-h: 220;
+		--pop-bd-a-w: 0;
+
+		--pop-cont-txt-s: 36;
+	}
+
+	.pop-type-alert .part-foot { place-items: flex-start; }
+	.pop-type-alert .part-foot [class*="btn-type"] { flex: 1; }
+
 /* Title */
 	.tit-01 { font-size: 42px; font-weight: 500; }
 	.tit-02 { font-size: 46px; }

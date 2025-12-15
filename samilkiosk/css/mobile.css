@@ -1,7 +1,12 @@
 @media (max-width:1080px) {
 	/* Form */
-			.form-slt-btn-01 .part-slt-txt { width: 5.56vw; padding-bottom: 0.74vw; }
-			.form-slt-btn-01 .part-slt-txt:after { height: 0.19vw; }
+		.form-slt-btn-01 .part-slt-txt { width: 5.56vw; padding-bottom: 0.74vw; }
+		.form-slt-btn-01 .part-slt-txt:after { height: 0.19vw; }
+
+	/* Icon */
+		.ic-chk,
+		.ic-exc { width: 27.59vw; height: 27.59vw; }
+		.ic-exc:before { font-size: 16.85vw; }
 
 	/* Title */
 		.tit-01 { font-size: 3.89vw; }
