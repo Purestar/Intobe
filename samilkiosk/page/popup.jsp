@@ -10,6 +10,7 @@
 					<button type="button" class="btn-type" data-tta="seatChange">좌석변경</button>
 					<button type="button" class="btn-type" data-tta="seatChange02">좌석 배정/변경(링크)</button>
 					<button type="button" class="btn-type" data-tta="seatChange03">좌석 배정/변경(비욘드)</button>
+					<button type="button" class="btn-type" data-tta="end">이미 종료</button>
 				</div>
 			</div>
 		</div>
@@ -22,5 +23,6 @@
 <%@ include file="./popup/seatChange.jsp" %>
 <%@ include file="./popup/seatChange02.jsp" %>
 <%@ include file="./popup/seatChange03.jsp" %>
+<%@ include file="./popup/end.jsp" %>
 
 <%@ include file="../inc/footer.jsp" %>
