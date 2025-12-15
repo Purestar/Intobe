@@ -146,13 +146,16 @@
 	.main-quick-menu > *:hover { background-color: #ffb600; }
 	.main-quick-menu > * a { display: flex; gap: 24px; justify-content: center; align-items:center; width: 100%; }
 
-	.seat-map { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; margin-top: 80px; }
+	.seat-map { display: flex; flex-direction: column; align-items: center; justify-content: center; max-width: 1080px; height: 100%; margin: 80px auto 0; }
 	.seat-map .seat-blackboard { display: flex; justify-content: center; align-items: center; background: #c6ccce; border-radius: 10px; height: 60px; font-size: 36px; font-weight: 700; text-align: center; color: white; }
 	.seat-map .seat-door-wrap { position: relative; background: #aaa; min-width: 3px; min-height: 3px; }
 	.seat-map [class*="seat-door-icon"] { position: absolute; background: white; width: 47px; height: 45px; border: 1px solid #aaa; }
 	.seat-map .seat-door-icon-01 { border-top-left-radius: 47px; border-bottom: 0; }
 	.seat-map .seat-door-icon-02 { border-top-right-radius: 47px; border-bottom: 0; }
 	.seat-map .seat-door-icon-03 { border-bottom-right-radius: 47px; border-left: 0; }
+	.seat-map .seat-door-icon-04 { border-top-right-radius: 47px; border-left: 0; }
+	.seat-map .seat-door-icon-05 { border-top-right-radius: 47px; border-left: 0; }
+	.seat-map .seat-door-icon-06 { border-top-left-radius: 47px; border-right: 0; }
 	.seat-map .seat-group { display: grid; }
 	.seat-map .seat-group:before { content:""; border-radius: 2px; border: 1px solid #666666; width: 100%; height: 40px; }
 	.seat-map .seat-group-chk { display: flex; gap: 19px; margin-top: 16px; padding: 0 10px; }
