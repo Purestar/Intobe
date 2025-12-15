@@ -1,0 +1,21 @@
+[class*=form-tarea]{
+	display:flex;
+	font-weight:400;
+}
+[class*=form-tarea],[class*=form-tarea]:hover{
+	transition:border-color .3s ease;
+}
+[class*=form-tarea] textarea{
+	caret-color:var(--form-caret-c);
+	resize:none;
+}
+[class*=form-tarea] .part-label{
+	position:absolute;
+}
+[class*=form-tarea].form-disabled{
+	cursor:auto;
+	pointer-events:none;
+}
+[class*=form-tarea].form-tarea-resize textarea{
+	resize:both;
+}

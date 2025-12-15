@@ -1,0 +1,1 @@
+[class*=qrcode-type]{ display:inline-block; position:relative; }[class*=qrcode-type] .qrcode-wrapper{ align-items:center; display:flex; flex-direction:column; }[class*=qrcode-type] .qrcode canvas{ display:block; height:auto; max-width:100%; width:100%; }[class*=qrcode-type] .qrcode-download-btn{ width:100%; }

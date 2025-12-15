@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko" class="path">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta charset="utf-8">
+		<meta name="description" content="설명">
+		<meta name="viewport" content="width=device-width">
+		<title>부루벨코리아</title>
+
+		<!-- 실제 프로젝트 시 사용될 Resource -->
+		<link rel="stylesheet" href="../css/common.css" type="text/css" />
+		<link rel="stylesheet" href="../css/plugin.css" type="text/css" />
+		<link rel="stylesheet" href="../css/layout.css" type="text/css" />
+		<link rel="stylesheet" href="../css/style.css" type="text/css" />
+		<link rel="stylesheet" href="../css/custom.css" type="text/css" />
+		<script src="../js/common.js"></script>
+
+		<!-- Path에서만 사용되는 Resource -->
+		<link rel="stylesheet" href="path.css" type="text/css" media="screen" />
+		<script src="path.js"></script>
+	</head>
+	<body class="fixed bg">
+		<header>
+			<h1><a href="index.html"></a></h1>
+			<button type="button" class="btn-panel">☰</button>
+			<!-- <p class="prj-proc">진행률 (<span class="prj-proc-num">0</span>%)</p> -->
+		</header>
+		<nav id="menu">
+			<!-- 학습자 국문 -->
+			<ul>
+				<li class="ing"><button data-src="../page/popup.jsp">팝업</button></li>
+				<li class=""><button data-src="../page/home.jsp">홈</button></li>
+				<li class="">
+					<button data-src="../page/.jsp">교육지원</button>
+					<ul>
+						<li class="com"><button data-src="../page/notice.jsp">공지사항</button></li>
+						<li class="com"><button data-src="../page/qna.jsp">FAQ</button></li>
+						<li class="com"><button data-src="../page/archives.jsp">자료실</button></li>
+					</ul>
+				</li>
+			</ul>
+
+			<ul>
+				<!--<li>
+					<button data-src="">Layout</button>
+					<ul>
+						<li><button data-src="../page/layout.jsp">Layout</button></li>
+						<li><button data-src="../page/layout_e.jsp">Layout(영문)</button></li>
+						<li><button data-src="../page/layout_sub.jsp">Layout(서브)</button></li>
+						<li><button data-src="../page/layout_lnb.jsp">Layout(서브+LNB)</button></li>
+						<li><button data-src="../page/layout_lnb02.jsp">Layout(서브+LNB02)</button></li>
+					</ul>
+				</li>-->
+				<li><button data-src="./guide/badge.html">Badge</button></li>
+				<li><button type="button" data-src="./guide/button.html">Button</button></li>
+				<li><button data-src="./guide/board.html">Board List</button></li>
+				<li><button data-src="./guide/view.html">Board View</button></li>
+				<li><button type="button" data-src="./guide/form.html">Form / Table</button></li>
+				<li><button type="button" data-src="./guide/form_set.html">Form Set</button></li>
+				<li><button type="button" data-src="./guide/popup.jsp">Popup</button></li>
+				<li><button data-src="./guide/tab-menu.html">Tab Menu</button></li>
+				<li><button type="button" data-src="./guide/text.html">Title / Paragraph / Bullet</button></li>
+				<li><button type="button" data-src="./guide/list.html">List</button></li>
+				<li><button type="button" data-src="./guide/etc.html">기타</button></li>
+			</ul>
+		</nav>
+		<section id="container">
+			<p class="this-address"><a href="#" target="blank"></a></p>
+			<iframe src="" title="작업 화면">화면 (Ajax처리)</iframe>
+		</section>
+		<footer>
+			<div class="footer-in">
+				<span class="footer-btn-group">
+					<button type="button" data-btn="menu">페이지</button>
+					<!--<button type="button" data-btn="menu">Guide</button>-->
+				</span>
+				<span class="footer-btn-group">
+					<button type="button" data-btn="size">320</button>
+					<button type="button" data-btn="size">768</button>
+					<button type="button" data-btn="size">1024</button>
+					<button type="button" data-btn="size">1280</button>
+					<button type="button" data-btn="size">100%</button>
+				</span>
+				<span class="footer-btn-group">
+					<button type="button" data-btn="chk" class="active">레이아웃 고정</button>
+				</span>
+			</div>
+		</footer>
+	</body>
+</html>

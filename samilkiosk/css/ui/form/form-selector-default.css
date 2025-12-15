@@ -1,0 +1,101 @@
+[class*=form-slt]{
+	display:inline-block;
+	place-items:flex-start;
+	position:relative;
+	word-break:break-all;
+}
+[class*=form-slt] input{
+	height:0;
+	left:0;
+	position:absolute;
+	top:0;
+	width:0;
+	z-index:-1;
+}
+[class*=form-slt] .part-slt-txt{
+	display:flex;
+}
+[class*=form-slt] .part-icon{
+	display:flex;
+	flex-shrink:0;
+	place-items:center;
+	position:relative;
+}
+[class*=form-slt] .part-icon:after,[class*=form-slt] .part-icon:before{
+	content:"";
+}
+[class*=form-slt] .part-icon:before{
+	left:0;
+	position:absolute;
+	top:50%;
+	transition:border-color var(--trans-dft);
+	translate:0 -50%;
+}
+[class*=form-slt] .part-icon:after{
+	position:relative;
+	transition:border-color var(--trans-dft);
+	z-index:1;
+}
+[class*=form-slt] input:disabled+.part-slt-txt{
+	cursor:default;
+	-webkit-user-select:none;
+	user-select:none;
+}
+[class*=form-slt-btn] .part-slt-txt{
+	background-color:#fff;
+	place-content:center;
+	place-items:center;
+	-webkit-user-select:none;
+	user-select:none;
+}
+[class*=form-slt-btn] .part-icon:before{
+	display:none;
+}
+[class*=form-slt-btn] .part-slt-txt:hover{
+	transition:background-color var(--trans-dft), border-color var(--trans-dft);
+}
+[class*=form-slt-btn] input:disabled+.part-slt-txt{
+	pointer-events:none;
+}
+[class*=form-slt-chk] .part-icon{
+	place-content:center;
+}
+[class*=form-slt-chk] .part-icon:after{
+	background-image:var(--ic-c);
+	background-size:var(--bg-sz);
+	opacity:0;
+}
+[class*=form-slt-chk] input:checked+.part-slt-txt .part-icon:after{
+	opacity:1;
+}
+[class*=form-slt-rdo] .part-icon{
+	place-content:center;
+}
+[class*=form-slt-rt]{
+	direction:rtl;
+	display:flex;
+	-webkit-user-select:none;
+	user-select:none;
+	width:max-content;
+}
+[class*=form-slt-rt] .part-icon:before{
+	background-image:var(--ic-c);
+	background-position:var(--bp-150) 0;
+	background-size:var(--bg-sz);
+}
+[class*=form-slt-rt] .part-slt-txt:first-of-type{
+	padding-right:0;
+}
+[class*=form-slt-rt] input:checked~.part-slt-txt .part-icon:before,[class*=form-slt-rt] input:not(:disabled)+.part-slt-txt:hover .part-icon:before,[class*=form-slt-rt] input:not(:disabled)+.part-slt-txt:hover~.part-slt-txt .part-icon:before{
+	transition:none;
+}
+[class*=form-slt-rt] input:disabled+.part-slt-txt .part-icon:before{
+	opacity:.5;
+}
+[class*=form-slt-swh] .part-icon:after{
+	position:absolute;
+	transition:left var(--trans-dft);
+}
+[class*=form-slt-swh] input:checked+.part-slt-txt .part-icon:after{
+	transition:left var(--trans-dft);
+}

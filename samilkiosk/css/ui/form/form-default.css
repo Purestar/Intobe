@@ -1,0 +1,41 @@
+[class*=form-]{
+	display:flex;
+	place-items:center;
+	position:relative;
+}
+[class*=form-]>*{
+	flex-shrink:0;
+}
+[class*=form-] input{
+	background:none;
+}
+.form-readonly .part-slt-txt{
+	cursor:default;
+	pointer-events:none;
+}
+input[type=date]::-webkit-calendar-picker-indicator,input[type=datetime-local]::-webkit-calendar-picker-indicator,input[type=month]::-webkit-calendar-picker-indicator,input[type=time]::-webkit-calendar-picker-indicator,input[type=week]::-webkit-calendar-picker-indicator{
+	cursor:pointer;
+	padding:0;
+	position:absolute;
+}
+[class*=form-] .part-label{
+	cursor:auto;
+	left:var(--form-pd-l);
+	line-height:1;
+	position:absolute;
+	top:var(--form-pd-l);
+	transition:var(--trans-dft);
+}
+[class*=form-] [data-state=open] .part-label,[class*=form-] input:focus+.part-label,[class*=form-] textarea:focus+.part-label,[class*=form-].form-filled .part-label{
+	font-size:.7em;
+	top:0;
+}
+[class*=form-] [data-state=open] .part-label[data-floatlabel=over],[class*=form-] input:focus+.part-label[data-floatlabel=over],[class*=form-] textarea:focus+.part-label[data-floatlabel=over],[class*=form-].form-filled .part-label[data-floatlabel=over]{
+	transform:translateY(-1.2em);
+}
+[class*=form-] [data-state=open] .part-label[data-floatlabel=in],[class*=form-] input:focus+.part-label[data-floatlabel=in],[class*=form-] textarea:focus+.part-label[data-floatlabel=in],[class*=form-].form-filled .part-label[data-floatlabel=in]{
+	transform:translateY(.2em);
+}
+[class*=form-] [data-state=open] .part-label[data-floatlabel=on],[class*=form-] input:focus+.part-label[data-floatlabel=on],[class*=form-] textarea:focus+.part-label[data-floatlabel=on],[class*=form-].form-filled .part-label[data-floatlabel=on]{
+	transform:translateY(-.5em);
+}

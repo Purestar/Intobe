@@ -1,0 +1,230 @@
+[class*=calendar-type]{
+	--cal-bg-c:#fff;
+	--cal-head-dp:flex;
+	--cal-head-content-x:space-between;
+	--cal-head-arrow-gap-x:8;
+	--cal-prev-year-w:16;
+	--cal-prev-year-h:14;
+	--cal-prev-year-bg-pos-x:var(--bp-150);
+	--cal-prev-year-bg-pos-y:var(--bp-calendar);
+	--cal-prev-w:9;
+	--cal-prev-h:14;
+	--cal-prev-bg-pos-x:var(--bp-200);
+	--cal-prev-bg-pos-y:var(--bp-calendar);
+	--cal-next-w:9;
+	--cal-next-h:14;
+	--cal-next-bg-pos-x:var(--bp-200);
+	--cal-next-bg-pos-y:var(--bp-calendar);
+	--cal-next-year-w:16;
+	--cal-next-year-h:14;
+	--cal-next-year-bg-pos-x:var(--bp-150);
+	--cal-next-year-bg-pos-y:var(--bp-calendar);
+	--cal-date-cell-txt-a:center;
+	--cal-date-dp:inline-flex;
+	--cal-date-br-a-unit:50%;
+	--cal-date-content-x:center;
+	--cal-date-items-y:center;
+	--cal-date-w:30;
+	--cal-date-h:30;
+	--cal-date-hover-bg-c:var(--moc);
+	--cal-date-hover-txt-c:#fff;
+	--cal-date-today-bg-c:var(--mc);
+	--cal-date-today-txt-c:#fff;
+	--cal-date-selected-bg-c:var(--moc);
+	--cal-date-selected-txt-c:#fff;
+	--cal-date-unavailable-txt-deco-l:line-through;
+	--cal-date-unavailable-txt-c:var(--mic);
+	--cal-date-outside-opacity:0.5;
+	background-color:var(--cal-bg-c);
+}
+[class*=calendar-type][data-disabled]{
+	--calendar-opacity:0.5;
+	--cal-date-cursor:default;
+}
+[class*=calendar-type][data-readonly]{
+	--cal-date-cursor:default;
+}
+.part-header{
+	display:var(--cal-head-dp);
+	justify-content:var(--cal-head-content-x);
+}
+.part-header .part-next-wrap,.part-header .part-prev-wrap{
+	column-gap:calc(var(--cal-head-arrow-gap-x)*1px);
+}
+.part-prev-year:before{
+	background-position-x:calc(var(--cal-prev-year-bg-pos-x)*1px);
+	background-position-y:calc(var(--cal-prev-year-bg-pos-y)*1px);
+	height:calc(var(--cal-prev-year-h)*1px);
+	width:calc(var(--cal-prev-year-w)*1px);
+}
+.part-prev:before{
+	background-position-x:calc(var(--cal-prev-bg-pos-x)*1px);
+	background-position-y:calc(var(--cal-prev-bg-pos-y)*1px);
+	height:calc(var(--cal-prev-h)*1px);
+	width:calc(var(--cal-prev-w)*1px);
+}
+.part-next:before{
+	background-position-x:calc(var(--cal-next-bg-pos-x)*1px);
+	background-position-y:calc(var(--cal-next-bg-pos-y)*1px);
+	height:calc(var(--cal-next-h)*1px);
+	width:calc(var(--cal-next-w)*1px);
+}
+.part-next-year:before{
+	background-position-x:calc(var(--cal-next-year-bg-pos-x)*1px);
+	background-position-y:calc(var(--cal-next-year-bg-pos-y)*1px);
+	height:calc(var(--cal-next-year-h)*1px);
+	width:calc(var(--cal-next-year-w)*1px);
+}
+.part-date-cell{
+	text-align:var(--cal-date-cell-txt-a);
+}
+.part-date{
+	align-items:var(--cal-date-items-y);
+	border-radius:var(--cal-date-br-a-unit);
+	display:var(--cal-date-dp);
+	height:calc(var(--cal-date-h)*1px);
+	justify-content:var(--cal-date-content-x);
+	width:calc(var(--cal-date-w)*1px);
+}
+.part-date:hover:not([data-disabled]):not([data-unavailable]):not([data-outside-view]){
+	background-color:var(--cal-date-hover-bg-c);
+	color:var(--cal-date-hover-txt-c);
+}
+[class*=calendar-type] [data-today]{
+	background-color:var(--cal-date-today-bg-c);
+	color:var(--cal-date-today-txt-c);
+}
+[class*=calendar-type] [data-selected]{
+	background-color:var(--cal-date-selected-bg-c);
+	color:var(--cal-date-selected-txt-c);
+}
+[class*=calendar-type] [data-unavailable]{
+	color:var(--cal-date-unavailable-txt-c);
+	text-decoration-line:var(--cal-date-unavailable-txt-deco-l);
+}
+@media screen and (max-width:1024px){
+	[class*=calendar-type]{
+		background-color:var(--t-cal-bg-c, var(--cal-bg-c));
+	}
+	.part-header{
+		display:var(--t-cal-head-dp, var(--cal-head-dp));
+		justify-content:var(--t-cal-head-content-x, var(--cal-head-content-x));
+	}
+	.part-header .part-next-wrap,.part-header .part-prev-wrap{
+		column-gap:var(--t-cal-head-arrow-gap-x, calc(var(--cal-head-arrow-gap-x)*1px));
+	}
+	.part-prev-year:before{
+		background-position-x:var(--t-cal-prev-year-bg-pos-x, calc(var(--cal-prev-year-bg-pos-x)*1px));
+		background-position-y:var(--t-cal-prev-year-bg-pos-y, calc(var(--cal-prev-year-bg-pos-y)*1px));
+		height:var(--t-cal-prev-year-h, calc(var(--cal-prev-year-h)*1px));
+		width:var(--t-cal-prev-year-w, calc(var(--cal-prev-year-w)*1px));
+	}
+	.part-prev:before{
+		background-position-x:var(--t-cal-prev-bg-pos-x, calc(var(--cal-prev-bg-pos-x)*1px));
+		background-position-y:var(--t-cal-prev-bg-pos-y, calc(var(--cal-prev-bg-pos-y)*1px));
+		height:var(--t-cal-prev-h, calc(var(--cal-prev-h)*1px));
+		width:var(--t-cal-prev-w, calc(var(--cal-prev-w)*1px));
+	}
+	.part-next:before{
+		background-position-x:var(--t-cal-next-bg-pos-x, calc(var(--cal-next-bg-pos-x)*1px));
+		background-position-y:var(--t-cal-next-bg-pos-y, calc(var(--cal-next-bg-pos-y)*1px));
+		height:var(--t-cal-next-h, calc(var(--cal-next-h)*1px));
+		width:var(--t-cal-next-w, calc(var(--cal-next-w)*1px));
+	}
+	.part-next-year:before{
+		background-position-x:var(--t-cal-next-year-bg-pos-x, calc(var(--cal-next-year-bg-pos-x)*1px));
+		background-position-y:var(--t-cal-next-year-bg-pos-y, calc(var(--cal-next-year-bg-pos-y)*1px));
+		height:var(--t-cal-next-year-h, calc(var(--cal-next-year-h)*1px));
+		width:var(--t-cal-next-year-w, calc(var(--cal-next-year-w)*1px));
+	}
+	.part-date-cell{
+		text-align:var(--t-cal-date-cell-txt-a, var(--cal-date-cell-txt-a));
+	}
+	.part-date{
+		align-items:var(--t-cal-date-items-y, var(--cal-date-items-y));
+		border-radius:var(--t-cal-date-br-a-unit, var(--cal-date-br-a-unit));
+		display:var(--t-cal-date-dp, var(--cal-date-dp));
+		height:var(--t-cal-date-h, calc(var(--cal-date-h)*1px));
+		justify-content:var(--t-cal-date-content-x, var(--cal-date-content-x));
+		width:var(--t-cal-date-w, calc(var(--cal-date-w)*1px));
+	}
+	.part-date:hover:not([data-disabled]):not([data-unavailable]):not([data-outside-view]){
+		background-color:var(--t-cal-date-hover-bg-c, var(--cal-date-hover-bg-c));
+		color:var(--t-cal-date-hover-txt-c, var(--cal-date-hover-txt-c));
+	}
+	[class*=calendar-type] [data-today]{
+		background-color:var(--t-cal-date-today-bg-c, var(--cal-date-today-bg-c));
+		color:var(--t-cal-date-today-txt-c, var(--cal-date-today-txt-c));
+	}
+	[class*=calendar-type] [data-selected]{
+		background-color:var(--t-cal-date-selected-bg-c, var(--cal-date-selected-bg-c));
+		color:var(--t-cal-date-selected-txt-c, var(--cal-date-selected-txt-c));
+	}
+	[class*=calendar-type] [data-unavailable]{
+		color:var(--t-cal-date-unavailable-txt-c, var(--cal-date-unavailable-txt-c));
+		text-decoration-line:var(--t-cal-date-unavailable-txt-deco-l, var(--cal-date-unavailable-txt-deco-l));
+	}
+}
+@media screen and (max-width:720px){
+	[class*=calendar-type]{
+		background-color:var(--m-cal-bg-c, var(--t-cal-bg-c, var(--cal-bg-c)));
+	}
+	.part-header{
+		display:var(--m-cal-head-dp, var(--t-cal-head-dp, var(--cal-head-dp)));
+		justify-content:var(--m-cal-head-content-x, var(--t-cal-head-content-x, var(--cal-head-content-x)));
+	}
+	.part-header .part-next-wrap,.part-header .part-prev-wrap{
+		column-gap:var(--m-cal-head-arrow-gap-x, var(--t-cal-head-arrow-gap-x, calc(var(--cal-head-arrow-gap-x)*.13889vw)));
+	}
+	.part-prev-year:before{
+		background-position-x:var(--m-cal-prev-year-bg-pos-x, var(--t-cal-prev-year-bg-pos-x, calc(var(--cal-prev-year-bg-pos-x)*.13889vw)));
+		background-position-y:var(--m-cal-prev-year-bg-pos-y, var(--t-cal-prev-year-bg-pos-y, calc(var(--cal-prev-year-bg-pos-y)*.13889vw)));
+		height:var(--m-cal-prev-year-h, var(--t-cal-prev-year-h, calc(var(--cal-prev-year-h)*.13889vw)));
+		width:var(--m-cal-prev-year-w, var(--t-cal-prev-year-w, calc(var(--cal-prev-year-w)*.13889vw)));
+	}
+	.part-prev:before{
+		background-position-x:var(--m-cal-prev-bg-pos-x, var(--t-cal-prev-bg-pos-x, calc(var(--cal-prev-bg-pos-x)*.13889vw)));
+		background-position-y:var(--m-cal-prev-bg-pos-y, var(--t-cal-prev-bg-pos-y, calc(var(--cal-prev-bg-pos-y)*.13889vw)));
+		height:var(--m-cal-prev-h, var(--t-cal-prev-h, calc(var(--cal-prev-h)*.13889vw)));
+		width:var(--m-cal-prev-w, var(--t-cal-prev-w, calc(var(--cal-prev-w)*.13889vw)));
+	}
+	.part-next:before{
+		background-position-x:var(--m-cal-next-bg-pos-x, var(--t-cal-next-bg-pos-x, calc(var(--cal-next-bg-pos-x)*.13889vw)));
+		background-position-y:var(--m-cal-next-bg-pos-y, var(--t-cal-next-bg-pos-y, calc(var(--cal-next-bg-pos-y)*.13889vw)));
+		height:var(--m-cal-next-h, var(--t-cal-next-h, calc(var(--cal-next-h)*.13889vw)));
+		width:var(--m-cal-next-w, var(--t-cal-next-w, calc(var(--cal-next-w)*.13889vw)));
+	}
+	.part-next-year:before{
+		background-position-x:var(--m-cal-next-year-bg-pos-x, var(--t-cal-next-year-bg-pos-x, calc(var(--cal-next-year-bg-pos-x)*.13889vw)));
+		background-position-y:var(--m-cal-next-year-bg-pos-y, var(--t-cal-next-year-bg-pos-y, calc(var(--cal-next-year-bg-pos-y)*.13889vw)));
+		height:var(--m-cal-next-year-h, var(--t-cal-next-year-h, calc(var(--cal-next-year-h)*.13889vw)));
+		width:var(--m-cal-next-year-w, var(--t-cal-next-year-w, calc(var(--cal-next-year-w)*.13889vw)));
+	}
+	.part-date-cell{
+		text-align:var(--m-cal-date-cell-txt-a, var(--t-cal-date-cell-txt-a, var(--cal-date-cell-txt-a)));
+	}
+	.part-date{
+		align-items:var(--m-cal-date-items-y, var(--t-cal-date-items-y, var(--cal-date-items-y)));
+		border-radius:var(--m-cal-date-br-a-unit, var(--t-cal-date-br-a-unit, var(--cal-date-br-a-unit)));
+		display:var(--m-cal-date-dp, var(--t-cal-date-dp, var(--cal-date-dp)));
+		height:var(--m-cal-date-h, var(--t-cal-date-h, calc(var(--cal-date-h)*.13889vw)));
+		justify-content:var(--m-cal-date-content-x, var(--t-cal-date-content-x, var(--cal-date-content-x)));
+		width:var(--m-cal-date-w, var(--t-cal-date-w, calc(var(--cal-date-w)*.13889vw)));
+	}
+	.part-date:hover:not([data-disabled]):not([data-unavailable]):not([data-outside-view]){
+		background-color:var(--m-cal-date-hover-bg-c, var(--t-cal-date-hover-bg-c, var(--cal-date-hover-bg-c)));
+		color:var(--m-cal-date-hover-txt-c, var(--t-cal-date-hover-txt-c, var(--cal-date-hover-txt-c)));
+	}
+	[class*=calendar-type] [data-today]{
+		background-color:var(--m-cal-date-today-bg-c, var(--t-cal-date-today-bg-c, var(--cal-date-today-bg-c)));
+		color:var(--m-cal-date-today-txt-c, var(--t-cal-date-today-txt-c, var(--cal-date-today-txt-c)));
+	}
+	[class*=calendar-type] [data-selected]{
+		background-color:var(--m-cal-date-selected-bg-c, var(--t-cal-date-selected-bg-c, var(--cal-date-selected-bg-c)));
+		color:var(--m-cal-date-selected-txt-c, var(--t-cal-date-selected-txt-c, var(--cal-date-selected-txt-c)));
+	}
+	[class*=calendar-type] [data-unavailable]{
+		color:var(--m-cal-date-unavailable-txt-c, var(--t-cal-date-unavailable-txt-c, var(--cal-date-unavailable-txt-c)));
+		text-decoration-line:var(--m-cal-date-unavailable-txt-deco-l, var(--t-cal-date-unavailable-txt-deco-l, var(--cal-date-unavailable-txt-deco-l)));
+	}
+}

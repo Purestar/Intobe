@@ -1,0 +1,4 @@
+[class*=bi-],[class*=ic-]{ cursor:inherit; display:inline-flex; font-size:0; place-content:center; place-items:center; position:relative; }
+	[class*=bi-]:after,[class*=bi-]:before,[class*=ic-]:after,[class*=ic-]:before{ background-position:var(--bp-pos-x, 0) var(--bp-pos-y, 0); background-size:var(--bg-sz); content:""; }
+	[class*=bi-]:after,[class*=bi-]:before{ background-image:var(--bg-img); }
+	[class*=ic-]:after,[class*=ic-]:before{ background-image:var(--ic); }

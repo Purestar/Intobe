@@ -1,0 +1,40 @@
+[style*="--tf-trans"]{
+	translate:var(--tf-trans);
+}
+[style*="--tf-deg"]{
+	rotate:var(--tf-deg);
+}
+[style*="--tf-scl"]{
+	scale:var(--tf-scl);
+}
+[style*="--tf-origin"]{
+	transform-origin:var(--tf-origin);
+}
+@media screen and (max-width:1024px){
+	[style*="--tf-trans"]{
+		translate:var(--t-tf-trans, var(--tf-trans));
+	}
+	[style*="--tf-deg"]{
+		rotate:var(--t-tf-deg, var(--tf-deg));
+	}
+	[style*="--tf-scl"]{
+		scale:var(--t-tf-scl, var(--tf-scl));
+	}
+	[style*="--tf-origin"]{
+		transform-origin:var(--t-tf-origin, var(--tf-origin));
+	}
+}
+@media screen and (max-width:720px){
+	[style*="--tf-trans"]{
+		translate:var(--m-tf-trans, var(--t-tf-trans, var(--tf-trans)));
+	}
+	[style*="--tf-deg"]{
+		rotate:var(--m-tf-deg, var(--t-tf-deg, var(--tf-deg)));
+	}
+	[style*="--tf-scl"]{
+		scale:var(--m-tf-scl, var(--t-tf-scl, var(--tf-scl)));
+	}
+	[style*="--tf-origin"]{
+		transform-origin:var(--m-tf-origin, var(--t-tf-origin, var(--tf-origin)));
+	}
+}

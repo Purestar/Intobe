@@ -1,0 +1,31 @@
+.part-header{
+	position:relative;
+}
+.part-header .part-next-wrap,.part-header .part-prev-wrap,.part-next,.part-next-year,.part-prev,.part-prev-year{
+	display:flex;
+}
+.part-next-year:before,.part-next:before,.part-prev-year:before,.part-prev:before{
+	background-image:var(--ic-c);
+	background-repeat:no-repeat;
+	background-size:var(--bg-sz);
+	content:"";
+}
+.part-next-year:before,.part-next:before{
+	rotate:180deg;
+}
+.part-title{
+	font-weight:500;
+}
+.part-table-wrap{
+	display:flex;
+}
+.part-date{
+	cursor:pointer;
+	transition:background-color var(--trans-dft), color var(--trans-dft);
+}
+[class*=calendar-type] [data-unavailable],[class*=calendar-type][data-disabled] .part-date,[class*=calendar-type][data-readonly] .part-date{
+	cursor:default;
+}
+[class*=calendar-type] [data-outside-view],[class*=calendar-type][data-disabled]{
+	opacity:.5;
+}

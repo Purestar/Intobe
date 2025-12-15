@@ -1,0 +1,1 @@
+.no-data{ display:flex; flex-direction:column; height:var(--h, 100%); place-content:center; place-items:center; text-align:center;}	@media (max-width:1024px){	.no-data{ height:var(--t-h, var(--h, 100%)); }	}	@media (max-width:720px){	.no-data{ height:var(--m-h, var(--t-h, var(--h, 100%))); }	}

@@ -1,0 +1,83 @@
+[class*=form-dropfile]{
+	--form-bg-c:var(--fom-bg);
+	--form-bd-a-w:2;
+	--form-bd-a-s:dashed;
+	--form-bd-a-c:var(--fom-bdr-c);
+	--form-br-a:var(--fom-br);
+	--form-txt-c:var(--fom-fc);
+	--form-txt-s:var(--fom-fs);
+	--form-txt-w:400;
+	--form-min-h:120;
+	--form-pd-x:10;
+	--form-pd-y:10;
+	--form-focus-bd-a-w:var(--form-bd-a-w);
+	--form-focus-bd-a-s:var(--form-bd-a-s);
+	--form-focus-bd-a-c:var(--fom-fcs-brd-c);
+	background-color:var(--form-bg-c);
+	border-radius:calc(var(--form-br-a)*1px);
+	color:var(--form-txt-c);
+	font-size:calc(var(--form-txt-s)*1px);
+	font-weight:var(--form-txt-w);
+	width:calc(var(--form-w)*1px);
+}
+[class*=form-dropfile].form-disabled{
+	--form-dis-bg-c:var(--dis-bg);
+	--form-dis-bd-a-w:var(--form-bd-a-w);
+	--form-dis-bd-a-s:var(--form-bd-a-s);
+	--form-dis-bd-a-c:var(--dis-bdr);
+	--form-dis-txt-c:var(--fom-ph);
+	background-color:var(--form-dis-bg-c);
+	border-color:var(--form-dis-bd-a-c);
+	border-style:var(--form-dis-bd-a-s);
+	border-width:calc(var(--form-dis-bd-a-w)*1px);
+	color:var(--form-dis-txt-c);
+}
+[class*=form-dropfile] .part-dropzone.dropzone-dragover,[class*=form-dropfile] .part-dropzone:hover{
+	border-color:var(--form-focus-bd-a-c);
+	border-style:var(--form-focus-bd-a-s);
+	border-width:calc(var(--form-focus-bd-a-w)*1px);
+}
+@media screen and (max-width:1024px){
+	[class*=form-dropfile]{
+		background-color:var(--t-form-bg-c, var(--form-bg-c));
+		border-radius:var(--t-form-br-a, calc(var(--form-br-a)*1px));
+		color:var(--t-form-txt-c, var(--form-txt-c));
+		font-size:var(--t-form-txt-s, calc(var(--form-txt-s)*1px));
+		font-weight:var(--t-form-txt-w, var(--form-txt-w));
+		width:var(--t-form-w, calc(var(--form-w)*1px));
+	}
+	[class*=form-dropfile] .part-dropzone.dropzone-dragover,[class*=form-dropfile] .part-dropzone:hover{
+		border-color:var(--t-form-focus-bd-a-c, var(--form-focus-bd-a-c));
+		border-style:var(--t-form-focus-bd-a-s, var(--form-focus-bd-a-s));
+		border-width:var(--t-form-focus-bd-a-w, calc(var(--form-focus-bd-a-w)*1px));
+	}
+	[class*=form-dropfile].form-disabled{
+		background-color:var(--t-form-dis-bg-c, var(--form-dis-bg-c));
+		border-color:var(--t-form-dis-bd-a-c, var(--form-dis-bd-a-c));
+		border-style:var(--t-form-dis-bd-a-s, var(--form-dis-bd-a-s));
+		border-width:var(--t-form-dis-bd-a-w, calc(var(--form-dis-bd-a-w)*1px));
+		color:var(--t-form-dis-txt-c, var(--form-dis-txt-c));
+	}
+}
+@media screen and (max-width:720px){
+	[class*=form-dropfile]{
+		background-color:var(--m-form-bg-c, var(--t-form-bg-c, var(--form-bg-c)));
+		border-radius:var(--m-form-br-a, var(--t-form-br-a, calc(var(--form-br-a)*.13889vw)));
+		color:var(--m-form-txt-c, var(--t-form-txt-c, var(--form-txt-c)));
+		font-size:var(--m-form-txt-s, var(--t-form-txt-s, calc(var(--form-txt-s)*.13889vw)));
+		font-weight:var(--m-form-txt-w, var(--t-form-txt-w, var(--form-txt-w)));
+		width:var(--m-form-w, var(--t-form-w, calc(var(--form-w)*.13889vw)));
+	}
+	[class*=form-dropfile] .part-dropzone.dropzone-dragover,[class*=form-dropfile] .part-dropzone:hover{
+		border-color:var(--m-form-focus-bd-a-c, var(--t-form-focus-bd-a-c, var(--form-focus-bd-a-c)));
+		border-style:var(--m-form-focus-bd-a-s, var(--t-form-focus-bd-a-s, var(--form-focus-bd-a-s)));
+		border-width:var(--m-form-focus-bd-a-w, var(--t-form-focus-bd-a-w, calc(var(--form-focus-bd-a-w)*.13889vw)));
+	}
+	[class*=form-dropfile].form-disabled{
+		background-color:var(--m-form-dis-bg-c, var(--t-form-dis-bg-c, var(--form-dis-bg-c)));
+		border-color:var(--m-form-dis-bd-a-c, var(--t-form-dis-bd-a-c, var(--form-dis-bd-a-c)));
+		border-style:var(--m-form-dis-bd-a-s, var(--t-form-dis-bd-a-s, var(--form-dis-bd-a-s)));
+		border-width:var(--m-form-dis-bd-a-w, var(--t-form-dis-bd-a-w, calc(var(--form-dis-bd-a-w)*.13889vw)));
+		color:var(--m-form-dis-txt-c, var(--t-form-dis-txt-c, var(--form-dis-txt-c)));
+	}
+}

@@ -1,0 +1,54 @@
+[class*=chip-type]{
+	--chip-bg-c:var(--mc);
+	--chip-bd-a-w:1;
+	--chip-bd-a-s:solid;
+	--chip-bd-a-c:var(--moc);
+	--chip-br-a:16;
+	--chip-w:fit-content;
+	--chip-h:fit-content;
+	--chip-pd-x:8;
+	--chip-txt-s:14;
+	--chip-txt-w:400;
+	--chip-txt-c:#fff;
+	background-color:var(--chip-bg-c);
+	border-color:var(--chip-bd-a-c);
+	border-radius:calc(var(--chip-br-a)*1px);
+	border-style:var(--chip-bd-a-s);
+	border-width:calc(var(--chip-bd-a-w)*1px);
+	color:var(--chip-txt-c);
+	font-size:calc(var(--chip-txt-s)*1px);
+	font-weight:var(--chip-txt-w);
+	height:calc(var(--chip-h)*1px);
+	padding-inline:calc(var(--chip-pd-x)*1px);
+	width:calc(var(--chip-w)*1px);
+}
+@media screen and (max-width:1024px){
+	[class*=chip-type]{
+		background-color:var(--t-chip-bg-c, var(--chip-bg-c));
+		border-color:var(--t-chip-bd-a-c, var(--chip-bd-a-c));
+		border-radius:var(--t-chip-br-a, calc(var(--chip-br-a)*1px));
+		border-style:var(--t-chip-bd-a-s, var(--chip-bd-a-s));
+		border-width:var(--t-chip-bd-a-w, calc(var(--chip-bd-a-w)*1px));
+		color:var(--t-chip-txt-c, var(--chip-txt-c));
+		font-size:var(--t-chip-txt-s, calc(var(--chip-txt-s)*1px));
+		font-weight:var(--t-chip-txt-w, var(--chip-txt-w));
+		height:var(--t-chip-h, calc(var(--chip-h)*1px));
+		padding-inline:var(--t-chip-pd-x, calc(var(--chip-pd-x)*1px));
+		width:var(--t-chip-w, calc(var(--chip-w)*1px));
+	}
+}
+@media screen and (max-width:720px){
+	[class*=chip-type]{
+		background-color:var(--m-chip-bg-c, var(--t-chip-bg-c, var(--chip-bg-c)));
+		border-color:var(--m-chip-bd-a-c, var(--t-chip-bd-a-c, var(--chip-bd-a-c)));
+		border-radius:var(--m-chip-br-a, var(--t-chip-br-a, calc(var(--chip-br-a)*.13889vw)));
+		border-style:var(--m-chip-bd-a-s, var(--t-chip-bd-a-s, var(--chip-bd-a-s)));
+		border-width:var(--m-chip-bd-a-w, var(--t-chip-bd-a-w, calc(var(--chip-bd-a-w)*.13889vw)));
+		color:var(--m-chip-txt-c, var(--t-chip-txt-c, var(--chip-txt-c)));
+		font-size:var(--m-chip-txt-s, var(--t-chip-txt-s, calc(var(--chip-txt-s)*.13889vw)));
+		font-weight:var(--m-chip-txt-w, var(--t-chip-txt-w, var(--chip-txt-w)));
+		height:var(--m-chip-h, var(--t-chip-h, calc(var(--chip-h)*.13889vw)));
+		padding-inline:var(--m-chip-pd-x, var(--t-chip-pd-x, calc(var(--chip-pd-x)*.13889vw)));
+		width:var(--m-chip-w, var(--t-chip-w, calc(var(--chip-w)*.13889vw)));
+	}
+}

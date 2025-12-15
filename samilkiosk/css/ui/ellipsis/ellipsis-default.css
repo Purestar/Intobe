@@ -1,0 +1,1 @@
+[class*=ellipsis]{ display:-webkit-box; height:max-content; overflow:hidden; text-overflow:ellipsis; -webkit-box-orient:vertical; text-align:left; word-break:break-all; }	[class*=ellipsis][data-disabled]{ white-space:normal; -webkit-box-orient:unset; }

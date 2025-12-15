@@ -1,0 +1,67 @@
+[class*=transfer-type]{
+	display:flex;
+}
+[class*=transfer-type] .transfer-panel{
+	background:var(--fom-bg);
+	border:1px solid var(--fom-bdr-c);
+	border-radius:var(--fom-br);
+	display:flex;
+	flex:1;
+	flex-direction:column;
+}
+[class*=transfer-type] .transfer-panel-header{
+	align-items:center;
+	border-bottom:1px solid var(--fom-bdr-c);
+	display:flex;
+	justify-content:space-between;
+}
+[class*=transfer-type] .transfer-panel-header .transfer-header-title{
+	flex:1;
+}
+[class*=transfer-type] .transfer-panel-header .transfer-header-count{
+	color:var(--fom-fc);
+	font-weight:400;
+}
+[class*=transfer-type] .transfer-panel-search{
+	border-bottom:1px solid var(--fom-bdr-c);
+}
+[class*=transfer-type] .transfer-panel-body{
+	flex:1;
+	overflow-y:auto;
+}
+[class*=transfer-type] .transfer-item{
+	align-items:center;
+	cursor:pointer;
+	display:flex;
+	transition:background-color .2s;
+}
+[class*=transfer-type] .transfer-item:hover{
+	background-color:var(--fom-bg, #f9fafb);
+}
+[class*=transfer-type] .transfer-item.transfer-item-checked{
+	background-color:var(--fom-fcs-bg, #eff6ff);
+}
+[class*=transfer-type] .transfer-item .transfer-checkbox,[class*=transfer-type] .transfer-panel-header .transfer-checkbox{
+	flex-shrink:0;
+}
+[class*=transfer-type] .transfer-item .transfer-item-label{
+	flex:1;
+	-webkit-user-select:none;
+	user-select:none;
+}
+[class*=transfer-type] .transfer-panel-body .transfer-empty{
+	color:var(--fom-fc, #9ca3af);
+	text-align:center;
+}
+[class*=transfer-type] .transfer-buttons{
+	flex-direction:column;
+}
+[class*=transfer-type] .transfer-btn,[class*=transfer-type] .transfer-buttons{
+	align-items:center;
+	display:flex;
+	justify-content:center;
+}
+[class*=transfer-type] .transfer-panel[class*=transfer-disabled]{
+	opacity:.6;
+	pointer-events:none;
+}

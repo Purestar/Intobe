@@ -1,0 +1,176 @@
+.p-colorpicker{
+	display:inline-block;
+	position:relative;
+}
+.p-colorpicker-dragging{
+	cursor:pointer;
+}
+.p-colorpicker-preview{
+	border:0;
+	border-radius:var(--p-colorpicker-preview-border-radius);
+	cursor:pointer;
+	height:var(--p-colorpicker-preview-height);
+	outline-color:transparent;
+	padding:0;
+	transition:background var(--p-colorpicker-transition-duration), color var(--p-colorpicker-transition-duration), border-color var(--p-colorpicker-transition-duration), outline-color var(--p-colorpicker-transition-duration), box-shadow var(--p-colorpicker-transition-duration);
+	width:var(--p-colorpicker-preview-width);
+}
+.p-colorpicker-preview:disabled{
+	cursor:default;
+}
+.p-colorpicker-preview:enabled:focus-visible{
+	border-color:var(--p-colorpicker-preview-focus-border-color);
+	box-shadow:var(--p-colorpicker-preview-focus-ring-shadow);
+	outline:var(--p-colorpicker-preview-focus-ring-width) var(--p-colorpicker-preview-focus-ring-style) var(--p-colorpicker-preview-focus-ring-color);
+	outline-offset:var(--p-colorpicker-preview-focus-ring-offset);
+}
+.p-colorpicker-panel{
+	background:#222;
+	border:1px solid #222;
+	border-radius:4px;
+	height:166px;
+	left:0;
+	position:absolute;
+	top:0;
+	width:193px;
+}
+.p-colorpicker-panel-inline{
+	position:static;
+}
+.p-colorpicker-content{
+	position:relative;
+}
+.p-colorpicker-color-selector{
+	height:150px;
+	inset-block-start:8px;
+	inset-inline-start:8px;
+	position:absolute;
+	width:150px;
+}
+.p-colorpicker-color-background{
+	background:linear-gradient(0deg, #000 0, transparent), linear-gradient(90deg, #fff 0, hsla(0,0%,100%,0));
+	height:100%;
+	width:100%;
+}
+.p-colorpicker-color-handle{
+	border-color:var(--p-colorpicker-handle-color);
+	border-radius:100%;
+	border-style:solid;
+	border-width:1px;
+	cursor:pointer;
+	height:10px;
+	inset-block-start:0;
+	inset-inline-start:150px;
+	margin:-5px 0 0 -5px;
+	opacity:.85;
+	position:absolute;
+	width:10px;
+}
+.p-colorpicker-hue{
+	background:linear-gradient(0deg, red, #ff0 17%, #0f0 33%, #0ff 50%, #00f 67%, #f0f 83%, red);
+	height:150px;
+	inset-block-start:8px;
+	inset-inline-start:167px;
+	opacity:.85;
+	position:absolute;
+	width:17px;
+}
+.p-colorpicker-hue-handle{
+	background-color:rgba(0,0,0,.5);
+	border-color:var(--p-colorpicker-handle-color);
+	border-style:solid;
+	border-width:2px;
+	cursor:pointer;
+	height:10px;
+	inset-block-start:150px;
+	inset-inline-start:0;
+	margin-block-start:-5px;
+	margin-inline-start:-2px;
+	opacity:.85;
+	position:absolute;
+	width:21px;
+}
+[class*=form-txt-date]{
+	height:auto;
+	padding:0;
+}
+[class*=form-txt-date] .part-icon:after{
+	background-image:var(--ic-c);
+	background-size:var(--bg-sz);
+	content:"";
+}
+[class*=form-txt-date] .part-wrap+*{
+	min-width:auto !important;
+	width:100%;
+}
+[class*=form-txt-date] .part-wrap[data-state=open]+*{
+	z-index:1 !important;
+}
+[class*=form-range]{
+	border:0;
+	position:relative;
+}
+[class*=form-range][disabled]{
+	background:none;
+}
+[class*=form-range] input[type=range]{
+	position:absolute;
+}
+[class*=form-range] input[type=range]::-webkit-slider-runnable-track{
+	transition:background-color var(--trans-dft);
+}
+[class*=form-range] input[type=range]::-webkit-slider-thumb{
+	position:relative;
+	transition:background-color var(--trans-dft);
+	z-index:10;
+}
+[class*=form-range] .part-range-min::-webkit-slider-thumb{
+	anchor-name:--thumb-min;
+}
+[class*=form-range] .part-range-max::-webkit-slider-thumb{
+	anchor-name:--thumb-max;
+}
+[class*=form-range] input[type=range]:not(.part-range-min):not(.part-range-max)::-webkit-slider-thumb{
+	anchor-name:--thumb;
+}
+[class*=form-range] input[type=range]:disabled::-webkit-slider-runnable-track,[class*=form-range] input[type=range]:disabled::-webkit-slider-thumb{
+	transition:background-color var(--trans-dft);
+}
+[class*=form-range]:before{
+	content:"";
+	left:0;
+	opacity:.3;
+	position:absolute;
+	top:50%;
+	translate:0 -50%;
+	width:100%;
+	z-index:0;
+}
+[class*=form-range] .part-range-track{
+	pointer-events:none;
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%);
+	transition:left .1s,width .1s;
+	z-index:0;
+}
+[class*=form-range] output{
+	bottom:anchor(top);
+	left:anchor(center);
+	position:absolute;
+	translate:-50% 0;
+}
+[class*=form-range] output:first-of-type{
+	position-anchor:--thumb-min;
+}
+[class*=form-range] output:nth-of-type(2){
+	position-anchor:--thumb-max;
+}
+[class*=form-range] output:only-of-type{
+	position-anchor:--thumb;
+}
+[class*=form-stepper] input{
+	flex:1;
+	text-align:center;
+	transition:border-color var(--trans-dft);
+}

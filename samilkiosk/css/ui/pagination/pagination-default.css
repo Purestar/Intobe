@@ -1,0 +1,25 @@
+[class*=page-type]{
+	display:flex;
+	place-content:center;
+}
+[class*=page-type] button{
+	white-space:nowrap;
+}
+[class*=page-type] .page-elps,[class*=page-type] button{
+	display:flex;
+	place-content:center;
+	place-items:center;
+}
+[class*=page-type] .page-ctrl{
+	display:flex;
+	place-content:center;
+}
+[class*=page-type] .page-first:before,[class*=page-type] .page-last:before,[class*=page-type] .page-next:before,[class*=page-type] .page-prev:before{
+	background-image:var(--ic-c);
+	background-size:var(--bg-sz);
+	content:"";
+	flex-shrink:0;
+}
+[class*=page-type] .page-last:before,[class*=page-type] .page-next:before{
+	transform:rotate(180deg);
+}

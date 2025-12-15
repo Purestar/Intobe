@@ -1,0 +1,33 @@
+[style*="--ovf-a"]{
+	overflow:var(--ovf-a);
+}
+[style*="--ovf-x"]{
+	overflow-x:var(--ovf-x);
+	white-space:nowrap;
+}
+[style*="--ovf-y"]{
+	overflow-y:var(--ovf-y);
+	white-space:normal;
+}
+@media screen and (max-width:1024px){
+	[style*="--ovf-a"]{
+		overflow:var(--t-ovf-a, var(--ovf-a));
+	}
+	[style*="--ovf-x"]{
+		overflow-x:var(--t-ovf-x, var(--ovf-x));
+	}
+	[style*="--ovf-y"]{
+		overflow-y:var(--t-ovf-y, var(--ovf-y));
+	}
+}
+@media screen and (max-width:720px){
+	[style*="--ovf-a"]{
+		overflow:var(--m-ovf-a, var(--t-ovf-a, var(--ovf-a)));
+	}
+	[style*="--ovf-x"]{
+		overflow-x:var(--m-ovf-x, var(--t-ovf-x, var(--ovf-x)));
+	}
+	[style*="--ovf-y"]{
+		overflow-y:var(--m-ovf-y, var(--t-ovf-y, var(--ovf-y)));
+	}
+}

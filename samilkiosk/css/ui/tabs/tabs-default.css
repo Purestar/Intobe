@@ -1,0 +1,23 @@
+[class*=tab-wrap]{
+	display:flex;
+	flex-direction:column;
+}
+[class*=tab-menu]{
+	display:flex;
+	flex-wrap:wrap;
+	overflow-x:auto;
+	overflow-y:hidden;
+	place-items:center;
+	position:relative;
+	scroll-behavior:smooth;
+	scrollbar-width:none;
+}
+[class*=tab-menu]>*>*{
+	display:flex;
+	flex-shrink:0;
+	place-items:center;
+	white-space:nowrap;
+}
+[class*=tab-wrap].tab-scroll-menu [class*=tab-menu]{
+	flex-wrap:nowrap;
+}

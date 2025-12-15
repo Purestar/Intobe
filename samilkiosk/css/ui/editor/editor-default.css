@@ -1,0 +1,190 @@
+.tiptap-editor-container{
+	position:relative;
+}
+.tiptap-toolbar{
+	align-items:center;
+	background-color:#f9fafb;
+	border:1px solid #e5e7eb;
+	border-bottom:none;
+	border-radius:.375rem .375rem 0 0;
+	display:flex;
+	flex-wrap:wrap;
+	gap:.25rem;
+	padding:.5rem;
+}
+.tiptap-toolbar-group{
+	align-items:center;
+	display:flex;
+	gap:.125rem;
+}
+.tiptap-toolbar-divider{
+	background-color:#e5e7eb;
+	height:1.5rem;
+	margin:0 .25rem;
+	width:1px;
+}
+.tiptap-toolbar-button{
+	align-items:center;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-radius:.25rem;
+	color:#374151;
+	cursor:pointer;
+	display:inline-flex;
+	font-size:.875rem;
+	font-weight:500;
+	height:2rem;
+	justify-content:center;
+	min-width:2rem;
+	padding:.375rem .5rem;
+	transition:all .15s;
+	-webkit-user-select:none;
+	user-select:none;
+}
+.tiptap-toolbar-button:hover:not(:disabled){
+	background-color:#f3f4f6;
+	border-color:#d1d5db;
+}
+.tiptap-toolbar-button:active:not(:disabled){
+	background-color:#e5e7eb;
+}
+.tiptap-toolbar-button.is-active{
+	background-color:#3b82f6;
+	border-color:#3b82f6;
+	color:#fff;
+}
+.tiptap-toolbar-button.is-active:hover{
+	background-color:#2563eb;
+	border-color:#2563eb;
+}
+.tiptap-toolbar-button:disabled{
+	cursor:not-allowed;
+	opacity:.4;
+}
+.tiptap-toolbar-button strong{
+	font-weight:700;
+}
+.tiptap-toolbar-button em{
+	font-style:italic;
+}
+.tiptap-toolbar-button s{
+	text-decoration:line-through;
+}
+.tiptap-toolbar-button code{
+	font-family:Courier New,monospace;
+	font-size:.75rem;
+}
+.tiptap-editor-wrapper{
+	background-color:#fff;
+	border:1px solid #e5e7eb;
+	border-radius:0 0 .375rem .375rem;
+	position:relative;
+	transition:border-color .2s;
+}
+.tiptap-editor-wrapper:hover{
+	border-color:#d1d5db;
+}
+.tiptap-editor-container:has(.tiptap-toolbar) .tiptap-editor-wrapper{
+	border-radius:0 0 .375rem .375rem;
+}
+.tiptap-editor.editor-focused .tiptap-editor-wrapper{
+	border-color:#3b82f6;
+	outline:2px solid rgba(59,130,246,.1);
+	outline-offset:-2px;
+}
+.tiptap-editor.editor-disabled .tiptap-editor-wrapper{
+	background-color:#f9fafb;
+	border-color:#e5e7eb;
+	cursor:not-allowed;
+	opacity:.6;
+}
+.tiptap-editor.editor-readonly .tiptap-editor-wrapper{
+	background-color:#f9fafb;
+}
+.tiptap-editor-content{
+	min-height:100%;
+	outline:none;
+	padding:.75rem;
+}
+.tiptap-editor-content p.is-editor-empty:first-child:before,.tiptap-editor-content.is-empty:before{
+	color:#9ca3af;
+	content:attr(data-placeholder);
+	float:left;
+	height:0;
+	pointer-events:none;
+}
+.tiptap-editor-content p{
+	margin:.5rem 0;
+}
+.tiptap-editor-content p:first-child{
+	margin-top:0;
+}
+.tiptap-editor-content p:last-child{
+	margin-bottom:0;
+}
+.tiptap-editor-content h1,.tiptap-editor-content h2,.tiptap-editor-content h3,.tiptap-editor-content h4,.tiptap-editor-content h5,.tiptap-editor-content h6{
+	font-weight:600;
+	line-height:1.5;
+	margin:1rem 0 .5rem;
+}
+.tiptap-editor-content h1{
+	font-size:2rem;
+}
+.tiptap-editor-content h2{
+	font-size:1.5rem;
+}
+.tiptap-editor-content h3{
+	font-size:1.25rem;
+}
+.tiptap-editor-content ol,.tiptap-editor-content ul{
+	margin:.5rem 0;
+	padding-left:1.5rem;
+}
+.tiptap-editor-content li{
+	margin:.25rem 0;
+}
+.tiptap-editor-content blockquote{
+	border-left:4px solid #e5e7eb;
+	color:#6b7280;
+	font-style:italic;
+	margin:.5rem 0;
+	padding-left:1rem;
+}
+.tiptap-editor-content code{
+	background-color:#f3f4f6;
+	border-radius:.25rem;
+	font-family:Courier New,monospace;
+	font-size:.875em;
+	padding:.125rem .25rem;
+}
+.tiptap-editor-content pre{
+	background-color:#1f2937;
+	border-radius:.375rem;
+	color:#f9fafb;
+	margin:.5rem 0;
+	overflow-x:auto;
+	padding:1rem;
+}
+.tiptap-editor-content pre code{
+	background-color:transparent;
+	color:inherit;
+	padding:0;
+}
+.tiptap-editor-content hr{
+	border:none;
+	border-top:1px solid #e5e7eb;
+	margin:1rem 0;
+}
+.tiptap-editor-content strong{
+	font-weight:600;
+}
+.tiptap-editor-content em{
+	font-style:italic;
+}
+.tiptap-editor-content a{
+	color:#3b82f6;
+	text-decoration:underline;
+}
+.tiptap-editor-content a:hover{
+	color:#2563eb;
+}

@@ -1,0 +1,1 @@
+@media (max-width:720px){	[class*=ellipsis]{		--m-line:var(--line);		-webkit-line-clamp:var(--m-line);	}	[class*=ellipsis][data-disabled]{		--m-line:0}}

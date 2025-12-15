@@ -1,0 +1,1 @@
+@page{		size:A4;		margin:0;	padding:0;}@media print{	*{-webkit-print-color-adjust:exact; print-color-adjust:exact;}		body,html{height:fit-content; padding:0;}		:root{	--init-pc-w:100%;	}}

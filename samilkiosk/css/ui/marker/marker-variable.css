@@ -1,0 +1,181 @@
+[class*=mark-]{
+	--mark-bg-c:#000;
+	--mark-txt-s:var(--init-font-size);
+	--mark-txt-lh:calc(var(--init-line-height)*1em);
+	--mark-min-h-unit:var(--mark-txt-lh);
+	--mark-gap-x:var(--mark-gap-a);
+	--mark-gap-y:var(--mark-gap-a);
+	--mark-item-gap-x:var(--mark-item-gap-a);
+	--mark-item-gap-y:var(--mark-item-gap-a);
+	color:var(--mark-txt-c);
+	gap:calc(var(--mark-gap-a)*1px);
+	column-gap:calc(var(--mark-gap-x)*1px);
+	font-size:calc(var(--mark-txt-s)*1px);
+	grid-template-columns:repeat(var(--mark-grid-t-col), 1fr);
+	line-height:calc(var(--mark-txt-lh)*1px);
+	row-gap:calc(var(--mark-gap-y)*1px);
+}
+[class*=mark-v-bar]{
+	--mark-w:1;
+	--mark-h:10;
+}
+[class*=mark-h-bar]{
+	--mark-w-unit:100%;
+	--mark-h:1;
+}
+[class*=mark-cir]{
+	--mark-br-a-unit:50%;
+}
+[class*=mark-cir],[class*=mark-squ]{
+	--mark-w:10;
+	--mark-h:10;
+}
+[class*=mark-hyp]{
+	--mark-w:6;
+	--mark-h:1;
+}
+[class*=mark-num]{
+	--mark-bg-c:transparent;
+	--mark-suf:".";
+}
+[class*=mark-arrow]{
+	--mark-bg-c:transparent;
+	--mark-w:4;
+	--mark-h:4;
+	--mark-tf-deg:135deg;
+	--mark-bd-l-w:1;
+	--mark-bd-l-s:solid;
+	--mark-bd-l-c:#000;
+	--mark-bd-t-w:1;
+	--mark-bd-t-s:solid;
+	--mark-bd-t-c:#000;
+}
+[class*=mark-slash]{
+	--mark-w:1;
+	--mark-h:10;
+	--mark-tf-deg:135deg;
+}
+[class*=mark-dia]{
+	--mark-w:10;
+	--mark-h:10;
+	--mark-tf-deg:45deg;
+}
+[class*=mark-]>*{
+	gap:calc(var(--mark-item-gap-a)*1px);
+	column-gap:calc(var(--mark-item-gap-x)*1px);
+	row-gap:calc(var(--mark-item-gap-y)*1px);
+}
+[class*=mark-]>*>.part-marker{
+	height:calc(var(--mark-h)*1px);
+	width:calc(var(--mark-w)*1px);
+}
+[class*=mark-]:not([class*=mark-h-bar])>*>.part-marker{
+	min-height:var(--mark-min-h-unit);
+}
+[class*=mark-]>*>.part-marker:before{
+	background-color:var(--mark-bg-c);
+	border-radius:calc(var(--mark-br-a)*1px);
+	height:calc(var(--mark-h)*1px);
+	rotate:var(--mark-tf-deg);
+	width:calc(var(--mark-w)*1px);
+}
+[class*=mark-h-bar]>*>.part-marker,[class*=mark-h-bar]>*>.part-marker:before{
+	width:var(--mark-w-unit);
+}
+[class*=mark-cir]>*>.part-marker:before{
+	border-radius:var(--mark-br-a-unit);
+}
+[class*=mark-num]>*>.part-marker:before{
+	color:var(--mark-txt-c);
+	content:counter(item-num) var(--mark-suf);
+}
+[class*=mark-arrow]>*>.part-marker:before{
+	border-left:calc(var(--mark-bd-l-w)*1px) var(--mark-bd-l-s) var(--mark-bd-l-c);
+	border-top:calc(var(--mark-bd-t-w)*1px) var(--mark-bd-t-s) var(--mark-bd-t-c);
+}
+@media screen and (max-width:1024px){
+	[class*=mark-]{
+		color:var(--t-mark-txt-c, var(--mark-txt-c));
+		gap:var(--t-mark-gap-a, calc(var(--mark-gap-a)*1px));
+		column-gap:var(--t-mark-gap-x, calc(var(--mark-gap-x)*1px));
+		font-size:var(--t-mark-txt-s, calc(var(--mark-txt-s)*1px));
+		grid-template-columns:repeat(var(--t-mark-grid-t-col, var(--mark-grid-t-col)), 1fr);
+		line-height:var(--t-mark-txt-lh, calc(var(--mark-txt-lh)*1px));
+		row-gap:var(--t-mark-gap-y, calc(var(--mark-gap-y)*1px));
+	}
+	[class*=mark-]>*{
+		gap:var(--t-mark-item-gap-a, calc(var(--mark-item-gap-a)*1px));
+		column-gap:var(--t-mark-item-gap-x, calc(var(--mark-item-gap-x)*1px));
+		row-gap:var(--t-mark-item-gap-y, calc(var(--mark-item-gap-y)*1px));
+	}
+	[class*=mark-]>*>.part-marker{
+		height:var(--t-mark-h, calc(var(--mark-h)*1px));
+		width:var(--t-mark-w, calc(var(--mark-w)*1px));
+	}
+	[class*=mark-]:not([class*=mark-h-bar])>*>.part-marker{
+		min-height:var(--t-mark-min-h-unit, var(--mark-min-h-unit));
+	}
+	[class*=mark-]>*>.part-marker:before{
+		background-color:var(--t-mark-bg-c, var(--mark-bg-c));
+		border-radius:var(--t-mark-br-a, calc(var(--mark-br-a)*1px));
+		height:var(--t-mark-h, calc(var(--mark-h)*1px));
+		rotate:var(--t-mark-tf-deg, var(--mark-tf-deg));
+		width:var(--t-mark-w, calc(var(--mark-w)*1px));
+	}
+	[class*=mark-h-bar]>*>.part-marker,[class*=mark-h-bar]>*>.part-marker:before{
+		width:var(--t-mark-w-unit, var(--mark-w-unit));
+	}
+	[class*=mark-cir]>*>.part-marker:before{
+		border-radius:var(--t-mark-br-a-unit, var(--mark-br-a-unit));
+	}
+	[class*=mark-num]>*>.part-marker:before{
+		color:var(--t-mark-txt-c, var(--mark-txt-c));
+	}
+	[class*=mark-arrow]>*>.part-marker:before{
+		border-left:var(--t-mark-bd-l-w, calc(var(--mark-bd-l-w)*1px)) var(--t-mark-bd-l-s, var(--mark-bd-l-s)) var(--t-mark-bd-l-c, var(--mark-bd-l-c));
+		border-top:var(--t-mark-bd-t-w, calc(var(--mark-bd-t-w)*1px)) var(--t-mark-bd-t-s, var(--mark-bd-t-s)) var(--t-mark-bd-t-c, var(--mark-bd-t-c));
+	}
+}
+@media screen and (max-width:720px){
+	[class*=mark-]{
+		color:var(--m-mark-txt-c, var(--t-mark-txt-c, var(--mark-txt-c)));
+		gap:var(--m-mark-gap-a, var(--t-mark-gap-a, calc(var(--mark-gap-a)*.13889vw)));
+		column-gap:var(--m-mark-gap-x, var(--t-mark-gap-x, calc(var(--mark-gap-x)*.13889vw)));
+		font-size:var(--m-mark-txt-s, var(--t-mark-txt-s, calc(var(--mark-txt-s)*.13889vw)));
+		grid-template-columns:repeat(var(--m-mark-grid-t-col, var(--t-mark-grid-t-col, var(--mark-grid-t-col))), 1fr);
+		line-height:var(--m-mark-txt-lh, var(--t-mark-txt-lh, calc(var(--mark-txt-lh)*.13889vw)));
+		row-gap:var(--m-mark-gap-y, var(--t-mark-gap-y, calc(var(--mark-gap-y)*.13889vw)));
+	}
+	[class*=mark-]>*{
+		gap:var(--m-mark-item-gap-a, var(--t-mark-item-gap-a, calc(var(--mark-item-gap-a)*.13889vw)));
+		column-gap:var(--m-mark-item-gap-x, var(--t-mark-item-gap-x, calc(var(--mark-item-gap-x)*.13889vw)));
+		row-gap:var(--m-mark-item-gap-y, var(--t-mark-item-gap-y, calc(var(--mark-item-gap-y)*.13889vw)));
+	}
+	[class*=mark-]>*>.part-marker{
+		height:var(--m-mark-h, var(--t-mark-h, calc(var(--mark-h)*.13889vw)));
+		width:var(--m-mark-w, var(--t-mark-w, calc(var(--mark-w)*.13889vw)));
+	}
+	[class*=mark-]:not([class*=mark-h-bar])>*>.part-marker{
+		min-height:var(--m-mark-min-h-unit, var(--t-mark-min-h-unit, var(--mark-min-h-unit)));
+	}
+	[class*=mark-]>*>.part-marker:before{
+		background-color:var(--m-mark-bg-c, var(--t-mark-bg-c, var(--mark-bg-c)));
+		border-radius:var(--m-mark-br-a, var(--t-mark-br-a, calc(var(--mark-br-a)*.13889vw)));
+		height:var(--m-mark-h, var(--t-mark-h, calc(var(--mark-h)*.13889vw)));
+		rotate:var(--m-mark-tf-deg, var(--t-mark-tf-deg, var(--mark-tf-deg)));
+		width:var(--m-mark-w, var(--t-mark-w, calc(var(--mark-w)*.13889vw)));
+	}
+	[class*=mark-h-bar]>*>.part-marker,[class*=mark-h-bar]>*>.part-marker:before{
+		width:var(--m-mark-w-unit, var(--t-mark-w-unit, var(--mark-w-unit)));
+	}
+	[class*=mark-cir]>*>.part-marker:before{
+		border-radius:var(--m-mark-br-a-unit, var(--t-mark-br-a-unit, var(--mark-br-a-unit)));
+	}
+	[class*=mark-num]>*>.part-marker:before{
+		color:var(--m-mark-txt-c, var(--t-mark-txt-c, var(--mark-txt-c)));
+	}
+	[class*=mark-arrow]>*>.part-marker:before{
+		border-left:var(--m-mark-bd-l-w, var(--t-mark-bd-l-w, calc(var(--mark-bd-l-w)*.13889vw))) var(--m-mark-bd-l-s, var(--t-mark-bd-l-s, var(--mark-bd-l-s))) var(--m-mark-bd-l-c, var(--t-mark-bd-l-c, var(--mark-bd-l-c)));
+		border-top:var(--m-mark-bd-t-w, var(--t-mark-bd-t-w, calc(var(--mark-bd-t-w)*.13889vw))) var(--m-mark-bd-t-s, var(--t-mark-bd-t-s, var(--mark-bd-t-s))) var(--m-mark-bd-t-c, var(--t-mark-bd-t-c, var(--mark-bd-t-c)));
+	}
+}

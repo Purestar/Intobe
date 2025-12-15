@@ -1,0 +1,13 @@
+[style*="--dp"]{
+	display:var(--dp);
+}
+@media screen and (max-width:1024px){
+	[style*="--dp"]{
+		display:var(--t-dp, var(--dp));
+	}
+}
+@media screen and (max-width:720px){
+	[style*="--dp"]{
+		display:var(--m-dp, var(--t-dp, var(--dp)));
+	}
+}

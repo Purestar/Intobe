@@ -1,0 +1,67 @@
+[class*=pop-type] .part-wrap{
+	background-color:#fff;
+	display:flex;
+	flex-direction:column;
+	left:50%;
+	overflow:hidden;
+	position:fixed;
+	top:50%;
+	translate:-50% -50%;
+}
+[class*=pop-type] .part-wrap>*{
+	flex-shrink:0;
+}
+[class*=pop-type] .part-head{
+	display:flex;
+	left:0;
+	place-content:space-between;
+	place-items:center;
+	position:sticky;
+	top:0;
+}
+[class*=pop-type] .part-head .part-title{
+	flex:1;
+	text-wrap:wrap;
+}
+[class*=pop-type] .part-foot{
+	display:flex;
+	place-content:center;
+	place-items:center;
+}
+[class*=pop-type] .part-foot [class*=btn-type]{
+	height:auto;
+}
+[class*=pop-type] .part-cont{
+	flex:1;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+[class*=pop-type] .part-cont>:first-child{
+	margin-top:0;
+}
+[class*=pop-type] .part-overlay{
+	background-color:rgba(0,0,0,.5);
+	display:none;
+	height:100dvh;
+	left:0;
+	position:fixed;
+	top:0;
+	width:100dvw;
+}
+[class*=pop-type] .part-overlay[data-aria-hidden]{
+	display:block;
+}
+[class*=pop-type] .part-close{
+	display:flex;
+	place-content:center;
+	place-items:center;
+	position:absolute;
+	right:0;
+	text-indent:-1000em;
+	top:0;
+}
+[class*=pop-type] .part-close:before{
+	background-image:var(--ic-c);
+	background-size:var(--bg-sz);
+	content:"";
+}

@@ -1,0 +1,27 @@
+[class*=form-txt]{
+	transition:border-color var(--trans-dft);
+}
+[class*=form-txt] .part-wrap,[class*=form-txt] input{
+	display:flex;
+	flex:1;
+	place-content:space-between;
+}
+[class*=form-txt] input{
+	caret-color:var(--form-caret-c);
+}
+[class*=form-txt] .part-icon{
+	display:flex;
+	height:100%;
+	place-content:center;
+	place-items:center;
+}
+[class*=form-txt]:has(input:focus){
+	transition:border-color var(--trans-dft);
+}
+[class*=form-txt]:has(input:disabled){
+	cursor:auto;
+	pointer-events:none;
+}
+[class*=form-txt] input[type=file]{
+	height:auto;
+}

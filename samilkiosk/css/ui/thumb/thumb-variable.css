@@ -1,0 +1,52 @@
+[class*=thumb-type]{
+	--thumb-ratio:"4 / 3";
+	--thumb-bg-c:var(--thmb-bg);
+	--thumb-br-a:0;
+	--thumb-w:100%;
+	--thumb-pd-x:var(--thumb-pd-a);
+	--thumb-pd-y:var(--thumb-pd-a);
+	aspect-ratio:var(--thumb-ratio);
+	background-color:var(--thumb-bg-c);
+	border-radius:calc(var(--thumb-br-a)*1px);
+	height:calc(var(--thumb-h)*1px);
+	width:calc(var(--thumb-w)*1px);
+}
+[class*=thumb-type]>:is(img,video){
+	border-radius:calc(var(--thumb-br-a)*1px);
+}
+[class*=thumb-type]>:not(img,video){
+	padding-block:calc(var(--thumb-pd-y)*1px);
+	padding-inline:calc(var(--thumb-pd-x)*1px);
+}
+@media screen and (max-width:1024px){
+	[class*=thumb-type]{
+		aspect-ratio:var(--t-thumb-ratio, var(--thumb-ratio));
+		background-color:var(--t-thumb-bg-c, var(--thumb-bg-c));
+		border-radius:var(--t-thumb-br-a, calc(var(--thumb-br-a)*1px));
+		height:var(--t-thumb-h, calc(var(--thumb-h)*1px));
+		width:var(--t-thumb-w, calc(var(--thumb-w)*1px));
+	}
+	[class*=thumb-type]>:is(img,video){
+		border-radius:var(--t-thumb-br-a, calc(var(--thumb-br-a)*1px));
+	}
+	[class*=thumb-type]>:not(img,video){
+		padding-block:var(--t-thumb-pd-y, calc(var(--thumb-pd-y)*1px));
+		padding-inline:var(--t-thumb-pd-x, calc(var(--thumb-pd-x)*1px));
+	}
+}
+@media screen and (max-width:720px){
+	[class*=thumb-type]{
+		aspect-ratio:var(--m-thumb-ratio, var(--t-thumb-ratio, var(--thumb-ratio)));
+		background-color:var(--m-thumb-bg-c, var(--t-thumb-bg-c, var(--thumb-bg-c)));
+		border-radius:var(--m-thumb-br-a, var(--t-thumb-br-a, calc(var(--thumb-br-a)*.13889vw)));
+		height:var(--m-thumb-h, var(--t-thumb-h, calc(var(--thumb-h)*.13889vw)));
+		width:var(--m-thumb-w, var(--t-thumb-w, calc(var(--thumb-w)*.13889vw)));
+	}
+	[class*=thumb-type]>:is(img,video){
+		border-radius:var(--m-thumb-br-a, var(--t-thumb-br-a, calc(var(--thumb-br-a)*.13889vw)));
+	}
+	[class*=thumb-type]>:not(img,video){
+		padding-block:var(--m-thumb-pd-y, var(--t-thumb-pd-y, calc(var(--thumb-pd-y)*.13889vw)));
+		padding-inline:var(--m-thumb-pd-x, var(--t-thumb-pd-x, calc(var(--thumb-pd-x)*.13889vw)));
+	}
+}

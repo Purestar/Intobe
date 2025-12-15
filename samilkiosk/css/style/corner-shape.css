@@ -1,0 +1,49 @@
+[style*="--cs-a"]{
+	corner-shape:var(--cs-a);
+}
+[style*="--cs-tl"]{
+	corner-top-left-shape:var(--cs-tl);
+}
+[style*="--cs-tr"]{
+	corner-top-right-shape:var(--cs-tr);
+}
+[style*="--cs-bl"]{
+	corner-bottom-left-shape:var(--cs-bl);
+}
+[style*="--cs-br"]{
+	corner-bottom-right-shape:var(--cs-br);
+}
+@media screen and (max-width:1024px){
+	[style*="--cs-a"]{
+		corner-shape:var(--t-cs-a, var(--cs-a));
+	}
+	[style*="--cs-tl"]{
+		corner-top-left-shape:var(--t-cs-tl, var(--cs-tl));
+	}
+	[style*="--cs-tr"]{
+		corner-top-right-shape:var(--t-cs-tr, var(--cs-tr));
+	}
+	[style*="--cs-bl"]{
+		corner-bottom-left-shape:var(--t-cs-bl, var(--cs-bl));
+	}
+	[style*="--cs-br"]{
+		corner-bottom-right-shape:var(--t-cs-br, var(--cs-br));
+	}
+}
+@media screen and (max-width:720px){
+	[style*="--cs-a"]{
+		corner-shape:var(--m-cs-a, var(--t-cs-a, var(--cs-a)));
+	}
+	[style*="--cs-tl"]{
+		corner-top-left-shape:var(--m-cs-tl, var(--t-cs-tl, var(--cs-tl)));
+	}
+	[style*="--cs-tr"]{
+		corner-top-right-shape:var(--m-cs-tr, var(--t-cs-tr, var(--cs-tr)));
+	}
+	[style*="--cs-bl"]{
+		corner-bottom-left-shape:var(--m-cs-bl, var(--t-cs-bl, var(--cs-bl)));
+	}
+	[style*="--cs-br"]{
+		corner-bottom-right-shape:var(--m-cs-br, var(--t-cs-br, var(--cs-br)));
+	}
+}

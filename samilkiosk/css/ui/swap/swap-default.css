@@ -1,0 +1,62 @@
+[class*=swap-type]{
+	cursor:pointer;
+	display:inline-block;
+	position:relative;
+}
+.swap-checkbox{
+	height:0;
+	opacity:0;
+	pointer-events:none;
+	position:absolute;
+	width:0;
+}
+.swap-off,.swap-on{
+	transition:opacity var(--trans-dft), transform var(--trans-dft);
+}
+.swap-on{
+	align-items:center;
+	display:flex;
+	height:100%;
+	justify-content:center;
+	opacity:0;
+	position:absolute;
+	transform:scale(.8);
+	width:100%;
+}
+[class*=swap-type].swap-active .swap-on{
+	opacity:1;
+	transform:scale(1);
+}
+[class*=swap-type].swap-active .swap-off{
+	opacity:0;
+	transform:scale(.8);
+}
+[class*=swap-type].swap-rotate .swap-off,[class*=swap-type].swap-rotate .swap-on{
+	transition:opacity var(--trans-dft), transform var(--trans-dft);
+}
+[class*=swap-type].swap-rotate .swap-on{
+	transform:rotate(180deg) scale(.8);
+}
+[class*=swap-type].swap-rotate .swap-off,[class*=swap-type].swap-rotate.swap-active .swap-on{
+	transform:rotate(0deg) scale(1);
+}
+[class*=swap-type].swap-rotate.swap-active .swap-off{
+	transform:rotate(-180deg) scale(.8);
+}
+[class*=swap-type].swap-flip .swap-off,[class*=swap-type].swap-flip .swap-on{
+	transform-style:preserve-3d;
+	transition:opacity var(--trans-dft), transform var(--trans-dft);
+}
+[class*=swap-type].swap-flip .swap-on{
+	transform:rotateY(180deg);
+}
+[class*=swap-type].swap-flip .swap-off,[class*=swap-type].swap-flip.swap-active .swap-on{
+	transform:rotateY(0deg);
+}
+[class*=swap-type].swap-flip.swap-active .swap-off{
+	transform:rotateY(-180deg);
+}
+[class*=swap-type]:has(.swap-checkbox:disabled){
+	cursor:not-allowed;
+	opacity:.6;
+}

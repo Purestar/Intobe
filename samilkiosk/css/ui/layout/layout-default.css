@@ -1,0 +1,13 @@
+[class*=layout-center]{
+	place-items:center;
+}
+[class*=layout-center]>*{
+	flex-shrink:0;
+	margin:auto;
+}
+[class*=layout-flex]>*{
+	flex-shrink:0;
+}
+[class*=layout-inner-max]{
+	max-width:100%;
+}

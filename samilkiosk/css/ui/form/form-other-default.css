@@ -1,0 +1,9 @@
+[class*=form-pin]{
+	display:inline-flex;
+	gap:.5rem;
+	width:fit-content;
+}
+[class*=form-pin] input{
+	text-align:center;
+	transition:border-color var(--trans-dft);
+}
