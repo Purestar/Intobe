@@ -93,34 +93,33 @@
 	border-left:calc(var(--mark-bd-l-w)*1px) var(--mark-bd-l-s) var(--mark-bd-l-c);
 	border-top:calc(var(--mark-bd-t-w)*1px) var(--mark-bd-t-s) var(--mark-bd-t-c);
 }
-@media screen and (max-width:1024px){
+@media screen and (max-width:1080px){
 	[class*=mark-]{
 		color:var(--t-mark-txt-c, var(--mark-txt-c));
-		gap:var(--t-mark-gap-a, calc(var(--mark-gap-a)*1px));
-		column-gap:var(--t-mark-gap-x, calc(var(--mark-gap-x)*1px));
-		font-size:var(--t-mark-txt-s, calc(var(--mark-txt-s)*1px));
-		grid-template-columns:repeat(var(--t-mark-grid-t-col, var(--mark-grid-t-col)), 1fr);
-		line-height:var(--t-mark-txt-lh, calc(var(--mark-txt-lh)*1px));
-		row-gap:var(--t-mark-gap-y, calc(var(--mark-gap-y)*1px));
+		gap:var(--t-mark-gap-a, calc(var(--mark-gap-a)*.09259vw));
+		column-gap:var(--t-mark-gap-x, calc(var(--mark-gap-x)*.09259vw));
+		font-size:var(--t-mark-txt-s, calc(var(--mark-txt-s)*.09259vw));
+		line-height:var(--t-mark-txt-lh, calc(var(--mark-txt-lh)*.09259vw));
+		row-gap:var(--t-mark-gap-y, calc(var(--mark-gap-y)*.09259vw));
 	}
 	[class*=mark-]>*{
-		gap:var(--t-mark-item-gap-a, calc(var(--mark-item-gap-a)*1px));
-		column-gap:var(--t-mark-item-gap-x, calc(var(--mark-item-gap-x)*1px));
-		row-gap:var(--t-mark-item-gap-y, calc(var(--mark-item-gap-y)*1px));
+		gap:var(--t-mark-item-gap-a, calc(var(--mark-item-gap-a)*.09259vw));
+		column-gap:var(--t-mark-item-gap-x, calc(var(--mark-item-gap-x)*.09259vw));
+		row-gap:var(--t-mark-item-gap-y, calc(var(--mark-item-gap-y)*.09259vw));
 	}
 	[class*=mark-]>*>.part-marker{
-		height:var(--t-mark-h, calc(var(--mark-h)*1px));
-		width:var(--t-mark-w, calc(var(--mark-w)*1px));
+		height:var(--t-mark-h, calc(var(--mark-h)*.09259vw));
+		width:var(--t-mark-w, calc(var(--mark-w)*.09259vw));
 	}
 	[class*=mark-]:not([class*=mark-h-bar])>*>.part-marker{
 		min-height:var(--t-mark-min-h-unit, var(--mark-min-h-unit));
 	}
 	[class*=mark-]>*>.part-marker:before{
 		background-color:var(--t-mark-bg-c, var(--mark-bg-c));
-		border-radius:var(--t-mark-br-a, calc(var(--mark-br-a)*1px));
-		height:var(--t-mark-h, calc(var(--mark-h)*1px));
+		border-radius:var(--t-mark-br-a, calc(var(--mark-br-a)*.09259vw));
+		height:var(--t-mark-h, calc(var(--mark-h)*.09259vw));
 		rotate:var(--t-mark-tf-deg, var(--mark-tf-deg));
-		width:var(--t-mark-w, calc(var(--mark-w)*1px));
+		width:var(--t-mark-w, calc(var(--mark-w)*.09259vw));
 	}
 	[class*=mark-h-bar]>*>.part-marker,[class*=mark-h-bar]>*>.part-marker:before{
 		width:var(--t-mark-w-unit, var(--mark-w-unit));
@@ -132,38 +131,43 @@
 		color:var(--t-mark-txt-c, var(--mark-txt-c));
 	}
 	[class*=mark-arrow]>*>.part-marker:before{
-		border-left:var(--t-mark-bd-l-w, calc(var(--mark-bd-l-w)*1px)) var(--t-mark-bd-l-s, var(--mark-bd-l-s)) var(--t-mark-bd-l-c, var(--mark-bd-l-c));
-		border-top:var(--t-mark-bd-t-w, calc(var(--mark-bd-t-w)*1px)) var(--t-mark-bd-t-s, var(--mark-bd-t-s)) var(--t-mark-bd-t-c, var(--mark-bd-t-c));
+		border-left:var(--t-mark-bd-l-w, calc(var(--mark-bd-l-w)*.09259vw)) var(--t-mark-bd-l-s, var(--mark-bd-l-s)) var(--t-mark-bd-l-c, var(--mark-bd-l-c));
+		border-top:var(--t-mark-bd-t-w, calc(var(--mark-bd-t-w)*.09259vw)) var(--t-mark-bd-t-s, var(--mark-bd-t-s)) var(--t-mark-bd-t-c, var(--mark-bd-t-c));
+	}
+}
+@media screen and (max-width:1024px){
+	[class*=mark-]{
+		grid-template-columns:repeat(var(--t-mark-grid-t-col, var(--mark-grid-t-col)), 1fr);
 	}
 }
 @media screen and (max-width:720px){
 	[class*=mark-]{
 		color:var(--m-mark-txt-c, var(--t-mark-txt-c, var(--mark-txt-c)));
-		gap:var(--m-mark-gap-a, var(--t-mark-gap-a, calc(var(--mark-gap-a)*.13889vw)));
-		column-gap:var(--m-mark-gap-x, var(--t-mark-gap-x, calc(var(--mark-gap-x)*.13889vw)));
-		font-size:var(--m-mark-txt-s, var(--t-mark-txt-s, calc(var(--mark-txt-s)*.13889vw)));
+		gap:var(--m-mark-gap-a, var(--t-mark-gap-a, calc(var(--mark-gap-a)*.09259vw)));
+		column-gap:var(--m-mark-gap-x, var(--t-mark-gap-x, calc(var(--mark-gap-x)*.09259vw)));
+		font-size:var(--m-mark-txt-s, var(--t-mark-txt-s, calc(var(--mark-txt-s)*.09259vw)));
 		grid-template-columns:repeat(var(--m-mark-grid-t-col, var(--t-mark-grid-t-col, var(--mark-grid-t-col))), 1fr);
-		line-height:var(--m-mark-txt-lh, var(--t-mark-txt-lh, calc(var(--mark-txt-lh)*.13889vw)));
-		row-gap:var(--m-mark-gap-y, var(--t-mark-gap-y, calc(var(--mark-gap-y)*.13889vw)));
+		line-height:var(--m-mark-txt-lh, var(--t-mark-txt-lh, calc(var(--mark-txt-lh)*.09259vw)));
+		row-gap:var(--m-mark-gap-y, var(--t-mark-gap-y, calc(var(--mark-gap-y)*.09259vw)));
 	}
 	[class*=mark-]>*{
-		gap:var(--m-mark-item-gap-a, var(--t-mark-item-gap-a, calc(var(--mark-item-gap-a)*.13889vw)));
-		column-gap:var(--m-mark-item-gap-x, var(--t-mark-item-gap-x, calc(var(--mark-item-gap-x)*.13889vw)));
-		row-gap:var(--m-mark-item-gap-y, var(--t-mark-item-gap-y, calc(var(--mark-item-gap-y)*.13889vw)));
+		gap:var(--m-mark-item-gap-a, var(--t-mark-item-gap-a, calc(var(--mark-item-gap-a)*.09259vw)));
+		column-gap:var(--m-mark-item-gap-x, var(--t-mark-item-gap-x, calc(var(--mark-item-gap-x)*.09259vw)));
+		row-gap:var(--m-mark-item-gap-y, var(--t-mark-item-gap-y, calc(var(--mark-item-gap-y)*.09259vw)));
 	}
 	[class*=mark-]>*>.part-marker{
-		height:var(--m-mark-h, var(--t-mark-h, calc(var(--mark-h)*.13889vw)));
-		width:var(--m-mark-w, var(--t-mark-w, calc(var(--mark-w)*.13889vw)));
+		height:var(--m-mark-h, var(--t-mark-h, calc(var(--mark-h)*.09259vw)));
+		width:var(--m-mark-w, var(--t-mark-w, calc(var(--mark-w)*.09259vw)));
 	}
 	[class*=mark-]:not([class*=mark-h-bar])>*>.part-marker{
 		min-height:var(--m-mark-min-h-unit, var(--t-mark-min-h-unit, var(--mark-min-h-unit)));
 	}
 	[class*=mark-]>*>.part-marker:before{
 		background-color:var(--m-mark-bg-c, var(--t-mark-bg-c, var(--mark-bg-c)));
-		border-radius:var(--m-mark-br-a, var(--t-mark-br-a, calc(var(--mark-br-a)*.13889vw)));
-		height:var(--m-mark-h, var(--t-mark-h, calc(var(--mark-h)*.13889vw)));
+		border-radius:var(--m-mark-br-a, var(--t-mark-br-a, calc(var(--mark-br-a)*.09259vw)));
+		height:var(--m-mark-h, var(--t-mark-h, calc(var(--mark-h)*.09259vw)));
 		rotate:var(--m-mark-tf-deg, var(--t-mark-tf-deg, var(--mark-tf-deg)));
-		width:var(--m-mark-w, var(--t-mark-w, calc(var(--mark-w)*.13889vw)));
+		width:var(--m-mark-w, var(--t-mark-w, calc(var(--mark-w)*.09259vw)));
 	}
 	[class*=mark-h-bar]>*>.part-marker,[class*=mark-h-bar]>*>.part-marker:before{
 		width:var(--m-mark-w-unit, var(--t-mark-w-unit, var(--mark-w-unit)));
@@ -175,7 +179,7 @@
 		color:var(--m-mark-txt-c, var(--t-mark-txt-c, var(--mark-txt-c)));
 	}
 	[class*=mark-arrow]>*>.part-marker:before{
-		border-left:var(--m-mark-bd-l-w, var(--t-mark-bd-l-w, calc(var(--mark-bd-l-w)*.13889vw))) var(--m-mark-bd-l-s, var(--t-mark-bd-l-s, var(--mark-bd-l-s))) var(--m-mark-bd-l-c, var(--t-mark-bd-l-c, var(--mark-bd-l-c)));
-		border-top:var(--m-mark-bd-t-w, var(--t-mark-bd-t-w, calc(var(--mark-bd-t-w)*.13889vw))) var(--m-mark-bd-t-s, var(--t-mark-bd-t-s, var(--mark-bd-t-s))) var(--m-mark-bd-t-c, var(--t-mark-bd-t-c, var(--mark-bd-t-c)));
+		border-left:var(--m-mark-bd-l-w, var(--t-mark-bd-l-w, calc(var(--mark-bd-l-w)*.09259vw))) var(--m-mark-bd-l-s, var(--t-mark-bd-l-s, var(--mark-bd-l-s))) var(--m-mark-bd-l-c, var(--t-mark-bd-l-c, var(--mark-bd-l-c)));
+		border-top:var(--m-mark-bd-t-w, var(--t-mark-bd-t-w, calc(var(--mark-bd-t-w)*.09259vw))) var(--m-mark-bd-t-s, var(--t-mark-bd-t-s, var(--mark-bd-t-s))) var(--m-mark-bd-t-c, var(--t-mark-bd-t-c, var(--mark-bd-t-c)));
 	}
 }

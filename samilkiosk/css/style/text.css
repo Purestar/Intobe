@@ -52,12 +52,12 @@
 	text-decoration-thickness:calc(var(--txt-deco-t)*1px);
 	text-underline-offset:calc(var(--txt-deco-uo-mv)*1px);
 }
-@media screen and (max-width:1024px){
+@media screen and (max-width:1080px){
 	[style*="--txt-c"]{
 		color:var(--t-txt-c, var(--txt-c));
 	}
 	[style*="--txt-s"]:not([style*="--txt-s-mv"]){
-		font-size:var(--t-txt-s, calc(var(--txt-s)*1px));
+		font-size:var(--t-txt-s, calc(var(--txt-s)*.09259vw));
 	}
 	[style*="--txt-w"]{
 		font-weight:var(--t-txt-w, var(--txt-w));
@@ -70,7 +70,7 @@
 		text-decoration-line:var(--t-txt-deco-l, var(--txt-deco-l));
 		text-decoration-style:var(--t-txt-deco-s, var(--txt-deco-s));
 		text-decoration-thickness:var(--t-txt-deco-t, calc(var(--txt-deco-t)*1px));
-		text-underline-offset:var(--t-txt-deco-uo, calc(var(--txt-deco-uo)*1px));
+		text-underline-offset:var(--t-txt-deco-uo, calc(var(--txt-deco-uo)*.09259vw));
 	}
 	[style*="--txt-emp"]{
 		text-emphasis-color:var(--t-txt-emp-c, var(--txt-emp-c));
@@ -78,10 +78,10 @@
 		text-emphasis-style:var(--t-txt-emp-s, var(--txt-emp-s));
 	}
 	[style*="--txt-lh"]:not([style*="--txt-lh-mv"]){
-		line-height:var(--t-txt-lh, calc(var(--txt-lh)*1px));
+		line-height:var(--t-txt-lh, calc(var(--txt-lh)*.09259vw));
 	}
 	[style*="--txt-ls"]:not([style*="--txt-ls-mv"]){
-		letter-spacing:var(--t-txt-ls, calc(var(--txt-ls)*1px));
+		letter-spacing:var(--t-txt-ls, calc(var(--txt-ls)*.09259vw));
 	}
 	[style*="--txt-ori"]{
 		text-orientation:var(--t-txt-ori, var(--txt-ori));
@@ -111,7 +111,7 @@
 		color:var(--m-txt-c, var(--t-txt-c, var(--txt-c)));
 	}
 	[style*="--txt-s"]:not([style*="--txt-s-mv"]){
-		font-size:var(--m-txt-s, var(--t-txt-s, calc(var(--txt-s)*.13889vw)));
+		font-size:var(--m-txt-s, var(--t-txt-s, calc(var(--txt-s)*.09259vw)));
 	}
 	[style*="--txt-w"]{
 		font-weight:var(--m-txt-w, var(--t-txt-w, var(--txt-w)));
@@ -124,7 +124,7 @@
 		text-decoration-line:var(--m-txt-deco-l, var(--t-txt-deco-l, var(--txt-deco-l)));
 		text-decoration-style:var(--m-txt-deco-s, var(--t-txt-deco-s, var(--txt-deco-s)));
 		text-decoration-thickness:var(--m-txt-deco-t, var(--t-txt-deco-t, calc(var(--txt-deco-t)*1px)));
-		text-underline-offset:var(--m-txt-deco-uo, var(--t-txt-deco-uo, calc(var(--txt-deco-uo)*.13889vw)));
+		text-underline-offset:var(--m-txt-deco-uo, var(--t-txt-deco-uo, calc(var(--txt-deco-uo)*.09259vw)));
 	}
 	[style*="--txt-emp"]{
 		text-emphasis-color:var(--m-txt-emp-c, var(--t-txt-emp-c, var(--txt-emp-c)));
@@ -132,10 +132,10 @@
 		text-emphasis-style:var(--m-txt-emp-s, var(--t-txt-emp-s, var(--txt-emp-s)));
 	}
 	[style*="--txt-lh"]:not([style*="--txt-lh-mv"]){
-		line-height:var(--m-txt-lh, var(--t-txt-lh, calc(var(--txt-lh)*.13889vw)));
+		line-height:var(--m-txt-lh, var(--t-txt-lh, calc(var(--txt-lh)*.09259vw)));
 	}
 	[style*="--txt-ls"]:not([style*="--txt-ls-mv"]){
-		letter-spacing:var(--m-txt-ls, var(--t-txt-ls, calc(var(--txt-ls)*.13889vw)));
+		letter-spacing:var(--m-txt-ls, var(--t-txt-ls, calc(var(--txt-ls)*.09259vw)));
 	}
 	[style*="--txt-ori"]{
 		text-orientation:var(--m-txt-ori, var(--t-txt-ori, var(--txt-ori)));

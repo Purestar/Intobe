@@ -53,85 +53,85 @@
 	min-width:calc(var(--transfer-btn-min-w)*1px);
 	padding:calc(var(--transfer-btn-pd-a)*1px);
 }
-@media screen and (max-width:1024px){
+@media screen and (max-width:1080px){
 	[class*=transfer-type]{
-		gap:var(--t-transfer-gap-a, calc(var(--transfer-gap-a)*1px));
+		gap:var(--t-transfer-gap-a, calc(var(--transfer-gap-a)*.09259vw));
 	}
 	[class*=transfer-type] .transfer-panel{
-		height:var(--t-transfer-panel-h, calc(var(--transfer-panel-h)*1px));
-		max-width:var(--t-transfer-panel-max-w, calc(var(--transfer-panel-max-w)*1px));
-		min-width:var(--t-transfer-panel-min-w, calc(var(--transfer-panel-min-w)*1px));
+		height:var(--t-transfer-panel-h, calc(var(--transfer-panel-h)*.09259vw));
+		max-width:var(--t-transfer-panel-max-w, calc(var(--transfer-panel-max-w)*.09259vw));
+		min-width:var(--t-transfer-panel-min-w, calc(var(--transfer-panel-min-w)*.09259vw));
 	}
 	[class*=transfer-type] .transfer-panel-header{
-		gap:var(--t-transfer-panel-header-gap-a, calc(var(--transfer-panel-header-gap-a)*1px));
-		padding:var(--t-transfer-panel-header-pd-a, calc(var(--transfer-panel-header-pd-a)*1px));
+		gap:var(--t-transfer-panel-header-gap-a, calc(var(--transfer-panel-header-gap-a)*.09259vw));
+		padding:var(--t-transfer-panel-header-pd-a, calc(var(--transfer-panel-header-pd-a)*.09259vw));
 	}
 	[class*=transfer-type] .transfer-panel-header .transfer-header-count{
-		font-size:var(--t-transfer-panel-header-txt-s, calc(var(--transfer-panel-header-txt-s)*1px));
+		font-size:var(--t-transfer-panel-header-txt-s, calc(var(--transfer-panel-header-txt-s)*.09259vw));
 	}
 	[class*=transfer-type] .transfer-panel-search{
-		padding:var(--t-transfer-panel-search-pd-a, calc(var(--transfer-panel-search-pd-a)*1px));
+		padding:var(--t-transfer-panel-search-pd-a, calc(var(--transfer-panel-search-pd-a)*.09259vw));
 	}
 	[class*=transfer-type] .transfer-panel-body{
-		padding:var(--t-transfer-panel-body-pd-a, calc(var(--transfer-panel-body-pd-a)*1px));
+		padding:var(--t-transfer-panel-body-pd-a, calc(var(--transfer-panel-body-pd-a)*.09259vw));
 	}
 	[class*=transfer-type] .transfer-panel-body .transfer-empty{
-		font-size:var(--t-transfer-empty-txt-s, calc(var(--transfer-empty-txt-s)*1px));
-		padding:var(--t-transfer-empty-pd-a, calc(var(--transfer-empty-pd-a)*1px));
+		font-size:var(--t-transfer-empty-txt-s, calc(var(--transfer-empty-txt-s)*.09259vw));
+		padding:var(--t-transfer-empty-pd-a, calc(var(--transfer-empty-pd-a)*.09259vw));
 	}
 	[class*=transfer-type] .transfer-item{
-		border-radius:var(--t-transfer-item-br-a, calc(var(--transfer-item-br-a)*1px));
-		gap:var(--t-transfer-item-gap-a, calc(var(--transfer-item-gap-a)*1px));
-		padding:var(--t-transfer-item-pd-a, calc(var(--transfer-item-pd-a)*1px));
+		border-radius:var(--t-transfer-item-br-a, calc(var(--transfer-item-br-a)*.09259vw));
+		gap:var(--t-transfer-item-gap-a, calc(var(--transfer-item-gap-a)*.09259vw));
+		padding:var(--t-transfer-item-pd-a, calc(var(--transfer-item-pd-a)*.09259vw));
 	}
 	[class*=transfer-type] .transfer-buttons{
-		gap:var(--t-transfer-buttons-gap-a, calc(var(--transfer-buttons-gap-a)*1px));
+		gap:var(--t-transfer-buttons-gap-a, calc(var(--transfer-buttons-gap-a)*.09259vw));
 		height:var(--t-transfer-buttons-h-unit, var(--transfer-buttons-h-unit));
 	}
 	[class*=transfer-type] .transfer-btn{
-		height:var(--t-transfer-btn-h, calc(var(--transfer-btn-h)*1px));
-		min-width:var(--t-transfer-btn-min-w, calc(var(--transfer-btn-min-w)*1px));
-		padding:var(--t-transfer-btn-pd-a, calc(var(--transfer-btn-pd-a)*1px));
+		height:var(--t-transfer-btn-h, calc(var(--transfer-btn-h)*.09259vw));
+		min-width:var(--t-transfer-btn-min-w, calc(var(--transfer-btn-min-w)*.09259vw));
+		padding:var(--t-transfer-btn-pd-a, calc(var(--transfer-btn-pd-a)*.09259vw));
 	}
 }
 @media screen and (max-width:720px){
 	[class*=transfer-type]{
-		gap:var(--m-transfer-gap-a, var(--t-transfer-gap-a, calc(var(--transfer-gap-a)*.13889vw)));
+		gap:var(--m-transfer-gap-a, var(--t-transfer-gap-a, calc(var(--transfer-gap-a)*.09259vw)));
 	}
 	[class*=transfer-type] .transfer-panel{
-		height:var(--m-transfer-panel-h, var(--t-transfer-panel-h, calc(var(--transfer-panel-h)*.13889vw)));
-		max-width:var(--m-transfer-panel-max-w, var(--t-transfer-panel-max-w, calc(var(--transfer-panel-max-w)*.13889vw)));
-		min-width:var(--m-transfer-panel-min-w, var(--t-transfer-panel-min-w, calc(var(--transfer-panel-min-w)*.13889vw)));
+		height:var(--m-transfer-panel-h, var(--t-transfer-panel-h, calc(var(--transfer-panel-h)*.09259vw)));
+		max-width:var(--m-transfer-panel-max-w, var(--t-transfer-panel-max-w, calc(var(--transfer-panel-max-w)*.09259vw)));
+		min-width:var(--m-transfer-panel-min-w, var(--t-transfer-panel-min-w, calc(var(--transfer-panel-min-w)*.09259vw)));
 	}
 	[class*=transfer-type] .transfer-panel-header{
-		gap:var(--m-transfer-panel-header-gap-a, var(--t-transfer-panel-header-gap-a, calc(var(--transfer-panel-header-gap-a)*.13889vw)));
-		padding:var(--m-transfer-panel-header-pd-a, var(--t-transfer-panel-header-pd-a, calc(var(--transfer-panel-header-pd-a)*.13889vw)));
+		gap:var(--m-transfer-panel-header-gap-a, var(--t-transfer-panel-header-gap-a, calc(var(--transfer-panel-header-gap-a)*.09259vw)));
+		padding:var(--m-transfer-panel-header-pd-a, var(--t-transfer-panel-header-pd-a, calc(var(--transfer-panel-header-pd-a)*.09259vw)));
 	}
 	[class*=transfer-type] .transfer-panel-header .transfer-header-count{
-		font-size:var(--m-transfer-panel-header-txt-s, var(--t-transfer-panel-header-txt-s, calc(var(--transfer-panel-header-txt-s)*.13889vw)));
+		font-size:var(--m-transfer-panel-header-txt-s, var(--t-transfer-panel-header-txt-s, calc(var(--transfer-panel-header-txt-s)*.09259vw)));
 	}
 	[class*=transfer-type] .transfer-panel-search{
-		padding:var(--m-transfer-panel-search-pd-a, var(--t-transfer-panel-search-pd-a, calc(var(--transfer-panel-search-pd-a)*.13889vw)));
+		padding:var(--m-transfer-panel-search-pd-a, var(--t-transfer-panel-search-pd-a, calc(var(--transfer-panel-search-pd-a)*.09259vw)));
 	}
 	[class*=transfer-type] .transfer-panel-body{
-		padding:var(--m-transfer-panel-body-pd-a, var(--t-transfer-panel-body-pd-a, calc(var(--transfer-panel-body-pd-a)*.13889vw)));
+		padding:var(--m-transfer-panel-body-pd-a, var(--t-transfer-panel-body-pd-a, calc(var(--transfer-panel-body-pd-a)*.09259vw)));
 	}
 	[class*=transfer-type] .transfer-panel-body .transfer-empty{
-		font-size:var(--m-transfer-empty-txt-s, var(--t-transfer-empty-txt-s, calc(var(--transfer-empty-txt-s)*.13889vw)));
-		padding:var(--m-transfer-empty-pd-a, var(--t-transfer-empty-pd-a, calc(var(--transfer-empty-pd-a)*.13889vw)));
+		font-size:var(--m-transfer-empty-txt-s, var(--t-transfer-empty-txt-s, calc(var(--transfer-empty-txt-s)*.09259vw)));
+		padding:var(--m-transfer-empty-pd-a, var(--t-transfer-empty-pd-a, calc(var(--transfer-empty-pd-a)*.09259vw)));
 	}
 	[class*=transfer-type] .transfer-item{
-		border-radius:var(--m-transfer-item-br-a, var(--t-transfer-item-br-a, calc(var(--transfer-item-br-a)*.13889vw)));
-		gap:var(--m-transfer-item-gap-a, var(--t-transfer-item-gap-a, calc(var(--transfer-item-gap-a)*.13889vw)));
-		padding:var(--m-transfer-item-pd-a, var(--t-transfer-item-pd-a, calc(var(--transfer-item-pd-a)*.13889vw)));
+		border-radius:var(--m-transfer-item-br-a, var(--t-transfer-item-br-a, calc(var(--transfer-item-br-a)*.09259vw)));
+		gap:var(--m-transfer-item-gap-a, var(--t-transfer-item-gap-a, calc(var(--transfer-item-gap-a)*.09259vw)));
+		padding:var(--m-transfer-item-pd-a, var(--t-transfer-item-pd-a, calc(var(--transfer-item-pd-a)*.09259vw)));
 	}
 	[class*=transfer-type] .transfer-buttons{
-		gap:var(--m-transfer-buttons-gap-a, var(--t-transfer-buttons-gap-a, calc(var(--transfer-buttons-gap-a)*.13889vw)));
+		gap:var(--m-transfer-buttons-gap-a, var(--t-transfer-buttons-gap-a, calc(var(--transfer-buttons-gap-a)*.09259vw)));
 		height:var(--m-transfer-buttons-h-unit, var(--t-transfer-buttons-h-unit, var(--transfer-buttons-h-unit)));
 	}
 	[class*=transfer-type] .transfer-btn{
-		height:var(--m-transfer-btn-h, var(--t-transfer-btn-h, calc(var(--transfer-btn-h)*.13889vw)));
-		min-width:var(--m-transfer-btn-min-w, var(--t-transfer-btn-min-w, calc(var(--transfer-btn-min-w)*.13889vw)));
-		padding:var(--m-transfer-btn-pd-a, var(--t-transfer-btn-pd-a, calc(var(--transfer-btn-pd-a)*.13889vw)));
+		height:var(--m-transfer-btn-h, var(--t-transfer-btn-h, calc(var(--transfer-btn-h)*.09259vw)));
+		min-width:var(--m-transfer-btn-min-w, var(--t-transfer-btn-min-w, calc(var(--transfer-btn-min-w)*.09259vw)));
+		padding:var(--m-transfer-btn-pd-a, var(--t-transfer-btn-pd-a, calc(var(--transfer-btn-pd-a)*.09259vw)));
 	}
 }

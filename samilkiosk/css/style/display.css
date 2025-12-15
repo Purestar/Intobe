@@ -1,7 +1,7 @@
 [style*="--dp"]{
 	display:var(--dp);
 }
-@media screen and (max-width:1024px){
+@media screen and (max-width:1080px){
 	[style*="--dp"]{
 		display:var(--t-dp, var(--dp));
 	}

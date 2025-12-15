@@ -36,21 +36,21 @@
 	padding-block:calc(var(--tab-cont-pd-y)*1px);
 	padding-inline:calc(var(--tab-cont-pd-x)*1px);
 }
-@media screen and (max-width:1024px){
+@media screen and (max-width:1080px){
 	[class*=tab-menu]{
-		border-bottom:var(--t-tab-menu-bd-b-w, calc(var(--tab-menu-bd-b-w)*1px)) var(--t-tab-menu-bd-b-s, var(--tab-menu-bd-b-s)) var(--t-tab-menu-bd-b-c, var(--tab-menu-bd-b-c));
-		gap:var(--t-tab-menu-gap-a, calc(var(--tab-menu-gap-a)*1px));
-		column-gap:var(--t-tab-menu-gap-x, calc(var(--tab-menu-gap-x)*1px));
-		row-gap:var(--t-tab-menu-gap-y, calc(var(--tab-menu-gap-y)*1px));
+		border-bottom:var(--t-tab-menu-bd-b-w, calc(var(--tab-menu-bd-b-w)*.09259vw)) var(--t-tab-menu-bd-b-s, var(--tab-menu-bd-b-s)) var(--t-tab-menu-bd-b-c, var(--tab-menu-bd-b-c));
+		gap:var(--t-tab-menu-gap-a, calc(var(--tab-menu-gap-a)*.09259vw));
+		column-gap:var(--t-tab-menu-gap-x, calc(var(--tab-menu-gap-x)*.09259vw));
+		row-gap:var(--t-tab-menu-gap-y, calc(var(--tab-menu-gap-y)*.09259vw));
 	}
 	[class*=tab-menu]>*>*{
 		background-color:var(--t-tab-btn-bg-c, var(--tab-btn-bg-c));
-		border-radius:var(--t-tab-btn-br-a, calc(var(--tab-btn-br-a)*1px));
+		border-radius:var(--t-tab-btn-br-a, calc(var(--tab-btn-br-a)*.09259vw));
 		color:var(--t-tab-btn-txt-c, var(--tab-btn-txt-c));
-		font-size:var(--t-tab-btn-txt-s, calc(var(--tab-btn-txt-s)*1px));
+		font-size:var(--t-tab-btn-txt-s, calc(var(--tab-btn-txt-s)*.09259vw));
 		font-weight:var(--t-tab-btn-txt-w, var(--tab-btn-txt-w));
-		height:var(--t-tab-btn-h, calc(var(--tab-btn-h)*1px));
-		padding-inline:var(--t-tab-btn-pd-x, calc(var(--tab-btn-pd-x)*1px));
+		height:var(--t-tab-btn-h, calc(var(--tab-btn-h)*.09259vw));
+		padding-inline:var(--t-tab-btn-pd-x, calc(var(--tab-btn-pd-x)*.09259vw));
 	}
 	[class*=tab-menu]>*>:hover{
 		background-color:var(--t-tab-btn-over-bg-c, var(--tab-btn-over-bg-c));
@@ -61,25 +61,25 @@
 		color:var(--t-tab-btn-active-txt-c, var(--tab-btn-active-txt-c));
 	}
 	[class*=tab-cont]{
-		padding-block:var(--t-tab-cont-pd-y, calc(var(--tab-cont-pd-y)*1px));
-		padding-inline:var(--t-tab-cont-pd-x, calc(var(--tab-cont-pd-x)*1px));
+		padding-block:var(--t-tab-cont-pd-y, calc(var(--tab-cont-pd-y)*.09259vw));
+		padding-inline:var(--t-tab-cont-pd-x, calc(var(--tab-cont-pd-x)*.09259vw));
 	}
 }
 @media screen and (max-width:720px){
 	[class*=tab-menu]{
-		border-bottom:var(--m-tab-menu-bd-b-w, var(--t-tab-menu-bd-b-w, calc(var(--tab-menu-bd-b-w)*.13889vw))) var(--m-tab-menu-bd-b-s, var(--t-tab-menu-bd-b-s, var(--tab-menu-bd-b-s))) var(--m-tab-menu-bd-b-c, var(--t-tab-menu-bd-b-c, var(--tab-menu-bd-b-c)));
-		gap:var(--m-tab-menu-gap-a, var(--t-tab-menu-gap-a, calc(var(--tab-menu-gap-a)*.13889vw)));
-		column-gap:var(--m-tab-menu-gap-x, var(--t-tab-menu-gap-x, calc(var(--tab-menu-gap-x)*.13889vw)));
-		row-gap:var(--m-tab-menu-gap-y, var(--t-tab-menu-gap-y, calc(var(--tab-menu-gap-y)*.13889vw)));
+		border-bottom:var(--m-tab-menu-bd-b-w, var(--t-tab-menu-bd-b-w, calc(var(--tab-menu-bd-b-w)*.09259vw))) var(--m-tab-menu-bd-b-s, var(--t-tab-menu-bd-b-s, var(--tab-menu-bd-b-s))) var(--m-tab-menu-bd-b-c, var(--t-tab-menu-bd-b-c, var(--tab-menu-bd-b-c)));
+		gap:var(--m-tab-menu-gap-a, var(--t-tab-menu-gap-a, calc(var(--tab-menu-gap-a)*.09259vw)));
+		column-gap:var(--m-tab-menu-gap-x, var(--t-tab-menu-gap-x, calc(var(--tab-menu-gap-x)*.09259vw)));
+		row-gap:var(--m-tab-menu-gap-y, var(--t-tab-menu-gap-y, calc(var(--tab-menu-gap-y)*.09259vw)));
 	}
 	[class*=tab-menu]>*>*{
 		background-color:var(--m-tab-btn-bg-c, var(--t-tab-btn-bg-c, var(--tab-btn-bg-c)));
-		border-radius:var(--m-tab-btn-br-a, var(--t-tab-btn-br-a, calc(var(--tab-btn-br-a)*.13889vw)));
+		border-radius:var(--m-tab-btn-br-a, var(--t-tab-btn-br-a, calc(var(--tab-btn-br-a)*.09259vw)));
 		color:var(--m-tab-btn-txt-c, var(--t-tab-btn-txt-c, var(--tab-btn-txt-c)));
-		font-size:var(--m-tab-btn-txt-s, var(--t-tab-btn-txt-s, calc(var(--tab-btn-txt-s)*.13889vw)));
+		font-size:var(--m-tab-btn-txt-s, var(--t-tab-btn-txt-s, calc(var(--tab-btn-txt-s)*.09259vw)));
 		font-weight:var(--m-tab-btn-txt-w, var(--t-tab-btn-txt-w, var(--tab-btn-txt-w)));
-		height:var(--m-tab-btn-h, var(--t-tab-btn-h, calc(var(--tab-btn-h)*.13889vw)));
-		padding-inline:var(--m-tab-btn-pd-x, var(--t-tab-btn-pd-x, calc(var(--tab-btn-pd-x)*.13889vw)));
+		height:var(--m-tab-btn-h, var(--t-tab-btn-h, calc(var(--tab-btn-h)*.09259vw)));
+		padding-inline:var(--m-tab-btn-pd-x, var(--t-tab-btn-pd-x, calc(var(--tab-btn-pd-x)*.09259vw)));
 	}
 	[class*=tab-menu]>*>:hover{
 		background-color:var(--m-tab-btn-over-bg-c, var(--t-tab-btn-over-bg-c, var(--tab-btn-over-bg-c)));
@@ -90,7 +90,7 @@
 		color:var(--m-tab-btn-active-txt-c, var(--t-tab-btn-active-txt-c, var(--tab-btn-active-txt-c)));
 	}
 	[class*=tab-cont]{
-		padding-block:var(--m-tab-cont-pd-y, var(--t-tab-cont-pd-y, calc(var(--tab-cont-pd-y)*.13889vw)));
-		padding-inline:var(--m-tab-cont-pd-x, var(--t-tab-cont-pd-x, calc(var(--tab-cont-pd-x)*.13889vw)));
+		padding-block:var(--m-tab-cont-pd-y, var(--t-tab-cont-pd-y, calc(var(--tab-cont-pd-y)*.09259vw)));
+		padding-inline:var(--m-tab-cont-pd-x, var(--t-tab-cont-pd-x, calc(var(--tab-cont-pd-x)*.09259vw)));
 	}
 }

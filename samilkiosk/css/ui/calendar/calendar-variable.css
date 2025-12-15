@@ -102,7 +102,7 @@
 	color:var(--cal-date-unavailable-txt-c);
 	text-decoration-line:var(--cal-date-unavailable-txt-deco-l);
 }
-@media screen and (max-width:1024px){
+@media screen and (max-width:1080px){
 	[class*=calendar-type]{
 		background-color:var(--t-cal-bg-c, var(--cal-bg-c));
 	}
@@ -111,31 +111,31 @@
 		justify-content:var(--t-cal-head-content-x, var(--cal-head-content-x));
 	}
 	.part-header .part-next-wrap,.part-header .part-prev-wrap{
-		column-gap:var(--t-cal-head-arrow-gap-x, calc(var(--cal-head-arrow-gap-x)*1px));
+		column-gap:var(--t-cal-head-arrow-gap-x, calc(var(--cal-head-arrow-gap-x)*.09259vw));
 	}
 	.part-prev-year:before{
-		background-position-x:var(--t-cal-prev-year-bg-pos-x, calc(var(--cal-prev-year-bg-pos-x)*1px));
-		background-position-y:var(--t-cal-prev-year-bg-pos-y, calc(var(--cal-prev-year-bg-pos-y)*1px));
-		height:var(--t-cal-prev-year-h, calc(var(--cal-prev-year-h)*1px));
-		width:var(--t-cal-prev-year-w, calc(var(--cal-prev-year-w)*1px));
+		background-position-x:var(--t-cal-prev-year-bg-pos-x, calc(var(--cal-prev-year-bg-pos-x)*.09259vw));
+		background-position-y:var(--t-cal-prev-year-bg-pos-y, calc(var(--cal-prev-year-bg-pos-y)*.09259vw));
+		height:var(--t-cal-prev-year-h, calc(var(--cal-prev-year-h)*.09259vw));
+		width:var(--t-cal-prev-year-w, calc(var(--cal-prev-year-w)*.09259vw));
 	}
 	.part-prev:before{
-		background-position-x:var(--t-cal-prev-bg-pos-x, calc(var(--cal-prev-bg-pos-x)*1px));
-		background-position-y:var(--t-cal-prev-bg-pos-y, calc(var(--cal-prev-bg-pos-y)*1px));
-		height:var(--t-cal-prev-h, calc(var(--cal-prev-h)*1px));
-		width:var(--t-cal-prev-w, calc(var(--cal-prev-w)*1px));
+		background-position-x:var(--t-cal-prev-bg-pos-x, calc(var(--cal-prev-bg-pos-x)*.09259vw));
+		background-position-y:var(--t-cal-prev-bg-pos-y, calc(var(--cal-prev-bg-pos-y)*.09259vw));
+		height:var(--t-cal-prev-h, calc(var(--cal-prev-h)*.09259vw));
+		width:var(--t-cal-prev-w, calc(var(--cal-prev-w)*.09259vw));
 	}
 	.part-next:before{
-		background-position-x:var(--t-cal-next-bg-pos-x, calc(var(--cal-next-bg-pos-x)*1px));
-		background-position-y:var(--t-cal-next-bg-pos-y, calc(var(--cal-next-bg-pos-y)*1px));
-		height:var(--t-cal-next-h, calc(var(--cal-next-h)*1px));
-		width:var(--t-cal-next-w, calc(var(--cal-next-w)*1px));
+		background-position-x:var(--t-cal-next-bg-pos-x, calc(var(--cal-next-bg-pos-x)*.09259vw));
+		background-position-y:var(--t-cal-next-bg-pos-y, calc(var(--cal-next-bg-pos-y)*.09259vw));
+		height:var(--t-cal-next-h, calc(var(--cal-next-h)*.09259vw));
+		width:var(--t-cal-next-w, calc(var(--cal-next-w)*.09259vw));
 	}
 	.part-next-year:before{
-		background-position-x:var(--t-cal-next-year-bg-pos-x, calc(var(--cal-next-year-bg-pos-x)*1px));
-		background-position-y:var(--t-cal-next-year-bg-pos-y, calc(var(--cal-next-year-bg-pos-y)*1px));
-		height:var(--t-cal-next-year-h, calc(var(--cal-next-year-h)*1px));
-		width:var(--t-cal-next-year-w, calc(var(--cal-next-year-w)*1px));
+		background-position-x:var(--t-cal-next-year-bg-pos-x, calc(var(--cal-next-year-bg-pos-x)*.09259vw));
+		background-position-y:var(--t-cal-next-year-bg-pos-y, calc(var(--cal-next-year-bg-pos-y)*.09259vw));
+		height:var(--t-cal-next-year-h, calc(var(--cal-next-year-h)*.09259vw));
+		width:var(--t-cal-next-year-w, calc(var(--cal-next-year-w)*.09259vw));
 	}
 	.part-date-cell{
 		text-align:var(--t-cal-date-cell-txt-a, var(--cal-date-cell-txt-a));
@@ -144,9 +144,9 @@
 		align-items:var(--t-cal-date-items-y, var(--cal-date-items-y));
 		border-radius:var(--t-cal-date-br-a-unit, var(--cal-date-br-a-unit));
 		display:var(--t-cal-date-dp, var(--cal-date-dp));
-		height:var(--t-cal-date-h, calc(var(--cal-date-h)*1px));
+		height:var(--t-cal-date-h, calc(var(--cal-date-h)*.09259vw));
 		justify-content:var(--t-cal-date-content-x, var(--cal-date-content-x));
-		width:var(--t-cal-date-w, calc(var(--cal-date-w)*1px));
+		width:var(--t-cal-date-w, calc(var(--cal-date-w)*.09259vw));
 	}
 	.part-date:hover:not([data-disabled]):not([data-unavailable]):not([data-outside-view]){
 		background-color:var(--t-cal-date-hover-bg-c, var(--cal-date-hover-bg-c));
@@ -174,31 +174,31 @@
 		justify-content:var(--m-cal-head-content-x, var(--t-cal-head-content-x, var(--cal-head-content-x)));
 	}
 	.part-header .part-next-wrap,.part-header .part-prev-wrap{
-		column-gap:var(--m-cal-head-arrow-gap-x, var(--t-cal-head-arrow-gap-x, calc(var(--cal-head-arrow-gap-x)*.13889vw)));
+		column-gap:var(--m-cal-head-arrow-gap-x, var(--t-cal-head-arrow-gap-x, calc(var(--cal-head-arrow-gap-x)*.09259vw)));
 	}
 	.part-prev-year:before{
-		background-position-x:var(--m-cal-prev-year-bg-pos-x, var(--t-cal-prev-year-bg-pos-x, calc(var(--cal-prev-year-bg-pos-x)*.13889vw)));
-		background-position-y:var(--m-cal-prev-year-bg-pos-y, var(--t-cal-prev-year-bg-pos-y, calc(var(--cal-prev-year-bg-pos-y)*.13889vw)));
-		height:var(--m-cal-prev-year-h, var(--t-cal-prev-year-h, calc(var(--cal-prev-year-h)*.13889vw)));
-		width:var(--m-cal-prev-year-w, var(--t-cal-prev-year-w, calc(var(--cal-prev-year-w)*.13889vw)));
+		background-position-x:var(--m-cal-prev-year-bg-pos-x, var(--t-cal-prev-year-bg-pos-x, calc(var(--cal-prev-year-bg-pos-x)*.09259vw)));
+		background-position-y:var(--m-cal-prev-year-bg-pos-y, var(--t-cal-prev-year-bg-pos-y, calc(var(--cal-prev-year-bg-pos-y)*.09259vw)));
+		height:var(--m-cal-prev-year-h, var(--t-cal-prev-year-h, calc(var(--cal-prev-year-h)*.09259vw)));
+		width:var(--m-cal-prev-year-w, var(--t-cal-prev-year-w, calc(var(--cal-prev-year-w)*.09259vw)));
 	}
 	.part-prev:before{
-		background-position-x:var(--m-cal-prev-bg-pos-x, var(--t-cal-prev-bg-pos-x, calc(var(--cal-prev-bg-pos-x)*.13889vw)));
-		background-position-y:var(--m-cal-prev-bg-pos-y, var(--t-cal-prev-bg-pos-y, calc(var(--cal-prev-bg-pos-y)*.13889vw)));
-		height:var(--m-cal-prev-h, var(--t-cal-prev-h, calc(var(--cal-prev-h)*.13889vw)));
-		width:var(--m-cal-prev-w, var(--t-cal-prev-w, calc(var(--cal-prev-w)*.13889vw)));
+		background-position-x:var(--m-cal-prev-bg-pos-x, var(--t-cal-prev-bg-pos-x, calc(var(--cal-prev-bg-pos-x)*.09259vw)));
+		background-position-y:var(--m-cal-prev-bg-pos-y, var(--t-cal-prev-bg-pos-y, calc(var(--cal-prev-bg-pos-y)*.09259vw)));
+		height:var(--m-cal-prev-h, var(--t-cal-prev-h, calc(var(--cal-prev-h)*.09259vw)));
+		width:var(--m-cal-prev-w, var(--t-cal-prev-w, calc(var(--cal-prev-w)*.09259vw)));
 	}
 	.part-next:before{
-		background-position-x:var(--m-cal-next-bg-pos-x, var(--t-cal-next-bg-pos-x, calc(var(--cal-next-bg-pos-x)*.13889vw)));
-		background-position-y:var(--m-cal-next-bg-pos-y, var(--t-cal-next-bg-pos-y, calc(var(--cal-next-bg-pos-y)*.13889vw)));
-		height:var(--m-cal-next-h, var(--t-cal-next-h, calc(var(--cal-next-h)*.13889vw)));
-		width:var(--m-cal-next-w, var(--t-cal-next-w, calc(var(--cal-next-w)*.13889vw)));
+		background-position-x:var(--m-cal-next-bg-pos-x, var(--t-cal-next-bg-pos-x, calc(var(--cal-next-bg-pos-x)*.09259vw)));
+		background-position-y:var(--m-cal-next-bg-pos-y, var(--t-cal-next-bg-pos-y, calc(var(--cal-next-bg-pos-y)*.09259vw)));
+		height:var(--m-cal-next-h, var(--t-cal-next-h, calc(var(--cal-next-h)*.09259vw)));
+		width:var(--m-cal-next-w, var(--t-cal-next-w, calc(var(--cal-next-w)*.09259vw)));
 	}
 	.part-next-year:before{
-		background-position-x:var(--m-cal-next-year-bg-pos-x, var(--t-cal-next-year-bg-pos-x, calc(var(--cal-next-year-bg-pos-x)*.13889vw)));
-		background-position-y:var(--m-cal-next-year-bg-pos-y, var(--t-cal-next-year-bg-pos-y, calc(var(--cal-next-year-bg-pos-y)*.13889vw)));
-		height:var(--m-cal-next-year-h, var(--t-cal-next-year-h, calc(var(--cal-next-year-h)*.13889vw)));
-		width:var(--m-cal-next-year-w, var(--t-cal-next-year-w, calc(var(--cal-next-year-w)*.13889vw)));
+		background-position-x:var(--m-cal-next-year-bg-pos-x, var(--t-cal-next-year-bg-pos-x, calc(var(--cal-next-year-bg-pos-x)*.09259vw)));
+		background-position-y:var(--m-cal-next-year-bg-pos-y, var(--t-cal-next-year-bg-pos-y, calc(var(--cal-next-year-bg-pos-y)*.09259vw)));
+		height:var(--m-cal-next-year-h, var(--t-cal-next-year-h, calc(var(--cal-next-year-h)*.09259vw)));
+		width:var(--m-cal-next-year-w, var(--t-cal-next-year-w, calc(var(--cal-next-year-w)*.09259vw)));
 	}
 	.part-date-cell{
 		text-align:var(--m-cal-date-cell-txt-a, var(--t-cal-date-cell-txt-a, var(--cal-date-cell-txt-a)));
@@ -207,9 +207,9 @@
 		align-items:var(--m-cal-date-items-y, var(--t-cal-date-items-y, var(--cal-date-items-y)));
 		border-radius:var(--m-cal-date-br-a-unit, var(--t-cal-date-br-a-unit, var(--cal-date-br-a-unit)));
 		display:var(--m-cal-date-dp, var(--t-cal-date-dp, var(--cal-date-dp)));
-		height:var(--m-cal-date-h, var(--t-cal-date-h, calc(var(--cal-date-h)*.13889vw)));
+		height:var(--m-cal-date-h, var(--t-cal-date-h, calc(var(--cal-date-h)*.09259vw)));
 		justify-content:var(--m-cal-date-content-x, var(--t-cal-date-content-x, var(--cal-date-content-x)));
-		width:var(--m-cal-date-w, var(--t-cal-date-w, calc(var(--cal-date-w)*.13889vw)));
+		width:var(--m-cal-date-w, var(--t-cal-date-w, calc(var(--cal-date-w)*.09259vw)));
 	}
 	.part-date:hover:not([data-disabled]):not([data-unavailable]):not([data-outside-view]){
 		background-color:var(--m-cal-date-hover-bg-c, var(--t-cal-date-hover-bg-c, var(--cal-date-hover-bg-c)));

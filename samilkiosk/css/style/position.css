@@ -40,7 +40,7 @@
 [style*="--pos-r-unit"]{
 	right:var(--pos-r-unit);
 }
-@media screen and (max-width:1024px){
+@media screen and (max-width:1080px){
 	[style*="--pos"]{
 		position:var(--t-pos, var(--pos));
 	}
@@ -48,16 +48,16 @@
 		z-index:var(--t-pos-z, var(--pos-z));
 	}
 	[style*="--pos-l"]:not([style*="--pos-l-mv"],[style*="--pos-l-unit"]){
-		left:var(--t-pos-l, calc(var(--pos-l)*1px));
+		left:var(--t-pos-l, calc(var(--pos-l)*.09259vw));
 	}
 	[style*="--pos-t"]:not([style*="--pos-t-mv"],[style*="--pos-t-unit"]){
-		top:var(--t-pos-t, calc(var(--pos-t)*1px));
+		top:var(--t-pos-t, calc(var(--pos-t)*.09259vw));
 	}
 	[style*="--pos-b"]:not([style*="--pos-b-mv"],[style*="--pos-b-unit"]){
-		bottom:var(--t-pos-b, calc(var(--pos-b)*1px));
+		bottom:var(--t-pos-b, calc(var(--pos-b)*.09259vw));
 	}
 	[style*="--pos-r"]:not([style*="--pos-r-mv"],[style*="--pos-r-unit"]){
-		right:var(--t-pos-r, calc(var(--pos-r)*1px));
+		right:var(--t-pos-r, calc(var(--pos-r)*.09259vw));
 	}
 	[style*="--pos-l-mv"]{
 		left:var(--t-pos-l-mv, calc(var(--pos-l-mv)*1px));
@@ -92,16 +92,16 @@
 		z-index:var(--m-pos-z, var(--t-pos-z, var(--pos-z)));
 	}
 	[style*="--pos-l"]:not([style*="--pos-l-mv"],[style*="--pos-l-unit"]){
-		left:var(--m-pos-l, var(--t-pos-l, calc(var(--pos-l)*.13889vw)));
+		left:var(--m-pos-l, var(--t-pos-l, calc(var(--pos-l)*.09259vw)));
 	}
 	[style*="--pos-t"]:not([style*="--pos-t-mv"],[style*="--pos-t-unit"]){
-		top:var(--m-pos-t, var(--t-pos-t, calc(var(--pos-t)*.13889vw)));
+		top:var(--m-pos-t, var(--t-pos-t, calc(var(--pos-t)*.09259vw)));
 	}
 	[style*="--pos-b"]:not([style*="--pos-b-mv"],[style*="--pos-b-unit"]){
-		bottom:var(--m-pos-b, var(--t-pos-b, calc(var(--pos-b)*.13889vw)));
+		bottom:var(--m-pos-b, var(--t-pos-b, calc(var(--pos-b)*.09259vw)));
 	}
 	[style*="--pos-r"]:not([style*="--pos-r-mv"],[style*="--pos-r-unit"]){
-		right:var(--m-pos-r, var(--t-pos-r, calc(var(--pos-r)*.13889vw)));
+		right:var(--m-pos-r, var(--t-pos-r, calc(var(--pos-r)*.09259vw)));
 	}
 	[style*="--pos-l-mv"]{
 		left:var(--m-pos-l-mv, var(--t-pos-l-mv, calc(var(--pos-l-mv)*1px)));

@@ -87,83 +87,83 @@
 	outline:none;
 	padding:calc(var(--editor-content-pd-a)*1px);
 }
-@media screen and (max-width:1024px){
+@media screen and (max-width:1080px){
 	.tiptap-toolbar{
 		background-color:var(--t-editor-toolbar-bg-c, var(--editor-toolbar-bg-c));
 		border-color:var(--t-editor-toolbar-bd-a-c, var(--editor-toolbar-bd-a-c));
-		border-radius:var(--t-editor-toolbar-br-a, calc(var(--editor-toolbar-br-a)*1px));
+		border-radius:var(--t-editor-toolbar-br-a, calc(var(--editor-toolbar-br-a)*.09259vw));
 		border-style:var(--t-editor-toolbar-bd-a-s, var(--editor-toolbar-bd-a-s));
 		border-width:var(--t-editor-toolbar-bd-a-w-mv, calc(var(--editor-toolbar-bd-a-w-mv)*1px));
-		padding:var(--t-editor-toolbar-pd-a, calc(var(--editor-toolbar-pd-a)*1px));
+		padding:var(--t-editor-toolbar-pd-a, calc(var(--editor-toolbar-pd-a)*.09259vw));
 	}
 	.tiptap-toolbar-divider{
 		background-color:var(--t-editor-toolbar-divider-bg-c, var(--editor-toolbar-divider-bg-c));
-		height:var(--t-editor-toolbar-divider-h, calc(var(--editor-toolbar-divider-h)*1px));
-		margin-inline:var(--t-editor-toolbar-divider-mg-x, calc(var(--editor-toolbar-divider-mg-x)*1px));
-		width:var(--t-editor-toolbar-divider-w, calc(var(--editor-toolbar-divider-w)*1px));
+		height:var(--t-editor-toolbar-divider-h, calc(var(--editor-toolbar-divider-h)*.09259vw));
+		margin-inline:var(--t-editor-toolbar-divider-mg-x, calc(var(--editor-toolbar-divider-mg-x)*.09259vw));
+		width:var(--t-editor-toolbar-divider-w, calc(var(--editor-toolbar-divider-w)*.09259vw));
 	}
 	.tiptap-toolbar-button{
 		background-color:var(--t-editor-toolbar-button-bg-c, var(--editor-toolbar-button-bg-c));
 		border-color:var(--t-editor-toolbar-button-bd-a-c, var(--editor-toolbar-button-bd-a-c));
-		border-radius:var(--t-editor-toolbar-button-br-a, calc(var(--editor-toolbar-button-br-a)*1px));
+		border-radius:var(--t-editor-toolbar-button-br-a, calc(var(--editor-toolbar-button-br-a)*.09259vw));
 		border-style:var(--t-editor-toolbar-button-bd-a-s, var(--editor-toolbar-button-bd-a-s));
 		border-width:var(--t-editor-toolbar-button-bd-a-w-mv, calc(var(--editor-toolbar-button-bd-a-w-mv)*1px));
 		color:var(--t-editor-toolbar-button-txt-c, var(--editor-toolbar-button-txt-c));
-		font-size:var(--t-editor-toolbar-button-txt-s, calc(var(--editor-toolbar-button-txt-s)*1px));
+		font-size:var(--t-editor-toolbar-button-txt-s, calc(var(--editor-toolbar-button-txt-s)*.09259vw));
 		font-weight:var(--t-editor-toolbar-button-txt-w, var(--editor-toolbar-button-txt-w));
-		height:var(--t-editor-toolbar-button-h, calc(var(--editor-toolbar-button-h)*1px));
-		min-width:var(--t-editor-toolbar-button-min-w, calc(var(--editor-toolbar-button-min-w)*1px));
-		padding-block:var(--t-editor-toolbar-button-pd-y, calc(var(--editor-toolbar-button-pd-y)*1px));
-		padding-inline:var(--t-editor-toolbar-button-pd-x, calc(var(--editor-toolbar-button-pd-x)*1px));
+		height:var(--t-editor-toolbar-button-h, calc(var(--editor-toolbar-button-h)*.09259vw));
+		min-width:var(--t-editor-toolbar-button-min-w, calc(var(--editor-toolbar-button-min-w)*.09259vw));
+		padding-block:var(--t-editor-toolbar-button-pd-y, calc(var(--editor-toolbar-button-pd-y)*.09259vw));
+		padding-inline:var(--t-editor-toolbar-button-pd-x, calc(var(--editor-toolbar-button-pd-x)*.09259vw));
 	}
 	.tiptap-editor-wrapper{
 		background-color:var(--t-editor-wrapper-bg-c, var(--editor-wrapper-bg-c));
 		border-color:var(--t-editor-wrapper-bd-a-c, var(--editor-wrapper-bd-a-c));
-		border-radius:var(--t-editor-wrapper-br-a, calc(var(--editor-wrapper-br-a)*1px));
+		border-radius:var(--t-editor-wrapper-br-a, calc(var(--editor-wrapper-br-a)*.09259vw));
 		border-style:var(--t-editor-wrapper-bd-a-s, var(--editor-wrapper-bd-a-s));
 		border-width:var(--t-editor-wrapper-bd-a-w-mv, calc(var(--editor-wrapper-bd-a-w-mv)*1px));
 	}
 	.tiptap-editor-content{
-		padding:var(--t-editor-content-pd-a, calc(var(--editor-content-pd-a)*1px));
+		padding:var(--t-editor-content-pd-a, calc(var(--editor-content-pd-a)*.09259vw));
 	}
 }
 @media screen and (max-width:720px){
 	.tiptap-toolbar{
 		background-color:var(--m-editor-toolbar-bg-c, var(--t-editor-toolbar-bg-c, var(--editor-toolbar-bg-c)));
 		border-color:var(--m-editor-toolbar-bd-a-c, var(--t-editor-toolbar-bd-a-c, var(--editor-toolbar-bd-a-c)));
-		border-radius:var(--m-editor-toolbar-br-a, var(--t-editor-toolbar-br-a, calc(var(--editor-toolbar-br-a)*.13889vw)));
+		border-radius:var(--m-editor-toolbar-br-a, var(--t-editor-toolbar-br-a, calc(var(--editor-toolbar-br-a)*.09259vw)));
 		border-style:var(--m-editor-toolbar-bd-a-s, var(--t-editor-toolbar-bd-a-s, var(--editor-toolbar-bd-a-s)));
 		border-width:var(--m-editor-toolbar-bd-a-w-mv, var(--t-editor-toolbar-bd-a-w-mv, calc(var(--editor-toolbar-bd-a-w-mv)*1px)));
-		padding:var(--m-editor-toolbar-pd-a, var(--t-editor-toolbar-pd-a, calc(var(--editor-toolbar-pd-a)*.13889vw)));
+		padding:var(--m-editor-toolbar-pd-a, var(--t-editor-toolbar-pd-a, calc(var(--editor-toolbar-pd-a)*.09259vw)));
 	}
 	.tiptap-toolbar-divider{
 		background-color:var(--m-editor-toolbar-divider-bg-c, var(--t-editor-toolbar-divider-bg-c, var(--editor-toolbar-divider-bg-c)));
-		height:var(--m-editor-toolbar-divider-h, var(--t-editor-toolbar-divider-h, calc(var(--editor-toolbar-divider-h)*.13889vw)));
-		margin-inline:var(--m-editor-toolbar-divider-mg-x, var(--t-editor-toolbar-divider-mg-x, calc(var(--editor-toolbar-divider-mg-x)*.13889vw)));
-		width:var(--m-editor-toolbar-divider-w, var(--t-editor-toolbar-divider-w, calc(var(--editor-toolbar-divider-w)*.13889vw)));
+		height:var(--m-editor-toolbar-divider-h, var(--t-editor-toolbar-divider-h, calc(var(--editor-toolbar-divider-h)*.09259vw)));
+		margin-inline:var(--m-editor-toolbar-divider-mg-x, var(--t-editor-toolbar-divider-mg-x, calc(var(--editor-toolbar-divider-mg-x)*.09259vw)));
+		width:var(--m-editor-toolbar-divider-w, var(--t-editor-toolbar-divider-w, calc(var(--editor-toolbar-divider-w)*.09259vw)));
 	}
 	.tiptap-toolbar-button{
 		background-color:var(--m-editor-toolbar-button-bg-c, var(--t-editor-toolbar-button-bg-c, var(--editor-toolbar-button-bg-c)));
 		border-color:var(--m-editor-toolbar-button-bd-a-c, var(--t-editor-toolbar-button-bd-a-c, var(--editor-toolbar-button-bd-a-c)));
-		border-radius:var(--m-editor-toolbar-button-br-a, var(--t-editor-toolbar-button-br-a, calc(var(--editor-toolbar-button-br-a)*.13889vw)));
+		border-radius:var(--m-editor-toolbar-button-br-a, var(--t-editor-toolbar-button-br-a, calc(var(--editor-toolbar-button-br-a)*.09259vw)));
 		border-style:var(--m-editor-toolbar-button-bd-a-s, var(--t-editor-toolbar-button-bd-a-s, var(--editor-toolbar-button-bd-a-s)));
 		border-width:var(--m-editor-toolbar-button-bd-a-w-mv, var(--t-editor-toolbar-button-bd-a-w-mv, calc(var(--editor-toolbar-button-bd-a-w-mv)*1px)));
 		color:var(--m-editor-toolbar-button-txt-c, var(--t-editor-toolbar-button-txt-c, var(--editor-toolbar-button-txt-c)));
-		font-size:var(--m-editor-toolbar-button-txt-s, var(--t-editor-toolbar-button-txt-s, calc(var(--editor-toolbar-button-txt-s)*.13889vw)));
+		font-size:var(--m-editor-toolbar-button-txt-s, var(--t-editor-toolbar-button-txt-s, calc(var(--editor-toolbar-button-txt-s)*.09259vw)));
 		font-weight:var(--m-editor-toolbar-button-txt-w, var(--t-editor-toolbar-button-txt-w, var(--editor-toolbar-button-txt-w)));
-		height:var(--m-editor-toolbar-button-h, var(--t-editor-toolbar-button-h, calc(var(--editor-toolbar-button-h)*.13889vw)));
-		min-width:var(--m-editor-toolbar-button-min-w, var(--t-editor-toolbar-button-min-w, calc(var(--editor-toolbar-button-min-w)*.13889vw)));
-		padding-block:var(--m-editor-toolbar-button-pd-y, var(--t-editor-toolbar-button-pd-y, calc(var(--editor-toolbar-button-pd-y)*.13889vw)));
-		padding-inline:var(--m-editor-toolbar-button-pd-x, var(--t-editor-toolbar-button-pd-x, calc(var(--editor-toolbar-button-pd-x)*.13889vw)));
+		height:var(--m-editor-toolbar-button-h, var(--t-editor-toolbar-button-h, calc(var(--editor-toolbar-button-h)*.09259vw)));
+		min-width:var(--m-editor-toolbar-button-min-w, var(--t-editor-toolbar-button-min-w, calc(var(--editor-toolbar-button-min-w)*.09259vw)));
+		padding-block:var(--m-editor-toolbar-button-pd-y, var(--t-editor-toolbar-button-pd-y, calc(var(--editor-toolbar-button-pd-y)*.09259vw)));
+		padding-inline:var(--m-editor-toolbar-button-pd-x, var(--t-editor-toolbar-button-pd-x, calc(var(--editor-toolbar-button-pd-x)*.09259vw)));
 	}
 	.tiptap-editor-wrapper{
 		background-color:var(--m-editor-wrapper-bg-c, var(--t-editor-wrapper-bg-c, var(--editor-wrapper-bg-c)));
 		border-color:var(--m-editor-wrapper-bd-a-c, var(--t-editor-wrapper-bd-a-c, var(--editor-wrapper-bd-a-c)));
-		border-radius:var(--m-editor-wrapper-br-a, var(--t-editor-wrapper-br-a, calc(var(--editor-wrapper-br-a)*.13889vw)));
+		border-radius:var(--m-editor-wrapper-br-a, var(--t-editor-wrapper-br-a, calc(var(--editor-wrapper-br-a)*.09259vw)));
 		border-style:var(--m-editor-wrapper-bd-a-s, var(--t-editor-wrapper-bd-a-s, var(--editor-wrapper-bd-a-s)));
 		border-width:var(--m-editor-wrapper-bd-a-w-mv, var(--t-editor-wrapper-bd-a-w-mv, calc(var(--editor-wrapper-bd-a-w-mv)*1px)));
 	}
 	.tiptap-editor-content{
-		padding:var(--m-editor-content-pd-a, var(--t-editor-content-pd-a, calc(var(--editor-content-pd-a)*.13889vw)));
+		padding:var(--m-editor-content-pd-a, var(--t-editor-content-pd-a, calc(var(--editor-content-pd-a)*.09259vw)));
 	}
 }

@@ -13,7 +13,7 @@
 [style*="--cs-br"]{
 	corner-bottom-right-shape:var(--cs-br);
 }
-@media screen and (max-width:1024px){
+@media screen and (max-width:1080px){
 	[style*="--cs-a"]{
 		corner-shape:var(--t-cs-a, var(--cs-a));
 	}

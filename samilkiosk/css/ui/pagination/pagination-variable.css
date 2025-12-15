@@ -52,79 +52,79 @@
 	height:calc(var(--page-btn-icon-h)*1px);
 	width:calc(var(--page-btn-pn-icon-w)*1px);
 }
-@media screen and (max-width:1024px){
+@media screen and (max-width:1080px){
 	[class*=page-type]{
-		column-gap:var(--t-page-gap-x, calc(var(--page-gap-x)*1px));
+		column-gap:var(--t-page-gap-x, calc(var(--page-gap-x)*.09259vw));
 	}
 	[class*=page-type] button{
 		background-color:var(--t-page-btn-bg-c, var(--page-btn-bg-c));
 		border-color:var(--t-page-btn-bd-a-c, var(--page-btn-bd-a-c));
-		border-radius:var(--t-page-btn-br-a, calc(var(--page-btn-br-a)*1px));
+		border-radius:var(--t-page-btn-br-a, calc(var(--page-btn-br-a)*.09259vw));
 		border-style:var(--t-page-btn-bd-a-s, var(--page-btn-bd-a-s));
-		border-width:var(--t-page-btn-bd-a-w, calc(var(--page-btn-bd-a-w)*1px));
+		border-width:var(--t-page-btn-bd-a-w, calc(var(--page-btn-bd-a-w)*.09259vw));
 		color:var(--t-page-btn-txt-c, var(--page-btn-txt-c));
-		height:var(--t-page-btn-h, calc(var(--page-btn-h)*1px));
-		width:var(--t-page-btn-w, calc(var(--page-btn-w)*1px));
+		height:var(--t-page-btn-h, calc(var(--page-btn-h)*.09259vw));
+		width:var(--t-page-btn-w, calc(var(--page-btn-w)*.09259vw));
 	}
 	[class*=page-type] button:hover,[class*=page-type] button[data-selected=true]{
 		background-color:var(--t-page-btn-over-bg-c, var(--page-btn-over-bg-c));
 		color:var(--t-page-btn-over-txt-c, var(--page-btn-over-txt-c));
 	}
 	[class*=page-type] .page-elps{
-		height:var(--t-page-btn-h, calc(var(--page-btn-h)*1px));
-		width:var(--t-page-btn-w, calc(var(--page-btn-w)*1px));
+		height:var(--t-page-btn-h, calc(var(--page-btn-h)*.09259vw));
+		width:var(--t-page-btn-w, calc(var(--page-btn-w)*.09259vw));
 	}
 	[class*=page-type] .page-ctrl{
-		column-gap:var(--t-page-btn-gap-x, calc(var(--page-btn-gap-x)*1px));
+		column-gap:var(--t-page-btn-gap-x, calc(var(--page-btn-gap-x)*.09259vw));
 	}
 	[class*=page-type] .page-first:before,[class*=page-type] .page-last:before{
-		background-position-x:var(--t-page-btn-fl-bg-pos-x, calc(var(--page-btn-fl-bg-pos-x)*1px));
-		width:var(--t-page-btn-fl-icon-w, calc(var(--page-btn-fl-icon-w)*1px));
+		background-position-x:var(--t-page-btn-fl-bg-pos-x, calc(var(--page-btn-fl-bg-pos-x)*.09259vw));
+		width:var(--t-page-btn-fl-icon-w, calc(var(--page-btn-fl-icon-w)*.09259vw));
 	}
 	[class*=page-type] .page-first:before,[class*=page-type] .page-last:before,[class*=page-type] .page-next:before,[class*=page-type] .page-prev:before{
-		background-position-y:var(--t-page-btn-bg-pos-y, calc(var(--page-btn-bg-pos-y)*1px));
-		height:var(--t-page-btn-icon-h, calc(var(--page-btn-icon-h)*1px));
+		background-position-y:var(--t-page-btn-bg-pos-y, calc(var(--page-btn-bg-pos-y)*.09259vw));
+		height:var(--t-page-btn-icon-h, calc(var(--page-btn-icon-h)*.09259vw));
 	}
 	[class*=page-type] .page-next:before,[class*=page-type] .page-prev:before{
-		background-position-x:var(--t-page-btn-pn-bg-pos-x, calc(var(--page-btn-pn-bg-pos-x)*1px));
-		width:var(--t-page-btn-pn-icon-w, calc(var(--page-btn-pn-icon-w)*1px));
+		background-position-x:var(--t-page-btn-pn-bg-pos-x, calc(var(--page-btn-pn-bg-pos-x)*.09259vw));
+		width:var(--t-page-btn-pn-icon-w, calc(var(--page-btn-pn-icon-w)*.09259vw));
 	}
 }
 @media screen and (max-width:720px){
 	[class*=page-type]{
-		column-gap:var(--m-page-gap-x, var(--t-page-gap-x, calc(var(--page-gap-x)*.13889vw)));
+		column-gap:var(--m-page-gap-x, var(--t-page-gap-x, calc(var(--page-gap-x)*.09259vw)));
 	}
 	[class*=page-type] button{
 		background-color:var(--m-page-btn-bg-c, var(--t-page-btn-bg-c, var(--page-btn-bg-c)));
 		border-color:var(--m-page-btn-bd-a-c, var(--t-page-btn-bd-a-c, var(--page-btn-bd-a-c)));
-		border-radius:var(--m-page-btn-br-a, var(--t-page-btn-br-a, calc(var(--page-btn-br-a)*.13889vw)));
+		border-radius:var(--m-page-btn-br-a, var(--t-page-btn-br-a, calc(var(--page-btn-br-a)*.09259vw)));
 		border-style:var(--m-page-btn-bd-a-s, var(--t-page-btn-bd-a-s, var(--page-btn-bd-a-s)));
-		border-width:var(--m-page-btn-bd-a-w, var(--t-page-btn-bd-a-w, calc(var(--page-btn-bd-a-w)*.13889vw)));
+		border-width:var(--m-page-btn-bd-a-w, var(--t-page-btn-bd-a-w, calc(var(--page-btn-bd-a-w)*.09259vw)));
 		color:var(--m-page-btn-txt-c, var(--t-page-btn-txt-c, var(--page-btn-txt-c)));
-		height:var(--m-page-btn-h, var(--t-page-btn-h, calc(var(--page-btn-h)*.13889vw)));
-		width:var(--m-page-btn-w, var(--t-page-btn-w, calc(var(--page-btn-w)*.13889vw)));
+		height:var(--m-page-btn-h, var(--t-page-btn-h, calc(var(--page-btn-h)*.09259vw)));
+		width:var(--m-page-btn-w, var(--t-page-btn-w, calc(var(--page-btn-w)*.09259vw)));
 	}
 	[class*=page-type] button:hover,[class*=page-type] button[data-selected=true]{
 		background-color:var(--m-page-btn-over-bg-c, var(--t-page-btn-over-bg-c, var(--page-btn-over-bg-c)));
 		color:var(--m-page-btn-over-txt-c, var(--t-page-btn-over-txt-c, var(--page-btn-over-txt-c)));
 	}
 	[class*=page-type] .page-elps{
-		height:var(--m-page-btn-h, var(--t-page-btn-h, calc(var(--page-btn-h)*.13889vw)));
-		width:var(--m-page-btn-w, var(--t-page-btn-w, calc(var(--page-btn-w)*.13889vw)));
+		height:var(--m-page-btn-h, var(--t-page-btn-h, calc(var(--page-btn-h)*.09259vw)));
+		width:var(--m-page-btn-w, var(--t-page-btn-w, calc(var(--page-btn-w)*.09259vw)));
 	}
 	[class*=page-type] .page-ctrl{
-		column-gap:var(--m-page-btn-gap-x, var(--t-page-btn-gap-x, calc(var(--page-btn-gap-x)*.13889vw)));
+		column-gap:var(--m-page-btn-gap-x, var(--t-page-btn-gap-x, calc(var(--page-btn-gap-x)*.09259vw)));
 	}
 	[class*=page-type] .page-first:before,[class*=page-type] .page-last:before{
-		background-position-x:var(--m-page-btn-fl-bg-pos-x, var(--t-page-btn-fl-bg-pos-x, calc(var(--page-btn-fl-bg-pos-x)*.13889vw)));
-		width:var(--m-page-btn-fl-icon-w, var(--t-page-btn-fl-icon-w, calc(var(--page-btn-fl-icon-w)*.13889vw)));
+		background-position-x:var(--m-page-btn-fl-bg-pos-x, var(--t-page-btn-fl-bg-pos-x, calc(var(--page-btn-fl-bg-pos-x)*.09259vw)));
+		width:var(--m-page-btn-fl-icon-w, var(--t-page-btn-fl-icon-w, calc(var(--page-btn-fl-icon-w)*.09259vw)));
 	}
 	[class*=page-type] .page-first:before,[class*=page-type] .page-last:before,[class*=page-type] .page-next:before,[class*=page-type] .page-prev:before{
-		background-position-y:var(--m-page-btn-bg-pos-y, var(--t-page-btn-bg-pos-y, calc(var(--page-btn-bg-pos-y)*.13889vw)));
-		height:var(--m-page-btn-icon-h, var(--t-page-btn-icon-h, calc(var(--page-btn-icon-h)*.13889vw)));
+		background-position-y:var(--m-page-btn-bg-pos-y, var(--t-page-btn-bg-pos-y, calc(var(--page-btn-bg-pos-y)*.09259vw)));
+		height:var(--m-page-btn-icon-h, var(--t-page-btn-icon-h, calc(var(--page-btn-icon-h)*.09259vw)));
 	}
 	[class*=page-type] .page-next:before,[class*=page-type] .page-prev:before{
-		background-position-x:var(--m-page-btn-pn-bg-pos-x, var(--t-page-btn-pn-bg-pos-x, calc(var(--page-btn-pn-bg-pos-x)*.13889vw)));
-		width:var(--m-page-btn-pn-icon-w, var(--t-page-btn-pn-icon-w, calc(var(--page-btn-pn-icon-w)*.13889vw)));
+		background-position-x:var(--m-page-btn-pn-bg-pos-x, var(--t-page-btn-pn-bg-pos-x, calc(var(--page-btn-pn-bg-pos-x)*.09259vw)));
+		width:var(--m-page-btn-pn-icon-w, var(--t-page-btn-pn-icon-w, calc(var(--page-btn-pn-icon-w)*.09259vw)));
 	}
 }

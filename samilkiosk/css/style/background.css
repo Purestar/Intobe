@@ -13,15 +13,15 @@
 [style*="--bg-pos-y-mv"]{
 	background-position-y:calc(var(--bg-pos-y-mv)*1px);
 }
-@media screen and (max-width:1024px){
+@media screen and (max-width:1080px){
 	[style*="--bg-c"]{
 		background-color:var(--t-bg-c, var(--bg-c));
 	}
 	[style*="--bg-pos-x"]{
-		background-position-x:var(--t-bg-pos-x, calc(var(--bg-pos-x)*1px));
+		background-position-x:var(--t-bg-pos-x, calc(var(--bg-pos-x)*.09259vw));
 	}
 	[style*="--bg-pos-y"]{
-		background-position-y:var(--t-bg-pos-y, calc(var(--bg-pos-y)*1px));
+		background-position-y:var(--t-bg-pos-y, calc(var(--bg-pos-y)*.09259vw));
 	}
 	[style*="--bg-pos-x-mv"]{
 		background-position-x:var(--t-bg-pos-x-mv, calc(var(--bg-pos-x-mv)*1px));
@@ -35,10 +35,10 @@
 		background-color:var(--m-bg-c, var(--t-bg-c, var(--bg-c)));
 	}
 	[style*="--bg-pos-x"]{
-		background-position-x:var(--m-bg-pos-x, var(--t-bg-pos-x, calc(var(--bg-pos-x)*.13889vw)));
+		background-position-x:var(--m-bg-pos-x, var(--t-bg-pos-x, calc(var(--bg-pos-x)*.09259vw)));
 	}
 	[style*="--bg-pos-y"]{
-		background-position-y:var(--m-bg-pos-y, var(--t-bg-pos-y, calc(var(--bg-pos-y)*.13889vw)));
+		background-position-y:var(--m-bg-pos-y, var(--t-bg-pos-y, calc(var(--bg-pos-y)*.09259vw)));
 	}
 	[style*="--bg-pos-x-mv"]{
 		background-position-x:var(--m-bg-pos-x-mv, var(--t-bg-pos-x-mv, calc(var(--bg-pos-x-mv)*1px)));

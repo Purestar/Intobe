@@ -43,59 +43,59 @@
 	border-width:calc(var(--form-dis-bd-a-w)*1px);
 	color:var(--form-dis-txt-c);
 }
-@media screen and (max-width:1024px){
+@media screen and (max-width:1080px){
 	[class*=form-pin]{
-		column-gap:var(--t-form-gap-x, calc(var(--form-gap-x)*1px));
+		column-gap:var(--t-form-gap-x, calc(var(--form-gap-x)*.09259vw));
 	}
 	[class*=form-pin] input{
 		background-color:var(--t-form-bg-c, var(--form-bg-c));
 		border-color:var(--t-form-bd-a-c, var(--form-bd-a-c));
-		border-radius:var(--t-form-br-a, calc(var(--form-br-a)*1px));
+		border-radius:var(--t-form-br-a, calc(var(--form-br-a)*.09259vw));
 		border-style:var(--t-form-bd-a-s, var(--form-bd-a-s));
-		border-width:var(--t-form-bd-a-w, calc(var(--form-bd-a-w)*1px));
+		border-width:var(--t-form-bd-a-w, calc(var(--form-bd-a-w)*.09259vw));
 		color:var(--t-form-txt-c, var(--form-txt-c));
-		font-size:var(--t-form-txt-s, calc(var(--form-txt-s)*1px));
-		height:var(--t-form-h, calc(var(--form-h)*1px));
-		width:var(--t-form-w, calc(var(--form-w)*1px));
+		font-size:var(--t-form-txt-s, calc(var(--form-txt-s)*.09259vw));
+		height:var(--t-form-h, calc(var(--form-h)*.09259vw));
+		width:var(--t-form-w, calc(var(--form-w)*.09259vw));
 	}
 	[class*=form-pin] input:focus{
 		border-color:var(--t-form-focus-bd-a-c, var(--form-focus-bd-a-c));
 		border-style:var(--t-form-focus-bd-a-s, var(--form-focus-bd-a-s));
-		border-width:var(--t-form-focus-bd-a-w, calc(var(--form-focus-bd-a-w)*1px));
+		border-width:var(--t-form-focus-bd-a-w, calc(var(--form-focus-bd-a-w)*.09259vw));
 	}
 	[class*=form-pin].form-disabled input{
 		background-color:var(--t-form-dis-bg-c, var(--form-dis-bg-c));
 		border-color:var(--t-form-dis-bd-a-c, var(--form-dis-bd-a-c));
 		border-style:var(--t-form-dis-bd-a-s, var(--form-dis-bd-a-s));
-		border-width:var(--t-form-dis-bd-a-w, calc(var(--form-dis-bd-a-w)*1px));
+		border-width:var(--t-form-dis-bd-a-w, calc(var(--form-dis-bd-a-w)*.09259vw));
 		color:var(--t-form-dis-txt-c, var(--form-dis-txt-c));
 	}
 }
 @media screen and (max-width:720px){
 	[class*=form-pin]{
-		column-gap:var(--m-form-gap-x, var(--t-form-gap-x, calc(var(--form-gap-x)*.13889vw)));
+		column-gap:var(--m-form-gap-x, var(--t-form-gap-x, calc(var(--form-gap-x)*.09259vw)));
 	}
 	[class*=form-pin] input{
 		background-color:var(--m-form-bg-c, var(--t-form-bg-c, var(--form-bg-c)));
 		border-color:var(--m-form-bd-a-c, var(--t-form-bd-a-c, var(--form-bd-a-c)));
-		border-radius:var(--m-form-br-a, var(--t-form-br-a, calc(var(--form-br-a)*.13889vw)));
+		border-radius:var(--m-form-br-a, var(--t-form-br-a, calc(var(--form-br-a)*.09259vw)));
 		border-style:var(--m-form-bd-a-s, var(--t-form-bd-a-s, var(--form-bd-a-s)));
-		border-width:var(--m-form-bd-a-w, var(--t-form-bd-a-w, calc(var(--form-bd-a-w)*.13889vw)));
+		border-width:var(--m-form-bd-a-w, var(--t-form-bd-a-w, calc(var(--form-bd-a-w)*.09259vw)));
 		color:var(--m-form-txt-c, var(--t-form-txt-c, var(--form-txt-c)));
-		font-size:var(--m-form-txt-s, var(--t-form-txt-s, calc(var(--form-txt-s)*.13889vw)));
-		height:var(--m-form-h, var(--t-form-h, calc(var(--form-h)*.13889vw)));
-		width:var(--m-form-w, var(--t-form-w, calc(var(--form-w)*.13889vw)));
+		font-size:var(--m-form-txt-s, var(--t-form-txt-s, calc(var(--form-txt-s)*.09259vw)));
+		height:var(--m-form-h, var(--t-form-h, calc(var(--form-h)*.09259vw)));
+		width:var(--m-form-w, var(--t-form-w, calc(var(--form-w)*.09259vw)));
 	}
 	[class*=form-pin] input:focus{
 		border-color:var(--m-form-focus-bd-a-c, var(--t-form-focus-bd-a-c, var(--form-focus-bd-a-c)));
 		border-style:var(--m-form-focus-bd-a-s, var(--t-form-focus-bd-a-s, var(--form-focus-bd-a-s)));
-		border-width:var(--m-form-focus-bd-a-w, var(--t-form-focus-bd-a-w, calc(var(--form-focus-bd-a-w)*.13889vw)));
+		border-width:var(--m-form-focus-bd-a-w, var(--t-form-focus-bd-a-w, calc(var(--form-focus-bd-a-w)*.09259vw)));
 	}
 	[class*=form-pin].form-disabled input{
 		background-color:var(--m-form-dis-bg-c, var(--t-form-dis-bg-c, var(--form-dis-bg-c)));
 		border-color:var(--m-form-dis-bd-a-c, var(--t-form-dis-bd-a-c, var(--form-dis-bd-a-c)));
 		border-style:var(--m-form-dis-bd-a-s, var(--t-form-dis-bd-a-s, var(--form-dis-bd-a-s)));
-		border-width:var(--m-form-dis-bd-a-w, var(--t-form-dis-bd-a-w, calc(var(--form-dis-bd-a-w)*.13889vw)));
+		border-width:var(--m-form-dis-bd-a-w, var(--t-form-dis-bd-a-w, calc(var(--form-dis-bd-a-w)*.09259vw)));
 		color:var(--m-form-dis-txt-c, var(--t-form-dis-txt-c, var(--form-dis-txt-c)));
 	}
 }

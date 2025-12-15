@@ -43,21 +43,21 @@
 [style*="--br-br-unit"]{
 	border-bottom-right-radius:var(--br-br-unit);
 }
-@media screen and (max-width:1024px){
+@media screen and (max-width:1080px){
 	[style*="--br-a"]{
-		border-radius:var(--t-br-a, calc(var(--br-a)*1px));
+		border-radius:var(--t-br-a, calc(var(--br-a)*.09259vw));
 	}
 	[style*="--br-tl"]{
-		border-top-left-radius:var(--t-br-tl, calc(var(--br-tl)*1px));
+		border-top-left-radius:var(--t-br-tl, calc(var(--br-tl)*.09259vw));
 	}
 	[style*="--br-tr"]{
-		border-top-right-radius:var(--t-br-tr, calc(var(--br-tr)*1px));
+		border-top-right-radius:var(--t-br-tr, calc(var(--br-tr)*.09259vw));
 	}
 	[style*="--br-bl"]{
-		border-bottom-left-radius:var(--t-br-bl, calc(var(--br-bl)*1px));
+		border-bottom-left-radius:var(--t-br-bl, calc(var(--br-bl)*.09259vw));
 	}
 	[style*="--br-br"]{
-		border-bottom-right-radius:var(--t-br-br, calc(var(--br-br)*1px));
+		border-bottom-right-radius:var(--t-br-br, calc(var(--br-br)*.09259vw));
 	}
 	[style*="--br-a-mv"]{
 		border-radius:var(--t-br-a-mv, calc(var(--br-a-mv)*1px));
@@ -92,19 +92,19 @@
 }
 @media screen and (max-width:720px){
 	[style*="--br-a"]{
-		border-radius:var(--m-br-a, var(--t-br-a, calc(var(--br-a)*.13889vw)));
+		border-radius:var(--m-br-a, var(--t-br-a, calc(var(--br-a)*.09259vw)));
 	}
 	[style*="--br-tl"]{
-		border-top-left-radius:var(--m-br-tl, var(--t-br-tl, calc(var(--br-tl)*.13889vw)));
+		border-top-left-radius:var(--m-br-tl, var(--t-br-tl, calc(var(--br-tl)*.09259vw)));
 	}
 	[style*="--br-tr"]{
-		border-top-right-radius:var(--m-br-tr, var(--t-br-tr, calc(var(--br-tr)*.13889vw)));
+		border-top-right-radius:var(--m-br-tr, var(--t-br-tr, calc(var(--br-tr)*.09259vw)));
 	}
 	[style*="--br-bl"]{
-		border-bottom-left-radius:var(--m-br-bl, var(--t-br-bl, calc(var(--br-bl)*.13889vw)));
+		border-bottom-left-radius:var(--m-br-bl, var(--t-br-bl, calc(var(--br-bl)*.09259vw)));
 	}
 	[style*="--br-br"]{
-		border-bottom-right-radius:var(--m-br-br, var(--t-br-br, calc(var(--br-br)*.13889vw)));
+		border-bottom-right-radius:var(--m-br-br, var(--t-br-br, calc(var(--br-br)*.09259vw)));
 	}
 	[style*="--br-a-mv"]{
 		border-radius:var(--m-br-a-mv, var(--t-br-a-mv, calc(var(--br-a-mv)*1px)));

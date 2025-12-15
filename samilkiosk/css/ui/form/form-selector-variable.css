@@ -224,37 +224,37 @@
 [class*=form-slt-swh] input:disabled+.part-slt-txt .part-icon:after{
 	background-color:var(--form-dis-bg-c);
 }
-@media screen and (max-width:1024px){
+@media screen and (max-width:1080px){
 	[class*=form-slt]{
 		color:var(--t-form-txt-c, var(--form-txt-c));
-		font-size:var(--t-form-txt-s, calc(var(--form-txt-s)*1px));
+		font-size:var(--t-form-txt-s, calc(var(--form-txt-s)*.09259vw));
 		font-weight:var(--t-form-txt-w, var(--form-txt-w));
-		line-height:var(--t-form-txt-lh, calc(var(--form-txt-lh)*1px));
+		line-height:var(--t-form-txt-lh, calc(var(--form-txt-lh)*.09259vw));
 	}
 	[class*=form-slt] .part-slt-txt{
 		flex-direction:var(--t-form-fx-d, var(--form-fx-d));
-		gap:var(--t-form-gap-a, calc(var(--form-gap-a)*1px));
-		min-height:var(--t-form-min-h, calc(var(--form-min-h)*1px));
+		gap:var(--t-form-gap-a, calc(var(--form-gap-a)*.09259vw));
+		min-height:var(--t-form-min-h, calc(var(--form-min-h)*.09259vw));
 	}
 	[class*=form-slt] .part-icon{
 		height:var(--t-h, var(--h));
-		width:var(--t-form-w, calc(var(--form-w)*1px));
+		width:var(--t-form-w, calc(var(--form-w)*.09259vw));
 	}
 	[class*=form-slt] .part-icon:before{
 		background-color:var(--t-form-bg-c, var(--form-bg-c));
 		border-color:var(--t-form-bd-a-c, var(--form-bd-a-c));
 		border-style:var(--t-form-bd-a-s, var(--form-bd-a-s));
-		border-width:var(--t-form-bd-a-w, calc(var(--form-bd-a-w)*1px));
+		border-width:var(--t-form-bd-a-w, calc(var(--form-bd-a-w)*.09259vw));
 	}
 	[class*=form-slt] .part-icon:after{
-		border-radius:var(--t-form-br-a, calc(var(--form-br-a)*1px));
-		height:var(--t-form-chk-h, calc(var(--form-chk-h)*1px));
-		width:var(--t-form-chk-w, calc(var(--form-chk-w)*1px));
+		border-radius:var(--t-form-br-a, calc(var(--form-br-a)*.09259vw));
+		height:var(--t-form-chk-h, calc(var(--form-chk-h)*.09259vw));
+		width:var(--t-form-chk-w, calc(var(--form-chk-w)*.09259vw));
 	}
 	[class*=form-slt] input:focus+.part-slt-txt .part-icon:before,[class*=form-slt] input:focus:checked+.part-slt-txt .part-icon:before{
 		border-color:var(--t-form-focus-bd-a-c, var(--form-focus-bd-a-c));
 		border-style:var(--t-form-focus-bd-a-s, var(--form-focus-bd-a-s));
-		border-width:var(--t-form-focus-bd-a-w, calc(var(--form-focus-bd-a-w)*1px));
+		border-width:var(--t-form-focus-bd-a-w, calc(var(--form-focus-bd-a-w)*.09259vw));
 	}
 	[class*=form-slt] input:checked+.part-slt-txt{
 		color:var(--t-form-chk-txt-c, var(--form-chk-txt-c));
@@ -263,7 +263,7 @@
 		background-color:var(--t-form-chk-bg-c, var(--form-chk-bg-c));
 		border-color:var(--t-form-chk-bd-a-c, var(--form-chk-bd-a-c));
 		border-style:var(--t-form-chk-bd-a-s, var(--form-chk-bd-a-s));
-		border-width:var(--t-form-chk-bd-a-w, calc(var(--form-chk-bd-a-w)*1px));
+		border-width:var(--t-form-chk-bd-a-w, calc(var(--form-chk-bd-a-w)*.09259vw));
 	}
 	[class*=form-slt] input:disabled+.part-slt-txt{
 		color:var(--t-form-dis-txt-c, var(--form-dis-txt-c));
@@ -272,35 +272,35 @@
 		background-color:var(--t-form-dis-bg-c, var(--form-dis-bg-c));
 		border-color:var(--t-form-dis-bd-a-c, var(--form-dis-bd-a-c));
 		border-style:var(--t-form-dis-bd-a-s, var(--form-dis-bd-a-s));
-		border-width:var(--t-form-dis-bd-a-w, calc(var(--form-dis-bd-a-w)*1px));
+		border-width:var(--t-form-dis-bd-a-w, calc(var(--form-dis-bd-a-w)*.09259vw));
 	}
 	[class*=form-slt-btn]{
-		line-height:var(--t-form-txt-lh, calc(var(--form-txt-lh)*1px));
+		line-height:var(--t-form-txt-lh, calc(var(--form-txt-lh)*.09259vw));
 	}
 	[class*=form-slt-btn] .part-slt-txt{
 		border-color:var(--t-form-bd-a-c, var(--form-bd-a-c));
-		border-radius:var(--t-form-br-a, calc(var(--form-br-a)*1px));
+		border-radius:var(--t-form-br-a, calc(var(--form-br-a)*.09259vw));
 		border-style:var(--t-form-bd-a-s, var(--form-bd-a-s));
-		border-width:var(--t-form-bd-a-w, calc(var(--form-bd-a-w)*1px));
-		padding-block:var(--t-form-pd-y, calc(var(--form-pd-y)*1px));
-		padding-inline:var(--t-form-pd-x, calc(var(--form-pd-x)*1px));
+		border-width:var(--t-form-bd-a-w, calc(var(--form-bd-a-w)*.09259vw));
+		padding-block:var(--t-form-pd-y, calc(var(--form-pd-y)*.09259vw));
+		padding-inline:var(--t-form-pd-x, calc(var(--form-pd-x)*.09259vw));
 	}
 	[class*=form-slt-btn] .part-slt-txt:hover,[class*=form-slt-btn] input:checked:focus+.part-slt-txt,[class*=form-slt-btn] input:checked:hover+.part-slt-txt,[class*=form-slt-btn] input:focus+.part-slt-txt{
 		border-color:var(--t-form-focus-bd-a-c, var(--form-focus-bd-a-c));
 		border-style:var(--t-form-focus-bd-a-s, var(--form-focus-bd-a-s));
-		border-width:var(--t-form-focus-bd-a-w, calc(var(--form-focus-bd-a-w)*1px));
+		border-width:var(--t-form-focus-bd-a-w, calc(var(--form-focus-bd-a-w)*.09259vw));
 	}
 	[class*=form-slt-btn] input:checked+.part-slt-txt{
 		background-color:var(--t-form-chk-bg-c, var(--form-chk-bg-c));
 		border-color:var(--t-form-chk-bd-a-c, var(--form-chk-bd-a-c));
 		border-style:var(--t-form-chk-bd-a-s, var(--form-chk-bd-a-s));
-		border-width:var(--t-form-chk-bd-a-w, calc(var(--form-chk-bd-a-w)*1px));
+		border-width:var(--t-form-chk-bd-a-w, calc(var(--form-chk-bd-a-w)*.09259vw));
 	}
 	[class*=form-slt-btn] input:disabled+.part-slt-txt{
 		background-color:var(--t-form-dis-bg-c, var(--form-dis-bg-c));
 		border-color:var(--t-form-dis-bd-a-c, var(--form-dis-bd-a-c));
 		border-style:var(--t-form-dis-bd-a-s, var(--form-dis-bd-a-s));
-		border-width:var(--t-form-dis-bd-a-w, calc(var(--form-dis-bd-a-w)*1px));
+		border-width:var(--t-form-dis-bd-a-w, calc(var(--form-dis-bd-a-w)*.09259vw));
 	}
 	[class*=form-slt-btn] input:checked:disabled+.part-slt-txt,[class*=form-slt-btn] input:disabled+.part-slt-txt{
 		color:var(--t-form-dis-txt-c, var(--form-dis-txt-c));
@@ -308,15 +308,15 @@
 	[class*=form-slt-chk] .part-icon:before,[class*=form-slt-rdo] .part-icon:before,[class*=form-slt-swh] .part-icon:before{
 		background-color:var(--t-form-bg-c, var(--form-bg-c));
 		border-color:var(--t-form-bd-a-c, var(--form-bd-a-c));
-		border-radius:var(--t-form-br-a, calc(var(--form-br-a)*1px));
+		border-radius:var(--t-form-br-a, calc(var(--form-br-a)*.09259vw));
 		border-style:var(--t-form-bd-a-s, var(--form-bd-a-s));
-		border-width:var(--t-form-bd-a-w, calc(var(--form-bd-a-w)*1px));
-		height:var(--t-form-h, calc(var(--form-h)*1px));
-		width:var(--t-form-w, calc(var(--form-w)*1px));
+		border-width:var(--t-form-bd-a-w, calc(var(--form-bd-a-w)*.09259vw));
+		height:var(--t-form-h, calc(var(--form-h)*.09259vw));
+		width:var(--t-form-w, calc(var(--form-w)*.09259vw));
 	}
 	[class*=form-slt-chk] .part-icon:after{
-		background-position-x:var(--t-form-chk-bg-pos-x, calc(var(--form-chk-bg-pos-x)*1px));
-		background-position-y:var(--t-form-chk-bg-pos-y, calc(var(--form-chk-bg-pos-y)*1px));
+		background-position-x:var(--t-form-chk-bg-pos-x, calc(var(--form-chk-bg-pos-x)*.09259vw));
+		background-position-y:var(--t-form-chk-bg-pos-y, calc(var(--form-chk-bg-pos-y)*.09259vw));
 	}
 	[class*=form-slt-rdo] .part-icon:after,[class*=form-slt-rdo] .part-icon:before{
 		border-radius:var(--t-form-br-a-unit, var(--form-br-a-unit));
@@ -327,7 +327,7 @@
 	[class*=form-slt-rdo] input:checked+.part-slt-txt .part-icon:after,[class*=form-slt-rdo] input:checked+.part-slt-txt .part-icon:before{
 		border-color:var(--t-form-chk-bd-a-c, var(--form-chk-bd-a-c));
 		border-style:var(--t-form-chk-bd-a-s, var(--form-chk-bd-a-s));
-		border-width:var(--t-form-chk-bd-a-w, calc(var(--form-chk-bd-a-w)*1px));
+		border-width:var(--t-form-chk-bd-a-w, calc(var(--form-chk-bd-a-w)*.09259vw));
 	}
 	[class*=form-slt-rdo] input:checked+.part-slt-txt .part-icon:after{
 		background-color:var(--t-form-chk-bg-c, var(--form-chk-bg-c));
@@ -336,43 +336,43 @@
 		background-color:var(--t-form-dis-bg-c, var(--form-dis-bg-c));
 	}
 	[class*=form-slt-rt]{
-		gap:var(--t-form-gap-a, calc(var(--form-gap-a)*1px));
+		gap:var(--t-form-gap-a, calc(var(--form-gap-a)*.09259vw));
 	}
 	[class*=form-slt-rt] .part-icon:before{
-		background-position-x:var(--t-form-chk-bg-pos-x, calc(var(--form-chk-bg-pos-x)*1px));
-		background-position-y:var(--t-form-chk-bg-pos-y, calc(var(--form-chk-bg-pos-y)*1px));
-		height:var(--t-form-h, calc(var(--form-h)*1px));
-		width:var(--t-form-w, calc(var(--form-w)*1px));
+		background-position-x:var(--t-form-chk-bg-pos-x, calc(var(--form-chk-bg-pos-x)*.09259vw));
+		background-position-y:var(--t-form-chk-bg-pos-y, calc(var(--form-chk-bg-pos-y)*.09259vw));
+		height:var(--t-form-h, calc(var(--form-h)*.09259vw));
+		width:var(--t-form-w, calc(var(--form-w)*.09259vw));
 	}
 	[class*=form-slt-rt] input:checked~.part-slt-txt .part-icon:before,[class*=form-slt-rt] input:not(:disabled)+.part-slt-txt:hover .part-icon:before,[class*=form-slt-rt] input:not(:disabled)+.part-slt-txt:hover~.part-slt-txt .part-icon:before{
-		background-position-x:var(--t-form-chk-over-bg-pos-x, calc(var(--form-chk-over-bg-pos-x)*1px));
+		background-position-x:var(--t-form-chk-over-bg-pos-x, calc(var(--form-chk-over-bg-pos-x)*.09259vw));
 	}
 	[class*=form-slt-swh] .part-icon{
-		padding-inline:var(--t-form-pd-x, calc(var(--form-pd-x)*1px));
+		padding-inline:var(--t-form-pd-x, calc(var(--form-pd-x)*.09259vw));
 	}
 	[class*=form-slt-swh] .part-icon:before{
 		background-color:var(--t-form-bg-c, var(--form-bg-c));
 		border-color:var(--t-form-bd-a-c, var(--form-bd-a-c));
-		border-radius:var(--t-form-br-a, calc(var(--form-br-a)*1px));
+		border-radius:var(--t-form-br-a, calc(var(--form-br-a)*.09259vw));
 		border-style:var(--t-form-bd-a-s, var(--form-bd-a-s));
-		border-width:var(--t-form-bd-a-w, calc(var(--form-bd-a-w)*1px));
-		height:var(--t-form-h, calc(var(--form-h)*1px));
+		border-width:var(--t-form-bd-a-w, calc(var(--form-bd-a-w)*.09259vw));
+		height:var(--t-form-h, calc(var(--form-h)*.09259vw));
 	}
 	[class*=form-slt-swh] .part-icon:after{
-		left:var(--t-form-chk-pos-l, calc(var(--form-chk-pos-l)*1px));
+		left:var(--t-form-chk-pos-l, calc(var(--form-chk-pos-l)*.09259vw));
 	}
 	[class*=form-slt-swh] .part-icon:after,[class*=form-slt-swh] input:checked+.part-slt-txt .part-icon:before{
 		background-color:var(--t-form-chk-bg-c, var(--form-chk-bg-c));
 		border-color:var(--t-form-chk-bd-a-c, var(--form-chk-bd-a-c));
 		border-style:var(--t-form-chk-bd-a-s, var(--form-chk-bd-a-s));
-		border-width:var(--t-form-chk-bd-a-w, calc(var(--form-chk-bd-a-w)*1px));
+		border-width:var(--t-form-chk-bd-a-w, calc(var(--form-chk-bd-a-w)*.09259vw));
 	}
 	[class*=form-slt-swh] input:checked+.part-slt-txt .part-icon:after{
 		background-color:var(--t-form-chk-point-bg-c, var(--form-chk-point-bg-c));
 		border-color:var(--t-form-chk-point-bd-a-c, var(--form-chk-point-bd-a-c));
 		border-style:var(--t-form-chk-point-bd-a-s, var(--form-chk-point-bd-a-s));
-		border-width:var(--t-form-chk-point-bd-a-w, calc(var(--form-chk-point-bd-a-w)*1px));
-		left:var(--t-form-chk-point-pos-l, calc(var(--form-chk-point-pos-l)*1px));
+		border-width:var(--t-form-chk-point-bd-a-w, calc(var(--form-chk-point-bd-a-w)*.09259vw));
+		left:var(--t-form-chk-point-pos-l, calc(var(--form-chk-point-pos-l)*.09259vw));
 	}
 	[class*=form-slt-swh] input:disabled+.part-slt-txt .part-icon:after{
 		background-color:var(--t-form-dis-bg-c, var(--form-dis-bg-c));
@@ -381,34 +381,34 @@
 @media screen and (max-width:720px){
 	[class*=form-slt]{
 		color:var(--m-form-txt-c, var(--t-form-txt-c, var(--form-txt-c)));
-		font-size:var(--m-form-txt-s, var(--t-form-txt-s, calc(var(--form-txt-s)*.13889vw)));
+		font-size:var(--m-form-txt-s, var(--t-form-txt-s, calc(var(--form-txt-s)*.09259vw)));
 		font-weight:var(--m-form-txt-w, var(--t-form-txt-w, var(--form-txt-w)));
-		line-height:var(--m-form-txt-lh, var(--t-form-txt-lh, calc(var(--form-txt-lh)*.13889vw)));
+		line-height:var(--m-form-txt-lh, var(--t-form-txt-lh, calc(var(--form-txt-lh)*.09259vw)));
 	}
 	[class*=form-slt] .part-slt-txt{
 		flex-direction:var(--m-form-fx-d, var(--t-form-fx-d, var(--form-fx-d)));
-		gap:var(--m-form-gap-a, var(--t-form-gap-a, calc(var(--form-gap-a)*.13889vw)));
-		min-height:var(--m-form-min-h, var(--t-form-min-h, calc(var(--form-min-h)*.13889vw)));
+		gap:var(--m-form-gap-a, var(--t-form-gap-a, calc(var(--form-gap-a)*.09259vw)));
+		min-height:var(--m-form-min-h, var(--t-form-min-h, calc(var(--form-min-h)*.09259vw)));
 	}
 	[class*=form-slt] .part-icon{
 		height:var(--m-h, var(--t-h, var(--h)));
-		width:var(--m-form-w, var(--t-form-w, calc(var(--form-w)*.13889vw)));
+		width:var(--m-form-w, var(--t-form-w, calc(var(--form-w)*.09259vw)));
 	}
 	[class*=form-slt] .part-icon:before{
 		background-color:var(--m-form-bg-c, var(--t-form-bg-c, var(--form-bg-c)));
 		border-color:var(--m-form-bd-a-c, var(--t-form-bd-a-c, var(--form-bd-a-c)));
 		border-style:var(--m-form-bd-a-s, var(--t-form-bd-a-s, var(--form-bd-a-s)));
-		border-width:var(--m-form-bd-a-w, var(--t-form-bd-a-w, calc(var(--form-bd-a-w)*.13889vw)));
+		border-width:var(--m-form-bd-a-w, var(--t-form-bd-a-w, calc(var(--form-bd-a-w)*.09259vw)));
 	}
 	[class*=form-slt] .part-icon:after{
-		border-radius:var(--m-form-br-a, var(--t-form-br-a, calc(var(--form-br-a)*.13889vw)));
-		height:var(--m-form-chk-h, var(--t-form-chk-h, calc(var(--form-chk-h)*.13889vw)));
-		width:var(--m-form-chk-w, var(--t-form-chk-w, calc(var(--form-chk-w)*.13889vw)));
+		border-radius:var(--m-form-br-a, var(--t-form-br-a, calc(var(--form-br-a)*.09259vw)));
+		height:var(--m-form-chk-h, var(--t-form-chk-h, calc(var(--form-chk-h)*.09259vw)));
+		width:var(--m-form-chk-w, var(--t-form-chk-w, calc(var(--form-chk-w)*.09259vw)));
 	}
 	[class*=form-slt] input:focus+.part-slt-txt .part-icon:before,[class*=form-slt] input:focus:checked+.part-slt-txt .part-icon:before{
 		border-color:var(--m-form-focus-bd-a-c, var(--t-form-focus-bd-a-c, var(--form-focus-bd-a-c)));
 		border-style:var(--m-form-focus-bd-a-s, var(--t-form-focus-bd-a-s, var(--form-focus-bd-a-s)));
-		border-width:var(--m-form-focus-bd-a-w, var(--t-form-focus-bd-a-w, calc(var(--form-focus-bd-a-w)*.13889vw)));
+		border-width:var(--m-form-focus-bd-a-w, var(--t-form-focus-bd-a-w, calc(var(--form-focus-bd-a-w)*.09259vw)));
 	}
 	[class*=form-slt] input:checked+.part-slt-txt{
 		color:var(--m-form-chk-txt-c, var(--t-form-chk-txt-c, var(--form-chk-txt-c)));
@@ -417,7 +417,7 @@
 		background-color:var(--m-form-chk-bg-c, var(--t-form-chk-bg-c, var(--form-chk-bg-c)));
 		border-color:var(--m-form-chk-bd-a-c, var(--t-form-chk-bd-a-c, var(--form-chk-bd-a-c)));
 		border-style:var(--m-form-chk-bd-a-s, var(--t-form-chk-bd-a-s, var(--form-chk-bd-a-s)));
-		border-width:var(--m-form-chk-bd-a-w, var(--t-form-chk-bd-a-w, calc(var(--form-chk-bd-a-w)*.13889vw)));
+		border-width:var(--m-form-chk-bd-a-w, var(--t-form-chk-bd-a-w, calc(var(--form-chk-bd-a-w)*.09259vw)));
 	}
 	[class*=form-slt] input:disabled+.part-slt-txt{
 		color:var(--m-form-dis-txt-c, var(--t-form-dis-txt-c, var(--form-dis-txt-c)));
@@ -426,35 +426,35 @@
 		background-color:var(--m-form-dis-bg-c, var(--t-form-dis-bg-c, var(--form-dis-bg-c)));
 		border-color:var(--m-form-dis-bd-a-c, var(--t-form-dis-bd-a-c, var(--form-dis-bd-a-c)));
 		border-style:var(--m-form-dis-bd-a-s, var(--t-form-dis-bd-a-s, var(--form-dis-bd-a-s)));
-		border-width:var(--m-form-dis-bd-a-w, var(--t-form-dis-bd-a-w, calc(var(--form-dis-bd-a-w)*.13889vw)));
+		border-width:var(--m-form-dis-bd-a-w, var(--t-form-dis-bd-a-w, calc(var(--form-dis-bd-a-w)*.09259vw)));
 	}
 	[class*=form-slt-btn]{
-		line-height:var(--m-form-txt-lh, var(--t-form-txt-lh, calc(var(--form-txt-lh)*.13889vw)));
+		line-height:var(--m-form-txt-lh, var(--t-form-txt-lh, calc(var(--form-txt-lh)*.09259vw)));
 	}
 	[class*=form-slt-btn] .part-slt-txt{
 		border-color:var(--m-form-bd-a-c, var(--t-form-bd-a-c, var(--form-bd-a-c)));
-		border-radius:var(--m-form-br-a, var(--t-form-br-a, calc(var(--form-br-a)*.13889vw)));
+		border-radius:var(--m-form-br-a, var(--t-form-br-a, calc(var(--form-br-a)*.09259vw)));
 		border-style:var(--m-form-bd-a-s, var(--t-form-bd-a-s, var(--form-bd-a-s)));
-		border-width:var(--m-form-bd-a-w, var(--t-form-bd-a-w, calc(var(--form-bd-a-w)*.13889vw)));
-		padding-block:var(--m-form-pd-y, var(--t-form-pd-y, calc(var(--form-pd-y)*.13889vw)));
-		padding-inline:var(--m-form-pd-x, var(--t-form-pd-x, calc(var(--form-pd-x)*.13889vw)));
+		border-width:var(--m-form-bd-a-w, var(--t-form-bd-a-w, calc(var(--form-bd-a-w)*.09259vw)));
+		padding-block:var(--m-form-pd-y, var(--t-form-pd-y, calc(var(--form-pd-y)*.09259vw)));
+		padding-inline:var(--m-form-pd-x, var(--t-form-pd-x, calc(var(--form-pd-x)*.09259vw)));
 	}
 	[class*=form-slt-btn] .part-slt-txt:hover,[class*=form-slt-btn] input:checked:focus+.part-slt-txt,[class*=form-slt-btn] input:checked:hover+.part-slt-txt,[class*=form-slt-btn] input:focus+.part-slt-txt{
 		border-color:var(--m-form-focus-bd-a-c, var(--t-form-focus-bd-a-c, var(--form-focus-bd-a-c)));
 		border-style:var(--m-form-focus-bd-a-s, var(--t-form-focus-bd-a-s, var(--form-focus-bd-a-s)));
-		border-width:var(--m-form-focus-bd-a-w, var(--t-form-focus-bd-a-w, calc(var(--form-focus-bd-a-w)*.13889vw)));
+		border-width:var(--m-form-focus-bd-a-w, var(--t-form-focus-bd-a-w, calc(var(--form-focus-bd-a-w)*.09259vw)));
 	}
 	[class*=form-slt-btn] input:checked+.part-slt-txt{
 		background-color:var(--m-form-chk-bg-c, var(--t-form-chk-bg-c, var(--form-chk-bg-c)));
 		border-color:var(--m-form-chk-bd-a-c, var(--t-form-chk-bd-a-c, var(--form-chk-bd-a-c)));
 		border-style:var(--m-form-chk-bd-a-s, var(--t-form-chk-bd-a-s, var(--form-chk-bd-a-s)));
-		border-width:var(--m-form-chk-bd-a-w, var(--t-form-chk-bd-a-w, calc(var(--form-chk-bd-a-w)*.13889vw)));
+		border-width:var(--m-form-chk-bd-a-w, var(--t-form-chk-bd-a-w, calc(var(--form-chk-bd-a-w)*.09259vw)));
 	}
 	[class*=form-slt-btn] input:disabled+.part-slt-txt{
 		background-color:var(--m-form-dis-bg-c, var(--t-form-dis-bg-c, var(--form-dis-bg-c)));
 		border-color:var(--m-form-dis-bd-a-c, var(--t-form-dis-bd-a-c, var(--form-dis-bd-a-c)));
 		border-style:var(--m-form-dis-bd-a-s, var(--t-form-dis-bd-a-s, var(--form-dis-bd-a-s)));
-		border-width:var(--m-form-dis-bd-a-w, var(--t-form-dis-bd-a-w, calc(var(--form-dis-bd-a-w)*.13889vw)));
+		border-width:var(--m-form-dis-bd-a-w, var(--t-form-dis-bd-a-w, calc(var(--form-dis-bd-a-w)*.09259vw)));
 	}
 	[class*=form-slt-btn] input:checked:disabled+.part-slt-txt,[class*=form-slt-btn] input:disabled+.part-slt-txt{
 		color:var(--m-form-dis-txt-c, var(--t-form-dis-txt-c, var(--form-dis-txt-c)));
@@ -462,15 +462,15 @@
 	[class*=form-slt-chk] .part-icon:before,[class*=form-slt-rdo] .part-icon:before,[class*=form-slt-swh] .part-icon:before{
 		background-color:var(--m-form-bg-c, var(--t-form-bg-c, var(--form-bg-c)));
 		border-color:var(--m-form-bd-a-c, var(--t-form-bd-a-c, var(--form-bd-a-c)));
-		border-radius:var(--m-form-br-a, var(--t-form-br-a, calc(var(--form-br-a)*.13889vw)));
+		border-radius:var(--m-form-br-a, var(--t-form-br-a, calc(var(--form-br-a)*.09259vw)));
 		border-style:var(--m-form-bd-a-s, var(--t-form-bd-a-s, var(--form-bd-a-s)));
-		border-width:var(--m-form-bd-a-w, var(--t-form-bd-a-w, calc(var(--form-bd-a-w)*.13889vw)));
-		height:var(--m-form-h, var(--t-form-h, calc(var(--form-h)*.13889vw)));
-		width:var(--m-form-w, var(--t-form-w, calc(var(--form-w)*.13889vw)));
+		border-width:var(--m-form-bd-a-w, var(--t-form-bd-a-w, calc(var(--form-bd-a-w)*.09259vw)));
+		height:var(--m-form-h, var(--t-form-h, calc(var(--form-h)*.09259vw)));
+		width:var(--m-form-w, var(--t-form-w, calc(var(--form-w)*.09259vw)));
 	}
 	[class*=form-slt-chk] .part-icon:after{
-		background-position-x:var(--m-form-chk-bg-pos-x, var(--t-form-chk-bg-pos-x, calc(var(--form-chk-bg-pos-x)*.13889vw)));
-		background-position-y:var(--m-form-chk-bg-pos-y, var(--t-form-chk-bg-pos-y, calc(var(--form-chk-bg-pos-y)*.13889vw)));
+		background-position-x:var(--m-form-chk-bg-pos-x, var(--t-form-chk-bg-pos-x, calc(var(--form-chk-bg-pos-x)*.09259vw)));
+		background-position-y:var(--m-form-chk-bg-pos-y, var(--t-form-chk-bg-pos-y, calc(var(--form-chk-bg-pos-y)*.09259vw)));
 	}
 	[class*=form-slt-rdo] .part-icon:after,[class*=form-slt-rdo] .part-icon:before{
 		border-radius:var(--m-form-br-a-unit, var(--t-form-br-a-unit, var(--form-br-a-unit)));
@@ -481,7 +481,7 @@
 	[class*=form-slt-rdo] input:checked+.part-slt-txt .part-icon:after,[class*=form-slt-rdo] input:checked+.part-slt-txt .part-icon:before{
 		border-color:var(--m-form-chk-bd-a-c, var(--t-form-chk-bd-a-c, var(--form-chk-bd-a-c)));
 		border-style:var(--m-form-chk-bd-a-s, var(--t-form-chk-bd-a-s, var(--form-chk-bd-a-s)));
-		border-width:var(--m-form-chk-bd-a-w, var(--t-form-chk-bd-a-w, calc(var(--form-chk-bd-a-w)*.13889vw)));
+		border-width:var(--m-form-chk-bd-a-w, var(--t-form-chk-bd-a-w, calc(var(--form-chk-bd-a-w)*.09259vw)));
 	}
 	[class*=form-slt-rdo] input:checked+.part-slt-txt .part-icon:after{
 		background-color:var(--m-form-chk-bg-c, var(--t-form-chk-bg-c, var(--form-chk-bg-c)));
@@ -490,43 +490,43 @@
 		background-color:var(--m-form-dis-bg-c, var(--t-form-dis-bg-c, var(--form-dis-bg-c)));
 	}
 	[class*=form-slt-rt]{
-		gap:var(--m-form-gap-a, var(--t-form-gap-a, calc(var(--form-gap-a)*.13889vw)));
+		gap:var(--m-form-gap-a, var(--t-form-gap-a, calc(var(--form-gap-a)*.09259vw)));
 	}
 	[class*=form-slt-rt] .part-icon:before{
-		background-position-x:var(--m-form-chk-bg-pos-x, var(--t-form-chk-bg-pos-x, calc(var(--form-chk-bg-pos-x)*.13889vw)));
-		background-position-y:var(--m-form-chk-bg-pos-y, var(--t-form-chk-bg-pos-y, calc(var(--form-chk-bg-pos-y)*.13889vw)));
-		height:var(--m-form-h, var(--t-form-h, calc(var(--form-h)*.13889vw)));
-		width:var(--m-form-w, var(--t-form-w, calc(var(--form-w)*.13889vw)));
+		background-position-x:var(--m-form-chk-bg-pos-x, var(--t-form-chk-bg-pos-x, calc(var(--form-chk-bg-pos-x)*.09259vw)));
+		background-position-y:var(--m-form-chk-bg-pos-y, var(--t-form-chk-bg-pos-y, calc(var(--form-chk-bg-pos-y)*.09259vw)));
+		height:var(--m-form-h, var(--t-form-h, calc(var(--form-h)*.09259vw)));
+		width:var(--m-form-w, var(--t-form-w, calc(var(--form-w)*.09259vw)));
 	}
 	[class*=form-slt-rt] input:checked~.part-slt-txt .part-icon:before,[class*=form-slt-rt] input:not(:disabled)+.part-slt-txt:hover .part-icon:before,[class*=form-slt-rt] input:not(:disabled)+.part-slt-txt:hover~.part-slt-txt .part-icon:before{
-		background-position-x:var(--m-form-chk-over-bg-pos-x, var(--t-form-chk-over-bg-pos-x, calc(var(--form-chk-over-bg-pos-x)*.13889vw)));
+		background-position-x:var(--m-form-chk-over-bg-pos-x, var(--t-form-chk-over-bg-pos-x, calc(var(--form-chk-over-bg-pos-x)*.09259vw)));
 	}
 	[class*=form-slt-swh] .part-icon{
-		padding-inline:var(--m-form-pd-x, var(--t-form-pd-x, calc(var(--form-pd-x)*.13889vw)));
+		padding-inline:var(--m-form-pd-x, var(--t-form-pd-x, calc(var(--form-pd-x)*.09259vw)));
 	}
 	[class*=form-slt-swh] .part-icon:before{
 		background-color:var(--m-form-bg-c, var(--t-form-bg-c, var(--form-bg-c)));
 		border-color:var(--m-form-bd-a-c, var(--t-form-bd-a-c, var(--form-bd-a-c)));
-		border-radius:var(--m-form-br-a, var(--t-form-br-a, calc(var(--form-br-a)*.13889vw)));
+		border-radius:var(--m-form-br-a, var(--t-form-br-a, calc(var(--form-br-a)*.09259vw)));
 		border-style:var(--m-form-bd-a-s, var(--t-form-bd-a-s, var(--form-bd-a-s)));
-		border-width:var(--m-form-bd-a-w, var(--t-form-bd-a-w, calc(var(--form-bd-a-w)*.13889vw)));
-		height:var(--m-form-h, var(--t-form-h, calc(var(--form-h)*.13889vw)));
+		border-width:var(--m-form-bd-a-w, var(--t-form-bd-a-w, calc(var(--form-bd-a-w)*.09259vw)));
+		height:var(--m-form-h, var(--t-form-h, calc(var(--form-h)*.09259vw)));
 	}
 	[class*=form-slt-swh] .part-icon:after{
-		left:var(--m-form-chk-pos-l, var(--t-form-chk-pos-l, calc(var(--form-chk-pos-l)*.13889vw)));
+		left:var(--m-form-chk-pos-l, var(--t-form-chk-pos-l, calc(var(--form-chk-pos-l)*.09259vw)));
 	}
 	[class*=form-slt-swh] .part-icon:after,[class*=form-slt-swh] input:checked+.part-slt-txt .part-icon:before{
 		background-color:var(--m-form-chk-bg-c, var(--t-form-chk-bg-c, var(--form-chk-bg-c)));
 		border-color:var(--m-form-chk-bd-a-c, var(--t-form-chk-bd-a-c, var(--form-chk-bd-a-c)));
 		border-style:var(--m-form-chk-bd-a-s, var(--t-form-chk-bd-a-s, var(--form-chk-bd-a-s)));
-		border-width:var(--m-form-chk-bd-a-w, var(--t-form-chk-bd-a-w, calc(var(--form-chk-bd-a-w)*.13889vw)));
+		border-width:var(--m-form-chk-bd-a-w, var(--t-form-chk-bd-a-w, calc(var(--form-chk-bd-a-w)*.09259vw)));
 	}
 	[class*=form-slt-swh] input:checked+.part-slt-txt .part-icon:after{
 		background-color:var(--m-form-chk-point-bg-c, var(--t-form-chk-point-bg-c, var(--form-chk-point-bg-c)));
 		border-color:var(--m-form-chk-point-bd-a-c, var(--t-form-chk-point-bd-a-c, var(--form-chk-point-bd-a-c)));
 		border-style:var(--m-form-chk-point-bd-a-s, var(--t-form-chk-point-bd-a-s, var(--form-chk-point-bd-a-s)));
-		border-width:var(--m-form-chk-point-bd-a-w, var(--t-form-chk-point-bd-a-w, calc(var(--form-chk-point-bd-a-w)*.13889vw)));
-		left:var(--m-form-chk-point-pos-l, var(--t-form-chk-point-pos-l, calc(var(--form-chk-point-pos-l)*.13889vw)));
+		border-width:var(--m-form-chk-point-bd-a-w, var(--t-form-chk-point-bd-a-w, calc(var(--form-chk-point-bd-a-w)*.09259vw)));
+		left:var(--m-form-chk-point-pos-l, var(--t-form-chk-point-pos-l, calc(var(--form-chk-point-pos-l)*.09259vw)));
 	}
 	[class*=form-slt-swh] input:disabled+.part-slt-txt .part-icon:after{
 		background-color:var(--m-form-dis-bg-c, var(--t-form-dis-bg-c, var(--form-dis-bg-c)));

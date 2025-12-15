@@ -1,0 +1,26 @@
+[class*=bi-],[class*=ic-]{
+	--icon-bg-pos-x:0;
+	--icon-bg-pos-y:0;
+}
+[class*=bi-],[class*=ic-]:before{
+	background-position-x:calc(var(--icon-bg-pos-x)*1px);
+	background-position-y:calc(var(--icon-bg-pos-y)*1px);
+	height:calc(var(--icon-h)*1px);
+	width:calc(var(--icon-w)*1px);
+}
+@media screen and (max-width:1080px){
+	[class*=bi-],[class*=ic-]:before{
+		background-position-x:var(--t-icon-bg-pos-x, calc(var(--icon-bg-pos-x)*.09259vw));
+		background-position-y:var(--t-icon-bg-pos-y, calc(var(--icon-bg-pos-y)*.09259vw));
+		height:var(--t-icon-h, calc(var(--icon-h)*.09259vw));
+		width:var(--t-icon-w, calc(var(--icon-w)*.09259vw));
+	}
+}
+@media screen and (max-width:720px){
+	[class*=bi-],[class*=ic-]:before{
+		background-position-x:var(--m-icon-bg-pos-x, var(--t-icon-bg-pos-x, calc(var(--icon-bg-pos-x)*.09259vw)));
+		background-position-y:var(--m-icon-bg-pos-y, var(--t-icon-bg-pos-y, calc(var(--icon-bg-pos-y)*.09259vw)));
+		height:var(--m-icon-h, var(--t-icon-h, calc(var(--icon-h)*.09259vw)));
+		width:var(--m-icon-w, var(--t-icon-w, calc(var(--icon-w)*.09259vw)));
+	}
+}

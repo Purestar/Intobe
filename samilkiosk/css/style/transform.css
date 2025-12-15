@@ -10,7 +10,7 @@
 [style*="--tf-origin"]{
 	transform-origin:var(--tf-origin);
 }
-@media screen and (max-width:1024px){
+@media screen and (max-width:1080px){
 	[style*="--tf-trans"]{
 		translate:var(--t-tf-trans, var(--tf-trans));
 	}

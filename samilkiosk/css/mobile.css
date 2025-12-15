@@ -1,20 +1,26 @@
 @media (max-width:1080px) {
-	/* Icon */
-	.ic-menu-01:before { width: 12.5vw; height: 8.06vw; }
-	.ic-menu-02:before { width: 10.46vw; height: 9.44vw; }
-	.ic-menu-03:before { width: 15.83vw; height: 6.48vw; }
-	.ic-menu-04:before { width: 12.5vw; height: 8.24vw; }
-	.ic-menu-05:before { width: 14vw; height: 7.78vw; }
-	.ic-menu-06:before { width: 12.17vw; height: 4.57vw; }
+	/* Form */
+			.form-slt-btn-01 .part-slt-txt { width: 5.56vw; padding-bottom: 0.74vw; }
+			.form-slt-btn-01 .part-slt-txt:after { height: 0.19vw; }
 
-	.ic-info:before { width: 3.33vw; height: 3.33vw; }
-	.ic-faq:before { width: 3.52vw; height: 3.52vw; }
+	/* Title */
+		.tit-01 { font-size: 3.89vw; }
+		.tit-02 { font-size: 4.26vw; }
 
-	.main-menu { column-gap: 3.33vw; row-gap: 4.44vw; }
-	.main-home-inner { padding: 4.17vw; }
-	.main-menu > * { box-shadow: 0 0 0.93vw rgba(0, 0, 0, 0.17); border-radius: 1.85vw; width: 25.09vw; height: 27.78vw; font-size: 2.96vw; }
-	.main-menu [class*="ic-"] { height: 9.44vw; }
-	.main-quick-menu { column-gap: 3.15vw; margin-top: 4.63vw; }
-	.main-quick-menu > * { box-shadow: 0 0 0.93vw rgba(0, 0, 0, 0.17); border-radius: 1.85vw; width: 39.63vw; height: 11.20vw; font-size: 2.96vw; }
-	.main-quick-menu > * a { gap: 2.22vw; }
+	/* Page */
+		.main-menu { column-gap: 3.33vw; row-gap: 4.44vw; }
+		.main-home-inner { padding: 4.17vw; }
+		.main-menu > * { box-shadow: 0 0 0.93vw rgba(0, 0, 0, 0.17); border-radius: 1.85vw; width: 25.09vw; height: 27.78vw; font-size: 2.96vw; }
+		.main-menu [class*="ic-"] { height: 9.44vw; }
+		.main-quick-menu { column-gap: 3.15vw; margin-top: 4.63vw; }
+		.main-quick-menu > * { box-shadow: 0 0 0.93vw rgba(0, 0, 0, 0.17); border-radius: 1.85vw; width: 39.63vw; height: 11.20vw; font-size: 2.96vw; }
+		.main-quick-menu > * a { gap: 2.22vw; }
+
+		.seat-map { margin-top: 7.41vw; }
+		.seat-map .seat-door-wrap { height: 0.28vw; }
+		.seat-map [class*="seat-door-icon"] { width: 4.35vw; height: 4.17vw; }
+		.seat-map .seat-door-icon-01 { border-top-left-radius: 4.35vw; }
+		.seat-map .seat-blackboard { border-radius: 0.93vw; height: 5.56vw; font-size: 3.33vw; }
+		.seat-map .seat-group:before { border-radius: 0.19vw; height: 3.7vw; }
+		.seat-map .seat-group-chk { gap: 1.76vw; margin-top: 1.48vw; padding: 0 0.93vw; }
 }
