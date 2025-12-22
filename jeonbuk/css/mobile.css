@@ -152,7 +152,7 @@
 
 	/* Divider */
 		/* Horizontal */
-			.div-h-01 {--div-gap:6.94vw;}
+			.div-h-01 {--div-gap:6.94vw; --div-bg-c: #eaeaea; --div-h:1px;}
 			.div-h-02 {--div-gap:8.33vw;}
 			[class*="div-v-03"] {--div-h:2.36vw; --div-gap:2.08vw;}
 			.div-v-03-01 {--div-h:8.89vw;}
