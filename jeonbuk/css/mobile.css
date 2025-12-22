@@ -119,6 +119,8 @@
 			[class*="btn-sz-34"] {--btn-h:6.67vw; --btn-bd-r:6.67vw; --btn-pad-x:3.33vw; --btn-ft-s:2.78vw;}
 			.btn-sz-34-r {--btn-bd-r:2.22vw;}
 
+			[class*="btn-sz-40"] {--btn-h:8.89vw; --btn-bd-r:8.89vw; --btn-ft-s:3.33vw;}
+
 			.btn-sz-56 {--btn-bd-r:2.22vw; --btn-h:12.64vw; --btn-ft-s:3.89vw;}
 
 	/* Chip */
