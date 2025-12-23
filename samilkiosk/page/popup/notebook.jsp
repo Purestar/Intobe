@@ -4,7 +4,7 @@
 	<div class="part-wrap">
 		<div class="part-head"><h1 class="part-title">노트북 반납 확인</h1></div>
 		<div class="part-cont">
-			<div class="layout-center" style="--lay-ovf-a: hidden; height: 100%; --content-x:space-between;  --txt-a: center; --fx-d: column;">
+			<div class="layout-center" style="height: 100%; --content-x:space-between;  --txt-a: center; --fx-d: column;">
 				<div style="--mg-a: 0;"></div>
 				<div style="--mg-a: 0;">
 					<p style="--txt-s: 36;"><strong>사물함 {노트북장번호}에<br>노트북과 부속품을 반납하셨나요?</strong></p>

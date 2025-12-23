@@ -8,6 +8,12 @@
 		--box-bd-a-c: #e2e2e2;
 	}
 
+	.box-type-02 {
+		--box-bg-c: #f5f5f5;
+		--box-pd-a: 45;
+		--box-br-a: 16;
+	}
+
 /* Button */
 	[class*="btn-type"] {
 		--btn-min-h: 140;
@@ -156,7 +162,7 @@
 		--pop-head-txt-s: 36;
 		--pop-head-pd-l: 45;
 
-		--pop-cont-pd-x: 0;
+		--pop-cont-pd-x: 36;
 		--pop-cont-pd-y: 32;
 
 		--pop-foot-pd-x: 80;
