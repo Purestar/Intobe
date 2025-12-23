@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko" class="path">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta charset="utf-8">
+		<meta name="description" content="설명">
+		<meta name="viewport" content="width=device-width">
+		<title>프로젝트 명</title>
+
+		<!-- 실제 프로젝트 시 사용될 Resource -->
+		<link rel="stylesheet" href="../../css/common.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="../../css/plugin.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="../../css/layout.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="../../css/style.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="../../css/custom.css" type="text/css" media="screen" />
+		<script src="../../js/common.js"></script>
+		<script src="../../js/front.js"></script>
+
+		<!-- Path에서만 사용되는 Resource -->
+		<link rel="stylesheet" href="../common.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="../path.css" type="text/css" media="screen" />
+		<script src="../common.js"></script>
+		<script src="../path.js"></script>
+	</head>
+	<body class="bg sg-code-wrap">
+		<div class="sg-code">
+			<div class="sg-html">
+				<h1>Markup</h1>
+				<code>
+					<script type="text/plain" class="language-markup">
+						<!--
+							방향: col, row
+						-->
+						<div class="tbl-방향">
+							<div></div>
+							<div class="vt">Vertical Top</div>
+							<div class="vb">Vertical Bottom</div>
+						</div>
+
+						<div class="tbl-방향타입">
+							<div></div>
+							<div class="vt">Vertical Top</div>
+							<div class="vb">Vertical Bottom</div>
+						</div>
+					</script>
+				</code>
+			</div>
+			<div class="sg-css">
+				<h1>style.css</h1>
+				<pre><code class="language-css">
+					/* Table Layout */
+						[class*="tbl-"] {width:100%;}
+						[class*="tbl-"] > * {position:relative;}
+						[class*="tbl-"] > * > *:first-child {margin-top:0;}
+						[class*="tbl-"] > * > button {width:100%;}
+
+						[class*="tbl-col"] {display:table; table-layout:fixed;}
+						[class*="tbl-col"] > * {display:table-cell; vertical-align:middle;}
+						[class*="tbl-col"] > *:first-child {padding-left:0;}
+						[class*="tbl-col"] > *:last-child {padding-right:0;}
+
+						[class*="tbl-row"] > *:first-child {padding-top:0;}
+						[class*="tbl-row"] > *:last-child {padding-bottom:0;}
+				</code></pre>
+			</div>
+			<div class="sg-css">
+				<h1>custom.css</h1>
+				<pre><code class="language-css">
+					/* Table Layout */
+						.tbl-col01 > * {padding:0 20px;}
+				</code></pre>
+			</div>
+		</div>
+		<hr>
+
+		<h1>Table Layout</h1>
+		<div class="sg-code-block">
+			<div class="tbl-col">
+				<div>Align Left</div>
+				<div class="ac">Align Center</div>
+				<div class="ar">Align Right</div>
+			</div>
+		</div>
+		<div class="sg-code-block">
+			<div class="tbl-col">
+				<div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+				<div class="vt">Vertical Top</div>
+				<div class="vb">Vertical Bottom</div>
+			</div>
+		</div>
+		<div class="sg-code-block">
+			<div class="tbl-col">
+				<div class="vt ac">Vertical Top + Align Center</div>
+				<div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+				<div class="vb ar">Vertical Bottom + Align Right</div>
+			</div>
+		</div>
+		<div class="sg-code-block">
+			<div class="tbl-col vt">
+				<div>All Vertical Top</div>
+				<div>All Vertical Top</div>
+				<div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+			</div>
+		</div>
+		<div class="sg-code-block">
+			<div class="tbl-row">
+				<div>Contents</div>
+				<div>Contents</div>
+				<div>Contents</div>
+			</div>
+		</div>
+	</body>
+</html>

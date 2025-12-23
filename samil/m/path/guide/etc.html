@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko" class="path">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta charset="utf-8">
+		<meta name="description" content="설명">
+		<meta name="viewport" content="width=device-width">
+		<title>프로젝트 명</title>
+
+		<!-- 실제 프로젝트 시 사용될 Resource -->
+		<link rel="stylesheet" href="../../css/common.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="../../css/plugin.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="../../css/layout.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="../../css/style.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="../../css/custom.css" type="text/css" media="screen" />
+		<script src="../../js/common.js"></script>
+		<script src="../../js/front.js"></script>
+
+		<!-- Path에서만 사용되는 Resource -->
+		<link rel="stylesheet" href="../common.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="../path.css" type="text/css" media="screen" />
+		<script src="../common.js"></script>
+		<script src="../path.js"></script>
+	</head>
+	<body class="bg sg-code-wrap">
+		<h1>Accordion</h1>
+		<div class="sg-code-block bg-w">
+			<div class="aco-type01">
+				<div class="aco-wrap active">
+					<div class="aco-head">
+						<label class="chk-rdo01">
+							<input type="checkbox" name=""><span>Checkbox / 체크박스</span>
+						</label>
+						<button type="button" class="aco-ic-ct-btn"></button>
+					</div>
+					<div class="aco-cont">aaaa</div>
+				</div>
+				<div class="aco-wrap">
+					<div class="aco-head">
+						<label class="chk-rdo01">
+							<input type="checkbox" name=""><span>Checkbox / 체크박스</span>
+						</label>
+						<button type="button" class="aco-ic-ct-btn"></button>
+					</div>
+					<div class="aco-cont">aaaa</div>
+				</div>
+			</div>
+			
+			<div class="aco-type01">
+				<div class="aco-wrap">
+					<div class="aco-head">
+						<label class="chk-rdo01">
+							<input type="checkbox" name=""><span>Checkbox / 체크박스</span>
+						</label>
+						<button type="button" class="aco-ic-ct-btn"></button>
+					</div>
+					<div class="aco-cont">aaaa</div>
+				</div>
+				<div class="aco-wrap">
+					<div class="aco-head">
+						<label class="chk-rdo01">
+							<input type="checkbox" name=""><span>Checkbox / 체크박스</span>
+						</label>
+						<button type="button" class="aco-ic-ct-btn"></button>
+					</div>
+					<div class="aco-cont">aaaa</div>
+				</div>
+			</div>
+		</div>
+		
+		<h1>Box</h1>
+		<div class="sg-code-block bg-w">
+			<div class="box-type01 fx-jcsb">
+				box-type01
+				<div>
+					<label class="chk-rdo01">
+						<input type="checkbox" name=""><span>Checkbox / 체크박스</span>
+					</label>
+				</div>
+				<div>
+					<label class="chk-rdo01">
+						<input type="checkbox" name=""><span>Checkbox / 체크박스</span>
+					</label>
+				</div>
+			</div>
+			<div class="box-gry">
+				<p>box-gry</p>
+			</div>
+			<div class="box-b-gry">
+				<p>box-b-gry</p>
+			</div>
+		</div>
+		
+		<h1>Table</h1>
+		<div class="sg-code-block bg-w">
+			<table class="tbl-type01">
+				<colgroup>
+					<col style="width:114px;">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>제목</th>
+						<td>내용</td>
+					</tr>
+					<tr>
+						<th>아이디</th>
+						<td><input type="text"></td>
+					</tr>
+					<tr>
+						<th>발송수단</th>
+						<td>
+							<label class="chk-rdo02">
+								<input type="radio" name="a"><span>휴대전화</span>
+							</label>
+							<label class="chk-rdo02">
+								<input type="radio" name="a"><span>이메일</span>
+							</label>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<table class="tbl-type02">
+				<colgroup>
+					<col style="width:114px;">
+					<col>
+				</colgroup>
+				<thead>
+					<tr>
+						<th>Title</th>
+						<th>타이틀</th>
+					</tr>					
+				</thead>
+				<tbody>
+					<tr>
+						<td class="ac">
+							<label class="chk-rdo02 chk-rdo-sg">
+								<input type="radio" name=""><span></span>
+							</label>
+						</td>
+						<td>Text</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<div class="no-data">조회 결과 없음</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		
+		<h1>Vertical Bar</h1>
+		<div class="sg-code-block bg-w">
+			<div class="vbar-01">
+				<span>Background #aaa</span>
+				<span>Padding 10</span>
+				<span>Height 12</span>
+			</div>
+		</div>
+		<h1>File list</h1>
+		<div class="sg-code-block bg-w">
+			<ul class="file-list">
+				<li><span>filename.ext <em>(44kb)</em></span><button type="button" class="ic-del"><i class="sr-only">삭제</i></button></li>
+				<li><span>filename.ext <em>(44kb)</em></span><button type="button" class="ic-del"><i class="sr-only">삭제</i></button></li>
+				<li><span>filename.ext <em>(44kb)</em></span><button type="button" class="ic-del"><i class="sr-only">삭제</i></button></li>
+			</ul>
+		</div>
+	</body>
+</html>

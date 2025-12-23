@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko" class="path">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta charset="utf-8">
+		<meta name="description" content="설명">
+		<meta name="viewport" content="width=device-width">
+		<title>프로젝트 명</title>
+
+		<!-- 실제 프로젝트 시 사용될 Resource -->
+		<link rel="stylesheet" href="../../css/common.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="../../css/plugin.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="../../css/layout.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="../../css/style.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="../../css/custom.css" type="text/css" media="screen" />
+		<script src="../../js/common.js"></script>
+		<script src="../../js/front.js"></script>
+
+		<!-- Path에서만 사용되는 Resource -->
+		<link rel="stylesheet" href="../common.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="../path.css" type="text/css" media="screen" />
+		<script src="../common.js"></script>
+		<script src="../path.js"></script>
+	</head>
+	<body class="bg sg-code-wrap">
+		<h1>List Type 01</h1>
+		<div class="sg-code-block bg-w">
+			<ul class="brd-lst01" data-repeat="list">
+				<li>
+					<div class='thumb-01'>
+						<img src='http://via.placeholder.com/281x158'>
+						<i class='ic-favor active'></i>
+					</div>
+					<div class='brd-cont'>
+						<div>
+							<span class='brd-ctgr fc-pur'>공개교육</span>
+							<span class='bage-01-bgry'>On&amp;Off</span>
+							<span class='bage-01-bgry'>중급</span>
+						</div>
+						<h3 class='brd-tit'>[재경관리사]사례중심의 원가 관리회계실무</h3>
+						<p class='brd-price'><strong>1,300,000</strong>원</p>
+					</div>
+					<div class='brd-hover'>
+						<a href='#' class='btn-wht btn-sz04'>과정상세</a>
+						<a href='#' class='btn-sz04'>수강신청</a>
+					</div>
+				</li>
+			</ul>
+			<script>
+				/*
+					<li>
+						<div class='thumb-01'>
+							<img src='http://via.placeholder.com/281x158'>
+							<i class='ic-favor'></i>
+						</div>
+						<div class='brd-cont'>
+							<div>
+								<span class='brd-ctgr fc-pur'>공개교육</span>
+								<span class='bage-01-bgry'>On&amp;Off</span>
+								<span class='bage-01-bgry'>중급</span>
+							</div>
+							<h3 class='brd-tit'>[재경관리사]사례중심의 원가 관리회계실무</h3>
+							<p class='brd-price'><strong>1,300,000</strong>원</p>
+						</div>
+						<div class='brd-hover'>
+							<a href='#' class='btn-wht btn-sz04'>과정상세</a>
+							<a href='#' class='btn-sz04'>수강신청</a>
+						</div>
+					</li>
+				*/
+				
+				var list = "<li>";
+					list += "	<div class='thumb-01'>";
+					list += "		<img src='http://via.placeholder.com/281x158'>";
+					list += "		<i class='ic-favor'></i>";
+					list += "	</div>";
+					list += "	<div class='brd-cont'>";
+					list += "		<div>";
+					list += "			<span class='brd-ctgr fc-pur'>공개교육</span>";
+					list += "			<span class='bage-01-bgry'>On&amp;Off</span>";
+					list += "			<span class='bage-01-bgry'>중급</span>";
+					list += "		</div>";
+					list += "		<h3 class='brd-tit'>[재경관리사]사례중심의 원가 관리회계실무</h3>";
+					list += "		<p class='brd-price'><strong>1,300,000</strong>원</p>";
+					list += "	</div>";
+					list += "	<div class='brd-hover'>";
+					list += "		<a href='#' class='btn-wht btn-sz04'>과정상세</a>";
+					list += "		<a href='#' class='btn-sz04'>수강신청</a>";
+					list += "	</div>";
+					list += "</li>";
+					
+					$("[data-repeat='list']").contRpt(list, 5);
+			</script>
+		</div>
+	</body>
+</html>

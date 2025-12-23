@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ko" class="path">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta charset="utf-8">
+		<meta name="description" content="설명">
+		<meta name="viewport" content="width=device-width">
+		<title>삼일 아카데미</title>
+
+		<!-- 실제 프로젝트 시 사용될 Resource -->
+		<link rel="stylesheet" href="../css/common.css" type="text/css" />
+		<link rel="stylesheet" href="../css/plugin.css" type="text/css" />
+		<link rel="stylesheet" href="../css/layout.css" type="text/css" />
+		<link rel="stylesheet" href="../css/style.css" type="text/css" />
+		<link rel="stylesheet" href="../css/custom.css" type="text/css" />
+		<script src="../js/common.js"></script>
+
+		<!-- Path에서만 사용되는 Resource -->
+		<link rel="stylesheet" href="path.css" type="text/css" media="screen" />
+		<script src="path.js"></script>
+	</head>
+	<body class="fixed bg">
+		<header>
+			<h1><a href="index.html"></a></h1>
+			<button type="button" class="btn-panel">☰</button>
+			<!-- <p class="prj-proc">진행률 (<span class="prj-proc-num">0</span>%)</p> -->
+		</header>
+		<nav id="menu">
+			<ul>
+				<li class="ing">
+					<button data-src="../page/.jsp">로그인</button>
+					<ul>
+						<li class="com"><button data-src="../page/login.jsp">일반로그인</button></li>
+						<li class="del"><button data-src="../page/login02.jsp">일반로그인 B</button></li>
+						<li class=""><button data-src="../page/idfind.jsp">아이디찾기</button></li>
+						<li class=""><button data-src="../page/idinfo.jsp">아이디정보</button></li>
+						<li class=""><button data-src="../page/pwfind.jsp">비밀번호찾기</button></li>
+						<li class=""><button data-src="../page/pwinfo.jsp">비밀번호정보</button></li>
+					</ul>
+				</li>
+				<li class="com"><button data-src="../page/main.jsp">메인</button></li>
+				<li class="">
+					<button data-src="../page/.jsp">회원가입</button>
+					<ul>
+						<li class=""><button data-src="../page/termagree.jsp">가입동의</button></li>
+						<li class=""><button data-src="../page/termagree02.jsp">본인인증</button></li>
+						<li class=""><button data-src="../page/termagree03.jsp">회원정보입력</button></li>
+						<li class=""><button data-src="../page/termagree04.jsp">가입완료</button></li>
+						<li class=""><button data-src="../page/termagree05.jsp">휴면계정</button></li>
+						<li class=""><button data-src="../page/termagree06.jsp">잠김계정</button></li>
+					</ul>
+				</li>
+				<li class="">
+					<button data-src="../page/.jsp">My Page</button>
+					<ul>
+						<li class="com"><button data-src="../page/mypage_main.jsp">My Page 메인</button></li>
+						<li class="com">
+							<button data-src="">신청현황</button>
+							<ul>
+								<li class="com"><button data-src="../page/mypage_appstat.jsp">나의학습</button></li>
+								<li class="com"><button data-src="../page/mypage_studing.jsp">학습중</button></li>
+								<li class="com"><button data-src="../page/mypage_comp.jsp">학습완료</button></li>
+								<li class="com"><button data-src="../page/mypage_canret.jsp">취소반려</button></li>
+							</ul>
+						</li>
+						<li class="del">
+							<button data-src="../page/.jsp">학습관리</button>
+							<ul>
+								<li class="del"><button data-src="../page/mypage_schedule.jsp">나의일정 - 스케쥴표보기</button></li>
+								<li class="del"><button data-src="../page/mypage_stualm.jsp">학습알림</button></li>
+								<li class="del"><button data-src="../page/mypage_wishlist.jsp">찜리스트</button></li>
+								<li class="del"><button data-src="../page/mypage_attention.jsp">관심분야</button></li>
+							</ul>
+						</li>
+						<li class="del">
+							<button data-src="../page/.jsp">환급증빙서류</button>
+							<ul>
+								<li class="del"><button data-src="../page/mypage_tratrucon.jsp">훈련위탁계약서 제출</button></li>
+								<li class="del"><button data-src="../page/mypage_refpayhis.jsp">환급금 지급 내역</button></li>
+							</ul>
+						</li>
+						<li class="">
+							<button data-src="../page/.jsp">결제배송내역</button>
+							<ul>
+								<li class="com"><button data-src="../page/mypage_payhis02.jsp">결제/환불 대기 내역</button></li>
+								<li class="com"><button data-src="../page/mypage_payhis.jsp">결제/환불 내역</button></li>
+								<li class=""><button data-src="../page/mypage_delihis.jsp">도서배송 내역</button></li>
+							</ul>
+						</li>
+						<li class=""><button data-src="../page/qnaL.jsp">Q&A - 목록</button></li>
+						<li class=""><button data-src="../page/myinfo.jsp">개인정보 수정</button></li>
+						<li class="ing">
+							<button data-src="../page/myclass_main.jsp">학습방</button>
+							<ul>
+								<li class=""><button data-src="../page/myclass_main.jsp#section01">학습 - 목록</button></li>
+								<li class=""><button data-src="../page/myclass_main.jsp#section02">평가 - 목록</button></li>
+								<li class=""><button data-src="../page/myclass_main.jsp#section03">과제 - 목록</button></li>
+								<li class=""><button data-src="../page/myclass_main.jsp#section04">설문 - 목록</button></li>
+								<li class=""><button data-src="../page/myclass_main.jsp#section05">공지사항 - 목록</button></li>
+								<li class=""><button data-src="../page/myclass_main.jsp#section05">게시판 - 목록</button></li>
+								<li class=""><button data-src="../page/myclass_main.jsp#section05">토론 - 목록</button></li>
+								<li class=""><button data-src="../page/myclass_main.jsp#section05">자료실 - 목록</button></li>
+								<li class=""><button data-src="../page/myclass_main.jsp#section05">Q&A - 목록</button></li>
+								<li class=""><button data-src="../page/myclass_main.jsp#section05">용어사전</button></li>
+							</ul>
+						</li>
+						<li class="ing"><button data-src="../page/myclass_main02.jsp">학습방(오프라인)</button></li>
+					</ul>
+				</li>
+				<li class="">
+					<button data-src="../page/.jsp">수강안내</button>
+					<ul>
+						<li class="com"><button data-src="../page/cyber_guide01.jsp">학습이용절차</button></li>
+						<li class="com"><button data-src="../page/cyber_guide02.jsp">고용보험환급절차</button></li>
+						<li class="com"><button data-src="../page/cyber_guide03.jsp">수강신청안내</button></li>
+						<li class=""><button data-src="../page/cyber_guide04.jsp">유의사항 및 수료기준</button></li>
+					</ul>
+				</li>
+				<li class="com">
+					<button data-src="">기업맞춤형교육</button>
+					<ul>
+						<li class="com"><button data-src="../page/busin_study01.jsp">기업맞춤형교육</button></li>
+						<li class="com"><button data-src="../page/busin_study02.jsp">게임으로배우는회계</button></li>
+						<li class="com"><button data-src="../page/busin_study03.jsp">내부회계관리제도교육과정</button></li>
+						<li class="com"><button data-src="../page/busin_study04.jsp">맞춤형프로그램</button></li>
+						<li class="com"><button data-src="../page/busin_study05.jsp">메타버스러닝</button></li>
+					</ul>
+				</li>
+				<li>
+					<button data-src="../page/.jsp">회사 소개</button>
+					<ul>
+						<li class="com"><button data-src="../page/introduce.jsp">삼일아카데미는</button></li>
+						<li class="com"><button data-src="../page/mvision.jsp">미션&비전</button></li>
+						<li class="com"><button data-src="../page/history_l.jsp">연혁</button></li>
+						<li class="com"><button data-src="../page/careers.jsp">Careers</button></li>
+						<li class="com"><button data-src="../page/studyroom_info.jsp">강의장소개</button></li>
+						<li class="del"><button data-src="../page/coronation.jsp">강의장소개 - 대관 문의하기</button></li>
+					</ul>
+				</li>
+				<li class="com">
+					<button data-src="../page/.jsp">고객센터</button>
+					<ul>
+						<li class="com"><button data-src="../page/noticeL.jsp">공지사항/이벤트 - 목록</button></li>
+						<li class="com"><button data-src="../page/faq.jsp">FAQ</button></li>
+						<li class="com"><button data-src="../page/onebyone.jsp">1:1 문의 - 목록</button></li>
+						<li class="del"><button data-src="../page/onebyone02.jsp">1:1 원격지원요청 - 목록</button></li>
+						<li class=""><button data-src="../page/sitemap.jsp">Site Map</button></li>
+					</ul>
+				</li>
+				<li class="">
+					<button data-src="../page/.jsp">전체과정</button>
+					<ul>
+						<li class="del"><button data-src="../page/pro_l.jsp">LNB + 목록</button></li>
+						<li class="com"><button data-src="../page/mstu_l.jsp">월별교육일정</button></li>
+						<li class="ing"><button data-src="../page/pro_l02.jsp">과정목록 이미지</button></li>
+						<li class=""><button data-src="../page/pro_l03.jsp">과정목록 리스트</button></li>
+						<li class="com"><button data-src="../page/pro_v.jsp">과정상세(온라인)</button></li>
+						<li class="com"><button data-src="../page/pro_v02.jsp">과정상세(오프라인)</button></li>
+						<li class="">
+							<button data-src="">수강신청</button>
+							<ul>
+								<li class=""><button data-src="../page/enrolment01.jsp">(환급)수강신청 동의</button></li>
+								<li class=""><button data-src="../page/enrolment02.jsp">(환급)수강정보 확인</button></li>
+								<li class=""><button data-src="../page/enrolment03.jsp">(환급)수강신청 결제</button></li>
+								<li class=""><button data-src="../page/enrolment04.jsp">(환급)수강정보 완료</button></li>
+								<li class=""><button data-src="../page/enrolmentbasic01.jsp">(비환급)수강신청 동의</button></li>
+								<li class=""><button data-src="../page/enrolmentbasic02.jsp">(비환급)수강정보 확인</button></li>
+								<li class=""><button data-src="../page/enrolmentbasic03.jsp">(비환급)수강신청 결제</button></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="com">
+					<button data-src="../page/.jsp">S-TV</button>
+					<ul>
+						<li class="com"><button data-src="../page/stv_main.jsp">서브메인</button></li>
+						<li class="com"><button data-src="../page/stv_l.jsp">Trends - 목록</button></li>
+						<li class="com"><button data-src="../page/stv_v.jsp">Trends - 상세</button></li>
+						<li class="com"><button data-src="../page/stv_l.jsp">Business - 목록</button></li>
+						<li class="com"><button data-src="../page/stv_v.jsp">Business - 상세</button></li>
+						<li class="com"><button data-src="../page/stv_l.jsp">Issues - 목록</button></li>
+						<li class="com"><button data-src="../page/stv_v.jsp">Issues - 상세</button></li>
+					</ul>
+				</li>
+				<li class="com">
+					<button data-src="../page/expert_main.jsp">전문가라운지</button>
+					<ul>
+						<li class="com"><button data-src="../page/expert_main.jsp">전문가라운지 메인</button></li>
+						<li class="com"><button data-src="../page/expert_l.jsp">전문가라운지 상세</button></li>
+						<li class="com"><button data-src="../page/expert_v.jsp">전문가라운지 상세 자료실</button></li>
+					</ul>
+				</li>
+				<li class="">
+					<button data-src="../page/.jsp">강사</button>
+					<ul>
+						<li class=""><button data-src="../page/qna.jsp">Q&A</button></li>
+						<li class=""><button data-src="../page/Tmyinfo.jsp">나의정보</button></li>
+						<li class=""><button data-src="../page/TmyinfoW.jsp">나의정보수정</button></li>
+						<li class=""><button data-src="../page/app_mark.jsp">평가&과제채점</button></li>
+						<li class=""><button data-src="../page/app_mark_adm.jsp">평가채점관리</button></li>
+						<li class=""><button data-src="../page/app_mark_rlt.jsp">평가채점결과</button></li>
+						<li class=""><button data-src="../page/hw_mark_adm.jsp">과제채점관리</button></li>
+						<li class=""><button data-src="../page/hw_mark_rlt.jsp">과제채점결과</button></li>
+					</ul>
+				</li>
+				<li class="">
+					<button data-src="../page/.jsp">ASP</button>
+					<ul>
+						<li class=""><button data-src="../page/aspmain_a.jsp">메인 타입 A</button></li>
+						<li class=""><button data-src="../page/aspmain_b.jsp">메인 타입 B</button></li>
+						<li class=""><button data-src="../page/aspmain_c.jsp">메인 타입 C</button></li>
+						<li class=""><button data-src="../page/asp_sub.jsp">과정안내/수강신청</button></li>
+					</ul>
+				</li>
+				<li>
+					<button data-src="../page/.jsp">기타</button>
+					<ul>
+						<li class=""><button data-src="../page/termcon.jsp">이용약관</button></li>
+						<li class=""><button data-src="../page/.jsp">개인정보처리방침</button></li>
+						<li class=""><button data-src="../page/emailterm.jsp">이메일주소 무단수집 거부</button></li>
+						<li class="com"><button data-src="../page/yearmempolicy.jsp">연간회원제도 - 소개 및 문의</button></li>
+						<li class="del"><button data-src="../page/yearmempolicyW.jsp">연간회원제도 - 문의하기</button></li>
+						<li class="com"><button data-src="../page/location.jsp">오시는 길</button></li>
+						<li class=""><button data-src="../page/.jsp">Contact us</button></li>
+						<li class=""><button data-src="../page/.jsp">일시적 시스템 오류</button></li>
+						<li class=""><button data-src="../page/error.jsp">비정상적인 경로 접근 오류</button></li>
+						<li class=""><button data-src="../page/.jsp">서비스 점검중</button></li>
+						<li class="del"><button data-src="../page/email.html">이메일</button></li>
+						<li class=""><button data-src="../page/search_detail.jsp">통합검색</button></li>
+					</ul>
+				</li>
+				<li class=""><button data-src="../page/popup.jsp">팝업</button></li>
+			</ul>
+			<ul>
+				<li class=""><button data-src="../page/layout.jsp">Layout</button></li>
+				<li class=""><button data-src="./guide/badge.html">Badge</button></li>
+				<li class=""><button type="button" data-src="./guide/button.html">Button</button></li>
+				<li class=""><button data-src="./guide/board.html">Board</button></li>
+				<li class=""><button type="button" data-src="./guide/form.html">Form</button></li>
+				<li class=""><button type="button" data-src="./guide/popup.jsp">Popup</button></li>
+				<li class=""><button data-src="./guide/tab-menu.html">Tab Menu</button></li>
+				<li class=""><button type="button" data-src="./guide/text.html">Title / Paragraph</button></li>
+				<li class=""><button type="button" data-src="./guide/etc.html">기타</button></li>
+				<!--<li class=""><button data-src="../page/sublayout.jsp">Sub Layout Type01</button></li>
+				<li class=""><button data-src="../page/sublayout02.jsp">Sub Layout Type02</button></li>
+				<li class=""><button type="button" data-src="./guide/align.html">Align</button></li>
+
+
+				<li class=""><button type="button" data-src="./guide/icon.html">Icon</button></li>
+
+
+				<li class=""><button type="button" data-src="./guide/thumb.html">Thumbnail</button></li>
+
+				-->
+			</ul>
+		</nav>
+		<section id="container">
+			<p class="this-address"><a href="#" target="blank"></a></p>
+			<iframe src="" title="작업 화면">화면 (Ajax처리)</iframe>
+		</section>
+		<footer>
+			<div class="footer-in">
+				<span class="footer-btn-group">
+					<button type="button" data-btn="menu">PC</button>
+					<button type="button" data-btn="menu">Guide</button>
+				</span>
+				<span class="footer-btn-group">
+					<button type="button" data-btn="size">320</button>
+					<button type="button" data-btn="size">768</button>
+					<button type="button" data-btn="size">1280</button>
+					<button type="button" data-btn="size">100%</button>
+				</span>
+				<span class="footer-btn-group">
+					<button type="button" data-btn="chk" class="active">레이아웃 고정</button>
+				</span>
+			</div>
+		</footer>
+	</body>
+</html>

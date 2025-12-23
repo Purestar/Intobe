@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ko" class="path">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta charset="utf-8">
+		<meta name="description" content="설명">
+		<meta name="viewport" content="width=device-width">
+		<title>프로젝트 명</title>
+
+		<!-- 실제 프로젝트 시 사용될 Resource -->
+		<link rel="stylesheet" href="../../css/common.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="../../css/plugin.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="../../css/layout.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="../../css/style.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="../../css/custom.css" type="text/css" media="screen" />
+		<script src="../../js/common.js"></script>
+		<script src="../../js/front.js"></script>
+
+		<!-- Path에서만 사용되는 Resource -->
+		<link rel="stylesheet" href="../common.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="../path.css" type="text/css" media="screen" />
+		<script src="../common.js"></script>
+		<script src="../path.js"></script>
+	</head>
+	<body class="bg sg-code-wrap">
+		<!--<div class="sg-code">
+			<div class="sg-html">
+				<h1>Markup</h1>
+				<code>
+					<script type="text/plain" class="language-markup">
+						<div class="tab-wrap">
+							<ul class="tab-menu">
+								<li><button type="button">1</button></li>
+								<li><button type="button">2</button></li>
+								<li><button type="button">3</button></li>
+							</ul>
+							<div class="tab-cont">
+								<div>1</div>
+								<div>2</div>
+								<div>3</div>
+							</div>
+						</div>
+					</script>
+				</code>
+			</div>
+			<div class="sg-css">
+				<h1>CSS (Old)</h1>
+				<pre><code class="language-css">
+					/* Tab Menu */
+						[class*="tab-wrap"] {position:relative;}
+						[class*="tab-wrap"] [class*="tab-cont"] > * {display:none;}
+						[class*="tab-wrap"] [class*="tab-cont"] > *.active {display:block;}
+						[class*="tab-wrap"] [class*="tab-cont"] > * > *:first-child {margin-top:0;}
+
+						[class*="tab-menu"] {display:table; table-layout:fixed; width:100%; text-align:center;}
+						[class*="tab-menu"] > * {display:table-cell;}
+						[class*="tab-menu"] > * > * {width:100%;}
+						[class*="tab-menu"].tab-equ-a > * {float:left;}
+				</code></pre>
+			</div>
+			<div class="sg-css">
+				<h1>CSS (Flex)</h1>
+				<pre><code class="language-css">
+					/* Tab Menu */
+						[class*="tab-wrap"] {position:relative;}
+						[class*="tab-wrap"] [class*="tab-cont"] > * {display:none;}
+						[class*="tab-wrap"] [class*="tab-cont"] > *.active {display:block;}
+						[class*="tab-wrap"] [class*="tab-cont"] > * > *:first-child {margin-top:0;}
+
+						[class*="tab-menu"] {display:flex; text-align:center;}
+						[class*="tab-menu"] > * {flex:1;}
+						[class*="tab-menu"] > * > * {width:100%;}
+						[class*="tab-menu"].tab-equ-a > * {flex:inherit;}
+				</code></pre>
+			</div>
+			<div class="sg-js">
+				<h1>Script</h1>
+				<pre class="language-js"><code>
+				// Tab UI
+				$.fn.tabUI = function (options) {
+					var $obj = $(this),
+						$wrap, $cont, $menu,
+
+						idx
+					;
+
+					// Init
+					var init = $.extend({
+						startTab: 1
+					}, options);
+
+					$obj.hasAttr($obj, "data-acting");
+
+					if (!hasAttr) {
+						$obj.attr("data-acting", "");
+						$obj.on("click", "[class*='tab-menu'] button", function () {
+							if ($(this).parent().hasClass("active")) {return false;};
+
+							$wrap = $(this).closest(".tab-wrap");
+							$cont = $wrap.find("> .tab-cont");
+							$menu = $(this).closest("ul");
+							idx = $(this).parent().index();
+
+							$menu.find("li").removeClass("active").eq(idx).addClass("active");
+							$cont.find("> *").removeClass("active").eq(idx).addClass("active");
+						});
+
+						$obj.find("[class*='tab-menu']").each(function () {
+							$("li", this).eq(init.startTab-1).find("button").trigger("click");
+						});
+					};
+				};
+				</code></pre>
+			</div>
+		</div>
+		<hr>-->
+
+		<h1>탭메뉴</h1>
+		<div class="sg-html">
+			<code>
+				<script type="text/plain" class="language-markup">
+					<ul class="tab-menu01">
+						<li class="active"><a href="#">Tab Menu / 탭메뉴</a></li>
+						<li><a href="#">Tab Menu / 탭메뉴</a></li>
+						<li><a href="#">Tab Menu / 탭메뉴</a></li>
+					</ul>
+				</script>
+			</code>
+		</div>
+		<div class="sg-code-block bg-w">
+			<ul class="tab-menu01">
+				<li class="active"><a href="#">Tab Menu / 탭메뉴</a></li>
+				<li><button type="button">Tab Menu / 탭메뉴</button></li>
+				<li><a href="#">Tab Menu / 탭메뉴</a></li>
+			</ul>
+		</div>
+<!--
+		<h1>메뉴 자동 넓이</h1>
+		<div class="sg-code-block">
+			<div class="tab-wrap">
+				<ul class="tab-menu tab-equ-a">
+					<li><button type="button">1</button></li>
+					<li><button type="button">2</button></li>
+					<li><button type="button">3</button></li>
+				</ul>
+				<div class="tab-cont">
+					<div>1</div>
+					<div>2</div>
+					<div>3</div>
+				</div>
+			</div>
+		</div>
+		<code>
+			<script type="text/plain" class="language-markup">
+				...
+					<ul class="tab-menu tab-equ-a">
+				...
+			</script>
+		</code>
+
+		<h1>중첩 테스트</h1>
+		<div class="sg-code-block">
+			<div class="tab-wrap">
+				<ul class="tab-menu">
+					<li><button type="button">1</button></li>
+					<li><button type="button">2</button></li>
+					<li><button type="button">3</button></li>
+				</ul>
+				<div class="tab-cont">
+					<div>
+						<div class="tab-wrap">
+							<ul class="tab-menu tab-equ-a">
+								<li><button type="button">1-1</button></li>
+								<li><button type="button">1-2</button></li>
+								<li><button type="button">1-3</button></li>
+							</ul>
+							<div class="tab-cont">
+								<div>1-1</div>
+								<div>1-2</div>
+								<div>1-3</div>
+							</div>
+						</div>
+					</div>
+					<div>2</div>
+					<div>3</div>
+				</div>
+			</div>
+		</div>
+
+		<h1>링크탭</h1>
+		<div class="sg-code-block">
+			<ul class="tab-menu">
+				<li><a href="#" target="_blank">1</a></li>
+				<li><a href="http://www.naver.com/" target="_blank">2</a></li>
+				<li><a href="#" target="_blank">3</a></li>
+			</ul>
+		</div>
+
+		<h1>시작 탭</h1>
+		<div class="sg-code-block">
+			<div class="tab-wrap case01">
+				<ul class="tab-menu tab-equ-a">
+					<li><button type="button">1</button></li>
+					<li><button type="button">2</button></li>
+					<li><button type="button">3</button></li>
+				</ul>
+				<div class="tab-cont">
+					<div>1</div>
+					<div>2</div>
+					<div>3</div>
+				</div>
+			</div>
+		</div>
+		<pre class="language-js"><code>
+			$(".case01").tabUI({
+				startTab: 3
+			});
+		</code></pre>
+		<script>
+			$(function () {
+				$(".case01").tabUI({
+					startTab: 3
+				});
+			});
+		</script>
+
+		<h1>스타일</h1>
+		<div class="sg-code-block">
+			<div class="tab-wrap">
+				<ul class="tab-menu">
+					<li><button type="button">1</button></li>
+					<li><button type="button">2</button></li>
+					<li><button type="button">3</button></li>
+				</ul>
+				<div class="tab-cont">
+					<div>1</div>
+					<div>2</div>
+					<div>3</div>
+				</div>
+			</div>
+		</div>-->
+	</body>
+</html>
