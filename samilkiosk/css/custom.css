@@ -77,6 +77,13 @@
 		.form-slt-btn-01 input:checked+.part-slt-txt:after { background-color: white; }
 		.form-slt-btn-01 input:disabled+.part-slt-txt:after { background-color: var(--form-dis-bd-a-c); }
 
+		.form-slt-btn-02 {
+			--form-h: 72;
+			--form-chk-bg-c: #e8e8e8;
+			--form-chk-bd-a-c: #e2e2e2;
+			--form-chk-txt-c: black;
+		}
+
 /* Icon */
 	.ic-menu-01 { --icon-w: 135; --icon-h: 87; }
 	.ic-menu-02 { --icon-bg-pos-x: var(--bp-150); --icon-w: 113; --icon-h: 102; }
