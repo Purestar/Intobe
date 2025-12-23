@@ -64,10 +64,10 @@
 	--valid-bdr:#1b680c;
 	--invalid-bg:#fff;
 	--invalid-bdr:#ff0048;
-	--fom-h:48;
-	--fom-br:8;
+	--fom-h:100;
+	--fom-br:18;
 	--fom-pad:var(--init-txt-s);
-	--fom-fs:var(--init-txt-s);
+	--fom-fs:30;
 	--fom-bg:#fff;
 	--fom-bdr-c:#e2e2e2;
 	--fom-fcs-brd-c:var(--moc);

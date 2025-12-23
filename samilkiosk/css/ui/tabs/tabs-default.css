@@ -18,6 +18,21 @@
 	place-items:center;
 	white-space:nowrap;
 }
+[class*=tab-menu].tab-equal>*{
+	flex:1;
+}
+[class*=tab-menu].tab-equal>*>*{
+	width: 100%;
+	justify-content:center;
+}
 [class*=tab-wrap].tab-scroll-menu [class*=tab-menu]{
 	flex-wrap:nowrap;
+}
+
+[class*=tab-wrap] > [class*=tab-cont]>*{
+	display:none;
+}
+
+[class*=tab-wrap] > [class*=tab-cont]>*.active{
+	display:block;
 }

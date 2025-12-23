@@ -1,4 +1,4 @@
-[class*=tab-wrap]{
+[class*=tab-menu]{
 	--tab-menu-gap-x:0;
 	--tab-menu-gap-y:0;
 	--tab-btn-br-a:0;
@@ -6,6 +6,9 @@
 	--tab-btn-over-txt-c:#fff;
 	--tab-btn-active-bg-c:var(--tab-btn-over-bg-c);
 	--tab-btn-active-txt-c:var(--tab-btn-over-ft-c);
+}
+
+[class*=tab-wrap]{
 	--tab-cont-pd-x:var(--tab-cont-pd-a);
 	--tab-cont-pd-y:var(--tab-cont-pd-a);
 }
@@ -28,7 +31,8 @@
 	background-color:var(--tab-btn-over-bg-c);
 	color:var(--tab-btn-over-txt-c);
 }
-[class*=tab-menu]>[data-state=active]>*{
+[class*=tab-menu]>[data-state=active]>*,
+[class*=tab-menu]>*.active>*{
 	background-color:var(--tab-btn-active-bg-c);
 	color:var(--tab-btn-active-txt-c);
 }
@@ -56,7 +60,8 @@
 		background-color:var(--t-tab-btn-over-bg-c, var(--tab-btn-over-bg-c));
 		color:var(--t-tab-btn-over-txt-c, var(--tab-btn-over-txt-c));
 	}
-	[class*=tab-menu]>[data-state=active]>*{
+	[class*=tab-menu]>[data-state=active]>*,
+	[class*=tab-menu]>*.active>*{
 		background-color:var(--t-tab-btn-active-bg-c, var(--tab-btn-active-bg-c));
 		color:var(--t-tab-btn-active-txt-c, var(--tab-btn-active-txt-c));
 	}
@@ -85,7 +90,8 @@
 		background-color:var(--m-tab-btn-over-bg-c, var(--t-tab-btn-over-bg-c, var(--tab-btn-over-bg-c)));
 		color:var(--m-tab-btn-over-txt-c, var(--t-tab-btn-over-txt-c, var(--tab-btn-over-txt-c)));
 	}
-	[class*=tab-menu]>[data-state=active]>*{
+	[class*=tab-menu]>[data-state=active]>*,
+	[class*=tab-menu]>*.active>*{
 		background-color:var(--m-tab-btn-active-bg-c, var(--t-tab-btn-active-bg-c, var(--tab-btn-active-bg-c)));
 		color:var(--m-tab-btn-active-txt-c, var(--t-tab-btn-active-txt-c, var(--tab-btn-active-txt-c)));
 	}
