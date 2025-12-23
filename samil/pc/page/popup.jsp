@@ -77,6 +77,9 @@
 	<button type="button" class="btn-sz03" data-tta="midsave">중간저장</button>
 	<button type="button" class="btn-sz03" data-tta="subms04">제출하기</button>
 
+	<h1 class="tit-02 mt30">251223 추가</h1>
+	<button type="button" class="btn-sz03" data-tta="payment">영수증</button>
+
 </div>
 
 <%@ include file="pop_pwchg.jsp" %> <!-- 비밀번호 변경 -->
