@@ -144,13 +144,13 @@
 		--pop-br-a: 0;
 
 		--pop-head-bg-c: white;
-		--pop-head-min-h: 109;
+		--pop-head-min-h: 108;
 		--pop-head-txt-c: black;
 		--pop-head-txt-s: 36;
 		--pop-head-pd-l: 45;
 
 		--pop-cont-pd-x: 0;
-		--pop-cont-pd-y: 0;
+		--pop-cont-pd-y: 32;
 
 		--pop-foot-pd-x: 80;
 		--pop-foot-h: 220;
@@ -169,6 +169,7 @@
 	}
 
 	.pop-type-02 .part-wrap { height: 100dvh; }
+	.pop-type-02 .part-head { border-bottom: 1px solid #e2e2e2; }
 
 	.pop-type-alert {
 		--pop-w: 908;
