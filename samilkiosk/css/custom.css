@@ -139,6 +139,37 @@
 	.pop-type-01 .part-foot { background:#f5f5f5; }
 	.pop-type-01 .part-foot [class*="btn-type"] { flex: 1; }
 
+	.pop-type-02 {
+		--pop-w: 1080;
+		--pop-br-a: 0;
+
+		--pop-head-bg-c: white;
+		--pop-head-min-h: 109;
+		--pop-head-txt-c: black;
+		--pop-head-txt-s: 36;
+		--pop-head-pd-l: 45;
+
+		--pop-cont-pd-x: 0;
+		--pop-cont-pd-y: 0;
+
+		--pop-foot-pd-x: 80;
+		--pop-foot-h: 220;
+		--pop-foot-gap-a: 23;
+		--pop-bd-a-w: 0;
+
+		--pop-cont-txt-s: 36;
+
+		--pop-close-wrap-w: var(--pop-head-min-h);
+
+		--pop-max-h-unit: 100dvh;
+
+		--pop-close-not-head-bg-pos-x: -150;
+		--pop-close-w: 30;
+		--pop-close-h: 30;
+	}
+
+	.pop-type-02 .part-wrap { height: 100dvh; }
+
 	.pop-type-alert {
 		--pop-w: 908;
 		--pop-br-a: 20;
