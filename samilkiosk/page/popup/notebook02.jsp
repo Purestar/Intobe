@@ -1,5 +1,5 @@
 <%@ page contentType ="text/html; charset=UTF-8" %>
-<div class="pop-type-02 active" data-ttatg="notebook02">
+<div class="pop-type-02" data-ttatg="notebook02">
 	<div class="part-overlay" data-aria-hidden="true"></div>
 	<div class="part-wrap">
 		<div class="part-cont">

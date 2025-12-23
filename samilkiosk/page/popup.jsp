@@ -13,6 +13,8 @@
 					<button type="button" class="btn-type" data-tta="end">이미 종료</button>
 					<button type="button" class="btn-type" data-tta="notebook">노트북 반납 확인</button>
 					<button type="button" class="btn-type" data-tta="notebook02">노트북 반납 완료</button>
+					<button type="button" class="btn-type" data-tta="qr">QR 출결</button>
+					<button type="button" class="btn-type" data-tta="reason">사유서 등록</button>
 				</div>
 			</div>
 		</div>
@@ -28,5 +30,7 @@
 <%@ include file="./popup/end.jsp" %>
 <%@ include file="./popup/notebook.jsp" %>
 <%@ include file="./popup/notebook02.jsp" %>
+<%@ include file="./popup/qr.jsp" %>
+<%@ include file="./popup/reason.jsp" %>
 
 <%@ include file="../inc/footer.jsp" %>

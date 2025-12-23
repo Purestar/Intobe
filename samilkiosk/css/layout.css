@@ -5,7 +5,7 @@ body {display:flex; flex-direction:column; flex-wrap:nowrap; justify-content:spa
 .h-wrap .h-datetime { font-size: 29px; text-align: center; }
 .h-wrap .h-datetime strong { font-size: 36px; }
 
-.h-wrap-02 { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e2e2e2; height: 107px; padding: 0 36px; }
+.h-wrap-02 { display: flex; justify-content: space-between; align-items: center; background: white; border-bottom: 1px solid #e2e2e2; height: 107px; padding: 0 36px; }
 .h-wrap-02 .h-tit { display: flex; align-items: center; gap: 16px; font-size: 36px; font-weight: 700; }
 .h-wrap-02 .h-tit [class*="ic-"] { display: flex; }
 

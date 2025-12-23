@@ -46,15 +46,54 @@
 		--btn-txt-c: black;
 	}
 
+	.btn-type-b-blk {
+		--btn-bd-a-c: #black;
+		--btn-txt-c: black;
+	}
+
 	.btn-sz-48-r {
 		--btn-min-h: 48;
 		--btn-br-a: 48;
 		--btn-txt-s: 20;
 	}
 
+	.btn-sz-72 {
+		--btn-min-h: 72;
+		--btn-txt-s: 28;
+	}
+
+	.btn-sz-90 {
+		--btn-min-h: 90;
+		--btn-txt-s: 30;
+	}
+
 	.btn-sz-100 {
 		--btn-min-h: 100;
 		--btn-txt-s: 32;
+	}
+
+/* Chip */
+	[class*="chip-type-01"] {
+		--chip-txt-s: 24;
+		--chip-pd-x: 18;
+		--chip-h: 40;
+		--chip-br-a: 40;
+	}
+
+	[class*="chip-type-01-b"] {
+		--chip-bg-c: white;
+		--chip-bd-w: 2;
+		--chip-txt-c: #666;
+	}
+
+	.chip-type-01-gry {
+		--chip-bg-c: #f5f5f5;
+		--chip-bd-a-c: #f5f5f5;
+		--chip-txt-c: black;
+	}
+
+	.chip-type-01-b-gry {
+		--chip-bd-a-c: #ccc;
 	}
 
 /* Form */
@@ -64,6 +103,14 @@
 			--form-h: 40;
 			--form-br-a: 8;
 			--form-txt-s: 32;
+		}
+
+		.form-slt-chk-02 {
+			--form-w: 34;
+			--form-h: 34;
+			--form-txt-s: 24;
+			--form-chk-w: 22;
+			--form-chk-h: 17;
 		}
 
 		.form-slt-btn-01 {
@@ -114,6 +161,18 @@
 
 	.ic-l-arr { --icon-bg-pos-y: var(--bp-950); --icon-w: 18; --icon-h: 30; }
 	.ic-r-arr { --icon-bg-pos-x: var(--bp-50); --icon-bg-pos-y: var(--bp-950); --icon-w: 9; --icon-h: 15; }
+
+/* List */
+	.lst-01 { display: flex; flex-direction: column; }
+
+/* Marker */
+	/* Vertical */
+		.mark-v-bar-01 {
+			--mark-gap-x: 12;
+			--mark-bg-c: #e2e2e2;
+			--mark-h: 16;
+			--mark-item-gap-x: 12;
+		}
 
 /* Popup */
 	[class*="pop-type"] { display: none; }
