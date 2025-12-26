@@ -1864,3 +1864,8 @@
 	.consulting-lst .consulting-type05 [class*="bul-sqa"]:before {background-position:-500px -650px; width:66px; height:65px;}
 	.consulting-lst .consulting-type06 [class*="bul-sqa"]:before {background-position:-600px -650px; width:55px; height:65px;}
 	.consulting-lst .consulting-type07 [class*="bul-sqa"]:before {background-position:-700px -650px; width:57px; height:66px;}
+
+/* 2025 */
+	.payment-wrap { font-size: 14px; }
+	.payment-wrap .payment-item { color: #666; }
+	.payment-wrap .payment-total { color: var(--main-color); }

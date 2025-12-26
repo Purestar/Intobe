@@ -142,4 +142,7 @@
 <!-- 전문가라운지 -->
 <%@ include file="pop_proposal.jsp" %> <!-- 강의제안하기 -->
 
+<!-- 2025 -->
+<%@ include file="pop_payment.jsp" %> <!-- 영수증 -->
+
 <%@ include file="../inc/footer.jsp" %>

@@ -1,5 +1,5 @@
 <%@ page contentType = "text/html; charset=UTF-8" %>
-<div class="pop-type01 active" data-ttatg="badge">
+<div class="pop-type01" data-ttatg="badge">
 	<div class="pop-contain">
 		<div class="pop-head"><h1>배지 설정</h1></div>
 		<div class="pop-foot">
