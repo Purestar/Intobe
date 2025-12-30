@@ -140,11 +140,14 @@
 	.box-type-03-01 {--box-pd-y:14px; --box-bd-r:44px;}
 	[class*="box-type-04"] {--box-bg-c:#eceeff; --box-pd-y:22px; --box-pd-x:0; --box-bd-r:9999px 9999px;}
 	.box-type-04-01 {--box-bd-r:20px; --box-pd-x:60px; --box-pd-y:50px;}
+	[class*="box-type-05"] {--box-bg-c:#ffebeb; --box-bd-c:#ecd5d5; --box-pd-y:14px; --box-pd-x:30px; --box-bd-r:10px;}
 
 /* Bullet */
 	/* Circle */
 		.bul-cir-01 {--bul-gap:5px; --bul-w:2px; --bul-ft-c:#666; --bul-gap-y:12px;}
 		.bul-cir-02 {--bul-gap:12px; --bul-w:12px; --bul-gap-y:16px;}
+		.bul-cir-02 .bul-item-01:before {--bul-c:#ffdfb9; border: 1px solid #fd9c2a; }
+		.bul-cir-02 .bul-item-02:before {--bul-c:#ccdcff; border: 1px dashed #8fb2ff; }
 
 	/* Number */
 		.bul-num-01 {--bul-bg-c:black; --bul-bd-r:50%; --bul-gap:13px; --bul-w:20px; --bul-ft-s:14px; --bul-sur:''; --bul-ft-c:white;}
@@ -480,6 +483,7 @@
 		.ic-refresh:before {background-position:var(--bp-500) 0; width:14px; height:15px;}
 		.ic-search:before {background-position:var(--bp-700) 0; width:19px; height:19px;}
 		.ic-setting:before {background-position:var(--bp-300) 0; width:15px; height:15px;}
+		.ic-stat:before {background-position:var(--bp-700) var(--bp-100); width:20px; height:19px;}
 		.ic-trash:before {background-position:var(--bp-350) var(--bp-50); width:16px; height:17px;}
 		.ic-w-comp:before {background-position:var(--bp-250) var(--bp-100); width:26px; height:19px;}
 		.ic-w-temp:before {background-position:var(--bp-300) var(--bp-100); width:24px; height:19px;}

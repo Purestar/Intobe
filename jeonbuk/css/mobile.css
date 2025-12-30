@@ -100,6 +100,7 @@
 		.box-type-03-01 {--box-pd-y:2.78vw; --box-bd-r:8.33vw;}
 		[class*="box-type-04"] {--box-pd-y:3.61vw; --box-pd-r:10vw;}
 		.box-type-04-01 {--box-bd-r:2.78vw; --box-pd-x:5.56vw; --box-pd-y:5.56vw;}
+		[class*="box-type-05"] {--box-pd-y:3.61vw; --box-pd-x:4.72vw; --box-bd-r:2.5vw;}
 
 	/* Bullet */
 		/* Circle */
@@ -276,9 +277,10 @@
 			.ic-plus-02 {width:4.44vw; height:4.44vw;}
 			.ic-plus-02:before {width:2.08vw; height:2.08vw;}
 			.ic-plus-03:before {width:2.92vw; height:2.92vw;}
+			.ic-refresh:before {width:3.06vw; height:3.47vw;}
 			.ic-search:before {width:4.86vw; height:4.86vw;}
 			.ic-setting:before {width:2.50vw; height:2.22vw;}
-			.ic-refresh:before {width:3.06vw; height:3.47vw;}
+			.ic-stat:before {width:3.33vw; height:3.19vw;}
 			.ic-trash:before {width:3.61vw; height:3.89vw;}
 			.ic-w-comp:before {width:4.17vw; height:3.19vw;}
 			.ic-w-temp:before {width:4.17vw; height:3.47vw;}
