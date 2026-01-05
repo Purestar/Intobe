@@ -17,8 +17,16 @@
 				</div>
 
 				<div class="fx-aic fx-gap-01 mt30">
-					<h2 class="tit-06">과정정보</h2>
-					<span>(입실 10:01:00)</span>
+					<h2 class="tit-06">지각</h2>
+					<span>(입실 10:01)</span>
+				</div>
+				<div class="ta-type01">
+					<textarea placeholder="사유를 입력해주세요."></textarea>
+				</div>
+
+				<div class="fx-aic fx-gap-01 mt30">
+					<h2 class="tit-06">외출</h2>
+					<span>(외출 10:01 / 복귀 00:00)</span>
 				</div>
 				<div class="ta-type01">
 					<textarea placeholder="사유를 입력해주세요."></textarea>
