@@ -414,6 +414,7 @@
 		.tit-06 {font-size:16px; font-weight:500; line-height:normal;}
 		.tit-07 {font-size:18px; font-weight:500; line-height:normal;}
 		.tit-08 {font-size:36px;}
+		.tit-09 {font-size:50px; font-weight: 500;}
 
 	/* Tooltip */
 		.tooltip-01 {width:400px; margin-top:30px;}
@@ -892,7 +893,6 @@
 		.tbl-type04 td {border-bottom:1px solid #f5f5f5; height:55px; vertical-align:middle;}
 		.tbl-type04 tr:last-child td {border-bottom:0;}
 
-		/* 관리자 입력 테이블 전용 */
 		.tbl-type05 {background:transparent !important; border-top:2px solid #111; width:100% !important; margin-top:10px; font-size:12px;}
 		.tbl-type05 tr:first-child td {font-size:14px; text-align:center;}
 		.tbl-type05 td {border:1px solid #e1e1e1; width:auto !important; padding:10px; vertical-align:middle;}
@@ -900,6 +900,11 @@
 		.tbl-type06 {background:transparent !important; border-top:2px solid #111; width:100% !important; margin-top:10px; font-size:12px;}
 		.tbl-type06 tr:first-child td {font-size:14px;}
 		.tbl-type06 td {border:1px solid #e1e1e1; width:auto !important; padding:10px; vertical-align:middle;}
+
+		.tbl-type07 {border:1px solid #000;}
+		.tbl-type07 th {background:#eee; border-right: 1px solid black; border-bottom: 1px solid black; padding: 16px; vertical-align:middle}
+		.tbl-type07 td {border-bottom:1px solid #000; padding: 16px; vertical-align:middle;}
+		.tbl-type07 tr:last-child td {border-bottom:0;}
 
 	/* Text */
 		.txt-01 {font-size:24px; line-height:32px; color:#1e1e1e;}
@@ -1869,3 +1874,6 @@
 	.payment-wrap { font-size: 14px; }
 	.payment-wrap .payment-item { color: #666; }
 	.payment-wrap .payment-total { color: var(--main-color); }
+
+/* 2026 */
+	.print-wrap {padding:100px 100px 0; font-family:'바탕'; font-size: 18px; color:black;}

@@ -80,6 +80,10 @@
 	<h1 class="tit-02 mt30">251223 추가</h1>
 	<button type="button" class="btn-sz03" data-tta="payment">영수증</button>
 
+	<h1 class="tit-02 mt30">2026년 추가</h1>
+	<button type="button" class="btn-sz03" data-tta="reason">사유서 등록</button>
+	<button type="button" class="btn-sz03" data-tta="reasonView">사유서</button>
+
 </div>
 
 <%@ include file="pop_pwchg.jsp" %> <!-- 비밀번호 변경 -->
@@ -144,5 +148,9 @@
 
 <!-- 2025 -->
 <%@ include file="pop_payment.jsp" %> <!-- 영수증 -->
+
+<!-- 2026 -->
+<%@ include file="pop_reason.jsp" %> <!-- 사유서 등록 -->
+<%@ include file="pop_reasonView.jsp" %> <!-- 사유서 보기 -->
 
 <%@ include file="../inc/footer.jsp" %>
