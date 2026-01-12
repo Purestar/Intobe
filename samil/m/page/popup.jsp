@@ -67,7 +67,10 @@
 	<h1 class="tit-02 mt30">평가</h1>
 	<button type="button" class="btn-sz03" data-tta="estake">응시하기</button>
 
-	<h1 class="tit-02 mt30">과제</h1>
+	<h1 class="tit-02 mt30">2026년 추가</h1>
+	<button type="button" class="btn-sz03" data-tta="reason">사유서 등록</button>
+	<button type="button" class="btn-sz03" data-tta="reasonView">사유서</button>
+	<button type="button" class="btn-sz03" data-tta="qr">QR 출결</button>
 </div>
 
 <%@ include file="pop_pwchg.jsp" %> <!-- 비밀번호 변경 -->
@@ -121,5 +124,10 @@
 
 <!-- 전문가라운지 -->
 <%@ include file="pop_proposal.jsp" %> <!-- 강의제안하기 -->
+
+<!-- 2026 -->
+<%@ include file="pop_reason.jsp" %> <!-- 사유서 등록 -->
+<%@ include file="pop_reasonView.jsp" %> <!-- 사유서 보기 -->
+<%@ include file="pop_qr.jsp" %>
 
 <%@ include file="../inc/footer.jsp" %>

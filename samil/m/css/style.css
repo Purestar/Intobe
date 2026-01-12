@@ -151,6 +151,12 @@
 	.fx-aifs {align-items:flex-start;}
 	.fx-fdc {flex-direction:column;}
 
+/* Grid */
+	[class*="gr-"] {display:grid;}
+	.gr-gap-20 {gap:2.78vw;}
+	.gr-gap-24 {gap:3.33vw;}
+	.gr-col-2 {grid-template-columns:repeat(2, 1fr);}
+
 /* Horizontal Bar */
 	[class*="hbar-"] {display:flex; flex-wrap: wrap;}
 	[class*="hbar-"] > * {position:relative;}

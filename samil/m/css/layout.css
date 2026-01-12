@@ -1,6 +1,6 @@
 /* Header */
 	header,
-	.sub-header {position:fixed; left:0; top:0; display:flex; align-items: center; justify-content: space-between; background:white; border-bottom:0.14vw solid #e2e2e2; width:100%; height:var(--hd-h); padding-left:5vw; z-index:20;}
+	.sub-header {position:sticky; left:0; top:0; display:flex; align-items: center; justify-content: space-between; background:white; border-bottom:0.14vw solid #e2e2e2; width:100%; height:var(--hd-h); padding-left:5vw; z-index:20;}
 	header .h-logo img {width:31.53vw;}
 	.sub-header .h-tit {overflow:hidden; display:inline-block; text-overflow:ellipsis; white-space:nowrap; word-break:break-all; width:100%; font-size:5vw; font-weight:700; color:#151616;}
 	.sub-header .h-tit a {display:flex; align-items: center;}
@@ -97,7 +97,7 @@
 	header .h-asp #gnb02 > li.active .sub-menu {transform:translate(-35px, 0);}*/
 
 /* Footer */
-	footer {position:fixed; left:0; bottom:0; background:#464646; border-top:0.14vw solid #e2e2e2; width:100%; height:var(--ft-h); z-index:15;}
+	footer {position:sticky; left:0; bottom:0; background:#464646; border-top:0.14vw solid #e2e2e2; width:100%; height:var(--ft-h); z-index:15;}
 	footer .f-menu {display:flex; background:white; height:15.56vw; font-size:2.5vw; line-height:1; text-align:center;}
 	footer .f-menu li {display:flex; justify-content: center; flex:1;}
 	footer .f-menu li > * {display:flex; width:100%; flex-direction: column; align-items: center; justify-content: space-between; padding:2.22vw 0 2.64vw;}
