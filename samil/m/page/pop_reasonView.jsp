@@ -3,14 +3,13 @@
 	<div class="pop-contain">
 		<div class="pop-head">
 			<h1>사유서</h1>
-			<button type="button" class="btn-sz03 btn-b-gry md20" data-tta="reason">인쇄</button>
 		</div>
 		<div class="pop-foot">
 			<a href="#" class ="btn-">저장</a>
 		</div>
 		<div class="pop-cont">
 			<div class="pop-cont-in">
-				<p class="ac">하기 수강생은 아래와 같은 사유로 <b class="fc-blk">[지각/외출/조퇴/결석]</b>하였음을 확인합니다.</p>
+				<p class="ac">하기 수강생은 아래와 같은 사유로<br> <b class="fc-blk">[지각/외출/조퇴/결석]</b>하였음을 확인합니다.</p>
 				<h2 class="tit-07 mt30">과정정보</h2>
 				<div class="box-gry">
 					<ul>
