@@ -642,6 +642,7 @@
 	.ic-tri-blu:before { --bp-pos-x: var(--bp-500); --bp-pos-y: var(--bp-50); width: 12px; height: 10px; }
 	.ic-tri-red:before { --bp-pos-x: var(--bp-550); --bp-pos-y: var(--bp-50); width: 12px; height: 10px; }
 	.ic-usr:before { background-position: var(--bp-50) 0; width: 20px; height: 23px; }
+	.ic-yt:before { background-position: var(--bp-700) var(--bp-50); width: 22px; height: 16px; }
 	.ic-zoom:before { background-position: var(--bp-350) 0; width: 16px; height: 16px; }
 
 	/* Arrow */
