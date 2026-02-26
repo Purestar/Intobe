@@ -10,6 +10,7 @@
 			<div style="--dp: flex; --content-x: space-between; --items-y: center;">
 				<div></div>
 				<div>
+					<a href="#" class="btn-type-dblu btn-sz-02">메뉴얼 PDF</a>
 					<button type="button" class="btn-type-dblu btn-sz-02">마이픽 어학과정 개설신청</button>
 					<button type="button" class="btn-type btn-sz-02">마이픽 과정 개설신청</button>
 				</div>
